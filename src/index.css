@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    @apply bg-mystic-900 text-white font-sans;
+  }
+}
+
+@layer components {
+  .gradient-text {
+    @apply bg-gradient-to-r from-gold-400 to-gold-600 bg-clip-text text-transparent;
+  }
+  
+  .mystic-card {
+    @apply bg-mystic-800/50 backdrop-blur-sm border border-mystic-700/50 rounded-xl;
+  }
+  
+  .gold-border {
+    @apply border border-gold-500/30;
+  }
+  
+  .mystic-glow {
+    @apply shadow-lg shadow-gold-500/20;
+  }
+} 
