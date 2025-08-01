@@ -300,7 +300,7 @@ const Home = () => {
 
             {/* 好评轮播 */}
             <div className="relative max-w-4xl mx-auto px-4 sm:px-0">
-                             <div className="relative h-80 sm:h-96">
+                             <div className="relative h-72 sm:h-80 md:h-96">
                 <AnimatePresence mode="wait" custom={direction}>
                   <motion.div
                     key={currentTestimonial}
@@ -323,8 +323,8 @@ const Home = () => {
                     }}
                     className="absolute inset-0"
                   >
-                                         <div className="mystic-card p-4 sm:p-8 h-full flex flex-col">
-                      <div className="flex justify-between items-start mb-6">
+                                         <div className="mystic-card p-3 sm:p-6 md:p-8 h-full flex flex-col">
+                      <div className="flex justify-between items-start mb-3 sm:mb-6">
                         <Quote className="h-8 w-8 text-gold-400 opacity-50" />
                                                  <div className="flex items-center space-x-2">
                            {featuredTestimonials[currentTestimonial].icon}
@@ -334,12 +334,12 @@ const Home = () => {
                          </div>
                       </div>
 
-                      <div className="flex items-center space-x-1 mb-4">
+                      <div className="flex items-center space-x-1 mb-2 sm:mb-4">
                         {renderStars(featuredTestimonials[currentTestimonial].rating)}
                       </div>
 
                                              <div className="flex-1">
-                                                   <p className="text-mystic-200 leading-relaxed text-sm sm:text-base mb-4 sm:mb-6">
+                                                   <p className="text-mystic-200 leading-relaxed text-xs sm:text-sm md:text-base mb-3 sm:mb-4 md:mb-6">
                             "{featuredTestimonials[currentTestimonial].content}"
                           </p>
                        </div>
@@ -437,34 +437,34 @@ const Home = () => {
                     initial={{ opacity: 0, y: 30 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.6, delay: 2 + index * 0.2 }}
-                    className="mystic-card p-4 sm:p-6 text-center group hover:transform hover:scale-105 transition-all duration-300"
+                    className="mystic-card p-3 sm:p-4 md:p-6 text-center group hover:transform hover:scale-105 transition-all duration-300"
                   >
                                        {/* 真人图片 */}
                                          <img 
                        src={`/images/celebrities/${celebrity.name.toLowerCase().replace(' ', '-')}.jpg`}
                        alt={`${celebrity.name} - ${celebrity.category}`}
-                       className="w-16 h-16 sm:w-20 sm:h-20 mx-auto mb-3 sm:mb-4 rounded-full object-cover border-2 border-gold-500/30 group-hover:border-gold-400 transition-colors duration-300"
+                                               className="w-14 h-14 sm:w-16 md:w-20 sm:h-16 md:h-20 mx-auto mb-2 sm:mb-3 md:mb-4 rounded-full object-cover border-2 border-gold-500/30 group-hover:border-gold-400 transition-colors duration-300"
                       onError={(e) => {
                         // 如果图片加载失败，显示占位符
                         e.target.style.display = 'none';
                         e.target.nextSibling.style.display = 'flex';
                       }}
                     />
-                                         <div className="w-16 h-16 sm:w-20 sm:h-20 mx-auto mb-3 sm:mb-4 rounded-full bg-gradient-to-br from-gold-400 to-gold-600 flex items-center justify-center group-hover:animate-glow hidden">
+                                         <div className="w-14 h-14 sm:w-16 md:w-20 sm:h-16 md:h-20 mx-auto mb-2 sm:mb-3 md:mb-4 rounded-full bg-gradient-to-br from-gold-400 to-gold-600 flex items-center justify-center group-hover:animate-glow hidden">
                        <span className="text-white font-bold text-sm sm:text-lg">
                         {celebrity.name.split(' ').map(n => n[0]).join('')}
                       </span>
                     </div>
                    
-                                       <div className="text-xl sm:text-2xl font-playfair font-bold gradient-text mb-2">
+                                       <div className="text-lg sm:text-xl md:text-2xl font-playfair font-bold gradient-text mb-1 sm:mb-2">
                       {celebrity.name}
                     </div>
-                    <div className="text-xs sm:text-sm text-gold-400 mb-2 sm:mb-3 font-medium">
+                                         <div className="text-xs sm:text-sm text-gold-400 mb-1 sm:mb-2 md:mb-3 font-medium">
                       {celebrity.category}
                     </div>
                     
                                          {/* 东方命理帮助重点 */}
-                     <div className="mb-2 sm:mb-3 p-2 sm:p-3 bg-gold-900/20 border border-gold-500/30 rounded-lg">
+                                           <div className="mb-1 sm:mb-2 md:mb-3 p-1 sm:p-2 md:p-3 bg-gold-900/20 border border-gold-500/30 rounded-lg">
                        <p className="text-mystic-200 text-xs sm:text-sm leading-relaxed font-medium">
                          {celebrity.fact}
                        </p>
