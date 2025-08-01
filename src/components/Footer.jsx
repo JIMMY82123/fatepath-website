@@ -1,14 +1,21 @@
 import { motion } from 'framer-motion'
-import { Link } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 import { MessageCircle, Mail, Phone, MapPin, Star, Sparkles } from 'lucide-react'
 
 const Footer = () => {
+  const navigate = useNavigate()
+  
   const handleWhatsAppClick = () => {
     window.open('https://wa.me/8615914228258', '_blank')
   }
 
   const handleEmailClick = () => {
     window.open('mailto:chenxiao0801@hotmail.com', '_blank')
+  }
+
+  const handleServiceClick = (service) => {
+    console.log(`${service} clicked`)
+    navigate('/services')
   }
 
   return (
@@ -74,19 +81,28 @@ const Footer = () => {
                 </Link>
               </li>
               <li>
-                <Link to="/services" className="text-mystic-300 hover:text-gold-400 transition-colors duration-300">
+                <button 
+                  onClick={() => handleServiceClick('Custom Talisman')}
+                  className="text-mystic-300 hover:text-gold-400 transition-colors duration-300 cursor-pointer bg-transparent border-none text-left w-full"
+                >
                   Custom Talisman ($129)
-                </Link>
+                </button>
               </li>
               <li>
-                <Link to="/services" className="text-mystic-300 hover:text-gold-400 transition-colors duration-300">
+                <button 
+                  onClick={() => handleServiceClick('Love Compatibility')}
+                  className="text-mystic-300 hover:text-gold-400 transition-colors duration-300 cursor-pointer bg-transparent border-none text-left w-full"
+                >
                   Love Compatibility
-                </Link>
+                </button>
               </li>
               <li>
-                <Link to="/services" className="text-mystic-300 hover:text-gold-400 transition-colors duration-300">
+                <button 
+                  onClick={() => handleServiceClick('Career Guidance')}
+                  className="text-mystic-300 hover:text-gold-400 transition-colors duration-300 cursor-pointer bg-transparent border-none text-left w-full"
+                >
                   Career Guidance
-                </Link>
+                </button>
               </li>
             </ul>
           </motion.div>
