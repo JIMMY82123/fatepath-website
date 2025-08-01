@@ -229,10 +229,9 @@ const Home = () => {
                   <span className="text-gold-400 font-medium">Your Guide to Finding Your Way</span>
                 </div>
                 
-                <h2 className="text-3xl md:text-5xl font-playfair font-bold mb-6">
-                  <span className="gradient-text">玄印 (Xuan Yin)</span>
-                  <br />
-                  <span className="text-white">Traditional Family Numerology</span>
+                <h2 className="text-2xl sm:text-3xl md:text-5xl font-playfair font-bold mb-6 leading-tight">
+                  <span className="gradient-text block mb-2">玄印 (Xuan Yin)</span>
+                  <span className="text-white block">Traditional Family Numerology</span>
                 </h2>
                 
                 <p className="text-lg text-mystic-300 mb-6 leading-relaxed">
@@ -291,12 +290,11 @@ const Home = () => {
             className="mb-20"
           >
             <div className="text-center mb-12">
-              <h2 className="text-3xl md:text-5xl font-playfair font-bold mb-6">
-                <span className="gradient-text">Why Choose</span>
-                <br />
-                <span className="text-white">玄印 (Xuan Yin)?</span>
+              <h2 className="text-2xl sm:text-3xl md:text-5xl font-playfair font-bold mb-6 leading-tight">
+                <span className="gradient-text block mb-2">Why Choose</span>
+                <span className="text-white block">玄印 (Xuan Yin)?</span>
               </h2>
-              <p className="text-xl text-mystic-300 max-w-3xl mx-auto">
+              <p className="text-lg sm:text-xl text-mystic-300 max-w-3xl mx-auto px-4">
                 Don't just take my word for it. Here's what my clients say about their transformative experiences.
               </p>
             </div>
@@ -404,18 +402,17 @@ const Home = () => {
             transition={{ duration: 0.8, delay: 1.8 }}
             className="mb-20"
           >
-                         <div className="text-center mb-12">
-               <h2 className="text-3xl md:text-5xl font-playfair font-bold mb-6">
-                 <span className="gradient-text">How Eastern Numerology</span>
-                 <br />
-                 <span className="text-white">Transformed Their Success</span>
-               </h2>
-               <p className="text-xl text-mystic-300 max-w-3xl mx-auto">
-                 These American icons discovered that understanding their personal energy cycles through Bazi analysis was the key to their extraordinary achievements.
-               </p>
-             </div>
+                                     <div className="text-center mb-12">
+              <h2 className="text-2xl sm:text-3xl md:text-5xl font-playfair font-bold mb-6 leading-tight">
+                <span className="gradient-text block mb-2">How Eastern Numerology</span>
+                <span className="text-white block">Transformed Their Success</span>
+              </h2>
+              <p className="text-lg sm:text-xl text-mystic-300 max-w-3xl mx-auto px-4">
+                These American icons discovered that understanding their personal energy cycles through Bazi analysis was the key to their extraordinary achievements.
+              </p>
+            </div>
 
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 px-4 sm:px-0">
                              {[
                  {
                    name: "Madonna",
@@ -491,12 +488,11 @@ const Home = () => {
             className="mb-20"
           >
             <div className="text-center mb-12">
-              <h2 className="text-3xl md:text-5xl font-playfair font-bold mb-6">
-                <span className="gradient-text">Find Your Path</span>
-                <br />
-                <span className="text-white">Choose Your Service</span>
+              <h2 className="text-2xl sm:text-3xl md:text-5xl font-playfair font-bold mb-6 leading-tight">
+                <span className="gradient-text block mb-2">Find Your Path</span>
+                <span className="text-white block">Choose Your Service</span>
               </h2>
-              <p className="text-xl text-mystic-300 max-w-3xl mx-auto">
+              <p className="text-lg sm:text-xl text-mystic-300 max-w-3xl mx-auto px-4">
                 Start your journey to clarity and purpose with our proven services.
               </p>
             </div>
@@ -644,12 +640,11 @@ const Home = () => {
             className="mb-20"
           >
             <div className="text-center mb-12">
-              <h2 className="text-3xl md:text-5xl font-playfair font-bold mb-6">
-                <span className="gradient-text">Mystic Wisdom</span>
-                <br />
-                <span className="text-white">Latest Insights</span>
+              <h2 className="text-2xl sm:text-3xl md:text-5xl font-playfair font-bold mb-6 leading-tight">
+                <span className="gradient-text block mb-2">Mystic Wisdom</span>
+                <span className="text-white block">Latest Insights</span>
               </h2>
-              <p className="text-xl text-mystic-300 max-w-3xl mx-auto">
+              <p className="text-lg sm:text-xl text-mystic-300 max-w-3xl mx-auto px-4">
                 Discover ancient Chinese numerology insights, practical guidance, and spiritual wisdom 
                 to illuminate your path and enhance your life journey.
               </p>
