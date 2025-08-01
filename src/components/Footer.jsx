@@ -1,4 +1,5 @@
 import { motion } from 'framer-motion'
+import { Link } from 'react-router-dom'
 import { MessageCircle, Mail, Phone, MapPin, Star, Sparkles } from 'lucide-react'
 
 const Footer = () => {
@@ -68,24 +69,24 @@ const Footer = () => {
             <h4 className="text-lg font-playfair font-semibold text-white mb-4">Services</h4>
             <ul className="space-y-2">
               <li>
-                <a href="/services" className="text-mystic-300 hover:text-gold-400 transition-colors duration-300">
+                <Link to="/services" className="text-mystic-300 hover:text-gold-400 transition-colors duration-300">
                   Bazi Reading ($38)
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="/services" className="text-mystic-300 hover:text-gold-400 transition-colors duration-300">
+                <Link to="/services" className="text-mystic-300 hover:text-gold-400 transition-colors duration-300">
                   Custom Talisman ($129)
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="/services" className="text-mystic-300 hover:text-gold-400 transition-colors duration-300">
+                <Link to="/services" className="text-mystic-300 hover:text-gold-400 transition-colors duration-300">
                   Love Compatibility
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="/services" className="text-mystic-300 hover:text-gold-400 transition-colors duration-300">
+                <Link to="/services" className="text-mystic-300 hover:text-gold-400 transition-colors duration-300">
                   Career Guidance
-                </a>
+                </Link>
               </li>
             </ul>
           </motion.div>
@@ -99,24 +100,24 @@ const Footer = () => {
             <h4 className="text-lg font-playfair font-semibold text-white mb-4">Quick Links</h4>
             <ul className="space-y-2">
               <li>
-                <a href="/" className="text-mystic-300 hover:text-gold-400 transition-colors duration-300">
+                <Link to="/" className="text-mystic-300 hover:text-gold-400 transition-colors duration-300">
                   Home
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="/testimonials" className="text-mystic-300 hover:text-gold-400 transition-colors duration-300">
-                  Testimonials
-                </a>
+                <Link to="/blog" className="text-mystic-300 hover:text-gold-400 transition-colors duration-300">
+                  Blog
+                </Link>
               </li>
               <li>
-                <a href="/contact" className="text-mystic-300 hover:text-gold-400 transition-colors duration-300">
+                <Link to="/faq" className="text-mystic-300 hover:text-gold-400 transition-colors duration-300">
+                  FAQ
+                </Link>
+              </li>
+              <li>
+                <Link to="/contact" className="text-mystic-300 hover:text-gold-400 transition-colors duration-300">
                   Contact
-                </a>
-              </li>
-              <li>
-                <a href="/about" className="text-mystic-300 hover:text-gold-400 transition-colors duration-300">
-                  About Me
-                </a>
+                </Link>
               </li>
             </ul>
           </motion.div>
