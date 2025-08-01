@@ -300,7 +300,7 @@ const Home = () => {
 
                          {/* 好评轮播 */}
              <div className="relative max-w-4xl mx-auto px-4 sm:px-0">
-                              <div className="relative h-96 sm:h-[28rem] md:h-[32rem] lg:h-[36rem] overflow-hidden">
+                              <div className="relative h-[32rem] sm:h-[28rem] md:h-[32rem] lg:h-[36rem] overflow-hidden">
                 <AnimatePresence mode="wait" custom={direction}>
                   <motion.div
                     key={currentTestimonial}
@@ -323,7 +323,7 @@ const Home = () => {
                     }}
                     className="absolute inset-0"
                   >
-                                         <div className="mystic-card p-4 sm:p-6 md:p-8 h-full flex flex-col">
+                                         <div className="mystic-card p-3 sm:p-4 md:p-6 lg:p-8 h-full flex flex-col">
                       <div className="flex justify-between items-start mb-3 sm:mb-4 md:mb-6">
                         <Quote className="h-8 w-8 text-gold-400 opacity-50" />
                                                  <div className="flex items-center space-x-2">
@@ -339,7 +339,7 @@ const Home = () => {
                       </div>
 
                                                                                            <div className="flex-1">
-                                                    <p className="text-mystic-200 leading-relaxed text-sm sm:text-base mb-3 sm:mb-4 md:mb-6">
+                                                    <p className="text-mystic-200 leading-relaxed text-xs sm:text-sm md:text-base mb-2 sm:mb-3 md:mb-4 lg:mb-6">
                             "{featuredTestimonials[currentTestimonial].content}"
                           </p>
                        </div>
@@ -348,14 +348,14 @@ const Home = () => {
                                                    <img
                             src={featuredTestimonials[currentTestimonial].avatar}
                             alt={featuredTestimonials[currentTestimonial].name}
-                            className="w-12 h-12 sm:w-14 sm:h-14 rounded-full object-cover border-2 border-gold-500/30"
+                            className="w-10 h-10 sm:w-12 md:w-14 sm:h-10 md:h-14 rounded-full object-cover border-2 border-gold-500/30"
                            onError={(e) => {
                              // 如果图片加载失败，显示占位符
                              e.target.style.display = 'none';
                              e.target.nextSibling.style.display = 'flex';
                            }}
                          />
-                                                   <div className="w-12 h-12 sm:w-14 sm:h-14 rounded-full bg-gradient-to-br from-gold-400 to-gold-600 flex items-center justify-center border-2 border-gold-500/30 hidden">
+                                                   <div className="w-10 h-10 sm:w-12 md:w-14 sm:h-10 md:h-14 rounded-full bg-gradient-to-br from-gold-400 to-gold-600 flex items-center justify-center border-2 border-gold-500/30 hidden">
                             <span className="text-white font-bold text-xs sm:text-sm">
                              {featuredTestimonials[currentTestimonial].name.split(' ').map(n => n[0]).join('')}
                            </span>
