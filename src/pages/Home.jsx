@@ -300,7 +300,7 @@ const Home = () => {
 
                          {/* 好评轮播 */}
              <div className="relative max-w-4xl mx-auto px-4 sm:px-0">
-                              <div className="relative h-80 sm:h-96 md:h-[28rem]">
+                              <div className="relative h-72 sm:h-80 md:h-96 lg:h-[28rem] overflow-hidden">
                 <AnimatePresence mode="wait" custom={direction}>
                   <motion.div
                     key={currentTestimonial}
@@ -323,8 +323,8 @@ const Home = () => {
                     }}
                     className="absolute inset-0"
                   >
-                                         <div className="mystic-card p-4 sm:p-6 md:p-8 h-full flex flex-col">
-                      <div className="flex justify-between items-start mb-3 sm:mb-6">
+                                         <div className="mystic-card p-3 sm:p-4 md:p-6 lg:p-8 h-full flex flex-col">
+                      <div className="flex justify-between items-start mb-2 sm:mb-4 md:mb-6">
                         <Quote className="h-8 w-8 text-gold-400 opacity-50" />
                                                  <div className="flex items-center space-x-2">
                            {featuredTestimonials[currentTestimonial].icon}
@@ -334,12 +334,12 @@ const Home = () => {
                          </div>
                       </div>
 
-                      <div className="flex items-center space-x-1 mb-2 sm:mb-4">
+                      <div className="flex items-center space-x-1 mb-1 sm:mb-2 md:mb-4">
                         {renderStars(featuredTestimonials[currentTestimonial].rating)}
                       </div>
 
                                                                                            <div className="flex-1">
-                                                    <p className="text-mystic-200 leading-relaxed text-sm sm:text-base mb-4 sm:mb-6">
+                                                    <p className="text-mystic-200 leading-relaxed text-xs sm:text-sm md:text-base mb-2 sm:mb-4 md:mb-6">
                             "{featuredTestimonials[currentTestimonial].content}"
                           </p>
                        </div>
@@ -374,8 +374,8 @@ const Home = () => {
                 </AnimatePresence>
               </div>
 
-                                            {/* 轮播指示器 */}
-               <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex justify-center space-x-2">
+               {/* 轮播指示器 */}
+               <div className="flex justify-center space-x-2 mt-4">
                  {featuredTestimonials.map((_, index) => (
                    <button
                      key={index}
