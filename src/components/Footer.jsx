@@ -1,10 +1,8 @@
 import { motion } from 'framer-motion'
-import { Link, useNavigate } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 import { MessageCircle, Mail, Phone, MapPin, Star, Sparkles } from 'lucide-react'
 
 const Footer = () => {
-  const navigate = useNavigate()
-  
   const handleWhatsAppClick = () => {
     window.open('https://wa.me/8615914228258', '_blank')
   }
@@ -13,15 +11,10 @@ const Footer = () => {
     window.open('mailto:chenxiao0801@hotmail.com', '_blank')
   }
 
-  const handleServiceClick = (service) => {
-    console.log(`${service} clicked`)
-    navigate('/services')
-  }
-
   return (
     <footer className="bg-mystic-800/50 border-t border-mystic-700/50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {/* 品牌信息 */}
           <div className="lg:col-span-2">
             <motion.div 
@@ -67,45 +60,7 @@ const Footer = () => {
             </motion.div>
           </div>
 
-          {/* 服务链接 */}
-          <motion.div 
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.3 }}
-          >
-            <h4 className="text-lg font-playfair font-semibold text-white mb-4">Services</h4>
-            <ul className="space-y-2">
-              <li>
-                <Link to="/services" className="text-mystic-300 hover:text-gold-400 transition-colors duration-300">
-                  Bazi Reading ($38)
-                </Link>
-              </li>
-              <li>
-                <button 
-                  onClick={() => handleServiceClick('Custom Talisman')}
-                  className="text-mystic-300 hover:text-gold-400 transition-colors duration-300 cursor-pointer bg-transparent border-none text-left w-full"
-                >
-                  Custom Talisman ($129)
-                </button>
-              </li>
-              <li>
-                <button 
-                  onClick={() => handleServiceClick('Love Compatibility')}
-                  className="text-mystic-300 hover:text-gold-400 transition-colors duration-300 cursor-pointer bg-transparent border-none text-left w-full"
-                >
-                  Love Compatibility
-                </button>
-              </li>
-              <li>
-                <button 
-                  onClick={() => handleServiceClick('Career Guidance')}
-                  className="text-mystic-300 hover:text-gold-400 transition-colors duration-300 cursor-pointer bg-transparent border-none text-left w-full"
-                >
-                  Career Guidance
-                </button>
-              </li>
-            </ul>
-          </motion.div>
+
 
           {/* 快速链接 */}
           <motion.div 
