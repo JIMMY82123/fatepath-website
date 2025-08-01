@@ -110,19 +110,18 @@ const Home = () => {
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.4 }}
-              className="text-4xl md:text-6xl lg:text-7xl font-playfair font-bold mb-6"
+              className="text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-playfair font-bold mb-6 leading-tight"
             >
               <motion.span 
-                className="text-red-400"
+                className="text-red-400 block mb-2"
                 initial={{ opacity: 0, scale: 0.8 }}
                 animate={{ opacity: 1, scale: 1 }}
                 transition={{ duration: 1, delay: 0.6 }}
               >
                 I AM LOST
               </motion.span>
-              <br />
               <motion.span 
-                className="text-white"
+                className="text-white block"
                 initial={{ opacity: 0, scale: 0.8 }}
                 animate={{ opacity: 1, scale: 1 }}
                 transition={{ duration: 1, delay: 0.8 }}
@@ -300,8 +299,8 @@ const Home = () => {
             </div>
 
             {/* 好评轮播 */}
-            <div className="relative max-w-4xl mx-auto">
-                             <div className="relative h-96">
+            <div className="relative max-w-4xl mx-auto px-4 sm:px-0">
+                             <div className="relative h-80 sm:h-96">
                 <AnimatePresence mode="wait" custom={direction}>
                   <motion.div
                     key={currentTestimonial}
@@ -324,7 +323,7 @@ const Home = () => {
                     }}
                     className="absolute inset-0"
                   >
-                    <div className="mystic-card p-8 h-full flex flex-col">
+                                         <div className="mystic-card p-4 sm:p-8 h-full flex flex-col">
                       <div className="flex justify-between items-start mb-6">
                         <Quote className="h-8 w-8 text-gold-400 opacity-50" />
                                                  <div className="flex items-center space-x-2">
@@ -340,35 +339,35 @@ const Home = () => {
                       </div>
 
                                              <div className="flex-1">
-                         <p className="text-mystic-200 leading-relaxed text-base mb-6">
-                           "{featuredTestimonials[currentTestimonial].content}"
-                         </p>
+                                                   <p className="text-mystic-200 leading-relaxed text-sm sm:text-base mb-4 sm:mb-6">
+                            "{featuredTestimonials[currentTestimonial].content}"
+                          </p>
                        </div>
 
-                                             <div className="flex items-center space-x-4">
-                         <img
-                           src={featuredTestimonials[currentTestimonial].avatar}
-                           alt={featuredTestimonials[currentTestimonial].name}
-                           className="w-12 h-12 rounded-full object-cover border-2 border-gold-500/30"
+                                             <div className="flex items-center space-x-2 sm:space-x-4">
+                                                   <img
+                            src={featuredTestimonials[currentTestimonial].avatar}
+                            alt={featuredTestimonials[currentTestimonial].name}
+                            className="w-10 h-10 sm:w-12 sm:h-12 rounded-full object-cover border-2 border-gold-500/30"
                            onError={(e) => {
                              // 如果图片加载失败，显示占位符
                              e.target.style.display = 'none';
                              e.target.nextSibling.style.display = 'flex';
                            }}
                          />
-                         <div className="w-12 h-12 rounded-full bg-gradient-to-br from-gold-400 to-gold-600 flex items-center justify-center border-2 border-gold-500/30 hidden">
-                           <span className="text-white font-bold text-sm">
+                                                   <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-gradient-to-br from-gold-400 to-gold-600 flex items-center justify-center border-2 border-gold-500/30 hidden">
+                            <span className="text-white font-bold text-xs sm:text-sm">
                              {featuredTestimonials[currentTestimonial].name.split(' ').map(n => n[0]).join('')}
                            </span>
                          </div>
-                         <div>
-                           <div className="font-semibold text-white">
-                             {featuredTestimonials[currentTestimonial].name}
-                           </div>
-                           <div className="text-sm text-mystic-400">
-                             {featuredTestimonials[currentTestimonial].location}
-                           </div>
-                         </div>
+                                                   <div>
+                            <div className="font-semibold text-white text-sm sm:text-base">
+                              {featuredTestimonials[currentTestimonial].name}
+                            </div>
+                            <div className="text-xs sm:text-sm text-mystic-400">
+                              {featuredTestimonials[currentTestimonial].location}
+                            </div>
+                          </div>
                        </div>
                     </div>
                   </motion.div>
@@ -400,9 +399,9 @@ const Home = () => {
             initial={{ opacity: 0, y: 50 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 1.8 }}
-            className="mb-20"
+            className="mb-16 sm:mb-20"
           >
-                                     <div className="text-center mb-12">
+                                     <div className="text-center mb-8 sm:mb-12">
               <h2 className="text-2xl sm:text-3xl md:text-5xl font-playfair font-bold mb-6 leading-tight">
                 <span className="gradient-text block mb-2">How Eastern Numerology</span>
                 <span className="text-white block">Transformed Their Success</span>
@@ -433,48 +432,48 @@ const Home = () => {
                    detail: "Oprah's numerologist identified her 'Earth' element as the source of her nurturing energy and business acumen. She practices daily numerology rituals that enhance her intuitive decision-making. This ancient wisdom guided her from poverty to a $1.5 billion empire. She credits her emotional resilience to understanding her personal energy cycles."
                  }
                ].map((celebrity, index) => (
-                                 <motion.div
-                   key={index}
-                   initial={{ opacity: 0, y: 30 }}
-                   animate={{ opacity: 1, y: 0 }}
-                   transition={{ duration: 0.6, delay: 2 + index * 0.2 }}
-                   className="mystic-card p-6 text-center group hover:transform hover:scale-105 transition-all duration-300"
-                 >
+                                                   <motion.div
+                    key={index}
+                    initial={{ opacity: 0, y: 30 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.6, delay: 2 + index * 0.2 }}
+                    className="mystic-card p-4 sm:p-6 text-center group hover:transform hover:scale-105 transition-all duration-300"
+                  >
                                        {/* 真人图片 */}
-                    <img 
-                      src={`/images/celebrities/${celebrity.name.toLowerCase().replace(' ', '-')}.jpg`}
-                      alt={`${celebrity.name} - ${celebrity.category}`}
-                      className="w-20 h-20 mx-auto mb-4 rounded-full object-cover border-2 border-gold-500/30 group-hover:border-gold-400 transition-colors duration-300"
+                                         <img 
+                       src={`/images/celebrities/${celebrity.name.toLowerCase().replace(' ', '-')}.jpg`}
+                       alt={`${celebrity.name} - ${celebrity.category}`}
+                       className="w-16 h-16 sm:w-20 sm:h-20 mx-auto mb-3 sm:mb-4 rounded-full object-cover border-2 border-gold-500/30 group-hover:border-gold-400 transition-colors duration-300"
                       onError={(e) => {
                         // 如果图片加载失败，显示占位符
                         e.target.style.display = 'none';
                         e.target.nextSibling.style.display = 'flex';
                       }}
                     />
-                    <div className="w-20 h-20 mx-auto mb-4 rounded-full bg-gradient-to-br from-gold-400 to-gold-600 flex items-center justify-center group-hover:animate-glow hidden">
-                      <span className="text-white font-bold text-lg">
+                                         <div className="w-16 h-16 sm:w-20 sm:h-20 mx-auto mb-3 sm:mb-4 rounded-full bg-gradient-to-br from-gold-400 to-gold-600 flex items-center justify-center group-hover:animate-glow hidden">
+                       <span className="text-white font-bold text-sm sm:text-lg">
                         {celebrity.name.split(' ').map(n => n[0]).join('')}
                       </span>
                     </div>
                    
-                                       <div className="text-2xl font-playfair font-bold gradient-text mb-2">
+                                       <div className="text-xl sm:text-2xl font-playfair font-bold gradient-text mb-2">
                       {celebrity.name}
                     </div>
-                    <div className="text-sm text-gold-400 mb-3 font-medium">
+                    <div className="text-xs sm:text-sm text-gold-400 mb-2 sm:mb-3 font-medium">
                       {celebrity.category}
                     </div>
                     
-                    {/* 东方命理帮助重点 */}
-                    <div className="mb-3 p-3 bg-gold-900/20 border border-gold-500/30 rounded-lg">
-                      <p className="text-mystic-200 text-sm leading-relaxed font-medium">
-                        {celebrity.fact}
-                      </p>
-                    </div>
+                                         {/* 东方命理帮助重点 */}
+                     <div className="mb-2 sm:mb-3 p-2 sm:p-3 bg-gold-900/20 border border-gold-500/30 rounded-lg">
+                       <p className="text-mystic-200 text-xs sm:text-sm leading-relaxed font-medium">
+                         {celebrity.fact}
+                       </p>
+                     </div>
                     
-                    {/* 具体成果 */}
-                    <p className="text-mystic-400 text-xs leading-relaxed">
-                      {celebrity.detail}
-                    </p>
+                                         {/* 具体成果 */}
+                     <p className="text-mystic-400 text-xs leading-relaxed line-clamp-3 sm:line-clamp-none">
+                       {celebrity.detail}
+                     </p>
                  </motion.div>
               ))}
             </div>
