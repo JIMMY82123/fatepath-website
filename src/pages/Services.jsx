@@ -184,11 +184,11 @@ const Services = () => {
 
                              {/* CTA Buttons */}
                <div className="space-y-3">
-                 <div className="text-center mb-4">
-                   <p className="text-sm text-mystic-300 mb-2">
-                     💳 Complete payment first, then contact me for your personalized form
-                   </p>
-                 </div>
+                                   <div className="text-center mb-4">
+                    <p className="text-sm text-mystic-300 mb-2">
+                      💳 Complete payment and you'll be automatically redirected to the form page
+                    </p>
+                  </div>
                                    <motion.a
                                      href={services[activeService].id === 0 ? "https://www.paypal.com/ncp/payment/NVV4LATSZUD6N" :
                  services[activeService].id === 1 ? "https://www.paypal.com/ncp/payment/R9KYJ4LJNBMLY" :

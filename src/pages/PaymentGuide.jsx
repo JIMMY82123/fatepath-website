@@ -76,10 +76,10 @@ const PaymentGuide = () => {
               </div>
               <h3 className="text-xl font-cinzel font-semibold text-white">Step 1: Complete Payment</h3>
             </div>
-            <p className="text-mystic-300 mb-6">
-              Click the button below to complete your payment securely through PayPal. 
-              You'll be redirected to PayPal's secure payment page.
-            </p>
+                         <p className="text-mystic-300 mb-6">
+               Click the button below to complete your payment securely through PayPal. 
+               After successful payment, you'll be automatically redirected to the form page.
+             </p>
                          <a
                href={config.paypalLink}
                target="_blank"
