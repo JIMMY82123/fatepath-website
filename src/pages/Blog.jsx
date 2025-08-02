@@ -52,7 +52,29 @@ const Blog = () => {
       readTime: "15 min read",
       image: "/images/blog/career-timing.jpg",
       slug: "career-timing-next-big-move"
-    }
+    },
+    {
+      id: 5,
+      title: "2024 Year of the Dragon: Your Fortune Forecast",
+      excerpt: "Discover what the Year of the Dragon 2024 holds for you based on your Bazi chart. Learn about opportunities, challenges, and how to maximize your luck this year.",
+      category: "bazi-basics",
+      categoryLabel: "Bazi Basics",
+      date: "2024-01-20",
+      readTime: "14 min read",
+      image: "/images/blog/dragon-year-2024.jpg",
+      slug: "2024-year-dragon-fortune-forecast"
+    },
+            {
+          id: 6,
+          title: "When Bitcoin Falls, What Does Destiny Say?",
+          excerpt: "Explore how BaZi destiny charts and metaphysical timing reveal deeper insights into financial volatility like the August 2025 Bitcoin crash.",
+          category: "career-timing",
+          categoryLabel: "Career & Timing",
+          date: "2025-08-02",
+          readTime: "12 min read",
+          image: "/images/blog/bitcoin-bazi-cover.jpg",
+          slug: "bitcoin-crash-bazi-destiny"
+        }
   ]
 
   const categories = [

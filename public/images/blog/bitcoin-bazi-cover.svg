@@ -1,0 +1,90 @@
+<svg width="800" height="600" viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0f172a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1e293b;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="gold" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#fbbf24;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f59e0b;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="orange" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#f97316;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#ea580c;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="red" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#ef4444;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#dc2626;stop-opacity:1" />
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge> 
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="800" height="600" fill="url(#bg)"/>
+  
+  <!-- Decorative elements -->
+  <circle cx="100" cy="100" r="40" fill="url(#gold)" opacity="0.1"/>
+  <circle cx="700" cy="500" r="60" fill="url(#orange)" opacity="0.1"/>
+  <circle cx="150" cy="450" r="25" fill="url(#gold)" opacity="0.2"/>
+  
+  <!-- Chart lines (representing market volatility) -->
+  <g opacity="0.3">
+    <path d="M 100 300 Q 200 250 300 280 T 500 320 T 700 260" stroke="url(#gold)" stroke-width="2" fill="none"/>
+    <path d="M 100 320 Q 200 270 300 300 T 500 340 T 700 280" stroke="url(#orange)" stroke-width="1" fill="none"/>
+    <path d="M 100 340 Q 200 290 300 320 T 500 360 T 700 300" stroke="url(#red)" stroke-width="1" fill="none"/>
+  </g>
+  
+  <!-- Bitcoin symbol with glow effect -->
+  <g transform="translate(400,200)" filter="url(#glow)">
+    <circle cx="0" cy="0" r="80" fill="url(#gold)" opacity="0.3"/>
+    <text x="0" y="20" text-anchor="middle" font-family="Arial, sans-serif" font-size="60" fill="url(#gold)" font-weight="bold">₿</text>
+  </g>
+  
+  <!-- Chinese characters for BaZi -->
+  <g transform="translate(400,120)" opacity="0.4">
+    <text x="0" y="0" text-anchor="middle" font-family="Arial, sans-serif" font-size="24" fill="url(#gold)">八字</text>
+  </g>
+  
+  <!-- Financial symbols -->
+  <g transform="translate(150,150)" opacity="0.6">
+    <text x="0" y="0" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" fill="url(#gold)">📈</text>
+  </g>
+  <g transform="translate(650,150)" opacity="0.6">
+    <text x="0" y="0" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" fill="url(#red)">📉</text>
+  </g>
+  
+  <!-- Mystical symbols -->
+  <g transform="translate(120,400)" opacity="0.4">
+    <text x="0" y="0" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" fill="url(#gold)">☯</text>
+  </g>
+  <g transform="translate(680,400)" opacity="0.4">
+    <text x="0" y="0" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" fill="url(#gold)">⚡</text>
+  </g>
+  
+  <!-- Main content -->
+  <g transform="translate(400,380)">
+    <!-- Title -->
+    <text x="0" y="-30" text-anchor="middle" font-family="Arial, sans-serif" font-size="28" fill="url(#gold)" font-weight="bold">When Bitcoin Falls</text>
+    <text x="0" y="0" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" fill="#e2e8f0">What Does Destiny Say?</text>
+    
+    <!-- Subtitle -->
+    <text x="0" y="40" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="#94a3b8">BaZi Analysis of Financial Volatility</text>
+    
+    <!-- Date -->
+    <text x="0" y="70" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#64748b">August 2nd, 2025</text>
+  </g>
+  
+  <!-- Decorative lines -->
+  <line x1="200" y1="150" x2="600" y2="150" stroke="url(#gold)" stroke-width="2" opacity="0.3"/>
+  <line x1="200" y1="450" x2="600" y2="450" stroke="url(#orange)" stroke-width="2" opacity="0.3"/>
+  
+  <!-- Bottom text -->
+  <text x="400" y="580" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#64748b">FatePath - Professional Astrology & Divination</text>
+</svg> 
