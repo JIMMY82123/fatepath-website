@@ -18,7 +18,7 @@ const PaymentGuide = () => {
     love: {
       name: "Love Compatibility Reading",
       price: "$44",
-      paypalLink: "https://www.paypal.com/ncp/payment/H3KLXNS4P62HG",
+      paypalLink: "https://www.paypal.com/ncp/payment/R9KYJ4LJNBMLY",
       formLink: "/form-love",
       description: "Deep analysis of relationship compatibility, timing for love, and guidance for finding your soulmate through Bazi analysis.",
       color: "from-pink-500 to-red-500",
