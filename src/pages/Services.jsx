@@ -189,19 +189,22 @@ const Services = () => {
                      💳 Complete payment first, then contact me for your personalized form
                    </p>
                  </div>
-                 <motion.a
-                                    href={services[activeService].id === 0 ? "https://www.paypal.com/ncp/payment/NVV4LATSZUD6N" :
-                services[activeService].id === 1 ? "https://www.paypal.com/ncp/payment/R9KYJ4LJNBMLY" :
-                "https://www.paypal.com/ncp/payment/YFMMVQNT7AAMC"}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    whileHover={{ scale: 1.02 }}
-                    whileTap={{ scale: 0.98 }}
-                    className="w-full bg-gradient-to-r from-gold-500 to-gold-600 text-black font-poppins font-semibold py-4 px-8 rounded-full flex items-center justify-center space-x-2 hover:from-gold-400 hover:to-gold-500 transition-all duration-300 mystic-glow tracking-wide"
-                  >
-                    <span>Purchase & Start</span>
-                    <ArrowRight className="h-5 w-5" />
-                  </motion.a>
+                                   <motion.a
+                                     href={services[activeService].id === 0 ? "https://www.paypal.com/ncp/payment/NVV4LATSZUD6N" :
+                 services[activeService].id === 1 ? "https://www.paypal.com/ncp/payment/R9KYJ4LJNBMLY" :
+                 "https://www.paypal.com/ncp/payment/YFMMVQNT7AAMC"}
+                     target="_blank"
+                     rel="noopener noreferrer"
+                     whileHover={{ scale: 1.02 }}
+                     whileTap={{ scale: 0.98 }}
+                     className="w-full bg-gradient-to-r from-gold-500 to-gold-600 text-black font-poppins font-semibold py-4 px-8 rounded-full flex items-center justify-center space-x-2 hover:from-gold-400 hover:to-gold-500 transition-all duration-300 mystic-glow tracking-wide"
+                   >
+                     <svg className="h-5 w-5" viewBox="0 0 24 24" fill="currentColor">
+                       <path d="M20.067 8.478c.492.315.844.825.844 1.406 0 .58-.352 1.09-.844 1.406-.492.315-1.156.51-1.875.51h-1.406c-.492 0-.844-.195-.844-.51 0-.315.352-.51.844-.51h1.406c.352 0 .703-.195.703-.406 0-.21-.351-.406-.703-.406h-1.406c-.492 0-.844-.195-.844-.51 0-.315.352-.51.844-.51h1.406c.719 0 1.383.195 1.875.51zM12.5 8.478c.492.315.844.825.844 1.406 0 .58-.352 1.09-.844 1.406-.492.315-1.156.51-1.875.51h-1.406c-.492 0-.844-.195-.844-.51 0-.315.352-.51.844-.51h1.406c.352 0 .703-.195.703-.406 0-.21-.351-.406-.703-.406h-1.406c-.492 0-.844-.195-.844-.51 0-.315.352-.51.844-.51h1.406c.719 0 1.383.195 1.875.51zM7.5 8.478c.492.315.844.825.844 1.406 0 .58-.352 1.09-.844 1.406-.492.315-1.156.51-1.875.51H4.219c-.492 0-.844-.195-.844-.51 0-.315.352-.51.844-.51h1.406c.352 0 .703-.195.703-.406 0-.21-.351-.406-.703-.406H4.219c-.492 0-.844-.195-.844-.51 0-.315.352-.51.844-.51h1.406c.719 0 1.383.195 1.875.51z"/>
+                     </svg>
+                     <span>Pay with PayPal</span>
+                     <ArrowRight className="h-5 w-5" />
+                   </motion.a>
                  
                </div>
             </motion.div>
