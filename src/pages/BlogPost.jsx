@@ -694,7 +694,7 @@ const BlogPost = () => {
        categoryLabel: "Bazi Basics",
        date: "2025-08-04",
        readTime: "7 min read",
-       image: "/images/blog/seasons-fate-cover.svg",
+                image: "/images/blog/seasons-fate-cover.jpg",
        slug: "seasons-fate-cycles",
        author: "玄印 (Xuan Yin)",
        tags: ["Destiny Cycles", "BaZi", "Life Phases", "Resilience", "Chinese Philosophy", "Personal Growth", "Timing"]

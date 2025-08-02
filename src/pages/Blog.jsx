@@ -94,7 +94,7 @@ const Blog = () => {
           categoryLabel: "Bazi Basics",
           date: "2025-08-04",
           readTime: "7 min read",
-          image: "/images/blog/seasons-fate-cover.svg",
+          image: "/images/blog/seasons-fate-cover.jpg",
           slug: "seasons-fate-cycles"
         }
   ]
