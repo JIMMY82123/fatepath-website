@@ -27,7 +27,7 @@ const PaymentGuide = () => {
     talisman: {
       name: "Custom Talisman",
       price: "$129",
-      paypalLink: "https://www.paypal.com/ncp/payment/35UAEZS9YUZJS",
+      paypalLink: "https://www.paypal.com/ncp/payment/YFMMVQNT7AAMC",
       formLink: "/form-talisman",
       description: "Personalized protection talisman crafted specifically for your unique birth chart to enhance luck, protection, and positive energy flow.",
       color: "from-gold-500 to-orange-500",

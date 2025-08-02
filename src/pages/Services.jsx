@@ -192,7 +192,7 @@ const Services = () => {
                  <motion.a
                                     href={services[activeService].id === 0 ? "https://www.paypal.com/ncp/payment/NVV4LATSZUD6N" :
                 services[activeService].id === 1 ? "https://www.paypal.com/ncp/payment/R9KYJ4LJNBMLY" :
-                "https://www.paypal.com/ncp/payment/35UAEZS9YUZJS"}
+                "https://www.paypal.com/ncp/payment/YFMMVQNT7AAMC"}
                     target="_blank"
                     rel="noopener noreferrer"
                     whileHover={{ scale: 1.02 }}
