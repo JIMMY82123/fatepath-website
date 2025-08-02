@@ -9,7 +9,7 @@ const PaymentGuide = () => {
     bazi: {
       name: "Detailed Bazi Reading",
       price: "$38",
-      paypalLink: "https://www.paypal.com/ncp/payment/ZA46SQT522H46",
+      paypalLink: "https://www.paypal.com/ncp/payment/NVV4LATSZUD6N",
       formLink: "/form-bazi",
       description: "Comprehensive analysis of your birth chart revealing your personality, career strengths, relationship patterns, and life path guidance.",
       color: "from-purple-500 to-pink-500",
