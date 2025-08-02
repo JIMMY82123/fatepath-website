@@ -85,6 +85,17 @@ const Blog = () => {
           readTime: "10 min read",
           image: "/images/blog/heatwave-bazi-cover.jpg",
           slug: "heatwave-bazi-fire-imbalance"
+        },
+        {
+          id: 8,
+          title: "🌿 The Seasons of Fate: Why You Don't Have to Panic About Every Downturn",
+          excerpt: "Discover how BaZi reveals that life's challenges are natural cycles, not punishments. Learn to flow with your destiny's seasons instead of fighting against them.",
+          category: "bazi-basics",
+          categoryLabel: "Bazi Basics",
+          date: "2025-08-04",
+          readTime: "7 min read",
+          image: "/images/blog/seasons-fate-cover.svg",
+          slug: "seasons-fate-cycles"
         }
   ]
 
