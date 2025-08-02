@@ -395,9 +395,161 @@ const BlogPost = () => {
                 image: "/images/blog/bitcoin-bazi-cover.jpg",
       slug: "bitcoin-crash-bazi-destiny",
       author: "玄印 (Xuan Yin)",
-      tags: ["Bitcoin", "Cryptocurrency", "BaZi", "Wealth Cycles", "Financial Timing", "2025"]
-    }
-    // 您可以在这里添加更多文章
+             tags: ["Bitcoin", "Cryptocurrency", "BaZi", "Wealth Cycles", "Financial Timing", "2025"]
+     },
+     {
+       id: 7,
+       title: "Burned by the Heat: What 2025's Extreme Temperatures Reveal in BaZi",
+       excerpt: "Explore how global heatwaves reflect deeper Fire element imbalances in Chinese metaphysics, and what your BaZi chart reveals about stress, health, and destiny in 2025.",
+       content: `
+         <div class="mb-8">
+           <p class="text-lg text-mystic-300 leading-relaxed mb-4">
+             As the world burns, what does your chart say about your internal fire?
+           </p>
+         </div>
+
+         <p class="mb-6 text-mystic-300 leading-relaxed">
+           On August 2nd, 2025, cities across the U.S., Europe, and Asia hit record-breaking temperatures—many exceeding 48°C (118°F). Power grids struggled, tempers flared, and millions suffered under dangerous heat conditions. But what if this global heatwave isn't just meteorological?
+         </p>
+
+         <p class="mb-6 text-mystic-300 leading-relaxed">
+           From a BaZi perspective, <strong>2025 is a Fire-dominant year</strong>, and the world's temperature spikes may be echoing a deeper <strong>Qi imbalance</strong>.
+         </p>
+
+         <h2 class="text-2xl font-cinzel font-bold text-white mb-4 mt-8">🪐 2025: The Fire Element Ignites</h2>
+         <p class="mb-6 text-mystic-300 leading-relaxed">
+           This year is ruled by the stem-branch combination <strong>Yi Si (乙巳)</strong>—Yin Wood over Yin Fire. That's already a volatile mix. But globally, we are also experiencing:
+         </p>
+
+         <div class="bg-gradient-to-r from-mystic-800 to-mystic-900 p-6 rounded-xl border border-gold-500/30 mb-8">
+           <ul class="space-y-2 text-mystic-300">
+             <li class="flex items-start space-x-3">
+               <div class="w-2 h-2 bg-gold-400 rounded-full mt-2 flex-shrink-0"></div>
+               <span>Solar flares and high UV intensity</span>
+             </li>
+             <li class="flex items-start space-x-3">
+               <div class="w-2 h-2 bg-gold-400 rounded-full mt-2 flex-shrink-0"></div>
+               <span>Political aggression and social anger</span>
+             </li>
+             <li class="flex items-start space-x-3">
+               <div class="w-2 h-2 bg-gold-400 rounded-full mt-2 flex-shrink-0"></div>
+               <span>Collective burnout and anxiety</span>
+             </li>
+           </ul>
+         </div>
+
+         <p class="mb-6 text-mystic-300 leading-relaxed">
+           In metaphysics, the <strong>Fire element</strong> governs:
+         </p>
+
+         <div class="grid md:grid-cols-2 gap-6 mb-8">
+           <div class="mystic-card p-6">
+             <h3 class="text-lg font-cinzel font-semibold text-gold-400 mb-3">Physical Aspects</h3>
+             <p class="text-mystic-300 text-sm">The heart (physical and emotional), blood pressure, inflammation, strokes</p>
+           </div>
+           <div class="mystic-card p-6">
+             <h3 class="text-lg font-cinzel font-semibold text-gold-400 mb-3">Emotional Aspects</h3>
+             <p class="text-mystic-300 text-sm">Impulse, anger, ego, and inflamed decisions</p>
+           </div>
+         </div>
+
+         <p class="mb-6 text-mystic-300 leading-relaxed">
+           When the Fire element becomes <strong>excessive</strong>, both nature and people <strong>burn out</strong>.
+         </p>
+
+         <h2 class="text-2xl font-cinzel font-bold text-white mb-4 mt-8">📊 How Fire Imbalance Affects You</h2>
+         <p class="mb-6 text-mystic-300 leading-relaxed">
+           Your BaZi chart determines how the annual Fire energy affects you:
+         </p>
+
+         <div class="space-y-4 mb-8">
+           <div class="mystic-card p-6 border-l-4 border-blue-500/50">
+             <h3 class="text-lg font-cinzel font-semibold text-blue-400 mb-3">Strong Metal or Water Day Masters (Geng, Xin, Ren, Gui)</h3>
+             <p class="text-mystic-300 text-sm">
+               Likely to feel drained, overheated, or emotionally unstable
+             </p>
+           </div>
+           <div class="mystic-card p-6 border-l-4 border-green-500/50">
+             <h3 class="text-lg font-cinzel font-semibold text-green-400 mb-3">Wood Day Masters (Jia, Yi)</h3>
+             <p class="text-mystic-300 text-sm">
+               May feel pushed toward over-action, restlessness, and rash decisions
+             </p>
+           </div>
+           <div class="mystic-card p-6 border-l-4 border-red-500/50">
+             <h3 class="text-lg font-cinzel font-semibold text-red-400 mb-3">Fire-heavy charts</h3>
+             <p class="text-mystic-300 text-sm">
+               Risk of burnout, anxiety, and digestive issues
+             </p>
+           </div>
+           <div class="mystic-card p-6 border-l-4 border-yellow-500/50">
+             <h3 class="text-lg font-cinzel font-semibold text-yellow-400 mb-3">Earth Day Masters (Wu, Ji)</h3>
+             <p class="text-mystic-300 text-sm">
+               Might thrive if Fire is your resource star—more energy, more clarity
+             </p>
+           </div>
+         </div>
+
+         <p class="mb-6 text-mystic-300 leading-relaxed">
+           If your BaZi luck cycle already includes strong Fire, <strong>2025 may feel overwhelming</strong>.
+         </p>
+
+         <h2 class="text-2xl font-cinzel font-bold text-white mb-4 mt-8">🧘 Tips for Harmonizing Fire in 2025</h2>
+         <p class="mb-6 text-mystic-300 leading-relaxed">
+           To protect your energy and align with cosmic flow:
+         </p>
+
+         <div class="bg-gradient-to-r from-mystic-800 to-mystic-900 p-6 rounded-xl border border-gold-500/30 mb-8">
+           <ul class="space-y-2 text-mystic-300">
+             <li class="flex items-start space-x-3">
+               <div class="w-2 h-2 bg-gold-400 rounded-full mt-2 flex-shrink-0"></div>
+               <span><strong>Avoid spicy, fried, or greasy food</strong> – nourish with cooling foods (melon, lotus root, mung bean soup)</span>
+             </li>
+             <li class="flex items-start space-x-3">
+               <div class="w-2 h-2 bg-gold-400 rounded-full mt-2 flex-shrink-0"></div>
+               <span><strong>Bring Water into your daily routine</strong> – physically (hydration, showers) and energetically (Blue colors, Moon imagery)</span>
+             </li>
+             <li class="flex items-start space-x-3">
+               <div class="w-2 h-2 bg-gold-400 rounded-full mt-2 flex-shrink-0"></div>
+               <span><strong>Use protective talismans</strong> based on Water or Metal – these control or balance Fire in classical Five Element theory</span>
+             </li>
+             <li class="flex items-start space-x-3">
+               <div class="w-2 h-2 bg-gold-400 rounded-full mt-2 flex-shrink-0"></div>
+               <span><strong>Sleep early, meditate often, rest the Heart spirit (神)</strong></span>
+             </li>
+             <li class="flex items-start space-x-3">
+               <div class="w-2 h-2 bg-gold-400 rounded-full mt-2 flex-shrink-0"></div>
+               <span>Consider adjusting <strong>feng shui</strong> (e.g., remove excessive red/fire colors from bedroom)</span>
+             </li>
+           </ul>
+         </div>
+
+         <h2 class="text-2xl font-cinzel font-bold text-white mb-4 mt-8">🔮 Final Thought</h2>
+         <p class="mb-6 text-mystic-300 leading-relaxed">
+           The external heat reflects the internal Fire many are struggling with. BaZi isn't about fearing the elements—it's about understanding when they're <strong>out of sync</strong> with you.
+         </p>
+
+         <p class="mb-6 text-mystic-300 leading-relaxed">
+           If you're feeling drained, angry, burned out, or restless this year… maybe it's not just the weather.
+         </p>
+
+         <div class="mystic-card p-6 border-l-4 border-gold-500/50 mb-8">
+           <h3 class="text-lg font-cinzel font-semibold text-gold-400 mb-3">Ready to Understand Your Fire Balance?</h3>
+           <p class="text-mystic-300 text-sm">
+             Would you like a personalized reading to understand how the 2025 Fire energy affects your specific BaZi chart? 
+             A detailed analysis can reveal your Fire element balance and provide specific strategies for harmonizing your energy this year.
+           </p>
+         </div>
+       `,
+       category: "bazi-basics",
+       categoryLabel: "Bazi Basics",
+       date: "2025-08-02",
+       readTime: "10 min read",
+       image: "/images/blog/heatwave-bazi-cover.jpg",
+       slug: "heatwave-bazi-fire-imbalance",
+       author: "玄印 (Xuan Yin)",
+       tags: ["Heatwave", "Fire Element", "BaZi", "2025", "Health", "Energy Balance", "Climate"]
+     }
+     // 您可以在这里添加更多文章
   ]
 
   const post = blogPosts.find(p => p.slug === slug)

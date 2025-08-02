@@ -74,6 +74,17 @@ const Blog = () => {
           readTime: "12 min read",
           image: "/images/blog/bitcoin-bazi-cover.jpg",
           slug: "bitcoin-crash-bazi-destiny"
+        },
+        {
+          id: 7,
+          title: "Burned by the Heat: What 2025's Extreme Temperatures Reveal in BaZi",
+          excerpt: "Explore how global heatwaves reflect deeper Fire element imbalances in Chinese metaphysics, and what your BaZi chart reveals about stress, health, and destiny in 2025.",
+          category: "bazi-basics",
+          categoryLabel: "Bazi Basics",
+          date: "2025-08-02",
+          readTime: "10 min read",
+          image: "/images/blog/heatwave-bazi-cover.jpg",
+          slug: "heatwave-bazi-fire-imbalance"
         }
   ]
 
