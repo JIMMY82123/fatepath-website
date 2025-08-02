@@ -202,19 +202,7 @@ const Services = () => {
                     <span>Purchase & Start</span>
                     <ArrowRight className="h-5 w-5" />
                   </motion.a>
-                 <div className="text-center">
-                   <p className="text-xs text-mystic-400 mb-2">Or fill form first (payment after)</p>
-                 </div>
-                 <motion.a
-                   href={services[activeService].id === 0 ? "/form-bazi" : 
-                         services[activeService].id === 1 ? "/form-love" : 
-                         "/form-talisman"}
-                   whileHover={{ scale: 1.02 }}
-                   whileTap={{ scale: 0.98 }}
-                   className="w-full border border-gold-500/50 text-gold-400 font-poppins font-semibold py-4 px-8 rounded-full flex items-center justify-center space-x-2 hover:bg-gold-500/10 transition-all duration-300 tracking-wide"
-                 >
-                   <span>Fill Form Directly</span>
-                 </motion.a>
+                 
                </div>
             </motion.div>
           </AnimatePresence>
