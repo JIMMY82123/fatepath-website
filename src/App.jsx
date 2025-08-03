@@ -12,6 +12,7 @@ import BaziForm from './pages/BaziForm'
 import LoveForm from './pages/LoveForm'
 import TalismanForm from './pages/TalismanForm'
 import PaymentGuide from './pages/PaymentGuide'
+import PaymentSuccess from './pages/PaymentSuccess'
 
 function App() {
   return (
@@ -30,6 +31,7 @@ function App() {
             <Route path="/form-love" element={<LoveForm />} />
             <Route path="/form-talisman" element={<TalismanForm />} />
             <Route path="/payment/:service" element={<PaymentGuide />} />
+            <Route path="/payment-success/:service" element={<PaymentSuccess />} />
           </Routes>
         </AnimatePresence>
         <Footer />
