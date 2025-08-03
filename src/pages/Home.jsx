@@ -7,6 +7,31 @@ const Home = () => {
   const [currentTestimonial, setCurrentTestimonial] = useState(0)
   const [direction, setDirection] = useState(0)
 
+  // 处理锚点跳转
+  useEffect(() => {
+    const handleHashChange = () => {
+      const hash = window.location.hash
+      if (hash) {
+        const element = document.querySelector(hash)
+        if (element) {
+          setTimeout(() => {
+            element.scrollIntoView({ 
+              behavior: 'smooth',
+              block: 'start'
+            })
+          }, 100)
+        }
+      }
+    }
+
+    // 页面加载时检查锚点
+    handleHashChange()
+
+    // 监听 hash 变化
+    window.addEventListener('hashchange', handleHashChange)
+    return () => window.removeEventListener('hashchange', handleHashChange)
+  }, [])
+
   // 精选好评数据
   const featuredTestimonials = [
     {
@@ -499,6 +524,7 @@ const Home = () => {
                          <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
                {/* 八字详批 */}
                <motion.div
+                 id="bazi"
                  initial={{ opacity: 0, y: 30 }}
                  animate={{ opacity: 1, y: 0 }}
                  transition={{ duration: 0.6, delay: 2.4 }}
@@ -543,6 +569,7 @@ const Home = () => {
 
                {/* 爱情合盘 */}
                <motion.div
+                 id="love"
                  initial={{ opacity: 0, y: 30 }}
                  animate={{ opacity: 1, y: 0 }}
                  transition={{ duration: 0.6, delay: 2.5 }}
@@ -587,6 +614,7 @@ const Home = () => {
 
                {/* 定制护身符 */}
                <motion.div
+                 id="amulet"
                  initial={{ opacity: 0, y: 30 }}
                  animate={{ opacity: 1, y: 0 }}
                  transition={{ duration: 0.6, delay: 2.6 }}
