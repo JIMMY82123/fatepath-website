@@ -9,6 +9,8 @@ import BlogPost from './pages/BlogPost'
 import Contact from './pages/Contact'
 import FAQ from './pages/FAQ'
 import BaziForm from './pages/BaziForm'
+import BaziFormDiscount from './pages/BaziFormDiscount'
+import FreeBaziReport from './pages/FreeBaziReport'
 import LoveForm from './pages/LoveForm'
 import TalismanForm from './pages/TalismanForm'
 import PaymentGuide from './pages/PaymentGuide'
@@ -32,6 +34,8 @@ function App() {
             <Route path="/contact" element={<Contact />} />
             <Route path="/faq" element={<FAQ />} />
             <Route path="/form-bazi" element={<BaziForm />} />
+            <Route path="/form-bazi-discount" element={<BaziFormDiscount />} />
+            <Route path="/free-bazi-report" element={<FreeBaziReport />} />
             <Route path="/form-love" element={<LoveForm />} />
             <Route path="/form-talisman" element={<TalismanForm />} />
             <Route path="/wealth-sign" element={<WealthSign />} />

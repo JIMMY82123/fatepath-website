@@ -233,6 +233,43 @@ const Home = () => {
                 <ArrowRight className="h-5 w-5 group-hover:translate-x-1 transition-transform" />
               </Link>
             </motion.div>
+
+            {/* Free Bazi Report Prominent Banner */}
+            <motion.div 
+              initial={{ opacity: 0, y: 30 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 1.2 }}
+              className="mt-16"
+            >
+              <div className="relative overflow-hidden mystic-card p-8 border-2 border-gold-500/50 bg-gradient-to-r from-gold-500/10 to-yellow-500/10">
+                <div className="absolute inset-0 bg-gradient-to-r from-gold-500/5 to-yellow-500/5"></div>
+                <div className="relative z-10 text-center">
+                  <div className="inline-flex items-center justify-center w-20 h-20 rounded-full bg-gradient-to-r from-gold-500 to-yellow-500 mb-6 animate-pulse">
+                    <Star className="h-10 w-10 text-white" />
+                  </div>
+                  <h2 className="text-2xl md:text-3xl font-cinzel font-bold mb-4 text-gold-400">
+                    🎁 FREE Bazi Reading Report
+                  </h2>
+                  <p className="text-lg text-mystic-200 mb-6 max-w-2xl mx-auto">
+                    Get your personalized Bazi analysis instantly! Discover your wealth potential, 
+                    love compatibility, and health insights - completely FREE.
+                  </p>
+                  <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+                    <Link
+                      to="/free-bazi-report"
+                      className="group inline-flex items-center space-x-3 bg-gradient-to-r from-gold-500 to-yellow-500 text-black font-bold px-8 py-4 rounded-full transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-gold-500/25"
+                    >
+                      <Sparkles className="h-5 w-5 group-hover:animate-pulse" />
+                      <span>Get Free Report Now</span>
+                      <ArrowRight className="h-5 w-5 group-hover:translate-x-1 transition-transform" />
+                    </Link>
+                    <div className="text-sm text-mystic-400">
+                      ⚡ Instant Results • 📊 Wealth Analysis • 💕 Love Insights • 🏥 Health Guidance
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </motion.div>
           </motion.div>
 
           {/* Step 2: 介绍玄印和家传命理 */}

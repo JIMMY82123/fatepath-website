@@ -10,8 +10,9 @@ const Navbar = () => {
   const navItems = [
     { path: '/', label: 'Home' },
     { path: '/services', label: 'Services' },
+    { path: '/free-bazi-report', label: 'Free Bazi' },
     { path: '/blog', label: 'Blog' },
-         { path: '/wealth-sign', label: 'Sacred Oracle' },
+    { path: '/wealth-sign', label: 'Sacred Oracle' },
     { path: '/faq', label: 'FAQ' },
     { path: '/contact', label: 'Contact' }
   ]
