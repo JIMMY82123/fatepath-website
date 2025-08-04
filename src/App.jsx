@@ -19,7 +19,6 @@ import { usePageTracking } from './hooks/useAnalytics'
 function App() {
   // 启用页面浏览跟踪
   usePageTracking();
-  
   return (
     <Router>
       <div className="min-h-screen bg-mystic-900">
