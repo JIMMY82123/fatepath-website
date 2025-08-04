@@ -29,14 +29,14 @@ const Navbar = () => {
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-2">
-            <Sparkles className="h-8 w-8 text-gold-400" />
-            <span className="font-playfair text-xl font-semibold gradient-text">
+            <Sparkles className="h-6 w-6 sm:h-8 sm:w-8 text-gold-400" />
+            <span className="font-playfair text-lg sm:text-xl font-semibold gradient-text">
               FatePath
             </span>
           </Link>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center space-x-8">
+          <div className="hidden md:flex items-center space-x-6 lg:space-x-8">
             {navItems.map((item) => (
               <Link
                 key={item.path}
@@ -64,7 +64,8 @@ const Navbar = () => {
           <div className="md:hidden">
             <button
               onClick={() => setIsOpen(!isOpen)}
-              className="text-mystic-300 hover:text-gold-400 transition-colors"
+              className="text-mystic-300 hover:text-gold-400 transition-colors p-2 -mr-2"
+              aria-label="Toggle menu"
             >
               {isOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
             </button>
@@ -85,7 +86,7 @@ const Navbar = () => {
                   key={item.path}
                   to={item.path}
                   onClick={() => setIsOpen(false)}
-                  className={`block px-3 py-2 text-base font-medium transition-colors duration-200 ${
+                  className={`block px-3 py-3 text-base font-medium transition-colors duration-200 rounded-lg ${
                     isActive(item.path) 
                       ? 'text-gold-400 bg-mystic-800/50' 
                       : 'text-mystic-300 hover:text-gold-400 hover:bg-mystic-800/30'

@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
-import { Star, ArrowLeft, Download, Share2, Crown, X, Clock, Gift } from 'lucide-react'
+import { Star, ArrowLeft, Download, Share2, Crown, X, Clock, Gift, Sparkles, ArrowRight } from 'lucide-react'
 import { Link } from 'react-router-dom'
 import { Lunar } from 'lunar-javascript'
 import SEO from '../components/SEO'
@@ -507,15 +507,15 @@ const FreeBaziReport = () => {
             initial={{ opacity: 0, y: 50 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
-            className="text-center mb-8"
+            className="text-center mb-6 sm:mb-8"
           >
-            <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-gradient-to-r from-gold-500 to-yellow-500 mb-4">
-              <Star className="h-8 w-8 text-white" />
+            <div className="inline-flex items-center justify-center w-12 h-12 sm:w-16 sm:h-16 rounded-full bg-gradient-to-r from-gold-500 to-yellow-500 mb-3 sm:mb-4">
+              <Star className="h-6 w-6 sm:h-8 sm:w-8 text-white" />
             </div>
-            <h1 className="text-3xl md:text-4xl font-cinzel font-bold mb-4 text-white">
+            <h1 className="text-2xl sm:text-3xl md:text-4xl font-cinzel font-bold mb-3 sm:mb-4 text-white">
               {report.name}'s Bazi Reading Report
             </h1>
-            <p className="text-mystic-300 text-lg">
+            <p className="text-base sm:text-lg text-mystic-300">
               Personalized Bazi analysis based on your birth information
             </p>
           </motion.div>
@@ -525,25 +525,25 @@ const FreeBaziReport = () => {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
-            className="mystic-card p-8 mb-8"
+            className="mystic-card p-4 sm:p-8 mb-6 sm:mb-8"
           >
-            <h2 className="text-2xl font-cinzel font-bold mb-6 text-gold-400">Your Bazi Chart</h2>
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-              <div className="text-center p-4 bg-mystic-800/50 rounded-lg border border-mystic-700/50">
-                <div className="text-sm text-mystic-400 mb-2">Year Pillar</div>
-                <div className="text-2xl font-bold text-white">{report.bazi.year}</div>
+            <h2 className="text-xl sm:text-2xl font-cinzel font-bold mb-4 sm:mb-6 text-gold-400">Your Bazi Chart</h2>
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-3 sm:gap-4">
+              <div className="text-center p-3 sm:p-4 bg-mystic-800/50 rounded-lg border border-mystic-700/50">
+                <div className="text-xs sm:text-sm text-mystic-400 mb-1 sm:mb-2">Year Pillar</div>
+                <div className="text-lg sm:text-2xl font-bold text-white">{report.bazi.year}</div>
               </div>
-              <div className="text-center p-4 bg-mystic-800/50 rounded-lg border border-mystic-700/50">
-                <div className="text-sm text-mystic-400 mb-2">Month Pillar</div>
-                <div className="text-2xl font-bold text-white">{report.bazi.month}</div>
+              <div className="text-center p-3 sm:p-4 bg-mystic-800/50 rounded-lg border border-mystic-700/50">
+                <div className="text-xs sm:text-sm text-mystic-400 mb-1 sm:mb-2">Month Pillar</div>
+                <div className="text-lg sm:text-2xl font-bold text-white">{report.bazi.month}</div>
               </div>
-              <div className="text-center p-4 bg-mystic-800/50 rounded-lg border border-mystic-700/50">
-                <div className="text-sm text-mystic-400 mb-2">Day Pillar</div>
-                <div className="text-2xl font-bold text-white">{report.bazi.day}</div>
+              <div className="text-center p-3 sm:p-4 bg-mystic-800/50 rounded-lg border border-mystic-700/50">
+                <div className="text-xs sm:text-sm text-mystic-400 mb-1 sm:mb-2">Day Pillar</div>
+                <div className="text-lg sm:text-2xl font-bold text-white">{report.bazi.day}</div>
               </div>
-              <div className="text-center p-4 bg-mystic-800/50 rounded-lg border border-mystic-700/50">
-                <div className="text-sm text-mystic-400 mb-2">Hour Pillar</div>
-                <div className="text-2xl font-bold text-white">{report.bazi.hour}</div>
+              <div className="text-center p-3 sm:p-4 bg-mystic-800/50 rounded-lg border border-mystic-700/50">
+                <div className="text-xs sm:text-sm text-mystic-400 mb-1 sm:mb-2">Hour Pillar</div>
+                <div className="text-lg sm:text-2xl font-bold text-white">{report.bazi.hour}</div>
               </div>
             </div>
           </motion.div>
@@ -553,18 +553,18 @@ const FreeBaziReport = () => {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.3 }}
-            className="mystic-card p-8 mb-8"
+            className="mystic-card p-4 sm:p-8 mb-6 sm:mb-8"
           >
-            <h2 className="text-2xl font-cinzel font-bold mb-6 text-gold-400">Five Elements Energy Analysis</h2>
+            <h2 className="text-xl sm:text-2xl font-cinzel font-bold mb-4 sm:mb-6 text-gold-400">Five Elements Energy Analysis</h2>
             
             {/* Dominant Elements */}
-            <div className="mb-6">
-              <h3 className="text-lg font-semibold text-white mb-3">Dominant Elements</h3>
+            <div className="mb-4 sm:mb-6">
+              <h3 className="text-base sm:text-lg font-semibold text-white mb-2 sm:mb-3">Dominant Elements</h3>
               <div className="flex flex-wrap gap-2">
                 {report.fiveElements.dominantElements.map((element, index) => (
                   <span
                     key={index}
-                    className={`px-4 py-2 rounded-full text-sm font-semibold ${
+                    className={`px-3 sm:px-4 py-1 sm:py-2 rounded-full text-xs sm:text-sm font-semibold ${
                       element === 'Metal' ? 'bg-gray-600 text-white' :
                       element === 'Wood' ? 'bg-green-600 text-white' :
                       element === 'Fire' ? 'bg-red-600 text-white' :
@@ -579,12 +579,12 @@ const FreeBaziReport = () => {
             </div>
 
             {/* Element Distribution */}
-            <div className="mb-6">
-              <h3 className="text-lg font-semibold text-white mb-3">Element Distribution</h3>
-              <div className="grid grid-cols-2 md:grid-cols-5 gap-4">
+            <div className="mb-4 sm:mb-6">
+              <h3 className="text-base sm:text-lg font-semibold text-white mb-2 sm:mb-3">Element Distribution</h3>
+              <div className="grid grid-cols-2 md:grid-cols-5 gap-3 sm:gap-4">
                 {Object.entries(report.fiveElements.elements).map(([element, count]) => (
                   <div key={element} className="text-center">
-                    <div className={`w-16 h-16 mx-auto mb-2 rounded-full flex items-center justify-center text-white font-bold text-lg ${
+                    <div className={`w-12 h-12 sm:w-16 sm:h-16 mx-auto mb-1 sm:mb-2 rounded-full flex items-center justify-center text-white font-bold text-sm sm:text-lg ${
                       element === 'Metal' ? 'bg-gray-600' :
                       element === 'Wood' ? 'bg-green-600' :
                       element === 'Fire' ? 'bg-red-600' :
@@ -593,7 +593,7 @@ const FreeBaziReport = () => {
                     }`}>
                       {count}
                     </div>
-                    <div className="text-sm text-mystic-300">{element}</div>
+                    <div className="text-xs sm:text-sm text-mystic-300">{element}</div>
                   </div>
                 ))}
               </div>
@@ -832,15 +832,15 @@ const FreeBaziReport = () => {
           initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
-          className="text-center mb-12"
+          className="text-center mb-8 sm:mb-12"
         >
-          <div className="inline-flex items-center justify-center w-20 h-20 rounded-full bg-gradient-to-r from-gold-500 to-yellow-500 mb-6">
-            <Star className="h-10 w-10 text-white" />
+          <div className="inline-flex items-center justify-center w-16 h-16 sm:w-20 sm:h-20 rounded-full bg-gradient-to-r from-gold-500 to-yellow-500 mb-4 sm:mb-6">
+            <Star className="h-8 w-8 sm:h-10 sm:w-10 text-white" />
           </div>
-          <h1 className="text-3xl md:text-4xl font-cinzel font-bold mb-4 text-white tracking-wide">
+          <h1 className="text-2xl sm:text-3xl md:text-4xl font-cinzel font-bold mb-3 sm:mb-4 text-white tracking-wide">
             Free Bazi Reading Report
           </h1>
-          <p className="text-xl text-mystic-300">
+          <p className="text-lg sm:text-xl text-mystic-300">
             Enter your birth information to get your personalized Bazi analysis instantly
           </p>
         </motion.div>
@@ -850,9 +850,9 @@ const FreeBaziReport = () => {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.2 }}
-          className="mystic-card p-8"
+          className="mystic-card p-6 sm:p-8"
         >
-          <form onSubmit={generateBaziReport} className="space-y-6">
+          <form onSubmit={generateBaziReport} className="space-y-4 sm:space-y-6">
             {/* Full Name */}
             <div>
               <label htmlFor="fullName" className="block text-sm font-medium text-mystic-200 mb-2">
@@ -865,7 +865,7 @@ const FreeBaziReport = () => {
                 required
                 value={formData.fullName}
                 onChange={handleInputChange}
-                className="w-full px-4 py-3 bg-mystic-800/50 border border-mystic-700/50 rounded-lg text-white placeholder-mystic-400 focus:border-gold-500/50 focus:outline-none transition-colors"
+                className="w-full px-3 sm:px-4 py-3 bg-mystic-800/50 border border-mystic-700/50 rounded-lg text-white placeholder-mystic-400 focus:border-gold-500/50 focus:outline-none transition-colors text-base"
                 placeholder="Enter your full name"
               />
             </div>
@@ -881,7 +881,7 @@ const FreeBaziReport = () => {
                 required
                 value={formData.gender}
                 onChange={handleInputChange}
-                className="w-full px-4 py-3 bg-mystic-800/50 border border-mystic-700/50 rounded-lg text-white focus:border-gold-500/50 focus:outline-none transition-colors"
+                className="w-full px-3 sm:px-4 py-3 bg-mystic-800/50 border border-mystic-700/50 rounded-lg text-white focus:border-gold-500/50 focus:outline-none transition-colors text-base"
               >
                 <option value="">Select your gender</option>
                 <option value="Male">Male</option>
@@ -901,26 +901,24 @@ const FreeBaziReport = () => {
                 required
                 value={formData.dateOfBirth}
                 onChange={handleInputChange}
-                className="w-full px-4 py-3 bg-mystic-800/50 border border-mystic-700/50 rounded-lg text-white focus:border-gold-500/50 focus:outline-none transition-colors"
+                className="w-full px-3 sm:px-4 py-3 bg-mystic-800/50 border border-mystic-700/50 rounded-lg text-white focus:border-gold-500/50 focus:outline-none transition-colors text-base"
               />
             </div>
 
             {/* Time of Birth */}
             <div>
               <label htmlFor="timeOfBirth" className="block text-sm font-medium text-mystic-200 mb-2">
-                Time of Birth (Optional)
+                Time of Birth *
               </label>
               <input
                 type="time"
                 id="timeOfBirth"
                 name="timeOfBirth"
+                required
                 value={formData.timeOfBirth}
                 onChange={handleInputChange}
-                className="w-full px-4 py-3 bg-mystic-800/50 border border-mystic-700/50 rounded-lg text-white focus:border-gold-500/50 focus:outline-none transition-colors"
+                className="w-full px-3 sm:px-4 py-3 bg-mystic-800/50 border border-mystic-700/50 rounded-lg text-white focus:border-gold-500/50 focus:outline-none transition-colors text-base"
               />
-              <p className="text-xs text-mystic-400 mt-1">
-                Leave empty if you don't know the exact time
-              </p>
             </div>
 
             {/* Birth Location */}
@@ -935,22 +933,34 @@ const FreeBaziReport = () => {
                 required
                 value={formData.birthLocation}
                 onChange={handleInputChange}
-                className="w-full px-4 py-3 bg-mystic-800/50 border border-mystic-700/50 rounded-lg text-white placeholder-mystic-400 focus:border-gold-500/50 focus:outline-none transition-colors"
-                placeholder="City, Country (e.g., Beijing, China)"
+                className="w-full px-3 sm:px-4 py-3 bg-mystic-800/50 border border-mystic-700/50 rounded-lg text-white placeholder-mystic-400 focus:border-gold-500/50 focus:outline-none transition-colors text-base"
+                placeholder="City, Country (e.g., New York, USA)"
               />
             </div>
 
             {/* Submit Button */}
-            <motion.button
-              type="submit"
-              disabled={isGenerating}
-              whileHover={{ scale: 1.02 }}
-              whileTap={{ scale: 0.98 }}
-              className="w-full bg-gradient-to-r from-gold-500 to-yellow-500 text-black font-poppins font-semibold py-4 px-8 rounded-full hover:from-gold-400 hover:to-yellow-400 transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed tracking-wide"
-            >
-              {isGenerating ? 'Generating Report...' : 'Generate Free Report'}
-            </motion.button>
+            <div className="pt-4">
+              <button
+                type="submit"
+                disabled={isGenerating}
+                className="w-full group inline-flex items-center justify-center space-x-2 sm:space-x-3 bg-gradient-to-r from-gold-500 to-yellow-500 text-black font-bold px-6 sm:px-8 py-3 sm:py-4 rounded-full transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-gold-500/25 disabled:opacity-50 disabled:cursor-not-allowed text-base"
+              >
+                {isGenerating ? (
+                  <>
+                    <div className="animate-spin rounded-full h-4 w-4 sm:h-5 sm:w-5 border-b-2 border-black"></div>
+                    <span>Generating Your Report...</span>
+                  </>
+                ) : (
+                  <>
+                    <Sparkles className="h-4 w-4 sm:h-5 sm:w-5 group-hover:animate-pulse" />
+                    <span>Generate Free Report</span>
+                    <ArrowRight className="h-4 w-4 sm:h-5 sm:w-5 group-hover:translate-x-1 transition-transform" />
+                  </>
+                )}
+              </button>
+            </div>
           </form>
+        </motion.div>
 
           {/* Back Link */}
           <div className="mt-8 text-center">
@@ -962,9 +972,8 @@ const FreeBaziReport = () => {
               <span>Back to Home</span>
             </Link>
           </div>
-        </motion.div>
+        </div>
       </div>
-    </div>
     </>
   )
 }

@@ -1,6 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Cinzel:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Base styles */
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  background-color: #0f172a;
+  color: #cbd5e1;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Mobile-specific optimizations */
+@media (max-width: 768px) {
+  /* Improve touch targets */
+  button, a, input, select, textarea {
+    min-height: 44px;
+    min-width: 44px;
+  }
+  
+  /* Optimize scrolling */
+  .overflow-auto, .overflow-scroll {
+    -webkit-overflow-scrolling: touch;
+  }
+  
+  /* Prevent zoom on input focus */
+  input[type="text"],
+  input[type="email"],
+  input[type="password"],
+  input[type="number"],
+  input[type="tel"],
+  input[type="url"],
+  input[type="search"],
+  input[type="date"],
+  input[type="time"],
+  textarea,
+  select {
+    font-size: 16px;
+  }
+  
+  /* Improve button touch feedback */
+  button:active {
+    transform: scale(0.98);
+  }
+  
+  /* Optimize text rendering */
+  h1, h2, h3, h4, h5, h6 {
+    -webkit-text-size-adjust: 100%;
+  }
+}
+
+/* Custom utility classes */
+@layer components {
+  .mystic-card {
+    @apply bg-mystic-800/30 backdrop-blur-sm border border-mystic-700/50 rounded-xl;
+  }
+  
+  .gradient-text {
+    @apply bg-gradient-to-r from-gold-400 to-yellow-400 bg-clip-text text-transparent;
+  }
+  
+  .mystic-glow {
+    box-shadow: 0 0 20px rgba(234, 179, 8, 0.3);
+  }
+  
+  .mystic-glow:hover {
+    box-shadow: 0 0 30px rgba(234, 179, 8, 0.5);
+  }
+}
 
 /* Custom CSS for 3D flip animations */
 .perspective-1000 {
@@ -54,31 +132,15 @@
   background: #64748b;
 }
 
-/* Animation classes */
+/* Animation keyframes */
 @keyframes float {
-  0%, 100% {
-    transform: translateY(0px);
-  }
-  50% {
-    transform: translateY(-10px);
-  }
-}
-
-.animate-float {
-  animation: float 3s ease-in-out infinite;
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-20px); }
 }
 
 @keyframes glow {
-  0%, 100% {
-    box-shadow: 0 0 20px rgba(251, 191, 36, 0.3);
-  }
-  50% {
-    box-shadow: 0 0 30px rgba(251, 191, 36, 0.6);
-  }
-}
-
-.animate-glow {
-  animation: glow 2s ease-in-out infinite;
+  0% { box-shadow: 0 0 20px rgba(234, 179, 8, 0.5); }
+  100% { box-shadow: 0 0 30px rgba(234, 179, 8, 0.8); }
 }
 
 /* Responsive design improvements */
@@ -144,4 +206,34 @@
   background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.1), transparent);
   background-size: 200px 100%;
   animation: shimmer 2s infinite;
+} 
+
+/* Focus styles for accessibility */
+button:focus,
+input:focus,
+select:focus,
+textarea:focus,
+a:focus {
+  outline: 2px solid #facc15;
+  outline-offset: 2px;
+}
+
+/* Mobile-specific focus styles */
+@media (max-width: 768px) {
+  button:focus,
+  input:focus,
+  select:focus,
+  textarea:focus,
+  a:focus {
+    outline: none;
+  }
+  
+  /* Use background color for focus indication on mobile */
+  button:focus-visible,
+  input:focus-visible,
+  select:focus-visible,
+  textarea:focus-visible,
+  a:focus-visible {
+    background-color: rgba(234, 204, 21, 0.1);
+  }
 } 

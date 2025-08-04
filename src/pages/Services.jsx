@@ -1,7 +1,8 @@
 import { useState } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
-import { Star, Heart, Shield, Calendar, Clock, DollarSign, ArrowRight } from 'lucide-react'
+import { Star, Heart, Shield, Calendar, Clock, DollarSign, ArrowRight, Sparkles } from 'lucide-react'
 import SEO from '../components/SEO'
+import { Link } from 'react-router-dom'
 
 const Services = () => {
   const [activeService, setActiveService] = useState(0)
@@ -95,123 +96,127 @@ const Services = () => {
         }}
       />
       <div className="min-h-screen pt-20 px-4 sm:px-6 lg:px-8">
-      <div className="max-w-7xl mx-auto">
-        {/* Header */}
-        <motion.div 
-          initial={{ opacity: 0, y: 50 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
-          className="text-center mb-16"
-        >
-          <h1 className="text-4xl md:text-6xl font-playfair font-bold mb-6">
-            <span className="gradient-text">My Services</span>
-          </h1>
-          <p className="text-xl text-mystic-300 max-w-3xl mx-auto leading-relaxed">
-            Choose from my carefully crafted services designed to illuminate your path 
-            and guide you towards your highest potential.
-          </p>
-        </motion.div>
-
-        {/* Free Bazi Report Promotion */}
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.2 }}
-          className="relative overflow-hidden mystic-card p-8 mb-12 text-center border-2 border-gold-500/50 bg-gradient-to-r from-gold-500/10 to-yellow-500/10"
-        >
-          <div className="absolute inset-0 bg-gradient-to-r from-gold-500/5 to-yellow-500/5"></div>
-          <div className="relative z-10">
-            <div className="inline-flex items-center justify-center w-20 h-20 rounded-full bg-gradient-to-r from-gold-500 to-yellow-500 mb-6 animate-pulse">
-              <Star className="h-10 w-10 text-white" />
+        <div className="max-w-7xl mx-auto">
+          {/* Header */}
+          <motion.div 
+            initial={{ opacity: 0, y: 50 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+            className="text-center mb-8 sm:mb-12"
+          >
+            <div className="inline-flex items-center justify-center w-16 h-16 sm:w-20 sm:h-20 rounded-full bg-gradient-to-r from-gold-500 to-yellow-500 mb-4 sm:mb-6">
+              <Star className="h-8 w-8 sm:h-10 sm:w-10 text-white" />
             </div>
-            <h2 className="text-3xl font-cinzel font-bold mb-4 text-gold-400">
-              🎁 FREE Bazi Reading Report
-            </h2>
-            <p className="text-mystic-200 mb-6 text-lg max-w-2xl mx-auto">
-              Get your personalized Bazi analysis instantly! Discover your wealth potential, 
-              love compatibility, and health insights - completely FREE.
+            <h1 className="text-2xl sm:text-3xl md:text-4xl font-cinzel font-bold mb-3 sm:mb-4 text-white">
+              Professional Services
+            </h1>
+            <p className="text-lg sm:text-xl text-mystic-300 max-w-3xl mx-auto">
+              Discover your true path through ancient Chinese wisdom and personalized guidance
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-              <a
-                href="/free-bazi-report"
-                className="group inline-flex items-center space-x-3 bg-gradient-to-r from-gold-500 to-yellow-500 text-black font-bold px-8 py-4 rounded-full hover:from-gold-400 hover:to-yellow-400 transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-gold-500/25"
-              >
-                <Star className="h-5 w-5 group-hover:animate-pulse" />
-                <span>Get Free Report Now</span>
-                <ArrowRight className="h-5 w-5 group-hover:translate-x-1 transition-transform" />
-              </a>
-              <div className="text-sm text-mystic-400">
-                ⚡ Instant Results • 📊 Wealth Analysis • 💕 Love Insights • 🏥 Health Guidance
-              </div>
-            </div>
-          </div>
-        </motion.div>
+          </motion.div>
 
-        {/* Service Navigation */}
-        <motion.div 
-          initial={{ opacity: 0, y: 30 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.3 }}
-          className="flex flex-wrap justify-center gap-4 mb-12"
-        >
-          {services.map((service, index) => (
-            <button
-              key={service.id}
-              onClick={() => setActiveService(index)}
-              className={`px-6 py-3 rounded-full font-medium transition-all duration-300 ${
-                activeService === index
-                  ? 'bg-gradient-to-r from-gold-500 to-gold-600 text-black'
-                  : 'bg-mystic-800/50 border border-mystic-700/50 text-mystic-300 hover:border-gold-500/50'
-              }`}
-            >
-              {service.title}
-            </button>
-          ))}
-        </motion.div>
-
-        {/* Service Details */}
-        <div className="grid lg:grid-cols-2 gap-12 items-start">
-          {/* Service Content */}
-          <AnimatePresence mode="wait">
-            <motion.div
-              key={activeService}
-              initial={{ opacity: 0, x: -50 }}
-              animate={{ opacity: 1, x: 0 }}
-              exit={{ opacity: 0, x: 50 }}
-              transition={{ duration: 0.5 }}
-              className="space-y-8"
-            >
-              <div className={`inline-flex items-center justify-center w-20 h-20 rounded-full bg-gradient-to-r ${services[activeService].color} mb-6`}>
-                <div className="text-white">
-                  {services[activeService].icon}
+          {/* Free Bazi Report Promotion */}
+          <motion.div 
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.2 }}
+            className="mb-8 sm:mb-12"
+          >
+            <div className="relative overflow-hidden mystic-card p-6 sm:p-8 border-2 border-gold-500/50 bg-gradient-to-r from-gold-500/10 to-yellow-500/10">
+              <div className="absolute inset-0 bg-gradient-to-r from-gold-500/5 to-yellow-500/5"></div>
+              <div className="relative z-10 text-center">
+                <div className="inline-flex items-center justify-center w-16 h-16 sm:w-20 sm:h-20 rounded-full bg-gradient-to-r from-gold-500 to-yellow-500 mb-4 sm:mb-6 animate-pulse">
+                  <Star className="h-8 w-8 sm:h-10 sm:w-10 text-white" />
+                </div>
+                <h2 className="text-xl sm:text-2xl md:text-3xl font-cinzel font-bold mb-3 sm:mb-4 text-gold-400">
+                  🎁 FREE Bazi Reading Report
+                </h2>
+                <p className="text-base sm:text-lg text-mystic-200 mb-4 sm:mb-6 max-w-2xl mx-auto">
+                  Get your personalized Bazi analysis instantly! Discover your wealth potential, 
+                  love compatibility, and health insights - completely FREE.
+                </p>
+                <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-center">
+                  <Link
+                    to="/free-bazi-report"
+                    className="group inline-flex items-center space-x-2 sm:space-x-3 bg-gradient-to-r from-gold-500 to-yellow-500 text-black font-bold px-6 sm:px-8 py-3 sm:py-4 rounded-full transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-gold-500/25 text-sm sm:text-base w-full sm:w-auto justify-center"
+                  >
+                    <Sparkles className="h-4 w-4 sm:h-5 sm:w-5 group-hover:animate-pulse" />
+                    <span>Get Free Report Now</span>
+                    <ArrowRight className="h-4 w-4 sm:h-5 sm:w-5 group-hover:translate-x-1 transition-transform" />
+                  </Link>
+                  <div className="text-xs sm:text-sm text-mystic-400 text-center">
+                    ⚡ Instant Results • 📊 Wealth Analysis • 💕 Love Insights • 🏥 Health Guidance
+                  </div>
                 </div>
               </div>
+            </div>
+          </motion.div>
 
-                             <div>
-                 <h2 className="text-3xl md:text-4xl font-cinzel font-bold mb-2 text-white tracking-wide">
-                   {services[activeService].title}
-                 </h2>
-                 <p className="text-xl text-gold-400 mb-6 font-poppins font-medium">
-                   {services[activeService].subtitle}
+          {/* Service Navigation */}
+          <motion.div 
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.4 }}
+            className="flex flex-wrap justify-center gap-3 sm:gap-4 mb-8 sm:mb-12"
+          >
+            {services.map((service, index) => (
+              <button
+                key={service.id}
+                onClick={() => setActiveService(index)}
+                className={`px-4 sm:px-6 py-2 sm:py-3 rounded-full font-medium transition-all duration-300 text-sm sm:text-base ${
+                  activeService === index
+                    ? 'bg-gradient-to-r from-gold-500 to-gold-600 text-black'
+                    : 'bg-mystic-800/50 border border-mystic-700/50 text-mystic-300 hover:border-gold-500/50'
+                }`}
+              >
+                {service.title}
+              </button>
+            ))}
+          </motion.div>
+
+          {/* Service Details */}
+          <div className="grid lg:grid-cols-2 gap-8 sm:gap-12 items-start">
+            {/* Service Content */}
+            <AnimatePresence mode="wait">
+              <motion.div
+                key={activeService}
+                initial={{ opacity: 0, x: -50 }}
+                animate={{ opacity: 1, x: 0 }}
+                exit={{ opacity: 0, x: 50 }}
+                transition={{ duration: 0.5 }}
+                className="space-y-6 sm:space-y-8"
+              >
+                <div className={`inline-flex items-center justify-center w-16 h-16 sm:w-20 sm:h-20 rounded-full bg-gradient-to-r ${services[activeService].color} mb-4 sm:mb-6`}>
+                  <div className="text-white">
+                    {services[activeService].icon}
+                  </div>
+                </div>
+
+                <div>
+                  <h2 className="text-2xl sm:text-3xl md:text-4xl font-cinzel font-bold mb-2 text-white tracking-wide">
+                    {services[activeService].title}
+                  </h2>
+                  <p className="text-lg sm:text-xl text-gold-400 mb-4 sm:mb-6 font-poppins font-medium">
+                    {services[activeService].subtitle}
                  </p>
-                 <p className="text-mystic-300 leading-relaxed text-lg mb-8 font-inter">
+                 <p className="text-base sm:text-lg text-mystic-300 leading-relaxed mb-6 sm:mb-8 font-inter">
                    {services[activeService].description}
                  </p>
                </div>
 
-                             {/* Features */}
+               {/* Features */}
                <div>
-                 <h3 className="text-xl font-cinzel font-semibold mb-4 text-white tracking-wide">
+                 <h3 className="text-lg sm:text-xl font-cinzel font-semibold mb-3 sm:mb-4 text-white tracking-wide">
                    What's Included:
                  </h3>
-                 <ul className="space-y-3">
+                 <ul className="space-y-2 sm:space-y-3">
                    {services[activeService].features.map((feature, index) => (
                      <motion.li
                        key={index}
                        initial={{ opacity: 0, x: -20 }}
                        animate={{ opacity: 1, x: 0 }}
                        transition={{ duration: 0.3, delay: index * 0.1 }}
-                       className="flex items-center space-x-3 text-mystic-300 font-inter leading-relaxed"
+                       className="flex items-center space-x-2 sm:space-x-3 text-sm sm:text-base text-mystic-300 font-inter leading-relaxed"
                      >
                        <div className={`w-2 h-2 rounded-full bg-gradient-to-r ${services[activeService].color}`}></div>
                        <span>{feature}</span>
@@ -220,49 +225,48 @@ const Services = () => {
                  </ul>
                </div>
 
-              {/* Service Info */}
-              <div className="grid grid-cols-3 gap-4">
-                <div className="text-center p-4 mystic-card">
-                  <Clock className="h-6 w-6 text-gold-400 mx-auto mb-2" />
-                  <div className="text-sm text-mystic-300">Duration</div>
-                  <div className="font-semibold text-white">{services[activeService].duration}</div>
-                </div>
-                <div className="text-center p-4 mystic-card">
-                  <DollarSign className="h-6 w-6 text-gold-400 mx-auto mb-2" />
-                  <div className="text-sm text-mystic-300">Investment</div>
-                  <div className="font-semibold text-white">{services[activeService].price}</div>
-                </div>
-                <div className="text-center p-4 mystic-card">
-                  <Calendar className="h-6 w-6 text-gold-400 mx-auto mb-2" />
-                  <div className="text-sm text-mystic-300">Format</div>
-                  <div className="font-semibold text-white">{services[activeService].format}</div>
-                </div>
-              </div>
+               {/* Service Info */}
+               <div className="grid grid-cols-3 gap-3 sm:gap-4">
+                 <div className="text-center p-3 sm:p-4 mystic-card">
+                   <Clock className="h-5 w-5 sm:h-6 sm:w-6 text-gold-400 mx-auto mb-1 sm:mb-2" />
+                   <div className="text-xs sm:text-sm text-mystic-300">Duration</div>
+                   <div className="text-sm sm:text-base font-semibold text-white">{services[activeService].duration}</div>
+                 </div>
+                 <div className="text-center p-3 sm:p-4 mystic-card">
+                   <DollarSign className="h-5 w-5 sm:h-6 sm:w-6 text-gold-400 mx-auto mb-1 sm:mb-2" />
+                   <div className="text-xs sm:text-sm text-mystic-300">Investment</div>
+                   <div className="text-sm sm:text-base font-semibold text-white">{services[activeService].price}</div>
+                 </div>
+                 <div className="text-center p-3 sm:p-4 mystic-card">
+                   <Calendar className="h-5 w-5 sm:h-6 sm:w-6 text-gold-400 mx-auto mb-1 sm:mb-2" />
+                   <div className="text-xs sm:text-sm text-mystic-300">Format</div>
+                   <div className="text-sm sm:text-base font-semibold text-white">{services[activeService].format}</div>
+                 </div>
+               </div>
 
-                             {/* CTA Buttons */}
+               {/* CTA Buttons */}
                <div className="space-y-3">
-                                   <div className="text-center mb-4">
-                    <p className="text-sm text-mystic-300 mb-2">
-                      💳 Complete payment and you'll be automatically redirected to the form page
-                    </p>
-                  </div>
-                                   <motion.a
-                                     href={services[activeService].id === 0 ? "https://www.paypal.com/ncp/payment/NVV4LATSZUD6N" :
-                 services[activeService].id === 1 ? "https://www.paypal.com/ncp/payment/R9KYJ4LJNBMLY" :
-                 "https://www.paypal.com/ncp/payment/YFMMVQNT7AAMC"}
-                     target="_blank"
-                     rel="noopener noreferrer"
-                     whileHover={{ scale: 1.02 }}
-                     whileTap={{ scale: 0.98 }}
-                     className="w-full bg-gradient-to-r from-gold-500 to-gold-600 text-black font-poppins font-semibold py-4 px-8 rounded-full flex items-center justify-center space-x-2 hover:from-gold-400 hover:to-gold-500 transition-all duration-300 mystic-glow tracking-wide"
-                   >
-                     <svg className="h-5 w-5" viewBox="0 0 24 24" fill="currentColor">
-                       <path d="M20.067 8.478c.492.315.844.825.844 1.406 0 .58-.352 1.09-.844 1.406-.492.315-1.156.51-1.875.51h-1.406c-.492 0-.844-.195-.844-.51 0-.315.352-.51.844-.51h1.406c.352 0 .703-.195.703-.406 0-.21-.351-.406-.703-.406h-1.406c-.492 0-.844-.195-.844-.51 0-.315.352-.51.844-.51h1.406c.719 0 1.383.195 1.875.51zM12.5 8.478c.492.315.844.825.844 1.406 0 .58-.352 1.09-.844 1.406-.492.315-1.156.51-1.875.51h-1.406c-.492 0-.844-.195-.844-.51 0-.315.352-.51.844-.51h1.406c.352 0 .703-.195.703-.406 0-.21-.351-.406-.703-.406h-1.406c-.492 0-.844-.195-.844-.51 0-.315.352-.51.844-.51h1.406c.719 0 1.383.195 1.875.51zM7.5 8.478c.492.315.844.825.844 1.406 0 .58-.352 1.09-.844 1.406-.492.315-1.156.51-1.875.51H4.219c-.492 0-.844-.195-.844-.51 0-.315.352-.51.844-.51h1.406c.352 0 .703-.195.703-.406 0-.21-.351-.406-.703-.406H4.219c-.492 0-.844-.195-.844-.51 0-.315.352-.51.844-.51h1.406c.719 0 1.383.195 1.875.51z"/>
-                     </svg>
-                     <span>Pay with PayPal</span>
-                     <ArrowRight className="h-5 w-5" />
-                   </motion.a>
-                 
+                 <div className="text-center mb-3 sm:mb-4">
+                   <p className="text-xs sm:text-sm text-mystic-300 mb-2">
+                     💳 Complete payment and you'll be automatically redirected to the form page
+                   </p>
+                 </div>
+                 <motion.a
+                   href={services[activeService].id === 0 ? "https://www.paypal.com/ncp/payment/NVV4LATSZUD6N" :
+                         services[activeService].id === 1 ? "https://www.paypal.com/ncp/payment/R9KYJ4LJNBMLY" :
+                         "https://www.paypal.com/ncp/payment/YFMMVQNT7AAMC"}
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   whileHover={{ scale: 1.02 }}
+                   whileTap={{ scale: 0.98 }}
+                   className="w-full bg-gradient-to-r from-gold-500 to-gold-600 text-black font-poppins font-semibold py-3 sm:py-4 px-6 sm:px-8 rounded-full flex items-center justify-center space-x-2 hover:from-gold-400 hover:to-gold-500 transition-all duration-300 mystic-glow tracking-wide text-sm sm:text-base"
+                 >
+                   <svg className="h-4 w-4 sm:h-5 sm:w-5" viewBox="0 0 24 24" fill="currentColor">
+                     <path d="M20.067 8.478c.492.315.844.825.844 1.406 0 .58-.352 1.09-.844 1.406-.492.315-1.156.51-1.875.51h-1.406c-.492 0-.844-.195-.844-.51 0-.315.352-.51.844-.51h1.406c.352 0 .703-.195.703-.406 0-.21-.351-.406-.703-.406h-1.406c-.492 0-.844-.195-.844-.51 0-.315.352-.51.844-.51h1.406c.719 0 1.383.195 1.875.51zM12.5 8.478c.492.315.844.825.844 1.406 0 .58-.352 1.09-.844 1.406-.492.315-1.156.51-1.875.51h-1.406c-.492 0-.844-.195-.844-.51 0-.315.352-.51.844-.51h1.406c.352 0 .703-.195.703-.406 0-.21-.351-.406-.703-.406h-1.406c-.492 0-.844-.195-.844-.51 0-.315.352-.51.844-.51h1.406c.719 0 1.383.195 1.875.51zM7.5 8.478c.492.315.844.825.844 1.406 0 .58-.352 1.09-.844 1.406-.492.315-1.156.51-1.875.51H4.219c-.492 0-.844-.195-.844-.51 0-.315.352-.51.844-.51h1.406c.352 0 .703-.195.703-.406 0-.21-.351-.406-.703-.406H4.219c-.492 0-.844-.195-.844-.51 0-.315.352-.51.844-.51h1.406c.719 0 1.383.195 1.875.51z"/>
+                   </svg>
+                   <span>Pay with PayPal</span>
+                   <ArrowRight className="h-4 w-4 sm:h-5 sm:w-5" />
+                 </motion.a>
                </div>
             </motion.div>
           </AnimatePresence>
@@ -272,13 +276,13 @@ const Services = () => {
             initial={{ opacity: 0, x: 50 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8, delay: 0.4 }}
-            className="relative h-96 lg:h-[600px] rounded-2xl overflow-hidden border border-mystic-700/50"
+            className="relative h-64 sm:h-80 md:h-96 lg:h-[600px] rounded-xl sm:rounded-2xl overflow-hidden border border-mystic-700/50"
           >
             {/* Background with subtle gradient */}
             <div className={`absolute inset-0 bg-gradient-to-br ${services[activeService].bgColor} opacity-30`}></div>
             
             {/* Photo Container */}
-            <div className="relative h-full flex items-center justify-center p-8">
+            <div className="relative h-full flex items-center justify-center p-4 sm:p-8">
               <div className="relative w-full h-full max-w-md">
                 {/* Main Photo */}
                 <img
@@ -286,7 +290,7 @@ const Services = () => {
                         services[activeService].id === 1 ? 'love-compatibility' : 
                         'custom-talisman'}.jpg`}
                   alt={`${services[activeService].title} - Professional Service`}
-                  className="w-full h-full object-cover rounded-xl shadow-2xl border-2 border-gold-500/30"
+                  className="w-full h-full object-cover rounded-lg sm:rounded-xl shadow-2xl border-2 border-gold-500/30"
                   onError={(e) => {
                     // Fallback to placeholder if image doesn't exist
                     e.target.style.display = 'none';

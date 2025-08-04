@@ -157,7 +157,7 @@ const Home = () => {
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.4 }}
-              className="text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-playfair font-bold mb-6 leading-tight"
+              className="text-2xl sm:text-3xl md:text-4xl lg:text-6xl xl:text-7xl font-playfair font-bold mb-4 sm:mb-6 leading-tight px-2"
             >
               <motion.span 
                 className="text-red-400 block mb-2"
@@ -181,7 +181,7 @@ const Home = () => {
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.6 }}
-              className="text-xl md:text-2xl text-mystic-300 mb-8 max-w-4xl mx-auto leading-relaxed space-y-2"
+              className="text-lg sm:text-xl md:text-2xl text-mystic-300 mb-6 sm:mb-8 max-w-4xl mx-auto leading-relaxed space-y-2 px-4"
             >
               <motion.p
                 initial={{ opacity: 0, x: -20 }}
@@ -221,20 +221,20 @@ const Home = () => {
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.8 }}
-              className="grid md:grid-cols-3 gap-6 max-w-4xl mx-auto mb-12"
+              className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 max-w-4xl mx-auto mb-8 sm:mb-12 px-4"
             >
               {[
-                { icon: <Users className="h-8 w-8" />, text: "Can't find your career path?" },
-                { icon: <Heart className="h-8 w-8" />, text: "Repetitive heartbreaks draining your energy?" },
-                { icon: <Zap className="h-8 w-8" />, text: "Stuck and unsure how to move forward?" }
+                { icon: <Users className="h-6 w-6 sm:h-8 sm:w-8" />, text: "Can't find your career path?" },
+                { icon: <Heart className="h-6 w-6 sm:h-8 sm:w-8" />, text: "Repetitive heartbreaks draining your energy?" },
+                { icon: <Zap className="h-6 w-6 sm:h-8 sm:w-8" />, text: "Stuck and unsure how to move forward?" }
               ].map((item, index) => (
-                <div key={index} className="mystic-card p-6 text-center group hover:transform hover:scale-105 transition-all duration-300 border border-red-500/20 hover:border-red-500/40">
-                  <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-red-900/50 mb-4 group-hover:bg-red-800/60 transition-colors duration-300">
+                <div key={index} className="mystic-card p-4 sm:p-6 text-center group hover:transform hover:scale-105 transition-all duration-300 border border-red-500/20 hover:border-red-500/40">
+                  <div className="inline-flex items-center justify-center w-12 h-12 sm:w-16 sm:h-16 rounded-full bg-red-900/50 mb-3 sm:mb-4 group-hover:bg-red-800/60 transition-colors duration-300">
                     <div className="text-red-400 group-hover:text-red-300 transition-colors duration-300">
                       {item.icon}
                     </div>
                   </div>
-                  <p className="text-mystic-200 font-medium group-hover:text-white transition-colors duration-300">{item.text}</p>
+                  <p className="text-sm sm:text-base text-mystic-200 font-medium group-hover:text-white transition-colors duration-300">{item.text}</p>
                 </div>
               ))}
             </motion.div>
@@ -244,15 +244,15 @@ const Home = () => {
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 1 }}
-              className="mt-12"
+              className="mt-8 sm:mt-12 px-4"
             >
               <Link
                 to="/services"
-                className="group inline-flex items-center space-x-3 bg-gradient-to-r from-red-600 to-red-700 hover:from-red-500 hover:to-red-600 text-white font-bold px-8 py-4 rounded-full transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-red-500/25"
+                className="group inline-flex items-center space-x-2 sm:space-x-3 bg-gradient-to-r from-red-600 to-red-700 hover:from-red-500 hover:to-red-600 text-white font-bold px-6 sm:px-8 py-3 sm:py-4 rounded-full transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-red-500/25 text-sm sm:text-base w-full sm:w-auto justify-center"
               >
-                <Sparkles className="h-5 w-5 group-hover:animate-pulse" />
+                <Sparkles className="h-4 w-4 sm:h-5 sm:w-5 group-hover:animate-pulse" />
                 <span>Discover Your True Path Now</span>
-                <ArrowRight className="h-5 w-5 group-hover:translate-x-1 transition-transform" />
+                <ArrowRight className="h-4 w-4 sm:h-5 sm:w-5 group-hover:translate-x-1 transition-transform" />
               </Link>
             </motion.div>
 
@@ -261,31 +261,31 @@ const Home = () => {
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 1.2 }}
-              className="mt-16"
+              className="mt-12 sm:mt-16 px-4"
             >
-              <div className="relative overflow-hidden mystic-card p-8 border-2 border-gold-500/50 bg-gradient-to-r from-gold-500/10 to-yellow-500/10">
+              <div className="relative overflow-hidden mystic-card p-6 sm:p-8 border-2 border-gold-500/50 bg-gradient-to-r from-gold-500/10 to-yellow-500/10">
                 <div className="absolute inset-0 bg-gradient-to-r from-gold-500/5 to-yellow-500/5"></div>
                 <div className="relative z-10 text-center">
-                  <div className="inline-flex items-center justify-center w-20 h-20 rounded-full bg-gradient-to-r from-gold-500 to-yellow-500 mb-6 animate-pulse">
-                    <Star className="h-10 w-10 text-white" />
+                  <div className="inline-flex items-center justify-center w-16 h-16 sm:w-20 sm:h-20 rounded-full bg-gradient-to-r from-gold-500 to-yellow-500 mb-4 sm:mb-6 animate-pulse">
+                    <Star className="h-8 w-8 sm:h-10 sm:w-10 text-white" />
                   </div>
-                  <h2 className="text-2xl md:text-3xl font-cinzel font-bold mb-4 text-gold-400">
+                  <h2 className="text-xl sm:text-2xl md:text-3xl font-cinzel font-bold mb-3 sm:mb-4 text-gold-400">
                     🎁 FREE Bazi Reading Report
                   </h2>
-                  <p className="text-lg text-mystic-200 mb-6 max-w-2xl mx-auto">
+                  <p className="text-base sm:text-lg text-mystic-200 mb-4 sm:mb-6 max-w-2xl mx-auto">
                     Get your personalized Bazi analysis instantly! Discover your wealth potential, 
                     love compatibility, and health insights - completely FREE.
                   </p>
-                  <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+                  <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-center">
                     <Link
                       to="/free-bazi-report"
-                      className="group inline-flex items-center space-x-3 bg-gradient-to-r from-gold-500 to-yellow-500 text-black font-bold px-8 py-4 rounded-full transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-gold-500/25"
+                      className="group inline-flex items-center space-x-2 sm:space-x-3 bg-gradient-to-r from-gold-500 to-yellow-500 text-black font-bold px-6 sm:px-8 py-3 sm:py-4 rounded-full transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-gold-500/25 text-sm sm:text-base w-full sm:w-auto justify-center"
                     >
-                      <Sparkles className="h-5 w-5 group-hover:animate-pulse" />
+                      <Sparkles className="h-4 w-4 sm:h-5 sm:w-5 group-hover:animate-pulse" />
                       <span>Get Free Report Now</span>
-                      <ArrowRight className="h-5 w-5 group-hover:translate-x-1 transition-transform" />
+                      <ArrowRight className="h-4 w-4 sm:h-5 sm:w-5 group-hover:translate-x-1 transition-transform" />
                     </Link>
-                    <div className="text-sm text-mystic-400">
+                    <div className="text-xs sm:text-sm text-mystic-400 text-center">
                       ⚡ Instant Results • 📊 Wealth Analysis • 💕 Love Insights • 🏥 Health Guidance
                     </div>
                   </div>
