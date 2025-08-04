@@ -35,6 +35,26 @@
     <!-- Preload critical resources -->
     <link rel="preload" href="/favicon.svg" as="image" type="image/svg+xml">
     
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-XXXXXXXXXX', {
+        'page_title': document.title,
+        'page_location': window.location.href,
+        'allow_google_signals': false,
+        'allow_ad_personalization_signals': false,
+        'anonymize_ip': true
+      });
+      
+      // 开发环境调试
+      if (window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1') {
+        console.log('🔍 Google Analytics 已加载（开发模式）');
+      }
+    </script>
+    
     <!-- Structured Data for SEO -->
     <script type="application/ld+json">
     {
