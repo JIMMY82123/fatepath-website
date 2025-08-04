@@ -698,6 +698,183 @@ const BlogPost = () => {
        slug: "seasons-fate-cycles",
        author: "玄印 (Xuan Yin)",
        tags: ["Destiny Cycles", "BaZi", "Life Phases", "Resilience", "Chinese Philosophy", "Personal Growth", "Timing"]
+     },
+     {
+       id: 9,
+       title: "BaZi vs. MBTI: East Meets West in Personality and Destiny",
+       excerpt: "Explore how ancient Chinese BaZi and Western MBTI personality systems complement each other. Discover the differences between destiny mapping and personality typing.",
+       content: `
+         <div class="mb-8">
+           <p class="text-lg text-mystic-300 leading-relaxed mb-4">
+             When it comes to answering the age-old question "Who am I?", both the East and West have developed rich frameworks for self-understanding. In the East, there's BaZi (Four Pillars of Destiny), and in the West, the MBTI (Myers-Briggs Type Indicator). Though these systems come from vastly different cultural and philosophical backgrounds, both aim to help us better understand ourselves and align with our path in life. Here's a lighthearted comparison of these two systems and how they can complement each other.
+           </p>
+         </div>
+
+         <h2 class="text-2xl font-cinzel font-bold text-white mb-4 mt-8">1. What is MBTI?</h2>
+         <p class="mb-6 text-mystic-300 leading-relaxed">
+           MBTI (Myers-Briggs Type Indicator) is a personality typology based on Carl Jung's theory of psychological types. It categorizes people along four dichotomies:
+         </p>
+
+         <div class="bg-gradient-to-r from-mystic-800 to-mystic-900 p-6 rounded-xl border border-gold-500/30 mb-8">
+           <ul class="space-y-2 text-mystic-300">
+             <li class="flex items-start space-x-3">
+               <div class="w-2 h-2 bg-gold-400 rounded-full mt-2 flex-shrink-0"></div>
+               <span><strong>Where you get your energy</strong> (Extraversion vs. Introversion)</span>
+             </li>
+             <li class="flex items-start space-x-3">
+               <div class="w-2 h-2 bg-gold-400 rounded-full mt-2 flex-shrink-0"></div>
+               <span><strong>How you take in information</strong> (Sensing vs. Intuition)</span>
+             </li>
+             <li class="flex items-start space-x-3">
+               <div class="w-2 h-2 bg-gold-400 rounded-full mt-2 flex-shrink-0"></div>
+               <span><strong>How you make decisions</strong> (Thinking vs. Feeling)</span>
+             </li>
+             <li class="flex items-start space-x-3">
+               <div class="w-2 h-2 bg-gold-400 rounded-full mt-2 flex-shrink-0"></div>
+               <span><strong>How you deal with the outside world</strong> (Judging vs. Perceiving)</span>
+             </li>
+           </ul>
+         </div>
+
+         <p class="mb-6 text-mystic-300 leading-relaxed">
+           Your combination of preferences results in one of 16 personality types, such as INFP, ESTJ, ENTP, etc. MBTI reflects your cognitive style and behavioral tendencies—it's like a mirror showing who you are right now.
+         </p>
+
+         <h2 class="text-2xl font-cinzel font-bold text-white mb-4 mt-8">2. What is BaZi?</h2>
+         <p class="mb-6 text-mystic-300 leading-relaxed">
+           BaZi, or the Four Pillars of Destiny, is a classical Chinese metaphysical system that interprets your destiny based on the date and time of your birth. Each person's birth data is converted into four pairs of characters (Heavenly Stems and Earthly Branches), reflecting the interplay of the Five Elements (Wood, Fire, Earth, Metal, Water).
+         </p>
+
+         <p class="mb-6 text-mystic-300 leading-relaxed">
+           BaZi is based on objective birth information and reveals your life structure, elemental balance, strengths, weaknesses, and most importantly—the timing of your fortune cycles. It's often used for career planning, relationship insights, and forecasting periods of growth or challenge. Think of it as a life map: showing the terrain ahead.
+         </p>
+
+         <h2 class="text-2xl font-cinzel font-bold text-white mb-4 mt-8">3. Key Differences</h2>
+         <div class="overflow-x-auto mb-8">
+           <table class="w-full border-collapse">
+             <thead>
+               <tr class="border-b border-mystic-700">
+                 <th class="text-left p-4 text-gold-400 font-semibold">Aspect</th>
+                 <th class="text-left p-4 text-gold-400 font-semibold">MBTI</th>
+                 <th class="text-left p-4 text-gold-400 font-semibold">BaZi</th>
+               </tr>
+             </thead>
+             <tbody>
+               <tr class="border-b border-mystic-700/50">
+                 <td class="p-4 text-mystic-300 font-medium">Origin</td>
+                 <td class="p-4 text-mystic-300">Western psychology (Jung)</td>
+                 <td class="p-4 text-mystic-300">Ancient Chinese metaphysics</td>
+               </tr>
+               <tr class="border-b border-mystic-700/50">
+                 <td class="p-4 text-mystic-300 font-medium">Input</td>
+                 <td class="p-4 text-mystic-300">Self-assessment questionnaire</td>
+                 <td class="p-4 text-mystic-300">Exact birth date and time</td>
+               </tr>
+               <tr class="border-b border-mystic-700/50">
+                 <td class="p-4 text-mystic-300 font-medium">Flexibility</td>
+                 <td class="p-4 text-mystic-300">High – can change over time</td>
+                 <td class="p-4 text-mystic-300">Fixed – based on birth moment</td>
+               </tr>
+               <tr class="border-b border-mystic-700/50">
+                 <td class="p-4 text-mystic-300 font-medium">Focus</td>
+                 <td class="p-4 text-mystic-300">Personality and preferences</td>
+                 <td class="p-4 text-mystic-300">Life patterns and timing</td>
+               </tr>
+               <tr class="border-b border-mystic-700/50">
+                 <td class="p-4 text-mystic-300 font-medium">Application</td>
+                 <td class="p-4 text-mystic-300">Career fit, teamwork, self-awareness</td>
+                 <td class="p-4 text-mystic-300">Timing of actions, fate alignment</td>
+               </tr>
+             </tbody>
+           </table>
+         </div>
+
+         <h2 class="text-2xl font-cinzel font-bold text-white mb-4 mt-8">4. Can They Work Together?</h2>
+         <p class="mb-6 text-mystic-300 leading-relaxed">
+           Absolutely. BaZi gives you the big picture—the life cycles and timing. MBTI tells you how you tend to operate in the present. For instance, if your BaZi indicates a wealth period is coming, and you're an ENTP, you might seize that opportunity through persuasive communication and risk-taking. If you're an ISFJ, you might accumulate wealth steadily through consistency and long-term dedication.
+         </p>
+
+         <div class="grid md:grid-cols-2 gap-6 mb-8">
+           <div class="mystic-card p-6 border-l-4 border-blue-500/50">
+             <h3 class="text-lg font-cinzel font-semibold text-blue-400 mb-3">MBTI: Your Operating System</h3>
+             <p class="text-mystic-300 text-sm">
+               How you naturally think, feel, and interact with the world. Your cognitive preferences and behavioral patterns.
+             </p>
+           </div>
+           <div class="mystic-card p-6 border-l-4 border-gold-500/50">
+             <h3 class="text-lg font-cinzel font-semibold text-gold-400 mb-3">BaZi: Your Life Map</h3>
+             <p class="text-mystic-300 text-sm">
+               The broader landscape of your destiny, timing of opportunities, and life cycles. Your elemental balance and fortune patterns.
+             </p>
+           </div>
+         </div>
+
+         <h2 class="text-2xl font-cinzel font-bold text-white mb-4 mt-8">5. Practical Integration Examples</h2>
+         <p class="mb-6 text-mystic-300 leading-relaxed">
+           Here's how combining both systems can provide deeper insights:
+         </p>
+
+         <div class="space-y-4 mb-8">
+           <div class="mystic-card p-6 border-l-4 border-green-500/50">
+             <h3 class="text-lg font-cinzel font-semibold text-green-400 mb-3">Career Planning</h3>
+             <p class="text-mystic-300 text-sm">
+               <strong>BaZi:</strong> "Your wealth luck peaks in 2025-2027"<br>
+               <strong>MBTI:</strong> "You're an INTJ who excels at strategic planning"<br>
+               <strong>Combined insight:</strong> Use your strategic INTJ nature to prepare detailed plans during 2024, then execute when your BaZi wealth cycle begins.
+             </p>
+           </div>
+           <div class="mystic-card p-6 border-l-4 border-purple-500/50">
+             <h3 class="text-lg font-cinzel font-semibold text-purple-400 mb-3">Relationship Dynamics</h3>
+             <p class="text-mystic-300 text-sm">
+               <strong>BaZi:</strong> "You have strong Fire element, seek Water partners"<br>
+               <strong>MBTI:</strong> "You're an ENFP who values emotional connection"<br>
+               <strong>Combined insight:</strong> Your ENFP warmth can help you connect with Water element partners (who tend to be more reserved), creating balance.
+             </p>
+           </div>
+           <div class="mystic-card p-6 border-l-4 border-orange-500/50">
+             <h3 class="text-lg font-cinzel font-semibold text-orange-400 mb-3">Decision Making</h3>
+             <p class="text-mystic-300 text-sm">
+               <strong>BaZi:</strong> "You're in a Metal-heavy period, focus on precision"<br>
+               <strong>MBTI:</strong> "You're an ISTP who trusts concrete data"<br>
+               <strong>Combined insight:</strong> Your natural ISTP analytical skills align perfectly with the Metal period's need for precision and detail.
+             </p>
+           </div>
+         </div>
+
+         <h2 class="text-2xl font-cinzel font-bold text-white mb-4 mt-8">6. Final Thoughts</h2>
+         <p class="mb-6 text-mystic-300 leading-relaxed">
+           BaZi is your map. MBTI is your compass. One shows the broader landscape of your life path, while the other helps you navigate day-to-day decisions with self-awareness. When used together, they can offer powerful insights—honoring both fate and free will.
+         </p>
+
+         <div class="mystic-card p-6 border-l-4 border-gold-500/50 mb-8">
+           <h3 class="text-lg font-cinzel font-semibold text-gold-400 mb-3">Key Insight:</h3>
+           <p class="text-mystic-300 text-sm">
+             Understanding both systems allows you to work with your natural personality (MBTI) while aligning with your destiny's timing (BaZi). This creates a powerful synergy for personal growth and life success.
+           </p>
+         </div>
+
+         <p class="mb-6 text-mystic-300 leading-relaxed">
+           Why not explore both? Learn your destiny, know your nature, and walk your path with clarity and confidence.
+         </p>
+
+         <div class="bg-gradient-to-r from-mystic-800 to-mystic-900 p-6 rounded-xl border border-gold-500/30 mb-8">
+           <h3 class="text-lg font-cinzel font-semibold text-gold-400 mb-4">Ready to Discover Your Complete Profile?</h3>
+           <p class="text-mystic-300 mb-4">
+             Would you like a comprehensive analysis that combines both BaZi destiny mapping and personality insights?
+           </p>
+           <p class="text-mystic-300 text-sm">
+             A detailed reading can reveal how your personality type interacts with your destiny cycles, providing unique guidance for career, relationships, and personal development.
+           </p>
+         </div>
+       `,
+       category: "bazi-basics",
+       categoryLabel: "Bazi Basics",
+       date: "2025-08-04",
+       readTime: "11 min read",
+       image: "/images/blog/bazi-mbti-comparison.jpg",
+       slug: "bazi-vs-mbti-personality-destiny",
+       author: "玄印 (Xuan Yin)",
+       tags: ["BaZi", "MBTI", "Personality", "Destiny", "Chinese Astrology", "Psychology", "Self-Discovery", "Career Guidance"]
      }
      // 您可以在这里添加更多文章
   ]

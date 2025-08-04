@@ -96,6 +96,17 @@ const Blog = () => {
           readTime: "7 min read",
           image: "/images/blog/seasons-fate-cover.jpg",
           slug: "seasons-fate-cycles"
+        },
+        {
+          id: 9,
+          title: "BaZi vs. MBTI: East Meets West in Personality and Destiny",
+          excerpt: "Explore how ancient Chinese BaZi and Western MBTI personality systems complement each other. Discover the differences between destiny mapping and personality typing.",
+          category: "bazi-basics",
+          categoryLabel: "Bazi Basics",
+          date: "2025-08-04",
+          readTime: "11 min read",
+          image: "/images/blog/bazi-mbti-comparison.jpg",
+          slug: "bazi-vs-mbti-personality-destiny"
         }
   ]
 
