@@ -2,6 +2,7 @@ import { useState } from 'react'
 import { motion } from 'framer-motion'
 import { Star, Heart, Shield, Star as StarIcon, Filter, Search } from 'lucide-react'
 import SEO from '../components/SEO'
+import { getClientAvatar } from '../utils/avatarGenerator'
 
 const Testimonials = () => {
   const [searchTerm, setSearchTerm] = useState('')
@@ -48,7 +49,6 @@ const Testimonials = () => {
       location: "London, UK",
       rating: 5,
       service: "Career Guidance Reading",
-      avatar: "/images/testimonials/david-thompson.jpg",
       content: "I was at a crossroads in my career, unsure whether to stay in finance or pursue my passion for technology. The BaZi analysis revealed that my chart strongly favors innovation and creative problem-solving, which explained why I felt unfulfilled in traditional banking. The timing analysis showed that the next two years would be optimal for a career transition. I took the leap and started a tech consulting business. Six months later, I'm not only more financially successful but genuinely happy. The analysis was incredibly accurate about my natural talents and the timing couldn't have been more perfect.",
       icon: <Star className="h-6 w-6" />,
       date: "2024-12-05"
@@ -59,7 +59,6 @@ const Testimonials = () => {
       location: "Toronto, Canada",
       rating: 5,
       service: "Love Compatibility Reading",
-      avatar: "/images/testimonials/lisa-wang.jpg",
       content: "My husband and I were going through a rough patch, and I was desperate to understand what was happening. The compatibility reading revealed that our charts actually complement each other perfectly, but we were in a challenging period that would pass. It explained our communication patterns and gave us specific strategies to work through our differences. We followed the advice, and within weeks, our relationship improved dramatically. We're now closer than ever. The reading didn't just save our marriage—it made it stronger than before.",
       icon: <Heart className="h-6 w-6" />,
       date: "2024-12-03"
@@ -70,7 +69,6 @@ const Testimonials = () => {
       location: "Sydney, Australia",
       rating: 5,
       service: "Custom Talisman",
-      avatar: "/images/testimonials/james-wilson.jpg",
       content: "I was skeptical about talismans, but I was going through a particularly difficult time with anxiety and insomnia. The personalized talisman was crafted based on my specific birth chart imbalances. Within days of wearing it, I noticed a significant reduction in my anxiety levels. My sleep quality improved dramatically, and I felt more grounded throughout the day. The most surprising part was how it seemed to enhance my decision-making abilities. I'm now a firm believer in the power of these ancient practices.",
       icon: <Shield className="h-6 w-6" />,
       date: "2024-11-28"
@@ -81,7 +79,6 @@ const Testimonials = () => {
       location: "Madrid, Spain",
       rating: 5,
       service: "Full BaZi Reading",
-      avatar: "/images/testimonials/maria-garcia.jpg",
       content: "I've always felt like I was meant for something bigger, but I couldn't figure out what. The BaZi reading revealed that I have strong leadership qualities and entrepreneurial energy that I wasn't utilizing. It also showed that I was in a period of transformation that would last for three years. Armed with this knowledge, I started a small business that has grown beyond my expectations. The reading gave me the confidence to trust my instincts and the timing to know when to act. It's been a game-changer for my life.",
       icon: <Star className="h-6 w-6" />,
       date: "2024-11-25"
@@ -92,7 +89,6 @@ const Testimonials = () => {
       location: "Seoul, South Korea",
       rating: 5,
       service: "Relationship Reading",
-      avatar: "/images/testimonials/alex-kim.jpg",
       content: "I was in a toxic relationship but couldn't see it clearly. The relationship reading opened my eyes to the patterns I was repeating from my childhood. It showed me exactly when I would have the strength to leave and what to look for in a healthy partner. Three months after the reading, I ended the relationship and focused on healing. Six months later, I met someone who matches my chart perfectly. The difference is night and day. I finally understand what a healthy relationship feels like.",
       icon: <Heart className="h-6 w-6" />,
       date: "2024-11-20"
@@ -103,7 +99,6 @@ const Testimonials = () => {
       location: "Melbourne, Australia",
       rating: 5,
       service: "Career Guidance Reading",
-      avatar: "/images/testimonials/sophie-anderson.jpg",
       content: "I was stuck in a dead-end job and felt completely lost about my career direction. The BaZi analysis revealed that I have strong creative and healing energies that were being suppressed. It suggested that healthcare or wellness would be ideal for me. I decided to study nutrition and now run a successful wellness coaching business. The reading not only identified my true calling but also gave me the confidence to pursue it. I'm now helping others find their path too.",
       icon: <Star className="h-6 w-6" />,
       date: "2024-11-18"
@@ -114,7 +109,6 @@ const Testimonials = () => {
       location: "Chicago, USA",
       rating: 5,
       service: "Custom Talisman",
-      avatar: "/images/testimonials/robert-martinez.jpg",
       content: "I was dealing with chronic stress and health issues that doctors couldn't explain. The talisman was designed to balance the fire element in my chart that was causing the imbalance. Within weeks, my stress levels decreased significantly, and my health improved. I also noticed that I was more focused and productive at work. The talisman has become an essential part of my daily routine. It's amazing how something so simple can have such a profound effect.",
       icon: <Shield className="h-6 w-6" />,
       date: "2024-11-15"
@@ -125,7 +119,6 @@ const Testimonials = () => {
       location: "Tokyo, Japan",
       rating: 5,
       service: "Full BaZi Reading",
-      avatar: "/images/testimonials/yuki-tanaka.jpg",
       content: "I was struggling with family relationships and couldn't understand why there was so much conflict. The BaZi reading revealed that my chart has strong independent energy that clashes with traditional family expectations. It helped me understand that I'm not wrong for wanting to live differently. The reading also showed me how to communicate better with my family while staying true to myself. Our relationships have improved significantly since then.",
       icon: <Star className="h-6 w-6" />,
       date: "2024-11-12"
@@ -136,7 +129,6 @@ const Testimonials = () => {
       location: "Vancouver, Canada",
       rating: 5,
       service: "Love Compatibility Reading",
-      avatar: "/images/testimonials/amanda-foster.jpg",
       content: "I was dating someone for a year and couldn't decide if we should get married. The compatibility reading revealed that while we have good chemistry, our long-term compatibility is challenging. It showed specific areas where we would struggle and suggested ways to work through them. We decided to get pre-marital counseling based on the insights. The reading gave us the tools to build a stronger foundation. We're now happily married and better equipped to handle challenges together.",
       icon: <Heart className="h-6 w-6" />,
       date: "2024-11-10"
@@ -307,9 +299,18 @@ const Testimonials = () => {
               >
                 {/* Header */}
                 <div className="flex items-start space-x-4 mb-4">
-                  <div className="w-12 h-12 rounded-full bg-gradient-to-r from-gold-500 to-orange-500 flex items-center justify-center flex-shrink-0">
-                    <div className="text-white">
-                      {testimonial.icon}
+                  <div className="w-12 h-12 rounded-full bg-gradient-to-r from-gold-500 to-orange-500 flex items-center justify-center flex-shrink-0 overflow-hidden">
+                    <img
+                      src={getClientAvatar(testimonial)}
+                      alt={testimonial.name}
+                      className="w-full h-full rounded-full object-cover"
+                      onError={(e) => {
+                        e.target.style.display = 'none';
+                        e.target.nextSibling.style.display = 'flex';
+                      }}
+                    />
+                    <div className="text-white font-semibold text-lg hidden">
+                      {testimonial.name.charAt(0)}
                     </div>
                   </div>
                   <div className="flex-1">
