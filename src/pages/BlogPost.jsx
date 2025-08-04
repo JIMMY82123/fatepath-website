@@ -1033,7 +1033,26 @@ const BlogPost = () => {
           <div className="flex items-center justify-between">
             <div className="flex items-center space-x-4">
               <span className="text-mystic-400">Share this article:</span>
-              <button className="p-2 bg-mystic-800/50 border border-mystic-700/50 rounded-lg text-mystic-300 hover:text-gold-400 hover:border-gold-500/50 transition-colors">
+              <button 
+                onClick={() => {
+                  const shareText = `📖 ${post.title}\n\n${post.excerpt}\n\nRead more at FatePath.me`;
+                  const shareUrl = window.location.href;
+                  
+                  if (navigator.share) {
+                    navigator.share({
+                      title: post.title,
+                      text: shareText,
+                      url: shareUrl
+                    });
+                  } else {
+                    // Fallback: copy to clipboard
+                    navigator.clipboard.writeText(`${shareText}\n\n${shareUrl}`).then(() => {
+                      alert('Article link copied to clipboard!');
+                    });
+                  }
+                }}
+                className="p-2 bg-mystic-800/50 border border-mystic-700/50 rounded-lg text-mystic-300 hover:text-gold-400 hover:border-gold-500/50 transition-colors"
+              >
                 <Share2 className="h-5 w-5" />
               </button>
             </div>

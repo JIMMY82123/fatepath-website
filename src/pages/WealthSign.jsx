@@ -367,7 +367,26 @@ const WealthSign = () => {
                  <span>Get Detailed Analysis</span>
                </button>
 
-               <button className="flex items-center space-x-2 px-6 py-3 bg-gradient-to-r from-blue-500 to-blue-600 text-white font-semibold rounded-lg hover:from-blue-400 hover:to-blue-500 transition-all duration-300 shadow-lg">
+               <button 
+                 onClick={() => {
+                   const shareText = `🔮 Sacred Oracle Reading: "${currentSign.title}" - ${currentSign.shortInterpretation}\n\nDiscover your path at FatePath.me`;
+                   const shareUrl = window.location.href;
+                   
+                   if (navigator.share) {
+                     navigator.share({
+                       title: 'Sacred Oracle Reading',
+                       text: shareText,
+                       url: shareUrl
+                     });
+                   } else {
+                     // Fallback: copy to clipboard
+                     navigator.clipboard.writeText(`${shareText}\n\n${shareUrl}`).then(() => {
+                       alert('Reading copied to clipboard!');
+                     });
+                   }
+                 }}
+                 className="flex items-center space-x-2 px-6 py-3 bg-gradient-to-r from-blue-500 to-blue-600 text-white font-semibold rounded-lg hover:from-blue-400 hover:to-blue-500 transition-all duration-300 shadow-lg"
+               >
                  <Share2 className="h-5 w-5" />
                  <span>Share Result</span>
                </button>
