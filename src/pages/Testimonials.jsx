@@ -10,12 +10,6 @@ const Testimonials = () => {
   const [selectedRating, setSelectedRating] = useState('all')
   const [testimonialsWithAvatars, setTestimonialsWithAvatars] = useState([])
 
-  // 生成AI头像
-  useEffect(() => {
-    const testimonialsWithAI = generateAvatarUrls(testimonials)
-    setTestimonialsWithAvatars(testimonialsWithAI)
-  }, [])
-
   const testimonials = [
     {
       id: 1,
@@ -141,6 +135,12 @@ const Testimonials = () => {
       date: "2024-11-10"
     }
   ]
+
+  // 生成AI头像
+  useEffect(() => {
+    const testimonialsWithAI = generateAvatarUrls(testimonials)
+    setTestimonialsWithAvatars(testimonialsWithAI)
+  }, [])
 
   const services = [
     { value: 'all', label: 'All Services' },
