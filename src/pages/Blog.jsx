@@ -157,7 +157,6 @@ const Blog = () => {
           categoryLabel: "Wealth & Fortune",
               date: "2025-08-04",
     readTime: "18 min read",
-          image: "/images/blog/bazi-wealth-blueprint.jpg",
           slug: "best-bazi-wealth-chinese-astrology-blueprint"
         },
         {
