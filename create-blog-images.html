@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>博客图片生成器</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background: #1a1a1a;
+            color: #fff;
+        }
+        .container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+        .image-card {
+            background: #2a2a2a;
+            border-radius: 10px;
+            padding: 20px;
+            border: 1px solid #444;
+        }
+        .image-preview {
+            width: 100%;
+            height: 200px;
+            background: linear-gradient(135deg, #D4AF37, #8B5CF6);
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 15px;
+            position: relative;
+            overflow: hidden;
+        }
+        .image-preview::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><circle cx="50" cy="50" r="40" fill="none" stroke="rgba(255,255,255,0.3)" stroke-width="2"/><path d="M30 50 L45 65 L70 35" stroke="rgba(255,255,255,0.5)" stroke-width="3" fill="none"/></svg>') center/50% no-repeat;
+        }
+        .image-text {
+            color: white;
+            font-size: 18px;
+            font-weight: bold;
+            text-align: center;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+            z-index: 1;
+        }
+        .download-btn {
+            background: #D4AF37;
+            color: #000;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+            width: 100%;
+            margin-top: 10px;
+        }
+        .download-btn:hover {
+            background: #B8941F;
+        }
+        .file-info {
+            background: #333;
+            padding: 10px;
+            border-radius: 5px;
+            margin-top: 10px;
+            font-size: 12px;
+        }
+        h1 {
+            text-align: center;
+            color: #D4AF37;
+            margin-bottom: 30px;
+        }
+        .instructions {
+            background: #333;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>📸 博客图片生成器</h1>
+    
+    <div class="instructions">
+        <h3>使用说明：</h3>
+        <ol>
+            <li>点击下方的"下载图片"按钮生成占位符图片</li>
+            <li>将下载的图片重命名为对应的文件名</li>
+            <li>将图片放置到 <code>public/images/blog/</code> 目录中</li>
+            <li>启动开发服务器检查效果：<code>npm run dev</code></li>
+        </ol>
+    </div>
+
+    <div class="container">
+        <div class="image-card">
+            <div class="image-preview">
+                <div class="image-text">BaZi vs MBTI<br>东西方智慧对比</div>
+            </div>
+            <h3>BaZi vs. MBTI 文章</h3>
+            <p>文件名：bazi-mbti-comparison.jpg</p>
+            <button class="download-btn" onclick="downloadImage('bazi-mbti-comparison', 'BaZi vs MBTI - 东西方智慧对比')">下载图片</button>
+            <div class="file-info">
+                <strong>建议内容：</strong>太极图、MBTI图表、东西方符号对比
+            </div>
+        </div>
+
+        <div class="image-card">
+            <div class="image-preview">
+                <div class="image-text">八字基础<br>天干地支</div>
+            </div>
+            <h3>八字基础文章</h3>
+            <p>文件名：bazi-basics.jpg</p>
+            <button class="download-btn" onclick="downloadImage('bazi-basics', '八字基础 - 天干地支')">下载图片</button>
+            <div class="file-info">
+                <strong>建议内容：</strong>八字图表、天干地支符号、传统图案
+            </div>
+        </div>
+
+        <div class="image-card">
+            <div class="image-preview">
+                <div class="image-text">五行爱情<br>完美匹配</div>
+            </div>
+            <h3>五行爱情文章</h3>
+            <p>文件名：five-elements-love.jpg</p>
+            <button class="download-btn" onclick="downloadImage('five-elements-love', '五行爱情 - 完美匹配')">下载图片</button>
+            <div class="file-info">
+                <strong>建议内容：</strong>五行元素、爱心、情侣、和谐图案
+            </div>
+        </div>
+
+        <div class="image-card">
+            <div class="image-preview">
+                <div class="image-text">护身符<br>古代智慧</div>
+            </div>
+            <h3>护身符文章</h3>
+            <p>文件名：talismans-protection.jpg</p>
+            <button class="download-btn" onclick="downloadImage('talismans-protection', '护身符 - 古代智慧')">下载图片</button>
+            <div class="file-info">
+                <strong>建议内容：</strong>护身符、符咒、保护符号、神秘图案
+            </div>
+        </div>
+
+        <div class="image-card">
+            <div class="image-preview">
+                <div class="image-text">职业时机<br>成功决策</div>
+            </div>
+            <h3>职业时机文章</h3>
+            <p>文件名：career-timing.jpg</p>
+            <button class="download-btn" onclick="downloadImage('career-timing', '职业时机 - 成功决策')">下载图片</button>
+            <div class="file-info">
+                <strong>建议内容：</strong>时钟、职业、成功象征、时间管理
+            </div>
+        </div>
+
+        <div class="image-card">
+            <div class="image-preview">
+                <div class="image-text">龙年2024<br>吉祥如意</div>
+            </div>
+            <h3>龙年预测文章</h3>
+            <p>文件名：dragon-year-2024.jpg</p>
+            <button class="download-btn" onclick="downloadImage('dragon-year-2024', '龙年2024 - 吉祥如意')">下载图片</button>
+            <div class="file-info">
+                <strong>建议内容：</strong>龙年、2024、吉祥图案、传统元素
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function downloadImage(filename, title) {
+            const canvas = document.createElement('canvas');
+            canvas.width = 1200;
+            canvas.height = 630;
+            const ctx = canvas.getContext('2d');
+
+            // 创建渐变背景
+            const gradient = ctx.createLinearGradient(0, 0, 1200, 630);
+            gradient.addColorStop(0, '#D4AF37');
+            gradient.addColorStop(1, '#8B5CF6');
+            ctx.fillStyle = gradient;
+            ctx.fillRect(0, 0, 1200, 630);
+
+            // 添加装饰性图案
+            ctx.strokeStyle = 'rgba(255,255,255,0.3)';
+            ctx.lineWidth = 2;
+            ctx.beginPath();
+            ctx.arc(600, 315, 200, 0, 2 * Math.PI);
+            ctx.stroke();
+
+            // 添加标题文字
+            ctx.fillStyle = 'white';
+            ctx.font = 'bold 48px Arial';
+            ctx.textAlign = 'center';
+            ctx.textBaseline = 'middle';
+            ctx.shadowColor = 'rgba(0,0,0,0.5)';
+            ctx.shadowBlur = 10;
+            ctx.shadowOffsetX = 2;
+            ctx.shadowOffsetY = 2;
+            
+            const lines = title.split(' - ');
+            ctx.fillText(lines[0], 600, 280);
+            if (lines[1]) {
+                ctx.fillText(lines[1], 600, 350);
+            }
+
+            // 添加网站标识
+            ctx.font = '24px Arial';
+            ctx.fillStyle = 'rgba(255,255,255,0.8)';
+            ctx.fillText('FatePath.me', 600, 550);
+
+            // 下载图片
+            const link = document.createElement('a');
+            link.download = filename + '.jpg';
+            link.href = canvas.toDataURL('image/jpeg', 0.9);
+            link.click();
+        }
+    </script>
+</body>
+</html> 
