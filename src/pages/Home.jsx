@@ -742,31 +742,31 @@ const Home = () => {
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
               {[
                 {
-                  title: "Understanding Your Bazi Chart: A Beginner's Guide",
-                  excerpt: "Learn the fundamentals of Bazi (八字) analysis and how your birth chart reveals your life's blueprint.",
+                  title: "BaZi vs. MBTI: East Meets West in Personality and Destiny",
+                  excerpt: "Explore how ancient Chinese BaZi and Western MBTI personality systems complement each other. Discover the differences between destiny mapping and personality typing.",
                   category: "Bazi Basics",
-                  date: "2024-01-15",
-                  readTime: "8 min read",
-                  image: "/images/blog/bazi-basics.jpg",
-                  slug: "understanding-bazi-chart-beginners-guide"
+                  date: "2025-08-04",
+                  readTime: "11 min read",
+                  image: "/images/blog/bazi-mbti-comparison.jpg",
+                  slug: "bazi-vs-mbti-personality-destiny"
                 },
                 {
-                  title: "The Five Elements in Love: Finding Your Perfect Match",
-                  excerpt: "Explore how the Five Elements (五行) influence romantic compatibility and relationship harmony.",
-                  category: "Love & Relationships",
-                  date: "2024-01-10",
+                  title: "🌿 The Seasons of Fate: Why You Don't Have to Panic About Every Downturn",
+                  excerpt: "Discover how BaZi reveals that life's challenges are natural cycles, not punishments. Learn to flow with your destiny's seasons instead of fighting against them.",
+                  category: "Bazi Basics",
+                  date: "2025-08-04",
+                  readTime: "7 min read",
+                  image: "/images/blog/seasons-fate-cover.jpg",
+                  slug: "seasons-fate-cycles"
+                },
+                {
+                  title: "When Bitcoin Falls, What Does Destiny Say?",
+                  excerpt: "Explore how BaZi destiny charts and metaphysical timing reveal deeper insights into financial volatility like the August 2025 Bitcoin crash.",
+                  category: "Career & Timing",
+                  date: "2025-08-02",
                   readTime: "12 min read",
-                  image: "/images/blog/five-elements-love.jpg",
-                  slug: "five-elements-love-perfect-match"
-                },
-                {
-                  title: "Protection Talismans: Ancient Wisdom for Modern Life",
-                  excerpt: "Discover the power of personalized talismans and how they can enhance your luck and protection.",
-                  category: "Talismans & Protection",
-                  date: "2024-01-05",
-                  readTime: "10 min read",
-                  image: "/images/blog/talismans-protection.jpg",
-                  slug: "protection-talismans-ancient-wisdom"
+                  image: "/images/blog/bitcoin-bazi-cover.jpg",
+                  slug: "bitcoin-crash-bazi-destiny"
                 }
               ].map((post, index) => (
                 <motion.article
