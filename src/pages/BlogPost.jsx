@@ -1118,6 +1118,7 @@ const BlogPost = () => {
        categoryLabel: "Wealth & Fortune",
        date: "2025-08-04",
        readTime: "18 min read",
+       image: "/images/blog/bazi-wealth-blueprint-cover.jpg",
        slug: "best-bazi-wealth-chinese-astrology-blueprint",
        author: "玄印 (Xuan Yin)",
        tags: ["Wealth Bazi", "Chinese Astrology", "Financial Luck", "Wealth Patterns", "Bazi Analysis", "Feng Shui", "Money Luck", "Destiny"]
