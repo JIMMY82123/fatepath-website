@@ -38,25 +38,25 @@ const PaymentGuide = () => {
   const config = serviceConfig[service] || serviceConfig.bazi
 
   return (
-    <div className="min-h-screen pt-20 px-4 sm:px-6 lg:px-8">
+    <div className="min-h-screen pt-16 sm:pt-20 px-4 sm:px-6 lg:px-8">
       <div className="max-w-4xl mx-auto">
         {/* Header */}
         <motion.div 
           initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
-          className="text-center mb-12"
+          className="text-center mb-8 sm:mb-12"
         >
-          <div className={`inline-flex items-center justify-center w-20 h-20 rounded-full bg-gradient-to-r ${config.color} mb-6`}>
-            <span className="text-2xl">{config.icon}</span>
+          <div className={`inline-flex items-center justify-center w-16 h-16 sm:w-20 sm:h-20 rounded-full bg-gradient-to-r ${config.color} mb-4 sm:mb-6`}>
+            <span className="text-xl sm:text-2xl">{config.icon}</span>
           </div>
-          <h1 className="text-3xl md:text-4xl font-cinzel font-bold mb-4 text-white tracking-wide">
+          <h1 className="text-2xl sm:text-3xl md:text-4xl font-cinzel font-bold mb-3 sm:mb-4 text-white tracking-wide">
             {config.name}
           </h1>
-          <p className="text-xl text-mystic-300 mb-4">
+          <p className="text-lg sm:text-xl text-mystic-300 mb-3 sm:mb-4">
             {config.description}
           </p>
-          <div className="text-3xl font-poppins font-extrabold gradient-text">
+          <div className="text-2xl sm:text-3xl font-poppins font-extrabold gradient-text">
             {config.price}
           </div>
         </motion.div>
@@ -66,7 +66,7 @@ const PaymentGuide = () => {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.2 }}
-          className="grid md:grid-cols-2 gap-8 mb-12"
+          className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8 mb-8 sm:mb-12"
         >
           {/* Step 1: Payment */}
           <div className="mystic-card p-8">
@@ -119,12 +119,12 @@ const PaymentGuide = () => {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.4 }}
-          className="mystic-card p-8 mb-12"
+          className="mystic-card p-6 sm:p-8 mb-8 sm:mb-12"
         >
-          <h3 className="text-2xl font-cinzel font-semibold text-white mb-6 text-center">
+          <h3 className="text-xl sm:text-2xl font-cinzel font-semibold text-white mb-4 sm:mb-6 text-center">
             What Happens Next?
           </h3>
-          <div className="grid md:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 sm:gap-6">
             <div className="text-center">
               <CheckCircle className="h-8 w-8 text-green-400 mx-auto mb-3" />
               <h4 className="font-semibold text-gold-400 mb-2">Payment Confirmation</h4>
@@ -156,8 +156,8 @@ const PaymentGuide = () => {
           transition={{ duration: 0.8, delay: 0.6 }}
           className="text-center"
         >
-          <div className="mystic-card p-8 max-w-2xl mx-auto">
-            <h3 className="text-xl font-cinzel font-semibold text-white mb-4">
+          <div className="mystic-card p-6 sm:p-8 max-w-2xl mx-auto">
+            <h3 className="text-lg sm:text-xl font-cinzel font-semibold text-white mb-3 sm:mb-4">
               Contact Information
             </h3>
             <div className="space-y-3 text-mystic-200">

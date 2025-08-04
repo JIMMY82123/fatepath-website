@@ -28,13 +28,13 @@ const PaymentSuccess = () => {
   }
 
   return (
-    <div className="min-h-screen pt-20 px-4 sm:px-6 lg:px-8">
+    <div className="min-h-screen pt-16 sm:pt-20 px-4 sm:px-6 lg:px-8">
       <div className="max-w-2xl mx-auto text-center">
         <motion.div
           initial={{ opacity: 0, scale: 0.8 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.6 }}
-          className="mystic-card p-12"
+          className="mystic-card p-8 sm:p-12"
         >
           <CheckCircle className="h-16 w-16 text-green-400 mx-auto mb-6" />
           <h1 className="text-3xl font-cinzel font-bold mb-4 text-white">

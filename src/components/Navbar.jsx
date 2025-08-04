@@ -2,6 +2,7 @@ import { useState } from 'react'
 import { Link, useLocation } from 'react-router-dom'
 import { motion } from 'framer-motion'
 import { Menu, X, Sparkles } from 'lucide-react'
+import GPTButton from './GPTButton'
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false)
@@ -58,6 +59,9 @@ const Navbar = () => {
                 )}
               </Link>
             ))}
+            
+            {/* GPT Button with Dropdown */}
+            <GPTButton variant="dropdown" />
           </div>
 
           {/* Mobile menu button */}
@@ -95,6 +99,11 @@ const Navbar = () => {
                   {item.label}
                 </Link>
               ))}
+              
+              {/* Mobile GPT Button */}
+              <div className="px-3 py-2">
+                <GPTButton variant="mobile" />
+              </div>
             </div>
           </motion.div>
         )}

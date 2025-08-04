@@ -151,6 +151,17 @@ const Blog = () => {
         },
         {
           id: 8,
+          title: "What is the Best Bazi for Wealth? Decoding Your Chinese Astrology Blueprint",
+          excerpt: "Discover the 3 wealthiest Bazi patterns in Chinese metaphysics, how to activate your financial potential, and why 'wealth' is more than money. Based on 10,000+ client cases.",
+          category: "wealth-bazi",
+          categoryLabel: "Wealth & Fortune",
+              date: "2025-08-04",
+    readTime: "18 min read",
+          image: "/images/blog/bazi-wealth-blueprint.jpg",
+          slug: "best-bazi-wealth-chinese-astrology-blueprint"
+        },
+        {
+          id: 8,
           title: "🌿 The Seasons of Fate: Why You Don't Have to Panic About Every Downturn",
           excerpt: "Discover how BaZi reveals that life's challenges are natural cycles, not punishments. Learn to flow with your destiny's seasons instead of fighting against them.",
           category: "bazi-basics",
@@ -178,7 +189,8 @@ const Blog = () => {
     { value: 'bazi-basics', label: 'Bazi Basics' },
     { value: 'love-compatibility', label: 'Love & Relationships' },
     { value: 'talismans', label: 'Talismans & Protection' },
-    { value: 'career-timing', label: 'Career & Timing' }
+    { value: 'career-timing', label: 'Career & Timing' },
+    { value: 'wealth-bazi', label: 'Wealth & Fortune' }
   ]
 
   // 过滤文章
@@ -199,19 +211,19 @@ const Blog = () => {
   }
 
   return (
-    <div className="min-h-screen pt-20 px-4 sm:px-6 lg:px-8">
+    <div className="min-h-screen pt-16 sm:pt-20 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
         {/* Header */}
         <motion.div 
           initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
-          className="text-center mb-16"
+          className="text-center mb-12 sm:mb-16"
         >
-          <h1 className="text-4xl md:text-6xl font-playfair font-bold mb-6">
+          <h1 className="text-3xl sm:text-4xl md:text-6xl font-playfair font-bold mb-4 sm:mb-6">
             <span className="gradient-text">Mystic Wisdom</span>
           </h1>
-          <p className="text-xl text-mystic-300 max-w-3xl mx-auto leading-relaxed">
+          <p className="text-lg sm:text-xl text-mystic-300 max-w-3xl mx-auto leading-relaxed">
             Explore ancient Chinese numerology insights, practical guidance, and spiritual wisdom 
             to illuminate your path and enhance your life journey.
           </p>
@@ -222,28 +234,28 @@ const Blog = () => {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.2 }}
-          className="mb-12"
+          className="mb-8 sm:mb-12"
         >
-          <div className="flex flex-col md:flex-row gap-4 items-center justify-between">
+          <div className="flex flex-col sm:flex-row gap-4 items-center justify-between">
             {/* Search Bar */}
-            <div className="relative flex-1 max-w-md">
+            <div className="relative flex-1 max-w-md w-full">
               <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 h-5 w-5 text-mystic-400" />
               <input
                 type="text"
                 placeholder="Search articles..."
                 value={searchTerm}
                 onChange={(e) => setSearchTerm(e.target.value)}
-                className="w-full pl-10 pr-4 py-3 bg-mystic-800/50 border border-mystic-700/50 rounded-lg text-white placeholder-mystic-400 focus:border-gold-500/50 focus:outline-none transition-colors"
+                className="w-full pl-10 pr-4 py-3 text-base bg-mystic-800/50 border border-mystic-700/50 rounded-lg text-white placeholder-mystic-400 focus:border-gold-500/50 focus:outline-none transition-colors"
               />
             </div>
 
             {/* Category Filter */}
-            <div className="flex items-center space-x-2">
+            <div className="flex items-center space-x-2 w-full sm:w-auto">
               <Filter className="h-5 w-5 text-mystic-400" />
               <select
                 value={selectedCategory}
                 onChange={(e) => setSelectedCategory(e.target.value)}
-                className="px-4 py-3 bg-mystic-800/50 border border-mystic-700/50 rounded-lg text-white focus:border-gold-500/50 focus:outline-none transition-colors"
+                className="flex-1 sm:flex-none px-4 py-3 text-base bg-mystic-800/50 border border-mystic-700/50 rounded-lg text-white focus:border-gold-500/50 focus:outline-none transition-colors"
               >
                 {categories.map(category => (
                   <option key={category.value} value={category.value}>
@@ -260,7 +272,7 @@ const Blog = () => {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.4 }}
-          className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16"
+          className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 mb-12 sm:mb-16"
         >
           {filteredPosts.map((post, index) => (
             <motion.article
@@ -300,26 +312,26 @@ const Blog = () => {
               </div>
 
               {/* Article Content */}
-              <div className="p-6">
+              <div className="p-4 sm:p-6">
                 {/* Meta Information */}
-                <div className="flex items-center space-x-4 text-sm text-mystic-400 mb-3">
+                <div className="flex items-center space-x-3 sm:space-x-4 text-xs sm:text-sm text-mystic-400 mb-3">
                   <div className="flex items-center space-x-1">
-                    <Calendar className="h-4 w-4" />
+                    <Calendar className="h-3 w-3 sm:h-4 sm:w-4" />
                     <span>{formatDate(post.date)}</span>
                   </div>
                   <div className="flex items-center space-x-1">
-                    <Clock className="h-4 w-4" />
+                    <Clock className="h-3 w-3 sm:h-4 sm:w-4" />
                     <span>{post.readTime}</span>
                   </div>
                 </div>
 
                 {/* Title */}
-                <h2 className="text-xl font-cinzel font-bold text-white mb-3 group-hover:text-gold-400 transition-colors">
+                <h2 className="text-lg sm:text-xl font-cinzel font-bold text-white mb-3 group-hover:text-gold-400 transition-colors">
                   {post.title}
                 </h2>
 
                 {/* Excerpt */}
-                <p className="text-mystic-300 text-sm leading-relaxed mb-4">
+                <p className="text-xs sm:text-sm text-mystic-300 leading-relaxed mb-4">
                   {post.excerpt}
                 </p>
 
@@ -358,14 +370,14 @@ const Blog = () => {
             animate={{ opacity: 1 }}
             className="text-center py-16"
           >
-            <div className="mystic-card p-12 max-w-md mx-auto">
-              <div className="w-16 h-16 bg-gradient-to-r from-mystic-700 to-mystic-800 rounded-full flex items-center justify-center mx-auto mb-4">
-                <Search className="h-8 w-8 text-mystic-400" />
+            <div className="mystic-card p-8 sm:p-12 max-w-md mx-auto">
+              <div className="w-12 h-12 sm:w-16 sm:h-16 bg-gradient-to-r from-mystic-700 to-mystic-800 rounded-full flex items-center justify-center mx-auto mb-3 sm:mb-4">
+                <Search className="h-6 w-6 sm:h-8 sm:w-8 text-mystic-400" />
               </div>
-              <h3 className="text-xl font-cinzel font-semibold text-white mb-2">
+              <h3 className="text-lg sm:text-xl font-cinzel font-semibold text-white mb-2">
                 No Articles Found
               </h3>
-              <p className="text-mystic-300">
+              <p className="text-sm sm:text-base text-mystic-300">
                 Try adjusting your search terms or category filter.
               </p>
             </div>
@@ -379,21 +391,21 @@ const Blog = () => {
           transition={{ duration: 0.8, delay: 0.6 }}
           className="text-center"
         >
-          <div className="mystic-card p-8 max-w-2xl mx-auto">
-            <h3 className="text-2xl font-playfair font-semibold mb-4 text-white">
+          <div className="mystic-card p-6 sm:p-8 max-w-2xl mx-auto">
+            <h3 className="text-xl sm:text-2xl font-playfair font-semibold mb-3 sm:mb-4 text-white">
               Stay Connected with Ancient Wisdom
             </h3>
-            <p className="text-mystic-300 mb-6">
+            <p className="text-sm sm:text-base text-mystic-300 mb-4 sm:mb-6">
               Subscribe to receive the latest insights on Bazi analysis, relationship guidance, 
               and spiritual wisdom directly to your inbox.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 max-w-md mx-auto">
+            <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 max-w-md mx-auto">
               <input
                 type="email"
                 placeholder="Enter your email address"
-                className="flex-1 px-4 py-3 bg-mystic-800/50 border border-mystic-700/50 rounded-lg text-white placeholder-mystic-400 focus:border-gold-500/50 focus:outline-none transition-colors"
+                className="flex-1 px-4 py-3 text-base bg-mystic-800/50 border border-mystic-700/50 rounded-lg text-white placeholder-mystic-400 focus:border-gold-500/50 focus:outline-none transition-colors"
               />
-              <button className="px-6 py-3 bg-gradient-to-r from-gold-500 to-gold-600 text-black font-semibold rounded-lg hover:from-gold-400 hover:to-gold-500 transition-all duration-300">
+              <button className="px-4 sm:px-6 py-3 bg-gradient-to-r from-gold-500 to-gold-600 text-black font-semibold rounded-lg hover:from-gold-400 hover:to-gold-500 transition-all duration-300 text-sm sm:text-base">
                 Subscribe
               </button>
             </div>

@@ -85,17 +85,17 @@ const TalismanForm = () => {
   }
 
   return (
-    <div className="min-h-screen pt-20 px-4 sm:px-6 lg:px-8">
+    <div className="min-h-screen pt-16 sm:pt-20 px-4 sm:px-6 lg:px-8">
       <div className="max-w-2xl mx-auto">
         {/* Header */}
         <motion.div 
           initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
-          className="text-center mb-12"
+          className="text-center mb-8 sm:mb-12"
         >
-          <div className="inline-flex items-center justify-center w-20 h-20 rounded-full bg-gradient-to-r from-gold-500 to-orange-500 mb-6">
-            <Shield className="h-10 w-10 text-white" />
+          <div className="inline-flex items-center justify-center w-16 h-16 sm:w-20 sm:h-20 rounded-full bg-gradient-to-r from-gold-500 to-orange-500 mb-4 sm:mb-6">
+            <Shield className="h-8 w-8 sm:h-10 sm:w-10 text-white" />
           </div>
           <h1 className="text-3xl md:text-4xl font-cinzel font-bold mb-4 text-white tracking-wide">
             Custom Talisman

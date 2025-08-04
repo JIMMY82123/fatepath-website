@@ -1,0 +1,106 @@
+<svg width="800" height="500" viewBox="0 0 800 500" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a1a2e;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#16213e;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="goldGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ffd700;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#ffb347;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="blueGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#4facfe;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#00f2fe;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="greenGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#43e97b;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#38f9d7;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="purpleGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#667eea;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#764ba2;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="800" height="500" fill="url(#bgGradient)"/>
+  
+  <!-- Title -->
+  <text x="400" y="40" text-anchor="middle" font-family="serif" font-size="24" font-weight="bold" fill="#ffd700">Wealth BaZi Journey: From Analysis to Activation</text>
+  
+  <!-- Step 1: Analysis -->
+  <g transform="translate(100, 100)">
+    <circle cx="60" cy="60" r="50" fill="url(#blueGradient)" opacity="0.2" stroke="url(#blueGradient)" stroke-width="3"/>
+    <text x="60" y="70" text-anchor="middle" font-family="serif" font-size="20" fill="white">🔍</text>
+    <text x="60" y="130" text-anchor="middle" font-family="serif" font-size="14" font-weight="bold" fill="#4facfe">Step 1</text>
+    <text x="60" y="150" text-anchor="middle" font-family="serif" font-size="12" fill="#e0e0e0">Analysis</text>
+    <text x="60" y="165" text-anchor="middle" font-family="serif" font-size="10" fill="#b0b0b0">Find Your</text>
+    <text x="60" y="180" text-anchor="middle" font-family="serif" font-size="10" fill="#b0b0b0">Wealth Star</text>
+  </g>
+  
+  <!-- Arrow 1 -->
+  <line x1="170" y1="110" x2="230" y2="110" stroke="#ffd700" stroke-width="3" marker-end="url(#arrowhead)"/>
+  
+  <!-- Step 2: Balance -->
+  <g transform="translate(300, 100)">
+    <circle cx="60" cy="60" r="50" fill="url(#greenGradient)" opacity="0.2" stroke="url(#greenGradient)" stroke-width="3"/>
+    <text x="60" y="70" text-anchor="middle" font-family="serif" font-size="20" fill="white">⚖️</text>
+    <text x="60" y="130" text-anchor="middle" font-family="serif" font-size="14" font-weight="bold" fill="#43e97b">Step 2</text>
+    <text x="60" y="150" text-anchor="middle" font-family="serif" font-size="12" fill="#e0e0e0">Balance</text>
+    <text x="60" y="165" text-anchor="middle" font-family="serif" font-size="10" fill="#b0b0b0">Your Chart</text>
+    <text x="60" y="180" text-anchor="middle" font-family="serif" font-size="10" fill="#b0b0b0">Elements</text>
+  </g>
+  
+  <!-- Arrow 2 -->
+  <line x1="370" y1="110" x2="430" y2="110" stroke="#ffd700" stroke-width="3" marker-end="url(#arrowhead)"/>
+  
+  <!-- Step 3: Activate -->
+  <g transform="translate(500, 100)">
+    <circle cx="60" cy="60" r="50" fill="url(#purpleGradient)" opacity="0.2" stroke="url(#purpleGradient)" stroke-width="3"/>
+    <text x="60" y="70" text-anchor="middle" font-family="serif" font-size="20" fill="white">✨</text>
+    <text x="60" y="130" text-anchor="middle" font-family="serif" font-size="14" font-weight="bold" fill="#667eea">Step 3</text>
+    <text x="60" y="150" text-anchor="middle" font-family="serif" font-size="12" fill="#e0e0e0">Activate</text>
+    <text x="60" y="165" text-anchor="middle" font-family="serif" font-size="10" fill="#b0b0b0">Feng Shui</text>
+    <text x="60" y="180" text-anchor="middle" font-family="serif" font-size="10" fill="#b0b0b0">Triggers</text>
+  </g>
+  
+  <!-- Arrow 3 -->
+  <line x1="570" y1="110" x2="630" y2="110" stroke="#ffd700" stroke-width="3" marker-end="url(#arrowhead)"/>
+  
+  <!-- Step 4: Wealth -->
+  <g transform="translate(700, 100)">
+    <circle cx="60" cy="60" r="50" fill="url(#goldGradient)" opacity="0.2" stroke="url(#goldGradient)" stroke-width="3"/>
+    <text x="60" y="70" text-anchor="middle" font-family="serif" font-size="20" fill="white">💰</text>
+    <text x="60" y="130" text-anchor="middle" font-family="serif" font-size="14" font-weight="bold" fill="#ffd700">Result</text>
+    <text x="60" y="150" text-anchor="middle" font-family="serif" font-size="12" fill="#e0e0e0">Wealth</text>
+    <text x="60" y="165" text-anchor="middle" font-family="serif" font-size="10" fill="#b0b0b0">Flow</text>
+    <text x="60" y="180" text-anchor="middle" font-family="serif" font-size="10" fill="#b0b0b0">Activated</text>
+  </g>
+  
+  <!-- Key Insights Box -->
+  <g transform="translate(50, 250)">
+    <rect x="0" y="0" width="700" height="200" rx="15" fill="url(#goldGradient)" opacity="0.1" stroke="url(#goldGradient)" stroke-width="2"/>
+    <text x="350" y="30" text-anchor="middle" font-family="serif" font-size="18" font-weight="bold" fill="#ffd700">Key Insights</text>
+    
+    <g transform="translate(50, 60)">
+      <text x="0" y="0" font-family="serif" font-size="14" font-weight="bold" fill="#ffd700">• Wealth Type Matters:</text>
+      <text x="20" y="20" font-family="serif" font-size="12" fill="#e0e0e0">Innovator, Strategist, or Networker - each has unique wealth attraction patterns</text>
+      
+      <text x="0" y="50" font-family="serif" font-size="14" font-weight="bold" fill="#ffd700">• Balance is Key:</text>
+      <text x="20" y="70" font-family="serif" font-size="12" fill="#e0e0e0">Strong Day Master can hold wealth; weak Day Master needs support stars</text>
+      
+      <text x="0" y="100" font-family="serif" font-size="14" font-weight="bold" fill="#ffd700">• Action Required:</text>
+      <text x="20" y="120" font-family="serif" font-size="12" fill="#e0e0e0">Understanding your chart is just the beginning - implementation brings results</text>
+      
+      <text x="0" y="150" font-family="serif" font-size="14" font-weight="bold" fill="#ffd700">• Continuous Process:</text>
+      <text x="20" y="170" font-family="serif" font-size="12" fill="#e0e0e0">Wealth building is a journey, not a destination - align with your cycles</text>
+    </g>
+  </g>
+  
+  <!-- Arrow marker definition -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#ffd700"/>
+    </marker>
+  </defs>
+</svg> 

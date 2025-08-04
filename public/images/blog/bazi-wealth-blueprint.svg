@@ -1,0 +1,143 @@
+<svg width="800" height="400" viewBox="0 0 800 400" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- 渐变定义 -->
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0f172a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1e293b;stop-opacity:1" />
+    </linearGradient>
+    
+    <linearGradient id="goldGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#facc15;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#eab308;stop-opacity:1" />
+    </linearGradient>
+    
+    <linearGradient id="wealthGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#fbbf24;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#f59e0b;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#d97706;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- 滤镜效果 -->
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge> 
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <!-- 背景 -->
+  <rect width="800" height="400" fill="url(#bgGradient)"/>
+  
+  <!-- 装饰性背景元素 -->
+  <g opacity="0.1">
+    <!-- 八卦图案 -->
+    <circle cx="100" cy="100" r="60" fill="none" stroke="url(#goldGradient)" stroke-width="2"/>
+    <circle cx="100" cy="70" r="12" fill="url(#goldGradient)"/>
+    <circle cx="100" cy="130" r="12" fill="url(#goldGradient)"/>
+    
+    <!-- 另一个八卦 -->
+    <circle cx="700" cy="300" r="50" fill="none" stroke="url(#goldGradient)" stroke-width="2"/>
+    <circle cx="700" cy="275" r="10" fill="url(#goldGradient)"/>
+    <circle cx="700" cy="325" r="10" fill="url(#goldGradient)"/>
+  </g>
+  
+  <!-- 财富符号装饰 -->
+  <g opacity="0.3">
+    <!-- 金币 -->
+    <circle cx="150" cy="320" r="15" fill="url(#wealthGradient)"/>
+    <text x="150" y="325" text-anchor="middle" fill="#000" font-size="12" font-weight="bold">¥</text>
+    
+    <circle cx="650" cy="80" r="12" fill="url(#wealthGradient)"/>
+    <text x="650" y="85" text-anchor="middle" fill="#000" font-size="10" font-weight="bold">$</text>
+    
+    <!-- 更多财富符号 -->
+    <circle cx="200" cy="350" r="8" fill="url(#wealthGradient)"/>
+    <text x="200" y="353" text-anchor="middle" fill="#000" font-size="8" font-weight="bold">€</text>
+    
+    <circle cx="600" cy="50" r="10" fill="url(#wealthGradient)"/>
+    <text x="600" y="54" text-anchor="middle" fill="#000" font-size="9" font-weight="bold">£</text>
+  </g>
+  
+  <!-- 主要标题区域 -->
+  <g transform="translate(400, 200)">
+    <!-- 标题背景 -->
+    <rect x="-350" y="-80" width="700" height="160" rx="20" fill="rgba(30, 41, 59, 0.8)" stroke="url(#goldGradient)" stroke-width="2"/>
+    
+    <!-- 主标题 -->
+    <text x="0" y="-30" text-anchor="middle" fill="url(#goldGradient)" font-family="serif" font-size="28" font-weight="bold" filter="url(#glow)">
+      What is the Best Bazi for Wealth?
+    </text>
+    
+    <!-- 副标题 -->
+    <text x="0" y="5" text-anchor="middle" fill="#cbd5e1" font-family="serif" font-size="16" font-weight="500">
+      Decoding Your Chinese Astrology Blueprint
+    </text>
+    
+    <!-- 装饰性线条 -->
+    <line x1="-200" y1="20" x2="200" y2="20" stroke="url(#goldGradient)" stroke-width="2" opacity="0.6"/>
+    
+    <!-- 特色标签 -->
+    <g transform="translate(0, 40)">
+      <rect x="-80" y="-15" width="160" height="30" rx="15" fill="url(#goldGradient)" opacity="0.9"/>
+      <text x="0" y="5" text-anchor="middle" fill="#000" font-family="serif" font-size="12" font-weight="bold">
+        Ultimate Guide
+      </text>
+    </g>
+  </g>
+  
+  <!-- 财富图表元素 -->
+  <g transform="translate(400, 320)">
+    <!-- 图表背景 -->
+    <rect x="-120" y="-15" width="240" height="30" rx="15" fill="rgba(30, 41, 59, 0.6)" stroke="url(#goldGradient)" stroke-width="1"/>
+    
+    <!-- 图表柱状图 -->
+    <rect x="-100" y="-10" width="20" height="20" fill="url(#wealthGradient)" opacity="0.8"/>
+    <rect x="-70" y="-15" width="20" height="25" fill="url(#wealthGradient)" opacity="0.9"/>
+    <rect x="-40" y="-20" width="20" height="30" fill="url(#wealthGradient)" opacity="1"/>
+    <rect x="-10" y="-12" width="20" height="22" fill="url(#wealthGradient)" opacity="0.8"/>
+    <rect x="20" y="-18" width="20" height="28" fill="url(#wealthGradient)" opacity="0.9"/>
+    <rect x="50" y="-8" width="20" height="18" fill="url(#wealthGradient)" opacity="0.7"/>
+    <rect x="80" y="-22" width="20" height="32" fill="url(#wealthGradient)" opacity="1"/>
+  </g>
+  
+  <!-- 装饰性星星 -->
+  <g opacity="0.6">
+    <polygon points="50,50 52,55 57,55 53,58 55,63 50,60 45,63 47,58 43,55 48,55" fill="url(#goldGradient)"/>
+    <polygon points="750,150 752,155 757,155 753,158 755,163 750,160 745,163 747,158 743,155 748,155" fill="url(#goldGradient)"/>
+    <polygon points="100,350 102,355 107,355 103,358 105,363 100,360 95,363 97,358 93,355 98,355" fill="url(#goldGradient)"/>
+    <polygon points="700,250 702,255 707,255 703,258 705,263 700,260 695,263 697,258 693,255 698,255" fill="url(#goldGradient)"/>
+  </g>
+  
+  <!-- 财富流动线条 -->
+  <g opacity="0.4">
+    <path d="M 50 200 Q 200 150 350 200 Q 500 250 650 200" stroke="url(#goldGradient)" stroke-width="3" fill="none" stroke-dasharray="10,5"/>
+    <path d="M 100 300 Q 250 250 400 300 Q 550 350 700 300" stroke="url(#goldGradient)" stroke-width="2" fill="none" stroke-dasharray="8,4"/>
+  </g>
+  
+  <!-- 八字元素符号 -->
+  <g opacity="0.7" transform="translate(400, 100)">
+    <!-- 五行元素 -->
+    <circle cx="-150" cy="0" r="20" fill="none" stroke="#22c55e" stroke-width="2"/> <!-- 木 -->
+    <text x="-150" y="5" text-anchor="middle" fill="#22c55e" font-size="14" font-weight="bold">木</text>
+    
+    <circle cx="-100" cy="0" r="20" fill="none" stroke="#ef4444" stroke-width="2"/> <!-- 火 -->
+    <text x="-100" y="5" text-anchor="middle" fill="#ef4444" font-size="14" font-weight="bold">火</text>
+    
+    <circle cx="-50" cy="0" r="20" fill="none" stroke="#f59e0b" stroke-width="2"/> <!-- 土 -->
+    <text x="-50" y="5" text-anchor="middle" fill="#f59e0b" font-size="14" font-weight="bold">土</text>
+    
+    <circle cx="0" cy="0" r="20" fill="none" stroke="#6b7280" stroke-width="2"/> <!-- 金 -->
+    <text x="0" y="5" text-anchor="middle" fill="#6b7280" font-size="14" font-weight="bold">金</text>
+    
+    <circle cx="50" cy="0" r="20" fill="none" stroke="#3b82f6" stroke-width="2"/> <!-- 水 -->
+    <text x="50" y="5" text-anchor="middle" fill="#3b82f6" font-size="14" font-weight="bold">水</text>
+    
+    <circle cx="100" cy="0" r="20" fill="none" stroke="url(#goldGradient)" stroke-width="2"/> <!-- 财 -->
+    <text x="100" y="5" text-anchor="middle" fill="url(#goldGradient)" font-size="14" font-weight="bold">财</text>
+    
+    <circle cx="150" cy="0" r="20" fill="none" stroke="url(#goldGradient)" stroke-width="2"/> <!-- 富 -->
+    <text x="150" y="5" text-anchor="middle" fill="url(#goldGradient)" font-size="14" font-weight="bold">富</text>
+  </g>
+</svg> 

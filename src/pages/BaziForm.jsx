@@ -86,22 +86,22 @@ const BaziForm = () => {
   }
 
   return (
-    <div className="min-h-screen pt-20 px-4 sm:px-6 lg:px-8">
+    <div className="min-h-screen pt-16 sm:pt-20 px-4 sm:px-6 lg:px-8">
       <div className="max-w-2xl mx-auto">
         {/* Header */}
         <motion.div 
           initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
-          className="text-center mb-12"
+          className="text-center mb-8 sm:mb-12"
         >
-          <div className="inline-flex items-center justify-center w-20 h-20 rounded-full bg-gradient-to-r from-purple-500 to-pink-500 mb-6">
-            <Star className="h-10 w-10 text-white" />
+          <div className="inline-flex items-center justify-center w-16 h-16 sm:w-20 sm:h-20 rounded-full bg-gradient-to-r from-purple-500 to-pink-500 mb-4 sm:mb-6">
+            <Star className="h-8 w-8 sm:h-10 sm:w-10 text-white" />
           </div>
-          <h1 className="text-3xl md:text-4xl font-cinzel font-bold mb-4 text-white tracking-wide">
+          <h1 className="text-2xl sm:text-3xl md:text-4xl font-cinzel font-bold mb-3 sm:mb-4 text-white tracking-wide">
             Detailed Bazi Reading Service
           </h1>
-          <p className="text-xl text-mystic-300">
+          <p className="text-lg sm:text-xl text-mystic-300">
             10,000+ Word Report + Expert Consultation + Annual Fortune Analysis
           </p>
         </motion.div>
@@ -111,33 +111,33 @@ const BaziForm = () => {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.2 }}
-          className="mystic-card p-8 mb-8"
+          className="mystic-card p-6 sm:p-8 mb-6 sm:mb-8"
         >
-          <div className="text-center mb-8">
-            <h2 className="text-2xl font-cinzel font-bold mb-4 text-gold-400">Service Content</h2>
-            <div className="grid md:grid-cols-3 gap-6">
+          <div className="text-center mb-6 sm:mb-8">
+            <h2 className="text-xl sm:text-2xl font-cinzel font-bold mb-4 text-gold-400">Service Content</h2>
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 sm:gap-6">
               <div className="p-4 bg-mystic-800/30 rounded-lg border border-mystic-700/50">
-                <div className="text-3xl mb-2">📄</div>
-                <h3 className="font-semibold text-white mb-2">10,000+ Word Report</h3>
-                <p className="text-sm text-mystic-300">Comprehensive analysis covering wealth, relationships, health, and career</p>
+                <div className="text-2xl sm:text-3xl mb-2">📄</div>
+                <h3 className="font-semibold text-white mb-2 text-sm sm:text-base">10,000+ Word Report</h3>
+                <p className="text-xs sm:text-sm text-mystic-300">Comprehensive analysis covering wealth, relationships, health, and career</p>
               </div>
               <div className="p-4 bg-mystic-800/30 rounded-lg border border-mystic-700/50">
-                <div className="text-3xl mb-2">👨‍🏫</div>
-                <h3 className="font-semibold text-white mb-2">Expert Consultation</h3>
-                <p className="text-sm text-mystic-300">One-on-one consultation with experienced Bazi master</p>
+                <div className="text-2xl sm:text-3xl mb-2">👨‍🏫</div>
+                <h3 className="font-semibold text-white mb-2 text-sm sm:text-base">Expert Consultation</h3>
+                <p className="text-xs sm:text-sm text-mystic-300">One-on-one consultation with experienced Bazi master</p>
               </div>
-              <div className="p-4 bg-mystic-800/30 rounded-lg border border-mystic-700/50">
-                <div className="text-3xl mb-2">📅</div>
-                <h3 className="font-semibold text-white mb-2">Annual Fortune Analysis</h3>
-                <p className="text-sm text-mystic-300">3-year fortune prediction with guidance for success</p>
+              <div className="p-4 bg-mystic-800/30 rounded-lg border border-mystic-700/50 sm:col-span-2 md:col-span-1">
+                <div className="text-2xl sm:text-3xl mb-2">📅</div>
+                <h3 className="font-semibold text-white mb-2 text-sm sm:text-base">Annual Fortune Analysis</h3>
+                <p className="text-xs sm:text-sm text-mystic-300">3-year fortune prediction with guidance for success</p>
               </div>
             </div>
           </div>
           
-          <div className="text-center p-6 bg-gradient-to-r from-gold-500/20 to-yellow-500/20 rounded-lg border border-gold-500/30">
-            <h3 className="text-xl font-cinzel font-bold mb-2 text-gold-400">Service Price</h3>
-                               <div className="text-3xl font-bold text-white mb-2">$38</div>
-            <p className="text-mystic-300">Completed within 3-5 business days, PayPal payment accepted</p>
+          <div className="text-center p-4 sm:p-6 bg-gradient-to-r from-gold-500/20 to-yellow-500/20 rounded-lg border border-gold-500/30">
+            <h3 className="text-lg sm:text-xl font-cinzel font-bold mb-2 text-gold-400">Service Price</h3>
+            <div className="text-2xl sm:text-3xl font-bold text-white mb-2">$38</div>
+            <p className="text-sm sm:text-base text-mystic-300">Completed within 3-5 business days, PayPal payment accepted</p>
           </div>
         </motion.div>
 
@@ -146,9 +146,9 @@ const BaziForm = () => {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.3 }}
-          className="mystic-card p-8"
+          className="mystic-card p-6 sm:p-8"
         >
-          <form onSubmit={handleSubmit} className="space-y-6">
+          <form onSubmit={handleSubmit} className="space-y-5 sm:space-y-6">
             {/* Full Name */}
             <div>
               <label htmlFor="fullName" className="block text-sm font-medium text-mystic-200 mb-2">
@@ -161,7 +161,7 @@ const BaziForm = () => {
                 required
                 value={formData.fullName}
                 onChange={handleInputChange}
-                className="w-full px-4 py-3 bg-mystic-800/50 border border-mystic-700/50 rounded-lg text-white placeholder-mystic-400 focus:border-gold-500/50 focus:outline-none transition-colors"
+                className="w-full px-4 py-3 text-base bg-mystic-800/50 border border-mystic-700/50 rounded-lg text-white placeholder-mystic-400 focus:border-gold-500/50 focus:outline-none transition-colors"
                 placeholder="Enter your full name"
               />
             </div>
@@ -178,7 +178,7 @@ const BaziForm = () => {
                 required
                 value={formData.email}
                 onChange={handleInputChange}
-                className="w-full px-4 py-3 bg-mystic-800/50 border border-mystic-700/50 rounded-lg text-white placeholder-mystic-400 focus:border-gold-500/50 focus:outline-none transition-colors"
+                className="w-full px-4 py-3 text-base bg-mystic-800/50 border border-mystic-700/50 rounded-lg text-white placeholder-mystic-400 focus:border-gold-500/50 focus:outline-none transition-colors"
                 placeholder="Enter your email address"
               />
             </div>
@@ -194,7 +194,7 @@ const BaziForm = () => {
                 required
                 value={formData.gender}
                 onChange={handleInputChange}
-                className="w-full px-4 py-3 bg-mystic-800/50 border border-mystic-700/50 rounded-lg text-white focus:border-gold-500/50 focus:outline-none transition-colors"
+                className="w-full px-4 py-3 text-base bg-mystic-800/50 border border-mystic-700/50 rounded-lg text-white focus:border-gold-500/50 focus:outline-none transition-colors"
               >
                 <option value="">Select your gender</option>
                 <option value="Male">Male</option>
@@ -215,7 +215,7 @@ const BaziForm = () => {
                 required
                 value={formData.dateOfBirth}
                 onChange={handleInputChange}
-                className="w-full px-4 py-3 bg-mystic-800/50 border border-mystic-700/50 rounded-lg text-white focus:border-gold-500/50 focus:outline-none transition-colors"
+                className="w-full px-4 py-3 text-base bg-mystic-800/50 border border-mystic-700/50 rounded-lg text-white focus:border-gold-500/50 focus:outline-none transition-colors"
               />
             </div>
 
@@ -230,7 +230,7 @@ const BaziForm = () => {
                 name="timeOfBirth"
                 value={formData.timeOfBirth}
                 onChange={handleInputChange}
-                className="w-full px-4 py-3 bg-mystic-800/50 border border-mystic-700/50 rounded-lg text-white focus:border-gold-500/50 focus:outline-none transition-colors"
+                className="w-full px-4 py-3 text-base bg-mystic-800/50 border border-mystic-700/50 rounded-lg text-white focus:border-gold-500/50 focus:outline-none transition-colors"
               />
               <p className="text-xs text-mystic-400 mt-1">
                 If you don't know the exact time, leave this blank
@@ -249,7 +249,7 @@ const BaziForm = () => {
                 required
                 value={formData.birthLocation}
                 onChange={handleInputChange}
-                className="w-full px-4 py-3 bg-mystic-800/50 border border-mystic-700/50 rounded-lg text-white placeholder-mystic-400 focus:border-gold-500/50 focus:outline-none transition-colors"
+                className="w-full px-4 py-3 text-base bg-mystic-800/50 border border-mystic-700/50 rounded-lg text-white placeholder-mystic-400 focus:border-gold-500/50 focus:outline-none transition-colors"
                 placeholder="City, Country (e.g., New York, USA)"
               />
             </div>
@@ -265,7 +265,7 @@ const BaziForm = () => {
                        rows="4"
                        value={formData.additionalNotes}
                        onChange={handleInputChange}
-                       className="w-full px-4 py-3 bg-mystic-800/50 border border-mystic-700/50 rounded-lg text-white placeholder-mystic-400 focus:border-gold-500/50 focus:outline-none transition-colors resize-none"
+                       className="w-full px-4 py-3 text-base bg-mystic-800/50 border border-mystic-700/50 rounded-lg text-white placeholder-mystic-400 focus:border-gold-500/50 focus:outline-none transition-colors resize-none"
                        placeholder="Any specific questions or areas you'd like me to focus on..."
                      />
                    </div>
@@ -323,17 +323,17 @@ const BaziForm = () => {
               disabled={isSubmitting}
               whileHover={{ scale: 1.02 }}
               whileTap={{ scale: 0.98 }}
-              className="w-full bg-gradient-to-r from-purple-500 to-pink-500 text-white font-poppins font-semibold py-4 px-8 rounded-full hover:from-purple-400 hover:to-pink-400 transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed tracking-wide"
+              className="w-full bg-gradient-to-r from-purple-500 to-pink-500 text-white font-poppins font-semibold py-4 px-6 sm:px-8 rounded-full hover:from-purple-400 hover:to-pink-400 transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed tracking-wide text-base"
             >
               {isSubmitting ? 'Submitting...' : 'Book Detailed Bazi Reading'}
             </motion.button>
           </form>
 
           {/* Back Link */}
-          <div className="mt-8 text-center">
+          <div className="mt-6 sm:mt-8 text-center">
             <Link
               to="/services"
-              className="inline-flex items-center space-x-2 text-mystic-300 hover:text-gold-400 transition-colors"
+              className="inline-flex items-center space-x-2 text-mystic-300 hover:text-gold-400 transition-colors text-sm sm:text-base"
             >
               <ArrowLeft className="h-4 w-4" />
               <span>Back to Services</span>

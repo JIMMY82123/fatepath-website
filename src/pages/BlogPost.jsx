@@ -917,6 +917,227 @@ const BlogPost = () => {
        slug: "bazi-vs-mbti-personality-destiny",
        author: "玄印 (Xuan Yin)",
        tags: ["BaZi", "MBTI", "Personality", "Destiny", "Chinese Astrology", "Psychology", "Self-Discovery", "Career Guidance"]
+     },
+     {
+       id: 10,
+       title: "What is the Best Bazi for Wealth? Decoding Your Chinese Astrology Blueprint",
+       excerpt: "Discover the 3 wealthiest Bazi patterns in Chinese metaphysics, how to activate your financial potential, and why 'wealth' is more than money. Based on 10,000+ client cases.",
+       content: `
+         <div class="mb-8">
+           <p class="text-lg text-mystic-300 leading-relaxed mb-4 italic">
+             "Wealth is not about having money, but about having options."
+           </p>
+           <p class="text-sm text-mystic-400">—Ancient Chinese wisdom</p>
+         </div>
+
+         <h2 class="text-2xl font-cinzel font-bold text-white mb-4 mt-8">🔑 Beyond "Rich" Bazi</h2>
+         <p class="mb-6 text-mystic-300 leading-relaxed">
+           Many believe a "wealthy Bazi" means piles of cash, but true abundance in Chinese astrology combines resources, opportunities, and wisdom to grow them. Here, we decode real-world wealth patterns from billionaires' charts—and how to apply them to your life.
+         </p>
+
+         <h2 class="text-2xl font-cinzel font-bold text-white mb-4 mt-8">🔑 Part 1: The 3 Wealth Archetypes in Bazi</h2>
+         <p class="mb-6 text-mystic-300 leading-relaxed">
+           <em>(Based on 10,000+ client cases)</em>
+         </p>
+
+         <div class="overflow-x-auto mb-8">
+           <table class="w-full border-collapse">
+             <thead>
+               <tr class="border-b border-mystic-700">
+                 <th class="text-left p-4 text-gold-400 font-semibold">Pattern</th>
+                 <th class="text-left p-4 text-gold-400 font-semibold">Bazi Structure</th>
+                 <th class="text-left p-4 text-gold-400 font-semibold">Real-World Example</th>
+               </tr>
+             </thead>
+             <tbody>
+               <tr class="border-b border-mystic-700/50">
+                 <td class="p-4 text-mystic-300 font-medium">The Innovator</td>
+                 <td class="p-4 text-mystic-300">Strong 食神 (Creativity Star) + 正财 (Steady Wealth)</td>
+                 <td class="p-4 text-mystic-300">Elon Musk (Tech disruption)</td>
+               </tr>
+               <tr class="border-b border-mystic-700/50">
+                 <td class="p-4 text-mystic-300 font-medium">The Strategist</td>
+                 <td class="p-4 text-mystic-300">七杀 (Ambition Star) controlled by 印星 (Wisdom)</td>
+                 <td class="p-4 text-mystic-300">Warren Buffett (Value investing)</td>
+               </tr>
+               <tr class="border-b border-mystic-700/50">
+                 <td class="p-4 text-mystic-300 font-medium">The Networker</td>
+                 <td class="p-4 text-mystic-300">偏财 (Opportunity Wealth) + 桃花 (Social Charm)</td>
+                 <td class="p-4 text-mystic-300">Oprah Winfrey (Media empire)</td>
+               </tr>
+             </tbody>
+           </table>
+         </div>
+
+         <!-- Wealth Archetypes Visualization -->
+         <div class="my-8 text-center">
+           <img src="/images/blog/wealth-archetypes.svg" alt="The 3 Wealth Archetypes in BaZi" class="w-full max-w-4xl mx-auto rounded-lg shadow-lg" />
+           <p class="text-sm text-mystic-400 mt-2">Visual guide to the three main wealth patterns in BaZi analysis</p>
+         </div>
+
+         <div class="bg-gradient-to-r from-mystic-800 to-mystic-900 p-6 rounded-xl border border-gold-500/30 mb-8">
+           <p class="text-mystic-300">
+             <strong>💡 Key Insight:</strong> Your "wealth type" determines how you attract abundance—forcing a mismatched path (e.g., an Innovator doing routine jobs) blocks flow.
+           </p>
+         </div>
+
+         <h2 class="text-2xl font-cinzel font-bold text-white mb-4 mt-8">🌟 Part 2: Your Hidden Wealth Codes</h2>
+         
+         <h3 class="text-xl font-cinzel font-semibold text-gold-400 mb-4 mt-6">A. The Wealth Star (财星) – More Than Money</h3>
+         <ul class="space-y-3 mb-6 text-mystic-300">
+           <li class="flex items-start space-x-3">
+             <div class="w-2 h-2 bg-gold-400 rounded-full mt-2 flex-shrink-0"></div>
+             <span><strong>正财 (Zhèng Cái):</strong> Earned income (salary, business profits) – needs Strong Day Master to hold.</span>
+           </li>
+           <li class="flex items-start space-x-3">
+             <div class="w-2 h-2 bg-gold-400 rounded-full mt-2 flex-shrink-0"></div>
+             <span><strong>偏财 (Piān Cái):</strong> Unexpected gains (investments, gifts) – thrives with Social Fire (巳午).</span>
+           </li>
+         </ul>
+
+         <h3 class="text-xl font-cinzel font-semibold text-gold-400 mb-4 mt-6">B. Support Stars You Can't Ignore</h3>
+         <ul class="space-y-3 mb-6 text-mystic-300">
+           <li class="flex items-start space-x-3">
+             <div class="w-2 h-2 bg-gold-400 rounded-full mt-2 flex-shrink-0"></div>
+             <span><strong>食神 (Shí Shén):</strong> Creativity → Turns ideas into value (e.g., Steve Jobs' Wood-Fire creativity)</span>
+           </li>
+           <li class="flex items-start space-x-3">
+             <div class="w-2 h-2 bg-gold-400 rounded-full mt-2 flex-shrink-0"></div>
+             <span><strong>印星 (Yìn Xīng):</strong> Knowledge → Protects wealth from risks (e.g., Buffett's Earth wisdom)</span>
+           </li>
+         </ul>
+
+         <!-- Wealth Stars Visualization -->
+         <div class="my-8 text-center">
+           <img src="/images/blog/wealth-stars.svg" alt="Your Hidden Wealth Codes" class="w-full max-w-4xl mx-auto rounded-lg shadow-lg" />
+           <p class="text-sm text-mystic-400 mt-2">Understanding the wealth stars and support stars in your BaZi chart</p>
+         </div>
+
+         <h2 class="text-2xl font-cinzel font-bold text-white mb-4 mt-8">🚫 Part 3: Why "Rich" Bazi Fails – 3 Tragic Cases</h2>
+
+         <div class="space-y-6 mb-8">
+           <div class="mystic-card p-6 border-l-4 border-red-500/50">
+             <h3 class="text-lg font-cinzel font-semibold text-red-400 mb-3">1. Weak Day Master + Heavy Wealth</h3>
+             <p class="text-mystic-300 mb-2"><strong>Example:</strong> 癸水日主 (Weak Water) with 未土+戌土 (Strong Earth wealth stars)</p>
+             <p class="text-mystic-300 text-sm"><strong>Result:</strong> Overwhelmed by opportunities → Debt or stress-induced loss.</p>
+           </div>
+
+           <div class="mystic-card p-6 border-l-4 border-red-500/50">
+             <h3 class="text-lg font-cinzel font-semibold text-red-400 mb-3">2. Wealth Clash with Conflict Stars</h3>
+             <p class="text-mystic-300 mb-2"><strong>Example:</strong> 偏财 (Piān Cái) next to 劫财 (Jié Cái – Wealth Robber)</p>
+             <p class="text-mystic-300 text-sm"><strong>Result:</strong> Sudden windfalls lost to scams or "friends."</p>
+           </div>
+
+           <div class="mystic-card p-6 border-l-4 border-red-500/50">
+             <h3 class="text-lg font-cinzel font-semibold text-red-400 mb-3">3. Fire Absence in Water Wealth</h3>
+             <p class="text-mystic-300 mb-2"><strong>Example:</strong> 壬水+子水 (Strong Water wealth) but no 午火 (Fire drive)</p>
+             <p class="text-mystic-300 text-sm"><strong>Result:</strong> Resources frozen by indecision (e.g., inherited funds never invested).</p>
+           </div>
+         </div>
+
+         <h2 class="text-2xl font-cinzel font-bold text-white mb-4 mt-8">💡 Part 4: Activate Your Wealth Potential – 3 Steps</h2>
+
+         <div class="space-y-6 mb-8">
+           <div class="mystic-card p-6 border-l-4 border-gold-500/50">
+             <h3 class="text-lg font-cinzel font-semibold text-gold-400 mb-3">Step 1: Find Your Wealth Star</h3>
+             <p class="text-mystic-300 mb-3">Use our <a href="/tools/bazi" class="text-gold-400 hover:text-gold-300 underline">Bazi Calculator</a> → Check your chart for:</p>
+             <ul class="space-y-2 text-mystic-300 text-sm">
+               <li>• Wood (甲,乙) + Earth (戊,己) = 偏财 (Opportunity Wealth)</li>
+               <li>• Metal (庚,辛) + Wood (甲,乙) = 正财 (Steady Wealth)</li>
+             </ul>
+           </div>
+
+           <div class="mystic-card p-6 border-l-4 border-gold-500/50">
+             <h3 class="text-lg font-cinzel font-semibold text-gold-400 mb-3">Step 2: Balance Your Chart</h3>
+             <ul class="space-y-2 text-mystic-300 text-sm">
+               <li>• <strong>Weak Day Master?</strong> Add 印星 (Yìn) energy: Wear white/gray (Metal), study wealth mentors.</li>
+               <li>• <strong>Wealth Clash?</strong> 合 (Hé) the robber: Partner with 正官 (Zhèng Guān) people (reliable leaders).</li>
+             </ul>
+           </div>
+
+           <div class="mystic-card p-6 border-l-4 border-gold-500/50">
+             <h3 class="text-lg font-cinzel font-semibold text-gold-400 mb-3">Step 3: Feng Shui Wealth Triggers</h3>
+             <div class="overflow-x-auto">
+               <table class="w-full border-collapse">
+                 <thead>
+                   <tr class="border-b border-mystic-700">
+                     <th class="text-left p-2 text-gold-400 font-semibold text-sm">Wealth Type</th>
+                     <th class="text-left p-2 text-gold-400 font-semibold text-sm">Direction</th>
+                     <th class="text-left p-2 text-gold-400 font-semibold text-sm">Element Boost</th>
+                   </tr>
+                 </thead>
+                 <tbody>
+                   <tr class="border-b border-mystic-700/50">
+                     <td class="p-2 text-mystic-300 text-sm">正财 (Steady)</td>
+                     <td class="p-2 text-mystic-300 text-sm">Southeast</td>
+                     <td class="p-2 text-mystic-300 text-sm">Green plants + Wood desk</td>
+                   </tr>
+                   <tr class="border-b border-mystic-700/50">
+                     <td class="p-2 text-mystic-300 text-sm">偏财 (Opportunity)</td>
+                     <td class="p-2 text-mystic-300 text-sm">Northwest</td>
+                     <td class="p-2 text-mystic-300 text-sm">Metal bowl + Gold coins</td>
+                   </tr>
+                 </tbody>
+               </table>
+             </div>
+           </div>
+
+           <!-- Feng Shui Wealth Triggers Visualization -->
+           <div class="my-8 text-center">
+             <img src="/images/blog/feng-shui-wealth.svg" alt="Feng Shui Wealth Triggers" class="w-full max-w-4xl mx-auto rounded-lg shadow-lg" />
+             <p class="text-sm text-mystic-400 mt-2">Strategic Feng Shui placement to activate your wealth potential</p>
+           </div>
+         </div>
+
+         <h2 class="text-2xl font-cinzel font-bold text-white mb-4 mt-8">❓ FAQs: Busting Wealth Bazi Myths</h2>
+
+         <div class="space-y-6 mb-8">
+           <div class="mystic-card p-6">
+             <h3 class="text-lg font-cinzel font-semibold text-gold-400 mb-3">Q: Is a "Gold" Bazi the richest?</h3>
+             <p class="text-mystic-300 text-sm">A: No! 庚金 (Yang Metal) needs Fire to forge wealth (e.g., tools), while 辛金 (Yin Metal) thrives as "jewelry" – valuable but fragile without Earth support.</p>
+           </div>
+
+           <div class="mystic-card p-6">
+             <h3 class="text-lg font-cinzel font-semibold text-gold-400 mb-3">Q: Can poor Bazi become rich?</h3>
+             <p class="text-mystic-300 text-sm">A: Yes! Liu Chuanzhong (Alibaba co-founder) has a "Weak Water" chart but used 印星 (knowledge) to build empire – proof that understanding your chart beats "lucky" elements.</p>
+           </div>
+         </div>
+
+         <h2 class="text-2xl font-cinzel font-bold text-white mb-4 mt-8">💎 Conclusion: Wealth is a Verb</h2>
+         <p class="mb-6 text-mystic-300 leading-relaxed">
+           The "best" Bazi for wealth isn't about fixed elements—it's about aligning your chart's potential with action:
+         </p>
+         <ul class="space-y-3 mb-8 text-mystic-300">
+           <li class="flex items-start space-x-3">
+             <div class="w-2 h-2 bg-gold-400 rounded-full mt-2 flex-shrink-0"></div>
+             <span><strong>Innovators</strong> → Create products solving real pains</span>
+           </li>
+           <li class="flex items-start space-x-3">
+             <div class="w-2 h-2 bg-gold-400 rounded-full mt-2 flex-shrink-0"></div>
+             <span><strong>Strategists</strong> → Master asset allocation</span>
+           </li>
+           <li class="flex items-start space-x-3">
+             <div class="w-2 h-2 bg-gold-400 rounded-full mt-2 flex-shrink-0"></div>
+             <span><strong>Networkers</strong> → Build communities that scale</span>
+           </li>
+         </ul>
+
+         <!-- Wealth BaZi Journey Summary -->
+         <div class="my-8 text-center">
+           <img src="/images/blog/wealth-bazi-summary.svg" alt="Wealth BaZi Journey: From Analysis to Activation" class="w-full max-w-4xl mx-auto rounded-lg shadow-lg" />
+           <p class="text-sm text-mystic-400 mt-2">Your complete journey from understanding to activating wealth potential</p>
+         </div>
+
+
+       `,
+       category: "wealth-bazi",
+       categoryLabel: "Wealth & Fortune",
+       date: "2025-08-04",
+       readTime: "18 min read",
+       image: "/images/blog/bazi-wealth-blueprint.jpg",
+       slug: "best-bazi-wealth-chinese-astrology-blueprint",
+       author: "玄印 (Xuan Yin)",
+       tags: ["Wealth Bazi", "Chinese Astrology", "Financial Luck", "Wealth Patterns", "Bazi Analysis", "Feng Shui", "Money Luck", "Destiny"]
      }
      // 您可以在这里添加更多文章
   ]
@@ -962,20 +1183,20 @@ const BlogPost = () => {
   }
 
   return (
-    <div className="min-h-screen pt-20 px-4 sm:px-6 lg:px-8">
+    <div className="min-h-screen pt-16 sm:pt-20 px-4 sm:px-6 lg:px-8">
       <div className="max-w-4xl mx-auto">
         {/* Back Button */}
         <motion.div 
           initial={{ opacity: 0, x: -20 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.6 }}
-          className="mb-8"
+          className="mb-6 sm:mb-8"
         >
           <Link
             to="/blog"
-            className="inline-flex items-center space-x-2 text-mystic-300 hover:text-gold-400 transition-colors"
+            className="inline-flex items-center space-x-2 text-mystic-300 hover:text-gold-400 transition-colors text-sm sm:text-base"
           >
-            <ArrowLeft className="h-5 w-5" />
+            <ArrowLeft className="h-4 w-4 sm:h-5 sm:w-5" />
             <span>Back to Blog</span>
           </Link>
         </motion.div>
@@ -985,7 +1206,7 @@ const BlogPost = () => {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
-          className="mb-12"
+          className="mb-8 sm:mb-12"
         >
           {/* Category Badge */}
           <div className="mb-4">
@@ -995,28 +1216,28 @@ const BlogPost = () => {
           </div>
 
           {/* Title */}
-          <h1 className="text-3xl md:text-5xl font-cinzel font-bold text-white mb-6 leading-tight">
+          <h1 className="text-2xl sm:text-3xl md:text-5xl font-cinzel font-bold text-white mb-4 sm:mb-6 leading-tight">
             {post.title}
           </h1>
 
           {/* Meta Information */}
-          <div className="flex flex-wrap items-center gap-6 text-mystic-400 mb-8">
+          <div className="flex flex-wrap items-center gap-4 sm:gap-6 text-mystic-400 mb-6 sm:mb-8 text-sm sm:text-base">
             <div className="flex items-center space-x-2">
-              <BookOpen className="h-5 w-5" />
+              <BookOpen className="h-4 w-4 sm:h-5 sm:w-5" />
               <span>By {post.author}</span>
             </div>
             <div className="flex items-center space-x-2">
-              <Calendar className="h-5 w-5" />
+              <Calendar className="h-4 w-4 sm:h-5 sm:w-5" />
               <span>{formatDate(post.date)}</span>
             </div>
             <div className="flex items-center space-x-2">
-              <Clock className="h-5 w-5" />
+              <Clock className="h-4 w-4 sm:h-5 sm:w-5" />
               <span>{post.readTime}</span>
             </div>
           </div>
 
           {/* Featured Image */}
-          <div className="relative h-64 md:h-96 rounded-2xl overflow-hidden mb-8">
+          <div className="relative h-48 sm:h-64 md:h-96 rounded-xl sm:rounded-2xl overflow-hidden mb-6 sm:mb-8">
             <img
               src={post.image}
               alt={post.title}
@@ -1029,10 +1250,10 @@ const BlogPost = () => {
             {/* Fallback Placeholder */}
             <div className="hidden w-full h-full bg-gradient-to-br from-mystic-800 to-mystic-900 flex items-center justify-center">
               <div className="text-center">
-                <div className="w-20 h-20 bg-gradient-to-r from-gold-500 to-orange-500 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <span className="text-white text-3xl">📖</span>
+                <div className="w-16 h-16 sm:w-20 sm:h-20 bg-gradient-to-r from-gold-500 to-orange-500 rounded-full flex items-center justify-center mx-auto mb-3 sm:mb-4">
+                  <span className="text-white text-2xl sm:text-3xl">📖</span>
                 </div>
-                <p className="text-mystic-300">Article Image</p>
+                <p className="text-mystic-300 text-sm sm:text-base">Article Image</p>
               </div>
             </div>
           </div>
@@ -1108,20 +1329,20 @@ const BlogPost = () => {
                   onClick={() => {
                     copyToClipboard(window.location.href);
                   }}
-                  className="p-3 bg-mystic-800/50 border border-mystic-700/50 rounded-lg text-mystic-300 hover:text-gold-400 hover:border-gold-500/50 transition-colors flex items-center space-x-2"
+                  className="p-2 sm:p-3 bg-mystic-800/50 border border-mystic-700/50 rounded-lg text-mystic-300 hover:text-gold-400 hover:border-gold-500/50 transition-colors flex items-center space-x-2"
                 >
-                  <svg className="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <svg className="h-4 w-4 sm:h-5 sm:w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z" />
                   </svg>
-                  <span className="text-sm">Copy Link</span>
+                  <span className="text-xs sm:text-sm">Copy Link</span>
                 </button>
               </div>
             </div>
 
             {/* Social Media Share Buttons */}
-            <div className="flex flex-col space-y-4">
-              <span className="text-mystic-400 font-medium">Share on social media:</span>
-              <div className="flex items-center space-x-3">
+            <div className="flex flex-col space-y-3 sm:space-y-4">
+              <span className="text-sm sm:text-base text-mystic-400 font-medium">Share on social media:</span>
+              <div className="flex flex-wrap items-center gap-2 sm:gap-3">
                 {/* Facebook */}
                 <button 
                   onClick={() => {
@@ -1184,10 +1405,10 @@ const BlogPost = () => {
 
             <Link
               to="/services"
-              className="inline-flex items-center space-x-2 bg-gradient-to-r from-gold-500 to-gold-600 text-black font-semibold px-6 py-3 rounded-lg hover:from-gold-400 hover:to-gold-500 transition-all duration-300"
+              className="inline-flex items-center space-x-2 bg-gradient-to-r from-gold-500 to-gold-600 text-black font-semibold px-4 sm:px-6 py-3 rounded-lg hover:from-gold-400 hover:to-gold-500 transition-all duration-300 text-sm sm:text-base"
             >
               <span>Get Your Reading</span>
-              <ArrowLeft className="h-5 w-5 rotate-180" />
+              <ArrowLeft className="h-4 w-4 sm:h-5 sm:w-5 rotate-180" />
             </Link>
           </div>
         </motion.div>

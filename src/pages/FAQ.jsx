@@ -65,7 +65,7 @@ const FAQ = () => {
          initial={{ opacity: 0 }}
          animate={{ opacity: 1 }}
          transition={{ duration: 0.8 }}
-         className="relative py-20 px-4 sm:px-6 lg:px-8"
+         className="relative py-16 sm:py-20 px-4 sm:px-6 lg:px-8"
        >
          {/* Background Gradient */}
          <div className="absolute inset-0 bg-gradient-to-b from-mystic-900 via-mystic-900 to-mystic-900"></div>
@@ -76,7 +76,7 @@ const FAQ = () => {
              initial={{ opacity: 0, y: 30 }}
              animate={{ opacity: 1, y: 0 }}
              transition={{ duration: 0.8, delay: 0.2 }}
-             className="text-4xl md:text-6xl font-cinzel font-bold mb-6"
+             className="text-3xl sm:text-4xl md:text-6xl font-cinzel font-bold mb-4 sm:mb-6"
            >
              <span className="gradient-text">Frequently Asked</span>
              <br />
@@ -87,7 +87,7 @@ const FAQ = () => {
              initial={{ opacity: 0, y: 30 }}
              animate={{ opacity: 1, y: 0 }}
              transition={{ duration: 0.8, delay: 0.4 }}
-             className="text-xl text-mystic-300 max-w-2xl mx-auto mb-12"
+             className="text-lg sm:text-xl text-mystic-300 max-w-2xl mx-auto mb-8 sm:mb-12"
            >
              Answers to common questions about BaZi analysis, love compatibility readings, and custom talismans
            </motion.p>
@@ -112,9 +112,9 @@ const FAQ = () => {
             >
               <button
                 onClick={() => toggleItem(index)}
-                className="w-full px-6 py-4 text-left flex items-center justify-between hover:bg-mystic-800/50 transition-colors duration-200"
+                className="w-full px-4 sm:px-6 py-3 sm:py-4 text-left flex items-center justify-between hover:bg-mystic-800/50 transition-colors duration-200"
               >
-                <h3 className="text-lg font-cinzel font-semibold text-white pr-4">
+                <h3 className="text-base sm:text-lg font-cinzel font-semibold text-white pr-4">
                   {item.question}
                 </h3>
                 <div className="flex-shrink-0">
@@ -135,7 +135,7 @@ const FAQ = () => {
                   className="px-6 pb-4"
                 >
                   <div 
-                    className="text-mystic-300 leading-relaxed"
+                    className="text-sm sm:text-base text-mystic-300 leading-relaxed"
                     dangerouslySetInnerHTML={{ __html: item.answer }}
                   />
                 </motion.div>
@@ -151,25 +151,25 @@ const FAQ = () => {
           transition={{ duration: 0.8, delay: 1.5 }}
           className="text-center mt-16"
         >
-                     <div className="mystic-card border border-gold-500/30 p-8">
-             <h3 className="text-2xl font-cinzel font-bold text-white mb-4">
+                     <div className="mystic-card border border-gold-500/30 p-6 sm:p-8">
+             <h3 className="text-xl sm:text-2xl font-cinzel font-bold text-white mb-3 sm:mb-4">
                Still have questions?
              </h3>
-             <p className="text-mystic-300 mb-6">
+             <p className="text-sm sm:text-base text-mystic-300 mb-4 sm:mb-6">
                If you couldn't find the answer to your question here, feel free to contact me anytime
              </p>
-             <div className="flex flex-col sm:flex-row gap-4 justify-center">
+             <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center">
                <a
                  href="https://wa.me/your-whatsapp-number"
                  target="_blank"
                  rel="noopener noreferrer"
-                 className="inline-flex items-center justify-center px-6 py-3 bg-green-600 hover:bg-green-700 text-white font-semibold rounded-full transition-colors duration-300"
+                 className="inline-flex items-center justify-center px-4 sm:px-6 py-3 bg-green-600 hover:bg-green-700 text-white font-semibold rounded-full transition-colors duration-300 text-sm sm:text-base"
                >
                  WhatsApp Consultation
                </a>
                <a
                  href="mailto:chenxiao0801@hotmail.com"
-                 className="inline-flex items-center justify-center px-6 py-3 bg-gold-500 hover:bg-gold-600 text-black font-semibold rounded-full transition-colors duration-300"
+                 className="inline-flex items-center justify-center px-4 sm:px-6 py-3 bg-gold-500 hover:bg-gold-600 text-black font-semibold rounded-full transition-colors duration-300 text-sm sm:text-base"
                >
                  Email Consultation
                </a>

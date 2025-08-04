@@ -86,19 +86,19 @@ const WealthSign = () => {
   }
 
   return (
-    <div className="min-h-screen pt-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-mystic-900 via-mystic-800 to-mystic-900">
+    <div className="min-h-screen pt-16 sm:pt-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-mystic-900 via-mystic-800 to-mystic-900">
       <div className="max-w-4xl mx-auto">
         {/* Header */}
         <motion.div 
           initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
-          className="text-center mb-12"
+          className="text-center mb-8 sm:mb-12"
         >
-                     <h1 className="text-4xl md:text-6xl font-playfair font-bold mb-6">
+                     <h1 className="text-3xl sm:text-4xl md:text-6xl font-playfair font-bold mb-4 sm:mb-6">
              <span className="gradient-text">Ancient Chinese Wisdom Oracle</span>
            </h1>
-           <p className="text-xl text-mystic-300 max-w-3xl mx-auto leading-relaxed">
+           <p className="text-lg sm:text-xl text-mystic-300 max-w-3xl mx-auto leading-relaxed">
              Discover ancient Chinese decision-making wisdom through our interactive oracle system. 
              Get personalized guidance based on traditional philosophy and modern psychology.
            </p>
@@ -109,7 +109,7 @@ const WealthSign = () => {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.2 }}
-          className="mystic-card p-6 mb-8 border border-gold-500/20"
+          className="mystic-card p-4 sm:p-6 mb-6 sm:mb-8 border border-gold-500/20"
         >
                      <div className="flex items-center mb-4">
              <Sparkles className="h-6 w-6 text-gold-400 mr-3" />
@@ -223,7 +223,7 @@ const WealthSign = () => {
             )}
           </AnimatePresence>
           
-          <div className="relative w-[32rem] h-[36rem] perspective-1000">
+          <div className="relative w-full max-w-sm sm:max-w-md md:w-[32rem] h-[24rem] sm:h-[28rem] md:h-[36rem] perspective-1000">
             <motion.div
               className={`w-full h-full relative transition-transform duration-1000 transform-style-preserve-3d ${
                 isFlipped ? 'rotate-y-180' : ''
@@ -258,12 +258,12 @@ const WealthSign = () => {
                    </div>
                    
                    {/* Content Overlay */}
-                   <div className="relative z-10 h-full flex flex-col items-center justify-center p-8 text-center">
-                     <h3 className="text-3xl font-cinzel font-bold text-white mb-4 drop-shadow-lg">
+                   <div className="relative z-10 h-full flex flex-col items-center justify-center p-4 sm:p-6 md:p-8 text-center">
+                     <h3 className="text-2xl sm:text-3xl font-cinzel font-bold text-white mb-3 sm:mb-4 drop-shadow-lg">
                        Wisdom Oracle
                      </h3>
                      
-                     <p className="text-mystic-100 text-center mb-8 text-lg leading-relaxed font-medium drop-shadow-md max-w-sm">
+                     <p className="text-mystic-100 text-center mb-6 sm:mb-8 text-sm sm:text-lg leading-relaxed font-medium drop-shadow-md max-w-sm">
                        Begin the sacred meditation ritual to connect with ancient wisdom. Focus your intention and prepare your spirit for divine guidance.
                      </p>
                      
@@ -350,7 +350,7 @@ const WealthSign = () => {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.6 }}
-          className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12"
+          className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-center mb-8 sm:mb-12"
         >
                      <button
              onClick={handleReset}
@@ -399,12 +399,12 @@ const WealthSign = () => {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.8 }}
-          className="mystic-card p-6"
+          className="mystic-card p-4 sm:p-6"
         >
-                     <h3 className="text-xl font-cinzel font-semibold text-white mb-4 text-center">
+                     <h3 className="text-lg sm:text-xl font-cinzel font-semibold text-white mb-3 sm:mb-4 text-center">
              Understanding Wisdom Levels
            </h3>
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-4">
             {Object.entries(culturalInfo.levels).map(([level, description]) => (
               <div key={level} className={`p-4 rounded-lg ${getLevelBgColor(level)}`}>
                 <h4 className={`font-semibold mb-2 ${getLevelColor(level)}`}>

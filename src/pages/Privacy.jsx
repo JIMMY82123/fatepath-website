@@ -4,22 +4,22 @@ import { Link } from 'react-router-dom'
 
 const Privacy = () => {
   return (
-    <div className="min-h-screen pt-20 px-4 sm:px-6 lg:px-8">
+    <div className="min-h-screen pt-16 sm:pt-20 px-4 sm:px-6 lg:px-8">
       <div className="max-w-4xl mx-auto">
         {/* Header */}
         <motion.div 
           initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
-          className="text-center mb-12"
+          className="text-center mb-8 sm:mb-12"
         >
-          <div className="inline-flex items-center justify-center w-20 h-20 rounded-full bg-gradient-to-r from-blue-500 to-purple-500 mb-6">
-            <Shield className="h-10 w-10 text-white" />
+          <div className="inline-flex items-center justify-center w-16 h-16 sm:w-20 sm:h-20 rounded-full bg-gradient-to-r from-blue-500 to-purple-500 mb-4 sm:mb-6">
+            <Shield className="h-8 w-8 sm:h-10 sm:w-10 text-white" />
           </div>
-          <h1 className="text-3xl md:text-4xl font-cinzel font-bold mb-4 text-white tracking-wide">
+          <h1 className="text-2xl sm:text-3xl md:text-4xl font-cinzel font-bold mb-3 sm:mb-4 text-white tracking-wide">
             Privacy Policy
           </h1>
-          <p className="text-xl text-mystic-300">
+          <p className="text-lg sm:text-xl text-mystic-300">
             Your data security and privacy are our top priority
           </p>
         </motion.div>
@@ -29,7 +29,7 @@ const Privacy = () => {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.1 }}
-          className="mystic-card p-8 space-y-8"
+          className="mystic-card p-6 sm:p-8 space-y-6 sm:space-y-8"
         >
           {/* Data Collection */}
           <section>

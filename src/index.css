@@ -59,6 +59,87 @@ body {
   h1, h2, h3, h4, h5, h6 {
     -webkit-text-size-adjust: 100%;
   }
+
+  /* Enhanced mobile optimizations */
+  /* Prevent horizontal scroll */
+  body {
+    overflow-x: hidden;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  /* Improve touch scrolling */
+  * {
+    -webkit-overflow-scrolling: touch;
+  }
+
+  /* Better touch targets for small screens */
+  .touch-target {
+    min-height: 48px;
+    min-width: 48px;
+    padding: 12px;
+  }
+
+  /* Optimize images for mobile */
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  /* Improve form elements on mobile */
+  input, textarea, select {
+    -webkit-appearance: none;
+    border-radius: 8px;
+  }
+
+  /* Better spacing for mobile */
+  .mobile-spacing {
+    padding: 16px;
+    margin: 8px 0;
+  }
+
+  /* Optimize animations for mobile */
+  .mobile-optimized-animation {
+    will-change: transform;
+    transform: translateZ(0);
+  }
+
+  /* Improve text readability on mobile */
+  p, li {
+    line-height: 1.7;
+    font-size: 16px;
+  }
+
+  /* Better button states for mobile */
+  button:focus-visible {
+    outline: 2px solid #facc15;
+    outline-offset: 2px;
+  }
+
+  /* Optimize card shadows for mobile */
+  .mystic-card {
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  }
+}
+
+/* Additional mobile optimizations for very small screens */
+@media (max-width: 480px) {
+  /* Even better touch targets for very small screens */
+  button, a {
+    min-height: 52px;
+    min-width: 52px;
+    padding: 14px;
+  }
+
+  /* Optimize text sizes for very small screens */
+  h1 { font-size: 1.75rem; }
+  h2 { font-size: 1.5rem; }
+  h3 { font-size: 1.25rem; }
+  
+  /* Better spacing for very small screens */
+  .container {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
 }
 
 /* Custom utility classes */
