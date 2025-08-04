@@ -14,11 +14,11 @@ import TalismanForm from './pages/TalismanForm'
 import PaymentGuide from './pages/PaymentGuide'
 import PaymentSuccess from './pages/PaymentSuccess'
 import WealthSign from './pages/WealthSign'
-import { usePageTracking } from './hooks/useAnalytics'
+// import { usePageTracking } from './hooks/useAnalytics'
 
 function App() {
   // 启用页面浏览跟踪
-  usePageTracking();
+  // usePageTracking();
   return (
     <Router>
       <div className="min-h-screen bg-mystic-900">
