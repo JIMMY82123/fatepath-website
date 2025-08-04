@@ -969,11 +969,7 @@ const BlogPost = () => {
            </table>
          </div>
 
-         <!-- Wealth Archetypes Visualization -->
-         <div class="my-8 text-center">
-           <img src="/images/blog/wealth-archetypes.svg" alt="The 3 Wealth Archetypes in BaZi" class="w-full max-w-4xl mx-auto rounded-lg shadow-lg" />
-           <p class="text-sm text-mystic-400 mt-2">Visual guide to the three main wealth patterns in BaZi analysis</p>
-         </div>
+
 
          <div class="bg-gradient-to-r from-mystic-800 to-mystic-900 p-6 rounded-xl border border-gold-500/30 mb-8">
            <p class="text-mystic-300">
@@ -1007,11 +1003,7 @@ const BlogPost = () => {
            </li>
          </ul>
 
-         <!-- Wealth Stars Visualization -->
-         <div class="my-8 text-center">
-           <img src="/images/blog/wealth-stars.svg" alt="Your Hidden Wealth Codes" class="w-full max-w-4xl mx-auto rounded-lg shadow-lg" />
-           <p class="text-sm text-mystic-400 mt-2">Understanding the wealth stars and support stars in your BaZi chart</p>
-         </div>
+
 
          <h2 class="text-2xl font-cinzel font-bold text-white mb-4 mt-8">🚫 Part 3: Why "Rich" Bazi Fails – 3 Tragic Cases</h2>
 
@@ -1082,11 +1074,7 @@ const BlogPost = () => {
              </div>
            </div>
 
-           <!-- Feng Shui Wealth Triggers Visualization -->
-           <div class="my-8 text-center">
-             <img src="/images/blog/feng-shui-wealth.svg" alt="Feng Shui Wealth Triggers" class="w-full max-w-4xl mx-auto rounded-lg shadow-lg" />
-             <p class="text-sm text-mystic-400 mt-2">Strategic Feng Shui placement to activate your wealth potential</p>
-           </div>
+
          </div>
 
          <h2 class="text-2xl font-cinzel font-bold text-white mb-4 mt-8">❓ FAQs: Busting Wealth Bazi Myths</h2>
@@ -1122,11 +1110,7 @@ const BlogPost = () => {
            </li>
          </ul>
 
-         <!-- Wealth BaZi Journey Summary -->
-         <div class="my-8 text-center">
-           <img src="/images/blog/wealth-bazi-summary.svg" alt="Wealth BaZi Journey: From Analysis to Activation" class="w-full max-w-4xl mx-auto rounded-lg shadow-lg" />
-           <p class="text-sm text-mystic-400 mt-2">Your complete journey from understanding to activating wealth potential</p>
-         </div>
+
 
 
        `,
