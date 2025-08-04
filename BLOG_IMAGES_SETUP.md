@@ -6,6 +6,7 @@
 **文件名**: `bazi-mbti-comparison.jpg`
 **路径**: `public/images/blog/bazi-mbti-comparison.jpg`
 **文章**: "BaZi vs. MBTI: East Meets West in Personality and Destiny"
+**状态**: ✅ 已添加
 
 **图片建议**:
 - 展示东西方文化对比的图片
@@ -49,7 +50,7 @@
 public/
 └── images/
     └── blog/
-        ├── bazi-mbti-comparison.jpg     ← 需要添加（优先级高）
+        ├── bazi-mbti-comparison.jpg     ← ✅ 已添加
         ├── bazi-basics.jpg              ← 可选添加
         ├── five-elements-love.jpg       ← 可选添加
         ├── talismans-protection.jpg     ← 可选添加
