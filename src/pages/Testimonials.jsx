@@ -1,13 +1,20 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import { motion } from 'framer-motion'
 import { Star, Heart, Shield, Star as StarIcon, Filter, Search } from 'lucide-react'
 import SEO from '../components/SEO'
-import { getClientAvatar } from '../utils/avatarGenerator'
+import { getCachedAIAvatar, generateAvatarUrls } from '../utils/aiAvatarGenerator'
 
 const Testimonials = () => {
   const [searchTerm, setSearchTerm] = useState('')
   const [selectedService, setSelectedService] = useState('all')
   const [selectedRating, setSelectedRating] = useState('all')
+  const [testimonialsWithAvatars, setTestimonialsWithAvatars] = useState([])
+
+  // 生成AI头像
+  useEffect(() => {
+    const testimonialsWithAI = generateAvatarUrls(testimonials)
+    setTestimonialsWithAvatars(testimonialsWithAI)
+  }, [])
 
   const testimonials = [
     {
@@ -168,7 +175,7 @@ const Testimonials = () => {
     })
   }
 
-  const filteredTestimonials = testimonials.filter(testimonial => {
+  const filteredTestimonials = testimonialsWithAvatars.filter(testimonial => {
     const matchesSearch = testimonial.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
                          testimonial.content.toLowerCase().includes(searchTerm.toLowerCase()) ||
                          testimonial.location.toLowerCase().includes(searchTerm.toLowerCase())
@@ -300,15 +307,15 @@ const Testimonials = () => {
                 {/* Header */}
                 <div className="flex items-start space-x-4 mb-4">
                   <div className="w-12 h-12 rounded-full bg-gradient-to-r from-gold-500 to-orange-500 flex items-center justify-center flex-shrink-0 overflow-hidden">
-                    <img
-                      src={getClientAvatar(testimonial)}
-                      alt={testimonial.name}
-                      className="w-full h-full rounded-full object-cover"
-                      onError={(e) => {
-                        e.target.style.display = 'none';
-                        e.target.nextSibling.style.display = 'flex';
-                      }}
-                    />
+                                         <img
+                       src={testimonial.avatar}
+                       alt={testimonial.name}
+                       className="w-full h-full rounded-full object-cover"
+                       onError={(e) => {
+                         e.target.style.display = 'none';
+                         e.target.nextSibling.style.display = 'flex';
+                       }}
+                     />
                     <div className="text-white font-semibold text-lg hidden">
                       {testimonial.name.charAt(0)}
                     </div>

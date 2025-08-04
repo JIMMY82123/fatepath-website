@@ -3,7 +3,7 @@ import { motion, AnimatePresence } from 'framer-motion'
 import { Link } from 'react-router-dom'
 import { ArrowRight, Star, Sparkles, Eye, Heart, Shield, Quote, ChevronLeft, ChevronRight, Users, Award, Clock, Zap, Calendar } from 'lucide-react'
 import SEO from '../components/SEO'
-import { getClientAvatar } from '../utils/avatarGenerator'
+import { getCachedAIAvatar } from '../utils/aiAvatarGenerator'
 
 const Home = () => {
   const [currentTestimonial, setCurrentTestimonial] = useState(0)
@@ -520,16 +520,16 @@ const Home = () => {
                        </div>
 
                                                                                            <div className="flex items-center space-x-3 sm:space-x-4 mt-auto">
-                        <img
-                          src={getClientAvatar(featuredTestimonials[currentTestimonial])}
-                          alt={featuredTestimonials[currentTestimonial].name}
-                          className="w-10 h-10 sm:w-12 md:w-14 sm:h-10 md:h-14 rounded-full object-cover border-2 border-gold-500/30"
-                          onError={(e) => {
-                            // 如果图片加载失败，显示占位符
-                            e.target.style.display = 'none';
-                            e.target.nextSibling.style.display = 'flex';
-                          }}
-                        />
+                                                 <img
+                           src={getCachedAIAvatar(featuredTestimonials[currentTestimonial])}
+                           alt={featuredTestimonials[currentTestimonial].name}
+                           className="w-10 h-10 sm:w-12 md:w-14 sm:h-10 md:h-14 rounded-full object-cover border-2 border-gold-500/30"
+                           onError={(e) => {
+                             // 如果图片加载失败，显示占位符
+                             e.target.style.display = 'none';
+                             e.target.nextSibling.style.display = 'flex';
+                           }}
+                         />
                         <div className="w-10 h-10 sm:w-12 md:w-14 sm:h-10 md:h-14 rounded-full bg-gradient-to-br from-gold-400 to-gold-600 flex items-center justify-center border-2 border-gold-500/30 hidden">
                           <span className="text-white font-bold text-xs sm:text-sm">
                             {featuredTestimonials[currentTestimonial].name.split(' ').map(n => n[0]).join('')}
