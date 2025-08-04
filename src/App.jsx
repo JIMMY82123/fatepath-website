@@ -13,6 +13,7 @@ const Blog = lazy(() => import('./pages/Blog'))
 const BlogPost = lazy(() => import('./pages/BlogPost'))
 const Contact = lazy(() => import('./pages/Contact'))
 const FAQ = lazy(() => import('./pages/FAQ'))
+const Testimonials = lazy(() => import('./pages/Testimonials'))
 const BaziForm = lazy(() => import('./pages/BaziForm'))
 const BaziFormDiscount = lazy(() => import('./pages/BaziFormDiscount'))
 const FreeBaziReport = lazy(() => import('./pages/FreeBaziReport'))
@@ -51,8 +52,9 @@ function App() {
                   <Route path="/blog" element={<Blog />} />
                   <Route path="/blog/:slug" element={<BlogPost />} />
                   <Route path="/contact" element={<Contact />} />
-                                    <Route path="/faq" element={<FAQ />} />
-                    <Route path="/form-bazi" element={<BaziForm />} />
+                  <Route path="/faq" element={<FAQ />} />
+                  <Route path="/testimonials" element={<Testimonials />} />
+                  <Route path="/form-bazi" element={<BaziForm />} />
                     <Route path="/form-bazi-discount" element={<BaziFormDiscount />} />
                     <Route path="/free-bazi-report" element={<FreeBaziReport />} />
                     <Route path="/form-love" element={<LoveForm />} />

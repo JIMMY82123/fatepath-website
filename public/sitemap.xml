@@ -22,13 +22,19 @@
     <loc>https://fatepath.me/faq</loc>
     <lastmod>2025-08-04</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://fatepath.me/testimonials</loc>
+    <lastmod>2025-08-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
   <url>
     <loc>https://fatepath.me/contact</loc>
     <lastmod>2025-08-04</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.5</priority>
   </url>
   <!-- Blog Posts -->
   <url>
