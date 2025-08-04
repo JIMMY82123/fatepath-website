@@ -505,7 +505,7 @@ const Home = () => {
                       </div>
 
                                                                                            <div className="flex-1">
-                        <p className="text-mystic-200 leading-relaxed text-sm sm:text-base md:text-lg mb-3 sm:mb-4 md:mb-6">
+                        <p className="text-mystic-200 leading-relaxed text-xs sm:text-sm md:text-base mb-3 sm:mb-4 md:mb-6">
                           "{featuredTestimonials[currentTestimonial].content}"
                         </p>
                       </div>
@@ -522,15 +522,15 @@ const Home = () => {
                            }}
                          />
                         <div className="w-12 h-12 sm:w-14 md:w-16 sm:h-14 md:h-16 rounded-full bg-gradient-to-br from-gold-400 to-gold-600 flex items-center justify-center border-2 border-gold-500/30 hidden">
-                          <span className="text-white font-bold text-sm sm:text-base">
-                            {featuredTestimonials[currentTestimonial].name.split(' ').map(n => n[0]).join('')}
-                          </span>
+                                                     <span className="text-white font-bold text-xs sm:text-sm">
+                             {featuredTestimonials[currentTestimonial].name.split(' ').map(n => n[0]).join('')}
+                           </span>
                         </div>
                         <div>
-                          <div className="font-semibold text-white text-base sm:text-lg">
+                          <div className="font-semibold text-white text-sm sm:text-base">
                             {featuredTestimonials[currentTestimonial].name}
                           </div>
-                          <div className="text-sm sm:text-base text-mystic-400">
+                          <div className="text-xs sm:text-sm text-mystic-400">
                             {featuredTestimonials[currentTestimonial].location}
                           </div>
                         </div>
@@ -549,7 +549,7 @@ const Home = () => {
                        setDirection(index > currentTestimonial ? 1 : -1)
                        setCurrentTestimonial(index)
                      }}
-                     className={`w-2 h-2 sm:w-2.5 sm:h-2.5 md:w-3 md:h-3 rounded-full transition-all duration-300 ${
+                     className={`w-1.5 h-1.5 sm:w-2 sm:h-2 md:w-2.5 md:h-2.5 rounded-full transition-all duration-300 ${
                        index === currentTestimonial 
                          ? 'bg-gold-400 scale-110 sm:scale-125' 
                          : 'bg-mystic-600 hover:bg-mystic-500'
