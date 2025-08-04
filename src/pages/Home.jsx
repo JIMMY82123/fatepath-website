@@ -466,7 +466,7 @@ const Home = () => {
 
                          {/* 好评轮播 */}
              <div className="relative max-w-4xl mx-auto px-4 sm:px-0">
-                              <div className="relative h-[32rem] sm:h-[28rem] md:h-[32rem] lg:h-[36rem] overflow-hidden">
+                              <div className="relative h-[28rem] sm:h-[26rem] md:h-[30rem] lg:h-[34rem] overflow-hidden">
                 <AnimatePresence mode="wait" custom={direction}>
                   <motion.div
                     key={currentTestimonial}
@@ -489,8 +489,8 @@ const Home = () => {
                     }}
                     className="absolute inset-0"
                   >
-                                         <div className="mystic-card p-3 sm:p-4 md:p-6 lg:p-8 h-full flex flex-col">
-                      <div className="flex justify-between items-start mb-3 sm:mb-4 md:mb-6">
+                                         <div className="mystic-card p-4 sm:p-5 md:p-6 lg:p-8 h-full flex flex-col">
+                      <div className="flex justify-between items-start mb-4 sm:mb-5 md:mb-6">
                         <Quote className="h-8 w-8 text-gold-400 opacity-50" />
                                                  <div className="flex items-center space-x-2">
                            {featuredTestimonials[currentTestimonial].icon}
@@ -500,37 +500,37 @@ const Home = () => {
                          </div>
                       </div>
 
-                      <div className="flex items-center space-x-1 mb-2 sm:mb-3 md:mb-4">
+                      <div className="flex items-center space-x-1 mb-3 sm:mb-4 md:mb-5">
                         {renderStars(featuredTestimonials[currentTestimonial].rating)}
                       </div>
 
                                                                                            <div className="flex-1">
-                                                    <p className="text-mystic-200 leading-relaxed text-xs sm:text-sm md:text-base mb-2 sm:mb-3 md:mb-4 lg:mb-6">
-                            "{featuredTestimonials[currentTestimonial].content}"
-                          </p>
-                       </div>
+                        <p className="text-mystic-200 leading-relaxed text-sm sm:text-base md:text-lg mb-3 sm:mb-4 md:mb-6">
+                          "{featuredTestimonials[currentTestimonial].content}"
+                        </p>
+                      </div>
 
                                                                                            <div className="flex items-center space-x-3 sm:space-x-4 mt-auto">
                                                  <img
                            src={getCachedAIAvatar(featuredTestimonials[currentTestimonial])}
                            alt={featuredTestimonials[currentTestimonial].name}
-                           className="w-10 h-10 sm:w-12 md:w-14 sm:h-10 md:h-14 rounded-full object-cover border-2 border-gold-500/30"
+                           className="w-12 h-12 sm:w-14 md:w-16 sm:h-14 md:h-16 rounded-full object-cover border-2 border-gold-500/30"
                            onError={(e) => {
                              // 如果图片加载失败，显示占位符
                              e.target.style.display = 'none';
                              e.target.nextSibling.style.display = 'flex';
                            }}
                          />
-                        <div className="w-10 h-10 sm:w-12 md:w-14 sm:h-10 md:h-14 rounded-full bg-gradient-to-br from-gold-400 to-gold-600 flex items-center justify-center border-2 border-gold-500/30 hidden">
-                          <span className="text-white font-bold text-xs sm:text-sm">
+                        <div className="w-12 h-12 sm:w-14 md:w-16 sm:h-14 md:h-16 rounded-full bg-gradient-to-br from-gold-400 to-gold-600 flex items-center justify-center border-2 border-gold-500/30 hidden">
+                          <span className="text-white font-bold text-sm sm:text-base">
                             {featuredTestimonials[currentTestimonial].name.split(' ').map(n => n[0]).join('')}
                           </span>
                         </div>
                         <div>
-                          <div className="font-semibold text-white text-sm sm:text-base">
+                          <div className="font-semibold text-white text-base sm:text-lg">
                             {featuredTestimonials[currentTestimonial].name}
                           </div>
-                          <div className="text-xs sm:text-sm text-mystic-400">
+                          <div className="text-sm sm:text-base text-mystic-400">
                             {featuredTestimonials[currentTestimonial].location}
                           </div>
                         </div>
@@ -541,7 +541,7 @@ const Home = () => {
               </div>
 
                {/* 轮播指示器 */}
-               <div className="flex justify-center space-x-2 mt-4">
+               <div className="flex justify-center space-x-1.5 sm:space-x-2 mt-3 sm:mt-4">
                  {featuredTestimonials.map((_, index) => (
                    <button
                      key={index}
@@ -549,9 +549,9 @@ const Home = () => {
                        setDirection(index > currentTestimonial ? 1 : -1)
                        setCurrentTestimonial(index)
                      }}
-                     className={`w-3 h-3 rounded-full transition-all duration-300 ${
+                     className={`w-2 h-2 sm:w-2.5 sm:h-2.5 md:w-3 md:h-3 rounded-full transition-all duration-300 ${
                        index === currentTestimonial 
-                         ? 'bg-gold-400 scale-125' 
+                         ? 'bg-gold-400 scale-110 sm:scale-125' 
                          : 'bg-mystic-600 hover:bg-mystic-500'
                      }`}
                    />
