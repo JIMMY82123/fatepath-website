@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import { Link } from 'react-router-dom'
 import { ArrowRight, Star, Sparkles, Eye, Heart, Shield, Quote, ChevronLeft, ChevronRight, Users, Award, Clock, Zap, Calendar } from 'lucide-react'
+import SEO from '../components/SEO'
 
 const Home = () => {
   const [currentTestimonial, setCurrentTestimonial] = useState(0)
@@ -86,7 +87,28 @@ const Home = () => {
   }
 
   return (
-    <div className="relative min-h-screen overflow-hidden">
+    <>
+      <SEO 
+        title="Professional BaZi Reading Service | Free Bazi Chart Analysis | Chinese Numerology Expert"
+        description="Get your free BaZi chart analysis today! Professional Chinese numerology expert with 15+ years experience. BaZi reading for career guidance, love compatibility, wealth analysis. Online consultation worldwide."
+        keywords="bazi reading, free bazi chart analysis, chinese numerology expert, bazi career guidance, bazi love compatibility, bazi wealth analysis, online bazi consultation, bazi master consultation, traditional chinese numerology, bazi chart calculator, bazi relationship reading, bazi life path analysis"
+        canonical={`${window.location.origin}/`}
+        ogImage={`${window.location.origin}/images/bazi-reading.jpg`}
+        ogType="website"
+        structuredData={{
+          "@context": "https://schema.org",
+          "@type": "WebSite",
+          "name": "FatePath - Professional BaZi Reading Service",
+          "description": "Professional Chinese numerology expert providing BaZi reading services",
+          "url": `${window.location.origin}/`,
+          "potentialAction": {
+            "@type": "SearchAction",
+            "target": `${window.location.origin}/free-bazi-report`,
+            "query-input": "required name=birthdate"
+          }
+        }}
+      />
+      <div className="relative min-h-screen overflow-hidden">
       {/* 视频背景 */}
       <div className="absolute inset-0 z-0">
         <video
@@ -927,6 +949,7 @@ const Home = () => {
         </div>
       </div>
     </div>
+    </>
   )
 }
 

@@ -3,6 +3,7 @@ import { motion, AnimatePresence } from 'framer-motion'
 import { Star, ArrowLeft, Download, Share2, Crown, X, Clock, Gift } from 'lucide-react'
 import { Link } from 'react-router-dom'
 import { Lunar } from 'lunar-javascript'
+import SEO from '../components/SEO'
 
 const FreeBaziReport = () => {
   const [formData, setFormData] = useState({
@@ -474,7 +475,32 @@ const FreeBaziReport = () => {
 
   if (report) {
     return (
-      <div className="min-h-screen pt-20 px-4 sm:px-6 lg:px-8">
+      <>
+        <SEO 
+          title={`${report.name}'s Free Bazi Reading Report | Professional Chinese Numerology Analysis`}
+          description={`Get ${report.name}'s personalized Bazi reading report with detailed analysis of wealth, love, health, and life path based on traditional Chinese numerology. Free comprehensive Bazi chart analysis.`}
+          keywords={`bazi reading report, ${report.name} bazi analysis, free bazi chart, chinese numerology report, bazi wealth analysis, bazi love compatibility, bazi health reading, personalized bazi reading`}
+          canonical={`${window.location.origin}/free-bazi-report`}
+          ogImage={`${window.location.origin}/images/bazi-reading.jpg`}
+          ogType="article"
+          structuredData={{
+            "@context": "https://schema.org",
+            "@type": "Article",
+            "headline": `${report.name}'s Bazi Reading Report`,
+            "description": `Personalized Bazi analysis for ${report.name} covering wealth, love, health, and life path`,
+            "author": {
+              "@type": "Organization",
+              "name": "FatePath"
+            },
+            "publisher": {
+              "@type": "Organization",
+              "name": "FatePath"
+            },
+            "datePublished": new Date().toISOString(),
+            "image": `${window.location.origin}/images/bazi-reading.jpg`
+          }}
+        />
+        <div className="min-h-screen pt-20 px-4 sm:px-6 lg:px-8">
         <div className="max-w-4xl mx-auto">
           {/* Report Header */}
           <motion.div
@@ -778,11 +804,28 @@ const FreeBaziReport = () => {
            )}
          </AnimatePresence>
        </div>
+     </>
      )
    }
 
   return (
-    <div className="min-h-screen pt-20 px-4 sm:px-6 lg:px-8">
+    <>
+      <SEO 
+        title="Free Bazi Reading Report | Professional Chinese Numerology Analysis"
+        description="Get your free personalized Bazi reading report with detailed analysis of wealth, love, health, and life path. Professional Chinese numerology expert analysis."
+        keywords="free bazi reading report, bazi chart analysis, chinese numerology report, bazi wealth analysis, bazi love compatibility, bazi health reading, personalized bazi reading"
+        canonical={`${window.location.origin}/free-bazi-report`}
+        ogImage={`${window.location.origin}/images/bazi-reading.jpg`}
+        ogType="website"
+        structuredData={{
+          "@context": "https://schema.org",
+          "@type": "WebPage",
+          "headline": "Free Bazi Reading Report",
+          "description": "Get your free personalized Bazi reading report with detailed analysis",
+          "url": `${window.location.origin}/free-bazi-report`
+        }}
+      />
+      <div className="min-h-screen pt-20 px-4 sm:px-6 lg:px-8">
       <div className="max-w-2xl mx-auto">
         {/* Header */}
         <motion.div 
@@ -922,6 +965,7 @@ const FreeBaziReport = () => {
         </motion.div>
       </div>
     </div>
+    </>
   )
 }
 

@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import { Star, Heart, Shield, Calendar, Clock, DollarSign, ArrowRight } from 'lucide-react'
+import SEO from '../components/SEO'
 
 const Services = () => {
   const [activeService, setActiveService] = useState(0)
@@ -72,7 +73,28 @@ const Services = () => {
   ]
 
   return (
-    <div className="min-h-screen pt-20 px-4 sm:px-6 lg:px-8">
+    <>
+      <SEO 
+        title="Professional Bazi Reading Services | Chinese Numerology Expert Consultation"
+        description="Professional Bazi reading services including detailed life analysis, love compatibility, and custom talismans. Expert Chinese numerology consultation with 15+ years experience."
+        keywords="bazi reading service, chinese numerology consultation, bazi life analysis, love compatibility reading, custom talisman, professional bazi expert, chinese astrology service"
+        canonical={`${window.location.origin}/services`}
+        ogImage={`${window.location.origin}/images/bazi-reading.jpg`}
+        ogType="website"
+        structuredData={{
+          "@context": "https://schema.org",
+          "@type": "Service",
+          "name": "Professional Bazi Reading Services",
+          "description": "Expert Chinese numerology consultation and Bazi reading services",
+          "provider": {
+            "@type": "Organization",
+            "name": "FatePath"
+          },
+          "serviceType": "Chinese Numerology Consultation",
+          "areaServed": "Worldwide"
+        }}
+      />
+      <div className="min-h-screen pt-20 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
         {/* Header */}
         <motion.div 
@@ -345,6 +367,7 @@ const Services = () => {
         </motion.div>
       </div>
     </div>
+    </>
   )
 }
 
