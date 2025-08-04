@@ -1,11 +1,74 @@
 import { useState } from 'react'
 import { motion } from 'framer-motion'
-import { Calendar, Clock, ArrowRight, Search, Filter } from 'lucide-react'
+import { Calendar, Clock, ArrowRight, Search, Filter, Share2 } from 'lucide-react'
 import { Link } from 'react-router-dom'
 
 const Blog = () => {
   const [searchTerm, setSearchTerm] = useState('')
   const [selectedCategory, setSelectedCategory] = useState('all')
+
+  // 分享文章的辅助函数
+  const shareArticle = (post) => {
+    const shareText = `📖 ${post.title}\n\n${post.excerpt}\n\nRead more at FatePath.me`;
+    const shareUrl = `${window.location.origin}/blog/${post.slug}`;
+    
+    if (navigator.share) {
+      navigator.share({
+        title: post.title,
+        text: shareText,
+        url: shareUrl
+      }).catch(err => {
+        console.log('Share failed:', err);
+        // Fallback to copy
+        copyToClipboard(`${shareText}\n\n${shareUrl}`);
+      });
+    } else {
+      // Fallback: copy to clipboard
+      copyToClipboard(`${shareText}\n\n${shareUrl}`);
+    }
+  };
+
+  // 复制到剪贴板的辅助函数
+  const copyToClipboard = async (text) => {
+    try {
+      await navigator.clipboard.writeText(text);
+      // 创建一个临时的成功提示
+      const notification = document.createElement('div');
+      notification.className = 'fixed top-4 right-4 bg-green-600 text-white px-4 py-2 rounded-lg shadow-lg z-50 transform transition-all duration-300';
+      notification.textContent = '文章链接已复制到剪贴板！';
+      document.body.appendChild(notification);
+      
+      // 3秒后移除提示
+      setTimeout(() => {
+        notification.style.transform = 'translateX(100%)';
+        setTimeout(() => {
+          document.body.removeChild(notification);
+        }, 300);
+      }, 2000);
+    } catch (err) {
+      console.error('复制失败:', err);
+      // 后备方案：使用传统的复制方法
+      const textArea = document.createElement('textarea');
+      textArea.value = text;
+      document.body.appendChild(textArea);
+      textArea.select();
+      document.execCommand('copy');
+      document.body.removeChild(textArea);
+      
+      // 显示成功提示
+      const notification = document.createElement('div');
+      notification.className = 'fixed top-4 right-4 bg-green-600 text-white px-4 py-2 rounded-lg shadow-lg z-50 transform transition-all duration-300';
+      notification.textContent = '文章链接已复制到剪贴板！';
+      document.body.appendChild(notification);
+      
+      setTimeout(() => {
+        notification.style.transform = 'translateX(100%)';
+        setTimeout(() => {
+          document.body.removeChild(notification);
+        }, 300);
+      }, 2000);
+    }
+  };
 
   // 博客文章数据 - 您可以在这里添加您的文章
   const blogPosts = [
@@ -260,14 +323,29 @@ const Blog = () => {
                   {post.excerpt}
                 </p>
 
-                {/* Read More Link */}
-                <Link
-                  to={`/blog/${post.slug}`}
-                  className="inline-flex items-center space-x-2 text-gold-400 hover:text-gold-300 transition-colors font-medium text-sm group"
-                >
-                  <span>Read Full Article</span>
-                  <ArrowRight className="h-4 w-4 group-hover:translate-x-1 transition-transform" />
-                </Link>
+                {/* Action Buttons */}
+                <div className="flex items-center justify-between">
+                  <Link
+                    to={`/blog/${post.slug}`}
+                    className="inline-flex items-center space-x-2 text-gold-400 hover:text-gold-300 transition-colors font-medium text-sm group"
+                  >
+                    <span>Read Full Article</span>
+                    <ArrowRight className="h-4 w-4 group-hover:translate-x-1 transition-transform" />
+                  </Link>
+                  
+                  {/* Share Button */}
+                  <button
+                    onClick={(e) => {
+                      e.preventDefault();
+                      e.stopPropagation();
+                      shareArticle(post);
+                    }}
+                    className="p-2 bg-mystic-800/50 border border-mystic-700/50 rounded-lg text-mystic-400 hover:text-gold-400 hover:border-gold-500/50 transition-colors"
+                    title="Share this article"
+                  >
+                    <Share2 className="h-4 w-4" />
+                  </button>
+                </div>
               </div>
             </motion.article>
           ))}
