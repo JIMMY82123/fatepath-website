@@ -90,6 +90,11 @@ const Footer = () => {
                   Contact
                 </Link>
               </li>
+              <li>
+                <Link to="/privacy" className="text-mystic-300 hover:text-gold-400 transition-colors duration-300">
+                  Privacy Policy
+                </Link>
+              </li>
             </ul>
           </motion.div>
         </div>
@@ -109,6 +114,14 @@ const Footer = () => {
               <Star className="h-4 w-4 text-gold-400" />
               <span>Professional & Trusted</span>
             </div>
+          </div>
+          
+          {/* Disclaimer */}
+          <div className="mt-4 pt-4 border-t border-mystic-700/30">
+            <p className="text-xs text-mystic-500 text-center">
+              Results are based on traditional cultural research and are for entertainment purposes only. 
+              Not intended as professional advice or decision-making guidance.
+            </p>
           </div>
         </motion.div>
       </div>

@@ -13,7 +13,8 @@ const BaziForm = () => {
     dateOfBirth: '',
     timeOfBirth: '',
     birthLocation: '',
-    additionalNotes: ''
+    additionalNotes: '',
+    dataUsage: 'one-time'
   })
 
   const handleInputChange = (e) => {
@@ -253,21 +254,68 @@ const BaziForm = () => {
               />
             </div>
 
-            {/* Additional Notes */}
-            <div>
-              <label htmlFor="additionalNotes" className="block text-sm font-medium text-mystic-200 mb-2">
-                Additional Notes (Optional)
-              </label>
-              <textarea
-                id="additionalNotes"
-                name="additionalNotes"
-                rows="4"
-                value={formData.additionalNotes}
-                onChange={handleInputChange}
-                className="w-full px-4 py-3 bg-mystic-800/50 border border-mystic-700/50 rounded-lg text-white placeholder-mystic-400 focus:border-gold-500/50 focus:outline-none transition-colors resize-none"
-                placeholder="Any specific questions or areas you'd like me to focus on..."
-              />
-            </div>
+                               {/* Additional Notes */}
+                   <div>
+                     <label htmlFor="additionalNotes" className="block text-sm font-medium text-mystic-200 mb-2">
+                       Additional Notes (Optional)
+                     </label>
+                     <textarea
+                       id="additionalNotes"
+                       name="additionalNotes"
+                       rows="4"
+                       value={formData.additionalNotes}
+                       onChange={handleInputChange}
+                       className="w-full px-4 py-3 bg-mystic-800/50 border border-mystic-700/50 rounded-lg text-white placeholder-mystic-400 focus:border-gold-500/50 focus:outline-none transition-colors resize-none"
+                       placeholder="Any specific questions or areas you'd like me to focus on..."
+                     />
+                   </div>
+
+                   {/* Data Usage Authorization */}
+                   <div>
+                     <label className="block text-sm font-medium text-mystic-200 mb-3">
+                       Data Usage Authorization *
+                     </label>
+                     <div className="space-y-3">
+                       <div className="flex items-start space-x-3">
+                         <input
+                           type="radio"
+                           id="dataUsage-one-time"
+                           name="dataUsage"
+                           value="one-time"
+                           checked={formData.dataUsage === 'one-time'}
+                           onChange={handleInputChange}
+                           className="mt-1 h-4 w-4 text-gold-500 border-mystic-700 focus:ring-gold-500 focus:ring-2"
+                         />
+                         <div>
+                           <label htmlFor="dataUsage-one-time" className="text-sm font-medium text-white">
+                             One-Time Use Only
+                           </label>
+                           <p className="text-xs text-mystic-400 mt-1">
+                             Your data will be used only for this Bazi reading and deleted immediately after service completion.
+                           </p>
+                         </div>
+                       </div>
+                       <div className="flex items-start space-x-3">
+                         <input
+                           type="radio"
+                           id="dataUsage-enhanced"
+                           name="dataUsage"
+                           value="enhanced"
+                           checked={formData.dataUsage === 'enhanced'}
+                           onChange={handleInputChange}
+                           className="mt-1 h-4 w-4 text-gold-500 border-mystic-700 focus:ring-gold-500 focus:ring-2"
+                         />
+                         <div>
+                           <label htmlFor="dataUsage-enhanced" className="text-sm font-medium text-white">
+                             Enhanced Service
+                           </label>
+                           <p className="text-xs text-mystic-400 mt-1">
+                             Allow us to store your data for personalized future services and improved accuracy.
+                           </p>
+                         </div>
+                       </div>
+                     </div>
+                   </div>
 
             {/* Submit Button */}
             <motion.button
