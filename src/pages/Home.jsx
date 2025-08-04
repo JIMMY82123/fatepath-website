@@ -504,6 +504,68 @@ const Home = () => {
             </div>
           </motion.div>
 
+          {/* Fortune Sticks Quick Access */}
+          <motion.div 
+            initial={{ opacity: 0, y: 50 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 2.0 }}
+            className="mb-20"
+          >
+            <div className="text-center mb-12">
+                             <h2 className="text-2xl sm:text-3xl md:text-5xl font-playfair font-bold mb-6 leading-tight">
+                 <span className="gradient-text block mb-2">Try Our Free</span>
+                 <span className="text-white block">Ancient Chinese Wisdom Oracle</span>
+               </h2>
+               <p className="text-lg sm:text-xl text-mystic-300 max-w-3xl mx-auto px-4">
+                 Experience a sacred meditation ritual before drawing your wisdom card. Connect with ancient Chinese philosophy through mindful preparation.
+               </p>
+            </div>
+
+            <div className="max-w-4xl mx-auto">
+              <motion.div
+                initial={{ opacity: 0, y: 30 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6, delay: 2.2 }}
+                className="mystic-card p-8 text-center group hover:transform hover:scale-105 transition-all duration-300 border-2 border-gold-500/30"
+              >
+                <div className="inline-flex items-center justify-center w-24 h-24 rounded-full bg-gradient-to-r from-gold-500 to-yellow-600 mb-6 group-hover:animate-glow">
+                  <span className="text-4xl">💰</span>
+                </div>
+                
+                                 <h3 className="text-2xl font-cinzel font-bold mb-4 text-white tracking-wide">
+                   Ancient Chinese Wisdom Oracle
+                 </h3>
+                 
+                 <p className="text-mystic-300 mb-6 leading-relaxed font-inter text-base">
+                   Begin with a sacred meditation ritual, then draw your wisdom card for personalized guidance. 
+                   Combines ancient Chinese philosophy with mindful preparation for deeper insights.
+                 </p>
+                
+                <div className="grid md:grid-cols-3 gap-4 mb-8">
+                                     {[
+                     { icon: "🧘‍♀️", text: "Sacred Meditation Ritual" },
+                     { icon: "📖", text: "Philosophical & Modern Analysis" },
+                     { icon: "🆓", text: "Completely Free to Use" }
+                   ].map((feature, index) => (
+                    <div key={index} className="flex items-center space-x-3 p-3 bg-mystic-800/50 rounded-lg">
+                      <span className="text-2xl">{feature.icon}</span>
+                      <span className="text-mystic-200 text-sm font-medium">{feature.text}</span>
+                    </div>
+                  ))}
+                </div>
+                
+                <Link
+                  to="/wealth-sign"
+                  className="inline-flex items-center space-x-3 bg-gradient-to-r from-gold-500 to-yellow-600 text-black font-bold px-8 py-4 rounded-full hover:from-gold-400 hover:to-yellow-500 transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-gold-500/25"
+                >
+                  <span className="text-xl">🧘‍♀️</span>
+                                     <span>Begin Sacred Ritual Now</span>
+                  <ArrowRight className="h-5 w-5 group-hover:translate-x-1 transition-transform" />
+                </Link>
+              </motion.div>
+            </div>
+          </motion.div>
+
           {/* Step 5: 服务和定价 */}
           <motion.div 
             initial={{ opacity: 0, y: 50 }}

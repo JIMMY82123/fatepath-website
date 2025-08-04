@@ -13,6 +13,7 @@ import LoveForm from './pages/LoveForm'
 import TalismanForm from './pages/TalismanForm'
 import PaymentGuide from './pages/PaymentGuide'
 import PaymentSuccess from './pages/PaymentSuccess'
+import WealthSign from './pages/WealthSign'
 
 function App() {
   return (
@@ -30,6 +31,7 @@ function App() {
             <Route path="/form-bazi" element={<BaziForm />} />
             <Route path="/form-love" element={<LoveForm />} />
             <Route path="/form-talisman" element={<TalismanForm />} />
+            <Route path="/wealth-sign" element={<WealthSign />} />
             <Route path="/payment/:service" element={<PaymentGuide />} />
             <Route path="/payment-success/:service" element={<PaymentSuccess />} />
           </Routes>

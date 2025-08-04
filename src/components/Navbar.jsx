@@ -11,6 +11,7 @@ const Navbar = () => {
     { path: '/', label: 'Home' },
     { path: '/services', label: 'Services' },
     { path: '/blog', label: 'Blog' },
+         { path: '/wealth-sign', label: 'Sacred Oracle' },
     { path: '/faq', label: 'FAQ' },
     { path: '/contact', label: 'Contact' }
   ]
