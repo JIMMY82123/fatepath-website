@@ -549,9 +549,9 @@ const Home = () => {
                        setDirection(index > currentTestimonial ? 1 : -1)
                        setCurrentTestimonial(index)
                      }}
-                     className={`w-0.5 h-0.5 sm:w-1 sm:h-1 md:w-1.5 md:h-1.5 rounded-full transition-all duration-300 ${
+                     className={`w-0.5 h-0.5 sm:w-0.5 sm:h-0.5 md:w-1 md:h-1 rounded-full transition-all duration-300 ${
                        index === currentTestimonial 
-                         ? 'bg-gold-400 scale-110 sm:scale-125' 
+                         ? 'bg-gold-400' 
                          : 'bg-mystic-600 hover:bg-mystic-500'
                      }`}
                    />
