@@ -3,10 +3,6 @@ export const externalLinks = {
   // GPT相关链接
   gpt: {
     fatePathGPT: 'https://chatgpt.com/g/g-6890abd2192c8191a10cfac74695c42c-fatepath-bazi-destiny-decoder', // FatePath专用GPT
-    chatGPT: 'https://chat.openai.com/',
-    claude: 'https://claude.ai/',
-    gemini: 'https://gemini.google.com/',
-    // 你可以添加更多AI聊天工具的链接
   },
   
   // 社交媒体链接

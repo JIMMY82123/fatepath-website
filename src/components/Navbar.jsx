@@ -60,8 +60,8 @@ const Navbar = () => {
               </Link>
             ))}
             
-            {/* GPT Button with Dropdown */}
-            <GPTButton variant="dropdown" />
+            {/* GPT Button */}
+            <GPTButton variant="default" />
           </div>
 
           {/* Mobile menu button */}
