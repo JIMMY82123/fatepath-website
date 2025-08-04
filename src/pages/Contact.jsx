@@ -126,6 +126,31 @@ const Contact = () => {
           </p>
         </motion.div>
 
+        {/* Introduction Section */}
+        <motion.div 
+          initial={{ opacity: 0, y: 30 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 0.2 }}
+          className="mb-12 sm:mb-16"
+        >
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-2xl sm:text-3xl font-playfair font-semibold mb-6 text-white text-center">
+              Your Journey Begins Here
+            </h2>
+            <div className="space-y-6 text-center">
+              <p className="text-lg text-mystic-300 leading-relaxed">
+                Embarking on a spiritual journey requires trust, guidance, and a connection with someone who understands the ancient wisdom you seek. As 玄印 (Xuan Yin), I've dedicated over 15 years to mastering traditional Chinese BaZi analysis, helping hundreds of individuals discover their true path and unlock their hidden potential.
+              </p>
+              <p className="text-lg text-mystic-300 leading-relaxed">
+                Whether you're seeking clarity about your career direction, understanding your relationship patterns, or looking for spiritual protection through custom talismans, I'm here to provide personalized guidance based on your unique birth chart. Every consultation is conducted with the utmost respect for your privacy and the sacred nature of this ancient practice.
+              </p>
+              <p className="text-lg text-mystic-300 leading-relaxed">
+                Choose your preferred method of contact below, and let's begin your transformation. Whether through WhatsApp for immediate responses, email for detailed inquiries, or our contact form for comprehensive consultations, I'm committed to being your guide on this profound journey of self-discovery and spiritual growth.
+              </p>
+            </div>
+          </div>
+        </motion.div>
+
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-12">
           {/* Contact Methods */}
           <motion.div 

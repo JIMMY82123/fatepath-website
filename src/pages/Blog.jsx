@@ -229,11 +229,36 @@ const Blog = () => {
           </p>
         </motion.div>
 
-        {/* Search and Filter */}
+        {/* Introduction Section */}
         <motion.div 
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.2 }}
+          className="mb-12 sm:mb-16"
+        >
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-2xl sm:text-3xl font-playfair font-semibold mb-6 text-white text-center">
+              Ancient Wisdom for Modern Life
+            </h2>
+            <div className="space-y-6 text-center">
+              <p className="text-lg text-mystic-300 leading-relaxed">
+                Welcome to our collection of insights drawn from thousands of years of Chinese metaphysical wisdom. Here, you'll find practical guidance on how ancient BaZi principles can illuminate your modern life challenges, from career decisions and relationship dynamics to personal growth and spiritual development.
+              </p>
+              <p className="text-lg text-mystic-300 leading-relaxed">
+                Each article is crafted to bridge the gap between traditional Chinese numerology and contemporary life, offering actionable insights that you can apply immediately. Whether you're new to BaZi analysis or a seasoned practitioner, these articles will deepen your understanding of how the Five Elements, Yin-Yang balance, and cosmic timing influence your daily experiences.
+              </p>
+              <p className="text-lg text-mystic-300 leading-relaxed">
+                Explore our latest articles below, and discover how ancient wisdom can provide clarity, direction, and empowerment in your modern journey. From understanding your wealth potential to navigating relationship challenges, these insights are designed to help you make informed decisions and align with your true destiny.
+              </p>
+            </div>
+          </div>
+        </motion.div>
+
+        {/* Search and Filter */}
+        <motion.div 
+          initial={{ opacity: 0, y: 30 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 0.4 }}
           className="mb-8 sm:mb-12"
         >
           <div className="flex flex-col sm:flex-row gap-4 items-center justify-between">
