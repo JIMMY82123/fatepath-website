@@ -1,7 +1,7 @@
 // Google Analytics 配置
 
 // GA4 测量ID - 请替换为你的实际测量ID
-export const GA_MEASUREMENT_ID = 'G-XXXXXXXXXX'; // 替换为你的测量ID
+export const GA_MEASUREMENT_ID = 'G-GCNP2F5NJC'; // 你的实际测量ID
 
 // 网站配置
 export const SITE_CONFIG = {
