@@ -541,7 +541,7 @@ const Home = () => {
               </div>
 
                {/* 轮播指示器 */}
-               <div className="flex justify-center space-x-0.5 sm:space-x-1 mt-3 sm:mt-4">
+               <div className="flex justify-center space-x-0.25 sm:space-x-0.5 mt-3 sm:mt-4">
                  {featuredTestimonials.map((_, index) => (
                    <button
                      key={index}
@@ -549,7 +549,7 @@ const Home = () => {
                        setDirection(index > currentTestimonial ? 1 : -1)
                        setCurrentTestimonial(index)
                      }}
-                     className={`w-0.5 h-0.5 sm:w-0.5 sm:h-0.5 md:w-1 md:h-1 rounded-full transition-all duration-300 ${
+                     className={`w-1 h-1 sm:w-1.5 sm:h-1.5 md:w-2 md:h-2 rounded-full transition-all duration-300 ${
                        index === currentTestimonial 
                          ? 'bg-gold-400' 
                          : 'bg-mystic-600 hover:bg-mystic-500'
