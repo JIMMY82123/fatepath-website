@@ -222,7 +222,7 @@ const WealthSign = () => {
               )}
             </AnimatePresence>
           
-                     <div className="relative w-full max-w-sm sm:max-w-md md:w-[32rem] h-[24rem] sm:h-[28rem] md:h-[36rem] perspective-1000">
+                                           <div className="relative w-full max-w-sm sm:max-w-md md:w-[40rem] lg:w-[48rem] h-[28rem] sm:h-[32rem] md:h-[40rem] lg:h-[44rem] perspective-1000">
              <motion.div
                className="w-full h-full relative transition-transform duration-1000 transform-style-preserve-3d"
                animate={{ rotateY: isFlipped ? 180 : 0 }}
@@ -283,66 +283,66 @@ const WealthSign = () => {
 
                                                            {/* Back Side - Fortune Result */}
                 <div className="absolute w-full h-full" style={{ backfaceVisibility: 'hidden', transform: 'rotateY(180deg)' }}>
-                                  <div className="mystic-card h-full p-6 border-2 border-gold-500/30 shadow-2xl shadow-gold-500/20 overflow-y-auto custom-scrollbar">
+                                  <div className="mystic-card h-full p-6 border-2 border-gold-500/30 shadow-2xl shadow-gold-500/20">
                    {currentSign && (
                      <div className="h-full flex flex-col">
-                       {/* Sign Header */}
-                       <div className={`text-center p-4 rounded-xl mb-4 ${getLevelBgColor(currentSign.signLevel)} border-2 border-gold-400/40 shadow-lg`}>
-                         <div className="text-4xl mb-2 drop-shadow-lg">{currentSign.icon}</div>
-                         <h3 className="text-xl font-cinzel font-bold text-white mb-2 drop-shadow-md">
-                           {currentSign.signNumber}
-                         </h3>
-                         <p className={`text-lg font-semibold ${getLevelColor(currentSign.signLevel)} drop-shadow-md`}>
-                           {currentSign.signTitle}
-                         </p>
-                         <p className="text-sm text-mystic-200 mt-1 font-medium">
-                           {currentSign.signLevel} Fortune
-                         </p>
-                       </div>
+                                               {/* Sign Header */}
+                        <div className={`text-center p-4 sm:p-6 rounded-xl mb-4 sm:mb-6 ${getLevelBgColor(currentSign.signLevel)} border-2 border-gold-400/40 shadow-lg`}>
+                          <div className="text-4xl sm:text-5xl mb-2 drop-shadow-lg">{currentSign.icon}</div>
+                          <h3 className="text-xl sm:text-2xl font-cinzel font-bold text-white mb-2 drop-shadow-md">
+                            {currentSign.signNumber}
+                          </h3>
+                          <p className={`text-lg sm:text-xl font-semibold ${getLevelColor(currentSign.signLevel)} drop-shadow-md`}>
+                            {currentSign.signTitle}
+                          </p>
+                          <p className="text-sm sm:text-base text-mystic-200 mt-1 font-medium">
+                            {currentSign.signLevel} Fortune
+                          </p>
+                        </div>
 
-                       {/* Traditional Text */}
-                       <div className="mb-4 p-3 bg-mystic-800/50 rounded-lg border border-gold-500/20">
-                         <h4 className="text-sm font-bold text-gold-400 mb-2 flex items-center">
-                           <span className="mr-2">📜</span>
-                           Ancient Wisdom
-                         </h4>
-                         <p className="text-mystic-200 text-sm italic leading-relaxed font-medium drop-shadow-sm">
-                           {currentSign.traditionalText}
-                         </p>
-                       </div>
+                                               {/* Traditional Text */}
+                        <div className="mb-4 sm:mb-6 p-4 sm:p-5 bg-mystic-800/50 rounded-lg border border-gold-500/20">
+                          <h4 className="text-sm sm:text-base font-bold text-gold-400 mb-3 flex items-center">
+                            <span className="mr-2">📜</span>
+                            Ancient Wisdom
+                          </h4>
+                          <p className="text-mystic-200 text-sm sm:text-base italic leading-relaxed font-medium drop-shadow-sm">
+                            {currentSign.traditionalText}
+                          </p>
+                        </div>
 
-                       {/* Modern Interpretation */}
-                       <div className="mb-4 p-3 bg-mystic-800/50 rounded-lg border border-gold-500/20">
-                         <h4 className="text-sm font-bold text-gold-400 mb-2 flex items-center">
-                           <span className="mr-2">💡</span>
-                           Modern Interpretation
-                         </h4>
-                         <p className="text-white text-sm leading-relaxed font-medium drop-shadow-sm">
-                           {currentSign.signText}
-                         </p>
-                       </div>
+                        {/* Modern Interpretation */}
+                        <div className="mb-4 sm:mb-6 p-4 sm:p-5 bg-mystic-800/50 rounded-lg border border-gold-500/20">
+                          <h4 className="text-sm sm:text-base font-bold text-gold-400 mb-3 flex items-center">
+                            <span className="mr-2">💡</span>
+                            Modern Interpretation
+                          </h4>
+                          <p className="text-white text-sm sm:text-base leading-relaxed font-medium drop-shadow-sm">
+                            {currentSign.signText}
+                          </p>
+                        </div>
 
-                       {/* Short Interpretation */}
-                       <div className="mb-4 p-3 bg-mystic-800/50 rounded-lg border border-gold-500/20">
-                         <h4 className="text-sm font-bold text-gold-400 mb-2 flex items-center">
-                           <span className="mr-2">🎯</span>
-                           Action Steps
-                         </h4>
-                         <p className="text-mystic-200 text-sm leading-relaxed font-medium drop-shadow-sm">
-                           {currentSign.shortInterpretation}
-                         </p>
-                       </div>
+                        {/* Short Interpretation */}
+                        <div className="mb-4 sm:mb-6 p-4 sm:p-5 bg-mystic-800/50 rounded-lg border border-gold-500/20">
+                          <h4 className="text-sm sm:text-base font-bold text-gold-400 mb-3 flex items-center">
+                            <span className="mr-2">🎯</span>
+                            Action Steps
+                          </h4>
+                          <p className="text-mystic-200 text-sm sm:text-base leading-relaxed font-medium drop-shadow-sm">
+                            {currentSign.shortInterpretation}
+                          </p>
+                        </div>
 
-                       {/* Cultural Note */}
-                       <div className="mt-auto p-3 bg-mystic-800/30 rounded-lg border border-gold-500/10">
-                         <h4 className="text-xs font-bold text-gold-400 mb-2 flex items-center">
-                           <span className="mr-2">🏮</span>
-                           Philosophical Background
-                         </h4>
-                         <p className="text-mystic-300 text-xs leading-relaxed">
-                           {currentSign.culturalNote}
-                         </p>
-                       </div>
+                        {/* Cultural Note */}
+                        <div className="mt-auto p-4 sm:p-5 bg-mystic-800/30 rounded-lg border border-gold-500/10">
+                          <h4 className="text-xs sm:text-sm font-bold text-gold-400 mb-2 flex items-center">
+                            <span className="mr-2">🏮</span>
+                            Philosophical Background
+                          </h4>
+                          <p className="text-mystic-300 text-xs sm:text-sm leading-relaxed">
+                            {currentSign.culturalNote}
+                          </p>
+                        </div>
                      </div>
                    )}
                  </div>
