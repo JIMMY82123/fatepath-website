@@ -15,27 +15,8 @@ const WealthSign = () => {
   const handleFlip = () => {
     if (isAnimating) return
     
-    // 开始冥想仪式
-    setShowMeditation(true)
-    setMeditationStep(0)
-    
-    // 3秒后开始默念名字
-    setTimeout(() => {
-      setMeditationStep(1)
-      
-      // 每2秒一次默念，总共3次
-      setTimeout(() => {
-        setMeditationStep(2)
-        setTimeout(() => {
-          setMeditationStep(3)
-          setTimeout(() => {
-            // 冥想完成，开始抽签
-            setShowMeditation(false)
-            startDivination()
-          }, 2000)
-        }, 2000)
-      }, 2000)
-    }, 3000)
+    // 直接开始抽签，跳过冥想
+    startDivination()
   }
 
   const startDivination = () => {
@@ -121,107 +102,13 @@ const WealthSign = () => {
            </p>
         </motion.div>
 
-        {/* Fortune Stick Card */}
-        <motion.div 
-          initial={{ opacity: 0, y: 30 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.4 }}
-          className="flex justify-center mb-8"
-        >
-          {/* Meditation Overlay */}
-          <AnimatePresence>
-            {showMeditation && (
-              <motion.div
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                exit={{ opacity: 0 }}
-                className="fixed inset-0 bg-black/80 backdrop-blur-sm z-50 flex items-center justify-center"
-              >
-                <div className="mystic-card p-8 max-w-md mx-4 text-center border-2 border-gold-500/40 shadow-2xl">
-                  <div className="text-6xl mb-6">🧘‍♀️</div>
-                  
-                  {meditationStep === 0 && (
-                    <motion.div
-                      initial={{ opacity: 0, y: 20 }}
-                      animate={{ opacity: 1, y: 0 }}
-                      className="space-y-4"
-                    >
-                      <h3 className="text-2xl font-cinzel font-bold text-white mb-4">
-                        Sacred Meditation Ritual
-                      </h3>
-                      <p className="text-mystic-200 leading-relaxed">
-                        Before drawing your wisdom card, let us prepare your mind and spirit through an ancient meditation ritual.
-                      </p>
-                      <div className="flex items-center justify-center space-x-2 text-gold-300">
-                        <div className="w-2 h-2 bg-gold-400 rounded-full animate-pulse"></div>
-                        <span className="text-sm font-medium">Preparing sacred space...</span>
-                      </div>
-                    </motion.div>
-                  )}
-                  
-                  {meditationStep === 1 && (
-                    <motion.div
-                      initial={{ opacity: 0, y: 20 }}
-                      animate={{ opacity: 1, y: 0 }}
-                      className="space-y-4"
-                    >
-                      <h3 className="text-xl font-cinzel font-bold text-white mb-4">
-                        First Recitation
-                      </h3>
-                      <div className="text-4xl text-gold-400 mb-4 animate-pulse">1</div>
-                      <p className="text-mystic-200">
-                        Silently recite your name three times in your heart...
-                      </p>
-                      <div className="flex items-center justify-center space-x-2 text-gold-300">
-                        <div className="w-2 h-2 bg-gold-400 rounded-full animate-pulse"></div>
-                        <span className="text-sm font-medium">Focusing your intention...</span>
-                      </div>
-                    </motion.div>
-                  )}
-                  
-                  {meditationStep === 2 && (
-                    <motion.div
-                      initial={{ opacity: 0, y: 20 }}
-                      animate={{ opacity: 1, y: 0 }}
-                      className="space-y-4"
-                    >
-                      <h3 className="text-xl font-cinzel font-bold text-white mb-4">
-                        Second Recitation
-                      </h3>
-                      <div className="text-4xl text-gold-400 mb-4 animate-pulse">2</div>
-                      <p className="text-mystic-200">
-                        Continue your silent recitation...
-                      </p>
-                      <div className="flex items-center justify-center space-x-2 text-gold-300">
-                        <div className="w-2 h-2 bg-gold-400 rounded-full animate-pulse"></div>
-                        <span className="text-sm font-medium">Deepening your connection...</span>
-                      </div>
-                    </motion.div>
-                  )}
-                  
-                  {meditationStep === 3 && (
-                    <motion.div
-                      initial={{ opacity: 0, y: 20 }}
-                      animate={{ opacity: 1, y: 0 }}
-                      className="space-y-4"
-                    >
-                      <h3 className="text-xl font-cinzel font-bold text-white mb-4">
-                        Final Recitation
-                      </h3>
-                      <div className="text-4xl text-gold-400 mb-4 animate-pulse">3</div>
-                      <p className="text-mystic-200">
-                        Complete your sacred recitation...
-                      </p>
-                      <div className="flex items-center justify-center space-x-2 text-gold-300">
-                        <div className="w-2 h-2 bg-gold-400 rounded-full animate-pulse"></div>
-                        <span className="text-sm font-medium">Preparing to reveal wisdom...</span>
-                      </div>
-                    </motion.div>
-                  )}
-                </div>
-              </motion.div>
-            )}
-          </AnimatePresence>
+                 {/* Fortune Stick Card */}
+         <motion.div 
+           initial={{ opacity: 0, y: 30 }}
+           animate={{ opacity: 1, y: 0 }}
+           transition={{ duration: 0.8, delay: 0.4 }}
+           className="flex justify-center mb-8"
+         >
           
           <div className="relative w-full max-w-sm sm:max-w-md md:w-[32rem] h-[24rem] sm:h-[28rem] md:h-[36rem] perspective-1000">
             <motion.div
