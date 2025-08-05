@@ -131,21 +131,21 @@ const WealthSign = () => {
                      </div>
                    </div>
                    
-                   {/* Content Overlay */}
-                   <div className="relative z-10 h-full flex flex-col items-center justify-center p-4 sm:p-6 md:p-8 text-center">
-                     <h3 className="text-2xl sm:text-3xl font-cinzel font-bold text-white mb-3 sm:mb-4 drop-shadow-lg">
-                       Wisdom Oracle
-                     </h3>
-                     
-                     <p className="text-mystic-100 text-center mb-6 sm:mb-8 text-sm sm:text-lg leading-relaxed font-medium drop-shadow-md max-w-sm">
-                       Begin the sacred meditation ritual to connect with ancient wisdom. Focus your intention and prepare your spirit for divine guidance.
-                     </p>
-                     
-                     <div className="flex items-center space-x-3 text-gold-300 bg-mystic-900/70 backdrop-blur-sm px-6 py-3 rounded-full border border-gold-500/40 shadow-lg">
-                       <Star className="h-6 w-6" />
-                       <span className="text-base font-semibold">Begin Sacred Ritual</span>
-                     </div>
-                   </div>
+                                       {/* Content Overlay */}
+                    <div className="relative z-10 h-full flex flex-col items-center justify-center p-4 sm:p-6 md:p-8 text-center" style={{ backdropFilter: 'none' }}>
+                      <h3 className="text-2xl sm:text-3xl font-cinzel font-bold text-white mb-3 sm:mb-4 drop-shadow-lg" style={{ textShadow: '2px 2px 4px rgba(0,0,0,0.8)' }}>
+                        Wisdom Oracle
+                      </h3>
+                      
+                      <p className="text-white text-center mb-6 sm:mb-8 text-sm sm:text-lg leading-relaxed font-medium drop-shadow-md max-w-sm" style={{ textShadow: '1px 1px 2px rgba(0,0,0,0.8)' }}>
+                        Click to begin your sacred divination ritual and receive ancient wisdom guidance.
+                      </p>
+                      
+                      <div className="flex items-center space-x-3 text-gold-300 bg-black/50 px-6 py-3 rounded-full border border-gold-500/40 shadow-lg" style={{ backdropFilter: 'none' }}>
+                        <Star className="h-6 w-6" />
+                        <span className="text-base font-semibold">Begin Sacred Ritual</span>
+                      </div>
+                    </div>
                  </div>
                </div>
 
