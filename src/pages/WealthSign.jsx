@@ -281,9 +281,9 @@ const WealthSign = () => {
                   </div>
                </div>
 
-                             {/* Back Side - Fortune Result */}
-               <div className="absolute w-full h-full" style={{ backfaceVisibility: 'hidden', transform: 'rotateY(180deg)' }}>
-                                 <div className="mystic-card h-full p-6 border-2 border-gold-500/30 shadow-2xl shadow-gold-500/20 overflow-y-auto">
+                                                           {/* Back Side - Fortune Result */}
+                <div className="absolute w-full h-full" style={{ backfaceVisibility: 'hidden', transform: 'rotateY(180deg)' }}>
+                                  <div className="mystic-card h-full p-6 border-2 border-gold-500/30 shadow-2xl shadow-gold-500/20 overflow-y-auto custom-scrollbar">
                    {currentSign && (
                      <div className="h-full flex flex-col">
                        {/* Sign Header */}
