@@ -242,21 +242,8 @@ const WealthSign = () => {
                         src="/images/wealth-god.jpg" 
                         alt="Wealth God Background" 
                         className="w-full h-full object-cover"
-                        style={{
-                          width: '100%',
-                          height: '100%',
-                          objectFit: 'cover',
-                          objectPosition: 'center',
-                          imageRendering: 'crisp-edges',
-                          filter: 'brightness(1.4) contrast(1.5) saturate(1.3)',
-                          transform: 'translateZ(0)',
-                          backfaceVisibility: 'hidden',
-                          willChange: 'transform'
-                        }}
-                        loading="eager"
-                        decoding="sync"
                         onError={(e) => {
-                          // 如果图片加载失败，显示默认背景
+                          console.log('图片加载失败');
                           e.target.style.display = 'none';
                           const defaultBg = e.target.parentElement.nextElementSibling;
                           if (defaultBg) {
@@ -264,7 +251,7 @@ const WealthSign = () => {
                           }
                         }}
                         onLoad={(e) => {
-                          // 图片加载成功，确保默认背景隐藏
+                          console.log('图片加载成功');
                           const defaultBg = e.target.parentElement.nextElementSibling;
                           if (defaultBg) {
                             defaultBg.style.display = 'none';
