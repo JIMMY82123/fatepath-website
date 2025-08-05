@@ -243,19 +243,11 @@ const WealthSign = () => {
                         alt="Wealth God Background" 
                         className="w-full h-full object-cover"
                         onError={(e) => {
-                          console.log('图片加载失败');
+                          console.log('图片加载失败，使用默认背景');
                           e.target.style.display = 'none';
-                          const defaultBg = e.target.parentElement.nextElementSibling;
-                          if (defaultBg) {
-                            defaultBg.style.display = 'block';
-                          }
                         }}
                         onLoad={(e) => {
                           console.log('图片加载成功');
-                          const defaultBg = e.target.parentElement.nextElementSibling;
-                          if (defaultBg) {
-                            defaultBg.style.display = 'none';
-                          }
                         }}
                       />
                       <div className="absolute inset-0 bg-gradient-to-t from-mystic-900/80 via-mystic-900/40 to-mystic-900/20"></div>
