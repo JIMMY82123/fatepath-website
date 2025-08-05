@@ -8,9 +8,6 @@ const WealthSign = () => {
   const [currentSign, setCurrentSign] = useState(null)
   const [isAnimating, setIsAnimating] = useState(false)
   const [showResult, setShowResult] = useState(false)
-  const [showMeditation, setShowMeditation] = useState(false)
-  const [meditationStep, setMeditationStep] = useState(0)
-  const [userName, setUserName] = useState('')
 
   const handleFlip = () => {
     if (isAnimating) return
@@ -39,9 +36,6 @@ const WealthSign = () => {
     setCurrentSign(null)
     setShowResult(false)
     setIsAnimating(false)
-    setShowMeditation(false)
-    setMeditationStep(0)
-    setUserName('')
   }
 
   const getLevelColor = (level) => {
@@ -120,24 +114,24 @@ const WealthSign = () => {
             >
                              {/* Front Side - Wealth God */}
                <div className="absolute w-full h-full backface-hidden">
-                 <div className="mystic-card h-full cursor-pointer hover:scale-105 transition-transform duration-300 border-2 border-gold-500/40 shadow-2xl shadow-gold-500/30 relative overflow-hidden"
-                      onClick={handleFlip}
-                      style={{ touchAction: 'auto', pointerEvents: 'auto' }}>
-                   
-                   {/* Simple Background */}
-                   <div className="absolute inset-0 bg-gradient-to-br from-gold-400 via-yellow-600 to-orange-500">
-                     <div className="w-full h-full flex items-center justify-center">
-                       <Coins className="h-32 w-32 text-white drop-shadow-lg opacity-50" />
-                     </div>
-                   </div>
-                   
-                                       {/* Content Overlay */}
-                    <div className="relative z-10 h-full flex flex-col items-center justify-center p-4 sm:p-6 md:p-8 text-center" style={{ backdropFilter: 'none' }}>
-                      <h3 className="text-2xl sm:text-3xl font-cinzel font-bold text-white mb-3 sm:mb-4 drop-shadow-lg" style={{ textShadow: '2px 2px 4px rgba(0,0,0,0.8)' }}>
+                                   <div className="mystic-card h-full cursor-pointer hover:scale-105 transition-transform duration-300 border-2 border-gold-500/40 shadow-2xl shadow-gold-500/30 relative overflow-hidden"
+                       onClick={handleFlip}
+                       style={{ touchAction: 'auto', pointerEvents: 'auto', zIndex: 1 }}>
+                    
+                    {/* Simple Background */}
+                    <div className="absolute inset-0 bg-gradient-to-br from-gold-400 via-yellow-600 to-orange-500" style={{ zIndex: 0 }}>
+                      <div className="w-full h-full flex items-center justify-center">
+                        <Coins className="h-32 w-32 text-white drop-shadow-lg opacity-50" />
+                      </div>
+                    </div>
+                    
+                    {/* Content Overlay */}
+                    <div className="relative z-20 h-full flex flex-col items-center justify-center p-4 sm:p-6 md:p-8 text-center" style={{ backdropFilter: 'none' }}>
+                      <h3 className="text-2xl sm:text-3xl font-cinzel font-bold text-white mb-3 sm:mb-4" style={{ textShadow: '2px 2px 4px rgba(0,0,0,0.8)' }}>
                         Wisdom Oracle
                       </h3>
                       
-                      <p className="text-white text-center mb-6 sm:mb-8 text-sm sm:text-lg leading-relaxed font-medium drop-shadow-md max-w-sm" style={{ textShadow: '1px 1px 2px rgba(0,0,0,0.8)' }}>
+                      <p className="text-white text-center mb-6 sm:mb-8 text-sm sm:text-lg leading-relaxed font-medium max-w-sm" style={{ textShadow: '1px 1px 2px rgba(0,0,0,0.8)' }}>
                         Click to begin your sacred divination ritual and receive ancient wisdom guidance.
                       </p>
                       
@@ -146,7 +140,7 @@ const WealthSign = () => {
                         <span className="text-base font-semibold">Begin Sacred Ritual</span>
                       </div>
                     </div>
-                 </div>
+                  </div>
                </div>
 
               {/* Back Side - Fortune Result */}
