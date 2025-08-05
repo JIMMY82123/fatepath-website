@@ -241,7 +241,7 @@ const WealthSign = () => {
                      <img 
                        src="/images/wealth-god.jpg" 
                        alt="Wealth God Background" 
-                       className="w-full h-full object-cover"
+                       className="w-full h-full object-cover wealth-god-image"
                        onError={(e) => {
                          // 如果图片加载失败，显示默认背景
                          e.target.style.display = 'none';

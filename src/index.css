@@ -98,6 +98,14 @@ body {
     user-drag: none;
   }
   
+  /* 抽签页面封面图片特殊处理 */
+  .wealth-god-image {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover;
+    object-position: center;
+  }
+  
   /* 动画性能优化 */
   .animate-optimized {
     will-change: transform, opacity;
