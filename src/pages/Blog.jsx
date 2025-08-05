@@ -74,6 +74,17 @@ const Blog = () => {
   const blogPosts = [
     {
       id: 1,
+      title: "📈 You Think This Market Rally Is a Turning Point? A Bigger Crisis Is Brewing Beneath the Surface",
+      excerpt: "In early August 2025, the Dow Jones surged by 580 points—the largest one-day gain since May. But is this really a turning point, or just the calm before a more devastating storm?",
+      category: "market-analysis",
+      categoryLabel: "Market Analysis",
+      date: "2025-08-05",
+      readTime: "12 min read",
+      image: "/images/blog/market-crisis-2025.jpg",
+      slug: "market-rally-turning-point-crisis-2025"
+    },
+    {
+      id: 2,
       title: "Understanding Your Bazi Chart: A Beginner's Guide",
       excerpt: "Learn the fundamentals of Bazi (八字) analysis and how your birth chart reveals your life's blueprint. Discover the four pillars and their significance in Chinese astrology.",
       category: "bazi-basics",
@@ -84,7 +95,7 @@ const Blog = () => {
       slug: "understanding-bazi-chart-beginners-guide"
     },
     {
-      id: 2,
+      id: 3,
       title: "The Five Elements in Love: Finding Your Perfect Match",
       excerpt: "Explore how the Five Elements (五行) influence romantic compatibility. Discover which elements create harmony and which may lead to challenges in relationships.",
       category: "love-compatibility",
@@ -95,7 +106,7 @@ const Blog = () => {
       slug: "five-elements-love-perfect-match"
     },
     {
-      id: 3,
+      id: 4,
       title: "Protection Talismans: Ancient Wisdom for Modern Life",
       excerpt: "Discover the power of personalized talismans and how they can enhance your luck, protection, and positive energy flow based on your unique birth chart.",
       category: "talismans",
@@ -106,7 +117,7 @@ const Blog = () => {
       slug: "protection-talismans-ancient-wisdom"
     },
     {
-      id: 4,
+      id: 5,
       title: "Career Timing: When to Make Your Next Big Move",
       excerpt: "Learn how to identify the optimal timing for career changes, business ventures, and professional decisions using traditional Chinese numerology.",
       category: "career-timing",
@@ -117,7 +128,7 @@ const Blog = () => {
       slug: "career-timing-next-big-move"
     },
     {
-      id: 5,
+      id: 6,
       title: "2024 Year of the Dragon: Your Fortune Forecast",
       excerpt: "Discover what the Year of the Dragon 2024 holds for you based on your Bazi chart. Learn about opportunities, challenges, and how to maximize your luck this year.",
       category: "bazi-basics",
@@ -127,8 +138,8 @@ const Blog = () => {
       image: "/images/blog/dragon-year-2024.jpg",
       slug: "2024-year-dragon-fortune-forecast"
     },
-            {
-          id: 6,
+        {
+          id: 7,
           title: "When Bitcoin Falls, What Does Destiny Say?",
           excerpt: "Explore how BaZi destiny charts and metaphysical timing reveal deeper insights into financial volatility like the August 2025 Bitcoin crash.",
           category: "career-timing",
@@ -139,7 +150,7 @@ const Blog = () => {
           slug: "bitcoin-crash-bazi-destiny"
         },
         {
-          id: 7,
+          id: 8,
           title: "Burned by the Heat: What 2025's Extreme Temperatures Reveal in BaZi",
           excerpt: "Explore how global heatwaves reflect deeper Fire element imbalances in Chinese metaphysics, and what your BaZi chart reveals about stress, health, and destiny in 2025.",
           category: "bazi-basics",
@@ -150,18 +161,18 @@ const Blog = () => {
           slug: "heatwave-bazi-fire-imbalance"
         },
         {
-          id: 8,
+          id: 9,
           title: "What is the Best Bazi for Wealth? Decoding Your Chinese Astrology Blueprint",
           excerpt: "Discover the 3 wealthiest Bazi patterns in Chinese metaphysics, how to activate your financial potential, and why 'wealth' is more than money. Based on 10,000+ client cases.",
           category: "wealth-bazi",
           categoryLabel: "Wealth & Fortune",
-              date: "2025-08-04",
-    readTime: "18 min read",
+          date: "2025-08-04",
+          readTime: "18 min read",
           image: "/images/blog/bazi-wealth-blueprint-cover.jpg",
           slug: "best-bazi-wealth-chinese-astrology-blueprint"
         },
         {
-          id: 8,
+          id: 10,
           title: "🌿 The Seasons of Fate: Why You Don't Have to Panic About Every Downturn",
           excerpt: "Discover how BaZi reveals that life's challenges are natural cycles, not punishments. Learn to flow with your destiny's seasons instead of fighting against them.",
           category: "bazi-basics",
@@ -172,7 +183,7 @@ const Blog = () => {
           slug: "seasons-fate-cycles"
         },
         {
-          id: 9,
+          id: 11,
           title: "BaZi vs. MBTI: East Meets West in Personality and Destiny",
           excerpt: "Explore how ancient Chinese BaZi and Western MBTI personality systems complement each other. Discover the differences between destiny mapping and personality typing.",
           category: "bazi-basics",
@@ -186,6 +197,7 @@ const Blog = () => {
 
   const categories = [
     { value: 'all', label: 'All Articles' },
+    { value: 'market-analysis', label: 'Market Analysis' },
     { value: 'bazi-basics', label: 'Bazi Basics' },
     { value: 'love-compatibility', label: 'Love & Relationships' },
     { value: 'talismans', label: 'Talismans & Protection' },

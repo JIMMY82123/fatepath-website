@@ -100,24 +100,24 @@ const BlogPost = () => {
           Zooming out, the global economic landscape is entering a highly unstable phase:
         </p>
 
-        <div class="grid md:grid-cols-2 gap-6 mb-8">
-          <div class="mystic-card p-6 border-l-4 border-red-500/50">
-            <h3 class="text-lg font-cinzel font-semibold text-red-400 mb-3">💰 Debt Crisis</h3>
-            <p class="text-mystic-300 text-sm">U.S. national debt has surpassed $35 trillion, with government spending outpacing tax revenue.</p>
-          </div>
-          <div class="mystic-card p-6 border-l-4 border-red-500/50">
-            <h3 class="text-lg font-cinzel font-semibold text-red-400 mb-3">🏢 Commercial Real Estate</h3>
-            <p class="text-mystic-300 text-sm">Vacancies are soaring—especially in cities like San Francisco and Chicago.</p>
-          </div>
-          <div class="mystic-card p-6 border-l-4 border-red-500/50">
-            <h3 class="text-lg font-cinzel font-semibold text-red-400 mb-3">🏦 Banking Strains</h3>
-            <p class="text-mystic-300 text-sm">Regional banks are facing liquidity strains, and depositor confidence is fragile.</p>
-          </div>
-          <div class="mystic-card p-6 border-l-4 border-red-500/50">
-            <h3 class="text-lg font-cinzel font-semibold text-red-400 mb-3">🤖 AI Bubble</h3>
-            <p class="text-mystic-300 text-sm">An emerging AI bubble is driving reckless capital into short-term tech ventures with little long-term value.</p>
-          </div>
-        </div>
+        <ul class="space-y-3 mb-6 text-mystic-300">
+          <li class="flex items-start space-x-3">
+            <div class="w-2 h-2 bg-red-400 rounded-full mt-2 flex-shrink-0"></div>
+            <span><strong>U.S. national debt</strong> has surpassed $35 trillion, with government spending outpacing tax revenue.</span>
+          </li>
+          <li class="flex items-start space-x-3">
+            <div class="w-2 h-2 bg-red-400 rounded-full mt-2 flex-shrink-0"></div>
+            <span><strong>Commercial real estate vacancies</strong> are soaring—especially in cities like San Francisco and Chicago.</span>
+          </li>
+          <li class="flex items-start space-x-3">
+            <div class="w-2 h-2 bg-red-400 rounded-full mt-2 flex-shrink-0"></div>
+            <span><strong>Regional banks</strong> are facing liquidity strains, and depositor confidence is fragile.</span>
+          </li>
+          <li class="flex items-start space-x-3">
+            <div class="w-2 h-2 bg-red-400 rounded-full mt-2 flex-shrink-0"></div>
+            <span><strong>An emerging AI bubble</strong> is driving reckless capital into short-term tech ventures with little long-term value.</span>
+          </li>
+        </ul>
 
         <p class="mb-6 text-mystic-300 leading-relaxed">
           Meanwhile, geopolitical tensions are at a historic high: Unresolved U.S.-China relations, ongoing Russia-Ukraine conflict, instability in the Middle East… all of which are eroding global investment confidence.
