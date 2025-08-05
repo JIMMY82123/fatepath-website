@@ -51,6 +51,204 @@ const BlogPost = () => {
   const blogPosts = [
     {
       id: 1,
+      title: "📈 You Think This Market Rally Is a Turning Point? A Bigger Crisis Is Brewing Beneath the Surface",
+      excerpt: "In early August 2025, the Dow Jones surged by 580 points—the largest one-day gain since May. But is this really a turning point, or just the calm before a more devastating storm?",
+      content: `
+        <div class="mb-8">
+          <p class="text-lg text-mystic-300 leading-relaxed mb-4 italic">
+            "The greatest deception is not in the market's fall, but in its false recovery."
+          </p>
+          <p class="text-sm text-mystic-400">—Ancient Chinese wisdom</p>
+        </div>
+
+        <h2 class="text-2xl font-cinzel font-bold text-white mb-4 mt-8">📊 The Illusion of Recovery</h2>
+        <p class="mb-6 text-mystic-300 leading-relaxed">
+          In early August 2025, the Dow Jones Industrial Average surged by 580 points in a single day—the largest one-day gain since May. Investors cheered, financial platforms buzzed, and the phrase "bottom reversal" echoed across social media.
+        </p>
+        <p class="mb-6 text-mystic-300 leading-relaxed">
+          But is this really a turning point?<br>
+          Or just the calm before a more devastating storm?
+        </p>
+
+        <h2 class="text-2xl font-cinzel font-bold text-white mb-4 mt-8">⚠️ Beware the Illusion: The Danger of False Recovery</h2>
+        <p class="mb-6 text-mystic-300 leading-relaxed">
+          History has taught us a painful lesson. Before the 2008 financial crisis, U.S. stocks experienced several months of rebound. Before the dot-com bubble burst in 2000, the Nasdaq even hit record highs.
+        </p>
+        <p class="mb-6 text-mystic-300 leading-relaxed">
+          Every major crisis has been preceded by a deceptive wave of optimism.
+        </p>
+        <p class="mb-6 text-mystic-300 leading-relaxed">
+          This time is no different.
+        </p>
+
+        <div class="bg-gradient-to-r from-red-900/50 to-orange-900/50 p-6 rounded-xl border border-red-500/30 mb-8">
+          <h3 class="text-lg font-cinzel font-semibold text-red-400 mb-4">The Toxic Paradox:</h3>
+          <p class="text-mystic-300 mb-4">
+            The 2025 rally is rooted in a paradox: a weakening labor market.
+          </p>
+          <p class="text-mystic-300 mb-4">
+            While the data shows economic softness, markets interpreted it as a signal that the Fed might halt interest rate hikes—or even cut rates. Stocks soared on the bad news.
+          </p>
+          <p class="text-mystic-300 font-semibold">
+            In other words: The worse the economy, the more excited the market gets.<br>
+            That's a toxic kind of optimism.
+          </p>
+        </div>
+
+        <h2 class="text-2xl font-cinzel font-bold text-white mb-4 mt-8">🌋 The Real Crisis Is Just Beginning: 2025–2026 as a Tipping Point</h2>
+        <p class="mb-6 text-mystic-300 leading-relaxed">
+          Zooming out, the global economic landscape is entering a highly unstable phase:
+        </p>
+
+        <div class="grid md:grid-cols-2 gap-6 mb-8">
+          <div class="mystic-card p-6 border-l-4 border-red-500/50">
+            <h3 class="text-lg font-cinzel font-semibold text-red-400 mb-3">💰 Debt Crisis</h3>
+            <p class="text-mystic-300 text-sm">U.S. national debt has surpassed $35 trillion, with government spending outpacing tax revenue.</p>
+          </div>
+          <div class="mystic-card p-6 border-l-4 border-red-500/50">
+            <h3 class="text-lg font-cinzel font-semibold text-red-400 mb-3">🏢 Commercial Real Estate</h3>
+            <p class="text-mystic-300 text-sm">Vacancies are soaring—especially in cities like San Francisco and Chicago.</p>
+          </div>
+          <div class="mystic-card p-6 border-l-4 border-red-500/50">
+            <h3 class="text-lg font-cinzel font-semibold text-red-400 mb-3">🏦 Banking Strains</h3>
+            <p class="text-mystic-300 text-sm">Regional banks are facing liquidity strains, and depositor confidence is fragile.</p>
+          </div>
+          <div class="mystic-card p-6 border-l-4 border-red-500/50">
+            <h3 class="text-lg font-cinzel font-semibold text-red-400 mb-3">🤖 AI Bubble</h3>
+            <p class="text-mystic-300 text-sm">An emerging AI bubble is driving reckless capital into short-term tech ventures with little long-term value.</p>
+          </div>
+        </div>
+
+        <p class="mb-6 text-mystic-300 leading-relaxed">
+          Meanwhile, geopolitical tensions are at a historic high: Unresolved U.S.-China relations, ongoing Russia-Ukraine conflict, instability in the Middle East… all of which are eroding global investment confidence.
+        </p>
+
+        <div class="mystic-card p-6 border-l-4 border-red-500/50 mb-8">
+          <p class="text-mystic-300 italic">
+            ⚠️ The next systemic financial crisis may already be forming.<br>
+            Some experts are warning: "The next collapse could be worse than 2008—not because of subprime mortgages, but due to global debt, currency instability, and fractured social trust."
+          </p>
+        </div>
+
+        <h2 class="text-2xl font-cinzel font-bold text-white mb-4 mt-8">🔥 Ancient Wisdom, Modern Warning: The BaZi and Feng Shui Perspective</h2>
+        <p class="mb-6 text-mystic-300 leading-relaxed">
+          According to traditional Chinese metaphysics, 2025 is the Year of Yi-Si (乙巳), followed by Bing-Wu (丙午) in 2026.
+        </p>
+        <p class="mb-6 text-mystic-300 leading-relaxed">
+          Both years are governed by the Fire element, which tends to clash with Metal—the element that symbolizes wealth and stability in BaZi (Four Pillars of Destiny).
+        </p>
+
+        <div class="bg-gradient-to-r from-orange-900/50 to-red-900/50 p-6 rounded-xl border border-orange-500/30 mb-8">
+          <h3 class="text-lg font-cinzel font-semibold text-orange-400 mb-4">In such a fiery cycle, we often observe:</h3>
+          <ul class="space-y-2 text-mystic-300">
+            <li class="flex items-start space-x-3">
+              <div class="w-2 h-2 bg-orange-400 rounded-full mt-2 flex-shrink-0"></div>
+              <span><strong>Financial instability</strong> (Fire overcomes Metal)</span>
+            </li>
+            <li class="flex items-start space-x-3">
+              <div class="w-2 h-2 bg-orange-400 rounded-full mt-2 flex-shrink-0"></div>
+              <span><strong>Policy volatility</strong> (Wu is Yang Fire, indicating disruption and confrontation)</span>
+            </li>
+            <li class="flex items-start space-x-3">
+              <div class="w-2 h-2 bg-orange-400 rounded-full mt-2 flex-shrink-0"></div>
+              <span><strong>Emotional turmoil</strong> (Excess Fire generates impulsiveness and anxiety)</span>
+            </li>
+          </ul>
+        </div>
+
+        <p class="mb-6 text-mystic-300 leading-relaxed">
+          Moreover, the world entered the "9th Fire Luck Cycle" (九紫離火運) in 2024, lasting for 20 years. This period is associated with heat, upheaval, and transformation—not just economically, but socially and spiritually.
+        </p>
+
+        <div class="mystic-card p-6 border-l-4 border-gold-500/50 mb-8">
+          <p class="text-mystic-300 italic">
+            🔮 If your BaZi chart indicates weakness in Metal or you're currently in a "Wealth-star weakening cycle," this is the time to conserve, not expand.
+          </p>
+        </div>
+
+        <h2 class="text-2xl font-cinzel font-bold text-white mb-4 mt-8">🛡️ Don't Celebrate—Prepare</h2>
+        <p class="mb-6 text-mystic-300 leading-relaxed">
+          While others celebrate a temporary market bounce, those with insight are already preparing for what's to come.
+        </p>
+
+        <div class="grid md:grid-cols-2 gap-6 mb-8">
+          <div class="mystic-card p-6">
+            <h3 class="text-lg font-cinzel font-semibold text-gold-400 mb-3">💰 Financial Strategy</h3>
+            <ul class="space-y-2 text-mystic-300 text-sm">
+              <li>• Reassess your financial structure</li>
+              <li>• Reduce leverage</li>
+              <li>• Don't fall for premature "buy the dip" opportunities</li>
+            </ul>
+          </div>
+          <div class="mystic-card p-6">
+            <h3 class="text-lg font-cinzel font-semibold text-gold-400 mb-3">🔮 Personal Luck Cycle</h3>
+            <ul class="space-y-2 text-mystic-300 text-sm">
+              <li>• Understand your personal luck cycle</li>
+              <li>• Is this a time for bold moves—or strategic retreat?</li>
+              <li>• Optimize your Feng Shui environment</li>
+            </ul>
+          </div>
+        </div>
+
+        <h2 class="text-2xl font-cinzel font-bold text-white mb-4 mt-8">🧭 The Path of Destiny: Danger Foreseen, Disaster Avoided</h2>
+        <p class="mb-6 text-mystic-300 leading-relaxed">
+          True "turning points" aren't defined by a one-day rally. They're shaped by how well you navigate uncertainty—and whether you can stand firm during chaos.
+        </p>
+        <p class="mb-6 text-mystic-300 leading-relaxed">
+          Is your current fortune a breakthrough—or a trap?
+        </p>
+
+        <div class="mystic-card p-6 border-l-4 border-gold-500/50 mb-8">
+          <h3 class="text-lg font-cinzel font-semibold text-gold-400 mb-3">🎯 Key Questions to Ask Yourself:</h3>
+          <ul class="space-y-2 text-mystic-300">
+            <li class="flex items-start space-x-3">
+              <div class="w-2 h-2 bg-gold-400 rounded-full mt-2 flex-shrink-0"></div>
+              <span>Is this rally based on fundamentals or speculation?</span>
+            </li>
+            <li class="flex items-start space-x-3">
+              <div class="w-2 h-2 bg-gold-400 rounded-full mt-2 flex-shrink-0"></div>
+              <span>Are you following the crowd or your own analysis?</span>
+            </li>
+            <li class="flex items-start space-x-3">
+              <div class="w-2 h-2 bg-gold-400 rounded-full mt-2 flex-shrink-0"></div>
+              <span>Does your BaZi chart support aggressive investment now?</span>
+            </li>
+            <li class="flex items-start space-x-3">
+              <div class="w-2 h-2 bg-gold-400 rounded-full mt-2 flex-shrink-0"></div>
+              <span>Are you prepared for both upside and downside scenarios?</span>
+            </li>
+          </ul>
+        </div>
+
+        <p class="mb-6 text-mystic-300 leading-relaxed">
+          The ancient Chinese saying goes: "When the wind rises, even pigs can fly. But when the wind stops, only eagles remain aloft."
+        </p>
+        <p class="mb-6 text-mystic-300 leading-relaxed">
+          In 2025-2026, the question isn't whether you can fly—it's whether you can survive the landing.
+        </p>
+
+        <div class="bg-gradient-to-r from-mystic-800 to-mystic-900 p-6 rounded-xl border border-gold-500/30 mb-8">
+          <h3 class="text-lg font-cinzel font-semibold text-gold-400 mb-4">🔮 Need Personalized Guidance?</h3>
+          <p class="text-mystic-300 mb-4">
+            Would you like a personalized BaZi reading to understand how the 2025-2026 Fire energy affects your specific chart? 
+            A detailed analysis can reveal your Fire element balance and provide specific strategies for navigating this volatile period.
+          </p>
+          <p class="text-mystic-300 text-sm">
+            Remember: The best time to prepare for a storm is when the sky is still clear.
+          </p>
+        </div>
+      `,
+      category: "market-analysis",
+      categoryLabel: "Market Analysis",
+      date: "2025-08-15",
+      readTime: "12 min read",
+      image: "/images/blog/market-crisis-2025.jpg",
+      slug: "market-rally-turning-point-crisis-2025",
+      author: "玄印 (Xuan Yin)",
+      tags: ["Market Analysis", "2025", "Financial Crisis", "BaZi", "Fire Element", "Economic Forecast", "Investment Strategy"]
+    },
+    {
+      id: 2,
       title: "Understanding Your Bazi Chart: A Beginner's Guide",
       excerpt: "Learn the fundamentals of Bazi (八字) analysis and how your birth chart reveals your life's blueprint. Discover the four pillars and their significance in Chinese astrology.",
       content: `
@@ -152,7 +350,7 @@ const BlogPost = () => {
       tags: ["Bazi", "Chinese Astrology", "Four Pillars", "Five Elements"]
     },
     {
-      id: 5,
+      id: 7,
       title: "2024 Year of the Dragon: Your Fortune Forecast",
       excerpt: "Discover what the Year of the Dragon 2024 holds for you based on your Bazi chart. Learn about opportunities, challenges, and how to maximize your luck this year.",
       content: `
@@ -316,7 +514,7 @@ const BlogPost = () => {
       tags: ["Dragon Year", "2024", "Bazi", "Chinese Astrology", "Fortune Forecast"]
     },
     {
-      id: 6,
+      id: 8,
       title: "When Bitcoin Falls, What Does Destiny Say?",
       excerpt: "Explore how BaZi destiny charts and metaphysical timing reveal deeper insights into financial volatility like the August 2025 Bitcoin crash.",
       content: `
@@ -440,7 +638,7 @@ const BlogPost = () => {
              tags: ["Bitcoin", "Cryptocurrency", "BaZi", "Wealth Cycles", "Financial Timing", "2025"]
      },
      {
-       id: 7,
+       id: 9,
        title: "Burned by the Heat: What 2025's Extreme Temperatures Reveal in BaZi",
        excerpt: "Explore how global heatwaves reflect deeper Fire element imbalances in Chinese metaphysics, and what your BaZi chart reveals about stress, health, and destiny in 2025.",
        content: `
@@ -592,7 +790,7 @@ const BlogPost = () => {
        tags: ["Heatwave", "Fire Element", "BaZi", "2025", "Health", "Energy Balance", "Climate"]
      },
      {
-       id: 8,
+       id: 10,
        title: "🌿 The Seasons of Fate: Why You Don't Have to Panic About Every Downturn",
        excerpt: "Discover how BaZi reveals that life's challenges are natural cycles, not punishments. Learn to flow with your destiny's seasons instead of fighting against them.",
        content: `
@@ -742,7 +940,7 @@ const BlogPost = () => {
        tags: ["Destiny Cycles", "BaZi", "Life Phases", "Resilience", "Chinese Philosophy", "Personal Growth", "Timing"]
      },
      {
-       id: 9,
+       id: 11,
        title: "BaZi vs. MBTI: East Meets West in Personality and Destiny",
        excerpt: "Explore how ancient Chinese BaZi and Western MBTI personality systems complement each other. Discover the differences between destiny mapping and personality typing.",
        content: `
