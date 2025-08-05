@@ -236,30 +236,32 @@ const WealthSign = () => {
                  <div className="mystic-card h-full cursor-pointer hover:scale-105 transition-transform duration-300 border-2 border-gold-500/40 shadow-2xl shadow-gold-500/30 relative overflow-hidden"
                       onClick={handleFlip}>
                    
-                   {/* Wealth God Background Image */}
-                   <div className="absolute inset-0">
-                     <img 
-                       src="/images/wealth-god.jpg" 
-                       alt="Wealth God Background" 
-                       className="w-full h-full object-cover wealth-god-image"
-                       onError={(e) => {
-                         // 如果图片加载失败，显示默认背景
-                         e.target.style.display = 'none';
-                         const defaultBg = e.target.parentElement.nextElementSibling;
-                         if (defaultBg) {
-                           defaultBg.style.display = 'block';
-                         }
-                       }}
-                       onLoad={(e) => {
-                         // 图片加载成功，确保默认背景隐藏
-                         const defaultBg = e.target.parentElement.nextElementSibling;
-                         if (defaultBg) {
-                           defaultBg.style.display = 'none';
-                         }
-                       }}
-                     />
-                     <div className="absolute inset-0 bg-gradient-to-t from-mystic-900/80 via-mystic-900/40 to-mystic-900/20"></div>
-                   </div>
+                                       {/* Wealth God Background Image */}
+                    <div className="absolute inset-0">
+                      <img 
+                        src="/images/wealth-god.jpg" 
+                        alt="Wealth God Background" 
+                        className="w-full h-full object-cover wealth-god-image"
+                        loading="eager"
+                        decoding="async"
+                        onError={(e) => {
+                          // 如果图片加载失败，显示默认背景
+                          e.target.style.display = 'none';
+                          const defaultBg = e.target.parentElement.nextElementSibling;
+                          if (defaultBg) {
+                            defaultBg.style.display = 'block';
+                          }
+                        }}
+                        onLoad={(e) => {
+                          // 图片加载成功，确保默认背景隐藏
+                          const defaultBg = e.target.parentElement.nextElementSibling;
+                          if (defaultBg) {
+                            defaultBg.style.display = 'none';
+                          }
+                        }}
+                      />
+                      <div className="absolute inset-0 bg-gradient-to-t from-mystic-900/80 via-mystic-900/40 to-mystic-900/20"></div>
+                    </div>
                    
                    {/* Default Background (if image fails to load) */}
                    <div className="absolute inset-0 bg-gradient-to-br from-gold-400 via-yellow-600 to-orange-500" style={{display: 'none'}}>
