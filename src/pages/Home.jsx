@@ -258,6 +258,9 @@ const Home = () => {
                 But I'm Ready to Find My Path
               </motion.span>
             </motion.h1>
+            
+            {/* SEO-friendly hidden h1 for search engines */}
+            <h1 className="sr-only">FatePath - Ancient Chinese Numerology & BaZi Reading Services</h1>
 
             <motion.div 
               initial={{ opacity: 0, y: 30 }}
