@@ -76,7 +76,6 @@ body {
   
   /* 卡片触摸优化 */
   .mystic-card {
-    touch-action: manipulation;
     -webkit-tap-highlight-color: transparent;
   }
   
