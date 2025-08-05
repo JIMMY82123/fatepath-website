@@ -245,6 +245,17 @@ const WealthSign = () => {
                        onError={(e) => {
                          // 如果图片加载失败，显示默认背景
                          e.target.style.display = 'none';
+                         const defaultBg = e.target.parentElement.nextElementSibling;
+                         if (defaultBg) {
+                           defaultBg.style.display = 'block';
+                         }
+                       }}
+                       onLoad={(e) => {
+                         // 图片加载成功，确保默认背景隐藏
+                         const defaultBg = e.target.parentElement.nextElementSibling;
+                         if (defaultBg) {
+                           defaultBg.style.display = 'none';
+                         }
                        }}
                      />
                      <div className="absolute inset-0 bg-gradient-to-t from-mystic-900/80 via-mystic-900/40 to-mystic-900/20"></div>
