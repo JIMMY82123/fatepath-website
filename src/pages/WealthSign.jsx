@@ -241,9 +241,20 @@ const WealthSign = () => {
                       <img 
                         src="/images/wealth-god.jpg" 
                         alt="Wealth God Background" 
-                        className="w-full h-full object-cover wealth-god-image"
+                        className="w-full h-full object-cover"
+                        style={{
+                          width: '100%',
+                          height: '100%',
+                          objectFit: 'cover',
+                          objectPosition: 'center',
+                          imageRendering: 'crisp-edges',
+                          filter: 'brightness(1.4) contrast(1.5) saturate(1.3)',
+                          transform: 'translateZ(0)',
+                          backfaceVisibility: 'hidden',
+                          willChange: 'transform'
+                        }}
                         loading="eager"
-                        decoding="async"
+                        decoding="sync"
                         onError={(e) => {
                           // 如果图片加载失败，显示默认背景
                           e.target.style.display = 'none';
