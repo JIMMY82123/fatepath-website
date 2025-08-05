@@ -222,7 +222,7 @@ const WealthSign = () => {
               )}
             </AnimatePresence>
           
-                                                                                       <div className="relative w-full max-w-sm sm:max-w-md md:w-[50rem] lg:w-[60rem] xl:w-[70rem] h-[32rem] sm:h-[36rem] md:h-[44rem] lg:h-[48rem] xl:h-[52rem] perspective-1000">
+                                                                                       <div className="relative w-full max-w-sm sm:max-w-md md:w-[50rem] lg:w-[60rem] xl:w-[70rem] h-[40rem] sm:h-[44rem] md:h-[52rem] lg:h-[56rem] xl:h-[60rem] perspective-1000">
              <motion.div
                className="w-full h-full relative transition-transform duration-1000 transform-style-preserve-3d"
                animate={{ rotateY: isFlipped ? 180 : 0 }}
@@ -334,12 +334,12 @@ const WealthSign = () => {
                          </div>
 
                                                  {/* Cultural Note */}
-                         <div className="mt-auto p-4 sm:p-6 bg-mystic-800/30 rounded-lg border border-gold-500/10">
-                           <h4 className="text-sm sm:text-base font-bold text-gold-400 mb-2 flex items-center">
-                             <span className="mr-2 text-sm sm:text-base">🏮</span>
+                         <div className="mt-auto p-3 sm:p-4 bg-mystic-800/30 rounded-lg border border-gold-500/10">
+                           <h4 className="text-xs sm:text-sm font-bold text-gold-400 mb-1 flex items-center">
+                             <span className="mr-2 text-xs sm:text-sm">🏮</span>
                              Philosophical Background
                            </h4>
-                           <p className="text-mystic-300 text-sm sm:text-base leading-relaxed">
+                           <p className="text-mystic-300 text-xs sm:text-sm leading-relaxed">
                              {currentSign.culturalNote}
                            </p>
                          </div>
@@ -351,13 +351,13 @@ const WealthSign = () => {
           </div>
         </motion.div>
 
-        {/* Action Buttons */}
-        <motion.div 
-          initial={{ opacity: 0, y: 30 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.6 }}
-          className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-center mb-8 sm:mb-12"
-        >
+                 {/* Action Buttons */}
+         <motion.div 
+           initial={{ opacity: 0, y: 30 }}
+           animate={{ opacity: 1, y: 0 }}
+           transition={{ duration: 0.8, delay: 0.6 }}
+           className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-center mb-8 sm:mb-12 mt-8"
+         >
                      <button
              onClick={handleReset}
              className="flex items-center space-x-2 px-6 py-3 bg-gradient-to-r from-mystic-700 to-mystic-800 text-white font-semibold rounded-lg hover:from-mystic-600 hover:to-mystic-700 transition-all duration-300 border border-mystic-600 shadow-lg"
