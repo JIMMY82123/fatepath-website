@@ -104,24 +104,44 @@ const WealthSign = () => {
            className="flex justify-center mb-8"
          >
           
-          <div className="relative w-full max-w-sm sm:max-w-md md:w-[32rem] h-[24rem] sm:h-[28rem] md:h-[36rem] perspective-1000">
-            <motion.div
-              className={`w-full h-full relative transition-transform duration-1000 transform-style-preserve-3d ${
-                isFlipped ? 'rotate-y-180' : ''
-              }`}
-              animate={{ rotateY: isFlipped ? 180 : 0 }}
-              transition={{ duration: 1.5, ease: "easeInOut" }}
-            >
-                             {/* Front Side - Wealth God */}
-               <div className="absolute w-full h-full backface-hidden">
+                     <div className="relative w-full max-w-sm sm:max-w-md md:w-[32rem] h-[24rem] sm:h-[28rem] md:h-[36rem] perspective-1000">
+             <motion.div
+               className="w-full h-full relative transition-transform duration-1000 transform-style-preserve-3d"
+               animate={{ rotateY: isFlipped ? 180 : 0 }}
+               transition={{ duration: 1.5, ease: "easeInOut" }}
+               style={{ transformStyle: 'preserve-3d' }}
+             >
+                                                           {/* Front Side - Wealth God */}
+                <div className="absolute w-full h-full" style={{ backfaceVisibility: 'hidden' }}>
                                    <div className="mystic-card h-full cursor-pointer hover:scale-105 transition-transform duration-300 border-2 border-gold-500/40 shadow-2xl shadow-gold-500/30 relative overflow-hidden"
                        onClick={handleFlip}
                        style={{ touchAction: 'auto', pointerEvents: 'auto', zIndex: 1 }}>
                     
-                    {/* Simple Background */}
-                    <div className="absolute inset-0 bg-gradient-to-br from-gold-400 via-yellow-600 to-orange-500" style={{ zIndex: 0 }}>
-                      <div className="w-full h-full flex items-center justify-center">
-                        <Coins className="h-32 w-32 text-white drop-shadow-lg opacity-50" />
+                    {/* Wealth God Background Image */}
+                    <div className="absolute inset-0" style={{ zIndex: 0 }}>
+                      <img 
+                        src="/images/wealth-god.jpg" 
+                        alt="Wealth God Background" 
+                        className="w-full h-full object-cover"
+                        onError={(e) => {
+                          console.log('财神图片加载失败，使用默认背景');
+                          e.target.style.display = 'none';
+                          // 显示默认背景
+                          const defaultBg = e.target.parentElement.querySelector('.default-bg');
+                          if (defaultBg) defaultBg.style.display = 'block';
+                        }}
+                        onLoad={(e) => {
+                          console.log('财神图片加载成功');
+                          // 隐藏默认背景
+                          const defaultBg = e.target.parentElement.querySelector('.default-bg');
+                          if (defaultBg) defaultBg.style.display = 'none';
+                        }}
+                      />
+                      {/* Default Background (if image fails to load) */}
+                      <div className="default-bg absolute inset-0 bg-gradient-to-br from-gold-400 via-yellow-600 to-orange-500" style={{ display: 'none' }}>
+                        <div className="w-full h-full flex items-center justify-center">
+                          <Coins className="h-32 w-32 text-white drop-shadow-lg opacity-50" />
+                        </div>
                       </div>
                     </div>
                     
@@ -143,8 +163,8 @@ const WealthSign = () => {
                   </div>
                </div>
 
-              {/* Back Side - Fortune Result */}
-              <div className="absolute w-full h-full backface-hidden rotate-y-180">
+                             {/* Back Side - Fortune Result */}
+               <div className="absolute w-full h-full" style={{ backfaceVisibility: 'hidden', transform: 'rotateY(180deg)' }}>
                                  <div className="mystic-card h-full p-6 border-2 border-gold-500/30 shadow-2xl shadow-gold-500/20 overflow-y-auto">
                    {currentSign && (
                      <div className="h-full flex flex-col">
