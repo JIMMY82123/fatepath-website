@@ -15,6 +15,15 @@ const PaymentGuide = () => {
       color: "from-purple-500 to-pink-500",
       icon: "⭐"
     },
+    baziDiscount: {
+      name: "Detailed Bazi Reading (Special Offer)",
+      price: "$30",
+      paypalLink: "https://www.paypal.com/ncp/payment/9C2AYQDRSB9XY",
+      formLink: "/form-bazi-discount",
+      description: "Limited time offer! Comprehensive Bazi analysis with 10,000+ word report, expert consultation, and 3-year fortune prediction.",
+      color: "from-green-500 to-emerald-500",
+      icon: "🎁"
+    },
     love: {
       name: "Love Compatibility Reading",
       price: "$44",

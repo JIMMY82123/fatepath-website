@@ -69,8 +69,9 @@ const Navbar = () => {
           <div className="md:hidden">
             <button
               onClick={() => setIsOpen(!isOpen)}
-              className="text-mystic-300 hover:text-gold-400 transition-colors p-2 -mr-2"
+              className="touch-target text-mystic-300 hover:text-gold-400 transition-colors p-3 -mr-2 rounded-lg hover:bg-mystic-800/30"
               aria-label="Toggle menu"
+              aria-expanded={isOpen}
             >
               {isOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
             </button>
@@ -85,13 +86,13 @@ const Navbar = () => {
             exit={{ opacity: 0, height: 0 }}
             className="md:hidden"
           >
-            <div className="px-2 pt-2 pb-3 space-y-1 border-t border-mystic-700/50">
+            <div className="px-2 pt-2 pb-3 space-y-2 border-t border-mystic-700/50">
               {navItems.map((item) => (
                 <Link
                   key={item.path}
                   to={item.path}
                   onClick={() => setIsOpen(false)}
-                  className={`block px-3 py-3 text-base font-medium transition-colors duration-200 rounded-lg ${
+                  className={`mobile-nav-item block text-base font-medium transition-colors duration-200 rounded-lg ${
                     isActive(item.path) 
                       ? 'text-gold-400 bg-mystic-800/50' 
                       : 'text-mystic-300 hover:text-gold-400 hover:bg-mystic-800/30'

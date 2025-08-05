@@ -88,9 +88,16 @@ const Contact = () => {
   ]
 
   const businessHours = [
-    { day: "Monday - Friday", hours: "9:00 AM - 8:00 PM" },
-    { day: "Saturday", hours: "10:00 AM - 6:00 PM" },
-    { day: "Sunday", hours: "12:00 PM - 5:00 PM" }
+    { day: "Monday - Friday", hours: "9:00 AM - 8:00 PM (CST)" },
+    { day: "Saturday", hours: "10:00 AM - 6:00 PM (CST)" },
+    { day: "Sunday", hours: "12:00 PM - 5:00 PM (CST)" }
+  ]
+
+  const usTimeZones = [
+    { zone: "Eastern Time (EST/EDT)", offset: "UTC-5/UTC-4" },
+    { zone: "Central Time (CST/CDT)", offset: "UTC-6/UTC-5" },
+    { zone: "Mountain Time (MST/MDT)", offset: "UTC-7/UTC-6" },
+    { zone: "Pacific Time (PST/PDT)", offset: "UTC-8/UTC-7" }
   ]
 
   return (
@@ -342,11 +349,52 @@ const Contact = () => {
           </motion.div>
         </div>
 
-        {/* Trust Indicators */}
+        {/* US Time Zones Information */}
         <motion.div 
           initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.6 }}
+          className="mt-16 sm:mt-20 text-center"
+        >
+          <div className="mystic-card p-6 sm:p-8 max-w-4xl mx-auto">
+            <h3 className="text-xl sm:text-2xl font-playfair font-semibold mb-4 sm:mb-6 text-white">
+              Service Hours for US Clients
+            </h3>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+              <div>
+                <h4 className="font-semibold text-gold-400 mb-4 text-lg">Business Hours (CST)</h4>
+                <div className="space-y-2 text-left">
+                  {businessHours.map((schedule, index) => (
+                    <div key={index} className="flex justify-between items-center">
+                      <span className="text-mystic-300">{schedule.day}</span>
+                      <span className="text-gold-400 font-medium">{schedule.hours}</span>
+                    </div>
+                  ))}
+                </div>
+              </div>
+              <div>
+                <h4 className="font-semibold text-gold-400 mb-4 text-lg">US Time Zones</h4>
+                <div className="space-y-2 text-left">
+                  {usTimeZones.map((timezone, index) => (
+                    <div key={index} className="flex justify-between items-center">
+                      <span className="text-mystic-300 text-sm">{timezone.zone}</span>
+                      <span className="text-gold-400 font-medium text-sm">{timezone.offset}</span>
+                    </div>
+                  ))}
+                </div>
+                <p className="text-mystic-300 text-sm mt-4 text-center">
+                  Available 24/7 for online consultations and support
+                </p>
+              </div>
+            </div>
+          </div>
+        </motion.div>
+
+        {/* Trust Indicators */}
+        <motion.div 
+          initial={{ opacity: 0, y: 50 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 0.7 }}
           className="mt-16 sm:mt-20 text-center"
         >
           <div className="mystic-card p-6 sm:p-8 max-w-4xl mx-auto">
@@ -383,7 +431,7 @@ const Contact = () => {
         <motion.div 
           initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.8 }}
+          transition={{ duration: 0.8, delay: 0.9 }}
           className="mt-16 sm:mt-20 text-center"
         >
           <div className="mystic-card p-6 sm:p-8 max-w-2xl mx-auto">

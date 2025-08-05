@@ -42,15 +42,14 @@ const FreeBaziReport = () => {
     setShowOfferModal(false)
   }
 
-  // PayPal支付链接（请替换为您的实际PayPal链接）
-  const paypalLink = "https://www.paypal.com/paypalme/YOUR_USERNAME/30" // 请将YOUR_USERNAME替换为您的PayPal用户名
+  // PayPal支付链接
+  const paypalLink = "https://www.paypal.com/ncp/payment/9C2AYQDRSB9XY"
 
   const handlePaypalPayment = () => {
     // 打开PayPal支付页面
     window.open(paypalLink, '_blank')
     
-    // 支付完成后跳转到优惠表单页面（这里需要根据您的PayPal设置调整）
-    // 通常PayPal会提供IPN（即时支付通知）或返回URL
+    // 支付完成后跳转到优惠表单页面
     setTimeout(() => {
       window.location.href = '/form-bazi-discount'
     }, 3000) // 3秒后跳转，实际应该根据PayPal回调
@@ -777,17 +776,19 @@ const FreeBaziReport = () => {
 
                  {/* Action Buttons */}
                  <div className="space-y-3">
-                   <button
-                     onClick={handlePaypalPayment}
-                     className="w-full bg-gradient-to-r from-gold-500 to-yellow-500 text-black font-semibold py-3 px-6 rounded-lg hover:from-gold-400 hover:to-yellow-400 transition-all duration-300 flex items-center justify-center space-x-2"
-                   >
-                     <Clock className="h-5 w-5" />
-                     <span>Get Special Offer Now</span>
-                   </button>
+                                       <button
+                      onClick={handlePaypalPayment}
+                      className="touch-target w-full bg-gradient-to-r from-blue-500 to-blue-600 text-white font-semibold rounded-lg hover:from-blue-400 hover:to-blue-500 transition-all duration-300 flex items-center justify-center space-x-2 animate-optimized"
+                    >
+                      <svg className="h-5 w-5" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M20.067 8.478c.492.315.844.825.844 1.406 0 .58-.352 1.09-.844 1.406-.492.315-1.156.51-1.875.51h-1.406c-.492 0-.844-.195-.844-.51 0-.315.352-.51.844-.51h1.406c.352 0 .703-.195.703-.406 0-.21-.351-.406-.703-.406h-1.406c-.492 0-.844-.195-.844-.51 0-.315.352-.51.844-.51h1.406c.719 0 1.383.195 1.875.51zM12.5 8.478c.492.315.844.825.844 1.406 0 .58-.352 1.09-.844 1.406-.492.315-1.156.51-1.875.51h-1.406c-.492 0-.844-.195-.844-.51 0-.315.352-.51.844-.51h1.406c.352 0 .703-.195.703-.406 0-.21-.351-.406-.703-.406h-1.406c-.492 0-.844-.195-.844-.51 0-.315.352-.51.844-.51h1.406c.719 0 1.383.195 1.875.51zM7.5 8.478c.492.315.844.825.844 1.406 0 .58-.352 1.09-.844 1.406-.492.315-1.156.51-1.875.51H4.219c-.492 0-.844-.195-.844-.51 0-.315.352-.51.844-.51h1.406c.352 0 .703-.195.703-.406 0-.21-.351-.406-.703-.406H4.219c-.492 0-.844-.195-.844-.51 0-.315.352-.51.844-.51h1.406c.719 0 1.383.195 1.875.51z"/>
+                      </svg>
+                      <span>PAYPAL</span>
+                    </button>
                    
                    <button
                      onClick={closeOfferModal}
-                     className="w-full bg-mystic-800/50 border border-mystic-700/50 text-mystic-300 py-3 px-6 rounded-lg hover:bg-mystic-700/50 transition-colors"
+                     className="touch-target w-full bg-mystic-800/50 border border-mystic-700/50 text-mystic-300 rounded-lg hover:bg-mystic-700/50 transition-colors animate-optimized"
                    >
                      Maybe Later
                    </button>
@@ -865,8 +866,9 @@ const FreeBaziReport = () => {
                 required
                 value={formData.fullName}
                 onChange={handleInputChange}
-                className="w-full px-3 sm:px-4 py-3 bg-mystic-800/50 border border-mystic-700/50 rounded-lg text-white placeholder-mystic-400 focus:border-gold-500/50 focus:outline-none transition-colors text-base"
+                className="form-input w-full bg-mystic-800/50 border border-mystic-700/50 rounded-lg text-white placeholder-mystic-400 focus:border-gold-500/50 focus:outline-none transition-colors"
                 placeholder="Enter your full name"
+                autoComplete="name"
               />
             </div>
 

@@ -173,16 +173,192 @@ export const optimizeNetworkForMobile = () => {
   });
 }
 
+// 移动端性能监控
+export const initPerformanceMonitoring = () => {
+  if (!isMobile()) return;
+
+  // 监控 Core Web Vitals
+  if ('PerformanceObserver' in window) {
+    const observer = new PerformanceObserver((list) => {
+      for (const entry of list.getEntries()) {
+        console.log(`Mobile Performance - ${entry.name}: ${entry.value}`);
+        
+        // 发送性能数据到分析服务
+        if (entry.name === 'largest-contentful-paint' && entry.value > 2500) {
+          console.warn('Mobile LCP is too slow:', entry.value);
+        }
+      }
+    });
+    
+    observer.observe({ 
+      entryTypes: ['largest-contentful-paint', 'first-input', 'layout-shift'] 
+    });
+  }
+}
+
+// 移动端错误监控
+export const initErrorMonitoring = () => {
+  if (!isMobile()) return;
+
+  window.addEventListener('error', (event) => {
+    console.error('Mobile Error:', {
+      message: event.message,
+      filename: event.filename,
+      lineno: event.lineno,
+      colno: event.colno,
+      userAgent: navigator.userAgent,
+      screenSize: `${window.screen.width}x${window.screen.height}`,
+      viewportSize: `${window.innerWidth}x${window.innerHeight}`
+    });
+  });
+
+  window.addEventListener('unhandledrejection', (event) => {
+    console.error('Mobile Unhandled Promise Rejection:', event.reason);
+  });
+}
+
+// 移动端用户体验优化
+export const optimizeUserExperience = () => {
+  if (!isMobile()) return;
+
+  // 添加触摸反馈
+  const addTouchFeedback = (element) => {
+    element.addEventListener('touchstart', () => {
+      element.style.transform = 'scale(0.98)';
+    }, { passive: true });
+    
+    element.addEventListener('touchend', () => {
+      element.style.transform = 'scale(1)';
+    }, { passive: true });
+  };
+
+  // 为所有按钮添加触摸反馈
+  document.querySelectorAll('button, .btn, .touch-target').forEach(addTouchFeedback);
+
+  // 优化长按选择
+  document.addEventListener('contextmenu', (e) => {
+    if (e.target.tagName === 'IMG') {
+      e.preventDefault();
+    }
+  });
+
+  // 防止双击缩放
+  let lastTouchEnd = 0;
+  document.addEventListener('touchend', (event) => {
+    const now = (new Date()).getTime();
+    if (now - lastTouchEnd <= 300) {
+      event.preventDefault();
+    }
+    lastTouchEnd = now;
+  }, false);
+}
+
+// 移动端内存优化
+export const optimizeMemoryUsage = () => {
+  if (!isMobile()) return;
+
+  // 清理不必要的事件监听器
+  const cleanupEventListeners = () => {
+    // 在页面卸载时清理
+    window.addEventListener('beforeunload', () => {
+      // 清理自定义事件监听器
+    });
+  };
+
+  // 优化图片内存使用
+  const optimizeImages = () => {
+    const images = document.querySelectorAll('img');
+    images.forEach(img => {
+      if (img.complete && img.naturalWidth === 0) {
+        // 图片加载失败，移除或替换
+        img.style.display = 'none';
+      }
+    });
+  };
+
+  cleanupEventListeners();
+  optimizeImages();
+}
+
+// 移动端网络状态监控
+export const monitorNetworkStatus = () => {
+  if (!isMobile()) return;
+
+  if ('connection' in navigator) {
+    const connection = navigator.connection;
+    
+    const updateNetworkInfo = () => {
+      console.log('Mobile Network:', {
+        effectiveType: connection.effectiveType,
+        downlink: connection.downlink,
+        rtt: connection.rtt,
+        saveData: connection.saveData
+      });
+    };
+
+    connection.addEventListener('change', updateNetworkInfo);
+    updateNetworkInfo();
+  }
+}
+
 // 初始化所有移动端优化
 export const initMobileOptimizations = () => {
   if (!isMobile()) return;
 
+  // 基础优化
   optimizeScrollForMobile();
   optimizeFontsForMobile();
   optimizeNetworkForMobile();
+  optimizeCacheForMobile();
+  
+  // 性能监控
+  initPerformanceMonitoring();
+  initErrorMonitoring();
+  
+  // 用户体验优化
+  optimizeUserExperience();
+  optimizeMemoryUsage();
+  monitorNetworkStatus();
   
   // 添加移动端特定的类名
   document.body.classList.add('mobile-device');
   
+  // 设置视口优化
+  const viewport = document.querySelector('meta[name="viewport"]');
+  if (viewport) {
+    viewport.setAttribute('content', 'width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no');
+  }
+  
   console.log('Mobile optimizations initialized');
+};
+
+// 移动端特定的工具函数
+export const mobileUtils = {
+  // 获取安全的触摸目标大小
+  getTouchTargetSize: () => {
+    const dpr = getDevicePixelRatio();
+    return Math.max(44, 44 * dpr);
+  },
+  
+  // 检测是否为低端设备
+  isLowEndDevice: () => {
+    const memory = navigator.deviceMemory || 4;
+    const cores = navigator.hardwareConcurrency || 4;
+    return memory < 4 || cores < 4;
+  },
+  
+  // 获取设备信息
+  getDeviceInfo: () => {
+    return {
+      userAgent: navigator.userAgent,
+      platform: navigator.platform,
+      language: navigator.language,
+      screenSize: `${window.screen.width}x${window.screen.height}`,
+      viewportSize: `${window.innerWidth}x${window.innerHeight}`,
+      pixelRatio: getDevicePixelRatio(),
+      memory: navigator.deviceMemory,
+      cores: navigator.hardwareConcurrency,
+      connection: navigator.connection?.effectiveType || 'unknown'
+    };
+  }
 }; 
