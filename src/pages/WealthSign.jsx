@@ -236,25 +236,8 @@ const WealthSign = () => {
                  <div className="mystic-card h-full cursor-pointer hover:scale-105 transition-transform duration-300 border-2 border-gold-500/40 shadow-2xl shadow-gold-500/30 relative overflow-hidden"
                       onClick={handleFlip}>
                    
-                                       {/* Wealth God Background Image */}
-                    <div className="absolute inset-0">
-                      <img 
-                        src="/images/wealth-god.jpg" 
-                        alt="Wealth God Background" 
-                        className="w-full h-full object-cover"
-                        onError={(e) => {
-                          console.log('图片加载失败，使用默认背景');
-                          e.target.style.display = 'none';
-                        }}
-                        onLoad={(e) => {
-                          console.log('图片加载成功');
-                        }}
-                      />
-                      <div className="absolute inset-0 bg-gradient-to-t from-mystic-900/80 via-mystic-900/40 to-mystic-900/20"></div>
-                    </div>
-                   
-                   {/* Default Background (if image fails to load) */}
-                   <div className="absolute inset-0 bg-gradient-to-br from-gold-400 via-yellow-600 to-orange-500" style={{display: 'none'}}>
+                   {/* Simple Background */}
+                   <div className="absolute inset-0 bg-gradient-to-br from-gold-400 via-yellow-600 to-orange-500">
                      <div className="w-full h-full flex items-center justify-center">
                        <Coins className="h-32 w-32 text-white drop-shadow-lg opacity-50" />
                      </div>
