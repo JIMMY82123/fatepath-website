@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion'
 import { Calendar, Clock, ArrowLeft, Share2, BookOpen } from 'lucide-react'
 import { Link, useParams } from 'react-router-dom'
+import SEO from '../components/SEO'
 
 const BlogPost = () => {
   const { slug } = useParams()
@@ -53,6 +54,8 @@ const BlogPost = () => {
       id: 1,
       title: "📈 You Think This Market Rally Is a Turning Point? A Bigger Crisis Is Brewing Beneath the Surface",
       excerpt: "In early August 2025, the Dow Jones surged by 580 points—the largest one-day gain since May. But is this really a turning point, or just the calm before a more devastating storm?",
+      author: "玄印 (Xuan Yin)",
+      tags: ["Market Analysis", "Financial Crisis", "Stock Market", "Economic Warning", "2025 Forecast", "Investment Strategy", "BaZi Analysis", "Chinese Astrology"],
       content: `
         <div class="mb-8">
           <p class="text-lg text-mystic-300 leading-relaxed mb-4 italic">
@@ -1364,9 +1367,46 @@ const BlogPost = () => {
     })
   }
 
+  // 结构化数据
+  const structuredData = {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": post.title,
+    "description": post.excerpt,
+    "image": `https://fatepath.me${post.image}`,
+    "author": {
+      "@type": "Person",
+      "name": post.author || "玄印 (Xuan Yin)"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "FatePath",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://fatepath.me/favicon.svg"
+      }
+    },
+    "datePublished": post.date,
+    "dateModified": post.date,
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": `https://fatepath.me/blog/${post.slug}`
+    }
+  }
+
   return (
-    <div className="min-h-screen pt-16 sm:pt-20 px-4 sm:px-6 lg:px-8">
-      <div className="max-w-4xl mx-auto">
+    <>
+      <SEO 
+        title={post.title}
+        description={post.excerpt}
+        keywords={post.tags ? post.tags.join(', ') : 'Bazi, Chinese Astrology, Fortune, Destiny'}
+        canonical={`https://fatepath.me/blog/${post.slug}`}
+        ogImage={`https://fatepath.me${post.image}`}
+        ogType="article"
+        structuredData={structuredData}
+      />
+      <div className="min-h-screen pt-16 sm:pt-20 px-4 sm:px-6 lg:px-8">
+        <div className="max-w-4xl mx-auto">
         {/* Back Button */}
         <motion.div 
           initial={{ opacity: 0, x: -20 }}
@@ -1596,6 +1636,7 @@ const BlogPost = () => {
         </motion.div>
       </div>
     </div>
+    </>
   )
 }
 
