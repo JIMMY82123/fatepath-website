@@ -6,7 +6,7 @@ import SEO from '../components/SEO'
 const BlogPost = () => {
   const { slug } = useParams()
 
-  // 复制到剪贴板的辅助函�?
+  // 复制到剪贴板的辅助函�?
   const copyToClipboard = async (text) => {
     try {
       await navigator.clipboard.writeText(text);
@@ -98,7 +98,7 @@ const BlogPost = () => {
           </p>
         </div>
 
-        <h2 className="text-2xl font-cinzel font-bold text-white mb-4 mt-8">🌋 The Real Crisis Is Just Beginning: 2025�?026 as a Tipping Point</h2>
+        <h2 className="text-2xl font-cinzel font-bold text-white mb-4 mt-8">🌋 The Real Crisis Is Just Beginning: 2025�?026 as a Tipping Point</h2>
         <p className="mb-6 text-mystic-300 leading-relaxed">
           Zooming out, the global economic landscape is entering a highly unstable phase:
         </p>
@@ -123,7 +123,7 @@ const BlogPost = () => {
         </ul>
 
         <p className="mb-6 text-mystic-300 leading-relaxed">
-          Meanwhile, geopolitical tensions are at a historic high: Unresolved U.S.-China relations, ongoing Russia-Ukraine conflict, instability in the Middle East�?all of which are eroding global investment confidence.
+          Meanwhile, geopolitical tensions are at a historic high: Unresolved U.S.-China relations, ongoing Russia-Ukraine conflict, instability in the Middle East�?all of which are eroding global investment confidence.
         </p>
 
         <div className="mystic-card p-6 border-l-4 border-red-500/50 mb-8">
@@ -160,7 +160,7 @@ const BlogPost = () => {
         </div>
 
         <p className="mb-6 text-mystic-300 leading-relaxed">
-          Moreover, the world entered the "9th Fire Luck Cycle" (九紫離火�? in 2024, lasting for 20 years. This period is associated with heat, upheaval, and transformation—not just economically, but socially and spiritually.
+          Moreover, the world entered the "9th Fire Luck Cycle" (九紫離火�? in 2024, lasting for 20 years. This period is associated with heat, upheaval, and transformation—not just economically, but socially and spiritually.
         </p>
 
         <div className="mystic-card p-6 border-l-4 border-gold-500/50 mb-8">
@@ -169,7 +169,7 @@ const BlogPost = () => {
           </p>
         </div>
 
-        <h2 className="text-2xl font-cinzel font-bold text-white mb-4 mt-8">🛡�?Don't Celebrate—Prepare</h2>
+        <h2 className="text-2xl font-cinzel font-bold text-white mb-4 mt-8">🛡�?Don't Celebrate—Prepare</h2>
         <p className="mb-6 text-mystic-300 leading-relaxed">
           While others celebrate a temporary market bounce, those with insight are already preparing for what's to come.
         </p>
@@ -178,17 +178,17 @@ const BlogPost = () => {
           <div className="mystic-card p-6">
             <h3 className="text-lg font-cinzel font-semibold text-gold-400 mb-3">💰 Financial Strategy</h3>
             <ul className="space-y-2 text-mystic-300 text-sm">
-              <li>�?Reassess your financial structure</li>
-              <li>�?Reduce leverage</li>
-              <li>�?Don't fall for premature "buy the dip" opportunities</li>
+              <li>�?Reassess your financial structure</li>
+              <li>�?Reduce leverage</li>
+              <li>�?Don't fall for premature "buy the dip" opportunities</li>
             </ul>
           </div>
           <div className="mystic-card p-6">
             <h3 className="text-lg font-cinzel font-semibold text-gold-400 mb-3">🔮 Personal Luck Cycle</h3>
             <ul className="space-y-2 text-mystic-300 text-sm">
-              <li>�?Understand your personal luck cycle</li>
-              <li>�?Is this a time for bold moves—or strategic retreat?</li>
-              <li>�?Optimize your Feng Shui environment</li>
+              <li>�?Understand your personal luck cycle</li>
+              <li>�?Is this a time for bold moves—or strategic retreat?</li>
+              <li>�?Optimize your Feng Shui environment</li>
             </ul>
           </div>
         </div>
@@ -246,9 +246,7 @@ const BlogPost = () => {
       date: "2025-08-15",
       readTime: "12 min read",
       image: "/images/blog/market-crisis-2025.jpg",
-      slug: "market-rally-turning-point-crisis-2025",
-      author: "玄印 (Xuan Yin)",
-      tags: ["Market Analysis", "2025", "Financial Crisis", "BaZi", "Fire Element", "Economic Forecast", "Investment Strategy"]
+      slug: "market-rally-turning-point-crisis-2025"
     },
     {
       id: 2,
@@ -575,19 +573,19 @@ const BlogPost = () => {
           <div className="mystic-card p-6 border-l-4 border-red-500/50">
             <h3 className="text-lg font-cinzel font-semibold text-red-400 mb-3">Clash with your Wealth Star</h3>
             <p className="text-mystic-300 text-sm">
-              (e.g., Day Master clashing with Output or Wealth pillars) �?prone to sudden losses
+              (e.g., Day Master clashing with Output or Wealth pillars) �?prone to sudden losses
             </p>
           </div>
           <div className="mystic-card p-6 border-l-4 border-orange-500/50">
             <h3 className="text-lg font-cinzel font-semibold text-orange-400 mb-3">Weak Day Master with strong Wealth</h3>
             <p className="text-mystic-300 text-sm">
-              �?often tempted by "get-rich-quick" schemes
+              �?often tempted by "get-rich-quick" schemes
             </p>
           </div>
           <div className="mystic-card p-6 border-l-4 border-yellow-500/50">
             <h3 className="text-lg font-cinzel font-semibold text-yellow-400 mb-3">Too many Fire elements in 2025</h3>
             <p className="text-mystic-300 text-sm">
-              �?high volatility, overreactions
+              �?high volatility, overreactions
             </p>
           </div>
           <div className="mystic-card p-6 border-l-4 border-green-500/50">
@@ -598,7 +596,7 @@ const BlogPost = () => {
           </div>
         </div>
 
-        <h2 className="text-2xl font-cinzel font-bold text-white mb-4 mt-8">🧘‍♂�?Energy Management Over Market Timing</h2>
+        <h2 className="text-2xl font-cinzel font-bold text-white mb-4 mt-8">🧘‍♂�?Energy Management Over Market Timing</h2>
         <p className="mb-6 text-mystic-300 leading-relaxed">
           Markets are ruled by data; destinies are ruled by timing.<br />
           But both can benefit from <strong>awareness and alignment</strong>.
@@ -745,19 +743,19 @@ const BlogPost = () => {
            <ul className="space-y-2 text-mystic-300">
              <li className="flex items-start space-x-3">
                <div className="w-2 h-2 bg-gold-400 rounded-full mt-2 flex-shrink-0"></div>
-               <span><strong>Avoid spicy, fried, or greasy food</strong> �?nourish with cooling foods (melon, lotus root, mung bean soup)</span>
+               <span><strong>Avoid spicy, fried, or greasy food</strong> �?nourish with cooling foods (melon, lotus root, mung bean soup)</span>
              </li>
              <li className="flex items-start space-x-3">
                <div className="w-2 h-2 bg-gold-400 rounded-full mt-2 flex-shrink-0"></div>
-               <span><strong>Bring Water into your daily routine</strong> �?physically (hydration, showers) and energetically (Blue colors, Moon imagery)</span>
+               <span><strong>Bring Water into your daily routine</strong> �?physically (hydration, showers) and energetically (Blue colors, Moon imagery)</span>
              </li>
              <li className="flex items-start space-x-3">
                <div className="w-2 h-2 bg-gold-400 rounded-full mt-2 flex-shrink-0"></div>
-               <span><strong>Use protective talismans</strong> based on Water or Metal �?these control or balance Fire in classical Five Element theory</span>
+               <span><strong>Use protective talismans</strong> based on Water or Metal �?these control or balance Fire in classical Five Element theory</span>
              </li>
              <li className="flex items-start space-x-3">
                <div className="w-2 h-2 bg-gold-400 rounded-full mt-2 flex-shrink-0"></div>
-               <span><strong>Sleep early, meditate often, rest the Heart spirit (�?</strong></span>
+               <span><strong>Sleep early, meditate often, rest the Heart spirit (�?</strong></span>
              </li>
              <li className="flex items-start space-x-3">
                <div className="w-2 h-2 bg-gold-400 rounded-full mt-2 flex-shrink-0"></div>
@@ -772,7 +770,7 @@ const BlogPost = () => {
          </p>
 
          <p className="mb-6 text-mystic-300 leading-relaxed">
-           If you're feeling drained, angry, burned out, or restless this year�?maybe it's not just the weather.
+           If you're feeling drained, angry, burned out, or restless this year�?maybe it's not just the weather.
          </p>
 
          <div className="mystic-card p-6 border-l-4 border-gold-500/50 mb-8">
@@ -842,13 +840,13 @@ const BlogPost = () => {
              <p className="text-mystic-300 mb-2">
                <strong>A Water Day Master during a Fire-heavy year</strong> may feel anxious, unmotivated, or "burned out."
              </p>
-             <p className="text-mystic-300 text-sm">�?The solution isn't to push harder, but to restore inner coolness and protect your energy.</p>
+             <p className="text-mystic-300 text-sm">�?The solution isn't to push harder, but to restore inner coolness and protect your energy.</p>
            </div>
            <div>
              <p className="text-mystic-300 mb-2">
                <strong>A Wood Day Master going through a Metal phase</strong> may feel "cut down" or misunderstood.
              </p>
-             <p className="text-mystic-300 text-sm">�?But pruning often prepares the tree for deeper roots.</p>
+             <p className="text-mystic-300 text-sm">�?But pruning often prepares the tree for deeper roots.</p>
            </div>
          </div>
          <p className="mb-6 text-mystic-300 leading-relaxed">
@@ -1015,8 +1013,8 @@ const BlogPost = () => {
                </tr>
                <tr className="border-b border-mystic-700/50">
                  <td className="p-4 text-mystic-300 font-medium">Flexibility</td>
-                 <td className="p-4 text-mystic-300">High �?can change over time</td>
-                 <td className="p-4 text-mystic-300">Fixed �?based on birth moment</td>
+                 <td className="p-4 text-mystic-300">High �?can change over time</td>
+                 <td className="p-4 text-mystic-300">Fixed �?based on birth moment</td>
                </tr>
                <tr className="border-b border-mystic-700/50">
                  <td className="p-4 text-mystic-300 font-medium">Focus</td>
@@ -1159,26 +1157,26 @@ const BlogPost = () => {
            <div className="mystic-card p-6">
              <h3 className="text-lg font-cinzel font-semibold text-gold-400 mb-3">🌿 The Ritual Process</h3>
              <ul className="space-y-2 text-mystic-300 text-sm">
-               <li>�?Choose fresh ginger root</li>
-               <li>�?Select an auspicious date</li>
-               <li>�?Hold clear intention</li>
-               <li>�?Plant with mindfulness</li>
-               <li>�?Water with gratitude</li>
+               <li>�?Choose fresh ginger root</li>
+               <li>�?Select an auspicious date</li>
+               <li>�?Hold clear intention</li>
+               <li>�?Plant with mindfulness</li>
+               <li>�?Water with gratitude</li>
              </ul>
            </div>
            <div className="mystic-card p-6">
              <h3 className="text-lg font-cinzel font-semibold text-gold-400 mb-3">🎯 Intention Examples</h3>
              <ul className="space-y-2 text-mystic-300 text-sm">
-               <li>�?Financial abundance</li>
-               <li>�?Mental clarity</li>
-               <li>�?Emotional stability</li>
-               <li>�?Career growth</li>
-               <li>�?Relationship harmony</li>
+               <li>�?Financial abundance</li>
+               <li>�?Mental clarity</li>
+               <li>�?Emotional stability</li>
+               <li>�?Career growth</li>
+               <li>�?Relationship harmony</li>
              </ul>
            </div>
          </div>
 
-         <h2 className="text-2xl font-cinzel font-bold text-white mb-4 mt-8">�?Capturing the Cosmic Flow</h2>
+         <h2 className="text-2xl font-cinzel font-bold text-white mb-4 mt-8">�?Capturing the Cosmic Flow</h2>
          <p className="mb-6 text-mystic-300 leading-relaxed">
            Whether or not the eclipse happens, the principle remains: human consciousness responds to "celestial cues." If an eclipse amplifies collective energy, planting Lu Gen becomes a way to personalize that shift. By starting now, you may capture the flow rather than be swept by it.
          </p>
@@ -1333,15 +1331,15 @@ const BlogPost = () => {
 
          <h2 className="text-2xl font-cinzel font-bold text-white mb-4 mt-8">🌟 Part 2: Your Hidden Wealth Codes</h2>
          
-         <h3 className="text-xl font-cinzel font-semibold text-gold-400 mb-4 mt-6">A. The Wealth Star (财星) �?More Than Money</h3>
+         <h3 className="text-xl font-cinzel font-semibold text-gold-400 mb-4 mt-6">A. The Wealth Star (财星) �?More Than Money</h3>
          <ul className="space-y-3 mb-6 text-mystic-300">
            <li className="flex items-start space-x-3">
              <div className="w-2 h-2 bg-gold-400 rounded-full mt-2 flex-shrink-0"></div>
-             <span><strong>正财 (Zhèng Cái):</strong> Earned income (salary, business profits) �?needs Strong Day Master to hold.</span>
+             <span><strong>正财 (Zhèng Cái):</strong> Earned income (salary, business profits) �?needs Strong Day Master to hold.</span>
            </li>
            <li className="flex items-start space-x-3">
              <div className="w-2 h-2 bg-gold-400 rounded-full mt-2 flex-shrink-0"></div>
-             <span><strong>偏财 (Piān Cái):</strong> Unexpected gains (investments, gifts) �?thrives with Social Fire (巳午).</span>
+             <span><strong>偏财 (Piān Cái):</strong> Unexpected gains (investments, gifts) �?thrives with Social Fire (巳午).</span>
            </li>
          </ul>
 
@@ -1349,28 +1347,28 @@ const BlogPost = () => {
          <ul className="space-y-3 mb-6 text-mystic-300">
            <li className="flex items-start space-x-3">
              <div className="w-2 h-2 bg-gold-400 rounded-full mt-2 flex-shrink-0"></div>
-             <span><strong>食神 (Shí Shén):</strong> Creativity �?Turns ideas into value (e.g., Steve Jobs' Wood-Fire creativity)</span>
+             <span><strong>食神 (Shí Shén):</strong> Creativity �?Turns ideas into value (e.g., Steve Jobs' Wood-Fire creativity)</span>
            </li>
            <li className="flex items-start space-x-3">
              <div className="w-2 h-2 bg-gold-400 rounded-full mt-2 flex-shrink-0"></div>
-             <span><strong>印星 (Yìn Xīng):</strong> Knowledge �?Protects wealth from risks (e.g., Buffett's Earth wisdom)</span>
+             <span><strong>印星 (Yìn Xīng):</strong> Knowledge �?Protects wealth from risks (e.g., Buffett's Earth wisdom)</span>
            </li>
          </ul>
 
 
 
-         <h2 className="text-2xl font-cinzel font-bold text-white mb-4 mt-8">🚫 Part 3: Why "Rich" Bazi Fails �?3 Tragic Cases</h2>
+         <h2 className="text-2xl font-cinzel font-bold text-white mb-4 mt-8">🚫 Part 3: Why "Rich" Bazi Fails �?3 Tragic Cases</h2>
 
          <div className="space-y-6 mb-8">
            <div className="mystic-card p-6 border-l-4 border-red-500/50">
              <h3 className="text-lg font-cinzel font-semibold text-red-400 mb-3">1. Weak Day Master + Heavy Wealth</h3>
              <p className="text-mystic-300 mb-2"><strong>Example:</strong> 癸水日主 (Weak Water) with 未土+戌土 (Strong Earth wealth stars)</p>
-             <p className="text-mystic-300 text-sm"><strong>Result:</strong> Overwhelmed by opportunities �?Debt or stress-induced loss.</p>
+             <p className="text-mystic-300 text-sm"><strong>Result:</strong> Overwhelmed by opportunities �?Debt or stress-induced loss.</p>
            </div>
 
            <div className="mystic-card p-6 border-l-4 border-red-500/50">
              <h3 className="text-lg font-cinzel font-semibold text-red-400 mb-3">2. Wealth Clash with Conflict Stars</h3>
-             <p className="text-mystic-300 mb-2"><strong>Example:</strong> 偏财 (Piān Cái) next to 劫财 (Jié Cái �?Wealth Robber)</p>
+             <p className="text-mystic-300 mb-2"><strong>Example:</strong> 偏财 (Piān Cái) next to 劫财 (Jié Cái �?Wealth Robber)</p>
              <p className="text-mystic-300 text-sm"><strong>Result:</strong> Sudden windfalls lost to scams or "friends."</p>
            </div>
 
@@ -1381,23 +1379,23 @@ const BlogPost = () => {
            </div>
          </div>
 
-         <h2 className="text-2xl font-cinzel font-bold text-white mb-4 mt-8">💡 Part 4: Activate Your Wealth Potential �?3 Steps</h2>
+         <h2 className="text-2xl font-cinzel font-bold text-white mb-4 mt-8">💡 Part 4: Activate Your Wealth Potential �?3 Steps</h2>
 
          <div className="space-y-6 mb-8">
            <div className="mystic-card p-6 border-l-4 border-gold-500/50">
              <h3 className="text-lg font-cinzel font-semibold text-gold-400 mb-3">Step 1: Find Your Wealth Star</h3>
-             <p className="text-mystic-300 mb-3">Use our <a href="https://fatepath.me/free-bazi-report" className="text-gold-400 hover:text-gold-300 underline" target="_blank" rel="noopener noreferrer">Bazi Calculator</a> �?Check your chart for:</p>
+             <p className="text-mystic-300 mb-3">Use our <a href="https://fatepath.me/free-bazi-report" className="text-gold-400 hover:text-gold-300 underline" target="_blank" rel="noopener noreferrer">Bazi Calculator</a> �?Check your chart for:</p>
              <ul className="space-y-2 text-mystic-300 text-sm">
-               <li>�?Wood (�?�? + Earth (�?�? = 偏财 (Opportunity Wealth)</li>
-               <li>�?Metal (�?�? + Wood (�?�? = 正财 (Steady Wealth)</li>
+               <li>�?Wood (�?�? + Earth (�?�? = 偏财 (Opportunity Wealth)</li>
+               <li>�?Metal (�?�? + Wood (�?�? = 正财 (Steady Wealth)</li>
              </ul>
            </div>
 
            <div className="mystic-card p-6 border-l-4 border-gold-500/50">
              <h3 className="text-lg font-cinzel font-semibold text-gold-400 mb-3">Step 2: Balance Your Chart</h3>
              <ul className="space-y-2 text-mystic-300 text-sm">
-               <li>�?<strong>Weak Day Master?</strong> Add 印星 (Yìn) energy: Wear white/gray (Metal), study wealth mentors.</li>
-               <li>�?<strong>Wealth Clash?</strong> �?(Hé) the robber: Partner with 正官 (Zhèng Guān) people (reliable leaders).</li>
+               <li>�?<strong>Weak Day Master?</strong> Add 印星 (Yìn) energy: Wear white/gray (Metal), study wealth mentors.</li>
+               <li>�?<strong>Wealth Clash?</strong> �?(Hé) the robber: Partner with 正官 (Zhèng Guān) people (reliable leaders).</li>
              </ul>
            </div>
 
@@ -1431,17 +1429,17 @@ const BlogPost = () => {
 
          </div>
 
-         <h2 className="text-2xl font-cinzel font-bold text-white mb-4 mt-8">�?FAQs: Busting Wealth Bazi Myths</h2>
+         <h2 className="text-2xl font-cinzel font-bold text-white mb-4 mt-8">�?FAQs: Busting Wealth Bazi Myths</h2>
 
          <div className="space-y-6 mb-8">
            <div className="mystic-card p-6">
              <h3 className="text-lg font-cinzel font-semibold text-gold-400 mb-3">Q: Is a "Gold" Bazi the richest?</h3>
-             <p className="text-mystic-300 text-sm">A: No! 庚金 (Yang Metal) needs Fire to forge wealth (e.g., tools), while 辛金 (Yin Metal) thrives as "jewelry" �?valuable but fragile without Earth support.</p>
+             <p className="text-mystic-300 text-sm">A: No! 庚金 (Yang Metal) needs Fire to forge wealth (e.g., tools), while 辛金 (Yin Metal) thrives as "jewelry" �?valuable but fragile without Earth support.</p>
            </div>
 
            <div className="mystic-card p-6">
              <h3 className="text-lg font-cinzel font-semibold text-gold-400 mb-3">Q: Can poor Bazi become rich?</h3>
-             <p className="text-mystic-300 text-sm">A: Yes! Liu Chuanzhong (Alibaba co-founder) has a "Weak Water" chart but used 印星 (knowledge) to build empire �?proof that understanding your chart beats "lucky" elements.</p>
+             <p className="text-mystic-300 text-sm">A: Yes! Liu Chuanzhong (Alibaba co-founder) has a "Weak Water" chart but used 印星 (knowledge) to build empire �?proof that understanding your chart beats "lucky" elements.</p>
            </div>
          </div>
 
@@ -1452,15 +1450,15 @@ const BlogPost = () => {
          <ul className="space-y-3 mb-8 text-mystic-300">
            <li className="flex items-start space-x-3">
              <div className="w-2 h-2 bg-gold-400 rounded-full mt-2 flex-shrink-0"></div>
-             <span><strong>Innovators</strong> �?Create products solving real pains</span>
+             <span><strong>Innovators</strong> �?Create products solving real pains</span>
            </li>
            <li className="flex items-start space-x-3">
              <div className="w-2 h-2 bg-gold-400 rounded-full mt-2 flex-shrink-0"></div>
-             <span><strong>Strategists</strong> �?Master asset allocation</span>
+             <span><strong>Strategists</strong> �?Master asset allocation</span>
            </li>
            <li className="flex items-start space-x-3">
              <div className="w-2 h-2 bg-gold-400 rounded-full mt-2 flex-shrink-0"></div>
-             <span><strong>Networkers</strong> �?Build communities that scale</span>
+             <span><strong>Networkers</strong> �?Build communities that scale</span>
            </li>
          </ul>
 
@@ -1520,7 +1518,7 @@ const BlogPost = () => {
     })
   }
 
-  // 结构化数�?
+  // 结构化数�?
   const structuredData = {
     "@context": "https://schema.org",
     "@type": "BlogPosting",
