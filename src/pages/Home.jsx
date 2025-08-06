@@ -887,7 +887,7 @@ const Home = () => {
               {[
                 {
                   title: "BaZi vs. MBTI: East Meets West in Personality and Destiny",
-                  excerpt: "Explore how ancient Chinese BaZi and Western MBTI personality systems complement each other. Discover the differences between destiny mapping and personality typing.",
+                  excerpt: "Explore how ancient Chinese BaZi and Western MBTI personality systems complement each other. Discover destiny mapping vs personality typing.",
                   category: "Bazi Basics",
                   date: "2025-08-04",
                   readTime: "11 min read",
@@ -896,7 +896,7 @@ const Home = () => {
                 },
                 {
                   title: "🌿 The Seasons of Fate: Why You Don't Have to Panic About Every Downturn",
-                  excerpt: "Discover how BaZi reveals that life's challenges are natural cycles, not punishments. Learn to flow with your destiny's seasons instead of fighting against them.",
+                  excerpt: "Discover how BaZi reveals that life's challenges are natural cycles, not punishments. Learn to flow with your destiny's seasons.",
                   category: "Bazi Basics",
                   date: "2025-08-04",
                   readTime: "7 min read",
@@ -905,7 +905,7 @@ const Home = () => {
                 },
                 {
                   title: "When Bitcoin Falls, What Does Destiny Say?",
-                  excerpt: "Explore how BaZi destiny charts and metaphysical timing reveal deeper insights into financial volatility like the August 2025 Bitcoin crash.",
+                  excerpt: "Discover how BaZi destiny charts reveal insights into financial volatility and the August 2025 Bitcoin crash.",
                   category: "Career & Timing",
                   date: "2025-08-02",
                   readTime: "12 min read",

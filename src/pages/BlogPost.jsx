@@ -53,7 +53,7 @@ const BlogPost = () => {
     {
       id: 1,
       title: "📈 You Think This Market Rally Is a Turning Point? A Bigger Crisis Is Brewing Beneath the Surface",
-      excerpt: "In early August 2025, the Dow Jones surged by 580 points—the largest one-day gain since May. But is this really a turning point, or just the calm before a more devastating storm?",
+                  excerpt: "In early August 2025, the Dow Jones surged by 580 points. But is this really a turning point, or just the calm before a more devastating storm?",
       author: "玄印 (Xuan Yin)",
       tags: ["Market Analysis", "Financial Crisis", "Stock Market", "Economic Warning", "2025 Forecast", "Investment Strategy", "BaZi Analysis", "Chinese Astrology"],
       content: `
@@ -253,7 +253,7 @@ const BlogPost = () => {
     {
       id: 2,
       title: "Understanding Your Bazi Chart: A Beginner's Guide",
-      excerpt: "Learn the fundamentals of Bazi (八字) analysis and how your birth chart reveals your life's blueprint. Discover the four pillars and their significance in Chinese astrology.",
+                  excerpt: "Learn the fundamentals of Bazi analysis and how your birth chart reveals your life's blueprint. Discover the four pillars in Chinese astrology.",
       content: `
         <p class="mb-6 text-mystic-300 leading-relaxed">
           Bazi (八字), also known as the Four Pillars of Destiny, is one of the most profound systems of Chinese astrology. 
@@ -355,7 +355,7 @@ const BlogPost = () => {
     {
       id: 7,
       title: "2024 Year of the Dragon: Your Fortune Forecast",
-      excerpt: "Discover what the Year of the Dragon 2024 holds for you based on your Bazi chart. Learn about opportunities, challenges, and how to maximize your luck this year.",
+                  excerpt: "Discover what the Year of the Dragon 2024 holds for you based on your Bazi chart. Learn about opportunities and how to maximize your luck this year.",
       content: `
         <p class="mb-6 text-mystic-300 leading-relaxed">
           The Year of the Dragon 2024 brings powerful energy of transformation, ambition, and success. 
@@ -519,7 +519,7 @@ const BlogPost = () => {
     {
       id: 8,
       title: "When Bitcoin Falls, What Does Destiny Say?",
-      excerpt: "Explore how BaZi destiny charts and metaphysical timing reveal deeper insights into financial volatility like the August 2025 Bitcoin crash.",
+      excerpt: "Discover how BaZi destiny charts reveal insights into financial volatility and the August 2025 Bitcoin crash.",
       content: `
         <div class="mb-8">
           <p class="text-lg text-mystic-300 leading-relaxed mb-4">
@@ -643,7 +643,7 @@ const BlogPost = () => {
      {
        id: 9,
        title: "Burned by the Heat: What 2025's Extreme Temperatures Reveal in BaZi",
-       excerpt: "Explore how global heatwaves reflect deeper Fire element imbalances in Chinese metaphysics, and what your BaZi chart reveals about stress, health, and destiny in 2025.",
+                   excerpt: "Explore how global heatwaves reflect Fire element imbalances in Chinese metaphysics and what your BaZi chart reveals about stress and destiny in 2025.",
        content: `
          <div class="mb-8">
            <p class="text-lg text-mystic-300 leading-relaxed mb-4">
@@ -795,7 +795,7 @@ const BlogPost = () => {
      {
        id: 10,
        title: "🌿 The Seasons of Fate: Why You Don't Have to Panic About Every Downturn",
-       excerpt: "Discover how BaZi reveals that life's challenges are natural cycles, not punishments. Learn to flow with your destiny's seasons instead of fighting against them.",
+                   excerpt: "Discover how BaZi reveals that life's challenges are natural cycles, not punishments. Learn to flow with your destiny's seasons.",
        content: `
          <div class="mb-8">
            <p class="text-lg text-mystic-300 leading-relaxed mb-4 italic">
@@ -945,7 +945,7 @@ const BlogPost = () => {
      {
        id: 11,
        title: "BaZi vs. MBTI: East Meets West in Personality and Destiny",
-       excerpt: "Explore how ancient Chinese BaZi and Western MBTI personality systems complement each other. Discover the differences between destiny mapping and personality typing.",
+                   excerpt: "Explore how ancient Chinese BaZi and Western MBTI personality systems complement each other. Discover destiny mapping vs personality typing.",
        content: `
          <div class="mb-8">
            <p class="text-lg text-mystic-300 leading-relaxed mb-4">
@@ -1122,7 +1122,7 @@ const BlogPost = () => {
      {
        id: 12,
        title: "Why the Energy of a Solar Eclipse May Align With Lu Gen Planting Rituals",
-       excerpt: "Discover how celestial events like solar eclipses can amplify collective energy and how ancient Taoist Lu Gen planting rituals help personalize these cosmic shifts.",
+                   excerpt: "Discover how celestial events like solar eclipses can amplify collective energy and how ancient Taoist Lu Gen rituals help personalize cosmic shifts.",
        content: `
          <div class="mb-8">
            <p class="text-lg text-mystic-300 leading-relaxed mb-4 italic">
@@ -1275,7 +1275,7 @@ const BlogPost = () => {
      {
        id: 10,
        title: "What is the Best Bazi for Wealth? Decoding Your Chinese Astrology Blueprint",
-       excerpt: "Discover the 3 wealthiest Bazi patterns in Chinese metaphysics, how to activate your financial potential, and why 'wealth' is more than money. Based on 10,000+ client cases.",
+                   excerpt: "Discover the 3 wealthiest Bazi patterns in Chinese metaphysics and how to activate your financial potential. Based on 10,000+ client cases.",
        content: `
          <div class="mb-8">
            <p class="text-lg text-mystic-300 leading-relaxed mb-4 italic">
