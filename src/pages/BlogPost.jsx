@@ -1120,6 +1120,159 @@ const BlogPost = () => {
        tags: ["BaZi", "MBTI", "Personality", "Destiny", "Chinese Astrology", "Psychology", "Self-Discovery", "Career Guidance"]
      },
      {
+       id: 12,
+       title: "Why the Energy of a Solar Eclipse May Align With Lu Gen Planting Rituals",
+       excerpt: "Discover how celestial events like solar eclipses can amplify collective energy and how ancient Taoist Lu Gen planting rituals help personalize these cosmic shifts.",
+       content: `
+         <div class="mb-8">
+           <p class="text-lg text-mystic-300 leading-relaxed mb-4 italic">
+             "When the heavens speak, the earth listens. When we plant with intention, we become the bridge between cosmic energy and earthly manifestation."
+           </p>
+           <p class="text-sm text-mystic-400">—Ancient Taoist wisdom</p>
+         </div>
+
+         <h2 class="text-2xl font-cinzel font-bold text-white mb-4 mt-8">🌑 The Celestial Whisper: Solar Eclipse Energy</h2>
+         <p class="mb-6 text-mystic-300 leading-relaxed">
+           Recently there's been a buzz online about a rumored solar eclipse in August 2025—something many have speculated will bring emotional and energetic shifts. Though details remain unclear, the idea points to an ancient truth: humans respond to celestial events by seeking ritual anchors—and one such anchor in Taoist practice is called Lu Gen, or "planting the root of prosperity."
+         </p>
+
+         <div class="bg-gradient-to-r from-mystic-800 to-mystic-900 p-6 rounded-xl border border-gold-500/30 mb-8">
+           <h3 class="text-lg font-cinzel font-semibold text-gold-400 mb-4">The Cosmic Connection:</h3>
+           <p class="text-mystic-300 mb-4">
+             Solar eclipses are not just astronomical events—they are moments when the Moon temporarily blocks the Sun's energy, creating a unique energetic vacuum that amplifies our intentions and emotions.
+           </p>
+           <p class="text-mystic-300">
+             This cosmic alignment provides an ideal window for ritual work, especially those involving planting and growth.
+           </p>
+         </div>
+
+         <h2 class="text-2xl font-cinzel font-bold text-white mb-4 mt-8">🌱 Lu Gen: The Ancient Art of Planting Prosperity</h2>
+         <p class="mb-6 text-mystic-300 leading-relaxed">
+           In my own way, I've linked this concept to a simple yet meaningful act: planting a piece of fresh ginger on a carefully chosen date, silently holding a clear intention—such as abundance, clarity, or stability. The root becomes a living symbol, anchoring your will into earth and time.
+         </p>
+
+         <p class="mb-6 text-mystic-300 leading-relaxed">
+           As the photos show, it's not about superstition—it's about creating a physical locus for your intention in alignment with cosmic timing.
+         </p>
+
+         <div class="grid md:grid-cols-2 gap-6 mb-8">
+           <div class="mystic-card p-6">
+             <h3 class="text-lg font-cinzel font-semibold text-gold-400 mb-3">🌿 The Ritual Process</h3>
+             <ul class="space-y-2 text-mystic-300 text-sm">
+               <li>• Choose fresh ginger root</li>
+               <li>• Select an auspicious date</li>
+               <li>• Hold clear intention</li>
+               <li>• Plant with mindfulness</li>
+               <li>• Water with gratitude</li>
+             </ul>
+           </div>
+           <div class="mystic-card p-6">
+             <h3 class="text-lg font-cinzel font-semibold text-gold-400 mb-3">🎯 Intention Examples</h3>
+             <ul class="space-y-2 text-mystic-300 text-sm">
+               <li>• Financial abundance</li>
+               <li>• Mental clarity</li>
+               <li>• Emotional stability</li>
+               <li>• Career growth</li>
+               <li>• Relationship harmony</li>
+             </ul>
+           </div>
+         </div>
+
+         <h2 class="text-2xl font-cinzel font-bold text-white mb-4 mt-8">⚡ Capturing the Cosmic Flow</h2>
+         <p class="mb-6 text-mystic-300 leading-relaxed">
+           Whether or not the eclipse happens, the principle remains: human consciousness responds to "celestial cues." If an eclipse amplifies collective energy, planting Lu Gen becomes a way to personalize that shift. By starting now, you may capture the flow rather than be swept by it.
+         </p>
+
+         <div class="mystic-card p-6 border-l-4 border-gold-500/50 mb-8">
+           <p class="text-mystic-300 italic">
+             💫 The key is not waiting for the perfect moment, but creating the perfect moment through conscious action and aligned intention.
+           </p>
+         </div>
+
+         <h2 class="text-2xl font-cinzel font-bold text-white mb-4 mt-8">🔮 Beyond Lu Gen: Other Celestial Rituals</h2>
+         <p class="mb-6 text-mystic-300 leading-relaxed">
+           Curious if others use similar methods—like sigil planting or intention jars—especially aligned to astronomical events. The ancient wisdom traditions offer many ways to work with cosmic energy:
+         </p>
+
+         <ul class="space-y-3 mb-6 text-mystic-300">
+           <li class="flex items-start space-x-3">
+             <div class="w-2 h-2 bg-gold-400 rounded-full mt-2 flex-shrink-0"></div>
+             <span><strong>Sigil Planting:</strong> Creating symbols of intention and burying them in the earth</span>
+           </li>
+           <li class="flex items-start space-x-3">
+             <div class="w-2 h-2 bg-gold-400 rounded-full mt-2 flex-shrink-0"></div>
+             <span><strong>Intention Jars:</strong> Sealing written intentions in containers with natural elements</span>
+           </li>
+           <li class="flex items-start space-x-3">
+             <div class="w-2 h-2 bg-gold-400 rounded-full mt-2 flex-shrink-0"></div>
+             <span><strong>Moon Phase Planting:</strong> Aligning garden work with lunar cycles</span>
+           </li>
+           <li class="flex items-start space-x-3">
+             <div class="w-2 h-2 bg-gold-400 rounded-full mt-2 flex-shrink-0"></div>
+             <span><strong>Solar Return Rituals:</strong> Annual practices aligned with your birth moment</span>
+           </li>
+         </ul>
+
+         <h2 class="text-2xl font-cinzel font-bold text-white mb-4 mt-8">📅 Timing Your Rituals with BaZi</h2>
+         <p class="mb-6 text-mystic-300 leading-relaxed">
+           I'll be writing more on how to choose dates using BaZi and how to integrate rituals with modern wellness in my next post. The key is understanding your personal elemental balance and choosing moments that amplify your intentions rather than working against them.
+         </p>
+
+         <div class="bg-gradient-to-r from-mystic-800 to-mystic-900 p-6 rounded-xl border border-gold-500/30 mb-8">
+           <h3 class="text-lg font-cinzel font-semibold text-gold-400 mb-4">🔮 Coming Next:</h3>
+           <p class="text-mystic-300 mb-4">
+             How to use your BaZi chart to identify the most auspicious dates for ritual work, and how to align your intentions with your personal elemental strengths.
+           </p>
+           <p class="text-mystic-300">
+             Remember: The best time to plant a tree was 20 years ago. The second best time is now.
+           </p>
+         </div>
+
+         <h2 class="text-2xl font-cinzel font-bold text-white mb-4 mt-8">🌍 The Modern Application</h2>
+         <p class="mb-6 text-mystic-300 leading-relaxed">
+           In our fast-paced, technology-driven world, these ancient practices offer a way to reconnect with natural rhythms and cosmic cycles. They remind us that we are not separate from the universe, but active participants in its ongoing creation.
+         </p>
+
+         <p class="mb-6 text-mystic-300 leading-relaxed">
+           Whether you choose to plant ginger, create sigils, or simply take a moment to align your intentions with the cosmos, the important thing is to begin. Start small, be consistent, and trust in the process.
+         </p>
+
+         <div class="mystic-card p-6 border-l-4 border-gold-500/50 mb-8">
+           <h3 class="text-lg font-cinzel font-semibold text-gold-400 mb-3">🎯 Your Next Steps:</h3>
+           <ul class="space-y-2 text-mystic-300">
+             <li class="flex items-start space-x-3">
+               <div class="w-2 h-2 bg-gold-400 rounded-full mt-2 flex-shrink-0"></div>
+               <span>Choose your intention</span>
+             </li>
+             <li class="flex items-start space-x-3">
+               <div class="w-2 h-2 bg-gold-400 rounded-full mt-2 flex-shrink-0"></div>
+               <span>Select your ritual method</span>
+             </li>
+             <li class="flex items-start space-x-3">
+               <div class="w-2 h-2 bg-gold-400 rounded-full mt-2 flex-shrink-0"></div>
+               <span>Align with cosmic timing</span>
+             </li>
+             <li class="flex items-start space-x-3">
+               <div class="w-2 h-2 bg-gold-400 rounded-full mt-2 flex-shrink-0"></div>
+               <span>Take action with mindfulness</span>
+             </li>
+           </ul>
+         </div>
+
+         <p class="mb-6 text-mystic-300 leading-relaxed">
+           The universe is always speaking. The question is: are you listening?
+         </p>
+       `,
+       category: "bazi-basics",
+       categoryLabel: "Bazi Basics",
+                   date: "2025-08-06",
+            readTime: "8 min read",
+            image: "/images/blog/solar-eclipse-lu-gen-cover.jpg",
+       slug: "solar-eclipse-energy-lu-gen-planting-rituals",
+       author: "玄印 (Xuan Yin)",
+       tags: ["Solar Eclipse", "Lu Gen", "Taoist Rituals", "Celestial Energy", "Planting Rituals", "Cosmic Timing", "Intention Setting", "Ancient Wisdom"]
+     },
+     {
        id: 10,
        title: "What is the Best Bazi for Wealth? Decoding Your Chinese Astrology Blueprint",
        excerpt: "Discover the 3 wealthiest Bazi patterns in Chinese metaphysics, how to activate your financial potential, and why 'wealth' is more than money. Based on 10,000+ client cases.",

@@ -192,6 +192,17 @@ const Blog = () => {
           readTime: "11 min read",
           image: "/images/blog/bazi-mbti-comparison.jpg",
           slug: "bazi-vs-mbti-personality-destiny"
+        },
+                          {
+          id: 12,
+          title: "Why the Energy of a Solar Eclipse May Align With Lu Gen Planting Rituals",
+          excerpt: "Discover how celestial events like solar eclipses can amplify collective energy and how ancient Taoist Lu Gen planting rituals help personalize these cosmic shifts.",
+          category: "bazi-basics",
+          categoryLabel: "Bazi Basics",
+          date: "2025-08-06",
+          readTime: "8 min read",
+          image: "/images/blog/solar-eclipse-lu-gen-cover.jpg",
+          slug: "solar-eclipse-energy-lu-gen-planting-rituals"
         }
   ]
 
