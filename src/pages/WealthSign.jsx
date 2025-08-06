@@ -95,11 +95,11 @@ const WealthSign = () => {
         >
                      <h1 className="text-3xl sm:text-4xl md:text-6xl font-playfair font-bold mb-4 sm:mb-6">
              <span className="gradient-text">Ancient Chinese Wisdom Oracle</span>
-           </h1>
+          </h1>
            <p className="text-lg sm:text-xl text-mystic-300 max-w-3xl mx-auto leading-relaxed">
              Discover ancient Chinese decision-making wisdom through our interactive oracle system. 
              Get personalized guidance based on traditional philosophy and modern psychology.
-           </p>
+          </p>
         </motion.div>
 
         {/* Cultural Information */}
@@ -109,23 +109,23 @@ const WealthSign = () => {
           transition={{ duration: 0.8, delay: 0.2 }}
           className="mystic-card p-4 sm:p-6 mb-6 sm:mb-8 border border-gold-500/20"
         >
-                     <div className="flex items-center mb-4">
-             <Sparkles className="h-6 w-6 text-gold-400 mr-3" />
+          <div className="flex items-center mb-4">
+            <Sparkles className="h-6 w-6 text-gold-400 mr-3" />
              <h3 className="text-xl font-cinzel font-semibold text-white">Ancient Decision-Making Framework</h3>
-           </div>
-           <p className="text-mystic-300 leading-relaxed">
+          </div>
+          <p className="text-mystic-300 leading-relaxed">
              Based on centuries-old Chinese philosophical principles, this oracle system combines traditional 
              wisdom with modern psychology to provide actionable guidance for life decisions and personal growth.
-           </p>
+          </p>
         </motion.div>
 
-                                   {/* Fortune Stick Card */}
-          <motion.div 
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.4 }}
-            className="flex justify-center mb-8"
-          >
+        {/* Fortune Stick Card */}
+        <motion.div 
+          initial={{ opacity: 0, y: 30 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 0.4 }}
+          className="flex justify-center mb-8"
+        >
             {/* Meditation Overlay */}
             <AnimatePresence>
               {showMeditation && (
@@ -223,13 +223,13 @@ const WealthSign = () => {
             </AnimatePresence>
           
                                                                                        <div className="relative w-full max-w-sm sm:max-w-md md:w-[50rem] lg:w-[60rem] xl:w-[70rem] h-[40rem] sm:h-[44rem] md:h-[52rem] lg:h-[56rem] xl:h-[60rem] perspective-1000">
-             <motion.div
+            <motion.div
                className="w-full h-full relative transition-transform duration-1000 transform-style-preserve-3d"
-               animate={{ rotateY: isFlipped ? 180 : 0 }}
-               transition={{ duration: 1.5, ease: "easeInOut" }}
+              animate={{ rotateY: isFlipped ? 180 : 0 }}
+              transition={{ duration: 1.5, ease: "easeInOut" }}
                style={{ transformStyle: 'preserve-3d' }}
-             >
-                                                           {/* Front Side - Wealth God */}
+            >
+              {/* Front Side - Wealth God */}
                 <div className="absolute w-full h-full" style={{ backfaceVisibility: 'hidden' }}>
                                    <div className="mystic-card h-full cursor-pointer hover:scale-105 transition-transform duration-300 border-2 border-gold-500/40 shadow-2xl shadow-gold-500/30 relative overflow-hidden"
                        onClick={handleFlip}
@@ -261,14 +261,14 @@ const WealthSign = () => {
                           <Coins className="h-32 w-32 text-white drop-shadow-lg opacity-50" />
                         </div>
                       </div>
-                    </div>
-                    
+                  </div>
+                  
                     {/* Content Overlay */}
                     <div className="relative z-20 h-full flex flex-col items-center justify-center p-4 sm:p-6 md:p-8 text-center" style={{ backdropFilter: 'none' }}>
                       <h3 className="text-2xl sm:text-3xl font-cinzel font-bold text-white mb-3 sm:mb-4" style={{ textShadow: '2px 2px 4px rgba(0,0,0,0.8)' }}>
                         Wisdom Oracle
-                      </h3>
-                      
+                  </h3>
+                  
                       <p className="text-white text-center mb-6 sm:mb-8 text-sm sm:text-lg leading-relaxed font-medium max-w-sm" style={{ textShadow: '1px 1px 2px rgba(0,0,0,0.8)' }}>
                         Click to begin your sacred divination ritual and receive ancient wisdom guidance.
                       </p>
@@ -278,100 +278,103 @@ const WealthSign = () => {
                         <span className="text-base font-semibold">Begin Sacred Ritual</span>
                       </div>
                     </div>
-                  </div>
-               </div>
+                </div>
+              </div>
 
-                                                           {/* Back Side - Fortune Result */}
+              {/* Back Side - Fortune Result */}
                 <div className="absolute w-full h-full" style={{ backfaceVisibility: 'hidden', transform: 'rotateY(180deg)' }}>
                                                                      <div className="mystic-card h-full p-8 sm:p-10 lg:p-12 border-2 border-gold-500/30 shadow-2xl shadow-gold-500/20">
-                   {currentSign && (
-                     <div className="h-full flex flex-col">
-                                               {/* Sign Header */}
+                  {currentSign && (
+                    <div className="h-full flex flex-col">
+                      {/* Sign Header */}
                                                  <div className={`text-center p-4 sm:p-6 rounded-xl mb-4 sm:mb-6 ${getLevelBgColor(currentSign.signLevel)} border-2 border-gold-400/40 shadow-lg`}>
                            <div className="text-3xl sm:text-4xl lg:text-5xl mb-2 drop-shadow-lg">{currentSign.icon}</div>
                            <h3 className="text-lg sm:text-xl lg:text-2xl font-cinzel font-bold text-white mb-2 drop-shadow-md">
-                             {currentSign.signNumber}
-                           </h3>
+                          {currentSign.signNumber}
+                        </h3>
                            <p className={`text-base sm:text-lg lg:text-xl font-semibold ${getLevelColor(currentSign.signLevel)} drop-shadow-md`}>
-                             {currentSign.signTitle}
-                           </p>
+                          {currentSign.signTitle}
+                        </p>
                            <p className="text-sm sm:text-base lg:text-lg text-mystic-200 mt-1 font-medium">
-                             {currentSign.signLevel} Fortune
-                           </p>
-                         </div>
+                          {currentSign.signLevel} Fortune
+                        </p>
+                      </div>
 
-                                               {/* Traditional Text */}
+                      {/* Traditional Text */}
                                                  <div className="mb-4 sm:mb-6 p-4 sm:p-6 bg-mystic-800/50 rounded-lg border border-gold-500/20">
                            <h4 className="text-sm sm:text-base font-bold text-gold-400 mb-3 flex items-center">
                              <span className="mr-2 text-base sm:text-lg">📜</span>
                              Ancient Wisdom
                            </h4>
                            <p className="text-mystic-200 text-sm sm:text-base italic leading-relaxed font-medium drop-shadow-sm">
-                             {currentSign.traditionalText}
-                           </p>
-                         </div>
+                          {currentSign.traditionalText}
+                        </p>
+                      </div>
 
-                                                 {/* Modern Interpretation */}
+                      {/* Modern Interpretation */}
                          <div className="mb-4 sm:mb-6 p-4 sm:p-6 bg-mystic-800/50 rounded-lg border border-gold-500/20">
                            <h4 className="text-sm sm:text-base font-bold text-gold-400 mb-3 flex items-center">
                              <span className="mr-2 text-base sm:text-lg">💡</span>
                              Modern Interpretation
                            </h4>
                            <p className="text-white text-sm sm:text-base leading-relaxed font-medium drop-shadow-sm">
-                             {currentSign.signText}
-                           </p>
-                         </div>
+                          {currentSign.signText}
+                        </p>
+                      </div>
 
-                                                 {/* Short Interpretation */}
+                      {/* Short Interpretation */}
                          <div className="mb-4 sm:mb-6 p-4 sm:p-6 bg-mystic-800/50 rounded-lg border border-gold-500/20">
                            <h4 className="text-sm sm:text-base font-bold text-gold-400 mb-3 flex items-center">
                              <span className="mr-2 text-base sm:text-lg">🎯</span>
                              Action Steps
                            </h4>
                            <p className="text-mystic-200 text-sm sm:text-base leading-relaxed font-medium drop-shadow-sm">
-                             {currentSign.shortInterpretation}
-                           </p>
-                         </div>
+                          {currentSign.shortInterpretation}
+                        </p>
+                      </div>
 
-                                                 {/* Cultural Note */}
+                      {/* Cultural Note */}
                          <div className="mt-auto p-3 sm:p-4 bg-mystic-800/30 rounded-lg border border-gold-500/10">
                            <h4 className="text-xs sm:text-sm font-bold text-gold-400 mb-1 flex items-center">
                              <span className="mr-2 text-xs sm:text-sm">🏮</span>
                              Philosophical Background
                            </h4>
                            <p className="text-mystic-300 text-xs sm:text-sm leading-relaxed">
-                             {currentSign.culturalNote}
-                           </p>
-                         </div>
-                     </div>
-                   )}
-                 </div>
+                          {currentSign.culturalNote}
+                        </p>
+                      </div>
+                    </div>
+                  )}
+                </div>
               </div>
             </motion.div>
           </div>
         </motion.div>
 
-                 {/* Action Buttons */}
-         <motion.div 
-           initial={{ opacity: 0, y: 30 }}
-           animate={{ opacity: 1, y: 0 }}
-           transition={{ duration: 0.8, delay: 0.6 }}
+        {/* Action Buttons */}
+        <motion.div 
+          initial={{ opacity: 0, y: 30 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 0.6 }}
            className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-center mb-8 sm:mb-12 mt-8"
-         >
-                     <button
-             onClick={handleReset}
+        >
+          <button
+            onClick={handleReset}
              className="flex items-center space-x-2 px-6 py-3 bg-gradient-to-r from-mystic-700 to-mystic-800 text-white font-semibold rounded-lg hover:from-mystic-600 hover:to-mystic-700 transition-all duration-300 border border-mystic-600 shadow-lg"
-           >
-             <RotateCcw className="h-5 w-5" />
+          >
+            <RotateCcw className="h-5 w-5" />
              <span>Begin New Ritual</span>
-           </button>
+          </button>
 
-           {showResult && (
-             <>
-               <button className="flex items-center space-x-2 px-6 py-3 bg-gradient-to-r from-gold-500 to-gold-600 text-black font-semibold rounded-lg hover:from-gold-400 hover:to-gold-500 transition-all duration-300 shadow-lg">
-                 <Download className="h-5 w-5" />
+          {showResult && (
+            <>
+               <button 
+                 onClick={() => window.open('https://fatepath.me/free-bazi-report', '_blank', 'noopener,noreferrer')}
+                 className="flex items-center space-x-2 px-6 py-3 bg-gradient-to-r from-gold-500 to-gold-600 text-black font-semibold rounded-lg hover:from-gold-400 hover:to-gold-500 transition-all duration-300 shadow-lg"
+               >
+                <Download className="h-5 w-5" />
                  <span>Get Detailed Analysis</span>
-               </button>
+              </button>
 
                <button 
                  onClick={() => {
@@ -393,11 +396,11 @@ const WealthSign = () => {
                  }}
                  className="flex items-center space-x-2 px-6 py-3 bg-gradient-to-r from-blue-500 to-blue-600 text-white font-semibold rounded-lg hover:from-blue-400 hover:to-blue-500 transition-all duration-300 shadow-lg"
                >
-                 <Share2 className="h-5 w-5" />
-                 <span>Share Result</span>
-               </button>
-             </>
-           )}
+                <Share2 className="h-5 w-5" />
+                <span>Share Result</span>
+              </button>
+            </>
+          )}
         </motion.div>
 
         {/* Fortune Levels Explanation */}
@@ -409,7 +412,7 @@ const WealthSign = () => {
         >
                      <h3 className="text-lg sm:text-xl font-cinzel font-semibold text-white mb-3 sm:mb-4 text-center">
              Understanding Wisdom Levels
-           </h3>
+          </h3>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-4">
             {Object.entries(culturalInfo.levels).map(([level, description]) => (
               <div key={level} className={`p-4 rounded-lg ${getLevelBgColor(level)}`}>

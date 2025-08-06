@@ -1386,7 +1386,7 @@ const BlogPost = () => {
          <div class="space-y-6 mb-8">
            <div class="mystic-card p-6 border-l-4 border-gold-500/50">
              <h3 class="text-lg font-cinzel font-semibold text-gold-400 mb-3">Step 1: Find Your Wealth Star</h3>
-             <p class="text-mystic-300 mb-3">Use our <a href="/tools/bazi" class="text-gold-400 hover:text-gold-300 underline">Bazi Calculator</a> → Check your chart for:</p>
+             <p class="text-mystic-300 mb-3">Use our <a href="https://fatepath.me/free-bazi-report" class="text-gold-400 hover:text-gold-300 underline" target="_blank" rel="noopener noreferrer">Bazi Calculator</a> → Check your chart for:</p>
              <ul class="space-y-2 text-mystic-300 text-sm">
                <li>• Wood (甲,乙) + Earth (戊,己) = 偏财 (Opportunity Wealth)</li>
                <li>• Metal (庚,辛) + Wood (甲,乙) = 正财 (Steady Wealth)</li>
@@ -1778,13 +1778,15 @@ const BlogPost = () => {
               </div>
             </div>
 
-            <Link
-              to="/services"
+            <a
+              href="https://fatepath.me/free-bazi-report"
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-flex items-center space-x-2 bg-gradient-to-r from-gold-500 to-gold-600 text-black font-semibold px-4 sm:px-6 py-3 rounded-lg hover:from-gold-400 hover:to-gold-500 transition-all duration-300 text-sm sm:text-base"
             >
               <span>Get Your Reading</span>
               <ArrowLeft className="h-4 w-4 sm:h-5 sm:w-5 rotate-180" />
-            </Link>
+            </a>
           </div>
         </motion.div>
       </div>
