@@ -15,4 +15,5 @@ Disallow: /private/
 Allow: /services
 Allow: /blog
 Allow: /faq
-Allow: /contact 
+Allow: /contact
+Allow: /free-bazi-report 

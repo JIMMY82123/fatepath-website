@@ -98,6 +98,13 @@
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
+  <!-- Free Bazi Report -->
+  <url>
+    <loc>https://fatepath.me/free-bazi-report</loc>
+    <lastmod>2025-08-07</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
   <!-- Blog Posts -->
   <url>
     <loc>https://fatepath.me/blog/bazi-vs-mbti-personality-destiny</loc>
