@@ -1474,6 +1474,127 @@ const BlogPost = () => {
        slug: "best-bazi-wealth-chinese-astrology-blueprint",
        author: "玄印 (Xuan Yin)",
        tags: ["Wealth Bazi", "Chinese Astrology", "Financial Luck", "Wealth Patterns", "Bazi Analysis", "Feng Shui", "Money Luck", "Destiny"]
+     },
+     {
+       id: 13,
+       title: "Using BaZi to Predict When Your True Love Will Appear",
+       excerpt: "Love is one of life's most profound mysteries. But what if ancient Chinese metaphysics could offer clues—not just about if you'll meet your true love, but when?",
+       content: `
+         <div className="mb-8">
+           <p className="text-lg text-mystic-300 leading-relaxed mb-4 italic">
+             "Love isn't always about looking harder—it's about recognizing the moment when the stars align."
+           </p>
+           <p className="text-sm text-mystic-400">—Ancient Chinese wisdom</p>
+         </div>
+
+         <p className="mb-6 text-mystic-300 leading-relaxed">
+           Love is one of life's most profound mysteries. But what if ancient Chinese metaphysics could offer clues—not just about <em>if</em> you'll meet your true love, but <em>when</em>?
+         </p>
+
+         <p className="mb-6 text-mystic-300 leading-relaxed">
+           Welcome to the world of BaZi (also known as the Four Pillars of Destiny), where your date and time of birth are decoded into an elemental map that reveals the rhythms of your life—including your romantic destiny.
+         </p>
+
+         <h2 className="text-2xl font-cinzel font-bold text-white mb-4 mt-8">What Is BaZi and Why Timing Matters</h2>
+         <p className="mb-6 text-mystic-300 leading-relaxed">
+           BaZi is an ancient system that interprets a person's destiny by analyzing the interactions between the five elements (Wood, Fire, Earth, Metal, Water) based on the year, month, day, and hour of birth.
+         </p>
+         <p className="mb-6 text-mystic-300 leading-relaxed">
+           In BaZi, timing is everything. Even if someone is your perfect energetic match, the relationship may never blossom if it comes at the wrong moment in your life cycle.
+         </p>
+         <p className="mb-6 text-mystic-300 leading-relaxed">
+           Each decade of life is governed by a major "Luck Pillar" (Da Yun), and each year brings its own elemental influences. Love-related energies—such as Peach Blossom (Tao Hua), Red Luan Star (Hong Luan), and the presence of your "Spouse Star"—often appear during specific years or Luck Pillars.
+         </p>
+
+         <h2 className="text-2xl font-cinzel font-bold text-white mb-4 mt-8">Indicators of Romantic Opportunities in Your BaZi</h2>
+         <p className="mb-6 text-mystic-300 leading-relaxed">
+           So how do we detect when love is on the horizon? Here are some of the key indicators:
+         </p>
+
+         <div className="bg-gradient-to-r from-pink-900/50 to-red-900/50 p-6 rounded-xl border border-pink-500/30 mb-8">
+           <ul className="space-y-3 text-mystic-300">
+             <li className="flex items-start space-x-3">
+               <div className="w-2 h-2 bg-pink-400 rounded-full mt-2 flex-shrink-0"></div>
+               <span><strong>Spouse Star Activation:</strong> For men, this is often the <em>Wealth Star</em>; for women, the <em>Officer Star</em>. When this element is prominently activated, love may arrive.</span>
+             </li>
+             <li className="flex items-start space-x-3">
+               <div className="w-2 h-2 bg-pink-400 rounded-full mt-2 flex-shrink-0"></div>
+               <span><strong>Peach Blossom Years:</strong> These are years with increased attractiveness, social charm, and romantic potential. They're linked to certain branches (e.g., Zi, Wu, Mao, You).</span>
+             </li>
+             <li className="flex items-start space-x-3">
+               <div className="w-2 h-2 bg-pink-400 rounded-full mt-2 flex-shrink-0"></div>
+               <span><strong>Red Luan / Heavenly Happiness Stars:</strong> These astrological stars indicate fated connections, engagements, or even marriage.</span>
+             </li>
+             <li className="flex items-start space-x-3">
+               <div className="w-2 h-2 bg-pink-400 rounded-full mt-2 flex-shrink-0"></div>
+               <span><strong>Luck Pillars That Combine Favorably with Natal Chart:</strong> When the Luck Pillar forms a Heavenly Stem or Earthly Branch combination with your natal chart, it often opens doors for major life events—including love.</span>
+             </li>
+           </ul>
+         </div>
+
+         <h2 className="text-2xl font-cinzel font-bold text-white mb-4 mt-8">Signs Your True Love Is Approaching</h2>
+         <p className="mb-6 text-mystic-300 leading-relaxed">
+           Some subtle signs in your life may indicate that love is near—even before a relationship begins:
+         </p>
+
+         <div className="space-y-4 mb-8">
+           <div className="mystic-card p-4 border-l-4 border-pink-500/50">
+             <p className="text-mystic-300"><strong>Emotional Openness:</strong> You feel more emotionally open and curious about partnerships.</p>
+           </div>
+           <div className="mystic-card p-4 border-l-4 border-pink-500/50">
+             <p className="text-mystic-300"><strong>Dreams and Synchronicities:</strong> You receive frequent dreams, signs, or synchronicities around romance.</p>
+           </div>
+           <div className="mystic-card p-4 border-l-4 border-pink-500/50">
+             <p className="text-mystic-300"><strong>Social Expansion:</strong> Your social circle expands or shifts, introducing new opportunities.</p>
+           </div>
+           <div className="mystic-card p-4 border-l-4 border-pink-500/50">
+             <p className="text-mystic-300"><strong>Inner Readiness:</strong> You feel a sense of inner readiness, even if you're still healing.</p>
+           </div>
+         </div>
+
+         <p className="mb-6 text-mystic-300 leading-relaxed">
+           When these personal shifts coincide with positive relationship energies in your BaZi chart, it's often a powerful window for meaningful connection.
+         </p>
+
+         <h2 className="text-2xl font-cinzel font-bold text-white mb-4 mt-8">Try It Yourself – Unlock Your Love Timing with BaZi</h2>
+         <p className="mb-6 text-mystic-300 leading-relaxed">
+           Curious about your own chart? Want to know which year or month could bring your soulmate?
+         </p>
+         <p className="mb-6 text-mystic-300 leading-relaxed">
+           We offer personalized BaZi Relationship Readings, which reveal:
+         </p>
+
+         <div className="bg-gradient-to-r from-gold-900/50 to-yellow-900/50 p-6 rounded-xl border border-gold-500/30 mb-8">
+           <ul className="space-y-3 text-mystic-300">
+             <li className="flex items-start space-x-3">
+               <div className="w-2 h-2 bg-gold-400 rounded-full mt-2 flex-shrink-0"></div>
+               <span>Your Spouse Star and what kind of person you're destined to attract</span>
+             </li>
+             <li className="flex items-start space-x-3">
+               <div className="w-2 h-2 bg-gold-400 rounded-full mt-2 flex-shrink-0"></div>
+               <span>Favorable years for love and connection</span>
+             </li>
+             <li className="flex items-start space-x-3">
+               <div className="w-2 h-2 bg-gold-400 rounded-full mt-2 flex-shrink-0"></div>
+               <span>Emotional and karmic patterns holding you back from lasting love</span>
+             </li>
+           </ul>
+         </div>
+
+         <div className="text-center mb-8">
+           <p className="text-lg text-mystic-300 leading-relaxed italic">
+             <em>Love isn't always about looking harder—it's about recognizing the moment when the stars align.</em>
+           </p>
+         </div>
+       `,
+       category: "love-compatibility",
+       categoryLabel: "Love & Relationships",
+       date: "2025-08-06",
+       readTime: "14 min read",
+       image: "/images/blog/bazi-love-timing-cover.jpg",
+       slug: "bazi-predict-true-love-timing",
+       author: "玄印 (Xuan Yin)",
+       tags: ["BaZi Love Timing", "Chinese Astrology", "Romantic Destiny", "Spouse Star", "Peach Blossom", "Red Luan Star", "Love Prediction", "Relationship Timing"]
      }
      // 您可以在这里添加更多文章
   ]

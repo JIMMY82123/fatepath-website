@@ -203,6 +203,17 @@ const Blog = () => {
           readTime: "8 min read",
           image: "/images/blog/solar-eclipse-lu-gen-cover.jpg",
           slug: "solar-eclipse-energy-lu-gen-planting-rituals"
+        },
+        {
+          id: 13,
+          title: "Using BaZi to Predict When Your True Love Will Appear",
+                      excerpt: "Love is one of life's most profound mysteries. But what if ancient Chinese metaphysics could offer clues—not just about if you'll meet your true love, but when?",
+          category: "love-compatibility",
+          categoryLabel: "Love & Relationships",
+          date: "2025-08-06",
+          readTime: "14 min read",
+          image: "/images/blog/bazi-love-timing-cover.jpg",
+          slug: "bazi-predict-true-love-timing"
         }
   ]
 
