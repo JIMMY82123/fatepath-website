@@ -31,43 +31,43 @@ const Home = () => {
       name: "David Kim",
       role: "Financial Advisor",
       content: "As a financial professional, I was impressed by the accuracy of the wealth timing predictions. This ancient wisdom has modern applications that really work.",
-      avatar: "/images/testimonials/emma-rodriguez.jpg"
+      avatar: "/images/testimonials/david-kim.jpg"
     },
     {
       name: "Lisa Wang",
       role: "HR Manager",
       content: "The career guidance from my BaZi reading helped me make the right move at the perfect time. I got a 40% salary increase and better work-life balance.",
-      avatar: "/images/testimonials/michael-chen.jpg"
+      avatar: "/images/testimonials/lisa-wang.jpg"
     },
     {
       name: "Robert Martinez",
       role: "Small Business Owner",
       content: "I used the wealth analysis to time my business expansion. The results were incredible - my revenue doubled within 6 months of following the guidance.",
-      avatar: "/images/testimonials/sarah-johnson.jpg"
+      avatar: "/images/testimonials/robert-martinez.jpg"
     },
     {
       name: "Jennifer Lee",
       role: "Teacher",
       content: "The love compatibility reading helped me understand why my previous relationships failed and what to look for in a partner. I'm now happily married!",
-      avatar: "/images/testimonials/emma-rodriguez.jpg"
+      avatar: "/images/testimonials/jennifer-lee.jpg"
     },
     {
       name: "Alex Thompson",
       role: "Real Estate Agent",
       content: "The timing predictions for property investments were spot on. I bought and sold at the perfect moments, maximizing my profits significantly.",
-      avatar: "/images/testimonials/michael-chen.jpg"
+      avatar: "/images/testimonials/alex-thompson.jpg"
     },
     {
       name: "Maria Garcia",
       role: "Nurse",
       content: "I was going through a difficult time and the BaZi reading gave me clarity about my life purpose. It's amazing how accurate the personality analysis was.",
-      avatar: "/images/testimonials/sarah-johnson.jpg"
+      avatar: "/images/testimonials/maria-garcia.jpg"
     },
     {
       name: "James Wilson",
       role: "Consultant",
       content: "The wealth analysis identified my money patterns and helped me break negative cycles. My financial situation has improved dramatically since then.",
-      avatar: "/images/testimonials/emma-rodriguez.jpg"
+      avatar: "/images/testimonials/james-wilson.jpg"
     }
   ]
 
