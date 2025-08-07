@@ -5,13 +5,12 @@ const LazyImage = ({
   src, 
   alt, 
   className = '', 
-  placeholder = '/images/placeholder.jpg',
   threshold = 0.1,
   ...props 
 }) => {
   const [isLoaded, setIsLoaded] = useState(false)
   const [isInView, setIsInView] = useState(false)
-  const [imageSrc, setImageSrc] = useState(placeholder)
+  const [imageSrc, setImageSrc] = useState('')
   const imgRef = useRef(null)
 
   useEffect(() => {
@@ -45,8 +44,7 @@ const LazyImage = ({
   }
 
   const handleError = () => {
-    // 如果主图片加载失败，使用占位符
-    setImageSrc(placeholder)
+    // 如果主图片加载失败，显示错误状态
     setIsLoaded(true)
   }
 
@@ -64,17 +62,19 @@ const LazyImage = ({
       )}
       
       {/* 实际图片 */}
-      <img
-        src={imageSrc}
-        alt={alt}
-        className={`w-full h-full object-cover transition-opacity duration-300 ${
-          isLoaded ? 'opacity-100' : 'opacity-0'
-        }`}
-        onLoad={handleLoad}
-        onError={handleError}
-        loading="lazy"
-        {...props}
-      />
+      {imageSrc && (
+        <img
+          src={imageSrc}
+          alt={alt}
+          className={`w-full h-full object-cover transition-opacity duration-300 ${
+            isLoaded ? 'opacity-100' : 'opacity-0'
+          }`}
+          onLoad={handleLoad}
+          onError={handleError}
+          loading="lazy"
+          {...props}
+        />
+      )}
       
       {/* 加载指示器 */}
       {!isLoaded && isInView && (

@@ -82,7 +82,7 @@ const Blog = () => {
       categoryLabel: "Market Analysis",
       date: "2025-08-05",
       readTime: "12 min read",
-      image: "/images/blog/market-crisis-2025.jpg",
+      image: "/images/blog/market-crisis-2025.svg",
       slug: "market-rally-turning-point-crisis-2025"
     },
     {
@@ -93,7 +93,7 @@ const Blog = () => {
       categoryLabel: "Bazi Basics",
       date: "2024-01-15",
       readTime: "8 min read",
-      image: "/images/blog/bazi-basics.jpg",
+      image: "/images/blog/bazi-basics.svg",
       slug: "understanding-bazi-chart-beginners-guide"
     },
     {
@@ -104,7 +104,7 @@ const Blog = () => {
       categoryLabel: "Love & Relationships",
       date: "2024-01-10",
       readTime: "12 min read",
-      image: "/images/blog/five-elements-love.jpg",
+      image: "/images/blog/five-elements-love.svg",
       slug: "five-elements-love-perfect-match"
     },
     {
@@ -115,7 +115,7 @@ const Blog = () => {
       categoryLabel: "Talismans & Protection",
       date: "2024-01-05",
       readTime: "10 min read",
-      image: "/images/blog/talismans-protection.jpg",
+      image: "/images/blog/talismans-protection.svg",
       slug: "protection-talismans-ancient-wisdom"
     },
     {
@@ -126,7 +126,7 @@ const Blog = () => {
       categoryLabel: "Career & Timing",
       date: "2024-01-01",
       readTime: "15 min read",
-      image: "/images/blog/career-timing.jpg",
+      image: "/images/blog/career-timing.svg",
       slug: "career-timing-next-big-move"
     },
     {
@@ -137,7 +137,7 @@ const Blog = () => {
       categoryLabel: "Bazi Basics",
       date: "2024-01-20",
       readTime: "14 min read",
-      image: "/images/blog/dragon-year-2024.jpg",
+      image: "/images/blog/dragon-year-2024.svg",
       slug: "2024-year-dragon-fortune-forecast"
     },
         {
@@ -203,7 +203,7 @@ const Blog = () => {
           categoryLabel: "Bazi Basics",
           date: "2025-08-06",
           readTime: "8 min read",
-          image: "/images/blog/solar-eclipse-lu-gen-cover.jpg",
+          image: "/images/blog/solar-eclipse-lu-gen-cover.svg",
           slug: "solar-eclipse-energy-lu-gen-planting-rituals"
         },
         {
@@ -214,7 +214,7 @@ const Blog = () => {
           categoryLabel: "Love & Relationships",
           date: "2025-08-06",
           readTime: "14 min read",
-          image: "/images/blog/bazi-love-timing-cover.jpg",
+          image: "/images/blog/bazi-love-timing-cover.svg",
           slug: "bazi-predict-true-love-timing"
         }
   ]
