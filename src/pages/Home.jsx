@@ -131,16 +131,16 @@ const Home = () => {
   return (
     <>
       <SEO 
-        title="Professional BaZi Reading Service | Free Bazi Chart Analysis | Chinese Numerology Expert"
-        description="Get your free BaZi chart analysis today! Professional Chinese numerology expert with 15+ years experience. BaZi reading for career guidance, love compatibility, wealth analysis. Online consultation worldwide."
-        keywords="bazi reading, free bazi chart analysis, chinese numerology expert, bazi career guidance, bazi love compatibility, bazi wealth analysis, online bazi consultation, bazi master consultation, traditional chinese numerology, bazi chart calculator, bazi relationship reading, bazi life path analysis"
+        title="Professional Chinese Astrology & BaZi Reading Service | Free Bazi Chart Analysis | Chinese Numerology Expert"
+        description="Get your free BaZi chart analysis today! Professional Chinese astrology expert with 15+ years experience. BaZi reading for career guidance, love compatibility, wealth analysis. Online Chinese astrology consultation worldwide."
+        keywords="chinese astrology, bazi reading, free bazi chart analysis, chinese numerology expert, bazi career guidance, bazi love compatibility, bazi wealth analysis, online chinese astrology consultation, bazi master consultation, traditional chinese astrology, bazi chart calculator, bazi relationship reading, bazi life path analysis, chinese astrology reading, four pillars of destiny"
         author="FatePath"
-        ogTitle="Professional BaZi Reading Service | Free Bazi Chart Analysis"
-        ogDescription="Get your free BaZi chart analysis today! Professional Chinese numerology expert with 15+ years experience. BaZi reading for career guidance, love compatibility, wealth analysis."
+        ogTitle="Professional Chinese Astrology & BaZi Reading Service | Free Bazi Chart Analysis"
+        ogDescription="Get your free BaZi chart analysis today! Professional Chinese astrology expert with 15+ years experience. BaZi reading for career guidance, love compatibility, wealth analysis."
         ogImage="https://fatepath.me/og-image.svg"
         ogUrl="https://fatepath.me/"
-        twitterTitle="Professional BaZi Reading Service | Free Bazi Chart Analysis"
-        twitterDescription="Get your free BaZi chart analysis today! Professional Chinese numerology expert with 15+ years experience. BaZi reading for career guidance, love compatibility, wealth analysis."
+        twitterTitle="Professional Chinese Astrology & BaZi Reading Service | Free Bazi Chart Analysis"
+        twitterDescription="Get your free BaZi chart analysis today! Professional Chinese astrology expert with 15+ years experience. BaZi reading for career guidance, love compatibility, wealth analysis."
         twitterImage="https://fatepath.me/og-image.svg"
       />
 
@@ -168,8 +168,8 @@ const Home = () => {
                 <span className="block text-gold-400">Destiny Path</span>
               </h1>
               <p className="text-xl md:text-2xl text-mystic-300 mb-8 max-w-3xl mx-auto">
-                Unlock the ancient wisdom of Chinese numerology with professional BaZi readings. 
-                Understand your life's purpose, career timing, and relationship compatibility.
+                Unlock the ancient wisdom of Chinese astrology with professional BaZi readings. 
+                Understand your life's purpose, career timing, and relationship compatibility through traditional Chinese numerology.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Link

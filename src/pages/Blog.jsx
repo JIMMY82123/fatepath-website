@@ -249,17 +249,17 @@ const Blog = () => {
   return (
     <>
       <SEO
-        title="博客 | FatePath - 中国命理学与八字分析"
-        description="探索古代中国命理学智慧，实用的八字分析指导和精神智慧，照亮您的人生道路，提升您的人生旅程。"
-        keywords="博客, 八字分析, 中国命理学, 五行, 阴阳, 命运, 人生指导, 古代智慧"
+        title="Chinese Astrology & BaZi Blog | Ancient Wisdom for Modern Life | FatePath"
+        description="Explore ancient Chinese astrology insights, practical BaZi analysis guidance, and spiritual wisdom to illuminate your path and enhance your life journey."
+        keywords="chinese astrology blog, bazi analysis, ancient chinese wisdom, four pillars of destiny, chinese numerology blog, bazi reading insights, traditional chinese astrology, life path guidance, spiritual wisdom"
         canonical="https://fatepath.me/blog"
         ogImage="https://fatepath.me/images/blog/mystic-wisdom-cover.jpg"
         ogType="website"
         structuredData={{
           "@context": "https://schema.org",
           "@type": "Blog",
-          "name": "FatePath Mystic Wisdom Blog",
-          "description": "Ancient Chinese numerology insights, practical guidance, and spiritual wisdom",
+          "name": "FatePath Chinese Astrology & BaZi Blog",
+          "description": "Ancient Chinese astrology insights, practical guidance, and spiritual wisdom",
           "url": "https://fatepath.me/blog",
           "publisher": {
             "@type": "Organization",
@@ -274,7 +274,7 @@ const Blog = () => {
             "dateModified": post.date,
             "author": {
               "@type": "Person",
-              "name": "玄印 (Xuan Yin)"
+              "name": "Xuan Yin"
             },
             "publisher": {
               "@type": "Organization",
@@ -302,8 +302,8 @@ const Blog = () => {
             <span className="gradient-text">Mystic Wisdom</span>
           </h1>
           <p className="text-lg sm:text-xl text-mystic-300 max-w-3xl mx-auto leading-relaxed">
-            Explore ancient Chinese numerology insights, practical guidance, and spiritual wisdom 
-            to illuminate your path and enhance your life journey.
+            Explore ancient Chinese astrology insights, practical BaZi analysis guidance, and spiritual wisdom 
+            to illuminate your path and enhance your life journey through traditional Chinese numerology.
           </p>
         </motion.div>
 
@@ -320,13 +320,13 @@ const Blog = () => {
             </h2>
             <div className="space-y-6 text-center">
               <p className="text-lg text-mystic-300 leading-relaxed">
-                Welcome to our collection of insights drawn from thousands of years of Chinese metaphysical wisdom. Here, you'll find practical guidance on how ancient BaZi principles can illuminate your modern life challenges, from career decisions and relationship dynamics to personal growth and spiritual development.
+                Welcome to our collection of insights drawn from thousands of years of Chinese astrology wisdom. Here, you'll find practical guidance on how ancient BaZi principles can illuminate your modern life challenges, from career decisions and relationship dynamics to personal growth and spiritual development.
               </p>
               <p className="text-lg text-mystic-300 leading-relaxed">
-                Each article is crafted to bridge the gap between traditional Chinese numerology and contemporary life, offering actionable insights that you can apply immediately. Whether you're new to BaZi analysis or a seasoned practitioner, these articles will deepen your understanding of how the Five Elements, Yin-Yang balance, and cosmic timing influence your daily experiences.
+                Each article is crafted to bridge the gap between traditional Chinese astrology and contemporary life, offering actionable insights that you can apply immediately. Whether you're new to BaZi analysis or a seasoned practitioner, these articles will deepen your understanding of how the Five Elements, Yin-Yang balance, and cosmic timing influence your daily experiences.
               </p>
               <p className="text-lg text-mystic-300 leading-relaxed">
-                Explore our latest articles below, and discover how ancient wisdom can provide clarity, direction, and empowerment in your modern journey. From understanding your wealth potential to navigating relationship challenges, these insights are designed to help you make informed decisions and align with your true destiny.
+                Explore our latest articles below, and discover how ancient Chinese astrology wisdom can provide clarity, direction, and empowerment in your modern journey. From understanding your wealth potential to navigating relationship challenges, these insights are designed to help you make informed decisions and align with your true destiny.
               </p>
             </div>
           </div>

@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion'
 import { ChevronDown, ChevronUp } from 'lucide-react'
 import { useState } from 'react'
+import SEO from '../components/SEO'
 
 const FAQ = () => {
   const [openItems, setOpenItems] = useState(new Set([0])) // First item open by default
@@ -59,7 +60,16 @@ const FAQ = () => {
   ]
 
   return (
-         <div className="min-h-screen bg-mystic-900 text-white">
+    <>
+      <SEO 
+        title="FAQ - Chinese Astrology & BaZi Reading Questions | FatePath"
+        description="Frequently asked questions about Chinese astrology, BaZi analysis, love compatibility readings, and custom talismans. Get answers from our professional Chinese numerology expert."
+        keywords="chinese astrology faq, bazi reading questions, chinese numerology faq, bazi analysis questions, love compatibility faq, custom talisman questions, chinese astrology expert answers"
+        canonical={`${window.location.origin}/faq`}
+        ogImage={`${window.location.origin}/images/bazi-reading.jpg`}
+        ogType="website"
+      />
+      <div className="min-h-screen bg-mystic-900 text-white">
        {/* Hero Section */}
        <motion.div 
          initial={{ opacity: 0 }}
@@ -89,7 +99,7 @@ const FAQ = () => {
              transition={{ duration: 0.8, delay: 0.4 }}
              className="text-lg sm:text-xl text-mystic-300 max-w-2xl mx-auto mb-8 sm:mb-12"
            >
-             Answers to common questions about BaZi analysis, love compatibility readings, and custom talismans
+             Answers to common questions about Chinese astrology, BaZi analysis, love compatibility readings, and custom talismans
            </motion.p>
         </div>
       </motion.div>
@@ -184,6 +194,7 @@ const FAQ = () => {
         </motion.div>
       </motion.div>
     </div>
+    </>
   )
 }
 

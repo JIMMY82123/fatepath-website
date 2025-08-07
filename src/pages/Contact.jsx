@@ -2,6 +2,7 @@ import { motion } from 'framer-motion'
 import { MessageCircle, Mail, Phone, MapPin, Clock, Star, Sparkles, CheckCircle } from 'lucide-react'
 import { useState } from 'react'
 import { getFormUrl } from '../config/formIds'
+import SEO from '../components/SEO'
 
 const Contact = () => {
   const [isSubmitting, setIsSubmitting] = useState(false)
@@ -163,7 +164,16 @@ const Contact = () => {
   ]
 
   return (
-    <div className="min-h-screen pt-16 sm:pt-20 px-4 sm:px-6 lg:px-8 relative overflow-hidden">
+    <>
+      <SEO 
+        title="Contact Chinese Astrology Expert | Professional BaZi Reading Consultation | FatePath"
+        description="Contact our professional Chinese astrology expert for personalized BaZi reading consultation. Get expert guidance on career, love, and life path through traditional Chinese numerology."
+        keywords="contact chinese astrology expert, bazi reading consultation, professional chinese numerology expert, bazi master contact, chinese astrology consultation, online bazi reading"
+        canonical={`${window.location.origin}/contact`}
+        ogImage={`${window.location.origin}/images/bazi-reading.jpg`}
+        ogType="website"
+      />
+      <div className="min-h-screen pt-16 sm:pt-20 px-4 sm:px-6 lg:px-8 relative overflow-hidden">
       {/* 漂浮的八卦图背景 */}
       <div className="absolute inset-0 pointer-events-none">
         <div className="absolute top-20 left-10 w-24 h-24 sm:w-32 sm:h-32 border border-gold-500/20 rounded-full animate-spin-slow"></div>
@@ -545,6 +555,7 @@ const Contact = () => {
         </motion.div>
       </div>
     </div>
+    </>
   )
 }
 

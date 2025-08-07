@@ -76,22 +76,22 @@ const Services = () => {
   return (
     <>
       <SEO 
-        title="Professional Bazi Reading Services | Chinese Numerology Expert Consultation"
-        description="Professional Bazi reading services including detailed life analysis, love compatibility, and custom talismans. Expert Chinese numerology consultation with 15+ years experience."
-        keywords="bazi reading service, chinese numerology consultation, bazi life analysis, love compatibility reading, custom talisman, professional bazi expert, chinese astrology service"
+        title="Professional Chinese Astrology & Bazi Reading Services | Chinese Numerology Expert Consultation"
+        description="Professional Chinese astrology and Bazi reading services including detailed life analysis, love compatibility, and custom talismans. Expert Chinese numerology consultation with 15+ years experience."
+        keywords="chinese astrology service, bazi reading service, chinese numerology consultation, bazi life analysis, love compatibility reading, custom talisman, professional chinese astrology expert, traditional chinese astrology, four pillars of destiny reading"
         canonical={`${window.location.origin}/services`}
         ogImage={`${window.location.origin}/images/bazi-reading.jpg`}
         ogType="website"
         structuredData={{
           "@context": "https://schema.org",
           "@type": "Service",
-          "name": "Professional Bazi Reading Services",
-          "description": "Expert Chinese numerology consultation and Bazi reading services",
+          "name": "Professional Chinese Astrology & Bazi Reading Services",
+          "description": "Expert Chinese astrology consultation and Bazi reading services",
           "provider": {
             "@type": "Organization",
             "name": "FatePath"
           },
-          "serviceType": "Chinese Numerology Consultation",
+          "serviceType": "Chinese Astrology Consultation",
           "areaServed": "Worldwide"
         }}
       />
