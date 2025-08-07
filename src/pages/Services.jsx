@@ -252,11 +252,13 @@ const Services = () => {
                    </p>
                  </div>
                  <motion.a
-                   href={services[activeService].id === 0 ? "https://www.paypal.com/ncp/payment/NVV4LATSZUD6N" :
+                   href={(services[activeService].id === 0 ? "https://www.paypal.com/ncp/payment/NVV4LATSZUD6N" :
                          services[activeService].id === 1 ? "https://www.paypal.com/ncp/payment/R9KYJ4LJNBMLY" :
-                         "https://www.paypal.com/ncp/payment/YFMMVQNT7AAMC"}
-                   target="_blank"
-                   rel="noopener noreferrer"
+                         "https://www.paypal.com/ncp/payment/YFMMVQNT7AAMC") + 
+                         "?return_url=" + encodeURIComponent(window.location.origin + 
+                         (services[activeService].id === 0 ? "/form-bazi" :
+                          services[activeService].id === 1 ? "/form-love" :
+                          "/form-talisman"))}
                    whileHover={{ scale: 1.02 }}
                    whileTap={{ scale: 0.98 }}
                    className="w-full bg-gradient-to-r from-gold-500 to-gold-600 text-black font-poppins font-semibold py-3 sm:py-4 px-6 sm:px-8 rounded-full flex items-center justify-center space-x-2 hover:from-gold-400 hover:to-gold-500 transition-all duration-300 mystic-glow tracking-wide text-sm sm:text-base"

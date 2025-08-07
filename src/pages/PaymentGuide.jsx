@@ -90,9 +90,7 @@ const PaymentGuide = () => {
                After successful payment, you'll be automatically redirected to the form page.
              </p>
                          <a
-               href={config.paypalLink}
-               target="_blank"
-               rel="noopener noreferrer"
+               href={config.paypalLink + "?return_url=" + encodeURIComponent(window.location.origin + config.formLink)}
                className={`inline-block w-full bg-gradient-to-r ${config.color} text-white font-poppins font-semibold py-4 px-8 rounded-full hover:opacity-90 transition-all duration-300 text-center tracking-wide flex items-center justify-center space-x-2`}
              >
                <svg className="h-5 w-5" viewBox="0 0 24 24" fill="currentColor">

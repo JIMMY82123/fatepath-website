@@ -320,9 +320,7 @@ const BaziFormDiscount = () => {
             {/* PayPal Payment Button */}
             <div className="space-y-4">
               <a
-                href="https://www.paypal.com/ncp/payment/9C2AYQDRSB9XY"
-                target="_blank"
-                rel="noopener noreferrer"
+                href={"https://www.paypal.com/ncp/payment/9C2AYQDRSB9XY?return_url=" + encodeURIComponent(window.location.origin + '/form-bazi-discount')}
                 className="inline-block w-full bg-gradient-to-r from-blue-500 to-blue-600 text-white font-poppins font-semibold py-4 px-8 rounded-full hover:from-blue-400 hover:to-blue-500 transition-all duration-300 text-center tracking-wide flex items-center justify-center space-x-2"
               >
                 <svg className="h-5 w-5" viewBox="0 0 24 24" fill="currentColor">

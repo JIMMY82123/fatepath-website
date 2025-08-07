@@ -42,12 +42,12 @@ const FreeBaziReport = () => {
     setShowOfferModal(false)
   }
 
-  // PayPal支付链接
-  const paypalLink = "https://www.paypal.com/ncp/payment/9C2AYQDRSB9XY"
+  // PayPal支付链接 - 添加返回URL参数
+  const paypalLink = "https://www.paypal.com/ncp/payment/9C2AYQDRSB9XY?return_url=" + encodeURIComponent(window.location.origin + '/form-bazi-discount')
 
   const handlePaypalPayment = () => {
-    // 打开PayPal支付页面
-    const paypalWindow = window.open(paypalLink, '_blank')
+    // 在当前窗口打开PayPal支付页面
+    window.location.href = paypalLink
     
     // 显示支付状态提示
     const showPaymentStatus = (message, isSuccess = false) => {
