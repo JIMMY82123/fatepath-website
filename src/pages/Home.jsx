@@ -131,16 +131,16 @@ const Home = () => {
   return (
     <>
       <SEO 
-        title="Professional Chinese Astrology & BaZi Reading Service | Free Bazi Chart Analysis | Chinese Numerology Expert"
-        description="Get your free BaZi chart analysis today! Professional Chinese astrology expert with 15+ years experience. BaZi reading for career guidance, love compatibility, wealth analysis. Online Chinese astrology consultation worldwide."
-        keywords="chinese astrology, bazi reading, free bazi chart analysis, chinese numerology expert, bazi career guidance, bazi love compatibility, bazi wealth analysis, online chinese astrology consultation, bazi master consultation, traditional chinese astrology, bazi chart calculator, bazi relationship reading, bazi life path analysis, chinese astrology reading, four pillars of destiny"
+        title="Feeling Lost? Find Your Life Direction with Chinese Astrology | Professional BaZi Reading Service"
+        description="Feeling stuck in life? Discover your true life direction with professional Chinese astrology and BaZi reading. Get clarity on your purpose, career path, and relationships. Free BaZi chart analysis for those seeking life guidance."
+        keywords="feeling lost, life direction, stuck in life, chinese astrology, bazi reading, free bazi chart analysis, chinese numerology expert, bazi career guidance, bazi love compatibility, bazi wealth analysis, online chinese astrology consultation, bazi master consultation, traditional chinese astrology, bazi chart calculator, bazi relationship reading, bazi life path analysis, chinese astrology reading, four pillars of destiny, life purpose, career guidance, relationship advice"
         author="FatePath"
-        ogTitle="Professional Chinese Astrology & BaZi Reading Service | Free Bazi Chart Analysis"
-        ogDescription="Get your free BaZi chart analysis today! Professional Chinese astrology expert with 15+ years experience. BaZi reading for career guidance, love compatibility, wealth analysis."
+        ogTitle="Feeling Lost? Find Your Life Direction with Chinese Astrology | Professional BaZi Reading Service"
+        ogDescription="Feeling stuck in life? Discover your true life direction with professional Chinese astrology and BaZi reading. Get clarity on your purpose, career path, and relationships."
         ogImage="https://fatepath.me/og-image.svg"
         ogUrl="https://fatepath.me/"
-        twitterTitle="Professional Chinese Astrology & BaZi Reading Service | Free Bazi Chart Analysis"
-        twitterDescription="Get your free BaZi chart analysis today! Professional Chinese astrology expert with 15+ years experience. BaZi reading for career guidance, love compatibility, wealth analysis."
+        twitterTitle="Feeling Lost? Find Your Life Direction with Chinese Astrology | Professional BaZi Reading Service"
+        twitterDescription="Feeling stuck in life? Discover your true life direction with professional Chinese astrology and BaZi reading. Get clarity on your purpose, career path, and relationships."
         twitterImage="https://fatepath.me/og-image.svg"
       />
 
@@ -164,12 +164,12 @@ const Home = () => {
               className="text-center"
             >
               <h1 className="text-5xl md:text-7xl font-bold text-white mb-6">
-                Discover Your
-                <span className="block text-gold-400">Destiny Path</span>
+                Feeling Lost?
+                <span className="block text-gold-400">Find Your Life Direction</span>
               </h1>
               <p className="text-xl md:text-2xl text-mystic-300 mb-8 max-w-3xl mx-auto">
-                Unlock the ancient wisdom of Chinese astrology with professional BaZi readings. 
-                Understand your life's purpose, career timing, and relationship compatibility through traditional Chinese numerology.
+                Stuck in life? Unlock the ancient wisdom of Chinese astrology with professional BaZi readings. 
+                Discover your true life purpose, career direction, and relationship path through traditional Chinese numerology.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Link

@@ -62,9 +62,9 @@ const FAQ = () => {
   return (
     <>
       <SEO 
-        title="FAQ - Chinese Astrology & BaZi Reading Questions | FatePath"
-        description="Frequently asked questions about Chinese astrology, BaZi analysis, love compatibility readings, and custom talismans. Get answers from our professional Chinese numerology expert."
-        keywords="chinese astrology faq, bazi reading questions, chinese numerology faq, bazi analysis questions, love compatibility faq, custom talisman questions, chinese astrology expert answers"
+        title="Life Direction FAQ - Chinese Astrology & Career Guidance Questions | FatePath"
+        description="Frequently asked questions about finding life direction, career guidance, and Chinese astrology. Get answers about feeling lost, stuck in life, and how BaZi analysis can help."
+        keywords="life direction faq, career guidance questions, feeling lost, stuck in life, chinese astrology faq, bazi reading questions, chinese numerology faq, bazi analysis questions, love compatibility faq, custom talisman questions, chinese astrology expert answers"
         canonical={`${window.location.origin}/faq`}
         ogImage={`${window.location.origin}/images/bazi-reading.jpg`}
         ogType="website"
@@ -99,7 +99,7 @@ const FAQ = () => {
              transition={{ duration: 0.8, delay: 0.4 }}
              className="text-lg sm:text-xl text-mystic-300 max-w-2xl mx-auto mb-8 sm:mb-12"
            >
-             Answers to common questions about Chinese astrology, BaZi analysis, love compatibility readings, and custom talismans
+             Answers to common questions about finding life direction, career guidance, Chinese astrology, BaZi analysis, love compatibility readings, and custom talismans
            </motion.p>
         </div>
       </motion.div>

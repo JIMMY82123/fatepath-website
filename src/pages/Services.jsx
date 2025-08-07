@@ -12,8 +12,8 @@ const Services = () => {
       id: 0,
       icon: <Star className="h-12 w-12" />,
       title: "Detailed Bazi Reading",
-      subtitle: "Comprehensive Life Path Analysis",
-      description: "Discover your life's blueprint through detailed Bazi (八字) analysis. Understand your personality, career strengths, relationship patterns, and life purpose based on your birth chart.",
+      subtitle: "Life Direction & Career Guidance",
+      description: "Feeling lost or stuck in life? Discover your life's blueprint through detailed Bazi (八字) analysis. Understand your personality, career strengths, relationship patterns, and life purpose based on your birth chart.",
       features: [
         "Complete personality analysis",
         "Career and life path guidance",
@@ -76,17 +76,17 @@ const Services = () => {
   return (
     <>
       <SEO 
-        title="Professional Chinese Astrology & Bazi Reading Services | Chinese Numerology Expert Consultation"
-        description="Professional Chinese astrology and Bazi reading services including detailed life analysis, love compatibility, and custom talismans. Expert Chinese numerology consultation with 15+ years experience."
-        keywords="chinese astrology service, bazi reading service, chinese numerology consultation, bazi life analysis, love compatibility reading, custom talisman, professional chinese astrology expert, traditional chinese astrology, four pillars of destiny reading"
+        title="Life Direction & Career Guidance Services | Chinese Astrology Expert Consultation"
+        description="Feeling stuck in life? Get professional life direction and career guidance through Chinese astrology and Bazi reading services. Expert consultation for those seeking clarity and purpose."
+        keywords="life direction, career guidance, feeling stuck, chinese astrology service, bazi reading service, chinese numerology consultation, bazi life analysis, love compatibility reading, custom talisman, professional chinese astrology expert, traditional chinese astrology, four pillars of destiny reading, life purpose, career advice"
         canonical={`${window.location.origin}/services`}
         ogImage={`${window.location.origin}/images/bazi-reading.jpg`}
         ogType="website"
         structuredData={{
           "@context": "https://schema.org",
           "@type": "Service",
-          "name": "Professional Chinese Astrology & Bazi Reading Services",
-          "description": "Expert Chinese astrology consultation and Bazi reading services",
+          "name": "Life Direction & Career Guidance Services",
+          "description": "Expert Chinese astrology consultation and Bazi reading services for life direction and career guidance",
           "provider": {
             "@type": "Organization",
             "name": "FatePath"
@@ -111,7 +111,7 @@ const Services = () => {
               Professional Services
             </h1>
             <p className="text-lg sm:text-xl text-mystic-300 max-w-3xl mx-auto">
-              Discover your true path through ancient Chinese wisdom and personalized guidance
+              Feeling lost or stuck in life? Discover your true path through ancient Chinese wisdom and personalized guidance
             </p>
           </motion.div>
 

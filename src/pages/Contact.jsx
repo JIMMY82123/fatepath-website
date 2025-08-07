@@ -166,9 +166,9 @@ const Contact = () => {
   return (
     <>
       <SEO 
-        title="Contact Chinese Astrology Expert | Professional BaZi Reading Consultation | FatePath"
-        description="Contact our professional Chinese astrology expert for personalized BaZi reading consultation. Get expert guidance on career, love, and life path through traditional Chinese numerology."
-        keywords="contact chinese astrology expert, bazi reading consultation, professional chinese numerology expert, bazi master contact, chinese astrology consultation, online bazi reading"
+        title="Get Life Direction Help | Contact Chinese Astrology Expert | FatePath"
+        description="Feeling lost or stuck in life? Contact our professional Chinese astrology expert for personalized life direction and career guidance. Get expert advice on finding your purpose and path."
+        keywords="life direction help, feeling lost, stuck in life, contact chinese astrology expert, bazi reading consultation, professional chinese numerology expert, bazi master contact, chinese astrology consultation, online bazi reading, career guidance, life purpose"
         canonical={`${window.location.origin}/contact`}
         ogImage={`${window.location.origin}/images/bazi-reading.jpg`}
         ogType="website"
