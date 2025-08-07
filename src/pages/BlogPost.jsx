@@ -302,7 +302,7 @@ const BlogPost = () => {
       categoryLabel: "Bazi Basics",
       date: "2025-08-07",
       readTime: "15 min read",
-      image: "/images/blog/chinese-astrology-guide.svg",
+      image: "/images/blog/chinese-astrology-guide.jpg",
       slug: "chinese-astrology-ancient-wisdom-guiding-destiny"
     },
     {
