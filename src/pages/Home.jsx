@@ -147,20 +147,20 @@ const Home = () => {
       <main className="min-h-screen bg-mystic-900">
         {/* Hero Section */}
         <header className="relative overflow-hidden">
-          <video
-            autoPlay
-            loop
-            muted
+        <video
+          autoPlay
+          loop
+          muted
             className="absolute inset-0 w-full h-full object-cover opacity-30"
-          >
-            <source src="/video-background.mp4" type="video/mp4" />
-          </video>
+        >
+          <source src="/video-background.mp4" type="video/mp4" />
+        </video>
           
           <div className="relative z-10 container mx-auto px-4 py-20">
-            <motion.div
+          <motion.div 
               initial={{ opacity: 0, y: 30 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
               className="text-center"
             >
               <h1 className="text-5xl md:text-7xl font-bold text-white mb-6">
@@ -208,8 +208,8 @@ const Home = () => {
             </motion.div>
 
             <div className="grid md:grid-cols-3 gap-8">
-              <motion.div
-                initial={{ opacity: 0, y: 30 }}
+            <motion.div 
+              initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, delay: 0.1 }}
                 viewport={{ once: true }}
@@ -231,10 +231,10 @@ const Home = () => {
                 >
                   Get Reading
                 </Link>
-              </motion.div>
+            </motion.div>
 
-              <motion.div
-                initial={{ opacity: 0, y: 30 }}
+            <motion.div 
+              initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, delay: 0.2 }}
                 viewport={{ once: true }}
@@ -244,22 +244,22 @@ const Home = () => {
                   <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
                   </svg>
-                </div>
+                    </div>
                 <h3 className="text-2xl font-bold text-white mb-4">Love Compatibility</h3>
                 <p className="text-mystic-300 mb-6">
                   Deep analysis of relationship compatibility using traditional 
                   Chinese numerology principles and modern psychology.
                 </p>
-                <Link
-                  to="/services"
+              <Link
+                to="/services"
                   className="bg-gold-400 text-white px-6 py-3 rounded-lg font-semibold hover:bg-gold-500 transition-colors"
-                >
+              >
                   Check Compatibility
-                </Link>
-              </motion.div>
+              </Link>
+            </motion.div>
 
-              <motion.div
-                initial={{ opacity: 0, y: 30 }}
+            <motion.div 
+              initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, delay: 0.3 }}
                 viewport={{ once: true }}
@@ -269,27 +269,27 @@ const Home = () => {
                   <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1" />
                   </svg>
-                </div>
+                  </div>
                 <h3 className="text-2xl font-bold text-white mb-4">Wealth Analysis</h3>
                 <p className="text-mystic-300 mb-6">
                   Discover your wealth potential and optimal timing for financial 
                   decisions through ancient Chinese prosperity principles.
                 </p>
-                <Link
+                    <Link
                   to="/services"
                   className="bg-gold-400 text-white px-6 py-3 rounded-lg font-semibold hover:bg-gold-500 transition-colors"
-                >
+                    >
                   Analyze Wealth
-                </Link>
+                    </Link>
               </motion.div>
-            </div>
-          </div>
+                    </div>
+                  </div>
         </section>
 
         {/* Testimonials */}
         <section className="py-20 bg-mystic-900">
           <div className="container mx-auto px-4">
-            <motion.div
+          <motion.div 
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8 }}
@@ -298,12 +298,12 @@ const Home = () => {
             >
               <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
                 What Our Clients Say
-              </h2>
+                </h2>
               <p className="text-xl text-mystic-300">
                 Real experiences from people who discovered their destiny path
               </p>
-            </motion.div>
-
+              </motion.div>
+              
             <div className="max-w-4xl mx-auto">
               <motion.div
                 key={currentTestimonial}
@@ -319,7 +319,7 @@ const Home = () => {
                     alt={`${testimonials[currentTestimonial].name} - ${testimonials[currentTestimonial].role}`}
                     className="w-16 h-16 rounded-full object-cover"
                   />
-                </div>
+                    </div>
                 <p className="text-lg text-mystic-300 mb-4 italic">
                   "{testimonials[currentTestimonial].content}"
                 </p>
@@ -327,29 +327,29 @@ const Home = () => {
                   {testimonials[currentTestimonial].name}
                 </h4>
                 <p className="text-gold-400">{testimonials[currentTestimonial].role}</p>
-              </motion.div>
+          </motion.div>
 
               <div className="flex justify-center mt-8 space-x-2">
                 {testimonials.map((_, index) => (
-                  <button
-                    key={index}
+                   <button
+                     key={index}
                     onClick={() => setCurrentTestimonial(index)}
                     className={`w-3 h-3 rounded-full transition-colors ${
                       index === currentTestimonial ? 'bg-gold-400' : 'bg-mystic-600'
                     }`}
                     aria-label={`View testimonial ${index + 1}`}
-                  />
-                ))}
-              </div>
+                   />
+                 ))}
+               </div>
             </div>
-          </div>
+            </div>
         </section>
 
         {/* Celebrity Section */}
         <section className="py-20 bg-mystic-800">
           <div className="container mx-auto px-4">
-            <motion.div
-              initial={{ opacity: 0, y: 30 }}
+                                                   <motion.div
+                    initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8 }}
               viewport={{ once: true }}
@@ -360,8 +360,8 @@ const Home = () => {
               </h2>
               <p className="text-xl text-mystic-300">
                 Famous personalities who embrace ancient wisdom
-              </p>
-            </motion.div>
+                     </p>
+                 </motion.div>
 
             <div className="max-w-4xl mx-auto">
               <motion.div
@@ -382,7 +382,7 @@ const Home = () => {
                 <cite className="text-lg font-bold text-gold-400">
                   — {celebrities[currentCelebrity].name}
                 </cite>
-              </motion.div>
+          </motion.div>
 
               <div className="flex justify-center mt-8 space-x-2">
                 {celebrities.map((_, index) => (
@@ -395,16 +395,16 @@ const Home = () => {
                     aria-label={`View celebrity ${index + 1}`}
                   />
                 ))}
-              </div>
-            </div>
-          </div>
+                  </div>
+                 </div>
+                  </div>
         </section>
 
         {/* Blog Preview */}
         <section className="py-20 bg-mystic-900">
           <div className="container mx-auto px-4">
-            <motion.div
-              initial={{ opacity: 0, y: 30 }}
+               <motion.div
+                 initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8 }}
               viewport={{ once: true }}
@@ -416,7 +416,7 @@ const Home = () => {
               <p className="text-xl text-mystic-300">
                 Discover the wisdom of ancient Chinese numerology
               </p>
-            </motion.div>
+          </motion.div>
 
             <div className="grid md:grid-cols-3 gap-8">
               {blogPosts.map((post, index) => (
@@ -429,7 +429,7 @@ const Home = () => {
                   className="bg-mystic-800 rounded-lg overflow-hidden hover:transform hover:scale-105 transition-all duration-300"
                 >
                   <LazyImage
-                    src={post.image}
+                      src={post.image}
                     alt={`${post.title} - Blog post thumbnail`}
                     className="w-full h-48 object-cover"
                   />
@@ -437,8 +437,8 @@ const Home = () => {
                     <div className="flex items-center text-sm text-mystic-400 mb-3">
                       <span>{post.date}</span>
                       <span className="mx-2">•</span>
-                      <span>{post.readTime}</span>
-                    </div>
+                        <span>{post.readTime}</span>
+                      </div>
                     <h3 className="text-xl font-bold text-white mb-3">
                       {post.title}
                     </h3>
@@ -470,13 +470,13 @@ const Home = () => {
                 View All Articles
               </Link>
             </motion.div>
-          </div>
+            </div>
         </section>
 
-        {/* CTA Section */}
+          {/* CTA Section */}
         <section className="py-20 bg-gradient-to-r from-mystic-800 to-mystic-900">
           <div className="container mx-auto px-4 text-center">
-            <motion.div
+          <motion.div 
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8 }}
@@ -489,14 +489,14 @@ const Home = () => {
                 Get your free BaZi report today and unlock the ancient wisdom 
                 that will guide your life's journey.
               </p>
-              <Link
-                to="/services"
+                <Link
+                  to="/services"
                 className="bg-gradient-to-r from-gold-400 to-gold-600 text-white px-10 py-5 rounded-lg text-xl font-bold hover:from-gold-500 hover:to-gold-700 transition-all duration-300 transform hover:scale-105"
               >
                 Start Your Free Reading
-              </Link>
-            </motion.div>
-          </div>
+                </Link>
+          </motion.div>
+        </div>
         </section>
       </main>
     </>

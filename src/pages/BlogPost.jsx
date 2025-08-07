@@ -52,6 +52,261 @@ const BlogPost = () => {
   const blogPosts = [
     {
       id: 1,
+      title: "Chinese Astrology: Discover the Ancient Wisdom Guiding Your Destiny",
+      excerpt: "In a world constantly searching for meaning, more people are turning to ancient wisdom for insight and clarity. Discover how Chinese astrology reveals your life's blueprint through the Five Elements and BaZi analysis.",
+      author: "Xuan Yin",
+      tags: ["Chinese Astrology", "BaZi Analysis", "Five Elements", "Ancient Wisdom", "Life Guidance", "Destiny", "Chinese Zodiac", "Yin Yang"],
+      content: `
+        <div className="mb-8">
+          <p className="text-lg text-mystic-300 leading-relaxed mb-4 italic">
+            "When you understand your energy, you understand your life."
+          </p>
+          <p className="text-sm text-mystic-400">—Ancient Chinese wisdom</p>
+        </div>
+
+        <h2 className="text-2xl font-cinzel font-bold text-white mb-4 mt-8">Introduction</h2>
+        <p className="mb-6 text-mystic-300 leading-relaxed">
+          In a world constantly searching for meaning, more people are turning to ancient wisdom for insight and clarity. One such profound system is Chinese astrology, a timeless framework rooted in thousands of years of Eastern metaphysics. Unlike Western astrology, which focuses on the positions of planets and stars, Chinese astrology is based on your birth date and time, interpreted through the Chinese zodiac, the Five Elements (Wu Xing), and the concept of Yin and Yang.
+        </p>
+
+        <h2 className="text-2xl font-cinzel font-bold text-white mb-4 mt-8">What Is Chinese Astrology?</h2>
+        <p className="mb-6 text-mystic-300 leading-relaxed">
+          Chinese astrology is a holistic system combining:
+        </p>
+        <ul className="space-y-3 mb-6 text-mystic-300">
+          <li className="flex items-start space-x-3">
+            <div className="w-2 h-2 bg-gold-400 rounded-full mt-2 flex-shrink-0"></div>
+            <span><strong>The 12 Chinese Zodiac Animals</strong> (Rat to Pig)</span>
+          </li>
+          <li className="flex items-start space-x-3">
+            <div className="w-2 h-2 bg-gold-400 rounded-full mt-2 flex-shrink-0"></div>
+            <span><strong>The Five Elements</strong> (Wood, Fire, Earth, Metal, Water)</span>
+          </li>
+          <li className="flex items-start space-x-3">
+            <div className="w-2 h-2 bg-gold-400 rounded-full mt-2 flex-shrink-0"></div>
+            <span><strong>Yin and Yang energy</strong></span>
+          </li>
+          <li className="flex items-start space-x-3">
+            <div className="w-2 h-2 bg-gold-400 rounded-full mt-2 flex-shrink-0"></div>
+            <span><strong>Heavenly Stems and Earthly Branches</strong></span>
+          </li>
+          <li className="flex items-start space-x-3">
+            <div className="w-2 h-2 bg-gold-400 rounded-full mt-2 flex-shrink-0"></div>
+            <span><strong>BaZi (Four Pillars of Destiny)</strong> – a deeper chart revealing your life's blueprint</span>
+          </li>
+        </ul>
+
+        <p className="mb-6 text-mystic-300 leading-relaxed">
+          Every person has a unique elemental and energetic makeup based on these principles. Your Chinese birth chart reveals personality traits, strengths, weaknesses, and even potential timing for success, challenges, or love.
+        </p>
+
+        <h2 className="text-2xl font-cinzel font-bold text-white mb-4 mt-8">Why Is It Still Relevant Today?</h2>
+        <p className="mb-6 text-mystic-300 leading-relaxed">
+          In modern times, Chinese astrology is used for:
+        </p>
+        <ul className="space-y-3 mb-6 text-mystic-300">
+          <li className="flex items-start space-x-3">
+            <div className="w-2 h-2 bg-gold-400 rounded-full mt-2 flex-shrink-0"></div>
+            <span><strong>Self-discovery & life guidance</strong></span>
+          </li>
+          <li className="flex items-start space-x-3">
+            <div className="w-2 h-2 bg-gold-400 rounded-full mt-2 flex-shrink-0"></div>
+            <span><strong>Career decisions & timing strategies</strong></span>
+          </li>
+          <li className="flex items-start space-x-3">
+            <div className="w-2 h-2 bg-gold-400 rounded-full mt-2 flex-shrink-0"></div>
+            <span><strong>Compatibility analysis in relationships</strong></span>
+          </li>
+          <li className="flex items-start space-x-3">
+            <div className="w-2 h-2 bg-gold-400 rounded-full mt-2 flex-shrink-0"></div>
+            <span><strong>Feng Shui alignment</strong></span>
+          </li>
+          <li className="flex items-start space-x-3">
+            <div className="w-2 h-2 bg-gold-400 rounded-full mt-2 flex-shrink-0"></div>
+            <span><strong>Choosing auspicious dates for key events</strong> (e.g., weddings, business launches)</span>
+          </li>
+        </ul>
+
+        <p className="mb-6 text-mystic-300 leading-relaxed">
+          It has become a powerful tool for those seeking to live in harmony with their natural energy and cosmic cycles.
+        </p>
+
+        <h2 className="text-2xl font-cinzel font-bold text-white mb-4 mt-8">The 12 Zodiac Signs – More Than Just Your Birth Year</h2>
+        <p className="mb-6 text-mystic-300 leading-relaxed">
+          Most people know their Chinese zodiac sign, like "I'm a Tiger" or "She's a Rabbit." But that's just the beginning.
+        </p>
+        <p className="mb-6 text-mystic-300 leading-relaxed">
+          Each zodiac sign has:
+        </p>
+        <ul className="space-y-3 mb-6 text-mystic-300">
+          <li className="flex items-start space-x-3">
+            <div className="w-2 h-2 bg-gold-400 rounded-full mt-2 flex-shrink-0"></div>
+            <span><strong>A personality profile</strong></span>
+          </li>
+          <li className="flex items-start space-x-3">
+            <div className="w-2 h-2 bg-gold-400 rounded-full mt-2 flex-shrink-0"></div>
+            <span><strong>A compatibility pattern with other signs</strong></span>
+          </li>
+          <li className="flex items-start space-x-3">
+            <div className="w-2 h-2 bg-gold-400 rounded-full mt-2 flex-shrink-0"></div>
+            <span><strong>A five-element modifier based on birth year</strong></span>
+          </li>
+          <li className="flex items-start space-x-3">
+            <div className="w-2 h-2 bg-gold-400 rounded-full mt-2 flex-shrink-0"></div>
+            <span><strong>A role in your BaZi Four Pillars</strong></span>
+          </li>
+        </ul>
+
+        <p className="mb-6 text-mystic-300 leading-relaxed">
+          For example, two people born in the same Dragon year may have completely different destiny paths depending on their month, day, and hour of birth.
+        </p>
+
+        <h2 className="text-2xl font-cinzel font-bold text-white mb-4 mt-8">What Is BaZi and How Is It Different?</h2>
+        <p className="mb-6 text-mystic-300 leading-relaxed">
+          BaZi (八字) means "Eight Characters" – referring to the four pillars of your birth:
+        </p>
+        <ul className="space-y-3 mb-6 text-mystic-300">
+          <li className="flex items-start space-x-3">
+            <div className="w-2 h-2 bg-gold-400 rounded-full mt-2 flex-shrink-0"></div>
+            <span><strong>Year Pillar</strong> (social influence)</span>
+          </li>
+          <li className="flex items-start space-x-3">
+            <div className="w-2 h-2 bg-gold-400 rounded-full mt-2 flex-shrink-0"></div>
+            <span><strong>Month Pillar</strong> (career and parents)</span>
+          </li>
+          <li className="flex items-start space-x-3">
+            <div className="w-2 h-2 bg-gold-400 rounded-full mt-2 flex-shrink-0"></div>
+            <span><strong>Day Pillar</strong> (self and spouse)</span>
+          </li>
+          <li className="flex items-start space-x-3">
+            <div className="w-2 h-2 bg-gold-400 rounded-full mt-2 flex-shrink-0"></div>
+            <span><strong>Hour Pillar</strong> (children, desires, legacy)</span>
+          </li>
+        </ul>
+
+        <p className="mb-6 text-mystic-300 leading-relaxed">
+          Each pillar includes a Heavenly Stem and Earthly Branch, linked to elements and zodiac animals. A BaZi analysis uncovers:
+        </p>
+        <ul className="space-y-3 mb-6 text-mystic-300">
+          <li className="flex items-start space-x-3">
+            <div className="w-2 h-2 bg-gold-400 rounded-full mt-2 flex-shrink-0"></div>
+            <span><strong>Hidden talents</strong></span>
+          </li>
+          <li className="flex items-start space-x-3">
+            <div className="w-2 h-2 bg-gold-400 rounded-full mt-2 flex-shrink-0"></div>
+            <span><strong>Relationship patterns</strong></span>
+          </li>
+          <li className="flex items-start space-x-3">
+            <div className="w-2 h-2 bg-gold-400 rounded-full mt-2 flex-shrink-0"></div>
+            <span><strong>Wealth potential</strong></span>
+          </li>
+          <li className="flex items-start space-x-3">
+            <div className="w-2 h-2 bg-gold-400 rounded-full mt-2 flex-shrink-0"></div>
+            <span><strong>Life turning points</strong></span>
+          </li>
+          <li className="flex items-start space-x-3">
+            <div className="w-2 h-2 bg-gold-400 rounded-full mt-2 flex-shrink-0"></div>
+            <span><strong>Annual and 10-year energy cycles</strong></span>
+          </li>
+        </ul>
+
+        <p className="mb-6 text-mystic-300 leading-relaxed">
+          Think of it as your personal energetic blueprint.
+        </p>
+
+        <div className="bg-gradient-to-r from-gold-900/50 to-yellow-900/50 p-6 rounded-xl border border-gold-500/30 mb-8">
+          <h3 className="text-lg font-cinzel font-semibold text-gold-400 mb-4">Chinese Astrology vs Western Astrology</h3>
+          <div className="overflow-x-auto">
+            <table className="w-full text-sm">
+              <thead>
+                <tr className="border-b border-gold-500/30">
+                  <th className="text-left p-2 text-gold-400 font-semibold">Feature</th>
+                  <th className="text-left p-2 text-gold-400 font-semibold">Chinese Astrology</th>
+                  <th className="text-left p-2 text-gold-400 font-semibold">Western Astrology</th>
+                </tr>
+              </thead>
+              <tbody className="text-mystic-300">
+                <tr className="border-b border-gold-500/20">
+                  <td className="p-2 font-medium">Basis</td>
+                  <td className="p-2">Birth date/time & elements</td>
+                  <td className="p-2">Birth date/time & planets</td>
+                </tr>
+                <tr className="border-b border-gold-500/20">
+                  <td className="p-2 font-medium">Signs</td>
+                  <td className="p-2">12 Animal Zodiac + Elements</td>
+                  <td className="p-2">12 Sun Signs</td>
+                </tr>
+                <tr className="border-b border-gold-500/20">
+                  <td className="p-2 font-medium">Core Chart System</td>
+                  <td className="p-2">Four Pillars of Destiny (BaZi)</td>
+                  <td className="p-2">Natal Chart with planetary aspects</td>
+                </tr>
+                <tr className="border-b border-gold-500/20">
+                  <td className="p-2 font-medium">Key Concepts</td>
+                  <td className="p-2">Yin-Yang, 5 Elements, Stems/Branches</td>
+                  <td className="p-2">Houses, Planets, Aspects</td>
+                </tr>
+                <tr>
+                  <td className="p-2 font-medium">Applications</td>
+                  <td className="p-2">Destiny planning, compatibility, Feng Shui</td>
+                  <td className="p-2">Psychology, life purpose</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <h2 className="text-2xl font-cinzel font-bold text-white mb-4 mt-8">How to Start Exploring Your Chinese Birth Chart</h2>
+        <p className="mb-6 text-mystic-300 leading-relaxed">
+          To truly understand your Chinese astrology chart, you'll need:
+        </p>
+        <ul className="space-y-3 mb-6 text-mystic-300">
+          <li className="flex items-start space-x-3">
+            <div className="w-2 h-2 bg-gold-400 rounded-full mt-2 flex-shrink-0"></div>
+            <span><strong>Your exact birth date and time</strong></span>
+          </li>
+          <li className="flex items-start space-x-3">
+            <div className="w-2 h-2 bg-gold-400 rounded-full mt-2 flex-shrink-0"></div>
+            <span><strong>A BaZi chart calculator or a professional reading</strong></span>
+          </li>
+          <li className="flex items-start space-x-3">
+            <div className="w-2 h-2 bg-gold-400 rounded-full mt-2 flex-shrink-0"></div>
+            <span><strong>Guidance from an experienced practitioner</strong> who can explain your elemental balance and life path</span>
+          </li>
+        </ul>
+
+        <div className="mystic-card p-6 border-l-4 border-gold-500/50 mb-8">
+          <p className="text-mystic-300">
+            👉 On our website, you can get a personalized BaZi report that reveals your destiny map and guides your next step — whether you're facing a tough decision, entering a new phase of life, or simply seeking clarity.
+          </p>
+        </div>
+
+        <h2 className="text-2xl font-cinzel font-bold text-white mb-4 mt-8">Conclusion: Your Destiny Is a Code Waiting to Be Decoded</h2>
+        <p className="mb-6 text-mystic-300 leading-relaxed">
+          Chinese astrology doesn't predict fate — it reveals the timing and tendencies in your life, empowering you to make better decisions, align with your purpose, and find peace.
+        </p>
+        <p className="mb-6 text-mystic-300 leading-relaxed">
+          In a chaotic world, ancient wisdom offers a grounded, timeless truth:
+        </p>
+        <div className="bg-gradient-to-r from-gold-900/50 to-yellow-900/50 p-6 rounded-xl border border-gold-500/30 mb-8">
+          <p className="text-xl font-cinzel font-semibold text-gold-400 text-center">
+            🔮 When you understand your energy, you understand your life.
+          </p>
+        </div>
+        <p className="mb-6 text-mystic-300 leading-relaxed">
+          Want to explore your own destiny?<br>
+          Start with your BaZi chart today — uncover the patterns, discover your strengths, and align with the natural flow of your life. 🌙
+        </p>
+      `,
+      category: "bazi-basics",
+      categoryLabel: "Bazi Basics",
+      date: "2025-08-07",
+      readTime: "15 min read",
+      image: "/images/blog/chinese-astrology-guide.svg",
+      slug: "chinese-astrology-ancient-wisdom-guiding-destiny"
+    },
+    {
+      id: 2,
       title: "📈 You Think This Market Rally Is a Turning Point? A Bigger Crisis Is Brewing Beneath the Surface",
                   excerpt: "In early August 2025, the Dow Jones surged by 580 points. But is this really a turning point, or just the calm before a more devastating storm?",
       author: "玄印 (Xuan Yin)",

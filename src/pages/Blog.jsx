@@ -76,6 +76,17 @@ const Blog = () => {
   const blogPosts = [
     {
       id: 1,
+      title: "Chinese Astrology: Discover the Ancient Wisdom Guiding Your Destiny",
+      excerpt: "In a world constantly searching for meaning, more people are turning to ancient wisdom for insight and clarity. Discover how Chinese astrology reveals your life's blueprint through the Five Elements and BaZi analysis.",
+      category: "bazi-basics",
+      categoryLabel: "Bazi Basics",
+      date: "2025-08-07",
+      readTime: "15 min read",
+      image: "/images/blog/chinese-astrology-guide.svg",
+      slug: "chinese-astrology-ancient-wisdom-guiding-destiny"
+    },
+    {
+      id: 2,
       title: "📈 You Think This Market Rally Is a Turning Point? A Bigger Crisis Is Brewing Beneath the Surface",
                   excerpt: "In early August 2025, the Dow Jones surged by 580 points. But is this really a turning point, or just the calm before a more devastating storm?",
       category: "market-analysis",
@@ -86,7 +97,7 @@ const Blog = () => {
       slug: "market-rally-turning-point-crisis-2025"
     },
     {
-      id: 2,
+      id: 3,
       title: "Understanding Your Bazi Chart: A Beginner's Guide",
                   excerpt: "Learn the fundamentals of Bazi analysis and how your birth chart reveals your life's blueprint. Discover the four pillars in Chinese astrology.",
       category: "bazi-basics",
@@ -97,7 +108,7 @@ const Blog = () => {
       slug: "understanding-bazi-chart-beginners-guide"
     },
     {
-      id: 3,
+      id: 4,
       title: "The Five Elements in Love: Finding Your Perfect Match",
                   excerpt: "Explore how the Five Elements influence romantic compatibility. Discover which elements create harmony and which may lead to challenges.",
       category: "love-compatibility",
@@ -108,7 +119,7 @@ const Blog = () => {
       slug: "five-elements-love-perfect-match"
     },
     {
-      id: 4,
+      id: 5,
       title: "Protection Talismans: Ancient Wisdom for Modern Life",
                   excerpt: "Discover the power of personalized talismans and how they can enhance your luck and protection based on your unique birth chart.",
       category: "talismans",
@@ -119,7 +130,7 @@ const Blog = () => {
       slug: "protection-talismans-ancient-wisdom"
     },
     {
-      id: 5,
+      id: 6,
       title: "Career Timing: When to Make Your Next Big Move",
                   excerpt: "Learn how to identify the optimal timing for career changes and business ventures using traditional Chinese numerology.",
       category: "career-timing",
@@ -130,7 +141,7 @@ const Blog = () => {
       slug: "career-timing-next-big-move"
     },
     {
-      id: 6,
+      id: 7,
       title: "2024 Year of the Dragon: Your Fortune Forecast",
                   excerpt: "Discover what the Year of the Dragon 2024 holds for you based on your Bazi chart. Learn about opportunities and how to maximize your luck this year.",
       category: "bazi-basics",
@@ -141,7 +152,7 @@ const Blog = () => {
       slug: "2024-year-dragon-fortune-forecast"
     },
         {
-          id: 7,
+          id: 8,
           title: "When Bitcoin Falls, What Does Destiny Say?",
           excerpt: "Discover how BaZi destiny charts reveal insights into financial volatility and the August 2025 Bitcoin crash.",
           category: "career-timing",
@@ -152,7 +163,7 @@ const Blog = () => {
           slug: "bitcoin-crash-bazi-destiny"
         },
         {
-          id: 8,
+          id: 9,
           title: "Burned by the Heat: What 2025's Extreme Temperatures Reveal in BaZi",
                       excerpt: "Explore how global heatwaves reflect Fire element imbalances in Chinese metaphysics and what your BaZi chart reveals about stress and destiny in 2025.",
           category: "bazi-basics",
@@ -163,7 +174,7 @@ const Blog = () => {
           slug: "heatwave-bazi-fire-imbalance"
         },
         {
-          id: 9,
+          id: 10,
           title: "What is the Best Bazi for Wealth? Decoding Your Chinese Astrology Blueprint",
                       excerpt: "Discover the 3 wealthiest Bazi patterns in Chinese metaphysics and how to activate your financial potential. Based on 10,000+ client cases.",
           category: "wealth-bazi",
@@ -174,7 +185,7 @@ const Blog = () => {
           slug: "best-bazi-wealth-chinese-astrology-blueprint"
         },
         {
-          id: 10,
+          id: 11,
           title: "🌿 The Seasons of Fate: Why You Don't Have to Panic About Every Downturn",
                       excerpt: "Discover how BaZi reveals that life's challenges are natural cycles, not punishments. Learn to flow with your destiny's seasons.",
           category: "bazi-basics",
@@ -185,7 +196,7 @@ const Blog = () => {
           slug: "seasons-fate-cycles"
         },
         {
-          id: 11,
+          id: 12,
           title: "BaZi vs. MBTI: East Meets West in Personality and Destiny",
                       excerpt: "Explore how ancient Chinese BaZi and Western MBTI personality systems complement each other. Discover destiny mapping vs personality typing.",
           category: "bazi-basics",
@@ -196,7 +207,7 @@ const Blog = () => {
           slug: "bazi-vs-mbti-personality-destiny"
         },
                           {
-          id: 12,
+          id: 13,
           title: "Why the Energy of a Solar Eclipse May Align With Lu Gen Planting Rituals",
                       excerpt: "Discover how celestial events like solar eclipses can amplify collective energy and how ancient Taoist Lu Gen rituals help personalize cosmic shifts.",
           category: "bazi-basics",
@@ -207,7 +218,7 @@ const Blog = () => {
           slug: "solar-eclipse-energy-lu-gen-planting-rituals"
         },
         {
-          id: 13,
+          id: 14,
           title: "Using BaZi to Predict When Your True Love Will Appear",
                       excerpt: "Love is one of life's most profound mysteries. But what if ancient Chinese metaphysics could offer clues—not just about if you'll meet your true love, but when?",
           category: "love-compatibility",
