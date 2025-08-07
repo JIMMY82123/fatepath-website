@@ -2,6 +2,8 @@ import { useState } from 'react'
 import { motion } from 'framer-motion'
 import { Calendar, Clock, ArrowRight, Search, Filter, Share2 } from 'lucide-react'
 import { Link } from 'react-router-dom'
+import SEO from '../components/SEO'
+import LazyImage from '../components/LazyImage'
 
 const Blog = () => {
   const [searchTerm, setSearchTerm] = useState('')
@@ -245,7 +247,49 @@ const Blog = () => {
   }
 
   return (
-    <div className="min-h-screen pt-16 sm:pt-20 px-4 sm:px-6 lg:px-8">
+    <>
+      <SEO
+        title="博客 | FatePath - 中国命理学与八字分析"
+        description="探索古代中国命理学智慧，实用的八字分析指导和精神智慧，照亮您的人生道路，提升您的人生旅程。"
+        keywords="博客, 八字分析, 中国命理学, 五行, 阴阳, 命运, 人生指导, 古代智慧"
+        canonical="https://fatepath.me/blog"
+        ogImage="https://fatepath.me/images/blog/mystic-wisdom-cover.jpg"
+        ogType="website"
+        structuredData={{
+          "@context": "https://schema.org",
+          "@type": "Blog",
+          "name": "FatePath Mystic Wisdom Blog",
+          "description": "Ancient Chinese numerology insights, practical guidance, and spiritual wisdom",
+          "url": "https://fatepath.me/blog",
+          "publisher": {
+            "@type": "Organization",
+            "name": "FatePath",
+            "url": "https://fatepath.me"
+          },
+          "blogPost": blogPosts.map(post => ({
+            "@type": "BlogPosting",
+            "headline": post.title,
+            "description": post.excerpt,
+            "datePublished": post.date,
+            "dateModified": post.date,
+            "author": {
+              "@type": "Person",
+              "name": "玄印 (Xuan Yin)"
+            },
+            "publisher": {
+              "@type": "Organization",
+              "name": "FatePath"
+            },
+            "url": `https://fatepath.me/blog/${post.slug}`,
+            "image": `https://fatepath.me${post.image}`,
+            "mainEntityOfPage": {
+              "@type": "WebPage",
+              "@id": `https://fatepath.me/blog/${post.slug}`
+            }
+          }))
+        }}
+      />
+      <div className="min-h-screen pt-16 sm:pt-20 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
         {/* Header */}
         <motion.div 
@@ -349,14 +393,10 @@ const Blog = () => {
             >
               {/* Article Image */}
               <div className="relative h-48 overflow-hidden">
-                <img
+                <LazyImage
                   src={post.image}
-                  alt={post.title}
+                  alt={`Featured image for article: ${post.title}`}
                   className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
-                  onError={(e) => {
-                    e.target.style.display = 'none';
-                    e.target.nextSibling.style.display = 'flex';
-                  }}
                 />
                 {/* Fallback Placeholder */}
                 <div className="hidden w-full h-full bg-gradient-to-br from-mystic-800 to-mystic-900 flex items-center justify-center">
@@ -478,6 +518,7 @@ const Blog = () => {
         </motion.div>
       </div>
     </div>
+    </>
   )
 }
 

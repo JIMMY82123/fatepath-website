@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom'
 import { ArrowRight, Star, Sparkles, Eye, Heart, Shield, Quote, ChevronLeft, ChevronRight, Users, Award, Clock, Zap, Calendar } from 'lucide-react'
 import SEO from '../components/SEO'
 import { getCachedAIAvatar } from '../utils/aiAvatarGenerator'
+import LazyImage from '../components/LazyImage'
 
 const Home = () => {
   const [currentTestimonial, setCurrentTestimonial] = useState(0)
@@ -514,15 +515,10 @@ const Home = () => {
                       </div>
 
                                                                                            <div className="flex items-center space-x-3 sm:space-x-4 mt-auto">
-                                                 <img
+                                                 <LazyImage
                            src={getCachedAIAvatar(featuredTestimonials[currentTestimonial])}
                            alt={`${featuredTestimonials[currentTestimonial].name}, satisfied client from ${featuredTestimonials[currentTestimonial].location}`}
                            className="w-12 h-12 sm:w-14 md:w-16 sm:h-14 md:h-16 rounded-full object-cover border-2 border-gold-500/30"
-                           onError={(e) => {
-                             // 如果图片加载失败，显示占位符
-                             e.target.style.display = 'none';
-                             e.target.nextSibling.style.display = 'flex';
-                           }}
                          />
                         <div className="w-12 h-12 sm:w-14 md:w-16 sm:h-14 md:h-16 rounded-full bg-gradient-to-br from-gold-400 to-gold-600 flex items-center justify-center border-2 border-gold-500/30 hidden">
                                                      <span className="text-white font-bold text-xs sm:text-sm">
@@ -552,6 +548,7 @@ const Home = () => {
                        setDirection(index > currentTestimonial ? 1 : -1)
                        setCurrentTestimonial(index)
                      }}
+                     aria-label={`查看第${index + 1}条客户推荐`}
                      className={`w-1 h-1 sm:w-1.5 sm:h-1.5 md:w-2 md:h-2 rounded-full transition-all duration-300 ${
                        index === currentTestimonial 
                          ? 'bg-gold-400' 

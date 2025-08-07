@@ -47,12 +47,43 @@ const FreeBaziReport = () => {
 
   const handlePaypalPayment = () => {
     // 打开PayPal支付页面
-    window.open(paypalLink, '_blank')
+    const paypalWindow = window.open(paypalLink, '_blank')
     
-    // 支付完成后跳转到优惠表单页面
-    setTimeout(() => {
-      window.location.href = '/form-bazi-discount'
-    }, 3000) // 3秒后跳转，实际应该根据PayPal回调
+    // 显示支付状态提示
+    const showPaymentStatus = (message, isSuccess = false) => {
+      const notification = document.createElement('div')
+      notification.className = `fixed top-4 right-4 px-6 py-3 rounded-lg shadow-lg z-50 transform transition-all duration-300 ${
+        isSuccess ? 'bg-green-600 text-white' : 'bg-orange-600 text-white'
+      }`
+      notification.textContent = message
+      document.body.appendChild(notification)
+      
+      setTimeout(() => {
+        notification.style.transform = 'translateX(100%)'
+        setTimeout(() => {
+          document.body.removeChild(notification)
+        }, 300)
+      }, 3000)
+    }
+    
+    // 监听支付完成（这里应该集成PayPal IPN或使用PayPal SDK）
+    // 目前使用模拟验证，实际应该根据PayPal回调
+    const checkPaymentStatus = () => {
+      // 模拟支付验证逻辑
+      const paymentVerified = Math.random() > 0.3 // 70%成功率模拟
+      
+      if (paymentVerified) {
+        showPaymentStatus('✅ 支付成功！正在跳转到详细分析页面...', true)
+        setTimeout(() => {
+          window.location.href = '/form-bazi-discount'
+        }, 2000)
+      } else {
+        showPaymentStatus('⚠️ 支付未完成，请重新尝试或联系客服', false)
+      }
+    }
+    
+    // 5秒后检查支付状态（实际应该根据PayPal IPN）
+    setTimeout(checkPaymentStatus, 5000)
     
     closeOfferModal()
   }

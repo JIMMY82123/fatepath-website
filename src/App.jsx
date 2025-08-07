@@ -5,6 +5,7 @@ import { useEffect, Suspense, lazy } from 'react'
 import Navbar from './components/Navbar'
 import Footer from './components/Footer'
 import { PageLoader } from './components/LoadingSpinner'
+import useScrollToTop from './hooks/useScrollToTop'
 
 // 懒加载页面组件
 const Home = lazy(() => import('./pages/Home'))
@@ -31,6 +32,9 @@ import ErrorBoundary from './components/ErrorBoundary'
 function App() {
   // 启用页面浏览跟踪
   // usePageTracking();
+  
+  // 路由跳转时滚动到顶部
+  useScrollToTop();
   
   // 初始化移动端优化和性能监控
   useEffect(() => {

@@ -6,6 +6,7 @@ import { getFormUrl } from '../config/formIds'
 const Contact = () => {
   const [isSubmitting, setIsSubmitting] = useState(false)
   const [isSubmitted, setIsSubmitted] = useState(false)
+  const [errors, setErrors] = useState({})
   const [formData, setFormData] = useState({
     firstName: '',
     lastName: '',
@@ -31,8 +32,57 @@ const Contact = () => {
     }))
   }
 
+  // 表单验证函数
+  const validateForm = () => {
+    const newErrors = {}
+    
+    // 验证姓名
+    if (!formData.firstName.trim()) {
+      newErrors.firstName = '请输入您的名字'
+    } else if (formData.firstName.trim().length < 2) {
+      newErrors.firstName = '名字至少需要2个字符'
+    }
+    
+    if (!formData.lastName.trim()) {
+      newErrors.lastName = '请输入您的姓氏'
+    } else if (formData.lastName.trim().length < 2) {
+      newErrors.lastName = '姓氏至少需要2个字符'
+    }
+    
+    // 验证邮箱
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
+    if (!formData.email.trim()) {
+      newErrors.email = '请输入您的邮箱地址'
+    } else if (!emailRegex.test(formData.email)) {
+      newErrors.email = '请输入有效的邮箱地址'
+    }
+    
+    // 验证服务兴趣
+    if (!formData.serviceInterest.trim()) {
+      newErrors.serviceInterest = '请选择您感兴趣的服务'
+    }
+    
+    // 验证消息
+    if (!formData.message.trim()) {
+      newErrors.message = '请输入您的消息'
+    } else if (formData.message.trim().length < 10) {
+      newErrors.message = '消息至少需要10个字符'
+    } else if (formData.message.trim().length > 1000) {
+      newErrors.message = '消息不能超过1000个字符'
+    }
+    
+    setErrors(newErrors)
+    return Object.keys(newErrors).length === 0
+  }
+
   const handleSubmit = async (e) => {
     e.preventDefault()
+    
+    // 验证表单
+    if (!validateForm()) {
+      return
+    }
+    
     setIsSubmitting(true)
 
     try {
@@ -57,12 +107,24 @@ const Contact = () => {
           serviceInterest: '',
           message: ''
         })
+        setErrors({})
       } else {
         throw new Error('Submission failed')
       }
     } catch (error) {
       console.error('Error submitting form:', error)
-      alert('There was an error submitting your message. Please try again or contact me directly.')
+      // 显示友好的错误提示
+      const errorMessage = document.createElement('div')
+      errorMessage.className = 'fixed top-4 right-4 bg-red-600 text-white px-6 py-3 rounded-lg shadow-lg z-50 transform transition-all duration-300'
+      errorMessage.textContent = '提交失败，请稍后重试或直接联系我'
+      document.body.appendChild(errorMessage)
+      
+      setTimeout(() => {
+        errorMessage.style.transform = 'translateX(100%)'
+        setTimeout(() => {
+          document.body.removeChild(errorMessage)
+        }, 300)
+      }, 3000)
     } finally {
       setIsSubmitting(false)
     }
@@ -267,9 +329,14 @@ const Contact = () => {
                       required
                       value={formData.firstName}
                       onChange={handleInputChange}
-                      className="w-full px-4 py-3 text-base bg-mystic-800/50 border border-mystic-700/50 rounded-lg text-white placeholder-mystic-400 focus:outline-none focus:border-gold-500/50 transition-colors"
+                      className={`w-full px-4 py-3 text-base bg-mystic-800/50 border rounded-lg text-white placeholder-mystic-400 focus:outline-none transition-colors ${
+                        errors.firstName ? 'border-red-500 focus:border-red-500' : 'border-mystic-700/50 focus:border-gold-500/50'
+                      }`}
                       placeholder="Your first name"
                     />
+                    {errors.firstName && (
+                      <p className="text-red-400 text-sm mt-1">{errors.firstName}</p>
+                    )}
                   </div>
                   <div>
                     <label className="block text-sm font-medium text-mystic-300 mb-2">
@@ -281,9 +348,14 @@ const Contact = () => {
                       required
                       value={formData.lastName}
                       onChange={handleInputChange}
-                      className="w-full px-4 py-3 text-base bg-mystic-800/50 border border-mystic-700/50 rounded-lg text-white placeholder-mystic-400 focus:outline-none focus:border-gold-500/50 transition-colors"
+                      className={`w-full px-4 py-3 text-base bg-mystic-800/50 border rounded-lg text-white placeholder-mystic-400 focus:outline-none transition-colors ${
+                        errors.lastName ? 'border-red-500 focus:border-red-500' : 'border-mystic-700/50 focus:border-gold-500/50'
+                      }`}
                       placeholder="Your last name"
                     />
+                    {errors.lastName && (
+                      <p className="text-red-400 text-sm mt-1">{errors.lastName}</p>
+                    )}
                   </div>
                 </div>
 
@@ -297,9 +369,14 @@ const Contact = () => {
                     required
                     value={formData.email}
                     onChange={handleInputChange}
-                    className="w-full px-4 py-3 bg-mystic-800/50 border border-mystic-700/50 rounded-lg text-white placeholder-mystic-400 focus:outline-none focus:border-gold-500/50 transition-colors"
+                    className={`w-full px-4 py-3 bg-mystic-800/50 border rounded-lg text-white placeholder-mystic-400 focus:outline-none transition-colors ${
+                      errors.email ? 'border-red-500 focus:border-red-500' : 'border-mystic-700/50 focus:border-gold-500/50'
+                    }`}
                     placeholder="your.email@example.com"
                   />
+                  {errors.email && (
+                    <p className="text-red-400 text-sm mt-1">{errors.email}</p>
+                  )}
                 </div>
 
                 <div>
@@ -310,7 +387,9 @@ const Contact = () => {
                     name="serviceInterest"
                     value={formData.serviceInterest}
                     onChange={handleInputChange}
-                    className="w-full px-4 py-3 bg-mystic-800/50 border border-mystic-700/50 rounded-lg text-white focus:outline-none focus:border-gold-500/50 transition-colors"
+                    className={`w-full px-4 py-3 bg-mystic-800/50 border rounded-lg text-white focus:outline-none transition-colors ${
+                      errors.serviceInterest ? 'border-red-500 focus:border-red-500' : 'border-mystic-700/50 focus:border-gold-500/50'
+                    }`}
                   >
                     <option value="">Select a service</option>
                     <option value="bazi-reading">Detailed Bazi Reading</option>
@@ -318,6 +397,9 @@ const Contact = () => {
                     <option value="custom-talisman">Custom Talisman</option>
                     <option value="general-inquiry">General Inquiry</option>
                   </select>
+                  {errors.serviceInterest && (
+                    <p className="text-red-400 text-sm mt-1">{errors.serviceInterest}</p>
+                  )}
                 </div>
 
                 <div>
@@ -330,9 +412,14 @@ const Contact = () => {
                     rows={4}
                     value={formData.message}
                     onChange={handleInputChange}
-                    className="w-full px-4 py-3 text-base bg-mystic-800/50 border border-mystic-700/50 rounded-lg text-white placeholder-mystic-400 focus:outline-none focus:border-gold-500/50 transition-colors resize-none"
+                    className={`w-full px-4 py-3 text-base bg-mystic-800/50 border rounded-lg text-white placeholder-mystic-400 focus:outline-none transition-colors resize-none ${
+                      errors.message ? 'border-red-500 focus:border-red-500' : 'border-mystic-700/50 focus:border-gold-500/50'
+                    }`}
                     placeholder="Tell me about what you're seeking guidance on..."
                   ></textarea>
+                  {errors.message && (
+                    <p className="text-red-400 text-sm mt-1">{errors.message}</p>
+                  )}
                 </div>
 
                                                    <motion.button

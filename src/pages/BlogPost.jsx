@@ -1645,25 +1645,44 @@ const BlogPost = () => {
     "@type": "BlogPosting",
     "headline": post.title,
     "description": post.excerpt,
-    "image": `https://fatepath.me${post.image}`,
+    "image": {
+      "@type": "ImageObject",
+      "url": `https://fatepath.me${post.image}`,
+      "width": 1200,
+      "height": 630
+    },
     "author": {
       "@type": "Person",
-      "name": post.author || "玄印 (Xuan Yin)"
+      "name": post.author || "玄印 (Xuan Yin)",
+      "url": "https://fatepath.me",
+      "description": "Professional Chinese numerology and BaZi reading specialist"
     },
     "publisher": {
       "@type": "Organization",
       "name": "FatePath",
+      "url": "https://fatepath.me",
       "logo": {
         "@type": "ImageObject",
-        "url": "https://fatepath.me/favicon.svg"
-      }
+        "url": "https://fatepath.me/favicon.svg",
+        "width": 32,
+        "height": 32
+      },
+      "description": "Professional Chinese numerology and BaZi reading services"
     },
     "datePublished": post.date,
     "dateModified": post.date,
     "mainEntityOfPage": {
       "@type": "WebPage",
       "@id": `https://fatepath.me/blog/${post.slug}`
-    }
+    },
+    "url": `https://fatepath.me/blog/${post.slug}`,
+    "articleSection": post.categoryLabel || "Chinese Astrology",
+    "keywords": post.tags ? post.tags.join(', ') : "Bazi, Chinese Astrology, Fortune, Destiny",
+    "wordCount": post.content ? post.content.length : 0,
+    "timeRequired": post.readTime || "5 min read",
+    "inLanguage": "en-US",
+    "isAccessibleForFree": true,
+    "articleBody": post.content || post.excerpt
   }
 
   return (

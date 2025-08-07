@@ -231,8 +231,10 @@ const WealthSign = () => {
             >
               {/* Front Side - Wealth God */}
                 <div className="absolute w-full h-full" style={{ backfaceVisibility: 'hidden' }}>
-                                   <div className="mystic-card h-full cursor-pointer hover:scale-105 transition-transform duration-300 border-2 border-gold-500/40 shadow-2xl shadow-gold-500/30 relative overflow-hidden"
+                                   <button 
+                       className="mystic-card h-full cursor-pointer hover:scale-105 transition-transform duration-300 border-2 border-gold-500/40 shadow-2xl shadow-gold-500/30 relative overflow-hidden w-full"
                        onClick={handleFlip}
+                       aria-label="开始抽签仪式，点击开始神圣的占卜仪式"
                        style={{ touchAction: 'auto', pointerEvents: 'auto', zIndex: 1 }}>
                     
                     {/* Wealth God Background Image */}
@@ -278,7 +280,7 @@ const WealthSign = () => {
                         <span className="text-base font-semibold">Begin Sacred Ritual</span>
                       </div>
                     </div>
-                </div>
+                </button>
               </div>
 
               {/* Back Side - Fortune Result */}
