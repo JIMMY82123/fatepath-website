@@ -97,7 +97,7 @@ const LoveForm = () => {
           className="text-center mb-8 sm:mb-12"
         >
           <div className="inline-flex items-center justify-center w-16 h-16 sm:w-20 sm:h-20 rounded-full bg-gradient-to-r from-pink-500 to-red-500 mb-4 sm:mb-6">
-            <Heart className="h-8 w-8 sm:h-10 sm:w-10 text-white" />
+            <Heart className="h-8 w-8 sm:h-10 sm:w-10 text-white" aria-hidden="true" />
           </div>
           <h1 className="text-3xl md:text-4xl font-cinzel font-bold mb-4 text-white tracking-wide">
             Love Compatibility Reading

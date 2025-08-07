@@ -509,7 +509,7 @@ const FreeBaziReport = () => {
             className="text-center mb-6 sm:mb-8"
           >
             <div className="inline-flex items-center justify-center w-12 h-12 sm:w-16 sm:h-16 rounded-full bg-gradient-to-r from-gold-500 to-yellow-500 mb-3 sm:mb-4">
-              <Star className="h-6 w-6 sm:h-8 sm:w-8 text-white" />
+              <Star className="h-6 w-6 sm:h-8 sm:w-8 text-white" aria-hidden="true" />
             </div>
             <h1 className="text-2xl sm:text-3xl md:text-4xl font-cinzel font-bold mb-3 sm:mb-4 text-white">
               {report.name}'s Bazi Reading Report
@@ -738,7 +738,7 @@ const FreeBaziReport = () => {
                  {/* Header */}
                  <div className="text-center mb-6">
                    <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-gradient-to-r from-gold-500 to-yellow-500 mb-4">
-                     <Gift className="h-8 w-8 text-white" />
+                     <Gift className="h-8 w-8 text-white" aria-hidden="true" />
                    </div>
                    <h3 className="text-2xl font-cinzel font-bold text-white mb-2">
                      Special Limited Offer!
@@ -836,7 +836,7 @@ const FreeBaziReport = () => {
           className="text-center mb-8 sm:mb-12"
         >
           <div className="inline-flex items-center justify-center w-16 h-16 sm:w-20 sm:h-20 rounded-full bg-gradient-to-r from-gold-500 to-yellow-500 mb-4 sm:mb-6">
-            <Star className="h-8 w-8 sm:h-10 sm:w-10 text-white" />
+            <Star className="h-8 w-8 sm:h-10 sm:w-10 text-white" aria-hidden="true" />
           </div>
           <h1 className="text-2xl sm:text-3xl md:text-4xl font-cinzel font-bold mb-3 sm:mb-4 text-white tracking-wide">
             Free Bazi Reading Report
@@ -844,6 +844,16 @@ const FreeBaziReport = () => {
           <p className="text-lg sm:text-xl text-mystic-300">
             Enter your birth information to get your personalized Bazi analysis instantly
           </p>
+          
+          {/* SEO Content Section */}
+          <div className="mt-6 text-center">
+            <p className="text-sm text-mystic-400 mb-2">
+              Discover your destiny through ancient Chinese numerology with our free Bazi reading report
+            </p>
+            <p className="text-sm text-mystic-400">
+              Professional BaZi chart analysis for wealth, love, health, and life path guidance
+            </p>
+          </div>
         </motion.div>
 
         {/* Form */}
@@ -962,6 +972,103 @@ const FreeBaziReport = () => {
               </button>
             </div>
           </form>
+        </motion.div>
+
+        {/* FAQ Section for SEO */}
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 0.4 }}
+          className="mystic-card p-6 sm:p-8 mt-8"
+        >
+          <h2 className="text-xl sm:text-2xl font-cinzel font-bold mb-6 text-gold-400">
+            Frequently Asked Questions About BaZi Reading Reports
+          </h2>
+          
+          <div className="space-y-6">
+            <div>
+              <h3 className="text-lg font-semibold text-white mb-2">
+                What is a BaZi reading report?
+              </h3>
+              <p className="text-mystic-300 text-sm leading-relaxed">
+                A BaZi reading report is a comprehensive analysis of your birth chart based on ancient Chinese numerology. It reveals your elemental balance, personality traits, and life patterns to help you understand your destiny and make better life decisions.
+              </p>
+            </div>
+            
+            <div>
+              <h3 className="text-lg font-semibold text-white mb-2">
+                How accurate is this free BaZi chart analysis?
+              </h3>
+              <p className="text-mystic-300 text-sm leading-relaxed">
+                Our free BaZi reading report provides accurate analysis based on traditional Chinese numerology principles. The accuracy depends on the precision of your birth information, especially the exact time of birth. For the most accurate results, provide the most precise birth time available.
+              </p>
+            </div>
+            
+            <div>
+              <h3 className="text-lg font-semibold text-white mb-2">
+                What information do I need for a BaZi reading report?
+              </h3>
+              <p className="text-mystic-300 text-sm leading-relaxed">
+                You need your full name, gender, exact date of birth, time of birth (as precise as possible), and birth location. The more accurate your birth time, the more precise your BaZi chart analysis will be.
+              </p>
+            </div>
+            
+            <div>
+              <h3 className="text-lg font-semibold text-white mb-2">
+                How long does it take to generate my BaZi reading report?
+              </h3>
+              <p className="text-mystic-300 text-sm leading-relaxed">
+                Your personalized BaZi reading report is generated instantly after you submit your birth information. The analysis includes wealth patterns, love compatibility, health insights, and life path guidance based on your unique birth chart.
+              </p>
+            </div>
+            
+            <div>
+              <h3 className="text-lg font-semibold text-white mb-2">
+                Is this Chinese numerology report really free?
+              </h3>
+              <p className="text-mystic-300 text-sm leading-relaxed">
+                Yes, our basic BaZi reading report is completely free. We provide comprehensive analysis including your BaZi chart, five elements analysis, and personalized insights for wealth, love, and health. We also offer premium detailed readings for those seeking deeper analysis.
+              </p>
+            </div>
+          </div>
+        </motion.div>
+
+        {/* Related Services Section */}
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 0.5 }}
+          className="mystic-card p-6 sm:p-8 mt-6"
+        >
+          <h2 className="text-xl sm:text-2xl font-cinzel font-bold mb-6 text-gold-400">
+            Explore More Chinese Numerology Services
+          </h2>
+          
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <Link
+              to="/services"
+              className="p-4 bg-mystic-800/50 border border-mystic-700/50 rounded-lg hover:border-gold-500/50 transition-colors group"
+            >
+              <h3 className="text-lg font-semibold text-white mb-2 group-hover:text-gold-400">
+                Professional BaZi Consultation
+              </h3>
+              <p className="text-mystic-300 text-sm">
+                Get detailed one-on-one consultation with our expert Chinese numerology master
+              </p>
+            </Link>
+            
+            <Link
+              to="/wealth-sign"
+              className="p-4 bg-mystic-800/50 border border-mystic-700/50 rounded-lg hover:border-gold-500/50 transition-colors group"
+            >
+              <h3 className="text-lg font-semibold text-white mb-2 group-hover:text-gold-400">
+                Ancient Chinese Wisdom Oracle
+              </h3>
+              <p className="text-mystic-300 text-sm">
+                Experience our sacred oracle tool for daily guidance and wisdom
+              </p>
+            </Link>
+          </div>
         </motion.div>
 
           {/* Back Link */}

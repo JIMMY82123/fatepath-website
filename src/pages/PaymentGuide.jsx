@@ -81,7 +81,7 @@ const PaymentGuide = () => {
           <div className="mystic-card p-8">
             <div className="flex items-center space-x-3 mb-6">
               <div className="w-10 h-10 rounded-full bg-gold-500/20 flex items-center justify-center">
-                <CreditCard className="h-5 w-5 text-gold-400" />
+                <CreditCard className="h-5 w-5 text-gold-400" aria-hidden="true" />
               </div>
               <h3 className="text-xl font-cinzel font-semibold text-white">Step 1: Complete Payment</h3>
             </div>
@@ -106,7 +106,7 @@ const PaymentGuide = () => {
           <div className="mystic-card p-8">
             <div className="flex items-center space-x-3 mb-6">
               <div className="w-10 h-10 rounded-full bg-gold-500/20 flex items-center justify-center">
-                <FileText className="h-5 w-5 text-gold-400" />
+                <FileText className="h-5 w-5 text-gold-400" aria-hidden="true" />
               </div>
               <h3 className="text-xl font-cinzel font-semibold text-white">Step 2: Fill Information Form</h3>
             </div>
@@ -135,21 +135,21 @@ const PaymentGuide = () => {
           </h3>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 sm:gap-6">
             <div className="text-center">
-              <CheckCircle className="h-8 w-8 text-green-400 mx-auto mb-3" />
+              <CheckCircle className="h-8 w-8 text-green-400 mx-auto mb-3" aria-hidden="true" />
               <h4 className="font-semibold text-gold-400 mb-2">Payment Confirmation</h4>
               <p className="text-mystic-300 text-sm">
                 You'll receive a payment confirmation email from PayPal
               </p>
             </div>
             <div className="text-center">
-              <CheckCircle className="h-8 w-8 text-green-400 mx-auto mb-3" />
+              <CheckCircle className="h-8 w-8 text-green-400 mx-auto mb-3" aria-hidden="true" />
               <h4 className="font-semibold text-gold-400 mb-2">Form Submission</h4>
               <p className="text-mystic-300 text-sm">
                 Submit your information form and receive confirmation
               </p>
             </div>
             <div className="text-center">
-              <CheckCircle className="h-8 w-8 text-green-400 mx-auto mb-3" />
+              <CheckCircle className="h-8 w-8 text-green-400 mx-auto mb-3" aria-hidden="true" />
               <h4 className="font-semibold text-gold-400 mb-2">Service Delivery</h4>
               <p className="text-mystic-300 text-sm">
                 Receive your detailed report within 3-5 days (or 7-10 for talismans)
@@ -171,11 +171,11 @@ const PaymentGuide = () => {
             </h3>
             <div className="space-y-3 text-mystic-200">
               <div className="flex items-center space-x-3">
-                <Mail className="h-5 w-5 text-gold-400" />
+                <Mail className="h-5 w-5 text-gold-400" aria-hidden="true" />
                 <span>Email: chenxiao0801@hotmail.com</span>
               </div>
               <div className="flex items-center space-x-3">
-                <MessageCircle className="h-5 w-5 text-gold-400" />
+                <MessageCircle className="h-5 w-5 text-gold-400" aria-hidden="true" />
                 <span>WhatsApp: Available after payment</span>
               </div>
               <p className="text-sm text-mystic-300 mt-3">

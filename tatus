@@ -1,0 +1,10 @@
+[33ma92922d[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m Improve SEO for free-bazi-report page - Add free-bazi-report URL to sitemap.xml with high priority - Add free-bazi-report to robots.txt allow list - Enhance search engine crawlability for the main conversion page
+[33m469f5eb[m Add cover image for new blog post: Using BaZi to Predict When Your True Love Will Appear
+[33mad3b033[m Add new blog post: Using BaZi to Predict When Your True Love Will Appear - Add comprehensive article about BaZi love timing prediction - Include detailed content about Spouse Star, Peach Blossom, and Red Luan Star - Update sitemap with new article URL - Add proper SEO tags and structured data
+[33mffd848f[m Update sitemap timestamp for better Google indexing
+[33m617a70c[m Add performance optimization components and fix build errors - Add LazyImage component for image optimization - Add Skeleton components for better loading UX - Fix duplicate keys in BlogPost.jsx - Create comprehensive performance optimization plan
+[33m03b94ec[m Fix React className issues in blog post content to resolve Bing errors
+[33m2359aa0[m 更新链接指向 fatepath.me/free-bazi-report
+[33m6dba7b7[m 优化博客文章meta description长度，确保所有excerpt在25-160字符范围内
+[33m07217f4[m 添加新博客文章：日食能量与禄根种植仪式，更新favicon图标
+[33m7ce45af[m Fix SEO issues for blog posts: add meta tags, structured data, and proper author/tags

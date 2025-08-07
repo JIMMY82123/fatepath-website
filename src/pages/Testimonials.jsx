@@ -245,7 +245,7 @@ const Testimonials = () => {
             <div className="flex flex-col sm:flex-row gap-4 items-center justify-between">
               {/* Search */}
               <div className="relative flex-1 max-w-md w-full">
-                <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 h-5 w-5 text-mystic-400" />
+                <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 h-5 w-5 text-mystic-400" aria-hidden="true" />
                 <input
                   type="text"
                   placeholder="Search testimonials..."
@@ -257,7 +257,7 @@ const Testimonials = () => {
 
               {/* Service Filter */}
               <div className="flex items-center space-x-2">
-                <Filter className="h-5 w-5 text-mystic-400" />
+                <Filter className="h-5 w-5 text-mystic-400" aria-hidden="true" />
                 <select
                   value={selectedService}
                   onChange={(e) => setSelectedService(e.target.value)}
@@ -273,7 +273,7 @@ const Testimonials = () => {
 
               {/* Rating Filter */}
               <div className="flex items-center space-x-2">
-                <Star className="h-5 w-5 text-mystic-400" />
+                <Star className="h-5 w-5 text-mystic-400" aria-hidden="true" />
                 <select
                   value={selectedRating}
                   onChange={(e) => setSelectedRating(e.target.value)}

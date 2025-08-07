@@ -105,7 +105,7 @@ const Services = () => {
             className="text-center mb-8 sm:mb-12"
           >
             <div className="inline-flex items-center justify-center w-16 h-16 sm:w-20 sm:h-20 rounded-full bg-gradient-to-r from-gold-500 to-yellow-500 mb-4 sm:mb-6">
-              <Star className="h-8 w-8 sm:h-10 sm:w-10 text-white" />
+              <Star className="h-8 w-8 sm:h-10 sm:w-10 text-white" aria-hidden="true" />
             </div>
             <h1 className="text-2xl sm:text-3xl md:text-4xl font-cinzel font-bold mb-3 sm:mb-4 text-white">
               Professional Services
@@ -126,7 +126,7 @@ const Services = () => {
               <div className="absolute inset-0 bg-gradient-to-r from-gold-500/5 to-yellow-500/5"></div>
               <div className="relative z-10 text-center">
                 <div className="inline-flex items-center justify-center w-16 h-16 sm:w-20 sm:h-20 rounded-full bg-gradient-to-r from-gold-500 to-yellow-500 mb-4 sm:mb-6 animate-pulse">
-                  <Star className="h-8 w-8 sm:h-10 sm:w-10 text-white" />
+                  <Star className="h-8 w-8 sm:h-10 sm:w-10 text-white" aria-hidden="true" />
                 </div>
                 <h2 className="text-xl sm:text-2xl md:text-3xl font-cinzel font-bold mb-3 sm:mb-4 text-gold-400">
                   🎁 FREE Bazi Reading Report
@@ -228,17 +228,17 @@ const Services = () => {
                {/* Service Info */}
                <div className="grid grid-cols-3 gap-3 sm:gap-4">
                  <div className="text-center p-3 sm:p-4 mystic-card">
-                   <Clock className="h-5 w-5 sm:h-6 sm:w-6 text-gold-400 mx-auto mb-1 sm:mb-2" />
+                   <Clock className="h-5 w-5 sm:h-6 sm:w-6 text-gold-400 mx-auto mb-1 sm:mb-2" aria-hidden="true" />
                    <div className="text-xs sm:text-sm text-mystic-300">Duration</div>
                    <div className="text-sm sm:text-base font-semibold text-white">{services[activeService].duration}</div>
                  </div>
                  <div className="text-center p-3 sm:p-4 mystic-card">
-                   <DollarSign className="h-5 w-5 sm:h-6 sm:w-6 text-gold-400 mx-auto mb-1 sm:mb-2" />
+                   <DollarSign className="h-5 w-5 sm:h-6 sm:w-6 text-gold-400 mx-auto mb-1 sm:mb-2" aria-hidden="true" />
                    <div className="text-xs sm:text-sm text-mystic-300">Investment</div>
                    <div className="text-sm sm:text-base font-semibold text-white">{services[activeService].price}</div>
                  </div>
                  <div className="text-center p-3 sm:p-4 mystic-card">
-                   <Calendar className="h-5 w-5 sm:h-6 sm:w-6 text-gold-400 mx-auto mb-1 sm:mb-2" />
+                   <Calendar className="h-5 w-5 sm:h-6 sm:w-6 text-gold-400 mx-auto mb-1 sm:mb-2" aria-hidden="true" />
                    <div className="text-xs sm:text-sm text-mystic-300">Format</div>
                    <div className="text-sm sm:text-base font-semibold text-white">{services[activeService].format}</div>
                  </div>
@@ -289,7 +289,7 @@ const Services = () => {
                   src={`/images/services/${services[activeService].id === 0 ? 'bazi-reading' : 
                         services[activeService].id === 1 ? 'love-compatibility' : 
                         'custom-talisman'}.jpg`}
-                  alt={`${services[activeService].title} - Professional Service`}
+                  alt={`Professional ${services[activeService].title} consultation service with traditional Chinese numerology`}
                   className="w-full h-full object-cover rounded-lg sm:rounded-xl shadow-2xl border-2 border-gold-500/30"
                   onError={(e) => {
                     // Fallback to placeholder if image doesn't exist

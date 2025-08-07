@@ -298,23 +298,29 @@ const Blog = () => {
           <div className="flex flex-col sm:flex-row gap-4 items-center justify-between">
             {/* Search Bar */}
             <div className="relative flex-1 max-w-md w-full">
-              <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 h-5 w-5 text-mystic-400" />
+              <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 h-5 w-5 text-mystic-400" aria-hidden="true" />
+              <label htmlFor="blog-search" className="sr-only">Search articles</label>
               <input
+                id="blog-search"
                 type="text"
                 placeholder="Search articles..."
                 value={searchTerm}
                 onChange={(e) => setSearchTerm(e.target.value)}
                 className="w-full pl-10 pr-4 py-3 text-base bg-mystic-800/50 border border-mystic-700/50 rounded-lg text-white placeholder-mystic-400 focus:border-gold-500/50 focus:outline-none transition-colors"
+                aria-label="Search articles by title or content"
               />
             </div>
 
             {/* Category Filter */}
             <div className="flex items-center space-x-2 w-full sm:w-auto">
-              <Filter className="h-5 w-5 text-mystic-400" />
+              <Filter className="h-5 w-5 text-mystic-400" aria-hidden="true" />
+              <label htmlFor="category-filter" className="sr-only">Filter by category</label>
               <select
+                id="category-filter"
                 value={selectedCategory}
                 onChange={(e) => setSelectedCategory(e.target.value)}
                 className="flex-1 sm:flex-none px-4 py-3 text-base bg-mystic-800/50 border border-mystic-700/50 rounded-lg text-white focus:border-gold-500/50 focus:outline-none transition-colors"
+                aria-label="Filter articles by category"
               >
                 {categories.map(category => (
                   <option key={category.value} value={category.value}>

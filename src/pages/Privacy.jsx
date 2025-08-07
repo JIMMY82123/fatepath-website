@@ -14,7 +14,7 @@ const Privacy = () => {
           className="text-center mb-8 sm:mb-12"
         >
           <div className="inline-flex items-center justify-center w-16 h-16 sm:w-20 sm:h-20 rounded-full bg-gradient-to-r from-blue-500 to-purple-500 mb-4 sm:mb-6">
-            <Shield className="h-8 w-8 sm:h-10 sm:w-10 text-white" />
+            <Shield className="h-8 w-8 sm:h-10 sm:w-10 text-white" aria-hidden="true" />
           </div>
           <h1 className="text-2xl sm:text-3xl md:text-4xl font-cinzel font-bold mb-3 sm:mb-4 text-white tracking-wide">
             Privacy Policy

@@ -215,11 +215,11 @@ const Home = () => {
 
 
       {/* 主要内容 */}
-      <div className="relative z-20 pt-20 px-4 sm:px-6 lg:px-8">
+      <main className="relative z-20 pt-20 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
           
           {/* Step 1: 描述用户问题 - "I AM LOST" */}
-          <motion.div 
+          <motion.header 
             initial={{ opacity: 0, y: 50 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
@@ -377,7 +377,7 @@ const Home = () => {
                 </div>
               </div>
             </motion.div>
-          </motion.div>
+          </motion.header>
 
           {/* Step 2: 介绍玄印和家传命理 */}
           <motion.div 
@@ -409,17 +409,17 @@ const Home = () => {
                 </p>
                 
                 <div className="space-y-4">
-                  <div className="flex items-center space-x-3">
-                    <Award className="h-6 w-6 text-gold-400" />
-                    <span className="text-mystic-200">15+ years of professional experience</span>
+                  <div className="flex items-center space-x-4">
+                    <Award className="h-6 w-6 text-gold-400" aria-hidden="true" />
+                    <span className="text-sm text-mystic-300">15+ Years Experience</span>
                   </div>
-                  <div className="flex items-center space-x-3">
-                    <Clock className="h-6 w-6 text-gold-400" />
-                    <span className="text-mystic-200">Traditional family methods passed down for generations</span>
+                  <div className="flex items-center space-x-4">
+                    <Clock className="h-6 w-6 text-gold-400" aria-hidden="true" />
+                    <span className="text-sm text-mystic-300">24/7 Available</span>
                   </div>
-                  <div className="flex items-center space-x-3">
-                    <Users className="h-6 w-6 text-gold-400" />
-                    <span className="text-mystic-200">500+ satisfied clients worldwide</span>
+                  <div className="flex items-center space-x-4">
+                    <Users className="h-6 w-6 text-gold-400" aria-hidden="true" />
+                    <span className="text-sm text-mystic-300">500+ Happy Clients</span>
                   </div>
                 </div>
               </motion.div>
@@ -494,7 +494,7 @@ const Home = () => {
                   >
                                          <div className="mystic-card p-4 sm:p-5 md:p-6 lg:p-8 h-full flex flex-col">
                       <div className="flex justify-between items-start mb-4 sm:mb-5 md:mb-6">
-                        <Quote className="h-8 w-8 text-gold-400 opacity-50" />
+                        <Quote className="h-8 w-8 text-gold-400 opacity-50" aria-hidden="true" />
                                                  <div className="flex items-center space-x-2">
                            {featuredTestimonials[currentTestimonial].icon}
                            <span className="text-xs text-mystic-400">
@@ -516,7 +516,7 @@ const Home = () => {
                                                                                            <div className="flex items-center space-x-3 sm:space-x-4 mt-auto">
                                                  <img
                            src={getCachedAIAvatar(featuredTestimonials[currentTestimonial])}
-                           alt={featuredTestimonials[currentTestimonial].name}
+                           alt={`${featuredTestimonials[currentTestimonial].name}, satisfied client from ${featuredTestimonials[currentTestimonial].location}`}
                            className="w-12 h-12 sm:w-14 md:w-16 sm:h-14 md:h-16 rounded-full object-cover border-2 border-gold-500/30"
                            onError={(e) => {
                              // 如果图片加载失败，显示占位符
@@ -611,8 +611,8 @@ const Home = () => {
                                        {/* 真人图片 */}
                                          <img 
                        src={`/images/celebrities/${celebrity.name.toLowerCase().replace(' ', '-')}.jpg`}
-                       alt={`${celebrity.name} - ${celebrity.category}`}
-                                               className="w-14 h-14 sm:w-16 md:w-20 sm:h-16 md:h-20 mx-auto mb-2 sm:mb-3 md:mb-4 rounded-full object-cover border-2 border-gold-500/30 group-hover:border-gold-400 transition-colors duration-300"
+                       alt={`${celebrity.name}, ${celebrity.category}, using Eastern numerology for success`}
+                       className="w-14 h-14 sm:w-16 md:w-20 sm:h-16 md:h-20 mx-auto mb-2 sm:mb-3 md:mb-4 rounded-full object-cover border-2 border-gold-500/30 group-hover:border-gold-400 transition-colors duration-300"
                       onError={(e) => {
                         // 如果图片加载失败，显示占位符
                         e.target.style.display = 'none';
@@ -737,7 +737,7 @@ const Home = () => {
                  className="mystic-card p-8 text-center group hover:transform hover:scale-105 transition-all duration-300"
                >
                  <div className="inline-flex items-center justify-center w-20 h-20 rounded-full bg-gradient-to-r from-purple-500 to-pink-500 mb-6 group-hover:animate-glow">
-                   <Star className="h-10 w-10 text-white" />
+                   <Star className="h-10 w-10 text-white" aria-hidden="true" />
                  </div>
                                    <h3 className="text-2xl font-cinzel font-bold mb-4 text-white tracking-wide">
                     Detailed Bazi Reading
@@ -782,7 +782,7 @@ const Home = () => {
                  className="mystic-card p-8 text-center group hover:transform hover:scale-105 transition-all duration-300 border-2 border-pink-500/30"
                >
                  <div className="inline-flex items-center justify-center w-20 h-20 rounded-full bg-gradient-to-r from-pink-500 to-red-500 mb-6 group-hover:animate-glow">
-                   <Heart className="h-10 w-10 text-white" />
+                   <Heart className="h-10 w-10 text-white" aria-hidden="true" />
                  </div>
                                    <h3 className="text-2xl font-cinzel font-bold mb-4 text-white tracking-wide">
                     Love Compatibility Reading
@@ -827,7 +827,7 @@ const Home = () => {
                  className="mystic-card p-8 text-center group hover:transform hover:scale-105 transition-all duration-300 border-2 border-gold-500/30"
                >
                  <div className="inline-flex items-center justify-center w-20 h-20 rounded-full bg-gradient-to-r from-gold-500 to-orange-500 mb-6 group-hover:animate-glow">
-                   <Shield className="h-10 w-10 text-white" />
+                   <Shield className="h-10 w-10 text-white" aria-hidden="true" />
                  </div>
                                    <h3 className="text-2xl font-cinzel font-bold mb-4 text-white tracking-wide">
                     Custom Talisman
@@ -1032,7 +1032,7 @@ const Home = () => {
             </div>
           </motion.div>
         </div>
-      </div>
+      </main>
     </div>
     </>
   )

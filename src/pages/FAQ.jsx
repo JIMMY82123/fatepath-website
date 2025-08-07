@@ -113,11 +113,14 @@ const FAQ = () => {
               <button
                 onClick={() => toggleItem(index)}
                 className="w-full px-4 sm:px-6 py-3 sm:py-4 text-left flex items-center justify-between hover:bg-mystic-800/50 transition-colors duration-200"
+                aria-expanded={openItems.has(index)}
+                aria-controls={`faq-content-${index}`}
+                aria-label={`${openItems.has(index) ? 'Hide' : 'Show'} answer for: ${item.question}`}
               >
                 <h3 className="text-base sm:text-lg font-cinzel font-semibold text-white pr-4">
                   {item.question}
                 </h3>
-                <div className="flex-shrink-0">
+                <div className="flex-shrink-0" aria-hidden="true">
                   {openItems.has(index) ? (
                     <ChevronUp className="h-5 w-5 text-gold-400" />
                   ) : (
@@ -128,11 +131,14 @@ const FAQ = () => {
               
               {openItems.has(index) && (
                 <motion.div
+                  id={`faq-content-${index}`}
                   initial={{ opacity: 0, height: 0 }}
                   animate={{ opacity: 1, height: "auto" }}
                   exit={{ opacity: 0, height: 0 }}
                   transition={{ duration: 0.3 }}
                   className="px-6 pb-4"
+                  role="region"
+                  aria-labelledby={`faq-question-${index}`}
                 >
                   <div 
                     className="text-sm sm:text-base text-mystic-300 leading-relaxed"

@@ -45,7 +45,9 @@ const PaymentSuccess = () => {
           </p>
           
           <div className="bg-mystic-800 p-6 rounded-lg mb-8">
-            <Mail className="h-8 w-8 text-gold-400 mx-auto mb-3" />
+            <div className="inline-flex items-center justify-center w-8 w-8 text-gold-400 mx-auto mb-3">
+              <Mail className="h-8 w-8 text-gold-400 mx-auto mb-3" aria-hidden="true" />
+            </div>
             <h3 className="text-lg font-semibold text-white mb-2">
               Check Your Email
             </h3>

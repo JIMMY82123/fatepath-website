@@ -239,7 +239,7 @@ const WealthSign = () => {
                     <div className="absolute inset-0" style={{ zIndex: 0 }}>
                       <img 
                         src="/images/wealth-god.jpg" 
-                        alt="Wealth God Background" 
+                        alt="Traditional Chinese Wealth God deity in golden robes, symbolizing prosperity and good fortune" 
                         className="w-full h-full object-cover"
                         onError={(e) => {
                           console.log('财神图片加载失败，使用默认背景');

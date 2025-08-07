@@ -404,21 +404,21 @@ const Contact = () => {
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 sm:gap-8">
               <div className="text-center">
                 <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-gradient-to-r from-gold-500 to-gold-600 mb-4">
-                  <Star className="h-8 w-8 text-white" />
+                  <Star className="h-8 w-8 text-white" aria-hidden="true" />
                 </div>
                 <h4 className="font-semibold text-gold-400 mb-2">15+ Years Experience</h4>
                 <p className="text-mystic-300 text-sm">Deep expertise in ancient wisdom and modern astrology</p>
               </div>
               <div className="text-center">
                 <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-gradient-to-r from-gold-500 to-gold-600 mb-4">
-                  <Sparkles className="h-8 w-8 text-white" />
+                  <Sparkles className="h-8 w-8 text-white" aria-hidden="true" />
                 </div>
                 <h4 className="font-semibold text-gold-400 mb-2">500+ Happy Clients</h4>
                 <p className="text-mystic-300 text-sm">Proven track record of life-changing results</p>
               </div>
               <div className="text-center">
                 <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-gradient-to-r from-gold-500 to-gold-600 mb-4">
-                  <MessageCircle className="h-8 w-8 text-white" />
+                  <MessageCircle className="h-8 w-8 text-white" aria-hidden="true" />
                 </div>
                 <h4 className="font-semibold text-gold-400 mb-2">24/7 Support</h4>
                 <p className="text-mystic-300 text-sm">Always available for guidance and support</p>
