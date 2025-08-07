@@ -44,7 +44,8 @@ const LazyImage = ({
   }
 
   const handleError = () => {
-    // 如果主图片加载失败，显示错误状态
+    // 如果主图片加载失败，显示默认头像
+    setImageSrc('/images/testimonials/emma-rodriguez.jpg')
     setIsLoaded(true)
   }
 
