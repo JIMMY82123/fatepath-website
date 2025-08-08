@@ -58,577 +58,391 @@ const BlogPost = () => {
       tags: ["Chinese Astrology", "BaZi Analysis", "Five Elements", "Ancient Wisdom", "Life Guidance", "Destiny", "Chinese Zodiac", "Yin Yang"],
       content: `
         <!-- Hero Section -->
-        <div className="relative overflow-hidden rounded-3xl bg-gradient-to-br from-gold-900/20 via-yellow-900/15 to-orange-900/10 p-12 mb-16 border border-gold-500/20">
-          <div className="absolute inset-0 bg-[url('data:image/svg+xml,%3Csvg width="60" height="60" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg"%3E%3Cg fill="none" fill-rule="evenodd"%3E%3Cg fill="%23fbbf24" fill-opacity="0.05"%3E%3Ccircle cx="30" cy="30" r="2"/%3E%3C/g%3E%3C/g%3E%3C/svg%3E')] opacity-30"></div>
-          <div className="relative z-10 text-center">
-            <div className="w-20 h-20 bg-gradient-to-r from-gold-400 to-yellow-400 rounded-full flex items-center justify-center mx-auto mb-8">
-              <span className="text-3xl">🔮</span>
-            </div>
-            <h1 className="text-5xl md:text-6xl font-bold mb-6 text-gold-300">
-              Chinese Astrology & BaZi
-            </h1>
-            <p className="text-2xl text-gold-200 mb-8 font-light">
-              Your Ancient Destiny Blueprint
+        <div className="text-center mb-12">
+          <h1 className="text-4xl md:text-5xl font-bold mb-6 text-gold-400">
+            Chinese Astrology & BaZi: Your Ancient Destiny Blueprint
+          </h1>
+          <p className="text-xl text-gray-300 leading-relaxed max-w-4xl mx-auto mb-8">
+            In a world constantly searching for meaning, more people are turning to ancient wisdom for insight and clarity. Chinese astrology offers a timeless framework rooted in thousands of years of Eastern metaphysics, revealing your unique life path through cosmic timing and elemental forces.
+          </p>
+          <div className="bg-gradient-to-r from-gold-900/20 to-yellow-900/20 p-6 rounded-xl border border-gold-500/30">
+            <p className="text-lg text-mystic-200 leading-relaxed">
+              "When you understand your energy, you understand your life." — Ancient Chinese Wisdom
             </p>
-            <div className="max-w-3xl mx-auto">
-              <p className="text-lg text-mystic-200 leading-relaxed">
-                Discover how thousands of years of Eastern wisdom reveal your life's purpose through cosmic timing and elemental forces.
-              </p>
-            </div>
           </div>
         </div>
 
-        <!-- Core Concept -->
-        <div className="mb-16">
-          <div className="text-center mb-12">
-            <h2 className="text-4xl font-bold mb-4 text-gold-400">The Ancient Wisdom</h2>
-            <p className="text-xl text-mystic-300 max-w-3xl mx-auto">
-              Chinese astrology combines cosmic timing, elemental forces, and personal destiny to create your unique life blueprint.
+        <!-- Introduction -->
+        <div className="mb-12">
+          <h2 className="text-3xl font-bold mb-6 text-gold-400">What Is Chinese Astrology?</h2>
+          <div className="bg-gradient-to-r from-mystic-800/50 to-mystic-900/50 p-8 rounded-2xl border border-mystic-700/50">
+            <p className="text-lg text-mystic-200 leading-relaxed mb-6">
+              Chinese astrology is a comprehensive system that combines <strong>cosmic timing</strong>, <strong>elemental forces</strong>, and <strong>personal destiny</strong> to create your unique life blueprint. Unlike Western astrology's focus on planetary positions, Chinese astrology is based on your <strong>birth date and time</strong>, interpreted through ancient principles that have guided millions for over 3,000 years.
             </p>
-          </div>
-          
-          <div className="grid md:grid-cols-3 gap-8">
-            <div className="text-center group">
-              <div className="w-16 h-16 bg-gradient-to-r from-blue-500 to-purple-600 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform">
-                <span className="text-white text-2xl">🌙</span>
+            <p className="text-lg text-mystic-200 leading-relaxed mb-6">
+              This ancient system reveals personality traits, strengths, weaknesses, and even potential timing for success, challenges, or love. Every person has a unique elemental and energetic makeup based on these principles, creating a personalized map of their destiny.
+            </p>
+            <div className="grid md:grid-cols-2 gap-6 mt-8">
+              <div className="bg-gradient-to-br from-red-900/30 to-red-800/20 p-6 rounded-xl border border-red-500/30">
+                <h4 className="text-red-400 font-semibold mb-3 flex items-center">
+                  <span className="mr-2">🔴</span>
+                  Western Astrology
+                </h4>
+                <p className="text-mystic-300 text-sm">Focuses on planetary positions and celestial movements, emphasizing psychological aspects and life purpose through zodiac signs and houses.</p>
               </div>
-              <h3 className="text-xl font-semibold mb-3 text-blue-400">Cosmic Timing</h3>
-              <p className="text-mystic-300">Your birth moment creates a unique energetic signature</p>
-            </div>
-            <div className="text-center group">
-              <div className="w-16 h-16 bg-gradient-to-r from-green-500 to-teal-600 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform">
-                <span className="text-white text-2xl">⚡</span>
+              <div className="bg-gradient-to-br from-gold-900/30 to-yellow-800/20 p-6 rounded-xl border border-gold-500/30">
+                <h4 className="text-gold-400 font-semibold mb-3 flex items-center">
+                  <span className="mr-2">🟡</span>
+                  Chinese Astrology
+                </h4>
+                <p className="text-mystic-300 text-sm">Based on birth date, time, and elemental principles, emphasizing destiny planning, compatibility, and practical life guidance through BaZi analysis.</p>
               </div>
-              <h3 className="text-xl font-semibold mb-3 text-green-400">Elemental Forces</h3>
-              <p className="text-mystic-300">Five elements shape your personality and destiny</p>
-            </div>
-            <div className="text-center group">
-              <div className="w-16 h-16 bg-gradient-to-r from-pink-500 to-rose-600 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform">
-                <span className="text-white text-2xl">🎯</span>
-              </div>
-              <h3 className="text-xl font-semibold mb-3 text-pink-400">Personal Destiny</h3>
-              <p className="text-mystic-300">Your unique path revealed through ancient wisdom</p>
             </div>
           </div>
         </div>
 
         <!-- Five Elements -->
-        <div className="mb-16">
-          <div className="text-center mb-12">
-            <h2 className="text-4xl font-bold mb-4 text-gold-400">The Five Elements</h2>
-            <p className="text-xl text-mystic-300 max-w-3xl mx-auto">
-              The building blocks of Chinese astrology, representing different energies that shape your personality and destiny.
+        <div className="mb-12">
+          <h2 className="text-3xl font-bold mb-6 text-gold-400">The Five Elements (Wu Xing)</h2>
+          <p className="text-lg text-mystic-300 leading-relaxed mb-8">
+            The Five Elements are the building blocks of Chinese astrology, representing different energies that influence your personality and destiny.
+          </p>
+          
+          <!-- Simple Elements Table -->
+          <div className="bg-gradient-to-r from-mystic-800/50 to-mystic-900/50 p-6 rounded-xl border border-gold-500/30 mb-8">
+            <div className="overflow-x-auto">
+              <table className="w-full">
+                <thead>
+                  <tr className="border-b border-gold-500/30">
+                    <th className="text-left py-3 px-4 text-gold-400 font-semibold">Element</th>
+                    <th className="text-left py-3 px-4 text-gold-400 font-semibold">Nature</th>
+                    <th className="text-left py-3 px-4 text-gold-400 font-semibold">Personality</th>
+                    <th className="text-left py-3 px-4 text-gold-400 font-semibold">Career</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr className="border-b border-mystic-700/30">
+                    <td className="py-3 px-4">
+                      <div className="flex items-center">
+                        <span className="text-2xl mr-3">🌳</span>
+                        <span className="text-green-400 font-semibold">Wood</span>
+                      </div>
+                    </td>
+                    <td className="py-3 px-4 text-mystic-300">Growth & Expansion</td>
+                    <td className="py-3 px-4 text-mystic-300">Creative, flexible, idealistic</td>
+                    <td className="py-3 px-4 text-mystic-300">Education, arts, planning</td>
+                  </tr>
+                  <tr className="border-b border-mystic-700/30">
+                    <td className="py-3 px-4">
+                      <div className="flex items-center">
+                        <span className="text-2xl mr-3">🔥</span>
+                        <span className="text-red-400 font-semibold">Fire</span>
+                      </div>
+                    </td>
+                    <td className="py-3 px-4 text-mystic-300">Energy & Passion</td>
+                    <td className="py-3 px-4 text-mystic-300">Dynamic, charismatic, impulsive</td>
+                    <td className="py-3 px-4 text-mystic-300">Leadership, entertainment, sales</td>
+                  </tr>
+                  <tr className="border-b border-mystic-700/30">
+                    <td className="py-3 px-4">
+                      <div className="flex items-center">
+                        <span className="text-2xl mr-3">🏔️</span>
+                        <span className="text-yellow-400 font-semibold">Earth</span>
+                      </div>
+                    </td>
+                    <td className="py-3 px-4 text-mystic-300">Stability & Nurturing</td>
+                    <td className="py-3 px-4 text-mystic-300">Reliable, practical, caring</td>
+                    <td className="py-3 px-4 text-mystic-300">Agriculture, real estate, service</td>
+                  </tr>
+                  <tr className="border-b border-mystic-700/30">
+                    <td className="py-3 px-4">
+                      <div className="flex items-center">
+                        <span className="text-2xl mr-3">⚔️</span>
+                        <span className="text-gray-400 font-semibold">Metal</span>
+                      </div>
+                    </td>
+                    <td className="py-3 px-4 text-mystic-300">Precision & Strength</td>
+                    <td className="py-3 px-4 text-mystic-300">Determined, organized, disciplined</td>
+                    <td className="py-3 px-4 text-mystic-300">Finance, law, engineering</td>
+                  </tr>
+                  <tr>
+                    <td className="py-3 px-4">
+                      <div className="flex items-center">
+                        <span className="text-2xl mr-3">💧</span>
+                        <span className="text-blue-400 font-semibold">Water</span>
+                      </div>
+                    </td>
+                    <td className="py-3 px-4 text-mystic-300">Wisdom & Flow</td>
+                    <td className="py-3 px-4 text-mystic-300">Intelligent, adaptable, intuitive</td>
+                    <td className="py-3 px-4 text-mystic-300">Research, travel, communication</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          
+          <div className="bg-gradient-to-r from-mystic-800/50 to-mystic-900/50 p-6 rounded-lg border border-gold-500/30">
+            <h3 className="text-xl font-semibold mb-4 text-gold-400">Elemental Interactions</h3>
+            <p className="text-mystic-300 leading-relaxed mb-4">
+              The Five Elements interact through cycles of generation (Wood feeds Fire, Fire creates Earth, Earth bears Metal, Metal collects Water, Water nourishes Wood) and control (Wood controls Earth, Earth controls Water, Water controls Fire, Fire controls Metal, Metal controls Wood).
             </p>
-          </div>
-          
-          <div className="grid grid-cols-5 gap-4 mb-8">
-            <div className="text-center group">
-              <div className="w-20 h-20 bg-gradient-to-br from-green-500 to-emerald-600 rounded-2xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform">
-                <span className="text-white text-2xl">🌳</span>
-              </div>
-              <h3 className="text-lg font-semibold mb-2 text-green-400">Wood</h3>
-              <p className="text-sm text-mystic-300">Growth & Creativity</p>
-            </div>
-            <div className="text-center group">
-              <div className="w-20 h-20 bg-gradient-to-br from-red-500 to-pink-600 rounded-2xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform">
-                <span className="text-white text-2xl">🔥</span>
-              </div>
-              <h3 className="text-lg font-semibold mb-2 text-red-400">Fire</h3>
-              <p className="text-sm text-mystic-300">Energy & Passion</p>
-            </div>
-            <div className="text-center group">
-              <div className="w-20 h-20 bg-gradient-to-br from-yellow-500 to-amber-600 rounded-2xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform">
-                <span className="text-white text-2xl">🏔️</span>
-              </div>
-              <h3 className="text-lg font-semibold mb-2 text-yellow-400">Earth</h3>
-              <p className="text-sm text-mystic-300">Stability & Nurturing</p>
-            </div>
-            <div className="text-center group">
-              <div className="w-20 h-20 bg-gradient-to-br from-gray-500 to-slate-600 rounded-2xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform">
-                <span className="text-white text-2xl">⚔️</span>
-              </div>
-              <h3 className="text-lg font-semibold mb-2 text-gray-400">Metal</h3>
-              <p className="text-sm text-mystic-300">Precision & Strength</p>
-            </div>
-            <div className="text-center group">
-              <div className="w-20 h-20 bg-gradient-to-br from-blue-500 to-cyan-600 rounded-2xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform">
-                <span className="text-white text-2xl">💧</span>
-              </div>
-              <h3 className="text-lg font-semibold mb-2 text-blue-400">Water</h3>
-              <p className="text-sm text-mystic-300">Wisdom & Flow</p>
-            </div>
-          </div>
-          
-          <!-- Five Elements Cycle Animation -->
-          <div className="bg-gradient-to-r from-mystic-800/30 to-mystic-900/30 p-8 rounded-2xl border border-gold-500/20">
-            <div className="text-center mb-8">
-              <h3 className="text-2xl font-semibold mb-4 text-gold-400">Elemental Cycles</h3>
-              <p className="text-mystic-300 max-w-2xl mx-auto">
-                The Five Elements interact through cycles of generation (生) and control (克), creating the energetic blueprint that shapes your life.
-              </p>
-            </div>
-            
-            <!-- Generation Cycle -->
-            <div className="relative mb-8">
-              <div className="flex justify-center items-center">
-                <div className="relative w-64 h-64">
-                  {/* Generation Cycle Ring */}
-                  <div className="absolute inset-0 rounded-full border-4 border-green-500/30 animate-spin-slow">
-                    <div className="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
-                      <div className="w-12 h-12 bg-green-500 rounded-full flex items-center justify-center">
-                        <span className="text-white text-lg">🌳</span>
-                      </div>
-                      <div className="text-center mt-2">
-                        <p className="text-sm text-green-400 font-semibold">Wood</p>
-                        <p className="text-xs text-green-300">生</p>
-                      </div>
-                    </div>
-                    
-                    <div className="absolute top-1/2 right-0 transform translate-x-1/2 -translate-y-1/2">
-                      <div className="w-12 h-12 bg-red-500 rounded-full flex items-center justify-center">
-                        <span className="text-white text-lg">🔥</span>
-                      </div>
-                      <div className="text-center mt-2">
-                        <p className="text-sm text-red-400 font-semibold">Fire</p>
-                        <p className="text-xs text-red-300">生</p>
-                      </div>
-                    </div>
-                    
-                    <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 translate-y-1/2">
-                      <div className="w-12 h-12 bg-yellow-500 rounded-full flex items-center justify-center">
-                        <span className="text-white text-lg">🏔️</span>
-                      </div>
-                      <div className="text-center mt-2">
-                        <p className="text-sm text-yellow-400 font-semibold">Earth</p>
-                        <p className="text-xs text-yellow-300">生</p>
-                      </div>
-                    </div>
-                    
-                    <div className="absolute top-1/2 left-0 transform -translate-x-1/2 -translate-y-1/2">
-                      <div className="w-12 h-12 bg-gray-500 rounded-full flex items-center justify-center">
-                        <span className="text-white text-lg">⚔️</span>
-                      </div>
-                      <div className="text-center mt-2">
-                        <p className="text-sm text-gray-400 font-semibold">Metal</p>
-                        <p className="text-xs text-gray-300">生</p>
-                      </div>
-                    </div>
-                    
-                    <div className="absolute top-1/4 left-1/4 transform -translate-x-1/2 -translate-y-1/2">
-                      <div className="w-12 h-12 bg-blue-500 rounded-full flex items-center justify-center">
-                        <span className="text-white text-lg">💧</span>
-                      </div>
-                      <div className="text-center mt-2">
-                        <p className="text-sm text-blue-400 font-semibold">Water</p>
-                        <p className="text-xs text-blue-300">生</p>
-                      </div>
-                    </div>
-                  </div>
-                  
-                  {/* Center Label */}
-                  <div className="absolute inset-0 flex items-center justify-center">
-                    <div className="bg-mystic-800/80 rounded-full p-4 border border-gold-500/30">
-                      <p className="text-gold-400 font-semibold text-sm">Generation</p>
-                      <p className="text-mystic-300 text-xs">相生循环</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            
-            <!-- Control Cycle -->
-            <div className="text-center">
-              <h4 className="text-lg font-semibold mb-4 text-gold-400">Control Relationships</h4>
-              <div className="grid grid-cols-5 gap-4 max-w-2xl mx-auto">
-                <div className="text-center">
-                  <div className="w-10 h-10 bg-green-500/20 rounded-full flex items-center justify-center mx-auto mb-2">
-                    <span className="text-green-400 text-sm">🌳</span>
-                  </div>
-                  <p className="text-xs text-green-300">Wood</p>
-                  <p className="text-xs text-mystic-400">克 Earth</p>
-                </div>
-                <div className="text-center">
-                  <div className="w-10 h-10 bg-red-500/20 rounded-full flex items-center justify-center mx-auto mb-2">
-                    <span className="text-red-400 text-sm">🔥</span>
-                  </div>
-                  <p className="text-xs text-red-300">Fire</p>
-                  <p className="text-xs text-mystic-400">克 Metal</p>
-                </div>
-                <div className="text-center">
-                  <div className="w-10 h-10 bg-yellow-500/20 rounded-full flex items-center justify-center mx-auto mb-2">
-                    <span className="text-yellow-400 text-sm">🏔️</span>
-                  </div>
-                  <p className="text-xs text-yellow-300">Earth</p>
-                  <p className="text-xs text-mystic-400">克 Water</p>
-                </div>
-                <div className="text-center">
-                  <div className="w-10 h-10 bg-gray-500/20 rounded-full flex items-center justify-center mx-auto mb-2">
-                    <span className="text-gray-400 text-sm">⚔️</span>
-                  </div>
-                  <p className="text-xs text-gray-300">Metal</p>
-                  <p className="text-xs text-mystic-400">克 Wood</p>
-                </div>
-                <div className="text-center">
-                  <div className="w-10 h-10 bg-blue-500/20 rounded-full flex items-center justify-center mx-auto mb-2">
-                    <span className="text-blue-400 text-sm">💧</span>
-                  </div>
-                  <p className="text-xs text-blue-300">Water</p>
-                  <p className="text-xs text-mystic-400">克 Fire</p>
-                </div>
-              </div>
-            </div>
+            <p className="text-mystic-300 leading-relaxed">
+              Understanding these interactions helps reveal how your elemental makeup influences relationships, career choices, and life timing.
+            </p>
           </div>
         </div>
 
         <hr className="border-gray-600 my-12" />
 
-        <!-- 12 Zodiac Animals Matrix -->
-        <div className="mb-16">
-          <div className="text-center mb-12">
-            <h2 className="text-4xl font-bold mb-4 text-gold-400">Your Zodiac Energy Profile</h2>
-            <p className="text-xl text-mystic-300 max-w-3xl mx-auto">
-              Interactive zodiac matrix showing the relationship between animals, elements, and key years.
+        <!-- 12 Zodiac Animals -->
+        <div className="mb-12">
+          <h2 className="text-3xl font-bold mb-6 text-gold-400">The 12 Chinese Zodiac Animals</h2>
+          <p className="text-lg text-mystic-300 leading-relaxed mb-8">
+            Each zodiac sign has unique characteristics and represents different years in the 12-year cycle, revealing personality traits and life themes.
+          </p>
+          
+          <!-- Simple Zodiac Table -->
+          <div className="bg-gradient-to-r from-mystic-800/50 to-mystic-900/50 p-6 rounded-xl border border-gold-500/30 mb-8">
+            <div className="overflow-x-auto">
+              <table className="w-full">
+                <thead>
+                  <tr className="border-b border-gold-500/30">
+                    <th className="text-left py-3 px-4 text-gold-400 font-semibold">Animal</th>
+                    <th className="text-left py-3 px-4 text-gold-400 font-semibold">Element</th>
+                    <th className="text-left py-3 px-4 text-gold-400 font-semibold">Personality</th>
+                    <th className="text-left py-3 px-4 text-gold-400 font-semibold">Recent Years</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr className="border-b border-mystic-700/30">
+                    <td className="py-3 px-4">
+                      <div className="flex items-center">
+                        <span className="text-2xl mr-3">🐀</span>
+                        <span className="text-mystic-200 font-semibold">Rat</span>
+                      </div>
+                    </td>
+                    <td className="py-3 px-4 text-blue-400">Water</td>
+                    <td className="py-3 px-4 text-mystic-300">Quick-witted, resourceful, ambitious</td>
+                    <td className="py-3 px-4 text-mystic-300">2020, 2008, 1996</td>
+                  </tr>
+                  <tr className="border-b border-mystic-700/30">
+                    <td className="py-3 px-4">
+                      <div className="flex items-center">
+                        <span className="text-2xl mr-3">🐂</span>
+                        <span className="text-mystic-200 font-semibold">Ox</span>
+                      </div>
+                    </td>
+                    <td className="py-3 px-4 text-yellow-400">Earth</td>
+                    <td className="py-3 px-4 text-mystic-300">Diligent, dependable, determined</td>
+                    <td className="py-3 px-4 text-mystic-300">2021, 2009, 1997</td>
+                  </tr>
+                  <tr className="border-b border-mystic-700/30">
+                    <td className="py-3 px-4">
+                      <div className="flex items-center">
+                        <span className="text-2xl mr-3">🐅</span>
+                        <span className="text-mystic-200 font-semibold">Tiger</span>
+                      </div>
+                    </td>
+                    <td className="py-3 px-4 text-green-400">Wood</td>
+                    <td className="py-3 px-4 text-mystic-300">Brave, confident, competitive</td>
+                    <td className="py-3 px-4 text-mystic-300">2022, 2010, 1998</td>
+                  </tr>
+                  <tr className="border-b border-mystic-700/30">
+                    <td className="py-3 px-4">
+                      <div className="flex items-center">
+                        <span className="text-2xl mr-3">🐇</span>
+                        <span className="text-mystic-200 font-semibold">Rabbit</span>
+                      </div>
+                    </td>
+                    <td className="py-3 px-4 text-green-400">Wood</td>
+                    <td className="py-3 px-4 text-mystic-300">Quiet, elegant, kind</td>
+                    <td className="py-3 px-4 text-mystic-300">2023, 2011, 1999</td>
+                  </tr>
+                  <tr className="border-b border-mystic-700/30">
+                    <td className="py-3 px-4">
+                      <div className="flex items-center">
+                        <span className="text-2xl mr-3">🐉</span>
+                        <span className="text-mystic-200 font-semibold">Dragon</span>
+                      </div>
+                    </td>
+                    <td className="py-3 px-4 text-yellow-400">Earth</td>
+                    <td className="py-3 px-4 text-mystic-300">Confident, intelligent, enthusiastic</td>
+                    <td className="py-3 px-4 text-mystic-300">2024, 2012, 2000</td>
+                  </tr>
+                  <tr className="border-b border-mystic-700/30">
+                    <td className="py-3 px-4">
+                      <div className="flex items-center">
+                        <span className="text-2xl mr-3">🐍</span>
+                        <span className="text-mystic-200 font-semibold">Snake</span>
+                      </div>
+                    </td>
+                    <td className="py-3 px-4 text-red-400">Fire</td>
+                    <td className="py-3 px-4 text-mystic-300">Enigmatic, intelligent, wise</td>
+                    <td className="py-3 px-4 text-mystic-300">2025, 2013, 2001</td>
+                  </tr>
+                  <tr className="border-b border-mystic-700/30">
+                    <td className="py-3 px-4">
+                      <div className="flex items-center">
+                        <span className="text-2xl mr-3">🐎</span>
+                        <span className="text-mystic-200 font-semibold">Horse</span>
+                      </div>
+                    </td>
+                    <td className="py-3 px-4 text-red-400">Fire</td>
+                    <td className="py-3 px-4 text-mystic-300">Animated, active, energetic</td>
+                    <td className="py-3 px-4 text-mystic-300">2026, 2014, 2002</td>
+                  </tr>
+                  <tr className="border-b border-mystic-700/30">
+                    <td className="py-3 px-4">
+                      <div className="flex items-center">
+                        <span className="text-2xl mr-3">🐐</span>
+                        <span className="text-mystic-200 font-semibold">Goat</span>
+                      </div>
+                    </td>
+                    <td className="py-3 px-4 text-yellow-400">Earth</td>
+                    <td className="py-3 px-4 text-mystic-300">Calm, gentle, sympathetic</td>
+                    <td className="py-3 px-4 text-mystic-300">2027, 2015, 2003</td>
+                  </tr>
+                  <tr className="border-b border-mystic-700/30">
+                    <td className="py-3 px-4">
+                      <div className="flex items-center">
+                        <span className="text-2xl mr-3">🐒</span>
+                        <span className="text-mystic-200 font-semibold">Monkey</span>
+                      </div>
+                    </td>
+                    <td className="py-3 px-4 text-gray-400">Metal</td>
+                    <td className="py-3 px-4 text-mystic-300">Sharp, smart, curious</td>
+                    <td className="py-3 px-4 text-mystic-300">2028, 2016, 2004</td>
+                  </tr>
+                  <tr className="border-b border-mystic-700/30">
+                    <td className="py-3 px-4">
+                      <div className="flex items-center">
+                        <span className="text-2xl mr-3">🐓</span>
+                        <span className="text-mystic-200 font-semibold">Rooster</span>
+                      </div>
+                    </td>
+                    <td className="py-3 px-4 text-gray-400">Metal</td>
+                    <td className="py-3 px-4 text-mystic-300">Observant, hardworking, courageous</td>
+                    <td className="py-3 px-4 text-mystic-300">2029, 2017, 2005</td>
+                  </tr>
+                  <tr className="border-b border-mystic-700/30">
+                    <td className="py-3 px-4">
+                      <div className="flex items-center">
+                        <span className="text-2xl mr-3">🐕</span>
+                        <span className="text-mystic-200 font-semibold">Dog</span>
+                      </div>
+                    </td>
+                    <td className="py-3 px-4 text-yellow-400">Earth</td>
+                    <td className="py-3 px-4 text-mystic-300">Loyal, honest, friendly</td>
+                    <td className="py-3 px-4 text-mystic-300">2030, 2018, 2006</td>
+                  </tr>
+                  <tr>
+                    <td className="py-3 px-4">
+                      <div className="flex items-center">
+                        <span className="text-2xl mr-3">🐖</span>
+                        <span className="text-mystic-200 font-semibold">Pig</span>
+                      </div>
+                    </td>
+                    <td className="py-3 px-4 text-blue-400">Water</td>
+                    <td className="py-3 px-4 text-mystic-300">Compassionate, generous, diligent</td>
+                    <td className="py-3 px-4 text-mystic-300">2031, 2019, 2007</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          
+          <div className="bg-gradient-to-r from-mystic-800/50 to-mystic-900/50 p-6 rounded-lg border border-gold-500/30">
+            <h3 className="text-xl font-semibold mb-4 text-gold-400">Beyond Your Birth Year</h3>
+            <p className="text-mystic-300 leading-relaxed mb-4">
+              Each zodiac sign has a personality profile, compatibility pattern with other signs, and a five-element modifier based on birth year. However, two people born in the same Dragon year may have completely different destiny paths depending on their month, day, and hour of birth.
             </p>
-          </div>
-          
-          <!-- Interactive Zodiac Matrix -->
-          <div className="bg-gradient-to-br from-mystic-800/60 to-mystic-900/60 p-8 rounded-3xl border border-gold-500/30 mb-8">
-            <div className="grid grid-cols-4 gap-4">
-              <!-- Wood Element Row -->
-              <div className="text-center group cursor-pointer" data-element="wood">
-                <div className="w-20 h-20 bg-gradient-to-br from-green-500 to-emerald-600 rounded-2xl flex items-center justify-center mx-auto mb-3 group-hover:scale-110 transition-transform">
-                  <span className="text-white text-2xl">🌳</span>
-                </div>
-                <h3 className="text-lg font-semibold text-green-400 mb-2">Wood</h3>
-                <div className="space-y-2">
-                  <div className="bg-green-500/20 rounded-lg p-2 group-hover:bg-green-500/30 transition-colors">
-                    <div className="text-2xl mb-1">🐅</div>
-                    <div className="text-sm text-green-300">Tiger</div>
-                    <div className="text-xs text-green-200">2022, 2010, 1998</div>
-                  </div>
-                  <div className="bg-green-500/20 rounded-lg p-2 group-hover:bg-green-500/30 transition-colors">
-                    <div className="text-2xl mb-1">🐇</div>
-                    <div className="text-sm text-green-300">Rabbit</div>
-                    <div className="text-xs text-green-200">2023, 2011, 1999</div>
-                  </div>
-                </div>
-              </div>
-              
-              <!-- Fire Element Row -->
-              <div className="text-center group cursor-pointer" data-element="fire">
-                <div className="w-20 h-20 bg-gradient-to-br from-red-500 to-pink-600 rounded-2xl flex items-center justify-center mx-auto mb-3 group-hover:scale-110 transition-transform">
-                  <span className="text-white text-2xl">🔥</span>
-                </div>
-                <h3 className="text-lg font-semibold text-red-400 mb-2">Fire</h3>
-                <div className="space-y-2">
-                  <div className="bg-red-500/20 rounded-lg p-2 group-hover:bg-red-500/30 transition-colors">
-                    <div className="text-2xl mb-1">🐍</div>
-                    <div className="text-sm text-red-300">Snake</div>
-                    <div className="text-xs text-red-200">2025, 2013, 2001</div>
-                  </div>
-                  <div className="bg-red-500/20 rounded-lg p-2 group-hover:bg-red-500/30 transition-colors">
-                    <div className="text-2xl mb-1">🐎</div>
-                    <div className="text-sm text-red-300">Horse</div>
-                    <div className="text-xs text-red-200">2026, 2014, 2002</div>
-                  </div>
-                </div>
-              </div>
-              
-              <!-- Earth Element Row -->
-              <div className="text-center group cursor-pointer" data-element="earth">
-                <div className="w-20 h-20 bg-gradient-to-br from-yellow-500 to-amber-600 rounded-2xl flex items-center justify-center mx-auto mb-3 group-hover:scale-110 transition-transform">
-                  <span className="text-white text-2xl">🏔️</span>
-                </div>
-                <h3 className="text-lg font-semibold text-yellow-400 mb-2">Earth</h3>
-                <div className="space-y-2">
-                  <div className="bg-yellow-500/20 rounded-lg p-2 group-hover:bg-yellow-500/30 transition-colors">
-                    <div className="text-2xl mb-1">🐂</div>
-                    <div className="text-sm text-yellow-300">Ox</div>
-                    <div className="text-xs text-yellow-200">2021, 2009, 1997</div>
-                  </div>
-                  <div className="bg-yellow-500/20 rounded-lg p-2 group-hover:bg-yellow-500/30 transition-colors">
-                    <div className="text-2xl mb-1">🐉</div>
-                    <div className="text-sm text-yellow-300">Dragon</div>
-                    <div className="text-xs text-yellow-200">2024, 2012, 2000</div>
-                  </div>
-                  <div className="bg-yellow-500/20 rounded-lg p-2 group-hover:bg-yellow-500/30 transition-colors">
-                    <div className="text-2xl mb-1">🐐</div>
-                    <div className="text-sm text-yellow-300">Goat</div>
-                    <div className="text-xs text-yellow-200">2027, 2015, 2003</div>
-                  </div>
-                  <div className="bg-yellow-500/20 rounded-lg p-2 group-hover:bg-yellow-500/30 transition-colors">
-                    <div className="text-2xl mb-1">🐕</div>
-                    <div className="text-sm text-yellow-300">Dog</div>
-                    <div className="text-xs text-yellow-200">2030, 2018, 2006</div>
-                  </div>
-                </div>
-              </div>
-              
-              <!-- Metal Element Row -->
-              <div className="text-center group cursor-pointer" data-element="metal">
-                <div className="w-20 h-20 bg-gradient-to-br from-gray-500 to-slate-600 rounded-2xl flex items-center justify-center mx-auto mb-3 group-hover:scale-110 transition-transform">
-                  <span className="text-white text-2xl">⚔️</span>
-                </div>
-                <h3 className="text-lg font-semibold text-gray-400 mb-2">Metal</h3>
-                <div className="space-y-2">
-                  <div className="bg-gray-500/20 rounded-lg p-2 group-hover:bg-gray-500/30 transition-colors">
-                    <div className="text-2xl mb-1">🐒</div>
-                    <div className="text-sm text-gray-300">Monkey</div>
-                    <div className="text-xs text-gray-200">2028, 2016, 2004</div>
-                  </div>
-                  <div className="bg-gray-500/20 rounded-lg p-2 group-hover:bg-gray-500/30 transition-colors">
-                    <div className="text-2xl mb-1">🐓</div>
-                    <div className="text-sm text-gray-300">Rooster</div>
-                    <div className="text-xs text-gray-200">2029, 2017, 2005</div>
-                  </div>
-                </div>
-              </div>
-              
-              <!-- Water Element Row -->
-              <div className="text-center group cursor-pointer" data-element="water">
-                <div className="w-20 h-20 bg-gradient-to-br from-blue-500 to-cyan-600 rounded-2xl flex items-center justify-center mx-auto mb-3 group-hover:scale-110 transition-transform">
-                  <span className="text-white text-2xl">💧</span>
-                </div>
-                <h3 className="text-lg font-semibold text-blue-400 mb-2">Water</h3>
-                <div className="space-y-2">
-                  <div className="bg-blue-500/20 rounded-lg p-2 group-hover:bg-blue-500/30 transition-colors">
-                    <div className="text-2xl mb-1">🐀</div>
-                    <div className="text-sm text-blue-300">Rat</div>
-                    <div className="text-xs text-blue-200">2020, 2008, 1996</div>
-                  </ </div>
-                  <div className="bg-blue-500/20 rounded-lg p-2 group-hover:bg-blue-500/30 transition-colors">
-                    <div className="text-2xl mb-1">🐖</div>
-                    <div className="text-sm text-blue-300">Pig</div>
-                    <div className="text-xs text-blue-200">2031, 2019, 2007</div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          
-          <!-- Interactive Birth Year Calculator -->
-          <div className="bg-gradient-to-r from-mystic-800/30 to-mystic-900/30 p-8 rounded-2xl border border-gold-500/20">
-            <div className="text-center">
-              <h3 className="text-2xl font-semibold mb-4 text-gold-400">Find Your Zodiac Element</h3>
-              <div className="max-w-md mx-auto">
-                <input 
-                  type="number" 
-                  placeholder="Enter your birth year (e.g., 1990)" 
-                  className="w-full px-4 py-3 bg-mystic-700/50 border border-gold-500/30 rounded-xl text-mystic-200 placeholder-mystic-400 focus:outline-none focus:border-gold-400"
-                />
-                <button className="mt-4 bg-gradient-to-r from-yellow-600 to-orange-600 hover:from-yellow-700 hover:to-orange-700 text-white font-bold py-3 px-6 rounded-xl transition-all transform hover:scale-105">
-                  Calculate My Element
-                </button>
-              </div>
-            </div>
+            <p className="text-mystic-300 leading-relaxed">
+              Your zodiac animal is just one piece of your complete BaZi chart. It works together with the Five Elements and Four Pillars to create your unique energetic blueprint, revealing hidden talents, relationship patterns, and optimal timing for life decisions.
+            </p>
           </div>
         </div>
 
         <hr className="border-gray-600 my-12" />
 
-        <!-- Zodiac Energy Trends -->
-        <div className="mb-16">
-          <div className="text-center mb-12">
-            <h2 className="text-4xl font-bold mb-4 text-gold-400">Annual Energy Forecast</h2>
-            <p className="text-xl text-mystic-300 max-w-3xl mx-auto">
-              Discover how cosmic energies influence your zodiac sign through the coming years.
-            </p>
-          </div>
-          
-          <!-- Energy Trend Chart -->
-          <div className="bg-gradient-to-br from-mystic-800/60 to-mystic-900/60 p-8 rounded-3xl border border-gold-500/30 mb-8">
-            <div className="grid md:grid-cols-2 gap-8">
-              <!-- Chart Area -->
-              <div className="space-y-6">
-                <h3 className="text-2xl font-semibold text-gold-400 mb-4">2024-2030 Energy Trends</h3>
-                
-                <!-- Dragon Year 2024 -->
-                <div className="bg-gradient-to-r from-yellow-500/20 to-amber-500/20 p-4 rounded-xl border border-yellow-500/30">
-                  <div className="flex items-center justify-between mb-2">
-                    <div className="flex items-center">
-                      <span className="text-2xl mr-3">🐉</span>
-                      <div>
-                        <h4 className="text-yellow-400 font-semibold">Dragon Year 2024</h4>
-                        <p className="text-sm text-yellow-300">Earth Element</p>
-                      </div>
-                    </div>
-                    <div className="text-right">
-                      <div className="flex space-x-1">
-                        <span className="text-yellow-400">★★★★☆</span>
-                      </div>
-                      <p className="text-xs text-yellow-300">Career Peak</p>
-                    </div>
-                  </div>
-                  <div className="grid grid-cols-3 gap-2 text-xs">
-                    <div className="text-center">
-                      <p className="text-yellow-300">Career</p>
-                      <p className="text-yellow-400">★★★★☆</p>
-                    </div>
-                    <div className="text-center">
-                      <p className="text-yellow-300">Love</p>
-                      <p className="text-yellow-400">★★★☆☆</p>
-                    </div>
-                    <div className="text-center">
-                      <p className="text-yellow-300">Wealth</p>
-                      <p className="text-yellow-400">★★★★★</p>
-                    </div>
-                  </div>
-                </div>
-                
-                <!-- Snake Year 2025 -->
-                <div className="bg-gradient-to-r from-red-500/20 to-pink-500/20 p-4 rounded-xl border border-red-500/30">
-                  <div className="flex items-center justify-between mb-2">
-                    <div className="flex items-center">
-                      <span className="text-2xl mr-3">🐍</span>
-                      <div>
-                        <h4 className="text-red-400 font-semibold">Snake Year 2025</h4>
-                        <p className="text-sm text-red-300">Fire Element</p>
-                      </div>
-                    </div>
-                    <div className="text-right">
-                      <div className="flex space-x-1">
-                        <span className="text-red-400">★★★☆☆</span>
-                      </div>
-                      <p className="text-xs text-red-300">Transformation</p>
-                    </div>
-                  </div>
-                  <div className="grid grid-cols-3 gap-2 text-xs">
-                    <div className="text-center">
-                      <p className="text-red-300">Career</p>
-                      <p className="text-red-400">★★★☆☆</p>
-                    </div>
-                    <div className="text-center">
-                      <p className="text-red-300">Love</p>
-                      <p className="text-red-400">★★★★☆</p>
-                    </div>
-                    <div className="text-center">
-                      <p className="text-red-300">Wealth</p>
-                      <p className="text-red-400">★★★☆☆</p>
-                    </div>
-                  </div>
-                </div>
-                
-                <!-- Horse Year 2026 -->
-                <div className="bg-gradient-to-r from-red-500/20 to-pink-500/20 p-4 rounded-xl border border-red-500/30">
-                  <div className="flex items-center justify-between mb-2">
-                    <div className="flex items-center">
-                      <span className="text-2xl mr-3">🐎</span>
-                      <div>
-                        <h4 className="text-red-400 font-semibold">Horse Year 2026</h4>
-                        <p className="text-sm text-red-300">Fire Element</p>
-                      </div>
-                    </div>
-                    <div className="text-right">
-                      <div className="flex space-x-1">
-                        <span className="text-red-400">★★★★☆</span>
-                      </div>
-                      <p className="text-xs text-red-300">Adventure</p>
-                    </div>
-                  </div>
-                  <div className="grid grid-cols-3 gap-2 text-xs">
-                    <div className="text-center">
-                      <p className="text-red-300">Career</p>
-                      <p className="text-red-400">★★★★☆</p>
-                    </div>
-                    <div className="text-center">
-                      <p className="text-red-300">Love</p>
-                      <p className="text-red-400">★★★★★</p>
-                    </div>
-                    <div className="text-center">
-                      <p className="text-red-300">Wealth</p>
-                      <p className="text-red-400">★★★☆☆</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              
-              <!-- Key Insights -->
-              <div className="space-y-6">
-                <h3 className="text-2xl font-semibold text-gold-400 mb-4">Key Insights</h3>
-                
-                <div className="space-y-4">
-                  <div className="bg-gradient-to-r from-blue-500/20 to-cyan-500/20 p-4 rounded-xl border border-blue-500/30">
-                    <div className="flex items-start">
-                      <span className="text-blue-400 text-xl mr-3">🎯</span>
-                      <div>
-                        <h4 className="text-blue-400 font-semibold mb-2">Career Opportunities</h4>
-                        <p className="text-sm text-blue-300">2024 Dragon year brings exceptional career growth, especially for Earth and Metal elements.</p>
-                      </div>
-                    </div>
-                  </div>
-                  
-                  <div className="bg-gradient-to-r from-pink-500/20 to-rose-500/20 p-4 rounded-xl border border-pink-500/30">
-                    <div className="flex items-start">
-                      <span className="text-pink-400 text-xl mr-3">💕</span>
-                      <div>
-                        <h4 className="text-pink-400 font-semibold mb-2">Relationship Timing</h4>
-                        <p className="text-sm text-pink-300">2026 Horse year creates perfect conditions for new relationships and deepening bonds.</p>
-                      </div>
-                    </div>
-                  </div>
-                  
-                  <div className="bg-gradient-to-r from-green-500/20 to-emerald-500/20 p-4 rounded-xl border border-green-500/30">
-                    <div className="flex items-start">
-                      <span className="text-green-400 text-xl mr-3">💰</span>
-                      <div>
-                        <h4 className="text-green-400 font-semibold mb-2">Wealth Cycles</h4>
-                        <p className="text-sm text-green-300">2024-2025 marks a wealth accumulation period, with 2024 being particularly auspicious.</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+
 
         <!-- BaZi (Four Pillars) -->
-        <div className="mb-16">
-          <div className="text-center mb-12">
-            <h2 className="text-4xl font-bold mb-4 text-gold-400">BaZi: Your Life's Blueprint</h2>
-            <p className="text-xl text-mystic-300 max-w-3xl mx-auto">
-              <strong>BaZi (八字)</strong> means "Eight Characters" - the four pillars of your birth that reveal your unique destiny.
+        <div className="mb-12">
+          <h2 className="text-3xl font-bold mb-6 text-gold-400">BaZi (Four Pillars of Destiny)</h2>
+          <p className="text-lg text-mystic-300 leading-relaxed mb-8">
+            <strong>BaZi (八字)</strong> means "Eight Characters" and represents the four pillars of your birth: Year, Month, Day, and Hour. Each pillar contains a Heavenly Stem and Earthly Branch, creating your unique destiny blueprint.
+          </p>
+          
+          <!-- Simple BaZi Table -->
+          <div className="bg-gradient-to-r from-mystic-800/50 to-mystic-900/50 p-6 rounded-xl border border-gold-500/30 mb-8">
+            <div className="overflow-x-auto">
+              <table className="w-full">
+                <thead>
+                  <tr className="border-b border-gold-500/30">
+                    <th className="text-left py-3 px-4 text-gold-400 font-semibold">Pillar</th>
+                    <th className="text-left py-3 px-4 text-gold-400 font-semibold">Represents</th>
+                    <th className="text-left py-3 px-4 text-gold-400 font-semibold">Life Aspect</th>
+                    <th className="text-left py-3 px-4 text-gold-400 font-semibold">Influence</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr className="border-b border-mystic-700/30">
+                    <td className="py-3 px-4">
+                      <div className="flex items-center">
+                        <span className="text-2xl mr-3">📅</span>
+                        <span className="text-blue-400 font-semibold">Year Pillar</span>
+                      </div>
+                    </td>
+                    <td className="py-3 px-4 text-mystic-300">Family Background</td>
+                    <td className="py-3 px-4 text-mystic-300">Early life & ancestral roots</td>
+                    <td className="py-3 px-4 text-mystic-300">Foundation & inheritance</td>
+                  </tr>
+                  <tr className="border-b border-mystic-700/30">
+                    <td className="py-3 px-4">
+                      <div className="flex items-center">
+                        <span className="text-2xl mr-3">💼</span>
+                        <span className="text-green-400 font-semibold">Month Pillar</span>
+                      </div>
+                    </td>
+                    <td className="py-3 px-4 text-mystic-300">Career & Purpose</td>
+                    <td className="py-3 px-4 text-mystic-300">Professional path & calling</td>
+                    <td className="py-3 px-4 text-mystic-300">Opportunities & timing</td>
+                  </tr>
+                  <tr className="border-b border-mystic-700/30">
+                    <td className="py-3 px-4">
+                      <div className="flex items-center">
+                        <span className="text-2xl mr-3">💕</span>
+                        <span className="text-pink-400 font-semibold">Day Pillar</span>
+                      </div>
+                    </td>
+                    <td className="py-3 px-4 text-mystic-300">Core Personality</td>
+                    <td className="py-3 px-4 text-mystic-300">True self & identity</td>
+                    <td className="py-3 px-4 text-mystic-300">Spouse relationships</td>
+                  </tr>
+                  <tr>
+                    <td className="py-3 px-4">
+                      <div className="flex items-center">
+                        <span className="text-2xl mr-3">👶</span>
+                        <span className="text-purple-400 font-semibold">Hour Pillar</span>
+                      </div>
+                    </td>
+                    <td className="py-3 px-4 text-mystic-300">Later Life</td>
+                    <td className="py-3 px-4 text-mystic-300">Children & legacy</td>
+                    <td className="py-3 px-4 text-mystic-300">Ultimate destiny</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          
+          <div className="bg-gradient-to-r from-mystic-800/50 to-mystic-900/50 p-6 rounded-lg border border-gold-500/30">
+            <h3 className="text-xl font-semibold mb-4 text-gold-400">How BaZi Analysis Works</h3>
+            <p className="text-mystic-300 leading-relaxed mb-4">
+              A BaZi analysis examines the interactions between your Four Pillars, revealing how your elemental makeup influences every aspect of your life. The Heavenly Stems and Earthly Branches in each pillar create complex relationships that determine your strengths, challenges, and optimal timing for important decisions.
             </p>
-          </div>
-          
-          <div className="grid grid-cols-4 gap-6 mb-8">
-            <div className="text-center group">
-              <div className="w-24 h-24 bg-gradient-to-br from-blue-500 to-indigo-600 rounded-3xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform">
-                <span className="text-white text-3xl">📅</span>
-              </div>
-              <h3 className="text-xl font-semibold mb-2 text-blue-400">Year</h3>
-              <p className="text-sm text-mystic-300">Family & Foundation</p>
-            </div>
-            <div className="text-center group">
-              <div className="w-24 h-24 bg-gradient-to-br from-green-500 to-emerald-600 rounded-3xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform">
-                <span className="text-white text-3xl">💼</span>
-              </div>
-              <h3 className="text-xl font-semibold mb-2 text-green-400">Month</h3>
-              <p className="text-sm text-mystic-300">Career & Purpose</p>
-            </div>
-            <div className="text-center group">
-              <div className="w-24 h-24 bg-gradient-to-br from-pink-500 to-rose-600 rounded-3xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform">
-                <span className="text-white text-3xl">💕</span>
-              </div>
-              <h3 className="text-xl font-semibold mb-2 text-pink-400">Day</h3>
-              <p className="text-sm text-mystic-300">Personality & Love</p>
-            </div>
-            <div className="text-center group">
-              <div className="w-24 h-24 bg-gradient-to-br from-purple-500 to-violet-600 rounded-3xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform">
-                <span className="text-white text-3xl">👶</span>
-              </div>
-              <h3 className="text-xl font-semibold mb-2 text-purple-400">Hour</h3>
-              <p className="text-sm text-mystic-300">Future & Destiny</p>
-            </div>
-          </div>
-          
-          <div className="bg-gradient-to-r from-mystic-800/30 to-mystic-900/30 p-8 rounded-2xl border border-gold-500/20">
-            <div className="text-center">
-              <h3 className="text-2xl font-semibold mb-4 text-gold-400">Your Destiny Code</h3>
-              <p className="text-mystic-300 max-w-2xl mx-auto">
-                Each pillar contains a Heavenly Stem and Earthly Branch, creating your unique energetic blueprint that reveals hidden talents, relationship patterns, and optimal timing for life decisions.
-              </p>
-            </div>
+            <p className="text-mystic-300 leading-relaxed">
+              This analysis uncovers hidden talents, relationship patterns, wealth potential, life turning points, and annual energy cycles. Think of it as your personal energetic blueprint that guides you toward your highest potential and helps you navigate life's challenges with wisdom and timing.
+            </p>
           </div>
         </div>
 
@@ -1083,27 +897,31 @@ const BlogPost = () => {
         </div>
 
                 <!-- Conclusion -->
-        <div className="mb-16">
-          <div className="relative overflow-hidden rounded-3xl bg-gradient-to-br from-gold-900/20 via-yellow-900/15 to-orange-900/10 p-12 border border-gold-500/20">
-            <div className="absolute inset-0 bg-[url('data:image/svg+xml,%3Csvg width="60" height="60" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg"%3E%3Cg fill="none" fill-rule="evenodd"%3E%3Cg fill="%23fbbf24" fill-opacity="0.05"%3E%3Ccircle cx="30" cy="30" r="2"/%3E%3C/g%3E%3C/g%3E%3C/svg%3E')] opacity-30"></div>
-            <div className="relative z-10 text-center">
-              <div className="w-20 h-20 bg-gradient-to-r from-gold-400 to-yellow-400 rounded-full flex items-center justify-center mx-auto mb-8">
-                <span className="text-3xl">🌟</span>
-              </div>
-              <h2 className="text-4xl font-bold mb-6 text-gold-300">Your Destiny Awaits</h2>
-              <p className="text-xl text-gold-200 mb-8 max-w-3xl mx-auto">
-                Chinese astrology reveals the timing and tendencies in your life, empowering you to make better decisions and align with your purpose.
-              </p>
-              <div className="bg-gradient-to-r from-mystic-800/50 to-mystic-900/50 p-8 rounded-2xl border border-gold-500/30">
-                <h3 className="text-2xl font-bold mb-4 text-gold-400">Begin Your Journey</h3>
-                <p className="text-mystic-300 mb-6">
-                  Get your personalized BaZi reading and discover how ancient wisdom can guide your modern life.
-                </p>
-                <button className="bg-gradient-to-r from-yellow-600 to-orange-600 hover:from-yellow-700 hover:to-orange-700 text-white font-bold py-4 px-8 rounded-xl transition-all transform hover:scale-105">
-                  Get Your Free BaZi Reading
-                </button>
-              </div>
-            </div>
+        <div className="mb-12">
+          <h2 className="text-3xl font-bold mb-6 text-gold-400">Conclusion: Your Destiny Is a Code Waiting to Be Decoded</h2>
+          <p className="text-lg text-mystic-300 leading-relaxed mb-6">
+            Chinese astrology doesn't predict your fate—it reveals the <strong>timing and tendencies</strong> in your life, empowering you to make better decisions, align with your purpose, and find peace in a chaotic world.
+          </p>
+          <p className="text-lg text-mystic-300 leading-relaxed mb-8">
+            By understanding your <strong>Five Elements</strong>, <strong>Zodiac Animal</strong>, and <strong>Four Pillars</strong>, you gain insight into your natural strengths, challenges, and optimal life path. Ancient wisdom offers a grounded, timeless truth that guides you toward your highest potential.
+          </p>
+          
+          <!-- Final Quote -->
+          <div className="bg-gradient-to-br from-gold-900/50 to-yellow-900/40 p-8 rounded-3xl border border-gold-500/30 mb-8">
+            <p className="text-3xl font-semibold text-gold-400 text-center leading-relaxed">
+              🔮 When you understand your energy, you understand your life.
+            </p>
+          </div>
+          
+          <!-- CTA -->
+          <div className="text-center bg-gradient-to-r from-mystic-800/50 to-mystic-900/50 p-8 rounded-lg border border-gold-500/30">
+            <h3 className="text-2xl font-bold mb-4 text-gold-400">Begin Your Journey Today</h3>
+            <p className="text-lg text-mystic-300 mb-6">
+              Get your personalized BaZi reading and discover how ancient Chinese wisdom can guide your modern life. Uncover the patterns, discover your strengths, and align with the natural flow of your destiny.
+            </p>
+            <button className="bg-yellow-600 hover:bg-yellow-700 text-white font-bold py-3 px-8 rounded-lg transition-colors">
+              Get Your Free BaZi Reading
+            </button>
           </div>
         </div>
       `,
