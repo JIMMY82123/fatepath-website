@@ -48,3 +48,8 @@
 
                           SSEEAARRCCHHIINNGG
 
+[33m97d1e52[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m 修复头像显示问题：添加错误处理和默认头像 - 当头像文件加载失败时显示默认头像 - 使用emma-rodriguez.jpg作为默认头像 - 解决占位符文件导致的显示问题
+[33mb404b89[m 更新sitemap.xml：添加新的博文和更新页面修改日期 - 添加chinese-astrology-ancient-wisdom-guiding-destiny博文URL - 更新testimonials页面最后修改日期为2025-08-07 - 确保搜索引擎能够索引今天更新的所有内容
+[33mfef5588[m 修复主页好评板块头像重复利用问题 - 为每个testimonial分配独特的头像文件 - 更新Home.jsx和Testimonials.jsx中的头像引用 - 创建新的头像文件占位符 - 确保每个客户都有独特的视觉标识
+[33mb695914[m 优化中国占星术博文格式：提升视觉效果和用户体验 - 添加图标和视觉元素 - 改进卡片布局和网格设计 - 增强引言和结论的视觉冲击力 - 优化表格和列表的展示效果
+[33mc811cb5[m 更新中国占星术文章封面图片格式：从SVG改为JPG - 添加chinese-astrology-guide.jpg封面图片 - 删除不需要的SVG文件 - 更新Blog.jsx和BlogPost.jsx中的图片引用

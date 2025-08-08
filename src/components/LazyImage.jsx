@@ -44,21 +44,24 @@ const LazyImage = ({
   }
 
   const handleError = () => {
-    // 如果主图片加载失败，根据原始src选择不同的默认头像
-    let defaultAvatar = '/images/testimonials/emma-rodriguez.jpg'
+    // 如果主图片加载失败，使用智能哈希算法分配默认头像
+    const realAvatars = [
+      '/images/testimonials/emma-rodriguez.jpg',
+      '/images/testimonials/michael-chen.jpg', 
+      '/images/testimonials/sarah-johnson.jpg'
+    ]
     
-    // 根据原始路径选择不同的默认头像，避免重复
-    if (src.includes('david-kim') || src.includes('david-thompson')) {
-      defaultAvatar = '/images/testimonials/michael-chen.jpg'
-    } else if (src.includes('lisa-wang') || src.includes('jennifer-lee')) {
-      defaultAvatar = '/images/testimonials/sarah-johnson.jpg'
-    } else if (src.includes('robert-martinez') || src.includes('alex-thompson') || src.includes('alex-kim')) {
-      defaultAvatar = '/images/testimonials/emma-rodriguez.jpg'
-    } else if (src.includes('maria-garcia') || src.includes('james-wilson')) {
-      defaultAvatar = '/images/testimonials/michael-chen.jpg'
-    } else if (src.includes('sophie-anderson') || src.includes('yuki-tanaka') || src.includes('amanda-foster')) {
-      defaultAvatar = '/images/testimonials/sarah-johnson.jpg'
+    // 使用简单的字符串哈希来确保相同路径总是得到相同头像
+    let hash = 0
+    for (let i = 0; i < src.length; i++) {
+      const char = src.charCodeAt(i)
+      hash = ((hash << 5) - hash) + char
+      hash = hash & hash // 转换为32位整数
     }
+    
+    // 使用哈希值选择默认头像
+    const avatarIndex = Math.abs(hash) % realAvatars.length
+    const defaultAvatar = realAvatars[avatarIndex]
     
     setImageSrc(defaultAvatar)
     setIsLoaded(true)
