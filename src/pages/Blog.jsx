@@ -227,6 +227,17 @@ const Blog = () => {
           readTime: "14 min read",
           image: "/images/blog/bazi-love-timing-cover.svg",
           slug: "bazi-predict-true-love-timing"
+        },
+        {
+          id: 14,
+          title: "GPT-5 Arrives: A Technological Leap in the Age of Period 9 Fire Luck",
+          excerpt: "Today marks the official launch of GPT-5, the next generation of OpenAI's large language model. While tech enthusiasts discuss its capabilities, there's a deeper layer: this moment perfectly coincides with the beginning of Period 9, the 20-year 'Fire Luck Cycle' in Feng Shui and Chinese metaphysics.",
+          category: "modern-metaphysics",
+          categoryLabel: "Modern Metaphysics",
+          date: "2025-08-08",
+          readTime: "12 min read",
+          image: "/images/blog/gpt5-period9-cover.jpg",
+          slug: "gpt5-period9-fire-luck-technological-leap"
         }
   ]
 
@@ -237,7 +248,8 @@ const Blog = () => {
     { value: 'love-compatibility', label: 'Love & Relationships' },
     { value: 'talismans', label: 'Talismans & Protection' },
     { value: 'career-timing', label: 'Career & Timing' },
-    { value: 'wealth-bazi', label: 'Wealth & Fortune' }
+    { value: 'wealth-bazi', label: 'Wealth & Fortune' },
+    { value: 'modern-metaphysics', label: 'Modern Metaphysics' }
   ]
 
   // 过滤文章
