@@ -513,19 +513,25 @@ const BlogPost = () => {
                 <div className="w-16 h-16 bg-gradient-to-r from-blue-400 to-blue-500 rounded-full flex items-center justify-center mx-auto mb-4">
                   <span className="text-2xl">📅</span>
                 </div>
-                <h3 className="text-lg font-semibold mb-3 text-blue-400 text-center">Year Pillar</h3>
-                <div className="space-y-3">
+                <h3 className="text-lg font-semibold mb-4 text-blue-400 text-center">Year Pillar</h3>
+                <div className="grid grid-cols-3 gap-2">
                   <div className="text-center">
-                    <p className="font-semibold text-blue-300 text-sm">Family Background</p>
-                    <p className="text-xs text-blue-200">Early life & ancestral roots</p>
+                    <div className="w-8 h-8 bg-blue-500/20 rounded-full flex items-center justify-center mx-auto mb-1">
+                      <span className="text-blue-400 text-sm">🏠</span>
+                    </div>
+                    <p className="text-xs text-blue-300">Family</p>
                   </div>
                   <div className="text-center">
-                    <p className="font-semibold text-blue-300 text-sm">Foundation</p>
-                    <p className="text-xs text-blue-200">Personality base & inheritance</p>
+                    <div className="w-8 h-8 bg-blue-500/20 rounded-full flex items-center justify-center mx-auto mb-1">
+                      <span className="text-blue-400 text-sm">🌱</span>
+                    </div>
+                    <p className="text-xs text-blue-300">Foundation</p>
                   </div>
                   <div className="text-center">
-                    <p className="font-semibold text-blue-300 text-sm">Social Influence</p>
-                    <p className="text-xs text-blue-200">How others perceive you</p>
+                    <div className="w-8 h-8 bg-blue-500/20 rounded-full flex items-center justify-center mx-auto mb-1">
+                      <span className="text-blue-400 text-sm">👥</span>
+                    </div>
+                    <p className="text-xs text-blue-300">Social</p>
                   </div>
                 </div>
               </div>
@@ -536,19 +542,25 @@ const BlogPost = () => {
                 <div className="w-16 h-16 bg-gradient-to-r from-green-400 to-green-500 rounded-full flex items-center justify-center mx-auto mb-4">
                   <span className="text-2xl">💼</span>
                 </div>
-                <h3 className="text-lg font-semibold mb-3 text-green-400 text-center">Month Pillar</h3>
-                <div className="space-y-3">
+                <h3 className="text-lg font-semibold mb-4 text-green-400 text-center">Month Pillar</h3>
+                <div className="grid grid-cols-3 gap-2">
                   <div className="text-center">
-                    <p className="font-semibold text-green-300 text-sm">Career & Purpose</p>
-                    <p className="text-xs text-green-200">Professional path & calling</p>
+                    <div className="w-8 h-8 bg-green-500/20 rounded-full flex items-center justify-center mx-auto mb-1">
+                      <span className="text-green-400 text-sm">🎯</span>
+                    </div>
+                    <p className="text-xs text-green-300">Career</p>
                   </div>
                   <div className="text-center">
-                    <p className="font-semibold text-green-300 text-sm">Opportunities</p>
-                    <p className="text-xs text-green-200">Timing & relationships</p>
+                    <div className="w-8 h-8 bg-green-500/20 rounded-full flex items-center justify-center mx-auto mb-1">
+                      <span className="text-green-400 text-sm">⏰</span>
+                    </div>
+                    <p className="text-xs text-green-300">Timing</p>
                   </div>
                   <div className="text-center">
-                    <p className="font-semibold text-green-300 text-sm">Parents</p>
-                    <p className="text-xs text-green-200">Relationship with parents</p>
+                    <div className="w-8 h-8 bg-green-500/20 rounded-full flex items-center justify-center mx-auto mb-1">
+                      <span className="text-green-400 text-sm">👨‍👩‍👧‍👦</span>
+                    </div>
+                    <p className="text-xs text-green-300">Parents</p>
                   </div>
                 </div>
               </div>
@@ -559,19 +571,25 @@ const BlogPost = () => {
                 <div className="w-16 h-16 bg-gradient-to-r from-pink-400 to-pink-500 rounded-full flex items-center justify-center mx-auto mb-4">
                   <span className="text-2xl">💕</span>
                 </div>
-                <h3 className="text-lg font-semibold mb-3 text-pink-400 text-center">Day Pillar</h3>
-                <div className="space-y-3">
+                <h3 className="text-lg font-semibold mb-4 text-pink-400 text-center">Day Pillar</h3>
+                <div className="grid grid-cols-3 gap-2">
                   <div className="text-center">
-                    <p className="font-semibold text-pink-300 text-sm">Core Personality</p>
-                    <p className="text-xs text-pink-200">True self & identity</p>
+                    <div className="w-8 h-8 bg-pink-500/20 rounded-full flex items-center justify-center mx-auto mb-1">
+                      <span className="text-pink-400 text-sm">🎭</span>
+                    </div>
+                    <p className="text-xs text-pink-300">Personality</p>
                   </div>
                   <div className="text-center">
-                    <p className="font-semibold text-pink-300 text-sm">Compatibility</p>
-                    <p className="text-xs text-pink-200">Spouse relationships</p>
+                    <div className="w-8 h-8 bg-pink-500/20 rounded-full flex items-center justify-center mx-auto mb-1">
+                      <span className="text-pink-400 text-sm">💑</span>
+                    </div>
+                    <p className="text-xs text-pink-300">Love</p>
                   </div>
                   <div className="text-center">
-                    <p className="font-semibold text-pink-300 text-sm">Daily Life</p>
-                    <p className="text-xs text-pink-200">How you approach each day</p>
+                    <div className="w-8 h-8 bg-pink-500/20 rounded-full flex items-center justify-center mx-auto mb-1">
+                      <span className="text-pink-400 text-sm">☀️</span>
+                    </div>
+                    <p className="text-xs text-pink-300">Daily</p>
                   </div>
                 </div>
               </div>
@@ -582,19 +600,25 @@ const BlogPost = () => {
                 <div className="w-16 h-16 bg-gradient-to-r from-purple-400 to-purple-500 rounded-full flex items-center justify-center mx-auto mb-4">
                   <span className="text-2xl">👶</span>
                 </div>
-                <h3 className="text-lg font-semibold mb-3 text-purple-400 text-center">Hour Pillar</h3>
-                <div className="space-y-3">
+                <h3 className="text-lg font-semibold mb-4 text-purple-400 text-center">Hour Pillar</h3>
+                <div className="grid grid-cols-3 gap-2">
                   <div className="text-center">
-                    <p className="font-semibold text-purple-300 text-sm">Later Life</p>
-                    <p className="text-xs text-purple-200">Children & legacy</p>
+                    <div className="w-8 h-8 bg-purple-500/20 rounded-full flex items-center justify-center mx-auto mb-1">
+                      <span className="text-purple-400 text-sm">🌅</span>
+                    </div>
+                    <p className="text-xs text-purple-300">Future</p>
                   </div>
                   <div className="text-center">
-                    <p className="font-semibold text-purple-300 text-sm">Ultimate Destiny</p>
-                    <p className="text-xs text-purple-200">Life's final chapter</p>
+                    <div className="w-8 h-8 bg-purple-500/20 rounded-full flex items-center justify-center mx-auto mb-1">
+                      <span className="text-purple-400 text-sm">🏆</span>
+                    </div>
+                    <p className="text-xs text-purple-300">Destiny</p>
                   </div>
                   <div className="text-center">
-                    <p className="font-semibold text-purple-300 text-sm">Hidden Desires</p>
-                    <p className="text-xs text-purple-200">Deepest aspirations</p>
+                    <div className="w-8 h-8 bg-purple-500/20 rounded-full flex items-center justify-center mx-auto mb-1">
+                      <span className="text-purple-400 text-sm">💭</span>
+                    </div>
+                    <p className="text-xs text-purple-300">Desires</p>
                   </div>
                 </div>
               </div>
@@ -603,14 +627,38 @@ const BlogPost = () => {
           
           <div className="bg-gradient-to-r from-mystic-800/50 to-mystic-900/50 p-6 rounded-lg border border-gold-500/30">
             <h3 className="text-xl font-semibold mb-4 text-gold-400">How BaZi Analysis Works</h3>
-            <p className="text-mystic-300 leading-relaxed mb-4">
-              A BaZi analysis examines the interactions between your Four Pillars, revealing how your elemental makeup influences every aspect of your life. The Heavenly Stems and Earthly Branches in each pillar create complex relationships that determine your strengths, challenges, and optimal timing for important decisions.
-            </p>
-            <p className="text-mystic-300 leading-relaxed mb-4">
-              This analysis uncovers hidden talents, relationship patterns, wealth potential, life turning points, and annual energy cycles. Think of it as your personal energetic blueprint that guides you toward your highest potential and helps you navigate life's challenges with wisdom and timing.
-            </p>
-            <p className="text-mystic-300 leading-relaxed">
-              Unlike simple zodiac readings, BaZi provides specific timing for career changes, relationship opportunities, health considerations, and financial decisions based on your unique elemental composition and the current cosmic influences.
+            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4 mb-4">
+              <div className="text-center">
+                <div className="w-12 h-12 bg-gold-500/20 rounded-full flex items-center justify-center mx-auto mb-2">
+                  <span className="text-gold-400 text-lg">🔍</span>
+                </div>
+                <p className="text-sm text-gold-300 font-semibold">Examine</p>
+                <p className="text-xs text-mystic-300">Four Pillars interactions</p>
+              </div>
+              <div className="text-center">
+                <div className="w-12 h-12 bg-gold-500/20 rounded-full flex items-center justify-center mx-auto mb-2">
+                  <span className="text-gold-400 text-lg">🎯</span>
+                </div>
+                <p className="text-sm text-gold-300 font-semibold">Reveal</p>
+                <p className="text-xs text-mystic-300">Strengths & challenges</p>
+              </div>
+              <div className="text-center">
+                <div className="w-12 h-12 bg-gold-500/20 rounded-full flex items-center justify-center mx-auto mb-2">
+                  <span className="text-gold-400 text-lg">⏰</span>
+                </div>
+                <p className="text-sm text-gold-300 font-semibold">Timing</p>
+                <p className="text-xs text-mystic-300">Optimal moments</p>
+              </div>
+              <div className="text-center">
+                <div className="w-12 h-12 bg-gold-500/20 rounded-full flex items-center justify-center mx-auto mb-2">
+                  <span className="text-gold-400 text-lg">🗺️</span>
+                </div>
+                <p className="text-sm text-gold-300 font-semibold">Guide</p>
+                <p className="text-xs text-mystic-300">Life decisions</p>
+              </div>
+            </div>
+            <p className="text-mystic-300 leading-relaxed text-center">
+              BaZi analysis uncovers hidden talents, relationship patterns, wealth potential, and life turning points through your unique elemental composition and cosmic influences.
             </p>
           </div>
         </div>
