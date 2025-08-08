@@ -46,9 +46,9 @@ const LazyImage = ({
   const handleError = () => {
     // 如果主图片加载失败，使用智能哈希算法分配默认头像
     const realAvatars = [
-      '/images/testimonials/emma-rodriguez.jpg',
-      '/images/testimonials/michael-chen.jpg', 
-      '/images/testimonials/sarah-johnson.jpg'
+      '/images/testimonials/emma-rodriguez.jpg?v=2',
+      '/images/testimonials/michael-chen.jpg?v=2', 
+      '/images/testimonials/sarah-johnson.jpg?v=2'
     ]
     
     // 使用简单的字符串哈希来确保相同路径总是得到相同头像

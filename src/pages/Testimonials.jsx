@@ -17,7 +17,7 @@ const Testimonials = () => {
       location: "New York, USA",
       rating: 5,
       service: "Full BaZi Reading",
-      avatar: "/images/testimonials/sarah-johnson.jpg",
+      avatar: "/images/testimonials/sarah-johnson.jpg?v=2",
       content: "As someone who's read horoscopes for fun but never really believed in destiny tools, I didn't expect much. But this BaZi report was different. It wasn't vague—it was specific. It described my internal struggles, my work ethic, and even why I always feel drained in certain work environments. The career timing section gave me the courage to finally quit a job that was slowly crushing my spirit. Within two months, I stepped into a role that fits my strengths perfectly. This report didn't just predict my future—it helped me choose a better one. I now re-read it anytime I feel confused. It's like a mirror to my soul.",
       icon: <Star className="h-6 w-6" />,
       date: "2024-12-15"
@@ -28,7 +28,7 @@ const Testimonials = () => {
       location: "Los Angeles, USA",
       rating: 5,
       service: "Custom Talisman",
-      avatar: "/images/testimonials/michael-chen.jpg",
+      avatar: "/images/testimonials/michael-chen.jpg?v=2",
       content: "I've always struggled with feeling emotionally overwhelmed—especially during certain months of the year, and nothing seemed to help. When I received my personalized amulet based on my BaZi chart, I was honestly just curious. But after wearing it for a few weeks, I noticed something shift. My sleep improved, my mind felt less chaotic, and most importantly—I stopped waking up with that constant tightness in my chest. I can't fully explain it, but it's like I'm finally in tune with something deeper, more balanced. It's not just a spiritual tool. It's become a quiet anchor in my daily life.",
       icon: <Shield className="h-6 w-6" />,
       date: "2024-12-10"
@@ -39,7 +39,7 @@ const Testimonials = () => {
       location: "Miami, USA",
       rating: 5,
       service: "Relationship Reading",
-      avatar: "/images/testimonials/emma-rodriguez.jpg",
+      avatar: "/images/testimonials/emma-rodriguez.jpg?v=2",
       content: "Before I found this service, I had just gone through a really difficult breakup. I felt lost and was starting to believe love just wasn't meant for me. The relationship reading didn't just tell me about my past—it revealed patterns I had never noticed before. It showed me why I kept attracting the wrong kind of people and when I would finally meet someone who's truly aligned with my energy. I followed the timing suggestions, did some internal healing, and not even three months later, I met someone kind, calm, and emotionally grounded. It's still new, but I finally feel hopeful again. And that alone is priceless.",
       icon: <Heart className="h-6 w-6" />,
       date: "2024-12-08"
