@@ -44,8 +44,23 @@ const LazyImage = ({
   }
 
   const handleError = () => {
-    // 如果主图片加载失败，显示默认头像
-    setImageSrc('/images/testimonials/emma-rodriguez.jpg')
+    // 如果主图片加载失败，根据原始src选择不同的默认头像
+    let defaultAvatar = '/images/testimonials/emma-rodriguez.jpg'
+    
+    // 根据原始路径选择不同的默认头像，避免重复
+    if (src.includes('david-kim') || src.includes('david-thompson')) {
+      defaultAvatar = '/images/testimonials/michael-chen.jpg'
+    } else if (src.includes('lisa-wang') || src.includes('jennifer-lee')) {
+      defaultAvatar = '/images/testimonials/sarah-johnson.jpg'
+    } else if (src.includes('robert-martinez') || src.includes('alex-thompson') || src.includes('alex-kim')) {
+      defaultAvatar = '/images/testimonials/emma-rodriguez.jpg'
+    } else if (src.includes('maria-garcia') || src.includes('james-wilson')) {
+      defaultAvatar = '/images/testimonials/michael-chen.jpg'
+    } else if (src.includes('sophie-anderson') || src.includes('yuki-tanaka') || src.includes('amanda-foster')) {
+      defaultAvatar = '/images/testimonials/sarah-johnson.jpg'
+    }
+    
+    setImageSrc(defaultAvatar)
     setIsLoaded(true)
   }
 
