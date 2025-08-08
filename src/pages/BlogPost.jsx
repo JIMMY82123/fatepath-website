@@ -57,775 +57,170 @@ const BlogPost = () => {
       author: "Xuan Yin",
       tags: ["Chinese Astrology", "BaZi Analysis", "Five Elements", "Ancient Wisdom", "Life Guidance", "Destiny", "Chinese Zodiac", "Yin Yang"],
       content: `
-        <!-- Hero Quote Section -->
-        <div className="mb-12">
-          <div className="relative overflow-hidden rounded-3xl bg-gradient-to-br from-gold-900/40 via-yellow-900/30 to-orange-900/20 p-8 border border-gold-500/30">
-            <div className="absolute inset-0 bg-[url('data:image/svg+xml,%3Csvg width="60" height="60" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg"%3E%3Cg fill="none" fill-rule="evenodd"%3E%3Cg fill="%23fbbf24" fill-opacity="0.1"%3E%3Ccircle cx="30" cy="30" r="2"/%3E%3C/g%3E%3C/g%3E%3C/svg%3E')] opacity-30"></div>
-            <div className="relative z-10 text-center">
-              <div className="w-16 h-16 bg-gradient-to-r from-gold-400 to-yellow-400 rounded-full flex items-center justify-center mx-auto mb-6">
-                <span className="text-2xl">🔮</span>
-              </div>
-              <blockquote className="text-2xl md:text-3xl font-cinzel font-semibold text-gold-200 leading-relaxed mb-4">
-                "When you understand your energy, you understand your life."
-              </blockquote>
-              <p className="text-gold-400 font-medium">— Ancient Chinese Wisdom</p>
-            </div>
-          </div>
+        <!-- Hero Section -->
+        <div className="text-center mb-8">
+          <h1 className="text-4xl md:text-5xl font-bold mb-4 text-gold-400">
+            Chinese Astrology & BaZi: Your Ancient Destiny Blueprint
+          </h1>
+          <p className="text-lg text-gray-300 leading-relaxed max-w-3xl mx-auto">
+            Discover how thousands of years of Eastern wisdom reveal your life's purpose through the <strong>Five Elements</strong>, <strong>12 Zodiac Animals</strong>, and <strong>Four Pillars of Destiny</strong>.
+          </p>
         </div>
 
-        <!-- Introduction Section -->
-        <div className="mb-12">
-          <div className="flex items-center mb-8">
-            <div className="w-12 h-12 bg-gradient-to-r from-blue-500 to-purple-600 rounded-full flex items-center justify-center mr-4">
-              <span className="text-white text-xl">🌙</span>
-            </div>
-            <h2 className="text-3xl md:text-4xl font-cinzel font-bold text-white">What Is Chinese Astrology?</h2>
-          </div>
-          
-          <div className="bg-gradient-to-r from-mystic-800/50 to-mystic-900/50 p-8 rounded-2xl border border-mystic-700/50">
-            <p className="text-lg md:text-xl text-mystic-200 leading-relaxed mb-6">
-              Chinese astrology is a comprehensive system that combines <span className="text-gold-400 font-semibold">cosmic timing</span>, <span className="text-gold-400 font-semibold">elemental forces</span>, and <span className="text-gold-400 font-semibold">personal destiny</span> to create your unique life blueprint.
-            </p>
-            <p className="text-lg md:text-xl text-mystic-200 leading-relaxed mb-6">
-              Unlike Western astrology's focus on planetary positions, Chinese astrology is based on your <span className="text-gold-400 font-semibold">birth date and time</span>, interpreted through ancient principles that have guided millions for over 3,000 years.
-            </p>
-            <div className="grid md:grid-cols-2 gap-6 mt-8">
-              <div className="bg-gradient-to-br from-red-900/30 to-red-800/20 p-6 rounded-xl border border-red-500/30">
-                <h4 className="text-red-400 font-semibold mb-3 flex items-center">
-                  <span className="mr-2">🔴</span>
-                  Western Astrology
-                </h4>
-                <p className="text-mystic-300 text-sm">Focuses on planetary positions and celestial movements</p>
-              </div>
-              <div className="bg-gradient-to-br from-gold-900/30 to-yellow-800/20 p-6 rounded-xl border border-gold-500/30">
-                <h4 className="text-gold-400 font-semibold mb-3 flex items-center">
-                  <span className="mr-2">🟡</span>
-                  Chinese Astrology
-                </h4>
-                <p className="text-mystic-300 text-sm">Based on birth date, time, and elemental principles</p>
-              </div>
-            </div>
-          </div>
+        <!-- Introduction -->
+        <div className="mb-8">
+          <h2 className="text-2xl font-bold mb-4 text-gold-400">What Is Chinese Astrology?</h2>
+          <p className="text-mystic-300 leading-relaxed mb-4">
+            Chinese astrology is a comprehensive system that combines <strong>cosmic timing</strong>, <strong>elemental forces</strong>, and <strong>personal destiny</strong> to create your unique life blueprint.
+          </p>
+          <p className="text-mystic-300 leading-relaxed">
+            Unlike Western astrology's focus on planetary positions, Chinese astrology is based on your <strong>birth date and time</strong>, interpreted through ancient principles that have guided millions for over 3,000 years.
+          </p>
         </div>
 
-        <!-- What Is Chinese Astrology Section -->
-        <div className="mb-12">
-          <div className="flex items-center mb-8">
-            <div className="w-12 h-12 bg-gradient-to-r from-green-500 to-teal-600 rounded-full flex items-center justify-center mr-4">
-              <span className="text-white text-xl">🌿</span>
-            </div>
-            <h2 className="text-3xl md:text-4xl font-cinzel font-bold text-white">The Five Elements: Foundation of Chinese Astrology</h2>
-          </div>
-          
-          <p className="text-lg text-mystic-300 leading-relaxed mb-8">
-            The Five Elements (Wu Xing) are the building blocks of Chinese astrology, representing different energies and characteristics that influence your personality and destiny.
+        <!-- Five Elements -->
+        <div className="mb-8">
+          <h2 className="text-2xl font-bold mb-4 text-gold-400">The Five Elements (Wu Xing)</h2>
+          <p className="text-mystic-300 leading-relaxed mb-4">
+            The Five Elements are the building blocks of Chinese astrology, representing different energies that influence your personality and destiny.
           </p>
           
-          <!-- Five Elements Grid -->
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-8">
-            <div className="group transform hover:scale-105 transition-all duration-300">
-              <div className="bg-gradient-to-br from-green-900/40 to-green-800/30 p-6 rounded-2xl border border-green-500/30 hover:border-green-400/50 transition-colors">
-                <div className="w-16 h-16 bg-gradient-to-r from-green-400 to-green-500 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <span className="text-2xl">🌳</span>
-                </div>
-                <h3 className="text-xl font-semibold mb-3 text-green-400 text-center">Wood Element</h3>
-                <div className="space-y-3">
-                  <div className="flex items-center p-3 bg-green-800/20 rounded-lg">
-                    <span className="text-green-300 mr-3">🌱</span>
-                    <div>
-                      <p className="font-semibold text-green-300">Growth & Expansion</p>
-                      <p className="text-sm text-green-200">Creative, flexible, idealistic</p>
-                    </div>
-                  </div>
-                  <div className="flex items-center p-3 bg-green-800/20 rounded-lg">
-                    <span className="text-green-300 mr-3">🎨</span>
-                    <div>
-                      <p className="font-semibold text-green-300">Career Path</p>
-                      <p className="text-sm text-green-200">Education, arts, planning</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
+          <div className="grid md:grid-cols-5 gap-4 mb-4">
+            <div className="text-center p-4 bg-gradient-to-br from-green-900/30 to-green-800/20 rounded-lg border border-green-500/30">
+              <div className="text-2xl mb-2">🌳</div>
+              <h3 className="font-semibold text-green-400 mb-1">Wood</h3>
+              <p className="text-xs text-green-200">Growth, creativity</p>
             </div>
-            
-            <div className="group transform hover:scale-105 transition-all duration-300">
-              <div className="bg-gradient-to-br from-red-900/40 to-red-800/30 p-6 rounded-2xl border border-red-500/30 hover:border-red-400/50 transition-colors">
-                <div className="w-16 h-16 bg-gradient-to-r from-red-400 to-red-500 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <span className="text-2xl">🔥</span>
-                </div>
-                <h3 className="text-xl font-semibold mb-3 text-red-400 text-center">Fire Element</h3>
-                <div className="space-y-3">
-                  <div className="flex items-center p-3 bg-red-800/20 rounded-lg">
-                    <span className="text-red-300 mr-3">⚡</span>
-                    <div>
-                      <p className="font-semibold text-red-300">Energy & Passion</p>
-                      <p className="text-sm text-red-200">Dynamic, charismatic, impulsive</p>
-                    </div>
-                  </div>
-                  <div className="flex items-center p-3 bg-red-800/20 rounded-lg">
-                    <span className="text-red-300 mr-3">👑</span>
-                    <div>
-                      <p className="font-semibold text-red-300">Career Path</p>
-                      <p className="text-sm text-red-200">Leadership, entertainment, sales</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
+            <div className="text-center p-4 bg-gradient-to-br from-red-900/30 to-red-800/20 rounded-lg border border-red-500/30">
+              <div className="text-2xl mb-2">🔥</div>
+              <h3 className="font-semibold text-red-400 mb-1">Fire</h3>
+              <p className="text-xs text-red-200">Energy, passion</p>
             </div>
-            
-            <div className="group transform hover:scale-105 transition-all duration-300">
-              <div className="bg-gradient-to-br from-yellow-900/40 to-yellow-800/30 p-6 rounded-2xl border border-yellow-500/30 hover:border-yellow-400/50 transition-colors">
-                <div className="w-16 h-16 bg-gradient-to-r from-yellow-400 to-yellow-500 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <span className="text-2xl">🏔️</span>
-                </div>
-                <h3 className="text-xl font-semibold mb-3 text-yellow-400 text-center">Earth Element</h3>
-                <div className="space-y-3">
-                  <div className="flex items-center p-3 bg-yellow-800/20 rounded-lg">
-                    <span className="text-yellow-300 mr-3">🛡️</span>
-                    <div>
-                      <p className="font-semibold text-yellow-300">Stability & Nurturing</p>
-                      <p className="text-sm text-yellow-200">Reliable, practical, caring</p>
-                    </div>
-                  </div>
-                  <div className="flex items-center p-3 bg-yellow-800/20 rounded-lg">
-                    <span className="text-yellow-300 mr-3">🏠</span>
-                    <div>
-                      <p className="font-semibold text-yellow-300">Career Path</p>
-                      <p className="text-sm text-yellow-200">Agriculture, real estate, service</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
+            <div className="text-center p-4 bg-gradient-to-br from-yellow-900/30 to-yellow-800/20 rounded-lg border border-yellow-500/30">
+              <div className="text-2xl mb-2">🏔️</div>
+              <h3 className="font-semibold text-yellow-400 mb-1">Earth</h3>
+              <p className="text-xs text-yellow-200">Stability, nurturing</p>
             </div>
-            
-            <div className="group transform hover:scale-105 transition-all duration-300">
-              <div className="bg-gradient-to-br from-gray-900/40 to-gray-800/30 p-6 rounded-2xl border border-gray-500/30 hover:border-gray-400/50 transition-colors">
-                <div className="w-16 h-16 bg-gradient-to-r from-gray-400 to-gray-500 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <span className="text-2xl">⚔️</span>
-                </div>
-                <h3 className="text-xl font-semibold mb-3 text-gray-400 text-center">Metal Element</h3>
-                <div className="space-y-3">
-                  <div className="flex items-center p-3 bg-gray-800/20 rounded-lg">
-                    <span className="text-gray-300 mr-3">🎯</span>
-                    <div>
-                      <p className="font-semibold text-gray-300">Precision & Strength</p>
-                      <p className="text-sm text-gray-200">Determined, organized, disciplined</p>
-                    </div>
-                  </div>
-                  <div className="flex items-center p-3 bg-gray-800/20 rounded-lg">
-                    <span className="text-gray-300 mr-3">💼</span>
-                    <div>
-                      <p className="font-semibold text-gray-300">Career Path</p>
-                      <p className="text-sm text-gray-200">Finance, law, engineering</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
+            <div className="text-center p-4 bg-gradient-to-br from-gray-900/30 to-gray-800/20 rounded-lg border border-gray-500/30">
+              <div className="text-2xl mb-2">⚔️</div>
+              <h3 className="font-semibold text-gray-400 mb-1">Metal</h3>
+              <p className="text-xs text-gray-200">Precision, strength</p>
             </div>
-            
-            <div className="group transform hover:scale-105 transition-all duration-300">
-              <div className="bg-gradient-to-br from-blue-900/40 to-blue-800/30 p-6 rounded-2xl border border-blue-500/30 hover:border-blue-400/50 transition-colors">
-                <div className="w-16 h-16 bg-gradient-to-r from-blue-400 to-blue-500 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <span className="text-2xl">💧</span>
-                </div>
-                <h3 className="text-xl font-semibold mb-3 text-blue-400 text-center">Water Element</h3>
-                <div className="space-y-3">
-                  <div className="flex items-center p-3 bg-blue-800/20 rounded-lg">
-                    <span className="text-blue-300 mr-3">🧠</span>
-                    <div>
-                      <p className="font-semibold text-blue-300">Wisdom & Flow</p>
-                      <p className="text-sm text-blue-200">Intelligent, adaptable, intuitive</p>
-                    </div>
-                  </div>
-                  <div className="flex items-center p-3 bg-blue-800/20 rounded-lg">
-                    <span className="text-blue-300 mr-3">🔬</span>
-                    <div>
-                      <p className="font-semibold text-blue-300">Career Path</p>
-                      <p className="text-sm text-blue-200">Research, travel, communication</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
+            <div className="text-center p-4 bg-gradient-to-br from-blue-900/30 to-blue-800/20 rounded-lg border border-blue-500/30">
+              <div className="text-2xl mb-2">💧</div>
+              <h3 className="font-semibold text-blue-400 mb-1">Water</h3>
+              <p className="text-xs text-blue-200">Wisdom, flow</p>
             </div>
           </div>
         </div>
 
         <hr className="border-gray-600 my-12" />
 
-        <!-- The 12 Zodiac Signs Section -->
-        <div className="mb-12">
-          <div className="flex items-center mb-8">
-            <div className="w-12 h-12 bg-gradient-to-r from-purple-500 to-pink-600 rounded-full flex items-center justify-center mr-4">
-              <span className="text-white text-xl">🐾</span>
-            </div>
-            <h2 className="text-3xl md:text-4xl font-cinzel font-bold text-white">The 12 Chinese Zodiac Animals</h2>
-          </div>
-          
-          <p className="text-lg text-mystic-300 leading-relaxed mb-8">
-            Each zodiac sign has unique characteristics and represents different years in the 12-year cycle. Discover your animal sign and what it reveals about your personality.
+        <!-- 12 Zodiac Animals -->
+        <div className="mb-8">
+          <h2 className="text-2xl font-bold mb-4 text-gold-400">The 12 Chinese Zodiac Animals</h2>
+          <p className="text-mystic-300 leading-relaxed mb-4">
+            Each zodiac sign represents different years in the 12-year cycle and reveals unique personality traits.
           </p>
           
-          <!-- Zodiac Animals Grid -->
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 mb-8">
-            <div className="group transform hover:scale-105 transition-all duration-300">
-              <div className="bg-gradient-to-br from-blue-900/40 to-blue-800/30 p-6 rounded-2xl border border-blue-500/30 hover:border-blue-400/50 transition-colors">
-                <div className="w-16 h-16 bg-gradient-to-r from-blue-400 to-blue-500 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <span className="text-2xl">🐀</span>
-                </div>
-                <h3 className="text-lg font-semibold mb-2 text-blue-400 text-center">Rat</h3>
-                <div className="text-center mb-3">
-                  <p className="text-sm text-blue-300">2020, 2008, 1996, 1984</p>
-                  <p className="text-xs text-blue-200">Water Element</p>
-                </div>
-                <p className="text-sm text-blue-200 text-center">Quick-witted, resourceful, ambitious</p>
-              </div>
+          <div className="grid md:grid-cols-3 lg:grid-cols-4 gap-3 mb-4">
+            <div className="text-center p-3 bg-gradient-to-br from-blue-900/30 to-blue-800/20 rounded-lg border border-blue-500/30">
+              <div className="text-xl mb-1">🐀</div>
+              <h3 className="font-semibold text-blue-400 text-sm mb-1">Rat</h3>
+              <p className="text-xs text-blue-200">2020, 2008, 1996</p>
             </div>
-            
-            <div className="group transform hover:scale-105 transition-all duration-300">
-              <div className="bg-gradient-to-br from-yellow-900/40 to-yellow-800/30 p-6 rounded-2xl border border-yellow-500/30 hover:border-yellow-400/50 transition-colors">
-                <div className="w-16 h-16 bg-gradient-to-r from-yellow-400 to-yellow-500 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <span className="text-2xl">🐂</span>
-                </div>
-                <h3 className="text-lg font-semibold mb-2 text-yellow-400 text-center">Ox</h3>
-                <div className="text-center mb-3">
-                  <p className="text-sm text-yellow-300">2021, 2009, 1997, 1985</p>
-                  <p className="text-xs text-yellow-200">Earth Element</p>
-                </div>
-                <p className="text-sm text-yellow-200 text-center">Diligent, dependable, determined</p>
-              </div>
+            <div className="text-center p-3 bg-gradient-to-br from-yellow-900/30 to-yellow-800/20 rounded-lg border border-yellow-500/30">
+              <div className="text-xl mb-1">🐂</div>
+              <h3 className="font-semibold text-yellow-400 text-sm mb-1">Ox</h3>
+              <p className="text-xs text-yellow-200">2021, 2009, 1997</p>
             </div>
-            
-            <div className="group transform hover:scale-105 transition-all duration-300">
-              <div className="bg-gradient-to-br from-green-900/40 to-green-800/30 p-6 rounded-2xl border border-green-500/30 hover:border-green-400/50 transition-colors">
-                <div className="w-16 h-16 bg-gradient-to-r from-green-400 to-green-500 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <span className="text-2xl">🐅</span>
-                </div>
-                <h3 className="text-lg font-semibold mb-2 text-green-400 text-center">Tiger</h3>
-                <div className="text-center mb-3">
-                  <p className="text-sm text-green-300">2022, 2010, 1998, 1986</p>
-                  <p className="text-xs text-green-200">Wood Element</p>
-                </div>
-                <p className="text-sm text-green-200 text-center">Brave, confident, competitive</p>
-              </div>
+            <div className="text-center p-3 bg-gradient-to-br from-green-900/30 to-green-800/20 rounded-lg border border-green-500/30">
+              <div className="text-xl mb-1">🐅</div>
+              <h3 className="font-semibold text-green-400 text-sm mb-1">Tiger</h3>
+              <p className="text-xs text-green-200">2022, 2010, 1998</p>
             </div>
-            
-            <div className="group transform hover:scale-105 transition-all duration-300">
-              <div className="bg-gradient-to-br from-green-900/40 to-green-800/30 p-6 rounded-2xl border border-green-500/30 hover:border-green-400/50 transition-colors">
-                <div className="w-16 h-16 bg-gradient-to-r from-green-400 to-green-500 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <span className="text-2xl">🐇</span>
-                </div>
-                <h3 className="text-lg font-semibold mb-2 text-green-400 text-center">Rabbit</h3>
-                <div className="text-center mb-3">
-                  <p className="text-sm text-green-300">2023, 2011, 1999, 1987</p>
-                  <p className="text-xs text-green-200">Wood Element</p>
-                </div>
-                <p className="text-sm text-green-200 text-center">Quiet, elegant, kind</p>
-              </div>
+            <div className="text-center p-3 bg-gradient-to-br from-green-900/30 to-green-800/20 rounded-lg border border-green-500/30">
+              <div className="text-xl mb-1">🐇</div>
+              <h3 className="font-semibold text-green-400 text-sm mb-1">Rabbit</h3>
+              <p className="text-xs text-green-200">2023, 2011, 1999</p>
             </div>
-            
-            <div className="group transform hover:scale-105 transition-all duration-300">
-              <div className="bg-gradient-to-br from-yellow-900/40 to-yellow-800/30 p-6 rounded-2xl border border-yellow-500/30 hover:border-yellow-400/50 transition-colors">
-                <div className="w-16 h-16 bg-gradient-to-r from-yellow-400 to-yellow-500 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <span className="text-2xl">🐉</span>
-                </div>
-                <h3 className="text-lg font-semibold mb-2 text-yellow-400 text-center">Dragon</h3>
-                <div className="text-center mb-3">
-                  <p className="text-sm text-yellow-300">2024, 2012, 2000, 1988</p>
-                  <p className="text-xs text-yellow-200">Earth Element</p>
-                </div>
-                <p className="text-sm text-yellow-200 text-center">Confident, intelligent, enthusiastic</p>
-              </div>
+            <div className="text-center p-3 bg-gradient-to-br from-yellow-900/30 to-yellow-800/20 rounded-lg border border-yellow-500/30">
+              <div className="text-xl mb-1">🐉</div>
+              <h3 className="font-semibold text-yellow-400 text-sm mb-1">Dragon</h3>
+              <p className="text-xs text-yellow-200">2024, 2012, 2000</p>
             </div>
-            
-            <div className="group transform hover:scale-105 transition-all duration-300">
-              <div className="bg-gradient-to-br from-red-900/40 to-red-800/30 p-6 rounded-2xl border border-red-500/30 hover:border-red-400/50 transition-colors">
-                <div className="w-16 h-16 bg-gradient-to-r from-red-400 to-red-500 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <span className="text-2xl">🐍</span>
-                </div>
-                <h3 className="text-lg font-semibold mb-2 text-red-400 text-center">Snake</h3>
-                <div className="text-center mb-3">
-                  <p className="text-sm text-red-300">2025, 2013, 2001, 1989</p>
-                  <p className="text-xs text-red-200">Fire Element</p>
-                </div>
-                <p className="text-sm text-red-200 text-center">Enigmatic, intelligent, wise</p>
-              </div>
+            <div className="text-center p-3 bg-gradient-to-br from-red-900/30 to-red-800/20 rounded-lg border border-red-500/30">
+              <div className="text-xl mb-1">🐍</div>
+              <h3 className="font-semibold text-red-400 text-sm mb-1">Snake</h3>
+              <p className="text-xs text-red-200">2025, 2013, 2001</p>
             </div>
-            
-            <div className="group transform hover:scale-105 transition-all duration-300">
-              <div className="bg-gradient-to-br from-red-900/40 to-red-800/30 p-6 rounded-2xl border border-red-500/30 hover:border-red-400/50 transition-colors">
-                <div className="w-16 h-16 bg-gradient-to-r from-red-400 to-red-500 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <span className="text-2xl">🐎</span>
-                </div>
-                <h3 className="text-lg font-semibold mb-2 text-red-400 text-center">Horse</h3>
-                <div className="text-center mb-3">
-                  <p className="text-sm text-red-300">2026, 2014, 2002, 1990</p>
-                  <p className="text-xs text-red-200">Fire Element</p>
-                </div>
-                <p className="text-sm text-red-200 text-center">Animated, active, energetic</p>
-              </div>
+            <div className="text-center p-3 bg-gradient-to-br from-red-900/30 to-red-800/20 rounded-lg border border-red-500/30">
+              <div className="text-xl mb-1">🐎</div>
+              <h3 className="font-semibold text-red-400 text-sm mb-1">Horse</h3>
+              <p className="text-xs text-red-200">2026, 2014, 2002</p>
             </div>
-            
-            <div className="group transform hover:scale-105 transition-all duration-300">
-              <div className="bg-gradient-to-br from-yellow-900/40 to-yellow-800/30 p-6 rounded-2xl border border-yellow-500/30 hover:border-yellow-400/50 transition-colors">
-                <div className="w-16 h-16 bg-gradient-to-r from-yellow-400 to-yellow-500 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <span className="text-2xl">🐐</span>
-                </div>
-                <h3 className="text-lg font-semibold mb-2 text-yellow-400 text-center">Goat</h3>
-                <div className="text-center mb-3">
-                  <p className="text-sm text-yellow-300">2027, 2015, 2003, 1991</p>
-                  <p className="text-xs text-yellow-200">Earth Element</p>
-                </div>
-                <p className="text-sm text-yellow-200 text-center">Calm, gentle, sympathetic</p>
-              </div>
+            <div className="text-center p-3 bg-gradient-to-br from-yellow-900/30 to-yellow-800/20 rounded-lg border border-yellow-500/30">
+              <div className="text-xl mb-1">🐐</div>
+              <h3 className="font-semibold text-yellow-400 text-sm mb-1">Goat</h3>
+              <p className="text-xs text-yellow-200">2027, 2015, 2003</p>
             </div>
-            
-            <div className="group transform hover:scale-105 transition-all duration-300">
-              <div className="bg-gradient-to-br from-gray-900/40 to-gray-800/30 p-6 rounded-2xl border border-gray-500/30 hover:border-gray-400/50 transition-colors">
-                <div className="w-16 h-16 bg-gradient-to-r from-gray-400 to-gray-500 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <span className="text-2xl">🐒</span>
-                </div>
-                <h3 className="text-lg font-semibold mb-2 text-gray-400 text-center">Monkey</h3>
-                <div className="text-center mb-3">
-                  <p className="text-sm text-gray-300">2028, 2016, 2004, 1992</p>
-                  <p className="text-xs text-gray-200">Metal Element</p>
-                </div>
-                <p className="text-sm text-gray-200 text-center">Sharp, smart, curious</p>
-              </div>
+            <div className="text-center p-3 bg-gradient-to-br from-gray-900/30 to-gray-800/20 rounded-lg border border-gray-500/30">
+              <div className="text-xl mb-1">🐒</div>
+              <h3 className="font-semibold text-gray-400 text-sm mb-1">Monkey</h3>
+              <p className="text-xs text-gray-200">2028, 2016, 2004</p>
             </div>
-            
-            <div className="group transform hover:scale-105 transition-all duration-300">
-              <div className="bg-gradient-to-br from-gray-900/40 to-gray-800/30 p-6 rounded-2xl border border-gray-500/30 hover:border-gray-400/50 transition-colors">
-                <div className="w-16 h-16 bg-gradient-to-r from-gray-400 to-gray-500 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <span className="text-2xl">🐓</span>
-                </div>
-                <h3 className="text-lg font-semibold mb-2 text-gray-400 text-center">Rooster</h3>
-                <div className="text-center mb-3">
-                  <p className="text-sm text-gray-300">2029, 2017, 2005, 1993</p>
-                  <p className="text-xs text-gray-200">Metal Element</p>
-                </div>
-                <p className="text-sm text-gray-200 text-center">Observant, hardworking, courageous</p>
-              </div>
+            <div className="text-center p-3 bg-gradient-to-br from-gray-900/30 to-gray-800/20 rounded-lg border border-gray-500/30">
+              <div className="text-xl mb-1">🐓</div>
+              <h3 className="font-semibold text-gray-400 text-sm mb-1">Rooster</h3>
+              <p className="text-xs text-gray-200">2029, 2017, 2005</p>
             </div>
-            
-            <div className="group transform hover:scale-105 transition-all duration-300">
-              <div className="bg-gradient-to-br from-yellow-900/40 to-yellow-800/30 p-6 rounded-2xl border border-yellow-500/30 hover:border-yellow-400/50 transition-colors">
-                <div className="w-16 h-16 bg-gradient-to-r from-yellow-400 to-yellow-500 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <span className="text-2xl">🐕</span>
-                </div>
-                <h3 className="text-lg font-semibold mb-2 text-yellow-400 text-center">Dog</h3>
-                <div className="text-center mb-3">
-                  <p className="text-sm text-yellow-300">2030, 2018, 2006, 1994</p>
-                  <p className="text-xs text-yellow-200">Earth Element</p>
-                </div>
-                <p className="text-sm text-yellow-200 text-center">Loyal, honest, friendly</p>
-              </div>
+            <div className="text-center p-3 bg-gradient-to-br from-yellow-900/30 to-yellow-800/20 rounded-lg border border-yellow-500/30">
+              <div className="text-xl mb-1">🐕</div>
+              <h3 className="font-semibold text-yellow-400 text-sm mb-1">Dog</h3>
+              <p className="text-xs text-yellow-200">2030, 2018, 2006</p>
             </div>
-            
-            <div className="group transform hover:scale-105 transition-all duration-300">
-              <div className="bg-gradient-to-br from-blue-900/40 to-blue-800/30 p-6 rounded-2xl border border-blue-500/30 hover:border-blue-400/50 transition-colors">
-                <div className="w-16 h-16 bg-gradient-to-r from-blue-400 to-blue-500 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <span className="text-2xl">🐖</span>
-                </div>
-                <h3 className="text-lg font-semibold mb-2 text-blue-400 text-center">Pig</h3>
-                <div className="text-center mb-3">
-                  <p className="text-sm text-blue-300">2031, 2019, 2007, 1995</p>
-                  <p className="text-xs text-blue-200">Water Element</p>
-                </div>
-                <p className="text-sm text-blue-200 text-center">Compassionate, generous, diligent</p>
-              </div>
+            <div className="text-center p-3 bg-gradient-to-br from-blue-900/30 to-blue-800/20 rounded-lg border border-blue-500/30">
+              <div className="text-xl mb-1">🐖</div>
+              <h3 className="font-semibold text-blue-400 text-sm mb-1">Pig</h3>
+              <p className="text-xs text-blue-200">2031, 2019, 2007</p>
             </div>
           </div>
         </div>
 
         <hr className="border-gray-600 my-12" />
 
-        <!-- What Is BaZi and How Is It Different Section -->
-        <div className="mb-12">
-          <div className="flex items-center mb-8">
-            <div className="w-12 h-12 bg-gradient-to-r from-indigo-500 to-purple-600 rounded-full flex items-center justify-center mr-4">
-              <span className="text-white text-xl">📜</span>
-            </div>
-            <h2 className="text-3xl md:text-4xl font-cinzel font-bold text-white">What Is BaZi and How Is It Different?</h2>
-          </div>
-          
-          <p className="text-lg text-mystic-300 leading-relaxed mb-8">
-            <span className="text-gold-400 font-semibold">BaZi (八字)</span> means "Eight Characters" and represents the four pillars of your birth: Year, Month, Day, and Hour. Each pillar contains a Heavenly Stem and Earthly Branch, creating your unique destiny blueprint.
+        <!-- BaZi (Four Pillars) -->
+        <div className="mb-8">
+          <h2 className="text-2xl font-bold mb-4 text-gold-400">BaZi (Four Pillars of Destiny)</h2>
+          <p className="text-mystic-300 leading-relaxed mb-4">
+            <strong>BaZi (八字)</strong> means "Eight Characters" and represents the four pillars of your birth: Year, Month, Day, and Hour. Each pillar contains a Heavenly Stem and Earthly Branch, creating your unique destiny blueprint.
           </p>
           
-          <!-- Four Pillars Grid -->
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
-            <div className="group transform hover:scale-105 transition-all duration-300">
-              <div className="bg-gradient-to-br from-blue-900/40 to-blue-800/30 p-6 rounded-2xl border border-blue-500/30 hover:border-blue-400/50 transition-colors">
-                <div className="w-16 h-16 bg-gradient-to-r from-blue-400 to-blue-500 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <span className="text-2xl">📅</span>
-                </div>
-                <h3 className="text-lg font-semibold mb-3 text-blue-400 text-center">Year Pillar</h3>
-                <div className="space-y-3">
-                  <div className="text-center">
-                    <p className="font-semibold text-blue-300 text-sm">Family Background</p>
-                    <p className="text-xs text-blue-200">Early life & ancestral roots</p>
-                  </div>
-                  <div className="text-center">
-                    <p className="font-semibold text-blue-300 text-sm">Foundation</p>
-                    <p className="text-xs text-blue-200">Personality base</p>
-                  </div>
-                </div>
-              </div>
+          <div className="grid md:grid-cols-4 gap-4 mb-4">
+            <div className="text-center p-4 bg-gradient-to-br from-blue-900/30 to-blue-800/20 rounded-lg border border-blue-500/30">
+              <div className="text-xl mb-2">📅</div>
+              <h3 className="font-semibold text-blue-400 mb-1">Year Pillar</h3>
+              <p className="text-xs text-blue-200">Family background & early life</p>
             </div>
-            
-            <div className="group transform hover:scale-105 transition-all duration-300">
-              <div className="bg-gradient-to-br from-green-900/40 to-green-800/30 p-6 rounded-2xl border border-green-500/30 hover:border-green-400/50 transition-colors">
-                <div className="w-16 h-16 bg-gradient-to-r from-green-400 to-green-500 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <span className="text-2xl">💼</span>
-                </div>
-                <h3 className="text-lg font-semibold mb-3 text-green-400 text-center">Month Pillar</h3>
-                <div className="space-y-3">
-                  <div className="text-center">
-                    <p className="font-semibold text-green-300 text-sm">Career & Purpose</p>
-                    <p className="text-xs text-green-200">Professional path</p>
-                  </div>
-                  <div className="text-center">
-                    <p className="font-semibold text-green-300 text-sm">Opportunities</p>
-                    <p className="text-xs text-green-200">Timing & relationships</p>
-                  </div>
-                </div>
-              </div>
+            <div className="text-center p-4 bg-gradient-to-br from-green-900/30 to-green-800/20 rounded-lg border border-green-500/30">
+              <div className="text-xl mb-2">💼</div>
+              <h3 className="font-semibold text-green-400 mb-1">Month Pillar</h3>
+              <p className="text-xs text-green-200">Career & life purpose</p>
             </div>
-            
-            <div className="group transform hover:scale-105 transition-all duration-300">
-              <div className="bg-gradient-to-br from-pink-900/40 to-pink-800/30 p-6 rounded-2xl border border-pink-500/30 hover:border-pink-400/50 transition-colors">
-                <div className="w-16 h-16 bg-gradient-to-r from-pink-400 to-pink-500 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <span className="text-2xl">💕</span>
-                </div>
-                <h3 className="text-lg font-semibold mb-3 text-pink-400 text-center">Day Pillar</h3>
-                <div className="space-y-3">
-                  <div className="text-center">
-                    <p className="font-semibold text-pink-300 text-sm">Core Personality</p>
-                    <p className="text-xs text-pink-200">True self & identity</p>
-                  </div>
-                  <div className="text-center">
-                    <p className="font-semibold text-pink-300 text-sm">Compatibility</p>
-                    <p className="text-xs text-pink-200">Spouse relationships</p>
-                  </div>
-                </div>
-              </div>
+            <div className="text-center p-4 bg-gradient-to-br from-pink-900/30 to-pink-800/20 rounded-lg border border-pink-500/30">
+              <div className="text-xl mb-2">💕</div>
+              <h3 className="font-semibold text-pink-400 mb-1">Day Pillar</h3>
+              <p className="text-xs text-pink-200">Core personality & self</p>
             </div>
-            
-            <div className="group transform hover:scale-105 transition-all duration-300">
-              <div className="bg-gradient-to-br from-purple-900/40 to-purple-800/30 p-6 rounded-2xl border border-purple-500/30 hover:border-purple-400/50 transition-colors">
-                <div className="w-16 h-16 bg-gradient-to-r from-purple-400 to-purple-500 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <span className="text-2xl">👶</span>
-                </div>
-                <h3 className="text-lg font-semibold mb-3 text-purple-400 text-center">Hour Pillar</h3>
-                <div className="space-y-3">
-                  <div className="text-center">
-                    <p className="font-semibold text-purple-300 text-sm">Later Life</p>
-                    <p className="text-xs text-purple-200">Children & legacy</p>
-                  </div>
-                  <div className="text-center">
-                    <p className="font-semibold text-purple-300 text-sm">Ultimate Destiny</p>
-                    <p className="text-xs text-purple-200">Life's final chapter</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          
-          <!-- BaZi Insights Grid -->
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-8">
-            <div className="group relative">
-              <div className="absolute inset-0 bg-gradient-to-r from-gold-500/20 to-yellow-500/20 rounded-2xl blur-xl group-hover:blur-2xl transition-all duration-500"></div>
-              <div className="relative bg-gradient-to-br from-mystic-800/80 to-mystic-900/80 p-6 rounded-2xl border border-gold-500/30 backdrop-blur-sm">
-                <div className="flex items-center mb-4">
-                  <div className="w-10 h-10 bg-gradient-to-r from-gold-400 to-yellow-400 rounded-full flex items-center justify-center mr-4">
-                    <span className="text-white text-lg">🎯</span>
-                  </div>
-                  <h3 className="text-xl font-cinzel font-semibold text-gold-400">Hidden Talents</h3>
-                </div>
-                <p className="text-mystic-300 text-sm">Discover your natural abilities and innate gifts through your unique elemental combination.</p>
-              </div>
-            </div>
-            
-            <div className="group relative">
-              <div className="absolute inset-0 bg-gradient-to-r from-pink-500/20 to-rose-500/20 rounded-2xl blur-xl group-hover:blur-2xl transition-all duration-500"></div>
-              <div className="relative bg-gradient-to-br from-mystic-800/80 to-mystic-900/80 p-6 rounded-2xl border border-pink-500/30 backdrop-blur-sm">
-                <div className="flex items-center mb-4">
-                  <div className="w-10 h-10 bg-gradient-to-r from-pink-400 to-rose-400 rounded-full flex items-center justify-center mr-4">
-                    <span className="text-white text-lg">💕</span>
-                  </div>
-                  <h3 className="text-xl font-cinzel font-semibold text-pink-400">Relationship Patterns</h3>
-                </div>
-                <p className="text-mystic-300 text-sm">Understand your compatibility with others and relationship dynamics.</p>
-              </div>
-            </div>
-            
-            <div className="group relative">
-              <div className="absolute inset-0 bg-gradient-to-r from-green-500/20 to-emerald-500/20 rounded-2xl blur-xl group-hover:blur-2xl transition-all duration-500"></div>
-              <div className="relative bg-gradient-to-br from-mystic-800/80 to-mystic-900/80 p-6 rounded-2xl border border-green-500/30 backdrop-blur-sm">
-                <div className="flex items-center mb-4">
-                  <div className="w-10 h-10 bg-gradient-to-r from-green-400 to-emerald-400 rounded-full flex items-center justify-center mr-4">
-                    <span className="text-white text-lg">💰</span>
-                  </div>
-                  <h3 className="text-xl font-cinzel font-semibold text-green-400">Wealth Potential</h3>
-                </div>
-                <p className="text-mystic-300 text-sm">Identify your financial timing and wealth-building opportunities.</p>
-              </div>
+            <div className="text-center p-4 bg-gradient-to-br from-purple-900/30 to-purple-800/20 rounded-lg border border-purple-500/30">
+              <div className="text-xl mb-2">👶</div>
+              <h3 className="font-semibold text-purple-400 mb-1">Hour Pillar</h3>
+              <p className="text-xs text-purple-200">Later life & legacy</p>
             </div>
           </div>
         </div>
 
-        <hr className="border-gray-600 my-12" />
 
-        <!-- Comparison Table Section -->
-        <div className="mb-12">
-          <div className="flex items-center mb-8">
-            <div className="w-12 h-12 bg-gradient-to-r from-orange-500 to-red-600 rounded-full flex items-center justify-center mr-4">
-              <span className="text-white text-xl">⚖️</span>
-            </div>
-            <h2 className="text-3xl md:text-4xl font-cinzel font-bold text-white">Chinese Astrology vs Western Astrology</h2>
-          </div>
-          
-          <p className="text-lg text-mystic-300 leading-relaxed mb-8">
-            While both systems offer insights into personality and destiny, they use different approaches and principles to understand human nature.
-          </p>
-          
-          <!-- Comparison Grid -->
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-8">
-            <div className="group transform hover:scale-105 transition-all duration-300">
-              <div className="bg-gradient-to-br from-gold-900/40 to-yellow-800/30 p-6 rounded-2xl border border-gold-500/30 hover:border-gold-400/50 transition-colors">
-                <div className="w-16 h-16 bg-gradient-to-r from-gold-400 to-yellow-500 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <span className="text-2xl">🌙</span>
-                </div>
-                <h3 className="text-lg font-semibold mb-3 text-gold-400 text-center">Basis</h3>
-                <div className="space-y-3">
-                  <div className="text-center">
-                    <p className="font-semibold text-gold-300 text-sm">Chinese</p>
-                    <p className="text-xs text-gold-200">Birth date/time & elements</p>
-                  </div>
-                  <div className="text-center">
-                    <p className="font-semibold text-gold-300 text-sm">Western</p>
-                    <p className="text-xs text-gold-200">Birth date/time & planets</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            
-            <div className="group transform hover:scale-105 transition-all duration-300">
-              <div className="bg-gradient-to-br from-purple-900/40 to-purple-800/30 p-6 rounded-2xl border border-purple-500/30 hover:border-purple-400/50 transition-colors">
-                <div className="w-16 h-16 bg-gradient-to-r from-purple-400 to-purple-500 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <span className="text-2xl">🐾</span>
-                </div>
-                <h3 className="text-lg font-semibold mb-3 text-purple-400 text-center">Signs</h3>
-                <div className="space-y-3">
-                  <div className="text-center">
-                    <p className="font-semibold text-purple-300 text-sm">Chinese</p>
-                    <p className="text-xs text-purple-200">12 Animal Zodiac + Elements</p>
-                  </div>
-                  <div className="text-center">
-                    <p className="font-semibold text-purple-300 text-sm">Western</p>
-                    <p className="text-xs text-purple-200">12 Sun Signs</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            
-            <div className="group transform hover:scale-105 transition-all duration-300">
-              <div className="bg-gradient-to-br from-blue-900/40 to-blue-800/30 p-6 rounded-2xl border border-blue-500/30 hover:border-blue-400/50 transition-colors">
-                <div className="w-16 h-16 bg-gradient-to-r from-blue-400 to-blue-500 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <span className="text-2xl">📊</span>
-                </div>
-                <h3 className="text-lg font-semibold mb-3 text-blue-400 text-center">Core System</h3>
-                <div className="space-y-3">
-                  <div className="text-center">
-                    <p className="font-semibold text-blue-300 text-sm">Chinese</p>
-                    <p className="text-xs text-blue-200">Four Pillars (BaZi)</p>
-                  </div>
-                  <div className="text-center">
-                    <p className="font-semibold text-blue-300 text-sm">Western</p>
-                    <p className="text-xs text-blue-200">Natal Chart</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            
-            <div className="group transform hover:scale-105 transition-all duration-300">
-              <div className="bg-gradient-to-br from-green-900/40 to-green-800/30 p-6 rounded-2xl border border-green-500/30 hover:border-green-400/50 transition-colors">
-                <div className="w-16 h-16 bg-gradient-to-r from-green-400 to-green-500 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <span className="text-2xl">🔮</span>
-                </div>
-                <h3 className="text-lg font-semibold mb-3 text-green-400 text-center">Key Concepts</h3>
-                <div className="space-y-3">
-                  <div className="text-center">
-                    <p className="font-semibold text-green-300 text-sm">Chinese</p>
-                    <p className="text-xs text-green-200">Yin-Yang, 5 Elements</p>
-                  </div>
-                  <div className="text-center">
-                    <p className="font-semibold text-green-300 text-sm">Western</p>
-                    <p className="text-xs text-green-200">Houses, Planets</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            
-            <div className="group transform hover:scale-105 transition-all duration-300">
-              <div className="bg-gradient-to-br from-pink-900/40 to-pink-800/30 p-6 rounded-2xl border border-pink-500/30 hover:border-pink-400/50 transition-colors">
-                <div className="w-16 h-16 bg-gradient-to-r from-pink-400 to-pink-500 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <span className="text-2xl">🎯</span>
-                </div>
-                <h3 className="text-lg font-semibold mb-3 text-pink-400 text-center">Applications</h3>
-                <div className="space-y-3">
-                  <div className="text-center">
-                    <p className="font-semibold text-pink-300 text-sm">Chinese</p>
-                    <p className="text-xs text-pink-200">Destiny planning, Feng Shui</p>
-                  </div>
-                  <div className="text-center">
-                    <p className="font-semibold text-pink-300 text-sm">Western</p>
-                    <p className="text-xs text-pink-200">Psychology, life purpose</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <hr className="border-gray-600 my-12" />
-
-        <!-- Modern Applications Section -->
-        <div className="mb-12">
-          <div className="flex items-center mb-8">
-            <div className="w-12 h-12 bg-gradient-to-r from-teal-500 to-cyan-600 rounded-full flex items-center justify-center mr-4">
-              <span className="text-white text-xl">🌟</span>
-            </div>
-            <h2 className="text-3xl md:text-4xl font-cinzel font-bold text-white">Modern Applications of Chinese Astrology</h2>
-          </div>
-          
-          <p className="text-lg text-mystic-300 leading-relaxed mb-8">
-            Chinese astrology continues to be relevant in modern times, offering practical guidance for various aspects of life.
-          </p>
-          
-          <!-- Applications Grid -->
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-8">
-            <div className="group transform hover:scale-105 transition-all duration-300">
-              <div className="bg-gradient-to-br from-green-900/40 to-green-800/30 p-6 rounded-2xl border border-green-500/30 hover:border-green-400/50 transition-colors">
-                <div className="w-16 h-16 bg-gradient-to-r from-green-400 to-green-500 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <span className="text-2xl">🧘</span>
-                </div>
-                <h3 className="text-lg font-semibold mb-3 text-green-400 text-center">Self-Discovery</h3>
-                <p className="text-sm text-green-200 text-center">Understand your natural talents, personality traits, and life purpose through your unique elemental makeup.</p>
-              </div>
-            </div>
-            
-            <div className="group transform hover:scale-105 transition-all duration-300">
-              <div className="bg-gradient-to-br from-blue-900/40 to-blue-800/30 p-6 rounded-2xl border border-blue-500/30 hover:border-blue-400/50 transition-colors">
-                <div className="w-16 h-16 bg-gradient-to-r from-blue-400 to-blue-500 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <span className="text-2xl">💼</span>
-                </div>
-                <h3 className="text-lg font-semibold mb-3 text-blue-400 text-center">Career Guidance</h3>
-                <p className="text-sm text-blue-200 text-center">Identify optimal career paths and timing for important professional decisions and opportunities.</p>
-              </div>
-            </div>
-            
-            <div className="group transform hover:scale-105 transition-all duration-300">
-              <div className="bg-gradient-to-br from-pink-900/40 to-pink-800/30 p-6 rounded-2xl border border-pink-500/30 hover:border-pink-400/50 transition-colors">
-                <div className="w-16 h-16 bg-gradient-to-r from-pink-400 to-pink-500 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <span className="text-2xl">💕</span>
-                </div>
-                <h3 className="text-lg font-semibold mb-3 text-pink-400 text-center">Relationship Compatibility</h3>
-                <p className="text-sm text-pink-200 text-center">Analyze relationship dynamics and find compatible partners based on elemental harmony.</p>
-              </div>
-            </div>
-            
-            <div className="group transform hover:scale-105 transition-all duration-300">
-              <div className="bg-gradient-to-br from-purple-900/40 to-purple-800/30 p-6 rounded-2xl border border-purple-500/30 hover:border-purple-400/50 transition-colors">
-                <div className="w-16 h-16 bg-gradient-to-r from-purple-400 to-purple-500 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <span className="text-2xl">🏠</span>
-                </div>
-                <h3 className="text-lg font-semibold mb-3 text-purple-400 text-center">Feng Shui Alignment</h3>
-                <p className="text-sm text-purple-200 text-center">Create harmonious living and working environments that support your natural energy.</p>
-              </div>
-            </div>
-            
-            <div className="group transform hover:scale-105 transition-all duration-300">
-              <div className="bg-gradient-to-br from-yellow-900/40 to-yellow-800/30 p-6 rounded-2xl border border-yellow-500/30 hover:border-yellow-400/50 transition-colors">
-                <div className="w-16 h-16 bg-gradient-to-r from-yellow-400 to-yellow-500 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <span className="text-2xl">📅</span>
-                </div>
-                <h3 className="text-lg font-semibold mb-3 text-yellow-400 text-center">Auspicious Timing</h3>
-                <p className="text-sm text-yellow-200 text-center">Choose optimal dates for important events like weddings, business launches, and investments.</p>
-              </div>
-            </div>
-            
-            <div className="group transform hover:scale-105 transition-all duration-300">
-              <div className="bg-gradient-to-br from-cyan-900/40 to-cyan-800/30 p-6 rounded-2xl border border-cyan-500/30 hover:border-cyan-400/50 transition-colors">
-                <div className="w-16 h-16 bg-gradient-to-r from-cyan-400 to-cyan-500 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <span className="text-2xl">🌊</span>
-                </div>
-                <h3 className="text-lg font-semibold mb-3 text-cyan-400 text-center">Energy Harmony</h3>
-                <p className="text-sm text-cyan-200 text-center">Align with natural cosmic cycles and create balance in all areas of life.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <hr className="border-gray-600 my-12" />
-
-        <!-- How to Start Section -->
-        <div className="mb-12">
-          <div className="flex items-center mb-8">
-            <div className="w-12 h-12 bg-gradient-to-r from-emerald-500 to-green-600 rounded-full flex items-center justify-center mr-4">
-              <span className="text-white text-xl">🚀</span>
-            </div>
-            <h2 className="text-3xl md:text-4xl font-cinzel font-bold text-white">How to Start Your Chinese Astrology Journey</h2>
-          </div>
-          
-          <div className="bg-gradient-to-r from-mystic-800/50 to-mystic-900/50 p-6 rounded-lg mb-6 border border-gold-500/30">
-            <h3 className="text-xl font-semibold mb-4 text-gold-400">Essential Requirements:</h3>
-            <div className="grid md:grid-cols-2 gap-4">
-              <div className="flex items-center p-4 bg-mystic-700/30 rounded-lg">
-                <div className="w-8 h-8 bg-gold-500/20 rounded-full flex items-center justify-center mr-4">
-                  <span className="text-gold-400">📅</span>
-                </div>
-                <div>
-                  <p className="font-semibold text-white">Exact birth date and time</p>
-                  <p className="text-sm text-mystic-400">Precision is crucial for accurate analysis</p>
-                </div>
-              </div>
-              <div className="flex items-center p-4 bg-mystic-700/30 rounded-lg">
-                <div className="w-8 h-8 bg-gold-500/20 rounded-full flex items-center justify-center mr-4">
-                  <span className="text-gold-400">🔮</span>
-                </div>
-                <div>
-                  <p className="font-semibold text-white">Professional BaZi reading</p>
-                  <p className="text-sm text-mystic-400">Expert interpretation of your chart</p>
-                </div>
-              </div>
-              <div className="flex items-center p-4 bg-mystic-700/30 rounded-lg">
-                <div className="w-8 h-8 bg-gold-500/20 rounded-full flex items-center justify-center mr-4">
-                  <span className="text-gold-400">🌿</span>
-                </div>
-                <div>
-                  <p className="font-semibold text-white">Understanding of elements</p>
-                  <p className="text-sm text-mystic-400">Learn how the Five Elements interact</p>
-                </div>
-              </div>
-              <div className="flex items-center p-4 bg-mystic-700/30 rounded-lg">
-                <div className="w-8 h-8 bg-gold-500/20 rounded-full flex items-center justify-center mr-4">
-                  <span className="text-gold-400">⏳</span>
-                </div>
-                <div>
-                  <p className="font-semibold text-white">Patience and practice</p>
-                  <p className="text-sm text-mystic-400">Chinese astrology is a lifelong study</p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <blockquote className="border-l-4 border-yellow-500 pl-6 py-4 my-8 italic text-lg">
-            "Your destiny is not written in stone—it's a code waiting to be decoded. Chinese astrology provides the key to understanding your unique energetic blueprint."
-          </blockquote>
-        </div>
-
-        <hr className="border-gray-600 my-12" />
 
         <!-- Why Is It Still Relevant Section -->
         <div className="mb-12">
@@ -903,106 +298,7 @@ const BlogPost = () => {
             </div>
           </div>
           
-          <div className="bg-gradient-to-r from-gold-900/20 to-yellow-900/20 p-6 rounded-xl border border-gold-500/30">
-            <p className="text-lg text-mystic-200 leading-relaxed text-center">
-              It has become a powerful tool for those seeking to live in harmony with their <span className="text-gold-400 font-semibold">natural energy</span> and <span className="text-gold-400 font-semibold">cosmic cycles</span>.
-            </p>
-          </div>
-        </div>
 
-                  <!-- The 12 Zodiac Signs Section -->
-        <div className="mb-12">
-          <div className="flex items-center mb-8">
-            <div className="w-12 h-12 bg-gradient-to-r from-orange-500 to-red-600 rounded-full flex items-center justify-center mr-4">
-              <span className="text-white text-xl">🐉</span>
-            </div>
-            <h2 className="text-3xl md:text-4xl font-cinzel font-bold text-white">The 12 Zodiac Signs – More Than Just Your Birth Year</h2>
-          </div>
-          
-          <p className="text-lg text-mystic-300 leading-relaxed mb-8">
-            Most people know their Chinese zodiac sign, like "I'm a Tiger" or "She's a Rabbit." But that's just the beginning of your cosmic story.
-          </p>
-          
-          <!-- Chinese Zodiac Animals Grid -->
-          <div className="bg-gradient-to-br from-mystic-800/60 to-mystic-900/60 p-8 rounded-3xl border border-gold-500/30 mb-8">
-            <h3 className="text-2xl font-cinzel font-semibold text-gold-400 mb-6 text-center">The 12 Chinese Zodiac Animals</h3>
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
-              <div className="group transform hover:scale-105 transition-all duration-300">
-                <div className="bg-gradient-to-br from-blue-900/30 to-blue-800/20 p-4 rounded-2xl border border-blue-500/30 h-full">
-                  <div className="flex items-center mb-3">
-                    <div className="w-12 h-12 bg-blue-500/20 rounded-full flex items-center justify-center mr-3">
-                      <span className="text-blue-400 text-xl">🐀</span>
-                    </div>
-                    <div>
-                      <h4 className="font-bold text-white">Rat</h4>
-                      <p className="text-xs text-blue-400">Water Element</p>
-                    </div>
-                  </div>
-                  <p className="text-sm text-mystic-300 mb-2">Quick-witted, resourceful, ambitious</p>
-                  <p className="text-xs text-mystic-400">2020, 2008, 1996, 1984</p>
-                </div>
-              </div>
-              
-              <div className="group transform hover:scale-105 transition-all duration-300">
-                <div className="bg-gradient-to-br from-amber-900/30 to-amber-800/20 p-4 rounded-2xl border border-amber-500/30 h-full">
-                  <div className="flex items-center mb-3">
-                    <div className="w-12 h-12 bg-amber-500/20 rounded-full flex items-center justify-center mr-3">
-                      <span className="text-amber-400 text-xl">🐂</span>
-                    </div>
-                    <div>
-                      <h4 className="font-bold text-white">Ox</h4>
-                      <p className="text-xs text-amber-400">Earth Element</p>
-                    </div>
-                  </div>
-                  <p className="text-sm text-mystic-300 mb-2">Diligent, dependable, determined</p>
-                  <p className="text-xs text-mystic-400">2021, 2009, 1997, 1985</p>
-                </div>
-              </div>
-              
-              <div className="group transform hover:scale-105 transition-all duration-300">
-                <div className="bg-gradient-to-br from-orange-900/30 to-orange-800/20 p-4 rounded-2xl border border-orange-500/30 h-full">
-                  <div className="flex items-center mb-3">
-                    <div className="w-12 h-12 bg-orange-500/20 rounded-full flex items-center justify-center mr-3">
-                      <span className="text-orange-400 text-xl">🐅</span>
-                    </div>
-                    <div>
-                      <h4 className="font-bold text-white">Tiger</h4>
-                      <p className="text-xs text-orange-400">Wood Element</p>
-                    </div>
-                  </div>
-                  <p className="text-sm text-mystic-300 mb-2">Brave, confident, competitive</p>
-                  <p className="text-xs text-mystic-400">2022, 2010, 1998, 1986</p>
-                </div>
-              </div>
-              
-              <div className="group transform hover:scale-105 transition-all duration-300">
-                <div className="bg-gradient-to-br from-green-900/30 to-green-800/20 p-4 rounded-2xl border border-green-500/30 h-full">
-                  <div className="flex items-center mb-3">
-                    <div className="w-12 h-12 bg-green-500/20 rounded-full flex items-center justify-center mr-3">
-                      <span className="text-green-400 text-xl">🐇</span>
-                    </div>
-                    <div>
-                      <h4 className="font-bold text-white">Rabbit</h4>
-                      <p className="text-xs text-green-400">Wood Element</p>
-                    </div>
-                  </div>
-                  <p className="text-sm text-mystic-300 mb-2">Quiet, elegant, kind</p>
-                  <p className="text-xs text-mystic-400">2023, 2011, 1999, 1987</p>
-                </div>
-              </div>
-              
-              <div className="group transform hover:scale-105 transition-all duration-300">
-                <div className="bg-gradient-to-br from-red-900/30 to-red-800/20 p-4 rounded-2xl border border-red-500/30 h-full">
-                  <div className="flex items-center mb-3">
-                    <div className="w-12 h-12 bg-red-500/20 rounded-full flex items-center justify-center mr-3">
-                      <span className="text-red-400 text-xl">🐉</span>
-                    </div>
-                    <div>
-                      <h4 className="font-bold text-white">Dragon</h4>
-                      <p className="text-xs text-red-400">Earth Element</p>
-                    </div>
-                  </div>
-                  <p className="text-sm text-mystic-300 mb-2">Confident, intelligent, enthusiastic</p>
                   <p className="text-xs text-mystic-400">2024, 2012, 2000, 1988</p>
                 </div>
               </div>
@@ -1232,8 +528,8 @@ const BlogPost = () => {
           </div>
           
           <p className="text-lg text-mystic-300 leading-relaxed mb-6">
-            Each pillar includes a Heavenly Stem and Earthly Branch, linked to elements and zodiac animals. A BaZi analysis uncovers:
-          </p>
+          Each pillar includes a Heavenly Stem and Earthly Branch, linked to elements and zodiac animals. A BaZi analysis uncovers:
+        </p>
           
           <!-- BaZi Insights Grid -->
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4 mb-8">
@@ -1268,43 +564,43 @@ const BlogPost = () => {
         <div className="mb-12">
           <div className="bg-gradient-to-br from-gold-900/40 to-yellow-900/30 p-8 rounded-3xl border border-gold-500/30">
             <h3 className="text-2xl font-cinzel font-semibold text-gold-400 mb-6 text-center">Chinese Astrology vs Western Astrology</h3>
-            <div className="overflow-x-auto">
-              <table className="w-full text-sm">
-                <thead>
-                  <tr className="border-b border-gold-500/30">
+          <div className="overflow-x-auto">
+            <table className="w-full text-sm">
+              <thead>
+                <tr className="border-b border-gold-500/30">
                     <th className="text-left p-3 text-gold-400 font-semibold">Feature</th>
                     <th className="text-left p-3 text-gold-400 font-semibold">Chinese Astrology</th>
                     <th className="text-left p-3 text-gold-400 font-semibold">Western Astrology</th>
-                  </tr>
-                </thead>
-                <tbody className="text-mystic-300">
-                  <tr className="border-b border-gold-500/20">
+                </tr>
+              </thead>
+              <tbody className="text-mystic-300">
+                <tr className="border-b border-gold-500/20">
                     <td className="p-3 font-medium">Basis</td>
                     <td className="p-3">Birth date/time & elements</td>
                     <td className="p-3">Birth date/time & planets</td>
-                  </tr>
-                  <tr className="border-b border-gold-500/20">
+                </tr>
+                <tr className="border-b border-gold-500/20">
                     <td className="p-3 font-medium">Signs</td>
                     <td className="p-3">12 Animal Zodiac + Elements</td>
                     <td className="p-3">12 Sun Signs</td>
-                  </tr>
-                  <tr className="border-b border-gold-500/20">
+                </tr>
+                <tr className="border-b border-gold-500/20">
                     <td className="p-3 font-medium">Core Chart System</td>
                     <td className="p-3">Four Pillars of Destiny (BaZi)</td>
                     <td className="p-3">Natal Chart with planetary aspects</td>
-                  </tr>
-                  <tr className="border-b border-gold-500/20">
+                </tr>
+                <tr className="border-b border-gold-500/20">
                     <td className="p-3 font-medium">Key Concepts</td>
                     <td className="p-3">Yin-Yang, 5 Elements, Stems/Branches</td>
                     <td className="p-3">Houses, Planets, Aspects</td>
-                  </tr>
-                  <tr>
+                </tr>
+                <tr>
                     <td className="p-3 font-medium">Applications</td>
                     <td className="p-3">Destiny planning, compatibility, Feng Shui</td>
                     <td className="p-3">Psychology, life purpose</td>
-                  </tr>
-                </tbody>
-              </table>
+                </tr>
+              </tbody>
+            </table>
             </div>
           </div>
         </div>
@@ -1374,48 +670,25 @@ const BlogPost = () => {
           </div>
         </div>
 
-        <!-- Conclusion Section -->
-        <div className="mb-12">
-          <div className="flex items-center mb-8">
-            <div className="w-12 h-12 bg-gradient-to-r from-rose-500 to-pink-600 rounded-full flex items-center justify-center mr-4">
-              <span className="text-white text-xl">🎯</span>
-            </div>
-            <h2 className="text-3xl md:text-4xl font-cinzel font-bold text-white">Conclusion: Your Destiny Is a Code Waiting to Be Decoded</h2>
-          </div>
-          
-          <p className="text-lg text-mystic-300 leading-relaxed mb-6">
-            Chinese astrology doesn't predict fate — it reveals the timing and tendencies in your life, empowering you to make better decisions, align with your purpose, and find peace.
+                <!-- Conclusion -->
+        <div className="mb-8">
+          <h2 className="text-2xl font-bold mb-4 text-gold-400">Conclusion</h2>
+          <p className="text-mystic-300 leading-relaxed mb-4">
+            Chinese astrology doesn't predict your fate—it reveals the <strong>timing and tendencies</strong> in your life, empowering you to make better decisions and align with your purpose.
           </p>
-          <p className="text-lg text-mystic-300 leading-relaxed mb-8">
-            In a chaotic world, ancient wisdom offers a grounded, timeless truth:
+          <p className="text-mystic-300 leading-relaxed mb-6">
+            By understanding your <strong>Five Elements</strong>, <strong>Zodiac Animal</strong>, and <strong>Four Pillars</strong>, you gain insight into your natural strengths, challenges, and optimal life path.
           </p>
           
-          <!-- Final Quote -->
-          <div className="bg-gradient-to-br from-gold-900/50 to-yellow-900/40 p-8 rounded-3xl border border-gold-500/30 mb-8">
-            <p className="text-3xl font-cinzel font-semibold text-gold-400 text-center leading-relaxed">
-              🔮 When you understand your energy, you understand your life.
+          <!-- CTA -->
+          <div className="text-center bg-gradient-to-r from-mystic-800/50 to-mystic-900/50 p-6 rounded-lg border border-gold-500/30">
+            <h3 className="text-xl font-bold mb-3 text-gold-400">Begin Your Journey Today</h3>
+            <p className="text-mystic-300 mb-4">
+              Get your personalized BaZi reading and discover how ancient Chinese wisdom can guide your modern life.
             </p>
-          </div>
-          
-          <!-- Final CTA -->
-          <div className="text-center">
-            <p className="text-lg text-mystic-300 leading-relaxed mb-4">
-              Want to explore your own destiny?
-            </p>
-            <p className="text-lg text-mystic-300 leading-relaxed mb-8">
-              Start with your BaZi chart today — uncover the patterns, discover your strengths, and align with the natural flow of your life. 🌙
-            </p>
-            
-            <!-- CTA Button -->
-            <div className="bg-gradient-to-r from-mystic-800/50 to-mystic-900/50 p-8 rounded-lg border border-gold-500/30">
-              <h3 className="text-2xl font-bold mb-4 text-gold-400">Begin Your Journey Today</h3>
-              <p className="text-lg mb-6">
-                Get your personalized BaZi reading and discover how ancient Chinese wisdom can guide your modern life.
-              </p>
-              <button className="bg-yellow-600 hover:bg-yellow-700 text-white font-bold py-3 px-8 rounded-lg transition-colors">
-                Get Your Free BaZi Reading
-              </button>
-            </div>
+            <button className="bg-yellow-600 hover:bg-yellow-700 text-white font-bold py-2 px-6 rounded-lg transition-colors">
+              Get Your Free BaZi Reading
+            </button>
           </div>
         </div>
       `,
@@ -1429,7 +702,7 @@ const BlogPost = () => {
     {
       id: 2,
       title: "📈 You Think This Market Rally Is a Turning Point— A Bigger Crisis Is Brewing Beneath the Surface",
-      excerpt: "In early August 2025, the Dow Jones surged by 580 points. But is this really a turning point, or just the calm before a more devastating storm?",
+                  excerpt: "In early August 2025, the Dow Jones surged by 580 points. But is this really a turning point, or just the calm before a more devastating storm?",
       author: "玄印 (Xuan Yin)",
       tags: ["Market Analysis", "Financial Crisis", "Stock Market", "Economic Warning", "2025 Forecast", "Investment Strategy", "BaZi Analysis", "Chinese Astrology"],
       content: `
@@ -1442,7 +715,7 @@ const BlogPost = () => {
                 <span className="text-2xl">⚠️</span>
               </div>
               <blockquote className="text-2xl md:text-3xl font-cinzel font-semibold text-red-200 leading-relaxed mb-4">
-                "The greatest deception is not in the market's fall, but in its false recovery."
+            "The greatest deception is not in the market's fall, but in its false recovery."
               </blockquote>
               <p className="text-red-400 font-medium">— Ancient Chinese Wisdom</p>
             </div>
@@ -1478,8 +751,8 @@ const BlogPost = () => {
                 <p className="text-mystic-300 text-sm">Is this really a turning point or just false hope?</p>
               </div>
             </div>
-          </div>
-          
+        </div>
+
           <div className="text-center mb-8">
             <p className="text-xl text-mystic-300 leading-relaxed">
               But is this really a turning point?<br/>
@@ -1498,8 +771,8 @@ const BlogPost = () => {
           </div>
           
           <p className="text-lg text-mystic-300 leading-relaxed mb-8">
-            History has taught us a painful lesson. Before the 2008 financial crisis, U.S. stocks experienced several months of rebound. Before the dot-com bubble burst in 2000, the Nasdaq even hit record highs.
-          </p>
+          History has taught us a painful lesson. Before the 2008 financial crisis, U.S. stocks experienced several months of rebound. Before the dot-com bubble burst in 2000, the Nasdaq even hit record highs.
+        </p>
           
           <!-- Historical Examples Grid -->
           <div className="grid md:grid-cols-2 gap-6 mb-8">
@@ -1537,8 +810,8 @@ const BlogPost = () => {
           <div className="bg-gradient-to-r from-red-900/20 to-orange-900/20 p-6 rounded-xl border border-red-500/30">
             <p className="text-lg text-mystic-200 leading-relaxed text-center">
               <span className="text-red-400 font-semibold">Every major crisis has been preceded by a deceptive wave of optimism.</span><br/>
-              This time is no different.
-            </p>
+          This time is no different.
+        </p>
           </div>
         </div>
 
@@ -1552,8 +825,8 @@ const BlogPost = () => {
                   The 2025 rally is rooted in a paradox: <span className="text-red-400 font-semibold">a weakening labor market</span>.
                 </p>
                 <p className="text-mystic-300 leading-relaxed">
-                  While the data shows economic softness, markets interpreted it as a signal that the Fed might halt interest rate hikes—or even cut rates. Stocks soared on the bad news.
-                </p>
+            While the data shows economic softness, markets interpreted it as a signal that the Fed might halt interest rate hikes—or even cut rates. Stocks soared on the bad news.
+          </p>
               </div>
               <div className="text-center">
                 <p className="text-xl text-red-400 font-semibold leading-relaxed">
@@ -1575,9 +848,9 @@ const BlogPost = () => {
           </div>
           
           <p className="text-lg text-mystic-300 leading-relaxed mb-8">
-            Zooming out, the global economic landscape is entering a highly unstable phase:
-          </p>
-          
+          Zooming out, the global economic landscape is entering a highly unstable phase:
+        </p>
+
           <!-- Crisis Indicators Grid -->
           <div className="grid md:grid-cols-2 gap-6 mb-8">
             <div className="space-y-4">
@@ -1656,8 +929,8 @@ const BlogPost = () => {
               <span className="text-white text-xl">🔥</span>
             </div>
             <h2 className="text-3xl md:text-4xl font-cinzel font-bold text-white">Ancient Wisdom, Modern Warning: The BaZi and Feng Shui Perspective</h2>
-          </div>
-          
+        </div>
+
           <p className="text-lg text-mystic-300 leading-relaxed mb-8">
             According to traditional Chinese metaphysics, 2025 is the Year of Yi-Si (乙巳), followed by Bing-Wu (丙午) in 2026. Both years are governed by the Fire element, which tends to clash with Metal—the element that symbolizes wealth and stability in BaZi (Four Pillars of Destiny).
           </p>
@@ -1695,8 +968,8 @@ const BlogPost = () => {
                 </div>
               </div>
             </div>
-          </div>
-          
+        </div>
+
           <!-- Historical Fire Years Analysis Grid -->
           <div className="bg-gradient-to-br from-red-900/40 to-orange-900/30 p-8 rounded-3xl border border-red-500/30 mb-8">
             <h3 className="text-2xl font-cinzel font-semibold text-red-400 mb-6 text-center">Historical Fire Years & Market Events</h3>
@@ -1725,7 +998,7 @@ const BlogPost = () => {
                   <div className="flex items-center mb-4">
                     <div className="w-12 h-12 bg-orange-500/20 rounded-full flex items-center justify-center mr-4">
                       <span className="text-orange-400 text-xl">🌍</span>
-                    </div>
+          </div>
                     <div>
                       <h4 className="font-bold text-white">2016 Volatility</h4>
                       <p className="text-xs text-orange-400">丙申 (Fire Monkey)</p>
@@ -1736,9 +1009,9 @@ const BlogPost = () => {
                     <p className="text-sm text-mystic-300"><strong>Impact:</strong> Market volatility, political uncertainty</p>
                     <p className="text-xs text-mystic-400">Major geopolitical shifts affecting global markets</p>
                   </div>
-                </div>
-              </div>
-              
+          </div>
+        </div>
+
               <div className="group transform hover:scale-105 transition-all duration-300">
                 <div className="bg-gradient-to-br from-yellow-900/40 to-yellow-800/30 p-6 rounded-2xl border border-yellow-500/30 h-full">
                   <div className="flex items-center mb-4">
@@ -1756,8 +1029,8 @@ const BlogPost = () => {
                     <p className="text-xs text-mystic-400">Unprecedented global health crisis</p>
                   </div>
                 </div>
-              </div>
-              
+        </div>
+
               <div className="group transform hover:scale-105 transition-all duration-300">
                 <div className="bg-gradient-to-br from-purple-900/40 to-purple-800/30 p-6 rounded-2xl border border-purple-500/30 h-full">
                   <div className="flex items-center mb-4">
@@ -1790,7 +1063,7 @@ const BlogPost = () => {
     {
       id: 2,
       title: "Understanding Your Bazi Chart: A Beginner's Guide",
-      excerpt: "Learn the fundamentals of Bazi analysis and how your birth chart reveals your life's blueprint. Discover the four pillars in Chinese astrology.",
+                  excerpt: "Learn the fundamentals of Bazi analysis and how your birth chart reveals your life's blueprint. Discover the four pillars in Chinese astrology.",
       content: `
         <p className="mb-6 text-mystic-300 leading-relaxed">
           Bazi (八字), also known as the Four Pillars of Destiny, is one of the most profound systems of Chinese astrology. 
@@ -2038,7 +1311,7 @@ const BlogPost = () => {
     {
       id: 7,
       title: "2024 Year of the Dragon: Your Fortune Forecast",
-      excerpt: "Discover what the Year of the Dragon 2024 holds for you based on your Bazi chart. Learn about opportunities and how to maximize your luck this year.",
+                  excerpt: "Discover what the Year of the Dragon 2024 holds for you based on your Bazi chart. Learn about opportunities and how to maximize your luck this year.",
       content: `
         <p className="mb-6 text-mystic-300 leading-relaxed">
           The Year of the Dragon 2024 brings powerful energy of transformation, ambition, and success. 
@@ -2318,968 +1591,968 @@ const BlogPost = () => {
       categoryLabel: "Career & Timing",
       date: "2025-08-02",
       readTime: "12 min read",
-      image: "/images/blog/bitcoin-bazi-cover.jpg",
+                image: "/images/blog/bitcoin-bazi-cover.jpg",
       slug: "bitcoin-crash-bazi-destiny",
       author: "玄印 (Xuan Yin)",
-      tags: ["Bitcoin", "Cryptocurrency", "BaZi", "Wealth Cycles", "Financial Timing", "2025"]
-    },
-    {
-      id: 9,
-      title: "Burned by the Heat: What 2025's Extreme Temperatures Reveal in BaZi",
-      excerpt: "Explore how global heatwaves reflect Fire element imbalances in Chinese metaphysics and what your BaZi chart reveals about stress and destiny in 2025.",
-      content: `
-        <div className="mb-8">
-          <p className="text-lg text-mystic-300 leading-relaxed mb-4">
+             tags: ["Bitcoin", "Cryptocurrency", "BaZi", "Wealth Cycles", "Financial Timing", "2025"]
+     },
+     {
+       id: 9,
+       title: "Burned by the Heat: What 2025's Extreme Temperatures Reveal in BaZi",
+                   excerpt: "Explore how global heatwaves reflect Fire element imbalances in Chinese metaphysics and what your BaZi chart reveals about stress and destiny in 2025.",
+       content: `
+         <div className="mb-8">
+           <p className="text-lg text-mystic-300 leading-relaxed mb-4">
             As the world burns, what does your chart say about your internal fire—
-          </p>
-        </div>
+           </p>
+         </div>
 
-        <p className="mb-6 text-mystic-300 leading-relaxed">
+         <p className="mb-6 text-mystic-300 leading-relaxed">
           On August 2nd, 2025, cities across the U.S., Europe, and Asia hit record-breaking temperatures—many exceeding 48°C (118°F). Power grids struggled, tempers flared, and millions suffered under dangerous heat conditions. But what if this global heatwave isn't just meteorological—
-        </p>
+         </p>
 
-        <p className="mb-6 text-mystic-300 leading-relaxed">
-          From a BaZi perspective, <strong>2025 is a Fire-dominant year</strong>, and the world's temperature spikes may be echoing a deeper <strong>Qi imbalance</strong>.
-        </p>
+         <p className="mb-6 text-mystic-300 leading-relaxed">
+           From a BaZi perspective, <strong>2025 is a Fire-dominant year</strong>, and the world's temperature spikes may be echoing a deeper <strong>Qi imbalance</strong>.
+         </p>
 
-        <h2 className="text-2xl font-cinzel font-bold text-white mb-4 mt-8">🪐 2025: The Fire Element Ignites</h2>
-        <p className="mb-6 text-mystic-300 leading-relaxed">
-          This year is ruled by the stem-branch combination <strong>Yi Si (乙巳)</strong>—Yin Wood over Yin Fire. That's already a volatile mix. But globally, we are also experiencing:
-        </p>
+         <h2 className="text-2xl font-cinzel font-bold text-white mb-4 mt-8">🪐 2025: The Fire Element Ignites</h2>
+         <p className="mb-6 text-mystic-300 leading-relaxed">
+           This year is ruled by the stem-branch combination <strong>Yi Si (乙巳)</strong>—Yin Wood over Yin Fire. That's already a volatile mix. But globally, we are also experiencing:
+         </p>
 
-        <div className="bg-gradient-to-r from-mystic-800 to-mystic-900 p-6 rounded-xl border border-gold-500/30 mb-8">
-          <ul className="space-y-2 text-mystic-300">
-            <li className="flex items-start space-x-3">
-              <div className="w-2 h-2 bg-gold-400 rounded-full mt-2 flex-shrink-0"></div>
-              <span>Solar flares and high UV intensity</span>
-            </li>
-            <li className="flex items-start space-x-3">
-              <div className="w-2 h-2 bg-gold-400 rounded-full mt-2 flex-shrink-0"></div>
-              <span>Political aggression and social anger</span>
-            </li>
-            <li className="flex items-start space-x-3">
-              <div className="w-2 h-2 bg-gold-400 rounded-full mt-2 flex-shrink-0"></div>
-              <span>Collective burnout and anxiety</span>
-            </li>
-          </ul>
-        </div>
+         <div className="bg-gradient-to-r from-mystic-800 to-mystic-900 p-6 rounded-xl border border-gold-500/30 mb-8">
+           <ul className="space-y-2 text-mystic-300">
+             <li className="flex items-start space-x-3">
+               <div className="w-2 h-2 bg-gold-400 rounded-full mt-2 flex-shrink-0"></div>
+               <span>Solar flares and high UV intensity</span>
+             </li>
+             <li className="flex items-start space-x-3">
+               <div className="w-2 h-2 bg-gold-400 rounded-full mt-2 flex-shrink-0"></div>
+               <span>Political aggression and social anger</span>
+             </li>
+             <li className="flex items-start space-x-3">
+               <div className="w-2 h-2 bg-gold-400 rounded-full mt-2 flex-shrink-0"></div>
+               <span>Collective burnout and anxiety</span>
+             </li>
+           </ul>
+         </div>
 
-        <p className="mb-6 text-mystic-300 leading-relaxed">
-          In metaphysics, the <strong>Fire element</strong> governs:
-        </p>
+         <p className="mb-6 text-mystic-300 leading-relaxed">
+           In metaphysics, the <strong>Fire element</strong> governs:
+         </p>
 
-        <div className="grid md:grid-cols-2 gap-6 mb-8">
-          <div className="mystic-card p-6">
+         <div className="grid md:grid-cols-2 gap-6 mb-8">
+           <div className="mystic-card p-6">
             <h3 className="text-xl font-cinzel font-semibold text-gold-400 mb-3">Physical Aspects</h3>
-            <p className="text-mystic-300 text-sm">The heart (physical and emotional), blood pressure, inflammation, strokes</p>
-          </div>
-          <div className="mystic-card p-6">
+             <p className="text-mystic-300 text-sm">The heart (physical and emotional), blood pressure, inflammation, strokes</p>
+           </div>
+           <div className="mystic-card p-6">
             <h3 className="text-xl font-cinzel font-semibold text-gold-400 mb-3">Emotional Aspects</h3>
-            <p className="text-mystic-300 text-sm">Impulse, anger, ego, and inflamed decisions</p>
-          </div>
-        </div>
+             <p className="text-mystic-300 text-sm">Impulse, anger, ego, and inflamed decisions</p>
+           </div>
+         </div>
 
-        <p className="mb-6 text-mystic-300 leading-relaxed">
-          When the Fire element becomes <strong>excessive</strong>, both nature and people <strong>burn out</strong>.
-        </p>
+         <p className="mb-6 text-mystic-300 leading-relaxed">
+           When the Fire element becomes <strong>excessive</strong>, both nature and people <strong>burn out</strong>.
+         </p>
 
-        <h2 className="text-2xl font-cinzel font-bold text-white mb-4 mt-8">📊 How Fire Imbalance Affects You</h2>
-        <p className="mb-6 text-mystic-300 leading-relaxed">
-          Your BaZi chart determines how the annual Fire energy affects you:
-        </p>
+         <h2 className="text-2xl font-cinzel font-bold text-white mb-4 mt-8">📊 How Fire Imbalance Affects You</h2>
+         <p className="mb-6 text-mystic-300 leading-relaxed">
+           Your BaZi chart determines how the annual Fire energy affects you:
+         </p>
 
-        <div className="space-y-4 mb-8">
-          <div className="mystic-card p-6 border-l-4 border-blue-500/50">
+         <div className="space-y-4 mb-8">
+           <div className="mystic-card p-6 border-l-4 border-blue-500/50">
             <h3 className="text-xl font-cinzel font-semibold text-blue-400 mb-3">Strong Metal or Water Day Masters (Geng, Xin, Ren, Gui)</h3>
-            <p className="text-mystic-300 text-sm">
-              Likely to feel drained, overheated, or emotionally unstable
-            </p>
-          </div>
-          <div className="mystic-card p-6 border-l-4 border-green-500/50">
+             <p className="text-mystic-300 text-sm">
+               Likely to feel drained, overheated, or emotionally unstable
+             </p>
+           </div>
+           <div className="mystic-card p-6 border-l-4 border-green-500/50">
             <h3 className="text-xl font-cinzel font-semibold text-green-400 mb-3">Wood Day Masters (Jia, Yi)</h3>
-            <p className="text-mystic-300 text-sm">
-              May feel pushed toward over-action, restlessness, and rash decisions
-            </p>
-          </div>
-          <div className="mystic-card p-6 border-l-4 border-red-500/50">
+             <p className="text-mystic-300 text-sm">
+               May feel pushed toward over-action, restlessness, and rash decisions
+             </p>
+           </div>
+           <div className="mystic-card p-6 border-l-4 border-red-500/50">
             <h3 className="text-xl font-cinzel font-semibold text-red-400 mb-3">Fire-heavy charts</h3>
-            <p className="text-mystic-300 text-sm">
-              Risk of burnout, anxiety, and digestive issues
-            </p>
-          </div>
-          <div className="mystic-card p-6 border-l-4 border-yellow-500/50">
+             <p className="text-mystic-300 text-sm">
+               Risk of burnout, anxiety, and digestive issues
+             </p>
+           </div>
+           <div className="mystic-card p-6 border-l-4 border-yellow-500/50">
             <h3 className="text-xl font-cinzel font-semibold text-yellow-400 mb-3">Earth Day Masters (Wu, Ji)</h3>
-            <p className="text-mystic-300 text-sm">
-              Might thrive if Fire is your resource star—more energy, more clarity
-            </p>
-          </div>
-        </div>
+             <p className="text-mystic-300 text-sm">
+               Might thrive if Fire is your resource star—more energy, more clarity
+             </p>
+           </div>
+         </div>
 
-        <p className="mb-6 text-mystic-300 leading-relaxed">
-          If your BaZi luck cycle already includes strong Fire, <strong>2025 may feel overwhelming</strong>.
-        </p>
+         <p className="mb-6 text-mystic-300 leading-relaxed">
+           If your BaZi luck cycle already includes strong Fire, <strong>2025 may feel overwhelming</strong>.
+         </p>
 
-        <h2 className="text-2xl font-cinzel font-bold text-white mb-4 mt-8">🧘 Tips for Harmonizing Fire in 2025</h2>
-        <p className="mb-6 text-mystic-300 leading-relaxed">
-          To protect your energy and align with cosmic flow:
-        </p>
+         <h2 className="text-2xl font-cinzel font-bold text-white mb-4 mt-8">🧘 Tips for Harmonizing Fire in 2025</h2>
+         <p className="mb-6 text-mystic-300 leading-relaxed">
+           To protect your energy and align with cosmic flow:
+         </p>
 
-        <div className="bg-gradient-to-r from-mystic-800 to-mystic-900 p-6 rounded-xl border border-gold-500/30 mb-8">
-          <ul className="space-y-2 text-mystic-300">
-            <li className="flex items-start space-x-3">
-              <div className="w-2 h-2 bg-gold-400 rounded-full mt-2 flex-shrink-0"></div>
+         <div className="bg-gradient-to-r from-mystic-800 to-mystic-900 p-6 rounded-xl border border-gold-500/30 mb-8">
+           <ul className="space-y-2 text-mystic-300">
+             <li className="flex items-start space-x-3">
+               <div className="w-2 h-2 bg-gold-400 rounded-full mt-2 flex-shrink-0"></div>
               <span><strong>Avoid spicy, fried, or greasy food</strong> —nourish with cooling foods (melon, lotus root, mung bean soup)</span>
-            </li>
-            <li className="flex items-start space-x-3">
-              <div className="w-2 h-2 bg-gold-400 rounded-full mt-2 flex-shrink-0"></div>
+             </li>
+             <li className="flex items-start space-x-3">
+               <div className="w-2 h-2 bg-gold-400 rounded-full mt-2 flex-shrink-0"></div>
               <span><strong>Bring Water into your daily routine</strong> —physically (hydration, showers) and energetically (Blue colors, Moon imagery)</span>
-            </li>
-            <li className="flex items-start space-x-3">
-              <div className="w-2 h-2 bg-gold-400 rounded-full mt-2 flex-shrink-0"></div>
+             </li>
+             <li className="flex items-start space-x-3">
+               <div className="w-2 h-2 bg-gold-400 rounded-full mt-2 flex-shrink-0"></div>
               <span><strong>Use protective talismans</strong> based on Water or Metal —these control or balance Fire in classical Five Element theory</span>
-            </li>
-            <li className="flex items-start space-x-3">
-              <div className="w-2 h-2 bg-gold-400 rounded-full mt-2 flex-shrink-0"></div>
+             </li>
+             <li className="flex items-start space-x-3">
+               <div className="w-2 h-2 bg-gold-400 rounded-full mt-2 flex-shrink-0"></div>
               <span><strong>Sleep early, meditate often, rest the Heart spirit (—</strong></span>
-            </li>
-            <li className="flex items-start space-x-3">
-              <div className="w-2 h-2 bg-gold-400 rounded-full mt-2 flex-shrink-0"></div>
-              <span>Consider adjusting <strong>feng shui</strong> (e.g., remove excessive red/fire colors from bedroom)</span>
-            </li>
-          </ul>
-        </div>
+             </li>
+             <li className="flex items-start space-x-3">
+               <div className="w-2 h-2 bg-gold-400 rounded-full mt-2 flex-shrink-0"></div>
+               <span>Consider adjusting <strong>feng shui</strong> (e.g., remove excessive red/fire colors from bedroom)</span>
+             </li>
+           </ul>
+         </div>
 
-        <h2 className="text-2xl font-cinzel font-bold text-white mb-4 mt-8">🔮 Final Thought</h2>
-        <p className="mb-6 text-mystic-300 leading-relaxed">
-          The external heat reflects the internal Fire many are struggling with. BaZi isn't about fearing the elements—it's about understanding when they're <strong>out of sync</strong> with you.
-        </p>
+         <h2 className="text-2xl font-cinzel font-bold text-white mb-4 mt-8">🔮 Final Thought</h2>
+         <p className="mb-6 text-mystic-300 leading-relaxed">
+           The external heat reflects the internal Fire many are struggling with. BaZi isn't about fearing the elements—it's about understanding when they're <strong>out of sync</strong> with you.
+         </p>
 
-        <p className="mb-6 text-mystic-300 leading-relaxed">
+         <p className="mb-6 text-mystic-300 leading-relaxed">
           If you're feeling drained, angry, burned out, or restless this year—maybe it's not just the weather.
-        </p>
+         </p>
 
-        <div className="mystic-card p-6 border-l-4 border-gold-500/50 mb-8">
+         <div className="mystic-card p-6 border-l-4 border-gold-500/50 mb-8">
           <h3 className="text-xl font-cinzel font-semibold text-gold-400 mb-3">Ready to Understand Your Fire Balance—</h3>
-          <p className="text-mystic-300 text-sm">
+           <p className="text-mystic-300 text-sm">
             Would you like a personalized reading to understand how the 2025 Fire energy affects your specific BaZi chart— 
-            A detailed analysis can reveal your Fire element balance and provide specific strategies for harmonizing your energy this year.
-          </p>
-        </div>
-      `,
-      category: "bazi-basics",
-      categoryLabel: "Bazi Basics",
-      date: "2025-08-02",
-      readTime: "10 min read",
-      image: "/images/blog/heatwave-bazi-cover.jpg",
-      slug: "heatwave-bazi-fire-imbalance",
-      author: "玄印 (Xuan Yin)",
-      tags: ["Heatwave", "Fire Element", "BaZi", "2025", "Health", "Energy Balance", "Climate"]
-    },
-    {
-      id: 10,
-      title: "🌿 The Seasons of Fate: Why You Don't Have to Panic About Every Downturn",
-      excerpt: "Discover how BaZi reveals that life's challenges are natural cycles, not punishments. Learn to flow with your destiny's seasons.",
-      content: `
-        <div className="mb-8">
-          <p className="text-lg text-mystic-300 leading-relaxed mb-4 italic">
-            "A river flows because it bends. A tree survives because it yields."
-          </p>
-          <p className="text-sm text-mystic-400">—Ancient Chinese proverb</p>
-        </div>
-        
-        <h2 className="text-2xl font-cinzel font-bold text-white mb-4 mt-8">💭 When Life Feels Stuck or Heavy</h2>
-        <p className="mb-6 text-mystic-300 leading-relaxed">
-          There are days when things simply don't go our way.
-        </p>
-        <p className="mb-6 text-mystic-300 leading-relaxed">
-          The job opportunity slips away. The person we love grows distant. The finances get tight. In those moments, it's easy to feel anxious, as if you've missed your only chance, or that something must be "wrong" with your life path.
-        </p>
-        <p className="mb-6 text-mystic-300 leading-relaxed">
-          But in BaZi—the ancient Chinese art of destiny mapping—these fluctuations are natural, even necessary.
-        </p>
-        
-        <h2 className="text-2xl font-cinzel font-bold text-white mb-4 mt-8">🌗 Destiny Moves in Cycles, Not Straight Lines</h2>
-        <p className="mb-6 text-mystic-300 leading-relaxed">
-          In BaZi, every person is born with a chart made of Four Pillars—each shaped by the energy of the year, month, day, and hour of birth. These elements don't stay still—they interact with time, changing subtly every year, every decade.
-        </p>
-        <p className="mb-6 text-mystic-300 leading-relaxed">
-          Sometimes, we enter a "high luck phase," where things seem to click.<br>
-          Other times, we enter a "transitional phase," when challenges arise—not as punishment, but as part of the realignment.
-        </p>
-        <p className="mb-6 text-mystic-300 leading-relaxed">
-          Just as nature has spring and winter, our lives go through growth seasons and rest seasons.
-        </p>
-        
-        <h2 className="text-2xl font-cinzel font-bold text-white mb-4 mt-8">🪨 The Power of Non-Resistance</h2>
-        <p className="mb-6 text-mystic-300 leading-relaxed">
-          When life slows down, the modern mind often panics.
-        </p>
-        <p className="mb-6 text-mystic-300 leading-relaxed">
-          But ancient metaphysics teaches that resisting your current cycle only adds more imbalance. True power lies in understanding where you are in the flow—not forcing outcomes before their time.
-        </p>
-        <p className="mb-6 text-mystic-300 leading-relaxed">
-          For example:
-        </p>
-        <div className="bg-gradient-to-r from-mystic-800 to-mystic-900 p-6 rounded-xl border border-gold-500/30 mb-8">
-          <div className="mb-4">
-            <p className="text-mystic-300 mb-2">
-              <strong>A Water Day Master during a Fire-heavy year</strong> may feel anxious, unmotivated, or "burned out."
-            </p>
+             A detailed analysis can reveal your Fire element balance and provide specific strategies for harmonizing your energy this year.
+           </p>
+         </div>
+       `,
+       category: "bazi-basics",
+       categoryLabel: "Bazi Basics",
+       date: "2025-08-02",
+       readTime: "10 min read",
+       image: "/images/blog/heatwave-bazi-cover.jpg",
+       slug: "heatwave-bazi-fire-imbalance",
+       author: "玄印 (Xuan Yin)",
+       tags: ["Heatwave", "Fire Element", "BaZi", "2025", "Health", "Energy Balance", "Climate"]
+     },
+     {
+       id: 10,
+       title: "🌿 The Seasons of Fate: Why You Don't Have to Panic About Every Downturn",
+                   excerpt: "Discover how BaZi reveals that life's challenges are natural cycles, not punishments. Learn to flow with your destiny's seasons.",
+       content: `
+         <div className="mb-8">
+           <p className="text-lg text-mystic-300 leading-relaxed mb-4 italic">
+             "A river flows because it bends. A tree survives because it yields."
+           </p>
+           <p className="text-sm text-mystic-400">—Ancient Chinese proverb</p>
+         </div>
+         
+         <h2 className="text-2xl font-cinzel font-bold text-white mb-4 mt-8">💭 When Life Feels Stuck or Heavy</h2>
+         <p className="mb-6 text-mystic-300 leading-relaxed">
+           There are days when things simply don't go our way.
+         </p>
+         <p className="mb-6 text-mystic-300 leading-relaxed">
+           The job opportunity slips away. The person we love grows distant. The finances get tight. In those moments, it's easy to feel anxious, as if you've missed your only chance, or that something must be "wrong" with your life path.
+         </p>
+         <p className="mb-6 text-mystic-300 leading-relaxed">
+           But in BaZi—the ancient Chinese art of destiny mapping—these fluctuations are natural, even necessary.
+         </p>
+         
+         <h2 className="text-2xl font-cinzel font-bold text-white mb-4 mt-8">🌗 Destiny Moves in Cycles, Not Straight Lines</h2>
+         <p className="mb-6 text-mystic-300 leading-relaxed">
+           In BaZi, every person is born with a chart made of Four Pillars—each shaped by the energy of the year, month, day, and hour of birth. These elements don't stay still—they interact with time, changing subtly every year, every decade.
+         </p>
+         <p className="mb-6 text-mystic-300 leading-relaxed">
+           Sometimes, we enter a "high luck phase," where things seem to click.<br>
+           Other times, we enter a "transitional phase," when challenges arise—not as punishment, but as part of the realignment.
+         </p>
+         <p className="mb-6 text-mystic-300 leading-relaxed">
+           Just as nature has spring and winter, our lives go through growth seasons and rest seasons.
+         </p>
+         
+         <h2 className="text-2xl font-cinzel font-bold text-white mb-4 mt-8">🪨 The Power of Non-Resistance</h2>
+         <p className="mb-6 text-mystic-300 leading-relaxed">
+           When life slows down, the modern mind often panics.
+         </p>
+         <p className="mb-6 text-mystic-300 leading-relaxed">
+           But ancient metaphysics teaches that resisting your current cycle only adds more imbalance. True power lies in understanding where you are in the flow—not forcing outcomes before their time.
+         </p>
+         <p className="mb-6 text-mystic-300 leading-relaxed">
+           For example:
+         </p>
+         <div className="bg-gradient-to-r from-mystic-800 to-mystic-900 p-6 rounded-xl border border-gold-500/30 mb-8">
+           <div className="mb-4">
+             <p className="text-mystic-300 mb-2">
+               <strong>A Water Day Master during a Fire-heavy year</strong> may feel anxious, unmotivated, or "burned out."
+             </p>
             <p className="text-mystic-300 text-sm">—The solution isn't to push harder, but to restore inner coolness and protect your energy.</p>
-          </div>
-          <div>
-            <p className="text-mystic-300 mb-2">
-              <strong>A Wood Day Master going through a Metal phase</strong> may feel "cut down" or misunderstood.
-            </p>
+           </div>
+           <div>
+             <p className="text-mystic-300 mb-2">
+               <strong>A Wood Day Master going through a Metal phase</strong> may feel "cut down" or misunderstood.
+             </p>
             <p className="text-mystic-300 text-sm">—But pruning often prepares the tree for deeper roots.</p>
-          </div>
-        </div>
-        <p className="mb-6 text-mystic-300 leading-relaxed">
-          Every BaZi chart contains both seeds of hardship and seeds of transformation.
-        </p>
-        
-        <h2 className="text-2xl font-cinzel font-bold text-white mb-4 mt-8">🍂 Why Hard Phases Don't Mean Bad Luck Forever</h2>
-        <p className="mb-6 text-mystic-300 leading-relaxed">
-          Many people worry that a difficult year or unlucky month defines their whole destiny. But nothing in BaZi is permanent.
-        </p>
-        <p className="mb-6 text-mystic-300 leading-relaxed">
-          Even your most challenging cycle is just a part of your greater story.
-        </p>
-        <p className="mb-6 text-mystic-300 leading-relaxed">
-          Some of the wisest, most successful people I've read for had extremely rough beginnings. But those "low tides" taught them to refine their path, to develop resilience, and to wait for the right wind.
-        </p>
-        <div className="mystic-card p-6 border-l-4 border-gold-500/50 mb-8">
-          <p className="text-mystic-300 italic">
-            🌬 In Chinese philosophy, "When the wind rises, even pigs can fly."<br>
-            The key is to know when the wind is rising—and when to rest your wings.
-          </p>
-        </div>
-        
-        <h2 className="text-2xl font-cinzel font-bold text-white mb-4 mt-8">🧭 How BaZi Helps (Without Fortune-Telling)</h2>
-        <p className="mb-6 text-mystic-300 leading-relaxed">
-          A proper BaZi reading isn't about "fortune telling."
-        </p>
-        <p className="mb-6 text-mystic-300 leading-relaxed">
-          It's about giving you a map. A sense of timing. A recognition that you are not broken—you are just moving through your cycle.
-        </p>
-        <p className="mb-6 text-mystic-300 leading-relaxed">
-          It's about showing you when to:
-        </p>
-        <div className="bg-gradient-to-r from-mystic-800 to-mystic-900 p-6 rounded-xl border border-gold-500/30 mb-8">
-          <ul className="space-y-2 text-mystic-300">
-            <li className="flex items-start space-x-3">
-              <div className="w-2 h-2 bg-gold-400 rounded-full mt-2 flex-shrink-0"></div>
-              <span><strong>Advance confidently</strong></span>
-            </li>
-            <li className="flex items-start space-x-3">
-              <div className="w-2 h-2 bg-gold-400 rounded-full mt-2 flex-shrink-0"></div>
-              <span><strong>Pause and regroup</strong></span>
-            </li>
-            <li className="flex items-start space-x-3">
-              <div className="w-2 h-2 bg-gold-400 rounded-full mt-2 flex-shrink-0"></div>
-              <span><strong>Adjust your environment</strong></span>
-            </li>
-            <li className="flex items-start space-x-3">
-              <div className="w-2 h-2 bg-gold-400 rounded-full mt-2 flex-shrink-0"></div>
-              <span><strong>Strengthen specific energies</strong> (Water, Wood, Metal, etc.)</span>
-            </li>
-            <li className="flex items-start space-x-3">
-              <div className="w-2 h-2 bg-gold-400 rounded-full mt-2 flex-shrink-0"></div>
-              <span>And most importantly, <strong>how to stop blaming yourself</strong> for natural seasons of difficulty.</span>
-            </li>
-          </ul>
-        </div>
-        
-        <h2 className="text-2xl font-cinzel font-bold text-white mb-4 mt-8">🌸 Final Words</h2>
-        <p className="mb-6 text-mystic-300 leading-relaxed">
-          If you're going through a hard time, know this:
-        </p>
-        <div className="grid md:grid-cols-3 gap-4 mb-8">
-          <div className="mystic-card p-6 text-center">
+           </div>
+         </div>
+         <p className="mb-6 text-mystic-300 leading-relaxed">
+           Every BaZi chart contains both seeds of hardship and seeds of transformation.
+         </p>
+         
+         <h2 className="text-2xl font-cinzel font-bold text-white mb-4 mt-8">🍂 Why Hard Phases Don't Mean Bad Luck Forever</h2>
+         <p className="mb-6 text-mystic-300 leading-relaxed">
+           Many people worry that a difficult year or unlucky month defines their whole destiny. But nothing in BaZi is permanent.
+         </p>
+         <p className="mb-6 text-mystic-300 leading-relaxed">
+           Even your most challenging cycle is just a part of your greater story.
+         </p>
+         <p className="mb-6 text-mystic-300 leading-relaxed">
+           Some of the wisest, most successful people I've read for had extremely rough beginnings. But those "low tides" taught them to refine their path, to develop resilience, and to wait for the right wind.
+         </p>
+         <div className="mystic-card p-6 border-l-4 border-gold-500/50 mb-8">
+           <p className="text-mystic-300 italic">
+             🌬 In Chinese philosophy, "When the wind rises, even pigs can fly."<br>
+             The key is to know when the wind is rising—and when to rest your wings.
+           </p>
+         </div>
+         
+         <h2 className="text-2xl font-cinzel font-bold text-white mb-4 mt-8">🧭 How BaZi Helps (Without Fortune-Telling)</h2>
+         <p className="mb-6 text-mystic-300 leading-relaxed">
+           A proper BaZi reading isn't about "fortune telling."
+         </p>
+         <p className="mb-6 text-mystic-300 leading-relaxed">
+           It's about giving you a map. A sense of timing. A recognition that you are not broken—you are just moving through your cycle.
+         </p>
+         <p className="mb-6 text-mystic-300 leading-relaxed">
+           It's about showing you when to:
+         </p>
+         <div className="bg-gradient-to-r from-mystic-800 to-mystic-900 p-6 rounded-xl border border-gold-500/30 mb-8">
+           <ul className="space-y-2 text-mystic-300">
+             <li className="flex items-start space-x-3">
+               <div className="w-2 h-2 bg-gold-400 rounded-full mt-2 flex-shrink-0"></div>
+               <span><strong>Advance confidently</strong></span>
+             </li>
+             <li className="flex items-start space-x-3">
+               <div className="w-2 h-2 bg-gold-400 rounded-full mt-2 flex-shrink-0"></div>
+               <span><strong>Pause and regroup</strong></span>
+             </li>
+             <li className="flex items-start space-x-3">
+               <div className="w-2 h-2 bg-gold-400 rounded-full mt-2 flex-shrink-0"></div>
+               <span><strong>Adjust your environment</strong></span>
+             </li>
+             <li className="flex items-start space-x-3">
+               <div className="w-2 h-2 bg-gold-400 rounded-full mt-2 flex-shrink-0"></div>
+               <span><strong>Strengthen specific energies</strong> (Water, Wood, Metal, etc.)</span>
+             </li>
+             <li className="flex items-start space-x-3">
+               <div className="w-2 h-2 bg-gold-400 rounded-full mt-2 flex-shrink-0"></div>
+               <span>And most importantly, <strong>how to stop blaming yourself</strong> for natural seasons of difficulty.</span>
+             </li>
+           </ul>
+         </div>
+         
+         <h2 className="text-2xl font-cinzel font-bold text-white mb-4 mt-8">🌸 Final Words</h2>
+         <p className="mb-6 text-mystic-300 leading-relaxed">
+           If you're going through a hard time, know this:
+         </p>
+         <div className="grid md:grid-cols-3 gap-4 mb-8">
+           <div className="mystic-card p-6 text-center">
             <h3 className="text-xl font-cinzel font-semibold text-gold-400 mb-2">You are not late.</h3>
-          </div>
-          <div className="mystic-card p-6 text-center">
+           </div>
+           <div className="mystic-card p-6 text-center">
             <h3 className="text-xl font-cinzel font-semibold text-gold-400 mb-2">You are not lost.</h3>
-          </div>
-          <div className="mystic-card p-6 text-center">
+           </div>
+           <div className="mystic-card p-6 text-center">
             <h3 className="text-xl font-cinzel font-semibold text-gold-400 mb-2">You are not being punished.</h3>
-          </div>
-        </div>
-        <p className="mb-6 text-mystic-300 leading-relaxed">
-          You're simply moving through your own rhythm—and in time, a new phase will begin.
-        </p>
-        <div className="mystic-card p-6 border-l-4 border-gold-500/50 mb-8">
+           </div>
+         </div>
+         <p className="mb-6 text-mystic-300 leading-relaxed">
+           You're simply moving through your own rhythm—and in time, a new phase will begin.
+         </p>
+         <div className="mystic-card p-6 border-l-4 border-gold-500/50 mb-8">
           <h3 className="text-xl font-cinzel font-semibold text-gold-400 mb-3">Ready to Understand Your Cycles—</h3>
-          <p className="text-mystic-300 text-sm">
+           <p className="text-mystic-300 text-sm">
             Would you like a personalized BaZi reading to understand your current life phase and how to navigate it with wisdom— 
-            A detailed analysis can reveal your natural cycles and provide guidance for flowing with your destiny's seasons.
-          </p>
-        </div>
-      `,
-      category: "bazi-basics",
-      categoryLabel: "Bazi Basics",
-      date: "2025-08-04",
-      readTime: "7 min read",
-      image: "/images/blog/seasons-fate-cover.jpg",
-      slug: "seasons-fate-cycles",
-      author: "玄印 (Xuan Yin)",
-      tags: ["Destiny Cycles", "BaZi", "Life Phases", "Resilience", "Chinese Philosophy", "Personal Growth", "Timing"]
-    },
-    {
-      id: 11,
-      title: "BaZi vs. MBTI: East Meets West in Personality and Destiny",
-      excerpt: "Explore how ancient Chinese BaZi and Western MBTI personality systems complement each other. Discover destiny mapping vs personality typing.",
-      content: `
-        <div className="mb-8">
-          <p className="text-lg text-mystic-300 leading-relaxed mb-4">
+             A detailed analysis can reveal your natural cycles and provide guidance for flowing with your destiny's seasons.
+           </p>
+         </div>
+       `,
+       category: "bazi-basics",
+       categoryLabel: "Bazi Basics",
+       date: "2025-08-04",
+       readTime: "7 min read",
+                image: "/images/blog/seasons-fate-cover.jpg",
+       slug: "seasons-fate-cycles",
+       author: "玄印 (Xuan Yin)",
+       tags: ["Destiny Cycles", "BaZi", "Life Phases", "Resilience", "Chinese Philosophy", "Personal Growth", "Timing"]
+     },
+     {
+       id: 11,
+       title: "BaZi vs. MBTI: East Meets West in Personality and Destiny",
+                   excerpt: "Explore how ancient Chinese BaZi and Western MBTI personality systems complement each other. Discover destiny mapping vs personality typing.",
+       content: `
+         <div className="mb-8">
+           <p className="text-lg text-mystic-300 leading-relaxed mb-4">
             When it comes to answering the age-old question "Who am I—", both the East and West have developed rich frameworks for self-understanding. In the East, there's BaZi (Four Pillars of Destiny), and in the West, the MBTI (Myers-Briggs Type Indicator). Though these systems come from vastly different cultural and philosophical backgrounds, both aim to help us better understand ourselves and align with our path in life. Here's a lighthearted comparison of these two systems and how they can complement each other.
-          </p>
-        </div>
+           </p>
+         </div>
 
         <h2 className="text-2xl font-cinzel font-bold text-white mb-4 mt-8">1. What is MBTI—</h2>
-        <p className="mb-6 text-mystic-300 leading-relaxed">
-          MBTI (Myers-Briggs Type Indicator) is a personality typology based on Carl Jung's theory of psychological types. It categorizes people along four dichotomies:
-        </p>
+         <p className="mb-6 text-mystic-300 leading-relaxed">
+           MBTI (Myers-Briggs Type Indicator) is a personality typology based on Carl Jung's theory of psychological types. It categorizes people along four dichotomies:
+         </p>
 
-        <div className="bg-gradient-to-r from-mystic-800 to-mystic-900 p-6 rounded-xl border border-gold-500/30 mb-8">
-          <ul className="space-y-2 text-mystic-300">
-            <li className="flex items-start space-x-3">
-              <div className="w-2 h-2 bg-gold-400 rounded-full mt-2 flex-shrink-0"></div>
-              <span><strong>Where you get your energy</strong> (Extraversion vs. Introversion)</span>
-            </li>
-            <li className="flex items-start space-x-3">
-              <div className="w-2 h-2 bg-gold-400 rounded-full mt-2 flex-shrink-0"></div>
-              <span><strong>How you take in information</strong> (Sensing vs. Intuition)</span>
-            </li>
-            <li className="flex items-start space-x-3">
-              <div className="w-2 h-2 bg-gold-400 rounded-full mt-2 flex-shrink-0"></div>
-              <span><strong>How you make decisions</strong> (Thinking vs. Feeling)</span>
-            </li>
-            <li className="flex items-start space-x-3">
-              <div className="w-2 h-2 bg-gold-400 rounded-full mt-2 flex-shrink-0"></div>
-              <span><strong>How you deal with the outside world</strong> (Judging vs. Perceiving)</span>
-            </li>
-          </ul>
-        </div>
+         <div className="bg-gradient-to-r from-mystic-800 to-mystic-900 p-6 rounded-xl border border-gold-500/30 mb-8">
+           <ul className="space-y-2 text-mystic-300">
+             <li className="flex items-start space-x-3">
+               <div className="w-2 h-2 bg-gold-400 rounded-full mt-2 flex-shrink-0"></div>
+               <span><strong>Where you get your energy</strong> (Extraversion vs. Introversion)</span>
+             </li>
+             <li className="flex items-start space-x-3">
+               <div className="w-2 h-2 bg-gold-400 rounded-full mt-2 flex-shrink-0"></div>
+               <span><strong>How you take in information</strong> (Sensing vs. Intuition)</span>
+             </li>
+             <li className="flex items-start space-x-3">
+               <div className="w-2 h-2 bg-gold-400 rounded-full mt-2 flex-shrink-0"></div>
+               <span><strong>How you make decisions</strong> (Thinking vs. Feeling)</span>
+             </li>
+             <li className="flex items-start space-x-3">
+               <div className="w-2 h-2 bg-gold-400 rounded-full mt-2 flex-shrink-0"></div>
+               <span><strong>How you deal with the outside world</strong> (Judging vs. Perceiving)</span>
+             </li>
+           </ul>
+         </div>
 
-        <p className="mb-6 text-mystic-300 leading-relaxed">
-          Your combination of preferences results in one of 16 personality types, such as INFP, ESTJ, ENTP, etc. MBTI reflects your cognitive style and behavioral tendencies—it's like a mirror showing who you are right now.
-        </p>
+         <p className="mb-6 text-mystic-300 leading-relaxed">
+           Your combination of preferences results in one of 16 personality types, such as INFP, ESTJ, ENTP, etc. MBTI reflects your cognitive style and behavioral tendencies—it's like a mirror showing who you are right now.
+         </p>
 
         <h2 className="text-2xl font-cinzel font-bold text-white mb-4 mt-8">2. What is BaZi—</h2>
-        <p className="mb-6 text-mystic-300 leading-relaxed">
-          BaZi, or the Four Pillars of Destiny, is a classical Chinese metaphysical system that interprets your destiny based on the date and time of your birth. Each person's birth data is converted into four pairs of characters (Heavenly Stems and Earthly Branches), reflecting the interplay of the Five Elements (Wood, Fire, Earth, Metal, Water).
-        </p>
+         <p className="mb-6 text-mystic-300 leading-relaxed">
+           BaZi, or the Four Pillars of Destiny, is a classical Chinese metaphysical system that interprets your destiny based on the date and time of your birth. Each person's birth data is converted into four pairs of characters (Heavenly Stems and Earthly Branches), reflecting the interplay of the Five Elements (Wood, Fire, Earth, Metal, Water).
+         </p>
 
-        <p className="mb-6 text-mystic-300 leading-relaxed">
-          BaZi is based on objective birth information and reveals your life structure, elemental balance, strengths, weaknesses, and most importantly—the timing of your fortune cycles. It's often used for career planning, relationship insights, and forecasting periods of growth or challenge. Think of it as a life map: showing the terrain ahead.
-        </p>
+         <p className="mb-6 text-mystic-300 leading-relaxed">
+           BaZi is based on objective birth information and reveals your life structure, elemental balance, strengths, weaknesses, and most importantly—the timing of your fortune cycles. It's often used for career planning, relationship insights, and forecasting periods of growth or challenge. Think of it as a life map: showing the terrain ahead.
+         </p>
 
-        <h2 className="text-2xl font-cinzel font-bold text-white mb-4 mt-8">3. Key Differences</h2>
-        <div className="overflow-x-auto mb-8">
-          <table className="w-full border-collapse">
-            <thead>
-              <tr className="border-b border-mystic-700">
-                <th className="text-left p-4 text-gold-400 font-semibold">Aspect</th>
-                <th className="text-left p-4 text-gold-400 font-semibold">MBTI</th>
-                <th className="text-left p-4 text-gold-400 font-semibold">BaZi</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr className="border-b border-mystic-700/50">
-                <td className="p-4 text-mystic-300 font-medium">Origin</td>
-                <td className="p-4 text-mystic-300">Western psychology (Jung)</td>
-                <td className="p-4 text-mystic-300">Ancient Chinese metaphysics</td>
-              </tr>
-              <tr className="border-b border-mystic-700/50">
-                <td className="p-4 text-mystic-300 font-medium">Input</td>
-                <td className="p-4 text-mystic-300">Self-assessment questionnaire</td>
-                <td className="p-4 text-mystic-300">Exact birth date and time</td>
-              </tr>
-              <tr className="border-b border-mystic-700/50">
-                <td className="p-4 text-mystic-300 font-medium">Flexibility</td>
+         <h2 className="text-2xl font-cinzel font-bold text-white mb-4 mt-8">3. Key Differences</h2>
+         <div className="overflow-x-auto mb-8">
+           <table className="w-full border-collapse">
+             <thead>
+               <tr className="border-b border-mystic-700">
+                 <th className="text-left p-4 text-gold-400 font-semibold">Aspect</th>
+                 <th className="text-left p-4 text-gold-400 font-semibold">MBTI</th>
+                 <th className="text-left p-4 text-gold-400 font-semibold">BaZi</th>
+               </tr>
+             </thead>
+             <tbody>
+               <tr className="border-b border-mystic-700/50">
+                 <td className="p-4 text-mystic-300 font-medium">Origin</td>
+                 <td className="p-4 text-mystic-300">Western psychology (Jung)</td>
+                 <td className="p-4 text-mystic-300">Ancient Chinese metaphysics</td>
+               </tr>
+               <tr className="border-b border-mystic-700/50">
+                 <td className="p-4 text-mystic-300 font-medium">Input</td>
+                 <td className="p-4 text-mystic-300">Self-assessment questionnaire</td>
+                 <td className="p-4 text-mystic-300">Exact birth date and time</td>
+               </tr>
+               <tr className="border-b border-mystic-700/50">
+                 <td className="p-4 text-mystic-300 font-medium">Flexibility</td>
                 <td className="p-4 text-mystic-300">High —can change over time</td>
                 <td className="p-4 text-mystic-300">Fixed —based on birth moment</td>
-              </tr>
-              <tr className="border-b border-mystic-700/50">
-                <td className="p-4 text-mystic-300 font-medium">Focus</td>
-                <td className="p-4 text-mystic-300">Personality and preferences</td>
-                <td className="p-4 text-mystic-300">Life patterns and timing</td>
-              </tr>
-              <tr className="border-b border-mystic-700/50">
-                <td className="p-4 text-mystic-300 font-medium">Application</td>
-                <td className="p-4 text-mystic-300">Career fit, teamwork, self-awareness</td>
-                <td className="p-4 text-mystic-300">Timing of actions, fate alignment</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
+               </tr>
+               <tr className="border-b border-mystic-700/50">
+                 <td className="p-4 text-mystic-300 font-medium">Focus</td>
+                 <td className="p-4 text-mystic-300">Personality and preferences</td>
+                 <td className="p-4 text-mystic-300">Life patterns and timing</td>
+               </tr>
+               <tr className="border-b border-mystic-700/50">
+                 <td className="p-4 text-mystic-300 font-medium">Application</td>
+                 <td className="p-4 text-mystic-300">Career fit, teamwork, self-awareness</td>
+                 <td className="p-4 text-mystic-300">Timing of actions, fate alignment</td>
+               </tr>
+             </tbody>
+           </table>
+         </div>
 
         <h2 className="text-2xl font-cinzel font-bold text-white mb-4 mt-8">4. Can They Work Together—</h2>
-        <p className="mb-6 text-mystic-300 leading-relaxed">
-          Absolutely. BaZi gives you the big picture—the life cycles and timing. MBTI tells you how you tend to operate in the present. For instance, if your BaZi indicates a wealth period is coming, and you're an ENTP, you might seize that opportunity through persuasive communication and risk-taking. If you're an ISFJ, you might accumulate wealth steadily through consistency and long-term dedication.
-        </p>
+         <p className="mb-6 text-mystic-300 leading-relaxed">
+           Absolutely. BaZi gives you the big picture—the life cycles and timing. MBTI tells you how you tend to operate in the present. For instance, if your BaZi indicates a wealth period is coming, and you're an ENTP, you might seize that opportunity through persuasive communication and risk-taking. If you're an ISFJ, you might accumulate wealth steadily through consistency and long-term dedication.
+         </p>
 
-        <div className="grid md:grid-cols-2 gap-6 mb-8">
-          <div className="mystic-card p-6 border-l-4 border-blue-500/50">
+         <div className="grid md:grid-cols-2 gap-6 mb-8">
+           <div className="mystic-card p-6 border-l-4 border-blue-500/50">
             <h3 className="text-xl font-cinzel font-semibold text-blue-400 mb-3">MBTI: Your Operating System</h3>
-            <p className="text-mystic-300 text-sm">
-              How you naturally think, feel, and interact with the world. Your cognitive preferences and behavioral patterns.
-            </p>
-          </div>
-          <div className="mystic-card p-6 border-l-4 border-gold-500/50">
+             <p className="text-mystic-300 text-sm">
+               How you naturally think, feel, and interact with the world. Your cognitive preferences and behavioral patterns.
+             </p>
+           </div>
+           <div className="mystic-card p-6 border-l-4 border-gold-500/50">
             <h3 className="text-xl font-cinzel font-semibold text-gold-400 mb-3">BaZi: Your Life Map</h3>
-            <p className="text-mystic-300 text-sm">
-              The broader landscape of your destiny, timing of opportunities, and life cycles. Your elemental balance and fortune patterns.
-            </p>
-          </div>
-        </div>
+             <p className="text-mystic-300 text-sm">
+               The broader landscape of your destiny, timing of opportunities, and life cycles. Your elemental balance and fortune patterns.
+             </p>
+           </div>
+         </div>
 
-        <h2 className="text-2xl font-cinzel font-bold text-white mb-4 mt-8">5. Practical Integration Examples</h2>
-        <p className="mb-6 text-mystic-300 leading-relaxed">
-          Here's how combining both systems can provide deeper insights:
-        </p>
+         <h2 className="text-2xl font-cinzel font-bold text-white mb-4 mt-8">5. Practical Integration Examples</h2>
+         <p className="mb-6 text-mystic-300 leading-relaxed">
+           Here's how combining both systems can provide deeper insights:
+         </p>
 
-        <div className="space-y-4 mb-8">
-          <div className="mystic-card p-6 border-l-4 border-green-500/50">
+         <div className="space-y-4 mb-8">
+           <div className="mystic-card p-6 border-l-4 border-green-500/50">
             <h3 className="text-xl font-cinzel font-semibold text-green-400 mb-3">Career Planning</h3>
-            <p className="text-mystic-300 text-sm">
-              <strong>BaZi:</strong> "Your wealth luck peaks in 2025-2027"<br>
-              <strong>MBTI:</strong> "You're an INTJ who excels at strategic planning"<br>
-              <strong>Combined insight:</strong> Use your strategic INTJ nature to prepare detailed plans during 2024, then execute when your BaZi wealth cycle begins.
-            </p>
-          </div>
-          <div className="mystic-card p-6 border-l-4 border-purple-500/50">
+             <p className="text-mystic-300 text-sm">
+               <strong>BaZi:</strong> "Your wealth luck peaks in 2025-2027"<br>
+               <strong>MBTI:</strong> "You're an INTJ who excels at strategic planning"<br>
+               <strong>Combined insight:</strong> Use your strategic INTJ nature to prepare detailed plans during 2024, then execute when your BaZi wealth cycle begins.
+             </p>
+           </div>
+           <div className="mystic-card p-6 border-l-4 border-purple-500/50">
             <h3 className="text-xl font-cinzel font-semibold text-purple-400 mb-3">Relationship Dynamics</h3>
-            <p className="text-mystic-300 text-sm">
-              <strong>BaZi:</strong> "You have strong Fire element, seek Water partners"<br>
-              <strong>MBTI:</strong> "You're an ENFP who values emotional connection"<br>
-              <strong>Combined insight:</strong> Your ENFP warmth can help you connect with Water element partners (who tend to be more reserved), creating balance.
-            </p>
-          </div>
-          <div className="mystic-card p-6 border-l-4 border-orange-500/50">
+             <p className="text-mystic-300 text-sm">
+               <strong>BaZi:</strong> "You have strong Fire element, seek Water partners"<br>
+               <strong>MBTI:</strong> "You're an ENFP who values emotional connection"<br>
+               <strong>Combined insight:</strong> Your ENFP warmth can help you connect with Water element partners (who tend to be more reserved), creating balance.
+             </p>
+           </div>
+           <div className="mystic-card p-6 border-l-4 border-orange-500/50">
             <h3 className="text-xl font-cinzel font-semibold text-orange-400 mb-3">Decision Making</h3>
-            <p className="text-mystic-300 text-sm">
-              <strong>BaZi:</strong> "You're in a Metal-heavy period, focus on precision"<br>
-              <strong>MBTI:</strong> "You're an ISTP who trusts concrete data"<br>
-              <strong>Combined insight:</strong> Your natural ISTP analytical skills align perfectly with the Metal period's need for precision and detail.
-            </p>
-          </div>
-        </div>
+             <p className="text-mystic-300 text-sm">
+               <strong>BaZi:</strong> "You're in a Metal-heavy period, focus on precision"<br>
+               <strong>MBTI:</strong> "You're an ISTP who trusts concrete data"<br>
+               <strong>Combined insight:</strong> Your natural ISTP analytical skills align perfectly with the Metal period's need for precision and detail.
+             </p>
+           </div>
+         </div>
 
-        <h2 className="text-2xl font-cinzel font-bold text-white mb-4 mt-8">6. Final Thoughts</h2>
-        <p className="mb-6 text-mystic-300 leading-relaxed">
-          BaZi is your map. MBTI is your compass. One shows the broader landscape of your life path, while the other helps you navigate day-to-day decisions with self-awareness. When used together, they can offer powerful insights—honoring both fate and free will.
-        </p>
+         <h2 className="text-2xl font-cinzel font-bold text-white mb-4 mt-8">6. Final Thoughts</h2>
+         <p className="mb-6 text-mystic-300 leading-relaxed">
+           BaZi is your map. MBTI is your compass. One shows the broader landscape of your life path, while the other helps you navigate day-to-day decisions with self-awareness. When used together, they can offer powerful insights—honoring both fate and free will.
+         </p>
 
-        <div className="mystic-card p-6 border-l-4 border-gold-500/50 mb-8">
+         <div className="mystic-card p-6 border-l-4 border-gold-500/50 mb-8">
           <h3 className="text-xl font-cinzel font-semibold text-gold-400 mb-3">Key Insight:</h3>
-          <p className="text-mystic-300 text-sm">
-            Understanding both systems allows you to work with your natural personality (MBTI) while aligning with your destiny's timing (BaZi). This creates a powerful synergy for personal growth and life success.
-          </p>
-        </div>
+           <p className="text-mystic-300 text-sm">
+             Understanding both systems allows you to work with your natural personality (MBTI) while aligning with your destiny's timing (BaZi). This creates a powerful synergy for personal growth and life success.
+           </p>
+         </div>
 
-        <p className="mb-6 text-mystic-300 leading-relaxed">
+         <p className="mb-6 text-mystic-300 leading-relaxed">
           Why not explore both— Learn your destiny, know your nature, and walk your path with clarity and confidence.
-        </p>
+         </p>
 
-        <div className="bg-gradient-to-r from-mystic-800 to-mystic-900 p-6 rounded-xl border border-gold-500/30 mb-8">
+         <div className="bg-gradient-to-r from-mystic-800 to-mystic-900 p-6 rounded-xl border border-gold-500/30 mb-8">
           <h3 className="text-xl font-cinzel font-semibold text-gold-400 mb-4">Ready to Discover Your Complete Profile—</h3>
-          <p className="text-mystic-300 mb-4">
+           <p className="text-mystic-300 mb-4">
             Would you like a comprehensive analysis that combines both BaZi destiny mapping and personality insights—
-          </p>
-          <p className="text-mystic-300 text-sm">
-            A detailed reading can reveal how your personality type interacts with your destiny cycles, providing unique guidance for career, relationships, and personal development.
-          </p>
-        </div>
-      `,
-      category: "bazi-basics",
-      categoryLabel: "Bazi Basics",
-      date: "2025-08-04",
-      readTime: "11 min read",
-      image: "/images/blog/bazi-mbti-comparison.jpg",
-      slug: "bazi-vs-mbti-personality-destiny",
-      author: "玄印 (Xuan Yin)",
-      tags: ["BaZi", "MBTI", "Personality", "Destiny", "Chinese Astrology", "Psychology", "Self-Discovery", "Career Guidance"]
-    },
-    {
-      id: 12,
-      title: "Why the Energy of a Solar Eclipse May Align With Lu Gen Planting Rituals",
-      excerpt: "Discover how celestial events like solar eclipses can amplify collective energy and how ancient Taoist Lu Gen rituals help personalize cosmic shifts.",
-      content: `
-        <div className="mb-8">
-          <p className="text-lg text-mystic-300 leading-relaxed mb-4 italic">
-            "When the heavens speak, the earth listens. When we plant with intention, we become the bridge between cosmic energy and earthly manifestation."
-          </p>
-          <p className="text-sm text-mystic-400">—Ancient Taoist wisdom</p>
-        </div>
+           </p>
+           <p className="text-mystic-300 text-sm">
+             A detailed reading can reveal how your personality type interacts with your destiny cycles, providing unique guidance for career, relationships, and personal development.
+           </p>
+         </div>
+       `,
+       category: "bazi-basics",
+       categoryLabel: "Bazi Basics",
+       date: "2025-08-04",
+       readTime: "11 min read",
+       image: "/images/blog/bazi-mbti-comparison.jpg",
+       slug: "bazi-vs-mbti-personality-destiny",
+       author: "玄印 (Xuan Yin)",
+       tags: ["BaZi", "MBTI", "Personality", "Destiny", "Chinese Astrology", "Psychology", "Self-Discovery", "Career Guidance"]
+     },
+     {
+       id: 12,
+       title: "Why the Energy of a Solar Eclipse May Align With Lu Gen Planting Rituals",
+                   excerpt: "Discover how celestial events like solar eclipses can amplify collective energy and how ancient Taoist Lu Gen rituals help personalize cosmic shifts.",
+       content: `
+         <div className="mb-8">
+           <p className="text-lg text-mystic-300 leading-relaxed mb-4 italic">
+             "When the heavens speak, the earth listens. When we plant with intention, we become the bridge between cosmic energy and earthly manifestation."
+           </p>
+           <p className="text-sm text-mystic-400">—Ancient Taoist wisdom</p>
+         </div>
 
-        <h2 className="text-2xl font-cinzel font-bold text-white mb-4 mt-8">🌑 The Celestial Whisper: Solar Eclipse Energy</h2>
-        <p className="mb-6 text-mystic-300 leading-relaxed">
-          Recently there's been a buzz online about a rumored solar eclipse in August 2025—something many have speculated will bring emotional and energetic shifts. Though details remain unclear, the idea points to an ancient truth: humans respond to celestial events by seeking ritual anchors—and one such anchor in Taoist practice is called Lu Gen, or "planting the root of prosperity."
-        </p>
+         <h2 className="text-2xl font-cinzel font-bold text-white mb-4 mt-8">🌑 The Celestial Whisper: Solar Eclipse Energy</h2>
+         <p className="mb-6 text-mystic-300 leading-relaxed">
+           Recently there's been a buzz online about a rumored solar eclipse in August 2025—something many have speculated will bring emotional and energetic shifts. Though details remain unclear, the idea points to an ancient truth: humans respond to celestial events by seeking ritual anchors—and one such anchor in Taoist practice is called Lu Gen, or "planting the root of prosperity."
+         </p>
 
-        <div className="bg-gradient-to-r from-mystic-800 to-mystic-900 p-6 rounded-xl border border-gold-500/30 mb-8">
+         <div className="bg-gradient-to-r from-mystic-800 to-mystic-900 p-6 rounded-xl border border-gold-500/30 mb-8">
           <h3 className="text-xl font-cinzel font-semibold text-gold-400 mb-4">The Cosmic Connection:</h3>
-          <p className="text-mystic-300 mb-4">
-            Solar eclipses are not just astronomical events—they are moments when the Moon temporarily blocks the Sun's energy, creating a unique energetic vacuum that amplifies our intentions and emotions.
-          </p>
-          <p className="text-mystic-300">
-            This cosmic alignment provides an ideal window for ritual work, especially those involving planting and growth.
-          </p>
-        </div>
+           <p className="text-mystic-300 mb-4">
+             Solar eclipses are not just astronomical events—they are moments when the Moon temporarily blocks the Sun's energy, creating a unique energetic vacuum that amplifies our intentions and emotions.
+           </p>
+           <p className="text-mystic-300">
+             This cosmic alignment provides an ideal window for ritual work, especially those involving planting and growth.
+           </p>
+         </div>
 
-        <h2 className="text-2xl font-cinzel font-bold text-white mb-4 mt-8">🌱 Lu Gen: The Ancient Art of Planting Prosperity</h2>
-        <p className="mb-6 text-mystic-300 leading-relaxed">
-          In my own way, I've linked this concept to a simple yet meaningful act: planting a piece of fresh ginger on a carefully chosen date, silently holding a clear intention—such as abundance, clarity, or stability. The root becomes a living symbol, anchoring your will into earth and time.
-        </p>
+         <h2 className="text-2xl font-cinzel font-bold text-white mb-4 mt-8">🌱 Lu Gen: The Ancient Art of Planting Prosperity</h2>
+         <p className="mb-6 text-mystic-300 leading-relaxed">
+           In my own way, I've linked this concept to a simple yet meaningful act: planting a piece of fresh ginger on a carefully chosen date, silently holding a clear intention—such as abundance, clarity, or stability. The root becomes a living symbol, anchoring your will into earth and time.
+         </p>
 
-        <p className="mb-6 text-mystic-300 leading-relaxed">
-          As the photos show, it's not about superstition—it's about creating a physical locus for your intention in alignment with cosmic timing.
-        </p>
+         <p className="mb-6 text-mystic-300 leading-relaxed">
+           As the photos show, it's not about superstition—it's about creating a physical locus for your intention in alignment with cosmic timing.
+         </p>
 
-        <div className="grid md:grid-cols-2 gap-6 mb-8">
-          <div className="mystic-card p-6">
+         <div className="grid md:grid-cols-2 gap-6 mb-8">
+           <div className="mystic-card p-6">
             <h3 className="text-xl font-cinzel font-semibold text-gold-400 mb-3">🌿 The Ritual Process</h3>
-            <ul className="space-y-2 text-mystic-300 text-sm">
+             <ul className="space-y-2 text-mystic-300 text-sm">
               <li>—Choose fresh ginger root</li>
               <li>—Select an auspicious date</li>
               <li>—Hold clear intention</li>
               <li>—Plant with mindfulness</li>
               <li>—Water with gratitude</li>
-            </ul>
-          </div>
-          <div className="mystic-card p-6">
+             </ul>
+           </div>
+           <div className="mystic-card p-6">
             <h3 className="text-xl font-cinzel font-semibold text-gold-400 mb-3">🎯 Intention Examples</h3>
-            <ul className="space-y-2 text-mystic-300 text-sm">
+             <ul className="space-y-2 text-mystic-300 text-sm">
               <li>—Financial abundance</li>
               <li>—Mental clarity</li>
               <li>—Emotional stability</li>
               <li>—Career growth</li>
               <li>—Relationship harmony</li>
-            </ul>
-          </div>
-        </div>
+             </ul>
+           </div>
+         </div>
 
         <h2 className="text-2xl font-cinzel font-bold text-white mb-4 mt-8">—Capturing the Cosmic Flow</h2>
-        <p className="mb-6 text-mystic-300 leading-relaxed">
-          Whether or not the eclipse happens, the principle remains: human consciousness responds to "celestial cues." If an eclipse amplifies collective energy, planting Lu Gen becomes a way to personalize that shift. By starting now, you may capture the flow rather than be swept by it.
-        </p>
+         <p className="mb-6 text-mystic-300 leading-relaxed">
+           Whether or not the eclipse happens, the principle remains: human consciousness responds to "celestial cues." If an eclipse amplifies collective energy, planting Lu Gen becomes a way to personalize that shift. By starting now, you may capture the flow rather than be swept by it.
+         </p>
 
-        <div className="mystic-card p-6 border-l-4 border-gold-500/50 mb-8">
-          <p className="text-mystic-300 italic">
-            💫 The key is not waiting for the perfect moment, but creating the perfect moment through conscious action and aligned intention.
-          </p>
-        </div>
+         <div className="mystic-card p-6 border-l-4 border-gold-500/50 mb-8">
+           <p className="text-mystic-300 italic">
+             💫 The key is not waiting for the perfect moment, but creating the perfect moment through conscious action and aligned intention.
+           </p>
+         </div>
 
-        <h2 className="text-2xl font-cinzel font-bold text-white mb-4 mt-8">🔮 Beyond Lu Gen: Other Celestial Rituals</h2>
-        <p className="mb-6 text-mystic-300 leading-relaxed">
-          Curious if others use similar methods—like sigil planting or intention jars—especially aligned to astronomical events. The ancient wisdom traditions offer many ways to work with cosmic energy:
-        </p>
+         <h2 className="text-2xl font-cinzel font-bold text-white mb-4 mt-8">🔮 Beyond Lu Gen: Other Celestial Rituals</h2>
+         <p className="mb-6 text-mystic-300 leading-relaxed">
+           Curious if others use similar methods—like sigil planting or intention jars—especially aligned to astronomical events. The ancient wisdom traditions offer many ways to work with cosmic energy:
+         </p>
 
-        <ul className="space-y-3 mb-6 text-mystic-300">
-          <li className="flex items-start space-x-3">
-            <div className="w-2 h-2 bg-gold-400 rounded-full mt-2 flex-shrink-0"></div>
-            <span><strong>Sigil Planting:</strong> Creating symbols of intention and burying them in the earth</span>
-          </li>
-          <li className="flex items-start space-x-3">
-            <div className="w-2 h-2 bg-gold-400 rounded-full mt-2 flex-shrink-0"></div>
-            <span><strong>Intention Jars:</strong> Sealing written intentions in containers with natural elements</span>
-          </li>
-          <li className="flex items-start space-x-3">
-            <div className="w-2 h-2 bg-gold-400 rounded-full mt-2 flex-shrink-0"></div>
-            <span><strong>Moon Phase Planting:</strong> Aligning garden work with lunar cycles</span>
-          </li>
-          <li className="flex items-start space-x-3">
-            <div className="w-2 h-2 bg-gold-400 rounded-full mt-2 flex-shrink-0"></div>
-            <span><strong>Solar Return Rituals:</strong> Annual practices aligned with your birth moment</span>
-          </li>
-        </ul>
+         <ul className="space-y-3 mb-6 text-mystic-300">
+           <li className="flex items-start space-x-3">
+             <div className="w-2 h-2 bg-gold-400 rounded-full mt-2 flex-shrink-0"></div>
+             <span><strong>Sigil Planting:</strong> Creating symbols of intention and burying them in the earth</span>
+           </li>
+           <li className="flex items-start space-x-3">
+             <div className="w-2 h-2 bg-gold-400 rounded-full mt-2 flex-shrink-0"></div>
+             <span><strong>Intention Jars:</strong> Sealing written intentions in containers with natural elements</span>
+           </li>
+           <li className="flex items-start space-x-3">
+             <div className="w-2 h-2 bg-gold-400 rounded-full mt-2 flex-shrink-0"></div>
+             <span><strong>Moon Phase Planting:</strong> Aligning garden work with lunar cycles</span>
+           </li>
+           <li className="flex items-start space-x-3">
+             <div className="w-2 h-2 bg-gold-400 rounded-full mt-2 flex-shrink-0"></div>
+             <span><strong>Solar Return Rituals:</strong> Annual practices aligned with your birth moment</span>
+           </li>
+         </ul>
 
-        <h2 className="text-2xl font-cinzel font-bold text-white mb-4 mt-8">📅 Timing Your Rituals with BaZi</h2>
-        <p className="mb-6 text-mystic-300 leading-relaxed">
-          I'll be writing more on how to choose dates using BaZi and how to integrate rituals with modern wellness in my next post. The key is understanding your personal elemental balance and choosing moments that amplify your intentions rather than working against them.
-        </p>
+         <h2 className="text-2xl font-cinzel font-bold text-white mb-4 mt-8">📅 Timing Your Rituals with BaZi</h2>
+         <p className="mb-6 text-mystic-300 leading-relaxed">
+           I'll be writing more on how to choose dates using BaZi and how to integrate rituals with modern wellness in my next post. The key is understanding your personal elemental balance and choosing moments that amplify your intentions rather than working against them.
+         </p>
 
-        <div className="bg-gradient-to-r from-mystic-800 to-mystic-900 p-6 rounded-xl border border-gold-500/30 mb-8">
+         <div className="bg-gradient-to-r from-mystic-800 to-mystic-900 p-6 rounded-xl border border-gold-500/30 mb-8">
           <h3 className="text-xl font-cinzel font-semibold text-gold-400 mb-4">🔮 Coming Next:</h3>
-          <p className="text-mystic-300 mb-4">
-            How to use your BaZi chart to identify the most auspicious dates for ritual work, and how to align your intentions with your personal elemental strengths.
-          </p>
-          <p className="text-mystic-300">
-            Remember: The best time to plant a tree was 20 years ago. The second best time is now.
-          </p>
-        </div>
+           <p className="text-mystic-300 mb-4">
+             How to use your BaZi chart to identify the most auspicious dates for ritual work, and how to align your intentions with your personal elemental strengths.
+           </p>
+           <p className="text-mystic-300">
+             Remember: The best time to plant a tree was 20 years ago. The second best time is now.
+           </p>
+         </div>
 
-        <h2 className="text-2xl font-cinzel font-bold text-white mb-4 mt-8">🌍 The Modern Application</h2>
-        <p className="mb-6 text-mystic-300 leading-relaxed">
-          In our fast-paced, technology-driven world, these ancient practices offer a way to reconnect with natural rhythms and cosmic cycles. They remind us that we are not separate from the universe, but active participants in its ongoing creation.
-        </p>
+         <h2 className="text-2xl font-cinzel font-bold text-white mb-4 mt-8">🌍 The Modern Application</h2>
+         <p className="mb-6 text-mystic-300 leading-relaxed">
+           In our fast-paced, technology-driven world, these ancient practices offer a way to reconnect with natural rhythms and cosmic cycles. They remind us that we are not separate from the universe, but active participants in its ongoing creation.
+         </p>
 
-        <p className="mb-6 text-mystic-300 leading-relaxed">
-          Whether you choose to plant ginger, create sigils, or simply take a moment to align your intentions with the cosmos, the important thing is to begin. Start small, be consistent, and trust in the process.
-        </p>
+         <p className="mb-6 text-mystic-300 leading-relaxed">
+           Whether you choose to plant ginger, create sigils, or simply take a moment to align your intentions with the cosmos, the important thing is to begin. Start small, be consistent, and trust in the process.
+         </p>
 
-        <div className="mystic-card p-6 border-l-4 border-gold-500/50 mb-8">
+         <div className="mystic-card p-6 border-l-4 border-gold-500/50 mb-8">
           <h3 className="text-xl font-cinzel font-semibold text-gold-400 mb-3">🎯 Your Next Steps:</h3>
-          <ul className="space-y-2 text-mystic-300">
-            <li className="flex items-start space-x-3">
-              <div className="w-2 h-2 bg-gold-400 rounded-full mt-2 flex-shrink-0"></div>
-              <span>Choose your intention</span>
-            </li>
-            <li className="flex items-start space-x-3">
-              <div className="w-2 h-2 bg-gold-400 rounded-full mt-2 flex-shrink-0"></div>
-              <span>Select your ritual method</span>
-            </li>
-            <li className="flex items-start space-x-3">
-              <div className="w-2 h-2 bg-gold-400 rounded-full mt-2 flex-shrink-0"></div>
-              <span>Align with cosmic timing</span>
-            </li>
-            <li className="flex items-start space-x-3">
-              <div className="w-2 h-2 bg-gold-400 rounded-full mt-2 flex-shrink-0"></div>
-              <span>Take action with mindfulness</span>
-            </li>
-          </ul>
-        </div>
+           <ul className="space-y-2 text-mystic-300">
+             <li className="flex items-start space-x-3">
+               <div className="w-2 h-2 bg-gold-400 rounded-full mt-2 flex-shrink-0"></div>
+               <span>Choose your intention</span>
+             </li>
+             <li className="flex items-start space-x-3">
+               <div className="w-2 h-2 bg-gold-400 rounded-full mt-2 flex-shrink-0"></div>
+               <span>Select your ritual method</span>
+             </li>
+             <li className="flex items-start space-x-3">
+               <div className="w-2 h-2 bg-gold-400 rounded-full mt-2 flex-shrink-0"></div>
+               <span>Align with cosmic timing</span>
+             </li>
+             <li className="flex items-start space-x-3">
+               <div className="w-2 h-2 bg-gold-400 rounded-full mt-2 flex-shrink-0"></div>
+               <span>Take action with mindfulness</span>
+             </li>
+           </ul>
+         </div>
 
-        <p className="mb-6 text-mystic-300 leading-relaxed">
+         <p className="mb-6 text-mystic-300 leading-relaxed">
           The universe is always speaking. The question is: are you listening—
-        </p>
-      `,
-      category: "bazi-basics",
-      categoryLabel: "Bazi Basics",
-      date: "2025-08-06",
-      readTime: "8 min read",
-      image: "/images/blog/solar-eclipse-lu-gen-cover.jpg",
-      slug: "solar-eclipse-energy-lu-gen-planting-rituals",
-      author: "玄印 (Xuan Yin)",
-      tags: ["Solar Eclipse", "Lu Gen", "Taoist Rituals", "Celestial Energy", "Planting Rituals", "Cosmic Timing", "Intention Setting", "Ancient Wisdom"]
-    },
-    {
-      id: 10,
+         </p>
+       `,
+       category: "bazi-basics",
+       categoryLabel: "Bazi Basics",
+                   date: "2025-08-06",
+            readTime: "8 min read",
+            image: "/images/blog/solar-eclipse-lu-gen-cover.jpg",
+       slug: "solar-eclipse-energy-lu-gen-planting-rituals",
+       author: "玄印 (Xuan Yin)",
+       tags: ["Solar Eclipse", "Lu Gen", "Taoist Rituals", "Celestial Energy", "Planting Rituals", "Cosmic Timing", "Intention Setting", "Ancient Wisdom"]
+     },
+     {
+       id: 10,
       title: "What is the Best Bazi for Wealth— Decoding Your Chinese Astrology Blueprint",
-      excerpt: "Discover the 3 wealthiest Bazi patterns in Chinese metaphysics and how to activate your financial potential. Based on 10,000+ client cases.",
-      content: `
-        <div className="mb-8">
-          <p className="text-lg text-mystic-300 leading-relaxed mb-4 italic">
-            "Wealth is not about having money, but about having options."
-          </p>
-          <p className="text-sm text-mystic-400">—Ancient Chinese wisdom</p>
-        </div>
+                   excerpt: "Discover the 3 wealthiest Bazi patterns in Chinese metaphysics and how to activate your financial potential. Based on 10,000+ client cases.",
+       content: `
+         <div className="mb-8">
+           <p className="text-lg text-mystic-300 leading-relaxed mb-4 italic">
+             "Wealth is not about having money, but about having options."
+           </p>
+           <p className="text-sm text-mystic-400">—Ancient Chinese wisdom</p>
+         </div>
 
-        <h2 className="text-2xl font-cinzel font-bold text-white mb-4 mt-8">🔑 Beyond "Rich" Bazi</h2>
-        <p className="mb-6 text-mystic-300 leading-relaxed">
-          Many believe a "wealthy Bazi" means piles of cash, but true abundance in Chinese astrology combines resources, opportunities, and wisdom to grow them. Here, we decode real-world wealth patterns from billionaires' charts—and how to apply them to your life.
-        </p>
+         <h2 className="text-2xl font-cinzel font-bold text-white mb-4 mt-8">🔑 Beyond "Rich" Bazi</h2>
+         <p className="mb-6 text-mystic-300 leading-relaxed">
+           Many believe a "wealthy Bazi" means piles of cash, but true abundance in Chinese astrology combines resources, opportunities, and wisdom to grow them. Here, we decode real-world wealth patterns from billionaires' charts—and how to apply them to your life.
+         </p>
 
-        <h2 className="text-2xl font-cinzel font-bold text-white mb-4 mt-8">🔑 Part 1: The 3 Wealth Archetypes in Bazi</h2>
-        <p className="mb-6 text-mystic-300 leading-relaxed">
-          <em>(Based on 10,000+ client cases)</em>
-        </p>
+         <h2 className="text-2xl font-cinzel font-bold text-white mb-4 mt-8">🔑 Part 1: The 3 Wealth Archetypes in Bazi</h2>
+         <p className="mb-6 text-mystic-300 leading-relaxed">
+           <em>(Based on 10,000+ client cases)</em>
+         </p>
 
-        <div className="overflow-x-auto mb-8">
-          <table className="w-full border-collapse">
-            <thead>
-              <tr className="border-b border-mystic-700">
-                <th className="text-left p-4 text-gold-400 font-semibold">Pattern</th>
-                <th className="text-left p-4 text-gold-400 font-semibold">Bazi Structure</th>
-                <th className="text-left p-4 text-gold-400 font-semibold">Real-World Example</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr className="border-b border-mystic-700/50">
-                <td className="p-4 text-mystic-300 font-medium">The Innovator</td>
-                <td className="p-4 text-mystic-300">Strong 食神 (Creativity Star) + 正财 (Steady Wealth)</td>
-                <td className="p-4 text-mystic-300">Elon Musk (Tech disruption)</td>
-              </tr>
-              <tr className="border-b border-mystic-700/50">
-                <td className="p-4 text-mystic-300 font-medium">The Strategist</td>
-                <td className="p-4 text-mystic-300">七杀 (Ambition Star) controlled by 印星 (Wisdom)</td>
-                <td className="p-4 text-mystic-300">Warren Buffett (Value investing)</td>
-              </tr>
-              <tr className="border-b border-mystic-700/50">
-                <td className="p-4 text-mystic-300 font-medium">The Networker</td>
-                <td className="p-4 text-mystic-300">偏财 (Opportunity Wealth) + 桃花 (Social Charm)</td>
-                <td className="p-4 text-mystic-300">Oprah Winfrey (Media empire)</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
+         <div className="overflow-x-auto mb-8">
+           <table className="w-full border-collapse">
+             <thead>
+               <tr className="border-b border-mystic-700">
+                 <th className="text-left p-4 text-gold-400 font-semibold">Pattern</th>
+                 <th className="text-left p-4 text-gold-400 font-semibold">Bazi Structure</th>
+                 <th className="text-left p-4 text-gold-400 font-semibold">Real-World Example</th>
+               </tr>
+             </thead>
+             <tbody>
+               <tr className="border-b border-mystic-700/50">
+                 <td className="p-4 text-mystic-300 font-medium">The Innovator</td>
+                 <td className="p-4 text-mystic-300">Strong 食神 (Creativity Star) + 正财 (Steady Wealth)</td>
+                 <td className="p-4 text-mystic-300">Elon Musk (Tech disruption)</td>
+               </tr>
+               <tr className="border-b border-mystic-700/50">
+                 <td className="p-4 text-mystic-300 font-medium">The Strategist</td>
+                 <td className="p-4 text-mystic-300">七杀 (Ambition Star) controlled by 印星 (Wisdom)</td>
+                 <td className="p-4 text-mystic-300">Warren Buffett (Value investing)</td>
+               </tr>
+               <tr className="border-b border-mystic-700/50">
+                 <td className="p-4 text-mystic-300 font-medium">The Networker</td>
+                 <td className="p-4 text-mystic-300">偏财 (Opportunity Wealth) + 桃花 (Social Charm)</td>
+                 <td className="p-4 text-mystic-300">Oprah Winfrey (Media empire)</td>
+               </tr>
+             </tbody>
+           </table>
+         </div>
 
 
 
-        <div className="bg-gradient-to-r from-mystic-800 to-mystic-900 p-6 rounded-xl border border-gold-500/30 mb-8">
-          <p className="text-mystic-300">
-            <strong>💡 Key Insight:</strong> Your "wealth type" determines how you attract abundance—forcing a mismatched path (e.g., an Innovator doing routine jobs) blocks flow.
-          </p>
-        </div>
+         <div className="bg-gradient-to-r from-mystic-800 to-mystic-900 p-6 rounded-xl border border-gold-500/30 mb-8">
+           <p className="text-mystic-300">
+             <strong>💡 Key Insight:</strong> Your "wealth type" determines how you attract abundance—forcing a mismatched path (e.g., an Innovator doing routine jobs) blocks flow.
+           </p>
+         </div>
 
-        <h2 className="text-2xl font-cinzel font-bold text-white mb-4 mt-8">🌟 Part 2: Your Hidden Wealth Codes</h2>
-        
+         <h2 className="text-2xl font-cinzel font-bold text-white mb-4 mt-8">🌟 Part 2: Your Hidden Wealth Codes</h2>
+         
         <h3 className="text-xl font-cinzel font-semibold text-gold-400 mb-4 mt-6">A. The Wealth Star (财星) —More Than Money</h3>
-        <ul className="space-y-3 mb-6 text-mystic-300">
-          <li className="flex items-start space-x-3">
-            <div className="w-2 h-2 bg-gold-400 rounded-full mt-2 flex-shrink-0"></div>
+         <ul className="space-y-3 mb-6 text-mystic-300">
+           <li className="flex items-start space-x-3">
+             <div className="w-2 h-2 bg-gold-400 rounded-full mt-2 flex-shrink-0"></div>
             <span><strong>正财 (Zhèng Cái):</strong> Earned income (salary, business profits) —needs Strong Day Master to hold.</span>
-          </li>
-          <li className="flex items-start space-x-3">
-            <div className="w-2 h-2 bg-gold-400 rounded-full mt-2 flex-shrink-0"></div>
+           </li>
+           <li className="flex items-start space-x-3">
+             <div className="w-2 h-2 bg-gold-400 rounded-full mt-2 flex-shrink-0"></div>
             <span><strong>偏财 (Piān Cái):</strong> Unexpected gains (investments, gifts) —thrives with Social Fire (巳午).</span>
-          </li>
-        </ul>
+           </li>
+         </ul>
 
-        <h3 className="text-xl font-cinzel font-semibold text-gold-400 mb-4 mt-6">B. Support Stars You Can't Ignore</h3>
-        <ul className="space-y-3 mb-6 text-mystic-300">
-          <li className="flex items-start space-x-3">
-            <div className="w-2 h-2 bg-gold-400 rounded-full mt-2 flex-shrink-0"></div>
+         <h3 className="text-xl font-cinzel font-semibold text-gold-400 mb-4 mt-6">B. Support Stars You Can't Ignore</h3>
+         <ul className="space-y-3 mb-6 text-mystic-300">
+           <li className="flex items-start space-x-3">
+             <div className="w-2 h-2 bg-gold-400 rounded-full mt-2 flex-shrink-0"></div>
             <span><strong>食神 (Shí Shén):</strong> Creativity —Turns ideas into value (e.g., Steve Jobs' Wood-Fire creativity)</span>
-          </li>
-          <li className="flex items-start space-x-3">
-            <div className="w-2 h-2 bg-gold-400 rounded-full mt-2 flex-shrink-0"></div>
+           </li>
+           <li className="flex items-start space-x-3">
+             <div className="w-2 h-2 bg-gold-400 rounded-full mt-2 flex-shrink-0"></div>
             <span><strong>印星 (Yìn Xīng):</strong> Knowledge —Protects wealth from risks (e.g., Buffett's Earth wisdom)</span>
-          </li>
-        </ul>
+           </li>
+         </ul>
 
 
 
         <h2 className="text-2xl font-cinzel font-bold text-white mb-4 mt-8">🚫 Part 3: Why "Rich" Bazi Fails —3 Tragic Cases</h2>
 
-        <div className="space-y-6 mb-8">
-          <div className="mystic-card p-6 border-l-4 border-red-500/50">
+         <div className="space-y-6 mb-8">
+           <div className="mystic-card p-6 border-l-4 border-red-500/50">
             <h3 className="text-xl font-cinzel font-semibold text-red-400 mb-3">1. Weak Day Master + Heavy Wealth</h3>
-            <p className="text-mystic-300 mb-2"><strong>Example:</strong> 癸水日主 (Weak Water) with 未土+戌土 (Strong Earth wealth stars)</p>
+             <p className="text-mystic-300 mb-2"><strong>Example:</strong> 癸水日主 (Weak Water) with 未土+戌土 (Strong Earth wealth stars)</p>
             <p className="text-mystic-300 text-sm"><strong>Result:</strong> Overwhelmed by opportunities —Debt or stress-induced loss.</p>
-          </div>
+           </div>
 
-          <div className="mystic-card p-6 border-l-4 border-red-500/50">
+           <div className="mystic-card p-6 border-l-4 border-red-500/50">
             <h3 className="text-xl font-cinzel font-semibold text-red-400 mb-3">2. Wealth Clash with Conflict Stars</h3>
             <p className="text-mystic-300 mb-2"><strong>Example:</strong> 偏财 (Piān Cái) next to 劫财 (Jié Cái —Wealth Robber)</p>
-            <p className="text-mystic-300 text-sm"><strong>Result:</strong> Sudden windfalls lost to scams or "friends."</p>
-          </div>
+             <p className="text-mystic-300 text-sm"><strong>Result:</strong> Sudden windfalls lost to scams or "friends."</p>
+           </div>
 
-          <div className="mystic-card p-6 border-l-4 border-red-500/50">
+           <div className="mystic-card p-6 border-l-4 border-red-500/50">
             <h3 className="text-xl font-cinzel font-semibold text-red-400 mb-3">3. Fire Absence in Water Wealth</h3>
-            <p className="text-mystic-300 mb-2"><strong>Example:</strong> 壬水+子水 (Strong Water wealth) but no 午火 (Fire drive)</p>
-            <p className="text-mystic-300 text-sm"><strong>Result:</strong> Resources frozen by indecision (e.g., inherited funds never invested).</p>
-          </div>
-        </div>
+             <p className="text-mystic-300 mb-2"><strong>Example:</strong> 壬水+子水 (Strong Water wealth) but no 午火 (Fire drive)</p>
+             <p className="text-mystic-300 text-sm"><strong>Result:</strong> Resources frozen by indecision (e.g., inherited funds never invested).</p>
+           </div>
+         </div>
 
         <h2 className="text-2xl font-cinzel font-bold text-white mb-4 mt-8">💡 Part 4: Activate Your Wealth Potential —3 Steps</h2>
 
-        <div className="space-y-6 mb-8">
-          <div className="mystic-card p-6 border-l-4 border-gold-500/50">
+         <div className="space-y-6 mb-8">
+           <div className="mystic-card p-6 border-l-4 border-gold-500/50">
             <h3 className="text-xl font-cinzel font-semibold text-gold-400 mb-3">Step 1: Find Your Wealth Star</h3>
             <p className="text-mystic-300 mb-3">Use our <a href="https://fatepath.me/free-bazi-report" className="text-gold-400 hover:text-gold-300 underline" target="_blank" rel="noopener noreferrer">Bazi Calculator</a> —Check your chart for:</p>
-            <ul className="space-y-2 text-mystic-300 text-sm">
+             <ul className="space-y-2 text-mystic-300 text-sm">
               <li>—Wood (—— + Earth (—— = 偏财 (Opportunity Wealth)</li>
               <li>—Metal (—— + Wood (—— = 正财 (Steady Wealth)</li>
-            </ul>
-          </div>
+             </ul>
+           </div>
 
-          <div className="mystic-card p-6 border-l-4 border-gold-500/50">
+           <div className="mystic-card p-6 border-l-4 border-gold-500/50">
             <h3 className="text-xl font-cinzel font-semibold text-gold-400 mb-3">Step 2: Balance Your Chart</h3>
-            <ul className="space-y-2 text-mystic-300 text-sm">
+             <ul className="space-y-2 text-mystic-300 text-sm">
               <li>—<strong>Weak Day Master—</strong> Add 印星 (Yìn) energy: Wear white/gray (Metal), study wealth mentors.</li>
               <li>—<strong>Wealth Clash—</strong> —(Hé) the robber: Partner with 正官 (Zhèng Guān) people (reliable leaders).</li>
-            </ul>
-          </div>
+             </ul>
+           </div>
 
-          <div className="mystic-card p-6 border-l-4 border-gold-500/50">
+           <div className="mystic-card p-6 border-l-4 border-gold-500/50">
             <h3 className="text-xl font-cinzel font-semibold text-gold-400 mb-3">Step 3: Feng Shui Wealth Triggers</h3>
-            <div className="overflow-x-auto">
-              <table className="w-full border-collapse">
-                <thead>
-                  <tr className="border-b border-mystic-700">
-                    <th className="text-left p-2 text-gold-400 font-semibold text-sm">Wealth Type</th>
-                    <th className="text-left p-2 text-gold-400 font-semibold text-sm">Direction</th>
-                    <th className="text-left p-2 text-gold-400 font-semibold text-sm">Element Boost</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr className="border-b border-mystic-700/50">
-                    <td className="p-2 text-mystic-300 text-sm">正财 (Steady)</td>
-                    <td className="p-2 text-mystic-300 text-sm">Southeast</td>
-                    <td className="p-2 text-mystic-300 text-sm">Green plants + Wood desk</td>
-                  </tr>
-                  <tr className="border-b border-mystic-700/50">
-                    <td className="p-2 text-mystic-300 text-sm">偏财 (Opportunity)</td>
-                    <td className="p-2 text-mystic-300 text-sm">Northwest</td>
-                    <td className="p-2 text-mystic-300 text-sm">Metal bowl + Gold coins</td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-          </div>
+             <div className="overflow-x-auto">
+               <table className="w-full border-collapse">
+                 <thead>
+                   <tr className="border-b border-mystic-700">
+                     <th className="text-left p-2 text-gold-400 font-semibold text-sm">Wealth Type</th>
+                     <th className="text-left p-2 text-gold-400 font-semibold text-sm">Direction</th>
+                     <th className="text-left p-2 text-gold-400 font-semibold text-sm">Element Boost</th>
+                   </tr>
+                 </thead>
+                 <tbody>
+                   <tr className="border-b border-mystic-700/50">
+                     <td className="p-2 text-mystic-300 text-sm">正财 (Steady)</td>
+                     <td className="p-2 text-mystic-300 text-sm">Southeast</td>
+                     <td className="p-2 text-mystic-300 text-sm">Green plants + Wood desk</td>
+                   </tr>
+                   <tr className="border-b border-mystic-700/50">
+                     <td className="p-2 text-mystic-300 text-sm">偏财 (Opportunity)</td>
+                     <td className="p-2 text-mystic-300 text-sm">Northwest</td>
+                     <td className="p-2 text-mystic-300 text-sm">Metal bowl + Gold coins</td>
+                   </tr>
+                 </tbody>
+               </table>
+             </div>
+           </div>
 
 
-        </div>
+         </div>
 
         <h2 className="text-2xl font-cinzel font-bold text-white mb-4 mt-8">—FAQs: Busting Wealth Bazi Myths</h2>
 
-        <div className="space-y-6 mb-8">
-          <div className="mystic-card p-6">
+         <div className="space-y-6 mb-8">
+           <div className="mystic-card p-6">
             <h3 className="text-xl font-cinzel font-semibold text-gold-400 mb-3">Q: Is a "Gold" Bazi the richest—</h3>
             <p className="text-mystic-300 text-sm">A: No! 庚金 (Yang Metal) needs Fire to forge wealth (e.g., tools), while 辛金 (Yin Metal) thrives as "jewelry" —valuable but fragile without Earth support.</p>
-          </div>
+           </div>
 
-          <div className="mystic-card p-6">
+           <div className="mystic-card p-6">
             <h3 className="text-xl font-cinzel font-semibold text-gold-400 mb-3">Q: Can poor Bazi become rich—</h3>
             <p className="text-mystic-300 text-sm">A: Yes! Liu Chuanzhong (Alibaba co-founder) has a "Weak Water" chart but used 印星 (knowledge) to build empire —proof that understanding your chart beats "lucky" elements.</p>
-          </div>
-        </div>
+           </div>
+         </div>
 
-        <h2 className="text-2xl font-cinzel font-bold text-white mb-4 mt-8">💎 Conclusion: Wealth is a Verb</h2>
-        <p className="mb-6 text-mystic-300 leading-relaxed">
-          The "best" Bazi for wealth isn't about fixed elements—it's about aligning your chart's potential with action:
-        </p>
-        <ul className="space-y-3 mb-8 text-mystic-300">
-          <li className="flex items-start space-x-3">
-            <div className="w-2 h-2 bg-gold-400 rounded-full mt-2 flex-shrink-0"></div>
+         <h2 className="text-2xl font-cinzel font-bold text-white mb-4 mt-8">💎 Conclusion: Wealth is a Verb</h2>
+         <p className="mb-6 text-mystic-300 leading-relaxed">
+           The "best" Bazi for wealth isn't about fixed elements—it's about aligning your chart's potential with action:
+         </p>
+         <ul className="space-y-3 mb-8 text-mystic-300">
+           <li className="flex items-start space-x-3">
+             <div className="w-2 h-2 bg-gold-400 rounded-full mt-2 flex-shrink-0"></div>
             <span><strong>Innovators</strong> —Create products solving real pains</span>
-          </li>
-          <li className="flex items-start space-x-3">
-            <div className="w-2 h-2 bg-gold-400 rounded-full mt-2 flex-shrink-0"></div>
+           </li>
+           <li className="flex items-start space-x-3">
+             <div className="w-2 h-2 bg-gold-400 rounded-full mt-2 flex-shrink-0"></div>
             <span><strong>Strategists</strong> —Master asset allocation</span>
-          </li>
-          <li className="flex items-start space-x-3">
-            <div className="w-2 h-2 bg-gold-400 rounded-full mt-2 flex-shrink-0"></div>
+           </li>
+           <li className="flex items-start space-x-3">
+             <div className="w-2 h-2 bg-gold-400 rounded-full mt-2 flex-shrink-0"></div>
             <span><strong>Networkers</strong> —Build communities that scale</span>
-          </li>
-        </ul>
+           </li>
+         </ul>
 
 
 
 
-      `,
-      category: "wealth-bazi",
-      categoryLabel: "Wealth & Fortune",
-      date: "2025-08-04",
-      readTime: "18 min read",
-      image: "/images/blog/bazi-wealth-blueprint-cover.jpg",
-      slug: "best-bazi-wealth-chinese-astrology-blueprint",
-      author: "玄印 (Xuan Yin)",
-      tags: ["Wealth Bazi", "Chinese Astrology", "Financial Luck", "Wealth Patterns", "Bazi Analysis", "Feng Shui", "Money Luck", "Destiny"]
-    },
-    {
-      id: 13,
-      title: "Using BaZi to Predict When Your True Love Will Appear",
+       `,
+       category: "wealth-bazi",
+       categoryLabel: "Wealth & Fortune",
+       date: "2025-08-04",
+       readTime: "18 min read",
+       image: "/images/blog/bazi-wealth-blueprint-cover.jpg",
+       slug: "best-bazi-wealth-chinese-astrology-blueprint",
+       author: "玄印 (Xuan Yin)",
+       tags: ["Wealth Bazi", "Chinese Astrology", "Financial Luck", "Wealth Patterns", "Bazi Analysis", "Feng Shui", "Money Luck", "Destiny"]
+     },
+     {
+       id: 13,
+       title: "Using BaZi to Predict When Your True Love Will Appear",
       excerpt: "Love is one of life's most profound mysteries. But what if ancient Chinese metaphysics could offer clues—not just about if you'll meet your true love, but when—",
-      content: `
-        <div className="mb-8">
-          <p className="text-lg text-mystic-300 leading-relaxed mb-4 italic">
-            "Love isn't always about looking harder—it's about recognizing the moment when the stars align."
-          </p>
-          <p className="text-sm text-mystic-400">—Ancient Chinese wisdom</p>
-        </div>
+       content: `
+         <div className="mb-8">
+           <p className="text-lg text-mystic-300 leading-relaxed mb-4 italic">
+             "Love isn't always about looking harder—it's about recognizing the moment when the stars align."
+           </p>
+           <p className="text-sm text-mystic-400">—Ancient Chinese wisdom</p>
+         </div>
 
-        <p className="mb-6 text-mystic-300 leading-relaxed">
+         <p className="mb-6 text-mystic-300 leading-relaxed">
           Love is one of life's most profound mysteries. But what if ancient Chinese metaphysics could offer clues—not just about <em>if</em> you'll meet your true love, but <em>when</em>—
-        </p>
+         </p>
 
-        <p className="mb-6 text-mystic-300 leading-relaxed">
-          Welcome to the world of BaZi (also known as the Four Pillars of Destiny), where your date and time of birth are decoded into an elemental map that reveals the rhythms of your life—including your romantic destiny.
-        </p>
+         <p className="mb-6 text-mystic-300 leading-relaxed">
+           Welcome to the world of BaZi (also known as the Four Pillars of Destiny), where your date and time of birth are decoded into an elemental map that reveals the rhythms of your life—including your romantic destiny.
+         </p>
 
-        <h2 className="text-2xl font-cinzel font-bold text-white mb-4 mt-8">What Is BaZi and Why Timing Matters</h2>
-        <p className="mb-6 text-mystic-300 leading-relaxed">
-          BaZi is an ancient system that interprets a person's destiny by analyzing the interactions between the five elements (Wood, Fire, Earth, Metal, Water) based on the year, month, day, and hour of birth.
-        </p>
-        <p className="mb-6 text-mystic-300 leading-relaxed">
-          In BaZi, timing is everything. Even if someone is your perfect energetic match, the relationship may never blossom if it comes at the wrong moment in your life cycle.
-        </p>
-        <p className="mb-6 text-mystic-300 leading-relaxed">
-          Each decade of life is governed by a major "Luck Pillar" (Da Yun), and each year brings its own elemental influences. Love-related energies—such as Peach Blossom (Tao Hua), Red Luan Star (Hong Luan), and the presence of your "Spouse Star"—often appear during specific years or Luck Pillars.
-        </p>
+         <h2 className="text-2xl font-cinzel font-bold text-white mb-4 mt-8">What Is BaZi and Why Timing Matters</h2>
+         <p className="mb-6 text-mystic-300 leading-relaxed">
+           BaZi is an ancient system that interprets a person's destiny by analyzing the interactions between the five elements (Wood, Fire, Earth, Metal, Water) based on the year, month, day, and hour of birth.
+         </p>
+         <p className="mb-6 text-mystic-300 leading-relaxed">
+           In BaZi, timing is everything. Even if someone is your perfect energetic match, the relationship may never blossom if it comes at the wrong moment in your life cycle.
+         </p>
+         <p className="mb-6 text-mystic-300 leading-relaxed">
+           Each decade of life is governed by a major "Luck Pillar" (Da Yun), and each year brings its own elemental influences. Love-related energies—such as Peach Blossom (Tao Hua), Red Luan Star (Hong Luan), and the presence of your "Spouse Star"—often appear during specific years or Luck Pillars.
+         </p>
 
-        <h2 className="text-2xl font-cinzel font-bold text-white mb-4 mt-8">Indicators of Romantic Opportunities in Your BaZi</h2>
-        <p className="mb-6 text-mystic-300 leading-relaxed">
+         <h2 className="text-2xl font-cinzel font-bold text-white mb-4 mt-8">Indicators of Romantic Opportunities in Your BaZi</h2>
+         <p className="mb-6 text-mystic-300 leading-relaxed">
           So how do we detect when love is on the horizon— Here are some of the key indicators:
-        </p>
+         </p>
 
-        <div className="bg-gradient-to-r from-pink-900/50 to-red-900/50 p-6 rounded-xl border border-pink-500/30 mb-8">
-          <ul className="space-y-3 text-mystic-300">
-            <li className="flex items-start space-x-3">
-              <div className="w-2 h-2 bg-pink-400 rounded-full mt-2 flex-shrink-0"></div>
-              <span><strong>Spouse Star Activation:</strong> For men, this is often the <em>Wealth Star</em>; for women, the <em>Officer Star</em>. When this element is prominently activated, love may arrive.</span>
-            </li>
-            <li className="flex items-start space-x-3">
-              <div className="w-2 h-2 bg-pink-400 rounded-full mt-2 flex-shrink-0"></div>
-              <span><strong>Peach Blossom Years:</strong> These are years with increased attractiveness, social charm, and romantic potential. They're linked to certain branches (e.g., Zi, Wu, Mao, You).</span>
-            </li>
-            <li className="flex items-start space-x-3">
-              <div className="w-2 h-2 bg-pink-400 rounded-full mt-2 flex-shrink-0"></div>
-              <span><strong>Red Luan / Heavenly Happiness Stars:</strong> These astrological stars indicate fated connections, engagements, or even marriage.</span>
-            </li>
-            <li className="flex items-start space-x-3">
-              <div className="w-2 h-2 bg-pink-400 rounded-full mt-2 flex-shrink-0"></div>
-              <span><strong>Luck Pillars That Combine Favorably with Natal Chart:</strong> When the Luck Pillar forms a Heavenly Stem or Earthly Branch combination with your natal chart, it often opens doors for major life events—including love.</span>
-            </li>
-          </ul>
-        </div>
+         <div className="bg-gradient-to-r from-pink-900/50 to-red-900/50 p-6 rounded-xl border border-pink-500/30 mb-8">
+           <ul className="space-y-3 text-mystic-300">
+             <li className="flex items-start space-x-3">
+               <div className="w-2 h-2 bg-pink-400 rounded-full mt-2 flex-shrink-0"></div>
+               <span><strong>Spouse Star Activation:</strong> For men, this is often the <em>Wealth Star</em>; for women, the <em>Officer Star</em>. When this element is prominently activated, love may arrive.</span>
+             </li>
+             <li className="flex items-start space-x-3">
+               <div className="w-2 h-2 bg-pink-400 rounded-full mt-2 flex-shrink-0"></div>
+               <span><strong>Peach Blossom Years:</strong> These are years with increased attractiveness, social charm, and romantic potential. They're linked to certain branches (e.g., Zi, Wu, Mao, You).</span>
+             </li>
+             <li className="flex items-start space-x-3">
+               <div className="w-2 h-2 bg-pink-400 rounded-full mt-2 flex-shrink-0"></div>
+               <span><strong>Red Luan / Heavenly Happiness Stars:</strong> These astrological stars indicate fated connections, engagements, or even marriage.</span>
+             </li>
+             <li className="flex items-start space-x-3">
+               <div className="w-2 h-2 bg-pink-400 rounded-full mt-2 flex-shrink-0"></div>
+               <span><strong>Luck Pillars That Combine Favorably with Natal Chart:</strong> When the Luck Pillar forms a Heavenly Stem or Earthly Branch combination with your natal chart, it often opens doors for major life events—including love.</span>
+             </li>
+           </ul>
+         </div>
 
-        <h2 className="text-2xl font-cinzel font-bold text-white mb-4 mt-8">Signs Your True Love Is Approaching</h2>
-        <p className="mb-6 text-mystic-300 leading-relaxed">
-          Some subtle signs in your life may indicate that love is near—even before a relationship begins:
-        </p>
+         <h2 className="text-2xl font-cinzel font-bold text-white mb-4 mt-8">Signs Your True Love Is Approaching</h2>
+         <p className="mb-6 text-mystic-300 leading-relaxed">
+           Some subtle signs in your life may indicate that love is near—even before a relationship begins:
+         </p>
 
-        <div className="space-y-4 mb-8">
-          <div className="mystic-card p-4 border-l-4 border-pink-500/50">
-            <p className="text-mystic-300"><strong>Emotional Openness:</strong> You feel more emotionally open and curious about partnerships.</p>
-          </div>
-          <div className="mystic-card p-4 border-l-4 border-pink-500/50">
-            <p className="text-mystic-300"><strong>Dreams and Synchronicities:</strong> You receive frequent dreams, signs, or synchronicities around romance.</p>
-          </div>
-          <div className="mystic-card p-4 border-l-4 border-pink-500/50">
-            <p className="text-mystic-300"><strong>Social Expansion:</strong> Your social circle expands or shifts, introducing new opportunities.</p>
-          </div>
-          <div className="mystic-card p-4 border-l-4 border-pink-500/50">
-            <p className="text-mystic-300"><strong>Inner Readiness:</strong> You feel a sense of inner readiness, even if you're still healing.</p>
-          </div>
-        </div>
+         <div className="space-y-4 mb-8">
+           <div className="mystic-card p-4 border-l-4 border-pink-500/50">
+             <p className="text-mystic-300"><strong>Emotional Openness:</strong> You feel more emotionally open and curious about partnerships.</p>
+           </div>
+           <div className="mystic-card p-4 border-l-4 border-pink-500/50">
+             <p className="text-mystic-300"><strong>Dreams and Synchronicities:</strong> You receive frequent dreams, signs, or synchronicities around romance.</p>
+           </div>
+           <div className="mystic-card p-4 border-l-4 border-pink-500/50">
+             <p className="text-mystic-300"><strong>Social Expansion:</strong> Your social circle expands or shifts, introducing new opportunities.</p>
+           </div>
+           <div className="mystic-card p-4 border-l-4 border-pink-500/50">
+             <p className="text-mystic-300"><strong>Inner Readiness:</strong> You feel a sense of inner readiness, even if you're still healing.</p>
+           </div>
+         </div>
 
-        <p className="mb-6 text-mystic-300 leading-relaxed">
-          When these personal shifts coincide with positive relationship energies in your BaZi chart, it's often a powerful window for meaningful connection.
-        </p>
+         <p className="mb-6 text-mystic-300 leading-relaxed">
+           When these personal shifts coincide with positive relationship energies in your BaZi chart, it's often a powerful window for meaningful connection.
+         </p>
 
         <h2 className="text-2xl font-cinzel font-bold text-white mb-4 mt-8">Try It Yourself —Unlock Your Love Timing with BaZi</h2>
-        <p className="mb-6 text-mystic-300 leading-relaxed">
+         <p className="mb-6 text-mystic-300 leading-relaxed">
           Curious about your own chart— Want to know which year or month could bring your soulmate—
-        </p>
-        <p className="mb-6 text-mystic-300 leading-relaxed">
-          We offer personalized BaZi Relationship Readings, which reveal:
-        </p>
+         </p>
+         <p className="mb-6 text-mystic-300 leading-relaxed">
+           We offer personalized BaZi Relationship Readings, which reveal:
+         </p>
 
-        <div className="bg-gradient-to-r from-gold-900/50 to-yellow-900/50 p-6 rounded-xl border border-gold-500/30 mb-8">
-          <ul className="space-y-3 text-mystic-300">
-            <li className="flex items-start space-x-3">
-              <div className="w-2 h-2 bg-gold-400 rounded-full mt-2 flex-shrink-0"></div>
-              <span>Your Spouse Star and what kind of person you're destined to attract</span>
-            </li>
-            <li className="flex items-start space-x-3">
-              <div className="w-2 h-2 bg-gold-400 rounded-full mt-2 flex-shrink-0"></div>
-              <span>Favorable years for love and connection</span>
-            </li>
-            <li className="flex items-start space-x-3">
-              <div className="w-2 h-2 bg-gold-400 rounded-full mt-2 flex-shrink-0"></div>
-              <span>Emotional and karmic patterns holding you back from lasting love</span>
-            </li>
-          </ul>
-        </div>
+         <div className="bg-gradient-to-r from-gold-900/50 to-yellow-900/50 p-6 rounded-xl border border-gold-500/30 mb-8">
+           <ul className="space-y-3 text-mystic-300">
+             <li className="flex items-start space-x-3">
+               <div className="w-2 h-2 bg-gold-400 rounded-full mt-2 flex-shrink-0"></div>
+               <span>Your Spouse Star and what kind of person you're destined to attract</span>
+             </li>
+             <li className="flex items-start space-x-3">
+               <div className="w-2 h-2 bg-gold-400 rounded-full mt-2 flex-shrink-0"></div>
+               <span>Favorable years for love and connection</span>
+             </li>
+             <li className="flex items-start space-x-3">
+               <div className="w-2 h-2 bg-gold-400 rounded-full mt-2 flex-shrink-0"></div>
+               <span>Emotional and karmic patterns holding you back from lasting love</span>
+             </li>
+           </ul>
+         </div>
 
-        <div className="text-center mb-8">
-          <p className="text-lg text-mystic-300 leading-relaxed italic">
-            <em>Love isn't always about looking harder—it's about recognizing the moment when the stars align.</em>
-          </p>
-        </div>
-      `,
-      category: "love-compatibility",
-      categoryLabel: "Love & Relationships",
-      date: "2025-08-06",
-      readTime: "14 min read",
-      image: "/images/blog/bazi-love-timing-cover.jpg",
-      slug: "bazi-predict-true-love-timing",
-      author: "玄印 (Xuan Yin)",
-      tags: ["BaZi Love Timing", "Chinese Astrology", "Romantic Destiny", "Spouse Star", "Peach Blossom", "Red Luan Star", "Love Prediction", "Relationship Timing"]
+         <div className="text-center mb-8">
+           <p className="text-lg text-mystic-300 leading-relaxed italic">
+             <em>Love isn't always about looking harder—it's about recognizing the moment when the stars align.</em>
+           </p>
+         </div>
+       `,
+       category: "love-compatibility",
+       categoryLabel: "Love & Relationships",
+       date: "2025-08-06",
+       readTime: "14 min read",
+       image: "/images/blog/bazi-love-timing-cover.jpg",
+       slug: "bazi-predict-true-love-timing",
+       author: "玄印 (Xuan Yin)",
+       tags: ["BaZi Love Timing", "Chinese Astrology", "Romantic Destiny", "Spouse Star", "Peach Blossom", "Red Luan Star", "Love Prediction", "Relationship Timing"]
     },
     {
       id: 14,
@@ -3488,8 +2761,8 @@ const BlogPost = () => {
       slug: "gpt5-period9-fire-luck-technological-leap",
       author: "玄印 (Xuan Yin)",
       tags: ["GPT-5", "Period 9", "Fire Luck", "Feng Shui", "Chinese Metaphysics", "AI Technology", "Destiny Timing", "Cosmic Alignment", "Innovation", "Digital Age"]
-    }
-    // 您可以在这里添加更多文章
+     }
+     // 您可以在这里添加更多文章
   ]
 
   const post = blogPosts.find(p => p.slug === slug)
