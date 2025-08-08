@@ -288,6 +288,124 @@ const Home = () => {
                   </div>
         </section>
 
+        {/* About Me Section */}
+        <section className="py-20 bg-mystic-900">
+          <div className="container mx-auto px-4">
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8 }}
+              viewport={{ once: true }}
+              className="text-center mb-16"
+            >
+              <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
+                Meet Your BaZi Master
+              </h2>
+              <p className="text-xl text-mystic-300 max-w-2xl mx-auto">
+                Dedicated to helping you unlock the ancient wisdom of Chinese astrology
+              </p>
+            </motion.div>
+
+            <div className="max-w-6xl mx-auto">
+              <div className="grid lg:grid-cols-2 gap-12 items-center">
+                {/* Profile Image */}
+                <motion.div
+                  initial={{ opacity: 0, x: -50 }}
+                  whileInView={{ opacity: 1, x: 0 }}
+                  transition={{ duration: 0.8 }}
+                  viewport={{ once: true }}
+                  className="text-center lg:text-left"
+                >
+                  <div className="relative inline-block">
+                    <div className="w-80 h-80 mx-auto lg:mx-0 rounded-full overflow-hidden border-4 border-gold-400 shadow-2xl">
+                      <LazyImage
+                        src="/images/master-profile.jpg"
+                        alt="Professional BaZi Master and Chinese Astrology Expert"
+                        className="w-full h-full object-cover"
+                      />
+                    </div>
+                    <div className="absolute -bottom-4 -right-4 bg-gold-400 rounded-full p-4 shadow-lg">
+                      <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
+                      </svg>
+                    </div>
+                  </div>
+                </motion.div>
+
+                {/* About Content */}
+                <motion.div
+                  initial={{ opacity: 0, x: 50 }}
+                  whileInView={{ opacity: 1, x: 0 }}
+                  transition={{ duration: 0.8, delay: 0.2 }}
+                  viewport={{ once: true }}
+                  className="space-y-6"
+                >
+                  <div className="bg-mystic-800 rounded-lg p-8 border-l-4 border-gold-400">
+                    <h3 className="text-2xl font-bold text-white mb-4">
+                      🔮 Your Trusted Guide to Ancient Wisdom
+                    </h3>
+                    <p className="text-mystic-300 leading-relaxed">
+                      With over 15 years of dedicated study and practice in traditional Chinese astrology, 
+                      I've helped thousands of individuals discover their true life path through the ancient 
+                      art of BaZi (Four Pillars of Destiny) analysis.
+                    </p>
+                  </div>
+
+                  <div className="grid md:grid-cols-2 gap-6">
+                    <div className="bg-mystic-700 rounded-lg p-6">
+                      <div className="flex items-center mb-4">
+                        <div className="w-10 h-10 bg-gold-400 rounded-full flex items-center justify-center mr-3">
+                          <span className="text-white font-bold">15+</span>
+                        </div>
+                        <h4 className="text-lg font-semibold text-white">Years Experience</h4>
+                      </div>
+                      <p className="text-mystic-300 text-sm">
+                        Deep expertise in traditional Chinese numerology and modern applications
+                      </p>
+                    </div>
+
+                    <div className="bg-mystic-700 rounded-lg p-6">
+                      <div className="flex items-center mb-4">
+                        <div className="w-10 h-10 bg-gold-400 rounded-full flex items-center justify-center mr-3">
+                          <span className="text-white font-bold">5K+</span>
+                        </div>
+                        <h4 className="text-lg font-semibold text-white">Happy Clients</h4>
+                      </div>
+                      <p className="text-mystic-300 text-sm">
+                        Successfully guided individuals worldwide to discover their destiny
+                      </p>
+                    </div>
+                  </div>
+
+                  <div className="bg-gradient-to-r from-mystic-700 to-mystic-800 rounded-lg p-6">
+                    <h4 className="text-xl font-bold text-white mb-4">🌙 My Philosophy</h4>
+                    <p className="text-mystic-300 leading-relaxed">
+                      "Chinese astrology isn't about predicting the future—it's about understanding 
+                      your unique energy blueprint and making empowered decisions that align with 
+                      your natural flow. Every person has a destiny waiting to be discovered."
+                    </p>
+                  </div>
+
+                  <div className="flex flex-col sm:flex-row gap-4">
+                    <Link
+                      to="/contact"
+                      className="bg-gradient-to-r from-gold-400 to-gold-600 text-white px-8 py-4 rounded-lg font-semibold hover:from-gold-500 hover:to-gold-700 transition-all duration-300 transform hover:scale-105 text-center"
+                    >
+                      Schedule Consultation
+                    </Link>
+                    <Link
+                      to="/testimonials"
+                      className="border-2 border-gold-400 text-gold-400 px-8 py-4 rounded-lg font-semibold hover:bg-gold-400 hover:text-white transition-all duration-300 text-center"
+                    >
+                      Read My Story
+                    </Link>
+                  </div>
+                </motion.div>
+              </div>
+            </div>
+          </div>
+        </section>
+
         {/* Testimonials */}
         <section className="py-20 bg-mystic-900">
           <div className="container mx-auto px-4">
