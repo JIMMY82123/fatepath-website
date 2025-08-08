@@ -6,7 +6,7 @@ import SEO from '../components/SEO'
 const BlogPost = () => {
   const { slug } = useParams()
 
-  // 复制到剪贴板的辅助函�–
+  // 复制到剪贴板的辅助函�—
   const copyToClipboard = async (text) => {
     try {
       await navigator.clipboard.writeText(text);
@@ -62,7 +62,7 @@ const BlogPost = () => {
             <p className="text-xl text-mystic-200 leading-relaxed mb-4 italic text-center">
               "When you understand your energy, you understand your life."
             </p>
-            <p className="text-sm text-mystic-400 text-center">–Ancient Chinese wisdom</p>
+            <p className="text-sm text-mystic-400 text-center">—Ancient Chinese wisdom</p>
           </div>
         </div>
 
@@ -79,7 +79,7 @@ const BlogPost = () => {
         <div className="mb-8 sm:mb-12">
           <h2 className="text-3xl font-cinzel font-bold text-white mb-6 flex items-center">
             <span className="text-gold-400 mr-3">🌙</span>
-            What Is Chinese Astrology–
+            What Is Chinese Astrology—
           </h2>
           <p className="text-lg text-mystic-300 leading-relaxed mb-6">
             Chinese astrology is a holistic system combining:
@@ -185,7 +185,7 @@ const BlogPost = () => {
         <div className="mb-8 sm:mb-12">
           <h2 className="text-3xl font-cinzel font-bold text-white mb-6 flex items-center">
             <span className="text-gold-400 mr-3">🐉</span>
-            The 12 Zodiac Signs – More Than Just Your Birth Year
+            The 12 Zodiac Signs — More Than Just Your Birth Year
           </h2>
           <p className="text-lg text-mystic-300 leading-relaxed mb-6">
             Most people know their Chinese zodiac sign, like "I'm a Tiger" or "She's a Rabbit." But that's just the beginning.
@@ -226,7 +226,7 @@ const BlogPost = () => {
             What Is BaZi and How Is It Different?
           </h2>
           <p className="text-lg text-mystic-300 leading-relaxed mb-6">
-            BaZi (八字) means "Eight Characters" �–referring to the four pillars of your birth:
+            BaZi (八字) means "Eight Characters" �—referring to the four pillars of your birth:
           </p>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4 mb-8">
             <div className="mystic-card p-4 text-center">
@@ -368,9 +368,9 @@ const BlogPost = () => {
                 <span className="text-gold-400 text-xl">👉</span>
               </div>
               <div>
-                <h4 className="text-lg font-semibold text-gold-400 mb-2">Ready to Discover Your Destiny–</h4>
+                <h4 className="text-lg font-semibold text-gold-400 mb-2">Ready to Discover Your Destiny?</h4>
                 <p className="text-mystic-300">
-                  On our website, you can get a personalized BaZi report that reveals your destiny map and guides your next step �–whether you're facing a tough decision, entering a new phase of life, or simply seeking clarity.
+                  On our website, you can get a personalized BaZi report that reveals your destiny map and guides your next step �—whether you're facing a tough decision, entering a new phase of life, or simply seeking clarity.
                 </p>
               </div>
             </div>
@@ -383,7 +383,7 @@ const BlogPost = () => {
             Conclusion: Your Destiny Is a Code Waiting to Be Decoded
           </h2>
           <p className="text-lg text-mystic-300 leading-relaxed mb-6">
-            Chinese astrology doesn't predict fate �–it reveals the timing and tendencies in your life, empowering you to make better decisions, align with your purpose, and find peace.
+            Chinese astrology doesn't predict fate �—it reveals the timing and tendencies in your life, empowering you to make better decisions, align with your purpose, and find peace.
           </p>
           <p className="text-lg text-mystic-300 leading-relaxed mb-8">
             In a chaotic world, ancient wisdom offers a grounded, timeless truth:
@@ -395,10 +395,10 @@ const BlogPost = () => {
           </div>
           <div className="text-center">
             <p className="text-lg text-mystic-300 leading-relaxed mb-4">
-              Want to explore your own destiny–
+              Want to explore your own destiny?
             </p>
             <p className="text-lg text-mystic-300 leading-relaxed">
-              Start with your BaZi chart today �–uncover the patterns, discover your strengths, and align with the natural flow of your life. 🌙
+              Start with your BaZi chart today �—uncover the patterns, discover your strengths, and align with the natural flow of your life. 🌙
             </p>
           </div>
         </div>
@@ -412,8 +412,8 @@ const BlogPost = () => {
     },
     {
       id: 2,
-      title: "📈 You Think This Market Rally Is a Turning Point– A Bigger Crisis Is Brewing Beneath the Surface",
-                  excerpt: "In early August 2025, the Dow Jones surged by 580 points. But is this really a turning point, or just the calm before a more devastating storm–",
+      title: "📈 You Think This Market Rally Is a Turning Point— A Bigger Crisis Is Brewing Beneath the Surface",
+                  excerpt: "In early August 2025, the Dow Jones surged by 580 points. But is this really a turning point, or just the calm before a more devastating storm?",
       author: "玄印 (Xuan Yin)",
       tags: ["Market Analysis", "Financial Crisis", "Stock Market", "Economic Warning", "2025 Forecast", "Investment Strategy", "BaZi Analysis", "Chinese Astrology"],
       content: `
@@ -421,16 +421,16 @@ const BlogPost = () => {
           <p className="text-lg text-mystic-300 leading-relaxed mb-4 italic">
             "The greatest deception is not in the market's fall, but in its false recovery."
           </p>
-          <p className="text-sm text-mystic-400">–Ancient Chinese wisdom</p>
+          <p className="text-sm text-mystic-400">—Ancient Chinese wisdom</p>
         </div>
 
         <h2 className="text-2xl font-cinzel font-bold text-white mb-4 mt-8">📊 The Illusion of Recovery</h2>
         <p className="mb-6 text-mystic-300 leading-relaxed">
-          In early August 2025, the Dow Jones Industrial Average surged by 580 points in a single day–the largest one-day gain since May. Investors cheered, financial platforms buzzed, and the phrase "bottom reversal" echoed across social media.
+          In early August 2025, the Dow Jones Industrial Average surged by 580 points in a single day—the largest one-day gain since May. Investors cheered, financial platforms buzzed, and the phrase "bottom reversal" echoed across social media.
         </p>
         <p className="mb-6 text-mystic-300 leading-relaxed">
-          But is this really a turning point–<br>
-          Or just the calm before a more devastating storm–
+          But is this really a turning point?<br>
+          Or just the calm before a more devastating storm?
         </p>
 
         <h2 className="text-2xl font-cinzel font-bold text-white mb-4 mt-8">⚠️ Beware the Illusion: The Danger of False Recovery</h2>
@@ -450,7 +450,7 @@ const BlogPost = () => {
             The 2025 rally is rooted in a paradox: a weakening labor market.
           </p>
           <p className="text-mystic-300 mb-4">
-            While the data shows economic softness, markets interpreted it as a signal that the Fed might halt interest rate hikes–or even cut rates. Stocks soared on the bad news.
+            While the data shows economic softness, markets interpreted it as a signal that the Fed might halt interest rate hikes—or even cut rates. Stocks soared on the bad news.
           </p>
           <p className="text-mystic-300 font-semibold">
             In other words: The worse the economy, the more excited the market gets.<br>
@@ -458,7 +458,7 @@ const BlogPost = () => {
           </p>
         </div>
 
-        <h2 className="text-2xl font-cinzel font-bold text-white mb-4 mt-8">🌋 The Real Crisis Is Just Beginning: 2025�–026 as a Tipping Point</h2>
+        <h2 className="text-2xl font-cinzel font-bold text-white mb-4 mt-8">🌋 The Real Crisis Is Just Beginning: 2025�—026 as a Tipping Point</h2>
         <p className="mb-6 text-mystic-300 leading-relaxed">
           Zooming out, the global economic landscape is entering a highly unstable phase:
         </p>
@@ -470,7 +470,7 @@ const BlogPost = () => {
           </li>
           <li className="flex items-start space-x-3">
             <div className="w-2 h-2 bg-red-400 rounded-full mt-2 flex-shrink-0"></div>
-            <span><strong>Commercial real estate vacancies</strong> are soaring–especially in cities like San Francisco and Chicago.</span>
+            <span><strong>Commercial real estate vacancies</strong> are soaring—especially in cities like San Francisco and Chicago.</span>
           </li>
           <li className="flex items-start space-x-3">
             <div className="w-2 h-2 bg-red-400 rounded-full mt-2 flex-shrink-0"></div>
@@ -483,13 +483,13 @@ const BlogPost = () => {
         </ul>
 
         <p className="mb-6 text-mystic-300 leading-relaxed">
-          Meanwhile, geopolitical tensions are at a historic high: Unresolved U.S.-China relations, ongoing Russia-Ukraine conflict, instability in the Middle East�–all of which are eroding global investment confidence.
+          Meanwhile, geopolitical tensions are at a historic high: Unresolved U.S.-China relations, ongoing Russia-Ukraine conflict, instability in the Middle East�—all of which are eroding global investment confidence.
         </p>
 
         <div className="mystic-card p-6 border-l-4 border-red-500/50 mb-8">
           <p className="text-mystic-300 italic">
             ⚠️ The next systemic financial crisis may already be forming.<br>
-            Some experts are warning: "The next collapse could be worse than 2008–not because of subprime mortgages, but due to global debt, currency instability, and fractured social trust."
+            Some experts are warning: "The next collapse could be worse than 2008—not because of subprime mortgages, but due to global debt, currency instability, and fractured social trust."
           </p>
         </div>
 
@@ -498,7 +498,7 @@ const BlogPost = () => {
           According to traditional Chinese metaphysics, 2025 is the Year of Yi-Si (乙巳), followed by Bing-Wu (丙午) in 2026.
         </p>
         <p className="mb-6 text-mystic-300 leading-relaxed">
-          Both years are governed by the Fire element, which tends to clash with Metal–the element that symbolizes wealth and stability in BaZi (Four Pillars of Destiny).
+          Both years are governed by the Fire element, which tends to clash with Metal—the element that symbolizes wealth and stability in BaZi (Four Pillars of Destiny).
         </p>
 
         <div className="bg-gradient-to-r from-orange-900/50 to-red-900/50 p-6 rounded-xl border border-orange-500/30 mb-8">
@@ -520,7 +520,7 @@ const BlogPost = () => {
         </div>
 
         <p className="mb-6 text-mystic-300 leading-relaxed">
-          Moreover, the world entered the "9th Fire Luck Cycle" (九紫離火�– in 2024, lasting for 20 years. This period is associated with heat, upheaval, and transformation–not just economically, but socially and spiritually.
+          Moreover, the world entered the "9th Fire Luck Cycle" (九紫離火�— in 2024, lasting for 20 years. This period is associated with heat, upheaval, and transformation—not just economically, but socially and spiritually.
         </p>
 
         <div className="mystic-card p-6 border-l-4 border-gold-500/50 mb-8">
@@ -529,7 +529,7 @@ const BlogPost = () => {
           </p>
         </div>
 
-        <h2 className="text-2xl font-cinzel font-bold text-white mb-4 mt-8">🛡�–Don't Celebrate–Prepare</h2>
+        <h2 className="text-2xl font-cinzel font-bold text-white mb-4 mt-8">🛡�—Don't Celebrate—Prepare</h2>
         <p className="mb-6 text-mystic-300 leading-relaxed">
           While others celebrate a temporary market bounce, those with insight are already preparing for what's to come.
         </p>
@@ -538,27 +538,27 @@ const BlogPost = () => {
           <div className="mystic-card p-6">
             <h3 className="text-xl font-cinzel font-semibold text-gold-400 mb-3">💰 Financial Strategy</h3>
             <ul className="space-y-2 text-mystic-300 text-sm">
-              <li>�–Reassess your financial structure</li>
-              <li>�–Reduce leverage</li>
-              <li>�–Don't fall for premature "buy the dip" opportunities</li>
+              <li>�—Reassess your financial structure</li>
+              <li>�—Reduce leverage</li>
+              <li>�—Don't fall for premature "buy the dip" opportunities</li>
             </ul>
           </div>
           <div className="mystic-card p-6">
             <h3 className="text-xl font-cinzel font-semibold text-gold-400 mb-3">🔮 Personal Luck Cycle</h3>
             <ul className="space-y-2 text-mystic-300 text-sm">
-              <li>�–Understand your personal luck cycle</li>
-              <li>�–Is this a time for bold moves–or strategic retreat–</li>
-              <li>�–Optimize your Feng Shui environment</li>
+              <li>�—Understand your personal luck cycle</li>
+              <li>�—Is this a time for bold moves—or strategic retreat—</li>
+              <li>�—Optimize your Feng Shui environment</li>
             </ul>
           </div>
         </div>
 
         <h2 className="text-2xl font-cinzel font-bold text-white mb-4 mt-8">🧭 The Path of Destiny: Danger Foreseen, Disaster Avoided</h2>
         <p className="mb-6 text-mystic-300 leading-relaxed">
-          True "turning points" aren't defined by a one-day rally. They're shaped by how well you navigate uncertainty–and whether you can stand firm during chaos.
+          True "turning points" aren't defined by a one-day rally. They're shaped by how well you navigate uncertainty—and whether you can stand firm during chaos.
         </p>
         <p className="mb-6 text-mystic-300 leading-relaxed">
-          Is your current fortune a breakthrough–or a trap–
+          Is your current fortune a breakthrough—or a trap—
         </p>
 
         <div className="mystic-card p-6 border-l-4 border-gold-500/50 mb-8">
@@ -566,19 +566,19 @@ const BlogPost = () => {
           <ul className="space-y-2 text-mystic-300">
             <li className="flex items-start space-x-3">
               <div className="w-2 h-2 bg-gold-400 rounded-full mt-2 flex-shrink-0"></div>
-              <span>Is this rally based on fundamentals or speculation–</span>
+              <span>Is this rally based on fundamentals or speculation—</span>
             </li>
             <li className="flex items-start space-x-3">
               <div className="w-2 h-2 bg-gold-400 rounded-full mt-2 flex-shrink-0"></div>
-              <span>Are you following the crowd or your own analysis–</span>
+              <span>Are you following the crowd or your own analysis—</span>
             </li>
             <li className="flex items-start space-x-3">
               <div className="w-2 h-2 bg-gold-400 rounded-full mt-2 flex-shrink-0"></div>
-              <span>Does your BaZi chart support aggressive investment now–</span>
+              <span>Does your BaZi chart support aggressive investment now—</span>
             </li>
             <li className="flex items-start space-x-3">
               <div className="w-2 h-2 bg-gold-400 rounded-full mt-2 flex-shrink-0"></div>
-              <span>Are you prepared for both upside and downside scenarios–</span>
+              <span>Are you prepared for both upside and downside scenarios—</span>
             </li>
           </ul>
         </div>
@@ -587,13 +587,13 @@ const BlogPost = () => {
           The ancient Chinese saying goes: "When the wind rises, even pigs can fly. But when the wind stops, only eagles remain aloft."
         </p>
         <p className="mb-6 text-mystic-300 leading-relaxed">
-          In 2025-2026, the question isn't whether you can fly–it's whether you can survive the landing.
+          In 2025-2026, the question isn't whether you can fly—it's whether you can survive the landing.
         </p>
 
         <div className="bg-gradient-to-r from-mystic-800 to-mystic-900 p-6 rounded-xl border border-gold-500/30 mb-8">
-          <h3 className="text-xl font-cinzel font-semibold text-gold-400 mb-4">🔮 Need Personalized Guidance–</h3>
+          <h3 className="text-xl font-cinzel font-semibold text-gold-400 mb-4">🔮 Need Personalized Guidance—</h3>
           <p className="text-mystic-300 mb-4">
-            Would you like a personalized BaZi reading to understand how the 2025-2026 Fire energy affects your specific chart– 
+            Would you like a personalized BaZi reading to understand how the 2025-2026 Fire energy affects your specific chart— 
             A detailed analysis can reveal your Fire element balance and provide specific strategies for navigating this volatile period.
           </p>
           <p className="text-mystic-300 text-sm">
@@ -619,7 +619,7 @@ const BlogPost = () => {
           we'll explore the fundamental concepts that make Bazi such a powerful tool for self-discovery and life planning.
         </p>
 
-        <h2 className="text-2xl font-cinzel font-bold text-white mb-4 mt-8">What is Bazi–</h2>
+        <h2 className="text-2xl font-cinzel font-bold text-white mb-4 mt-8">What is Bazi—</h2>
         <p className="mb-6 text-mystic-300 leading-relaxed">
           Bazi literally means "eight characters" in Chinese, referring to the four pairs of characters that represent 
           the year, month, day, and hour of your birth. Each pillar consists of a Heavenly Stem and an Earthly Branch, 
@@ -696,7 +696,7 @@ const BlogPost = () => {
         </div>
 
         <p className="mb-6 text-mystic-300 leading-relaxed">
-          Ready to discover your unique Bazi blueprint– A professional reading can provide you with 
+          Ready to discover your unique Bazi blueprint— A professional reading can provide you with 
           detailed insights into your personality, career potential, relationship patterns, and life path. 
           Contact me for a personalized analysis that will illuminate your path forward.
         </p>
@@ -876,12 +876,12 @@ const BlogPost = () => {
     },
     {
       id: 8,
-      title: "When Bitcoin Falls, What Does Destiny Say–",
+      title: "When Bitcoin Falls, What Does Destiny Say—",
       excerpt: "Discover how BaZi destiny charts reveal insights into financial volatility and the August 2025 Bitcoin crash.",
       content: `
         <div className="mb-8">
           <p className="text-lg text-mystic-300 leading-relaxed mb-4">
-            August 2nd, 2025: Bitcoin dropped sharply, shaking crypto investors worldwide. But from the lens of BaZi (Four Pillars of Destiny), was this purely market-driven–or was it part of a cosmic rhythm–
+            August 2nd, 2025: Bitcoin dropped sharply, shaking crypto investors worldwide. But from the lens of BaZi (Four Pillars of Destiny), was this purely market-driven—or was it part of a cosmic rhythm—
           </p>
         </div>
 
@@ -912,10 +912,10 @@ const BlogPost = () => {
         </div>
 
         <p className="mb-6 text-mystic-300 leading-relaxed">
-          When this energy clashes with a person's own BaZi chart–especially those with strong Fire or Wood dominance–it can trigger impulsive decisions, overconfidence in investments, or sudden wealth loss.
+          When this energy clashes with a person's own BaZi chart—especially those with strong Fire or Wood dominance—it can trigger impulsive decisions, overconfidence in investments, or sudden wealth loss.
         </p>
 
-        <h2 className="text-2xl font-cinzel font-bold text-white mb-4 mt-8">📊 Bitcoin's Decline: More Than Just Numbers–</h2>
+        <h2 className="text-2xl font-cinzel font-bold text-white mb-4 mt-8">📊 Bitcoin's Decline: More Than Just Numbers—</h2>
         <p className="mb-6 text-mystic-300 leading-relaxed">
           From a metaphysical perspective, August 2nd's dip may correlate with a specific energy day. For instance, in the <strong>lunar calendar</strong>, this day was a clash day (e.g., a clash between the day's stem and the year branch), which tends to trigger <strong>loss, correction, or exposure</strong> in unseen areas.
         </p>
@@ -933,19 +933,19 @@ const BlogPost = () => {
           <div className="mystic-card p-6 border-l-4 border-red-500/50">
             <h3 className="text-xl font-cinzel font-semibold text-red-400 mb-3">Clash with your Wealth Star</h3>
             <p className="text-mystic-300 text-sm">
-              (e.g., Day Master clashing with Output or Wealth pillars) �–prone to sudden losses
+              (e.g., Day Master clashing with Output or Wealth pillars) �—prone to sudden losses
             </p>
           </div>
           <div className="mystic-card p-6 border-l-4 border-orange-500/50">
             <h3 className="text-xl font-cinzel font-semibold text-orange-400 mb-3">Weak Day Master with strong Wealth</h3>
             <p className="text-mystic-300 text-sm">
-              �–often tempted by "get-rich-quick" schemes
+              �—often tempted by "get-rich-quick" schemes
             </p>
           </div>
           <div className="mystic-card p-6 border-l-4 border-yellow-500/50">
             <h3 className="text-xl font-cinzel font-semibold text-yellow-400 mb-3">Too many Fire elements in 2025</h3>
             <p className="text-mystic-300 text-sm">
-              �–high volatility, overreactions
+              �—high volatility, overreactions
             </p>
           </div>
           <div className="mystic-card p-6 border-l-4 border-green-500/50">
@@ -956,7 +956,7 @@ const BlogPost = () => {
           </div>
         </div>
 
-        <h2 className="text-2xl font-cinzel font-bold text-white mb-4 mt-8">🧘‍♂�–Energy Management Over Market Timing</h2>
+        <h2 className="text-2xl font-cinzel font-bold text-white mb-4 mt-8">🧘‍♂�—Energy Management Over Market Timing</h2>
         <p className="mb-6 text-mystic-300 leading-relaxed">
           Markets are ruled by data; destinies are ruled by timing.<br />
           But both can benefit from <strong>awareness and alignment</strong>.
@@ -976,13 +976,13 @@ const BlogPost = () => {
 
         <h2 className="text-2xl font-cinzel font-bold text-white mb-4 mt-8">✍️ Final Thought</h2>
         <p className="mb-6 text-mystic-300 leading-relaxed">
-          If this Bitcoin crash hit you harder than expected, maybe it's not just the market–it's your cycle calling for reflection.
+          If this Bitcoin crash hit you harder than expected, maybe it's not just the market—it's your cycle calling for reflection.
         </p>
 
         <div className="bg-gradient-to-r from-mystic-800 to-mystic-900 p-6 rounded-xl border border-gold-500/30 mb-8">
-          <h3 className="text-xl font-cinzel font-semibold text-gold-400 mb-4">Ready to Understand Your Wealth Destiny–</h3>
+          <h3 className="text-xl font-cinzel font-semibold text-gold-400 mb-4">Ready to Understand Your Wealth Destiny—</h3>
           <p className="text-mystic-300 mb-4">
-            Would you like a personalized reading to understand your wealth luck for 2025 and beyond–
+            Would you like a personalized reading to understand your wealth luck for 2025 and beyond—
           </p>
           <p className="text-mystic-300 text-sm">
             A detailed BaZi analysis can reveal your wealth patterns, optimal investment timing, and how to navigate financial volatility based on your unique destiny chart.
@@ -1005,12 +1005,12 @@ const BlogPost = () => {
        content: `
          <div className="mb-8">
            <p className="text-lg text-mystic-300 leading-relaxed mb-4">
-             As the world burns, what does your chart say about your internal fire–
+             As the world burns, what does your chart say about your internal fire—
            </p>
          </div>
 
          <p className="mb-6 text-mystic-300 leading-relaxed">
-           On August 2nd, 2025, cities across the U.S., Europe, and Asia hit record-breaking temperatures–many exceeding 48°C (118°F). Power grids struggled, tempers flared, and millions suffered under dangerous heat conditions. But what if this global heatwave isn't just meteorological–
+           On August 2nd, 2025, cities across the U.S., Europe, and Asia hit record-breaking temperatures—many exceeding 48°C (118°F). Power grids struggled, tempers flared, and millions suffered under dangerous heat conditions. But what if this global heatwave isn't just meteorological—
          </p>
 
          <p className="mb-6 text-mystic-300 leading-relaxed">
@@ -1019,7 +1019,7 @@ const BlogPost = () => {
 
          <h2 className="text-2xl font-cinzel font-bold text-white mb-4 mt-8">🪐 2025: The Fire Element Ignites</h2>
          <p className="mb-6 text-mystic-300 leading-relaxed">
-           This year is ruled by the stem-branch combination <strong>Yi Si (乙巳)</strong>–Yin Wood over Yin Fire. That's already a volatile mix. But globally, we are also experiencing:
+           This year is ruled by the stem-branch combination <strong>Yi Si (乙巳)</strong>—Yin Wood over Yin Fire. That's already a volatile mix. But globally, we are also experiencing:
          </p>
 
          <div className="bg-gradient-to-r from-mystic-800 to-mystic-900 p-6 rounded-xl border border-gold-500/30 mb-8">
@@ -1085,7 +1085,7 @@ const BlogPost = () => {
            <div className="mystic-card p-6 border-l-4 border-yellow-500/50">
              <h3 className="text-xl font-cinzel font-semibold text-yellow-400 mb-3">Earth Day Masters (Wu, Ji)</h3>
              <p className="text-mystic-300 text-sm">
-               Might thrive if Fire is your resource star–more energy, more clarity
+               Might thrive if Fire is your resource star—more energy, more clarity
              </p>
            </div>
          </div>
@@ -1103,19 +1103,19 @@ const BlogPost = () => {
            <ul className="space-y-2 text-mystic-300">
              <li className="flex items-start space-x-3">
                <div className="w-2 h-2 bg-gold-400 rounded-full mt-2 flex-shrink-0"></div>
-               <span><strong>Avoid spicy, fried, or greasy food</strong> �–nourish with cooling foods (melon, lotus root, mung bean soup)</span>
+               <span><strong>Avoid spicy, fried, or greasy food</strong> �—nourish with cooling foods (melon, lotus root, mung bean soup)</span>
              </li>
              <li className="flex items-start space-x-3">
                <div className="w-2 h-2 bg-gold-400 rounded-full mt-2 flex-shrink-0"></div>
-               <span><strong>Bring Water into your daily routine</strong> �–physically (hydration, showers) and energetically (Blue colors, Moon imagery)</span>
+               <span><strong>Bring Water into your daily routine</strong> �—physically (hydration, showers) and energetically (Blue colors, Moon imagery)</span>
              </li>
              <li className="flex items-start space-x-3">
                <div className="w-2 h-2 bg-gold-400 rounded-full mt-2 flex-shrink-0"></div>
-               <span><strong>Use protective talismans</strong> based on Water or Metal �–these control or balance Fire in classical Five Element theory</span>
+               <span><strong>Use protective talismans</strong> based on Water or Metal �—these control or balance Fire in classical Five Element theory</span>
              </li>
              <li className="flex items-start space-x-3">
                <div className="w-2 h-2 bg-gold-400 rounded-full mt-2 flex-shrink-0"></div>
-               <span><strong>Sleep early, meditate often, rest the Heart spirit (�–</strong></span>
+               <span><strong>Sleep early, meditate often, rest the Heart spirit (�—</strong></span>
              </li>
              <li className="flex items-start space-x-3">
                <div className="w-2 h-2 bg-gold-400 rounded-full mt-2 flex-shrink-0"></div>
@@ -1126,17 +1126,17 @@ const BlogPost = () => {
 
          <h2 className="text-2xl font-cinzel font-bold text-white mb-4 mt-8">🔮 Final Thought</h2>
          <p className="mb-6 text-mystic-300 leading-relaxed">
-           The external heat reflects the internal Fire many are struggling with. BaZi isn't about fearing the elements–it's about understanding when they're <strong>out of sync</strong> with you.
+           The external heat reflects the internal Fire many are struggling with. BaZi isn't about fearing the elements—it's about understanding when they're <strong>out of sync</strong> with you.
          </p>
 
          <p className="mb-6 text-mystic-300 leading-relaxed">
-           If you're feeling drained, angry, burned out, or restless this year�–maybe it's not just the weather.
+           If you're feeling drained, angry, burned out, or restless this year�—maybe it's not just the weather.
          </p>
 
          <div className="mystic-card p-6 border-l-4 border-gold-500/50 mb-8">
-           <h3 className="text-xl font-cinzel font-semibold text-gold-400 mb-3">Ready to Understand Your Fire Balance–</h3>
+           <h3 className="text-xl font-cinzel font-semibold text-gold-400 mb-3">Ready to Understand Your Fire Balance—</h3>
            <p className="text-mystic-300 text-sm">
-             Would you like a personalized reading to understand how the 2025 Fire energy affects your specific BaZi chart– 
+             Would you like a personalized reading to understand how the 2025 Fire energy affects your specific BaZi chart— 
              A detailed analysis can reveal your Fire element balance and provide specific strategies for harmonizing your energy this year.
            </p>
          </div>
@@ -1159,7 +1159,7 @@ const BlogPost = () => {
            <p className="text-lg text-mystic-300 leading-relaxed mb-4 italic">
              "A river flows because it bends. A tree survives because it yields."
            </p>
-           <p className="text-sm text-mystic-400">–Ancient Chinese proverb</p>
+           <p className="text-sm text-mystic-400">—Ancient Chinese proverb</p>
          </div>
          
          <h2 className="text-2xl font-cinzel font-bold text-white mb-4 mt-8">💭 When Life Feels Stuck or Heavy</h2>
@@ -1170,16 +1170,16 @@ const BlogPost = () => {
            The job opportunity slips away. The person we love grows distant. The finances get tight. In those moments, it's easy to feel anxious, as if you've missed your only chance, or that something must be "wrong" with your life path.
          </p>
          <p className="mb-6 text-mystic-300 leading-relaxed">
-           But in BaZi–the ancient Chinese art of destiny mapping–these fluctuations are natural, even necessary.
+           But in BaZi—the ancient Chinese art of destiny mapping—these fluctuations are natural, even necessary.
          </p>
          
          <h2 className="text-2xl font-cinzel font-bold text-white mb-4 mt-8">🌗 Destiny Moves in Cycles, Not Straight Lines</h2>
          <p className="mb-6 text-mystic-300 leading-relaxed">
-           In BaZi, every person is born with a chart made of Four Pillars–each shaped by the energy of the year, month, day, and hour of birth. These elements don't stay still–they interact with time, changing subtly every year, every decade.
+           In BaZi, every person is born with a chart made of Four Pillars—each shaped by the energy of the year, month, day, and hour of birth. These elements don't stay still—they interact with time, changing subtly every year, every decade.
          </p>
          <p className="mb-6 text-mystic-300 leading-relaxed">
            Sometimes, we enter a "high luck phase," where things seem to click.<br>
-           Other times, we enter a "transitional phase," when challenges arise–not as punishment, but as part of the realignment.
+           Other times, we enter a "transitional phase," when challenges arise—not as punishment, but as part of the realignment.
          </p>
          <p className="mb-6 text-mystic-300 leading-relaxed">
            Just as nature has spring and winter, our lives go through growth seasons and rest seasons.
@@ -1190,7 +1190,7 @@ const BlogPost = () => {
            When life slows down, the modern mind often panics.
          </p>
          <p className="mb-6 text-mystic-300 leading-relaxed">
-           But ancient metaphysics teaches that resisting your current cycle only adds more imbalance. True power lies in understanding where you are in the flow–not forcing outcomes before their time.
+           But ancient metaphysics teaches that resisting your current cycle only adds more imbalance. True power lies in understanding where you are in the flow—not forcing outcomes before their time.
          </p>
          <p className="mb-6 text-mystic-300 leading-relaxed">
            For example:
@@ -1200,13 +1200,13 @@ const BlogPost = () => {
              <p className="text-mystic-300 mb-2">
                <strong>A Water Day Master during a Fire-heavy year</strong> may feel anxious, unmotivated, or "burned out."
              </p>
-             <p className="text-mystic-300 text-sm">�–The solution isn't to push harder, but to restore inner coolness and protect your energy.</p>
+             <p className="text-mystic-300 text-sm">�—The solution isn't to push harder, but to restore inner coolness and protect your energy.</p>
            </div>
            <div>
              <p className="text-mystic-300 mb-2">
                <strong>A Wood Day Master going through a Metal phase</strong> may feel "cut down" or misunderstood.
              </p>
-             <p className="text-mystic-300 text-sm">�–But pruning often prepares the tree for deeper roots.</p>
+             <p className="text-mystic-300 text-sm">�—But pruning often prepares the tree for deeper roots.</p>
            </div>
          </div>
          <p className="mb-6 text-mystic-300 leading-relaxed">
@@ -1226,7 +1226,7 @@ const BlogPost = () => {
          <div className="mystic-card p-6 border-l-4 border-gold-500/50 mb-8">
            <p className="text-mystic-300 italic">
              🌬 In Chinese philosophy, "When the wind rises, even pigs can fly."<br>
-             The key is to know when the wind is rising–and when to rest your wings.
+             The key is to know when the wind is rising—and when to rest your wings.
            </p>
          </div>
          
@@ -1235,7 +1235,7 @@ const BlogPost = () => {
            A proper BaZi reading isn't about "fortune telling."
          </p>
          <p className="mb-6 text-mystic-300 leading-relaxed">
-           It's about giving you a map. A sense of timing. A recognition that you are not broken–you are just moving through your cycle.
+           It's about giving you a map. A sense of timing. A recognition that you are not broken—you are just moving through your cycle.
          </p>
          <p className="mb-6 text-mystic-300 leading-relaxed">
            It's about showing you when to:
@@ -1281,12 +1281,12 @@ const BlogPost = () => {
            </div>
          </div>
          <p className="mb-6 text-mystic-300 leading-relaxed">
-           You're simply moving through your own rhythm–and in time, a new phase will begin.
+           You're simply moving through your own rhythm—and in time, a new phase will begin.
          </p>
          <div className="mystic-card p-6 border-l-4 border-gold-500/50 mb-8">
-           <h3 className="text-xl font-cinzel font-semibold text-gold-400 mb-3">Ready to Understand Your Cycles–</h3>
+           <h3 className="text-xl font-cinzel font-semibold text-gold-400 mb-3">Ready to Understand Your Cycles—</h3>
            <p className="text-mystic-300 text-sm">
-             Would you like a personalized BaZi reading to understand your current life phase and how to navigate it with wisdom– 
+             Would you like a personalized BaZi reading to understand your current life phase and how to navigate it with wisdom— 
              A detailed analysis can reveal your natural cycles and provide guidance for flowing with your destiny's seasons.
            </p>
          </div>
@@ -1307,11 +1307,11 @@ const BlogPost = () => {
        content: `
          <div className="mb-8">
            <p className="text-lg text-mystic-300 leading-relaxed mb-4">
-             When it comes to answering the age-old question "Who am I–", both the East and West have developed rich frameworks for self-understanding. In the East, there's BaZi (Four Pillars of Destiny), and in the West, the MBTI (Myers-Briggs Type Indicator). Though these systems come from vastly different cultural and philosophical backgrounds, both aim to help us better understand ourselves and align with our path in life. Here's a lighthearted comparison of these two systems and how they can complement each other.
+             When it comes to answering the age-old question "Who am I—", both the East and West have developed rich frameworks for self-understanding. In the East, there's BaZi (Four Pillars of Destiny), and in the West, the MBTI (Myers-Briggs Type Indicator). Though these systems come from vastly different cultural and philosophical backgrounds, both aim to help us better understand ourselves and align with our path in life. Here's a lighthearted comparison of these two systems and how they can complement each other.
            </p>
          </div>
 
-         <h2 className="text-2xl font-cinzel font-bold text-white mb-4 mt-8">1. What is MBTI–</h2>
+         <h2 className="text-2xl font-cinzel font-bold text-white mb-4 mt-8">1. What is MBTI—</h2>
          <p className="mb-6 text-mystic-300 leading-relaxed">
            MBTI (Myers-Briggs Type Indicator) is a personality typology based on Carl Jung's theory of psychological types. It categorizes people along four dichotomies:
          </p>
@@ -1338,16 +1338,16 @@ const BlogPost = () => {
          </div>
 
          <p className="mb-6 text-mystic-300 leading-relaxed">
-           Your combination of preferences results in one of 16 personality types, such as INFP, ESTJ, ENTP, etc. MBTI reflects your cognitive style and behavioral tendencies–it's like a mirror showing who you are right now.
+           Your combination of preferences results in one of 16 personality types, such as INFP, ESTJ, ENTP, etc. MBTI reflects your cognitive style and behavioral tendencies—it's like a mirror showing who you are right now.
          </p>
 
-         <h2 className="text-2xl font-cinzel font-bold text-white mb-4 mt-8">2. What is BaZi–</h2>
+         <h2 className="text-2xl font-cinzel font-bold text-white mb-4 mt-8">2. What is BaZi—</h2>
          <p className="mb-6 text-mystic-300 leading-relaxed">
            BaZi, or the Four Pillars of Destiny, is a classical Chinese metaphysical system that interprets your destiny based on the date and time of your birth. Each person's birth data is converted into four pairs of characters (Heavenly Stems and Earthly Branches), reflecting the interplay of the Five Elements (Wood, Fire, Earth, Metal, Water).
          </p>
 
          <p className="mb-6 text-mystic-300 leading-relaxed">
-           BaZi is based on objective birth information and reveals your life structure, elemental balance, strengths, weaknesses, and most importantly–the timing of your fortune cycles. It's often used for career planning, relationship insights, and forecasting periods of growth or challenge. Think of it as a life map: showing the terrain ahead.
+           BaZi is based on objective birth information and reveals your life structure, elemental balance, strengths, weaknesses, and most importantly—the timing of your fortune cycles. It's often used for career planning, relationship insights, and forecasting periods of growth or challenge. Think of it as a life map: showing the terrain ahead.
          </p>
 
          <h2 className="text-2xl font-cinzel font-bold text-white mb-4 mt-8">3. Key Differences</h2>
@@ -1373,8 +1373,8 @@ const BlogPost = () => {
                </tr>
                <tr className="border-b border-mystic-700/50">
                  <td className="p-4 text-mystic-300 font-medium">Flexibility</td>
-                 <td className="p-4 text-mystic-300">High �–can change over time</td>
-                 <td className="p-4 text-mystic-300">Fixed �–based on birth moment</td>
+                 <td className="p-4 text-mystic-300">High �—can change over time</td>
+                 <td className="p-4 text-mystic-300">Fixed �—based on birth moment</td>
                </tr>
                <tr className="border-b border-mystic-700/50">
                  <td className="p-4 text-mystic-300 font-medium">Focus</td>
@@ -1390,9 +1390,9 @@ const BlogPost = () => {
            </table>
          </div>
 
-         <h2 className="text-2xl font-cinzel font-bold text-white mb-4 mt-8">4. Can They Work Together–</h2>
+         <h2 className="text-2xl font-cinzel font-bold text-white mb-4 mt-8">4. Can They Work Together—</h2>
          <p className="mb-6 text-mystic-300 leading-relaxed">
-           Absolutely. BaZi gives you the big picture–the life cycles and timing. MBTI tells you how you tend to operate in the present. For instance, if your BaZi indicates a wealth period is coming, and you're an ENTP, you might seize that opportunity through persuasive communication and risk-taking. If you're an ISFJ, you might accumulate wealth steadily through consistency and long-term dedication.
+           Absolutely. BaZi gives you the big picture—the life cycles and timing. MBTI tells you how you tend to operate in the present. For instance, if your BaZi indicates a wealth period is coming, and you're an ENTP, you might seize that opportunity through persuasive communication and risk-taking. If you're an ISFJ, you might accumulate wealth steadily through consistency and long-term dedication.
          </p>
 
          <div className="grid md:grid-cols-2 gap-6 mb-8">
@@ -1444,7 +1444,7 @@ const BlogPost = () => {
 
          <h2 className="text-2xl font-cinzel font-bold text-white mb-4 mt-8">6. Final Thoughts</h2>
          <p className="mb-6 text-mystic-300 leading-relaxed">
-           BaZi is your map. MBTI is your compass. One shows the broader landscape of your life path, while the other helps you navigate day-to-day decisions with self-awareness. When used together, they can offer powerful insights–honoring both fate and free will.
+           BaZi is your map. MBTI is your compass. One shows the broader landscape of your life path, while the other helps you navigate day-to-day decisions with self-awareness. When used together, they can offer powerful insights—honoring both fate and free will.
          </p>
 
          <div className="mystic-card p-6 border-l-4 border-gold-500/50 mb-8">
@@ -1455,13 +1455,13 @@ const BlogPost = () => {
          </div>
 
          <p className="mb-6 text-mystic-300 leading-relaxed">
-           Why not explore both– Learn your destiny, know your nature, and walk your path with clarity and confidence.
+           Why not explore both— Learn your destiny, know your nature, and walk your path with clarity and confidence.
          </p>
 
          <div className="bg-gradient-to-r from-mystic-800 to-mystic-900 p-6 rounded-xl border border-gold-500/30 mb-8">
-           <h3 className="text-xl font-cinzel font-semibold text-gold-400 mb-4">Ready to Discover Your Complete Profile–</h3>
+           <h3 className="text-xl font-cinzel font-semibold text-gold-400 mb-4">Ready to Discover Your Complete Profile—</h3>
            <p className="text-mystic-300 mb-4">
-             Would you like a comprehensive analysis that combines both BaZi destiny mapping and personality insights–
+             Would you like a comprehensive analysis that combines both BaZi destiny mapping and personality insights—
            </p>
            <p className="text-mystic-300 text-sm">
              A detailed reading can reveal how your personality type interacts with your destiny cycles, providing unique guidance for career, relationships, and personal development.
@@ -1486,18 +1486,18 @@ const BlogPost = () => {
            <p className="text-lg text-mystic-300 leading-relaxed mb-4 italic">
              "When the heavens speak, the earth listens. When we plant with intention, we become the bridge between cosmic energy and earthly manifestation."
            </p>
-           <p className="text-sm text-mystic-400">–Ancient Taoist wisdom</p>
+           <p className="text-sm text-mystic-400">—Ancient Taoist wisdom</p>
          </div>
 
          <h2 className="text-2xl font-cinzel font-bold text-white mb-4 mt-8">🌑 The Celestial Whisper: Solar Eclipse Energy</h2>
          <p className="mb-6 text-mystic-300 leading-relaxed">
-           Recently there's been a buzz online about a rumored solar eclipse in August 2025–something many have speculated will bring emotional and energetic shifts. Though details remain unclear, the idea points to an ancient truth: humans respond to celestial events by seeking ritual anchors–and one such anchor in Taoist practice is called Lu Gen, or "planting the root of prosperity."
+           Recently there's been a buzz online about a rumored solar eclipse in August 2025—something many have speculated will bring emotional and energetic shifts. Though details remain unclear, the idea points to an ancient truth: humans respond to celestial events by seeking ritual anchors—and one such anchor in Taoist practice is called Lu Gen, or "planting the root of prosperity."
          </p>
 
          <div className="bg-gradient-to-r from-mystic-800 to-mystic-900 p-6 rounded-xl border border-gold-500/30 mb-8">
            <h3 className="text-xl font-cinzel font-semibold text-gold-400 mb-4">The Cosmic Connection:</h3>
            <p className="text-mystic-300 mb-4">
-             Solar eclipses are not just astronomical events–they are moments when the Moon temporarily blocks the Sun's energy, creating a unique energetic vacuum that amplifies our intentions and emotions.
+             Solar eclipses are not just astronomical events—they are moments when the Moon temporarily blocks the Sun's energy, creating a unique energetic vacuum that amplifies our intentions and emotions.
            </p>
            <p className="text-mystic-300">
              This cosmic alignment provides an ideal window for ritual work, especially those involving planting and growth.
@@ -1506,37 +1506,37 @@ const BlogPost = () => {
 
          <h2 className="text-2xl font-cinzel font-bold text-white mb-4 mt-8">🌱 Lu Gen: The Ancient Art of Planting Prosperity</h2>
          <p className="mb-6 text-mystic-300 leading-relaxed">
-           In my own way, I've linked this concept to a simple yet meaningful act: planting a piece of fresh ginger on a carefully chosen date, silently holding a clear intention–such as abundance, clarity, or stability. The root becomes a living symbol, anchoring your will into earth and time.
+           In my own way, I've linked this concept to a simple yet meaningful act: planting a piece of fresh ginger on a carefully chosen date, silently holding a clear intention—such as abundance, clarity, or stability. The root becomes a living symbol, anchoring your will into earth and time.
          </p>
 
          <p className="mb-6 text-mystic-300 leading-relaxed">
-           As the photos show, it's not about superstition–it's about creating a physical locus for your intention in alignment with cosmic timing.
+           As the photos show, it's not about superstition—it's about creating a physical locus for your intention in alignment with cosmic timing.
          </p>
 
          <div className="grid md:grid-cols-2 gap-6 mb-8">
            <div className="mystic-card p-6">
              <h3 className="text-xl font-cinzel font-semibold text-gold-400 mb-3">🌿 The Ritual Process</h3>
              <ul className="space-y-2 text-mystic-300 text-sm">
-               <li>�–Choose fresh ginger root</li>
-               <li>�–Select an auspicious date</li>
-               <li>�–Hold clear intention</li>
-               <li>�–Plant with mindfulness</li>
-               <li>�–Water with gratitude</li>
+               <li>�—Choose fresh ginger root</li>
+               <li>�—Select an auspicious date</li>
+               <li>�—Hold clear intention</li>
+               <li>�—Plant with mindfulness</li>
+               <li>�—Water with gratitude</li>
              </ul>
            </div>
            <div className="mystic-card p-6">
              <h3 className="text-xl font-cinzel font-semibold text-gold-400 mb-3">🎯 Intention Examples</h3>
              <ul className="space-y-2 text-mystic-300 text-sm">
-               <li>�–Financial abundance</li>
-               <li>�–Mental clarity</li>
-               <li>�–Emotional stability</li>
-               <li>�–Career growth</li>
-               <li>�–Relationship harmony</li>
+               <li>�—Financial abundance</li>
+               <li>�—Mental clarity</li>
+               <li>�—Emotional stability</li>
+               <li>�—Career growth</li>
+               <li>�—Relationship harmony</li>
              </ul>
            </div>
          </div>
 
-         <h2 className="text-2xl font-cinzel font-bold text-white mb-4 mt-8">�–Capturing the Cosmic Flow</h2>
+         <h2 className="text-2xl font-cinzel font-bold text-white mb-4 mt-8">�—Capturing the Cosmic Flow</h2>
          <p className="mb-6 text-mystic-300 leading-relaxed">
            Whether or not the eclipse happens, the principle remains: human consciousness responds to "celestial cues." If an eclipse amplifies collective energy, planting Lu Gen becomes a way to personalize that shift. By starting now, you may capture the flow rather than be swept by it.
          </p>
@@ -1549,7 +1549,7 @@ const BlogPost = () => {
 
          <h2 className="text-2xl font-cinzel font-bold text-white mb-4 mt-8">🔮 Beyond Lu Gen: Other Celestial Rituals</h2>
          <p className="mb-6 text-mystic-300 leading-relaxed">
-           Curious if others use similar methods–like sigil planting or intention jars–especially aligned to astronomical events. The ancient wisdom traditions offer many ways to work with cosmic energy:
+           Curious if others use similar methods—like sigil planting or intention jars—especially aligned to astronomical events. The ancient wisdom traditions offer many ways to work with cosmic energy:
          </p>
 
          <ul className="space-y-3 mb-6 text-mystic-300">
@@ -1618,7 +1618,7 @@ const BlogPost = () => {
          </div>
 
          <p className="mb-6 text-mystic-300 leading-relaxed">
-           The universe is always speaking. The question is: are you listening–
+           The universe is always speaking. The question is: are you listening—
          </p>
        `,
        category: "bazi-basics",
@@ -1632,19 +1632,19 @@ const BlogPost = () => {
      },
      {
        id: 10,
-       title: "What is the Best Bazi for Wealth– Decoding Your Chinese Astrology Blueprint",
+       title: "What is the Best Bazi for Wealth— Decoding Your Chinese Astrology Blueprint",
                    excerpt: "Discover the 3 wealthiest Bazi patterns in Chinese metaphysics and how to activate your financial potential. Based on 10,000+ client cases.",
        content: `
          <div className="mb-8">
            <p className="text-lg text-mystic-300 leading-relaxed mb-4 italic">
              "Wealth is not about having money, but about having options."
            </p>
-           <p className="text-sm text-mystic-400">–Ancient Chinese wisdom</p>
+           <p className="text-sm text-mystic-400">—Ancient Chinese wisdom</p>
          </div>
 
          <h2 className="text-2xl font-cinzel font-bold text-white mb-4 mt-8">🔑 Beyond "Rich" Bazi</h2>
          <p className="mb-6 text-mystic-300 leading-relaxed">
-           Many believe a "wealthy Bazi" means piles of cash, but true abundance in Chinese astrology combines resources, opportunities, and wisdom to grow them. Here, we decode real-world wealth patterns from billionaires' charts–and how to apply them to your life.
+           Many believe a "wealthy Bazi" means piles of cash, but true abundance in Chinese astrology combines resources, opportunities, and wisdom to grow them. Here, we decode real-world wealth patterns from billionaires' charts—and how to apply them to your life.
          </p>
 
          <h2 className="text-2xl font-cinzel font-bold text-white mb-4 mt-8">🔑 Part 1: The 3 Wealth Archetypes in Bazi</h2>
@@ -1685,21 +1685,21 @@ const BlogPost = () => {
 
          <div className="bg-gradient-to-r from-mystic-800 to-mystic-900 p-6 rounded-xl border border-gold-500/30 mb-8">
            <p className="text-mystic-300">
-             <strong>💡 Key Insight:</strong> Your "wealth type" determines how you attract abundance–forcing a mismatched path (e.g., an Innovator doing routine jobs) blocks flow.
+             <strong>💡 Key Insight:</strong> Your "wealth type" determines how you attract abundance—forcing a mismatched path (e.g., an Innovator doing routine jobs) blocks flow.
            </p>
          </div>
 
          <h2 className="text-2xl font-cinzel font-bold text-white mb-4 mt-8">🌟 Part 2: Your Hidden Wealth Codes</h2>
          
-         <h3 className="text-xl font-cinzel font-semibold text-gold-400 mb-4 mt-6">A. The Wealth Star (财星) �–More Than Money</h3>
+         <h3 className="text-xl font-cinzel font-semibold text-gold-400 mb-4 mt-6">A. The Wealth Star (财星) �—More Than Money</h3>
          <ul className="space-y-3 mb-6 text-mystic-300">
            <li className="flex items-start space-x-3">
              <div className="w-2 h-2 bg-gold-400 rounded-full mt-2 flex-shrink-0"></div>
-             <span><strong>正财 (Zhèng Cái):</strong> Earned income (salary, business profits) �–needs Strong Day Master to hold.</span>
+             <span><strong>正财 (Zhèng Cái):</strong> Earned income (salary, business profits) �—needs Strong Day Master to hold.</span>
            </li>
            <li className="flex items-start space-x-3">
              <div className="w-2 h-2 bg-gold-400 rounded-full mt-2 flex-shrink-0"></div>
-             <span><strong>偏财 (Piān Cái):</strong> Unexpected gains (investments, gifts) �–thrives with Social Fire (巳午).</span>
+             <span><strong>偏财 (Piān Cái):</strong> Unexpected gains (investments, gifts) �—thrives with Social Fire (巳午).</span>
            </li>
          </ul>
 
@@ -1707,28 +1707,28 @@ const BlogPost = () => {
          <ul className="space-y-3 mb-6 text-mystic-300">
            <li className="flex items-start space-x-3">
              <div className="w-2 h-2 bg-gold-400 rounded-full mt-2 flex-shrink-0"></div>
-             <span><strong>食神 (Shí Shén):</strong> Creativity �–Turns ideas into value (e.g., Steve Jobs' Wood-Fire creativity)</span>
+             <span><strong>食神 (Shí Shén):</strong> Creativity �—Turns ideas into value (e.g., Steve Jobs' Wood-Fire creativity)</span>
            </li>
            <li className="flex items-start space-x-3">
              <div className="w-2 h-2 bg-gold-400 rounded-full mt-2 flex-shrink-0"></div>
-             <span><strong>印星 (Yìn Xīng):</strong> Knowledge �–Protects wealth from risks (e.g., Buffett's Earth wisdom)</span>
+             <span><strong>印星 (Yìn Xīng):</strong> Knowledge �—Protects wealth from risks (e.g., Buffett's Earth wisdom)</span>
            </li>
          </ul>
 
 
 
-         <h2 className="text-2xl font-cinzel font-bold text-white mb-4 mt-8">🚫 Part 3: Why "Rich" Bazi Fails �–3 Tragic Cases</h2>
+         <h2 className="text-2xl font-cinzel font-bold text-white mb-4 mt-8">🚫 Part 3: Why "Rich" Bazi Fails �—3 Tragic Cases</h2>
 
          <div className="space-y-6 mb-8">
            <div className="mystic-card p-6 border-l-4 border-red-500/50">
              <h3 className="text-xl font-cinzel font-semibold text-red-400 mb-3">1. Weak Day Master + Heavy Wealth</h3>
              <p className="text-mystic-300 mb-2"><strong>Example:</strong> 癸水日主 (Weak Water) with 未土+戌土 (Strong Earth wealth stars)</p>
-             <p className="text-mystic-300 text-sm"><strong>Result:</strong> Overwhelmed by opportunities �–Debt or stress-induced loss.</p>
+             <p className="text-mystic-300 text-sm"><strong>Result:</strong> Overwhelmed by opportunities �—Debt or stress-induced loss.</p>
            </div>
 
            <div className="mystic-card p-6 border-l-4 border-red-500/50">
              <h3 className="text-xl font-cinzel font-semibold text-red-400 mb-3">2. Wealth Clash with Conflict Stars</h3>
-             <p className="text-mystic-300 mb-2"><strong>Example:</strong> 偏财 (Piān Cái) next to 劫财 (Jié Cái �–Wealth Robber)</p>
+             <p className="text-mystic-300 mb-2"><strong>Example:</strong> 偏财 (Piān Cái) next to 劫财 (Jié Cái �—Wealth Robber)</p>
              <p className="text-mystic-300 text-sm"><strong>Result:</strong> Sudden windfalls lost to scams or "friends."</p>
            </div>
 
@@ -1739,23 +1739,23 @@ const BlogPost = () => {
            </div>
          </div>
 
-         <h2 className="text-2xl font-cinzel font-bold text-white mb-4 mt-8">💡 Part 4: Activate Your Wealth Potential �–3 Steps</h2>
+         <h2 className="text-2xl font-cinzel font-bold text-white mb-4 mt-8">💡 Part 4: Activate Your Wealth Potential �—3 Steps</h2>
 
          <div className="space-y-6 mb-8">
            <div className="mystic-card p-6 border-l-4 border-gold-500/50">
              <h3 className="text-xl font-cinzel font-semibold text-gold-400 mb-3">Step 1: Find Your Wealth Star</h3>
-             <p className="text-mystic-300 mb-3">Use our <a href="https://fatepath.me/free-bazi-report" className="text-gold-400 hover:text-gold-300 underline" target="_blank" rel="noopener noreferrer">Bazi Calculator</a> �–Check your chart for:</p>
+             <p className="text-mystic-300 mb-3">Use our <a href="https://fatepath.me/free-bazi-report" className="text-gold-400 hover:text-gold-300 underline" target="_blank" rel="noopener noreferrer">Bazi Calculator</a> �—Check your chart for:</p>
              <ul className="space-y-2 text-mystic-300 text-sm">
-               <li>�–Wood (�–�– + Earth (�–�– = 偏财 (Opportunity Wealth)</li>
-               <li>�–Metal (�–�– + Wood (�–�– = 正财 (Steady Wealth)</li>
+               <li>�—Wood (�—�— + Earth (�—�— = 偏财 (Opportunity Wealth)</li>
+               <li>�—Metal (�—�— + Wood (�—�— = 正财 (Steady Wealth)</li>
              </ul>
            </div>
 
            <div className="mystic-card p-6 border-l-4 border-gold-500/50">
              <h3 className="text-xl font-cinzel font-semibold text-gold-400 mb-3">Step 2: Balance Your Chart</h3>
              <ul className="space-y-2 text-mystic-300 text-sm">
-               <li>�–<strong>Weak Day Master–</strong> Add 印星 (Yìn) energy: Wear white/gray (Metal), study wealth mentors.</li>
-               <li>�–<strong>Wealth Clash–</strong> �–(Hé) the robber: Partner with 正官 (Zhèng Guān) people (reliable leaders).</li>
+               <li>�—<strong>Weak Day Master—</strong> Add 印星 (Yìn) energy: Wear white/gray (Metal), study wealth mentors.</li>
+               <li>�—<strong>Wealth Clash—</strong> �—(Hé) the robber: Partner with 正官 (Zhèng Guān) people (reliable leaders).</li>
              </ul>
            </div>
 
@@ -1789,36 +1789,36 @@ const BlogPost = () => {
 
          </div>
 
-         <h2 className="text-2xl font-cinzel font-bold text-white mb-4 mt-8">�–FAQs: Busting Wealth Bazi Myths</h2>
+         <h2 className="text-2xl font-cinzel font-bold text-white mb-4 mt-8">�—FAQs: Busting Wealth Bazi Myths</h2>
 
          <div className="space-y-6 mb-8">
            <div className="mystic-card p-6">
-             <h3 className="text-xl font-cinzel font-semibold text-gold-400 mb-3">Q: Is a "Gold" Bazi the richest–</h3>
-             <p className="text-mystic-300 text-sm">A: No! 庚金 (Yang Metal) needs Fire to forge wealth (e.g., tools), while 辛金 (Yin Metal) thrives as "jewelry" �–valuable but fragile without Earth support.</p>
+             <h3 className="text-xl font-cinzel font-semibold text-gold-400 mb-3">Q: Is a "Gold" Bazi the richest—</h3>
+             <p className="text-mystic-300 text-sm">A: No! 庚金 (Yang Metal) needs Fire to forge wealth (e.g., tools), while 辛金 (Yin Metal) thrives as "jewelry" �—valuable but fragile without Earth support.</p>
            </div>
 
            <div className="mystic-card p-6">
-             <h3 className="text-xl font-cinzel font-semibold text-gold-400 mb-3">Q: Can poor Bazi become rich–</h3>
-             <p className="text-mystic-300 text-sm">A: Yes! Liu Chuanzhong (Alibaba co-founder) has a "Weak Water" chart but used 印星 (knowledge) to build empire �–proof that understanding your chart beats "lucky" elements.</p>
+             <h3 className="text-xl font-cinzel font-semibold text-gold-400 mb-3">Q: Can poor Bazi become rich—</h3>
+             <p className="text-mystic-300 text-sm">A: Yes! Liu Chuanzhong (Alibaba co-founder) has a "Weak Water" chart but used 印星 (knowledge) to build empire �—proof that understanding your chart beats "lucky" elements.</p>
            </div>
          </div>
 
          <h2 className="text-2xl font-cinzel font-bold text-white mb-4 mt-8">💎 Conclusion: Wealth is a Verb</h2>
          <p className="mb-6 text-mystic-300 leading-relaxed">
-           The "best" Bazi for wealth isn't about fixed elements–it's about aligning your chart's potential with action:
+           The "best" Bazi for wealth isn't about fixed elements—it's about aligning your chart's potential with action:
          </p>
          <ul className="space-y-3 mb-8 text-mystic-300">
            <li className="flex items-start space-x-3">
              <div className="w-2 h-2 bg-gold-400 rounded-full mt-2 flex-shrink-0"></div>
-             <span><strong>Innovators</strong> �–Create products solving real pains</span>
+             <span><strong>Innovators</strong> �—Create products solving real pains</span>
            </li>
            <li className="flex items-start space-x-3">
              <div className="w-2 h-2 bg-gold-400 rounded-full mt-2 flex-shrink-0"></div>
-             <span><strong>Strategists</strong> �–Master asset allocation</span>
+             <span><strong>Strategists</strong> �—Master asset allocation</span>
            </li>
            <li className="flex items-start space-x-3">
              <div className="w-2 h-2 bg-gold-400 rounded-full mt-2 flex-shrink-0"></div>
-             <span><strong>Networkers</strong> �–Build communities that scale</span>
+             <span><strong>Networkers</strong> �—Build communities that scale</span>
            </li>
          </ul>
 
@@ -1838,21 +1838,21 @@ const BlogPost = () => {
      {
        id: 13,
        title: "Using BaZi to Predict When Your True Love Will Appear",
-       excerpt: "Love is one of life's most profound mysteries. But what if ancient Chinese metaphysics could offer clues–not just about if you'll meet your true love, but when–",
+       excerpt: "Love is one of life's most profound mysteries. But what if ancient Chinese metaphysics could offer clues—not just about if you'll meet your true love, but when—",
        content: `
          <div className="mb-8">
            <p className="text-lg text-mystic-300 leading-relaxed mb-4 italic">
-             "Love isn't always about looking harder–it's about recognizing the moment when the stars align."
+             "Love isn't always about looking harder—it's about recognizing the moment when the stars align."
            </p>
-           <p className="text-sm text-mystic-400">–Ancient Chinese wisdom</p>
+           <p className="text-sm text-mystic-400">—Ancient Chinese wisdom</p>
          </div>
 
          <p className="mb-6 text-mystic-300 leading-relaxed">
-           Love is one of life's most profound mysteries. But what if ancient Chinese metaphysics could offer clues–not just about <em>if</em> you'll meet your true love, but <em>when</em>–
+           Love is one of life's most profound mysteries. But what if ancient Chinese metaphysics could offer clues—not just about <em>if</em> you'll meet your true love, but <em>when</em>—
          </p>
 
          <p className="mb-6 text-mystic-300 leading-relaxed">
-           Welcome to the world of BaZi (also known as the Four Pillars of Destiny), where your date and time of birth are decoded into an elemental map that reveals the rhythms of your life–including your romantic destiny.
+           Welcome to the world of BaZi (also known as the Four Pillars of Destiny), where your date and time of birth are decoded into an elemental map that reveals the rhythms of your life—including your romantic destiny.
          </p>
 
          <h2 className="text-2xl font-cinzel font-bold text-white mb-4 mt-8">What Is BaZi and Why Timing Matters</h2>
@@ -1863,12 +1863,12 @@ const BlogPost = () => {
            In BaZi, timing is everything. Even if someone is your perfect energetic match, the relationship may never blossom if it comes at the wrong moment in your life cycle.
          </p>
          <p className="mb-6 text-mystic-300 leading-relaxed">
-           Each decade of life is governed by a major "Luck Pillar" (Da Yun), and each year brings its own elemental influences. Love-related energies–such as Peach Blossom (Tao Hua), Red Luan Star (Hong Luan), and the presence of your "Spouse Star"–often appear during specific years or Luck Pillars.
+           Each decade of life is governed by a major "Luck Pillar" (Da Yun), and each year brings its own elemental influences. Love-related energies—such as Peach Blossom (Tao Hua), Red Luan Star (Hong Luan), and the presence of your "Spouse Star"—often appear during specific years or Luck Pillars.
          </p>
 
          <h2 className="text-2xl font-cinzel font-bold text-white mb-4 mt-8">Indicators of Romantic Opportunities in Your BaZi</h2>
          <p className="mb-6 text-mystic-300 leading-relaxed">
-           So how do we detect when love is on the horizon– Here are some of the key indicators:
+           So how do we detect when love is on the horizon— Here are some of the key indicators:
          </p>
 
          <div className="bg-gradient-to-r from-pink-900/50 to-red-900/50 p-6 rounded-xl border border-pink-500/30 mb-8">
@@ -1887,14 +1887,14 @@ const BlogPost = () => {
              </li>
              <li className="flex items-start space-x-3">
                <div className="w-2 h-2 bg-pink-400 rounded-full mt-2 flex-shrink-0"></div>
-               <span><strong>Luck Pillars That Combine Favorably with Natal Chart:</strong> When the Luck Pillar forms a Heavenly Stem or Earthly Branch combination with your natal chart, it often opens doors for major life events–including love.</span>
+               <span><strong>Luck Pillars That Combine Favorably with Natal Chart:</strong> When the Luck Pillar forms a Heavenly Stem or Earthly Branch combination with your natal chart, it often opens doors for major life events—including love.</span>
              </li>
            </ul>
          </div>
 
          <h2 className="text-2xl font-cinzel font-bold text-white mb-4 mt-8">Signs Your True Love Is Approaching</h2>
          <p className="mb-6 text-mystic-300 leading-relaxed">
-           Some subtle signs in your life may indicate that love is near–even before a relationship begins:
+           Some subtle signs in your life may indicate that love is near—even before a relationship begins:
          </p>
 
          <div className="space-y-4 mb-8">
@@ -1916,9 +1916,9 @@ const BlogPost = () => {
            When these personal shifts coincide with positive relationship energies in your BaZi chart, it's often a powerful window for meaningful connection.
          </p>
 
-         <h2 className="text-2xl font-cinzel font-bold text-white mb-4 mt-8">Try It Yourself �–Unlock Your Love Timing with BaZi</h2>
+         <h2 className="text-2xl font-cinzel font-bold text-white mb-4 mt-8">Try It Yourself �—Unlock Your Love Timing with BaZi</h2>
          <p className="mb-6 text-mystic-300 leading-relaxed">
-           Curious about your own chart– Want to know which year or month could bring your soulmate–
+           Curious about your own chart— Want to know which year or month could bring your soulmate—
          </p>
          <p className="mb-6 text-mystic-300 leading-relaxed">
            We offer personalized BaZi Relationship Readings, which reveal:
@@ -1943,7 +1943,7 @@ const BlogPost = () => {
 
          <div className="text-center mb-8">
            <p className="text-lg text-mystic-300 leading-relaxed italic">
-             <em>Love isn't always about looking harder–it's about recognizing the moment when the stars align.</em>
+             <em>Love isn't always about looking harder—it's about recognizing the moment when the stars align.</em>
            </p>
          </div>
        `,
@@ -1968,14 +1968,14 @@ const BlogPost = () => {
              <p className="text-xl text-mystic-200 leading-relaxed mb-4 italic text-center">
                "When technology aligns with cosmic timing, innovation becomes destiny."
              </p>
-             <p className="text-sm text-mystic-400 text-center">–Ancient wisdom meets modern innovation</p>
+             <p className="text-sm text-mystic-400 text-center">—Ancient wisdom meets modern innovation</p>
            </div>
          </div>
 
          <div className="mb-8 sm:mb-12">
            <h2 className="text-3xl font-cinzel font-bold text-white mb-6 flex items-center">
              <span className="text-gold-400 mr-3">🚀</span>
-             GPT-5 Is Here �–And It's More Than Just Technology
+             GPT-5 Is Here �—And It's More Than Just Technology
            </h2>
            <p className="text-lg text-mystic-300 leading-relaxed mb-6">
              Today marks the official launch of GPT-5, the next generation of OpenAI's large language model.
@@ -1984,7 +1984,7 @@ const BlogPost = () => {
              the 20-year "Fire Luck Cycle" in Feng Shui and Chinese metaphysics.
            </p>
            <p className="text-lg text-mystic-300 leading-relaxed mb-6">
-             In Eastern metaphysical traditions, timing matters. Period 9 (2024�–043) is ruled by the Fire element �–
+             In Eastern metaphysical traditions, timing matters. Period 9 (2024�—043) is ruled by the Fire element �—
              symbolizing speed, light, visibility, technology, media, and inspiration. When the world steps into a Fire cycle, 
              information spreads faster, innovation accelerates, and new ideas reshape our collective future.
            </p>
@@ -1996,7 +1996,7 @@ const BlogPost = () => {
          <div className="mb-8 sm:mb-12">
            <h2 className="text-3xl font-cinzel font-bold text-white mb-6 flex items-center">
              <span className="text-gold-400 mr-3">🔥</span>
-             What Is Period 9 �–and Why It Matters
+             What Is Period 9 �—and Why It Matters
            </h2>
            <p className="text-lg text-mystic-300 leading-relaxed mb-6">
              In Feng Shui's Flying Star system, the 180-year cycle is divided into nine "Periods," each lasting 20 years. 
@@ -2008,15 +2008,15 @@ const BlogPost = () => {
                <ul className="space-y-2 text-mystic-300">
                  <li className="flex items-start space-x-3">
                    <div className="w-2 h-2 bg-gold-400 rounded-full mt-2 flex-shrink-0"></div>
-                   <span><strong>Speed</strong> �–rapid changes in technology, culture, and society</span>
+                   <span><strong>Speed</strong> �—rapid changes in technology, culture, and society</span>
                  </li>
                  <li className="flex items-start space-x-3">
                    <div className="w-2 h-2 bg-gold-400 rounded-full mt-2 flex-shrink-0"></div>
-                   <span><strong>Creativity</strong> �–breakthroughs in media, design, and artistic expression</span>
+                   <span><strong>Creativity</strong> �—breakthroughs in media, design, and artistic expression</span>
                  </li>
                  <li className="flex items-start space-x-3">
                    <div className="w-2 h-2 bg-gold-400 rounded-full mt-2 flex-shrink-0"></div>
-                   <span><strong>Visibility & Influence</strong> �–those who can capture attention will thrive</span>
+                   <span><strong>Visibility & Influence</strong> �—those who can capture attention will thrive</span>
                  </li>
                </ul>
              </div>
@@ -2025,22 +2025,22 @@ const BlogPost = () => {
                <ul className="space-y-2 text-mystic-300">
                  <li className="flex items-start space-x-3">
                    <div className="w-2 h-2 bg-gold-400 rounded-full mt-2 flex-shrink-0"></div>
-                   <span><strong>Intangible Power</strong> �–ideas, culture, and digital presence outweigh physical dominance</span>
+                   <span><strong>Intangible Power</strong> �—ideas, culture, and digital presence outweigh physical dominance</span>
                  </li>
                  <li className="flex items-start space-x-3">
                    <div className="w-2 h-2 bg-gold-400 rounded-full mt-2 flex-shrink-0"></div>
-                   <span><strong>Global Connectivity</strong> �–information flows freely across borders</span>
+                   <span><strong>Global Connectivity</strong> �—information flows freely across borders</span>
                  </li>
                  <li className="flex items-start space-x-3">
                    <div className="w-2 h-2 bg-gold-400 rounded-full mt-2 flex-shrink-0"></div>
-                   <span><strong>Innovation Acceleration</strong> �–new technologies emerge rapidly</span>
+                   <span><strong>Innovation Acceleration</strong> �—new technologies emerge rapidly</span>
                  </li>
                </ul>
              </div>
            </div>
            <p className="text-lg text-mystic-300 leading-relaxed">
              In other words, the Fire element feeds industries and individuals who embrace light, inspiration, and transformation. 
-             AI �–especially a model like GPT-5 �–is the perfect tool for amplifying these qualities.
+             AI �—especially a model like GPT-5 �—is the perfect tool for amplifying these qualities.
            </p>
          </div>
 
@@ -2055,7 +2055,7 @@ const BlogPost = () => {
            <div className="grid md:grid-cols-3 gap-4 mb-8">
              <div className="mystic-card p-4 text-center">
                <div className="w-12 h-12 bg-gold-500/20 rounded-full flex items-center justify-center mx-auto mb-3">
-                 <span className="text-gold-400 text-xl">�–/span>
+                 <span className="text-gold-400 text-xl">�—/span>
                </div>
                <h4 className="font-semibold text-gold-400 mb-2">Faster Execution</h4>
                <p className="text-sm text-mystic-300">Turning ideas into content, strategies, and solutions in seconds</p>
@@ -2087,7 +2087,7 @@ const BlogPost = () => {
              Opportunities in Period 9 with AI
            </h2>
            <p className="text-lg text-mystic-300 leading-relaxed mb-6">
-             If you align your actions with the Fire cycle, GPT-5 can become more than just a productivity tool �–
+             If you align your actions with the Fire cycle, GPT-5 can become more than just a productivity tool �—
              it can be a vehicle for personal and financial growth.
            </p>
            <p className="text-lg text-mystic-300 leading-relaxed mb-6">
@@ -2097,19 +2097,19 @@ const BlogPost = () => {
              <ul className="space-y-3 text-mystic-300">
                <li className="flex items-start space-x-3">
                  <div className="w-2 h-2 bg-gold-400 rounded-full mt-2 flex-shrink-0"></div>
-                 <span><strong>Build a Digital Presence</strong> �–Leverage GPT-5 to create high-quality, consistent content that positions you as a thought leader</span>
+                 <span><strong>Build a Digital Presence</strong> �—Leverage GPT-5 to create high-quality, consistent content that positions you as a thought leader</span>
                </li>
                <li className="flex items-start space-x-3">
                  <div className="w-2 h-2 bg-gold-400 rounded-full mt-2 flex-shrink-0"></div>
-                 <span><strong>Enter Creative & Cultural Industries</strong> �–Design, education, coaching, storytelling, and entertainment will flourish in this era</span>
+                 <span><strong>Enter Creative & Cultural Industries</strong> �—Design, education, coaching, storytelling, and entertainment will flourish in this era</span>
                </li>
                <li className="flex items-start space-x-3">
                  <div className="w-2 h-2 bg-gold-400 rounded-full mt-2 flex-shrink-0"></div>
-                 <span><strong>Ride the Speed</strong> �–Trends will rise and fall quickly; AI can help you act faster than competitors</span>
+                 <span><strong>Ride the Speed</strong> �—Trends will rise and fall quickly; AI can help you act faster than competitors</span>
                </li>
                <li className="flex items-start space-x-3">
                  <div className="w-2 h-2 bg-gold-400 rounded-full mt-2 flex-shrink-0"></div>
-                 <span><strong>Tap into Global Markets</strong> �–Fire is outward-focused; combine AI's multilingual abilities with your skills to reach new audiences</span>
+                 <span><strong>Tap into Global Markets</strong> �—Fire is outward-focused; combine AI's multilingual abilities with your skills to reach new audiences</span>
                </li>
              </ul>
            </div>
@@ -2126,7 +2126,7 @@ const BlogPost = () => {
            </p>
            <div className="mystic-card p-6 border-l-4 border-red-500/50 mb-8">
              <p className="text-mystic-300 italic">
-               The winners will be those who balance speed with strategy �–using AI to create sustainable influence, 
+               The winners will be those who balance speed with strategy �—using AI to create sustainable influence, 
                not just temporary hype.
              </p>
            </div>
@@ -2141,7 +2141,7 @@ const BlogPost = () => {
              The launch of GPT-5 is not just another tech upgrade.
            </p>
            <p className="text-lg text-mystic-300 leading-relaxed mb-6">
-             It's a sign of the times �–a spark in the global shift brought by the Period 9 Fire Luck Cycle.
+             It's a sign of the times �—a spark in the global shift brought by the Period 9 Fire Luck Cycle.
            </p>
            <p className="text-lg text-mystic-300 leading-relaxed mb-6">
              If you embrace the tools of this era and align with its energetic rhythm, you can ride the wave of innovation 
@@ -2150,7 +2150,7 @@ const BlogPost = () => {
            <div className="bg-gradient-to-r from-gold-900/30 to-yellow-900/30 p-8 rounded-2xl border border-gold-500/20 mb-8">
              <p className="text-xl text-mystic-200 leading-relaxed mb-4 italic text-center">
                The question is:<br>
-               Will you let the Fire burn past you, or will you light your own torch and lead the way–
+               Will you let the Fire burn past you, or will you light your own torch and lead the way—
              </p>
            </div>
          </div>
@@ -2207,7 +2207,7 @@ const BlogPost = () => {
     })
   }
 
-  // 结构化数�–
+  // 结构化数�—
   const structuredData = {
     "@context": "https://schema.org",
     "@type": "BlogPosting",
@@ -2245,8 +2245,8 @@ const BlogPost = () => {
     },
     "url": `https://fatepath.me/blog/${post.slug}`,
     "articleSection": post.categoryLabel || "Chinese Astrology",
-    "keywords": post.tags – post.tags.join(', ') : "Bazi, Chinese Astrology, Fortune, Destiny",
-    "wordCount": post.content – post.content.length : 0,
+    "keywords": post.tags — post.tags.join(', ') : "Bazi, Chinese Astrology, Fortune, Destiny",
+    "wordCount": post.content — post.content.length : 0,
     "timeRequired": post.readTime || "5 min read",
     "inLanguage": "en-US",
     "isAccessibleForFree": true,
@@ -2258,7 +2258,7 @@ const BlogPost = () => {
       <SEO 
         title={post.title}
         description={post.excerpt}
-        keywords={post.tags – post.tags.join(', ') : 'Bazi, Chinese Astrology, Fortune, Destiny'}
+        keywords={post.tags — post.tags.join(', ') : 'Bazi, Chinese Astrology, Fortune, Destiny'}
         canonical={`https://fatepath.me/blog/${post.slug}`}
         ogImage={`https://fatepath.me${post.image}`}
         ogType="article"
@@ -2427,7 +2427,7 @@ const BlogPost = () => {
                 {/* Facebook */}
                 <button 
                   onClick={() => {
-                    const url = `https://www.facebook.com/sharer/sharer.php–u=${encodeURIComponent(window.location.href)}`;
+                    const url = `https://www.facebook.com/sharer/sharer.php—u=${encodeURIComponent(window.location.href)}`;
                     window.open(url, '_blank', 'width=600,height=400');
                   }}
                   className="p-3 bg-blue-600 hover:bg-blue-700 text-white rounded-lg transition-colors flex items-center space-x-2"
@@ -2442,7 +2442,7 @@ const BlogPost = () => {
                 <button 
                   onClick={() => {
                     const text = `📖 ${post.title}\n\n${post.excerpt}\n\nRead more at FatePath.me`;
-                    const url = `https://twitter.com/intent/tweet–text=${encodeURIComponent(text)}&url=${encodeURIComponent(window.location.href)}`;
+                    const url = `https://twitter.com/intent/tweet—text=${encodeURIComponent(text)}&url=${encodeURIComponent(window.location.href)}`;
                     window.open(url, '_blank', 'width=600,height=400');
                   }}
                   className="p-3 bg-black hover:bg-gray-800 text-white rounded-lg transition-colors flex items-center space-x-2"
@@ -2456,7 +2456,7 @@ const BlogPost = () => {
                 {/* LinkedIn */}
                 <button 
                   onClick={() => {
-                    const url = `https://www.linkedin.com/sharing/share-offsite/–url=${encodeURIComponent(window.location.href)}`;
+                    const url = `https://www.linkedin.com/sharing/share-offsite/—url=${encodeURIComponent(window.location.href)}`;
                     window.open(url, '_blank', 'width=600,height=400');
                   }}
                   className="p-3 bg-blue-700 hover:bg-blue-800 text-white rounded-lg transition-colors flex items-center space-x-2"
@@ -2471,7 +2471,7 @@ const BlogPost = () => {
                 <button 
                   onClick={() => {
                     const text = `📖 ${post.title}\n\n${post.excerpt}\n\nRead more at FatePath.me`;
-                    const url = `https://wa.me/–text=${encodeURIComponent(text + '\n\n' + window.location.href)}`;
+                    const url = `https://wa.me/—text=${encodeURIComponent(text + '\n\n' + window.location.href)}`;
                     window.open(url, '_blank');
                   }}
                   className="p-3 bg-green-600 hover:bg-green-700 text-white rounded-lg transition-colors flex items-center space-x-2"
