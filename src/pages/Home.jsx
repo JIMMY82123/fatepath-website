@@ -3,71 +3,73 @@ import { motion } from 'framer-motion'
 import { Link } from 'react-router-dom'
 import SEO from '../components/SEO'
 import LazyImage from '../components/LazyImage'
+import { generateAvatarUrls } from '../utils/aiAvatarGenerator'
 
 const Home = () => {
   const [currentTestimonial, setCurrentTestimonial] = useState(0)
   const [currentCelebrity, setCurrentCelebrity] = useState(0)
+
+  const [testimonialsWithAvatars, setTestimonialsWithAvatars] = useState([])
+
+  // 生成AI头像
+  useEffect(() => {
+    const testimonialsWithAI = generateAvatarUrls(testimonials)
+    setTestimonialsWithAvatars(testimonialsWithAI)
+  }, [])
 
   const testimonials = [
     {
       name: "Emma Rodriguez",
       role: "Entrepreneur",
       content: "The BaZi reading completely changed my perspective on career timing. I made a major business decision based on the insights, and it's been incredibly successful.",
-      avatar: "/images/testimonials/emma-rodriguez.jpg?v=2"
+      avatar: "/images/testimonials/emma-rodriguez.jpg"
     },
     {
       name: "Michael Chen",
       role: "Software Engineer",
       content: "I was skeptical at first, but the love compatibility analysis was spot on. It helped me understand my relationship dynamics better than any therapy session.",
-      avatar: "/images/testimonials/michael-chen.jpg?v=2"
+      avatar: "/images/testimonials/michael-chen.jpg"
     },
     {
       name: "Sarah Johnson",
       role: "Marketing Director",
       content: "The wealth analysis revealed patterns I never noticed. I've been making better financial decisions since my reading, and the results speak for themselves.",
-      avatar: "/images/testimonials/sarah-johnson.jpg?v=2"
+      avatar: "/images/testimonials/sarah-johnson.jpg"
     },
     {
       name: "David Kim",
       role: "Financial Advisor",
-      content: "As a financial professional, I was impressed by the accuracy of the wealth timing predictions. This ancient wisdom has modern applications that really work.",
-      avatar: "/images/testimonials/emma-rodriguez.jpg?v=2"
+      content: "As a financial professional, I was impressed by the accuracy of the wealth timing predictions. This ancient wisdom has modern applications that really work."
     },
     {
       name: "Lisa Wang",
       role: "HR Manager",
-      content: "The career guidance from my BaZi reading helped me make the right move at the perfect time. I got a 40% salary increase and better work-life balance.",
-      avatar: "/images/testimonials/michael-chen.jpg?v=2"
+      content: "The career guidance from my BaZi reading helped me make the right move at the perfect time. I got a 40% salary increase and better work-life balance."
     },
     {
       name: "Robert Martinez",
       role: "Small Business Owner",
-      content: "I used the wealth analysis to time my business expansion. The results were incredible - my revenue doubled within 6 months of following the guidance.",
-      avatar: "/images/testimonials/sarah-johnson.jpg?v=2"
+      content: "I used the wealth analysis to time my business expansion. The results were incredible - my revenue doubled within 6 months of following the guidance."
     },
     {
       name: "Jennifer Lee",
       role: "Teacher",
-      content: "The love compatibility reading helped me understand why my previous relationships failed and what to look for in a partner. I'm now happily married!",
-      avatar: "/images/testimonials/emma-rodriguez.jpg?v=2"
+      content: "The love compatibility reading helped me understand why my previous relationships failed and what to look for in a partner. I'm now happily married!"
     },
     {
       name: "Alex Thompson",
       role: "Real Estate Agent",
-      content: "The timing predictions for property investments were spot on. I bought and sold at the perfect moments, maximizing my profits significantly.",
-      avatar: "/images/testimonials/michael-chen.jpg?v=2"
+      content: "The timing predictions for property investments were spot on. I bought and sold at the perfect moments, maximizing my profits significantly."
     },
     {
       name: "Maria Garcia",
       role: "Nurse",
-      content: "I was going through a difficult time and the BaZi reading gave me clarity about my life purpose. It's amazing how accurate the personality analysis was.",
-      avatar: "/images/testimonials/sarah-johnson.jpg?v=2"
+      content: "I was going through a difficult time and the BaZi reading gave me clarity about my life purpose. It's amazing how accurate the personality analysis was."
     },
     {
       name: "James Wilson",
       role: "Consultant",
-      content: "The wealth analysis identified my money patterns and helped me break negative cycles. My financial situation has improved dramatically since then.",
-      avatar: "/images/testimonials/emma-rodriguez.jpg?v=2"
+      content: "The wealth analysis identified my money patterns and helped me break negative cycles. My financial situation has improved dramatically since then."
     }
   ]
 
@@ -315,7 +317,7 @@ const Home = () => {
               >
                 <div className="flex items-center justify-center mb-6">
                   <LazyImage
-                    src={testimonials[currentTestimonial].avatar}
+                    src={testimonialsWithAvatars[currentTestimonial]?.avatar || testimonials[currentTestimonial].avatar}
                     alt={`${testimonials[currentTestimonial].name} - ${testimonials[currentTestimonial].role}`}
                     className="w-16 h-16 rounded-full object-cover"
                   />

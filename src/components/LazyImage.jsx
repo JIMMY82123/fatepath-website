@@ -44,26 +44,8 @@ const LazyImage = ({
   }
 
   const handleError = () => {
-    // 如果主图片加载失败，使用智能哈希算法分配默认头像
-    const realAvatars = [
-      '/images/testimonials/emma-rodriguez.jpg?v=2',
-      '/images/testimonials/michael-chen.jpg?v=2', 
-      '/images/testimonials/sarah-johnson.jpg?v=2'
-    ]
-    
-    // 使用简单的字符串哈希来确保相同路径总是得到相同头像
-    let hash = 0
-    for (let i = 0; i < src.length; i++) {
-      const char = src.charCodeAt(i)
-      hash = ((hash << 5) - hash) + char
-      hash = hash & hash // 转换为32位整数
-    }
-    
-    // 使用哈希值选择默认头像
-    const avatarIndex = Math.abs(hash) % realAvatars.length
-    const defaultAvatar = realAvatars[avatarIndex]
-    
-    setImageSrc(defaultAvatar)
+    // 如果主图片加载失败，显示默认头像
+    setImageSrc('/images/testimonials/emma-rodriguez.jpg')
     setIsLoaded(true)
   }
 
