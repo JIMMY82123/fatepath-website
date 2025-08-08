@@ -293,7 +293,7 @@ const BlogPost = () => {
           </div>
         </div>
 
-        <!-- The 12 Zodiac Signs Section -->
+                  <!-- The 12 Zodiac Signs Section -->
         <div className="mb-12">
           <div className="flex items-center mb-8">
             <div className="w-12 h-12 bg-gradient-to-r from-orange-500 to-red-600 rounded-full flex items-center justify-center mr-4">
@@ -305,6 +305,97 @@ const BlogPost = () => {
           <p className="text-lg text-mystic-300 leading-relaxed mb-8">
             Most people know their Chinese zodiac sign, like "I'm a Tiger" or "She's a Rabbit." But that's just the beginning of your cosmic story.
           </p>
+          
+          <!-- Chinese Zodiac Animals Table -->
+          <div className="bg-gradient-to-br from-mystic-800/60 to-mystic-900/60 p-8 rounded-3xl border border-gold-500/30 mb-8">
+            <h3 className="text-2xl font-cinzel font-semibold text-gold-400 mb-6 text-center">The 12 Chinese Zodiac Animals</h3>
+            <div className="overflow-x-auto">
+              <table className="w-full text-sm">
+                <thead>
+                  <tr className="border-b border-gold-500/30">
+                    <th className="text-left p-3 text-gold-400 font-semibold">Animal</th>
+                    <th className="text-left p-3 text-gold-400 font-semibold">Years</th>
+                    <th className="text-left p-3 text-gold-400 font-semibold">Element</th>
+                    <th className="text-left p-3 text-gold-400 font-semibold">Personality</th>
+                  </tr>
+                </thead>
+                <tbody className="text-mystic-300">
+                  <tr className="border-b border-gold-500/20">
+                    <td className="p-3 font-medium">🐀 Rat</td>
+                    <td className="p-3">2020, 2008, 1996, 1984</td>
+                    <td className="p-3">Water</td>
+                    <td className="p-3">Quick-witted, resourceful, ambitious</td>
+                  </tr>
+                  <tr className="border-b border-gold-500/20">
+                    <td className="p-3 font-medium">🐂 Ox</td>
+                    <td className="p-3">2021, 2009, 1997, 1985</td>
+                    <td className="p-3">Earth</td>
+                    <td className="p-3">Diligent, dependable, determined</td>
+                  </tr>
+                  <tr className="border-b border-gold-500/20">
+                    <td className="p-3 font-medium">🐅 Tiger</td>
+                    <td className="p-3">2022, 2010, 1998, 1986</td>
+                    <td className="p-3">Wood</td>
+                    <td className="p-3">Brave, confident, competitive</td>
+                  </tr>
+                  <tr className="border-b border-gold-500/20">
+                    <td className="p-3 font-medium">🐇 Rabbit</td>
+                    <td className="p-3">2023, 2011, 1999, 1987</td>
+                    <td className="p-3">Wood</td>
+                    <td className="p-3">Quiet, elegant, kind</td>
+                  </tr>
+                  <tr className="border-b border-gold-500/20">
+                    <td className="p-3 font-medium">🐉 Dragon</td>
+                    <td className="p-3">2024, 2012, 2000, 1988</td>
+                    <td className="p-3">Earth</td>
+                    <td className="p-3">Confident, intelligent, enthusiastic</td>
+                  </tr>
+                  <tr className="border-b border-gold-500/20">
+                    <td className="p-3 font-medium">🐍 Snake</td>
+                    <td className="p-3">2025, 2013, 2001, 1989</td>
+                    <td className="p-3">Fire</td>
+                    <td className="p-3">Enigmatic, intelligent, wise</td>
+                  </tr>
+                  <tr className="border-b border-gold-500/20">
+                    <td className="p-3 font-medium">🐎 Horse</td>
+                    <td className="p-3">2026, 2014, 2002, 1990</td>
+                    <td className="p-3">Fire</td>
+                    <td className="p-3">Animated, active, energetic</td>
+                  </tr>
+                  <tr className="border-b border-gold-500/20">
+                    <td className="p-3 font-medium">🐐 Goat</td>
+                    <td className="p-3">2027, 2015, 2003, 1991</td>
+                    <td className="p-3">Earth</td>
+                    <td className="p-3">Calm, gentle, sympathetic</td>
+                  </tr>
+                  <tr className="border-b border-gold-500/20">
+                    <td className="p-3 font-medium">🐒 Monkey</td>
+                    <td className="p-3">2028, 2016, 2004, 1992</td>
+                    <td className="p-3">Metal</td>
+                    <td className="p-3">Sharp, smart, curious</td>
+                  </tr>
+                  <tr className="border-b border-gold-500/20">
+                    <td className="p-3 font-medium">🐓 Rooster</td>
+                    <td className="p-3">2029, 2017, 2005, 1993</td>
+                    <td className="p-3">Metal</td>
+                    <td className="p-3">Observant, hardworking, courageous</td>
+                  </tr>
+                  <tr className="border-b border-gold-500/20">
+                    <td className="p-3 font-medium">🐕 Dog</td>
+                    <td className="p-3">2030, 2018, 2006, 1994</td>
+                    <td className="p-3">Earth</td>
+                    <td className="p-3">Loyal, honest, friendly</td>
+                  </tr>
+                  <tr>
+                    <td className="p-3 font-medium">🐖 Pig</td>
+                    <td className="p-3">2031, 2019, 2007, 1995</td>
+                    <td className="p-3">Water</td>
+                    <td className="p-3">Compassionate, generous, diligent</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
           
           <!-- Zodiac Features Grid -->
           <div className="bg-gradient-to-br from-mystic-800/60 to-mystic-900/60 p-8 rounded-3xl border border-gold-500/30 mb-8">
@@ -870,6 +961,49 @@ const BlogPost = () => {
               </div>
             </div>
           </div>
+          
+          <!-- Historical Fire Years Analysis Table -->
+          <div className="bg-gradient-to-br from-red-900/40 to-orange-900/30 p-8 rounded-3xl border border-red-500/30 mb-8">
+            <h3 className="text-2xl font-cinzel font-semibold text-red-400 mb-6 text-center">Historical Fire Years & Market Events</h3>
+            <div className="overflow-x-auto">
+              <table className="w-full text-sm">
+                <thead>
+                  <tr className="border-b border-red-500/30">
+                    <th className="text-left p-3 text-red-400 font-semibold">Fire Year</th>
+                    <th className="text-left p-3 text-red-400 font-semibold">Chinese Year</th>
+                    <th className="text-left p-3 text-red-400 font-semibold">Major Market Events</th>
+                    <th className="text-left p-3 text-red-400 font-semibold">Economic Impact</th>
+                  </tr>
+                </thead>
+                <tbody className="text-mystic-300">
+                  <tr className="border-b border-red-500/20">
+                    <td className="p-3 font-medium">2008</td>
+                    <td className="p-3">戊子 (Earth Rat)</td>
+                    <td className="p-3">Global Financial Crisis</td>
+                    <td className="p-3">Market crash, bank failures, recession</td>
+                  </tr>
+                  <tr className="border-b border-red-500/20">
+                    <td className="p-3 font-medium">2016</td>
+                    <td className="p-3">丙申 (Fire Monkey)</td>
+                    <td className="p-3">Brexit, Trump election</td>
+                    <td className="p-3">Market volatility, political uncertainty</td>
+                  </tr>
+                  <tr className="border-b border-red-500/20">
+                    <td className="p-3 font-medium">2020</td>
+                    <td className="p-3">庚子 (Metal Rat)</td>
+                    <td className="p-3">COVID-19 pandemic</td>
+                    <td className="p-3">Market crash, economic shutdown</td>
+                  </tr>
+                  <tr>
+                    <td className="p-3 font-medium">2025</td>
+                    <td className="p-3">乙巳 (Wood Snake)</td>
+                    <td className="p-3">Current market rally</td>
+                    <td className="p-3">False recovery, crisis brewing</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
         </div>
       `,
       category: "market-analysis",
@@ -923,6 +1057,61 @@ const BlogPost = () => {
           represents different aspects of life and personality traits. Understanding the balance and interaction 
           of these elements in your chart is crucial for accurate interpretation.
         </p>
+        
+        <!-- Five Elements Table -->
+        <div className="bg-gradient-to-br from-mystic-800/60 to-mystic-900/60 p-8 rounded-3xl border border-gold-500/30 mb-8">
+          <h3 className="text-2xl font-cinzel font-semibold text-gold-400 mb-6 text-center">The Five Elements in BaZi Analysis</h3>
+          <div className="overflow-x-auto">
+            <table className="w-full text-sm">
+              <thead>
+                <tr className="border-b border-gold-500/30">
+                  <th className="text-left p-3 text-gold-400 font-semibold">Element</th>
+                  <th className="text-left p-3 text-gold-400 font-semibold">Nature</th>
+                  <th className="text-left p-3 text-gold-400 font-semibold">Personality Traits</th>
+                  <th className="text-left p-3 text-gold-400 font-semibold">Career Paths</th>
+                  <th className="text-left p-3 text-gold-400 font-semibold">Life Areas</th>
+                </tr>
+              </thead>
+              <tbody className="text-mystic-300">
+                <tr className="border-b border-gold-500/20">
+                  <td className="p-3 font-medium">🌳 Wood</td>
+                  <td className="p-3">Growth, expansion</td>
+                  <td className="p-3">Creative, flexible, idealistic</td>
+                  <td className="p-3">Education, arts, planning</td>
+                  <td className="p-3">Family, health, growth</td>
+                </tr>
+                <tr className="border-b border-gold-500/20">
+                  <td className="p-3 font-medium">🔥 Fire</td>
+                  <td className="p-3">Energy, passion</td>
+                  <td className="p-3">Dynamic, charismatic, impulsive</td>
+                  <td className="p-3">Leadership, entertainment, sales</td>
+                  <td className="p-3">Fame, recognition, passion</td>
+                </tr>
+                <tr className="border-b border-gold-500/20">
+                  <td className="p-3 font-medium">🏔️ Earth</td>
+                  <td className="p-3">Stability, nurturing</td>
+                  <td className="p-3">Reliable, practical, caring</td>
+                  <td className="p-3">Agriculture, real estate, service</td>
+                  <td className="p-3">Home, relationships, security</td>
+                </tr>
+                <tr className="border-b border-gold-500/20">
+                  <td className="p-3 font-medium">⚔️ Metal</td>
+                  <td className="p-3">Precision, strength</td>
+                  <td className="p-3">Determined, organized, disciplined</td>
+                  <td className="p-3">Finance, law, engineering</td>
+                  <td className="p-3">Wealth, career, authority</td>
+                </tr>
+                <tr>
+                  <td className="p-3 font-medium">💧 Water</td>
+                  <td className="p-3">Wisdom, flow</td>
+                  <td className="p-3">Intelligent, adaptable, intuitive</td>
+                  <td className="p-3">Research, travel, communication</td>
+                  <td className="p-3">Knowledge, wisdom, travel</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
 
         <div className="bg-gradient-to-r from-mystic-800 to-mystic-900 p-6 rounded-xl border border-gold-500/30 mb-8">
           <h3 className="text-xl font-cinzel font-semibold text-gold-400 mb-4">Key Insights from Your Bazi Chart:</h3>
