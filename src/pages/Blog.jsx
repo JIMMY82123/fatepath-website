@@ -433,7 +433,7 @@ const Blog = () => {
                 
                 {/* Category Badge */}
                 <div className="absolute top-4 left-4">
-                  <span className="px-3 py-1 bg-gold-500/90 text-black text-xs font-semibold rounded-full">
+                  <span className="px-3 py-1 bg-gold-500/90 text-black text-sm font-semibold rounded-full">
                     {post.categoryLabel}
                   </span>
                 </div>
@@ -442,7 +442,7 @@ const Blog = () => {
               {/* Article Content */}
               <div className="p-4 sm:p-6">
                 {/* Meta Information */}
-                <div className="flex items-center space-x-3 sm:space-x-4 text-xs sm:text-sm text-mystic-400 mb-3">
+                <div className="flex items-center space-x-3 sm:space-x-4 text-sm sm:text-sm text-mystic-400 mb-3">
                   <div className="flex items-center space-x-1">
                     <Calendar className="h-3 w-3 sm:h-4 sm:w-4" />
                     <span>{formatDate(post.date)}</span>
@@ -459,7 +459,7 @@ const Blog = () => {
                 </h2>
 
                 {/* Excerpt */}
-                <p className="text-xs sm:text-sm text-mystic-300 leading-relaxed mb-4">
+                <p className="text-sm sm:text-sm text-mystic-300 leading-relaxed mb-4">
                   {post.excerpt}
                 </p>
 
