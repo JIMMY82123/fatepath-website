@@ -1,7 +1,7 @@
 import { useState, useEffect, useRef, useMemo } from 'react'
 import { motion } from 'framer-motion'
 
-const LazyImage = ({ 
+const EnhancedImage = ({ 
   src, 
   alt, 
   className = '', 
@@ -10,13 +10,54 @@ const LazyImage = ({
   fallbackSrc = '/images/testimonials/emma-rodriguez.jpg',
   showSkeleton = true,
   showLoadingSpinner = true,
+  mobileSrc = null,
+  tabletSrc = null,
+  sizes = "100vw",
+  priority = false,
+  webpSupport = true,
   ...props 
 }) => {
   const [isLoaded, setIsLoaded] = useState(false)
-  const [isInView, setIsInView] = useState(false)
+  const [isInView, setIsInView] = useState(priority)
   const [imageSrc, setImageSrc] = useState('')
   const [hasError, setHasError] = useState(false)
   const imgRef = useRef(null)
+  const observerRef = useRef(null)
+
+  // 检测设备类型
+  const isMobile = () => window.innerWidth <= 768
+  const isTablet = () => window.innerWidth <= 1024 && window.innerWidth > 768
+
+  // 获取最佳图片源
+  const getBestSrc = useMemo(() => {
+    if (isMobile() && mobileSrc) return mobileSrc
+    if (isTablet() && tabletSrc) return tabletSrc
+    return src
+  }, [src, mobileSrc, tabletSrc])
+
+  // 生成响应式图片源
+  const generateSrcSet = useMemo(() => {
+    const baseSrc = src
+    const mobileSrcSet = mobileSrc ? `${mobileSrc} 768w` : ''
+    const tabletSrcSet = tabletSrc ? `${tabletSrc} 1024w` : ''
+    const desktopSrcSet = `${baseSrc} 1200w`
+    
+    return [mobileSrcSet, tabletSrcSet, desktopSrcSet]
+      .filter(Boolean)
+      .join(', ')
+  }, [src, mobileSrc, tabletSrc])
+
+  // 生成WebP源
+  const generateWebPSrc = useMemo(() => {
+    if (!webpSupport) return null
+    const currentSrc = getBestSrc
+    if (!currentSrc) return null
+    
+    // 如果已经是WebP格式，直接返回
+    if (currentSrc.includes('.webp')) return currentSrc
+    // 否则尝试生成WebP路径
+    return currentSrc.replace(/\.(jpg|jpeg|png)$/i, '.webp')
+  }, [getBestSrc, webpSupport])
 
   // 使用 useMemo 优化占位符计算
   const placeholderElement = useMemo(() => {
@@ -31,12 +72,19 @@ const LazyImage = ({
     return null
   }, [placeholder, showSkeleton])
 
+  // 懒加载观察器
   useEffect(() => {
+    if (priority) {
+      setIsInView(true)
+      setImageSrc(getBestSrc)
+      return
+    }
+
     const observer = new IntersectionObserver(
       ([entry]) => {
         if (entry.isIntersecting) {
           setIsInView(true)
-          setImageSrc(src)
+          setImageSrc(getBestSrc)
           observer.disconnect()
         }
       },
@@ -48,14 +96,15 @@ const LazyImage = ({
 
     if (imgRef.current) {
       observer.observe(imgRef.current)
+      observerRef.current = observer
     }
 
     return () => {
-      if (imgRef.current) {
-        observer.unobserve(imgRef.current)
+      if (observerRef.current) {
+        observerRef.current.disconnect()
       }
     }
-  }, [src, threshold])
+  }, [getBestSrc, threshold, priority])
 
   const handleLoad = () => {
     setIsLoaded(true)
@@ -65,7 +114,7 @@ const LazyImage = ({
   const handleError = () => {
     setHasError(true)
     // 如果主图片加载失败，显示备用图片
-    if (fallbackSrc && fallbackSrc !== src) {
+    if (fallbackSrc && fallbackSrc !== getBestSrc) {
       setImageSrc(fallbackSrc)
       setIsLoaded(false) // 重置加载状态以显示加载指示器
     } else {
@@ -96,28 +145,49 @@ const LazyImage = ({
       transition={{ duration: 0.3 }}
     >
       {/* 占位符 */}
-      {!isLoaded && placeholderElement}
+      {!isLoaded && !hasError && placeholderElement}
       
       {/* 错误占位符 */}
       {errorPlaceholder}
       
       {/* 实际图片 */}
-      {imageSrc && (
-        <img
-          src={imageSrc}
-          alt={alt}
-          className={`w-full h-full object-cover transition-opacity duration-300 ${
-            isLoaded ? 'opacity-100' : 'opacity-0'
-          }`}
-          onLoad={handleLoad}
-          onError={handleError}
-          loading="lazy"
-          {...props}
-        />
+      {isInView && !hasError && (
+        <picture>
+          {/* WebP格式支持 */}
+          {generateWebPSrc && (
+            <source
+              srcSet={generateWebPSrc}
+              type="image/webp"
+              sizes={sizes}
+            />
+          )}
+          
+          {/* 响应式图片源 */}
+          {generateSrcSet && (
+            <source
+              srcSet={generateSrcSet}
+              sizes={sizes}
+            />
+          )}
+
+          {/* 默认图片 */}
+          <motion.img
+            src={imageSrc}
+            alt={alt}
+            className={`w-full h-full object-cover transition-opacity duration-300 ${
+              isLoaded ? 'opacity-100' : 'opacity-0'
+            }`}
+            onLoad={handleLoad}
+            onError={handleError}
+            loading={priority ? "eager" : "lazy"}
+            decoding="async"
+            {...props}
+          />
+        </picture>
       )}
       
       {/* 加载指示器 */}
-      {!isLoaded && isInView && showLoadingSpinner && (
+      {!isLoaded && isInView && showLoadingSpinner && !hasError && (
         <div className="absolute inset-0 flex items-center justify-center">
           <div className="w-8 h-8 border-2 border-gold-400 border-t-transparent rounded-full animate-spin" />
         </div>
@@ -126,4 +196,4 @@ const LazyImage = ({
   )
 }
 
-export default LazyImage
+export default EnhancedImage

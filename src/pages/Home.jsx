@@ -91,29 +91,43 @@ const Home = () => {
     }
   ]
 
-  const blogPosts = [
+  // Latest articles data - sorted by date (newest first)
+  const latestArticles = [
     {
-      title: "BaZi vs MBTI: Understanding Personality Through Different Lenses",
-      excerpt: "Explore how traditional Chinese BaZi analysis compares to modern MBTI personality typing...",
-      image: "/images/blog/bazi-mbti-comparison.jpg",
+      id: 1,
+      title: "Understanding Your BaZi Chart: A Beginner's Guide",
+      excerpt: "Master the fundamentals of BaZi (八字) analysis and discover how your birth chart reveals your life's blueprint, personality traits, and destiny path through ancient Chinese wisdom.",
+      category: 'bazi',
+      tags: ['BaZi', 'Chinese Astrology', 'Destiny', 'Five Elements'],
+      image: "/images/blog/bazi-beginners-guide-cover.jpg",
       date: "2024-01-15",
-      readTime: "5 min read"
+      readTime: "5 min read",
+      slug: "understanding-bazi-chart-beginners-guide"
     },
     {
-      title: "The Four Seasons of Fate: How Your Birth Season Influences Your Life Path",
-      excerpt: "Discover how the season of your birth shapes your personality, strengths, and life journey...",
-      image: "/images/blog/seasons-fate-cover.jpg",
+      id: 2,
+      title: "The Five Elements in Love: Finding Your Perfect Match",
+      excerpt: "Unlock the secrets of romantic compatibility through the Five Elements (五行) system. Learn how Wood, Fire, Earth, Metal, and Water energies create harmony or conflict in relationships.",
+      category: 'love',
+      tags: ['Love', 'Five Elements', 'Relationships', 'Compatibility'],
+      image: "/images/blog/five-elements-love-cover.jpg",
       date: "2024-01-10",
-      readTime: "7 min read"
+      readTime: "7 min read",
+      slug: "five-elements-love-perfect-match"
     },
     {
-      title: "Bitcoin and BaZi: Cryptocurrency Timing Through Ancient Wisdom",
-      excerpt: "Learn how traditional Chinese numerology can guide your cryptocurrency investment timing...",
-      image: "/images/blog/bitcoin-bazi-cover.jpg",
+      id: 3,
+      title: "Wealth Archetypes in Chinese Astrology",
+      excerpt: "Discover your unique wealth personality type through BaZi analysis. Learn how your birth chart reveals your financial potential and the best strategies for wealth accumulation.",
+      category: 'wealth',
+      tags: ['Wealth', 'Career', 'Financial', 'BaZi'],
+      image: "/images/blog/wealth-archetypes-cover.jpg",
       date: "2024-01-05",
-      readTime: "6 min read"
+      readTime: "6 min read",
+      slug: "wealth-archetypes-chinese-astrology"
     }
   ]
+
 
   useEffect(() => {
     const testimonialInterval = setInterval(() => {
@@ -520,11 +534,11 @@ const Home = () => {
                   </div>
         </section>
 
-        {/* Blog Preview */}
+        {/* Latest Articles Section */}
         <section className="py-20 bg-mystic-900">
           <div className="container mx-auto px-4">
-               <motion.div
-                 initial={{ opacity: 0, y: 30 }}
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8 }}
               viewport={{ once: true }}
@@ -534,50 +548,65 @@ const Home = () => {
                 Latest Insights
               </h2>
               <p className="text-xl text-mystic-300">
-                Discover the wisdom of ancient Chinese numerology
+                Discover ancient wisdom through our latest articles
               </p>
-          </motion.div>
+            </motion.div>
 
-            <div className="grid md:grid-cols-3 gap-8">
-              {blogPosts.map((post, index) => (
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+              {latestArticles.map((article, index) => (
                 <motion.article
-                  key={index}
+                  key={article.id}
                   initial={{ opacity: 0, y: 30 }}
                   whileInView={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.8, delay: index * 0.1 }}
+                  transition={{ duration: 0.6, delay: index * 0.1 }}
                   viewport={{ once: true }}
-                  className="bg-mystic-800 rounded-lg overflow-hidden hover:transform hover:scale-105 transition-all duration-300"
+                  className="bg-mystic-800 rounded-lg overflow-hidden hover:transform hover:scale-105 transition-all duration-300 border border-mystic-700/50"
                 >
-                  <LazyImage
-                      src={post.image}
-                    alt={`${post.title} - Blog post thumbnail`}
-                    className="w-full h-48 object-cover"
-                  />
-                  <div className="p-6">
-                    <div className="flex items-center text-sm text-mystic-400 mb-3">
-                      <span>{post.date}</span>
-                      <span className="mx-2">•</span>
-                        <span>{post.readTime}</span>
+                  <Link to={`/blog/${article.slug}`}>
+                    <div className="w-full h-48 bg-mystic-700 overflow-hidden">
+                      <LazyImage
+                        src={article.image}
+                        alt={article.title}
+                        className="w-full h-full object-cover hover:scale-110 transition-transform duration-300"
+                      />
+                    </div>
+                    <div className="p-6">
+                      <div className="flex items-center text-sm text-mystic-300 mb-3">
+                        <span>{article.date}</span>
+                        <span className="mx-2">•</span>
+                        <span>{article.readTime}</span>
                       </div>
-                    <h3 className="text-xl font-bold text-white mb-3">
-                      {post.title}
-                    </h3>
-                    <p className="text-mystic-300 mb-4">
-                      {post.excerpt}
-                    </p>
-                    <Link
-                      to="/blog"
-                      className="text-gold-400 hover:text-gold-300 font-semibold transition-colors"
-                    >
-                      Read More →
-                    </Link>
-                  </div>
+                      <h3 className="text-xl font-bold text-white mb-3 line-clamp-2">
+                        {article.title}
+                      </h3>
+                      <p className="text-mystic-300 mb-4 line-clamp-3">
+                        {article.excerpt}
+                      </p>
+                      
+                      {/* Tags */}
+                      <div className="flex flex-wrap gap-2 mb-4">
+                        {article.tags.slice(0, 2).map((tag, tagIndex) => (
+                          <span
+                            key={tagIndex}
+                            className="px-2 py-1 bg-mystic-700 text-mystic-300 rounded-full text-xs"
+                          >
+                            {tag}
+                          </span>
+                        ))}
+                      </div>
+                      
+                      <div className="flex items-center text-gold-400 hover:text-gold-300 font-semibold transition-colors">
+                        Read More
+                        <span className="ml-2">→</span>
+                      </div>
+                    </div>
+                  </Link>
                 </motion.article>
               ))}
             </div>
 
             <motion.div
-              initial={{ opacity: 0, y: 30 }}
+              initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.3 }}
               viewport={{ once: true }}
@@ -585,15 +614,16 @@ const Home = () => {
             >
               <Link
                 to="/blog"
-                className="bg-gold-400 text-white px-8 py-4 rounded-lg font-semibold hover:bg-gold-500 transition-colors"
+                className="inline-flex items-center px-8 py-4 bg-mystic-700 text-white rounded-lg hover:bg-mystic-600 transition-all duration-300 font-semibold"
               >
                 View All Articles
+                <span className="ml-2">→</span>
               </Link>
             </motion.div>
-            </div>
+          </div>
         </section>
 
-          {/* CTA Section */}
+        {/* CTA Section */}
         <section className="py-20 bg-gradient-to-r from-mystic-800 to-mystic-900">
           <div className="container mx-auto px-4 text-center">
           <motion.div 

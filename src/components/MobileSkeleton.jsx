@@ -54,35 +54,7 @@ export const MobileListSkeleton = ({ count = 3 }) => (
   </div>
 )
 
-// 移动端博客文章骨架屏
-export const MobileBlogSkeleton = () => (
-  <div className="space-y-4 sm:space-y-6">
-    {/* 文章标题 */}
-    <div className="space-y-2">
-      <MobileSkeleton height="h-6 sm:h-8" width="w-full" delay={0} />
-      <MobileSkeleton height="h-4 sm:h-5" width="w-3/4" delay={1} />
-    </div>
-    
-    {/* 文章图片 */}
-    <MobileSkeleton height="h-48 sm:h-64" width="w-full" rounded="rounded-lg" delay={2} />
-    
-    {/* 文章内容 */}
-    <div className="space-y-3">
-      <MobileSkeleton height="h-4" width="w-full" delay={3} />
-      <MobileSkeleton height="h-4" width="w-full" delay={4} />
-      <MobileSkeleton height="h-4" width="w-2/3" delay={5} />
-      <MobileSkeleton height="h-4" width="w-full" delay={6} />
-      <MobileSkeleton height="h-4" width="w-3/4" delay={7} />
-    </div>
-    
-    {/* 标签 */}
-    <div className="flex flex-wrap gap-2">
-      <MobileSkeleton height="h-6" width="w-16" rounded="rounded-full" delay={8} />
-      <MobileSkeleton height="h-6" width="w-20" rounded="rounded-full" delay={9} />
-      <MobileSkeleton height="h-6" width="w-14" rounded="rounded-full" delay={10} />
-    </div>
-  </div>
-)
+
 
 // 移动端表单骨架屏
 export const MobileFormSkeleton = () => (

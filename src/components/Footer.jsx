@@ -81,15 +81,16 @@ const Footer = () => {
                 </Link>
               </li>
               <li>
-                <Link to="/free-bazi-report" className="text-sm sm:text-base text-mystic-300 hover:text-gold-400 transition-colors duration-300">
-                  Free Bazi Report
-                </Link>
-              </li>
-              <li>
                 <Link to="/blog" className="text-sm sm:text-base text-mystic-300 hover:text-gold-400 transition-colors duration-300">
                   Blog
                 </Link>
               </li>
+              <li>
+                <Link to="/free-bazi-report" className="text-sm sm:text-base text-mystic-300 hover:text-gold-400 transition-colors duration-300">
+                  Free Bazi Report
+                </Link>
+              </li>
+
               <li>
                 <GPTButton variant="footer" />
               </li>

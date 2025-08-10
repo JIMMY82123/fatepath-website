@@ -8,7 +8,6 @@ import { PageLoader } from './components/LoadingSpinner'
 // 懒加载页面组件
 const Home = lazy(() => import('./pages/Home'))
 const Services = lazy(() => import('./pages/Services'))
-const Blog = lazy(() => import('./pages/Blog'))
 const Contact = lazy(() => import('./pages/Contact'))
 const FAQ = lazy(() => import('./pages/FAQ'))
 const Testimonials = lazy(() => import('./pages/Testimonials'))
@@ -18,10 +17,12 @@ const BaziFormDiscount = lazy(() => import('./pages/BaziFormDiscount'))
 const LoveForm = lazy(() => import('./pages/LoveForm'))
 const TalismanForm = lazy(() => import('./pages/TalismanForm'))
 const WealthSign = lazy(() => import('./pages/WealthSign'))
-const BlogPost = lazy(() => import('./pages/BlogPost'))
 const PaymentGuide = lazy(() => import('./pages/PaymentGuide'))
 const PaymentSuccess = lazy(() => import('./pages/PaymentSuccess'))
 const Privacy = lazy(() => import('./pages/Privacy'))
+const Blog = lazy(() => import('./pages/Blog'))
+const BlogPost = lazy(() => import('./pages/BlogPost'))
+
 
 function App() {
   return (
@@ -33,7 +34,6 @@ function App() {
             <Routes>
               <Route path="/" element={<Home />} />
               <Route path="/services" element={<Services />} />
-              <Route path="/blog" element={<Blog />} />
               <Route path="/contact" element={<Contact />} />
               <Route path="/faq" element={<FAQ />} />
               <Route path="/testimonials" element={<Testimonials />} />
@@ -43,10 +43,12 @@ function App() {
               <Route path="/love-form" element={<LoveForm />} />
               <Route path="/talisman-form" element={<TalismanForm />} />
               <Route path="/wealth-sign" element={<WealthSign />} />
-              <Route path="/blog/:slug" element={<BlogPost />} />
               <Route path="/payment-guide" element={<PaymentGuide />} />
               <Route path="/payment-success" element={<PaymentSuccess />} />
               <Route path="/privacy" element={<Privacy />} />
+              <Route path="/blog" element={<Blog />} />
+              <Route path="/blog/:slug" element={<BlogPost />} />
+
             </Routes>
           </Suspense>
           <Footer />

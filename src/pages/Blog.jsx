@@ -1,548 +1,265 @@
-import { useState } from 'react'
-import { motion } from 'framer-motion'
-import { Calendar, Clock, ArrowRight, Search, Filter, Share2 } from 'lucide-react'
-import { Link } from 'react-router-dom'
+import React, { useState, useEffect } from 'react'
+import { Link, useSearchParams } from 'react-router-dom'
+import { Tag } from 'lucide-react'
 import SEO from '../components/SEO'
-import LazyImage from '../components/LazyImage'
 
 const Blog = () => {
-  const [searchTerm, setSearchTerm] = useState('')
+  const [searchParams, setSearchParams] = useSearchParams()
   const [selectedCategory, setSelectedCategory] = useState('all')
+  const [selectedTag, setSelectedTag] = useState('all')
 
-  // 分享文章的辅助函数
-  const shareArticle = (post) => {
-    const shareText = `📖 ${post.title}\n\n${post.excerpt}\n\nRead more at FatePath.me`;
-    const shareUrl = `${window.location.origin}/blog/${post.slug}`;
-    
-    if (navigator.share) {
-      navigator.share({
-        title: post.title,
-        text: shareText,
-        url: shareUrl
-      }).catch(err => {
-        console.log('Share failed:', err);
-        // Fallback to copy
-        copyToClipboard(`${shareText}\n\n${shareUrl}`);
-      });
-    } else {
-      // Fallback: copy to clipboard
-      copyToClipboard(`${shareText}\n\n${shareUrl}`);
+  // Handle URL parameters for tags
+  useEffect(() => {
+    const tagFromUrl = searchParams.get('tag')
+    if (tagFromUrl) {
+      setSelectedTag(tagFromUrl)
+      setSelectedCategory('all')
     }
-  };
+  }, [searchParams])
 
-  // 复制到剪贴板的辅助函数
-  const copyToClipboard = async (text) => {
-    try {
-      await navigator.clipboard.writeText(text);
-      // 创建一个临时的成功提示
-      const notification = document.createElement('div');
-      notification.className = 'fixed top-4 right-4 bg-green-600 text-white px-4 py-2 rounded-lg shadow-lg z-50 transform transition-all duration-300';
-      notification.textContent = '文章链接已复制到剪贴板！';
-      document.body.appendChild(notification);
-      
-      // 3秒后移除提示
-      setTimeout(() => {
-        notification.style.transform = 'translateX(100%)';
-        setTimeout(() => {
-          document.body.removeChild(notification);
-        }, 300);
-      }, 2000);
-    } catch (err) {
-      console.error('复制失败:', err);
-      // 后备方案：使用传统的复制方法
-      const textArea = document.createElement('textarea');
-      textArea.value = text;
-      document.body.appendChild(textArea);
-      textArea.select();
-      document.execCommand('copy');
-      document.body.removeChild(textArea);
-      
-      // 显示成功提示
-      const notification = document.createElement('div');
-      notification.className = 'fixed top-4 right-4 bg-green-600 text-white px-4 py-2 rounded-lg shadow-lg z-50 transform transition-all duration-300';
-      notification.textContent = '文章链接已复制到剪贴板！';
-      document.body.appendChild(notification);
-      
-      setTimeout(() => {
-        notification.style.transform = 'translateX(100%)';
-        setTimeout(() => {
-          document.body.removeChild(notification);
-        }, 300);
-      }, 2000);
-    }
-  };
+  const categories = [
+    { id: 'all', name: 'All Articles', count: 8 },
+    { id: 'bazi', name: 'BaZi Analysis', count: 4 },
+    { id: 'love', name: 'Love & Relationships', count: 2 },
+    { id: 'wealth', name: 'Wealth & Career', count: 2 }
+  ]
 
-  // 博客文章数据 - 您可以在这里添加您的文章
   const blogPosts = [
     {
       id: 1,
-      title: "Chinese Astrology: Discover the Ancient Wisdom Guiding Your Destiny",
-      excerpt: "In a world constantly searching for meaning, more people are turning to ancient wisdom for insight and clarity. Discover how Chinese astrology reveals your life's blueprint through the Five Elements and BaZi analysis.",
-      category: "bazi-basics",
-      categoryLabel: "Bazi Basics",
-      date: "2025-08-07",
-      readTime: "15 min read",
-              image: "/images/blog/chinese-astrology-guide.jpg",
-      slug: "chinese-astrology-ancient-wisdom-guiding-destiny"
-    },
-    {
-      id: 2,
-      title: "📈 You Think This Market Rally Is a Turning Point? A Bigger Crisis Is Brewing Beneath the Surface",
-                  excerpt: "In early August 2025, the Dow Jones surged by 580 points. But is this really a turning point, or just the calm before a more devastating storm?",
-      category: "market-analysis",
-      categoryLabel: "Market Analysis",
-      date: "2025-08-05",
-      readTime: "12 min read",
-      image: "/images/blog/market-crisis-2025.svg",
-      slug: "market-rally-turning-point-crisis-2025"
-    },
-    {
-      id: 3,
-      title: "Understanding Your Bazi Chart: A Beginner's Guide",
-                  excerpt: "Learn the fundamentals of Bazi analysis and how your birth chart reveals your life's blueprint. Discover the four pillars in Chinese astrology.",
-      category: "bazi-basics",
-      categoryLabel: "Bazi Basics",
+      title: "Understanding Your BaZi Chart: A Beginner's Guide",
+      excerpt: "Master the fundamentals of BaZi (八字) analysis and discover how your birth chart reveals your life's blueprint, personality traits, and destiny path through ancient Chinese wisdom.",
+      category: 'bazi',
+      tags: ['BaZi', 'Chinese Astrology', 'Destiny', 'Five Elements'],
+      image: "/images/blog/bazi-beginners-guide-cover.jpg",
       date: "2024-01-15",
-      readTime: "8 min read",
-      image: "/images/blog/bazi-basics.svg",
+      readTime: "5 min read",
       slug: "understanding-bazi-chart-beginners-guide"
     },
     {
-      id: 4,
+      id: 2,
       title: "The Five Elements in Love: Finding Your Perfect Match",
-                  excerpt: "Explore how the Five Elements influence romantic compatibility. Discover which elements create harmony and which may lead to challenges.",
-      category: "love-compatibility",
-      categoryLabel: "Love & Relationships",
+      excerpt: "Unlock the secrets of romantic compatibility through the Five Elements (五行) system. Learn how Wood, Fire, Earth, Metal, and Water energies create harmony or conflict in relationships.",
+      category: 'love',
+      tags: ['Love', 'Five Elements', 'Relationships', 'Compatibility'],
+      image: "/images/blog/five-elements-love-cover.jpg",
       date: "2024-01-10",
-      readTime: "12 min read",
-      image: "/images/blog/five-elements-love.svg",
+      readTime: "7 min read",
       slug: "five-elements-love-perfect-match"
     },
     {
-      id: 5,
-      title: "Protection Talismans: Ancient Wisdom for Modern Life",
-                  excerpt: "Discover the power of personalized talismans and how they can enhance your luck and protection based on your unique birth chart.",
-      category: "talismans",
-      categoryLabel: "Talismans & Protection",
+      id: 3,
+      title: "Wealth Archetypes in Chinese Astrology",
+      excerpt: "Discover your unique wealth personality type through BaZi analysis. Learn how your birth chart reveals your financial potential and the best strategies for wealth accumulation.",
+      category: 'wealth',
+      tags: ['Wealth', 'Career', 'Financial', 'BaZi'],
+      image: "/images/blog/wealth-archetypes-cover.jpg",
       date: "2024-01-05",
-      readTime: "10 min read",
-      image: "/images/blog/talismans-protection.svg",
-      slug: "protection-talismans-ancient-wisdom"
+      readTime: "6 min read",
+      slug: "wealth-archetypes-chinese-astrology"
     },
     {
-      id: 6,
+      id: 4,
       title: "Career Timing: When to Make Your Next Big Move",
-                  excerpt: "Learn how to identify the optimal timing for career changes and business ventures using traditional Chinese numerology.",
-      category: "career-timing",
-      categoryLabel: "Career & Timing",
+      excerpt: "Master the art of perfect timing for career changes using traditional Chinese numerology. Learn to read the cosmic signals that indicate when to advance, change, or start new ventures.",
+      category: 'career',
+      tags: ['Career', 'Timing', 'Career Change', 'Destiny'],
+      image: "/images/blog/career-timing-cover.jpg",
       date: "2024-01-01",
-      readTime: "15 min read",
-      image: "/images/blog/career-timing.svg",
+      readTime: "8 min read",
       slug: "career-timing-next-big-move"
-    },
-    {
-      id: 7,
-      title: "2024 Year of the Dragon: Your Fortune Forecast",
-                  excerpt: "Discover what the Year of the Dragon 2024 holds for you based on your Bazi chart. Learn about opportunities and how to maximize your luck this year.",
-      category: "bazi-basics",
-      categoryLabel: "Bazi Basics",
-      date: "2024-01-20",
-      readTime: "14 min read",
-      image: "/images/blog/dragon-year-2024.svg",
-      slug: "2024-year-dragon-fortune-forecast"
-    },
-        {
-          id: 8,
-          title: "When Bitcoin Falls, What Does Destiny Say?",
-          excerpt: "Discover how BaZi destiny charts reveal insights into financial volatility and the August 2025 Bitcoin crash.",
-          category: "career-timing",
-          categoryLabel: "Career & Timing",
-          date: "2025-08-02",
-          readTime: "12 min read",
-          image: "/images/blog/bitcoin-bazi-cover.jpg",
-          slug: "bitcoin-crash-bazi-destiny"
-        },
-        {
-          id: 9,
-          title: "Burned by the Heat: What 2025's Extreme Temperatures Reveal in BaZi",
-                      excerpt: "Explore how global heatwaves reflect Fire element imbalances in Chinese metaphysics and what your BaZi chart reveals about stress and destiny in 2025.",
-          category: "bazi-basics",
-          categoryLabel: "Bazi Basics",
-          date: "2025-08-02",
-          readTime: "10 min read",
-          image: "/images/blog/heatwave-bazi-cover.jpg",
-          slug: "heatwave-bazi-fire-imbalance"
-        },
-        {
-          id: 10,
-          title: "What is the Best Bazi for Wealth? Decoding Your Chinese Astrology Blueprint",
-                      excerpt: "Discover the 3 wealthiest Bazi patterns in Chinese metaphysics and how to activate your financial potential. Based on 10,000+ client cases.",
-          category: "wealth-bazi",
-          categoryLabel: "Wealth & Fortune",
-          date: "2025-08-04",
-          readTime: "18 min read",
-          image: "/images/blog/bazi-wealth-blueprint-cover.jpg",
-          slug: "best-bazi-wealth-chinese-astrology-blueprint"
-        },
-        {
-          id: 11,
-          title: "🌿 The Seasons of Fate: Why You Don't Have to Panic About Every Downturn",
-                      excerpt: "Discover how BaZi reveals that life's challenges are natural cycles, not punishments. Learn to flow with your destiny's seasons.",
-          category: "bazi-basics",
-          categoryLabel: "Bazi Basics",
-          date: "2025-08-04",
-          readTime: "7 min read",
-          image: "/images/blog/seasons-fate-cover.jpg",
-          slug: "seasons-fate-cycles"
-        },
-        {
-          id: 12,
-          title: "BaZi vs. MBTI: East Meets West in Personality and Destiny",
-                      excerpt: "Explore how ancient Chinese BaZi and Western MBTI personality systems complement each other. Discover destiny mapping vs personality typing.",
-          category: "bazi-basics",
-          categoryLabel: "Bazi Basics",
-          date: "2025-08-04",
-          readTime: "11 min read",
-          image: "/images/blog/bazi-mbti-comparison.jpg",
-          slug: "bazi-vs-mbti-personality-destiny"
-        },
-                          {
-          id: 13,
-          title: "Why the Energy of a Solar Eclipse May Align With Lu Gen Planting Rituals",
-                      excerpt: "Discover how celestial events like solar eclipses can amplify collective energy and how ancient Taoist Lu Gen rituals help personalize cosmic shifts.",
-          category: "bazi-basics",
-          categoryLabel: "Bazi Basics",
-          date: "2025-08-06",
-          readTime: "8 min read",
-          image: "/images/blog/solar-eclipse-lu-gen-cover.svg",
-          slug: "solar-eclipse-energy-lu-gen-planting-rituals"
-        },
-        {
-          id: 14,
-          title: "Using BaZi to Predict When Your True Love Will Appear",
-                      excerpt: "Love is one of life's most profound mysteries. But what if ancient Chinese metaphysics could offer clues—not just about if you'll meet your true love, but when?",
-          category: "love-compatibility",
-          categoryLabel: "Love & Relationships",
-          date: "2025-08-06",
-          readTime: "14 min read",
-          image: "/images/blog/bazi-love-timing-cover.svg",
-          slug: "bazi-predict-true-love-timing"
-        },
-        {
-          id: 14,
-          title: "GPT-5 Arrives: A Technological Leap in the Age of Period 9 Fire Luck",
-          excerpt: "Today marks the official launch of GPT-5, the next generation of OpenAI's large language model. While tech enthusiasts discuss its capabilities, there's a deeper layer: this moment perfectly coincides with the beginning of Period 9, the 20-year 'Fire Luck Cycle' in Feng Shui and Chinese metaphysics.",
-          category: "modern-metaphysics",
-          categoryLabel: "Modern Metaphysics",
-          date: "2025-08-08",
-          readTime: "12 min read",
-          image: "/images/blog/gpt5-period9-cover.jpg",
-          slug: "gpt5-period9-fire-luck-technological-leap"
-        }
+    }
   ]
 
-  const categories = [
-    { value: 'all', label: 'All Articles' },
-    { value: 'market-analysis', label: 'Market Analysis' },
-    { value: 'bazi-basics', label: 'Bazi Basics' },
-    { value: 'love-compatibility', label: 'Love & Relationships' },
-    { value: 'talismans', label: 'Talismans & Protection' },
-    { value: 'career-timing', label: 'Career & Timing' },
-    { value: 'wealth-bazi', label: 'Wealth & Fortune' },
-    { value: 'modern-metaphysics', label: 'Modern Metaphysics' }
-  ]
+  // Get all unique tags from blog posts
+  const allTags = ['all', ...Array.from(new Set(blogPosts.flatMap(post => post.tags)))]
 
-  // 过滤文章
+  // Filter blog posts based on category and tag
   const filteredPosts = blogPosts.filter(post => {
-    const matchesSearch = post.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
-                         post.excerpt.toLowerCase().includes(searchTerm.toLowerCase())
     const matchesCategory = selectedCategory === 'all' || post.category === selectedCategory
-    return matchesSearch && matchesCategory
+    const matchesTag = selectedTag === 'all' || post.tags.includes(selectedTag)
+    
+    return matchesCategory && matchesTag
   })
 
-  const formatDate = (dateString) => {
-    const date = new Date(dateString)
-    return date.toLocaleDateString('en-US', {
-      year: 'numeric',
-      month: 'long',
-      day: 'numeric'
-    })
+  const handleTagClick = (tag) => {
+    setSelectedTag(tag)
+    setSelectedCategory('all') // Reset category when selecting a tag
+    
+    // Update URL with tag parameter
+    if (tag === 'all') {
+      setSearchParams({})
+    } else {
+      setSearchParams({ tag })
+    }
+  }
+
+  const handleCategoryClick = (categoryId) => {
+    setSelectedCategory(categoryId)
+    setSelectedTag('all') // Reset tag when selecting a category
   }
 
   return (
     <>
-      <SEO
-        title="Life Direction & Career Guidance Blog | Chinese Astrology Insights | FatePath"
-        description="Feeling lost or stuck in life? Explore ancient Chinese astrology insights and practical guidance for finding your life direction, career path, and personal purpose."
-        keywords="life direction, career guidance, feeling lost, stuck in life, chinese astrology blog, bazi analysis, ancient chinese wisdom, four pillars of destiny, chinese numerology blog, bazi reading insights, traditional chinese astrology, life path guidance, spiritual wisdom, life purpose"
-        canonical="https://fatepath.me/blog"
-        ogImage="https://fatepath.me/images/blog/mystic-wisdom-cover.jpg"
-        ogType="website"
-        structuredData={{
-          "@context": "https://schema.org",
-          "@type": "Blog",
-          "name": "FatePath Life Direction & Career Guidance Blog",
-          "description": "Ancient Chinese astrology insights for life direction and career guidance",
-          "url": "https://fatepath.me/blog",
-          "publisher": {
-            "@type": "Organization",
-            "name": "FatePath",
-            "url": "https://fatepath.me"
-          },
-          "blogPost": blogPosts.map(post => ({
-            "@type": "BlogPosting",
-            "headline": post.title,
-            "description": post.excerpt,
-            "datePublished": post.date,
-            "dateModified": post.date,
-            "author": {
-              "@type": "Person",
-              "name": "Xuan Yin"
-            },
-            "publisher": {
-              "@type": "Organization",
-              "name": "FatePath"
-            },
-            "url": `https://fatepath.me/blog/${post.slug}`,
-            "image": `https://fatepath.me${post.image}`,
-            "mainEntityOfPage": {
-              "@type": "WebPage",
-              "@id": `https://fatepath.me/blog/${post.slug}`
-            }
-          }))
-        }}
+      <SEO 
+        title="Chinese Astrology Blog - Ancient Wisdom for Modern Life | FatePath"
+        description="Discover ancient Chinese numerology insights, practical guidance, and spiritual wisdom."
+        keywords="chinese astrology blog, bazi analysis, chinese numerology"
+        author="FatePath"
+        ogTitle="Chinese Astrology Blog - Ancient Wisdom for Modern Life"
+        ogDescription="Discover ancient Chinese numerology insights, practical guidance, and spiritual wisdom."
+        ogImage="https://fatepath.me/og-image.svg"
+        ogUrl="https://fatepath.me/blog"
       />
-      <div className="min-h-screen pt-16 sm:pt-20 px-4 sm:px-6 lg:px-8">
-      <div className="max-w-7xl mx-auto">
-        {/* Header */}
-        <motion.div 
-          initial={{ opacity: 0, y: 50 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
-          className="text-center mb-12 sm:mb-16"
-        >
-          <h1 className="text-3xl sm:text-4xl md:text-6xl font-playfair font-bold mb-4 sm:mb-6">
-            <span className="gradient-text">Mystic Wisdom</span>
-          </h1>
-          <p className="text-lg sm:text-xl text-mystic-300 max-w-3xl mx-auto leading-relaxed">
-            Feeling lost or stuck in life? Explore ancient Chinese astrology insights, practical BaZi analysis guidance, and spiritual wisdom 
-            to find your life direction and enhance your journey through traditional Chinese numerology.
-          </p>
-        </motion.div>
 
-        {/* Introduction Section */}
-        <motion.div 
-          initial={{ opacity: 0, y: 30 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.2 }}
-          className="mb-12 sm:mb-16"
-        >
-          <div className="max-w-4xl mx-auto">
-            <h2 className="text-2xl sm:text-3xl font-playfair font-semibold mb-6 text-white text-center">
-              Ancient Wisdom for Modern Life
-            </h2>
-            <div className="space-y-6 text-center">
-              <p className="text-lg text-mystic-300 leading-relaxed">
-                Welcome to our collection of insights drawn from thousands of years of Chinese astrology wisdom. Here, you'll find practical guidance on how ancient BaZi principles can help you find your life direction when feeling lost or stuck in life, from career decisions and relationship dynamics to personal growth and spiritual development.
-              </p>
-              <p className="text-lg text-mystic-300 leading-relaxed">
-                Each article is crafted to bridge the gap between traditional Chinese astrology and contemporary life, offering actionable insights that you can apply immediately. Whether you're new to BaZi analysis or a seasoned practitioner, these articles will deepen your understanding of how the Five Elements, Yin-Yang balance, and cosmic timing influence your daily experiences and life direction.
-              </p>
-              <p className="text-lg text-mystic-300 leading-relaxed">
-                Explore our latest articles below, and discover how ancient Chinese astrology wisdom can provide clarity, direction, and empowerment in your modern journey. From understanding your wealth potential to navigating relationship challenges, these insights are designed to help you make informed decisions and align with your true destiny and life purpose.
-              </p>
-            </div>
+      <main className="min-h-screen bg-mystic-900 pt-20">
+        {/* Hero Section */}
+        <section className="py-20 bg-gradient-to-br from-mystic-800 to-mystic-900">
+          <div className="container mx-auto px-4 text-center">
+            <h1 className="text-5xl md:text-6xl font-bold text-white mb-6">
+              Ancient Wisdom
+              <span className="block text-gold-400">Modern Insights</span>
+            </h1>
+            <p className="text-xl text-mystic-300 max-w-3xl mx-auto mb-8">
+              Discover the timeless wisdom of Chinese astrology through expert analysis, 
+              practical guidance, and spiritual insights that illuminate your life's path.
+            </p>
           </div>
-        </motion.div>
+        </section>
 
-        {/* Search and Filter */}
-        <motion.div 
-          initial={{ opacity: 0, y: 30 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.4 }}
-          className="mb-8 sm:mb-12"
-        >
-          <div className="flex flex-col sm:flex-row gap-4 items-center justify-between">
-            {/* Search Bar */}
-            <div className="relative flex-1 max-w-md w-full">
-              <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 h-5 w-5 text-mystic-400" aria-hidden="true" />
-              <label htmlFor="blog-search" className="sr-only">Search articles</label>
-              <input
-                id="blog-search"
-                type="text"
-                placeholder="Search articles..."
-                value={searchTerm}
-                onChange={(e) => setSearchTerm(e.target.value)}
-                className="w-full pl-10 pr-4 py-3 text-base bg-mystic-800/50 border border-mystic-700/50 rounded-lg text-white placeholder-mystic-400 focus:border-gold-500/50 focus:outline-none transition-colors"
-                aria-label="Search articles by title or content"
-              />
+        {/* Category Filter */}
+        <section className="py-12 bg-mystic-900">
+          <div className="container mx-auto px-4">
+            <div className="flex flex-wrap gap-2 justify-center mb-8">
+              {categories.map((category) => (
+                <button
+                  key={category.id}
+                  onClick={() => handleCategoryClick(category.id)}
+                  className={`px-4 py-2 rounded-full text-sm font-medium transition-all duration-200 ${
+                    selectedCategory === category.id
+                      ? 'bg-gold-400 text-white'
+                      : 'bg-mystic-800 text-mystic-300 hover:bg-mystic-700'
+                  }`}
+                >
+                  {category.name} ({category.count})
+                </button>
+              ))}
             </div>
 
-            {/* Category Filter */}
-            <div className="flex items-center space-x-2 w-full sm:w-auto">
-              <Filter className="h-5 w-5 text-mystic-400" aria-hidden="true" />
-              <label htmlFor="category-filter" className="sr-only">Filter by category</label>
-              <select
-                id="category-filter"
-                value={selectedCategory}
-                onChange={(e) => setSelectedCategory(e.target.value)}
-                className="flex-1 sm:flex-none px-4 py-3 text-base bg-mystic-800/50 border border-mystic-700/50 rounded-lg text-white focus:border-gold-500/50 focus:outline-none transition-colors"
-                aria-label="Filter articles by category"
-              >
-                {categories.map(category => (
-                  <option key={category.value} value={category.value}>
-                    {category.label}
-                  </option>
+            {/* Tag Filter */}
+            <div className="text-center">
+              <div className="flex items-center gap-2 mb-4 justify-center">
+                <Tag className="h-5 w-5 text-gold-400" />
+                <h3 className="text-lg font-semibold text-white">Filter by Tags</h3>
+              </div>
+              <div className="flex flex-wrap gap-2 justify-center">
+                {allTags.map((tag) => (
+                  <button
+                    key={tag}
+                    onClick={() => handleTagClick(tag)}
+                    className={`px-3 py-2 rounded-full text-sm font-medium transition-all duration-200 ${
+                      selectedTag === tag
+                        ? 'bg-gold-400 text-white'
+                        : 'bg-mystic-700 text-mystic-300 hover:bg-mystic-600'
+                    }`}
+                  >
+                    {tag === 'all' ? 'All Tags' : tag}
+                  </button>
                 ))}
-              </select>
+              </div>
             </div>
           </div>
-        </motion.div>
+        </section>
 
         {/* Blog Posts Grid */}
-        <motion.div 
-          initial={{ opacity: 0, y: 30 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.4 }}
-          className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 mb-12 sm:mb-16"
-        >
-          {filteredPosts.map((post, index) => (
-            <motion.article
-              key={post.id}
-              initial={{ opacity: 0, y: 30 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.1 * index }}
-              className="mystic-card group hover:transform hover:scale-105 transition-all duration-300 overflow-hidden"
-            >
-              {/* Article Image */}
-              <div className="relative h-48 overflow-hidden">
-                <LazyImage
-                  src={post.image}
-                  alt={`Featured image for article: ${post.title}`}
-                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
-                />
-                {/* Fallback Placeholder */}
-                <div className="hidden w-full h-full bg-gradient-to-br from-mystic-800 to-mystic-900 flex items-center justify-center">
-                  <div className="text-center">
-                    <div className="w-16 h-16 bg-gradient-to-r from-gold-500 to-orange-500 rounded-full flex items-center justify-center mx-auto mb-3">
-                      <span className="text-white text-2xl">📖</span>
-                    </div>
-                    <p className="text-mystic-300 text-sm">Article Image</p>
-                  </div>
-                </div>
-                
-                {/* Category Badge */}
-                <div className="absolute top-4 left-4">
-                  <span className="px-3 py-1 bg-gold-500/90 text-black text-sm font-semibold rounded-full">
-                    {post.categoryLabel}
-                  </span>
-                </div>
+        <section className="py-20 bg-mystic-900">
+          <div className="container mx-auto px-4">
+            {filteredPosts.length === 0 ? (
+              <div className="text-center py-20">
+                <h3 className="text-2xl font-bold text-white mb-4">No articles found</h3>
+                <p className="text-mystic-300">Try adjusting your filter criteria.</p>
               </div>
-
-              {/* Article Content */}
-              <div className="p-4 sm:p-6">
-                {/* Meta Information */}
-                <div className="flex items-center space-x-3 sm:space-x-4 text-sm sm:text-sm text-mystic-400 mb-3">
-                  <div className="flex items-center space-x-1">
-                    <Calendar className="h-3 w-3 sm:h-4 sm:w-4" />
-                    <span>{formatDate(post.date)}</span>
-                  </div>
-                  <div className="flex items-center space-x-1">
-                    <Clock className="h-3 w-3 sm:h-4 sm:w-4" />
-                    <span>{post.readTime}</span>
-                  </div>
-                </div>
-
-                {/* Title */}
-                <h2 className="text-lg sm:text-xl font-cinzel font-bold text-white mb-3 group-hover:text-gold-400 transition-colors">
-                  {post.title}
-                </h2>
-
-                {/* Excerpt */}
-                <p className="text-sm sm:text-sm text-mystic-300 leading-relaxed mb-4">
-                  {post.excerpt}
-                </p>
-
-                {/* Action Buttons */}
-                <div className="flex items-center justify-between">
-                  <Link
-                    to={`/blog/${post.slug}`}
-                    className="inline-flex items-center space-x-2 text-gold-400 hover:text-gold-300 transition-colors font-medium text-sm group"
+            ) : (
+              <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                {filteredPosts.map((post) => (
+                  <article
+                    key={post.id}
+                    className="bg-mystic-800 rounded-lg overflow-hidden hover:transform hover:scale-105 transition-all duration-300 border border-mystic-700/50"
                   >
-                    <span>Read Full Article</span>
-                    <ArrowRight className="h-4 w-4 group-hover:translate-x-1 transition-transform" />
-                  </Link>
-                  
-                  {/* Share Button */}
-                  <button
-                    onClick={(e) => {
-                      e.preventDefault();
-                      e.stopPropagation();
-                      shareArticle(post);
-                    }}
-                    className="p-2 bg-mystic-800/50 border border-mystic-700/50 rounded-lg text-mystic-400 hover:text-gold-400 hover:border-gold-500/50 transition-colors"
-                    title="Share this article"
-                  >
-                    <Share2 className="h-4 w-4" />
-                  </button>
-                </div>
+                    <Link to={`/blog/${post.slug}`}>
+                      <div className="w-full h-48 bg-mystic-700 overflow-hidden">
+                        <img 
+                          src={post.image} 
+                          alt={post.title}
+                          className="w-full h-full object-cover hover:scale-110 transition-transform duration-300"
+                          onError={(e) => {
+                            e.target.style.display = 'none';
+                            e.target.nextSibling.style.display = 'flex';
+                          }}
+                        />
+                        <div className="w-full h-full bg-mystic-700 flex items-center justify-center hidden">
+                          <span className="text-mystic-400">Blog Image</span>
+                        </div>
+                      </div>
+                      <div className="p-6">
+                        <div className="flex items-center text-sm text-mystic-300 mb-3">
+                          <span>{post.date}</span>
+                          <span className="mx-2">•</span>
+                          <span>{post.readTime}</span>
+                        </div>
+                        <h3 className="text-xl font-bold text-white mb-3">
+                          {post.title}
+                        </h3>
+                        <p className="text-mystic-300 mb-4">
+                          {post.excerpt}
+                        </p>
+                        
+                        {/* Tags */}
+                        <div className="flex flex-wrap gap-2 mb-4">
+                          {post.tags.slice(0, 3).map((tag, tagIndex) => (
+                            <span
+                              key={tagIndex}
+                              className="px-2 py-1 bg-mystic-700 text-mystic-300 rounded-full text-xs"
+                            >
+                              {tag}
+                            </span>
+                          ))}
+                        </div>
+                        
+                        <div className="flex items-center text-gold-400 hover:text-gold-300 font-semibold transition-colors">
+                          Read More
+                          <span className="ml-2">→</span>
+                        </div>
+                      </div>
+                    </Link>
+                  </article>
+                ))}
               </div>
-            </motion.article>
-          ))}
-        </motion.div>
-
-        {/* No Results Message */}
-        {filteredPosts.length === 0 && (
-          <motion.div 
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            className="text-center py-16"
-          >
-            <div className="mystic-card p-8 sm:p-12 max-w-md mx-auto">
-              <div className="w-12 h-12 sm:w-16 sm:h-16 bg-gradient-to-r from-mystic-700 to-mystic-800 rounded-full flex items-center justify-center mx-auto mb-3 sm:mb-4">
-                <Search className="h-6 w-6 sm:h-8 sm:w-8 text-mystic-400" />
-              </div>
-              <h3 className="text-lg sm:text-xl font-cinzel font-semibold text-white mb-2">
-                No Articles Found
-              </h3>
-              <p className="text-sm sm:text-base text-mystic-300">
-                Try adjusting your search terms or category filter.
-              </p>
-            </div>
-          </motion.div>
-        )}
-
-        {/* Newsletter Signup */}
-        <motion.div 
-          initial={{ opacity: 0, y: 50 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.6 }}
-          className="text-center"
-        >
-          <div className="mystic-card p-6 sm:p-8 max-w-2xl mx-auto">
-            <h3 className="text-xl sm:text-2xl font-playfair font-semibold mb-3 sm:mb-4 text-white">
-              Stay Connected with Ancient Wisdom
-            </h3>
-            <p className="text-sm sm:text-base text-mystic-300 mb-4 sm:mb-6">
-              Subscribe to receive the latest insights on Bazi analysis, relationship guidance, 
-              and spiritual wisdom directly to your inbox.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 max-w-md mx-auto">
-              <input
-                type="email"
-                placeholder="Enter your email address"
-                className="flex-1 px-4 py-3 text-base bg-mystic-800/50 border border-mystic-700/50 rounded-lg text-white placeholder-mystic-400 focus:border-gold-500/50 focus:outline-none transition-colors"
-              />
-              <button className="px-4 sm:px-6 py-3 bg-gradient-to-r from-gold-500 to-gold-600 text-black font-semibold rounded-lg hover:from-gold-400 hover:to-gold-500 transition-all duration-300 text-sm sm:text-base">
-                Subscribe
-              </button>
-            </div>
+            )}
           </div>
-        </motion.div>
-      </div>
-    </div>
+        </section>
+
+        {/* CTA Section */}
+        <section className="py-20 bg-gradient-to-r from-mystic-800 to-mystic-900">
+          <div className="container mx-auto px-4 text-center">
+            <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
+              Ready to Discover Your Destiny?
+            </h2>
+            <p className="text-xl text-mystic-300 mb-8 max-w-2xl mx-auto">
+              Get your personalized BaZi reading and unlock the ancient wisdom 
+              that will guide your life's journey.
+            </p>
+            <Link
+              to="/free-bazi-report"
+              className="bg-gradient-to-r from-gold-400 to-gold-600 text-white px-10 py-5 rounded-lg text-xl font-bold hover:from-gold-500 hover:to-gold-700 transition-all duration-300 transform hover:scale-105"
+            >
+              Start Your Free Reading
+            </Link>
+          </div>
+        </section>
+      </main>
     </>
   )
 }
 
-export default Blog 
+export default Blog

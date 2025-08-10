@@ -11,8 +11,9 @@ const Navbar = () => {
   const navItems = [
     { path: '/', label: 'Home' },
     { path: '/services', label: 'Services' },
-    { path: '/free-bazi-report', label: 'Free Bazi' },
     { path: '/blog', label: 'Blog' },
+    { path: '/free-bazi-report', label: 'Free Bazi' },
+
     { path: '/testimonials', label: 'Testimonials' },
     { path: '/wealth-sign', label: 'Sacred Oracle' },
     { path: '/faq', label: 'FAQ' },

@@ -9,8 +9,7 @@
 **步骤**：
 1. 准备图片（建议尺寸：800x600px）
 2. 重命名为：`bitcoin-bazi-cover.jpg`
-3. 放入：`public/images/blog/`
-4. 更新代码路径为：`/images/blog/bitcoin-bazi-cover.jpg`
+
 
 ### 2. SVG 矢量图片（当前使用）
 **优点**：文件小，可缩放，加载快
@@ -59,14 +58,13 @@
 cp your-image.jpg public/images/blog/bitcoin-bazi-cover.jpg
 
 # 2. 更新代码路径（已自动完成）
-# 在 Blog.jsx 和 BlogPost.jsx 中
-image: "/images/blog/bitcoin-bazi-cover.jpg"
+
 ```
 
 ### 使用SVG图片：
 ```bash
 # 当前已配置，无需额外操作
-# 图片路径：/images/blog/bitcoin-bazi-cover.svg
+
 ```
 
 ### 创建自定义图片：
@@ -108,8 +106,7 @@ public/
 ```
 
 ### 代码更新位置
-- `src/pages/Blog.jsx` - 博客列表页面
-- `src/pages/BlogPost.jsx` - 文章详情页面
+
 
 ### 图片回退机制
 代码中已包含图片加载失败的处理：

@@ -1,4 +1,4 @@
-# Bing Error Analysis for Bitcoin Crash Blog Post
+# Bing Error Analysis for Bitcoin Crash Content
 
 ## Potential Issues to Check:
 
@@ -32,17 +32,17 @@
 - [ ] Invalid characters in content
 - [ ] Missing required elements
 
-## Specific Bitcoin Blog Post Issues:
+## Specific Bitcoin Content Issues:
 
 ### Image Issues:
 - ✅ bitcoin-bazi-cover.jpg exists (207KB)
 - ✅ bitcoin-bazi-cover.svg exists
 
 ### Content Structure:
-- ✅ Blog post has proper title
-- ✅ Blog post has excerpt
-- ✅ Blog post has content
-- ✅ Blog post has proper slug
+- ✅ Content has proper title
+- ✅ Content has excerpt
+- ✅ Content has content
+- ✅ Content has proper slug
 
 ### SEO Elements:
 - ✅ Meta description present

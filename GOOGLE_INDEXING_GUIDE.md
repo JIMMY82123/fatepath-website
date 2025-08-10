@@ -82,7 +82,7 @@ Sitemap: https://yourdomain.com/sitemap.xml
 - 服务页：`/services`
 - 联系页：`/contact`
 - FAQ页：`/faq`
-- 博客页：`/blog`
+
 
 ### 7. 创建结构化数据（Schema.org）
 
