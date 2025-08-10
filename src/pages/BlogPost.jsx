@@ -10,6 +10,85 @@ const BlogPost = () => {
 
   // Sample blog post data - in a real app, this would come from an API or CMS
   const blogPostsData = {
+    "bazi-chat-pressure-turning-points-gui-hai-woman": {
+      title: "BaZi Chat｜The 'Pressure and Turning Points' of a Gui Hai – Yi Chou – Geng Xu – Wu Yin Woman",
+      excerpt: "Discover the unique challenges and opportunities in this BaZi chart analysis. Learn how pressure transforms into momentum and when the breakthrough years arrive for this winter-born Geng Metal woman.",
+      content: `
+        <p class="mb-6 text-lg text-mystic-200 leading-relaxed">
+          On January 17, 1984, at 2 a.m., a baby girl was born in the deep cold of mid-winter. It was the lunar Chou month, when the earth is still frozen and the chill is heavy in the air. Her BaZi chart reads: Gui Hai, Yi Chou, Geng Xu, Wu Yin. Just from these four pillars, you can already sense the vibe — capable, but often having to push forward under outside pressure.
+        </p>
+        
+        <h2 class="text-2xl font-bold text-white mb-4 mt-8">The Chart Structure</h2>
+        <p class="mb-6 text-mystic-200 leading-relaxed">
+          Born as Geng Metal in Chou month, she's like ore buried deep in winter soil — strong and solid, but needing the warmth of fire to truly shine. In her chart, Gui Water in the year pillar is strong, forming a Qi Sha (Seven Killings) structure, meaning her life won't lack challenges — superiors, rules, and circumstances will all put her to the test.
+        </p>
+        
+        <h2 class="text-2xl font-bold text-white mb-4 mt-8">Elemental Analysis</h2>
+        <p class="mb-6 text-mystic-200 leading-relaxed">
+          Yi Wood in the month stem is the Wealth star, but it's held down by cold, heavy Earth, so financial luck goes up and down. Fortunately, Wu Earth in the hour stem acts as an Indirect Resource, helping to shield her from some of the pressure, though not with overwhelming strength. The Yin Wood in the hour branch hides Bing Fire — a little spark of warmth — but in winter it's faint, and needs careful nurturing.
+        </p>
+        
+        <h2 class="text-2xl font-bold text-white mb-4 mt-8">Strengths and Challenges</h2>
+        <p class="mb-6 text-mystic-200 leading-relaxed">
+          With this setup, her strengths are responsibility and not shying away from hard work. The drawback is that she often moves because she has to, not because she wants to. At work, she's often in environments with high standards and demanding bosses; she can make money, but expenses and responsibilities grow at the same pace, so saving is tough.
+        </p>
+        
+        <h2 class="text-2xl font-bold text-white mb-4 mt-8">Relationship Dynamics</h2>
+        <p class="mb-6 text-mystic-200 leading-relaxed">
+          In relationships, she may be drawn to partners who are powerful but controlling, which can leave her feeling passive. Physically, her cold-damp constitution can cause issues like weak digestion, lower back and kidney sensitivity, and cold hands and feet.
+        </p>
+        
+        <h2 class="text-2xl font-bold text-white mb-4 mt-8">Root Cause and Solutions</h2>
+        <p class="mb-6 text-mystic-200 leading-relaxed">
+          The root of these issues is clear: water is too strong, fire too weak. Strong water means more pressure, weak fire means less sustained drive and warmth. The fix is simple in concept — warm up first, then stabilize. That means getting more sunlight, doing activities that make her sweat, wearing warm colors like red, orange, and beige, and avoiding too much cool-toned clothing.
+        </p>
+        
+        <h2 class="text-2xl font-bold text-white mb-4 mt-8">Practical Recommendations</h2>
+        <p class="mb-6 text-mystic-200 leading-relaxed">
+          At home or work, face southeast or south if possible, and add green plants or warm-toned décor. In diet, favor warming foods like ginger tea, red dates, yam, and pumpkin; cut back on iced or cold items, especially in winter.
+        </p>
+        
+        <h2 class="text-2xl font-bold text-white mb-4 mt-8">Career Guidance</h2>
+        <p class="mb-6 text-mystic-200 leading-relaxed">
+          Career-wise, she's better suited to Earth- and Fire-related fields such as management, planning, training, consulting, or education. These roles let her use her organizational skills while reducing the oppressive feel of heavy Metal-Water environments. If staying in her current industry, she should try to shift toward strategic or managerial roles to gain more decision-making power.
+        </p>
+        
+        <h2 class="text-2xl font-bold text-white mb-4 mt-8">Relationship and Financial Advice</h2>
+        <p class="mb-6 text-mystic-200 leading-relaxed">
+          In relationships, it's important not to give up her identity just to keep the peace. She should choose partners who respect her independence. For finances, she needs to get used to saving before spending, and ideally, develop multiple income streams so pressure isn't all on one job.
+        </p>
+        
+        <h2 class="text-2xl font-bold text-white mb-4 mt-8">Future Outlook</h2>
+        <p class="mb-6 text-mystic-200 leading-relaxed">
+          Looking ahead, 2025 (Yi Si year) brings more visible opportunities as fire starts to emerge, but she should be mindful of interpersonal friction. 2026 (Bing Wu year) is a rare high-energy year — an ideal time for breakthroughs in both career and love. 2027 (Ding Wei year) is about consolidating gains and turning recent wins into long-term stability.
+        </p>
+        
+        <h2 class="text-2xl font-bold text-white mb-4 mt-8">Conclusion</h2>
+        <p class="mb-6 text-mystic-200 leading-relaxed">
+          In short, this chart describes someone who's never short of challenges — or ability. Once she learns to warm herself up and stabilize her footing, pressure turns into momentum. And 2026? That's the year she can break past her limits and start a whole new chapter. When that time comes, the ore in the cold earth will finally glitter in the sunlight.
+        </p>
+      `,
+      author: "Master Chen",
+      date: "2025-08-11",
+      readTime: "8 min read",
+      category: "BaZi Analysis",
+      tags: ["BaZi", "Chinese Astrology", "Destiny", "Five Elements", "Career", "Relationships"],
+      image: "/images/blog/bazi-chat-pressure-turning-points-cover.svg",
+      relatedPosts: [
+        {
+          title: "Understanding Your BaZi Chart: A Beginner's Guide",
+          excerpt: "Master the fundamentals of BaZi analysis and discover your life's blueprint.",
+          image: "/images/blog/bazi-beginners-guide-cover.jpg",
+          slug: "understanding-bazi-chart-beginners-guide"
+        },
+        {
+          title: "Career Timing: When to Make Your Next Big Move",
+          excerpt: "Learn to read the cosmic signals for perfect career timing.",
+          image: "/images/blog/career-timing-cover.jpg",
+          slug: "career-timing-next-big-move"
+        }
+      ]
+    },
     "understanding-bazi-chart-beginners-guide": {
       title: "Understanding Your BaZi Chart: A Beginner's Guide",
       excerpt: "Master the fundamentals of BaZi (八字) analysis and discover how your birth chart reveals your life's blueprint, personality traits, and destiny path through ancient Chinese wisdom.",

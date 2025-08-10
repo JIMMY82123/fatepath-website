@@ -95,6 +95,17 @@ const Home = () => {
   const latestArticles = [
     {
       id: 1,
+      title: "BaZi Chat｜The 'Pressure and Turning Points' of a Gui Hai – Yi Chou – Geng Xu – Wu Yin Woman",
+      excerpt: "Discover the unique challenges and opportunities in this BaZi chart analysis. Learn how pressure transforms into momentum and when the breakthrough years arrive for this winter-born Geng Metal woman.",
+      category: 'bazi',
+      tags: ['BaZi', 'Chinese Astrology', 'Destiny', 'Five Elements', 'Career', 'Relationships'],
+      image: "/images/blog/bazi-chat-pressure-turning-points-cover.svg",
+              date: "2025-08-11",
+      readTime: "8 min read",
+      slug: "bazi-chat-pressure-turning-points-gui-hai-woman"
+    },
+    {
+      id: 2,
       title: "Understanding Your BaZi Chart: A Beginner's Guide",
       excerpt: "Master the fundamentals of BaZi (八字) analysis and discover how your birth chart reveals your life's blueprint, personality traits, and destiny path through ancient Chinese wisdom.",
       category: 'bazi',
@@ -105,7 +116,7 @@ const Home = () => {
       slug: "understanding-bazi-chart-beginners-guide"
     },
     {
-      id: 2,
+      id: 3,
       title: "The Five Elements in Love: Finding Your Perfect Match",
       excerpt: "Unlock the secrets of romantic compatibility through the Five Elements (五行) system. Learn how Wood, Fire, Earth, Metal, and Water energies create harmony or conflict in relationships.",
       category: 'love',
@@ -116,7 +127,7 @@ const Home = () => {
       slug: "five-elements-love-perfect-match"
     },
     {
-      id: 3,
+      id: 4,
       title: "Wealth Archetypes in Chinese Astrology",
       excerpt: "Discover your unique wealth personality type through BaZi analysis. Learn how your birth chart reveals your financial potential and the best strategies for wealth accumulation.",
       category: 'wealth',

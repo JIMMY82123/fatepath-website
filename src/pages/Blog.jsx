@@ -18,8 +18,8 @@ const Blog = () => {
   }, [searchParams])
 
   const categories = [
-    { id: 'all', name: 'All Articles', count: 8 },
-    { id: 'bazi', name: 'BaZi Analysis', count: 4 },
+    { id: 'all', name: 'All Articles', count: 9 },
+    { id: 'bazi', name: 'BaZi Analysis', count: 5 },
     { id: 'love', name: 'Love & Relationships', count: 2 },
     { id: 'wealth', name: 'Wealth & Career', count: 2 }
   ]
@@ -27,6 +27,17 @@ const Blog = () => {
   const blogPosts = [
     {
       id: 1,
+      title: "BaZi Chat｜The 'Pressure and Turning Points' of a Gui Hai – Yi Chou – Geng Xu – Wu Yin Woman",
+      excerpt: "Discover the unique challenges and opportunities in this BaZi chart analysis. Learn how pressure transforms into momentum and when the breakthrough years arrive for this winter-born Geng Metal woman.",
+      category: 'bazi',
+      tags: ['BaZi', 'Chinese Astrology', 'Destiny', 'Five Elements', 'Career', 'Relationships'],
+      image: "/images/blog/bazi-chat-pressure-turning-points-cover.svg",
+              date: "2025-08-11",
+      readTime: "8 min read",
+      slug: "bazi-chat-pressure-turning-points-gui-hai-woman"
+    },
+    {
+      id: 2,
       title: "Understanding Your BaZi Chart: A Beginner's Guide",
       excerpt: "Master the fundamentals of BaZi (八字) analysis and discover how your birth chart reveals your life's blueprint, personality traits, and destiny path through ancient Chinese wisdom.",
       category: 'bazi',
@@ -37,7 +48,7 @@ const Blog = () => {
       slug: "understanding-bazi-chart-beginners-guide"
     },
     {
-      id: 2,
+      id: 3,
       title: "The Five Elements in Love: Finding Your Perfect Match",
       excerpt: "Unlock the secrets of romantic compatibility through the Five Elements (五行) system. Learn how Wood, Fire, Earth, Metal, and Water energies create harmony or conflict in relationships.",
       category: 'love',
@@ -48,7 +59,7 @@ const Blog = () => {
       slug: "five-elements-love-perfect-match"
     },
     {
-      id: 3,
+      id: 4,
       title: "Wealth Archetypes in Chinese Astrology",
       excerpt: "Discover your unique wealth personality type through BaZi analysis. Learn how your birth chart reveals your financial potential and the best strategies for wealth accumulation.",
       category: 'wealth',
@@ -59,7 +70,7 @@ const Blog = () => {
       slug: "wealth-archetypes-chinese-astrology"
     },
     {
-      id: 4,
+      id: 5,
       title: "Career Timing: When to Make Your Next Big Move",
       excerpt: "Master the art of perfect timing for career changes using traditional Chinese numerology. Learn to read the cosmic signals that indicate when to advance, change, or start new ventures.",
       category: 'career',
