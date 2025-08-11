@@ -1,5 +1,9 @@
-const fs = require('fs');
-const path = require('path');
+import fs from 'fs';
+import path from 'path';
+import { fileURLToPath } from 'url';
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 
 // PWA图标尺寸配置
 const ICON_SIZES = [
@@ -127,8 +131,8 @@ const main = () => {
 };
 
 // 如果直接运行此脚本
-if (require.main === module) {
+if (import.meta.url === `file://${process.argv[1]}`) {
   main();
 }
 
-module.exports = { generateAllIcons, generateShortcutIcons }; 
+export { generateAllIcons, generateShortcutIcons }; 

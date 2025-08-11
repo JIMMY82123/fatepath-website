@@ -1,0 +1,33 @@
+<svg width="180" height="180" viewBox="0 0 180 180" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="goldGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#facc15;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#eab308;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0f172a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1e293b;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- 背景 -->
+  <rect width="180" height="180" fill="url(#bgGradient)" rx="36"/>
+  
+  <!-- 主要图标 -->
+  <g transform="translate(36, 36) scale(1.08)">
+    <!-- 八卦图案 -->
+    <circle cx="50" cy="50" r="40" fill="none" stroke="url(#goldGradient)" stroke-width="3"/>
+    <circle cx="50" cy="30" r="8" fill="url(#goldGradient)"/>
+    <circle cx="50" cy="70" r="8" fill="url(#goldGradient)"/>
+    
+    <!-- 命运之线 -->
+    <path d="M 20 50 Q 35 30 50 50 Q 65 70 80 50" stroke="url(#goldGradient)" stroke-width="2" fill="none"/>
+    
+    <!-- 星星装饰 -->
+    <polygon points="15,15 17,20 22,20 18,24 20,29 15,26 10,29 12,24 8,20 13,20" fill="url(#goldGradient)"/>
+    <polygon points="85,15 87,20 92,20 88,24 90,29 85,26 80,29 82,24 78,20 83,20" fill="url(#goldGradient)"/>
+  </g>
+  
+  <!-- 文字 -->
+  <text x="90" y="162" text-anchor="middle" fill="url(#goldGradient)" font-family="Arial, sans-serif" font-size="21.599999999999998" font-weight="bold">FP</text>
+</svg>
