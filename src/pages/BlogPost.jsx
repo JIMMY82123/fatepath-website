@@ -1464,15 +1464,21 @@ const BlogPost = () => {
 
   // Handle loading and error states
   useEffect(() => {
-    const timer = setTimeout(() => {
-      setIsLoading(false)
-    }, 1000) // Show loading for at least 1 second
-
+    // Reset states when slug changes
+    setIsLoading(true)
+    setHasError(false)
+    
     // Check if the blog post exists
     if (!blogPostsData[slug]) {
       setHasError(true)
       setIsLoading(false)
+      return
     }
+
+    // Show loading for at least 1 second to prevent flash
+    const timer = setTimeout(() => {
+      setIsLoading(false)
+    }, 1000)
 
     // Add error listener for JavaScript errors
     const handleError = (event) => {
@@ -1499,6 +1505,16 @@ const BlogPost = () => {
 
   // Get the blog post data based on the slug, or show a default post
   const blogPost = blogPostsData[slug] || blogPostsData["understanding-bazi-chart-beginners-guide"]
+  
+  // Debug logging
+  console.log('BlogPost component render:', { 
+    slug, 
+    hasSlug: !!slug, 
+    blogPostExists: !!blogPostsData[slug], 
+    isLoading, 
+    hasError,
+    availableSlugs: Object.keys(blogPostsData)
+  })
 
   // Loading state
   if (isLoading) {
@@ -1508,6 +1524,7 @@ const BlogPost = () => {
           <Loader2 className="h-16 w-16 text-gold-400 animate-spin mx-auto mb-6" />
           <h1 className="text-2xl font-bold text-white mb-4">Loading Your Destiny Report...</h1>
           <p className="text-mystic-300">Please wait while we prepare your personalized analysis</p>
+          <p className="text-mystic-400 text-sm mt-4">Debug: {slug}</p>
         </div>
       </div>
     )
@@ -1584,10 +1601,11 @@ const BlogPost = () => {
     }
   }
 
-  return (
-    <>
-      {/* Fallback for users with JavaScript disabled */}
-      <noscript>
+  try {
+    return (
+      <>
+        {/* Fallback for users with JavaScript disabled */}
+        <noscript>
         <div style={{
           backgroundColor: '#0f172a',
           color: '#e2e8f0',
@@ -1811,6 +1829,26 @@ const BlogPost = () => {
       </main>
     </>
   )
+  } catch (error) {
+    console.error('Error rendering BlogPost:', error)
+    return (
+      <div className="min-h-screen bg-mystic-900 pt-20 flex items-center justify-center">
+        <div className="text-center max-w-md mx-auto px-4">
+          <AlertCircle className="h-16 w-16 text-red-400 mx-auto mb-6" />
+          <h1 className="text-2xl font-bold text-white mb-4">Rendering Error</h1>
+          <p className="text-mystic-300 mb-6">
+            There was an error rendering this page. Please try refreshing.
+          </p>
+          <button
+            onClick={() => window.location.reload()}
+            className="w-full bg-gradient-to-r from-gold-400 to-gold-600 text-white px-6 py-3 rounded-lg hover:from-gold-500 hover:to-gold-700 transition-all duration-300"
+          >
+            Refresh Page
+          </button>
+        </div>
+      </div>
+    )
+  }
 }
 
 export default BlogPost
