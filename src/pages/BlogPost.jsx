@@ -10,6 +10,219 @@ const BlogPost = () => {
 
   // Sample blog post data - in a real app, this would come from an API or CMS
   const blogPostsData = {
+    "marriage-relationship-destiny-report-woman-love-path": {
+      title: "Marriage & Relationship Destiny Report: A Woman's Love Path Through BaZi",
+      excerpt: "Discover how your birth chart reveals your romantic destiny. Learn about marriage timing, partner characteristics, and practical strategies for enhancing love luck through BaZi analysis.",
+      content: `
+        <div class="mb-8">
+          <div class="bg-gradient-to-r from-pink-500/20 to-rose-500/20 border border-pink-500/30 rounded-lg p-6 mb-8">
+            <h3 class="text-lg font-semibold text-pink-400 mb-3">💕 Report Summary</h3>
+            <p class="text-mystic-200 mb-2"><strong>Subject:</strong> Female, born October 21, 1988</p>
+            <p class="text-mystic-200 mb-2"><strong>Lunar Date:</strong> 9th Month, 13th Day, 7:00 AM</p>
+            <p class="text-mystic-200 mb-2"><strong>Key Finding:</strong> Love and marriage play a transformational role in life journey</p>
+            <p class="text-mystic-200"><strong>Peak Marriage Period:</strong> 2028-2033 (late 30s to early 40s)</p>
+          </div>
+        </div>
+
+        <h2 class="text-2xl font-bold text-white mb-4 mt-8">1. Introduction</h2>
+        <p class="mb-6 text-lg text-mystic-200 leading-relaxed">
+          Your BaZi chart suggests that love and marriage play a transformational role in your life journey. 
+          Relationships are not just about companionship for you — they are tied to your personal growth, 
+          career shifts, and even financial development. While marriage may not come early, the quality of 
+          your eventual partnership is likely to be stable, respectful, and mutually supportive.
+        </p>
+
+        <h2 class="text-2xl font-bold text-white mb-4 mt-8">2. Marriage Indicators in Your Chart</h2>
+        
+        <div class="grid md:grid-cols-2 gap-6 mb-6">
+          <div class="bg-mystic-800/30 rounded-lg p-6 border border-mystic-700/50">
+            <h3 class="text-lg font-semibold text-pink-400 mb-3">Day Master & Spouse Star</h3>
+            <p class="text-mystic-200 mb-3">
+              As a <strong>Metal Day Master (辛金)</strong>, your spouse star is <strong>Fire</strong>. In your chart, 
+              Fire appears indirectly, indicating that romance often enters through social connections, 
+              work-related networks, or shared projects, rather than random encounters.
+            </p>
+          </div>
+          
+          <div class="bg-mystic-800/30 rounded-lg p-6 border border-mystic-700/50">
+            <h3 class="text-lg font-semibold text-pink-400 mb-3">Spouse Palace (Day Branch)</h3>
+            <p class="text-mystic-200 mb-3">
+              The Day Branch <strong>亥水</strong> contains hidden Wood (your wealth star) and Fire (your spouse star), 
+              showing that your partner will have a positive impact on both your emotional life and financial opportunities.
+            </p>
+          </div>
+        </div>
+
+        <div class="bg-gradient-to-r from-pink-500/20 to-rose-500/20 border border-pink-500/30 rounded-lg p-6 mb-6">
+          <h3 class="text-lg font-semibold text-pink-400 mb-3">Marriage Timing</h3>
+          <p class="text-mystic-200 leading-relaxed">
+            Fire is not dominant in your early years, suggesting marriage may come later than average — 
+            late 30s or even early 40s is possible. This timing allows you to establish your career and 
+            personal foundation first.
+          </p>
+        </div>
+
+        <h2 class="text-2xl font-bold text-white mb-4 mt-8">3. Personality & Relationship Dynamics</h2>
+        
+        <div class="space-y-6 mb-6">
+          <div class="bg-gradient-to-r from-purple-500/20 to-indigo-500/20 border border-purple-500/30 rounded-lg p-6">
+            <h3 class="text-lg font-semibold text-purple-400 mb-3">Your Love Style</h3>
+            <p class="text-mystic-200 leading-relaxed">
+              You tend to be <strong>selective in love</strong>, preferring depth over quantity. You value loyalty, 
+              intelligence, and emotional maturity in a partner. Your Metal nature makes you appreciate 
+              quality relationships that stand the test of time.
+            </p>
+          </div>
+          
+          <div class="bg-gradient-to-r from-blue-500/20 to-cyan-500/20 border border-blue-500/30 rounded-lg p-6">
+            <h3 class="text-lg font-semibold text-blue-400 mb-3">Social Approach</h3>
+            <p class="text-mystic-200 leading-relaxed">
+              You may sometimes appear <strong>reserved</strong>, which can make potential partners feel you are difficult to approach. 
+              Opening up more socially will increase opportunities. Consider joining groups where 
+              professional and personal life can intersect.
+            </p>
+          </div>
+          
+          <div class="bg-gradient-to-r from-green-500/20 to-emerald-500/20 border border-green-500/30 rounded-lg p-6">
+            <h3 class="text-lg font-semibold text-green-400 mb-3">Partner Attraction</h3>
+            <p class="text-mystic-200 leading-relaxed">
+              Your chart shows that you attract partners who are <strong>ambitious</strong>, with a stable career, 
+              and possibly older or more experienced than you. They often have strong Fire or Wood energy 
+              that complements your Metal nature.
+            </p>
+          </div>
+        </div>
+
+        <h2 class="text-2xl font-bold text-white mb-4 mt-8">4. Luck Cycle & Love Opportunities</h2>
+        
+        <div class="space-y-6 mb-6">
+          <div class="bg-gradient-to-r from-blue-500/20 to-indigo-500/20 border border-blue-500/30 rounded-lg p-6">
+            <h3 class="text-lg font-semibold text-blue-400 mb-3">2025–2026: Awakening Phase</h3>
+            <p class="text-mystic-200 leading-relaxed">
+              Possible appearance of a key romantic interest through professional or learning environments. 
+              Not necessarily the final marriage partner, but could be important for emotional awakening 
+              and understanding what you truly want in a relationship.
+            </p>
+          </div>
+          
+          <div class="bg-gradient-to-r from-pink-500/20 to-rose-500/20 border border-pink-500/30 rounded-lg p-6">
+            <h3 class="text-lg font-semibold text-pink-400 mb-3">2028–2033: Peak Marriage Period</h3>
+            <p class="text-mystic-200 leading-relaxed">
+              <strong>Strongest marriage signal</strong> in your chart. Fire and Wood energy will be active, 
+              making this period the most favorable for settling down. This is when your romantic 
+              destiny aligns with your personal growth.
+            </p>
+          </div>
+          
+          <div class="bg-gradient-to-r from-green-500/20 to-emerald-500/20 border border-green-500/30 rounded-lg p-6">
+            <h3 class="text-lg font-semibold text-green-400 mb-3">2034–2036: Stability Phase</h3>
+            <p class="text-mystic-200 leading-relaxed">
+              Relationship stability phase; if married, this is a time for family building. If single, 
+              a high chance of meeting a long-term partner. The energies are harmonious for commitment.
+            </p>
+          </div>
+        </div>
+
+        <h2 class="text-2xl font-bold text-white mb-4 mt-8">5. Advice for Enhancing Love Luck</h2>
+        
+        <div class="space-y-4 mb-6">
+          <div class="flex items-start space-x-4">
+            <div class="w-8 h-8 rounded-full bg-pink-500 flex items-center justify-center flex-shrink-0 mt-1">
+              <span class="text-white text-sm font-bold">1</span>
+            </div>
+            <div>
+              <h3 class="text-lg font-semibold text-white mb-2">Expand Social Circles</h3>
+              <p class="text-mystic-200">
+                Join groups, classes, or events where professional and personal life can intersect. 
+                Your ideal partner is likely to come through shared interests or work connections.
+              </p>
+            </div>
+          </div>
+          
+          <div class="flex items-start space-x-4">
+            <div class="w-8 h-8 rounded-full bg-pink-500 flex items-center justify-center flex-shrink-0 mt-1">
+              <span class="text-white text-sm font-bold">2</span>
+            </div>
+            <div>
+              <h3 class="text-lg font-semibold text-white mb-2">Activate Fire Energy</h3>
+              <p class="text-mystic-200">
+                Wear warm colors (red, orange, pink) and add more brightness to your living space 
+                to stimulate romantic opportunities. Fire represents your spouse star and needs activation.
+              </p>
+            </div>
+          </div>
+          
+          <div class="flex items-start space-x-4">
+            <div class="w-8 h-8 rounded-full bg-pink-500 flex items-center justify-center flex-shrink-0 mt-1">
+              <span class="text-white text-sm font-bold">3</span>
+            </div>
+            <div>
+              <h3 class="text-lg font-semibold text-white mb-2">Stay Open to Differences</h3>
+              <p class="text-mystic-200">
+                Your ideal partner may not match your initial "type" but could offer long-term harmony. 
+                Be open to age and background differences that could bring unexpected compatibility.
+              </p>
+            </div>
+          </div>
+          
+          <div class="flex items-start space-x-4">
+            <div class="w-8 h-8 rounded-full bg-pink-500 flex items-center justify-center flex-shrink-0 mt-1">
+              <span class="text-white text-sm font-bold">4</span>
+            </div>
+            <div>
+              <h3 class="text-lg font-semibold text-white mb-2">Avoid Over-Criticism</h3>
+              <p class="text-mystic-200">
+                Perfectionism can block emotional connection. Your Metal nature appreciates quality, 
+                but remember that relationships require flexibility and acceptance of imperfections.
+              </p>
+            </div>
+          </div>
+          
+          <div class="flex items-start space-x-4">
+            <div class="w-8 h-8 rounded-full bg-pink-500 flex items-center justify-center flex-shrink-0 mt-1">
+              <span class="text-white text-sm font-bold">5</span>
+            </div>
+            <div>
+              <h3 class="text-lg font-semibold text-white mb-2">Leverage 2028–2033</h3>
+              <p class="text-mystic-200">
+                Plan major romantic commitments in this window for best long-term results. 
+                This is your cosmic window of opportunity for lasting love.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-gradient-to-r from-pink-500/20 to-rose-500/20 border border-pink-500/30 rounded-lg p-6 mb-8">
+          <h3 class="text-lg font-semibold text-pink-400 mb-3">💝 Strategic Summary</h3>
+          <p class="text-mystic-200 leading-relaxed">
+            Your romantic destiny is about quality over speed. The later timing allows you to build 
+            a strong foundation first, ensuring that when love arrives, it's built on mutual respect 
+            and shared values. Focus on personal growth and expanding your social network in the next 
+            few years, and be ready to embrace the opportunities that come in your peak marriage period.
+          </p>
+        </div>
+      `,
+      author: "Master Chen",
+      date: "2025-01-22",
+      readTime: "8 min read",
+      category: "Love & Relationships",
+      tags: ["Love", "Marriage", "Relationships", "BaZi", "Chinese Astrology", "Romance", "Destiny"],
+      image: "/images/blog/marriage-relationship-destiny-report-cover.jpg",
+      relatedPosts: [
+        {
+          title: "The Five Elements in Love: Finding Your Perfect Match",
+          excerpt: "Unlock the secrets of romantic compatibility through the Five Elements system.",
+          image: "/images/blog/five-elements-love-cover.jpg",
+          slug: "five-elements-love-perfect-match"
+        },
+        {
+          title: "Financial Destiny Report: A Woman's Wealth Path Through BaZi",
+          excerpt: "Discover how relationships can impact your financial development.",
+          image: "/images/blog/financial-destiny-report-cover.jpg",
+          slug: "financial-destiny-report-woman-wealth-path"
+        }
+      ]
+    },
     "financial-destiny-report-woman-wealth-path": {
       title: "Financial Destiny Report: A Woman's Wealth Path Through BaZi",
       excerpt: "Discover how your birth chart reveals your financial destiny. Learn about wealth cycles, key years for financial growth, and practical strategies for building wealth through consistent effort and strategic planning.",
