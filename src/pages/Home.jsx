@@ -91,21 +91,32 @@ const Home = () => {
     }
   ]
 
-  // Latest articles data - sorted by date (newest first)
+    // Latest articles data - sorted by date (newest first)
   const latestArticles = [
     {
       id: 1,
+      title: "BaZi Meets MBTI: A Fascinating East–West Dialogue on Personality",
+      excerpt: "BaZi gives you the 'inborn color palette,' MBTI reveals your 'usage habits.' Put the map and the manual together, and you get a fuller picture of yourself.",
+      category: 'bazi',
+      tags: ['BaZi', 'MBTI', 'Personality', 'Chinese Astrology', 'Psychology', 'Self-Discovery'],
+      image: "/images/blog/bazi-mbti-personality-comparison-cover.jpg",
+      date: "2025-01-20",
+      readTime: "6 min read",
+      slug: "bazi-mbti-personality-comparison"
+    },
+    {
+      id: 2,
       title: "BaZi Chat｜The 'Pressure and Turning Points' of a Gui Hai – Yi Chou – Geng Xu – Wu Yin Woman",
       excerpt: "Discover the unique challenges and opportunities in this BaZi chart analysis. Learn how pressure transforms into momentum and when the breakthrough years arrive for this winter-born Geng Metal woman.",
       category: 'bazi',
       tags: ['BaZi', 'Chinese Astrology', 'Destiny', 'Five Elements', 'Career', 'Relationships'],
-      image: "/images/blog/bazi-chat-pressure-turning-points-cover.svg",
+      image: "/images/blog/bazi-chat-pressure-turning-points-cover.jpg",
               date: "2025-08-11",
       readTime: "8 min read",
       slug: "bazi-chat-pressure-turning-points-gui-hai-woman"
     },
     {
-      id: 2,
+      id: 3,
       title: "Understanding Your BaZi Chart: A Beginner's Guide",
       excerpt: "Master the fundamentals of BaZi (八字) analysis and discover how your birth chart reveals your life's blueprint, personality traits, and destiny path through ancient Chinese wisdom.",
       category: 'bazi',
@@ -116,7 +127,7 @@ const Home = () => {
       slug: "understanding-bazi-chart-beginners-guide"
     },
     {
-      id: 3,
+      id: 4,
       title: "The Five Elements in Love: Finding Your Perfect Match",
       excerpt: "Unlock the secrets of romantic compatibility through the Five Elements (五行) system. Learn how Wood, Fire, Earth, Metal, and Water energies create harmony or conflict in relationships.",
       category: 'love',
@@ -127,7 +138,7 @@ const Home = () => {
       slug: "five-elements-love-perfect-match"
     },
     {
-      id: 4,
+      id: 5,
       title: "Wealth Archetypes in Chinese Astrology",
       excerpt: "Discover your unique wealth personality type through BaZi analysis. Learn how your birth chart reveals your financial potential and the best strategies for wealth accumulation.",
       category: 'wealth',

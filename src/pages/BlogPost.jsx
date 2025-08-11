@@ -10,6 +10,88 @@ const BlogPost = () => {
 
   // Sample blog post data - in a real app, this would come from an API or CMS
   const blogPostsData = {
+    "bazi-mbti-personality-comparison": {
+      title: "BaZi Meets MBTI: A Fascinating East–West Dialogue on Personality",
+      excerpt: "BaZi gives you the 'inborn color palette,' MBTI reveals your 'usage habits.' Put the map and the manual together, and you get a fuller picture of yourself.",
+      content: `
+        <p class="mb-6 text-lg text-mystic-200 leading-relaxed">
+          BaZi gives you the "inborn color palette," MBTI reveals your "usage habits." Put the map and the manual together, and you get a fuller picture of yourself.
+        </p>
+        
+        <h2 class="text-2xl font-bold text-white mb-4 mt-8">1. BaZi: The Inborn Base Tone</h2>
+        <p class="mb-6 text-mystic-200 leading-relaxed">
+          In BaZi, your year, month, day, and hour form the Heavenly Stems and Earthly Branches. The Five Elements shape the base of your personality:
+        </p>
+        <ul class="mb-6 text-mystic-200 leading-relaxed list-disc list-inside space-y-2">
+          <li><strong>Wood</strong>: Growth, vision, planning, restless to change.</li>
+          <li><strong>Fire</strong>: Warmth, expressiveness, quick action.</li>
+          <li><strong>Earth</strong>: Steady, orderly, security-oriented, slow to warm up but long-lasting.</li>
+          <li><strong>Metal</strong>: Decisive, rule-focused, efficient, sometimes stubborn.</li>
+          <li><strong>Water</strong>: Flexible, observant, adaptable, creative, but can be changeable.</li>
+        </ul>
+        
+        <h2 class="text-2xl font-bold text-white mb-4 mt-8">2. MBTI: Your Habitual Operating Mode</h2>
+        <p class="mb-6 text-mystic-200 leading-relaxed">
+          MBTI uses four dimensions—E/I, S/N, T/F, J/P—to describe your preferences in perceiving the world and making decisions. It's not a fixed label, but a behavioral tendency.
+        </p>
+        
+        <h2 class="text-2xl font-bold text-white mb-4 mt-8">3. Common Patterns Between Five Elements & MBTI</h2>
+        <ul class="mb-6 text-mystic-200 leading-relaxed list-disc list-inside space-y-2">
+          <li>Strong Wood/Fire → often higher in E, N, F, P</li>
+          <li>Strong Earth/Metal → often higher in I, S, T, J</li>
+          <li>Strong Metal/Water → more likely T (Thinking)</li>
+          <li>Strong Wood/Fire → more likely F (Feeling)</li>
+        </ul>
+        <p class="mb-6 text-mystic-200 leading-relaxed italic">
+          <em>Note: These are patterns, not strict rules.</em>
+        </p>
+        
+        <h2 class="text-2xl font-bold text-white mb-4 mt-8">4. Two Quick Examples</h2>
+        <ul class="mb-6 text-mystic-200 leading-relaxed list-disc list-inside space-y-2">
+          <li><strong>Fire + Metal strong, Wood + Water weak</strong> → Often ENTJ: outward-driving, rule-and-results focused, strategic and execution-oriented.</li>
+          <li><strong>Water + Wood strong, Earth + Fire weak</strong> → Often INFP: idealistic, values-driven, creative but needs more structure to execute.</li>
+        </ul>
+        
+        <h2 class="text-2xl font-bold text-white mb-4 mt-8">5. How to Combine the Two</h2>
+        <ul class="mb-6 text-mystic-200 leading-relaxed list-disc list-inside space-y-2">
+          <li>BaZi shows your natural element balance and what you need more or less of.</li>
+          <li>MBTI shows your habitual communication, decision-making, and work style.</li>
+          <li>Together, they answer: where your talents are, how you use them, and how to fill the gaps.</li>
+        </ul>
+        
+        <h2 class="text-2xl font-bold text-white mb-4 mt-8">6. Applications</h2>
+        <ul class="mb-6 text-mystic-200 leading-relaxed list-disc list-inside space-y-2">
+          <li><strong>Career</strong>: BaZi defines the direction (element preferences), MBTI chooses the work style and team fit.</li>
+          <li><strong>Relationships</strong>: BaZi shows the type of people you attract, MBTI helps you adjust your communication style.</li>
+          <li><strong>Growth</strong>: BaZi fills elemental gaps, MBTI fine-tunes functional preferences for lasting habits.</li>
+        </ul>
+        
+        <h2 class="text-2xl font-bold text-white mb-4 mt-8">Closing</h2>
+        <p class="mb-6 text-lg text-mystic-200 leading-relaxed">
+          BaZi is the map; MBTI is the manual. Put them together, and you're more likely to walk the right road—and walk it steadily.
+        </p>
+      `,
+      author: "Master Chen",
+      date: "2025-01-20",
+      readTime: "6 min read",
+      category: "BaZi Analysis",
+      tags: ["BaZi", "MBTI", "Personality", "Chinese Astrology", "Psychology", "Self-Discovery"],
+      image: "/images/blog/bazi-mbti-personality-comparison-cover.jpg",
+      relatedPosts: [
+        {
+          title: "Understanding Your BaZi Chart: A Beginner's Guide",
+          excerpt: "Master the fundamentals of BaZi analysis and discover your life's blueprint.",
+          image: "/images/blog/bazi-beginners-guide-cover.jpg",
+          slug: "understanding-bazi-chat-beginners-guide"
+        },
+        {
+          title: "The Five Elements in Love: Finding Your Perfect Match",
+          excerpt: "Unlock the secrets of romantic compatibility through the Five Elements system.",
+          image: "/images/blog/five-elements-love-cover.jpg",
+          slug: "five-elements-love-perfect-match"
+        }
+      ]
+    },
     "bazi-chat-pressure-turning-points-gui-hai-woman": {
       title: "BaZi Chat｜The 'Pressure and Turning Points' of a Gui Hai – Yi Chou – Geng Xu – Wu Yin Woman",
       excerpt: "Discover the unique challenges and opportunities in this BaZi chart analysis. Learn how pressure transforms into momentum and when the breakthrough years arrive for this winter-born Geng Metal woman.",
@@ -73,7 +155,7 @@ const BlogPost = () => {
       readTime: "8 min read",
       category: "BaZi Analysis",
       tags: ["BaZi", "Chinese Astrology", "Destiny", "Five Elements", "Career", "Relationships"],
-      image: "/images/blog/bazi-chat-pressure-turning-points-cover.svg",
+              image: "/images/blog/bazi-chat-pressure-turning-points-cover.jpg",
       relatedPosts: [
         {
           title: "Understanding Your BaZi Chart: A Beginner's Guide",
