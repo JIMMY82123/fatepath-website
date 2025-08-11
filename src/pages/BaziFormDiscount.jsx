@@ -2,6 +2,7 @@ import { useState } from 'react'
 import { motion } from 'framer-motion'
 import { Star, ArrowLeft, CheckCircle, Gift } from 'lucide-react'
 import { Link } from 'react-router-dom'
+import { Helmet } from 'react-helmet-async'
 
 const BaziFormDiscount = () => {
   const [isSubmitting, setIsSubmitting] = useState(false)
@@ -86,8 +87,20 @@ const BaziFormDiscount = () => {
   }
 
   return (
-    <div className="min-h-screen pt-16 sm:pt-20 px-4 sm:px-6 lg:px-8">
-      <div className="max-w-2xl mx-auto">
+    <>
+      <Helmet>
+        {/* Google Tag Manager */}
+        <script>
+          {`(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-5623V8HV');`}
+        </script>
+        {/* End Google Tag Manager */}
+      </Helmet>
+      <div className="min-h-screen pt-16 sm:pt-20 px-4 sm:px-6 lg:px-8">
+        <div className="max-w-2xl mx-auto">
         {/* Header */}
         <motion.div 
           initial={{ opacity: 0, y: 50 }}
@@ -360,6 +373,7 @@ const BaziFormDiscount = () => {
         </motion.div>
       </div>
     </div>
+    </>
   )
 }
 
