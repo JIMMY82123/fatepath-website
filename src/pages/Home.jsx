@@ -95,6 +95,17 @@ const Home = () => {
   const latestArticles = [
     {
       id: 1,
+      title: "Health Destiny Report: A Woman's Wellness Path Through BaZi",
+      excerpt: "Discover how your birth chart reveals your health destiny. Learn about wellness cycles, key years for health optimization, and practical strategies for maintaining vitality through BaZi analysis.",
+      category: 'bazi',
+      tags: ['Health', 'Wellness', 'BaZi', 'Chinese Astrology', 'Vitality', 'Lifestyle', 'Destiny'],
+      image: "/images/blog/health-destiny-report-cover.jpg",
+      date: "2025-01-23",
+      readTime: "7 min read",
+      slug: "health-destiny-report-woman-wellness-path"
+    },
+    {
+      id: 2,
       title: "Marriage & Relationship Destiny Report: A Woman's Love Path Through BaZi",
       excerpt: "Discover how your birth chart reveals your romantic destiny. Learn about marriage timing, partner characteristics, and practical strategies for enhancing love luck through BaZi analysis.",
       category: 'love',
@@ -105,7 +116,7 @@ const Home = () => {
       slug: "marriage-relationship-destiny-report-woman-love-path"
     },
     {
-      id: 2,
+      id: 3,
       title: "Financial Destiny Report: A Woman's Wealth Path Through BaZi",
       excerpt: "Discover how your birth chart reveals your financial destiny. Learn about wealth cycles, key years for financial growth, and practical strategies for building wealth through consistent effort and strategic planning.",
       category: 'wealth',
@@ -116,7 +127,7 @@ const Home = () => {
       slug: "financial-destiny-report-woman-wealth-path"
     },
     {
-      id: 3,
+      id: 4,
       title: "BaZi Meets MBTI: A Fascinating East–West Dialogue on Personality",
       excerpt: "BaZi gives you the 'inborn color palette,' MBTI reveals your 'usage habits.' Put the map and the manual together, and you get a fuller picture of yourself.",
       category: 'bazi',
@@ -127,7 +138,7 @@ const Home = () => {
       slug: "bazi-mbti-personality-comparison"
     },
     {
-      id: 4,
+      id: 5,
       title: "BaZi Chat｜The 'Pressure and Turning Points' of a Gui Hai – Yi Chou – Geng Xu – Wu Yin Woman",
       excerpt: "Discover the unique challenges and opportunities in this BaZi chart analysis. Learn how pressure transforms into momentum and when the breakthrough years arrive for this winter-born Geng Metal woman.",
       category: 'bazi',
@@ -138,7 +149,7 @@ const Home = () => {
       slug: "bazi-chat-pressure-turning-points-gui-hai-woman"
     },
     {
-      id: 5,
+      id: 6,
       title: "Understanding Your BaZi Chart: A Beginner's Guide",
       excerpt: "Master the fundamentals of BaZi (八字) analysis and discover how your birth chart reveals your life's blueprint, personality traits, and destiny path through ancient Chinese wisdom.",
       category: 'bazi',
@@ -149,7 +160,7 @@ const Home = () => {
       slug: "understanding-bazi-chart-beginners-guide"
     },
     {
-      id: 6,
+      id: 7,
       title: "The Five Elements in Love: Finding Your Perfect Match",
       excerpt: "Unlock the secrets of romantic compatibility through the Five Elements (五行) system. Learn how Wood, Fire, Earth, Metal, and Water energies create harmony or conflict in relationships.",
       category: 'love',
@@ -160,7 +171,7 @@ const Home = () => {
       slug: "five-elements-love-perfect-match"
     },
     {
-      id: 7,
+      id: 8,
       title: "Wealth Archetypes in Chinese Astrology",
       excerpt: "Discover your unique wealth personality type through BaZi analysis. Learn how your birth chart reveals your financial potential and the best strategies for wealth accumulation.",
       category: 'wealth',

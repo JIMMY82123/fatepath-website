@@ -10,6 +10,221 @@ const BlogPost = () => {
 
   // Sample blog post data - in a real app, this would come from an API or CMS
   const blogPostsData = {
+    "health-destiny-report-woman-wellness-path": {
+      title: "Health Destiny Report: A Woman's Wellness Path Through BaZi",
+      excerpt: "Discover how your birth chart reveals your health destiny. Learn about wellness cycles, key years for health optimization, and practical strategies for maintaining vitality through BaZi analysis.",
+      content: `
+        <div class="mb-8">
+          <div class="bg-gradient-to-r from-green-500/20 to-emerald-500/20 border border-green-500/30 rounded-lg p-6 mb-8">
+            <h3 class="text-lg font-semibold text-green-400 mb-3">🌿 Health Report Summary</h3>
+            <p class="text-mystic-200 mb-2"><strong>Subject:</strong> Female, born October 21, 1988</p>
+            <p class="text-mystic-200 mb-2"><strong>Lunar Date:</strong> 9th Month, 13th Day, 7:00 AM</p>
+            <p class="text-mystic-200 mb-2"><strong>Key Finding:</strong> Health and vitality are deeply connected to lifestyle balance</p>
+            <p class="text-mystic-200"><strong>Peak Wellness Period:</strong> 2026-2030 (late 30s to early 40s)</p>
+          </div>
+        </div>
+
+        <h2 class="text-2xl font-bold text-white mb-4 mt-8">1. Introduction</h2>
+        <p class="mb-6 text-lg text-mystic-200 leading-relaxed">
+          Your BaZi chart reveals a health destiny that emphasizes balance and preventive care. Your Metal Day Master 
+          (辛金) suggests a strong constitution, but your chart also indicates that maintaining vitality requires 
+          attention to lifestyle harmony, particularly in managing stress and maintaining consistent routines.
+        </p>
+
+        <h2 class="text-2xl font-bold text-white mb-4 mt-8">2. Health Structure in Your Chart</h2>
+        
+        <div class="grid md:grid-cols-2 gap-6 mb-6">
+          <div class="bg-mystic-800/30 rounded-lg p-6 border border-mystic-700/50">
+            <h3 class="text-lg font-semibold text-green-400 mb-3">Day Master & Health Star</h3>
+            <p class="text-mystic-200 mb-3">
+              As a <strong>Metal Day Master (辛金)</strong>, your health star is <strong>Earth</strong>. In your chart, 
+              Earth is strong, indicating good digestive health and stability. However, Metal can be sensitive 
+              to environmental changes and stress.
+            </p>
+          </div>
+          
+          <div class="bg-mystic-800/30 rounded-lg p-6 border border-mystic-700/50">
+            <h3 class="text-lg font-semibold text-green-400 mb-3">Health Palace (Month Branch)</h3>
+            <p class="text-mystic-200 mb-3">
+              The Month Branch contains <strong>Water and Wood</strong> energy, showing that your respiratory 
+              and circulatory systems are well-supported. This combination also suggests good adaptability 
+              to seasonal changes.
+            </p>
+          </div>
+        </div>
+
+        <div class="bg-gradient-to-r from-blue-500/20 to-cyan-500/20 border border-blue-500/30 rounded-lg p-6 mb-6">
+          <h3 class="text-lg font-semibold text-blue-400 mb-3">Constitution Analysis</h3>
+          <p class="text-mystic-200 leading-relaxed">
+            Your chart shows a <strong>balanced constitution</strong> with strong Metal and Earth elements. 
+            This suggests good physical stamina and recovery ability, but also indicates a need for 
+            consistent routines and stress management to maintain optimal health.
+          </p>
+        </div>
+
+        <h2 class="text-2xl font-bold text-white mb-4 mt-8">3. Health Strengths & Areas of Focus</h2>
+        
+        <div class="space-y-6 mb-6">
+          <div class="bg-gradient-to-r from-green-500/20 to-emerald-500/20 border border-green-500/30 rounded-lg p-6">
+            <h3 class="text-lg font-semibold text-green-400 mb-3">Natural Strengths</h3>
+            <p class="text-mystic-200 leading-relaxed">
+              <strong>Strong immune system</strong> due to Metal energy, good digestive health from Earth support, 
+              and excellent adaptability from Water-Wood combination. Your constitution naturally 
+              resists common seasonal illnesses.
+            </p>
+          </div>
+          
+          <div class="bg-gradient-to-r from-yellow-500/20 to-orange-500/20 border border-yellow-500/30 rounded-lg p-6">
+            <h3 class="text-lg font-semibold text-yellow-400 mb-3">Areas Requiring Attention</h3>
+            <p class="text-mystic-200 leading-relaxed">
+              <strong>Stress sensitivity</strong> due to Metal nature, potential respiratory sensitivity 
+              during seasonal transitions, and a tendency toward perfectionism that can affect 
+              mental wellness if not managed.
+            </p>
+          </div>
+          
+          <div class="bg-gradient-to-r from-purple-500/20 to-indigo-500/20 border border-purple-500/30 rounded-lg p-6">
+            <h3 class="text-lg font-semibold text-purple-400 mb-3">Lifestyle Recommendations</h3>
+            <p class="text-mystic-200 leading-relaxed">
+              <strong>Consistent routines</strong> are crucial for your Metal nature. Regular exercise, 
+              especially outdoor activities that connect you with Earth energy, and stress-reduction 
+              practices like meditation or yoga will be highly beneficial.
+            </p>
+          </div>
+        </div>
+
+        <h2 class="text-2xl font-bold text-white mb-4 mt-8">4. Health Luck Cycles & Timing</h2>
+        
+        <div class="space-y-6 mb-6">
+          <div class="bg-gradient-to-r from-blue-500/20 to-indigo-500/20 border border-blue-500/30 rounded-lg p-6">
+            <h3 class="text-lg font-semibold text-blue-400 mb-3">2025–2026: Wellness Foundation</h3>
+            <p class="text-mystic-200 leading-relaxed">
+              This period emphasizes <strong>building healthy habits</strong> and establishing routines. 
+              Focus on consistent exercise, balanced nutrition, and stress management. This foundation 
+              will support your health for years to come.
+            </p>
+          </div>
+          
+          <div class="bg-gradient-to-r from-green-500/20 to-emerald-500/20 border border-green-500/30 rounded-lg p-6">
+            <h3 class="text-lg font-semibold text-green-400 mb-3">2026–2030: Peak Vitality Period</h3>
+            <p class="text-mystic-200 leading-relaxed">
+              This is your <strong>strongest health phase</strong>. Energy levels will be high, recovery 
+              will be excellent, and you'll feel motivated to take on new physical challenges. 
+              This is the ideal time to establish long-term fitness goals.
+            </p>
+          </div>
+          
+          <div class="bg-gradient-to-r from-yellow-500/20 to-orange-500/20 border border-yellow-500/30 rounded-lg p-6">
+            <h3 class="text-lg font-semibold text-yellow-400 mb-3">2030–2035: Maintenance & Prevention</h3>
+            <p class="text-mystic-200 leading-relaxed">
+              A period for <strong>maintaining gains</strong> and preventing decline. Focus on preventive 
+              care, regular check-ups, and maintaining the healthy habits established in previous years. 
+              This is also a good time for advanced wellness practices.
+            </p>
+          </div>
+        </div>
+
+        <h2 class="text-2xl font-bold text-white mb-4 mt-8">5. Practical Health Strategies</h2>
+        
+        <div class="space-y-4 mb-6">
+          <div class="flex items-start space-x-4">
+            <div class="w-8 h-8 rounded-full bg-green-500 flex items-center justify-center flex-shrink-0 mt-1">
+              <span class="text-black text-sm font-bold">1</span>
+            </div>
+            <div>
+              <h3 class="text-lg font-semibold text-white mb-2">Establish Consistent Routines</h3>
+              <p class="text-mystic-200">
+                Your Metal nature thrives on structure. Create daily health routines including exercise, 
+                meal times, and sleep schedules. Consistency is more important than intensity.
+              </p>
+            </div>
+          </div>
+          
+          <div class="flex items-start space-x-4">
+            <div class="w-8 h-8 rounded-full bg-green-500 flex items-center justify-center flex-shrink-0 mt-1">
+              <span class="text-black text-sm font-bold">2</span>
+            </div>
+            <div>
+              <h3 class="text-lg font-semibold text-white mb-2">Connect with Earth Energy</h3>
+              <p class="text-mystic-200">
+                Spend time outdoors, especially in natural settings. Gardening, hiking, or simply 
+                walking in parks will strengthen your Earth element and improve overall vitality.
+              </p>
+            </div>
+          </div>
+          
+          <div class="flex items-start space-x-4">
+            <div class="w-8 h-8 rounded-full bg-green-500 flex items-center justify-center flex-shrink-0 mt-1">
+              <span class="text-black text-sm font-bold">3</span>
+            </div>
+            <div>
+              <h3 class="text-lg font-semibold text-white mb-2">Manage Stress Proactively</h3>
+              <p class="text-mystic-200">
+                Your Metal nature is sensitive to stress. Practice regular stress-reduction techniques 
+                such as meditation, deep breathing, or gentle yoga to maintain mental wellness.
+              </p>
+            </div>
+          </div>
+          
+          <div class="flex items-start space-x-4">
+            <div class="w-8 h-8 rounded-full bg-green-500 flex items-center justify-center flex-shrink-0 mt-1">
+              <span class="text-black text-sm font-bold">4</span>
+            </div>
+            <div>
+              <h3 class="text-lg font-semibold text-white mb-2">Seasonal Health Awareness</h3>
+              <p class="text-mystic-200">
+                Pay attention to seasonal transitions, especially autumn and spring. These periods 
+                may require extra care for your respiratory system and immune function.
+              </p>
+            </div>
+          </div>
+          
+          <div class="flex items-start space-x-4">
+            <div class="w-8 h-8 rounded-full bg-green-500 flex items-center justify-center flex-shrink-0 mt-1">
+              <span class="text-black text-sm font-bold">5</span>
+            </div>
+            <div>
+              <h3 class="text-lg font-semibold text-white mb-2">Preventive Care Focus</h3>
+              <p class="text-mystic-200">
+                Don't wait for symptoms to appear. Regular check-ups, screenings, and preventive 
+                measures will be highly effective for your constitution type.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-gradient-to-r from-green-500/20 to-emerald-500/20 border border-green-500/30 rounded-lg p-6 mb-8">
+          <h3 class="text-lg font-semibold text-green-400 mb-3">🌱 Wellness Summary</h3>
+          <p class="text-mystic-200 leading-relaxed">
+            Your BaZi chart indicates a naturally strong constitution with excellent potential for 
+            maintaining vitality throughout your life. The key to unlocking this potential lies in 
+            establishing consistent routines, managing stress proactively, and connecting with natural 
+            environments. By focusing on prevention and balance rather than reactive care, you can 
+            enjoy optimal health well into your later years.
+          </p>
+        </div>
+      `,
+      author: "Master Chen",
+      date: "2025-01-23",
+      readTime: "7 min read",
+      category: "Health & Wellness",
+      tags: ['Health', 'Wellness', 'BaZi', 'Chinese Astrology', 'Vitality', 'Lifestyle', 'Destiny'],
+      image: "/images/blog/health-destiny-report-cover.jpg",
+      relatedPosts: [
+        {
+          title: "Understanding Your BaZi Chart: A Beginner's Guide",
+          excerpt: "Master the fundamentals of BaZi (八字) analysis and discover your life's blueprint.",
+          image: "/images/blog/bazi-beginners-guide-cover.jpg",
+          slug: "understanding-bazi-chart-beginners-guide"
+        },
+        {
+          title: "Financial Destiny Report: A Woman's Wealth Path Through BaZi",
+          excerpt: "Discover how your birth chart reveals your financial destiny and wealth cycles.",
+          image: "/images/blog/financial-destiny-report-cover.jpg",
+          slug: "financial-destiny-report-woman-wealth-path"
+        }
+      ]
+    },
     "marriage-relationship-destiny-report-woman-love-path": {
       title: "Marriage & Relationship Destiny Report: A Woman's Love Path Through BaZi",
       excerpt: "Discover how your birth chart reveals your romantic destiny. Learn about marriage timing, partner characteristics, and practical strategies for enhancing love luck through BaZi analysis.",
