@@ -1,12 +1,15 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import { useParams, Link } from 'react-router-dom'
 import { motion } from 'framer-motion'
-import { Calendar, Clock, ArrowLeft, Share2, BookOpen, User, Tag } from 'lucide-react'
+import { Calendar, Clock, ArrowLeft, Share2, BookOpen, User, Tag, AlertCircle, Loader2 } from 'lucide-react'
 import SEO from '../components/SEO'
 import LazyImage from '../components/LazyImage'
 
 const BlogPost = () => {
   const { slug } = useParams()
+  const [isLoading, setIsLoading] = useState(true)
+  const [hasError, setHasError] = useState(false)
+  const [retryCount, setRetryCount] = useState(0)
 
   // Sample blog post data - in a real app, this would come from an API or CMS
   const blogPostsData = {
@@ -1459,8 +1462,95 @@ const BlogPost = () => {
     }
   }
 
+  // Handle loading and error states
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setIsLoading(false)
+    }, 1000) // Show loading for at least 1 second
+
+    // Check if the blog post exists
+    if (!blogPostsData[slug]) {
+      setHasError(true)
+      setIsLoading(false)
+    }
+
+    // Add error listener for JavaScript errors
+    const handleError = (event) => {
+      console.error('JavaScript error caught:', event.error)
+      setHasError(true)
+      setIsLoading(false)
+    }
+
+    const handleUnhandledRejection = (event) => {
+      console.error('Unhandled promise rejection:', event.reason)
+      setHasError(true)
+      setIsLoading(false)
+    }
+
+    window.addEventListener('error', handleError)
+    window.addEventListener('unhandledrejection', handleUnhandledRejection)
+
+    return () => {
+      clearTimeout(timer)
+      window.removeEventListener('error', handleError)
+      window.removeEventListener('unhandledrejection', handleUnhandledRejection)
+    }
+  }, [slug])
+
   // Get the blog post data based on the slug, or show a default post
   const blogPost = blogPostsData[slug] || blogPostsData["understanding-bazi-chart-beginners-guide"]
+
+  // Loading state
+  if (isLoading) {
+    return (
+      <div className="min-h-screen bg-mystic-900 pt-20 flex items-center justify-center">
+        <div className="text-center">
+          <Loader2 className="h-16 w-16 text-gold-400 animate-spin mx-auto mb-6" />
+          <h1 className="text-2xl font-bold text-white mb-4">Loading Your Destiny Report...</h1>
+          <p className="text-mystic-300">Please wait while we prepare your personalized analysis</p>
+        </div>
+      </div>
+    )
+  }
+
+  // Error state with retry functionality
+  if (hasError) {
+    return (
+      <div className="min-h-screen bg-mystic-900 pt-20 flex items-center justify-center">
+        <div className="text-center max-w-md mx-auto px-4">
+          <AlertCircle className="h-16 w-16 text-red-400 mx-auto mb-6" />
+          <h1 className="text-2xl font-bold text-white mb-4">Oops! Something went wrong</h1>
+          <p className="text-mystic-300 mb-6">
+            We're having trouble loading your destiny report. This might be due to:
+          </p>
+          <ul className="text-mystic-300 text-left mb-6 space-y-2">
+            <li>• Network connection issues</li>
+            <li>• Browser compatibility</li>
+            <li>• Temporary server issues</li>
+          </ul>
+          <div className="space-y-3">
+            <button
+              onClick={() => {
+                setHasError(false)
+                setIsLoading(true)
+                setRetryCount(prev => prev + 1)
+                window.location.reload()
+              }}
+              className="w-full bg-gradient-to-r from-gold-400 to-gold-600 text-white px-6 py-3 rounded-lg hover:from-gold-500 hover:to-gold-700 transition-all duration-300"
+            >
+              Try Again
+            </button>
+            <Link
+              to="/blog"
+              className="block w-full bg-mystic-700 text-white px-6 py-3 rounded-lg hover:bg-mystic-600 transition-all duration-300"
+            >
+              Back to Blog
+            </Link>
+          </div>
+        </div>
+      </div>
+    )
+  }
 
   // If no blog post is found, show a 404 message
   if (!blogPost) {
@@ -1496,6 +1586,41 @@ const BlogPost = () => {
 
   return (
     <>
+      {/* Fallback for users with JavaScript disabled */}
+      <noscript>
+        <div style={{
+          backgroundColor: '#0f172a',
+          color: '#e2e8f0',
+          padding: '20px',
+          fontFamily: 'Arial, sans-serif',
+          minHeight: '100vh'
+        }}>
+          <h1 style={{color: '#facc15', fontSize: '2rem', marginBottom: '1rem'}}>
+            {blogPost.title}
+          </h1>
+          <p style={{fontSize: '1.1rem', marginBottom: '2rem'}}>
+            {blogPost.excerpt}
+          </p>
+          <div style={{marginBottom: '2rem'}}>
+            <strong>Author:</strong> {blogPost.author} | 
+            <strong>Date:</strong> {blogPost.date} | 
+            <strong>Read Time:</strong> {blogPost.readTime}
+          </div>
+          <div style={{
+            backgroundColor: '#1e293b',
+            padding: '20px',
+            borderRadius: '8px',
+            border: '1px solid #334155'
+          }}>
+            <div dangerouslySetInnerHTML={{ __html: blogPost.content }} />
+          </div>
+          <p style={{marginTop: '2rem', fontSize: '0.9rem', color: '#94a3b8'}}>
+            JavaScript is required for the full interactive experience. 
+            Please enable JavaScript to view the complete article with animations and enhanced features.
+          </p>
+        </div>
+      </noscript>
+
       <SEO 
         title={`${blogPost.title} | FatePath Chinese Astrology Blog`}
         description={blogPost.excerpt}
