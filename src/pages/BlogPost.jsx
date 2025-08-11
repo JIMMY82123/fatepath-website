@@ -10,6 +10,204 @@ const BlogPost = () => {
 
   // Sample blog post data - in a real app, this would come from an API or CMS
   const blogPostsData = {
+    "financial-destiny-report-woman-wealth-path": {
+      title: "Financial Destiny Report: A Woman's Wealth Path Through BaZi",
+      excerpt: "Discover how your birth chart reveals your financial destiny. Learn about wealth cycles, key years for financial growth, and practical strategies for building wealth through consistent effort and strategic planning.",
+      content: `
+        <div class="mb-8">
+          <div class="bg-gradient-to-r from-amber-500/20 to-yellow-500/20 border border-amber-500/30 rounded-lg p-6 mb-8">
+            <h3 class="text-lg font-semibold text-amber-400 mb-3">📊 Report Summary</h3>
+            <p class="text-mystic-200 mb-2"><strong>Subject:</strong> Female, born October 21, 1988</p>
+            <p class="text-mystic-200 mb-2"><strong>Lunar Date:</strong> 9th Month, 13th Day, 7:00 AM</p>
+            <p class="text-mystic-200 mb-2"><strong>Key Finding:</strong> Steady wealth accumulation through consistent effort and strategic planning</p>
+            <p class="text-mystic-200"><strong>Peak Wealth Period:</strong> 2028-2038 (after age 40)</p>
+          </div>
+        </div>
+
+        <h2 class="text-2xl font-bold text-white mb-4 mt-8">1. Introduction</h2>
+        <p class="mb-6 text-lg text-mystic-200 leading-relaxed">
+          Your chart reveals a financial path marked by steady accumulation rather than overnight windfalls. 
+          Wealth opportunities in your life tend to come through consistent effort, professional skill, and strategic partnerships 
+          rather than speculative ventures. This is a chart that values foundation before expansion — if you set up the structure well, 
+          the wealth will naturally flow in.
+        </p>
+
+        <h2 class="text-2xl font-bold text-white mb-4 mt-8">2. BaZi Wealth Structure Analysis</h2>
+        
+        <div class="grid md:grid-cols-2 gap-6 mb-6">
+          <div class="bg-mystic-800/30 rounded-lg p-6 border border-mystic-700/50">
+            <h3 class="text-lg font-semibold text-gold-400 mb-3">Element Balance</h3>
+            <p class="text-mystic-200 mb-3">
+              <strong>Metal (辛)</strong> is your Day Master. Metal thrives when supported by Earth (your resource) and is challenged by Fire (your output). 
+              In your chart, Earth is strong, meaning you have good support from resources, family, or stable environments.
+            </p>
+          </div>
+          
+          <div class="bg-mystic-800/30 rounded-lg p-6 border border-mystic-700/50">
+            <h3 class="text-lg font-semibold text-gold-400 mb-3">Wealth Stars</h3>
+            <p class="text-mystic-200 mb-3">
+              For a Metal Day Master, <strong>Wood represents wealth</strong>. In your chart, Wood is hidden and not dominant, 
+              suggesting financial gains require active seeking — money won't fall into your lap.
+            </p>
+          </div>
+        </div>
+
+        <div class="bg-gradient-to-r from-blue-500/20 to-cyan-500/20 border border-blue-500/30 rounded-lg p-6 mb-6">
+          <h3 class="text-lg font-semibold text-blue-400 mb-3">Resource-Output-Wealth Flow</h3>
+          <p class="text-mystic-200 leading-relaxed">
+            The strong Earth gives you stability and planning ability, but also a tendency to be conservative. 
+            The key is to activate your output (Fire) to generate more wealth opportunities, otherwise resources remain unused.
+          </p>
+        </div>
+
+        <h2 class="text-2xl font-bold text-white mb-4 mt-8">3. Luck Cycle (Da Yun) Wealth Trends</h2>
+        
+        <div class="space-y-6 mb-6">
+          <div class="bg-gradient-to-r from-blue-500/20 to-indigo-500/20 border border-blue-500/30 rounded-lg p-6">
+            <h3 class="text-lg font-semibold text-blue-400 mb-3">2018–2028: Water Luck Cycle (壬)</h3>
+            <p class="text-mystic-200 leading-relaxed">
+              This is a water luck cycle supporting your intelligence and learning, but wealth growth is indirect — 
+              income is tied to skill upgrades, professional authority, or building credibility.
+            </p>
+          </div>
+          
+          <div class="bg-gradient-to-r from-green-500/20 to-emerald-500/20 border border-green-500/30 rounded-lg p-6">
+            <h3 class="text-lg font-semibold text-green-400 mb-3">2028–2038: Wood Luck Cycle</h3>
+            <p class="text-mystic-200 leading-relaxed">
+              A major wealth phase begins. The Wood energy rises, directly activating your wealth star. 
+              If you prepare in the current cycle, this will be your prime time for significant financial gains.
+            </p>
+          </div>
+        </div>
+
+        <div class="bg-gradient-to-r from-amber-500/20 to-orange-500/20 border border-amber-500/30 rounded-lg p-6 mb-6">
+          <h3 class="text-lg font-semibold text-amber-400 mb-3">Key Insight</h3>
+          <p class="text-mystic-200 leading-relaxed">
+            Your wealth luck improves significantly after age 40, but your preparation in the next 5 years will determine the size of that success.
+          </p>
+        </div>
+
+        <h2 class="text-2xl font-bold text-white mb-4 mt-8">4. Key Years to Watch</h2>
+        
+        <div class="grid md:grid-cols-3 gap-4 mb-6">
+          <div class="bg-gradient-to-r from-blue-500/20 to-purple-500/20 border border-blue-500/30 rounded-lg p-4 text-center">
+            <h3 class="text-lg font-semibold text-blue-400 mb-2">2025–2026</h3>
+            <p class="text-sm text-mystic-200">
+              Strong Water + Fire influence — possible job shifts, new income channels, or side businesses. Take calculated risks.
+            </p>
+          </div>
+          
+          <div class="bg-gradient-to-r from-green-500/20 to-emerald-500/20 border border-green-500/30 rounded-lg p-4 text-center">
+            <h3 class="text-lg font-semibold text-green-400 mb-2">2030</h3>
+            <p class="text-sm text-mystic-200">
+              Peak wealth activation — a year for expansion, property purchase, or large investment.
+            </p>
+          </div>
+          
+          <div class="bg-gradient-to-r from-red-500/20 to-pink-500/20 border border-red-500/30 rounded-lg p-4 text-center">
+            <h3 class="text-lg font-semibold text-red-400 mb-2">2034–2035</h3>
+            <p class="text-sm text-mystic-200">
+              Cash flow tension; keep liquidity strong to avoid stress.
+            </p>
+          </div>
+        </div>
+
+        <h2 class="text-2xl font-bold text-white mb-4 mt-8">5. Practical Wealth Advice</h2>
+        
+        <div class="space-y-4 mb-6">
+          <div class="flex items-start space-x-4">
+            <div class="w-8 h-8 rounded-full bg-gold-500 flex items-center justify-center flex-shrink-0 mt-1">
+              <span class="text-black text-sm font-bold">1</span>
+            </div>
+            <div>
+              <h3 class="text-lg font-semibold text-white mb-2">Build Active Income Streams Now</h3>
+              <p class="text-mystic-200">
+                Don't rely solely on a salary; consider consulting, digital products, or specialized services.
+              </p>
+            </div>
+          </div>
+          
+          <div class="flex items-start space-x-4">
+            <div class="text-mystic-200">
+              <div class="w-8 h-8 rounded-full bg-gold-500 flex items-center justify-center flex-shrink-0 mt-1">
+                <span class="text-black text-sm font-bold">2</span>
+              </div>
+            </div>
+            <div>
+              <h3 class="text-lg font-semibold text-white mb-2">Invest in Skills That Scale</h3>
+              <p class="text-mystic-200">
+                Your chart favors knowledge-based earning (e.g., training, niche expertise) over purely physical labor.
+              </p>
+            </div>
+          </div>
+          
+          <div class="flex items-start space-x-4">
+            <div class="w-8 h-8 rounded-full bg-gold-500 flex items-center justify-center flex-shrink-0 mt-1">
+              <span class="text-black text-sm font-bold">3</span>
+            </div>
+            <div>
+              <h3 class="text-lg font-semibold text-white mb-2">Leverage Resource Network</h3>
+              <p class="text-mystic-200">
+                Tap into connections and mentors; collaboration will accelerate results.
+              </p>
+            </div>
+          </div>
+          
+          <div class="flex items-start space-x-4">
+            <div class="w-8 h-8 rounded-full bg-gold-500 flex items-center justify-center flex-shrink-0 mt-1">
+              <span class="text-black text-sm font-bold">4</span>
+            </div>
+            <div>
+              <h3 class="text-lg font-semibold text-white mb-2">Avoid Impulsive Investments</h3>
+              <p class="text-mystic-200">
+                Particularly before 2028, keep investments conservative to avoid liquidity traps.
+              </p>
+            </div>
+          </div>
+          
+          <div class="flex items-start space-x-4">
+            <div class="w-8 h-8 rounded-full bg-gold-500 flex items-center justify-center flex-shrink-0 mt-1">
+              <span class="text-black text-sm font-bold">5</span>
+            </div>
+            <div>
+              <h3 class="text-lg font-semibold text-white mb-2">2028 Preparation</h3>
+              <p class="text-mystic-200">
+                Treat the next 5 years as your "seed planting" stage — launch the projects you want to scale later.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-gradient-to-r from-gold-500/20 to-amber-500/20 border border-gold-500/30 rounded-lg p-6 mb-8">
+          <h3 class="text-lg font-semibold text-gold-400 mb-3">💡 Strategic Summary</h3>
+          <p class="text-mystic-200 leading-relaxed">
+            Your financial destiny is not about quick wins, but about building a solid foundation that will support significant wealth growth after 2028. 
+            Focus on developing your skills, building your network, and creating scalable income streams in the next 5 years. 
+            The patience and preparation you invest now will determine the magnitude of your financial success in your 40s and beyond.
+          </p>
+        </div>
+      `,
+      author: "Master Chen",
+      date: "2025-01-21",
+      readTime: "7 min read",
+      category: "Wealth & Career",
+      tags: ["Wealth", "Financial Destiny", "BaZi", "Chinese Astrology", "Career", "Investment", "Money"],
+      image: "/images/blog/financial-destiny-report-cover.jpg",
+      relatedPosts: [
+        {
+          title: "Wealth Archetypes in Chinese Astrology",
+          excerpt: "Discover your unique wealth personality type through BaZi analysis.",
+          image: "/images/blog/wealth-archetypes-cover.jpg",
+          slug: "wealth-archetypes-chinese-astrology"
+        },
+        {
+          title: "Career Timing: When to Make Your Next Big Move",
+          excerpt: "Learn to read the cosmic signals for perfect career timing.",
+          image: "/images/blog/career-timing-cover.jpg",
+          slug: "career-timing-next-big-move"
+        }
+      ]
+    },
     "bazi-mbti-personality-comparison": {
       title: "BaZi Meets MBTI: A Fascinating East–West Dialogue on Personality",
       excerpt: "BaZi gives you the 'inborn color palette,' MBTI reveals your 'usage habits.' Put the map and the manual together, and you get a fuller picture of yourself.",
