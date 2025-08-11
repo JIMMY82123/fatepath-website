@@ -14,6 +14,7 @@ const Testimonials = lazy(() => import('./pages/Testimonials'))
 const FreeBaziReport = lazy(() => import('./pages/FreeBaziReport'))
 const BaziForm = lazy(() => import('./pages/BaziForm'))
 const BaziFormDiscount = lazy(() => import('./pages/BaziFormDiscount'))
+const BaziDiscountThankYou = lazy(() => import('./pages/BaziDiscountThankYou'))
 const LoveForm = lazy(() => import('./pages/LoveForm'))
 const TalismanForm = lazy(() => import('./pages/TalismanForm'))
 const WealthSign = lazy(() => import('./pages/WealthSign'))
@@ -40,6 +41,7 @@ function App() {
               <Route path="/free-bazi-report" element={<FreeBaziReport />} />
               <Route path="/bazi-form" element={<BaziForm />} />
               <Route path="/form-bazi-discount" element={<BaziFormDiscount />} />
+              <Route path="/bazi-discount-thank-you" element={<BaziDiscountThankYou />} />
               <Route path="/love-form" element={<LoveForm />} />
               <Route path="/talisman-form" element={<TalismanForm />} />
               <Route path="/wealth-sign" element={<WealthSign />} />

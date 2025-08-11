@@ -1,10 +1,11 @@
 import { useState } from 'react'
 import { motion } from 'framer-motion'
 import { Star, ArrowLeft, CheckCircle, Gift } from 'lucide-react'
-import { Link } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 import { Helmet } from 'react-helmet-async'
 
 const BaziFormDiscount = () => {
+  const navigate = useNavigate()
   const [isSubmitting, setIsSubmitting] = useState(false)
   const [isSubmitted, setIsSubmitted] = useState(false)
   const [formData, setFormData] = useState({
@@ -43,7 +44,8 @@ const BaziFormDiscount = () => {
       })
 
       if (response.ok) {
-        setIsSubmitted(true)
+        // 跳转到专门的感谢页
+        navigate('/bazi-discount-thank-you')
       } else {
         throw new Error('Submission failed')
       }
@@ -55,36 +57,7 @@ const BaziFormDiscount = () => {
     }
   }
 
-  if (isSubmitted) {
-    return (
-      <div className="min-h-screen pt-20 px-4 sm:px-6 lg:px-8">
-        <div className="max-w-2xl mx-auto text-center">
-          <motion.div
-            initial={{ opacity: 0, scale: 0.8 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.6 }}
-            className="mystic-card p-12"
-          >
-            <CheckCircle className="h-16 w-16 text-green-400 mx-auto mb-6" />
-            <h1 className="text-3xl font-cinzel font-bold mb-4 text-white">
-              Thank You for Your Special Offer Purchase!
-            </h1>
-            <p className="text-mystic-300 mb-8 text-lg">
-              Your discounted Bazi reading request has been submitted successfully. 
-              I will analyze your birth chart and send your detailed report within 3-5 days.
-            </p>
-            <Link
-              to="/"
-              className="inline-flex items-center space-x-2 bg-gradient-to-r from-gold-500 to-gold-600 text-black font-poppins font-semibold px-8 py-3 rounded-full hover:from-gold-400 hover:to-gold-500 transition-all duration-300"
-            >
-              <ArrowLeft className="h-5 w-5" />
-              <span>Return to Home</span>
-            </Link>
-          </motion.div>
-        </div>
-      </div>
-    )
-  }
+
 
   return (
     <>
