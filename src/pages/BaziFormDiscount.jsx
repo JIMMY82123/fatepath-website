@@ -123,12 +123,12 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           <div className="inline-flex items-center justify-center w-16 h-16 sm:w-20 sm:h-20 rounded-full bg-gradient-to-r from-green-500 to-emerald-500 mb-4 sm:mb-6">
             <Gift className="h-8 w-8 sm:h-10 sm:w-10 text-white" />
           </div>
-          <h1 className="text-2xl sm:text-3xl md:text-4xl font-cinzel font-bold mb-3 sm:mb-4 text-white tracking-wide">
-            Special Offer: Detailed Bazi Reading
-          </h1>
-          <p className="text-lg sm:text-xl text-mystic-300">
-            Limited Time Discount - Complete Your Purchase
-          </p>
+                     <h1 className="text-2xl sm:text-3xl md:text-4xl font-cinzel font-bold mb-3 sm:mb-4 text-white tracking-wide">
+             Complete Your Bazi Reading Request
+           </h1>
+           <p className="text-lg sm:text-xl text-mystic-300">
+             Payment Confirmed - Please Provide Your Information
+           </p>
         </motion.div>
 
         {/* Special Offer Banner */}
@@ -342,23 +342,11 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                      </div>
                    </div>
 
-            {/* PayPal Payment Button */}
-            <div className="space-y-4">
-              <a
-                href={"https://www.paypal.com/ncp/payment/9C2AYQDRSB9XY?return_url=" + encodeURIComponent(window.location.origin + '/form-bazi-discount')}
-                className="inline-block w-full bg-gradient-to-r from-blue-500 to-blue-600 text-white font-poppins font-semibold py-4 px-8 rounded-full hover:from-blue-400 hover:to-blue-500 transition-all duration-300 text-center tracking-wide flex items-center justify-center space-x-2"
-              >
-                <svg className="h-5 w-5" viewBox="0 0 24 24" fill="currentColor">
-                  <path d="M20.067 8.478c.492.315.844.825.844 1.406 0 .58-.352 1.09-.844 1.406-.492.315-1.156.51-1.875.51h-1.406c-.492 0-.844-.195-.844-.51 0-.315.352-.51.844-.51h1.406c.352 0 .703-.195.703-.406 0-.21-.351-.406-.703-.406h-1.406c-.492 0-.844-.195-.844-.51 0-.315.352-.51.844-.51h1.406c.719 0 1.383.195 1.875.51zM12.5 8.478c.492.315.844.825.844 1.406 0 .58-.352 1.09-.844 1.406-.492.315-1.156.51-1.875.51h-1.406c-.492 0-.844-.195-.844-.51 0-.315.352-.51.844-.51h1.406c.352 0 .703-.195.703-.406 0-.21-.351-.406-.703-.406h-1.406c-.492 0-.844-.195-.844-.51 0-.315.352-.51.844-.51h1.406c.719 0 1.383.195 1.875.51zM7.5 8.478c.492.315.844.825.844 1.406 0 .58-.352 1.09-.844 1.406-.492.315-1.156.51-1.875.51H4.219c-.492 0-.844-.195-.844-.51 0-.315.352-.51.844-.51h1.406c.352 0 .703-.195.703-.406 0-.21-.351-.406-.703-.406H4.219c-.492 0-.844-.195-.844-.51 0-.315.352-.51.844-.51h1.406c.719 0 1.383.195 1.875.51z"/>
-                </svg>
-                <span>Pay $30 with PayPal</span>
-              </a>
-              
-              <div className="text-center">
-                <p className="text-sm text-mystic-300 mb-2">After payment, please submit the form below</p>
-                <div className="w-full h-px bg-gradient-to-r from-transparent via-mystic-600 to-transparent"></div>
-              </div>
-            </div>
+                         {/* Payment Confirmation Notice */}
+             <div className="text-center p-4 bg-green-500/20 rounded-lg border border-green-500/30">
+               <p className="text-sm text-green-400 mb-2">✅ Payment Confirmed</p>
+               <p className="text-xs text-mystic-300">Please complete the form below to receive your detailed Bazi reading</p>
+             </div>
 
             {/* Submit Button */}
             <motion.button
