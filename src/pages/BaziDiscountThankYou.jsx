@@ -2,8 +2,15 @@ import { motion } from 'framer-motion'
 import { CheckCircle, ArrowLeft, Gift, Clock, Mail, Star } from 'lucide-react'
 import { Link } from 'react-router-dom'
 import { Helmet } from 'react-helmet-async'
+import { useEffect } from 'react'
+import { trackBaziDiscountConversion } from '../utils/conversionTracking'
 
 const BaziDiscountThankYou = () => {
+  useEffect(() => {
+    // 确认Google Ads转化事件
+    trackBaziDiscountConversion();
+  }, []);
+
   return (
     <>
       <Helmet>

@@ -3,6 +3,7 @@ import { motion } from 'framer-motion'
 import { Star, ArrowLeft, CheckCircle, Gift } from 'lucide-react'
 import { Link, useNavigate } from 'react-router-dom'
 import { Helmet } from 'react-helmet-async'
+import { trackBaziDiscountConversion } from '../utils/conversionTracking'
 
 const BaziFormDiscount = () => {
   const navigate = useNavigate()
@@ -44,6 +45,9 @@ const BaziFormDiscount = () => {
       })
 
       if (response.ok) {
+        // 触发Google Ads转化事件
+        trackBaziDiscountConversion();
+        
         // 跳转到专门的感谢页
         navigate('/bazi-discount-thank-you')
       } else {
