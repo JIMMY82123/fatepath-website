@@ -99,6 +99,18 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         </script>
         {/* End Google Tag Manager */}
       </Helmet>
+      
+      {/* Google Tag Manager (noscript) */}
+      <noscript>
+        <iframe 
+          src="https://www.googletagmanager.com/ns.html?id=GTM-5623V8HV"
+          height="0" 
+          width="0" 
+          style={{display:'none',visibility:'hidden'}}
+        />
+      </noscript>
+      {/* End Google Tag Manager (noscript) */}
+      
       <div className="min-h-screen pt-16 sm:pt-20 px-4 sm:px-6 lg:px-8">
         <div className="max-w-2xl mx-auto">
         {/* Header */}
