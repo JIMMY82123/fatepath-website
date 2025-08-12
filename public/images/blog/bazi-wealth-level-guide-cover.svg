@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <!-- Background -->
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0f172a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1e293b;stop-opacity:1" />
+    </linearGradient>
+    
+    <linearGradient id="goldGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#facc15;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#eab308;stop-opacity:1" />
+    </linearGradient>
+    
+    <linearGradient id="moneyGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#22c55e;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#16a34a;stop-opacity:1" />
+    </linearGradient>
+    
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge> 
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bgGradient)"/>
+  
+  <!-- Decorative elements -->
+  <circle cx="100" cy="100" r="50" fill="url(#goldGradient)" opacity="0.1"/>
+  <circle cx="1100" cy="530" r="80" fill="url(#goldGradient)" opacity="0.1"/>
+  <circle cx="200" cy="500" r="30" fill="url(#moneyGradient)" opacity="0.2"/>
+  <circle cx="1000" cy="150" r="40" fill="url(#moneyGradient)" opacity="0.2"/>
+  
+  <!-- Main title -->
+  <text x="600" y="200" font-family="Arial, sans-serif" font-size="48" font-weight="bold" text-anchor="middle" fill="white" filter="url(#glow)">
+    How to Read Your Wealth Level
+  </text>
+  <text x="600" y="250" font-family="Arial, sans-serif" font-size="48" font-weight="bold" text-anchor="middle" fill="url(#goldGradient)">
+    in BaZi
+  </text>
+  
+  <!-- Subtitle -->
+  <text x="600" y="320" font-family="Arial, sans-serif" font-size="24" text-anchor="middle" fill="#94a3b8">
+    A Simple Guide to Financial Destiny
+  </text>
+  
+  <!-- Wealth symbols -->
+  <g transform="translate(400, 400)">
+    <!-- Money bag -->
+    <ellipse cx="0" cy="0" rx="60" ry="80" fill="url(#moneyGradient)" opacity="0.8"/>
+    <ellipse cx="0" cy="-60" rx="40" ry="20" fill="url(#moneyGradient)" opacity="0.8"/>
+    <text x="0" y="10" font-family="Arial, sans-serif" font-size="36" text-anchor="middle" fill="white">💰</text>
+  </g>
+  
+  <g transform="translate(800, 400)">
+    <!-- BaZi symbols -->
+    <circle cx="0" cy="0" r="50" fill="url(#goldGradient)" opacity="0.8"/>
+    <text x="0" y="15" font-family="Arial, sans-serif" font-size="40" text-anchor="middle" fill="#0f172a">☯</text>
+  </g>
+  
+  <!-- Connecting line -->
+  <line x1="460" y1="400" x2="740" y2="400" stroke="url(#goldGradient)" stroke-width="3" opacity="0.6"/>
+  
+  <!-- Bottom text -->
+  <text x="600" y="580" font-family="Arial, sans-serif" font-size="18" text-anchor="middle" fill="#64748b">
+    Discover Your Financial Destiny Through Ancient Chinese Wisdom
+  </text>
+  
+  <!-- Decorative lines -->
+  <line x1="100" y1="350" x2="300" y2="350" stroke="url(#goldGradient)" stroke-width="2" opacity="0.4"/>
+  <line x1="900" y1="350" x2="1100" y2="350" stroke="url(#goldGradient)" stroke-width="2" opacity="0.4"/>
+</svg>

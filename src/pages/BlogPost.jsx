@@ -13,6 +13,220 @@ const BlogPost = () => {
 
   // Sample blog post data - in a real app, this would come from an API or CMS
   const blogPostsData = {
+    "how-to-read-wealth-level-bazi-simple-guide": {
+      title: "How to Read Your Wealth Level in BaZi: A Simple Guide to Financial Destiny",
+      excerpt: "Discover how to analyze your wealth potential through BaZi reading. Learn about Wealth Stars, Day Master strength, and luck cycles that determine your financial destiny and money-making ability.",
+      content: `
+        <div class="mb-8">
+          <div class="bg-gradient-to-r from-yellow-500/20 to-orange-500/20 border border-yellow-500/30 rounded-lg p-6 mb-8">
+            <h3 class="text-lg font-semibold text-yellow-400 mb-3">💰 Wealth Analysis Summary</h3>
+            <p class="text-mystic-200 mb-2"><strong>Key Concept:</strong> Wealth in BaZi is like checking your money bag</p>
+            <p class="text-mystic-200 mb-2"><strong>Three Factors:</strong> Wealth Star, Day Master strength, and Luck Cycles</p>
+            <p class="text-mystic-200 mb-2"><strong>Goal:</strong> Find the right timing and method to grow your money</p>
+            <p class="text-mystic-200"><strong>Outcome:</strong> Steady wealth growth instead of quick gains and losses</p>
+          </div>
+        </div>
+
+        <h2 class="text-2xl font-bold text-white mb-4 mt-8">Introduction</h2>
+        <p class="mb-6 text-lg text-mystic-200 leading-relaxed">
+          When people come to me for a BaZi reading, one of the most common questions is: "Will I be rich? And how much money can I make?"
+        </p>
+        <p class="mb-6 text-lg text-mystic-200 leading-relaxed">
+          In BaZi, figuring out your wealth level is a bit like checking your money bag—how big it is, whether it can hold money, and if it will leak. We look at all these factors together.
+        </p>
+
+        <h2 class="text-2xl font-bold text-white mb-4 mt-8">Step 1: Find Your "Wealth Star"</h2>
+        <p class="mb-6 text-lg text-mystic-200 leading-relaxed">
+          In BaZi, the Wealth Star represents money. For different people, money belongs to different elements, just like different bags hold different things:
+        </p>
+        
+        <div class="grid md:grid-cols-3 gap-6 mb-6">
+          <div class="bg-mystic-800/30 rounded-lg p-6 border border-mystic-700/50">
+            <h3 class="text-lg font-semibold text-green-400 mb-3">Earth as Money</h3>
+            <p class="text-mystic-200 mb-3">
+              For some, <strong>Earth is money</strong> (e.g., people born on a Jia Wood day). These individuals find wealth through stability, real estate, and practical investments.
+            </p>
+          </div>
+          
+          <div class="bg-mystic-800/30 rounded-lg p-6 border border-mystic-700/50">
+            <h3 class="text-lg font-semibold text-blue-400 mb-3">Metal as Money</h3>
+            <p class="text-mystic-200 mb-3">
+              For others, <strong>Metal is money</strong> (e.g., people born on a Bing Fire day). These people excel in finance, technology, and precision-based wealth building.
+            </p>
+          </div>
+          
+          <div class="bg-mystic-800/30 rounded-lg p-6 border border-mystic-700/50">
+            <h3 class="text-lg font-semibold text-cyan-400 mb-3">Water as Money</h3>
+            <p class="text-mystic-200 mb-3">
+              For others, <strong>Water is money</strong> (e.g., people born on a Wu Earth day). These individuals find wealth through communication, travel, and fluid opportunities.
+            </p>
+          </div>
+        </div>
+
+        <div class="bg-gradient-to-r from-yellow-500/20 to-orange-500/20 border border-yellow-500/30 rounded-lg p-6 mb-6">
+          <h3 class="text-lg font-semibold text-yellow-400 mb-3">Finding Your Wealth Element</h3>
+          <p class="text-mystic-200 leading-relaxed">
+            First, find out which element is your "money," so you can see if your chart has a good money bag. This is determined by your Day Master element and follows specific BaZi rules.
+          </p>
+        </div>
+
+        <h2 class="text-2xl font-bold text-white mb-4 mt-8">Step 2: Check if the Bag Is Strong</h2>
+        <p class="mb-6 text-lg text-mystic-200 leading-relaxed">
+          The "Day Master" in BaZi represents you. If you're strong, you can carry a big bag and keep the money safe; if you're weak, a heavy bag will tire you out and may even leak.
+        </p>
+        
+        <div class="space-y-6 mb-6">
+          <div class="bg-gradient-to-r from-green-500/20 to-emerald-500/20 border border-green-500/30 rounded-lg p-6">
+            <h3 class="text-lg font-semibold text-green-400 mb-3">Strong Day Master</h3>
+            <p class="text-mystic-200 leading-relaxed">
+              <strong>Can handle and keep money.</strong> You have the capacity to manage large sums, make wise investments, and maintain wealth over time. Your money bag is sturdy and reliable.
+            </p>
+          </div>
+          
+          <div class="bg-gradient-to-r from-yellow-500/20 to-orange-500/20 border border-yellow-500/30 rounded-lg p-6">
+            <h3 class="text-lg font-semibold text-yellow-400 mb-3">Weak Day Master</h3>
+            <p class="text-mystic-200 leading-relaxed">
+              <strong>Too much money becomes a burden, and it's harder to save.</strong> You may experience money coming in quickly but also leaving just as fast. Focus on building your capacity first.
+            </p>
+          </div>
+          
+          <div class="bg-gradient-to-r from-blue-500/20 to-indigo-500/20 border border-blue-500/30 rounded-lg p-6">
+            <h3 class="text-lg font-semibold text-blue-400 mb-3">No Wealth Star</h3>
+            <p class="text-mystic-200 leading-relaxed">
+              <strong>Don't panic</strong> — when your lucky cycles arrive, the bag will naturally fill. Your wealth comes through timing and opportunity rather than constant flow.
+            </p>
+          </div>
+        </div>
+
+        <h2 class="text-2xl font-bold text-white mb-4 mt-8">Step 3: See if Luck Is Bringing You Money</h2>
+        <p class="mb-6 text-lg text-mystic-200 leading-relaxed">
+          Your luck cycles are like friends lending you money — sometimes generous, sometimes broke.
+        </p>
+        
+        <div class="grid md:grid-cols-3 gap-6 mb-6">
+          <div class="bg-gradient-to-r from-green-500/20 to-emerald-500/20 border border-green-500/30 rounded-lg p-6">
+            <h3 class="text-lg font-semibold text-green-400 mb-3">Wealth Luck</h3>
+            <p class="text-mystic-200 leading-relaxed">
+              <strong>Money comes faster and opportunities increase.</strong> This is when your wealth star is activated, bringing direct financial gains and investment opportunities.
+            </p>
+          </div>
+          
+          <div class="bg-gradient-to-r from-blue-500/20 to-cyan-500/20 border border-blue-500/30 rounded-lg p-6">
+            <h3 class="text-lg font-semibold text-blue-400 mb-3">Output Star Luck</h3>
+            <p class="text-mystic-200 leading-relaxed">
+              <strong>Extra income through side jobs, skills, or creativity.</strong> This brings additional income streams through your talents and abilities.
+            </p>
+          </div>
+          
+          <div class="bg-gradient-to-r from-purple-500/20 to-indigo-500/20 border border-purple-500/30 rounded-lg p-6">
+            <h3 class="text-lg font-semibold text-purple-400 mb-3">Resource Star Luck</h3>
+            <p class="text-mystic-200 leading-relaxed">
+              <strong>Not instant cash, but better money management and investment ability.</strong> This enhances your financial wisdom and decision-making skills.
+            </p>
+          </div>
+        </div>
+
+        <h2 class="text-2xl font-bold text-white mb-4 mt-8">Step 4: Understanding Wealth Levels</h2>
+        
+        <div class="space-y-6 mb-6">
+          <div class="bg-gradient-to-r from-green-500/20 to-emerald-500/20 border border-green-500/30 rounded-lg p-6">
+            <h3 class="text-lg font-semibold text-green-400 mb-3">High Wealth Level</h3>
+            <p class="text-mystic-200 leading-relaxed">
+              <strong>Big, sturdy bag + frequent money flow from luck cycles.</strong> You have both the capacity to handle wealth and the timing to receive it. This combination creates sustainable financial growth.
+            </p>
+          </div>
+          
+          <div class="bg-gradient-to-r from-yellow-500/20 to-orange-500/20 border border-yellow-500/30 rounded-lg p-6">
+            <h3 class="text-lg font-semibold text-yellow-400 mb-3">Medium Wealth Level</h3>
+            <p class="text-mystic-200 leading-relaxed">
+              <strong>Average bag, but luck sometimes delivers a boost.</strong> You have moderate capacity but can experience significant gains during favorable luck cycles. Timing becomes crucial.
+            </p>
+          </div>
+          
+          <div class="bg-gradient-to-r from-red-500/20 to-pink-500/20 border border-red-500/30 rounded-lg p-6">
+            <h3 class="text-lg font-semibold text-red-400 mb-3">Low Wealth Level</h3>
+            <p class="text-mystic-200 leading-relaxed">
+              <strong>Bag leaks easily and luck hasn't sent much yet — focus on "fixing the bag" first.</strong> Build your capacity and skills before seeking large financial gains.
+            </p>
+          </div>
+        </div>
+
+        <h2 class="text-2xl font-bold text-white mb-4 mt-8">Practical Application</h2>
+        
+        <div class="space-y-4 mb-6">
+          <div class="flex items-start space-x-4">
+            <div class="w-8 h-8 rounded-full bg-yellow-500 flex items-center justify-center flex-shrink-0 mt-1">
+              <span class="text-black text-sm font-bold">1</span>
+            </div>
+            <div>
+              <h3 class="text-lg font-semibold text-white mb-2">Know Your Wealth Element</h3>
+              <p class="text-mystic-200">
+                Identify which element represents money in your chart. This tells you the best industries and investment types for your wealth building.
+              </p>
+            </div>
+          </div>
+          
+          <div class="flex items-start space-x-4">
+            <div class="w-8 h-8 rounded-full bg-yellow-500 flex items-center justify-center flex-shrink-0 mt-1">
+              <span class="text-black text-sm font-bold">2</span>
+            </div>
+            <div>
+              <h3 class="text-lg font-semibold text-white mb-2">Assess Your Capacity</h3>
+              <p class="text-mystic-200">
+                Determine if your Day Master is strong enough to handle wealth. If weak, focus on building skills and capacity before seeking large gains.
+              </p>
+            </div>
+          </div>
+          
+          <div class="flex items-start space-x-4">
+            <div class="w-8 h-8 rounded-full bg-yellow-500 flex items-center justify-center flex-shrink-0 mt-1">
+              <span class="text-black text-sm font-bold">3</span>
+            </div>
+            <div>
+              <h3 class="text-lg font-semibold text-white mb-2">Track Your Luck Cycles</h3>
+              <p class="text-mystic-200">
+                Monitor when wealth luck, output star luck, or resource star luck are active. These are your prime times for financial advancement.
+              </p>
+            </div>
+          </div>
+          
+          <div class="flex items-start space-x-4">
+            <div class="w-8 h-8 rounded-full bg-yellow-500 flex items-center justify-center flex-shrink-0 mt-1">
+              <span class="text-black text-sm font-bold">4</span>
+            </div>
+            <div>
+              <h3 class="text-lg font-semibold text-white mb-2">Choose the Right Strategy</h3>
+              <p class="text-mystic-200">
+                Based on your wealth level, choose appropriate strategies: aggressive growth for high levels, balanced approach for medium, capacity building for low levels.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-gradient-to-r from-yellow-500/20 to-orange-500/20 border border-yellow-500/30 rounded-lg p-6 mb-8">
+          <h3 class="text-lg font-semibold text-yellow-400 mb-3">💡 Final Thoughts</h3>
+          <p class="text-mystic-200 leading-relaxed">
+            Reading wealth in BaZi isn't about stamping you as "rich" or "poor" for life. It's about helping you find the right timing and method to grow your money. Knowing when to push and when to hold back ensures your wealth grows steadily — instead of coming fast and disappearing just as quickly.
+          </p>
+        </div>
+
+        <div class="bg-gradient-to-r from-blue-500/20 to-indigo-500/20 border border-blue-500/30 rounded-lg p-6 mb-8">
+          <h3 class="text-lg font-semibold text-blue-400 mb-3">🎯 Key Takeaways</h3>
+          <ul class="text-mystic-200 space-y-2">
+            <li>• <strong>Wealth Star:</strong> Identifies which element represents money in your chart</li>
+            <li>• <strong>Day Master Strength:</strong> Determines your capacity to handle and keep wealth</li>
+            <li>• <strong>Luck Cycles:</strong> Show when money opportunities are most favorable</li>
+            <li>• <strong>Wealth Levels:</strong> Guide your financial strategy and expectations</li>
+            <li>• <strong>Timing:</strong> Is crucial for sustainable wealth building</li>
+          </ul>
+        </div>
+      `,
+      author: "FatePath Master",
+      date: "2025-01-24",
+      readTime: "6 min read",
+      category: "Wealth & Career",
+      tags: ["Wealth", "BaZi", "Financial Destiny", "Money", "Chinese Astrology", "Wealth Analysis", "Financial Planning"]
+    },
     "health-destiny-report-woman-wellness-path": {
       title: "Health Destiny Report: A Woman's Wellness Path Through BaZi",
       excerpt: "Discover how your birth chart reveals your health destiny. Learn about wellness cycles, key years for health optimization, and practical strategies for maintaining vitality through BaZi analysis.",
