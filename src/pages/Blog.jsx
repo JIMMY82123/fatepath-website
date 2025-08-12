@@ -31,7 +31,7 @@ const Blog = () => {
       excerpt: "Discover how to analyze your wealth potential through BaZi reading. Learn about Wealth Stars, Day Master strength, and luck cycles that determine your financial destiny and money-making ability.",
       category: 'wealth',
       tags: ['Wealth', 'BaZi', 'Financial Destiny', 'Money', 'Chinese Astrology', 'Wealth Analysis', 'Financial Planning'],
-      image: "/images/blog/bazi-wealth-level-guide-cover.svg",
+              image: "/images/blog/bazi-wealth-level-guide-cover.jpg",
       date: "2025-01-24",
       readTime: "6 min read",
       slug: "how-to-read-wealth-level-bazi-simple-guide"
