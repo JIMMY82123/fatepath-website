@@ -222,10 +222,30 @@ const BlogPost = () => {
         </div>
       `,
       author: "FatePath Master",
-      date: "2025-01-24",
+                date: "2025-01-24",
       readTime: "6 min read",
       category: "Wealth & Career",
-      tags: ["Wealth", "BaZi", "Financial Destiny", "Money", "Chinese Astrology", "Wealth Analysis", "Financial Planning"]
+      tags: ["Wealth", "BaZi", "Financial Destiny", "Money", "Chinese Astrology", "Wealth Analysis", "Financial Planning"],
+      relatedPosts: [
+        {
+          title: "Financial Destiny Report: A Woman's Wealth Path Through BaZi",
+          excerpt: "Discover how your birth chart reveals your financial destiny and wealth cycles.",
+          image: "/images/blog/financial-destiny-report-cover.jpg",
+          slug: "financial-destiny-report-woman-wealth-path"
+        },
+        {
+          title: "Wealth Archetypes in Chinese Astrology",
+          excerpt: "Discover your unique wealth personality type through BaZi analysis.",
+          image: "/images/blog/wealth-archetypes-cover.jpg",
+          slug: "wealth-archetypes-chinese-astrology"
+        },
+        {
+          title: "Career Timing: When to Make Your Next Big Move",
+          excerpt: "Master the art of perfect timing for career changes using traditional Chinese numerology.",
+          image: "/images/blog/career-timing-cover.jpg",
+          slug: "career-timing-next-big-move"
+        }
+      ]
     },
     "health-destiny-report-woman-wellness-path": {
       title: "Health Destiny Report: A Woman's Wellness Path Through BaZi",

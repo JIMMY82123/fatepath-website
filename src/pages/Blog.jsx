@@ -18,15 +18,15 @@ const Blog = () => {
   }, [searchParams])
 
   const categories = [
-    { id: 'all', name: 'All Articles', count: 14 },
-    { id: 'bazi', name: 'BaZi Analysis', count: 8 },
+    { id: 'all', name: 'All Articles', count: 15 },
+    { id: 'bazi', name: 'BaZi Analysis', count: 9 },
     { id: 'love', name: 'Love & Relationships', count: 3 },
     { id: 'wealth', name: 'Wealth & Career', count: 4 }
   ]
 
   const blogPosts = [
     {
-      id: 1,
+      id: 15,
       title: "How to Read Your Wealth Level in BaZi: A Simple Guide to Financial Destiny",
       excerpt: "Discover how to analyze your wealth potential through BaZi reading. Learn about Wealth Stars, Day Master strength, and luck cycles that determine your financial destiny and money-making ability.",
       category: 'wealth',
@@ -35,6 +35,50 @@ const Blog = () => {
       date: "2025-01-24",
       readTime: "6 min read",
       slug: "how-to-read-wealth-level-bazi-simple-guide"
+    },
+    {
+      id: 14,
+      title: "The Four Seasons of Fate: How Your Birth Season Influences Your Life Path",
+      excerpt: "Discover how your birth season shapes your personality, strengths, and life journey through ancient Chinese wisdom and seasonal energy patterns.",
+      category: 'bazi',
+      tags: ['Seasons', 'BaZi', 'Chinese Astrology', 'Personality', 'Life Path', 'Seasonal Energy'],
+      image: "/images/blog/seasons-fate-cover.jpg",
+      date: "2025-01-18",
+      readTime: "7 min read",
+      slug: "seasons-fate-cycles"
+    },
+    {
+      id: 13,
+      title: "BaZi vs MBTI: Understanding Personality Through Different Lenses",
+      excerpt: "Compare Eastern and Western personality systems to gain deeper insights into your character, strengths, and potential for personal growth.",
+      category: 'bazi',
+      tags: ['BaZi', 'MBTI', 'Personality', 'Chinese Astrology', 'Psychology', 'Self-Discovery'],
+      image: "/images/blog/bazi-mbti-comparison-cover.jpg",
+      date: "2025-01-17",
+      readTime: "8 min read",
+      slug: "bazi-vs-mbti-personality-destiny"
+    },
+    {
+      id: 12,
+      title: "The Dragon Year 2024: Fortune Forecast",
+      excerpt: "Navigate the powerful Dragon year energy with strategic insights for career, relationships, and personal development based on ancient Chinese wisdom.",
+      category: 'bazi',
+      tags: ['Dragon Year', '2024', 'Chinese Astrology', 'Fortune', 'Career', 'Relationships'],
+      image: "/images/blog/dragon-year-2024-cover.jpg",
+      date: "2025-01-16",
+      readTime: "6 min read",
+      slug: "dragon-year-2024-fortune-forecast"
+    },
+    {
+      id: 11,
+      title: "Protection Talismans: Ancient Wisdom for Modern Life",
+      excerpt: "Discover how traditional Chinese talismans can protect and enhance your life energy, relationships, and career success in today's world.",
+      category: 'bazi',
+      tags: ['Talismans', 'Protection', 'Chinese Astrology', 'Energy', 'Spirituality', 'Modern Life'],
+      image: "/images/blog/protection-talismans-cover.jpg",
+      date: "2025-01-15",
+      readTime: "7 min read",
+      slug: "protection-talismans-ancient-wisdom"
     },
     {
       id: 2,
@@ -98,7 +142,7 @@ const Blog = () => {
       category: 'bazi',
       tags: ['BaZi', 'Chinese Astrology', 'Destiny', 'Five Elements'],
       image: "/images/blog/bazi-beginners-guide-cover.jpg",
-      date: "2024-01-15",
+      date: "2025-01-15",
       readTime: "5 min read",
       slug: "understanding-bazi-chart-beginners-guide"
     },
@@ -109,7 +153,7 @@ const Blog = () => {
       category: 'love',
       tags: ['Love', 'Five Elements', 'Relationships', 'Compatibility'],
       image: "/images/blog/five-elements-love-cover.jpg",
-      date: "2024-01-10",
+      date: "2025-01-10",
       readTime: "7 min read",
       slug: "five-elements-love-perfect-match"
     },
@@ -120,7 +164,7 @@ const Blog = () => {
       category: 'wealth',
       tags: ['Wealth', 'Career', 'Financial', 'BaZi'],
       image: "/images/blog/wealth-archetypes-cover.jpg",
-      date: "2024-01-05",
+      date: "2025-01-05",
       readTime: "6 min read",
       slug: "wealth-archetypes-chinese-astrology"
     },
@@ -131,7 +175,7 @@ const Blog = () => {
       category: 'career',
       tags: ['Career', 'Timing', 'Career Change', 'Destiny'],
       image: "/images/blog/career-timing-cover.jpg",
-      date: "2024-01-01",
+      date: "2025-01-01",
       readTime: "8 min read",
       slug: "career-timing-next-big-move"
     }
