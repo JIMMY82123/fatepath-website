@@ -18,13 +18,24 @@ const Blog = () => {
   }, [searchParams])
 
   const categories = [
-    { id: 'all', name: 'All Articles', count: 15 },
-    { id: 'bazi', name: 'BaZi Analysis', count: 9 },
+    { id: 'all', name: 'All Articles', count: 16 },
+    { id: 'bazi', name: 'BaZi Analysis', count: 10 },
     { id: 'love', name: 'Love & Relationships', count: 3 },
     { id: 'wealth', name: 'Wealth & Career', count: 4 }
   ]
 
   const blogPosts = [
+    {
+      id: 16,
+      title: "The Hidden Energy Behind ICE's Immigration Sweeps in 2025 — A BaZi Perspective",
+      excerpt: "Discover how the 2025 Yi-Si year's Fire-Metal clash is manifesting in global immigration enforcement and what this cosmic energy means for your personal transformations.",
+      category: 'bazi',
+      tags: ['BaZi', '2025', 'Chinese Astrology', 'Immigration', 'Fire-Metal Clash', 'Destiny', 'Global Events', 'Yi-Si Year'],
+      image: "/images/blog/ice-immigration-sweeps-2025-bazi-perspective-cover.jpg",
+      date: "2025-01-25",
+      readTime: "5 min read",
+      slug: "ice-immigration-sweeps-2025-bazi-perspective"
+    },
     {
       id: 15,
       title: "How to Read Your Wealth Level in BaZi: A Simple Guide to Financial Destiny",

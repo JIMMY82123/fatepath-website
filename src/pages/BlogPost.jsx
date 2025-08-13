@@ -13,6 +13,132 @@ const BlogPost = () => {
 
   // Sample blog post data - in a real app, this would come from an API or CMS
   const blogPostsData = {
+    "ice-immigration-sweeps-2025-bazi-perspective": {
+      title: "The Hidden Energy Behind ICE's Immigration Sweeps in 2025 — A BaZi Perspective",
+      excerpt: "Discover how the 2025 Yi-Si year's Fire-Metal clash is manifesting in global immigration enforcement and what this cosmic energy means for your personal transformations.",
+      content: `
+        <div class="mb-8">
+          <div class="bg-gradient-to-r from-red-500/20 to-orange-500/20 border border-red-500/30 rounded-lg p-6 mb-8">
+            <h3 class="text-lg font-semibold text-red-400 mb-3">🔥 2025 Fire-Metal Clash Analysis</h3>
+            <p class="text-mystic-200 mb-2"><strong>Year:</strong> 2025 Yi-Si (乙巳) Year</p>
+            <p class="text-mystic-200 mb-2"><strong>Energy:</strong> Fire-Metal Clash (巳火 vs 申金)</p>
+            <p class="text-mystic-200 mb-2"><strong>Theme:</strong> Purging, enforcement, and transformation</p>
+            <p class="text-mystic-200"><strong>Personal Impact:</strong> Life changes, relationship endings, career shifts</p>
+          </div>
+        </div>
+
+        <h2 class="text-2xl font-bold text-white mb-4 mt-8">Introduction</h2>
+        <p class="mb-6 text-lg text-mystic-200 leading-relaxed">
+          In recent headlines, ICE (U.S. Immigration and Customs Enforcement) has intensified its immigration sweeps, echoing a global wave of enforcement and "clearing the field." Interestingly, from the lens of Chinese metaphysics — specifically BaZi — this is more than just politics; it's part of a larger energetic pattern.
+        </p>
+        <p class="mb-6 text-lg text-mystic-200 leading-relaxed">
+          2025 is the Year of Yi-Si (乙巳) in the Chinese calendar. The interaction of Si Fire (巳火) and Shen Metal (申金) later in the year creates what we call a Fire–Metal Clash. This clash is traditionally associated with purging and removal of harmful or unstable elements.
+        </p>
+
+        <h2 class="text-2xl font-bold text-white mb-4 mt-8">The Cosmic Pattern Behind Global Events</h2>
+        <p class="mb-6 text-lg text-mystic-200 leading-relaxed">
+          From Mexico's expulsion of cartel leaders to ICE's tightening immigration actions, these events reflect the same cosmic theme: removing instability to restore order. The Fire-Metal clash manifests as:
+        </p>
+        
+        <div class="grid md:grid-cols-3 gap-6 mb-6">
+          <div class="bg-mystic-800/30 rounded-lg p-6 border border-mystic-700/50">
+            <h3 class="text-lg font-semibold text-red-400 mb-3">Purging & Removal</h3>
+            <p class="text-mystic-200 mb-3">
+              <strong>Eliminating harmful elements</strong> from systems, whether in government, organizations, or personal life. This energy supports clearing out what no longer serves.
+            </p>
+          </div>
+          
+          <div class="bg-mystic-800/30 rounded-lg p-6 border border-mystic-700/50">
+            <h3 class="text-lg font-semibold text-blue-400 mb-3">Law Enforcement</h3>
+            <p class="text-mystic-200 mb-3">
+              <strong>Strict regulations and enforcement</strong> become more prominent. Metal energy brings structure and discipline, while Fire energy provides the drive to implement changes.
+            </p>
+          </div>
+          
+          <div class="bg-mystic-800/30 rounded-lg p-6 border border-mystic-700/50">
+            <h3 class="text-lg font-semibold text-cyan-400 mb-3">Cutting Old Ties</h3>
+            <p class="text-mystic-200 mb-3">
+              <strong>Preparing for new cycles</strong> by severing connections that have become toxic or limiting. This creates space for fresh opportunities and relationships.
+            </p>
+          </div>
+        </div>
+
+        <div class="bg-gradient-to-r from-red-500/20 to-orange-500/20 border border-red-500/30 rounded-lg p-6 mb-6">
+          <h3 class="text-lg font-semibold text-red-400 mb-3">Global Manifestations</h3>
+          <p class="text-mystic-200 leading-relaxed">
+            The Fire-Metal clash energy is not limited to immigration policy. We're seeing this pattern across multiple areas: corporate restructuring, political purges, and social movements that demand accountability and change.
+          </p>
+        </div>
+
+        <h2 class="text-2xl font-bold text-white mb-4 mt-8">Personal Impact: Your Life Transformations</h2>
+        <p class="mb-6 text-lg text-mystic-200 leading-relaxed">
+          On a personal level, such a clash can also manifest in life changes. If your own BaZi chart contains strong Fire or Metal elements, 2025 may bring intense transformations — sometimes abrupt, sometimes necessary.
+        </p>
+        
+        <div class="space-y-6 mb-6">
+          <div class="bg-gradient-to-r from-red-500/20 to-pink-500/20 border border-red-500/30 rounded-lg p-6">
+            <h3 class="text-lg font-semibold text-red-400 mb-3">Ending Toxic Relationships</h3>
+            <p class="text-mystic-200 leading-relaxed">
+              <strong>Fire energy burns away what's harmful.</strong> You may find yourself naturally distancing from people or situations that drain your energy or hold you back from growth.
+            </p>
+          </div>
+          
+          <div class="bg-gradient-to-r from-blue-500/20 to-indigo-500/20 border border-blue-500/30 rounded-lg p-6">
+            <h3 class="text-lg font-semibold text-blue-400 mb-3">Career & Location Changes</h3>
+            <p class="text-mystic-200 leading-relaxed">
+              <strong>Metal energy brings structure and new direction.</strong> You might feel compelled to change jobs, move to a new location, or restructure your professional life for better alignment.
+            </p>
+          </div>
+          
+          <div class="bg-gradient-to-r from-yellow-500/20 to-orange-500/20 border border-yellow-500/30 rounded-lg p-6">
+            <h3 class="text-lg font-semibold text-yellow-400 mb-3">Financial Restructuring</h3>
+            <p class="text-mystic-200 leading-relaxed">
+              <strong>Clearing debts and old financial patterns.</strong> This is an excellent time to pay off debts, restructure investments, or eliminate financial burdens that have been holding you back.
+            </p>
+          </div>
+        </div>
+
+        <h2 class="text-2xl font-bold text-white mb-4 mt-8">How to Work With This Energy</h2>
+        <p class="mb-6 text-lg text-mystic-200 leading-relaxed">
+          This is a year to align yourself with the energy of "active clearing." Whether in your home (through Feng Shui), relationships, or finances, removing what no longer serves you can open the way for better opportunities.
+        </p>
+        
+        <div class="grid md:grid-cols-2 gap-6 mb-6">
+          <div class="bg-gradient-to-r from-green-500/20 to-emerald-500/20 border border-green-500/30 rounded-lg p-6">
+            <h3 class="text-lg font-semibold text-green-400 mb-3">Embrace the Clearing</h3>
+            <p class="text-mystic-200 leading-relaxed">
+              <strong>Don't resist the changes.</strong> When you feel the urge to let go of something or someone, trust that it's the universe making space for something better. The Fire-Metal clash is here to help you evolve.
+            </p>
+          </div>
+          
+          <div class="bg-gradient-to-r from-purple-500/20 to-pink-500/20 border border-purple-500/30 rounded-lg p-6">
+            <h3 class="text-lg font-semibold text-purple-400 mb-3">Prepare for New Cycles</h3>
+            <p class="text-mystic-200 leading-relaxed">
+              <strong>Use this energy wisely.</strong> As old structures fall away, be ready to build new ones. The Metal energy will help you create solid foundations for the next phase of your life.
+            </p>
+          </div>
+        </div>
+
+        <div class="bg-gradient-to-r from-gold-500/20 to-yellow-500/20 border border-gold-500/30 rounded-lg p-6 mb-6">
+          <h3 class="text-lg font-semibold text-gold-400 mb-3">Practical Tip</h3>
+          <p class="text-mystic-200 leading-relaxed">
+            <strong>This is a year to align yourself with the energy of "active clearing."</strong> Whether in your home (through Feng Shui), relationships, or finances, removing what no longer serves you can open the way for better opportunities.
+          </p>
+        </div>
+
+        <h2 class="text-2xl font-bold text-white mb-4 mt-8">Conclusion</h2>
+        <p class="mb-6 text-lg text-mystic-200 leading-relaxed">
+          The 2025 Fire-Metal clash is not just about global events — it's about personal transformation. By understanding this cosmic energy and working with it rather than against it, you can navigate this year's challenges and emerge stronger, clearer, and more aligned with your true path.
+        </p>
+        <p class="mb-6 text-lg text-mystic-200 leading-relaxed">
+          Remember, every cosmic cycle brings both challenges and opportunities. The key is to recognize the pattern and use it to your advantage for personal growth and positive change.
+        </p>
+      `,
+      date: "2025-01-25",
+      readTime: "5 min read",
+      author: "玄印 (Xuan Yin)",
+      tags: ['BaZi', '2025', 'Chinese Astrology', 'Immigration', 'Fire-Metal Clash', 'Destiny', 'Global Events', 'Yi-Si Year']
+    },
     "how-to-read-wealth-level-bazi-simple-guide": {
       title: "How to Read Your Wealth Level in BaZi: A Simple Guide to Financial Destiny",
       excerpt: "Discover how to analyze your wealth potential through BaZi reading. Learn about Wealth Stars, Day Master strength, and luck cycles that determine your financial destiny and money-making ability.",
