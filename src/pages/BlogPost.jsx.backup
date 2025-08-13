@@ -137,23 +137,7 @@ const BlogPost = () => {
       date: "2025-01-25",
       readTime: "5 min read",
       author: "玄印 (Xuan Yin)",
-      category: "BaZi Analysis",
-      image: "/images/blog/ice-immigration-sweeps-2025-bazi-perspective-cover.jpg",
-      tags: ['BaZi', '2025', 'Chinese Astrology', 'Immigration', 'Fire-Metal Clash', 'Destiny', 'Global Events', 'Yi-Si Year'],
-      relatedPosts: [
-        {
-          title: "How to Read Your Wealth Level in BaZi: A Simple Guide to Financial Destiny",
-          excerpt: "Discover how to analyze your wealth potential through BaZi reading.",
-          image: "/images/blog/bazi-wealth-level-guide-cover.jpg",
-          slug: "how-to-read-wealth-level-bazi-simple-guide"
-        },
-        {
-          title: "The Four Seasons of Fate: How Your Birth Season Influences Your Life Path",
-          excerpt: "Discover how your birth season shapes your personality and life journey.",
-          image: "/images/blog/seasons-fate-cover.jpg",
-          slug: "seasons-fate-cycles"
-        }
-      ]
+      tags: ['BaZi', '2025', 'Chinese Astrology', 'Immigration', 'Fire-Metal Clash', 'Destiny', 'Global Events', 'Yi-Si Year']
     },
     "how-to-read-wealth-level-bazi-simple-guide": {
       title: "How to Read Your Wealth Level in BaZi: A Simple Guide to Financial Destiny",
@@ -1977,7 +1961,8 @@ const BlogPost = () => {
     }
   }
 
-  return (
+  try {
+    return (
       <>
         {/* Fallback for users with JavaScript disabled */}
         <noscript>
@@ -2204,7 +2189,26 @@ const BlogPost = () => {
       </main>
     </>
   )
-
+  } catch (error) {
+    console.error('Error rendering BlogPost:', error)
+    return (
+      <div className="min-h-screen bg-mystic-900 pt-20 flex items-center justify-center">
+        <div className="text-center max-w-md mx-auto px-4">
+          <AlertCircle className="h-16 w-16 text-red-400 mx-auto mb-6" />
+          <h1 className="text-2xl font-bold text-white mb-4">Rendering Error</h1>
+          <p className="text-mystic-300 mb-6">
+            There was an error rendering this page. Please try refreshing.
+          </p>
+          <button
+            onClick={() => window.location.reload()}
+            className="w-full bg-gradient-to-r from-gold-400 to-gold-600 text-white px-6 py-3 rounded-lg hover:from-gold-500 hover:to-gold-700 transition-all duration-300"
+          >
+            Refresh Page
+          </button>
+        </div>
+      </div>
+    )
+  }
 }
 
 export default BlogPost
