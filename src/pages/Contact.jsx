@@ -1,10 +1,12 @@
 import { motion } from 'framer-motion'
 import { MessageCircle, Mail, Phone, MapPin, Clock, Star, Sparkles, CheckCircle } from 'lucide-react'
 import { useState } from 'react'
+import { useNavigate } from 'react-router-dom'
 import { getFormUrl } from '../config/formIds'
 import SEO from '../components/SEO'
 
 const Contact = () => {
+  const navigate = useNavigate()
   const [isSubmitting, setIsSubmitting] = useState(false)
   const [isSubmitted, setIsSubmitted] = useState(false)
   const [errors, setErrors] = useState({})
@@ -547,7 +549,10 @@ const Contact = () => {
                 <MessageCircle className="h-4 w-4 sm:h-5 sm:w-5" />
                 <span>Chat on WhatsApp</span>
               </button>
-              <button className="border border-gold-500/50 text-gold-400 font-semibold px-6 sm:px-8 py-3 sm:py-4 rounded-full hover:bg-gold-500/10 transition-all duration-300 text-sm sm:text-base">
+              <button 
+                onClick={() => navigate('/services')}
+                className="border border-gold-500/50 text-gold-400 font-semibold px-6 sm:px-8 py-3 sm:py-4 rounded-full hover:bg-gold-500/10 transition-all duration-300 text-sm sm:text-base"
+              >
                 Book a Reading
               </button>
             </div>
