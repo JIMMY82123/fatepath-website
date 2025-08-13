@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion'
 import { Link } from 'react-router-dom'
-import { MessageCircle, Mail, Phone, MapPin, Star, Sparkles, Clock, Globe } from 'lucide-react'
+import { MessageCircle, Mail, Phone, MapPin, Star, Sparkles, Clock, Globe, Sprout } from 'lucide-react'
 import { getContactLink } from '../config/externalLinks'
 import GPTButton from './GPTButton'
 
@@ -16,7 +16,7 @@ const Footer = () => {
   return (
     <footer className="bg-mystic-800/50 border-t border-mystic-700/50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8 lg:gap-12">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6 sm:gap-8 lg:gap-12">
           {/* Company Info */}
           <motion.div 
             initial={{ opacity: 0, y: 20 }}
@@ -100,6 +100,33 @@ const Footer = () => {
                 </Link>
               </li>
             </ul>
+          </motion.div>
+
+          {/* External Resources */}
+          <motion.div 
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.15 }}
+          >
+            <h3 className="text-lg sm:text-xl font-cinzel font-semibold text-white mb-4 sm:mb-6">External Resources</h3>
+            <div className="space-y-2 sm:space-y-3">
+              <div className="flex items-center space-x-3">
+                <Sprout className="h-4 w-4 sm:h-5 sm:w-5 text-gold-400" aria-hidden="true" />
+                <a 
+                  href="https://medium.com/@czc474028460/in-chinese-folk-culture-ginger-is-nicknamed-lu-gen-%E7%A6%84%E6%A0%B9-lu-means-earned-income-defe2fc27b35" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="text-sm sm:text-base text-mystic-300 hover:text-gold-400 transition-colors duration-300"
+                  aria-label="Read about planting prosperity ginger ritual"
+                  title="Planting 'Lu-Gen' Ginger: a Simple, House-Safe Prosperity Ritual"
+                >
+                  Planting Prosperity Ginger
+                </a>
+              </div>
+              <p className="text-xs text-mystic-400 leading-relaxed">
+                Learn about the traditional Chinese folk ritual of planting ginger for prosperity and wealth enhancement.
+              </p>
+            </div>
           </motion.div>
 
           {/* Contact Info */}
