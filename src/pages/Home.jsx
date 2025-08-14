@@ -222,7 +222,10 @@ const Home = () => {
           autoPlay
           loop
           muted
-            className="absolute inset-0 w-full h-full object-cover opacity-30"
+          playsInline
+          disablePictureInPicture
+          controlsList="nodownload nofullscreen noremoteplayback"
+          className="absolute inset-0 w-full h-full object-cover opacity-30"
         >
           <source src="/video-background.mp4" type="video/mp4" />
         </video>
