@@ -161,12 +161,12 @@ const MobileGestureHandler = ({ children }) => {
   const handleSwipeRight = () => {
     // 右滑返回上一页
     if (window.history.length > 1) {
-      showGestureFeedback('返回上一页', 'success');
+      showGestureFeedback('Go Back', 'success');
       setTimeout(() => {
         navigate(-1);
       }, 300);
     } else {
-      showGestureFeedback('无法返回', 'warning');
+      showGestureFeedback('Cannot Go Back', 'warning');
     }
   };
 
@@ -174,19 +174,19 @@ const MobileGestureHandler = ({ children }) => {
   const handleSwipeLeft = () => {
     // 左滑前进（如果有的话）
     if (window.history.length > 1) {
-      showGestureFeedback('前进', 'success');
+      showGestureFeedback('Go Forward', 'success');
       setTimeout(() => {
         navigate(1);
       }, 300);
     } else {
-      showGestureFeedback('无法前进', 'warning');
+      showGestureFeedback('Cannot Go Forward', 'warning');
     }
   };
 
   // 处理下滑手势
   const handleSwipeDown = () => {
     // 下滑刷新页面
-    showGestureFeedback('刷新页面', 'info');
+    showGestureFeedback('Refreshing Page', 'info');
     setTimeout(() => {
       window.location.reload();
     }, 300);
@@ -195,7 +195,7 @@ const MobileGestureHandler = ({ children }) => {
   // 处理上滑手势
   const handleSwipeUp = () => {
     // 上滑回到顶部
-    showGestureFeedback('回到顶部', 'success');
+    showGestureFeedback('Back to Top', 'success');
     window.scrollTo({
       top: 0,
       behavior: 'smooth'
