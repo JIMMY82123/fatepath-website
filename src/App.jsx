@@ -4,6 +4,8 @@ import { HelmetProvider } from 'react-helmet-async'
 import Navbar from './components/Navbar'
 import Footer from './components/Footer'
 import { PageLoader } from './components/LoadingSpinner'
+import MobilePerformanceMonitor from './components/MobilePerformanceMonitor'
+import MobileGestureHandler from './components/MobileGestureHandler'
 
 // 懒加载页面组件
 const Home = lazy(() => import('./pages/Home'))
@@ -31,29 +33,34 @@ function App() {
       <Router>
         <div className="min-h-screen bg-mystic-900">
           <Navbar />
-          <Suspense fallback={<PageLoader />}>
-            <Routes>
-              <Route path="/" element={<Home />} />
-              <Route path="/services" element={<Services />} />
-              <Route path="/contact" element={<Contact />} />
-              <Route path="/faq" element={<FAQ />} />
-              <Route path="/testimonials" element={<Testimonials />} />
-              <Route path="/free-bazi-report" element={<FreeBaziReport />} />
-              <Route path="/bazi-form" element={<BaziForm />} />
-              <Route path="/form-bazi-discount" element={<BaziFormDiscount />} />
-              <Route path="/bazi-discount-thank-you" element={<BaziDiscountThankYou />} />
-              <Route path="/love-form" element={<LoveForm />} />
-              <Route path="/talisman-form" element={<TalismanForm />} />
-              <Route path="/wealth-sign" element={<WealthSign />} />
-              <Route path="/payment-guide" element={<PaymentGuide />} />
-              <Route path="/payment-success" element={<PaymentSuccess />} />
-              <Route path="/privacy" element={<Privacy />} />
-              <Route path="/blog" element={<Blog />} />
-              <Route path="/blog/:slug" element={<BlogPost />} />
+          <MobileGestureHandler>
+            <Suspense fallback={<PageLoader />}>
+              <Routes>
+                <Route path="/" element={<Home />} />
+                <Route path="/services" element={<Services />} />
+                <Route path="/contact" element={<Contact />} />
+                <Route path="/faq" element={<FAQ />} />
+                <Route path="/testimonials" element={<Testimonials />} />
+                <Route path="/free-bazi-report" element={<FreeBaziReport />} />
+                <Route path="/bazi-form" element={<BaziForm />} />
+                <Route path="/form-bazi-discount" element={<BaziFormDiscount />} />
+                <Route path="/bazi-discount-thank-you" element={<BaziDiscountThankYou />} />
+                <Route path="/love-form" element={<LoveForm />} />
+                <Route path="/talisman-form" element={<TalismanForm />} />
+                <Route path="/wealth-sign" element={<WealthSign />} />
+                <Route path="/payment-guide" element={<PaymentGuide />} />
+                <Route path="/payment-success" element={<PaymentSuccess />} />
+                <Route path="/privacy" element={<Privacy />} />
+                <Route path="/blog" element={<Blog />} />
+                <Route path="/blog/:slug" element={<BlogPost />} />
 
-            </Routes>
-          </Suspense>
+              </Routes>
+            </Suspense>
+          </MobileGestureHandler>
           <Footer />
+          
+          {/* 移动端性能监控组件 */}
+          <MobilePerformanceMonitor />
         </div>
       </Router>
     </HelmetProvider>
