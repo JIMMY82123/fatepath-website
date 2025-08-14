@@ -45,20 +45,30 @@ const WealthSign = () => {
     const randomSign = getRandomSign()
     setCurrentSign(randomSign)
     
-    // 动画完成后显示结果
+    // 动画完成后显示结果，确保卡片完全翻转
     setTimeout(() => {
       setIsAnimating(false)
       setShowResult(true)
+      // 确保卡片保持翻转状态，显示签文
+      if (!isFlipped) {
+        setIsFlipped(true)
+      }
     }, 3000)
   }
 
   const handleReset = () => {
+    // 重置所有状态，确保卡片回到正面
     setIsFlipped(false)
     setCurrentSign(null)
     setShowResult(false)
     setIsAnimating(false)
     setShowMeditation(false)
     setMeditationStep(0)
+    
+    // 强制重新渲染，确保动画状态正确
+    setTimeout(() => {
+      setIsFlipped(false)
+    }, 100)
   }
 
   const getLevelColor = (level) => {
@@ -222,7 +232,7 @@ const WealthSign = () => {
               )}
             </AnimatePresence>
           
-                                                                                       <div className="relative w-full max-w-sm sm:max-w-md md:w-[50rem] lg:w-[60rem] xl:w-[70rem] h-[40rem] sm:h-[44rem] md:h-[52rem] lg:h-[56rem] xl:h-[60rem] perspective-1000">
+          <div className="relative w-full max-w-sm sm:max-w-md md:w-[50rem] lg:w-[60rem] xl:w-[70rem] h-[40rem] sm:h-[44rem] md:h-[52rem] lg:h-[56rem] xl:h-[60rem] perspective-1000">
             <motion.div
                className="w-full h-full relative transition-transform duration-1000 transform-style-preserve-3d"
               animate={{ rotateY: isFlipped ? 180 : 0 }}
