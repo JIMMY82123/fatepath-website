@@ -521,12 +521,12 @@ const Home = () => {
                 <p className="text-gold-400">{testimonials[currentTestimonial].role}</p>
           </motion.div>
 
-              <div className="flex justify-center mt-8 space-x-2">
+              <div className="flex justify-center mt-8 space-x-1.5">
                 {testimonials.map((_, index) => (
                    <button
                      key={index}
                     onClick={() => setCurrentTestimonial(index)}
-                    className={`w-3 h-3 rounded-full transition-colors ${
+                    className={`w-2 h-2 rounded-full transition-colors ${
                       index === currentTestimonial ? 'bg-gold-400' : 'bg-mystic-600'
                     }`}
                     aria-label={`View testimonial ${index + 1}`}
@@ -576,12 +576,12 @@ const Home = () => {
                 </cite>
           </motion.div>
 
-              <div className="flex justify-center mt-8 space-x-2">
+              <div className="flex justify-center mt-8 space-x-1.5">
                 {celebrities.map((_, index) => (
                   <button
                     key={index}
                     onClick={() => setCurrentCelebrity(index)}
-                    className={`w-3 h-3 rounded-full transition-colors ${
+                    className={`w-2 h-2 rounded-full transition-colors ${
                       index === currentCelebrity ? 'bg-gold-400' : 'bg-mystic-600'
                     }`}
                     aria-label={`View celebrity ${index + 1}`}
