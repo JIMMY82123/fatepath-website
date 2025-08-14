@@ -7,7 +7,6 @@ const MobileGestureHandler = ({ children }) => {
   const navigate = useNavigate();
   const location = useLocation();
   const [isGestureEnabled, setIsGestureEnabled] = useState(true);
-  const [gestureFeedback, setGestureFeedback] = useState(null);
   
   const touchStartRef = useRef({ x: 0, y: 0, time: 0 });
   const touchEndRef = useRef({ x: 0, y: 0, time: 0 });
@@ -161,12 +160,9 @@ const MobileGestureHandler = ({ children }) => {
   const handleSwipeRight = () => {
     // 右滑返回上一页
     if (window.history.length > 1) {
-      showGestureFeedback('Go Back', 'success');
       setTimeout(() => {
         navigate(-1);
       }, 300);
-    } else {
-      showGestureFeedback('Cannot Go Back', 'warning');
     }
   };
 
@@ -174,19 +170,15 @@ const MobileGestureHandler = ({ children }) => {
   const handleSwipeLeft = () => {
     // 左滑前进（如果有的话）
     if (window.history.length > 1) {
-      showGestureFeedback('Go Forward', 'success');
       setTimeout(() => {
         navigate(1);
       }, 300);
-    } else {
-      showGestureFeedback('Cannot Go Forward', 'warning');
     }
   };
 
   // 处理下滑手势
   const handleSwipeDown = () => {
     // 下滑刷新页面
-    showGestureFeedback('Refreshing Page', 'info');
     setTimeout(() => {
       window.location.reload();
     }, 300);
@@ -195,26 +187,14 @@ const MobileGestureHandler = ({ children }) => {
   // 处理上滑手势
   const handleSwipeUp = () => {
     // 上滑回到顶部
-    showGestureFeedback('Back to Top', 'success');
     window.scrollTo({
       top: 0,
       behavior: 'smooth'
     });
   };
 
-  // 显示手势反馈
-  const showGestureFeedback = (message, type = 'info') => {
-    setGestureFeedback({
-      message,
-      type,
-      timestamp: Date.now()
-    });
-
-    // 自动隐藏反馈
-    setTimeout(() => {
-      setGestureFeedback(null);
-    }, 2000);
-  };
+  // 移除手势反馈相关代码
+  // const showGestureFeedback = (message, type = 'info') => { ... }
 
   // 添加手势样式
   const addGestureStyles = () => {
@@ -223,50 +203,6 @@ const MobileGestureHandler = ({ children }) => {
     const style = document.createElement('style');
     style.id = 'gesture-styles';
     style.textContent = `
-      .gesture-feedback {
-        position: fixed;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        z-index: 10000;
-        padding: 12px 20px;
-        border-radius: 25px;
-        font-size: 14px;
-        font-weight: 500;
-        color: white;
-        backdrop-filter: blur(10px);
-        border: 1px solid rgba(255, 255, 255, 0.2);
-        box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
-        animation: gestureFeedbackIn 0.3s ease-out;
-      }
-
-      .gesture-feedback.success {
-        background: linear-gradient(135deg, rgba(34, 197, 94, 0.9), rgba(16, 185, 129, 0.9));
-      }
-
-      .gesture-feedback.warning {
-        background: linear-gradient(135deg, rgba(245, 158, 11, 0.9), rgba(217, 119, 6, 0.9));
-      }
-
-      .gesture-feedback.info {
-        background: linear-gradient(135deg, rgba(59, 130, 246, 0.9), rgba(37, 99, 235, 0.9));
-      }
-
-      .gesture-feedback.error {
-        background: linear-gradient(135deg, rgba(239, 68, 68, 0.9), rgba(220, 38, 38, 0.9));
-      }
-
-      @keyframes gestureFeedbackIn {
-        from {
-          opacity: 0;
-          transform: translate(-50%, -50%) scale(0.8);
-        }
-        to {
-          opacity: 1;
-          transform: translate(-50%, -50%) scale(1);
-        }
-      }
-
       .touch-feedback {
         position: absolute;
         pointer-events: none;
@@ -355,11 +291,7 @@ const MobileGestureHandler = ({ children }) => {
       {children}
       
       {/* 手势反馈提示 */}
-      {gestureFeedback && (
-        <div className={`gesture-feedback ${gestureFeedback.type}`}>
-          {gestureFeedback.message}
-        </div>
-      )}
+      {/* Removed gestureFeedback rendering */}
     </>
   );
 };
