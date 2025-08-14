@@ -6,6 +6,7 @@ import Footer from './components/Footer'
 import { PageLoader } from './components/LoadingSpinner'
 import MobilePerformanceMonitor from './components/MobilePerformanceMonitor'
 import MobileGestureHandler from './components/MobileGestureHandler'
+import ScrollToTopButton from './components/ScrollToTopButton'
 
 // 懒加载页面组件
 const Home = lazy(() => import('./pages/Home'))
@@ -61,6 +62,9 @@ function App() {
           
           {/* 移动端性能监控组件 */}
           <MobilePerformanceMonitor />
+          
+          {/* 移动端回到顶部按钮 */}
+          <ScrollToTopButton />
         </div>
       </Router>
     </HelmetProvider>

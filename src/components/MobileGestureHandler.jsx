@@ -286,26 +286,6 @@ const MobileGestureHandler = ({ children }) => {
           opacity: 0;
         }
       }
-
-      .mobile-gesture-hint {
-        position: fixed;
-        bottom: 80px;
-        left: 50%;
-        transform: translateX(-50%);
-        background: rgba(0, 0, 0, 0.7);
-        color: white;
-        padding: 8px 16px;
-        border-radius: 20px;
-        font-size: 12px;
-        opacity: 0.8;
-        z-index: 9998;
-        animation: gestureHintFade 3s ease-in-out;
-      }
-
-      @keyframes gestureHintFade {
-        0%, 100% { opacity: 0; }
-        50% { opacity: 0.8; }
-      }
     `;
 
     document.head.appendChild(style);
@@ -345,36 +325,6 @@ const MobileGestureHandler = ({ children }) => {
     return () => {
       element.removeEventListener('touchstart', handleTouch);
     };
-  };
-
-  // 显示手势提示
-  useEffect(() => {
-    if (!isMobile() || !isGestureEnabled) return;
-
-    // 延迟显示手势提示
-    const timer = setTimeout(() => {
-      showGestureHint();
-    }, 2000);
-
-    return () => clearTimeout(timer);
-  }, [location.pathname]);
-
-  const showGestureHint = () => {
-    if (document.getElementById('gesture-hint')) return;
-
-    const hint = document.createElement('div');
-    hint.id = 'gesture-hint';
-    hint.className = 'mobile-gesture-hint';
-    hint.textContent = '💡 支持滑动手势导航';
-
-    document.body.appendChild(hint);
-
-    // 自动移除提示
-    setTimeout(() => {
-      if (hint.parentNode) {
-        hint.parentNode.removeChild(hint);
-      }
-    }, 3000);
   };
 
   // 为所有可交互元素添加触摸反馈
