@@ -4,6 +4,7 @@ import { Star, ArrowLeft, CheckCircle, Gift } from 'lucide-react'
 import { Link, useNavigate } from 'react-router-dom'
 import { Helmet } from 'react-helmet-async'
 import { trackBaziDiscountConversion } from '../utils/conversionTracking'
+import SEO from '../components/SEO'
 
 const BaziFormDiscount = () => {
   const navigate = useNavigate()
@@ -65,6 +66,15 @@ const BaziFormDiscount = () => {
 
   return (
     <>
+      <SEO 
+        title="Special Offer: Discounted BaZi Reading Form | Limited Time Deal | FatePath"
+        description="Limited time special offer! Get your comprehensive BaZi reading at a discounted price. Submit your birth details for detailed Chinese astrology analysis and life guidance."
+        keywords="bazi reading discount, special offer chinese astrology, limited time bazi reading, discounted birth chart analysis, chinese numerology deal"
+        canonical="https://fatepath.me/form-bazi-discount"
+        ogImage="https://fatepath.me/og-image.svg"
+        ogType="website"
+      />
+      
       <Helmet>
         {/* Google Tag Manager */}
         <script>

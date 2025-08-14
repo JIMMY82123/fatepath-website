@@ -2,6 +2,7 @@ import { useState } from 'react'
 import { motion } from 'framer-motion'
 import { Star, ArrowLeft, CheckCircle } from 'lucide-react'
 import { Link } from 'react-router-dom'
+import SEO from '../components/SEO'
 
 const BaziForm = () => {
   const [isSubmitting, setIsSubmitting] = useState(false)
@@ -86,15 +87,25 @@ const BaziForm = () => {
   }
 
   return (
-    <div className="min-h-screen pt-16 sm:pt-20 px-4 sm:px-6 lg:px-8">
-      <div className="max-w-2xl mx-auto">
-        {/* Header */}
-        <motion.div 
-          initial={{ opacity: 0, y: 50 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
-          className="text-center mb-8 sm:mb-12"
-        >
+    <>
+      <SEO 
+        title="Professional BaZi Reading Form | Detailed Chinese Astrology Analysis | FatePath"
+        description="Submit your birth details for a comprehensive BaZi reading. Get detailed analysis of your personality, career path, relationships, and life purpose through traditional Chinese numerology."
+        keywords="bazi reading form, chinese astrology consultation, birth chart analysis, professional bazi reading, chinese numerology expert, life direction analysis"
+        canonical="https://fatepath.me/bazi-form"
+        ogImage="https://fatepath.me/og-image.svg"
+        ogType="website"
+      />
+      
+      <div className="min-h-screen pt-16 sm:pt-20 px-4 sm:px-6 lg:px-8">
+        <div className="max-w-2xl mx-auto">
+          {/* Header */}
+          <motion.div 
+            initial={{ opacity: 0, y: 50 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+            className="text-center mb-8 sm:mb-12"
+          >
           <div className="inline-flex items-center justify-center w-16 h-16 sm:w-20 sm:h-20 rounded-full bg-gradient-to-r from-purple-500 to-pink-500 mb-4 sm:mb-6">
             <Star className="h-8 w-8 sm:h-10 sm:w-10 text-white" aria-hidden="true" />
           </div>

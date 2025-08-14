@@ -4,7 +4,7 @@ Allow: /
 # Sitemap
 Sitemap: https://fatepath.me/sitemap.xml
 
-# Crawl-delay (optional - tells crawlers to wait between requests)
+# Crawl-delay (tells crawlers to wait between requests)
 Crawl-delay: 1
 
 # Disallow admin areas (if any)
@@ -16,4 +16,16 @@ Allow: /services
 Allow: /blog
 Allow: /faq
 Allow: /contact
-Allow: /free-bazi-report 
+Allow: /free-bazi-report
+Allow: /wealth-sign
+
+# Specific instructions for important pages
+Allow: /bazi-form
+Allow: /form-bazi-discount
+Allow: /love-form
+Allow: /talisman-form
+
+# Prevent duplicate content issues
+Allow: /payment-guide
+Allow: /payment-success
+Allow: /privacy 

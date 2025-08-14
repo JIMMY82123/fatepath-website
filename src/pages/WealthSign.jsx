@@ -93,15 +93,25 @@ const WealthSign = () => {
   }
 
   return (
-    <div className="min-h-screen pt-16 sm:pt-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-mystic-900 via-mystic-800 to-mystic-900">
-      <div className="max-w-4xl mx-auto">
-        {/* Header */}
-        <motion.div 
-          initial={{ opacity: 0, y: 50 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
-          className="text-center mb-8 sm:mb-12"
-        >
+    <>
+      <SEO 
+        title="Ancient Chinese Wisdom Oracle | Interactive Divination & Fortune Reading | FatePath"
+        description="Experience the ancient Chinese Wisdom Oracle for personalized divination and fortune reading. Get guidance through traditional Chinese numerology and interactive oracle system."
+        keywords="chinese wisdom oracle, divination, fortune reading, chinese numerology, interactive oracle, ancient wisdom, fortune telling"
+        canonical="https://fatepath.me/wealth-sign"
+        ogImage="https://fatepath.me/og-image.svg"
+        ogType="website"
+      />
+      
+      <div className="min-h-screen pt-16 sm:pt-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-mystic-900 via-mystic-800 to-mystic-900">
+        <div className="max-w-4xl mx-auto">
+          {/* Header */}
+          <motion.div 
+            initial={{ opacity: 0, y: 50 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+            className="text-center mb-8 sm:mb-12"
+          >
                      <h1 className="text-3xl sm:text-4xl md:text-6xl font-playfair font-bold mb-4 sm:mb-6">
              <span className="gradient-text">Ancient Chinese Wisdom Oracle</span>
           </h1>
