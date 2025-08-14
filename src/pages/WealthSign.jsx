@@ -232,31 +232,27 @@ const WealthSign = () => {
               )}
             </AnimatePresence>
           
-          <div className="relative w-full max-w-sm sm:max-w-md md:w-[50rem] lg:w-[60rem] xl:w-[70rem] h-[40rem] sm:h-[44rem] md:h-[52rem] lg:h-[56rem] xl:h-[60rem]" style={{ perspective: '1000px' }}>
-            <motion.div
-               className="w-full h-full relative"
-              animate={{ rotateY: isFlipped ? 180 : 0 }}
-              transition={{ duration: 1.5, ease: "easeInOut" }}
-               style={{ 
-                 transformStyle: 'preserve-3d',
-                 width: '100%',
-                 height: '100%'
-               }}
-            >
-              {/* Front Side - Wealth God */}
-                <div className="absolute w-full h-full" style={{ 
-                  backfaceVisibility: 'hidden',
-                  transform: 'rotateY(0deg)',
-                  transformStyle: 'preserve-3d'
-                }}>
-                                   <button 
-                       className="mystic-card h-full cursor-pointer hover:scale-105 transition-transform duration-300 border-2 border-gold-500/40 shadow-2xl shadow-gold-500/30 relative overflow-hidden w-full"
-                       onClick={handleFlip}
-                       aria-label="开始抽签仪式，点击开始神圣的占卜仪式"
-                       style={{ touchAction: 'auto', pointerEvents: 'auto', zIndex: 1 }}>
-                    
+                    <div className="relative w-full max-w-sm sm:max-w-md md:w-[50rem] lg:w-[60rem] xl:w-[70rem] h-[40rem] sm:h-[44rem] md:h-[52rem] lg:h-[56rem] xl:h-[60rem]">
+            {/* 使用条件渲染替代3D翻转，更可靠 */}
+            <AnimatePresence mode="wait">
+              {!isFlipped ? (
+                // 正面 - 财神封面
+                <motion.div
+                  key="front"
+                  initial={{ opacity: 0, scale: 0.9 }}
+                  animate={{ opacity: 1, scale: 1 }}
+                  exit={{ opacity: 0, scale: 0.9, rotateY: -90 }}
+                  transition={{ duration: 0.8, ease: "easeInOut" }}
+                  className="w-full h-full"
+                >
+                  <button 
+                    className="mystic-card h-full cursor-pointer hover:scale-105 transition-transform duration-300 border-2 border-gold-500/40 shadow-2xl shadow-gold-500/30 relative overflow-hidden w-full"
+                    onClick={handleFlip}
+                    aria-label="开始抽签仪式，点击开始神圣的占卜仪式"
+                    style={{ touchAction: 'auto', pointerEvents: 'auto' }}
+                  >
                     {/* Wealth God Background Image */}
-                    <div className="absolute inset-0" style={{ zIndex: 0 }}>
+                    <div className="absolute inset-0">
                       <img 
                         src="/images/wealth-god.jpg" 
                         alt="Traditional Chinese Wealth God deity in golden robes, symbolizing prosperity and good fortune" 
@@ -264,114 +260,116 @@ const WealthSign = () => {
                         onError={(e) => {
                           console.log('财神图片加载失败，使用默认背景');
                           e.target.style.display = 'none';
-                          // 显示默认背景
                           const defaultBg = e.target.parentElement.querySelector('.default-bg');
                           if (defaultBg) defaultBg.style.display = 'block';
                         }}
                         onLoad={(e) => {
                           console.log('财神图片加载成功');
-                          // 隐藏默认背景
                           const defaultBg = e.target.parentElement.querySelector('.default-bg');
                           if (defaultBg) defaultBg.style.display = 'none';
                         }}
                       />
-                      {/* Default Background (if image fails to load) */}
+                      {/* Default Background */}
                       <div className="default-bg absolute inset-0 bg-gradient-to-br from-gold-400 via-yellow-600 to-orange-500" style={{ display: 'none' }}>
                         <div className="w-full h-full flex items-center justify-center">
                           <Coins className="h-32 w-32 text-white drop-shadow-lg opacity-50" />
                         </div>
                       </div>
-                  </div>
-                  
+                    </div>
+                    
                     {/* Content Overlay */}
-                    <div className="relative z-20 h-full flex flex-col items-center justify-center p-4 sm:p-6 md:p-8 text-center" style={{ backdropFilter: 'none' }}>
+                    <div className="relative z-20 h-full flex flex-col items-center justify-center p-4 sm:p-6 md:p-8 text-center">
                       <h3 className="text-2xl sm:text-3xl font-cinzel font-bold text-white mb-3 sm:mb-4" style={{ textShadow: '2px 2px 4px rgba(0,0,0,0.8)' }}>
                         Wisdom Oracle
-                  </h3>
-                  
+                      </h3>
+                      
                       <p className="text-white text-center mb-6 sm:mb-8 text-sm sm:text-lg leading-relaxed font-medium max-w-sm" style={{ textShadow: '1px 1px 2px rgba(0,0,0,0.8)' }}>
                         Click to begin your sacred divination ritual and receive ancient wisdom guidance.
                       </p>
                       
-                      <div className="flex items-center space-x-3 text-gold-300 bg-black/50 px-6 py-3 rounded-full border border-gold-500/40 shadow-lg" style={{ backdropFilter: 'none' }}>
+                      <div className="flex items-center space-x-3 text-gold-300 bg-black/50 px-6 py-3 rounded-full border border-gold-500/40 shadow-lg">
                         <Star className="h-6 w-6" />
                         <span className="text-base font-semibold">Begin Sacred Ritual</span>
                       </div>
                     </div>
-                </button>
-              </div>
+                  </button>
+                </motion.div>
+              ) : (
+                // 背面 - 签文结果
+                <motion.div
+                  key="back"
+                  initial={{ opacity: 0, scale: 0.9, rotateY: 90 }}
+                  animate={{ opacity: 1, scale: 1, rotateY: 0 }}
+                  exit={{ opacity: 0, scale: 0.9 }}
+                  transition={{ duration: 0.8, ease: "easeInOut" }}
+                  className="w-full h-full"
+                >
+                  <div className="mystic-card h-full p-8 sm:p-10 lg:p-12 border-2 border-gold-500/30 shadow-2xl shadow-gold-500/20">
+                    {currentSign && (
+                      <div className="h-full flex flex-col">
+                        {/* Sign Header */}
+                        <div className={`text-center p-4 sm:p-6 rounded-xl mb-4 sm:mb-6 ${getLevelBgColor(currentSign.signLevel)} border-2 border-gold-400/40 shadow-lg`}>
+                          <div className="text-3xl sm:text-4xl lg:text-5xl mb-2 drop-shadow-lg">{currentSign.icon}</div>
+                          <h3 className="text-lg sm:text-xl lg:text-2xl font-cinzel font-bold text-white mb-2 drop-shadow-md">
+                            {currentSign.signNumber}
+                          </h3>
+                          <p className={`text-base sm:text-lg lg:text-xl font-semibold ${getLevelColor(currentSign.signLevel)} drop-shadow-md`}>
+                            {currentSign.signTitle}
+                          </p>
+                          <p className="text-sm sm:text-base lg:text-lg text-mystic-200 mt-1 font-medium">
+                            {currentSign.signLevel} Fortune
+                          </p>
+                        </div>
 
-              {/* Back Side - Fortune Result */}
-                <div className="absolute w-full h-full" style={{ 
-                  backfaceVisibility: 'hidden', 
-                  transform: 'rotateY(180deg)',
-                  transformStyle: 'preserve-3d'
-                }}>
-                                                                     <div className="mystic-card h-full p-8 sm:p-10 lg:p-12 border-2 border-gold-500/30 shadow-2xl shadow-gold-500/20">
-                  {currentSign && (
-                    <div className="h-full flex flex-col">
-                      {/* Sign Header */}
-                                                 <div className={`text-center p-4 sm:p-6 rounded-xl mb-4 sm:mb-6 ${getLevelBgColor(currentSign.signLevel)} border-2 border-gold-400/40 shadow-lg`}>
-                           <div className="text-3xl sm:text-4xl lg:text-5xl mb-2 drop-shadow-lg">{currentSign.icon}</div>
-                           <h3 className="text-lg sm:text-xl lg:text-2xl font-cinzel font-bold text-white mb-2 drop-shadow-md">
-                          {currentSign.signNumber}
-                        </h3>
-                           <p className={`text-base sm:text-lg lg:text-xl font-semibold ${getLevelColor(currentSign.signLevel)} drop-shadow-md`}>
-                          {currentSign.signTitle}
-                        </p>
-                           <p className="text-sm sm:text-base lg:text-lg text-mystic-200 mt-1 font-medium">
-                          {currentSign.signLevel} Fortune
-                        </p>
-                      </div>
+                        {/* Traditional Text */}
+                        <div className="mb-4 sm:mb-6 p-4 sm:p-6 bg-mystic-800/50 rounded-lg border border-gold-500/20">
+                          <h4 className="text-sm sm:text-base font-bold text-gold-400 mb-3 flex items-center">
+                            <span className="mr-2 text-base sm:text-lg">📜</span>
+                            Ancient Wisdom
+                          </h4>
+                          <p className="text-mystic-200 text-sm sm:text-base italic leading-relaxed font-medium drop-shadow-sm">
+                            {currentSign.traditionalText}
+                          </p>
+                        </div>
 
-                      {/* Traditional Text */}
-                                                 <div className="mb-4 sm:mb-6 p-4 sm:p-6 bg-mystic-800/50 rounded-lg border border-gold-500/20">
-                           <h4 className="text-sm sm:text-base font-bold text-gold-400 mb-3 flex items-center">
-                             <span className="mr-2 text-base sm:text-lg">📜</span>
-                             Ancient Wisdom
-                           </h4>
-                           <p className="text-mystic-200 text-sm sm:text-base italic leading-relaxed font-medium drop-shadow-sm">
-                          {currentSign.traditionalText}
-                        </p>
-                      </div>
+                        {/* Modern Interpretation */}
+                        <div className="mb-4 sm:mb-6 p-4 sm:p-6 bg-mystic-800/50 rounded-lg border border-gold-500/20">
+                          <h4 className="text-sm sm:text-base font-bold text-gold-400 mb-3 flex items-center">
+                            <span className="mr-2 text-base sm:text-lg">💡</span>
+                            Modern Interpretation
+                          </h4>
+                          <p className="text-white text-sm sm:text-base leading-relaxed font-medium drop-shadow-sm">
+                            {currentSign.signText}
+                          </p>
+                        </div>
 
-                      {/* Modern Interpretation */}
-                         <div className="mb-4 sm:mb-6 p-4 sm:p-6 bg-mystic-800/50 rounded-lg border border-gold-500/20">
-                           <h4 className="text-sm sm:text-base font-bold text-gold-400 mb-3 flex items-center">
-                             <span className="mr-2 text-base sm:text-lg">💡</span>
-                             Modern Interpretation
-                           </h4>
-                           <p className="text-white text-sm sm:text-base leading-relaxed font-medium drop-shadow-sm">
-                          {currentSign.signText}
-                        </p>
-                      </div>
+                        {/* Short Interpretation */}
+                        <div className="mb-4 sm:mb-6 p-4 sm:p-6 bg-mystic-800/50 rounded-lg border border-gold-500/20">
+                          <h4 className="text-sm sm:text-base font-bold text-gold-400 mb-3 flex items-center">
+                            <span className="mr-2 text-base sm:text-lg">🎯</span>
+                            Action Steps
+                          </h4>
+                          <p className="text-mystic-200 text-sm sm:text-base leading-relaxed font-medium drop-shadow-sm">
+                            {currentSign.shortInterpretation}
+                          </p>
+                        </div>
 
-                      {/* Short Interpretation */}
-                         <div className="mb-4 sm:mb-6 p-4 sm:p-6 bg-mystic-800/50 rounded-lg border border-gold-500/20">
-                           <h4 className="text-sm sm:text-base font-bold text-gold-400 mb-3 flex items-center">
-                             <span className="mr-2 text-base sm:text-lg">🎯</span>
-                             Action Steps
-                           </h4>
-                           <p className="text-mystic-200 text-sm sm:text-base leading-relaxed font-medium drop-shadow-sm">
-                          {currentSign.shortInterpretation}
-                        </p>
+                        {/* Cultural Note */}
+                        <div className="mt-auto p-3 sm:p-4 bg-mystic-800/30 rounded-lg border border-gold-500/10">
+                          <h4 className="text-xs sm:text-sm font-bold text-gold-400 mb-1 flex items-center">
+                            <span className="mr-2 text-xs sm:text-sm">🏮</span>
+                            Philosophical Background
+                          </h4>
+                          <p className="text-mystic-300 text-xs sm:text-sm leading-relaxed">
+                            {currentSign.culturalNote}
+                          </p>
+                        </div>
                       </div>
-
-                      {/* Cultural Note */}
-                         <div className="mt-auto p-3 sm:p-4 bg-mystic-800/30 rounded-lg border border-gold-500/10">
-                           <h4 className="text-xs sm:text-sm font-bold text-gold-400 mb-1 flex items-center">
-                             <span className="mr-2 text-xs sm:text-sm">🏮</span>
-                             Philosophical Background
-                           </h4>
-                           <p className="text-mystic-300 text-xs sm:text-sm leading-relaxed">
-                          {currentSign.culturalNote}
-                        </p>
-                      </div>
-                    </div>
-                  )}
-                </div>
-              </div>
-            </motion.div>
+                    )}
+                  </div>
+                </motion.div>
+              )}
+            </AnimatePresence>
           </div>
         </motion.div>
 
