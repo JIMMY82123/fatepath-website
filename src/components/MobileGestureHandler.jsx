@@ -12,6 +12,7 @@ const MobileGestureHandler = ({ children }) => {
   const touchEndRef = useRef({ x: 0, y: 0, time: 0 });
   const gestureHistoryRef = useRef([]);
   const lastGestureTimeRef = useRef(0);
+  const isScrollingRef = useRef(false);
 
   useEffect(() => {
     if (!isMobile() || !isTouchDevice()) return;
@@ -31,6 +32,9 @@ const MobileGestureHandler = ({ children }) => {
     document.addEventListener('touchstart', handleTouchStart, { passive: true });
     document.addEventListener('touchend', handleTouchEnd, { passive: true });
     document.addEventListener('touchmove', handleTouchMove, { passive: false });
+    
+    // 监听滚动事件，检测是否正在滚动
+    document.addEventListener('scroll', handleScroll, { passive: true });
 
     // 添加手势反馈样式
     addGestureStyles();
@@ -41,6 +45,17 @@ const MobileGestureHandler = ({ children }) => {
     document.removeEventListener('touchstart', handleTouchStart);
     document.removeEventListener('touchend', handleTouchEnd);
     document.removeEventListener('touchmove', handleTouchMove);
+    document.removeEventListener('scroll', handleScroll);
+  };
+
+  // 处理滚动事件
+  const handleScroll = () => {
+    isScrollingRef.current = true;
+    // 滚动停止后重置标志
+    clearTimeout(window.scrollTimeout);
+    window.scrollTimeout = setTimeout(() => {
+      isScrollingRef.current = false;
+    }, 150);
   };
 
   // 触摸开始处理
@@ -77,8 +92,8 @@ const MobileGestureHandler = ({ children }) => {
     const deltaX = currentX - startX;
     const deltaY = currentY - startY;
 
-    // 如果是水平滑动，阻止默认滚动
-    if (Math.abs(deltaX) > Math.abs(deltaY) && Math.abs(deltaX) > 10) {
+    // 如果是水平滑动且距离较大，阻止默认滚动
+    if (Math.abs(deltaX) > Math.abs(deltaY) && Math.abs(deltaX) > 20) {
       e.preventDefault();
     }
 
@@ -124,30 +139,36 @@ const MobileGestureHandler = ({ children }) => {
     const distance = Math.sqrt(deltaX * deltaX + deltaY * deltaY);
 
     // 防止误触（距离太短或时间太短）
-    if (distance < 30 || deltaTime < 100) {
+    if (distance < 50 || deltaTime < 200) {
       return;
     }
 
     // 防止手势过于频繁
     const now = Date.now();
-    if (now - lastGestureTimeRef.current < 500) {
+    if (now - lastGestureTimeRef.current < 800) {
       return;
     }
+
+    // 如果正在滚动，不触发手势
+    if (isScrollingRef.current) {
+      return;
+    }
+
     lastGestureTimeRef.current = now;
 
-    // 判断手势类型
+    // 判断手势类型 - 更严格的触发条件
     if (Math.abs(deltaX) > Math.abs(deltaY)) {
-      // 水平手势
-      if (deltaX > 50) {
+      // 水平手势 - 需要更大的距离
+      if (deltaX > 80) {
         handleSwipeRight();
-      } else if (deltaX < -50) {
+      } else if (deltaX < -80) {
         handleSwipeLeft();
       }
     } else {
-      // 垂直手势
-      if (deltaY > 50) {
+      // 垂直手势 - 需要更大的距离
+      if (deltaY > 80) {
         handleSwipeDown();
-      } else if (deltaY < -50) {
+      } else if (deltaY < -80) {
         handleSwipeUp();
       }
     }
