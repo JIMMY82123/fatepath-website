@@ -53,7 +53,7 @@ const WealthSign = () => {
       if (!isFlipped) {
         setIsFlipped(true)
       }
-    }, 3000)
+    }, 2000) // 减少等待时间，因为动画本身是1.5秒
   }
 
   const handleReset = () => {
@@ -232,15 +232,23 @@ const WealthSign = () => {
               )}
             </AnimatePresence>
           
-          <div className="relative w-full max-w-sm sm:max-w-md md:w-[50rem] lg:w-[60rem] xl:w-[70rem] h-[40rem] sm:h-[44rem] md:h-[52rem] lg:h-[56rem] xl:h-[60rem] perspective-1000">
+          <div className="relative w-full max-w-sm sm:max-w-md md:w-[50rem] lg:w-[60rem] xl:w-[70rem] h-[40rem] sm:h-[44rem] md:h-[52rem] lg:h-[56rem] xl:h-[60rem]" style={{ perspective: '1000px' }}>
             <motion.div
-               className="w-full h-full relative transition-transform duration-1000 transform-style-preserve-3d"
+               className="w-full h-full relative"
               animate={{ rotateY: isFlipped ? 180 : 0 }}
               transition={{ duration: 1.5, ease: "easeInOut" }}
-               style={{ transformStyle: 'preserve-3d' }}
+               style={{ 
+                 transformStyle: 'preserve-3d',
+                 width: '100%',
+                 height: '100%'
+               }}
             >
               {/* Front Side - Wealth God */}
-                <div className="absolute w-full h-full" style={{ backfaceVisibility: 'hidden' }}>
+                <div className="absolute w-full h-full" style={{ 
+                  backfaceVisibility: 'hidden',
+                  transform: 'rotateY(0deg)',
+                  transformStyle: 'preserve-3d'
+                }}>
                                    <button 
                        className="mystic-card h-full cursor-pointer hover:scale-105 transition-transform duration-300 border-2 border-gold-500/40 shadow-2xl shadow-gold-500/30 relative overflow-hidden w-full"
                        onClick={handleFlip}
@@ -294,7 +302,11 @@ const WealthSign = () => {
               </div>
 
               {/* Back Side - Fortune Result */}
-                <div className="absolute w-full h-full" style={{ backfaceVisibility: 'hidden', transform: 'rotateY(180deg)' }}>
+                <div className="absolute w-full h-full" style={{ 
+                  backfaceVisibility: 'hidden', 
+                  transform: 'rotateY(180deg)',
+                  transformStyle: 'preserve-3d'
+                }}>
                                                                      <div className="mystic-card h-full p-8 sm:p-10 lg:p-12 border-2 border-gold-500/30 shadow-2xl shadow-gold-500/20">
                   {currentSign && (
                     <div className="h-full flex flex-col">
