@@ -23,7 +23,7 @@ const Services = () => {
         "10,000+ word detailed PDF report",
         "3 follow-up questions via WhatsApp"
       ],
-      duration: "3-5 days",
+      duration: "24 hours",
       price: "$38",
       format: "PDF Report",
       color: "from-purple-500 to-pink-500",
@@ -44,7 +44,7 @@ const Services = () => {
         "10,000+ word detailed PDF report",
         "3 follow-up questions via WhatsApp"
       ],
-      duration: "3-5 days",
+      duration: "24 hours",
       price: "$44",
       format: "PDF Report",
       color: "from-pink-500 to-red-500",

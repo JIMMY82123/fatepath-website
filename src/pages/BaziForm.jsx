@@ -71,7 +71,7 @@ const BaziForm = () => {
             </h1>
             <p className="text-mystic-300 mb-8 text-lg">
               Your Bazi reading request has been submitted successfully. 
-              I will analyze your birth chart and send your detailed report within 3-5 days.
+                              I will analyze your birth chart and send your detailed report within 24 hours.
             </p>
             <Link
               to="/"
@@ -148,7 +148,7 @@ const BaziForm = () => {
           <div className="text-center p-4 sm:p-6 bg-gradient-to-r from-gold-500/20 to-yellow-500/20 rounded-lg border border-gold-500/30">
             <h3 className="text-lg sm:text-xl font-cinzel font-bold mb-2 text-gold-400">Service Price</h3>
             <div className="text-2xl sm:text-3xl font-bold text-white mb-2">$38</div>
-            <p className="text-sm sm:text-base text-mystic-300">Completed within 3-5 business days, PayPal payment accepted</p>
+                            <p className="text-sm sm:text-base text-mystic-300">Completed within 24 hours, PayPal payment accepted</p>
           </div>
         </motion.div>
 

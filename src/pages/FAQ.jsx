@@ -39,7 +39,7 @@ const FAQ = () => {
     },
     {
       question: "How long does it take to receive results?",
-      answer: "Delivery times for different services:<br/><br/>• <strong>Detailed BaZi Reading</strong>: 3-5 business days<br/>• <strong>Love Compatibility Reading</strong>: 2-3 business days<br/>• <strong>Custom Talisman</strong>: 7-10 business days (including production time)<br/><br/>I'll send detailed analysis reports via email and provide follow-up text consultation support when needed."
+      answer: "Delivery times for different services:<br/><br/>• <strong>Detailed BaZi Reading</strong>: 24 hours<br/>• <strong>Love Compatibility Reading</strong>: 24 hours<br/>• <strong>Custom Talisman</strong>: 7-10 business days (including production time)<br/><br/>I'll send detailed analysis reports via email and provide follow-up text consultation support when needed."
     },
     {
       question: "Can consultations be done remotely?",

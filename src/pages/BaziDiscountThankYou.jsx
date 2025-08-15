@@ -72,7 +72,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                 <Clock className="h-12 w-12 text-gold-400 mx-auto mb-4" />
                 <h3 className="text-lg font-semibold text-white mb-2">Analysis Period</h3>
                 <p className="text-sm text-mystic-300">
-                  I will carefully analyze your birth chart over the next 3-5 business days
+                  I will carefully analyze your birth chart over the next 24 hours
                 </p>
               </div>
               <div className="text-center p-6 bg-mystic-800/30 rounded-lg border border-mystic-700/50">
@@ -189,7 +189,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
               <span>Return to Home</span>
             </Link>
             <div className="text-sm text-mystic-400">
-              <p>You will receive your detailed report within 3-5 business days</p>
+                              <p>You will receive your detailed report within 24 hours</p>
             </div>
           </motion.div>
         </div>

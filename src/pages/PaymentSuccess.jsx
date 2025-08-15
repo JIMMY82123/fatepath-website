@@ -23,7 +23,7 @@ const PaymentSuccess = () => {
       case 'talisman':
         return '7-10 days'
       default:
-        return '3-5 days'
+        return '24 hours'
     }
   }
 

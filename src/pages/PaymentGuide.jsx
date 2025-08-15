@@ -150,7 +150,7 @@ const PaymentGuide = () => {
               <CheckCircle className="h-8 w-8 text-green-400 mx-auto mb-3" aria-hidden="true" />
               <h4 className="font-semibold text-gold-400 mb-2">Service Delivery</h4>
               <p className="text-mystic-300 text-sm">
-                Receive your detailed report within 3-5 days (or 7-10 for talismans)
+                Receive your detailed report within 24 hours (or 7-10 days for talismans)
               </p>
             </div>
           </div>

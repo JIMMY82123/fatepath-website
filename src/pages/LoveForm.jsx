@@ -71,7 +71,7 @@ const LoveForm = () => {
             </h1>
             <p className="text-mystic-300 mb-8 text-lg">
               Your love compatibility reading request has been submitted successfully. 
-              I will analyze your relationship compatibility and send your detailed report within 3-5 days.
+                              I will analyze your relationship compatibility and send your detailed report within 24 hours.
             </p>
             <Link
               to="/"

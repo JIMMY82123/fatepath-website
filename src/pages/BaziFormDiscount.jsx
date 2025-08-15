@@ -148,7 +148,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                                                                <div className="text-center p-6 bg-gradient-to-r from-green-500/20 to-emerald-500/20 rounded-lg border border-green-500/30">
                       <h3 className="text-xl font-cinzel font-bold mb-2 text-green-400">Special Offer Price</h3>
                       <div className="text-3xl font-bold text-white mb-2">$30</div>
-                      <p className="text-mystic-300">Limited time offer - Completed within 3-5 business days</p>
+                      <p className="text-mystic-300">Limited time offer - Completed within 24 hours</p>
                     </div>
           </div>
         </motion.div>
