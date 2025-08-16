@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Search Console 验证</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #4285f4;
+            text-align: center;
+        }
+        .verification-info {
+            background: #e8f5e8;
+            padding: 20px;
+            border-radius: 5px;
+            margin: 20px 0;
+            border-left: 4px solid #4caf50;
+        }
+        .steps {
+            background: #fff3cd;
+            padding: 20px;
+            border-radius: 5px;
+            margin: 20px 0;
+            border-left: 4px solid #ffc107;
+        }
+        .important {
+            background: #f8d7da;
+            padding: 20px;
+            border-radius: 5px;
+            margin: 20px 0;
+            border-left: 4px solid #dc3545;
+        }
+        code {
+            background: #f8f9fa;
+            padding: 2px 6px;
+            border-radius: 3px;
+            font-family: monospace;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🔍 Google Search Console 验证页面</h1>
+        
+        <div class="verification-info">
+            <h3>✅ 验证状态</h3>
+            <p>此页面用于Google Search Console的网站验证。如果您看到此页面，说明验证文件已正确放置。</p>
+        </div>
+
+        <div class="steps">
+            <h3>📋 验证步骤</h3>
+            <ol>
+                <li>访问 <a href="https://search.google.com/search-console" target="_blank">Google Search Console</a></li>
+                <li>添加您的网站属性：<code>https://fatepath.me</code></li>
+                <li>选择 <strong>"HTML 文件"</strong> 验证方式</li>
+                <li>下载验证文件并上传到此目录</li>
+                <li>点击"验证"按钮</li>
+            </ol>
+        </div>
+
+        <div class="important">
+            <h3>⚠️ 重要提醒</h3>
+            <ul>
+                <li>确保验证文件在网站根目录（<code>/public/</code> 文件夹）</li>
+                <li>验证完成后，可以删除此文件</li>
+                <li>如果验证失败，检查文件路径和权限</li>
+            </ul>
+        </div>
+
+        <div class="verification-info">
+            <h3>🔧 替代验证方式</h3>
+            <p>如果HTML文件验证遇到问题，您也可以尝试：</p>
+            <ul>
+                <li><strong>HTML标记</strong>：在网站头部添加meta标签</li>
+                <li><strong>DNS记录</strong>：添加TXT记录到域名设置</li>
+                <li><strong>Google Analytics</strong>：使用现有的GA代码</li>
+            </ul>
+        </div>
+
+        <div class="steps">
+            <h3>📊 验证成功后</h3>
+            <ol>
+                <li>提交您的sitemap：<code>https://fatepath.me/sitemap.xml</code></li>
+                <li>请求重要页面的索引</li>
+                <li>监控索引状态和搜索表现</li>
+                <li>定期检查错误报告</li>
+            </ol>
+        </div>
+
+        <p style="text-align: center; margin-top: 30px; color: #666;">
+            此页面仅用于Google Search Console验证，验证完成后可以删除。
+        </p>
+    </div>
+</body>
+</html>
