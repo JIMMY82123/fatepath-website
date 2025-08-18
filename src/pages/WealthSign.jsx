@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import { RotateCcw, Share2, Download, Star, Sparkles, Coins } from 'lucide-react'
 import { getRandomSign, culturalInfo } from '../data/wealthSigns'
+import SEO from '../components/SEO'
 
 const WealthSign = () => {
   const [isFlipped, setIsFlipped] = useState(false)
@@ -459,6 +460,7 @@ const WealthSign = () => {
         </motion.div>
       </div>
     </div>
+    </>
   )
 }
 

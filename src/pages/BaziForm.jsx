@@ -353,6 +353,7 @@ const BaziForm = () => {
         </motion.div>
       </div>
     </div>
+    </>
   )
 }
 
