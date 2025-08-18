@@ -32,7 +32,7 @@ const Blog = () => {
       category: 'love',
       tags: ['Love', 'Relationships', 'True Love', 'Emotional Wisdom', 'Life Lessons', 'Personal Growth', 'Romance', 'Self-Discovery'],
       image: "/images/blog/right-person-not-chase-cover.jpg",
-      date: "2025-01-26",
+      date: "2025-08-18",
       readTime: "4 min read",
       slug: "right-person-not-chase"
     },
