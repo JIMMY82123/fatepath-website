@@ -18,13 +18,24 @@ const Blog = () => {
   }, [searchParams])
 
   const categories = [
-    { id: 'all', name: 'All Articles', count: 16 },
+    { id: 'all', name: 'All Articles', count: 17 },
     { id: 'bazi', name: 'BaZi Analysis', count: 10 },
-    { id: 'love', name: 'Love & Relationships', count: 3 },
+    { id: 'love', name: 'Love & Relationships', count: 4 },
     { id: 'wealth', name: 'Wealth & Career', count: 4 }
   ]
 
   const blogPosts = [
+    {
+      id: 17,
+      title: "The Right Person Is Not the One You Have to Chase",
+      excerpt: "A poetic exploration of what true love looks like—not the dramatic chase, but the quiet moments of being seen, understood, and properly placed in someone's life.",
+      category: 'love',
+      tags: ['Love', 'Relationships', 'True Love', 'Emotional Wisdom', 'Life Lessons', 'Personal Growth', 'Romance', 'Self-Discovery'],
+      image: "/images/blog/right-person-not-chase-cover.jpg",
+      date: "2025-01-26",
+      readTime: "4 min read",
+      slug: "right-person-not-chase"
+    },
     {
       id: 16,
       title: "The Hidden Energy Behind ICE's Immigration Sweeps in 2025 — A BaZi Perspective",

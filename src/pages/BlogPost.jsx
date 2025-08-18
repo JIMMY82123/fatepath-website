@@ -13,6 +13,130 @@ const BlogPost = () => {
 
   // Sample blog post data - in a real app, this would come from an API or CMS
   const blogPostsData = {
+    "right-person-not-chase": {
+      title: "The Right Person Is Not the One You Have to Chase",
+      excerpt: "A poetic exploration of what true love looks like—not the dramatic chase, but the quiet moments of being seen, understood, and properly placed in someone's life.",
+      content: `
+        <div class="mb-8">
+          <div class="bg-gradient-to-r from-pink-500/20 to-purple-500/20 border border-pink-500/30 rounded-lg p-6 mb-8">
+            <h3 class="text-lg font-semibold text-pink-400 mb-3">💕 Love & Relationships Wisdom</h3>
+            <p class="text-mystic-200 mb-2"><strong>Theme:</strong> True Love vs. Chasing</p>
+            <p class="text-mystic-200 mb-2"><strong>Focus:</strong> Emotional Intelligence & Self-Worth</p>
+            <p class="text-mystic-200 mb-2"><strong>Message:</strong> The right person makes you feel seen, not chased</p>
+            <p class="text-mystic-200"><strong>Key Insight:</strong> Love is about being properly placed, not hoisted high</p>
+          </div>
+        </div>
+
+        <h2 class="text-2xl font-bold text-white mb-4 mt-8">The Chase That Leaves You Empty</h2>
+        <p class="mb-6 text-lg text-mystic-200 leading-relaxed">
+          I remember a road from long ago. Evening had cooled the city like a slab of iron, and I was running after someone's back. The wind tugged at my hair and at my breath until both hurt. I thought love meant acceleration—that if I ran fast enough, we would end up side by side.
+        </p>
+        <p class="mb-6 text-lg text-mystic-200 leading-relaxed">
+          Then the light turned red. I stopped and found my hands empty, my chest emptier. So much effort, and I had misplaced myself halfway.
+        </p>
+
+        <div class="bg-gradient-to-r from-red-500/20 to-orange-500/20 border border-red-500/30 rounded-lg p-6 mb-6">
+          <h3 class="text-lg font-semibold text-red-400 mb-3">The Truth About Chasing</h3>
+          <p class="text-mystic-200 leading-relaxed">
+            Later I learned: the right person is not the one you have to chase. He slows when you can't keep pace. When it rains, he doesn't stage a heroic dash through the storm; he simply tilts the umbrella toward your side.
+          </p>
+        </div>
+
+        <h2 class="text-2xl font-bold text-white mb-4 mt-8">What True Love Actually Looks Like</h2>
+        <p class="mb-6 text-lg text-mystic-200 leading-relaxed">
+          You say, "I'm not doing great today," and he doesn't start a lecture or force a quick recovery. He just sits with you a while. The silence is like a cup of warm water—ordinary, but it holds heat.
+        </p>
+        
+        <div class="grid md:grid-cols-2 gap-6 mb-6">
+          <div class="bg-mystic-800/30 rounded-lg p-6 border border-mystic-700/50">
+            <h3 class="text-lg font-semibold text-pink-400 mb-3">The Small Pulse of Life</h3>
+            <p class="text-mystic-200 mb-3">
+              The right person remembers the small pulse of life. The tap-tap on the cutting board, the button on your shirt that's always loose, the medicine you fumble for at two a.m.
+            </p>
+          </div>
+          
+          <div class="bg-mystic-800/30 rounded-lg p-6 border border-mystic-700/50">
+            <h3 class="text-lg font-semibold text-blue-400 mb-3">Turning Down the Volume</h3>
+            <p class="text-mystic-200 mb-3">
+              He doesn't lift you out of the world; when the world gets too loud, he turns the volume down. You say, "I'm scared." He doesn't laugh, and he doesn't promise forever.
+            </p>
+          </div>
+        </div>
+
+        <p class="mb-6 text-lg text-mystic-200 leading-relaxed">
+          He takes your hand and lights the next meter of road. To be loved is not to be hoisted high; it's to be properly placed.
+        </p>
+
+        <h2 class="text-2xl font-bold text-white mb-4 mt-8">The Other Kind: Bright, Sharp, Walking Away</h2>
+        <p class="mb-6 text-lg text-mystic-200 leading-relaxed">
+          We've all met the other kind: bright, sharp, walking like an uninvited wind. When you catch up, they speed up; while you're explaining, they're already turning away. You offer everything; they accept a sliver.
+        </p>
+        
+        <div class="bg-gradient-to-r from-yellow-500/20 to-orange-500/20 border border-yellow-500/30 rounded-lg p-6 mb-6">
+          <h3 class="text-lg font-semibold text-yellow-400 mb-3">Some Light Never Pauses</h3>
+          <p class="text-mystic-200 leading-relaxed">
+            Some light never pauses for anyone. It isn't your fault. It's just a rhythm that doesn't match.
+          </p>
+        </div>
+
+        <h2 class="text-2xl font-bold text-white mb-4 mt-8">The Unglamorous Homework of Love</h2>
+        <p class="mb-6 text-lg text-mystic-200 leading-relaxed">
+          The right person practices the unglamorous homework of love: saying things clearly, saying feelings later; deciding big matters three days after they happen; a fifteen-minute debrief after an argument.
+        </p>
+        
+        <div class="space-y-6 mb-6">
+          <div class="bg-gradient-to-r from-green-500/20 to-teal-500/20 border border-green-500/30 rounded-lg p-6">
+            <h3 class="text-lg font-semibold text-green-400 mb-3">Learning Together</h3>
+            <p class="text-mystic-200 leading-relaxed">
+              You both learn when to come close and when to be quiet. Love isn't constant blaze; love is coming back—again and again, in small ways.
+            </p>
+          </div>
+          
+          <div class="bg-gradient-to-r from-purple-500/20 to-pink-500/20 border border-purple-500/30 rounded-lg p-6">
+            <h3 class="text-lg font-semibold text-purple-400 mb-3">The Ordinary Night</h3>
+            <p class="text-mystic-200 leading-relaxed">
+              I picture an ordinary night. You sit on the kitchen floor while it rains outside. Only the stove light is on. You tell the story of your mess of a day; he offers no verdict, just splits the last orange and gives you the sweeter slice.
+            </p>
+          </div>
+          
+          <div class="bg-gradient-to-r from-blue-500/20 to-indigo-500/20 border border-blue-500/30 rounded-lg p-6">
+            <h3 class="text-lg font-semibold text-blue-400 mb-3">Being Seen, Not Rescued</h3>
+            <p class="text-mystic-200 leading-relaxed">
+              Your chest loosens. The bills are still due, tomorrow still uncertain, but the small, nervous animal inside you closes its eyes. You aren't rescued; you are seen. You aren't pulled; you are caught.
+            </p>
+          </div>
+        </div>
+
+        <h2 class="text-2xl font-bold text-white mb-4 mt-8">Don't Break Yourself Into Light</h2>
+        <p class="mb-6 text-lg text-mystic-200 leading-relaxed">
+          So don't break yourself into a beam of light to chase a brighter one. We're human—we get tired, we get scared, we hesitate. The right person is the one who reaches out when you're shaking, who leaves the door open a crack when you want to run, who says, "Then let's go slow," and means it.
+        </p>
+
+        <div class="bg-gradient-to-r from-pink-500/20 to-purple-500/20 border border-pink-500/30 rounded-lg p-6 mb-6">
+          <h3 class="text-lg font-semibold text-pink-400 mb-3">What Lasts</h3>
+          <p class="text-mystic-200 leading-relaxed">
+            Learn to notice what lasts: behind warm gestures, look for patience; behind pretty words, look for the one who returns. May you meet someone who will make life detailed with you. And may you become that someone—unshowy, unspectacular, but reliable, quiet, warm.
+          </p>
+        </div>
+
+        <h2 class="text-2xl font-bold text-white mb-4 mt-8">The Long Road Together</h2>
+        <p class="mb-6 text-lg text-mystic-200 leading-relaxed">
+          When you're exhausted, you can rest in their palm; when they are, you'll extend yours. Light moves on. Wind settles. We don't have to keep running. The ones who can walk beside you are the ones worth the long road.
+        </p>
+
+        <div class="bg-gradient-to-r from-gold-500/20 to-yellow-500/20 border border-gold-500/30 rounded-lg p-6 mb-6">
+          <h3 class="text-lg font-semibold text-gold-400 mb-3">💕 Final Wisdom</h3>
+          <p class="text-mystic-200 leading-relaxed">
+            <strong>True love is not about the chase—it's about finding someone who makes you feel seen, understood, and properly placed in their life. It's about walking together, not running after each other.</strong>
+          </p>
+        </div>
+      `,
+      author: "FatePath",
+      date: "2025-01-26",
+      readTime: "4 min read",
+      category: "love",
+      tags: ["Love", "Relationships", "True Love", "Emotional Wisdom", "Life Lessons", "Personal Growth", "Romance", "Self-Discovery"]
+    },
     "ice-immigration-sweeps-2025-bazi-perspective": {
       title: "The Hidden Energy Behind ICE's Immigration Sweeps in 2025 — A BaZi Perspective",
       excerpt: "Discover how the 2025 Yi-Si year's Fire-Metal clash is manifesting in global immigration enforcement and what this cosmic energy means for your personal transformations.",
