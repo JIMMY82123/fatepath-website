@@ -91,95 +91,40 @@ const Home = () => {
     }
   ]
 
-    // Latest articles data - sorted by date (newest first)
+    // Latest articles data - sorted by date (newest first) - showing only 3 most recent
   const latestArticles = [
     {
       id: 1,
-      title: "Health Destiny Report: A Woman's Wellness Path Through BaZi",
-      excerpt: "Discover how your birth chart reveals your health destiny. Learn about wellness cycles, key years for health optimization, and practical strategies for maintaining vitality through BaZi analysis.",
-      category: 'bazi',
-      tags: ['Health', 'Wellness', 'BaZi', 'Chinese Astrology', 'Vitality', 'Lifestyle', 'Destiny'],
-      image: "/images/blog/health-destiny-report-cover.jpg",
-      date: "2025-01-23",
-      readTime: "7 min read",
-      slug: "health-destiny-report-woman-wellness-path"
+      title: "The Right Person Is Not the One You Have to Chase",
+      excerpt: "A poetic exploration of what true love looks like—not the dramatic chase, but the quiet moments of being seen, understood, and properly placed in someone's life.",
+      category: 'love',
+      tags: ['Love', 'Relationships', 'True Love', 'Emotional Wisdom', 'Life Lessons', 'Personal Growth', 'Romance', 'Self-Discovery'],
+      image: "/images/blog/right-person-not-chase-cover.jpg",
+      date: "2025-08-18",
+      readTime: "4 min read",
+      slug: "right-person-not-chase"
     },
     {
       id: 2,
-      title: "Marriage & Relationship Destiny Report: A Woman's Love Path Through BaZi",
-      excerpt: "Discover how your birth chart reveals your romantic destiny. Learn about marriage timing, partner characteristics, and practical strategies for enhancing love luck through BaZi analysis.",
-      category: 'love',
-      tags: ['Love', 'Marriage', 'Relationships', 'BaZi', 'Chinese Astrology', 'Romance', 'Destiny'],
-      image: "/images/blog/marriage-relationship-destiny-report-cover.jpg",
-      date: "2025-01-22",
-      readTime: "8 min read",
-      slug: "marriage-relationship-destiny-report-woman-love-path"
+      title: "The Hidden Energy Behind ICE's Immigration Sweeps in 2025 — A BaZi Perspective",
+      excerpt: "Discover how the 2025 Yi-Si year's Fire-Metal clash is manifesting in global immigration enforcement and what this cosmic energy means for your personal transformations.",
+      category: 'bazi',
+      tags: ['BaZi', '2025', 'Chinese Astrology', 'Immigration', 'Fire-Metal Clash', 'Destiny', 'Global Events', 'Yi-Si Year'],
+      image: "/images/blog/ice-immigration-sweeps-2025-bazi-perspective-cover.jpg",
+      date: "2025-01-25",
+      readTime: "5 min read",
+      slug: "ice-immigration-sweeps-2025-bazi-perspective"
     },
     {
       id: 3,
-      title: "Financial Destiny Report: A Woman's Wealth Path Through BaZi",
-      excerpt: "Discover how your birth chart reveals your financial destiny. Learn about wealth cycles, key years for financial growth, and practical strategies for building wealth through consistent effort and strategic planning.",
+      title: "How to Read Your Wealth Level in BaZi: A Simple Guide to Financial Destiny",
+      excerpt: "Discover how to analyze your wealth potential through BaZi reading. Learn about Wealth Stars, Day Master strength, and luck cycles that determine your financial destiny and money-making ability.",
       category: 'wealth',
-      tags: ['Wealth', 'Financial Destiny', 'BaZi', 'Chinese Astrology', 'Career', 'Investment', 'Money'],
-      image: "/images/blog/financial-destiny-report-cover.jpg",
-      date: "2025-01-21",
-      readTime: "7 min read",
-      slug: "financial-destiny-report-woman-wealth-path"
-    },
-    {
-      id: 4,
-      title: "BaZi Meets MBTI: A Fascinating East–West Dialogue on Personality",
-      excerpt: "BaZi gives you the 'inborn color palette,' MBTI reveals your 'usage habits.' Put the map and the manual together, and you get a fuller picture of yourself.",
-      category: 'bazi',
-      tags: ['BaZi', 'MBTI', 'Personality', 'Chinese Astrology', 'Psychology', 'Self-Discovery'],
-      image: "/images/blog/bazi-mbti-personality-comparison-cover.jpg",
-      date: "2025-01-20",
+      tags: ['Wealth', 'BaZi', 'Financial Destiny', 'Money', 'Chinese Astrology', 'Wealth Analysis', 'Financial Planning'],
+      image: "/images/blog/bazi-wealth-level-guide-cover.jpg",
+      date: "2025-01-24",
       readTime: "6 min read",
-      slug: "bazi-mbti-personality-comparison"
-    },
-    {
-      id: 5,
-      title: "BaZi Chat｜The 'Pressure and Turning Points' of a Gui Hai – Yi Chou – Geng Xu – Wu Yin Woman",
-      excerpt: "Discover the unique challenges and opportunities in this BaZi chart analysis. Learn how pressure transforms into momentum and when the breakthrough years arrive for this winter-born Geng Metal woman.",
-      category: 'bazi',
-      tags: ['BaZi', 'Chinese Astrology', 'Destiny', 'Five Elements', 'Career', 'Relationships'],
-      image: "/images/blog/bazi-chat-pressure-turning-points-cover.jpg",
-      date: "2025-08-11",
-      readTime: "8 min read",
-      slug: "bazi-chat-pressure-turning-points-gui-hai-woman"
-    },
-    {
-      id: 6,
-      title: "Understanding Your BaZi Chart: A Beginner's Guide",
-      excerpt: "Master the fundamentals of BaZi (八字) analysis and discover how your birth chart reveals your life's blueprint, personality traits, and destiny path through ancient Chinese wisdom.",
-      category: 'bazi',
-      tags: ['BaZi', 'Chinese Astrology', 'Destiny', 'Five Elements'],
-      image: "/images/blog/bazi-beginners-guide-cover.jpg",
-      date: "2024-01-15",
-      readTime: "5 min read",
-      slug: "understanding-bazi-chart-beginners-guide"
-    },
-    {
-      id: 7,
-      title: "The Five Elements in Love: Finding Your Perfect Match",
-      excerpt: "Unlock the secrets of romantic compatibility through the Five Elements (五行) system. Learn how Wood, Fire, Earth, Metal, and Water energies create harmony or conflict in relationships.",
-      category: 'love',
-      tags: ['Love', 'Five Elements', 'Relationships', 'Compatibility'],
-      image: "/images/blog/five-elements-love-cover.jpg",
-      date: "2024-01-10",
-      readTime: "7 min read",
-      slug: "five-elements-love-perfect-match"
-    },
-    {
-      id: 8,
-      title: "Wealth Archetypes in Chinese Astrology",
-      excerpt: "Discover your unique wealth personality type through BaZi analysis. Learn how your birth chart reveals your financial potential and the best strategies for wealth accumulation.",
-      category: 'wealth',
-      tags: ['Wealth', 'Career', 'Financial', 'BaZi'],
-      image: "/images/blog/wealth-archetypes-cover.jpg",
-      date: "2024-01-05",
-      readTime: "6 min read",
-      slug: "wealth-archetypes-chinese-astrology"
+      slug: "how-to-read-wealth-level-bazi-simple-guide"
     }
   ]
 
