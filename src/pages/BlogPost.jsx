@@ -132,10 +132,25 @@ const BlogPost = () => {
         </div>
       `,
       author: "FatePath",
-      date: "2025-01-26",
+      date: "2025-08-18",
       readTime: "4 min read",
       category: "love",
-      tags: ["Love", "Relationships", "True Love", "Emotional Wisdom", "Life Lessons", "Personal Growth", "Romance", "Self-Discovery"]
+      image: "/images/blog/right-person-not-chase-cover.jpg",
+      tags: ["Love", "Relationships", "True Love", "Emotional Wisdom", "Life Lessons", "Personal Growth", "Romance", "Self-Discovery"],
+      relatedPosts: [
+        {
+          title: "The Five Elements in Love: Finding Your Perfect Match",
+          excerpt: "Unlock the secrets of romantic compatibility through the Five Elements system.",
+          image: "/images/blog/five-elements-love-cover.jpg",
+          slug: "five-elements-love-perfect-match"
+        },
+        {
+          title: "Marriage & Relationship Destiny Report: A Woman's Love Path Through BaZi",
+          excerpt: "Discover how your birth chart reveals your romantic destiny.",
+          image: "/images/blog/marriage-relationship-destiny-report-cover.jpg",
+          slug: "marriage-relationship-destiny-report-woman-love-path"
+        }
+      ]
     },
     "ice-immigration-sweeps-2025-bazi-perspective": {
       title: "The Hidden Energy Behind ICE's Immigration Sweeps in 2025 — A BaZi Perspective",
