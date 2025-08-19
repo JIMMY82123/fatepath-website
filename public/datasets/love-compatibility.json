@@ -1,0 +1,224 @@
+{
+  "metadata": {
+    "name": "Love Compatibility Dataset",
+    "description": "Complete data for BaZi love and relationship analysis including compatibility factors, love stars, and relationship timing",
+    "version": "1.0.0",
+    "lastUpdated": "2024-01-15",
+    "license": "CC BY-NC-SA 4.0",
+    "author": "FatePath BaZi Master",
+    "totalRecords": 20,
+    "format": "JSON",
+    "language": "en"
+  },
+  "schema": {
+    "fields": [
+      {
+        "name": "compatibilityType",
+        "type": "string",
+        "description": "Type of compatibility factor",
+        "example": "Element Compatibility"
+      },
+      {
+        "name": "chinese",
+        "type": "string",
+        "description": "Chinese term",
+        "example": "五行相合"
+      },
+      {
+        "name": "pinyin",
+        "type": "string",
+        "description": "Pinyin romanization",
+        "example": "Wǔ Xíng Xiāng Hé"
+      },
+      {
+        "name": "category",
+        "type": "string",
+        "description": "Category of compatibility",
+        "example": "Element"
+      },
+      {
+        "name": "compatibilityLevel",
+        "type": "string",
+        "description": "Level of compatibility",
+        "example": "High"
+      },
+      {
+        "name": "description",
+        "type": "string",
+        "description": "Description of this compatibility factor",
+        "example": "Elements that generate each other create harmony"
+      },
+      {
+        "name": "relationshipImplications",
+        "type": "array",
+        "description": "What this means for relationships",
+        "example": ["Harmony", "Growth", "Support"]
+      },
+      {
+        "name": "loveCharacteristics",
+        "type": "array",
+        "description": "Characteristics of love in this compatibility",
+        "example": ["Nurturing", "Supportive", "Growing"]
+      },
+      {
+        "name": "challenges",
+        "type": "array",
+        "description": "Potential challenges",
+        "example": ["May be too comfortable", "Lacks excitement"]
+      },
+      {
+        "name": "enhancement",
+        "type": "array",
+        "description": "How to enhance this compatibility",
+        "example": ["Maintain growth", "Support each other"]
+      }
+    ]
+  },
+  "data": [
+    {
+      "compatibilityType": "Element Generation",
+      "chinese": "五行相生",
+      "pinyin": "Wǔ Xíng Xiāng Shēng",
+      "category": "Element",
+      "compatibilityLevel": "Very High",
+      "description": "Elements that generate each other create natural harmony and growth",
+      "relationshipImplications": ["Natural harmony", "Growth and development", "Mutual support", "Long-term potential"],
+      "loveCharacteristics": ["Nurturing", "Supportive", "Growing", "Harmonious", "Natural"],
+      "challenges": ["May become too comfortable", "Lacks excitement", "May be predictable"],
+      "enhancement": ["Maintain growth mindset", "Support each other's development", "Keep relationship fresh"]
+    },
+    {
+      "compatibilityType": "Element Control",
+      "chinese": "五行相克",
+      "pinyin": "Wǔ Xíng Xiāng Kè",
+      "category": "Element",
+      "compatibilityLevel": "Low",
+      "description": "Elements that control each other create tension and conflict",
+      "relationshipImplications": ["Tension and conflict", "Power struggles", "Control issues", "Challenging dynamics"],
+      "loveCharacteristics": ["Intense", "Challenging", "Powerful", "Transformative", "Difficult"],
+      "challenges": ["Constant conflict", "Power struggles", "Emotional volatility", "Hard to maintain"],
+      "enhancement": ["Learn to compromise", "Respect boundaries", "Find balance", "Seek mediation"]
+    },
+    {
+      "compatibilityType": "Same Element",
+      "chinese": "五行相同",
+      "pinyin": "Wǔ Xíng Xiāng Tóng",
+      "category": "Element",
+      "compatibilityLevel": "High",
+      "description": "Same elements create understanding and shared values",
+      "relationshipImplications": ["Deep understanding", "Shared values", "Similar perspectives", "Strong connection"],
+      "loveCharacteristics": ["Understanding", "Shared values", "Similar outlook", "Strong bond", "Comfortable"],
+      "challenges": ["May be too similar", "Lacks diversity", "Echo chamber effect"],
+      "enhancement": ["Embrace differences", "Learn from each other", "Maintain individuality"]
+    },
+    {
+      "compatibilityType": "Heavenly Stem Harmony",
+      "chinese": "天干相合",
+      "pinyin": "Tiān Gān Xiāng Hé",
+      "category": "Heavenly Stem",
+      "compatibilityLevel": "Very High",
+      "description": "Harmonious Heavenly Stem combinations create strong attraction",
+      "relationshipImplications": ["Strong attraction", "Natural chemistry", "Easy communication", "Deep connection"],
+      "loveCharacteristics": ["Attractive", "Natural chemistry", "Easy communication", "Deep connection", "Harmonious"],
+      "challenges": ["May be too intense", "Hard to maintain distance", "Emotional dependency"],
+      "enhancement": ["Maintain healthy boundaries", "Keep individual identity", "Balance closeness and space"]
+    },
+    {
+      "compatibilityType": "Earthly Branch Harmony",
+      "chinese": "地支相合",
+      "pinyin": "Dì Zhī Xiāng Hé",
+      "category": "Earthly Branch",
+      "compatibilityLevel": "High",
+      "description": "Harmonious Earthly Branch combinations create stability",
+      "relationshipImplications": ["Stability", "Practical harmony", "Shared lifestyle", "Long-term potential"],
+      "loveCharacteristics": ["Stable", "Practical", "Compatible lifestyle", "Long-term oriented", "Reliable"],
+      "challenges": ["May be too practical", "Lacks romance", "Boring routine"],
+      "enhancement": ["Add romance", "Keep things exciting", "Maintain passion"]
+    },
+    {
+      "compatibilityType": "Ten Gods Compatibility",
+      "chinese": "十神相合",
+      "pinyin": "Shí Shén Xiāng Hé",
+      "category": "Ten Gods",
+      "compatibilityLevel": "Moderate",
+      "description": "Compatible Ten Gods combinations create balanced relationships",
+      "relationshipImplications": ["Balanced dynamics", "Complementary roles", "Mutual support", "Healthy interaction"],
+      "loveCharacteristics": ["Balanced", "Complementary", "Supportive", "Healthy", "Mutual"],
+      "challenges": ["May lack passion", "Too balanced", "Lacks excitement"],
+      "enhancement": ["Add passion", "Create excitement", "Maintain balance"]
+    },
+    {
+      "compatibilityType": "Day Master Strength",
+      "chinese": "日主强弱",
+      "pinyin": "Rì Zhǔ Qiáng Ruò",
+      "category": "Day Master",
+      "compatibilityLevel": "Variable",
+      "description": "Day Master strength affects relationship dynamics and compatibility",
+      "relationshipImplications": ["Power dynamics", "Leadership roles", "Dependency patterns", "Relationship structure"],
+      "loveCharacteristics": ["Dynamic", "Structured", "Clear roles", "Defined", "Organized"],
+      "challenges": ["Power imbalances", "Dependency issues", "Role confusion"],
+      "enhancement": ["Balance power", "Share responsibilities", "Maintain equality"]
+    },
+    {
+      "compatibilityType": "Love Stars",
+      "chinese": "桃花星",
+      "pinyin": "Táo Huā Xīng",
+      "category": "Love Stars",
+      "compatibilityLevel": "High",
+      "description": "Love stars indicate romantic potential and timing",
+      "relationshipImplications": ["Romantic potential", "Love timing", "Attraction", "Passion"],
+      "loveCharacteristics": ["Romantic", "Passionate", "Attractive", "Charming", "Magnetic"],
+      "challenges": ["May be too romantic", "Unrealistic expectations", "Emotional volatility"],
+      "enhancement": ["Balance romance with reality", "Maintain realistic expectations", "Channel passion positively"]
+    },
+    {
+      "compatibilityType": "Marriage Stars",
+      "chinese": "婚姻星",
+      "pinyin": "Hūn Yīn Xīng",
+      "category": "Marriage Stars",
+      "compatibilityLevel": "Very High",
+      "description": "Marriage stars indicate long-term commitment potential",
+      "relationshipImplications": ["Marriage potential", "Long-term commitment", "Stability", "Family values"],
+      "loveCharacteristics": ["Committed", "Stable", "Family-oriented", "Long-term", "Reliable"],
+      "challenges": ["May be too serious", "Lacks spontaneity", "Too traditional"],
+      "enhancement": ["Add spontaneity", "Keep things fun", "Balance tradition and modernity"]
+    },
+    {
+      "compatibilityType": "Timing Compatibility",
+      "chinese": "时机相合",
+      "pinyin": "Shí Jī Xiāng Hé",
+      "category": "Timing",
+      "compatibilityLevel": "Moderate",
+      "description": "Timing compatibility affects when relationships are most favorable",
+      "relationshipImplications": ["Optimal timing", "Favorable periods", "Challenging periods", "Growth cycles"],
+      "loveCharacteristics": ["Timely", "Well-timed", "Favorable", "Growth-oriented", "Cyclical"],
+      "challenges": ["Timing issues", "Missed opportunities", "Poor timing"],
+      "enhancement": ["Be patient", "Wait for right timing", "Make most of opportunities"]
+    }
+  ],
+  "compatibilityAnalysis": {
+    "highCompatibility": "Multiple high compatibility factors indicate strong relationship potential",
+    "lowCompatibility": "Low compatibility factors may indicate challenges that need work",
+    "balance": "Balance between different compatibility factors is important",
+    "growth": "Compatibility can be enhanced through understanding and effort",
+    "timing": "Timing plays a crucial role in relationship success"
+  },
+  "interpretationGuidelines": {
+    "elementGeneration": "Focus on nurturing and supporting each other's growth",
+    "elementControl": "Work on compromise and finding balance",
+    "sameElement": "Embrace similarities while maintaining individuality",
+    "heavenlyStemHarmony": "Build on natural chemistry and attraction",
+    "earthlyBranchHarmony": "Focus on practical compatibility and stability",
+    "tenGodsCompatibility": "Develop complementary roles and mutual support",
+    "dayMasterStrength": "Balance power dynamics and share responsibilities",
+    "loveStars": "Channel romantic energy positively",
+    "marriageStars": "Build long-term commitment and stability",
+    "timingCompatibility": "Be patient and wait for optimal timing"
+  },
+  "relationshipAdvice": {
+    "highCompatibility": "Focus on maintaining and enhancing natural harmony",
+    "moderateCompatibility": "Work on areas that need improvement while building on strengths",
+    "lowCompatibility": "Seek understanding and work on fundamental compatibility issues",
+    "mixedCompatibility": "Focus on strengths while addressing challenges systematically"
+  }
+}

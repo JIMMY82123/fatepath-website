@@ -1,0 +1,234 @@
+{
+  "metadata": {
+    "name": "Wealth Stars Dataset",
+    "description": "Complete data for BaZi wealth analysis including Wealth Stars (财星), Wealth Gods (财神), and wealth-related Ten Gods combinations",
+    "version": "1.0.0",
+    "lastUpdated": "2024-01-15",
+    "license": "CC BY-NC-SA 4.0",
+    "author": "FatePath BaZi Master",
+    "totalRecords": 15,
+    "format": "JSON",
+    "language": "en"
+  },
+  "schema": {
+    "fields": [
+      {
+        "name": "starName",
+        "type": "string",
+        "description": "Name of the wealth star",
+        "example": "Direct Wealth"
+      },
+      {
+        "name": "chinese",
+        "type": "string",
+        "description": "Chinese term",
+        "example": "正财"
+      },
+      {
+        "name": "pinyin",
+        "type": "string",
+        "description": "Pinyin romanization",
+        "example": "Zhèng Cái"
+      },
+      {
+        "name": "category",
+        "type": "string",
+        "description": "Category of wealth star",
+        "example": "Ten Gods Wealth"
+      },
+      {
+        "name": "wealthType",
+        "type": "string",
+        "description": "Type of wealth this represents",
+        "example": "Stable income"
+      },
+      {
+        "name": "strength",
+        "type": "string",
+        "description": "Strength level of this wealth star",
+        "example": "Strong"
+      },
+      {
+        "name": "characteristics",
+        "type": "array",
+        "description": "Key characteristics of this wealth star",
+        "example": ["Stable", "Reliable", "Conservative"]
+      },
+      {
+        "name": "careerImplications",
+        "type": "array",
+        "description": "Career implications when this star is strong",
+        "example": ["Salary work", "Government", "Traditional business"]
+      },
+      {
+        "name": "wealthImplications",
+        "type": "string",
+        "description": "What this star indicates about wealth potential",
+        "example": "Stable and reliable income sources"
+      },
+      {
+        "name": "challenges",
+        "type": "array",
+        "description": "Potential challenges or weaknesses",
+        "example": ["Limited growth", "Conservative approach"]
+      },
+      {
+        "name": "enhancement",
+        "type": "array",
+        "description": "How to enhance this wealth star",
+        "example": ["Develop skills", "Build reputation", "Network"]
+      }
+    ]
+  },
+  "data": [
+    {
+      "starName": "Direct Wealth",
+      "chinese": "正财",
+      "pinyin": "Zhèng Cái",
+      "category": "Ten Gods Wealth",
+      "wealthType": "Stable income",
+      "strength": "Very Strong",
+      "characteristics": ["Stable", "Reliable", "Conservative", "Traditional", "Dependable"],
+      "careerImplications": ["Salary work", "Government", "Traditional business", "Education", "Healthcare"],
+      "wealthImplications": "Represents stable income from traditional sources like salary, government work, or established businesses",
+      "challenges": ["Limited growth potential", "Conservative approach", "Risk aversion"],
+      "enhancement": ["Develop professional skills", "Build strong reputation", "Network in traditional industries", "Focus on stability"]
+    },
+    {
+      "starName": "Indirect Wealth",
+      "chinese": "偏财",
+      "pinyin": "Piān Cái",
+      "category": "Ten Gods Wealth",
+      "wealthType": "Variable income",
+      "strength": "Strong",
+      "characteristics": ["Dynamic", "Opportunistic", "Risk-taking", "Innovative", "Flexible"],
+      "careerImplications": ["Business", "Investment", "Trading", "Entrepreneurship", "Sales"],
+      "wealthImplications": "Represents wealth from business, investments, trading, and other variable income sources",
+      "challenges": ["Unstable income", "High risk", "Requires constant effort"],
+      "enhancement": ["Develop business skills", "Learn investment strategies", "Build diverse income streams", "Stay adaptable"]
+    },
+    {
+      "starName": "Hidden Wealth",
+      "chinese": "暗财",
+      "pinyin": "Àn Cái",
+      "category": "Hidden Wealth",
+      "wealthType": "Hidden opportunities",
+      "strength": "Moderate",
+      "characteristics": ["Hidden", "Secretive", "Intuitive", "Mysterious", "Unexpected"],
+      "careerImplications": ["Research", "Investigation", "Consulting", "Private practice", "Hidden talents"],
+      "wealthImplications": "Represents hidden wealth opportunities that may not be immediately obvious",
+      "challenges": ["Hard to identify", "Requires intuition", "May be overlooked"],
+      "enhancement": ["Develop intuition", "Explore hidden talents", "Research opportunities", "Trust instincts"]
+    },
+    {
+      "starName": "Wealth God",
+      "chinese": "财神",
+      "pinyin": "Cái Shén",
+      "category": "Wealth Deity",
+      "wealthType": "Divine wealth",
+      "strength": "Very Strong",
+      "characteristics": ["Blessed", "Fortunate", "Divine favor", "Abundant", "Prosperous"],
+      "careerImplications": ["Any career with divine blessing", "Spiritual work", "Helping professions", "Creative work"],
+      "wealthImplications": "Represents divine blessing and abundance in wealth matters",
+      "challenges": ["May become complacent", "Relies too much on luck", "Lacks effort"],
+      "enhancement": ["Practice gratitude", "Help others", "Maintain spiritual practice", "Stay humble"]
+    },
+    {
+      "starName": "Wealth Palace",
+      "chinese": "财宫",
+      "pinyin": "Cái Gōng",
+      "category": "Wealth Palace",
+      "wealthType": "Wealth foundation",
+      "strength": "Strong",
+      "characteristics": ["Foundation", "Stable", "Long-term", "Structural", "Reliable"],
+      "careerImplications": ["Long-term career planning", "Building wealth foundation", "Real estate", "Infrastructure"],
+      "wealthImplications": "Represents the foundation and structure of wealth building",
+      "challenges": ["Slow to build", "Requires patience", "Long-term commitment"],
+      "enhancement": ["Long-term planning", "Build solid foundation", "Invest in assets", "Be patient"]
+    },
+    {
+      "starName": "Wealth Gate",
+      "chinese": "财门",
+      "pinyin": "Cái Mén",
+      "category": "Wealth Gateway",
+      "wealthType": "Wealth opportunities",
+      "strength": "Moderate",
+      "characteristics": ["Gateway", "Opportunity", "Access", "Entry point", "Opening"],
+      "careerImplications": ["New opportunities", "Career changes", "Starting businesses", "New ventures"],
+      "wealthImplications": "Represents opportunities and gateways to wealth",
+      "challenges": ["May miss opportunities", "Timing sensitive", "Requires action"],
+      "enhancement": ["Stay alert to opportunities", "Act quickly when chances arise", "Network actively", "Be prepared"]
+    },
+    {
+      "starName": "Wealth Treasury",
+      "chinese": "财库",
+      "pinyin": "Cái Kù",
+      "category": "Wealth Storage",
+      "wealthType": "Wealth accumulation",
+      "strength": "Strong",
+      "characteristics": ["Storage", "Accumulation", "Saving", "Preservation", "Security"],
+      "careerImplications": ["Banking", "Finance", "Accounting", "Investment management", "Wealth preservation"],
+      "wealthImplications": "Represents the ability to accumulate and preserve wealth",
+      "challenges": ["May be too conservative", "Misses growth opportunities", "Overly cautious"],
+      "enhancement": ["Learn investment strategies", "Balance saving and growth", "Diversify investments", "Seek professional advice"]
+    },
+    {
+      "starName": "Wealth Source",
+      "chinese": "财源",
+      "pinyin": "Cái Yuán",
+      "category": "Wealth Source",
+      "wealthType": "Wealth generation",
+      "strength": "Very Strong",
+      "characteristics": ["Source", "Generation", "Creation", "Origin", "Foundation"],
+      "careerImplications": ["Entrepreneurship", "Innovation", "Creative work", "Business creation", "Product development"],
+      "wealthImplications": "Represents the source and generation of wealth",
+      "challenges": ["Requires creativity", "May be unstable", "Needs constant innovation"],
+      "enhancement": ["Develop creativity", "Innovate constantly", "Build multiple sources", "Stay adaptable"]
+    },
+    {
+      "starName": "Wealth Flow",
+      "chinese": "财流",
+      "pinyin": "Cái Liú",
+      "category": "Wealth Movement",
+      "wealthType": "Wealth circulation",
+      "strength": "Moderate",
+      "characteristics": ["Flow", "Movement", "Circulation", "Dynamic", "Active"],
+      "careerImplications": ["Trading", "Sales", "Marketing", "Distribution", "Logistics"],
+      "wealthImplications": "Represents the flow and circulation of wealth",
+      "challenges": ["May be unstable", "Requires constant activity", "Can be unpredictable"],
+      "enhancement": ["Stay active", "Build networks", "Maintain flow", "Be adaptable"]
+    },
+    {
+      "starName": "Wealth Peak",
+      "chinese": "财峰",
+      "pinyin": "Cái Fēng",
+      "category": "Wealth Peak",
+      "wealthType": "Peak wealth",
+      "strength": "Very Strong",
+      "characteristics": ["Peak", "Maximum", "Optimal", "Best", "Highest"],
+      "careerImplications": ["Leadership", "Executive positions", "Peak performance", "Best opportunities"],
+      "wealthImplications": "Represents peak wealth potential and optimal financial performance",
+      "challenges": ["Hard to maintain", "May decline after peak", "High expectations"],
+      "enhancement": ["Maintain peak performance", "Plan for post-peak", "Diversify", "Stay humble"]
+    }
+  ],
+  "wealthAnalysis": {
+    "strongWealth": "Multiple strong wealth stars indicate high wealth potential",
+    "weakWealth": "Weak or missing wealth stars may indicate financial challenges",
+    "balance": "Balance between different types of wealth stars is important",
+    "timing": "Wealth stars interact with luck cycles to determine timing",
+    "action": "Wealth stars indicate potential but require action to manifest"
+  },
+  "interpretationGuidelines": {
+    "directWealth": "Focus on stable, traditional income sources",
+    "indirectWealth": "Explore business and investment opportunities",
+    "hiddenWealth": "Look for hidden talents and opportunities",
+    "wealthGod": "Trust in divine blessing and abundance",
+    "wealthPalace": "Build solid wealth foundation",
+    "wealthGate": "Stay alert to new opportunities",
+    "wealthTreasury": "Focus on saving and preservation",
+    "wealthSource": "Develop creative wealth generation",
+    "wealthFlow": "Maintain active wealth circulation",
+    "wealthPeak": "Strive for peak performance"
+  }
+}

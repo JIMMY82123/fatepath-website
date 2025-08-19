@@ -55,6 +55,17 @@ const Resources = () => {
            featured: true,
            filename: "ten-gods.json",
            lastUpdated: "2024-01-15"
+         },
+         {
+           title: "Luck Cycles Dataset",
+           excerpt: "Complete data for BaZi luck cycles including Major Luck (大运), Annual Luck (流年), and timing analysis.",
+           format: "JSON",
+           records: 5,
+           difficulty: "Intermediate",
+           tags: ["Luck Cycles", "Timing", "Analysis"],
+           featured: true,
+           filename: "luck-cycles.json",
+           lastUpdated: "2024-01-15"
          }
       ]
     },
@@ -84,13 +95,23 @@ const Resources = () => {
           lastUpdated: "2024-01-15"
         },
         {
-          title: "Wealth Indicators",
-          excerpt: "Financial success indicators and wealth timing patterns based on BaZi chart analysis for investment and financial planning.",
+          title: "Wealth Stars Dataset",
+          excerpt: "Complete data for BaZi wealth analysis including Wealth Stars (财星), Wealth Gods (财神), and financial indicators.",
           format: "JSON",
-          records: 48,
+          records: 10,
           difficulty: "Intermediate",
-          tags: ["Wealth", "Finance", "Indicators"],
-          filename: "wealth-indicators.json",
+          tags: ["Wealth", "Financial", "Analysis"],
+          filename: "wealth-stars.json",
+          lastUpdated: "2024-01-15"
+        },
+        {
+          title: "Love Compatibility Dataset",
+          excerpt: "Complete data for BaZi love and relationship analysis including compatibility factors and love stars.",
+          format: "JSON",
+          records: 10,
+          difficulty: "Intermediate",
+          tags: ["Love", "Relationships", "Compatibility"],
+          filename: "love-compatibility.json",
           lastUpdated: "2024-01-15"
         }
       ]
@@ -135,10 +156,10 @@ const Resources = () => {
   ]
 
      // 热门标签
-   const popularTags = [
-     "Core", "Stems", "Branches", "Elements", "Ten Gods", "Compatibility", 
-     "Career", "Wealth", "Calendar", "History", "JSON", "Download"
-   ]
+     const popularTags = [
+    "Core", "Stems", "Branches", "Elements", "Ten Gods", "Luck Cycles", 
+    "Wealth Stars", "Love Compatibility", "Career", "Wealth", "Calendar", "History", "JSON", "Download"
+  ]
 
   // 下载数据集函数
   const downloadDataset = (filename) => {
