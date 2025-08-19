@@ -116,33 +116,33 @@ const Resources = () => {
         }
       ]
     },
-         {
-       title: "Reference Data",
-       description: "Supporting datasets and reference materials",
-       icon: "📚",
-       datasets: [
-         {
-           title: "Compatibility Matrix",
-           excerpt: "Relationship compatibility data based on BaZi principles for analyzing romantic, business, and friendship compatibility.",
-           format: "JSON",
-           records: 144,
-           difficulty: "Intermediate",
-           tags: ["Compatibility", "Relationships", "Matrix"],
-           filename: "compatibility-matrix.json",
-           lastUpdated: "2024-01-15"
-         },
-         {
-           title: "Career Patterns",
-           excerpt: "Career success patterns and timing data derived from BaZi analysis for professional development and career planning.",
-           format: "JSON",
-           records: 60,
-           difficulty: "Intermediate",
-           tags: ["Career", "Success", "Timing"],
-           filename: "career-patterns.json",
-           lastUpdated: "2024-01-15"
-         }
-       ]
-     }
+             {
+      title: "Reference Data",
+      description: "Supporting datasets and reference materials",
+      icon: "📚",
+      datasets: [
+        {
+          title: "Element Combinations",
+          excerpt: "Advanced element combination analysis for complex BaZi chart interpretation and relationship dynamics.",
+          format: "JSON",
+          records: 25,
+          difficulty: "Advanced",
+          tags: ["Elements", "Combinations", "Advanced"],
+          filename: "element-combinations.json",
+          lastUpdated: "2024-01-15"
+        },
+        {
+          title: "Seasonal Patterns",
+          excerpt: "Seasonal energy patterns and their influence on BaZi analysis for timing and decision-making.",
+          format: "JSON",
+          records: 12,
+          difficulty: "Intermediate",
+          tags: ["Seasons", "Energy", "Timing"],
+          filename: "seasonal-patterns.json",
+          lastUpdated: "2024-01-15"
+        }
+      ]
+    }
   ]
 
           // 热门标签
