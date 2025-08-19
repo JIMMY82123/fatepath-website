@@ -3,6 +3,7 @@ Allow: /
 
 # Sitemap
 Sitemap: https://fatepath.me/sitemap.xml
+Sitemap: https://fatepath.me/datasets-sitemap.xml
 
 # Crawl-delay (tells crawlers to wait between requests)
 Crawl-delay: 1
@@ -17,7 +18,8 @@ Allow: /blog
 Allow: /faq
 Allow: /contact
 Allow: /free-bazi-report
-Allow: /wealth-sign
+Allow: /resources
+Allow: /datasets/
 
 # Specific instructions for important pages
 Allow: /bazi-form

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:dataset="http://schema.org/Dataset">
+  
+  <!-- Heavenly Stems Dataset -->
+  <url>
+    <loc>https://fatepath.me/resources/heavenly-stems</loc>
+    <lastmod>2024-01-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <dataset:dataset>
+      <dataset:name>Heavenly Stems Dataset</dataset:name>
+      <dataset:description>Complete data for the 10 Heavenly Stems (天干) used in BaZi analysis, including Ten Gods relationships</dataset:description>
+      <dataset:url>https://fatepath.me/datasets/heavenly-stems.json</dataset:url>
+      <dataset:format>application/json</dataset:format>
+      <dataset:license>https://creativecommons.org/licenses/by-nc-sa/4.0/</dataset:license>
+    </dataset:dataset>
+  </url>
+
+  <!-- Earthly Branches Dataset -->
+  <url>
+    <loc>https://fatepath.me/resources/earthly-branches</loc>
+    <lastmod>2024-01-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <dataset:dataset>
+      <dataset:name>Earthly Branches Dataset</dataset:name>
+      <dataset:description>Complete data for the 12 Earthly Branches (地支) used in BaZi analysis</dataset:description>
+      <dataset:url>https://fatepath.me/datasets/earthly-branches.json</dataset:url>
+      <dataset:format>application/json</dataset:format>
+      <dataset:license>https://creativecommons.org/licenses/by-nc-sa/4.0/</dataset:license>
+    </dataset:dataset>
+  </url>
+
+  <!-- Five Elements Dataset -->
+  <url>
+    <loc>https://fatepath.me/resources/five-elements</loc>
+    <lastmod>2024-01-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <dataset:dataset>
+      <dataset:name>Five Elements Dataset</dataset:name>
+      <dataset:description>Complete data for the Five Elements (五行) system including generation and control cycles</dataset:description>
+      <dataset:url>https://fatepath.me/datasets/five-elements.json</dataset:url>
+      <dataset:format>application/json</dataset:format>
+      <dataset:license>https://creativecommons.org/licenses/by-nc-sa/4.0/</dataset:license>
+    </dataset:dataset>
+  </url>
+
+  <!-- Ten Gods System Dataset -->
+  <url>
+    <loc>https://fatepath.me/resources/ten-gods</loc>
+    <lastmod>2024-01-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <dataset:dataset>
+      <dataset:name>Ten Gods System Dataset</dataset:name>
+      <dataset:description>Complete data for the Ten Gods (十神) system used in BaZi analysis, including relationships, meanings, and applications</dataset:description>
+      <dataset:url>https://fatepath.me/datasets/ten-gods.json</dataset:url>
+      <dataset:format>application/json</dataset:format>
+      <dataset:license>https://creativecommons.org/licenses/by-nc-sa/4.0/</dataset:license>
+    </dataset:dataset>
+  </url>
+
+  <!-- Main Resources Page -->
+  <url>
+    <loc>https://fatepath.me/resources</loc>
+    <lastmod>2024-01-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+</urlset>
