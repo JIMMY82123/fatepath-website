@@ -28,6 +28,7 @@ const Blog = lazy(() => import('./pages/Blog'))
 const BlogPost = lazy(() => import('./pages/BlogPost'))
 const Resources = lazy(() => import('./pages/Resources'))
 const DatasetDetail = lazy(() => import('./pages/DatasetDetail'))
+const LoveCompatibilityTest = lazy(() => import('./pages/LoveCompatibilityTest'))
 
 
 function App() {
@@ -57,7 +58,8 @@ function App() {
                 <Route path="/blog" element={<Blog />} />
                 <Route path="/blog/:slug" element={<BlogPost />} />
                 <Route path="/resources" element={<Resources />} />
-        <Route path="/resources/:datasetId" element={<DatasetDetail />} />
+                <Route path="/resources/:datasetId" element={<DatasetDetail />} />
+                <Route path="/love-compatibility-test" element={<LoveCompatibilityTest />} />
 
               </Routes>
             </Suspense>

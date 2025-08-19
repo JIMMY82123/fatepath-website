@@ -455,11 +455,11 @@ const Resources = () => {
                 className="bg-mystic-900 rounded-lg p-8 text-center border border-yellow-400/20"
               >
                 <div className="text-4xl mb-4">💕</div>
-                <h3 className="text-yellow-400 font-bold text-xl mb-3">Love Compatibility</h3>
-                <p className="text-mystic-300 text-sm mb-6">Analyze romantic compatibility using BaZi principles</p>
-                <Link to="/love-form" className="inline-block bg-yellow-400 text-mystic-900 px-6 py-3 rounded font-semibold hover:bg-yellow-500 transition-colors">
-                  Test Match
-                </Link>
+                                 <h3 className="text-yellow-400 font-bold text-xl mb-3">Love Compatibility</h3>
+                 <p className="text-mystic-300 text-sm mb-6">Analyze romantic compatibility using BaZi principles</p>
+                 <Link to="/love-compatibility-test" className="inline-block bg-yellow-400 text-mystic-900 px-6 py-3 rounded font-semibold hover:bg-yellow-500 transition-colors">
+                   Free Test
+                 </Link>
               </motion.div>
             </div>
           </div>

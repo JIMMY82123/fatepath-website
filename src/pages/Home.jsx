@@ -271,10 +271,10 @@ const Home = () => {
                   Chinese numerology principles and modern psychology.
                 </p>
               <Link
-                to="/services"
+                to="/love-compatibility-test"
                   className="bg-gold-400 text-white px-6 py-3 rounded-lg font-semibold hover:bg-gold-500 transition-colors"
               >
-                  Check Compatibility
+                  Free Compatibility Test
               </Link>
             </motion.div>
 
