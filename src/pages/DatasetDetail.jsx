@@ -15,7 +15,9 @@ const DatasetDetail = () => {
         const response = await fetch(`/datasets/${datasetId}.json`)
         const data = await response.json()
         setDataset(data)
-        setPreviewData(data.data.slice(0, 5)) // 只显示前5条记录
+        // 对于十神数据集，显示所有记录；其他数据集显示前5条
+        const previewCount = datasetId === 'ten-gods' ? data.data.length : 5
+        setPreviewData(data.data.slice(0, previewCount))
         setLoading(false)
       } catch (error) {
         console.error('Error loading dataset:', error)
@@ -168,9 +170,12 @@ const DatasetDetail = () => {
               <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
                 Data Preview
               </h2>
-              <p className="text-lg text-mystic-300 max-w-2xl mx-auto">
-                Preview of the first 5 records in this dataset. Download the complete dataset to access all {dataset.metadata.totalRecords} records.
-              </p>
+                             <p className="text-lg text-mystic-300 max-w-2xl mx-auto">
+                 {datasetId === 'ten-gods' 
+                   ? `Complete preview of all ${dataset.metadata.totalRecords} Ten Gods records.` 
+                   : `Preview of the first 5 records in this dataset. Download the complete dataset to access all ${dataset.metadata.totalRecords} records.`
+                 }
+               </p>
             </motion.div>
 
             <div className="bg-mystic-900 rounded-lg overflow-hidden">
