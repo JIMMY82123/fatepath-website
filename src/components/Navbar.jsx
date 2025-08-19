@@ -15,7 +15,7 @@ const Navbar = () => {
     { path: '/free-bazi-report', label: 'Free Bazi' },
 
     { path: '/testimonials', label: 'Testimonials' },
-    { path: '/wealth-sign', label: 'Sacred Oracle' },
+    { path: '/resources', label: 'Resources' },
     { path: '/faq', label: 'FAQ' },
     { path: '/contact', label: 'Contact' }
   ]

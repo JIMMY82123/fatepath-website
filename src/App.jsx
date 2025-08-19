@@ -26,6 +26,8 @@ const PaymentSuccess = lazy(() => import('./pages/PaymentSuccess'))
 const Privacy = lazy(() => import('./pages/Privacy'))
 const Blog = lazy(() => import('./pages/Blog'))
 const BlogPost = lazy(() => import('./pages/BlogPost'))
+const Resources = lazy(() => import('./pages/Resources'))
+const DatasetDetail = lazy(() => import('./pages/DatasetDetail'))
 
 
 function App() {
@@ -54,6 +56,8 @@ function App() {
                 <Route path="/privacy" element={<Privacy />} />
                 <Route path="/blog" element={<Blog />} />
                 <Route path="/blog/:slug" element={<BlogPost />} />
+                <Route path="/resources" element={<Resources />} />
+        <Route path="/resources/:datasetId" element={<DatasetDetail />} />
 
               </Routes>
             </Suspense>

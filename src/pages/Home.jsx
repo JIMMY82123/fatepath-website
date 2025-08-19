@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom'
 import SEO from '../components/SEO'
 import LazyImage from '../components/LazyImage'
 import { generateAvatarUrls } from '../utils/aiAvatarGenerator'
+import { ArrowRight } from 'lucide-react'
 
 const Home = () => {
   const [currentTestimonial, setCurrentTestimonial] = useState(0)
@@ -358,9 +359,9 @@ const Home = () => {
                   className="space-y-6"
                 >
                   <div className="bg-mystic-800 rounded-lg p-8 border-l-4 border-gold-400">
-                    <h3 className="text-2xl font-bold text-white mb-4">
-                      🔮 Your Trusted Guide to Ancient Wisdom
-                    </h3>
+                                         <h3 className="text-2xl font-bold text-white mb-4">
+                       Your Trusted Guide to Ancient Wisdom
+                     </h3>
                     <p className="text-mystic-300 leading-relaxed">
                       With over 15 years of dedicated study and practice in traditional Chinese astrology, 
                       I've helped thousands of individuals discover their true life path through the ancient 
@@ -395,7 +396,9 @@ const Home = () => {
                   </div>
 
                   <div className="bg-gradient-to-r from-mystic-700 to-mystic-800 rounded-lg p-6">
-                    <h4 className="text-xl font-bold text-white mb-4">🌙 My Philosophy</h4>
+                                         <h4 className="text-xl font-bold text-white mb-4">
+                       My Philosophy
+                     </h4>
                     <p className="text-mystic-300 leading-relaxed">
                       "Chinese astrology isn't about predicting the future—it's about understanding 
                       your unique energy blueprint and making empowered decisions that align with 
@@ -626,6 +629,143 @@ const Home = () => {
           </div>
         </section>
 
+                 {/* Chinese Oracle Tradition Section */}
+         <section className="py-20 bg-mystic-900">
+           <div className="container mx-auto px-4">
+             <motion.div
+               initial={{ opacity: 0, y: 30 }}
+               whileInView={{ opacity: 1, y: 0 }}
+               transition={{ duration: 0.8 }}
+               viewport={{ once: true }}
+               className="text-center mb-16"
+             >
+               <h2 className="text-4xl md:text-5xl font-bold text-yellow-400 mb-6">
+                 Ancient Chinese Oracle Tradition
+               </h2>
+               <p className="text-xl text-mystic-300 max-w-3xl mx-auto leading-relaxed">
+                 For over 3,000 years, Chinese oracle reading has guided emperors, scholars, and common people 
+                 through life's most important decisions. This sacred practice connects you with ancient wisdom 
+                 to illuminate your path forward.
+               </p>
+             </motion.div>
+
+             <div className="grid lg:grid-cols-2 gap-16 items-center mb-16">
+               {/* Left Content */}
+               <motion.div
+                 initial={{ opacity: 0, x: -30 }}
+                 whileInView={{ opacity: 1, x: 0 }}
+                 transition={{ duration: 0.8 }}
+                 viewport={{ once: true }}
+               >
+                 <h3 className="text-2xl font-bold text-white mb-6">What Is Chinese Oracle Reading?</h3>
+                 <div className="space-y-4 text-mystic-300 leading-relaxed">
+                   <p>
+                     Chinese oracle reading, known as "Qiú Qiān" (求签), is an ancient divination practice 
+                     where wooden sticks or bamboo slips are drawn to receive guidance from the universe. 
+                     Each oracle contains profound wisdom from Taoist and Buddhist teachings.
+                   </p>
+                   <p>
+                     Unlike fortune telling, oracle reading provides spiritual guidance to help you understand 
+                     your current situation, recognize opportunities, and make decisions aligned with cosmic energy.
+                   </p>
+                 </div>
+               </motion.div>
+
+               {/* Right Content */}
+               <motion.div
+                 initial={{ opacity: 0, x: 30 }}
+                 whileInView={{ opacity: 1, x: 0 }}
+                 transition={{ duration: 0.8 }}
+                 viewport={{ once: true }}
+                 className="space-y-6"
+               >
+                 <div className="bg-mystic-800 rounded-lg p-6 border-l-4 border-yellow-400">
+                   <h4 className="text-yellow-400 font-semibold mb-3">Historical Origins</h4>
+                   <p className="text-mystic-300 text-sm">
+                     Dating back to the Han Dynasty, oracle reading was practiced in temples and royal courts. 
+                     The wisdom comes from ancient texts like the I Ching and teachings of Confucius.
+                   </p>
+                 </div>
+                 
+                 <div className="bg-mystic-800 rounded-lg p-6 border-l-4 border-yellow-400">
+                   <h4 className="text-yellow-400 font-semibold mb-3">Sacred Process</h4>
+                   <p className="text-mystic-300 text-sm">
+                     Traditional oracle reading involves purifying the mind, asking a sincere question, 
+                     and drawing a bamboo stick that reveals a poetic verse with deep symbolic meaning.
+                   </p>
+                 </div>
+               </motion.div>
+             </div>
+
+             {/* How It Helps Section */}
+             <div className="bg-mystic-800/40 rounded-2xl p-8 mb-16">
+               <h3 className="text-2xl font-bold text-yellow-400 text-center mb-8">How Oracle Reading Can Help You</h3>
+               
+               <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                 <div className="text-center p-4">
+                   <div className="text-yellow-400 font-bold text-lg mb-3">Clarity in Confusion</div>
+                   <p className="text-mystic-300 text-sm">
+                     When facing difficult decisions, oracle guidance helps you see beyond immediate emotions 
+                     and understand the deeper patterns at play.
+                   </p>
+                 </div>
+                 
+                 <div className="text-center p-4">
+                   <div className="text-yellow-400 font-bold text-lg mb-3">Timing Awareness</div>
+                   <p className="text-mystic-300 text-sm">
+                     Learn when to act and when to wait. Ancient wisdom teaches that timing is crucial 
+                     for success in any endeavor.
+                   </p>
+                 </div>
+                 
+                 <div className="text-center p-4">
+                   <div className="text-yellow-400 font-bold text-lg mb-3">Inner Peace</div>
+                   <p className="text-mystic-300 text-sm">
+                     Oracle messages provide comfort and reassurance, helping you trust in life's natural 
+                     flow and find peace in uncertainty.
+                   </p>
+                 </div>
+                 
+                 <div className="text-center p-4">
+                   <div className="text-yellow-400 font-bold text-lg mb-3">Spiritual Growth</div>
+                   <p className="text-mystic-300 text-sm">
+                     Regular oracle practice deepens your connection to ancient wisdom and helps you 
+                     develop intuition and spiritual insight.
+                   </p>
+                 </div>
+               </div>
+             </div>
+
+             {/* Modern Application */}
+             <motion.div
+               initial={{ opacity: 0, y: 30 }}
+               whileInView={{ opacity: 1, y: 0 }}
+               transition={{ duration: 0.8 }}
+               viewport={{ once: true }}
+               className="text-center mb-12"
+             >
+               <h3 className="text-2xl font-bold text-white mb-6">Ancient Wisdom for Modern Life</h3>
+               <p className="text-mystic-300 text-lg max-w-4xl mx-auto leading-relaxed mb-8">
+                 Today's digital oracle preserves the essence of traditional Chinese divination while making 
+                 it accessible to people worldwide. Each reading connects you with the same timeless wisdom 
+                 that has guided countless generations through life's challenges and opportunities.
+               </p>
+               
+               <Link 
+                 to="/wealth-sign" 
+                 className="inline-flex items-center px-8 py-4 bg-gradient-to-r from-yellow-500 to-yellow-600 text-white font-semibold rounded-lg hover:from-yellow-600 hover:to-yellow-700 transition-all duration-300 transform hover:scale-105"
+               >
+                 <span className="mr-3">Experience Traditional Oracle Reading</span>
+                 <ArrowRight className="w-5 h-5" />
+               </Link>
+               
+               <p className="text-sm text-gray-400 mt-4">
+                 Free • Authentic • Respectful of Ancient Traditions
+               </p>
+             </motion.div>
+           </div>
+         </section>
+
         {/* CTA Section */}
         <section className="py-20 bg-gradient-to-r from-mystic-800 to-mystic-900">
           <div className="container mx-auto px-4 text-center">
@@ -656,4 +796,6 @@ const Home = () => {
   )
 }
 
-export default Home 
+export default Home
+
+ 

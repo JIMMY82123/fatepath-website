@@ -1,0 +1,167 @@
+{
+  "metadata": {
+    "name": "Heavenly Stems Dataset",
+    "description": "Complete data for the 10 Heavenly Stems (天干) used in BaZi analysis",
+    "version": "1.0.0",
+    "lastUpdated": "2024-01-15",
+    "license": "CC BY-NC-SA 4.0",
+    "author": "FatePath BaZi Master",
+    "totalRecords": 10,
+    "format": "JSON",
+    "language": "en"
+  },
+  "schema": {
+    "fields": [
+      {
+        "name": "chinese",
+        "type": "string",
+        "description": "Chinese character representation",
+        "example": "甲"
+      },
+      {
+        "name": "pinyin",
+        "type": "string", 
+        "description": "Pinyin romanization",
+        "example": "Jiǎ"
+      },
+      {
+        "name": "element",
+        "type": "string",
+        "description": "Associated Five Element",
+        "example": "Yang Wood"
+      },
+      {
+        "name": "nature",
+        "type": "string",
+        "description": "Natural representation and characteristics",
+        "example": "Tree trunk - Strong, upright, leadership"
+      },
+      {
+        "name": "personality",
+        "type": "array",
+        "description": "Key personality traits",
+        "example": ["Leadership", "Growth", "Vision"]
+      },
+      {
+        "name": "season",
+        "type": "string",
+        "description": "Associated season",
+        "example": "Spring"
+      },
+      {
+        "name": "direction",
+        "type": "string",
+        "description": "Associated direction",
+        "example": "East"
+      },
+      {
+        "name": "color",
+        "type": "string",
+        "description": "Associated color",
+        "example": "Green"
+      }
+    ]
+  },
+  "data": [
+    {
+      "chinese": "甲",
+      "pinyin": "Jiǎ",
+      "element": "Yang Wood",
+      "nature": "Tree trunk - Strong, upright, leadership",
+      "personality": ["Leadership", "Growth", "Vision", "Determination"],
+      "season": "Spring",
+      "direction": "East",
+      "color": "Green"
+    },
+    {
+      "chinese": "乙",
+      "pinyin": "Yǐ",
+      "element": "Yin Wood",
+      "nature": "Flower, grass - Gentle, flexible, artistic",
+      "personality": ["Flexibility", "Artistic", "Gentle", "Adaptable"],
+      "season": "Spring",
+      "direction": "East",
+      "color": "Light Green"
+    },
+    {
+      "chinese": "丙",
+      "pinyin": "Bǐng",
+      "element": "Yang Fire",
+      "nature": "Sun - Bright, energetic, charismatic",
+      "personality": ["Energy", "Charisma", "Brightness", "Passion"],
+      "season": "Summer",
+      "direction": "South",
+      "color": "Red"
+    },
+    {
+      "chinese": "丁",
+      "pinyin": "Dīng",
+      "element": "Yin Fire",
+      "nature": "Candle - Warm, refined, spiritual",
+      "personality": ["Warmth", "Refinement", "Spirituality", "Elegance"],
+      "season": "Summer",
+      "direction": "South",
+      "color": "Pink"
+    },
+    {
+      "chinese": "戊",
+      "pinyin": "Wù",
+      "element": "Yang Earth",
+      "nature": "Mountain - Solid, reliable, protective",
+      "personality": ["Reliability", "Protection", "Stability", "Strength"],
+      "season": "Late Summer",
+      "direction": "Center",
+      "color": "Yellow"
+    },
+    {
+      "chinese": "己",
+      "pinyin": "Jǐ",
+      "element": "Yin Earth",
+      "nature": "Garden soil - Nurturing, supportive, practical",
+      "personality": ["Nurturing", "Support", "Practicality", "Care"],
+      "season": "Late Summer",
+      "direction": "Center",
+      "color": "Light Yellow"
+    },
+    {
+      "chinese": "庚",
+      "pinyin": "Gēng",
+      "element": "Yang Metal",
+      "nature": "Steel - Strong, decisive, disciplined",
+      "personality": ["Discipline", "Decisiveness", "Strength", "Justice"],
+      "season": "Autumn",
+      "direction": "West",
+      "color": "White"
+    },
+    {
+      "chinese": "辛",
+      "pinyin": "Xīn",
+      "element": "Yin Metal",
+      "nature": "Jewelry - Refined, elegant, precise",
+      "personality": ["Elegance", "Precision", "Refinement", "Beauty"],
+      "season": "Autumn",
+      "direction": "West",
+      "color": "Silver"
+    },
+    {
+      "chinese": "壬",
+      "pinyin": "Rén",
+      "element": "Yang Water",
+      "nature": "Ocean - Vast, powerful, mysterious",
+      "personality": ["Power", "Mystery", "Depth", "Wisdom"],
+      "season": "Winter",
+      "direction": "North",
+      "color": "Blue"
+    },
+    {
+      "chinese": "癸",
+      "pinyin": "Guǐ",
+      "element": "Yin Water",
+      "nature": "Dew - Subtle, intuitive, flowing",
+      "personality": ["Intuition", "Flow", "Subtlety", "Adaptability"],
+      "season": "Winter",
+      "direction": "North",
+      "color": "Light Blue"
+    }
+  ]
+}
