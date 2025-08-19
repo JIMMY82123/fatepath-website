@@ -1,0 +1,146 @@
+{
+  "metadata": {
+    "name": "Career Patterns Dataset",
+    "description": "Career success patterns and timing data derived from BaZi analysis for professional development and career planning",
+    "version": "1.0.0",
+    "lastUpdated": "2024-01-15",
+    "license": "CC BY-NC-SA 4.0",
+    "author": "FatePath BaZi Master",
+    "totalRecords": 60,
+    "format": "JSON",
+    "language": "en"
+  },
+  "schema": {
+    "fields": [
+      {"name": "patternType", "type": "string", "description": "Type of career pattern", "example": "Leadership Pattern"},
+      {"name": "element", "type": "string", "description": "Dominant element for this pattern", "example": "Fire"},
+      {"name": "careerField", "type": "string", "description": "Recommended career field", "example": "Management"},
+      {"name": "successFactors", "type": "array", "description": "Key factors for success", "example": ["Communication", "Vision"]},
+      {"name": "timing", "type": "string", "description": "Optimal timing for career moves", "example": "Fire years"},
+      {"name": "challenges", "type": "array", "description": "Potential career challenges", "example": ["Impatience", "Burnout"]},
+      {"name": "developmentPath", "type": "string", "description": "Recommended development path", "example": "Start in sales, move to management"},
+      {"name": "compatibility", "type": "array", "description": "Compatible career partners", "example": ["Water element people", "Earth element people"]}
+    ]
+  },
+  "data": [
+    {
+      "patternType": "Leadership Pattern",
+      "element": "Fire",
+      "careerField": "Management, Entrepreneurship, Politics",
+      "successFactors": ["Charisma", "Vision", "Communication", "Decision-making"],
+      "timing": "Fire years (Bing, Ding), Summer months",
+      "challenges": ["Impatience", "Burnout", "Over-enthusiasm", "Dominance"],
+      "developmentPath": "Start in sales or customer service, develop leadership skills, move to management positions",
+      "compatibility": ["Water element people (for balance)", "Earth element people (for stability)"]
+    },
+    {
+      "patternType": "Analytical Pattern",
+      "element": "Metal",
+      "careerField": "Engineering, Finance, Research, Law",
+      "successFactors": ["Precision", "Logic", "Attention to detail", "Structure"],
+      "timing": "Metal years (Geng, Xin), Autumn months",
+      "challenges": ["Rigidity", "Perfectionism", "Lack of flexibility", "Over-analysis"],
+      "developmentPath": "Start in technical roles, develop analytical skills, specialize in complex problem-solving",
+      "compatibility": ["Water element people (for flow)", "Earth element people (for foundation)"]
+    },
+    {
+      "patternType": "Creative Pattern",
+      "element": "Water",
+      "careerField": "Arts, Media, Design, Innovation",
+      "successFactors": ["Creativity", "Intuition", "Adaptability", "Flow"],
+      "timing": "Water years (Ren, Gui), Winter months",
+      "challenges": ["Unpredictability", "Lack of structure", "Emotional volatility", "Scattered focus"],
+      "developmentPath": "Start in creative roles, develop technical skills, build portfolio and reputation",
+      "compatibility": ["Earth element people (for structure)", "Metal element people (for discipline)"]
+    },
+    {
+      "patternType": "Stability Pattern",
+      "element": "Earth",
+      "careerField": "Administration, Healthcare, Education, Real Estate",
+      "successFactors": ["Reliability", "Patience", "Practicality", "Nurturing"],
+      "timing": "Earth years (Wu, Ji), Late Summer months",
+      "challenges": ["Resistance to change", "Slow decision-making", "Over-caution", "Stagnation"],
+      "developmentPath": "Start in support roles, develop expertise, build long-term relationships",
+      "compatibility": ["Fire element people (for energy)", "Metal element people (for structure)"]
+    },
+    {
+      "patternType": "Growth Pattern",
+      "element": "Wood",
+      "careerField": "Education, Training, Development, Growth-oriented roles",
+      "successFactors": ["Growth mindset", "Teaching ability", "Expansion", "Flexibility"],
+      "timing": "Wood years (Jia, Yi), Spring months",
+      "challenges": ["Over-expansion", "Lack of focus", "Impatience with slow growth", "Scattered energy"],
+      "developmentPath": "Start in learning roles, develop teaching skills, focus on growth and development",
+      "compatibility": ["Fire element people (for energy)", "Water element people (for nourishment)"]
+    },
+    {
+      "patternType": "Innovation Pattern",
+      "element": "Fire-Metal",
+      "careerField": "Technology, Innovation, Startups, Research",
+      "successFactors": ["Innovation", "Technical skills", "Vision", "Execution"],
+      "timing": "Fire-Metal combination years, Technology boom periods",
+      "challenges": ["Burnout", "Technical tunnel vision", "Lack of people skills", "Over-innovation"],
+      "developmentPath": "Start in technical roles, develop innovation skills, learn business and people management",
+      "compatibility": ["Water element people (for flow)", "Earth element people (for grounding)"]
+    },
+    {
+      "patternType": "Communication Pattern",
+      "element": "Water-Wood",
+      "careerField": "Media, Communication, Marketing, Public Relations",
+      "successFactors": ["Communication skills", "Creativity", "Adaptability", "People skills"],
+      "timing": "Water-Wood combination years, Communication-focused periods",
+      "challenges": ["Scattered focus", "Emotional sensitivity", "Lack of structure", "Over-communication"],
+      "developmentPath": "Start in communication roles, develop media skills, build network and reputation",
+      "compatibility": ["Earth element people (for structure)", "Metal element people (for discipline)"]
+    },
+    {
+      "patternType": "Strategic Pattern",
+      "element": "Metal-Water",
+      "careerField": "Strategy, Consulting, Planning, Analysis",
+      "successFactors": ["Strategic thinking", "Analytical skills", "Adaptability", "Long-term vision"],
+      "timing": "Metal-Water combination years, Strategic planning periods",
+      "challenges": ["Over-analysis", "Lack of action", "Perfectionism", "Isolation"],
+      "developmentPath": "Start in analytical roles, develop strategic skills, learn implementation and execution",
+      "compatibility": ["Fire element people (for action)", "Earth element people (for implementation)"]
+    },
+    {
+      "patternType": "Nurturing Pattern",
+      "element": "Earth-Water",
+      "careerField": "Healthcare, Social Work, Counseling, Education",
+      "successFactors": ["Empathy", "Patience", "Nurturing ability", "Practical wisdom"],
+      "timing": "Earth-Water combination years, Care-focused periods",
+      "challenges": ["Emotional burnout", "Over-giving", "Lack of boundaries", "Slow progress"],
+      "developmentPath": "Start in care roles, develop professional skills, learn self-care and boundaries",
+      "compatibility": ["Fire element people (for energy)", "Metal element people (for structure)"]
+    },
+    {
+      "patternType": "Dynamic Pattern",
+      "element": "Fire-Wood",
+      "careerField": "Sales, Marketing, Entertainment, Dynamic roles",
+      "successFactors": ["Energy", "Charisma", "Growth mindset", "Adaptability"],
+      "timing": "Fire-Wood combination years, Growth and expansion periods",
+      "challenges": ["Burnout", "Over-enthusiasm", "Lack of follow-through", "Scattered energy"],
+      "developmentPath": "Start in dynamic roles, develop focus and follow-through, learn planning and execution",
+      "compatibility": ["Water element people (for balance)", "Earth element people (for grounding)"]
+    }
+  ],
+  "careerTiming": {
+    "spring": "Best for new beginnings, learning, and growth-oriented activities",
+    "summer": "Optimal for leadership, action, and high-energy activities",
+    "autumn": "Ideal for analysis, planning, and structured activities",
+    "winter": "Best for reflection, creativity, and strategic planning"
+  },
+  "elementCareerGuidance": {
+    "wood": "Focus on growth, education, and development. Best in teaching, training, and expansion roles.",
+    "fire": "Excel in leadership, sales, and high-energy roles. Natural charisma and motivation.",
+    "earth": "Thrive in stable, nurturing roles. Best in healthcare, administration, and support positions.",
+    "metal": "Excel in analytical, technical, and structured roles. Natural precision and discipline.",
+    "water": "Thrive in creative, innovative, and flexible roles. Natural intuition and adaptability."
+  },
+  "successStrategies": {
+    "timing": "Align career moves with favorable element years and seasons",
+    "compatibility": "Work with people whose elements complement yours",
+    "development": "Focus on developing strengths while addressing challenges",
+    "balance": "Maintain balance between your natural element and complementary elements"
+  }
+}
