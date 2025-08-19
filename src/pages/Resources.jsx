@@ -34,17 +34,28 @@ const Resources = () => {
           filename: "earthly-branches.json",
           lastUpdated: "2024-01-15"
         },
-        {
-          title: "Five Elements Dataset",
-          excerpt: "Complete Five Elements (五行) system data including generation and control cycles, characteristics, and relationships.",
-          format: "JSON",
-          records: 5,
-          difficulty: "Beginner",
-          tags: ["Elements", "Core", "Cycles"],
-          featured: true,
-          filename: "five-elements.json",
-          lastUpdated: "2024-01-15"
-        }
+                 {
+           title: "Five Elements Dataset",
+           excerpt: "Complete Five Elements (五行) system data including generation and control cycles, characteristics, and relationships.",
+           format: "JSON",
+           records: 5,
+           difficulty: "Beginner",
+           tags: ["Elements", "Core", "Cycles"],
+           featured: true,
+           filename: "five-elements.json",
+           lastUpdated: "2024-01-15"
+         },
+         {
+           title: "Ten Gods System Dataset",
+           excerpt: "Complete Ten Gods (十神) system data including relationships, meanings, career implications, and wealth indicators.",
+           format: "JSON",
+           records: 10,
+           difficulty: "Intermediate",
+           tags: ["Ten Gods", "Core", "Relationships"],
+           featured: true,
+           filename: "ten-gods.json",
+           lastUpdated: "2024-01-15"
+         }
       ]
     },
     {
@@ -123,11 +134,11 @@ const Resources = () => {
     }
   ]
 
-  // 热门标签
-  const popularTags = [
-    "Core", "Stems", "Branches", "Elements", "Compatibility", 
-    "Career", "Wealth", "Calendar", "History", "JSON", "Download"
-  ]
+     // 热门标签
+   const popularTags = [
+     "Core", "Stems", "Branches", "Elements", "Ten Gods", "Compatibility", 
+     "Career", "Wealth", "Calendar", "History", "JSON", "Download"
+   ]
 
   // 下载数据集函数
   const downloadDataset = (filename) => {

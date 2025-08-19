@@ -1,8 +1,8 @@
 {
   "metadata": {
     "name": "Heavenly Stems Dataset",
-    "description": "Complete data for the 10 Heavenly Stems (天干) used in BaZi analysis",
-    "version": "1.0.0",
+    "description": "Complete data for the 10 Heavenly Stems (天干) used in BaZi analysis, including Ten Gods relationships",
+    "version": "1.1.0",
     "lastUpdated": "2024-01-15",
     "license": "CC BY-NC-SA 4.0",
     "author": "FatePath BaZi Master",
@@ -59,6 +59,23 @@
         "type": "string",
         "description": "Associated color",
         "example": "Green"
+      },
+      {
+        "name": "tenGods",
+        "type": "object",
+        "description": "Ten Gods relationships with other Heavenly Stems",
+        "example": {
+          "sameElement": "比肩",
+          "sameElementYin": "劫财",
+          "generated": "食神",
+          "generatedYin": "伤官",
+          "controlled": "偏财",
+          "controlledYin": "正财",
+          "controlling": "七杀",
+          "controllingYin": "正官",
+          "generating": "偏印",
+          "generatingYin": "正印"
+        }
       }
     ]
   },
@@ -71,7 +88,19 @@
       "personality": ["Leadership", "Growth", "Vision", "Determination"],
       "season": "Spring",
       "direction": "East",
-      "color": "Green"
+      "color": "Green",
+      "tenGods": {
+        "sameElement": "比肩",
+        "sameElementYin": "劫财",
+        "generated": "食神",
+        "generatedYin": "伤官",
+        "controlled": "偏财",
+        "controlledYin": "正财",
+        "controlling": "七杀",
+        "controllingYin": "正官",
+        "generating": "偏印",
+        "generatingYin": "正印"
+      }
     },
     {
       "chinese": "乙",
@@ -81,7 +110,19 @@
       "personality": ["Flexibility", "Artistic", "Gentle", "Adaptable"],
       "season": "Spring",
       "direction": "East",
-      "color": "Light Green"
+      "color": "Light Green",
+      "tenGods": {
+        "sameElement": "劫财",
+        "sameElementYin": "比肩",
+        "generated": "伤官",
+        "generatedYin": "食神",
+        "controlled": "正财",
+        "controlledYin": "偏财",
+        "controlling": "正官",
+        "controllingYin": "七杀",
+        "generating": "正印",
+        "generatingYin": "偏印"
+      }
     },
     {
       "chinese": "丙",
@@ -91,7 +132,19 @@
       "personality": ["Energy", "Charisma", "Brightness", "Passion"],
       "season": "Summer",
       "direction": "South",
-      "color": "Red"
+      "color": "Red",
+      "tenGods": {
+        "sameElement": "比肩",
+        "sameElementYin": "劫财",
+        "generated": "食神",
+        "generatedYin": "伤官",
+        "controlled": "偏财",
+        "controlledYin": "正财",
+        "controlling": "七杀",
+        "controllingYin": "正官",
+        "generating": "偏印",
+        "generatingYin": "正印"
+      }
     },
     {
       "chinese": "丁",
@@ -101,7 +154,19 @@
       "personality": ["Warmth", "Refinement", "Spirituality", "Elegance"],
       "season": "Summer",
       "direction": "South",
-      "color": "Pink"
+      "color": "Pink",
+      "tenGods": {
+        "sameElement": "劫财",
+        "sameElementYin": "比肩",
+        "generated": "伤官",
+        "generatedYin": "食神",
+        "controlled": "正财",
+        "controlledYin": "偏财",
+        "controlling": "正官",
+        "controllingYin": "七杀",
+        "generating": "正印",
+        "generatingYin": "偏印"
+      }
     },
     {
       "chinese": "戊",
@@ -111,7 +176,19 @@
       "personality": ["Reliability", "Protection", "Stability", "Strength"],
       "season": "Late Summer",
       "direction": "Center",
-      "color": "Yellow"
+      "color": "Yellow",
+      "tenGods": {
+        "sameElement": "比肩",
+        "sameElementYin": "劫财",
+        "generated": "食神",
+        "generatedYin": "伤官",
+        "controlled": "偏财",
+        "controlledYin": "正财",
+        "controlling": "七杀",
+        "controllingYin": "正官",
+        "generating": "偏印",
+        "generatingYin": "正印"
+      }
     },
     {
       "chinese": "己",
@@ -121,7 +198,19 @@
       "personality": ["Nurturing", "Support", "Practicality", "Care"],
       "season": "Late Summer",
       "direction": "Center",
-      "color": "Light Yellow"
+      "color": "Light Yellow",
+      "tenGods": {
+        "sameElement": "劫财",
+        "sameElementYin": "比肩",
+        "generated": "伤官",
+        "generatedYin": "食神",
+        "controlled": "正财",
+        "controlledYin": "偏财",
+        "controlling": "正官",
+        "controllingYin": "七杀",
+        "generating": "正印",
+        "generatingYin": "偏印"
+      }
     },
     {
       "chinese": "庚",
@@ -131,7 +220,19 @@
       "personality": ["Discipline", "Decisiveness", "Strength", "Justice"],
       "season": "Autumn",
       "direction": "West",
-      "color": "White"
+      "color": "White",
+      "tenGods": {
+        "sameElement": "比肩",
+        "sameElementYin": "劫财",
+        "generated": "食神",
+        "generatedYin": "伤官",
+        "controlled": "偏财",
+        "controlledYin": "正财",
+        "controlling": "七杀",
+        "controllingYin": "正官",
+        "generating": "偏印",
+        "generatingYin": "正印"
+      }
     },
     {
       "chinese": "辛",
@@ -141,7 +242,19 @@
       "personality": ["Elegance", "Precision", "Refinement", "Beauty"],
       "season": "Autumn",
       "direction": "West",
-      "color": "Silver"
+      "color": "Silver",
+      "tenGods": {
+        "sameElement": "劫财",
+        "sameElementYin": "比肩",
+        "generated": "伤官",
+        "generatedYin": "食神",
+        "controlled": "正财",
+        "controlledYin": "偏财",
+        "controlling": "正官",
+        "controllingYin": "七杀",
+        "generating": "正印",
+        "generatingYin": "偏印"
+      }
     },
     {
       "chinese": "壬",
@@ -151,7 +264,19 @@
       "personality": ["Power", "Mystery", "Depth", "Wisdom"],
       "season": "Winter",
       "direction": "North",
-      "color": "Blue"
+      "color": "Blue",
+      "tenGods": {
+        "sameElement": "比肩",
+        "sameElementYin": "劫财",
+        "generated": "食神",
+        "generatedYin": "伤官",
+        "controlled": "偏财",
+        "controlledYin": "正财",
+        "controlling": "七杀",
+        "controllingYin": "正官",
+        "generating": "偏印",
+        "generatingYin": "正印"
+      }
     },
     {
       "chinese": "癸",
@@ -161,7 +286,19 @@
       "personality": ["Intuition", "Flow", "Subtlety", "Adaptability"],
       "season": "Winter",
       "direction": "North",
-      "color": "Light Blue"
+      "color": "Light Blue",
+      "tenGods": {
+        "sameElement": "劫财",
+        "sameElementYin": "比肩",
+        "generated": "伤官",
+        "generatedYin": "食神",
+        "controlled": "正财",
+        "controlledYin": "偏财",
+        "controlling": "正官",
+        "controllingYin": "七杀",
+        "generating": "正印",
+        "generatingYin": "偏印"
+      }
     }
   ]
 }
