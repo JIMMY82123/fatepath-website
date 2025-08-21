@@ -1,31 +1,11 @@
 import React, { useState, useEffect } from 'react'
-import { motion } from 'framer-motion'
 import { Link } from 'react-router-dom'
 import SEO from '../components/SEO'
 import LazyImage from '../components/LazyImage'
-import { generateAvatarUrls } from '../utils/aiAvatarGenerator'
-import { ArrowRight } from 'lucide-react'
 
 const Home = () => {
   const [currentTestimonial, setCurrentTestimonial] = useState(0)
   const [currentCelebrity, setCurrentCelebrity] = useState(0)
-
-  const [testimonialsWithAvatars, setTestimonialsWithAvatars] = useState([])
-
-  // 生成AI头像
-  useEffect(() => {
-    try {
-      const testimonialsWithAI = generateAvatarUrls(testimonials)
-      setTestimonialsWithAvatars(testimonialsWithAI)
-    } catch (error) {
-      console.warn('AI头像生成失败，使用默认头像:', error)
-      // 如果头像生成失败，使用原始数据确保页面正常显示
-      setTestimonialsWithAvatars(testimonials.map(testimonial => ({
-        ...testimonial,
-        avatar: testimonial.avatar || '/images/testimonials/default-avatar.svg'
-      })))
-    }
-  }, [])
 
   const testimonials = [
     {
@@ -49,37 +29,44 @@ const Home = () => {
     {
       name: "David Kim",
       role: "Financial Advisor",
-      content: "As a financial professional, I was impressed by the accuracy of the wealth timing predictions. This ancient wisdom has modern applications that really work."
+      content: "As a financial professional, I was impressed by the accuracy of the wealth timing predictions. This ancient wisdom has modern applications that really work.",
+      avatar: "/images/testimonials/default-avatar.svg"
     },
     {
       name: "Lisa Wang",
       role: "HR Manager",
-      content: "The career guidance from my BaZi reading helped me make the right move at the perfect time. I got a 40% salary increase and better work-life balance."
+      content: "The career guidance from my BaZi reading helped me make the right move at the perfect time. I got a 40% salary increase and better work-life balance.",
+      avatar: "/images/testimonials/default-avatar.svg"
     },
     {
       name: "Robert Martinez",
       role: "Small Business Owner",
-      content: "I used the wealth analysis to time my business expansion. The results were incredible - my revenue doubled within 6 months of following the guidance."
+      content: "I used the wealth analysis to time my business expansion. The results were incredible - my revenue doubled within 6 months of following the guidance.",
+      avatar: "/images/testimonials/default-avatar.svg"
     },
     {
       name: "Jennifer Lee",
       role: "Teacher",
-      content: "The love compatibility reading helped me understand why my previous relationships failed and what to look for in a partner. I'm now happily married!"
+      content: "The love compatibility reading helped me understand why my previous relationships failed and what to look for in a partner. I'm now happily married!",
+      avatar: "/images/testimonials/default-avatar.svg"
     },
     {
       name: "Alex Thompson",
       role: "Real Estate Agent",
-      content: "The timing predictions for property investments were spot on. I bought and sold at the perfect moments, maximizing my profits significantly."
+      content: "The timing predictions for property investments were spot on. I bought and sold at the perfect moments, maximizing my profits significantly.",
+      avatar: "/images/testimonials/default-avatar.svg"
     },
     {
       name: "Maria Garcia",
       role: "Nurse",
-      content: "I was going through a difficult time and the BaZi reading gave me clarity about my life purpose. It's amazing how accurate the personality analysis was."
+      content: "I was going through a difficult time and the BaZi reading gave me clarity about my life purpose. It's amazing how accurate the personality analysis was.",
+      avatar: "/images/testimonials/default-avatar.svg"
     },
     {
       name: "James Wilson",
       role: "Consultant",
-      content: "The wealth analysis identified my money patterns and helped me break negative cycles. My financial situation has improved dramatically since then."
+      content: "The wealth analysis identified my money patterns and helped me break negative cycles. My financial situation has improved dramatically since then.",
+      avatar: "/images/testimonials/default-avatar.svg"
     }
   ]
 
@@ -101,7 +88,6 @@ const Home = () => {
     }
   ]
 
-    // Latest articles data - sorted by date (newest first) - showing only 3 most recent
   const latestArticles = [
     {
       id: 1,
@@ -138,7 +124,6 @@ const Home = () => {
     }
   ]
 
-
   useEffect(() => {
     const testimonialInterval = setInterval(() => {
       setCurrentTestimonial((prev) => (prev + 1) % testimonials.length)
@@ -173,25 +158,20 @@ const Home = () => {
       <main className="min-h-screen bg-mystic-900">
         {/* Hero Section */}
         <header className="relative overflow-hidden">
-        <video
-          autoPlay
-          loop
-          muted
-          playsInline
-          disablePictureInPicture
-          controlsList="nodownload nofullscreen noremoteplayback"
-          className="absolute inset-0 w-full h-full object-cover opacity-30"
-        >
-          <source src="/video-background.mp4" type="video/mp4" />
-        </video>
-          
+          <video
+            autoPlay
+            loop
+            muted
+            playsInline
+            disablePictureInPicture
+            controlsList="nodownload nofullscreen noremoteplayback"
+            className="absolute inset-0 w-full h-full object-cover opacity-30"
+          >
+            <source src="/video-background.mp4" type="video/mp4" />
+          </video>
+            
           <div className="relative z-10 container mx-auto px-4 py-20">
-          <motion.div 
-              initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
-              className="text-center"
-            >
+            <div className="text-center">
               <h1 className="text-5xl md:text-7xl font-bold text-white mb-6">
                 Feeling Lost?
                 <span className="block text-gold-400">Find Your Life Direction</span>
@@ -214,36 +194,24 @@ const Home = () => {
                   View Services
                 </Link>
               </div>
-            </motion.div>
+            </div>
           </div>
         </header>
 
         {/* Services Preview */}
         <section className="py-20 bg-mystic-800">
           <div className="container mx-auto px-4">
-            <motion.div
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8 }}
-              viewport={{ once: true }}
-              className="text-center mb-16"
-            >
+            <div className="text-center mb-16">
               <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
                 Professional Services
               </h2>
               <p className="text-xl text-mystic-300 max-w-2xl mx-auto">
                 Expert BaZi analysis for every aspect of your life journey
               </p>
-            </motion.div>
+            </div>
 
             <div className="grid md:grid-cols-3 gap-8">
-            <motion.div 
-              initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, delay: 0.1 }}
-                viewport={{ once: true }}
-                className="bg-mystic-700 rounded-lg p-8 text-center hover:transform hover:scale-105 transition-all duration-300"
-              >
+              <div className="bg-mystic-700 rounded-lg p-8 text-center hover:transform hover:scale-105 transition-all duration-300">
                 <div className="w-16 h-16 bg-gold-400 rounded-full flex items-center justify-center mx-auto mb-6">
                   <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
@@ -260,89 +228,65 @@ const Home = () => {
                 >
                   Get Reading
                 </Link>
-            </motion.div>
+              </div>
 
-            <motion.div 
-              initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, delay: 0.2 }}
-                viewport={{ once: true }}
-                className="bg-mystic-700 rounded-lg p-8 text-center hover:transform hover:scale-105 transition-all duration-300"
-              >
+              <div className="bg-mystic-700 rounded-lg p-8 text-center hover:transform hover:scale-105 transition-all duration-300">
                 <div className="w-16 h-16 bg-gold-400 rounded-full flex items-center justify-center mx-auto mb-6">
                   <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
                   </svg>
-                    </div>
+                </div>
                 <h3 className="text-2xl font-bold text-white mb-4">Love Compatibility</h3>
                 <p className="text-mystic-300 mb-6">
                   Deep analysis of relationship compatibility using traditional 
                   Chinese numerology principles and modern psychology.
                 </p>
-              <Link
-                to="/love-compatibility-test"
+                <Link
+                  to="/love-compatibility-test"
                   className="bg-gold-400 text-white px-6 py-3 rounded-lg font-semibold hover:bg-gold-500 transition-colors"
-              >
+                >
                   Free Compatibility Test
-              </Link>
-            </motion.div>
+                </Link>
+              </div>
 
-            <motion.div 
-              initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, delay: 0.3 }}
-                viewport={{ once: true }}
-                className="bg-mystic-700 rounded-lg p-8 text-center hover:transform hover:scale-105 transition-all duration-300"
-              >
+              <div className="bg-mystic-700 rounded-lg p-8 text-center hover:transform hover:scale-105 transition-all duration-300">
                 <div className="w-16 h-16 bg-gold-400 rounded-full flex items-center justify-center mx-auto mb-6">
                   <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1" />
                   </svg>
-                  </div>
+                </div>
                 <h3 className="text-2xl font-bold text-white mb-4">Wealth Analysis</h3>
                 <p className="text-mystic-300 mb-6">
                   Discover your wealth potential and optimal timing for financial 
                   decisions through ancient Chinese prosperity principles.
                 </p>
-                    <Link
+                <Link
                   to="/services"
                   className="bg-gold-400 text-white px-6 py-3 rounded-lg font-semibold hover:bg-gold-500 transition-colors"
-                    >
+                >
                   Analyze Wealth
-                    </Link>
-              </motion.div>
-                    </div>
-                  </div>
+                </Link>
+              </div>
+            </div>
+          </div>
         </section>
 
         {/* About Me Section */}
         <section className="py-20 bg-mystic-900">
           <div className="container mx-auto px-4">
-            <motion.div
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8 }}
-              viewport={{ once: true }}
-              className="text-center mb-16"
-            >
+            <div className="text-center mb-16">
               <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
                 Meet Your BaZi Master
               </h2>
               <p className="text-xl text-mystic-300 max-w-2xl mx-auto">
                 Dedicated to helping you unlock the ancient wisdom of Chinese astrology
               </p>
-            </motion.div>
+            </div>
 
             <div className="max-w-6xl mx-auto">
               <div className="grid lg:grid-cols-2 gap-12 items-center">
                 {/* Profile Image */}
-                <motion.div
-                  initial={{ opacity: 0, x: -50 }}
-                  whileInView={{ opacity: 1, x: 0 }}
-                  transition={{ duration: 0.8 }}
-                  viewport={{ once: true }}
-                  className="text-center lg:text-left"
-                >
+                <div className="text-center lg:text-left">
                   <div className="relative inline-block">
                     <div className="w-80 h-80 mx-auto lg:mx-0 rounded-full overflow-hidden border-4 border-gold-400 shadow-2xl">
                       <LazyImage
@@ -357,20 +301,14 @@ const Home = () => {
                       </svg>
                     </div>
                   </div>
-                </motion.div>
+                </div>
 
                 {/* About Content */}
-                <motion.div
-                  initial={{ opacity: 0, x: 50 }}
-                  whileInView={{ opacity: 1, x: 0 }}
-                  transition={{ duration: 0.8, delay: 0.2 }}
-                  viewport={{ once: true }}
-                  className="space-y-6"
-                >
+                <div className="space-y-6">
                   <div className="bg-mystic-800 rounded-lg p-8 border-l-4 border-gold-400">
-                                         <h3 className="text-2xl font-bold text-white mb-4">
-                       Your Trusted Guide to Ancient Wisdom
-                     </h3>
+                    <h3 className="text-2xl font-bold text-white mb-4">
+                      Your Trusted Guide to Ancient Wisdom
+                    </h3>
                     <p className="text-mystic-300 leading-relaxed">
                       With over 15 years of dedicated study and practice in traditional Chinese astrology, 
                       I've helped thousands of individuals discover their true life path through the ancient 
@@ -405,9 +343,9 @@ const Home = () => {
                   </div>
 
                   <div className="bg-gradient-to-r from-mystic-700 to-mystic-800 rounded-lg p-6">
-                                         <h4 className="text-xl font-bold text-white mb-4">
-                       My Philosophy
-                     </h4>
+                    <h4 className="text-xl font-bold text-white mb-4">
+                      My Philosophy
+                    </h4>
                     <p className="text-mystic-300 leading-relaxed">
                       "Chinese astrology isn't about predicting the future—it's about understanding 
                       your unique energy blueprint and making empowered decisions that align with 
@@ -429,7 +367,7 @@ const Home = () => {
                       Read My Story
                     </Link>
                   </div>
-                </motion.div>
+                </div>
               </div>
             </div>
           </div>
@@ -438,37 +376,24 @@ const Home = () => {
         {/* Testimonials */}
         <section className="py-20 bg-mystic-900">
           <div className="container mx-auto px-4">
-          <motion.div 
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8 }}
-              viewport={{ once: true }}
-              className="text-center mb-16"
-            >
+            <div className="text-center mb-16">
               <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
                 What Our Clients Say
-                </h2>
+              </h2>
               <p className="text-xl text-mystic-300">
                 Real experiences from people who discovered their destiny path
               </p>
-              </motion.div>
+            </div>
               
             <div className="max-w-4xl mx-auto">
-              <motion.div
-                key={currentTestimonial}
-                initial={{ opacity: 0, x: 50 }}
-                animate={{ opacity: 1, x: 0 }}
-                exit={{ opacity: 0, x: -50 }}
-                transition={{ duration: 0.5 }}
-                className="bg-mystic-800 rounded-lg p-8 text-center"
-              >
+              <div className="bg-mystic-800 rounded-lg p-8 text-center">
                 <div className="flex items-center justify-center mb-6">
                   <LazyImage
-                    src={testimonialsWithAvatars[currentTestimonial]?.avatar || testimonials[currentTestimonial].avatar}
+                    src={testimonials[currentTestimonial]?.avatar || '/images/testimonials/default-avatar.svg'}
                     alt={`${testimonials[currentTestimonial].name} - ${testimonials[currentTestimonial].role}`}
                     className="w-16 h-16 rounded-full object-cover"
                   />
-                    </div>
+                </div>
                 <p className="text-lg text-mystic-300 mb-4 italic">
                   "{testimonials[currentTestimonial].content}"
                 </p>
@@ -476,62 +401,52 @@ const Home = () => {
                   {testimonials[currentTestimonial].name}
                 </h4>
                 <p className="text-gold-400">{testimonials[currentTestimonial].role}</p>
-          </motion.div>
+              </div>
 
               <div className="flex justify-center mt-8 space-x-1.5">
                 {testimonials.map((_, index) => (
                    <button
                      key={index}
-                    onClick={() => setCurrentTestimonial(index)}
-                    className={`w-2 h-2 rounded-full transition-colors ${
-                      index === currentTestimonial ? 'bg-gold-400' : 'bg-mystic-600'
-                    }`}
-                    aria-label={`View testimonial ${index + 1}`}
-                   />
+                     onClick={() => setCurrentTestimonial(index)}
+                     className={`w-2 h-2 rounded-full transition-colors ${
+                       index === currentTestimonial ? 'bg-gold-400' : 'bg-mystic-600'
+                     }`}
+                     aria-label={`View testimonial ${index + 1}`}
+                    />
                  ))}
                </div>
             </div>
-            </div>
+          </div>
         </section>
 
         {/* Celebrity Section */}
         <section className="py-20 bg-mystic-800">
           <div className="container mx-auto px-4">
-                                                   <motion.div
-                    initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8 }}
-              viewport={{ once: true }}
-              className="text-center mb-16"
-            >
+            <div className="text-center mb-16">
               <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
                 Even Celebrities Believe
               </h2>
               <p className="text-xl text-mystic-300">
                 Famous personalities who embrace ancient wisdom
-                     </p>
-                 </motion.div>
+              </p>
+            </div>
 
             <div className="max-w-4xl mx-auto">
-              <motion.div
-                key={currentCelebrity}
-                initial={{ opacity: 0, scale: 0.9 }}
-                animate={{ opacity: 1, scale: 1 }}
-                transition={{ duration: 0.5 }}
-                className="text-center"
-              >
-                <LazyImage
-                  src={celebrities[currentCelebrity].image}
-                  alt={`${celebrities[currentCelebrity].name} - Celebrity endorsement`}
-                  className="w-32 h-32 rounded-full object-cover mx-auto mb-6"
-                />
+              <div className="bg-mystic-800 rounded-lg p-8 text-center">
+                <div className="flex items-center justify-center mb-6">
+                  <LazyImage
+                    src={celebrities[currentCelebrity].image}
+                    alt={`${celebrities[currentCelebrity].name} - Celebrity endorsement`}
+                    className="w-32 h-32 rounded-full object-cover mx-auto mb-6"
+                  />
+                </div>
                 <blockquote className="text-xl text-mystic-300 mb-4 italic">
                   "{celebrities[currentCelebrity].quote}"
                 </blockquote>
                 <cite className="text-lg font-bold text-gold-400">
                   — {celebrities[currentCelebrity].name}
                 </cite>
-          </motion.div>
+              </div>
 
               <div className="flex justify-center mt-8 space-x-1.5">
                 {celebrities.map((_, index) => (
@@ -552,29 +467,19 @@ const Home = () => {
         {/* Latest Articles Section */}
         <section className="py-20 bg-mystic-900">
           <div className="container mx-auto px-4">
-            <motion.div
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8 }}
-              viewport={{ once: true }}
-              className="text-center mb-16"
-            >
+            <div className="text-center mb-16">
               <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
                 Latest Insights
               </h2>
               <p className="text-xl text-mystic-300">
                 Discover ancient wisdom through our latest articles
               </p>
-            </motion.div>
+            </div>
 
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
               {latestArticles.map((article, index) => (
-                <motion.article
+                <div
                   key={article.id}
-                  initial={{ opacity: 0, y: 30 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.6, delay: index * 0.1 }}
-                  viewport={{ once: true }}
                   className="bg-mystic-800 rounded-lg overflow-hidden hover:transform hover:scale-105 transition-all duration-300 border border-mystic-700/50"
                 >
                   <Link to={`/blog/${article.slug}`}>
@@ -616,17 +521,11 @@ const Home = () => {
                       </div>
                     </div>
                   </Link>
-                </motion.article>
+                </div>
               ))}
             </div>
 
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 0.3 }}
-              viewport={{ once: true }}
-              className="text-center mt-12"
-            >
+            <div className="text-center mt-12">
               <Link
                 to="/blog"
                 className="inline-flex items-center px-8 py-4 bg-mystic-700 text-white rounded-lg hover:bg-mystic-600 transition-all duration-300 font-semibold"
@@ -634,20 +533,14 @@ const Home = () => {
                 View All Articles
                 <span className="ml-2">→</span>
               </Link>
-            </motion.div>
+            </div>
           </div>
         </section>
 
                  {/* Chinese Oracle Tradition Section */}
          <section className="py-20 bg-mystic-900">
            <div className="container mx-auto px-4">
-             <motion.div
-               initial={{ opacity: 0, y: 30 }}
-               whileInView={{ opacity: 1, y: 0 }}
-               transition={{ duration: 0.8 }}
-               viewport={{ once: true }}
-               className="text-center mb-16"
-             >
+             <div className="text-center mb-16">
                <h2 className="text-4xl md:text-5xl font-bold text-yellow-400 mb-6">
                  Ancient Chinese Oracle Tradition
                </h2>
@@ -656,16 +549,11 @@ const Home = () => {
                  through life's most important decisions. This sacred practice connects you with ancient wisdom 
                  to illuminate your path forward.
                </p>
-             </motion.div>
+             </div>
 
              <div className="grid lg:grid-cols-2 gap-16 items-center mb-16">
                {/* Left Content */}
-               <motion.div
-                 initial={{ opacity: 0, x: -30 }}
-                 whileInView={{ opacity: 1, x: 0 }}
-                 transition={{ duration: 0.8 }}
-                 viewport={{ once: true }}
-               >
+               <div>
                  <h3 className="text-2xl font-bold text-white mb-6">What Is Chinese Oracle Reading?</h3>
                  <div className="space-y-4 text-mystic-300 leading-relaxed">
                    <p>
@@ -678,16 +566,10 @@ const Home = () => {
                      your current situation, recognize opportunities, and make decisions aligned with cosmic energy.
                    </p>
                  </div>
-               </motion.div>
+               </div>
 
                {/* Right Content */}
-               <motion.div
-                 initial={{ opacity: 0, x: 30 }}
-                 whileInView={{ opacity: 1, x: 0 }}
-                 transition={{ duration: 0.8 }}
-                 viewport={{ once: true }}
-                 className="space-y-6"
-               >
+               <div className="space-y-6">
                  <div className="bg-mystic-800 rounded-lg p-6 border-l-4 border-yellow-400">
                    <h4 className="text-yellow-400 font-semibold mb-3">Historical Origins</h4>
                    <p className="text-mystic-300 text-sm">
@@ -703,7 +585,7 @@ const Home = () => {
                      and drawing a bamboo stick that reveals a poetic verse with deep symbolic meaning.
                    </p>
                  </div>
-               </motion.div>
+               </div>
              </div>
 
              {/* How It Helps Section */}
@@ -746,13 +628,7 @@ const Home = () => {
              </div>
 
              {/* Modern Application */}
-             <motion.div
-               initial={{ opacity: 0, y: 30 }}
-               whileInView={{ opacity: 1, y: 0 }}
-               transition={{ duration: 0.8 }}
-               viewport={{ once: true }}
-               className="text-center mb-12"
-             >
+             <div className="text-center mb-12">
                <h3 className="text-2xl font-bold text-white mb-6">Ancient Wisdom for Modern Life</h3>
                <p className="text-mystic-300 text-lg max-w-4xl mx-auto leading-relaxed mb-8">
                  Today's digital oracle preserves the essence of traditional Chinese divination while making 
@@ -765,40 +641,35 @@ const Home = () => {
                  className="inline-flex items-center px-8 py-4 bg-gradient-to-r from-yellow-500 to-yellow-600 text-white font-semibold rounded-lg hover:from-yellow-600 hover:to-yellow-700 transition-all duration-300 transform hover:scale-105"
                >
                  <span className="mr-3">Experience Traditional Oracle Reading</span>
-                 <ArrowRight className="w-5 h-5" />
+                 <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
+                 </svg>
                </Link>
                
                <p className="text-sm text-gray-400 mt-4">
                  Free • Authentic • Respectful of Ancient Traditions
                </p>
-             </motion.div>
+             </div>
            </div>
          </section>
 
         {/* CTA Section */}
         <section className="py-20 bg-gradient-to-r from-mystic-800 to-mystic-900">
           <div className="container mx-auto px-4 text-center">
-          <motion.div 
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8 }}
-              viewport={{ once: true }}
+            <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
+              Ready to Discover Your Destiny?
+            </h2>
+            <p className="text-xl text-mystic-300 mb-8 max-w-2xl mx-auto">
+              Get your free BaZi report today and unlock the ancient wisdom 
+              that will guide your life's journey.
+            </p>
+            <Link
+              to="/services"
+              className="bg-gradient-to-r from-gold-400 to-gold-600 text-white px-10 py-5 rounded-lg text-xl font-bold hover:from-gold-500 hover:to-gold-700 transition-all duration-300 transform hover:scale-105"
             >
-              <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
-                Ready to Discover Your Destiny?
-              </h2>
-              <p className="text-xl text-mystic-300 mb-8 max-w-2xl mx-auto">
-                Get your free BaZi report today and unlock the ancient wisdom 
-                that will guide your life's journey.
-              </p>
-                <Link
-                  to="/services"
-                className="bg-gradient-to-r from-gold-400 to-gold-600 text-white px-10 py-5 rounded-lg text-xl font-bold hover:from-gold-500 hover:to-gold-700 transition-all duration-300 transform hover:scale-105"
-              >
-                Start Your Free Reading
-                </Link>
-          </motion.div>
-        </div>
+              Start Your Free Reading
+            </Link>
+          </div>
         </section>
       </main>
     </>
