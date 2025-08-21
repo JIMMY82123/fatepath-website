@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>移动端诊断测试 - FatePath</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: #1a1a1a;
+            color: white;
+            line-height: 1.6;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+            padding: 20px;
+            background: #2a2a2a;
+            border-radius: 10px;
+        }
+        
+        .test-section {
+            background: #2a2a2a;
+            margin-bottom: 20px;
+            padding: 20px;
+            border-radius: 10px;
+            border-left: 4px solid #fbbf24;
+        }
+        
+        .test-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 0;
+            border-bottom: 1px solid #3a3a3a;
+        }
+        
+        .test-item:last-child {
+            border-bottom: none;
+        }
+        
+        .status {
+            padding: 4px 8px;
+            border-radius: 4px;
+            font-size: 12px;
+            font-weight: bold;
+        }
+        
+        .status.pass {
+            background: #10b981;
+            color: white;
+        }
+        
+        .status.fail {
+            background: #ef4444;
+            color: white;
+        }
+        
+        .status.warning {
+            background: #f59e0b;
+            color: white;
+        }
+        
+        .btn {
+            background: #fbbf24;
+            color: #1a1a1a;
+            border: none;
+            padding: 12px 24px;
+            border-radius: 6px;
+            font-weight: bold;
+            cursor: pointer;
+            margin: 5px;
+            transition: background 0.2s;
+        }
+        
+        .btn:hover {
+            background: #f59e0b;
+        }
+        
+        .btn:disabled {
+            background: #6b7280;
+            cursor: not-allowed;
+        }
+        
+        .log {
+            background: #1a1a1a;
+            border: 1px solid #3a3a3a;
+            border-radius: 6px;
+            padding: 15px;
+            margin-top: 15px;
+            font-family: monospace;
+            font-size: 12px;
+            max-height: 200px;
+            overflow-y: auto;
+        }
+        
+        .device-info {
+            background: #1a1a1a;
+            border: 1px solid #3a3a3a;
+            border-radius: 6px;
+            padding: 15px;
+            margin-top: 15px;
+        }
+        
+        .device-info h3 {
+            margin-bottom: 10px;
+            color: #fbbf24;
+        }
+        
+        .info-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+        }
+        
+        .info-item {
+            padding: 8px;
+            background: #2a2a2a;
+            border-radius: 4px;
+        }
+        
+        .info-label {
+            font-size: 12px;
+            color: #9ca3af;
+            margin-bottom: 4px;
+        }
+        
+        .info-value {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>📱 移动端诊断测试</h1>
+            <p>FatePath 移动端兼容性检测工具</p>
+        </div>
+
+        <div class="test-section">
+            <h2>🔍 基础功能测试</h2>
+            <div class="test-item">
+                <span>JavaScript 支持</span>
+                <span class="status pass" id="js-test">通过</span>
+            </div>
+            <div class="test-item">
+                <span>DOM 支持</span>
+                <span class="status pass" id="dom-test">通过</span>
+            </div>
+            <div class="test-item">
+                <span>触摸事件</span>
+                <span class="status" id="touch-test">检测中...</span>
+            </div>
+            <div class="test-item">
+                <span>视口大小</span>
+                <span class="status" id="viewport-test">检测中...</span>
+            </div>
+        </div>
+
+        <div class="test-section">
+            <h2>🌐 网络和性能测试</h2>
+            <div class="test-item">
+                <span>网络连接</span>
+                <span class="status" id="network-test">检测中...</span>
+            </div>
+            <div class="test-item">
+                <span>页面加载时间</span>
+                <span class="status" id="load-test">检测中...</span>
+            </div>
+            <div class="test-item">
+                <span>内存使用</span>
+                <span class="status" id="memory-test">检测中...</span>
+            </div>
+        </div>
+
+        <div class="test-section">
+            <h2>📱 设备信息</h2>
+            <div class="device-info">
+                <h3>设备详情</h3>
+                <div class="info-grid" id="device-grid">
+                    <!-- 设备信息将在这里显示 -->
+                </div>
+            </div>
+        </div>
+
+        <div class="test-section">
+            <h2>🛠️ 诊断工具</h2>
+            <button class="btn" onclick="runFullDiagnostics()">运行完整诊断</button>
+            <button class="btn" onclick="exportReport()">导出诊断报告</button>
+            <button class="btn" onclick="clearLog()">清除日志</button>
+            <button class="btn" onclick="testMainApp()">测试主应用</button>
+        </div>
+
+        <div class="test-section">
+            <h2>📋 诊断日志</h2>
+            <div class="log" id="diagnostic-log">
+                <div>等待诊断开始...</div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // 诊断日志
+        const log = document.getElementById('diagnostic-log');
+        
+        function addLog(message, type = 'info') {
+            const timestamp = new Date().toLocaleTimeString();
+            const logEntry = document.createElement('div');
+            logEntry.style.color = type === 'error' ? '#ef4444' : type === 'warning' ? '#f59e0b' : '#10b981';
+            logEntry.textContent = `[${timestamp}] ${message}`;
+            log.appendChild(logEntry);
+            log.scrollTop = log.scrollHeight;
+        }
+
+        function clearLog() {
+            log.innerHTML = '<div>日志已清除</div>';
+        }
+
+        // 基础功能测试
+        function runBasicTests() {
+            addLog('开始基础功能测试...');
+            
+            // JavaScript 测试
+            try {
+                eval('const test = 1 + 1;');
+                document.getElementById('js-test').textContent = '通过';
+                addLog('✅ JavaScript 支持正常');
+            } catch (error) {
+                document.getElementById('js-test').textContent = '失败';
+                document.getElementById('js-test').className = 'status fail';
+                addLog('❌ JavaScript 支持异常', 'error');
+            }
+
+            // DOM 测试
+            try {
+                const testElement = document.createElement('div');
+                document.body.appendChild(testElement);
+                document.body.removeChild(testElement);
+                document.getElementById('dom-test').textContent = '通过';
+                addLog('✅ DOM 支持正常');
+            } catch (error) {
+                document.getElementById('dom-test').textContent = '失败';
+                document.getElementById('dom-test').className = 'status fail';
+                addLog('❌ DOM 支持异常', 'error');
+            }
+
+            // 触摸事件测试
+            if ('ontouchstart' in window) {
+                document.getElementById('touch-test').textContent = '支持';
+                document.getElementById('touch-test').className = 'status pass';
+                addLog('✅ 触摸事件支持正常');
+            } else {
+                document.getElementById('touch-test').textContent = '不支持';
+                document.getElementById('touch-test').className = 'status warning';
+                addLog('⚠️ 触摸事件不支持', 'warning');
+            }
+
+            // 视口测试
+            if (window.innerWidth > 0 && window.innerHeight > 0) {
+                document.getElementById('viewport-test').textContent = '正常';
+                document.getElementById('viewport-test').className = 'status pass';
+                addLog(`✅ 视口大小: ${window.innerWidth}x${window.innerHeight}`);
+            } else {
+                document.getElementById('viewport-test').textContent = '异常';
+                document.getElementById('viewport-test').className = 'status fail';
+                addLog('❌ 视口大小异常', 'error');
+            }
+        }
+
+        // 网络和性能测试
+        function runNetworkTests() {
+            addLog('开始网络和性能测试...');
+            
+            // 网络连接测试
+            if (navigator.onLine) {
+                document.getElementById('network-test').textContent = '在线';
+                document.getElementById('network-test').className = 'status pass';
+                addLog('✅ 网络连接正常');
+            } else {
+                document.getElementById('network-test').textContent = '离线';
+                document.getElementById('network-test').className = 'status fail';
+                addLog('❌ 网络连接异常', 'error');
+            }
+
+            // 页面加载时间测试
+            if (performance && performance.timing) {
+                const loadTime = performance.timing.loadEventEnd - performance.timing.loadEventStart;
+                if (loadTime > 0) {
+                    document.getElementById('load-test').textContent = `${loadTime}ms`;
+                    document.getElementById('load-test').className = loadTime < 3000 ? 'status pass' : 'status warning';
+                    addLog(`📊 页面加载时间: ${loadTime}ms`);
+                } else {
+                    document.getElementById('load-test').textContent = '检测中...';
+                    addLog('⏳ 页面加载时间检测中...');
+                }
+            } else {
+                document.getElementById('load-test').textContent = '不支持';
+                document.getElementById('load-test').className = 'status warning';
+                addLog('⚠️ 性能API不支持', 'warning');
+            }
+
+            // 内存使用测试
+            if (performance && performance.memory) {
+                const memory = performance.memory;
+                const usedMB = Math.round(memory.usedJSHeapSize / 1024 / 1024);
+                const totalMB = Math.round(memory.totalJSHeapSize / 1024 / 1024);
+                document.getElementById('memory-test').textContent = `${usedMB}MB/${totalMB}MB`;
+                document.getElementById('memory-test').className = 'status pass';
+                addLog(`💾 内存使用: ${usedMB}MB / ${totalMB}MB`);
+            } else {
+                document.getElementById('memory-test').textContent = '不支持';
+                document.getElementById('memory-test').className = 'status warning';
+                addLog('⚠️ 内存API不支持', 'warning');
+            }
+        }
+
+        // 收集设备信息
+        function collectDeviceInfo() {
+            addLog('收集设备信息...');
+            
+            const deviceInfo = {
+                '用户代理': navigator.userAgent,
+                '平台': navigator.platform,
+                '语言': navigator.language,
+                'Cookie': navigator.cookieEnabled ? '启用' : '禁用',
+                '屏幕尺寸': `${window.screen.width}x${window.screen.height}`,
+                '视口尺寸': `${window.innerWidth}x${window.innerHeight}`,
+                '像素比': window.devicePixelRatio || 1,
+                '内存': navigator.deviceMemory ? `${navigator.deviceMemory}GB` : '未知',
+                'CPU核心': navigator.hardwareConcurrency || '未知',
+                '触摸支持': 'ontouchstart' in window ? '是' : '否',
+                '方向': window.screen.orientation ? window.screen.orientation.type : '未知'
+            };
+
+            const deviceGrid = document.getElementById('device-grid');
+            deviceGrid.innerHTML = '';
+
+            Object.entries(deviceInfo).forEach(([label, value]) => {
+                const infoItem = document.createElement('div');
+                infoItem.className = 'info-item';
+                infoItem.innerHTML = `
+                    <div class="info-label">${label}</div>
+                    <div class="info-value">${value}</div>
+                `;
+                deviceGrid.appendChild(infoItem);
+            });
+
+            addLog('✅ 设备信息收集完成');
+        }
+
+        // 运行完整诊断
+        async function runFullDiagnostics() {
+            addLog('🚀 开始完整诊断...');
+            
+            try {
+                // 基础测试
+                runBasicTests();
+                
+                // 网络测试
+                runNetworkTests();
+                
+                // 设备信息
+                collectDeviceInfo();
+                
+                // 兼容性测试
+                await runCompatibilityTests();
+                
+                addLog('✅ 完整诊断完成');
+            } catch (error) {
+                addLog(`❌ 诊断过程中出现错误: ${error.message}`, 'error');
+            }
+        }
+
+        // 兼容性测试
+        async function runCompatibilityTests() {
+            addLog('开始兼容性测试...');
+            
+            const tests = [
+                { name: 'ES6 Promise', test: () => typeof Promise !== 'undefined' },
+                { name: 'Fetch API', test: () => typeof fetch !== 'undefined' },
+                { name: 'Service Worker', test: () => 'serviceWorker' in navigator },
+                { name: 'WebGL', test: () => !!window.WebGLRenderingContext },
+                { name: 'Local Storage', test: () => !!window.localStorage },
+                { name: 'Session Storage', test: () => !!window.sessionStorage },
+                { name: 'IndexedDB', test: () => !!window.indexedDB },
+                { name: 'Web Workers', test: () => !!window.Worker },
+                { name: 'Geolocation', test: () => !!navigator.geolocation },
+                { name: 'Notifications', test: () => !!window.Notification }
+            ];
+
+            for (const test of tests) {
+                try {
+                    const result = test.test();
+                    addLog(`${result ? '✅' : '❌'} ${test.name}: ${result ? '支持' : '不支持'}`);
+                } catch (error) {
+                    addLog(`❌ ${test.name}: 测试失败 - ${error.message}`, 'error');
+                }
+            }
+        }
+
+        // 导出诊断报告
+        function exportReport() {
+            addLog('导出诊断报告...');
+            
+            const report = {
+                timestamp: new Date().toISOString(),
+                url: window.location.href,
+                userAgent: navigator.userAgent,
+                screenSize: `${window.screen.width}x${window.screen.height}`,
+                viewportSize: `${window.innerWidth}x${window.innerHeight}`,
+                tests: {
+                    javascript: document.getElementById('js-test').textContent,
+                    dom: document.getElementById('dom-test').textContent,
+                    touch: document.getElementById('touch-test').textContent,
+                    viewport: document.getElementById('viewport-test').textContent,
+                    network: document.getElementById('network-test').textContent,
+                    loadTime: document.getElementById('load-test').textContent,
+                    memory: document.getElementById('memory-test').textContent
+                }
+            };
+
+            const blob = new Blob([JSON.stringify(report, null, 2)], { type: 'application/json' });
+            const url = URL.createObjectURL(blob);
+            
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = `mobile-diagnostics-${new Date().toISOString().split('T')[0]}.json`;
+            a.click();
+            
+            URL.revokeObjectURL(url);
+            addLog('✅ 诊断报告已导出');
+        }
+
+        // 测试主应用
+        function testMainApp() {
+            addLog('测试主应用...');
+            
+            try {
+                // 尝试加载主应用的脚本
+                const script = document.createElement('script');
+                script.src = '/src/main.jsx';
+                script.onload = () => {
+                    addLog('✅ 主应用脚本加载成功');
+                };
+                script.onerror = () => {
+                    addLog('❌ 主应用脚本加载失败', 'error');
+                };
+                document.head.appendChild(script);
+            } catch (error) {
+                addLog(`❌ 主应用测试失败: ${error.message}`, 'error');
+            }
+        }
+
+        // 页面加载完成后自动运行基础测试
+        window.addEventListener('load', () => {
+            addLog('页面加载完成，开始自动测试...');
+            setTimeout(() => {
+                runBasicTests();
+                runNetworkTests();
+                collectDeviceInfo();
+            }, 1000);
+        });
+
+        // 触摸事件测试
+        document.addEventListener('touchstart', () => {
+            if (document.getElementById('touch-test').textContent === '检测中...') {
+                document.getElementById('touch-test').textContent = '支持';
+                document.getElementById('touch-test').className = 'status pass';
+                addLog('✅ 触摸事件检测成功');
+            }
+        });
+
+        // 网络状态变化监听
+        window.addEventListener('online', () => {
+            addLog('🌐 网络连接已恢复');
+            if (document.getElementById('network-test')) {
+                document.getElementById('network-test').textContent = '在线';
+                document.getElementById('network-test').className = 'status pass';
+            }
+        });
+
+        window.addEventListener('offline', () => {
+            addLog('🌐 网络连接已断开', 'warning');
+            if (document.getElementById('network-test')) {
+                document.getElementById('network-test').textContent = '离线';
+                document.getElementById('network-test').className = 'status fail';
+            }
+        });
+    </script>
+</body>
+</html>
