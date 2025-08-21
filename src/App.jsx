@@ -10,8 +10,8 @@ import ScrollToTopButton from './components/ScrollToTopButton'
 import MobileErrorBoundary from './components/MobileErrorBoundary'
 import { mobileDiagnostics } from './utils/mobileDiagnostics'
 
-// 懒加载页面组件
-const Home = lazy(() => import('./pages/Home'))
+// 直接导入Home组件，避免移动端懒加载问题
+import Home from './pages/Home'
 const Services = lazy(() => import('./pages/Services'))
 const Contact = lazy(() => import('./pages/Contact'))
 const FAQ = lazy(() => import('./pages/FAQ'))
@@ -109,9 +109,9 @@ function App() {
             // 移动端简化版本 - 减少复杂组件避免白屏
             <div className="min-h-screen bg-mystic-900">
               <Navbar />
-              <Suspense fallback={<MobileLoader />}>
-                <Routes>
-                  <Route path="/" element={<Home />} />
+              <Routes>
+                <Route path="/" element={<Home />} />
+                <Suspense fallback={<MobileLoader />}>
                   <Route path="/services" element={<Services />} />
                   <Route path="/contact" element={<Contact />} />
                   <Route path="/faq" element={<FAQ />} />
@@ -131,8 +131,8 @@ function App() {
                   <Route path="/resources" element={<Resources />} />
                   <Route path="/resources/:datasetId" element={<DatasetDetail />} />
                   <Route path="/love-compatibility-test" element={<LoveCompatibilityTest />} />
-                </Routes>
-              </Suspense>
+                </Suspense>
+              </Routes>
               <Footer />
             </div>
           ) : (
