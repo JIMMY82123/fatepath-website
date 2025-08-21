@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Home Page</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background: #1a1a1a;
+            color: white;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .hero {
+            text-align: center;
+            padding: 60px 20px;
+        }
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            color: #fbbf24;
+        }
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+            color: #d1d5db;
+        }
+        .test-section {
+            background: #374151;
+            padding: 40px;
+            margin: 40px 0;
+            border-radius: 8px;
+            text-align: center;
+        }
+        .success {
+            background: #065f46;
+            color: #d1fae5;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="hero">
+            <h1>Test Home Page</h1>
+            <p>This is a simple test page to verify mobile rendering</p>
+        </div>
+        
+        <div class="test-section">
+            <h2>Mobile Test Section</h2>
+            <p>If you can see this content on mobile, the basic HTML rendering is working.</p>
+            <div class="success">
+                <strong>✅ SUCCESS!</strong> This page is rendering correctly on your device.
+            </div>
+        </div>
+        
+        <div class="test-section">
+            <h2>Device Information</h2>
+            <p><strong>User Agent:</strong> <span id="userAgent"></span></p>
+            <p><strong>Screen Size:</strong> <span id="screenSize"></span></p>
+            <p><strong>Viewport:</strong> <span id="viewport"></span></p>
+        </div>
+    </div>
+
+    <script>
+        // Display device information
+        document.getElementById('userAgent').textContent = navigator.userAgent;
+        document.getElementById('screenSize').textContent = screen.width + ' x ' + screen.height;
+        document.getElementById('viewport').textContent = window.innerWidth + ' x ' + window.innerHeight;
+        
+        // Log to console for debugging
+        console.log('Test page loaded successfully');
+        console.log('User Agent:', navigator.userAgent);
+        console.log('Screen Size:', screen.width + ' x ' + screen.height);
+        console.log('Viewport:', window.innerWidth + ' x ' + window.innerHeight);
+    </script>
+</body>
+</html>
