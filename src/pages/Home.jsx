@@ -14,8 +14,17 @@ const Home = () => {
 
   // 生成AI头像
   useEffect(() => {
-    const testimonialsWithAI = generateAvatarUrls(testimonials)
-    setTestimonialsWithAvatars(testimonialsWithAI)
+    try {
+      const testimonialsWithAI = generateAvatarUrls(testimonials)
+      setTestimonialsWithAvatars(testimonialsWithAI)
+    } catch (error) {
+      console.warn('AI头像生成失败，使用默认头像:', error)
+      // 如果头像生成失败，使用原始数据确保页面正常显示
+      setTestimonialsWithAvatars(testimonials.map(testimonial => ({
+        ...testimonial,
+        avatar: testimonial.avatar || '/images/testimonials/default-avatar.svg'
+      })))
+    }
   }, [])
 
   const testimonials = [
