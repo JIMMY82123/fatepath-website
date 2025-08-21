@@ -1,80 +1,63 @@
 import React from 'react'
-import SEO from '../components/SEO'
 
 const Home = () => {
   return (
-    <>
-      <SEO 
-        title="Feeling Lost? Find Your Life Direction with Chinese Astrology | Professional BaZi Reading Service"
-        description="Feeling stuck in life? Discover your true life direction with professional Chinese astrology and BaZi reading. Get clarity on your purpose, career path, and relationships. Free BaZi chart analysis for those seeking life guidance."
-        keywords="feeling lost, life direction, stuck in life, chinese astrology, bazi reading, free bazi chart analysis, chinese numerology expert, bazi career guidance, bazi love compatibility, bazi wealth analysis, online chinese astrology consultation, bazi master consultation, traditional chinese astrology, bazi chart calculator, bazi relationship reading, bazi life path analysis, chinese astrology reading, four pillars of destiny, life purpose, career guidance, relationship advice"
-        author="FatePath"
-        ogTitle="Feeling Lost? Find Your Life Direction with Chinese Astrology | Professional BaZi Reading Service"
-        ogDescription="Feeling stuck in life? Discover your true life direction with professional Chinese astrology and BaZi reading. Get clarity on your purpose, career path, and relationships."
-        ogImage="https://fatepath.me/og-image.svg"
-        ogUrl="https://fatepath.me/"
-        twitterTitle="Feeling Lost? Find Your Life Direction with Chinese Astrology | Professional BaZi Reading Service"
-        twitterDescription="Feeling stuck in life? Discover your true life direction with professional Chinese astrology and BaZi reading. Get clarity on your purpose, career path, and relationships."
-        twitterImage="https://fatepath.me/og-image.svg"
-      />
-
-      <main className="min-h-screen bg-mystic-900">
-        {/* Hero Section */}
-        <header className="relative overflow-hidden">
-          <div className="container mx-auto px-4 py-20">
-            <div className="text-center">
-              <h1 className="text-5xl md:text-7xl font-bold text-white mb-6">
-                Feeling Lost?
-                <span className="block text-gold-400">Find Your Life Direction</span>
-              </h1>
-              <p className="text-xl md:text-2xl text-mystic-300 mb-8 max-w-3xl mx-auto">
-                Stuck in life? Unlock the ancient wisdom of Chinese astrology with professional BaZi readings. 
-                Discover your true life purpose, career direction, and relationship path through traditional Chinese numerology.
-              </p>
-              <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <button className="bg-gradient-to-r from-gold-400 to-gold-600 text-white px-8 py-4 rounded-lg font-semibold hover:from-gold-500 hover:to-gold-700 transition-all duration-300 transform hover:scale-105">
-                  Get Free BaZi Report
-                </button>
-                <button className="border-2 border-gold-400 text-gold-400 px-8 py-4 rounded-lg font-semibold hover:bg-gold-400 hover:text-white transition-all duration-300">
-                  View Services
-                </button>
-              </div>
-            </div>
-          </div>
-        </header>
-
-        {/* Simple Content Section */}
-        <section className="py-20 bg-mystic-800">
-          <div className="container mx-auto px-4">
-            <div className="text-center">
-              <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
-                Welcome to FatePath
-              </h2>
-              <p className="text-xl text-mystic-300 max-w-2xl mx-auto">
-                Your journey to discover ancient Chinese wisdom starts here.
-              </p>
-            </div>
-          </div>
-        </section>
-
-        {/* Test Section */}
-        <section className="py-20 bg-mystic-900">
-          <div className="container mx-auto px-4 text-center">
-            <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
-              Test Section
-            </h2>
-            <p className="text-xl text-mystic-300 mb-8">
-              If you can see this, the page is working!
+    <main className="min-h-screen bg-mystic-900">
+      {/* Hero Section */}
+      <header className="relative overflow-hidden">
+        <div className="container mx-auto px-4 py-20">
+          <div className="text-center">
+            <h1 className="text-5xl md:text-7xl font-bold text-white mb-6">
+              Feeling Lost?
+              <span className="block text-gold-400">Find Your Life Direction</span>
+            </h1>
+            <p className="text-xl md:text-2xl text-mystic-300 mb-8 max-w-3xl mx-auto">
+              Stuck in life? Unlock the ancient wisdom of Chinese astrology with professional BaZi readings. 
+              Discover your true life purpose, career direction, and relationship path through traditional Chinese numerology.
             </p>
-            <div className="bg-mystic-800 rounded-lg p-8 max-w-2xl mx-auto">
-              <p className="text-mystic-300">
-                This is a simple test to ensure the page renders correctly on mobile devices.
-              </p>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <button className="bg-gradient-to-r from-gold-400 to-gold-600 text-white px-8 py-4 rounded-lg font-semibold hover:from-gold-500 hover:to-gold-700 transition-all duration-300 transform hover:scale-105">
+                Get Free BaZi Report
+              </button>
+              <button className="border-2 border-gold-400 text-gold-400 px-8 py-4 rounded-lg font-semibold hover:bg-gold-400 hover:text-white transition-all duration-300">
+                View Services
+              </button>
             </div>
           </div>
-        </section>
-      </main>
-    </>
+        </div>
+      </header>
+
+      {/* Simple Content Section */}
+      <section className="py-20 bg-mystic-800">
+        <div className="container mx-auto px-4">
+          <div className="text-center">
+            <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
+              Welcome to FatePath
+            </h2>
+            <p className="text-xl text-mystic-300 max-w-2xl mx-auto">
+              Your journey to discover ancient Chinese wisdom starts here.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Test Section */}
+      <section className="py-20 bg-mystic-900">
+        <div className="container mx-auto px-4 text-center">
+          <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
+            Test Section
+          </h2>
+          <p className="text-xl text-mystic-300 mb-8">
+            If you can see this, the page is working!
+          </p>
+          <div className="bg-mystic-800 rounded-lg p-8 max-w-2xl mx-auto">
+            <p className="text-mystic-300">
+              This is a simple test to ensure the page renders correctly on mobile devices.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
   )
 }
 
