@@ -234,39 +234,35 @@
     
     <div id="root"></div>
     
-    <!-- 谷歌广告直接访问修复脚本 - 增强版 -->
+    <!-- 移动端白屏问题直接修复脚本 -->
     <script>
-      // 立即执行的修复脚本，解决谷歌广告直接访问白屏问题
+      // 立即执行的移动端修复脚本
       (function() {
-        console.log('🔧 启动增强版谷歌广告白屏修复脚本...');
+        console.log('🔧 启动移动端白屏直接修复脚本...');
         
-        // 立即阻止默认的React应用加载
-        const originalScript = document.querySelector('script[src="/src/main.jsx"]');
-        if (originalScript) {
-          originalScript.remove();
-          console.log('🗑️ 已移除原始React应用脚本');
+        // 检测是否为移动设备
+        function isMobileDevice() {
+          return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ||
+                 window.innerWidth <= 768;
         }
         
-        // 检测访问来源
+        // 检测是否为直接访问
         function isDirectAccess() {
           const referrer = document.referrer;
-          const isDirect = !referrer || 
-                           referrer.includes('google.com') || 
-                           referrer.includes('googleadservices.com') ||
-                           referrer.includes('doubleclick.net') ||
-                           referrer.includes('googlesyndication.com') ||
-                           referrer.includes('bing.com') ||
-                           referrer.includes('facebook.com') ||
-                           referrer.includes('twitter.com') ||
-                           referrer.includes('youtube.com') ||
-                           referrer.includes('instagram.com');
-          
-          console.log('🔍 访问来源检测:', { referrer, isDirect, url: window.location.href });
-          return isDirect;
+          return !referrer || 
+                 referrer.includes('google.com') || 
+                 referrer.includes('googleadservices.com') ||
+                 referrer.includes('doubleclick.net') ||
+                 referrer.includes('googlesyndication.com') ||
+                 referrer.includes('bing.com') ||
+                 referrer.includes('facebook.com') ||
+                 referrer.includes('twitter.com') ||
+                 referrer.includes('youtube.com') ||
+                 referrer.includes('instagram.com');
         }
         
-        // 显示加载指示器
-        function showLoadingIndicator() {
+        // 显示移动端友好的加载页面
+        function showMobileLoadingPage() {
           const root = document.getElementById('root');
           if (root) {
             root.innerHTML = `
@@ -283,66 +279,102 @@
                 justify-content: center;
                 align-items: center;
                 z-index: 9999;
-                font-family: Arial, sans-serif;
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+                padding: 20px;
+                text-align: center;
               ">
-                <div style="text-align: center; max-width: 400px; padding: 20px;">
-                  <h2 style="color: #fbbf24; margin-bottom: 16px;">正在加载最佳体验...</h2>
-                  <p style="margin-bottom: 20px;">检测到外部访问，正在优化页面加载...</p>
+                <div style="max-width: 400px;">
+                  <h1 style="
+                    color: #fbbf24;
+                    font-size: 2rem;
+                    margin-bottom: 1rem;
+                    font-weight: 700;
+                  ">FatePath</h1>
+                  
+                  <h2 style="
+                    color: #fbbf24;
+                    font-size: 1.5rem;
+                    margin-bottom: 1rem;
+                    font-weight: 600;
+                  ">正在为您准备最佳体验...</h2>
+                  
+                  <p style="
+                    color: #d1d5db;
+                    font-size: 1rem;
+                    margin-bottom: 2rem;
+                    line-height: 1.5;
+                  ">检测到移动端访问，正在优化页面加载...</p>
+                  
                   <div style="
-                    width: 40px;
-                    height: 40px;
-                    border: 4px solid #333;
+                    width: 60px;
+                    height: 60px;
+                    border: 4px solid #374151;
                     border-top: 4px solid #fbbf24;
                     border-radius: 50%;
                     animation: spin 1s linear infinite;
-                    margin: 0 auto 20px;
+                    margin: 0 auto 2rem;
                   "></div>
-                  <p style="font-size: 14px; color: #888;">请稍候，正在为您准备最佳版本...</p>
-                  <div style="margin-top: 20px;">
-                    <button onclick="window.location.reload()" style="
+                  
+                  <p style="
+                    color: #9ca3af;
+                    font-size: 0.875rem;
+                    margin-bottom: 2rem;
+                  ">请稍候，正在为您准备最佳版本...</p>
+                  
+                  <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+                    <button onclick="forceLoadReactApp()" style="
                       background: #fbbf24;
                       color: #1a1a1a;
                       border: none;
-                      padding: 10px 20px;
-                      border-radius: 6px;
+                      padding: 12px 24px;
+                      border-radius: 8px;
                       font-weight: 600;
                       cursor: pointer;
-                      margin: 0 10px;
-                    ">刷新页面</button>
-                    <button onclick="forceLoadApp()" style="
-                      background: #10b981;
+                      font-size: 1rem;
+                    ">立即加载</button>
+                    
+                    <button onclick="window.location.reload()" style="
+                      background: #374151;
                       color: white;
                       border: none;
-                      padding: 10px 20px;
-                      border-radius: 6px;
+                      padding: 12px 24px;
+                      border-radius: 8px;
                       font-weight: 600;
                       cursor: pointer;
-                      margin: 0 10px;
-                    ">强制加载</button>
+                      font-size: 1rem;
+                    ">刷新页面</button>
                   </div>
                 </div>
               </div>
+              
               <style>
                 @keyframes spin {
                   0% { transform: rotate(0deg); }
                   100% { transform: rotate(360deg); }
+                }
+                
+                @media (max-width: 480px) {
+                  h1 { font-size: 1.5rem !important; }
+                  h2 { font-size: 1.25rem !important; }
+                  p { font-size: 0.875rem !important; }
+                  button { padding: 10px 20px !important; font-size: 0.875rem !important; }
                 }
               </style>
             `;
           }
         }
         
-        // 强制加载应用
-        function forceLoadApp() {
+        // 强制加载React应用
+        function forceLoadReactApp() {
           console.log('🚀 强制加载React应用...');
           
-          // 清除加载指示器
+          // 清除加载页面
           const root = document.getElementById('root');
           if (root) {
             root.innerHTML = '';
           }
           
-          // 创建新的脚本标签
+          // 创建新的React应用脚本
           const script = document.createElement('script');
           script.type = 'module';
           script.src = '/src/main.jsx';
@@ -350,94 +382,112 @@
             console.log('✅ React应用加载成功');
           };
           script.onerror = function() {
-            console.error('❌ React应用加载失败，尝试备用方案...');
-            // 备用方案：直接跳转到主页
-            setTimeout(() => {
-              window.location.href = '/';
-            }, 1000);
+            console.error('❌ React应用加载失败');
+            // 如果加载失败，显示错误信息
+            if (root) {
+              root.innerHTML = `
+                <div style="
+                  position: fixed;
+                  top: 0;
+                  left: 0;
+                  right: 0;
+                  bottom: 0;
+                  background: #1a1a1a;
+                  color: white;
+                  display: flex;
+                  flex-direction: column;
+                  justify-content: center;
+                  align-items: center;
+                  z-index: 9999;
+                  padding: 20px;
+                  text-align: center;
+                ">
+                  <h2 style="color: #ef4444; margin-bottom: 1rem;">加载失败</h2>
+                  <p style="margin-bottom: 2rem;">React应用加载失败，请刷新页面重试</p>
+                  <button onclick="window.location.reload()" style="
+                    background: #fbbf24;
+                    color: #1a1a1a;
+                    border: none;
+                    padding: 12px 24px;
+                    border-radius: 8px;
+                    font-weight: 600;
+                    cursor: pointer;
+                  ">刷新页面</button>
+                </div>
+              `;
+            }
           };
           
           document.body.appendChild(script);
         }
         
-        // 延迟加载策略
-        function delayedLoadApp() {
-          console.log('⏰ 延迟加载React应用...');
-          
-          // 等待一段时间后加载应用
-          setTimeout(() => {
-            forceLoadApp();
-          }, 2000);
-        }
-        
         // 主修复逻辑
-        function applyFix() {
-          console.log('🎯 应用增强版修复策略...');
+        function applyMobileFix() {
+          console.log('🎯 应用移动端修复策略...');
           
-          // 1. 立即显示加载指示器
-          showLoadingIndicator();
+          // 1. 立即显示移动端友好的加载页面
+          showMobileLoadingPage();
           
-          // 2. 延迟加载应用
-          delayedLoadApp();
+          // 2. 延迟加载React应用
+          setTimeout(() => {
+            console.log('⏰ 延迟加载React应用...');
+            forceLoadReactApp();
+          }, 3000);
           
           // 3. 设置备用检查
           setTimeout(() => {
             const root = document.getElementById('root');
             if (root && root.children.length === 0) {
-              console.warn('⚠️ 页面仍然为空，应用备用修复...');
-              forceLoadApp();
+              console.warn('⚠️ 页面仍然为空，强制加载...');
+              forceLoadReactApp();
             }
-          }, 8000);
+          }, 10000);
         }
         
         // 执行修复逻辑
-        if (isDirectAccess()) {
-          console.log('🎯 检测到直接访问，立即应用增强版修复...');
-          applyFix();
+        if (isMobileDevice()) {
+          console.log('📱 检测到移动设备');
+          
+          if (isDirectAccess()) {
+            console.log('🎯 检测到直接访问，立即应用移动端修复...');
+            applyMobileFix();
+          } else {
+            console.log('ℹ️ 非直接访问，但应用预防性移动端修复...');
+            // 即使不是直接访问，也应用移动端修复
+            setTimeout(() => {
+              const root = document.getElementById('root');
+              if (root && root.children.length === 0) {
+                console.log('⚠️ 检测到移动端页面异常，应用修复...');
+                applyMobileFix();
+              }
+            }, 2000);
+          }
         } else {
-          console.log('ℹ️ 非直接访问，但应用预防性修复...');
-          // 即使不是直接访问，也应用预防性修复
-          setTimeout(() => {
-            const root = document.getElementById('root');
-            if (root && root.children.length === 0) {
-              console.log('⚠️ 检测到页面异常，应用修复...');
-              applyFix();
-            }
-          }, 3000);
+          console.log('💻 桌面设备，跳过移动端修复');
         }
         
         // 全局错误处理
         window.addEventListener('error', function(event) {
           console.error('🚨 全局错误:', event.error);
-          console.log('🔄 尝试自动修复...');
-          setTimeout(forceLoadApp, 1000);
+          if (isMobileDevice()) {
+            console.log('🔄 移动端出现错误，尝试修复...');
+            setTimeout(forceLoadReactApp, 1000);
+          }
         });
         
         // 未处理的Promise拒绝
         window.addEventListener('unhandledrejection', function(event) {
           console.error('🚨 未处理的Promise拒绝:', event.reason);
-          event.preventDefault();
-          setTimeout(forceLoadApp, 1000);
-        });
-        
-        // 页面可见性变化处理
-        document.addEventListener('visibilitychange', function() {
-          if (document.visibilityState === 'visible') {
-            console.log('👁️ 页面重新可见，检查状态...');
-            setTimeout(() => {
-              const root = document.getElementById('root');
-              if (root && root.children.length === 0) {
-                console.log('⚠️ 页面重新可见但内容为空，应用修复...');
-                applyFix();
-              }
-            }, 1000);
+          if (isMobileDevice()) {
+            event.preventDefault();
+            setTimeout(forceLoadReactApp, 1000);
           }
         });
         
         // 导出修复函数供外部使用
-        window.forceLoadApp = forceLoadApp;
+        window.forceLoadReactApp = forceLoadReactApp;
         
-        console.log('✅ 增强版修复脚本初始化完成');
+        console.log('✅ 移动端修复脚本初始化完成');
         
       })();
     </script>
