@@ -18,13 +18,24 @@ const Blog = () => {
   }, [searchParams])
 
   const categories = [
-    { id: 'all', name: 'All Articles', count: 17 },
-    { id: 'bazi', name: 'BaZi Analysis', count: 10 },
+    { id: 'all', name: 'All Articles', count: 18 },
+    { id: 'bazi', name: 'BaZi Analysis', count: 11 },
     { id: 'love', name: 'Love & Relationships', count: 4 },
     { id: 'wealth', name: 'Wealth & Career', count: 4 }
   ]
 
   const blogPosts = [
+    {
+      id: 18,
+      title: "Lighting a Ding Fire in an Autumn Metal Month",
+      excerpt: "A BaZi case study: How to cultivate Wood and choose STEM roles for a Ding Fire person born in autumn Metal season. Practical guidance for personal development and career success.",
+      category: 'bazi',
+      tags: ['BaZi Analysis', 'Career Guidance', 'Ding Fire', 'Wood Element', 'Metal Season', 'STEM Roles', 'Personal Development'],
+      image: "/images/blog/ding-fire-autumn-metal-cover.jpg",
+      date: "2024-12-19",
+      readTime: "8 min read",
+      slug: "lighting-ding-fire-autumn-metal"
+    },
     {
       id: 17,
       title: "The Right Person Is Not the One You Have to Chase",

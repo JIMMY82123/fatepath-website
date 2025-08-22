@@ -13,6 +13,98 @@ const BlogPost = () => {
 
   // Sample blog post data - in a real app, this would come from an API or CMS
   const blogPostsData = {
+    "lighting-ding-fire-autumn-metal": {
+      title: "Lighting a Ding Fire in an Autumn Metal Month",
+      excerpt: "A BaZi case study: How to cultivate Wood and choose STEM roles for a Ding Fire person born in autumn Metal season. Practical guidance for personal development and career success.",
+      content: `
+        <div class="mb-8">
+          <div class="bg-gradient-to-r from-orange-500/20 to-red-500/20 border border-orange-500/30 rounded-lg p-6 mb-8">
+            <h3 class="text-lg font-semibold text-orange-400 mb-3">🔥 BaZi Case Study: Ding Fire in Autumn Metal</h3>
+            <p class="text-mystic-200 mb-2"><strong>Chart:</strong> 1996-10-07 19:12, Baguio, Philippines (Male)</p>
+            <p class="text-mystic-200 mb-2"><strong>Day Master:</strong> Ding Fire (Weak)</strong></p>
+            <p class="text-mystic-200 mb-2"><strong>Season:</strong> Autumn Metal (Strong)</strong></p>
+            <p class="text-mystic-200"><strong>Key Question:</strong> How to cultivate Wood and choose suitable STEM roles?</p>
+          </div>
+        </div>
+
+        <h2 class="text-2xl font-bold text-white mb-4 mt-8">The Question</h2>
+        <p class="mb-6 text-lg text-mystic-200 leading-relaxed">
+          He wrote: "How do I cultivate Wood? And, based on BaZi, what STEM roles suit me?"
+        </p>
+
+        <h2 class="text-2xl font-bold text-white mb-4 mt-8">The Chart</h2>
+        <p class="mb-6 text-lg text-mystic-200 leading-relaxed">
+          I cast the chart: <strong>Bing-Zi year, Ding-You month, Ding-Chou day, Geng-Xu hour</strong>—a Ding Fire person born in the heart of autumn Metal.
+        </p>
+        
+        <div class="bg-gradient-to-r from-blue-500/20 to-purple-500/20 border border-blue-500/30 rounded-lg p-6 mb-6">
+          <h3 class="text-lg font-semibold text-blue-400 mb-3">Chart Elements</h3>
+          <div class="grid md:grid-cols-2 gap-4">
+            <div>
+              <p class="text-mystic-200 mb-2"><strong>Year:</strong> Bing-Zi (Fire-Water)</p>
+              <p class="text-mystic-200 mb-2"><strong>Month:</strong> Ding-You (Fire-Metal)</p>
+            </div>
+            <div>
+              <p class="text-mystic-200 mb-2"><strong>Day:</strong> Ding-Chou (Fire-Earth)</p>
+              <p class="text-mystic-200 mb-2"><strong>Hour:</strong> Geng-Xu (Metal-Earth)</p>
+            </div>
+          </div>
+        </div>
+
+        <h2 class="text-2xl font-bold text-white mb-4 mt-8">Core Analysis</h2>
+        <p class="mb-6 text-lg text-mystic-200 leading-relaxed">
+          Autumn presses the air thin and cool; Metal is in season and Fire feels small. <em>Di Tian Sui</em> puts it simply: "Ding fire thrives with Wood and is cut by Metal." That single line is the key. This fire isn't flamboyant; it brightens when it has Wood—structure, growth, breath.
+        </p>
+        
+        <p class="mb-6 text-lg text-mystic-200 leading-relaxed">
+          In this chart Metal and Water are strong; Wood and Fire are weak. In life that often reads as: rules feel heavy, feedback feels loud, and the person hesitates to step forward. The hour stem shows Geng (Wealth) out in the open—opportunity is visible—yet the daymaster is too light to carry it steadily. So the issue isn't fate; it's sequence: <strong>build Wood → kindle Fire → then take Metal/Water on your terms</strong>.
+        </p>
+
+        <h2 class="text-2xl font-bold text-white mb-4 mt-8">What does "Wood then Fire" look like in real life?</h2>
+        <p class="mb-6 text-lg text-mystic-200 leading-relaxed">
+          <strong>Wood is rhythm and growth:</strong> earlier nights, a little morning light, one course or certification each quarter, and boundaries written in clear sentences. <strong>Fire is expression and action:</strong> a visible demo once a month, a brief training, a document that non-tech teammates can use. When Wood feeds Fire, Metal stops cutting you and becomes the tool in your hand.
+        </p>
+
+        <h2 class="text-2xl font-bold text-white mb-4 mt-8">Work that fits that arc</h2>
+        <p class="mb-6 text-lg text-mystic-200 leading-relaxed">
+          Choose roles where you turn complexity into something usable: <strong>photonics/optics, solar & storage, power electronics and control, or applied ML tied to product</strong>. These paths let you collaborate—PMs, front-end, customers, trainees—so your Fire isn't just screen-deep. Pure compliance, pure simulation, or closed-door research isn't off-limits, but bolt on a Wood-Fire module: demos, docs, training, visualization, design reviews.
+        </p>
+
+        <h2 class="text-2xl font-bold text-white mb-4 mt-8">Money, without the whiplash</h2>
+        <p class="mb-6 text-lg text-mystic-200 leading-relaxed">
+          With Geng Wealth exposed, money shows up, but a weak daymaster can't sprint after every project. Translate that into strategy: turn one-off wins into repeatable offers, favor milestone billing and subscriptions, and keep leverage low. On the timeline, <strong>2026–2027 looks like a clean rise in income</strong>; in <strong>2028–2029, opportunities multiply but collections and payment terms deserve sharper attention</strong>.
+        </p>
+
+        <h2 class="text-2xl font-bold text-white mb-4 mt-8">People and boundaries</h2>
+        <p class="mb-6 text-lg text-mystic-200 leading-relaxed">
+          Strong Metal/Water with faint Wood often feels like over-attunement to feedback, people-pleasing, and rumination after the fact. Don't call it "selfish"—call it healthy boundaries: <strong>three non-negotiables</strong> (no midnight rescues; no unsecured lending; zero tolerance for emotional blackmail), <strong>two needs that must be seen</strong> (quiet time, reply windows), and a <strong>daily cap on social output</strong>. Many "energy drains" are just doors left open too long.
+        </p>
+
+        <h2 class="text-2xl font-bold text-white mb-4 mt-8">Space and small rituals</h2>
+        <p class="mb-6 text-lg text-mystic-200 leading-relaxed">
+          A tiny, windowless office? Sit with your back to a solid wall, keep the door in view at a slight angle, hang a nature landscape as a "window," and use warm 2700–3000K light. If you like talismans, one piece is enough: <strong>green Hetian jade on a red cord—Wood + Fire in a single token</strong>. It's not magic; it's a reminder to keep growth and expression on the calendar.
+        </p>
+
+        <h2 class="text-2xl font-bold text-white mb-4 mt-8">The Path Forward</h2>
+        <p class="mb-6 text-lg text-mystic-200 leading-relaxed">
+          He asked how to "cultivate Wood." The answer is unromantic and effective: <strong>make learning a rhythm, make expression a habit, make boundaries a norm</strong>. Do that, and the Ding Fire stops being "weak" and becomes steady. When the flame holds, Metal and Water cooperate: the knife cuts clean; the stream turns the wheel.
+        </p>
+        
+        <div class="bg-gradient-to-r from-green-500/20 to-blue-500/20 border border-green-500/30 rounded-lg p-6 mb-6">
+          <h3 class="text-lg font-semibold text-green-400 mb-3">The Eight-Character Path</h3>
+          <p class="text-mystic-200 leading-relaxed">
+            For this Baguio chart, the path condenses to eight characters: <strong>"Build Wood, kindle Fire; bear Wealth, walk steady."</strong> May that be the shape of his next few years.
+          </p>
+        </div>
+      `,
+      author: 'Master Chen',
+      date: '2024-12-19',
+      readTime: '8 min read',
+      category: 'BaZi Case Studies',
+      tags: ['BaZi Analysis', 'Career Guidance', 'Ding Fire', 'Wood Element', 'Metal Season', 'STEM Roles', 'Personal Development'],
+      coverImage: '/images/blog/ding-fire-autumn-metal-cover.jpg',
+      featured: true
+    },
     "right-person-not-chase": {
       title: "The Right Person Is Not the One You Have to Chase",
       excerpt: "A poetic exploration of what true love looks like—not the dramatic chase, but the quiet moments of being seen, understood, and properly placed in someone's life.",
