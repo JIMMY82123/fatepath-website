@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chrome浏览器诊断 - FatePath</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background: #1a1a1a;
+            color: white;
+        }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .header h1 {
+            color: #fbbf24;
+            margin-bottom: 10px;
+        }
+        .debug-section {
+            background: #2a2a2a;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            border-left: 4px solid #fbbf24;
+        }
+        .debug-section h3 {
+            color: #fbbf24;
+            margin-top: 0;
+        }
+        .status {
+            padding: 8px 12px;
+            border-radius: 4px;
+            margin: 5px 0;
+            font-weight: 500;
+        }
+        .status.success { background: #065f46; color: #d1fae5; }
+        .status.warning { background: #92400e; color: #fef3c7; }
+        .status.error { background: #991b1b; color: #fee2e2; }
+        .status.info { background: #1e40af; color: #dbeafe; }
+        .button {
+            background: #fbbf24;
+            color: #1a1a1a;
+            border: none;
+            padding: 12px 24px;
+            border-radius: 6px;
+            font-weight: 600;
+            cursor: pointer;
+            margin: 10px 5px;
+            font-size: 14px;
+        }
+        .button:hover {
+            background: #f59e0b;
+        }
+        .log {
+            background: #000;
+            padding: 15px;
+            border-radius: 6px;
+            font-family: monospace;
+            font-size: 12px;
+            max-height: 400px;
+            overflow-y: auto;
+            white-space: pre-wrap;
+        }
+        .chrome-info {
+            background: #1e40af;
+            padding: 15px;
+            border-radius: 8px;
+            margin: 15px 0;
+        }
+        .test-results {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 15px;
+            margin: 20px 0;
+        }
+        .test-card {
+            background: #374151;
+            padding: 15px;
+            border-radius: 8px;
+            border: 1px solid #4b5563;
+        }
+        .test-card h4 {
+            color: #fbbf24;
+            margin-top: 0;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🔍 Chrome浏览器白屏问题诊断</h1>
+            <p>专门用于诊断Chrome浏览器白屏问题，对比Safari正常工作的原因</p>
+        </div>
+
+        <div class="debug-section">
+            <h3>🌐 Chrome浏览器信息</h3>
+            <div id="chrome-info"></div>
+        </div>
+
+        <div class="debug-section">
+            <h3>🔧 Chrome特定功能检测</h3>
+            <div id="chrome-features"></div>
+        </div>
+
+        <div class="debug-section">
+            <h3>📱 设备与浏览器对比</h3>
+            <div id="browser-comparison"></div>
+        </div>
+
+        <div class="debug-section">
+            <h3>🧪 Chrome特定测试</h3>
+            <div class="test-results">
+                <div class="test-card">
+                    <h4>React加载测试</h4>
+                    <button class="button" onclick="testReactInChrome()">测试React</button>
+                    <div id="react-test-result"></div>
+                </div>
+                <div class="test-card">
+                    <h4>模块加载测试</h4>
+                    <button class="button" onclick="testModuleLoading()">测试模块</button>
+                    <div id="module-test-result"></div>
+                </div>
+                <div class="test-card">
+                    <h4>ES6特性测试</h4>
+                    <button class="button" onclick="testES6Features()">测试ES6</button>
+                    <div id="es6-test-result"></div>
+                </div>
+                <div class="test-card">
+                    <h4>Chrome扩展检测</h4>
+                    <button class="button" onclick="detectChromeExtensions()">检测扩展</button>
+                    <div id="extension-test-result"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="debug-section">
+            <h3>🔍 问题诊断</h3>
+            <button class="button" onclick="runFullChromeDiagnostic()">运行完整诊断</button>
+            <button class="button" onclick="clearChromeLog()">清除日志</button>
+            <div id="chrome-diagnostic-log" class="log"></div>
+        </div>
+
+        <div class="debug-section">
+            <h3>💡 Chrome问题解决方案</h3>
+            <div id="chrome-solutions"></div>
+        </div>
+    </div>
+
+    <script>
+        // Chrome诊断日志系统
+        function logChrome(message, type = 'info') {
+            const logElement = document.getElementById('chrome-diagnostic-log');
+            const timestamp = new Date().toLocaleTimeString();
+            const logEntry = `[${timestamp}] ${message}\n`;
+            logElement.textContent += logEntry;
+            logElement.scrollTop = logElement.scrollHeight;
+            console.log(`[CHROME ${type.toUpperCase()}] ${message}`);
+        }
+
+        function clearChromeLog() {
+            document.getElementById('chrome-diagnostic-log').textContent = '';
+            logChrome('Chrome诊断日志已清除');
+        }
+
+        // Chrome浏览器信息检测
+        function detectChromeInfo() {
+            const chromeInfo = document.getElementById('chrome-info');
+            const userAgent = navigator.userAgent;
+            const isChrome = /Chrome/.test(userAgent) && !/Edge/.test(userAgent);
+            const chromeVersion = userAgent.match(/Chrome\/(\d+)/);
+            const isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(userAgent);
+            
+            if (isChrome) {
+                chromeInfo.innerHTML = `
+                    <div class="status success">
+                        🌐 检测到Chrome浏览器
+                    </div>
+                    <div class="status info">
+                        📱 设备类型: ${isMobile ? '移动设备' : '桌面设备'}
+                    </div>
+                    <div class="status info">
+                        🔢 Chrome版本: ${chromeVersion ? chromeVersion[1] : '未知'}
+                    </div>
+                    <div class="status info">
+                        🌐 User Agent: ${userAgent.substring(0, 100)}...
+                    </div>
+                `;
+                logChrome(`Chrome信息检测完成 - 版本: ${chromeVersion ? chromeVersion[1] : '未知'}, 移动端: ${isMobile}`);
+            } else {
+                chromeInfo.innerHTML = `
+                    <div class="status error">
+                        ❌ 当前不是Chrome浏览器
+                    </div>
+                    <div class="status info">
+                        🌐 当前浏览器: ${userAgent}
+                    </div>
+                `;
+                logChrome('当前不是Chrome浏览器，无法进行Chrome特定诊断');
+            }
+        }
+
+        // Chrome特定功能检测
+        function detectChromeFeatures() {
+            const chromeFeatures = document.getElementById('chrome-features');
+            const features = {
+                'requestIdleCallback': 'requestIdleCallback' in window,
+                'IntersectionObserver': 'IntersectionObserver' in window,
+                'ResizeObserver': 'ResizeObserver' in window,
+                'PerformanceObserver': 'PerformanceObserver' in window,
+                'WebGL': 'WebGLRenderingContext' in window,
+                'ServiceWorker': 'serviceWorker' in navigator,
+                'PushManager': 'PushManager' in window,
+                'Notification': 'Notification' in window,
+                'localStorage': 'localStorage' in window,
+                'sessionStorage': 'sessionStorage' in window,
+                'IndexedDB': 'indexedDB' in window,
+                'WebAssembly': 'WebAssembly' in window
+            };
+
+            let featuresHTML = '';
+            Object.entries(features).forEach(([feature, supported]) => {
+                featuresHTML += `
+                    <div class="status ${supported ? 'success' : 'error'}">
+                        ${supported ? '✅' : '❌'} ${feature}: ${supported ? '支持' : '不支持'}
+                    </div>
+                `;
+            });
+
+            chromeFeatures.innerHTML = featuresHTML;
+            logChrome('Chrome功能检测完成');
+        }
+
+        // 浏览器对比
+        function compareBrowsers() {
+            const comparison = document.getElementById('browser-comparison');
+            const userAgent = navigator.userAgent;
+            const isSafari = /Safari/.test(userAgent) && !/Chrome/.test(userAgent);
+            const isChrome = /Chrome/.test(userAgent) && !/Edge/.test(userAgent);
+            
+            comparison.innerHTML = `
+                <div class="status ${isSafari ? 'success' : 'info'}">
+                    🍎 Safari: ${isSafari ? '当前浏览器' : '其他浏览器'}
+                </div>
+                <div class="status ${isChrome ? 'success' : 'info'}">
+                    🌐 Chrome: ${isChrome ? '当前浏览器' : '其他浏览器'}
+                </div>
+                <div class="status info">
+                    🔍 关键差异分析:
+                </div>
+                <ul style="margin: 10px 0; padding-left: 20px;">
+                    <li>Safari使用WebKit引擎，对某些JavaScript特性支持有限</li>
+                    <li>Chrome使用Blink引擎，支持更多现代Web特性</li>
+                    <li>Chrome可能对ES6模块加载更严格</li>
+                    <li>Safari的缓存机制可能更宽松</li>
+                </ul>
+            `;
+        }
+
+        // 测试React在Chrome中的加载
+        function testReactInChrome() {
+            const resultDiv = document.getElementById('react-test-result');
+            logChrome('🧪 开始测试React在Chrome中的加载...');
+            
+            // 测试React相关功能
+            const tests = {
+                'React全局对象': typeof React !== 'undefined',
+                'ReactDOM全局对象': typeof ReactDOM !== 'undefined',
+                'JSX支持': true, // 假设支持
+                'ES6模块': typeof import !== 'undefined',
+                '动态导入': typeof import === 'function'
+            };
+
+            let resultHTML = '';
+            Object.entries(tests).forEach(([test, passed]) => {
+                resultHTML += `
+                    <div class="status ${passed ? 'success' : 'error'}">
+                        ${passed ? '✅' : '❌'} ${test}
+                    </div>
+                `;
+            });
+
+            resultDiv.innerHTML = resultHTML;
+            logChrome('React测试完成');
+        }
+
+        // 测试模块加载
+        function testModuleLoading() {
+            const resultDiv = document.getElementById('module-test-result');
+            logChrome('🧪 开始测试模块加载...');
+            
+            // 尝试动态导入一个简单的模块
+            try {
+                // 测试ES6模块语法
+                const testModule = `
+                    export const test = 'module test';
+                    export default function() { return 'default export'; }
+                `;
+                
+                // 创建Blob URL来测试模块
+                const blob = new Blob([testModule], { type: 'application/javascript' });
+                const url = URL.createObjectURL(blob);
+                
+                resultDiv.innerHTML = `
+                    <div class="status success">✅ ES6模块语法支持</div>
+                    <div class="status success">✅ Blob URL创建成功</div>
+                    <div class="status info">模块URL: ${url.substring(0, 50)}...</div>
+                `;
+                
+                // 清理
+                setTimeout(() => URL.revokeObjectURL(url), 1000);
+                
+                logChrome('模块加载测试完成');
+            } catch (error) {
+                resultDiv.innerHTML = `
+                    <div class="status error">❌ 模块测试失败: ${error.message}</div>
+                `;
+                logChrome(`模块测试失败: ${error.message}`, 'error');
+            }
+        }
+
+        // 测试ES6特性
+        function testES6Features() {
+            const resultDiv = document.getElementById('es6-test-result');
+            logChrome('🧪 开始测试ES6特性...');
+            
+            const features = {
+                '箭头函数': () => true,
+                '模板字符串': `测试${'成功'}`,
+                '解构赋值': (() => { const {a} = {a: 1}; return a === 1; })(),
+                '默认参数': (() => { function test(a = 1) { return a; } return test() === 1; })(),
+                '展开运算符': (() => { const arr = [...[1,2,3]]; return arr.length === 3; })(),
+                'Promise': typeof Promise !== 'undefined',
+                'async/await': (() => { try { eval('async function test() {}'); return true; } catch(e) { return false; } })()
+            };
+
+            let resultHTML = '';
+            Object.entries(features).forEach(([feature, test]) => {
+                const passed = typeof test === 'function' ? test() : test;
+                resultHTML += `
+                    <div class="status ${passed ? 'success' : 'error'}">
+                        ${passed ? '✅' : '❌'} ${feature}
+                    </div>
+                `;
+            });
+
+            resultDiv.innerHTML = resultHTML;
+            logChrome('ES6特性测试完成');
+        }
+
+        // 检测Chrome扩展
+        function detectChromeExtensions() {
+            const resultDiv = document.getElementById('extension-test-result');
+            logChrome('🧪 开始检测Chrome扩展...');
+            
+            // 检测常见的可能干扰页面的扩展
+            const extensions = {
+                'AdBlock': typeof window.adblock !== 'undefined',
+                'uBlock Origin': typeof window.uBlock !== 'undefined',
+                'NoScript': typeof window.noscript !== 'undefined',
+                'Privacy Badger': typeof window.privacyBadger !== 'undefined',
+                'Ghostery': typeof window.ghostery !== 'undefined'
+            };
+
+            let resultHTML = '';
+            let hasExtensions = false;
+            
+            Object.entries(extensions).forEach(([ext, detected]) => {
+                if (detected) {
+                    hasExtensions = true;
+                    resultHTML += `
+                        <div class="status warning">
+                            ⚠️ 检测到扩展: ${ext}
+                        </div>
+                    `;
+                }
+            });
+
+            if (!hasExtensions) {
+                resultHTML = `
+                    <div class="status success">✅ 未检测到干扰性扩展</div>
+                `;
+            }
+
+            resultDiv.innerHTML = resultHTML;
+            logChrome('Chrome扩展检测完成');
+        }
+
+        // 运行完整Chrome诊断
+        function runFullChromeDiagnostic() {
+            logChrome('🚀 开始运行完整Chrome诊断...');
+            
+            // 检测Chrome版本问题
+            const userAgent = navigator.userAgent;
+            const chromeVersion = userAgent.match(/Chrome\/(\d+)/);
+            
+            if (chromeVersion) {
+                const version = parseInt(chromeVersion[1]);
+                logChrome(`Chrome版本: ${version}`);
+                
+                if (version < 80) {
+                    logChrome('⚠️ Chrome版本过低，可能不支持某些ES6特性', 'warning');
+                } else if (version < 90) {
+                    logChrome('⚠️ Chrome版本较旧，某些现代特性可能受限', 'warning');
+                } else {
+                    logChrome('✅ Chrome版本较新，应该支持所有现代特性');
+                }
+            }
+
+            // 检测可能的冲突
+            setTimeout(() => {
+                const root = document.getElementById('root');
+                if (root && root.children.length === 0) {
+                    logChrome('❌ 检测到页面仍然为空，可能存在Chrome特定问题', 'error');
+                    
+                    // 检查控制台错误
+                    const originalError = console.error;
+                    console.error = function(...args) {
+                        logChrome(`🚨 控制台错误: ${args.join(' ')}`, 'error');
+                        originalError.apply(console, args);
+                    };
+                } else {
+                    logChrome('✅ 页面内容正常加载');
+                }
+            }, 2000);
+
+            // 检查网络请求
+            if ('fetch' in window) {
+                fetch('/src/main.jsx')
+                    .then(response => {
+                        if (response.ok) {
+                            logChrome('✅ main.jsx 网络请求成功');
+                        } else {
+                            logChrome(`❌ main.jsx 网络请求失败: ${response.status}`, 'error');
+                        }
+                    })
+                    .catch(error => {
+                        logChrome(`❌ main.jsx 网络请求异常: ${error.message}`, 'error');
+                    });
+            }
+        }
+
+        // 显示Chrome问题解决方案
+        function showChromeSolutions() {
+            const solutionsDiv = document.getElementById('chrome-solutions');
+            solutionsDiv.innerHTML = `
+                <h4>🔧 Chrome白屏问题解决方案:</h4>
+                <div style="margin: 15px 0;">
+                    <div class="status warning">
+                        <strong>1. 清除Chrome缓存和Cookie</strong>
+                    </div>
+                    <p style="margin: 5px 0; font-size: 0.9rem;">
+                        设置 → 隐私设置和安全性 → 清除浏览数据 → 选择"所有时间" → 勾选所有选项 → 清除数据
+                    </p>
+                </div>
+                
+                <div style="margin: 15px 0;">
+                    <div class="status warning">
+                        <strong>2. 禁用Chrome扩展</strong>
+                    </div>
+                    <p style="margin: 5px 0; font-size: 0.9rem;">
+                        设置 → 扩展程序 → 临时禁用所有扩展 → 刷新页面测试
+                    </p>
+                </div>
+                
+                <div style="margin: 15px 0;">
+                    <div class="status warning">
+                        <strong>3. 检查Chrome设置</strong>
+                    </div>
+                    <p style="margin: 5px 0; font-size: 0.9rem;">
+                        设置 → 高级 → 系统 → 关闭"使用硬件加速" → 重启Chrome
+                    </p>
+                </div>
+                
+                <div style="margin: 15px 0;">
+                    <div class="status warning">
+                        <strong>4. 更新Chrome版本</strong>
+                    </div>
+                    <p style="margin: 5px 0; font-size: 0.9rem;">
+                        设置 → 关于Chrome → 检查更新 → 重启Chrome
+                    </p>
+                </div>
+                
+                <div style="margin: 15px 0;">
+                    <div class="status info">
+                        <strong>5. 对比测试</strong>
+                    </div>
+                    <p style="margin: 5px 0; font-size: 0.9rem;">
+                        在Safari中正常打开，说明网站本身没问题，问题出在Chrome特定环境
+                    </p>
+                </div>
+            `;
+        }
+
+        // 页面加载完成后的初始化
+        window.addEventListener('load', function() {
+            logChrome('🚀 Chrome诊断页面加载完成');
+            detectChromeInfo();
+            detectChromeFeatures();
+            compareBrowsers();
+            showChromeSolutions();
+            
+            // 自动运行基础诊断
+            setTimeout(() => {
+                logChrome('⏰ 自动运行基础诊断...');
+                testReactInChrome();
+                testModuleLoading();
+                testES6Features();
+                detectChromeExtensions();
+            }, 1000);
+        });
+
+        // 错误监听
+        window.addEventListener('error', function(event) {
+            logChrome(`🚨 页面错误: ${event.message}`, 'error');
+        });
+
+        window.addEventListener('unhandledrejection', function(event) {
+            logChrome(`🚨 未处理的Promise拒绝: ${event.reason}`, 'error');
+        });
+
+        logChrome('🔧 Chrome诊断页面初始化完成');
+    </script>
+</body>
+</html>

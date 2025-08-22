@@ -300,19 +300,73 @@
             console.log('✅ 检测到Chrome高级API，启用性能优化');
           }
           
-          // 预加载关键资源
-          const criticalResources = [
-            '/src/main.jsx',
-            '/src/App.jsx',
-            '/src/pages/Home.jsx'
-          ];
+          // Chrome特定的ES6模块加载优化
+          if (typeof import === 'function') {
+            console.log('✅ Chrome支持ES6动态导入');
+            
+            // 预加载关键资源
+            const criticalResources = [
+              '/src/main.jsx',
+              '/src/App.jsx',
+              '/src/pages/Home.jsx'
+            ];
+            
+            criticalResources.forEach(resource => {
+              const link = document.createElement('link');
+              link.rel = 'prefetch';
+              link.href = resource;
+              document.head.appendChild(link);
+            });
+          }
           
-          criticalResources.forEach(resource => {
-            const link = document.createElement('link');
-            link.rel = 'prefetch';
-            link.href = resource;
-            document.head.appendChild(link);
-          });
+          // Chrome的严格模式兼容性检查
+          try {
+            // 测试Chrome的严格模式支持
+            eval('"use strict"; const testVar = 1;');
+            console.log('✅ Chrome严格模式支持正常');
+          } catch (error) {
+            console.warn('⚠️ Chrome严格模式可能有问题:', error.message);
+          }
+          
+          // Chrome的模块加载重试机制
+          window.chromeModuleRetry = function(scriptSrc, maxRetries) {
+            if (maxRetries === undefined) maxRetries = 3;
+            
+            return new Promise(function(resolve, reject) {
+              var attempts = 0;
+              
+              function loadScript() {
+                attempts++;
+                console.log('🔄 Chrome模块加载尝试 ' + attempts + '/' + maxRetries + ': ' + scriptSrc);
+                
+                var script = document.createElement('script');
+                script.type = 'module';
+                script.src = scriptSrc;
+                
+                script.onload = function() {
+                  console.log('✅ Chrome模块加载成功');
+                  resolve();
+                };
+                
+                script.onerror = function(error) {
+                  console.error('❌ Chrome模块加载失败 (尝试 ' + attempts + '):', error);
+                  
+                  if (attempts < maxRetries) {
+                    console.log('⏰ ' + (attempts * 1000) + 'ms 后重试...');
+                    setTimeout(loadScript, attempts * 1000);
+                  } else {
+                    reject(new Error('Chrome模块加载失败，已重试 ' + maxRetries + ' 次'));
+                  }
+                };
+                
+                document.head.appendChild(script);
+              }
+              
+              loadScript();
+            });
+          };
+          
+          console.log('✅ Chrome特定优化完成');
         }
         
         // Firefox特定优化
