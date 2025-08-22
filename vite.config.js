@@ -7,7 +7,10 @@ export default defineConfig({
   server: {
     port: 3000,
     open: true,
-    host: true // 允许外部访问
+    host: true, // 允许外部访问
+    hmr: {
+      overlay: false // 移动端禁用错误覆盖层
+    }
   },
   build: {
     rollupOptions: {
@@ -32,11 +35,5 @@ export default defineConfig({
   // 移动端特定优化
   optimizeDeps: {
     include: ['react', 'react-dom', 'react-router-dom']
-  },
-  // 开发服务器优化
-  server: {
-    hmr: {
-      overlay: false // 移动端禁用错误覆盖层
-    }
   }
 })
