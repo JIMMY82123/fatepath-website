@@ -98,7 +98,7 @@ const BlogPost = () => {
         </div>
       `,
       author: 'Master Chen',
-      date: '2024-12-19',
+      date: '2025-08-22',
       readTime: '8 min read',
       category: 'BaZi Case Studies',
       tags: ['BaZi Analysis', 'Career Guidance', 'Ding Fire', 'Wood Element', 'Metal Season', 'STEM Roles', 'Personal Development'],

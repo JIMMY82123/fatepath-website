@@ -32,7 +32,7 @@ const Blog = () => {
       category: 'bazi',
       tags: ['BaZi Analysis', 'Career Guidance', 'Ding Fire', 'Wood Element', 'Metal Season', 'STEM Roles', 'Personal Development'],
       image: "/images/blog/ding-fire-autumn-metal-cover.jpg",
-      date: "2024-12-19",
+      date: "2025-08-22",
       readTime: "8 min read",
       slug: "lighting-ding-fire-autumn-metal"
     },
