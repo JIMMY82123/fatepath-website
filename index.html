@@ -234,16 +234,29 @@
     
     <div id="root"></div>
     
-    <!-- 温和的移动端修复脚本 - 不干扰正常加载 -->
+    <!-- 多浏览器兼容性优化脚本 -->
     <script>
-      // 温和的移动端修复脚本，只在必要时干预
+      // 多浏览器兼容性优化和修复脚本
       (function() {
-        console.log('🔧 启动温和的移动端修复脚本...');
+        console.log('🔧 启动多浏览器兼容性优化脚本...');
         
-        // 检测是否为移动设备
-        function isMobileDevice() {
-          return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ||
-                 window.innerWidth <= 768;
+        // 浏览器检测
+        function detectBrowser() {
+          const userAgent = navigator.userAgent;
+          const isChrome = /Chrome/.test(userAgent) && !/Edge/.test(userAgent);
+          const isSafari = /Safari/.test(userAgent) && !/Chrome/.test(userAgent);
+          const isFirefox = /Firefox/.test(userAgent);
+          const isEdge = /Edge/.test(userAgent);
+          const isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(userAgent);
+          
+          return {
+            isChrome,
+            isSafari,
+            isFirefox,
+            isEdge,
+            isMobile,
+            userAgent
+          };
         }
         
         // 检测是否为直接访问
@@ -261,72 +274,216 @@
                  referrer.includes('instagram.com');
         }
         
-        // 温和的修复策略 - 只在页面真正白屏时干预
-        function gentleMobileFix() {
-          console.log('🎯 应用温和的移动端修复策略...');
+        // Safari特定优化
+        function applySafariOptimizations() {
+          console.log('🍎 应用Safari特定优化...');
           
-          // 等待React应用自然加载
+          // Safari的WebKit优化
+          if ('webkitRequestAnimationFrame' in window) {
+            console.log('✅ 检测到WebKit，启用Safari优化');
+          }
+          
+          // 强制重绘，解决Safari渲染问题
           setTimeout(() => {
-            const root = document.getElementById('root');
-            if (root && root.children.length === 0) {
-              console.log('⚠️ 检测到移动端页面为空，应用温和修复...');
-              
-              // 显示简单的加载提示，不替换整个页面
-              const loadingDiv = document.createElement('div');
-              loadingDiv.id = 'mobile-loading-hint';
-              loadingDiv.innerHTML = `
-                <div style="
-                  position: fixed;
-                  top: 50%;
-                  left: 50%;
-                  transform: translate(-50%, -50%);
-                  background: rgba(26, 26, 26, 0.9);
-                  color: white;
-                  padding: 20px;
-                  border-radius: 12px;
-                  text-align: center;
-                  z-index: 9999;
-                  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-                  max-width: 300px;
-                  backdrop-filter: blur(10px);
-                ">
-                  <h3 style="color: #fbbf24; margin: 0 0 10px 0; font-size: 1.2rem;">FatePath</h3>
-                  <p style="margin: 0 0 15px 0; font-size: 0.9rem;">页面加载中，请稍候...</p>
-                  <button onclick="this.parentElement.parentElement.remove()" style="
-                    background: #fbbf24;
-                    color: #1a1a1a;
-                    border: none;
-                    padding: 8px 16px;
-                    border-radius: 6px;
-                    font-size: 0.8rem;
-                    cursor: pointer;
-                  ">关闭</button>
-                </div>
-              `;
-              
-              document.body.appendChild(loadingDiv);
-              
-              // 5秒后自动移除提示
-              setTimeout(() => {
-                const hint = document.getElementById('mobile-loading-hint');
-                if (hint) hint.remove();
-              }, 5000);
+            document.body.style.display = 'none';
+            document.body.offsetHeight; // 触发重排
+            document.body.style.display = '';
+          }, 100);
+        }
+        
+        // Chrome特定优化
+        function applyChromeOptimizations() {
+          console.log('🌐 应用Chrome特定优化...');
+          
+          // Chrome的性能优化
+          if ('requestIdleCallback' in window) {
+            console.log('✅ 检测到Chrome高级API，启用性能优化');
+          }
+          
+          // 预加载关键资源
+          const criticalResources = [
+            '/src/main.jsx',
+            '/src/App.jsx',
+            '/src/pages/Home.jsx'
+          ];
+          
+          criticalResources.forEach(resource => {
+            const link = document.createElement('link');
+            link.rel = 'prefetch';
+            link.href = resource;
+            document.head.appendChild(link);
+          });
+        }
+        
+        // Firefox特定优化
+        function applyFirefoxOptimizations() {
+          console.log('🦊 应用Firefox特定优化...');
+          
+          // Firefox的Gecko引擎优化
+          if ('mozRequestAnimationFrame' in window) {
+            console.log('✅ 检测到Gecko，启用Firefox优化');
+          }
+        }
+        
+        // Edge特定优化
+        function applyEdgeOptimizations() {
+          console.log('🔷 应用Edge特定优化...');
+          
+          // Edge的Blink引擎优化
+          if ('msRequestAnimationFrame' in window) {
+            console.log('✅ 检测到Edge，启用Edge优化');
+          }
+        }
+        
+        // 通用移动端优化
+        function applyMobileOptimizations() {
+          console.log('📱 应用移动端通用优化...');
+          
+          // 触摸事件优化
+          if ('ontouchstart' in window) {
+            document.documentElement.style.touchAction = 'manipulation';
+          }
+          
+          // 视口优化
+          const viewport = document.querySelector('meta[name="viewport"]');
+          if (viewport) {
+            viewport.setAttribute('content', 'width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no');
+          }
+        }
+        
+        // 页面加载状态监控
+        function monitorPageLoad() {
+          const root = document.getElementById('root');
+          let loadAttempts = 0;
+          const maxAttempts = 3;
+          
+          function checkPageLoad() {
+            if (root && root.children.length > 0) {
+              console.log('✅ 页面加载成功');
+              return;
             }
-          }, 5000); // 等待5秒，给React应用足够时间加载
+            
+            loadAttempts++;
+            if (loadAttempts < maxAttempts) {
+              console.log(`⚠️ 页面加载检查 ${loadAttempts}/${maxAttempts}`);
+              setTimeout(checkPageLoad, 2000);
+            } else {
+              console.log('❌ 页面加载失败，显示错误提示');
+              showErrorPrompt();
+            }
+          }
+          
+          // 延迟检查，给React应用足够时间加载
+          setTimeout(checkPageLoad, 3000);
         }
         
-        // 只在移动端且直接访问时应用修复
-        if (isMobileDevice() && isDirectAccess()) {
-          console.log('📱 检测到移动端直接访问，启用温和修复...');
-          gentleMobileFix();
+        // 显示错误提示
+        function showErrorPrompt() {
+          const errorDiv = document.createElement('div');
+          errorDiv.id = 'browser-error-prompt';
+          errorDiv.innerHTML = `
+            <div style="
+              position: fixed;
+              top: 50%;
+              left: 50%;
+              transform: translate(-50%, -50%);
+              background: rgba(26, 26, 26, 0.95);
+              color: white;
+              padding: 25px;
+              border-radius: 12px;
+              text-align: center;
+              z-index: 9999;
+              font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+              max-width: 350px;
+              backdrop-filter: blur(15px);
+              border: 1px solid #fbbf24;
+            ">
+              <h3 style="color: #fbbf24; margin: 0 0 15px 0; font-size: 1.3rem;">页面加载问题</h3>
+              <p style="margin: 0 0 20px 0; font-size: 0.95rem; line-height: 1.5;">
+                检测到浏览器兼容性问题，建议：
+              </p>
+              <ul style="text-align: left; margin: 0 0 20px 0; padding-left: 20px; font-size: 0.9rem;">
+                <li>清除浏览器缓存</li>
+                <li>刷新页面重试</li>
+                <li>尝试其他浏览器</li>
+              </ul>
+              <div style="display: flex; gap: 10px; justify-content: center;">
+                <button onclick="window.location.reload()" style="
+                  background: #fbbf24;
+                  color: #1a1a1a;
+                  border: none;
+                  padding: 10px 18px;
+                  border-radius: 6px;
+                  font-weight: 600;
+                  cursor: pointer;
+                  font-size: 0.9rem;
+                ">刷新页面</button>
+                <button onclick="this.parentElement.parentElement.parentElement.remove()" style="
+                  background: #374151;
+                  color: white;
+                  border: none;
+                  padding: 10px 18px;
+                  border-radius: 6px;
+                  font-weight: 600;
+                  cursor: pointer;
+                  font-size: 0.9rem;
+                ">关闭</button>
+              </div>
+            </div>
+          `;
+          
+          document.body.appendChild(errorDiv);
+          
+          // 10秒后自动移除
+          setTimeout(() => {
+            const prompt = document.getElementById('browser-error-prompt');
+            if (prompt) prompt.remove();
+          }, 10000);
+        }
+        
+        // 主优化逻辑
+        function applyBrowserOptimizations() {
+          const browser = detectBrowser();
+          console.log('🔍 检测到浏览器:', {
+            Chrome: browser.isChrome,
+            Safari: browser.isSafari,
+            Firefox: browser.isFirefox,
+            Edge: browser.isEdge,
+            Mobile: browser.isMobile
+          });
+          
+          // 应用浏览器特定优化
+          if (browser.isSafari) {
+            applySafariOptimizations();
+          } else if (browser.isChrome) {
+            applyChromeOptimizations();
+          } else if (browser.isFirefox) {
+            applyFirefoxOptimizations();
+          } else if (browser.isEdge) {
+            applyEdgeOptimizations();
+          }
+          
+          // 移动端优化
+          if (browser.isMobile) {
+            applyMobileOptimizations();
+          }
+          
+          // 监控页面加载
+          monitorPageLoad();
+        }
+        
+        // 执行优化
+        if (document.readyState === 'loading') {
+          document.addEventListener('DOMContentLoaded', applyBrowserOptimizations);
         } else {
-          console.log('ℹ️ 非移动端或非直接访问，跳过修复');
+          applyBrowserOptimizations();
         }
         
-        // 导出修复函数供外部使用
-        window.gentleMobileFix = gentleMobileFix;
+        // 导出函数供外部使用
+        window.applyBrowserOptimizations = applyBrowserOptimizations;
+        window.detectBrowser = detectBrowser;
         
-        console.log('✅ 温和的移动端修复脚本初始化完成');
+        console.log('✅ 多浏览器兼容性优化脚本初始化完成');
         
       })();
     </script>

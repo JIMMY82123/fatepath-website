@@ -112,7 +112,11 @@ function App() {
             <div className="min-h-screen bg-mystic-900">
               <Navbar />
               <Routes>
-                <Route path="/" element={<Home />} />
+                <Route path="/" element={
+                  <Suspense fallback={<MobileLoader />}>
+                    <Home />
+                  </Suspense>
+                } />
                 <Route path="/services" element={
                   <Suspense fallback={<MobileLoader />}>
                     <Services />
@@ -218,7 +222,11 @@ function App() {
               <MobileGestureHandler>
                 <Suspense fallback={<PageLoader />}>
                   <Routes>
-                    <Route path="/" element={<Home />} />
+                    <Route path="/" element={
+                      <Suspense fallback={<PageLoader />}>
+                        <Home />
+                      </Suspense>
+                    } />
                     <Route path="/services" element={<Services />} />
                     <Route path="/contact" element={<Contact />} />
                     <Route path="/faq" element={<FAQ />} />
