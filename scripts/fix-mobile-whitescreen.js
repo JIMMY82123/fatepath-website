@@ -1,425 +1,290 @@
-#!/usr/bin/env node
+// 移动端白屏问题诊断和修复脚本
+// 运行此脚本来诊断和修复移动端显示问题
 
-/**
- * 移动端白屏问题快速修复脚本
- * 使用方法: node scripts/fix-mobile-whitescreen.js
- */
+console.log('🔍 开始移动端白屏问题诊断...');
 
-import fs from 'fs';
-import path from 'path';
-
-console.log('🔧 开始修复移动端白屏问题...\n');
-
-// 检查项目结构
-function checkProjectStructure() {
-    console.log('📁 检查项目结构...');
-    
-    const requiredFiles = [
-        'src/App.jsx',
-        'src/main.jsx',
-        'index.html',
-        'package.json',
-        'vite.config.js'
-    ];
-    
-    const missingFiles = [];
-    
-    requiredFiles.forEach(file => {
-        if (!fs.existsSync(file)) {
-            missingFiles.push(file);
-        }
-    });
-    
-    if (missingFiles.length > 0) {
-        console.log('❌ 缺少必要文件:', missingFiles.join(', '));
-        return false;
-    }
-    
-    console.log('✅ 项目结构检查通过');
-    return true;
-}
-
-// 检查依赖
-function checkDependencies() {
-    console.log('\n📦 检查项目依赖...');
-    
-    try {
-        const packageJson = JSON.parse(fs.readFileSync('package.json', 'utf8'));
-        const requiredDeps = ['react', 'react-dom', 'react-router-dom'];
-        const missingDeps = [];
-        
-        requiredDeps.forEach(dep => {
-            if (!packageJson.dependencies[dep]) {
-                missingDeps.push(dep);
-            }
-        });
-        
-        if (missingDeps.length > 0) {
-            console.log('❌ 缺少必要依赖:', missingDeps.join(', '));
-            console.log('请运行: npm install');
-            return false;
-        }
-        
-        console.log('✅ 依赖检查通过');
-        return true;
-    } catch (error) {
-        console.log('❌ 无法读取 package.json:', error.message);
-        return false;
-    }
-}
-
-// 创建移动端优化配置
-function createMobileOptimizationConfig() {
-    console.log('\n⚙️ 创建移动端优化配置...');
-    
-    const viteConfig = `import { defineConfig } from 'vite'
-import react from '@vitejs/plugin-react'
-
-export default defineConfig({
-  base: '/',
-  plugins: [react()],
-  server: {
-    port: 3000,
-    open: true,
-    host: true // 允许外部访问
-  },
-  build: {
-    rollupOptions: {
-      output: {
-        manualChunks: {
-          vendor: ['react', 'react-dom'],
-          router: ['react-router-dom'],
-          animation: ['framer-motion']
-        }
-      }
-    },
-    // 移动端优化
-    target: 'es2015', // 兼容更多移动设备
-    minify: 'terser',
-    terserOptions: {
-      compress: {
-        drop_console: false, // 保留console用于调试
-        drop_debugger: true
-      }
-    }
-  },
-  // 移动端特定优化
-  optimizeDeps: {
-    include: ['react', 'react-dom', 'react-router-dom']
-  },
-  // 开发服务器优化
-  server: {
-    hmr: {
-      overlay: false // 移动端禁用错误覆盖层
-    }
-  }
-})`;
-    
-    try {
-        fs.writeFileSync('vite.config.js', viteConfig);
-        console.log('✅ Vite 配置已更新');
-    } catch (error) {
-        console.log('❌ 无法更新 Vite 配置:', error.message);
-    }
-}
-
-// 创建移动端错误处理组件
-function createMobileErrorHandler() {
-    console.log('\n🛡️ 创建移动端错误处理组件...');
-    
-    const errorHandlerPath = 'src/components/MobileErrorHandler.jsx';
-    
-    if (!fs.existsSync(errorHandlerPath)) {
-        const errorHandler = `import React, { useEffect } from 'react';
-
-// 移动端错误处理组件
-const MobileErrorHandler = ({ children }) => {
-  useEffect(() => {
-    // 全局错误处理
-    const handleError = (event) => {
-      console.error('Mobile Error:', event.error);
-      
-      // 显示用户友好的错误信息
-      const errorDiv = document.createElement('div');
-      errorDiv.style.cssText = \`
-        position: fixed;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        background: #1a1a1a;
-        color: white;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        z-index: 9999;
-        padding: 20px;
-        text-align: center;
-      \`;
-      
-      errorDiv.innerHTML = \`
-        <h2 style="color: #fbbf24; margin-bottom: 16px;">页面加载出现问题</h2>
-        <p style="margin-bottom: 20px;">请刷新页面重试，如果问题持续存在，请检查网络连接</p>
-        <button onclick="window.location.reload()" style="
-          background: #fbbf24;
-          color: #1a1a1a;
-          padding: 12px 24px;
-          border: none;
-          border-radius: 6px;
-          font-weight: 600;
-          cursor: pointer;
-        ">刷新页面</button>
-      \`;
-      
-      document.body.appendChild(errorDiv);
-    };
-
-    const handleUnhandledRejection = (event) => {
-      console.error('Unhandled Promise Rejection:', event.reason);
-    };
-
-    window.addEventListener('error', handleError);
-    window.addEventListener('unhandledrejection', handleUnhandledRejection);
-
-    return () => {
-      window.removeEventListener('error', handleError);
-      window.removeEventListener('unhandledrejection', handleUnhandledRejection);
-    };
-  }, []);
-
-  return children;
-};
-
-export default MobileErrorHandler;`;
-        
-        try {
-            fs.writeFileSync(errorHandlerPath, errorHandler);
-            console.log('✅ 移动端错误处理组件已创建');
-        } catch (error) {
-            console.log('❌ 无法创建错误处理组件:', error.message);
-        }
-    } else {
-        console.log('ℹ️ 错误处理组件已存在');
-    }
-}
-
-// 创建移动端性能监控
-function createMobilePerformanceMonitor() {
-    console.log('\n📊 创建移动端性能监控...');
-    
-    const monitorPath = 'src/utils/mobilePerformance.js';
-    
-    if (!fs.existsSync(monitorPath)) {
-        const monitor = `// 移动端性能监控工具
-
-export const initMobilePerformanceMonitoring = () => {
-  if (!isMobile()) return;
-
-  console.log('📱 初始化移动端性能监控...');
-
-  // 监控页面加载性能
-  if ('PerformanceObserver' in window) {
-    const observer = new PerformanceObserver((list) => {
-      for (const entry of list.getEntries()) {
-        if (entry.entryType === 'largest-contentful-paint') {
-          console.log('LCP:', entry.startTime, 'ms');
-          if (entry.startTime > 2500) {
-            console.warn('⚠️ 页面加载较慢，建议优化');
-          }
-        }
-      }
-    });
-
-    observer.observe({ entryTypes: ['largest-contentful-paint'] });
-  }
-
-  // 监控内存使用
-  if ('memory' in performance) {
-    setInterval(() => {
-      const memory = performance.memory;
-      const usedMB = Math.round(memory.usedJSHeapSize / 1024 / 1024);
-      const totalMB = Math.round(memory.totalJSHeapSize / 1024 / 1024);
-      
-      if (usedMB > totalMB * 0.8) {
-        console.warn('⚠️ 内存使用率较高:', usedMB, 'MB /', totalMB, 'MB');
-      }
-    }, 10000);
-  }
-};
-
-// 检测是否为移动设备
-export const isMobile = () => {
-  return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ||
-         window.innerWidth <= 768;
-};
-
-// 移动端优化建议
-export const getMobileOptimizationTips = () => {
-  const tips = [];
+// 1. 检查基本环境
+function checkBasicEnvironment() {
+  console.log('📱 检查基本环境...');
   
-  if (navigator.connection) {
-    const connection = navigator.connection;
-    if (connection.effectiveType === '2g' || connection.effectiveType === 'slow-2g') {
-      tips.push('网络连接较慢，建议切换到WiFi网络');
-    }
+  const checks = {
+    'React 可用': typeof React !== 'undefined',
+    'React Router 可用': typeof ReactRouter !== 'undefined',
+    'Tailwind CSS 可用': document.querySelector('[class*="bg-mystic"]),
+    'DOM 加载完成': document.readyState === 'complete',
+    'JavaScript 启用': true
+  };
+  
+  Object.entries(checks).forEach(([check, result]) => {
+    console.log(`${result ? '✅' : '❌'} ${check}: ${result}`);
+  });
+  
+  return checks;
+}
+
+// 2. 检查移动端特定问题
+function checkMobileSpecificIssues() {
+  console.log('📱 检查移动端特定问题...');
+  
+  const isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ||
+                   window.innerWidth <= 768;
+  
+  const mobileChecks = {
+    '移动端检测': isMobile,
+    '触摸支持': 'ontouchstart' in window,
+    '视口设置': !!document.querySelector('meta[name="viewport"]'),
+    '屏幕尺寸': `${window.screen.width}x${window.screen.height}`,
+    '视口尺寸': `${window.innerWidth}x${window.innerHeight}`,
+    '设备像素比': window.devicePixelRatio || 1
+  };
+  
+  Object.entries(mobileChecks).forEach(([check, result]) => {
+    console.log(`${typeof result === 'boolean' ? (result ? '✅' : '❌') : '📊'} ${check}: ${result}`);
+  });
+  
+  return mobileChecks;
+}
+
+// 3. 检查CSS和样式问题
+function checkCSSIssues() {
+  console.log('🎨 检查CSS和样式问题...');
+  
+  const cssChecks = {
+    'Tailwind 类存在': document.querySelector('.bg-mystic-900) !== null,
+    '主要容器存在': document.querySelector('main') !== null,
+    'Hero 部分存在': document.querySelector('header') !== null,
+    '背景色应用': document.body.style.backgroundColor || getComputedStyle(document.body).backgroundColor,
+    '字体加载': document.fonts && document.fonts.ready ? 'ready' : 'not ready'
+  };
+  
+  Object.entries(cssChecks).forEach(([check, result]) => {
+    console.log(`${result ? '✅' : '❌'} ${check}: ${result}`);
+  });
+  
+  return cssChecks;
+}
+
+// 4. 检查JavaScript错误
+function checkJavaScriptErrors() {
+  console.log('🐛 检查JavaScript错误...');
+  
+  // 监听新的错误
+  const errors = [];
+  const originalError = console.error;
+  
+  console.error = (...args) => {
+    errors.push(args);
+    originalError.apply(console, args);
+  };
+  
+  // 检查现有错误
+  const existingErrors = window.errors || [];
+  
+  return {
+    '控制台错误数量': errors.length,
+    '现有错误数量': existingErrors.length,
+    '错误详情': [...errors, ...existingErrors]
+  };
+}
+
+// 5. 尝试修复常见问题
+function attemptFixes() {
+  console.log('🔧 尝试修复常见问题...');
+  
+  const fixes = [];
+  
+  // 修复1: 确保视口设置正确
+  if (!document.querySelector('meta[name="viewport"]')) {
+    const viewport = document.createElement('meta');
+    viewport.name = 'viewport';
+    viewport.content = 'width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no';
+    document.head.appendChild(viewport);
+    fixes.push('✅ 添加了移动端视口设置');
   }
   
-  if (navigator.deviceMemory && navigator.deviceMemory < 4) {
-    tips.push('设备内存较低，建议关闭其他应用');
+  // 修复2: 强制应用背景色
+  if (!document.body.style.backgroundColor) {
+    document.body.style.backgroundColor = '#1a1a1a';
+    fixes.push('✅ 强制应用了背景色');
   }
   
-  return tips;
-};`;
-        
-        try {
-            fs.writeFileSync(monitorPath, monitor);
-            console.log('✅ 移动端性能监控已创建');
-        } catch (error) {
-            console.log('❌ 无法创建性能监控:', error.message);
-        }
-    } else {
-        console.log('ℹ️ 性能监控已存在');
+  // 修复3: 检查并修复主要容器
+  const mainContainer = document.querySelector('main');
+  if (!mainContainer) {
+    console.warn('⚠️ 主要容器不存在，尝试创建...');
+    const newMain = document.createElement('main');
+    newMain.className = 'min-h-screen bg-mystic-900';
+    newMain.innerHTML = `
+      <div class="container mx-auto px-4 py-20 text-center text-white">
+        <h1 class="text-4xl font-bold mb-4">页面加载中...</h1>
+        <p class="text-mystic-300">如果问题持续存在，请刷新页面</p>
+        <button onclick="window.location.reload()" class="mt-4 bg-gold-400 text-black px-6 py-2 rounded-lg">
+          刷新页面
+        </button>
+      </div>
+    `;
+    document.body.appendChild(newMain);
+    fixes.push('✅ 创建了临时主要容器');
+  }
+  
+  // 修复4: 添加错误边界样式
+  const style = document.createElement('style');
+  style.textContent = `
+    .mobile-error-boundary {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: #1a1a1a;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      z-index: 9999;
+      padding: 20px;
     }
+    .mobile-error-boundary h2 {
+      color: #fbbf24;
+      margin-bottom: 16px;
+    }
+    .mobile-error-boundary button {
+      background: #fbbf24;
+      color: #1a1a1a;
+      padding: 12px 24px;
+      border: none;
+      border-radius: 6px;
+      font-weight: 600;
+      cursor: pointer;
+      margin-top: 20px;
+    }
+  `;
+  document.head.appendChild(style);
+  fixes.push('✅ 添加了错误边界样式');
+  
+  return fixes;
 }
 
-// 更新 package.json 脚本
-function updatePackageScripts() {
-    console.log('\n📝 更新 package.json 脚本...');
-    
-    try {
-        const packageJson = JSON.parse(fs.readFileSync('package.json', 'utf8'));
-        
-        if (!packageJson.scripts['dev:mobile']) {
-            packageJson.scripts['dev:mobile'] = 'vite --host --port 3000';
-            packageJson.scripts['build:mobile'] = 'vite build --mode production';
-            packageJson.scripts['preview:mobile'] = 'vite preview --host --port 4173';
-            
-            fs.writeFileSync('package.json', JSON.stringify(packageJson, null, 2));
-            console.log('✅ package.json 脚本已更新');
-        } else {
-            console.log('ℹ️ package.json 脚本已是最新');
-        }
-    } catch (error) {
-        console.log('❌ 无法更新 package.json:', error.message);
-    }
+// 6. 运行完整诊断
+function runFullDiagnosis() {
+  console.log('🚀 开始完整诊断...');
+  
+  const results = {
+    basic: checkBasicEnvironment(),
+    mobile: checkMobileSpecificIssues(),
+    css: checkCSSIssues(),
+    errors: checkJavaScriptErrors()
+  };
+  
+  // 尝试修复
+  const fixes = attemptFixes();
+  
+  // 生成报告
+  const report = {
+    timestamp: new Date().toISOString(),
+    userAgent: navigator.userAgent,
+    url: window.location.href,
+    results,
+    fixes,
+    summary: generateSummary(results, fixes)
+  };
+  
+  console.log('📊 诊断报告:', report);
+  
+  // 显示结果给用户
+  showDiagnosisResults(report);
+  
+  return report;
 }
 
-// 创建移动端测试页面
-function createMobileTestPage() {
-    console.log('\n🧪 创建移动端测试页面...');
-    
-    const testPagePath = 'public/mobile-test.html';
-    
-    if (!fs.existsSync(testPagePath)) {
-        console.log('ℹ️ 移动端测试页面已存在');
-        return;
-    }
-    
-    console.log('✅ 移动端测试页面已创建');
+// 7. 生成摘要
+function generateSummary(results, fixes) {
+  const totalChecks = Object.values(results).reduce((sum, category) => {
+    return sum + Object.keys(category).length;
+  }, 0);
+  
+  const passedChecks = Object.values(results).reduce((sum, category) => {
+    return sum + Object.values(category).filter(v => v === true || (typeof v === 'string' && v !== 'unknown')).length;
+  }, 0);
+  
+  const successRate = Math.round((passedChecks / totalChecks) * 100);
+  
+  return {
+    totalChecks,
+    passedChecks,
+    successRate: `${successRate}%`,
+    status: successRate >= 80 ? '良好' : successRate >= 60 ? '一般' : '需要修复',
+    recommendations: generateRecommendations(results, fixes)
+  };
 }
 
-// 生成修复报告
-function generateFixReport() {
-    console.log('\n📋 生成修复报告...');
-    
-    const report = `
-# 移动端白屏问题修复报告
-
-## 修复时间
-${new Date().toLocaleString()}
-
-## 已完成的修复
-
-### 1. 项目结构检查
-- ✅ 检查必要文件是否存在
-- ✅ 验证项目依赖完整性
-
-### 2. 配置优化
-- ✅ 更新 Vite 配置以支持移动端
-- ✅ 添加移动端构建优化
-- ✅ 配置开发服务器支持外部访问
-
-### 3. 错误处理
-- ✅ 创建移动端错误边界组件
-- ✅ 添加全局错误捕获
-- ✅ 实现用户友好的错误提示
-
-### 4. 性能监控
-- ✅ 添加移动端性能监控
-- ✅ 监控 Core Web Vitals
-- ✅ 内存使用监控
-
-### 5. 开发工具
-- ✅ 更新 package.json 脚本
-- ✅ 创建移动端测试页面
-
-## 下一步建议
-
-### 立即测试
-1. 运行 \`npm run dev:mobile\` 启动开发服务器
-2. 在移动设备上访问 \`http://[你的IP]:3000\`
-3. 访问 \`/mobile-test.html\` 进行诊断测试
-
-### 长期优化
-1. 实现组件懒加载
-2. 添加 Service Worker 支持
-3. 优化图片和资源加载
-4. 实现渐进式 Web 应用 (PWA)
-
-### 监控和维护
-1. 定期检查移动端性能
-2. 监控错误率和用户体验
-3. 收集用户反馈并持续优化
-
-## 联系支持
-如果问题仍然存在，请联系技术支持：
-- 邮箱: chenxiao0801@hotmail.com
-- 提供设备信息和错误日志
-`;
-    
-    try {
-        fs.writeFileSync('MOBILE_FIX_REPORT.md', report);
-        console.log('✅ 修复报告已生成: MOBILE_FIX_REPORT.md');
-    } catch (error) {
-        console.log('❌ 无法生成修复报告:', error.message);
-    }
+// 8. 生成建议
+function generateRecommendations(results, fixes) {
+  const recommendations = [];
+  
+  if (results.basic['React 可用'] === false) {
+    recommendations.push('检查React是否正确加载');
+  }
+  
+  if (results.mobile['视口设置'] === false) {
+    recommendations.push('添加移动端视口meta标签');
+  }
+  
+  if (results.css['Tailwind 类存在'] === false) {
+    recommendations.push('检查Tailwind CSS是否正确加载');
+  }
+  
+  if (results.errors['控制台错误数量'] > 0) {
+    recommendations.push('检查控制台错误并修复JavaScript问题');
+  }
+  
+  if (fixes.length === 0) {
+    recommendations.push('页面配置看起来正常，问题可能在其他地方');
+  }
+  
+  return recommendations;
 }
 
-// 主修复流程
-async function main() {
-    console.log('🚀 开始移动端白屏问题修复流程...\n');
-    
-    // 检查项目结构
-    if (!checkProjectStructure()) {
-        console.log('\n❌ 项目结构检查失败，请检查项目完整性');
-        process.exit(1);
-    }
-    
-    // 检查依赖
-    if (!checkDependencies()) {
-        console.log('\n❌ 依赖检查失败，请先安装必要依赖');
-        process.exit(1);
-    }
-    
-    // 执行修复步骤
-    createMobileOptimizationConfig();
-    createMobileErrorHandler();
-    createMobilePerformanceMonitor();
-    updatePackageScripts();
-    createMobileTestPage();
-    generateFixReport();
-    
-    console.log('\n🎉 移动端白屏问题修复完成！');
-    console.log('\n📱 下一步操作：');
-    console.log('1. 运行: npm run dev:mobile');
-    console.log('2. 在移动设备上测试');
-    console.log('3. 查看修复报告: MOBILE_FIX_REPORT.md');
-    console.log('4. 如果仍有问题，访问: /mobile-test.html');
+// 9. 显示诊断结果
+function showDiagnosisResults(report) {
+  const resultsDiv = document.createElement('div');
+  resultsDiv.className = 'mobile-error-boundary';
+  resultsDiv.innerHTML = `
+    <h2>移动端诊断结果</h2>
+    <div style="text-align: left; max-width: 400px;">
+      <p><strong>状态:</strong> ${report.summary.status}</p>
+      <p><strong>成功率:</strong> ${report.summary.successRate}</p>
+      <p><strong>修复项目:</strong> ${report.fixes.length}</p>
+      <div style="margin: 16px 0;">
+        <strong>建议:</strong>
+        <ul style="margin: 8px 0; padding-left: 20px;">
+          ${report.summary.recommendations.map(rec => `<li>${rec}</li>`).join('')}
+        </ul>
+      </div>
+    </div>
+    <button onclick="this.parentElement.remove()">关闭</button>
+  `;
+  
+  document.body.appendChild(resultsDiv);
 }
 
-// 运行修复流程
-main().catch(error => {
-    console.error('❌ 修复过程中出现错误:', error);
-    process.exit(1);
-});
+// 10. 自动运行诊断
+if (document.readyState === 'complete') {
+  runFullDiagnosis();
+} else {
+  window.addEventListener('load', runFullDiagnosis);
+}
+
+// 导出函数供外部使用
+window.mobileDiagnosis = {
+  runFullDiagnosis,
+  checkBasicEnvironment,
+  checkMobileSpecificIssues,
+  checkCSSIssues,
+  checkJavaScriptErrors,
+  attemptFixes
+};
+
+console.log('✅ 移动端诊断脚本加载完成');
+console.log('💡 使用 window.mobileDiagnosis.runFullDiagnosis() 运行诊断');

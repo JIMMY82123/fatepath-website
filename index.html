@@ -233,6 +233,86 @@
     <!-- End Google Tag Manager (noscript) -->
     
     <div id="root"></div>
+    
+    <!-- 谷歌广告直接访问修复脚本 -->
+    <script>
+      // 内联修复脚本，解决谷歌广告直接访问白屏问题
+      (function() {
+        console.log('🔧 加载谷歌广告直接访问修复脚本...');
+        
+        // 检测是否为直接访问
+        function isDirectAccess() {
+          const referrer = document.referrer;
+          const isDirect = !referrer || 
+                           referrer.includes('google.com') || 
+                           referrer.includes('googleadservices.com') ||
+                           referrer.includes('doubleclick.net') ||
+                           referrer.includes('googlesyndication.com');
+          
+          console.log('🔍 访问来源检测:', { referrer, isDirect, url: window.location.href });
+          return isDirect;
+        }
+        
+        // 如果是从谷歌广告直接访问，立即应用修复
+        if (isDirectAccess()) {
+          console.log('🎯 检测到谷歌广告直接访问，应用修复...');
+          
+          // 添加加载指示器
+          const root = document.getElementById('root');
+          if (root) {
+            root.innerHTML = `
+              <div style="
+                position: fixed;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                background: #1a1a1a;
+                color: white;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                z-index: 9999;
+                font-family: Arial, sans-serif;
+              ">
+                <div style="text-align: center; max-width: 400px; padding: 20px;">
+                  <h2 style="color: #fbbf24; margin-bottom: 16px;">正在优化移动端体验...</h2>
+                  <p style="margin-bottom: 20px;">检测到直接访问，正在加载最佳版本...</p>
+                  <div style="
+                    width: 40px;
+                    height: 40px;
+                    border: 4px solid #333;
+                    border-top: 4px solid #fbbf24;
+                    border-radius: 50%;
+                    animation: spin 1s linear infinite;
+                    margin: 0 auto 20px;
+                  "></div>
+                  <p style="font-size: 14px; color: #888;">请稍候，正在为您优化页面...</p>
+                </div>
+              </div>
+              <style>
+                @keyframes spin {
+                  0% { transform: rotate(0deg); }
+                  100% { transform: rotate(360deg); }
+                }
+              </style>
+            `;
+          }
+          
+          // 延迟加载主应用，确保修复生效
+          setTimeout(() => {
+            console.log('⏰ 延迟加载主应用...');
+            const script = document.createElement('script');
+            script.type = 'module';
+            script.src = '/src/main.jsx';
+            document.body.appendChild(script);
+          }, 1000);
+        }
+      })();
+    </script>
+    
+    <!-- 主应用脚本 -->
     <script type="module" src="/src/main.jsx"></script>
   </body>
 </html> 

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>移动端诊断测试 - FatePath</title>
+    <title>移动端测试页面 - FatePath</title>
     <style>
         * {
             margin: 0;
@@ -12,16 +12,16 @@
         }
         
         body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            font-family: Arial, sans-serif;
             background: #1a1a1a;
             color: white;
             line-height: 1.6;
-            padding: 20px;
         }
         
         .container {
             max-width: 600px;
             margin: 0 auto;
+            padding: 20px;
         }
         
         .header {
@@ -32,472 +32,493 @@
             border-radius: 10px;
         }
         
+        .header h1 {
+            color: #fbbf24;
+            margin-bottom: 10px;
+        }
+        
         .test-section {
             background: #2a2a2a;
             margin-bottom: 20px;
             padding: 20px;
             border-radius: 10px;
-            border-left: 4px solid #fbbf24;
         }
         
-        .test-item {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 10px 0;
-            border-bottom: 1px solid #3a3a3a;
+        .test-section h2 {
+            color: #fbbf24;
+            margin-bottom: 15px;
+            border-bottom: 2px solid #fbbf24;
+            padding-bottom: 10px;
         }
         
-        .test-item:last-child {
-            border-bottom: none;
-        }
-        
-        .status {
-            padding: 4px 8px;
-            border-radius: 4px;
-            font-size: 12px;
-            font-weight: bold;
-        }
-        
-        .status.pass {
-            background: #10b981;
-            color: white;
-        }
-        
-        .status.fail {
-            background: #ef4444;
-            color: white;
-        }
-        
-        .status.warning {
-            background: #f59e0b;
-            color: white;
-        }
-        
-        .btn {
+        .test-button {
             background: #fbbf24;
             color: #1a1a1a;
             border: none;
             padding: 12px 24px;
             border-radius: 6px;
-            font-weight: bold;
+            font-weight: 600;
             cursor: pointer;
-            margin: 5px;
-            transition: background 0.2s;
+            margin: 10px 5px;
+            transition: all 0.3s ease;
         }
         
-        .btn:hover {
+        .test-button:hover {
             background: #f59e0b;
+            transform: translateY(-2px);
         }
         
-        .btn:disabled {
-            background: #6b7280;
+        .test-button:disabled {
+            background: #666;
             cursor: not-allowed;
+            transform: none;
         }
         
-        .log {
-            background: #1a1a1a;
-            border: 1px solid #3a3a3a;
-            border-radius: 6px;
+        .result {
+            background: #333;
             padding: 15px;
+            border-radius: 6px;
             margin-top: 15px;
             font-family: monospace;
-            font-size: 12px;
+            white-space: pre-wrap;
             max-height: 200px;
             overflow-y: auto;
         }
         
-        .device-info {
-            background: #1a1a1a;
-            border: 1px solid #3a3a3a;
-            border-radius: 6px;
-            padding: 15px;
-            margin-top: 15px;
+        .success { border-left: 4px solid #10b981; }
+        .warning { border-left: 4px solid #f59e0b; }
+        .error { border-left: 4px solid #ef4444; }
+        
+        .status {
+            display: inline-block;
+            padding: 4px 8px;
+            border-radius: 4px;
+            font-size: 12px;
+            font-weight: 600;
+            margin-left: 10px;
         }
         
-        .device-info h3 {
-            margin-bottom: 10px;
-            color: #fbbf24;
-        }
+        .status.success { background: #10b981; color: white; }
+        .status.warning { background: #f59e0b; color: white; }
+        .status.error { background: #ef4444; color: white; }
         
         .info-grid {
             display: grid;
             grid-template-columns: 1fr 1fr;
-            gap: 10px;
+            gap: 15px;
+            margin-top: 15px;
         }
         
         .info-item {
-            padding: 8px;
-            background: #2a2a2a;
+            background: #333;
+            padding: 10px;
             border-radius: 4px;
+            text-align: center;
         }
         
-        .info-label {
-            font-size: 12px;
-            color: #9ca3af;
-            margin-bottom: 4px;
+        .info-item strong {
+            color: #fbbf24;
+            display: block;
+            margin-bottom: 5px;
         }
         
-        .info-value {
-            font-weight: bold;
+        @media (max-width: 768px) {
+            .info-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .test-button {
+                width: 100%;
+                margin: 5px 0;
+            }
         }
     </style>
 </head>
 <body>
     <div class="container">
         <div class="header">
-            <h1>📱 移动端诊断测试</h1>
-            <p>FatePath 移动端兼容性检测工具</p>
+            <h1>🔧 移动端问题诊断工具</h1>
+            <p>专门用于测试和修复谷歌广告直接访问问题</p>
         </div>
-
+        
         <div class="test-section">
-            <h2>🔍 基础功能测试</h2>
-            <div class="test-item">
-                <span>JavaScript 支持</span>
-                <span class="status pass" id="js-test">通过</span>
+            <h2>📱 设备信息检测</h2>
+            <div id="device-info" class="result">
+                点击下方按钮开始检测...
             </div>
-            <div class="test-item">
-                <span>DOM 支持</span>
-                <span class="status pass" id="dom-test">通过</span>
-            </div>
-            <div class="test-item">
-                <span>触摸事件</span>
-                <span class="status" id="touch-test">检测中...</span>
-            </div>
-            <div class="test-item">
-                <span>视口大小</span>
-                <span class="status" id="viewport-test">检测中...</span>
-            </div>
+            <button class="test-button" onclick="checkDeviceInfo()">检测设备信息</button>
         </div>
-
+        
         <div class="test-section">
-            <h2>🌐 网络和性能测试</h2>
-            <div class="test-item">
-                <span>网络连接</span>
-                <span class="status" id="network-test">检测中...</span>
+            <h2>🌐 网络和性能检测</h2>
+            <div id="network-info" class="result">
+                点击下方按钮开始检测...
             </div>
-            <div class="test-item">
-                <span>页面加载时间</span>
-                <span class="status" id="load-test">检测中...</span>
-            </div>
-            <div class="test-item">
-                <span>内存使用</span>
-                <span class="status" id="memory-test">检测中...</span>
-            </div>
+            <button class="test-button" onclick="checkNetworkInfo()">检测网络性能</button>
         </div>
-
+        
         <div class="test-section">
-            <h2>📱 设备信息</h2>
-            <div class="device-info">
-                <h3>设备详情</h3>
-                <div class="info-grid" id="device-grid">
-                    <!-- 设备信息将在这里显示 -->
-                </div>
+            <h2>🔍 访问来源检测</h2>
+            <div id="referrer-info" class="result">
+                点击下方按钮开始检测...
             </div>
+            <button class="test-button" onclick="checkReferrerInfo()">检测访问来源</button>
         </div>
-
+        
         <div class="test-section">
-            <h2>🛠️ 诊断工具</h2>
-            <button class="btn" onclick="runFullDiagnostics()">运行完整诊断</button>
-            <button class="btn" onclick="exportReport()">导出诊断报告</button>
-            <button class="btn" onclick="clearLog()">清除日志</button>
-            <button class="btn" onclick="testMainApp()">测试主应用</button>
-        </div>
-
-        <div class="test-section">
-            <h2>📋 诊断日志</h2>
-            <div class="log" id="diagnostic-log">
-                <div>等待诊断开始...</div>
+            <h2>⚡ 页面加载测试</h2>
+            <div id="loading-test" class="result">
+                点击下方按钮开始测试...
             </div>
+            <button class="test-button" onclick="testPageLoading()">测试页面加载</button>
+        </div>
+        
+        <div class="test-section">
+            <h2>🛠️ 修复功能测试</h2>
+            <div id="fix-test" class="result">
+                点击下方按钮开始测试...
+            </div>
+            <button class="test-button" onclick="testFixFunctions()">测试修复功能</button>
+            <button class="test-button" onclick="simulateDirectAccess()">模拟直接访问</button>
+        </div>
+        
+        <div class="test-section">
+            <h2>📊 综合诊断报告</h2>
+            <div id="comprehensive-report" class="result">
+                点击下方按钮生成报告...
+            </div>
+            <button class="test-button" onclick="generateComprehensiveReport()">生成综合报告</button>
+            <button class="test-button" onclick="exportReport()">导出报告</button>
+        </div>
+        
+        <div class="test-section">
+            <h2>🔗 快速导航</h2>
+            <button class="test-button" onclick="goToHome()">前往主页</button>
+            <button class="test-button" onclick="goToServices()">前往服务页面</button>
+            <button class="test-button" onclick="goToContact()">前往联系页面</button>
+            <button class="test-button" onclick="refreshPage()">刷新页面</button>
         </div>
     </div>
 
     <script>
-        // 诊断日志
-        const log = document.getElementById('diagnostic-log');
+        // 设备信息检测
+        function checkDeviceInfo() {
+            const result = document.getElementById('device-info');
+            result.innerHTML = '正在检测设备信息...';
+            
+            try {
+                const deviceInfo = {
+                    userAgent: navigator.userAgent,
+                    platform: navigator.platform,
+                    language: navigator.language,
+                    cookieEnabled: navigator.cookieEnabled,
+                    onLine: navigator.onLine,
+                    screenSize: `${window.screen.width}x${window.screen.height}`,
+                    viewportSize: `${window.innerWidth}x${window.innerHeight}`,
+                    pixelRatio: window.devicePixelRatio || 1,
+                    memory: navigator.deviceMemory || 'unknown',
+                    cores: navigator.hardwareConcurrency || 'unknown',
+                    touchSupport: 'ontouchstart' in window,
+                    orientation: window.screen.orientation?.type || 'unknown'
+                };
+                
+                result.innerHTML = JSON.stringify(deviceInfo, null, 2);
+                result.className = 'result success';
+            } catch (error) {
+                result.innerHTML = `检测失败: ${error.message}`;
+                result.className = 'result error';
+            }
+        }
         
-        function addLog(message, type = 'info') {
-            const timestamp = new Date().toLocaleTimeString();
-            const logEntry = document.createElement('div');
-            logEntry.style.color = type === 'error' ? '#ef4444' : type === 'warning' ? '#f59e0b' : '#10b981';
-            logEntry.textContent = `[${timestamp}] ${message}`;
-            log.appendChild(logEntry);
-            log.scrollTop = log.scrollHeight;
-        }
-
-        function clearLog() {
-            log.innerHTML = '<div>日志已清除</div>';
-        }
-
-        // 基础功能测试
-        function runBasicTests() {
-            addLog('开始基础功能测试...');
+        // 网络和性能检测
+        function checkNetworkInfo() {
+            const result = document.getElementById('network-info');
+            result.innerHTML = '正在检测网络信息...';
             
-            // JavaScript 测试
             try {
-                eval('const test = 1 + 1;');
-                document.getElementById('js-test').textContent = '通过';
-                addLog('✅ JavaScript 支持正常');
+                const networkInfo = {
+                    connection: navigator.connection ? {
+                        effectiveType: navigator.connection.effectiveType,
+                        downlink: navigator.connection.downlink,
+                        rtt: navigator.connection.rtt,
+                        saveData: navigator.connection.saveData
+                    } : 'Not supported',
+                    performance: {
+                        navigationStart: performance.timing?.navigationStart || 'Not available',
+                        loadEventEnd: performance.timing?.loadEventEnd || 'Not available',
+                        domContentLoaded: performance.timing?.domContentLoadedEventEnd || 'Not available'
+                    },
+                    memory: performance.memory ? {
+                        usedJSHeapSize: Math.round(performance.memory.usedJSHeapSize / 1024 / 1024) + ' MB',
+                        totalJSHeapSize: Math.round(performance.memory.totalJSHeapSize / 1024 / 1024) + ' MB',
+                        jsHeapSizeLimit: Math.round(performance.memory.jsHeapSizeLimit / 1024 / 1024) + ' MB'
+                    } : 'Not available'
+                };
+                
+                result.innerHTML = JSON.stringify(networkInfo, null, 2);
+                result.className = 'result success';
             } catch (error) {
-                document.getElementById('js-test').textContent = '失败';
-                document.getElementById('js-test').className = 'status fail';
-                addLog('❌ JavaScript 支持异常', 'error');
-            }
-
-            // DOM 测试
-            try {
-                const testElement = document.createElement('div');
-                document.body.appendChild(testElement);
-                document.body.removeChild(testElement);
-                document.getElementById('dom-test').textContent = '通过';
-                addLog('✅ DOM 支持正常');
-            } catch (error) {
-                document.getElementById('dom-test').textContent = '失败';
-                document.getElementById('dom-test').className = 'status fail';
-                addLog('❌ DOM 支持异常', 'error');
-            }
-
-            // 触摸事件测试
-            if ('ontouchstart' in window) {
-                document.getElementById('touch-test').textContent = '支持';
-                document.getElementById('touch-test').className = 'status pass';
-                addLog('✅ 触摸事件支持正常');
-            } else {
-                document.getElementById('touch-test').textContent = '不支持';
-                document.getElementById('touch-test').className = 'status warning';
-                addLog('⚠️ 触摸事件不支持', 'warning');
-            }
-
-            // 视口测试
-            if (window.innerWidth > 0 && window.innerHeight > 0) {
-                document.getElementById('viewport-test').textContent = '正常';
-                document.getElementById('viewport-test').className = 'status pass';
-                addLog(`✅ 视口大小: ${window.innerWidth}x${window.innerHeight}`);
-            } else {
-                document.getElementById('viewport-test').textContent = '异常';
-                document.getElementById('viewport-test').className = 'status fail';
-                addLog('❌ 视口大小异常', 'error');
+                result.innerHTML = `检测失败: ${error.message}`;
+                result.className = 'result error';
             }
         }
-
-        // 网络和性能测试
-        function runNetworkTests() {
-            addLog('开始网络和性能测试...');
+        
+        // 访问来源检测
+        function checkReferrerInfo() {
+            const result = document.getElementById('referrer-info');
+            result.innerHTML = '正在检测访问来源...';
             
-            // 网络连接测试
-            if (navigator.onLine) {
-                document.getElementById('network-test').textContent = '在线';
-                document.getElementById('network-test').className = 'status pass';
-                addLog('✅ 网络连接正常');
-            } else {
-                document.getElementById('network-test').textContent = '离线';
-                document.getElementById('network-test').className = 'status fail';
-                addLog('❌ 网络连接异常', 'error');
+            try {
+                const referrerInfo = {
+                    referrer: document.referrer || 'No referrer (direct access)',
+                    url: window.location.href,
+                    pathname: window.location.pathname,
+                    search: window.location.search,
+                    hash: window.location.hash,
+                    timestamp: new Date().toISOString(),
+                    isDirectAccess: !document.referrer,
+                    isGoogleAds: document.referrer && (
+                        document.referrer.includes('google.com') ||
+                        document.referrer.includes('googleadservices.com') ||
+                        document.referrer.includes('doubleclick.net') ||
+                        document.referrer.includes('googlesyndication.com')
+                    )
+                };
+                
+                result.innerHTML = JSON.stringify(referrerInfo, null, 2);
+                result.className = 'result success';
+            } catch (error) {
+                result.innerHTML = `检测失败: ${error.message}`;
+                result.className = 'result error';
             }
-
-            // 页面加载时间测试
-            if (performance && performance.timing) {
-                const loadTime = performance.timing.loadEventEnd - performance.timing.loadEventStart;
-                if (loadTime > 0) {
-                    document.getElementById('load-test').textContent = `${loadTime}ms`;
-                    document.getElementById('load-test').className = loadTime < 3000 ? 'status pass' : 'status warning';
-                    addLog(`📊 页面加载时间: ${loadTime}ms`);
+        }
+        
+        // 页面加载测试
+        function testPageLoading() {
+            const result = document.getElementById('loading-test');
+            result.innerHTML = '正在测试页面加载...';
+            
+            try {
+                const startTime = performance.now();
+                
+                // 模拟页面加载测试
+                setTimeout(() => {
+                    const loadTime = performance.now() - startTime;
+                    const loadInfo = {
+                        loadTime: Math.round(loadTime) + ' ms',
+                        domReady: document.readyState,
+                        performance: {
+                            navigationStart: performance.timing?.navigationStart || 'Not available',
+                            loadEventEnd: performance.timing?.loadEventEnd || 'Not available'
+                        },
+                        resources: performance.getEntriesByType('resource').length,
+                        recommendations: []
+                    };
+                    
+                    if (loadTime > 3000) {
+                        loadInfo.recommendations.push('页面加载时间较长，建议优化');
+                    }
+                    
+                    if (document.readyState !== 'complete') {
+                        loadInfo.recommendations.push('DOM未完全加载');
+                    }
+                    
+                    result.innerHTML = JSON.stringify(loadInfo, null, 2);
+                    result.className = loadInfo.recommendations.length > 0 ? 'result warning' : 'result success';
+                }, 1000);
+                
+            } catch (error) {
+                result.innerHTML = `测试失败: ${error.message}`;
+                result.className = 'result error';
+            }
+        }
+        
+        // 修复功能测试
+        function testFixFunctions() {
+            const result = document.getElementById('fix-test');
+            result.innerHTML = '正在测试修复功能...';
+            
+            try {
+                const fixTest = {
+                    mobileErrorBoundary: typeof MobileErrorBoundary !== 'undefined',
+                    mobilePerformanceMonitor: typeof MobilePerformanceMonitor !== 'undefined',
+                    mobileOptimization: typeof mobileOptimization !== 'undefined',
+                    mobileDiagnostics: typeof mobileDiagnostics !== 'undefined',
+                    fixGoogleAdsDirectAccess: typeof window.fixGoogleAdsDirectAccess !== 'undefined',
+                    testResults: []
+                };
+                
+                // 测试各种修复功能
+                if (fixTest.mobileErrorBoundary) {
+                    fixTest.testResults.push('✅ 移动端错误边界可用');
                 } else {
-                    document.getElementById('load-test').textContent = '检测中...';
-                    addLog('⏳ 页面加载时间检测中...');
+                    fixTest.testResults.push('❌ 移动端错误边界不可用');
                 }
-            } else {
-                document.getElementById('load-test').textContent = '不支持';
-                document.getElementById('load-test').className = 'status warning';
-                addLog('⚠️ 性能API不支持', 'warning');
-            }
-
-            // 内存使用测试
-            if (performance && performance.memory) {
-                const memory = performance.memory;
-                const usedMB = Math.round(memory.usedJSHeapSize / 1024 / 1024);
-                const totalMB = Math.round(memory.totalJSHeapSize / 1024 / 1024);
-                document.getElementById('memory-test').textContent = `${usedMB}MB/${totalMB}MB`;
-                document.getElementById('memory-test').className = 'status pass';
-                addLog(`💾 内存使用: ${usedMB}MB / ${totalMB}MB`);
-            } else {
-                document.getElementById('memory-test').textContent = '不支持';
-                document.getElementById('memory-test').className = 'status warning';
-                addLog('⚠️ 内存API不支持', 'warning');
+                
+                if (fixTest.fixGoogleAdsDirectAccess) {
+                    fixTest.testResults.push('✅ 谷歌广告直接访问修复功能可用');
+                } else {
+                    fixTest.testResults.push('❌ 谷歌广告直接访问修复功能不可用');
+                }
+                
+                result.innerHTML = JSON.stringify(fixTest, null, 2);
+                result.className = 'result success';
+            } catch (error) {
+                result.innerHTML = `测试失败: ${error.message}`;
+                result.className = 'result error';
             }
         }
-
-        // 收集设备信息
-        function collectDeviceInfo() {
-            addLog('收集设备信息...');
-            
-            const deviceInfo = {
-                '用户代理': navigator.userAgent,
-                '平台': navigator.platform,
-                '语言': navigator.language,
-                'Cookie': navigator.cookieEnabled ? '启用' : '禁用',
-                '屏幕尺寸': `${window.screen.width}x${window.screen.height}`,
-                '视口尺寸': `${window.innerWidth}x${window.innerHeight}`,
-                '像素比': window.devicePixelRatio || 1,
-                '内存': navigator.deviceMemory ? `${navigator.deviceMemory}GB` : '未知',
-                'CPU核心': navigator.hardwareConcurrency || '未知',
-                '触摸支持': 'ontouchstart' in window ? '是' : '否',
-                '方向': window.screen.orientation ? window.screen.orientation.type : '未知'
-            };
-
-            const deviceGrid = document.getElementById('device-grid');
-            deviceGrid.innerHTML = '';
-
-            Object.entries(deviceInfo).forEach(([label, value]) => {
-                const infoItem = document.createElement('div');
-                infoItem.className = 'info-item';
-                infoItem.innerHTML = `
-                    <div class="info-label">${label}</div>
-                    <div class="info-value">${value}</div>
-                `;
-                deviceGrid.appendChild(infoItem);
-            });
-
-            addLog('✅ 设备信息收集完成');
-        }
-
-        // 运行完整诊断
-        async function runFullDiagnostics() {
-            addLog('🚀 开始完整诊断...');
+        
+        // 模拟直接访问
+        function simulateDirectAccess() {
+            const result = document.getElementById('fix-test');
+            result.innerHTML = '正在模拟直接访问...';
             
             try {
-                // 基础测试
-                runBasicTests();
+                // 清除referrer信息（模拟直接访问）
+                Object.defineProperty(document, 'referrer', {
+                    get: function() { return ''; },
+                    configurable: true
+                });
                 
-                // 网络测试
-                runNetworkTests();
+                // 模拟页面重新加载
+                const simulation = {
+                    message: '已模拟直接访问场景',
+                    referrer: document.referrer,
+                    timestamp: new Date().toISOString(),
+                    nextSteps: [
+                        '1. 刷新页面查看效果',
+                        '2. 检查控制台日志',
+                        '3. 观察页面加载行为'
+                    ]
+                };
                 
-                // 设备信息
-                collectDeviceInfo();
+                result.innerHTML = JSON.stringify(simulation, null, 2);
+                result.className = 'result warning';
                 
-                // 兼容性测试
-                await runCompatibilityTests();
+                // 3秒后提示刷新
+                setTimeout(() => {
+                    if (confirm('模拟完成！建议刷新页面查看效果。是否现在刷新？')) {
+                        window.location.reload();
+                    }
+                }, 3000);
                 
-                addLog('✅ 完整诊断完成');
             } catch (error) {
-                addLog(`❌ 诊断过程中出现错误: ${error.message}`, 'error');
+                result.innerHTML = `模拟失败: ${error.message}`;
+                result.className = 'result error';
             }
         }
-
-        // 兼容性测试
-        async function runCompatibilityTests() {
-            addLog('开始兼容性测试...');
+        
+        // 生成综合报告
+        function generateComprehensiveReport() {
+            const result = document.getElementById('comprehensive-report');
+            result.innerHTML = '正在生成综合报告...';
             
-            const tests = [
-                { name: 'ES6 Promise', test: () => typeof Promise !== 'undefined' },
-                { name: 'Fetch API', test: () => typeof fetch !== 'undefined' },
-                { name: 'Service Worker', test: () => 'serviceWorker' in navigator },
-                { name: 'WebGL', test: () => !!window.WebGLRenderingContext },
-                { name: 'Local Storage', test: () => !!window.localStorage },
-                { name: 'Session Storage', test: () => !!window.sessionStorage },
-                { name: 'IndexedDB', test: () => !!window.indexedDB },
-                { name: 'Web Workers', test: () => !!window.Worker },
-                { name: 'Geolocation', test: () => !!navigator.geolocation },
-                { name: 'Notifications', test: () => !!window.Notification }
-            ];
-
-            for (const test of tests) {
-                try {
-                    const result = test.test();
-                    addLog(`${result ? '✅' : '❌'} ${test.name}: ${result ? '支持' : '不支持'}`);
-                } catch (error) {
-                    addLog(`❌ ${test.name}: 测试失败 - ${error.message}`, 'error');
+            try {
+                const report = {
+                    timestamp: new Date().toISOString(),
+                    device: {
+                        userAgent: navigator.userAgent,
+                        platform: navigator.platform,
+                        screenSize: `${window.screen.width}x${window.screen.height}`,
+                        viewportSize: `${window.innerWidth}x${window.innerHeight}`,
+                        pixelRatio: window.devicePixelRatio || 1,
+                        touchSupport: 'ontouchstart' in window
+                    },
+                    network: {
+                        onLine: navigator.onLine,
+                        connection: navigator.connection ? {
+                            effectiveType: navigator.connection.effectiveType,
+                            downlink: navigator.connection.downlink
+                        } : 'Not supported'
+                    },
+                    access: {
+                        referrer: document.referrer || 'Direct access',
+                        url: window.location.href,
+                        isDirectAccess: !document.referrer,
+                        isGoogleAds: document.referrer && document.referrer.includes('google')
+                    },
+                    performance: {
+                        readyState: document.readyState,
+                        loadTime: performance.timing ? 
+                            performance.timing.loadEventEnd - performance.timing.navigationStart : 'Not available'
+                    },
+                    recommendations: []
+                };
+                
+                // 生成建议
+                if (report.access.isDirectAccess) {
+                    report.recommendations.push('检测到直接访问，建议启用修复功能');
                 }
+                
+                if (report.device.touchSupport) {
+                    report.recommendations.push('触摸设备，建议优化触摸体验');
+                }
+                
+                if (report.network.connection === 'Not supported') {
+                    report.recommendations.push('网络信息不可用，可能影响性能优化');
+                }
+                
+                result.innerHTML = JSON.stringify(report, null, 2);
+                result.className = 'result success';
+                
+            } catch (error) {
+                result.innerHTML = `生成失败: ${error.message}`;
+                result.className = 'result error';
             }
         }
-
-        // 导出诊断报告
+        
+        // 导出报告
         function exportReport() {
-            addLog('导出诊断报告...');
-            
-            const report = {
-                timestamp: new Date().toISOString(),
-                url: window.location.href,
-                userAgent: navigator.userAgent,
-                screenSize: `${window.screen.width}x${window.screen.height}`,
-                viewportSize: `${window.innerWidth}x${window.innerHeight}`,
-                tests: {
-                    javascript: document.getElementById('js-test').textContent,
-                    dom: document.getElementById('dom-test').textContent,
-                    touch: document.getElementById('touch-test').textContent,
-                    viewport: document.getElementById('viewport-test').textContent,
-                    network: document.getElementById('network-test').textContent,
-                    loadTime: document.getElementById('load-test').textContent,
-                    memory: document.getElementById('memory-test').textContent
-                }
-            };
-
-            const blob = new Blob([JSON.stringify(report, null, 2)], { type: 'application/json' });
-            const url = URL.createObjectURL(blob);
-            
-            const a = document.createElement('a');
-            a.href = url;
-            a.download = `mobile-diagnostics-${new Date().toISOString().split('T')[0]}.json`;
-            a.click();
-            
-            URL.revokeObjectURL(url);
-            addLog('✅ 诊断报告已导出');
-        }
-
-        // 测试主应用
-        function testMainApp() {
-            addLog('测试主应用...');
+            const result = document.getElementById('comprehensive-report');
+            if (result.innerHTML === '点击下方按钮生成报告...') {
+                alert('请先生成报告再导出');
+                return;
+            }
             
             try {
-                // 尝试加载主应用的脚本
-                const script = document.createElement('script');
-                script.src = '/src/main.jsx';
-                script.onload = () => {
-                    addLog('✅ 主应用脚本加载成功');
-                };
-                script.onerror = () => {
-                    addLog('❌ 主应用脚本加载失败', 'error');
-                };
-                document.head.appendChild(script);
+                const reportData = result.innerHTML;
+                const blob = new Blob([reportData], { type: 'application/json' });
+                const url = URL.createObjectURL(blob);
+                const a = document.createElement('a');
+                a.href = url;
+                a.download = `mobile-diagnosis-report-${new Date().toISOString().slice(0, 19)}.json`;
+                document.body.appendChild(a);
+                a.click();
+                document.body.removeChild(a);
+                URL.revokeObjectURL(url);
+                
+                alert('报告已导出！');
             } catch (error) {
-                addLog(`❌ 主应用测试失败: ${error.message}`, 'error');
+                alert('导出失败: ' + error.message);
             }
         }
-
-        // 页面加载完成后自动运行基础测试
-        window.addEventListener('load', () => {
-            addLog('页面加载完成，开始自动测试...');
+        
+        // 导航功能
+        function goToHome() {
+            window.location.href = '/';
+        }
+        
+        function goToServices() {
+            window.location.href = '/services';
+        }
+        
+        function goToContact() {
+            window.location.href = '/contact';
+        }
+        
+        function refreshPage() {
+            window.location.reload();
+        }
+        
+        // 页面加载完成后自动检测
+        window.addEventListener('load', function() {
+            console.log('🔧 移动端测试页面加载完成');
+            
+            // 自动检测设备信息
             setTimeout(() => {
-                runBasicTests();
-                runNetworkTests();
-                collectDeviceInfo();
+                checkDeviceInfo();
             }, 1000);
-        });
-
-        // 触摸事件测试
-        document.addEventListener('touchstart', () => {
-            if (document.getElementById('touch-test').textContent === '检测中...') {
-                document.getElementById('touch-test').textContent = '支持';
-                document.getElementById('touch-test').className = 'status pass';
-                addLog('✅ 触摸事件检测成功');
-            }
-        });
-
-        // 网络状态变化监听
-        window.addEventListener('online', () => {
-            addLog('🌐 网络连接已恢复');
-            if (document.getElementById('network-test')) {
-                document.getElementById('network-test').textContent = '在线';
-                document.getElementById('network-test').className = 'status pass';
-            }
-        });
-
-        window.addEventListener('offline', () => {
-            addLog('🌐 网络连接已断开', 'warning');
-            if (document.getElementById('network-test')) {
-                document.getElementById('network-test').textContent = '离线';
-                document.getElementById('network-test').className = 'status fail';
-            }
         });
     </script>
 </body>
