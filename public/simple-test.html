@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>简单测试 - FatePath</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #1a1a1a;
+            color: white;
+            margin: 0;
+            padding: 20px;
+            text-align: center;
+        }
+        .container {
+            max-width: 500px;
+            margin: 0 auto;
+        }
+        .button {
+            background: #fbbf24;
+            color: #1a1a1a;
+            border: none;
+            padding: 15px 30px;
+            border-radius: 8px;
+            font-weight: 600;
+            cursor: pointer;
+            margin: 15px;
+            font-size: 16px;
+        }
+        .button:hover {
+            background: #f59e0b;
+        }
+        .status {
+            background: #2a2a2a;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 8px;
+            font-family: monospace;
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🔧 修复脚本测试</h1>
+        <p>测试谷歌广告白屏修复是否工作</p>
+        
+        <div class="status" id="status">
+            点击下方按钮开始测试...
+        </div>
+        
+        <button class="button" onclick="testFix()">测试修复脚本</button>
+        <button class="button" onclick="goToHome()">前往主页</button>
+        <button class="button" onclick="clearCache()">清除缓存</button>
+    </div>
+
+    <script>
+        function testFix() {
+            const statusDiv = document.getElementById('status');
+            statusDiv.innerHTML = '正在测试...';
+            
+            try {
+                // 检查修复脚本状态
+                const hasForceLoadApp = typeof window.forceLoadApp === 'function';
+                const referrer = document.referrer;
+                const isDirect = !referrer;
+                
+                const testResult = {
+                    '修复函数可用': hasForceLoadApp ? '✅ 是' : '❌ 否',
+                    '当前referrer': referrer || '无 (直接访问)',
+                    '是否直接访问': isDirect ? '是' : '否',
+                    '测试时间': new Date().toLocaleString(),
+                    '用户代理': navigator.userAgent.substring(0, 50) + '...'
+                };
+                
+                let resultHtml = '<strong>🧪 测试结果:</strong><br>';
+                Object.entries(testResult).forEach(([key, value]) => {
+                    resultHtml += `${key}: ${value}<br>`;
+                });
+                
+                if (hasForceLoadApp) {
+                    resultHtml += '<br><strong style="color: #10b981;">✅ 修复脚本工作正常！</strong>';
+                } else {
+                    resultHtml += '<br><strong style="color: #ef4444;">❌ 修复脚本未正常工作</strong>';
+                }
+                
+                statusDiv.innerHTML = resultHtml;
+                
+            } catch (error) {
+                statusDiv.innerHTML = `❌ 测试失败: ${error.message}`;
+            }
+        }
+        
+        function goToHome() {
+            window.location.href = '/';
+        }
+        
+        function clearCache() {
+            try {
+                localStorage.clear();
+                sessionStorage.clear();
+                alert('缓存已清除！');
+            } catch (error) {
+                alert('清除缓存失败: ' + error.message);
+            }
+        }
+        
+        // 页面加载完成后自动测试
+        window.addEventListener('load', function() {
+            console.log('🔧 测试页面加载完成');
+            setTimeout(testFix, 1000);
+        });
+    </script>
+</body>
+</html>
