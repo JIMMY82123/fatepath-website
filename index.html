@@ -301,22 +301,36 @@
           }
           
           // Chrome特定的ES6模块加载优化
-          if (typeof import === 'function') {
-            console.log('✅ Chrome支持ES6动态导入');
+          try {
+            // 检查ES6模块支持 - 使用间接方法避免关键字冲突
+            var importCheck = function() {
+              try {
+                return typeof window.import === 'function';
+              } catch (e) {
+                return false;
+              }
+            };
             
-            // 预加载关键资源
-            const criticalResources = [
-              '/src/main.jsx',
-              '/src/App.jsx',
-              '/src/pages/Home.jsx'
-            ];
-            
-            criticalResources.forEach(resource => {
-              const link = document.createElement('link');
-              link.rel = 'prefetch';
-              link.href = resource;
-              document.head.appendChild(link);
-            });
+            if (importCheck()) {
+              console.log('✅ Chrome支持ES6动态导入');
+              
+              // 预加载关键资源
+              var criticalResources = [
+                '/src/main.jsx',
+                '/src/App.jsx',
+                '/src/pages/Home.jsx'
+              ];
+              
+              for (var i = 0; i < criticalResources.length; i++) {
+                var resource = criticalResources[i];
+                var link = document.createElement('link');
+                link.rel = 'prefetch';
+                link.href = resource;
+                document.head.appendChild(link);
+              }
+            }
+          } catch (e) {
+            console.log('⚠️ Chrome ES6模块检查跳过');
           }
           
           // Chrome的严格模式兼容性检查
