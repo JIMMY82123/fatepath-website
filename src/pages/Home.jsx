@@ -210,7 +210,7 @@ const Home = () => {
                     to={`/blog/${article.slug}`}
                     className="text-gold-400 hover:text-gold-300 font-semibold"
                   >
-                    阅读更多 →
+                    Read More →
                   </Link>
                 </div>
               </div>
