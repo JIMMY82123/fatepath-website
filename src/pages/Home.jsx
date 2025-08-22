@@ -46,25 +46,25 @@ const Home = () => {
     }
   ]
 
-  // Latest articles data
+  // Latest articles data - Updated to show the 3 most recent articles
   const latestArticles = [
     {
-      title: "BaZi Beginners Guide: Understanding Your Destiny Code",
-      excerpt: "Explore the basics of traditional Chinese BaZi numerology and learn how to interpret your birth time information.",
-      image: "/images/blog/bazi-beginners-guide-cover.jpg",
-      slug: "bazi-beginners-guide"
+      title: "Lighting a Ding Fire in an Autumn Metal Month",
+      excerpt: "A BaZi case study: How to cultivate Wood and choose STEM roles for a Ding Fire person born in autumn Metal season. Practical guidance for personal development and career success.",
+      image: "/images/blog/ding-fire-autumn-metal-cover.jpg",
+      slug: "lighting-ding-fire-autumn-metal"
     },
     {
-      title: "BaZi vs MBTI Personality Comparison: Fusion of Eastern and Western Wisdom",
-      excerpt: "Compare traditional Chinese BaZi numerology with modern MBTI personality types to discover common ground between Eastern and Western wisdom.",
-      image: "/images/blog/bazi-mbti-personality-comparison-cover.jpg",
-      slug: "bazi-mbti-personality-comparison"
+      title: "The Right Person Is Not the One You Have to Chase",
+      excerpt: "A poetic exploration of what true love looks like—not the dramatic chase, but the quiet moments of being seen, understood, and properly placed in someone's life.",
+      image: "/images/blog/right-person-not-chase-cover.jpg",
+      slug: "right-person-not-chase"
     },
     {
-      title: "Wealth Level Guide: Understanding Your Fortune Through BaZi",
-      excerpt: "Deep analysis of wealth information in BaZi, understand your wealth level and improvement methods.",
-      image: "/images/blog/bazi-wealth-level-guide-cover.jpg",
-      slug: "bazi-wealth-level-guide"
+      title: "The Hidden Energy Behind ICE's Immigration Sweeps in 2025 — A BaZi Perspective",
+      excerpt: "Discover how the 2025 Yi-Si year's Fire-Metal clash is manifesting in global immigration enforcement and what this cosmic energy means for your personal transformations.",
+      image: "/images/blog/ice-immigration-sweeps-2025-bazi-perspective-cover.jpg",
+      slug: "ice-immigration-sweeps-2025-bazi-perspective"
     }
   ]
 
