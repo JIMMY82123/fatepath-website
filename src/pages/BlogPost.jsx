@@ -21,8 +21,8 @@ const BlogPost = () => {
           <div class="bg-gradient-to-r from-orange-500/20 to-red-500/20 border border-orange-500/30 rounded-lg p-6 mb-8">
             <h3 class="text-lg font-semibold text-orange-400 mb-3">🔥 BaZi Case Study: Ding Fire in Autumn Metal</h3>
             <p class="text-mystic-200 mb-2"><strong>Chart:</strong> 1996-10-07 19:12, Baguio, Philippines (Male)</p>
-            <p class="text-mystic-200 mb-2"><strong>Day Master:</strong> Ding Fire (Weak)</strong></p>
-            <p class="text-mystic-200 mb-2"><strong>Season:</strong> Autumn Metal (Strong)</strong></p>
+            <p class="text-mystic-200 mb-2"><strong>Day Master:</strong> Ding Fire (Weak)</p>
+            <p class="text-mystic-200 mb-2"><strong>Season:</strong> Autumn Metal (Strong)</p>
             <p class="text-mystic-200"><strong>Key Question:</strong> How to cultivate Wood and choose suitable STEM roles?</p>
           </div>
         </div>
@@ -103,7 +103,21 @@ const BlogPost = () => {
       category: 'BaZi Case Studies',
       tags: ['BaZi Analysis', 'Career Guidance', 'Ding Fire', 'Wood Element', 'Metal Season', 'STEM Roles', 'Personal Development'],
       coverImage: '/images/blog/ding-fire-autumn-metal-cover.jpg',
-      featured: true
+      featured: true,
+      relatedPosts: [
+        {
+          title: "Understanding Your BaZi Chart: A Beginner's Guide",
+          excerpt: "Master the fundamentals of BaZi analysis and discover your life's blueprint.",
+          image: "/images/blog/bazi-beginners-guide-cover.jpg",
+          slug: "understanding-bazi-chart-beginners-guide"
+        },
+        {
+          title: "Career Timing: When to Make Your Next Big Move",
+          excerpt: "Master the art of perfect timing for career changes using traditional Chinese numerology.",
+          image: "/images/blog/career-timing-cover.jpg",
+          slug: "career-timing-next-big-move"
+        }
+      ]
     },
     "right-person-not-chase": {
       title: "The Right Person Is Not the One You Have to Chase",
