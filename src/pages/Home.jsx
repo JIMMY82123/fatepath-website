@@ -220,20 +220,20 @@ const Home = () => {
         </div>
       </section>
 
-      {/* 抽签入口板块 */}
+      {/* 玄音大师介绍板块 */}
       <section className="py-20 bg-mystic-900">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
-              Ancient Chinese Wisdom Oracle
+              Master XuanYin - BaZi Destiny Expert
             </h2>
             <p className="text-xl text-mystic-300 max-w-2xl mx-auto">
-              Experience the mystical power of traditional Chinese divination
+              Professional BaZi analysis and destiny guidance from a master practitioner
             </p>
           </div>
           
           <div className="max-w-6xl mx-auto">
-            {/* 主要介绍卡片 */}
+            {/* 大师简介卡片 */}
             <div className="bg-gradient-to-r from-gold-500/20 to-orange-500/20 border border-gold-500/30 rounded-2xl p-8 text-center mb-8">
               <div className="mb-6">
                 <div className="w-24 h-24 bg-gradient-to-r from-gold-400 to-orange-400 rounded-full mx-auto mb-4 flex items-center justify-center">
@@ -241,87 +241,87 @@ const Home = () => {
                 </div>
               </div>
               <h3 className="text-2xl font-bold text-white mb-4">
-                Divine Your Fortune
+                Master XuanYin
               </h3>
               <p className="text-lg text-mystic-200 mb-6 max-w-2xl mx-auto">
-                Connect with ancient Chinese wisdom through our interactive oracle system. 
-                Ask your questions and receive guidance from the traditional divination methods.
+                A renowned BaZi master with years of experience in traditional Chinese numerology. 
+                Specializing in comprehensive destiny analysis and life guidance through ancient wisdom.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Link 
-                  to="/wealth-sign" 
+                  to="/services" 
                   className="bg-gradient-to-r from-gold-400 to-orange-500 text-white px-8 py-4 rounded-lg font-semibold hover:from-gold-500 hover:to-orange-600 transition-all duration-300 transform hover:scale-105"
                 >
-                  Start Oracle Reading
+                  Book Consultation
                 </Link>
                 <Link 
-                  to="/services" 
+                  to="/contact" 
                   className="border-2 border-gold-400 text-gold-400 px-8 py-4 rounded-lg font-semibold hover:bg-gold-400 hover:text-white transition-all duration-300"
                 >
-                  Learn More
+                  Contact Master
                 </Link>
               </div>
             </div>
 
-            {/* 玄音系统详细介绍 */}
+            {/* 大师专业介绍 */}
             <div className="grid md:grid-cols-2 gap-8">
-              {/* 文化背景 */}
+              {/* 专业背景 */}
               <div className="bg-mystic-800/50 border border-mystic-700 rounded-xl p-6">
                 <div className="flex items-center mb-4">
                   <div className="w-10 h-10 bg-gradient-to-r from-blue-500 to-cyan-500 rounded-lg flex items-center justify-center mr-3">
-                    <span className="text-white text-lg">🏛️</span>
+                    <span className="text-white text-lg">🎓</span>
                   </div>
-                  <h4 className="text-xl font-semibold text-white">Cultural Heritage</h4>
+                  <h4 className="text-xl font-semibold text-white">Professional Background</h4>
                 </div>
                 <p className="text-mystic-300 leading-relaxed">
-                  The Ancient Chinese Wisdom Oracle draws from centuries of Chinese philosophical tradition, 
-                  combining traditional wisdom with modern psychology to provide meaningful guidance for life 
-                  decisions and personal development.
+                  Master XuanYin has dedicated years to studying traditional Chinese BaZi numerology, 
+                  mastering the ancient art of destiny analysis through birth time calculations and 
+                  cosmic energy interpretation.
                 </p>
               </div>
 
-              {/* 功能特点 */}
+              {/* 服务特色 */}
               <div className="bg-mystic-800/50 border border-mystic-700 rounded-xl p-6">
                 <div className="flex items-center mb-4">
                   <div className="w-10 h-10 bg-gradient-to-r from-green-500 to-emerald-500 rounded-lg flex items-center justify-center mr-3">
                     <span className="text-white text-lg">🔮</span>
                   </div>
-                  <h4 className="text-xl font-semibold text-white">Wisdom Levels</h4>
+                  <h4 className="text-xl font-semibold text-white">Comprehensive Analysis</h4>
                 </div>
                 <p className="text-mystic-300 leading-relaxed">
-                  Our oracle system features five wisdom levels: Excellent (上上签), Good (上签), 
-                  Neutral (中签), Challenging (下签), and Very Challenging (下下签), each providing 
-                  unique insights for your life journey.
+                  Specializing in detailed BaZi readings that cover career guidance, relationship 
+                  compatibility, wealth potential, and personal development strategies based on 
+                  your unique birth chart.
                 </p>
               </div>
 
-              {/* 使用方法 */}
+              {/* 咨询方式 */}
               <div className="bg-mystic-800/50 border border-mystic-700 rounded-xl p-6">
                 <div className="flex items-center mb-4">
                   <div className="w-10 h-10 bg-gradient-to-r from-purple-500 to-pink-500 rounded-lg flex items-center justify-center mr-3">
-                    <span className="text-white text-lg">🧘‍♀️</span>
+                    <span className="text-white text-lg">💬</span>
                   </div>
-                  <h4 className="text-xl font-semibold text-white">Sacred Ritual</h4>
+                  <h4 className="text-xl font-semibold text-white">Consultation Services</h4>
                 </div>
                 <p className="text-mystic-300 leading-relaxed">
-                  Experience our sacred meditation ritual before drawing your wisdom card. 
-                  This ancient practice helps focus your intention and connect with the 
-                  spiritual energy of the oracle system.
+                  Offering personalized one-on-one consultations, detailed written reports, 
+                  and ongoing guidance to help you navigate life's challenges and opportunities 
+                  with ancient wisdom.
                 </p>
               </div>
 
-              {/* 现代应用 */}
+              {/* 成功案例 */}
               <div className="bg-mystic-800/50 border border-mystic-700 rounded-xl p-6">
                 <div className="flex items-center mb-4">
                   <div className="w-10 h-10 bg-gradient-to-r from-yellow-500 to-orange-500 rounded-lg flex items-center justify-center mr-3">
-                    <span className="text-white text-lg">💡</span>
+                    <span className="text-white text-lg">⭐</span>
                   </div>
-                  <h4 className="text-xl font-semibold text-white">Modern Application</h4>
+                  <h4 className="text-xl font-semibold text-white">Proven Results</h4>
                 </div>
                 <p className="text-mystic-300 leading-relaxed">
-                  Each wisdom card represents different levels of insight and offers practical 
-                  advice for modern life challenges, helping you make informed decisions 
-                  in career, relationships, and personal growth.
+                  Countless clients have found clarity and direction through Master XuanYin's 
+                  guidance, achieving breakthroughs in career, relationships, and personal growth 
+                  using traditional BaZi wisdom.
                 </p>
               </div>
             </div>
