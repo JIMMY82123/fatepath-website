@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
+import { Sparkles } from 'lucide-react'
 
 const Home = () => {
   const [currentTestimonial, setCurrentTestimonial] = useState(0)
@@ -215,6 +216,51 @@ const Home = () => {
                 </div>
               </div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* 抽签入口板块 */}
+      <section className="py-20 bg-mystic-900">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
+              Ancient Wisdom Oracle
+            </h2>
+            <p className="text-xl text-mystic-300 max-w-2xl mx-auto">
+              Experience the mystical power of traditional Chinese divination
+            </p>
+          </div>
+          
+          <div className="max-w-4xl mx-auto">
+            <div className="bg-gradient-to-r from-gold-500/20 to-orange-500/20 border border-gold-500/30 rounded-2xl p-8 text-center">
+              <div className="mb-6">
+                <div className="w-24 h-24 bg-gradient-to-r from-gold-400 to-orange-400 rounded-full mx-auto mb-4 flex items-center justify-center">
+                  <Sparkles className="w-12 h-12 text-white" />
+                </div>
+              </div>
+              <h3 className="text-2xl font-bold text-white mb-4">
+                Divine Your Fortune
+              </h3>
+              <p className="text-lg text-mystic-200 mb-6 max-w-2xl mx-auto">
+                Connect with ancient Chinese wisdom through our interactive oracle system. 
+                Ask your questions and receive guidance from the traditional divination methods.
+              </p>
+              <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                <Link 
+                  to="/wealth-sign" 
+                  className="bg-gradient-to-r from-gold-400 to-orange-500 text-white px-8 py-4 rounded-lg font-semibold hover:from-gold-500 hover:to-orange-600 transition-all duration-300 transform hover:scale-105"
+                >
+                  Start Oracle Reading
+                </Link>
+                <Link 
+                  to="/services" 
+                  className="border-2 border-gold-400 text-gold-400 px-8 py-4 rounded-lg font-semibold hover:bg-gold-400 hover:text-white transition-all duration-300"
+                >
+                  Learn More
+                </Link>
+              </div>
+            </div>
           </div>
         </div>
       </section>
