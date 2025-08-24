@@ -34,10 +34,26 @@ const Resources = lazy(() => import('./pages/Resources'))
 const DatasetDetail = lazy(() => import('./pages/DatasetDetail'))
 const LoveCompatibilityTest = lazy(() => import('./pages/LoveCompatibilityTest'))
 
-// 移动端检测函数
+// 移动端检测函数 - 修改为更宽松的检测
 const isMobile = () => {
-  return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ||
-         window.innerWidth <= 768;
+  // 检查是否有强制桌面版的参数
+  const urlParams = new URLSearchParams(window.location.search);
+  if (urlParams.get('desktop') === 'true') {
+    return false;
+  }
+  
+  // 更宽松的移动端检测
+  const userAgent = navigator.userAgent.toLowerCase();
+  const isMobileDevice = /android|webos|iphone|ipad|ipod|blackberry|iemobile|opera mini/i.test(userAgent);
+  
+  // 屏幕宽度检测 - 提高阈值到1024px
+  const isSmallScreen = window.innerWidth <= 1024;
+  
+  // 触摸设备检测
+  const isTouchDevice = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
+  
+  // 只有在明确是移动设备且屏幕较小且是触摸设备时才认为是移动端
+  return isMobileDevice && isSmallScreen && isTouchDevice;
 }
 
 // 简化的移动端加载组件
@@ -53,6 +69,16 @@ const MobileLoader = () => (
 
 function App() {
   useEffect(() => {
+    // 添加调试信息
+    const debugInfo = {
+      userAgent: navigator.userAgent,
+      screenWidth: window.innerWidth,
+      screenHeight: window.innerHeight,
+      isTouchDevice: 'ontouchstart' in window || navigator.maxTouchPoints > 0,
+      isMobileDetected: isMobile()
+    };
+    console.log('设备检测信息:', debugInfo);
+    
     // 添加全局错误处理
     const handleError = (event) => {
       console.error('Global Error:', event.error);
