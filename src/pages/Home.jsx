@@ -225,15 +225,16 @@ const Home = () => {
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
-              Ancient Wisdom Oracle
+              Ancient Chinese Wisdom Oracle
             </h2>
             <p className="text-xl text-mystic-300 max-w-2xl mx-auto">
               Experience the mystical power of traditional Chinese divination
             </p>
           </div>
           
-          <div className="max-w-4xl mx-auto">
-            <div className="bg-gradient-to-r from-gold-500/20 to-orange-500/20 border border-gold-500/30 rounded-2xl p-8 text-center">
+          <div className="max-w-6xl mx-auto">
+            {/* 主要介绍卡片 */}
+            <div className="bg-gradient-to-r from-gold-500/20 to-orange-500/20 border border-gold-500/30 rounded-2xl p-8 text-center mb-8">
               <div className="mb-6">
                 <div className="w-24 h-24 bg-gradient-to-r from-gold-400 to-orange-400 rounded-full mx-auto mb-4 flex items-center justify-center">
                   <Sparkles className="w-12 h-12 text-white" />
@@ -259,6 +260,69 @@ const Home = () => {
                 >
                   Learn More
                 </Link>
+              </div>
+            </div>
+
+            {/* 玄音系统详细介绍 */}
+            <div className="grid md:grid-cols-2 gap-8">
+              {/* 文化背景 */}
+              <div className="bg-mystic-800/50 border border-mystic-700 rounded-xl p-6">
+                <div className="flex items-center mb-4">
+                  <div className="w-10 h-10 bg-gradient-to-r from-blue-500 to-cyan-500 rounded-lg flex items-center justify-center mr-3">
+                    <span className="text-white text-lg">🏛️</span>
+                  </div>
+                  <h4 className="text-xl font-semibold text-white">Cultural Heritage</h4>
+                </div>
+                <p className="text-mystic-300 leading-relaxed">
+                  The Ancient Chinese Wisdom Oracle draws from centuries of Chinese philosophical tradition, 
+                  combining traditional wisdom with modern psychology to provide meaningful guidance for life 
+                  decisions and personal development.
+                </p>
+              </div>
+
+              {/* 功能特点 */}
+              <div className="bg-mystic-800/50 border border-mystic-700 rounded-xl p-6">
+                <div className="flex items-center mb-4">
+                  <div className="w-10 h-10 bg-gradient-to-r from-green-500 to-emerald-500 rounded-lg flex items-center justify-center mr-3">
+                    <span className="text-white text-lg">🔮</span>
+                  </div>
+                  <h4 className="text-xl font-semibold text-white">Wisdom Levels</h4>
+                </div>
+                <p className="text-mystic-300 leading-relaxed">
+                  Our oracle system features five wisdom levels: Excellent (上上签), Good (上签), 
+                  Neutral (中签), Challenging (下签), and Very Challenging (下下签), each providing 
+                  unique insights for your life journey.
+                </p>
+              </div>
+
+              {/* 使用方法 */}
+              <div className="bg-mystic-800/50 border border-mystic-700 rounded-xl p-6">
+                <div className="flex items-center mb-4">
+                  <div className="w-10 h-10 bg-gradient-to-r from-purple-500 to-pink-500 rounded-lg flex items-center justify-center mr-3">
+                    <span className="text-white text-lg">🧘‍♀️</span>
+                  </div>
+                  <h4 className="text-xl font-semibold text-white">Sacred Ritual</h4>
+                </div>
+                <p className="text-mystic-300 leading-relaxed">
+                  Experience our sacred meditation ritual before drawing your wisdom card. 
+                  This ancient practice helps focus your intention and connect with the 
+                  spiritual energy of the oracle system.
+                </p>
+              </div>
+
+              {/* 现代应用 */}
+              <div className="bg-mystic-800/50 border border-mystic-700 rounded-xl p-6">
+                <div className="flex items-center mb-4">
+                  <div className="w-10 h-10 bg-gradient-to-r from-yellow-500 to-orange-500 rounded-lg flex items-center justify-center mr-3">
+                    <span className="text-white text-lg">💡</span>
+                  </div>
+                  <h4 className="text-xl font-semibold text-white">Modern Application</h4>
+                </div>
+                <p className="text-mystic-300 leading-relaxed">
+                  Each wisdom card represents different levels of insight and offers practical 
+                  advice for modern life challenges, helping you make informed decisions 
+                  in career, relationships, and personal growth.
+                </p>
               </div>
             </div>
           </div>
