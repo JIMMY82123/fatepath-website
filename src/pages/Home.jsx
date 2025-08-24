@@ -329,6 +329,115 @@ const Home = () => {
         </div>
       </section>
 
+      {/* 抽签功能介绍板块 */}
+      <section className="py-20 bg-mystic-800">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
+              Ancient Chinese Wisdom Oracle
+            </h2>
+            <p className="text-xl text-mystic-300 max-w-2xl mx-auto">
+              Experience the mystical power of traditional Chinese divination
+            </p>
+          </div>
+          
+          <div className="max-w-6xl mx-auto">
+            {/* 抽签系统介绍卡片 */}
+            <div className="bg-gradient-to-r from-purple-500/20 to-blue-500/20 border border-purple-500/30 rounded-2xl p-8 text-center mb-8">
+              <div className="mb-6">
+                <div className="w-24 h-24 bg-gradient-to-r from-purple-400 to-blue-400 rounded-full mx-auto mb-4 flex items-center justify-center">
+                  <span className="text-white text-lg">🔮</span>
+                </div>
+              </div>
+              <h3 className="text-2xl font-bold text-white mb-4">
+                Interactive Oracle System
+              </h3>
+              <p className="text-lg text-mystic-200 mb-6 max-w-2xl mx-auto">
+                Connect with ancient Chinese wisdom through our interactive oracle system. 
+                Ask your questions and receive guidance from traditional divination methods.
+              </p>
+              <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                <Link 
+                  to="/wealth-sign" 
+                  className="bg-gradient-to-r from-purple-400 to-blue-500 text-white px-8 py-4 rounded-lg font-semibold hover:from-purple-500 hover:to-blue-600 transition-all duration-300 transform hover:scale-105"
+                >
+                  Start Oracle Reading
+                </Link>
+                <Link 
+                  to="/services" 
+                  className="border-2 border-purple-400 text-purple-400 px-8 py-4 rounded-lg font-semibold hover:bg-purple-400 hover:text-white transition-all duration-300"
+                >
+                  Learn More
+                </Link>
+              </div>
+            </div>
+
+            {/* 抽签系统详细介绍 */}
+            <div className="grid md:grid-cols-2 gap-8">
+              {/* 文化背景 */}
+              <div className="bg-mystic-700/50 border border-mystic-600 rounded-xl p-6">
+                <div className="flex items-center mb-4">
+                  <div className="w-10 h-10 bg-gradient-to-r from-blue-500 to-cyan-500 rounded-lg flex items-center justify-center mr-3">
+                    <span className="text-white text-lg">🏛️</span>
+                  </div>
+                  <h4 className="text-xl font-semibold text-white">Cultural Heritage</h4>
+                </div>
+                <p className="text-mystic-300 leading-relaxed">
+                  The Ancient Chinese Wisdom Oracle draws from centuries of Chinese philosophical tradition, 
+                  combining traditional wisdom with modern psychology to provide meaningful guidance for life 
+                  decisions and personal development.
+                </p>
+              </div>
+
+              {/* 功能特点 */}
+              <div className="bg-mystic-700/50 border border-mystic-600 rounded-xl p-6">
+                <div className="flex items-center mb-4">
+                  <div className="w-10 h-10 bg-gradient-to-r from-green-500 to-emerald-500 rounded-lg flex items-center justify-center mr-3">
+                    <span className="text-white text-lg">🎯</span>
+                  </div>
+                  <h4 className="text-xl font-semibold text-white">Wisdom Levels</h4>
+                </div>
+                <p className="text-mystic-300 leading-relaxed">
+                  Our oracle system features five wisdom levels: Excellent (上上签), Good (上签), 
+                  Neutral (中签), Challenging (下签), and Very Challenging (下下签), each providing 
+                  unique insights for your life journey.
+                </p>
+              </div>
+
+              {/* 使用方法 */}
+              <div className="bg-mystic-700/50 border border-mystic-600 rounded-xl p-6">
+                <div className="flex items-center mb-4">
+                  <div className="w-10 h-10 bg-gradient-to-r from-purple-500 to-pink-500 rounded-lg flex items-center justify-center mr-3">
+                    <span className="text-white text-lg">🧘‍♀️</span>
+                  </div>
+                  <h4 className="text-xl font-semibold text-white">Sacred Ritual</h4>
+                </div>
+                <p className="text-mystic-300 leading-relaxed">
+                  Experience our sacred meditation ritual before drawing your wisdom card. 
+                  This ancient practice helps focus your intention and connect with the 
+                  spiritual energy of the oracle system.
+                </p>
+              </div>
+
+              {/* 现代应用 */}
+              <div className="bg-mystic-700/50 border border-mystic-600 rounded-xl p-6">
+                <div className="flex items-center mb-4">
+                  <div className="w-10 h-10 bg-gradient-to-r from-yellow-500 to-orange-500 rounded-lg flex items-center justify-center mr-3">
+                    <span className="text-white text-lg">💡</span>
+                  </div>
+                  <h4 className="text-xl font-semibold text-white">Modern Application</h4>
+                </div>
+                <p className="text-mystic-300 leading-relaxed">
+                  Each wisdom card represents different levels of insight and offers practical 
+                  advice for modern life challenges, helping you make informed decisions 
+                  in career, relationships, and personal growth.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* 行动召唤部分 */}
       <section className="py-20 bg-mystic-900">
         <div className="container mx-auto px-4 text-center">
