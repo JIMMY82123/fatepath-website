@@ -4,6 +4,42 @@ import { Tag } from 'lucide-react'
 import SEO from '../components/SEO'
 
 const Blog = () => {
+  // SEO structured data for better search indexing
+  const structuredData = {
+    "@context": "https://schema.org",
+    "@type": "Blog",
+    "name": "FatePath BaZi & Chinese Astrology Blog",
+    "description": "Expert insights on BaZi analysis, Chinese astrology, and life destiny through ancient wisdom and modern interpretation.",
+    "url": "https://fatepath.me/blog",
+    "publisher": {
+      "@type": "Organization",
+      "name": "FatePath",
+      "url": "https://fatepath.me"
+    },
+    "mainEntity": {
+      "@type": "ItemList",
+      "numberOfItems": 12,
+      "itemListElement": blogPosts.map((post, index) => ({
+        "@type": "ListItem",
+        "position": index + 1,
+        "item": {
+          "@type": "BlogPosting",
+          "headline": post.title,
+          "description": post.excerpt,
+          "url": `https://fatepath.me/blog/${post.slug}`,
+          "datePublished": post.date,
+          "author": {
+            "@type": "Person",
+            "name": "Master XuanYin"
+          },
+          "publisher": {
+            "@type": "Organization",
+            "name": "FatePath"
+          }
+        }
+      }))
+    }
+  }
   const [searchParams, setSearchParams] = useSearchParams()
   const [selectedCategory, setSelectedCategory] = useState('all')
   const [selectedTag, setSelectedTag] = useState('all')
@@ -18,22 +54,22 @@ const Blog = () => {
   }, [searchParams])
 
   const categories = [
-    { id: 'all', name: 'All Articles', count: 18 },
-    { id: 'bazi', name: 'BaZi Analysis', count: 11 },
-    { id: 'love', name: 'Love & Relationships', count: 4 },
-    { id: 'wealth', name: 'Wealth & Career', count: 4 }
+    { id: 'all', name: 'All Articles', count: 12 },
+    { id: 'bazi', name: 'BaZi Analysis', count: 7 },
+    { id: 'love', name: 'Love & Relationships', count: 2 },
+    { id: 'wealth', name: 'Wealth & Career', count: 3 }
   ]
 
   const blogPosts = [
     {
       id: 18,
-      title: "Lighting a Ding Fire in an Autumn Metal Month",
-      excerpt: "A BaZi case study: How to cultivate Wood and choose STEM roles for a Ding Fire person born in autumn Metal season. Practical guidance for personal development and career success.",
+      title: "Lighting a Ding Fire in an Autumn Metal Month: Advanced BaZi Career Analysis",
+      excerpt: "Master the art of reading challenging BaZi combinations with this in-depth case study. Learn how a Ding Fire person born in autumn Metal season can overcome elemental conflicts, cultivate supportive Wood energy, and strategically choose STEM careers that align with their destiny. Includes practical strategies for personal development and professional success.",
       category: 'bazi',
-      tags: ['BaZi Analysis', 'Career Guidance', 'Ding Fire', 'Wood Element', 'Metal Season', 'STEM Roles', 'Personal Development'],
+      tags: ['BaZi Analysis', 'Career Guidance', 'Ding Fire', 'Wood Element', 'Metal Season', 'STEM Roles', 'Personal Development', 'Elemental Conflicts', 'Destiny Reading'],
       image: "/images/blog/ding-fire-autumn-metal-cover.jpg",
       date: "2025-08-22",
-      readTime: "8 min read",
+      readTime: "12 min read",
       slug: "lighting-ding-fire-autumn-metal"
     },
     {
@@ -50,24 +86,24 @@ const Blog = () => {
     {
       id: 16,
       title: "The Hidden Energy Behind ICE's Immigration Sweeps in 2025 — A BaZi Perspective",
-      excerpt: "Discover how the 2025 Yi-Si year's Fire-Metal clash is manifesting in global immigration enforcement and what this cosmic energy means for your personal transformations.",
+      excerpt: "Unlock the cosmic secrets of 2025's Yi-Si year through advanced BaZi analysis. Discover how the Fire-Metal clash manifests in global immigration enforcement, economic shifts, and personal transformation cycles. Learn to navigate these powerful energies for career advancement, relationship harmony, and spiritual growth.",
       category: 'bazi',
-      tags: ['BaZi', '2025', 'Chinese Astrology', 'Immigration', 'Fire-Metal Clash', 'Destiny', 'Global Events', 'Yi-Si Year'],
+      tags: ['BaZi', '2025', 'Chinese Astrology', 'Immigration', 'Fire-Metal Clash', 'Destiny', 'Global Events', 'Yi-Si Year', 'Economic Cycles', 'Personal Transformation', 'Career Advancement'],
       image: "/images/blog/ice-immigration-sweeps-2025-bazi-perspective-cover.jpg",
       date: "2025-01-25",
-      readTime: "5 min read",
+      readTime: "8 min read",
       slug: "ice-immigration-sweeps-2025-bazi-perspective"
     },
     {
       id: 15,
-      title: "How to Read Your Wealth Level in BaZi: A Simple Guide to Financial Destiny",
-      excerpt: "Discover how to analyze your wealth potential through BaZi reading. Learn about Wealth Stars, Day Master strength, and luck cycles that determine your financial destiny and money-making ability.",
-      category: 'wealth',
-      tags: ['Wealth', 'BaZi', 'Financial Destiny', 'Money', 'Chinese Astrology', 'Wealth Analysis', 'Financial Planning'],
-              image: "/images/blog/bazi-wealth-level-guide-cover.jpg",
+      title: "Complete Life Destiny Guide: Health, Love & Wealth Through BaZi Analysis",
+      excerpt: "Master the art of reading your life's blueprint through comprehensive BaZi analysis. Discover your health cycles, relationship patterns, and wealth potential with actionable strategies for each life area.",
+      category: 'bazi',
+      tags: ['BaZi Analysis', 'Life Destiny', 'Health Cycles', 'Relationship Patterns', 'Wealth Potential', 'Chinese Astrology', 'Personal Development', 'Life Planning'],
+      image: "/images/blog/complete-life-destiny-guide-cover.jpg",
       date: "2025-01-24",
-      readTime: "6 min read",
-      slug: "how-to-read-wealth-level-bazi-simple-guide"
+      readTime: "15 min read",
+      slug: "complete-life-destiny-guide-bazi-analysis"
     },
     {
       id: 14,
@@ -114,73 +150,18 @@ const Blog = () => {
       slug: "protection-talismans-ancient-wisdom"
     },
     {
-      id: 2,
-      title: "Health Destiny Report: A Woman's Wellness Path Through BaZi",
-      excerpt: "Discover how your birth chart reveals your health destiny. Learn about wellness cycles, key years for health optimization, and practical strategies for maintaining vitality through BaZi analysis.",
-      category: 'bazi',
-      tags: ['Health', 'Wellness', 'BaZi', 'Chinese Astrology', 'Vitality', 'Lifestyle', 'Destiny'],
-      image: "/images/blog/health-destiny-report-cover.jpg",
-      date: "2025-01-23",
-      readTime: "7 min read",
-      slug: "health-destiny-report-woman-wellness-path"
-    },
-    {
-      id: 3,
-      title: "Marriage & Relationship Destiny Report: A Woman's Love Path Through BaZi",
-      excerpt: "Discover how your birth chart reveals your romantic destiny. Learn about marriage timing, partner characteristics, and practical strategies for enhancing love luck through BaZi analysis.",
-      category: 'love',
-      tags: ['Love', 'Marriage', 'Relationships', 'BaZi', 'Chinese Astrology', 'Romance', 'Destiny'],
-      image: "/images/blog/marriage-relationship-destiny-report-cover.jpg",
-      date: "2025-01-22",
-      readTime: "8 min read",
-      slug: "marriage-relationship-destiny-report-woman-love-path"
-    },
-    {
-      id: 4,
-      title: "Financial Destiny Report: A Woman's Wealth Path Through BaZi",
-      excerpt: "Discover how your birth chart reveals your financial destiny. Learn about wealth cycles, key years for financial growth, and practical strategies for building wealth through consistent effort and strategic planning.",
+      id: 10,
+      title: "Advanced BaZi Analysis: Reading Your Wealth Level and Financial Destiny",
+      excerpt: "Master the complex art of wealth analysis in BaZi. Learn to identify Wealth Stars, assess Day Master strength, and understand how luck cycles determine your financial potential and money-making strategies.",
       category: 'wealth',
-      tags: ['Wealth', 'Financial Destiny', 'BaZi', 'Chinese Astrology', 'Career', 'Investment', 'Money'],
-      image: "/images/blog/financial-destiny-report-cover.jpg",
-      date: "2025-01-21",
-      readTime: "7 min read",
-      slug: "financial-destiny-report-woman-wealth-path"
+      tags: ['Wealth Analysis', 'Financial Destiny', 'BaZi Mastery', 'Wealth Stars', 'Day Master Strength', 'Luck Cycles', 'Money Strategies', 'Chinese Astrology'],
+      image: "/images/blog/advanced-bazi-wealth-analysis-cover.jpg",
+      date: "2025-01-14",
+      readTime: "12 min read",
+      slug: "advanced-bazi-wealth-analysis-mastery"
     },
     {
-      id: 5,
-      title: "BaZi Meets MBTI: A Fascinating East–West Dialogue on Personality",
-      excerpt: "BaZi gives you the 'inborn color palette,' MBTI reveals your 'usage habits.' Put the map and the manual together, and you get a fuller picture of yourself.",
-      category: 'bazi',
-      tags: ['BaZi', 'MBTI', 'Personality', 'Chinese Astrology', 'Psychology', 'Self-Discovery'],
-      image: "/images/blog/bazi-mbti-personality-comparison-cover.jpg",
-      date: "2025-01-20",
-      readTime: "6 min read",
-      slug: "bazi-mbti-personality-comparison"
-    },
-    {
-      id: 6,
-      title: "BaZi Chat｜The 'Pressure and Turning Points' of a Gui Hai – Yi Chou – Geng Xu – Wu Yin Woman",
-      excerpt: "Discover the unique challenges and opportunities in this BaZi chart analysis. Learn how pressure transforms into momentum and when the breakthrough years arrive for this winter-born Geng Metal woman.",
-      category: 'bazi',
-      tags: ['BaZi', 'Chinese Astrology', 'Destiny', 'Five Elements', 'Career', 'Relationships'],
-      image: "/images/blog/bazi-chat-pressure-turning-points-cover.jpg",
-      date: "2025-08-11",
-      readTime: "8 min read",
-      slug: "bazi-chat-pressure-turning-points-gui-hai-woman"
-    },
-    {
-      id: 7,
-      title: "Understanding Your BaZi Chart: A Beginner's Guide",
-      excerpt: "Master the fundamentals of BaZi (八字) analysis and discover how your birth chart reveals your life's blueprint, personality traits, and destiny path through ancient Chinese wisdom.",
-      category: 'bazi',
-      tags: ['BaZi', 'Chinese Astrology', 'Destiny', 'Five Elements'],
-      image: "/images/blog/bazi-beginners-guide-cover.jpg",
-      date: "2025-01-15",
-      readTime: "5 min read",
-      slug: "understanding-bazi-chart-beginners-guide"
-    },
-    {
-      id: 8,
+      id: 9,
       title: "The Five Elements in Love: Finding Your Perfect Match",
       excerpt: "Unlock the secrets of romantic compatibility through the Five Elements (五行) system. Learn how Wood, Fire, Earth, Metal, and Water energies create harmony or conflict in relationships.",
       category: 'love',
@@ -191,26 +172,26 @@ const Blog = () => {
       slug: "five-elements-love-perfect-match"
     },
     {
-      id: 9,
-      title: "Wealth Archetypes in Chinese Astrology",
-      excerpt: "Discover your unique wealth personality type through BaZi analysis. Learn how your birth chart reveals your financial potential and the best strategies for wealth accumulation.",
+      id: 8,
+      title: "Wealth Archetypes in Chinese Astrology: Your Financial Personality Revealed",
+      excerpt: "Discover your unique wealth personality type through advanced BaZi analysis. Learn how your birth chart reveals your financial potential, investment style, and the best strategies for wealth accumulation in your specific element combination.",
       category: 'wealth',
-      tags: ['Wealth', 'Career', 'Financial', 'BaZi'],
+      tags: ['Wealth Archetypes', 'Financial Personality', 'BaZi Analysis', 'Investment Style', 'Wealth Strategies', 'Chinese Astrology', 'Financial Planning'],
       image: "/images/blog/wealth-archetypes-cover.jpg",
       date: "2025-01-05",
-      readTime: "6 min read",
+      readTime: "10 min read",
       slug: "wealth-archetypes-chinese-astrology"
     },
     {
-      id: 10,
-      title: "Career Timing: When to Make Your Next Big Move",
-      excerpt: "Master the art of perfect timing for career changes using traditional Chinese numerology. Learn to read the cosmic signals that indicate when to advance, change, or start new ventures.",
-      category: 'career',
-      tags: ['Career', 'Timing', 'Career Change', 'Destiny'],
-      image: "/images/blog/career-timing-cover.jpg",
-      date: "2025-01-01",
+      id: 7,
+      title: "Understanding Your BaZi Chart: A Comprehensive Beginner's Guide",
+      excerpt: "Master the fundamentals of BaZi (八字) analysis with this comprehensive guide. Discover how your birth chart reveals your life's blueprint, personality traits, and destiny path through ancient Chinese wisdom and modern interpretation techniques.",
+      category: 'bazi',
+      tags: ['BaZi Fundamentals', 'Chinese Astrology', 'Birth Chart Analysis', 'Destiny Reading', 'Five Elements', 'Beginner Guide', 'Life Blueprint'],
+      image: "/images/blog/bazi-beginners-guide-cover.jpg",
+      date: "2025-01-03",
       readTime: "8 min read",
-      slug: "career-timing-next-big-move"
+      slug: "understanding-bazi-chart-beginners-guide"
     }
   ]
 
@@ -253,6 +234,14 @@ const Blog = () => {
         ogDescription="Discover ancient Chinese numerology insights, practical guidance, and spiritual wisdom."
         ogImage="https://fatepath.me/og-image.svg"
         ogUrl="https://fatepath.me/blog"
+      />
+      
+      {/* Structured Data for SEO */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(structuredData)
+        }}
       />
 
       <main className="min-h-screen bg-mystic-900 pt-20">
