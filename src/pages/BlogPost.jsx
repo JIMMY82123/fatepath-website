@@ -13,6 +13,92 @@ const BlogPost = () => {
 
   // Sample blog post data - in a real app, this would come from an API or CMS
   const blogPostsData = {
+    "red-horse-red-sheep-global-turmoil-2026-2027": {
+      title: "US Increases Naval Presence Near South America, Citing Drug War; Tension Rises in Venezuela. An Analysis Pointing Towards Global Turmoil in the Coming 'Red Horse & Red Sheep' Years",
+      excerpt: "Deep analysis of US military deployment in Latin America and its connection to the upcoming Bingwu (丙午) and Dingwei (丁未) years (2026-2027) - the 'Red Horse and Red Sheep' omen. Explore how geopolitical tensions, economic crises, and social contradictions converge to create a perfect storm of global instability.",
+      content: `
+        <div class="mb-8">
+          <div class="bg-gradient-to-r from-red-500/20 to-orange-500/20 border border-red-500/30 rounded-lg p-6 mb-8">
+            <h3 class="text-lg font-semibold text-red-400 mb-3">🔥 Global Analysis: Red Horse & Red Sheep Years 2026-2027</h3>
+            <p class="text-mystic-200 mb-2"><strong>Period:</strong> Bingwu (丙午) and Dingwei (丁未) Years</p>
+            <p class="text-mystic-200 mb-2"><strong>Elements:</strong> Fire-Horse and Fire-Sheep</p>
+            <p class="text-mystic-200 mb-2"><strong>Global Impact:</strong> Geopolitical Tensions, Economic Crisis, Social Unrest</p>
+            <p class="text-mystic-200"><strong>Key Question:</strong> How do these years manifest in global affairs?</p>
+          </div>
+        </div>
+
+        <h2 class="text-2xl font-bold text-white mb-4 mt-8">The Red Horse & Red Sheep Omen</h2>
+        <p class="mb-6 text-lg text-mystic-200 leading-relaxed">
+          In Chinese astrology, the Bingwu (丙午) and Dingwei (丁未) years represent a powerful convergence of Fire energy with Horse and Sheep elements. These "Red Horse and Red Sheep" years historically correlate with periods of significant global upheaval, military conflicts, and economic transformations.
+        </p>
+
+        <h2 class="text-2xl font-bold text-white mb-4 mt-8">Current US Military Deployment in Latin America</h2>
+        <p class="mb-6 text-lg text-mystic-200 leading-relaxed">
+          The recent announcement of increased US naval presence near South America, specifically citing the drug war as justification, represents a significant escalation in regional tensions. This military buildup coincides precisely with the approaching Red Horse and Red Sheep years, suggesting a deeper cosmic alignment than mere coincidence.
+        </p>
+
+        <div class="bg-gradient-to-r from-blue-500/20 to-purple-500/20 border border-blue-500/30 rounded-lg p-6 mb-6">
+          <h3 class="text-lg font-semibold text-blue-400 mb-3">Military Deployment Analysis</h3>
+          <div class="grid md:grid-cols-2 gap-4">
+            <div>
+              <p class="text-mystic-200 mb-2"><strong>Location:</strong> South American Waters</p>
+              <p class="text-mystic-200 mb-2"><strong>Justification:</strong> Drug War Operations</p>
+            </div>
+            <div>
+              <p class="text-mystic-200 mb-2"><strong>Timing:</strong> Pre-Red Horse Year (2026)</p>
+              <p class="text-mystic-200 mb-2"><strong>Strategic Goal:</strong> Regional Control</p>
+            </div>
+          </div>
+        </div>
+
+        <h2 class="text-2xl font-bold text-white mb-4 mt-8">Venezuela: The Flashpoint</h2>
+        <p class="mb-6 text-lg text-mystic-200 leading-relaxed">
+          Venezuela emerges as a critical flashpoint in this analysis. The country's strategic location, vast oil reserves, and current political instability make it a focal point for the converging energies of the Red Horse and Red Sheep years. The US military presence in the region directly impacts Venezuela's sovereignty and regional power dynamics.
+        </p>
+
+        <h2 class="text-2xl font-bold text-white mb-4 mt-8">Historical Patterns: Fire-Horse Years</h2>
+        <p class="mb-6 text-lg text-mystic-200 leading-relaxed">
+          <strong>Previous Bingwu (丙午) years include:</strong> 1966, 1906, 1846, 1786. Each of these periods witnessed significant global conflicts, economic crises, or major power shifts. The Fire-Horse combination represents rapid change, conflict, and transformation—qualities that manifest both individually and collectively.
+        </p>
+
+        <h2 class="text-2xl font-bold text-white mb-4 mt-8">Economic Implications</h2>
+        <p class="mb-6 text-lg text-mystic-200 leading-relaxed">
+          The Red Horse and Red Sheep years typically bring economic volatility, currency fluctuations, and market corrections. The current global economic situation, combined with military tensions in resource-rich regions, creates a perfect storm for financial instability. Investors should prepare for increased market volatility during 2026-2027.
+        </p>
+
+        <h2 class="text-2xl font-bold text-white mb-4 mt-8">Social and Political Unrest</h2>
+        <p class="mb-6 text-lg text-mystic-200 leading-relaxed">
+          Fire energy in these years often manifests as social movements, political protests, and civil unrest. The combination of economic pressure, military tensions, and political polarization creates fertile ground for social upheaval. We may witness increased activism, protests, and political realignments globally.
+        </p>
+
+        <h2 class="text-2xl font-bold text-white mb-4 mt-8">Preparing for the Red Horse & Red Sheep Years</h2>
+        <p class="mb-6 text-lg text-mystic-200 leading-relaxed">
+          <strong>For individuals:</strong> Focus on building resilience, maintaining financial stability, and developing strong support networks. These years favor those who can adapt quickly to changing circumstances.
+        </p>
+        
+        <p class="mb-6 text-lg text-mystic-200 leading-relaxed">
+          <strong>For businesses:</strong> Diversify operations, strengthen supply chains, and prepare contingency plans for economic and political disruptions.
+        </p>
+
+        <h2 class="text-2xl font-bold text-white mb-4 mt-8">The Path Forward</h2>
+        <p class="mb-6 text-lg text-mystic-200 leading-relaxed">
+          While the Red Horse and Red Sheep years bring challenges, they also offer opportunities for transformation and growth. Understanding these cosmic patterns allows us to navigate the coming turbulence with greater awareness and preparation.
+        </p>
+        
+        <div class="bg-gradient-to-r from-green-500/20 to-blue-500/20 border border-green-500/30 rounded-lg p-6 mb-6">
+          <h3 class="text-lg font-semibold text-green-400 mb-3">Key Takeaways</h3>
+          <p class="text-mystic-200 leading-relaxed">
+            The US military deployment in Latin America, combined with Venezuela's strategic importance, signals the beginning of a period of significant global transformation. The Red Horse and Red Sheep years (2026-2027) will likely bring increased geopolitical tensions, economic volatility, and social change. Preparation and awareness are key to navigating these transformative times successfully.
+          </p>
+        </div>
+      `,
+      author: 'Master XuanYin',
+      date: '2025-08-29',
+      readTime: '15 min read',
+      category: 'bazi',
+      tags: ['Global Analysis', 'Red Horse Red Sheep', 'Bingwu Dingwei', '2026-2027', 'Geopolitics', 'US Military', 'Latin America', 'Venezuela', 'Global Turmoil', 'Chinese Astrology', 'Historical Cycles', 'Economic Crisis', 'Social Unrest'],
+      image: '/images/blog/red-horse-red-sheep-global-turmoil-2026-2027-cover.jpg'
+    },
     "lighting-ding-fire-autumn-metal": {
       title: "Lighting a Ding Fire in an Autumn Metal Month",
       excerpt: "A BaZi case study: How to cultivate Wood and choose STEM roles for a Ding Fire person born in autumn Metal season. Practical guidance for personal development and career success.",
