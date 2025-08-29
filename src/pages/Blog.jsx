@@ -4,42 +4,6 @@ import { Tag } from 'lucide-react'
 import SEO from '../components/SEO'
 
 const Blog = () => {
-  // SEO structured data for better search indexing
-  const structuredData = {
-    "@context": "https://schema.org",
-    "@type": "Blog",
-    "name": "FatePath BaZi & Chinese Astrology Blog",
-    "description": "Expert insights on BaZi analysis, Chinese astrology, and life destiny through ancient wisdom and modern interpretation.",
-    "url": "https://fatepath.me/blog",
-    "publisher": {
-      "@type": "Organization",
-      "name": "FatePath",
-      "url": "https://fatepath.me"
-    },
-    "mainEntity": {
-      "@type": "ItemList",
-      "numberOfItems": 13,
-      "itemListElement": blogPosts.map((post, index) => ({
-        "@type": "ListItem",
-        "position": index + 1,
-        "item": {
-          "@type": "BlogPosting",
-          "headline": post.title,
-          "description": post.excerpt,
-          "url": `https://fatepath.me/blog/${post.slug}`,
-          "datePublished": post.date,
-          "author": {
-            "@type": "Person",
-            "name": "Master XuanYin"
-          },
-          "publisher": {
-            "@type": "Organization",
-            "name": "FatePath"
-          }
-        }
-      }))
-    }
-  }
   const [searchParams, setSearchParams] = useSearchParams()
   const [selectedCategory, setSelectedCategory] = useState('all')
   const [selectedTag, setSelectedTag] = useState('all')
@@ -68,7 +32,7 @@ const Blog = () => {
       category: 'bazi',
       tags: ['Global Analysis', 'Red Horse Red Sheep', 'Bingwu Dingwei', '2026-2027', 'Geopolitics', 'US Military', 'Latin America', 'Venezuela', 'Global Turmoil', 'Chinese Astrology', 'Historical Cycles', 'Economic Crisis', 'Social Unrest'],
       image: "/images/blog/red-horse-red-sheep-global-turmoil-2026-2027-cover.jpg",
-      date: "2025-01-26",
+      date: "2025-08-29",
       readTime: "15 min read",
       slug: "red-horse-red-sheep-global-turmoil-2026-2027"
     },
@@ -205,6 +169,43 @@ const Blog = () => {
       slug: "understanding-bazi-chart-beginners-guide"
     }
   ]
+
+  // SEO structured data for better search indexing
+  const structuredData = {
+    "@context": "https://schema.org",
+    "@type": "Blog",
+    "name": "FatePath BaZi & Chinese Astrology Blog",
+    "description": "Expert insights on BaZi analysis, Chinese astrology, and life destiny through ancient wisdom and modern interpretation.",
+    "url": "https://fatepath.me/blog",
+    "publisher": {
+      "@type": "Organization",
+      "name": "FatePath",
+      "url": "https://fatepath.me"
+    },
+    "mainEntity": {
+      "@type": "ItemList",
+      "numberOfItems": 13,
+      "itemListElement": blogPosts.map((post, index) => ({
+        "@type": "ListItem",
+        "position": index + 1,
+        "item": {
+          "@type": "BlogPosting",
+          "headline": post.title,
+          "description": post.excerpt,
+          "url": `https://fatepath.me/blog/${post.slug}`,
+          "datePublished": post.date,
+          "author": {
+            "@type": "Person",
+            "name": "Master XuanYin"
+          },
+          "publisher": {
+            "@type": "Organization",
+            "name": "FatePath"
+          }
+        }
+      }))
+    }
+  }
 
   // Get all unique tags from blog posts
   const allTags = ['all', ...Array.from(new Set(blogPosts.flatMap(post => post.tags)))]
