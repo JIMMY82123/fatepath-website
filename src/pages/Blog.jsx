@@ -18,7 +18,7 @@ const Blog = () => {
     },
     "mainEntity": {
       "@type": "ItemList",
-      "numberOfItems": 12,
+      "numberOfItems": 13,
       "itemListElement": blogPosts.map((post, index) => ({
         "@type": "ListItem",
         "position": index + 1,
@@ -54,13 +54,24 @@ const Blog = () => {
   }, [searchParams])
 
   const categories = [
-    { id: 'all', name: 'All Articles', count: 12 },
-    { id: 'bazi', name: 'BaZi Analysis', count: 7 },
+    { id: 'all', name: 'All Articles', count: 13 },
+    { id: 'bazi', name: 'BaZi Analysis', count: 8 },
     { id: 'love', name: 'Love & Relationships', count: 2 },
     { id: 'wealth', name: 'Wealth & Career', count: 3 }
   ]
 
   const blogPosts = [
+    {
+      id: 19,
+      title: "US Increases Naval Presence Near South America, Citing Drug War; Tension Rises in Venezuela. An Analysis Pointing Towards Global Turmoil in the Coming 'Red Horse & Red Sheep' Years",
+      excerpt: "Deep analysis of US military deployment in Latin America and its connection to the upcoming Bingwu (丙午) and Dingwei (丁未) years (2026-2027) - the 'Red Horse and Red Sheep' omen. Explore how geopolitical tensions, economic crises, and social contradictions converge to create a perfect storm of global instability.",
+      category: 'bazi',
+      tags: ['Global Analysis', 'Red Horse Red Sheep', 'Bingwu Dingwei', '2026-2027', 'Geopolitics', 'US Military', 'Latin America', 'Venezuela', 'Global Turmoil', 'Chinese Astrology', 'Historical Cycles', 'Economic Crisis', 'Social Unrest'],
+      image: "/images/blog/red-horse-red-sheep-global-turmoil-2026-2027-cover.jpg",
+      date: "2025-01-26",
+      readTime: "15 min read",
+      slug: "red-horse-red-sheep-global-turmoil-2026-2027"
+    },
     {
       id: 18,
       title: "Lighting a Ding Fire in an Autumn Metal Month: Advanced BaZi Career Analysis",
