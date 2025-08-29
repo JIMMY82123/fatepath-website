@@ -22,7 +22,21 @@ const BlogPost = () => {
       readTime: '15 min read',
       category: 'bazi',
       tags: ['Global Analysis', 'Red Horse Red Sheep', 'Bingwu Dingwei', '2026-2027', 'Geopolitics', 'US Military', 'Latin America', 'Venezuela', 'Global Turmoil', 'Chinese Astrology', 'Historical Cycles', 'Economic Crisis', 'Social Unrest'],
-      image: '/images/blog/red-horse-red-sheep-global-turmoil-2026-2027-cover.jpg'
+      image: '/images/blog/red-horse-red-sheep-global-turmoil-2026-2027-cover.jpg',
+      relatedPosts: [
+        {
+          title: "Lighting a Ding Fire in an Autumn Metal Month",
+          excerpt: "A BaZi case study: How to cultivate Wood and choose STEM roles for a Ding Fire person born in autumn Metal season.",
+          image: "/images/blog/lighting-ding-fire-autumn-metal-cover.jpg",
+          slug: "lighting-ding-fire-autumn-metal"
+        },
+        {
+          title: "The Wealth God in Your BaZi Chart",
+          excerpt: "Discover how to identify and activate the Wealth God element in your personal BaZi chart for financial success.",
+          image: "/images/blog/wealth-god-bazi-chart-cover.jpg",
+          slug: "wealth-god-bazi-chart"
+        }
+      ]
     },
     "lighting-ding-fire-autumn-metal": {
       title: "Lighting a Ding Fire in an Autumn Metal Month",
