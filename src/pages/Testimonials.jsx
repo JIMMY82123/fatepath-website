@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react'
-import { motion } from 'framer-motion'
-import { Star, Heart, Shield, Star as StarIcon, Filter, Search } from 'lucide-react'
+import { motion, AnimatePresence } from 'framer-motion'
+import { Star, Heart, Shield, Star as StarIcon, Filter, Search, MessageCircle, X } from 'lucide-react'
 import SEO from '../components/SEO'
 import { getCachedAIAvatar, generateAvatarUrls } from '../utils/aiAvatarGenerator'
 
@@ -9,7 +9,10 @@ const Testimonials = () => {
   const [selectedService, setSelectedService] = useState('all')
   const [selectedRating, setSelectedRating] = useState('all')
   const [testimonialsWithAvatars, setTestimonialsWithAvatars] = useState([])
+  const [activeTab, setActiveTab] = useState('personal') // 'personal' or 'reddit'
+  const [selectedRedditReview, setSelectedRedditReview] = useState(null) // For modal
 
+  // Reduced personal testimonials (from 12 to 8)
   const testimonials = [
     {
       id: 1,
@@ -97,51 +100,21 @@ const Testimonials = () => {
       content: "I was in a toxic relationship for three years but couldn't see the red flags. The reading opened my eyes: I was repeating childhood patterns, attracting 'destructive fire' partners because I was used to chaos. It predicted I'd have the strength to leave in 'the month of water' (November). I ended it on November 15th. Six months later, I met someone with 'nurturing earth energy.' The difference is night and day. I finally understand what healthy love feels like.",
       icon: <Heart className="h-6 w-6" />,
       date: "2024-11-20"
-    },
-    {
-      id: 9,
-      name: "Sophie Anderson",
-      location: "Melbourne, Australia",
-      rating: 5,
-      service: "Career Guidance Reading",
-      avatar: "/images/testimonials/sophie-anderson.jpg",
-      content: "I was stuck in a dead-end marketing job, feeling completely unfulfilled. The BaZi analysis revealed I have 'healing water energy' that was being wasted on corporate BS. It suggested healthcare or wellness would be my true calling. I was skeptical but decided to study nutrition part-time. Within a year, I was running my own wellness coaching business. I'm now helping others find their path while making more money than I ever did in marketing. The reading didn't just identify my calling—it gave me the confidence to pursue it.",
-      icon: <Star className="h-6 w-6" />,
-      date: "2024-11-18"
-    },
-    {
-      id: 10,
-      name: "Robert Martinez",
-      location: "Chicago, USA",
-      rating: 5,
-      service: "Custom Talisman",
-      avatar: "/images/testimonials/robert-martinez.jpg",
-      content: "Chronic stress was killing me—literally. I had high blood pressure, insomnia, and doctors couldn't find a cause. The talisman was designed to balance the 'excessive fire' in my chart that was causing the imbalance. I wore it for two weeks before noticing any changes. By month 2, my blood pressure normalized. By month 3, I was sleeping like a baby. My doctor was amazed. The talisman has become my daily companion. It's not a cure-all, but it's definitely a game-changer.",
-      icon: <Shield className="h-6 w-6" />,
-      date: "2024-11-15"
-    },
-    {
-      id: 11,
-      name: "Yuki Tanaka",
-      location: "Tokyo, Japan",
-      rating: 5,
-      service: "Full BaZi Reading",
-      avatar: "/images/testimonials/yuki-tanaka.jpg",
-      content: "Family conflicts were destroying my mental health. I couldn't understand why my traditional Japanese family couldn't accept my modern lifestyle choices. The BaZi reading revealed I have 'independent metal energy' that naturally clashes with traditional expectations. It helped me understand I'm not wrong for wanting to live differently. The reading also showed me how to communicate better while staying true to myself. Our relationships have improved significantly. Sometimes understanding yourself helps you understand others.",
-      icon: <Star className="h-6 w-6" />,
-      date: "2024-11-12"
-    },
-    {
-      id: 12,
-      name: "Amanda Foster",
-      location: "Vancouver, Canada",
-      rating: 5,
-      service: "Love Compatibility Reading",
-      avatar: "/images/testimonials/amanda-foster.jpg",
-      content: "I was dating someone for a year and couldn't decide if we should get married. The compatibility reading revealed we have 'good chemistry but challenging long-term compatibility.' It showed specific areas where we'd struggle and suggested ways to work through them. We decided to get pre-marital counseling based on the insights. The reading gave us the tools to build a stronger foundation. We're now happily married and better equipped to handle challenges together. Sometimes love needs a roadmap.",
-      icon: <Heart className="h-6 w-6" />,
-      date: "2024-11-10"
     }
+  ]
+
+  // Reddit reviews data
+  const redditReviews = [
+    { id: 1, image: "/images/reddit-reviews/reddit-review-1.jpg" },
+    { id: 2, image: "/images/reddit-reviews/reddit-review-2.jpg" },
+    { id: 3, image: "/images/reddit-reviews/reddit-review-3.jpg" },
+    { id: 4, image: "/images/reddit-reviews/reddit-review-4.jpg" },
+    { id: 5, image: "/images/reddit-reviews/reddit-review-5.jpg" },
+    { id: 6, image: "/images/reddit-reviews/reddit-review-6.jpg" },
+    { id: 7, image: "/images/reddit-reviews/reddit-review-7.jpg" },
+    { id: 8, image: "/images/reddit-reviews/reddit-review-8.jpg" },
+    { id: 9, image: "/images/reddit-reviews/reddit-review-9.jpg" },
+    { id: 10, image: "/images/reddit-reviews/reddit-review-10.jpg" }
   ]
 
   // 生成AI头像
@@ -193,6 +166,14 @@ const Testimonials = () => {
     return matchesSearch && matchesService && matchesRating
   })
 
+  const handleRedditReviewClick = (review) => {
+    setSelectedRedditReview(review)
+  }
+
+  const closeModal = () => {
+    setSelectedRedditReview(null)
+  }
+
   return (
     <>
       <SEO 
@@ -243,130 +224,266 @@ const Testimonials = () => {
             </div>
           </motion.div>
 
-          {/* Filters */}
+          {/* Tab Navigation */}
           <motion.div 
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.4 }}
-            className="mb-8 sm:mb-12"
+            transition={{ duration: 0.8, delay: 0.3 }}
+            className="mb-8"
           >
-            <div className="flex flex-col sm:flex-row gap-4 items-center justify-between">
-              {/* Search */}
-              <div className="relative flex-1 max-w-md w-full">
-                <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 h-5 w-5 text-mystic-400" aria-hidden="true" />
-                <input
-                  type="text"
-                  placeholder="Search testimonials..."
-                  value={searchTerm}
-                  onChange={(e) => setSearchTerm(e.target.value)}
-                  className="w-full pl-10 pr-4 py-3 text-base bg-mystic-800/50 border border-mystic-700/50 rounded-lg text-white placeholder-mystic-400 focus:border-gold-500/50 focus:outline-none transition-colors"
-                />
-              </div>
-
-              {/* Service Filter */}
-              <div className="flex items-center space-x-2">
-                <Filter className="h-5 w-5 text-mystic-400" aria-hidden="true" />
-                <select
-                  value={selectedService}
-                  onChange={(e) => setSelectedService(e.target.value)}
-                  className="px-4 py-3 text-base bg-mystic-800/50 border border-mystic-700/50 rounded-lg text-white focus:border-gold-500/50 focus:outline-none transition-colors"
+            <div className="flex justify-center">
+              <div className="bg-mystic-800/50 rounded-lg p-1 border border-mystic-700/50">
+                <button
+                  onClick={() => setActiveTab('personal')}
+                  className={`px-6 py-3 rounded-md text-sm font-medium transition-all duration-200 ${
+                    activeTab === 'personal'
+                      ? 'bg-gold-400 text-white shadow-lg'
+                      : 'text-mystic-300 hover:text-white hover:bg-mystic-700/50'
+                  }`}
                 >
-                  {services.map(service => (
-                    <option key={service.value} value={service.value}>
-                      {service.label}
-                    </option>
-                  ))}
-                </select>
-              </div>
-
-              {/* Rating Filter */}
-              <div className="flex items-center space-x-2">
-                <Star className="h-5 w-5 text-mystic-400" aria-hidden="true" />
-                <select
-                  value={selectedRating}
-                  onChange={(e) => setSelectedRating(e.target.value)}
-                  className="px-4 py-3 text-base bg-mystic-800/50 border border-mystic-700/50 rounded-lg text-white focus:border-gold-500/50 focus:outline-none transition-colors"
+                  <Star className="inline-block h-4 w-4 mr-2" />
+                  Personal Stories
+                </button>
+                <button
+                  onClick={() => setActiveTab('reddit')}
+                  className={`px-6 py-3 rounded-md text-sm font-medium transition-all duration-200 ${
+                    activeTab === 'reddit'
+                      ? 'bg-gold-400 text-white shadow-lg'
+                      : 'text-mystic-300 hover:text-white hover:bg-mystic-700/50'
+                  }`}
                 >
-                  {ratings.map(rating => (
-                    <option key={rating.value} value={rating.value}>
-                      {rating.label}
-                    </option>
-                  ))}
-                </select>
+                  <MessageCircle className="inline-block h-4 w-4 mr-2" />
+                  Reddit Community
+                </button>
               </div>
             </div>
           </motion.div>
 
-          {/* Testimonials Grid */}
-          <motion.div 
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.6 }}
-            className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12"
-          >
-            {filteredTestimonials.map((testimonial, index) => (
-              <motion.div
-                key={testimonial.id}
+          {/* Content based on active tab */}
+          {activeTab === 'personal' ? (
+            <>
+              {/* Filters - Only show for personal testimonials */}
+              <motion.div 
                 initial={{ opacity: 0, y: 30 }}
                 animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, delay: 0.1 * index }}
-                className="mystic-card p-6 hover:transform hover:scale-105 transition-all duration-300"
+                transition={{ duration: 0.8, delay: 0.4 }}
+                className="mb-8 sm:mb-12"
               >
-                {/* Header */}
-                <div className="flex items-start space-x-4 mb-4">
-                  <div className="w-12 h-12 rounded-full bg-gradient-to-r from-gold-500 to-orange-500 flex items-center justify-center flex-shrink-0 overflow-hidden">
-                                         <img
-                       src={testimonial.avatar}
-                       alt={testimonial.name}
-                       className="w-full h-full rounded-full object-cover"
-                       onError={(e) => {
-                         e.target.style.display = 'none';
-                         e.target.nextSibling.style.display = 'flex';
-                       }}
-                     />
-                    <div className="text-white font-semibold text-lg hidden">
-                      {testimonial.name.charAt(0)}
-                    </div>
+                <div className="flex flex-col sm:flex-row gap-4 items-center justify-between">
+                  {/* Search */}
+                  <div className="relative flex-1 max-w-md w-full">
+                    <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 h-5 w-5 text-mystic-400" aria-hidden="true" />
+                    <input
+                      type="text"
+                      placeholder="Search testimonials..."
+                      value={searchTerm}
+                      onChange={(e) => setSearchTerm(e.target.value)}
+                      className="w-full pl-10 pr-4 py-3 text-base bg-mystic-800/50 border border-mystic-700/50 rounded-lg text-white placeholder-mystic-400 focus:border-gold-500/50 focus:outline-none transition-colors"
+                    />
                   </div>
-                  <div className="flex-1">
-                    <div className="flex items-center justify-between mb-2">
-                      <h3 className="font-semibold text-white">{testimonial.name}</h3>
-                      <div className="flex items-center space-x-1">
-                        {renderStars(testimonial.rating)}
-                      </div>
-                    </div>
-                    <div className="flex items-center justify-between text-sm">
-                      <span className="text-mystic-400">{testimonial.location}</span>
-                      <span className="text-gold-400 font-medium">{testimonial.service}</span>
-                    </div>
-                    <div className="text-xs text-mystic-500 mt-1">
-                      {formatDate(testimonial.date)}
-                    </div>
-                  </div>
-                </div>
 
-                {/* Content */}
-                <div className="text-mystic-300 leading-relaxed">
-                  "{testimonial.content}"
+                  {/* Service Filter */}
+                  <div className="flex items-center space-x-2">
+                    <Filter className="h-5 w-5 text-mystic-400" aria-hidden="true" />
+                    <select
+                      value={selectedService}
+                      onChange={(e) => setSelectedService(e.target.value)}
+                      className="px-4 py-3 text-base bg-mystic-800/50 border border-mystic-700/50 rounded-lg text-white focus:border-gold-500/50 focus:outline-none transition-colors"
+                    >
+                      {services.map(service => (
+                        <option key={service.value} value={service.value}>
+                          {service.label}
+                        </option>
+                      ))}
+                    </select>
+                  </div>
+
+                  {/* Rating Filter */}
+                  <div className="flex items-center space-x-2">
+                    <Star className="h-5 w-5 text-mystic-400" aria-hidden="true" />
+                    <select
+                      value={selectedRating}
+                      onChange={(e) => setSelectedRating(e.target.value)}
+                      className="px-4 py-3 text-base bg-mystic-800/50 border border-mystic-700/50 rounded-lg text-white focus:border-gold-500/50 focus:outline-none transition-colors"
+                    >
+                      {ratings.map(rating => (
+                        <option key={rating.value} value={rating.value}>
+                          {rating.label}
+                        </option>
+                      ))}
+                    </select>
+                  </div>
                 </div>
               </motion.div>
-            ))}
-          </motion.div>
 
-          {/* No Results */}
-          {filteredTestimonials.length === 0 && (
-            <motion.div 
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              className="text-center py-12"
-            >
-              <div className="text-6xl mb-4">🔍</div>
-              <h3 className="text-xl font-semibold text-white mb-2">No testimonials found</h3>
-              <p className="text-mystic-400">Try adjusting your search criteria or filters.</p>
-            </motion.div>
+              {/* Personal Testimonials Grid */}
+              <motion.div 
+                initial={{ opacity: 0, y: 30 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.6 }}
+                className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12"
+              >
+                {filteredTestimonials.map((testimonial, index) => (
+                  <motion.div
+                    key={testimonial.id}
+                    initial={{ opacity: 0, y: 30 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.6, delay: 0.1 * index }}
+                    className="mystic-card p-6 hover:transform hover:scale-105 transition-all duration-300"
+                  >
+                    {/* Header */}
+                    <div className="flex items-start space-x-4 mb-4">
+                      <div className="w-12 h-12 rounded-full bg-gradient-to-r from-gold-500 to-orange-500 flex items-center justify-center flex-shrink-0 overflow-hidden">
+                        <img
+                          src={testimonial.avatar}
+                          alt={testimonial.name}
+                          className="w-full h-full rounded-full object-cover"
+                          onError={(e) => {
+                            e.target.style.display = 'none';
+                            e.target.nextSibling.style.display = 'flex';
+                          }}
+                        />
+                        <div className="text-white font-semibold text-lg hidden">
+                          {testimonial.name.charAt(0)}
+                        </div>
+                      </div>
+                      <div className="flex-1">
+                        <div className="flex items-center justify-between mb-2">
+                          <h3 className="font-semibold text-white">{testimonial.name}</h3>
+                          <div className="flex items-center space-x-1">
+                            {renderStars(testimonial.rating)}
+                          </div>
+                        </div>
+                        <div className="flex items-center justify-between text-sm">
+                          <span className="text-mystic-400">{testimonial.location}</span>
+                          <span className="text-gold-400 font-medium">{testimonial.service}</span>
+                        </div>
+                        <div className="text-xs text-mystic-500 mt-1">
+                          {formatDate(testimonial.date)}
+                        </div>
+                      </div>
+                    </div>
+
+                    {/* Content */}
+                    <div className="text-mystic-300 leading-relaxed">
+                      "{testimonial.content}"
+                    </div>
+                  </motion.div>
+                ))}
+              </motion.div>
+
+              {/* No Results for Personal */}
+              {filteredTestimonials.length === 0 && (
+                <motion.div 
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                  className="text-center py-12"
+                >
+                  <div className="text-6xl mb-4">🔍</div>
+                  <h3 className="text-xl font-semibold text-white mb-2">No testimonials found</h3>
+                  <p className="text-mystic-400">Try adjusting your search criteria or filters.</p>
+                </motion.div>
+              )}
+            </>
+          ) : (
+            <>
+              {/* Reddit Reviews Mosaic */}
+              <motion.div 
+                initial={{ opacity: 0, y: 30 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.6 }}
+                className="mb-12"
+              >
+                <div className="text-center mb-8">
+                  <h2 className="text-2xl font-bold text-white mb-4">Community Love on Reddit</h2>
+                  <p className="text-mystic-300">Click on any review to see it in full size</p>
+                </div>
+                
+                {/* Mosaic Grid */}
+                <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-3">
+                  {redditReviews.map((review, index) => (
+                    <motion.div
+                      key={review.id}
+                      initial={{ opacity: 0, scale: 0.8 }}
+                      animate={{ opacity: 1, scale: 1 }}
+                      transition={{ duration: 0.5, delay: 0.1 * index }}
+                      className="group cursor-pointer"
+                      onClick={() => handleRedditReviewClick(review)}
+                    >
+                      <div className="relative overflow-hidden rounded-lg border-2 border-mystic-700/50 hover:border-gold-400/50 transition-all duration-300 hover:shadow-lg hover:shadow-gold-400/20">
+                        <img
+                          src={review.image}
+                          alt={`Reddit Review ${review.id}`}
+                          className="w-full h-auto object-cover transition-transform duration-300 group-hover:scale-105"
+                          onError={(e) => {
+                            e.target.style.display = 'none';
+                            e.target.nextSibling.style.display = 'flex';
+                          }}
+                        />
+                        <div className="w-full h-full bg-mystic-700 flex items-center justify-center hidden">
+                          <span className="text-mystic-400 text-sm">Review Image</span>
+                        </div>
+                        
+                        {/* Hover overlay */}
+                        <div className="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                          <div className="text-center text-white">
+                            <MessageCircle className="h-8 w-8 mx-auto mb-2 text-gold-400" />
+                            <p className="text-sm font-medium">Click to enlarge</p>
+                          </div>
+                        </div>
+                      </div>
+                    </motion.div>
+                  ))}
+                </div>
+              </motion.div>
+            </>
           )}
         </div>
       </div>
+
+      {/* Reddit Review Modal */}
+      <AnimatePresence>
+        {selectedRedditReview && (
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/80"
+            onClick={closeModal}
+          >
+            <motion.div
+              initial={{ scale: 0.8, opacity: 0 }}
+              animate={{ scale: 1, opacity: 1 }}
+              exit={{ scale: 0.8, opacity: 0 }}
+              transition={{ type: "spring", damping: 25, stiffness: 300 }}
+              className="relative max-w-4xl max-h-[90vh] overflow-hidden rounded-lg bg-mystic-900 border border-mystic-700"
+              onClick={(e) => e.stopPropagation()}
+            >
+              {/* Close button */}
+              <button
+                onClick={closeModal}
+                className="absolute top-4 right-4 z-10 p-2 rounded-full bg-black/50 text-white hover:bg-black/70 transition-colors"
+              >
+                <X className="h-6 w-6" />
+              </button>
+              
+              {/* Image */}
+              <img
+                src={selectedRedditReview.image}
+                alt={`Reddit Review ${selectedRedditReview.id}`}
+                className="w-full h-auto max-h-[90vh] object-contain"
+                onError={(e) => {
+                  e.target.style.display = 'none';
+                  e.target.nextSibling.style.display = 'flex';
+                }}
+              />
+              <div className="w-full h-full bg-mystic-700 flex items-center justify-center hidden">
+                <span className="text-mystic-400">Review Image</span>
+              </div>
+            </motion.div>
+          </motion.div>
+        )}
+      </AnimatePresence>
     </>
   )
 }

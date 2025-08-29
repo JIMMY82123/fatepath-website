@@ -1,7 +1,17 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 
 const Home = () => {
+  const [selectedRedditReview, setSelectedRedditReview] = useState(null) // For modal
+
+  const handleRedditReviewClick = (review) => {
+    setSelectedRedditReview(review)
+  }
+
+  const closeModal = () => {
+    setSelectedRedditReview(null)
+  }
+
   return (
     <main className="min-h-screen bg-slate-900 font-inter">
       {/* Hero Section */}
@@ -257,6 +267,349 @@ const Home = () => {
         </div>
       </section>
 
+      {/* Reddit Community Reviews Section */}
+      <section className="py-24 bg-slate-50">
+        <div className="container mx-auto px-6">
+          <div className="max-w-6xl mx-auto">
+            <div className="text-center mb-16">
+              <h2 className="text-4xl font-playfair font-semibold text-slate-900 mb-6 tracking-tight">
+                Community Love on Reddit
+              </h2>
+              <p className="text-lg text-slate-700 max-w-3xl mx-auto leading-relaxed">
+                Real feedback from the Reddit community - see what people are saying about their BaZi reading experiences
+              </p>
+            </div>
+            
+            {/* Reddit Reviews Mosaic Grid */}
+            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4">
+              {/* Reddit Review 1 */}
+              <div 
+                className="group cursor-pointer transform hover:scale-105 transition-all duration-300"
+                onClick={() => handleRedditReviewClick({ id: 1, image: "/images/reddit-reviews/reddit-review-1.jpg" })}
+              >
+                <div className="relative overflow-hidden rounded-lg border-2 border-slate-200 hover:border-amber-400 transition-all duration-300 hover:shadow-lg hover:shadow-amber-400/20">
+                  <img
+                    src="/images/reddit-reviews/reddit-review-1.jpg"
+                    alt="Reddit Review 1"
+                    className="w-full h-auto object-cover"
+                    onError={(e) => {
+                      e.target.style.display = 'none';
+                      e.target.nextSibling.style.display = 'flex';
+                    }}
+                  />
+                  <div className="w-full h-full bg-slate-200 flex items-center justify-center hidden">
+                    <span className="text-slate-500 text-sm">Review Image</span>
+                  </div>
+                  
+                  {/* Hover overlay */}
+                  <div className="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                    <div className="text-center text-white">
+                      <div className="w-8 h-8 bg-orange-500 rounded-full mx-auto mb-2 flex items-center justify-center">
+                        <span className="text-white text-xs font-bold">r</span>
+                      </div>
+                      <p className="text-sm font-medium">Click to enlarge</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* Reddit Review 2 */}
+              <div 
+                className="group cursor-pointer transform hover:scale-105 transition-all duration-300"
+                onClick={() => handleRedditReviewClick({ id: 2, image: "/images/reddit-reviews/reddit-review-2.jpg" })}
+              >
+                <div className="relative overflow-hidden rounded-lg border-2 border-slate-200 hover:border-amber-400 transition-all duration-300 hover:shadow-lg hover:shadow-amber-400/20">
+                  <img
+                    src="/images/reddit-reviews/reddit-review-2.jpg"
+                    alt="Reddit Review 2"
+                    className="w-full h-auto object-cover"
+                    onError={(e) => {
+                      e.target.style.display = 'none';
+                      e.target.nextSibling.style.display = 'flex';
+                    }}
+                  />
+                  <div className="w-full h-full bg-slate-200 flex items-center justify-center hidden">
+                    <span className="text-slate-500 text-sm">Review Image</span>
+                  </div>
+                  
+                  {/* Hover overlay */}
+                  <div className="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                    <div className="text-center text-white">
+                      <div className="w-8 h-8 bg-orange-500 rounded-full mx-auto mb-2 flex items-center justify-center">
+                        <span className="text-white text-xs font-bold">r</span>
+                      </div>
+                      <p className="text-sm font-medium">Click to enlarge</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* Reddit Review 3 */}
+              <div 
+                className="group cursor-pointer transform hover:scale-105 transition-all duration-300"
+                onClick={() => handleRedditReviewClick({ id: 3, image: "/images/reddit-reviews/reddit-review-3.jpg" })}
+              >
+                <div className="relative overflow-hidden rounded-lg border-2 border-slate-200 hover:border-amber-400 transition-all duration-300 hover:shadow-lg hover:shadow-amber-400/20">
+                  <img
+                    src="/images/reddit-reviews/reddit-review-3.jpg"
+                    alt="Reddit Review 3"
+                    className="w-full h-auto object-cover"
+                    onError={(e) => {
+                      e.target.style.display = 'none';
+                      e.target.nextSibling.style.display = 'flex';
+                    }}
+                  />
+                  <div className="w-full h-full bg-slate-200 flex items-center justify-center hidden">
+                    <span className="text-slate-500 text-sm">Review Image</span>
+                  </div>
+                  
+                  {/* Hover overlay */}
+                  <div className="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                    <div className="text-center text-white">
+                      <div className="w-8 h-8 bg-orange-500 rounded-full mx-auto mb-2 flex items-center justify-center">
+                        <span className="text-white text-xs font-bold">r</span>
+                      </div>
+                      <p className="text-sm font-medium">Click to enlarge</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* Reddit Review 4 */}
+              <div 
+                className="group cursor-pointer transform hover:scale-105 transition-all duration-300"
+                onClick={() => handleRedditReviewClick({ id: 4, image: "/images/reddit-reviews/reddit-review-4.jpg" })}
+              >
+                <div className="relative overflow-hidden rounded-lg border-2 border-slate-200 hover:border-amber-400 transition-all duration-300 hover:shadow-lg hover:shadow-amber-400/20">
+                  <img
+                    src="/images/reddit-reviews/reddit-review-4.jpg"
+                    alt="Reddit Review 4"
+                    className="w-full h-auto object-cover"
+                    onError={(e) => {
+                      e.target.style.display = 'none';
+                      e.target.nextSibling.style.display = 'flex';
+                    }}
+                  />
+                  <div className="w-full h-full bg-slate-200 flex items-center justify-center hidden">
+                    <span className="text-slate-500 text-sm">Review Image</span>
+                  </div>
+                  
+                  {/* Hover overlay */}
+                  <div className="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                    <div className="text-center text-white">
+                      <div className="w-8 h-8 bg-orange-500 rounded-full mx-auto mb-2 flex items-center justify-center">
+                        <span className="text-white text-xs font-bold">r</span>
+                      </div>
+                      <p className="text-sm font-medium">Click to enlarge</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* Reddit Review 5 */}
+              <div 
+                className="group cursor-pointer transform hover:scale-105 transition-all duration-300"
+                onClick={() => handleRedditReviewClick({ id: 5, image: "/images/reddit-reviews/reddit-review-5.jpg" })}
+              >
+                <div className="relative overflow-hidden rounded-lg border-2 border-slate-200 hover:border-amber-400 transition-all duration-300 hover:shadow-lg hover:shadow-amber-400/20">
+                  <img
+                    src="/images/reddit-reviews/reddit-review-5.jpg"
+                    alt="Reddit Review 5"
+                    className="w-full h-auto object-cover"
+                    onError={(e) => {
+                      e.target.style.display = 'none';
+                      e.target.nextSibling.style.display = 'flex';
+                    }}
+                  />
+                  <div className="w-full h-full bg-slate-200 flex items-center justify-center hidden">
+                    <span className="text-slate-500 text-sm">Review Image</span>
+                  </div>
+                  
+                  {/* Hover overlay */}
+                  <div className="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                    <div className="text-center text-white">
+                      <div className="w-8 h-8 bg-orange-500 rounded-full mx-auto mb-2 flex items-center justify-center">
+                        <span className="text-white text-xs font-bold">r</span>
+                      </div>
+                      <p className="text-sm font-medium">Click to enlarge</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* Reddit Review 6 */}
+              <div 
+                className="group cursor-pointer transform hover:scale-105 transition-all duration-300"
+                onClick={() => handleRedditReviewClick({ id: 6, image: "/images/reddit-reviews/reddit-review-6.jpg" })}
+              >
+                <div className="relative overflow-hidden rounded-lg border-2 border-slate-200 hover:border-amber-400 transition-all duration-300 hover:shadow-lg hover:shadow-amber-400/20">
+                  <img
+                    src="/images/reddit-reviews/reddit-review-6.jpg"
+                    alt="Reddit Review 6"
+                    className="w-full h-auto object-cover"
+                    onError={(e) => {
+                      e.target.style.display = 'none';
+                      e.target.nextSibling.style.display = 'flex';
+                    }}
+                  />
+                  <div className="w-full h-full bg-slate-200 flex items-center justify-center hidden">
+                    <span className="text-slate-500 text-sm">Review Image</span>
+                  </div>
+                  
+                  {/* Hover overlay */}
+                  <div className="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                    <div className="text-center text-white">
+                      <div className="w-8 h-8 bg-orange-500 rounded-full mx-auto mb-2 flex items-center justify-center">
+                        <span className="text-white text-xs font-bold">r</span>
+                      </div>
+                      <p className="text-sm font-medium">Click to enlarge</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* Reddit Review 7 */}
+              <div 
+                className="group cursor-pointer transform hover:scale-105 transition-all duration-300"
+                onClick={() => handleRedditReviewClick({ id: 7, image: "/images/reddit-reviews/reddit-review-7.jpg" })}
+              >
+                <div className="relative overflow-hidden rounded-lg border-2 border-slate-200 hover:border-amber-400 transition-all duration-300 hover:shadow-lg hover:shadow-amber-400/20">
+                  <img
+                    src="/images/reddit-reviews/reddit-review-7.jpg"
+                    alt="Reddit Review 7"
+                    className="w-full h-auto object-cover"
+                    onError={(e) => {
+                      e.target.style.display = 'none';
+                      e.target.nextSibling.style.display = 'flex';
+                    }}
+                  />
+                  <div className="w-full h-full bg-slate-200 flex items-center justify-center hidden">
+                    <span className="text-slate-500 text-sm">Review Image</span>
+                  </div>
+                  
+                  {/* Hover overlay */}
+                  <div className="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                    <div className="text-center text-white">
+                      <div className="w-8 h-8 bg-orange-500 rounded-full mx-auto mb-2 flex items-center justify-center">
+                        <span className="text-white text-xs font-bold">r</span>
+                      </div>
+                      <p className="text-sm font-medium">Click to enlarge</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* Reddit Review 8 */}
+              <div 
+                className="group cursor-pointer transform hover:scale-105 transition-all duration-300"
+                onClick={() => handleRedditReviewClick({ id: 8, image: "/images/reddit-reviews/reddit-review-8.jpg" })}
+              >
+                <div className="relative overflow-hidden rounded-lg border-2 border-slate-200 hover:border-amber-400 transition-all duration-300 hover:shadow-lg hover:shadow-amber-400/20">
+                  <img
+                    src="/images/reddit-reviews/reddit-review-8.jpg"
+                    alt="Reddit Review 8"
+                    className="w-full h-auto object-cover"
+                    onError={(e) => {
+                      e.target.style.display = 'none';
+                      e.target.nextSibling.style.display = 'flex';
+                    }}
+                  />
+                  <div className="w-full h-full bg-slate-200 flex items-center justify-center hidden">
+                    <span className="text-slate-500 text-sm">Review Image</span>
+                  </div>
+                  
+                  {/* Hover overlay */}
+                  <div className="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                    <div className="text-center text-white">
+                      <div className="w-8 h-8 bg-orange-500 rounded-full mx-auto mb-2 flex items-center justify-center">
+                        <span className="text-white text-xs font-bold">r</span>
+                      </div>
+                      <p className="text-sm font-medium">Click to enlarge</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* Reddit Review 9 */}
+              <div 
+                className="group cursor-pointer transform hover:scale-105 transition-all duration-300"
+                onClick={() => handleRedditReviewClick({ id: 9, image: "/images/reddit-reviews/reddit-review-9.jpg" })}
+              >
+                <div className="relative overflow-hidden rounded-lg border-2 border-slate-200 hover:border-amber-400 transition-all duration-300 hover:shadow-lg hover:shadow-amber-400/20">
+                  <img
+                    src="/images/reddit-reviews/reddit-review-9.jpg"
+                    alt="Reddit Review 9"
+                    className="w-full h-auto object-cover"
+                    onError={(e) => {
+                      e.target.style.display = 'none';
+                      e.target.nextSibling.style.display = 'flex';
+                    }}
+                  />
+                  <div className="w-full h-full bg-slate-200 flex items-center justify-center hidden">
+                    <span className="text-slate-500 text-sm">Review Image</span>
+                  </div>
+                  
+                  {/* Hover overlay */}
+                  <div className="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                    <div className="text-center text-white">
+                      <div className="w-8 h-8 bg-orange-500 rounded-full mx-auto mb-2 flex items-center justify-center">
+                        <span className="text-white text-xs font-bold">r</span>
+                      </div>
+                      <p className="text-sm font-medium">Click to enlarge</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* Reddit Review 10 */}
+              <div 
+                className="group cursor-pointer transform hover:scale-105 transition-all duration-300"
+                onClick={() => handleRedditReviewClick({ id: 10, image: "/images/reddit-reviews/reddit-review-10.jpg" })}
+              >
+                <div className="relative overflow-hidden rounded-lg border-2 border-slate-200 hover:border-amber-400 transition-all duration-300 hover:shadow-lg hover:shadow-amber-400/20">
+                  <img
+                    src="/images/reddit-reviews/reddit-review-10.jpg"
+                    alt="Reddit Review 10"
+                    className="w-full h-auto object-cover"
+                    onError={(e) => {
+                      e.target.style.display = 'none';
+                      e.target.nextSibling.style.display = 'flex';
+                    }}
+                  />
+                  <div className="w-full h-full bg-slate-200 flex items-center justify-center hidden">
+                    <span className="text-slate-500 text-sm">Review Image</span>
+                  </div>
+                  
+                  {/* Hover overlay */}
+                  <div className="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                    <div className="text-center text-white">
+                      <div className="w-8 h-8 bg-orange-500 rounded-full mx-auto mb-2 flex items-center justify-center">
+                        <span className="text-white text-xs font-bold">r</span>
+                      </div>
+                      <p className="text-sm font-medium">Click to enlarge</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Call to Action */}
+            <div className="text-center mt-12">
+              <p className="text-slate-600 mb-4">
+                Join thousands of satisfied clients who have discovered their destiny through BaZi analysis
+              </p>
+              <Link
+                to="/testimonials"
+                className="inline-flex items-center space-x-2 bg-amber-400 text-slate-900 py-3 px-6 rounded-lg font-semibold hover:bg-amber-300 transition-all duration-300"
+              >
+                <span>View All Reviews</span>
+                <div className="w-2 h-2 bg-slate-900 rounded-full"></div>
+              </Link>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* American Celebrity BaZi Analysis Examples */}
       <section className="py-24 bg-white">
         <div className="container mx-auto px-6">
@@ -507,6 +860,38 @@ const Home = () => {
           </div>
         </div>
       </section>
+
+      {/* Reddit Review Modal */}
+      {selectedRedditReview && (
+        <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/80" onClick={closeModal}>
+          <div 
+            className="relative max-w-4xl max-h-[90vh] overflow-hidden rounded-lg bg-white border border-slate-200"
+            onClick={(e) => e.stopPropagation()}
+          >
+            {/* Close button */}
+            <button
+              onClick={closeModal}
+              className="absolute top-4 right-4 z-10 p-2 rounded-full bg-black/50 text-white hover:bg-black/70 transition-colors"
+            >
+              ✕
+            </button>
+            
+            {/* Image */}
+            <img
+              src={selectedRedditReview.image}
+              alt={`Reddit Review ${selectedRedditReview.id}`}
+              className="w-full h-auto max-h-[90vh] object-contain"
+              onError={(e) => {
+                e.target.style.display = 'none';
+                e.target.nextSibling.style.display = 'flex';
+              }}
+            />
+            <div className="w-full h-full bg-slate-200 flex items-center justify-center hidden">
+              <span className="text-slate-500">Review Image</span>
+            </div>
+          </div>
+        </div>
+      )}
     </main>
   )
 }
