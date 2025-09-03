@@ -42,8 +42,8 @@ const FreeBaziReport = () => {
     setShowOfferModal(false)
   }
 
-  // PayPal支付链接 - 添加返回URL参数
-  const paypalLink = "https://www.paypal.com/ncp/payment/9C2AYQDRSB9XY?return_url=" + encodeURIComponent(window.location.origin + '/form-bazi-discount')
+  // Ko-fi支付链接 - 添加返回URL参数
+  const paypalLink = "https://ko-fi.com/s/b41e787977?return_url=" + encodeURIComponent(window.location.origin + '/form-bazi-discount')
 
   const handlePaypalPayment = () => {
     // 在当前窗口打开PayPal支付页面
@@ -772,7 +772,7 @@ const FreeBaziReport = () => {
                      <Gift className="h-8 w-8 text-white" aria-hidden="true" />
                    </div>
                    <h3 className="text-2xl font-cinzel font-bold text-white mb-2">
-                     Special Limited Offer!
+                     Quick Bazi Reading - Only $10!
                    </h3>
                    <p className="text-mystic-300">
                      You've been reading for {Math.floor(timeSpent / 60)}:{(timeSpent % 60).toString().padStart(2, '0')}
@@ -783,24 +783,24 @@ const FreeBaziReport = () => {
                  <div className="space-y-4 mb-6">
                    <div className="bg-mystic-800/50 rounded-lg p-4 border border-mystic-700/50">
                      <h4 className="text-lg font-semibold text-gold-400 mb-2">
-                       🎯 Complete Bazi Analysis Package
+                       ⚡ Quick Bazi Reading Package
                      </h4>
                      <ul className="text-mystic-200 space-y-2 text-sm">
-                       <li>✓ 10,000+ word detailed report</li>
-                       <li>✓ Expert one-on-one consultation</li>
-                       <li>✓ Annual fortune analysis</li>
-                       <li>✓ Personalized recommendations</li>
-                       <li>✓ Priority support</li>
+                       <li>✓ Essential personality analysis</li>
+                       <li>✓ Career direction guidance</li>
+                       <li>✓ Life path insights</li>
+                       <li>✓ Key strengths & challenges</li>
+                       <li>✓ Basic recommendations</li>
                      </ul>
                    </div>
 
                    <div className="text-center">
                      <div className="text-3xl font-bold text-gold-400 mb-2">
                        <span className="line-through text-mystic-400 text-xl">$38</span>
-                       <span className="ml-2">$30</span>
+                       <span className="ml-2">$10</span>
                      </div>
                      <p className="text-mystic-300 text-sm">
-                       Limited time offer - Save 21%
+                       Affordable entry-level option - Save 74%
                      </p>
                    </div>
                  </div>
@@ -814,7 +814,7 @@ const FreeBaziReport = () => {
                       <svg className="h-5 w-5" viewBox="0 0 24 24" fill="currentColor">
                         <path d="M20.067 8.478c.492.315.844.825.844 1.406 0 .58-.352 1.09-.844 1.406-.492.315-1.156.51-1.875.51h-1.406c-.492 0-.844-.195-.844-.51 0-.315.352-.51.844-.51h1.406c.352 0 .703-.195.703-.406 0-.21-.351-.406-.703-.406h-1.406c-.492 0-.844-.195-.844-.51 0-.315.352-.51.844-.51h1.406c.719 0 1.383.195 1.875.51zM12.5 8.478c.492.315.844.825.844 1.406 0 .58-.352 1.09-.844 1.406-.492.315-1.156.51-1.875.51h-1.406c-.492 0-.844-.195-.844-.51 0-.315.352-.51.844-.51h1.406c.352 0 .703-.195.703-.406 0-.21-.351-.406-.703-.406h-1.406c-.492 0-.844-.195-.844-.51 0-.315.352-.51.844-.51h1.406c.719 0 1.383.195 1.875.51zM7.5 8.478c.492.315.844.825.844 1.406 0 .58-.352 1.09-.844 1.406-.492.315-1.156.51-1.875.51H4.219c-.492 0-.844-.195-.844-.51 0-.315.352-.51.844-.51h1.406c.352 0 .703-.195.703-.406 0-.21-.351-.406-.703-.406H4.219c-.492 0-.844-.195-.844-.51 0-.315.352-.51.844-.51h1.406c.719 0 1.383.195 1.875.51z"/>
                       </svg>
-                      <span>PAYPAL</span>
+                      <span>KO-FI</span>
                     </button>
                    
                    <button

@@ -9,25 +9,25 @@ const PaymentGuide = () => {
     bazi: {
       name: "Detailed Bazi Reading",
       price: "$38",
-      paypalLink: "https://www.paypal.com/ncp/payment/NVV4LATSZUD6N",
+      paypalLink: "https://ko-fi.com/s/5900110c2e",
       formLink: "/form-bazi",
       description: "Comprehensive analysis of your birth chart revealing your personality, career strengths, relationship patterns, and life path guidance.",
       color: "from-purple-500 to-pink-500",
       icon: "⭐"
     },
     baziDiscount: {
-      name: "Detailed Bazi Reading (Special Offer)",
-      price: "$30",
-      paypalLink: "https://www.paypal.com/ncp/payment/9C2AYQDRSB9XY",
+      name: "Quick Bazi Reading",
+      price: "$10",
+      paypalLink: "https://ko-fi.com/s/b41e787977",
       formLink: "/form-bazi-discount",
-      description: "Limited time offer! Comprehensive Bazi analysis with 10,000+ word report, expert consultation, and 3-year fortune prediction.",
+      description: "Affordable entry-level Bazi analysis! Get essential insights about your personality, career direction, and life path guidance at an accessible price.",
       color: "from-green-500 to-emerald-500",
-      icon: "🎁"
+      icon: "⚡"
     },
     love: {
       name: "Love Compatibility Reading",
       price: "$44",
-      paypalLink: "https://www.paypal.com/ncp/payment/R9KYJ4LJNBMLY",
+      paypalLink: "https://ko-fi.com/s/86bb2869e4",
       formLink: "/form-love",
       description: "Deep analysis of relationship compatibility, timing for love, and guidance for finding your soulmate through Bazi analysis.",
       color: "from-pink-500 to-red-500",
@@ -36,7 +36,7 @@ const PaymentGuide = () => {
     talisman: {
       name: "Custom Talisman",
       price: "$129",
-      paypalLink: "https://www.paypal.com/ncp/payment/YFMMVQNT7AAMC",
+      paypalLink: "https://ko-fi.com/s/e60857a93f",
       formLink: "/form-talisman",
       description: "Personalized protection talisman crafted specifically for your unique birth chart to enhance luck, protection, and positive energy flow.",
       color: "from-gold-500 to-orange-500",
@@ -86,7 +86,7 @@ const PaymentGuide = () => {
               <h3 className="text-xl font-cinzel font-semibold text-white">Step 1: Complete Payment</h3>
             </div>
                          <p className="text-mystic-300 mb-6">
-               Click the button below to complete your payment securely through PayPal. 
+               Click the button below to complete your payment securely through Ko-fi. 
                After successful payment, you'll be automatically redirected to the form page.
              </p>
                          <a
@@ -96,7 +96,7 @@ const PaymentGuide = () => {
                <svg className="h-5 w-5" viewBox="0 0 24 24" fill="currentColor">
                  <path d="M20.067 8.478c.492.315.844.825.844 1.406 0 .58-.352 1.09-.844 1.406-.492.315-1.156.51-1.875.51h-1.406c-.492 0-.844-.195-.844-.51 0-.315.352-.51.844-.51h1.406c.352 0 .703-.195.703-.406 0-.21-.351-.406-.703-.406h-1.406c-.492 0-.844-.195-.844-.51 0-.315.352-.51.844-.51h1.406c.719 0 1.383.195 1.875.51zM12.5 8.478c.492.315.844.825.844 1.406 0 .58-.352 1.09-.844 1.406-.492.315-1.156.51-1.875.51h-1.406c-.492 0-.844-.195-.844-.51 0-.315.352-.51.844-.51h1.406c.352 0 .703-.195.703-.406 0-.21-.351-.406-.703-.406h-1.406c-.492 0-.844-.195-.844-.51 0-.315.352-.51.844-.51h1.406c.719 0 1.383.195 1.875.51zM7.5 8.478c.492.315.844.825.844 1.406 0 .58-.352 1.09-.844 1.406-.492.315-1.156.51-1.875.51H4.219c-.492 0-.844-.195-.844-.51 0-.315.352-.51.844-.51h1.406c.352 0 .703-.195.703-.406 0-.21-.351-.406-.703-.406H4.219c-.492 0-.844-.195-.844-.51 0-.315.352-.51.844-.51h1.406c.719 0 1.383.195 1.875.51z"/>
                </svg>
-               <span>Pay with PayPal</span>
+               <span>Pay with Ko-fi</span>
              </a>
           </div>
 
@@ -136,7 +136,7 @@ const PaymentGuide = () => {
               <CheckCircle className="h-8 w-8 text-green-400 mx-auto mb-3" aria-hidden="true" />
               <h4 className="font-semibold text-gold-400 mb-2">Payment Confirmation</h4>
               <p className="text-mystic-300 text-sm">
-                You'll receive a payment confirmation email from PayPal
+                You'll receive a payment confirmation email from Ko-fi
               </p>
             </div>
             <div className="text-center">

@@ -806,6 +806,126 @@ const Home = () => {
         </div>
       </section>
 
+      {/* Quick Bazi Experience Section */}
+      <section className="py-24 bg-gradient-to-br from-amber-50 to-orange-50">
+        <div className="container mx-auto px-6">
+          <div className="max-w-6xl mx-auto">
+            <div className="text-center mb-16">
+              <div className="inline-flex items-center justify-center w-20 h-20 rounded-full bg-gradient-to-r from-amber-400 to-orange-500 mb-6">
+                <span className="text-3xl">⚡</span>
+              </div>
+              <h2 className="text-4xl font-playfair font-semibold text-slate-900 mb-6 tracking-tight">
+                Quick Bazi Experience
+              </h2>
+              <p className="text-xl text-slate-700 leading-relaxed mb-8 max-w-4xl mx-auto">
+                New to BaZi? Try our affordable Quick Bazi Reading for just $10! 
+                Get essential insights about your personality, career direction, and life path without breaking the bank.
+              </p>
+            </div>
+            
+            <div className="grid lg:grid-cols-2 gap-12 items-center">
+              {/* Left Side - Features */}
+              <div className="space-y-6">
+                <div className="bg-white p-8 rounded-lg border border-amber-200 shadow-sm">
+                  <div className="flex items-center space-x-4 mb-4">
+                    <div className="w-12 h-12 bg-amber-100 rounded-full flex items-center justify-center">
+                      <span className="text-xl">📊</span>
+                    </div>
+                    <h3 className="text-xl font-playfair font-semibold text-slate-900">Essential Analysis</h3>
+                  </div>
+                  <p className="text-slate-700 leading-relaxed">
+                    Get key insights covering your personality traits, career direction, and life path guidance.
+                  </p>
+                </div>
+                
+                <div className="bg-white p-8 rounded-lg border border-amber-200 shadow-sm">
+                  <div className="flex items-center space-x-4 mb-4">
+                    <div className="w-12 h-12 bg-amber-100 rounded-full flex items-center justify-center">
+                      <span className="text-xl">💡</span>
+                    </div>
+                    <h3 className="text-xl font-playfair font-semibold text-slate-900">Basic Guidance</h3>
+                  </div>
+                  <p className="text-slate-700 leading-relaxed">
+                    Receive essential recommendations for personal development and important life decisions.
+                  </p>
+                </div>
+                
+                <div className="bg-white p-8 rounded-lg border border-amber-200 shadow-sm">
+                  <div className="flex items-center space-x-4 mb-4">
+                    <div className="w-12 h-12 bg-amber-100 rounded-full flex items-center justify-center">
+                      <span className="text-xl">⏰</span>
+                    </div>
+                    <h3 className="text-xl font-playfair font-semibold text-slate-900">Quick Delivery</h3>
+                  </div>
+                  <p className="text-slate-700 leading-relaxed">
+                    Your personalized report will be delivered within 24 hours of form submission.
+                  </p>
+                </div>
+              </div>
+              
+              {/* Right Side - CTA Card */}
+              <div className="bg-gradient-to-br from-amber-400 to-orange-500 p-8 rounded-2xl shadow-xl text-center">
+                <div className="bg-white/10 backdrop-blur-sm rounded-xl p-8">
+                  <h3 className="text-2xl font-playfair font-semibold text-white mb-4">
+                    Quick Bazi Reading
+                  </h3>
+                  
+                  <div className="mb-6">
+                    <div className="text-4xl font-bold text-white mb-2">$10</div>
+                    <div className="text-white/80 text-sm">
+                      <span className="line-through text-white/60">$38</span> 
+                      <span className="ml-2 bg-white/20 px-2 py-1 rounded-full text-xs">Save 74%</span>
+                    </div>
+                  </div>
+                  
+                  <div className="space-y-3 mb-8 text-white/90 text-sm">
+                    <div className="flex items-center justify-center space-x-2">
+                      <span>✓</span>
+                      <span>Essential personality analysis</span>
+                    </div>
+                    <div className="flex items-center justify-center space-x-2">
+                      <span>✓</span>
+                      <span>Career direction guidance</span>
+                    </div>
+                    <div className="flex items-center justify-center space-x-2">
+                      <span>✓</span>
+                      <span>Life path insights</span>
+                    </div>
+                    <div className="flex items-center justify-center space-x-2">
+                      <span>✓</span>
+                      <span>Basic recommendations</span>
+                    </div>
+                  </div>
+                  
+                  <a
+                    href="https://ko-fi.com/s/b41e787977"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-block w-full bg-white text-amber-600 py-4 px-6 rounded-lg font-semibold text-lg hover:bg-amber-50 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105"
+                  >
+                    Get Quick Bazi Reading
+                  </a>
+                  
+                  <p className="text-white/70 text-xs mt-4">
+                    Perfect for first-time users • 24-hour delivery
+                  </p>
+                </div>
+              </div>
+            </div>
+            
+            {/* Comparison with Full Service */}
+            <div className="mt-16 text-center">
+              <p className="text-slate-600 mb-4">
+                Want a more comprehensive analysis? 
+                <Link to="/services" className="text-amber-600 hover:text-amber-700 font-semibold ml-1">
+                  View our full service options →
+                </Link>
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Start Analysis Section */}
       <section className="py-24 bg-slate-900">
         <div className="container mx-auto px-6 text-center">

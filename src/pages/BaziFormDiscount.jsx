@@ -40,7 +40,7 @@ const BaziFormDiscount = () => {
           'Content-Type': 'application/json',
         },
         body: JSON.stringify({
-          service: 'Detailed Bazi Reading (Special Offer)',
+          service: 'Quick Bazi Reading',
           ...formData
         })
       })
@@ -67,9 +67,9 @@ const BaziFormDiscount = () => {
   return (
     <>
       <SEO 
-        title="Special Offer: Discounted BaZi Reading Form | Limited Time Deal | FatePath"
-        description="Limited time special offer! Get your comprehensive BaZi reading at a discounted price. Submit your birth details for detailed Chinese astrology analysis and life guidance."
-        keywords="bazi reading discount, special offer chinese astrology, limited time bazi reading, discounted birth chart analysis, chinese numerology deal"
+        title="Quick BaZi Reading Form | Affordable Chinese Astrology Analysis | FatePath"
+        description="Get your essential BaZi reading at an affordable price! Submit your birth details for quick Chinese astrology analysis and life guidance."
+        keywords="quick bazi reading, affordable chinese astrology, entry level bazi reading, budget birth chart analysis, chinese numerology quick"
         canonical="https://fatepath.me/form-bazi-discount"
         ogImage="https://fatepath.me/og-image.svg"
         ogType="website"
@@ -126,29 +126,29 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           className="mystic-card p-8 mb-8 bg-gradient-to-r from-green-500/20 to-emerald-500/20 border border-green-500/30"
         >
           <div className="text-center">
-            <h2 className="text-2xl font-cinzel font-bold mb-4 text-green-400">Special Offer Details</h2>
+            <h2 className="text-2xl font-cinzel font-bold mb-4 text-green-400">Quick Bazi Reading Details</h2>
             <div className="grid md:grid-cols-3 gap-6 mb-6">
               <div className="p-4 bg-mystic-800/30 rounded-lg border border-mystic-700/50">
                 <div className="text-3xl mb-2">📄</div>
-                <h3 className="font-semibold text-white mb-2">10,000+ Word Report</h3>
-                <p className="text-sm text-mystic-300">Comprehensive analysis covering wealth, relationships, health, and career</p>
+                <h3 className="font-semibold text-white mb-2">Essential Analysis</h3>
+                <p className="text-sm text-mystic-300">Key insights covering personality, career direction, and life path</p>
               </div>
               <div className="p-4 bg-mystic-800/30 rounded-lg border border-mystic-700/50">
                 <div className="text-3xl mb-2">👨‍🏫</div>
-                <h3 className="font-semibold text-white mb-2">Expert Consultation</h3>
-                <p className="text-sm text-mystic-300">One-on-one consultation with experienced Bazi master</p>
+                <h3 className="font-semibold text-white mb-2">Basic Guidance</h3>
+                <p className="text-sm text-mystic-300">Essential recommendations for personal development</p>
               </div>
               <div className="p-4 bg-mystic-800/30 rounded-lg border border-mystic-700/50">
                 <div className="text-3xl mb-2">📅</div>
-                <h3 className="font-semibold text-white mb-2">Annual Fortune Analysis</h3>
-                <p className="text-sm text-mystic-300">3-year fortune prediction with guidance for success</p>
+                <h3 className="font-semibold text-white mb-2">Life Path Insights</h3>
+                <p className="text-sm text-mystic-300">Basic timing guidance for important decisions</p>
               </div>
             </div>
             
                                                                <div className="text-center p-6 bg-gradient-to-r from-green-500/20 to-emerald-500/20 rounded-lg border border-green-500/30">
-                      <h3 className="text-xl font-cinzel font-bold mb-2 text-green-400">Special Offer Price</h3>
-                      <div className="text-3xl font-bold text-white mb-2">$30</div>
-                      <p className="text-mystic-300">Limited time offer - Completed within 24 hours</p>
+                      <h3 className="text-xl font-cinzel font-bold mb-2 text-green-400">Affordable Price</h3>
+                      <div className="text-3xl font-bold text-white mb-2">$10</div>
+                      <p className="text-mystic-300">Affordable entry-level option - Completed within 24 hours</p>
                     </div>
           </div>
         </motion.div>

@@ -252,9 +252,9 @@ const Services = () => {
                    </p>
                  </div>
                  <motion.a
-                   href={(services[activeService].id === 0 ? "https://www.paypal.com/ncp/payment/NVV4LATSZUD6N" :
-                         services[activeService].id === 1 ? "https://www.paypal.com/ncp/payment/R9KYJ4LJNBMLY" :
-                         "https://www.paypal.com/ncp/payment/YFMMVQNT7AAMC") + 
+                   href={(services[activeService].id === 0 ? "https://ko-fi.com/s/5900110c2e" :
+                         services[activeService].id === 1 ? "https://ko-fi.com/s/86bb2869e4" :
+                         "https://ko-fi.com/s/e60857a93f") + 
                          "?return_url=" + encodeURIComponent(window.location.origin + 
                          (services[activeService].id === 0 ? "/form-bazi" :
                           services[activeService].id === 1 ? "/form-love" :
@@ -266,7 +266,7 @@ const Services = () => {
                    <svg className="h-4 w-4 sm:h-5 sm:w-5" viewBox="0 0 24 24" fill="currentColor">
                      <path d="M20.067 8.478c.492.315.844.825.844 1.406 0 .58-.352 1.09-.844 1.406-.492.315-1.156.51-1.875.51h-1.406c-.492 0-.844-.195-.844-.51 0-.315.352-.51.844-.51h1.406c.352 0 .703-.195.703-.406 0-.21-.351-.406-.703-.406h-1.406c-.492 0-.844-.195-.844-.51 0-.315.352-.51.844-.51h1.406c.719 0 1.383.195 1.875.51zM12.5 8.478c.492.315.844.825.844 1.406 0 .58-.352 1.09-.844 1.406-.492.315-1.156.51-1.875.51h-1.406c-.492 0-.844-.195-.844-.51 0-.315.352-.51.844-.51h1.406c.352 0 .703-.195.703-.406 0-.21-.351-.406-.703-.406h-1.406c-.492 0-.844-.195-.844-.51 0-.315.352-.51.844-.51h1.406c.719 0 1.383.195 1.875.51zM7.5 8.478c.492.315.844.825.844 1.406 0 .58-.352 1.09-.844 1.406-.492.315-1.156.51-1.875.51H4.219c-.492 0-.844-.195-.844-.51 0-.315.352-.51.844-.51h1.406c.352 0 .703-.195.703-.406 0-.21-.351-.406-.703-.406H4.219c-.492 0-.844-.195-.844-.51 0-.315.352-.51.844-.51h1.406c.719 0 1.383.195 1.875.51z"/>
                    </svg>
-                   <span>Pay with PayPal</span>
+                   <span>Pay with Ko-fi</span>
                    <ArrowRight className="h-4 w-4 sm:h-5 sm:w-5" />
                  </motion.a>
                </div>
