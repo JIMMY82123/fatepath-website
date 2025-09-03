@@ -8,7 +8,7 @@
  * @param {string} currency - 货币代码 (USD)
  * @param {string} transactionId - 交易ID
  */
-export const trackConversion = (conversionId = 'AW-17430671654', conversionLabel = 'e2eYCNWo1P4aEKbiy_dA', value = 30.00, currency = 'USD', transactionId = null) => {
+export const trackConversion = (conversionId = 'AW-17430671654', conversionLabel = 'e2eYCNWo1P4aEKbiy_dA', value = 10.00, currency = 'USD', transactionId = null) => {
   // 检查gtag是否可用
   if (typeof window !== 'undefined' && window.gtag) {
     try {
@@ -55,7 +55,7 @@ export const trackConversion = (conversionId = 'AW-17430671654', conversionLabel
  */
 export const trackBaziDiscountConversion = (transactionId = null) => {
   const id = transactionId || `bazi_${Date.now()}`;
-  return trackConversion('AW-17430671654', 'e2eYCNWo1P4aEKbiy_dA', 30.00, 'USD', id);
+  return trackConversion('AW-17430671654', 'e2eYCNWo1P4aEKbiy_dA', 10.00, 'USD', id);
 };
 
 /**
@@ -67,14 +67,14 @@ export const trackFormSubmission = (formType = 'bazi_discount', transactionId = 
   const id = transactionId || `${formType}_${Date.now()}`;
   
   // 根据表单类型设置不同的价值
-  let value = 30.00; // 默认BaZi折扣服务价值
+  let value = 10.00; // 默认八字快批服务价值
   
   if (formType === 'bazi_regular') {
     value = 38.00;
   } else if (formType === 'love_compatibility') {
-    value = 25.00;
+    value = 44.00;
   } else if (formType === 'custom_talisman') {
-    value = 45.00;
+    value = 129.00;
   }
   
   return trackConversion('AW-17430671654', 'e2eYCNWo1P4aEKbiy_dA', value, 'USD', id);

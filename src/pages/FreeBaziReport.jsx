@@ -46,8 +46,8 @@ const FreeBaziReport = () => {
   const paypalLink = "https://ko-fi.com/s/b41e787977?return_url=" + encodeURIComponent(window.location.origin + '/form-bazi-discount')
 
   const handlePaypalPayment = () => {
-    // 在当前窗口打开PayPal支付页面
-    window.location.href = paypalLink
+    // 在新窗口打开Ko-fi支付页面
+    window.open(paypalLink, '_blank', 'noopener,noreferrer')
     
     // 显示支付状态提示
     const showPaymentStatus = (message, isSuccess = false) => {
@@ -66,24 +66,13 @@ const FreeBaziReport = () => {
       }, 3000)
     }
     
-    // 监听支付完成（这里应该集成PayPal IPN或使用PayPal SDK）
-    // 目前使用模拟验证，实际应该根据PayPal回调
-    const checkPaymentStatus = () => {
-      // 模拟支付验证逻辑
-      const paymentVerified = Math.random() > 0.3 // 70%成功率模拟
-      
-      if (paymentVerified) {
-        showPaymentStatus('✅ 支付成功！正在跳转到详细分析页面...', true)
-        setTimeout(() => {
-          window.location.href = '/form-bazi-discount'
-        }, 2000)
-      } else {
-        showPaymentStatus('⚠️ 支付未完成，请重新尝试或联系客服', false)
-      }
-    }
+    // 显示支付提示信息
+    showPaymentStatus('💳 请在Ko-fi页面完成支付，支付完成后请返回填写表单', false)
     
-    // 5秒后检查支付状态（实际应该根据PayPal IPN）
-    setTimeout(checkPaymentStatus, 5000)
+    // 提示用户支付完成后填写表单
+    setTimeout(() => {
+      showPaymentStatus('📝 支付完成后，请点击下方按钮填写您的出生信息', false)
+    }, 3000)
     
     closeOfferModal()
   }
