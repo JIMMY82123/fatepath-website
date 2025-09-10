@@ -22,7 +22,7 @@ const Services = () => {
         "Timing for important decisions",
         "Personal growth recommendations",
         "10,000+ word detailed PDF report",
-        "3 follow-up questions via WhatsApp"
+        "10 follow-up questions via WhatsApp"
       ],
       duration: "24 hours",
       price: "$38",
@@ -43,7 +43,7 @@ const Services = () => {
         "Relationship pattern insights",
         "Love life guidance",
         "10,000+ word detailed PDF report",
-        "3 follow-up questions via WhatsApp"
+        "10 follow-up questions via WhatsApp"
       ],
       duration: "24 hours",
       price: "$44",
