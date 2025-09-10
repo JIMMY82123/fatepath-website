@@ -3,6 +3,7 @@ import { motion, AnimatePresence } from 'framer-motion'
 import { Star, Heart, Shield, Calendar, Clock, DollarSign, ArrowRight, Sparkles } from 'lucide-react'
 import SEO from '../components/SEO'
 import { Link } from 'react-router-dom'
+import SampleReportCarousel from '../components/SampleReportCarousel'
 
 const Services = () => {
   const [activeService, setActiveService] = useState(0)
@@ -343,6 +344,9 @@ const Services = () => {
             <div className="absolute bottom-6 left-6 w-2 h-2 bg-gold-300 rounded-full animate-pulse delay-1000"></div>
           </motion.div>
         </div>
+
+        {/* Sample Report Carousel */}
+        <SampleReportCarousel />
 
                  {/* Additional Info */}
         <motion.div 
