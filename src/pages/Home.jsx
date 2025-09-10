@@ -861,6 +861,18 @@ const Home = () => {
                     Your personalized report will be delivered within 24 hours of form submission.
                   </p>
                 </div>
+                
+                <div className="bg-white p-8 rounded-lg border border-amber-200 shadow-sm">
+                  <div className="flex items-center space-x-4 mb-4">
+                    <div className="w-12 h-12 bg-amber-100 rounded-full flex items-center justify-center">
+                      <span className="text-xl">💬</span>
+                    </div>
+                    <h3 className="text-xl font-playfair font-semibold text-slate-900">WhatsApp Follow-up</h3>
+                  </div>
+                  <p className="text-slate-700 leading-relaxed">
+                    Get personalized answers to 3 follow-up questions via WhatsApp for deeper insights.
+                  </p>
+                </div>
               </div>
               
               {/* Right Side - CTA Card */}
@@ -894,6 +906,10 @@ const Home = () => {
                     <div className="flex items-center justify-center space-x-2">
                       <span>✓</span>
                       <span>Basic recommendations</span>
+                    </div>
+                    <div className="flex items-center justify-center space-x-2">
+                      <span>✓</span>
+                      <span>3 follow-up questions via WhatsApp</span>
                     </div>
                   </div>
                   
