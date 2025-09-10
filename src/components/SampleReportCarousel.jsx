@@ -7,13 +7,13 @@ const SampleReportCarousel = () => {
   const [isModalOpen, setIsModalOpen] = useState(false)
 
   const reportImages = [
-    { id: 1, src: '/images/report/sample-report-1.jpg', title: '报告封面' },
-    { id: 2, src: '/images/report/sample-report-2.jpg', title: '八字图表' },
-    { id: 3, src: '/images/report/sample-report-3.jpg', title: '性格分析' },
-    { id: 4, src: '/images/report/sample-report-4.jpg', title: '财富分析' },
-    { id: 5, src: '/images/report/sample-report-5.jpg', title: '爱情分析' },
-    { id: 6, src: '/images/report/sample-report-6.jpg', title: '健康建议' },
-    { id: 7, src: '/images/report/sample-report-7.jpg', title: '人生指导' }
+    { id: 1, src: '/images/report/sample-report-1.jpg', title: 'Report Cover' },
+    { id: 2, src: '/images/report/sample-report-2.jpg', title: 'BaZi Chart' },
+    { id: 3, src: '/images/report/sample-report-3.jpg', title: 'Personality Analysis' },
+    { id: 4, src: '/images/report/sample-report-4.jpg', title: 'Wealth Analysis' },
+    { id: 5, src: '/images/report/sample-report-5.jpg', title: 'Love Analysis' },
+    { id: 6, src: '/images/report/sample-report-6.jpg', title: 'Health Guidance' },
+    { id: 7, src: '/images/report/sample-report-7.jpg', title: 'Life Guidance' }
   ]
 
   const nextSlide = () => {
@@ -43,10 +43,10 @@ const SampleReportCarousel = () => {
         <div className="container mx-auto px-6 max-w-6xl">
           <div className="text-center mb-8">
             <h2 className="text-2xl md:text-3xl font-playfair font-semibold text-white mb-3">
-              专业报告样板预览
+              Professional Report Sample Preview
             </h2>
             <p className="text-mystic-300 max-w-2xl mx-auto">
-              点击查看我们的专业八字分析报告样板，了解您将获得的详细内容和专业分析质量
+              Click to view our professional BaZi analysis report samples and discover the detailed content and professional analysis quality you'll receive
             </p>
           </div>
 
@@ -134,10 +134,10 @@ const SampleReportCarousel = () => {
               onClick={openModal}
               className="bg-gold-500 hover:bg-gold-600 text-white px-6 py-2.5 rounded-lg font-semibold text-sm transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl"
             >
-              查看完整报告
+              View Full Report
             </button>
             <p className="text-xs text-mystic-400 mt-2">
-              点击查看高清大图，体验专业八字分析报告的质量
+              Click to view high-resolution images and experience the quality of our professional BaZi analysis reports
             </p>
           </div>
         </div>
@@ -181,7 +181,7 @@ const SampleReportCarousel = () => {
                   {reportImages[currentIndex].title}
                 </h3>
                 <p className="text-sm text-slate-600 text-center mt-1">
-                  专业八字分析报告 - 第 {currentIndex + 1} 页
+                  Professional BaZi Analysis Report - Page {currentIndex + 1}
                 </p>
               </div>
             </motion.div>
