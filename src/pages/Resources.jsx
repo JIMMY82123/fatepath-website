@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom'
 import { Search, Filter, Download, Eye, Tag } from 'lucide-react'
 import SEO from '../components/SEO'
 import LazyImage from '../components/LazyImage'
+import DayMasterAnalysis from '../components/DayMasterAnalysis'
 
 const Resources = () => {
   // 搜索和筛选状态
@@ -516,6 +517,9 @@ const Resources = () => {
             </div>
           </div>
         </section>
+
+        {/* Day Master Analysis Section */}
+        <DayMasterAnalysis />
 
         {/* Featured Datasets Section */}
         <section className="py-20 bg-mystic-900">
