@@ -56,32 +56,14 @@
     <!-- Preload critical resources -->
     <!-- 移除favicon预加载，避免控制台警告 -->
     
-    <!-- Google Analytics - 延迟加载以避免阻塞移动端渲染 -->
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-GCNP2F5NJC"></script>
     <script>
-      // 延迟加载 Google Analytics
-      setTimeout(() => {
-        const script = document.createElement('script');
-        script.src = 'https://www.googletagmanager.com/gtag/js?id=G-GCNP2F5NJC';
-        script.async = true;
-        script.onload = function() {
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
-          gtag('config', 'G-GCNP2F5NJC', {
-            'page_title': document.title,
-            'page_location': window.location.href,
-            'allow_google_signals': false,
-            'allow_ad_personalization_signals': false,
-            'anonymize_ip': true
-          });
-          
-          // 开发环境调试
-          if (window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1') {
-            console.log('🔍 Google Analytics 已加载（开发模式）');
-          }
-        };
-        document.head.appendChild(script);
-      }, 2000); // 延迟2秒加载
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-GCNP2F5NJC');
     </script>
     
     <!-- Google Tag Manager - 延迟加载 -->
