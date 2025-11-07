@@ -143,6 +143,26 @@ const Resources = () => {
           tags: ["Love", "Relationships", "Compatibility"],
           filename: "love-compatibility.json",
           lastUpdated: "2024-01-15"
+        },
+        {
+          title: "Day Master Career Guide (US)",
+          excerpt: "Career strengths, U.S. industry matches, and strategy tips for all ten Day Masters.",
+          format: "JSON",
+          records: 10,
+          difficulty: "Intermediate",
+          tags: ["Career", "US Market", "Day Master"],
+          filename: "day-master-career-us.json",
+          lastUpdated: "2025-11-07"
+        },
+        {
+          title: "Relationship Boundaries Matrix",
+          excerpt: "BaZi Ten-God pairings with modern boundary practices and communication agreements.",
+          format: "JSON",
+          records: 6,
+          difficulty: "Intermediate",
+          tags: ["Relationships", "Boundaries", "Ten Gods"],
+          filename: "relationship-boundaries.json",
+          lastUpdated: "2025-11-07"
         }
       ]
     },
@@ -336,7 +356,7 @@ const Resources = () => {
       const popularTags = [
      "Core", "Stems", "Branches", "Elements", "Ten Gods", "Luck Cycles",
      "Annual Forecast", "Seasonal", "US Market", "Wealth Stars", "Love Compatibility",
-     "Career", "Wealth", "Compatibility", "Jiazi", "Hidden Stems", "Pillars",
+     "Career", "Boundaries", "Wealth", "Compatibility", "Jiazi", "Hidden Stems", "Pillars",
      "Element Strength", "Health", "Marriage", "Business", "Travel", "Education",
      "Clash", "Harm", "Combination", "Punishment", "Empty Branches", "Noble People",
      "Disaster Stars", "Flying Stars", "Advanced", "Intermediate", "Research", "JSON", "Download"

@@ -1,0 +1,143 @@
+[
+  {
+    "dayMaster": "Jia Wood",
+    "strengths": [
+      "Long-term planning",
+      "Change management",
+      "Team growth"
+    ],
+    "usIndustries": [
+      "Product management",
+      "Sustainable architecture",
+      "Public policy"
+    ],
+    "guidance": "Rotate between pioneering projects and operations. Block weekly time for mentorship and networking with venture-funded teams."
+  },
+  {
+    "dayMaster": "Yi Wood",
+    "strengths": [
+      "Storytelling",
+      "Relationship building",
+      "Design thinking"
+    ],
+    "usIndustries": [
+      "UX/UI design",
+      "Brand strategy",
+      "Nonprofit fundraising"
+    ],
+    "guidance": "Bundle creative services into retainers, partner with analytics-driven colleagues, and keep sleep rhythm consistent to prevent burnout."
+  },
+  {
+    "dayMaster": "Bing Fire",
+    "strengths": [
+      "Visibility",
+      "Motivation",
+      "Rapid execution"
+    ],
+    "usIndustries": [
+      "Media and entertainment",
+      "Sales leadership",
+      "Startup evangelism"
+    ],
+    "guidance": "Schedule media/content days, protect personal brand boundaries, and log cashflow monthly to stabilize variable income."
+  },
+  {
+    "dayMaster": "Ding Fire",
+    "strengths": [
+      "Coaching",
+      "Precision",
+      "Knowledge transfer"
+    ],
+    "usIndustries": [
+      "Learning and development",
+      "Healthcare education",
+      "Cybersecurity compliance"
+    ],
+    "guidance": "Blend teaching with documentation; offer premium cohorts or consulting packages; cool down with Water activities after peak launches."
+  },
+  {
+    "dayMaster": "Wu Earth",
+    "strengths": [
+      "Systems thinking",
+      "Risk assessment",
+      "Asset management"
+    ],
+    "usIndustries": [
+      "Real estate",
+      "Operations",
+      "Logistics and supply chain"
+    ],
+    "guidance": "Automate reporting dashboards, balance property or portfolio investments, and horizon-plan relocations every five years."
+  },
+  {
+    "dayMaster": "Ji Earth",
+    "strengths": [
+      "Client care",
+      "Community building",
+      "Detail orientation"
+    ],
+    "usIndustries": [
+      "Healthcare administration",
+      "Human resources",
+      "Boutique hospitality"
+    ],
+    "guidance": "Bundle concierge-style services, use project management tools to prevent scope creep, and audit benefits packages annually."
+  },
+  {
+    "dayMaster": "Geng Metal",
+    "strengths": [
+      "Crisis response",
+      "Technical mastery",
+      "Protection"
+    ],
+    "usIndustries": [
+      "Cybersecurity",
+      "Aerospace and defense",
+      "Emergency management"
+    ],
+    "guidance": "Invest in continuing certifications, cross-train successors, and release stress via strength training or outdoor challenges."
+  },
+  {
+    "dayMaster": "Xin Metal",
+    "strengths": [
+      "Luxury positioning",
+      "Negotiation",
+      "Refinement"
+    ],
+    "usIndustries": [
+      "Financial advisory",
+      "Legal counsel",
+      "Luxury marketing"
+    ],
+    "guidance": "Offer tiered pricing, curate high-touch client experiences, and schedule digital detox weekends to guard nervous system."
+  },
+  {
+    "dayMaster": "Ren Water",
+    "strengths": [
+      "Global vision",
+      "Data synthesis",
+      "Trend spotting"
+    ],
+    "usIndustries": [
+      "Tech strategy",
+      "Consulting",
+      "Research and analytics"
+    ],
+    "guidance": "Design remote-first workflows, align with cross-border teams, and maintain quarterly retreats for mental reset."
+  },
+  {
+    "dayMaster": "Gui Water",
+    "strengths": [
+      "Mentorship",
+      "Mind-body wellness",
+      "Subtle influence"
+    ],
+    "usIndustries": [
+      "Mental health",
+      "Coaching and facilitation",
+      "Climate adaptation"
+    ],
+    "guidance": "Launch subscription or cohort-based offerings, partner with data-savvy teammates, and keep consistent therapy or meditation practice."
+  }
+]
+
