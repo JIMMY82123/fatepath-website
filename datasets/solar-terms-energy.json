@@ -1,0 +1,51 @@
+[
+  {
+    "name": "Lichun",
+    "english": "Start of Spring",
+    "dateRange": "Feb 3-5",
+    "elementFocus": "Wood",
+    "wellness": {
+      "nutrition": "Increase greens, lighter proteins, hydrate consistently.",
+      "rest": "Sleep before 11pm, reduce evening screen time.",
+      "movement": "Morning walks, gentle stretching, breathwork."
+    },
+    "usLifestyleTip": "Balance indoor heating with humidifiers; plan daylight breaks for remote work schedules."
+  },
+  {
+    "name": "Yushui",
+    "english": "Rain Water",
+    "dateRange": "Feb 18-20",
+    "elementFocus": "Wood",
+    "wellness": {
+      "nutrition": "Add warm broths and ginger to counter dampness.",
+      "rest": "Wind down earlier, use blue-light filters.",
+      "movement": "Light cardio or dance sessions to release sluggish Water."
+    },
+    "usLifestyleTip": "Schedule tax prep and admin tasks while energy is grounded; use humidifiers for home offices."
+  },
+  {
+    "name": "Jingzhe",
+    "english": "Awakening of Insects",
+    "dateRange": "Mar 5-7",
+    "elementFocus": "Wood",
+    "wellness": {
+      "nutrition": "Introduce sprouts and citrus to cleanse Liver Qi.",
+      "rest": "Prioritize deep breathing before bed.",
+      "movement": "HIIT or energizing workouts to channel rising Fire."
+    },
+    "usLifestyleTip": "Plan spring cleaning; declutter digital files and inboxes."
+  },
+  {
+    "name": "Chunfen",
+    "english": "Spring Equinox",
+    "dateRange": "Mar 20-22",
+    "elementFocus": "Wood",
+    "wellness": {
+      "nutrition": "Balance greens with grounding grains.",
+      "rest": "Aim for equal work-play schedule.",
+      "movement": "Outdoor runs or biking to sync with daylight."
+    },
+    "usLifestyleTip": "Reset meetings to align with longer daylight hours; schedule brainstorming retreats."
+  }
+]
+

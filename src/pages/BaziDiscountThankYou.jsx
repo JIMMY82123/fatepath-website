@@ -3,6 +3,7 @@ import { CheckCircle, ArrowLeft, Gift, Clock, Mail, Star } from 'lucide-react'
 import { Link } from 'react-router-dom'
 import { Helmet } from 'react-helmet-async'
 import { useEffect } from 'react'
+import SEO from '../components/SEO'
 import { trackBaziDiscountConversion } from '../utils/conversionTracking'
 
 const BaziDiscountThankYou = () => {
@@ -11,8 +12,52 @@ const BaziDiscountThankYou = () => {
     trackBaziDiscountConversion();
   }, []);
 
+  const structuredData = {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "Quick BaZi Reading Thank You",
+    "url": "https://fatepath.me/bazi-discount-thank-you",
+    "description": "Confirmation page for the Quick BaZi Reading special offer by FatePath, serving English-speaking clients across the United States and worldwide.",
+    "inLanguage": "en-US",
+    "isPartOf": {
+      "@type": "WebSite",
+      "name": "FatePath",
+      "url": "https://fatepath.me"
+    },
+    "audience": {
+      "@type": "Audience",
+      "name": "Clients in the United States, Canada, United Kingdom, and Australia seeking affordable BaZi readings"
+    },
+    "mainEntity": {
+      "@type": "Service",
+      "name": "Quick BaZi Reading",
+      "provider": {
+        "@type": "Person",
+        "name": "Master XuanYin",
+        "availableLanguage": "English",
+        "areaServed": [
+          "United States",
+          "Canada",
+          "United Kingdom",
+          "Australia"
+        ]
+      }
+    }
+  }
+
+  const seoProps = {
+    title: 'Quick BaZi Reading Thank You | FatePath',
+    description: 'Thank you for purchasing the Quick BaZi Reading special offer. Expect your English-language report within 24 hours, no matter where you are in the United States or worldwide.',
+    keywords: 'bazi discount thank you, quick bazi reading usa, fatepath confirmation, chinese astrology report delivery',
+    canonical: 'https://fatepath.me/bazi-discount-thank-you',
+    ogImage: 'https://fatepath.me/og-image.svg',
+    author: 'FatePath',
+    structuredData
+  }
+
   return (
     <>
+      <SEO {...seoProps} />
       <Helmet>
         {/* Google Tag Manager */}
         <script>
@@ -189,7 +234,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
               <span>Return to Home</span>
             </Link>
             <div className="text-sm text-mystic-400">
-                              <p>You will receive your detailed report within 24 hours</p>
+            <p>You will receive your detailed report within 24 hours</p>
             </div>
           </motion.div>
         </div>

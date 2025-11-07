@@ -2,6 +2,7 @@ import { useState } from 'react'
 import { motion } from 'framer-motion'
 import { Shield, ArrowLeft, CheckCircle } from 'lucide-react'
 import { Link } from 'react-router-dom'
+import SEO from '../components/SEO'
 
 const TalismanForm = () => {
   const [isSubmitting, setIsSubmitting] = useState(false)
@@ -53,40 +54,87 @@ const TalismanForm = () => {
     }
   }
 
+  const structuredData = {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "Custom BaZi Talisman Request Form",
+    "url": "https://fatepath.me/talisman-form",
+    "description": "Submit your information to request a custom BaZi talisman handcrafted by Master XuanYin for clients across the United States and worldwide.",
+    "inLanguage": "en-US",
+    "isPartOf": {
+      "@type": "WebSite",
+      "name": "FatePath",
+      "url": "https://fatepath.me"
+    },
+    "audience": {
+      "@type": "Audience",
+      "name": "Clients in the United States, Canada, United Kingdom, and Australia seeking personalized BaZi talismans"
+    },
+    "mainEntity": {
+      "@type": "Service",
+      "name": "Custom BaZi Talisman",
+      "provider": {
+        "@type": "Person",
+        "name": "Master XuanYin",
+        "availableLanguage": "English",
+        "areaServed": [
+          "United States",
+          "Canada",
+          "United Kingdom",
+          "Australia"
+        ]
+      }
+    }
+  }
+
+  const seoProps = {
+    title: 'Custom BaZi Talisman Request Form | FatePath',
+    description: 'Commission a personalized BaZi talisman handcrafted by Master XuanYin. Provide your birth details to receive protection created for clients across the United States and worldwide.',
+    keywords: 'custom talisman, bazi talisman usa, chinese astrology protection, fatepath talisman order, personalized spiritual protection',
+    canonical: 'https://fatepath.me/talisman-form',
+    ogImage: 'https://fatepath.me/images/services/talisman-service-cover.jpg',
+    author: 'FatePath',
+    structuredData
+  }
+
   if (isSubmitted) {
     return (
-      <div className="min-h-screen pt-20 px-4 sm:px-6 lg:px-8">
-        <div className="max-w-2xl mx-auto text-center">
-          <motion.div
-            initial={{ opacity: 0, scale: 0.8 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.6 }}
-            className="mystic-card p-12"
-          >
-            <CheckCircle className="h-16 w-16 text-green-400 mx-auto mb-6" />
-            <h1 className="text-3xl font-cinzel font-bold mb-4 text-white">
-              Thank You!
-            </h1>
-            <p className="text-mystic-300 mb-8 text-lg">
-              Your custom talisman request has been submitted successfully. 
-              I will craft your personalized talisman and ship it to you within 7-10 days.
-            </p>
-            <Link
-              to="/"
-              className="inline-flex items-center space-x-2 bg-gradient-to-r from-gold-500 to-gold-600 text-black font-poppins font-semibold px-8 py-3 rounded-full hover:from-gold-400 hover:to-gold-500 transition-all duration-300"
+      <>
+        <SEO {...seoProps} />
+        <div className="min-h-screen pt-20 px-4 sm:px-6 lg:px-8">
+          <div className="max-w-2xl mx-auto text-center">
+            <motion.div
+              initial={{ opacity: 0, scale: 0.8 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 0.6 }}
+              className="mystic-card p-12"
             >
-              <ArrowLeft className="h-5 w-5" />
-              <span>Return to Home</span>
-            </Link>
-          </motion.div>
+              <CheckCircle className="h-16 w-16 text-green-400 mx-auto mb-6" />
+              <h1 className="text-3xl font-cinzel font-bold mb-4 text-white">
+                Thank You!
+              </h1>
+              <p className="text-mystic-300 mb-8 text-lg">
+                Your custom talisman request has been submitted successfully. I will craft your personalized talisman and ship it within 7-10 days.
+              </p>
+              <Link
+                to="/"
+                className="inline-flex items-center space-x-2 bg-gradient-to-r from-gold-500 to-gold-600 text-black font-poppins font-semibold px-8 py-3 rounded-full hover:from-gold-400 hover:to-gold-500 transition-all duration-300"
+              >
+                <ArrowLeft className="h-5 w-5" />
+                <span>Return to Home</span>
+              </Link>
+            </motion.div>
+          </div>
         </div>
-      </div>
+      </>
     )
   }
 
   return (
-    <div className="min-h-screen pt-16 sm:pt-20 px-4 sm:px-6 lg:px-8">
-      <div className="max-w-2xl mx-auto">
+    <>
+      <SEO {...seoProps} />
+      <div className="min-h-screen pt-16 sm:pt-20 px-4 sm:px-6 lg:px-8">
+        <div className="max-w-2xl mx-auto">
         {/* Header */}
         <motion.div 
           initial={{ opacity: 0, y: 50 }}
@@ -277,6 +325,7 @@ const TalismanForm = () => {
         </motion.div>
       </div>
     </div>
+    </>
   )
 }
 

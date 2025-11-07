@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion'
 import { ArrowLeft, CreditCard, FileText, CheckCircle, Mail, MessageCircle } from 'lucide-react'
 import { Link, useParams } from 'react-router-dom'
+import SEO from '../components/SEO'
 
 const PaymentGuide = () => {
   const { service } = useParams()
@@ -45,9 +46,83 @@ const PaymentGuide = () => {
   }
 
   const config = serviceConfig[service] || serviceConfig.bazi
+  const canonicalUrl = service ? `https://fatepath.me/payment-guide?service=${service}` : 'https://fatepath.me/payment-guide'
+  const priceValue = Number(config.price.replace(/[^0-9.]/g, ''))
+  const pageTitle = `${config.name} Payment Guide | FatePath`
+  const pageDescription = `Complete your secure payment for the ${config.name} through Ko-fi and submit your details to receive your English-language BaZi service, available to clients across the United States and worldwide.`
+
+  const structuredData = {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    "name": `${config.name} Payment Guide`,
+    "description": pageDescription,
+    "inLanguage": "en-US",
+    "image": "https://fatepath.me/og-image.svg",
+    "totalTime": "PT10M",
+    "estimatedCost": priceValue ? {
+      "@type": "MonetaryAmount",
+      "currency": "USD",
+      "value": priceValue
+    } : undefined,
+    "step": [
+      {
+        "@type": "HowToStep",
+        "name": "Complete Payment",
+        "url": `${canonicalUrl}#payment`,
+        "itemListElement": [
+          {
+            "@type": "HowToDirection",
+            "text": "Use the Ko-fi payment button to complete your purchase securely in USD."
+          }
+        ],
+        "tool": {
+          "@type": "HowToTool",
+          "name": "Ko-fi payment portal"
+        }
+      },
+      {
+        "@type": "HowToStep",
+        "name": "Submit Your Information",
+        "url": `${canonicalUrl}#form`,
+        "itemListElement": [
+          {
+            "@type": "HowToDirection",
+            "text": "Fill out the BaZi information form with your birth details and questions."
+          }
+        ]
+      },
+      {
+        "@type": "HowToStep",
+        "name": "Receive Your Service",
+        "url": `${canonicalUrl}#delivery`,
+        "itemListElement": [
+          {
+            "@type": "HowToDirection",
+            "text": "Watch your inbox for the personalized report or shipping confirmation from Master XuanYin."
+          }
+        ],
+        "supply": {
+          "@type": "HowToSupply",
+          "name": "Email inbox for delivery"
+        }
+      }
+    ].filter(Boolean)
+  }
+
+  const seoProps = {
+    title: pageTitle,
+    description: pageDescription,
+    keywords: `payment guide, ${config.name.toLowerCase()}, fatepath checkout, bazi services usa, ko-fi payment instructions`,
+    canonical: canonicalUrl,
+    ogImage: 'https://fatepath.me/og-image.svg',
+    author: 'FatePath',
+    structuredData
+  }
 
   return (
-    <div className="min-h-screen pt-16 sm:pt-20 px-4 sm:px-6 lg:px-8">
+    <>
+      <SEO {...seoProps} />
+      <div className="min-h-screen pt-16 sm:pt-20 px-4 sm:px-6 lg:px-8">
       <div className="max-w-4xl mx-auto">
         {/* Header */}
         <motion.div 
@@ -78,30 +153,29 @@ const PaymentGuide = () => {
           className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8 mb-8 sm:mb-12"
         >
           {/* Step 1: Payment */}
-          <div className="mystic-card p-8">
+          <div id="payment" className="mystic-card p-8">
             <div className="flex items-center space-x-3 mb-6">
               <div className="w-10 h-10 rounded-full bg-gold-500/20 flex items-center justify-center">
                 <CreditCard className="h-5 w-5 text-gold-400" aria-hidden="true" />
               </div>
               <h3 className="text-xl font-cinzel font-semibold text-white">Step 1: Complete Payment</h3>
             </div>
-                         <p className="text-mystic-300 mb-6">
-               Click the button below to complete your payment securely through Ko-fi. 
-               After successful payment, you'll be automatically redirected to the form page.
-             </p>
-                         <a
-               href={config.paypalLink + "?return_url=" + encodeURIComponent(window.location.origin + config.formLink)}
-               className={`inline-block w-full bg-gradient-to-r ${config.color} text-white font-poppins font-semibold py-4 px-8 rounded-full hover:opacity-90 transition-all duration-300 text-center tracking-wide flex items-center justify-center space-x-2`}
-             >
-               <svg className="h-5 w-5" viewBox="0 0 24 24" fill="currentColor">
-                 <path d="M20.067 8.478c.492.315.844.825.844 1.406 0 .58-.352 1.09-.844 1.406-.492.315-1.156.51-1.875.51h-1.406c-.492 0-.844-.195-.844-.51 0-.315.352-.51.844-.51h1.406c.352 0 .703-.195.703-.406 0-.21-.351-.406-.703-.406h-1.406c-.492 0-.844-.195-.844-.51 0-.315.352-.51.844-.51h1.406c.719 0 1.383.195 1.875.51zM12.5 8.478c.492.315.844.825.844 1.406 0 .58-.352 1.09-.844 1.406-.492.315-1.156.51-1.875.51h-1.406c-.492 0-.844-.195-.844-.51 0-.315.352-.51.844-.51h1.406c.352 0 .703-.195.703-.406 0-.21-.351-.406-.703-.406h-1.406c-.492 0-.844-.195-.844-.51 0-.315.352-.51.844-.51h1.406c.719 0 1.383.195 1.875.51zM7.5 8.478c.492.315.844.825.844 1.406 0 .58-.352 1.09-.844 1.406-.492.315-1.156.51-1.875.51H4.219c-.492 0-.844-.195-.844-.51 0-.315.352-.51.844-.51h1.406c.352 0 .703-.195.703-.406 0-.21-.351-.406-.703-.406H4.219c-.492 0-.844-.195-.844-.51 0-.315.352-.51.844-.51h1.406c.719 0 1.383.195 1.875.51z"/>
-               </svg>
-               <span>Pay with Ko-fi</span>
-             </a>
+            <p className="text-mystic-300 mb-6">
+              Click the button below to complete your payment securely through Ko-fi. After successful payment, you'll be automatically redirected to the form page.
+            </p>
+            <a
+              href={config.paypalLink + "?return_url=" + encodeURIComponent(window.location.origin + config.formLink)}
+              className={`inline-block w-full bg-gradient-to-r ${config.color} text-white font-poppins font-semibold py-4 px-8 rounded-full hover:opacity-90 transition-all duration-300 text-center tracking-wide flex items-center justify-center space-x-2`}
+            >
+              <svg className="h-5 w-5" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M20.067 8.478c.492.315.844.825.844 1.406 0 .58-.352 1.09-.844 1.406-.492.315-1.156.51-1.875.51h-1.406c-.492 0-.844-.195-.844-.51 0-.315.352-.51.844-.51h1.406c.352 0 .703-.195.703-.406 0-.21-.351-.406-.703-.406h-1.406c-.492 0-.844-.195-.844-.51 0-.315.352-.51.844-.51h1.406c.719 0 1.383.195 1.875.51zM12.5 8.478c.492.315.844.825.844 1.406 0 .58-.352 1.09-.844 1.406-.492.315-1.156.51-1.875.51h-1.406c-.492 0-.844-.195-.844-.51 0-.315.352-.51.844-.51h1.406c.352 0 .703-.195.703-.406 0-.21-.351-.406-.703-.406h-1.406c-.492 0-.844-.195-.844-.51 0-.315.352-.51.844-.51h1.406c.719 0 1.383.195 1.875.51zM7.5 8.478c.492.315.844.825.844 1.406 0 .58-.352 1.09-.844 1.406-.492.315-1.156.51-1.875.51H4.219c-.492 0-.844-.195-.844-.51 0-.315.352-.51.844-.51h1.406c.352 0 .703-.195.703-.406 0-.21-.351-.406-.703-.406H4.219c-.492 0-.844-.195-.844-.51 0-.315.352-.51.844-.51h1.406c.719 0 1.383.195 1.875.51z"/>
+              </svg>
+              <span>Pay with Ko-fi</span>
+            </a>
           </div>
 
           {/* Step 2: Form */}
-          <div className="mystic-card p-8">
+          <div id="form" className="mystic-card p-8">
             <div className="flex items-center space-x-3 mb-6">
               <div className="w-10 h-10 rounded-full bg-gold-500/20 flex items-center justify-center">
                 <FileText className="h-5 w-5 text-gold-400" aria-hidden="true" />
@@ -127,6 +201,7 @@ const PaymentGuide = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.4 }}
           className="mystic-card p-6 sm:p-8 mb-8 sm:mb-12"
+          id="delivery"
         >
           <h3 className="text-xl sm:text-2xl font-cinzel font-semibold text-white mb-4 sm:mb-6 text-center">
             What Happens Next?
@@ -207,6 +282,7 @@ const PaymentGuide = () => {
         </motion.div>
       </div>
     </div>
+    </>
   )
 }
 

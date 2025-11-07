@@ -74,6 +74,28 @@ const Resources = () => {
            featured: true,
            filename: "luck-cycles.json",
            lastUpdated: "2024-01-15"
+        },
+        {
+          title: "Annual Forecasts 2024-2034",
+          excerpt: "Year-by-year BaZi forecasts tailored for U.S. audiences with key themes, elemental balance, and industry highlights.",
+          format: "JSON",
+          records: 11,
+          difficulty: "Intermediate",
+          tags: ["Annual Forecast", "Timing", "US Market"],
+          featured: true,
+          filename: "annual-forecasts-2024-2034.json",
+          lastUpdated: "2025-11-07"
+        },
+        {
+          title: "Solar Terms Energy Guide",
+          excerpt: "24 solar terms (节气) with five-element energy, lifestyle adjustments, and wellness tips adapted to American routines.",
+          format: "JSON",
+          records: 24,
+          difficulty: "Beginner",
+          tags: ["Seasonal", "Wellness", "Timing"],
+          featured: true,
+          filename: "solar-terms-energy.json",
+          lastUpdated: "2025-11-07"
          }
       ]
     },
@@ -312,12 +334,12 @@ const Resources = () => {
 
           // 热门标签
       const popularTags = [
-     "Core", "Stems", "Branches", "Elements", "Ten Gods", "Luck Cycles", 
-     "Wealth Stars", "Love Compatibility", "Career", "Wealth", "Compatibility", 
-     "Jiazi", "Hidden Stems", "Pillars", "Element Strength", "Health", "Marriage", 
-     "Business", "Travel", "Education", "Clash", "Harm", "Combination", "Punishment",
-     "Empty Branches", "Noble People", "Disaster Stars", "Flying Stars", "Advanced", 
-     "Intermediate", "Research", "JSON", "Download"
+     "Core", "Stems", "Branches", "Elements", "Ten Gods", "Luck Cycles",
+     "Annual Forecast", "Seasonal", "US Market", "Wealth Stars", "Love Compatibility",
+     "Career", "Wealth", "Compatibility", "Jiazi", "Hidden Stems", "Pillars",
+     "Element Strength", "Health", "Marriage", "Business", "Travel", "Education",
+     "Clash", "Harm", "Combination", "Punishment", "Empty Branches", "Noble People",
+     "Disaster Stars", "Flying Stars", "Advanced", "Intermediate", "Research", "JSON", "Download"
    ]
 
   // 筛选后的数据集

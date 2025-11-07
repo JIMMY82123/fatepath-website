@@ -1,0 +1,112 @@
+﻿[
+  {
+    "year": 2024,
+    "pillar": "Jia Chen",
+    "elementFocus": "Wood over Earth",
+    "themes": [
+      "Economic stabilization",
+      "Career rebuilding",
+      "Health reset"
+    ],
+    "usHighlights": {
+      "industries": [
+        "Healthcare",
+        "Education",
+        "Public Services"
+      ],
+      "advice": "Rebuild foundational skills, favor steady employment, audit health routines."
+    }
+  },
+  {
+    "year": 2025,
+    "pillar": "Yi Si",
+    "elementFocus": "Wood over Fire",
+    "themes": [
+      "Creative expansion",
+      "Policy shifts",
+      "Immigration discussions"
+    ],
+    "usHighlights": {
+      "industries": [
+        "AI and Creative Tech",
+        "Legal",
+        "Communications"
+      ],
+      "advice": "Digitize offers, prepare immigration documentation, nurture professional visibility."
+    }
+  },
+  {
+    "year": 2026,
+    "pillar": "Bing Wu",
+    "elementFocus": "Strong Fire",
+    "themes": [
+      "Rapid change",
+      "Market volatility",
+      "Leadership turnover"
+    ],
+    "usHighlights": {
+      "industries": [
+        "Tech",
+        "Media",
+        "Venture Capital"
+      ],
+      "advice": "Time promotions early, secure cash reserves, schedule cool-down periods."
+    }
+  }
+]
+[
+  {
+     year: 2024,
+    pillar: Jia Chen,
+    elementFocus: Wood over Earth,
+    themes: [
+      Economic stabilization,
+      Career rebuilding,
+      Health reset
+    ],
+    usHighlights: {
+      industries: [
+        Healthcare,
+        Education,
+        Public Services
+      ],
+      advice: Rebuild foundational skills favor steady employment audit health routines.
+    }
+  },
+  {
+    year: 2025,
+    pillar: Yi Si,
+    elementFocus: Wood over Fire,
+    themes: [
+      Creative expansion,
+      Policy shifts,
+      Immigration discussions
+    ],
+    usHighlights: {
+      industries: [
+        AI and Creative Tech,
+        Legal,
+        Communications
+      ],
+      advice: Digitize offers prepare immigration documentation nurture professional visibility.
+    }
+  },
+  {
+    year: 2026,
+    pillar: Bing Wu,
+    elementFocus: Strong Fire,
+    themes: [
+      Rapid change,
+      Market volatility,
+      Leadership turnover
+    ],
+    usHighlights: {
+      industries: [
+        Tech,
+        Media,
+        Venture Capital
+      ],
+      advice: Time promotions early secure cash reserves schedule cool-down periods.
+    }
+  }
+]

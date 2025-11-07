@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
+import SEO from '../components/SEO'
 
 const Home = () => {
   const [selectedRedditReview, setSelectedRedditReview] = useState(null) // For modal
@@ -12,8 +13,39 @@ const Home = () => {
     setSelectedRedditReview(null)
   }
 
+  const structuredData = {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "FatePath BaZi Readings for Americans",
+    "url": "https://fatepath.me/",
+    "description": "English-language BaZi readings and Chinese astrology guidance for clients across the United States and worldwide.",
+    "inLanguage": "en-US",
+    "publisher": {
+      "@type": "Organization",
+      "name": "FatePath",
+      "url": "https://fatepath.me",
+      "logo": "https://fatepath.me/favicon.svg"
+    },
+    "areaServed": [
+      "United States",
+      "Canada",
+      "United Kingdom",
+      "Australia"
+    ]
+  }
+
   return (
-    <main className="min-h-screen bg-slate-900 font-inter">
+    <>
+      <SEO
+        title="BaZi Readings for Americans | FatePath Chinese Astrology"
+        description="Work with Master XuanYin for English-language BaZi readings tailored to American professionals, couples, and families seeking practical Chinese astrology guidance."
+        keywords="us bazi reading, chinese astrology for americans, bazi career analysis usa, destiny reading online, fatepath ba zi master"
+        canonical="https://fatepath.me/"
+        ogImage="https://fatepath.me/og-image.svg"
+        author="FatePath"
+        structuredData={structuredData}
+      />
+      <main className="min-h-screen bg-slate-900 font-inter">
       {/* Hero Section */}
       <section className="pt-32 pb-20 px-6 relative overflow-hidden">
         {/* Background Video */}
@@ -1029,6 +1061,7 @@ const Home = () => {
         </div>
       )}
     </main>
+    </>
   )
 }
 

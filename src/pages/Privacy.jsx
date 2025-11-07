@@ -1,10 +1,42 @@
 import { motion } from 'framer-motion'
 import { Shield, Lock, Eye, Trash2, ArrowLeft } from 'lucide-react'
 import { Link } from 'react-router-dom'
+import SEO from '../components/SEO'
 
 const Privacy = () => {
+  const structuredData = {
+    "@context": "https://schema.org",
+    "@type": "PrivacyPolicy",
+    "name": "FatePath Privacy Policy",
+    "url": "https://fatepath.me/privacy",
+    "description": "Learn how FatePath protects the personal information of BaZi clients across the United States and worldwide, including GDPR and CCPA rights.",
+    "inLanguage": "en-US",
+    "audience": {
+      "@type": "Audience",
+      "name": "Clients in the United States, Canada, United Kingdom, and Australia"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "FatePath",
+      "url": "https://fatepath.me",
+      "logo": "https://fatepath.me/favicon.svg"
+    }
+  }
+
+  const seoProps = {
+    title: 'Privacy Policy | FatePath BaZi Services',
+    description: 'Understand how FatePath secures your BaZi data, complies with GDPR/CCPA, and supports clients across the United States and worldwide.',
+    keywords: 'fatepath privacy policy, bazi data security, gdpr compliance, ccpa rights, chinese astrology privacy usa',
+    canonical: 'https://fatepath.me/privacy',
+    ogImage: 'https://fatepath.me/og-image.svg',
+    author: 'FatePath',
+    structuredData
+  }
+
   return (
-    <div className="min-h-screen pt-16 sm:pt-20 px-4 sm:px-6 lg:px-8">
+    <>
+      <SEO {...seoProps} />
+      <div className="min-h-screen pt-16 sm:pt-20 px-4 sm:px-6 lg:px-8">
       <div className="max-w-4xl mx-auto">
         {/* Header */}
         <motion.div 
@@ -170,6 +202,7 @@ const Privacy = () => {
         </div>
       </div>
     </div>
+    </>
   )
 }
 

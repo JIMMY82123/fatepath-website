@@ -2,6 +2,7 @@ import { useState } from 'react'
 import { motion } from 'framer-motion'
 import { Heart, ArrowLeft, CheckCircle } from 'lucide-react'
 import { Link } from 'react-router-dom'
+import SEO from '../components/SEO'
 
 const LoveForm = () => {
   const [isSubmitting, setIsSubmitting] = useState(false)
@@ -55,40 +56,87 @@ const LoveForm = () => {
     }
   }
 
+  const structuredData = {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "Love Compatibility Reading Form",
+    "url": "https://fatepath.me/love-form",
+    "description": "Submit details for an English-language BaZi love compatibility reading with FatePath, serving clients across the United States and worldwide.",
+    "inLanguage": "en-US",
+    "isPartOf": {
+      "@type": "WebSite",
+      "name": "FatePath",
+      "url": "https://fatepath.me"
+    },
+    "audience": {
+      "@type": "Audience",
+      "name": "Couples in the United States, Canada, United Kingdom, and Australia seeking BaZi guidance"
+    },
+    "mainEntity": {
+      "@type": "Service",
+      "name": "Love Compatibility Reading",
+      "provider": {
+        "@type": "Person",
+        "name": "Master XuanYin",
+        "areaServed": [
+          "United States",
+          "Canada",
+          "United Kingdom",
+          "Australia"
+        ],
+        "availableLanguage": "English"
+      }
+    }
+  }
+
+  const seoProps = {
+    title: 'Love Compatibility Reading Form | FatePath BaZi for Americans',
+    description: 'Request a personalized BaZi love compatibility reading in English. Ideal for couples across the United States and worldwide seeking practical Chinese astrology guidance.',
+    keywords: 'love compatibility reading, bazi relationship analysis, chinese astrology for americans, marriage destiny reading, fatepath love form',
+    canonical: 'https://fatepath.me/love-form',
+    ogImage: 'https://fatepath.me/images/services/love-compatibility-cover.jpg',
+    author: 'FatePath',
+    structuredData
+  }
+
   if (isSubmitted) {
     return (
-      <div className="min-h-screen pt-20 px-4 sm:px-6 lg:px-8">
-        <div className="max-w-2xl mx-auto text-center">
-          <motion.div
-            initial={{ opacity: 0, scale: 0.8 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.6 }}
-            className="mystic-card p-12"
-          >
-            <CheckCircle className="h-16 w-16 text-green-400 mx-auto mb-6" />
-            <h1 className="text-3xl font-cinzel font-bold mb-4 text-white">
-              Thank You!
-            </h1>
-            <p className="text-mystic-300 mb-8 text-lg">
-              Your love compatibility reading request has been submitted successfully. 
-                              I will analyze your relationship compatibility and send your detailed report within 24 hours.
-            </p>
-            <Link
-              to="/"
-              className="inline-flex items-center space-x-2 bg-gradient-to-r from-gold-500 to-gold-600 text-black font-poppins font-semibold px-8 py-3 rounded-full hover:from-gold-400 hover:to-gold-500 transition-all duration-300"
+      <>
+        <SEO {...seoProps} />
+        <div className="min-h-screen pt-20 px-4 sm:px-6 lg:px-8">
+          <div className="max-w-2xl mx-auto text-center">
+            <motion.div
+              initial={{ opacity: 0, scale: 0.8 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 0.6 }}
+              className="mystic-card p-12"
             >
-              <ArrowLeft className="h-5 w-5" />
-              <span>Return to Home</span>
-            </Link>
-          </motion.div>
+              <CheckCircle className="h-16 w-16 text-green-400 mx-auto mb-6" />
+              <h1 className="text-3xl font-cinzel font-bold mb-4 text-white">
+                Thank You!
+              </h1>
+              <p className="text-mystic-300 mb-8 text-lg">
+                Your love compatibility reading request has been submitted successfully. I will analyze your relationship compatibility and send your report within 24 hours.
+              </p>
+              <Link
+                to="/"
+                className="inline-flex items-center space-x-2 bg-gradient-to-r from-gold-500 to-gold-600 text-black font-poppins font-semibold px-8 py-3 rounded-full hover:from-gold-400 hover:to-gold-500 transition-all duration-300"
+              >
+                <ArrowLeft className="h-5 w-5" />
+                <span>Return to Home</span>
+              </Link>
+            </motion.div>
+          </div>
         </div>
-      </div>
+      </>
     )
   }
 
   return (
-    <div className="min-h-screen pt-16 sm:pt-20 px-4 sm:px-6 lg:px-8">
-      <div className="max-w-2xl mx-auto">
+    <>
+      <SEO {...seoProps} />
+      <div className="min-h-screen pt-16 sm:pt-20 px-4 sm:px-6 lg:px-8">
+        <div className="max-w-2xl mx-auto">
         {/* Header */}
         <motion.div 
           initial={{ opacity: 0, y: 50 }}
@@ -300,8 +348,9 @@ const LoveForm = () => {
             </Link>
           </div>
         </motion.div>
+        </div>
       </div>
-    </div>
+    </>
   )
 }
 
