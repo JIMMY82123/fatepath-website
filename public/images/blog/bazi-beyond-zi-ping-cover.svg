@@ -1,0 +1,21 @@
+<svg width="1200" height="675" viewBox="0 0 1200 675" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="675" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#0F172A"/>
+      <stop offset="60%" stop-color="#111827"/>
+      <stop offset="100%" stop-color="#0B1120"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="675" rx="48" fill="url(#bg)"/>
+
+  <text x="150" y="278" fill="rgba(248, 191, 88, 0.85)" font-family="Cinzel, 'Times New Roman', serif" font-size="54" letter-spacing="0.12em">
+    BAZI BEYOND ZI PING
+  </text>
+  <text x="150" y="338" fill="#E2E8F0" font-family="Inter, 'Segoe UI', sans-serif" font-size="32" letter-spacing="0.22em">
+    FUNCTIONAL ROLES · TIMING · STRUCTURE
+  </text>
+  <text x="150" y="426" fill="rgba(148, 163, 184, 0.9)" font-family="Inter, 'Segoe UI', sans-serif" font-size="28" letter-spacing="0.18em">
+    CLASSICAL INSIGHTS · PRACTITIONER CASE NOTES
+  </text>
+</svg>
+
