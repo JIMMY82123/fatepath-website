@@ -16,9 +16,9 @@ const Home = () => {
   const structuredData = {
     "@context": "https://schema.org",
     "@type": "WebSite",
-    "name": "FatePath BaZi Readings for Americans",
+    "name": "FatePath BaZi Readings · English Guidance for Worldwide Clients",
     "url": "https://fatepath.me/",
-    "description": "English-language BaZi readings and Chinese astrology guidance for clients across the United States and worldwide.",
+    "description": "English-language BaZi readings and Chinese astrology guidance for professionals, couples, and families across the world.",
     "inLanguage": "en-US",
     "publisher": {
       "@type": "Organization",
@@ -37,9 +37,9 @@ const Home = () => {
   return (
     <>
       <SEO
-        title="BaZi Readings for Americans | FatePath Chinese Astrology"
-        description="Work with Master XuanYin for English-language BaZi readings tailored to American professionals, couples, and families seeking practical Chinese astrology guidance."
-        keywords="us bazi reading, chinese astrology for americans, bazi career analysis usa, destiny reading online, fatepath ba zi master"
+        title="FatePath BaZi Readings · English Guidance for Worldwide Clients"
+        description="Work with Master XuanYin for English-language BaZi readings tailored to professionals, couples, and families worldwide seeking practical Chinese astrology guidance."
+        keywords="english bazi reading, global chinese astrology consultation, destiny analysis worldwide, fatepath ba zi guidance"
         canonical="https://fatepath.me/"
         ogImage="https://fatepath.me/og-image.svg"
         author="FatePath"
