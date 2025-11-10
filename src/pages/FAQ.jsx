@@ -16,7 +16,7 @@ const FAQ = () => {
     setOpenItems(newOpenItems)
   }
 
-    const faqData = [
+  const faqData = [
     {
       question: "What is BaZi (八字) Analysis?",
       answer: "BaZi analysis is a fundamental component of traditional Chinese metaphysics, analyzing the year, month, day, and hour of your birth to understand your personality traits, life path, career development, and relationships. Based on Yin-Yang and Five Elements theory, BaZi reveals your innate potential, suitable career directions, and opportunities and challenges at different life stages."
@@ -59,6 +59,19 @@ const FAQ = () => {
     }
   ]
 
+  const faqStructuredData = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": faqData.map(item => ({
+      "@type": "Question",
+      "name": item.question,
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": item.answer.replace(/<br\/?>/g, ' ')
+      }
+    }))
+  }
+
   return (
     <>
       <SEO 
@@ -68,6 +81,7 @@ const FAQ = () => {
         canonical={`${window.location.origin}/faq`}
         ogImage={`${window.location.origin}/images/bazi-reading.jpg`}
         ogType="website"
+        structuredData={[faqStructuredData]}
       />
       <div className="min-h-screen bg-mystic-900 text-white">
        {/* Hero Section */}

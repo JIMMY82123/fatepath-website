@@ -35,9 +35,6 @@ const MobileGestureHandler = ({ children }) => {
     
     // 监听滚动事件，检测是否正在滚动
     document.addEventListener('scroll', handleScroll, { passive: true });
-
-    // 添加手势反馈样式
-    addGestureStyles();
   };
 
   // 清理手势处理
@@ -217,75 +214,8 @@ const MobileGestureHandler = ({ children }) => {
   // 移除手势反馈相关代码
   // const showGestureFeedback = (message, type = 'info') => { ... }
 
-  // 添加手势样式
-  const addGestureStyles = () => {
-    if (document.getElementById('gesture-styles')) return;
-
-    const style = document.createElement('style');
-    style.id = 'gesture-styles';
-    style.textContent = `
-      .touch-feedback {
-        position: absolute;
-        pointer-events: none;
-        border-radius: 50%;
-        background: radial-gradient(circle, rgba(255, 255, 255, 0.3) 0%, transparent 70%);
-        animation: touchRipple 0.6s ease-out;
-        z-index: 9999;
-      }
-
-      @keyframes touchRipple {
-        0% {
-          transform: scale(0);
-          opacity: 1;
-        }
-        100% {
-          transform: scale(2);
-          opacity: 0;
-        }
-      }
-    `;
-
-    document.head.appendChild(style);
-  };
-
-  // 添加触摸反馈效果
-  const addTouchFeedback = (element) => {
-    if (!isMobile() || !isTouchDevice()) return;
-
-    const handleTouch = (e) => {
-      const touch = e.touches[0];
-      const rect = element.getBoundingClientRect();
-      const x = touch.clientX - rect.left;
-      const y = touch.clientY - rect.top;
-
-      // 创建触摸反馈元素
-      const feedback = document.createElement('div');
-      feedback.className = 'touch-feedback';
-      feedback.style.left = x + 'px';
-      feedback.style.top = y + 'px';
-      feedback.style.width = '40px';
-      feedback.style.height = '40px';
-
-      element.style.position = 'relative';
-      element.appendChild(feedback);
-
-      // 动画结束后移除
-      setTimeout(() => {
-        if (feedback.parentNode) {
-          feedback.parentNode.removeChild(feedback);
-        }
-      }, 600);
-    };
-
-    element.addEventListener('touchstart', handleTouch, { passive: true });
-
-    return () => {
-      element.removeEventListener('touchstart', handleTouch);
-    };
-  };
-
   // 为所有可交互元素添加触摸反馈
-  useEffect(() => {
+  const attachTouchFeedback = () => {
     if (!isMobile() || !isTouchDevice()) return;
 
     const interactiveElements = document.querySelectorAll('button, a, .touch-target, [role="button"]');
@@ -300,6 +230,49 @@ const MobileGestureHandler = ({ children }) => {
 
     return () => {
       cleanupFunctions.forEach(cleanup => cleanup());
+    };
+  };
+
+  // 添加触摸反馈效果
+  const addTouchFeedback = (element) => {
+    if (!isMobile() || !isTouchDevice()) return;
+
+    const computedPosition = window.getComputedStyle(element).position;
+    if (computedPosition === 'static') {
+      element.style.position = 'relative';
+    }
+
+    element.classList.add('touch-feedback-surface');
+
+    const activate = () => {
+      requestAnimationFrame(() => {
+        element.classList.add('touch-feedback-active');
+      });
+    };
+
+    const deactivate = () => {
+      requestAnimationFrame(() => {
+        element.classList.remove('touch-feedback-active');
+      });
+    };
+
+    element.addEventListener('touchstart', activate, { passive: true });
+    element.addEventListener('touchend', deactivate, { passive: true });
+    element.addEventListener('touchcancel', deactivate, { passive: true });
+
+    return () => {
+      element.removeEventListener('touchstart', activate);
+      element.removeEventListener('touchend', deactivate);
+      element.removeEventListener('touchcancel', deactivate);
+      element.classList.remove('touch-feedback-active');
+      element.classList.remove('touch-feedback-surface');
+    };
+  };
+
+  useEffect(() => {
+    const cleanup = attachTouchFeedback();
+    return () => {
+      if (cleanup) cleanup();
     };
   }, [location.pathname]);
 
