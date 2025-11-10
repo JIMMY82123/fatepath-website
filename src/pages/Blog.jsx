@@ -257,6 +257,9 @@ const Blog = () => {
                         <img 
                           src={post.image} 
                           alt={post.title}
+                          width={768}
+                          height={384}
+                          loading="lazy"
                           className="w-full h-full object-cover hover:scale-110 transition-transform duration-300"
                           onError={(e) => {
                             e.target.style.display = 'none';

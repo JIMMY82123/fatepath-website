@@ -66,6 +66,9 @@ const SampleReportCarousel = () => {
                   <img
                     src={reportImages[currentIndex].src}
                     alt={reportImages[currentIndex].title}
+                    width={768}
+                    height={384}
+                    loading="lazy"
                     className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
                   />
                 </motion.div>
@@ -110,6 +113,9 @@ const SampleReportCarousel = () => {
                     <img
                       src={image.src}
                       alt={image.title}
+                      width={96}
+                      height={96}
+                      loading="lazy"
                       className="w-full h-full object-cover"
                     />
                   </button>
@@ -172,6 +178,8 @@ const SampleReportCarousel = () => {
               <img
                 src={reportImages[currentIndex].src}
                 alt={reportImages[currentIndex].title}
+                width={1200}
+                height={1200}
                 className="w-full h-full object-contain max-h-[80vh]"
               />
 

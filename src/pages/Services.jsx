@@ -293,6 +293,9 @@ const Services = () => {
                         services[activeService].id === 1 ? 'love-compatibility' : 
                         'custom-talisman'}.jpg`}
                   alt={`Professional ${services[activeService].title} consultation service with traditional Chinese numerology`}
+                  width={600}
+                  height={600}
+                  loading="lazy"
                   className="w-full h-full object-cover rounded-lg sm:rounded-xl shadow-2xl border-2 border-gold-500/30"
                   onError={(e) => {
                     // Fallback to placeholder if image doesn't exist

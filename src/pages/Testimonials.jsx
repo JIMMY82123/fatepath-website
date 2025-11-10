@@ -337,6 +337,9 @@ const Testimonials = () => {
                         <img
                           src={testimonial.avatar}
                           alt={testimonial.name}
+                          width={48}
+                          height={48}
+                          loading="lazy"
                           className="w-full h-full rounded-full object-cover"
                           onError={(e) => {
                             e.target.style.display = 'none';
@@ -414,6 +417,9 @@ const Testimonials = () => {
                         <img
                           src={review.image}
                           alt={`Reddit Review ${review.id}`}
+                          width={400}
+                          height={400}
+                          loading="lazy"
                           className="w-full h-auto object-cover transition-transform duration-300 group-hover:scale-105"
                           onError={(e) => {
                             e.target.style.display = 'none';
@@ -471,6 +477,8 @@ const Testimonials = () => {
               <img
                 src={selectedRedditReview.image}
                 alt={`Reddit Review ${selectedRedditReview.id}`}
+                width={1200}
+                height={1200}
                 className="w-full h-auto max-h-[90vh] object-contain"
                 onError={(e) => {
                   e.target.style.display = 'none';

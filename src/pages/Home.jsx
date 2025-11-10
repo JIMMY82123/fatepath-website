@@ -323,6 +323,9 @@ const Home = () => {
                   <img
                     src="/images/reddit-reviews/reddit-review-1.jpg"
                     alt="Reddit Review 1"
+                    width={400}
+                    height={400}
+                    loading="lazy"
                     className="w-full h-auto object-cover"
                     onError={(e) => {
                       e.target.style.display = 'none';
@@ -354,6 +357,9 @@ const Home = () => {
                   <img
                     src="/images/reddit-reviews/reddit-review-2.jpg"
                     alt="Reddit Review 2"
+                    width={400}
+                    height={400}
+                    loading="lazy"
                     className="w-full h-auto object-cover"
                     onError={(e) => {
                       e.target.style.display = 'none';
@@ -385,6 +391,9 @@ const Home = () => {
                   <img
                     src="/images/reddit-reviews/reddit-review-3.jpg"
                     alt="Reddit Review 3"
+                    width={400}
+                    height={400}
+                    loading="lazy"
                     className="w-full h-auto object-cover"
                     onError={(e) => {
                       e.target.style.display = 'none';
@@ -416,6 +425,9 @@ const Home = () => {
                   <img
                     src="/images/reddit-reviews/reddit-review-4.jpg"
                     alt="Reddit Review 4"
+                    width={400}
+                    height={400}
+                    loading="lazy"
                     className="w-full h-auto object-cover"
                     onError={(e) => {
                       e.target.style.display = 'none';
@@ -447,6 +459,9 @@ const Home = () => {
                   <img
                     src="/images/reddit-reviews/reddit-review-5.jpg"
                     alt="Reddit Review 5"
+                    width={400}
+                    height={400}
+                    loading="lazy"
                     className="w-full h-auto object-cover"
                     onError={(e) => {
                       e.target.style.display = 'none';
@@ -478,6 +493,9 @@ const Home = () => {
                   <img
                     src="/images/reddit-reviews/reddit-review-6.jpg"
                     alt="Reddit Review 6"
+                    width={400}
+                    height={400}
+                    loading="lazy"
                     className="w-full h-auto object-cover"
                     onError={(e) => {
                       e.target.style.display = 'none';
@@ -509,6 +527,9 @@ const Home = () => {
                   <img
                     src="/images/reddit-reviews/reddit-review-7.jpg"
                     alt="Reddit Review 7"
+                    width={400}
+                    height={400}
+                    loading="lazy"
                     className="w-full h-auto object-cover"
                     onError={(e) => {
                       e.target.style.display = 'none';
@@ -540,6 +561,9 @@ const Home = () => {
                   <img
                     src="/images/reddit-reviews/reddit-review-8.jpg"
                     alt="Reddit Review 8"
+                    width={400}
+                    height={400}
+                    loading="lazy"
                     className="w-full h-auto object-cover"
                     onError={(e) => {
                       e.target.style.display = 'none';
@@ -571,6 +595,9 @@ const Home = () => {
                   <img
                     src="/images/reddit-reviews/reddit-review-9.jpg"
                     alt="Reddit Review 9"
+                    width={400}
+                    height={400}
+                    loading="lazy"
                     className="w-full h-auto object-cover"
                     onError={(e) => {
                       e.target.style.display = 'none';
@@ -602,6 +629,9 @@ const Home = () => {
                   <img
                     src="/images/reddit-reviews/reddit-review-10.jpg"
                     alt="Reddit Review 10"
+                    width={400}
+                    height={400}
+                    loading="lazy"
                     className="w-full h-auto object-cover"
                     onError={(e) => {
                       e.target.style.display = 'none';
@@ -671,6 +701,9 @@ const Home = () => {
                   <img 
                     src="/images/celebrities/tom-cruise.jpg" 
                     alt="Tom Cruise BaZi Analysis" 
+                    width={192}
+                    height={192}
+                    loading="lazy"
                     className="w-48 h-48 rounded-full mx-auto mb-6 object-cover border-4 border-amber-200"
                   />
                   <p className="text-slate-700 text-sm">
@@ -732,6 +765,9 @@ const Home = () => {
                   <img 
                     src="/images/celebrities/steve-jobs.jpg" 
                     alt="Steve Jobs BaZi Analysis" 
+                    width={192}
+                    height={192}
+                    loading="lazy"
                     className="w-48 h-48 rounded-full mx-auto mb-6 object-cover border-4 border-amber-200"
                   />
                   <p className="text-slate-700 text-sm">
@@ -799,6 +835,9 @@ const Home = () => {
                 <img 
                   src="/images/master-profile.jpg" 
                   alt="Master XuanYin - BaZi Destiny Expert" 
+                  width={320}
+                  height={320}
+                  loading="lazy"
                   className="w-80 h-80 rounded-full mx-auto mb-8 object-cover border-4 border-amber-200 shadow-xl"
                 />
                 <h3 className="text-2xl font-playfair font-semibold text-slate-900 mb-4">
@@ -1048,6 +1087,8 @@ const Home = () => {
             <img
               src={selectedRedditReview.image}
               alt={`Reddit Review ${selectedRedditReview.id}`}
+              width={1200}
+              height={1200}
               className="w-full h-auto max-h-[90vh] object-contain"
               onError={(e) => {
                 e.target.style.display = 'none';
