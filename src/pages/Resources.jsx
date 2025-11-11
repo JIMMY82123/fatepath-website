@@ -428,6 +428,7 @@ const Resources = () => {
         title="BaZi Data Library - Free JSON Datasets for Chinese Numerology"
         description="Download comprehensive BaZi datasets including Heavenly Stems, Earthly Branches, Five Elements, and compatibility matrices. Structured JSON data for analysis and development."
         keywords="bazi datasets, chinese numerology data, heavenly stems json, earthly branches data, five elements dataset, bazi api, free bazi data, structured data"
+        canonical="https://fatepath.me/resources"
       />
       
       <main className="pt-20">

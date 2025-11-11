@@ -131,6 +131,9 @@ const Blog = () => {
   // Get all unique tags from blog posts
   const allTags = ['all', ...Array.from(new Set(blogPosts.flatMap(post => post.tags)))]
 
+  const isTagFiltered = selectedTag !== 'all'
+  const canonicalUrl = 'https://fatepath.me/blog'
+
   // Filter blog posts based on category and tag
   const filteredPosts = blogPosts.filter(post => {
     const matchesCategory = selectedCategory === 'all' || post.category === selectedCategory
@@ -163,20 +166,24 @@ const Blog = () => {
         description="Discover ancient Chinese numerology insights, practical guidance, and spiritual wisdom."
         keywords="chinese astrology blog, bazi analysis, chinese numerology"
         author="FatePath"
-        canonical="https://fatepath.me/blog"
+        canonical={canonicalUrl}
         ogTitle="Chinese Astrology Blog - Ancient Wisdom for Modern Life"
         ogDescription="Discover ancient Chinese numerology insights, practical guidance, and spiritual wisdom."
         ogImage="https://fatepath.me/og-image.svg"
-        ogUrl="https://fatepath.me/blog"
+        ogUrl={canonicalUrl}
+        noIndex={isTagFiltered}
+        noFollow={false}
       />
       
       {/* Structured Data for SEO */}
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify(structuredData)
-        }}
-      />
+      {!isTagFiltered && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(structuredData)
+          }}
+        />
+      )}
 
       <main className="min-h-screen bg-mystic-900 pt-20">
         {/* Hero Section */}

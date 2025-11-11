@@ -8,6 +8,7 @@ const DatasetDetail = () => {
   const [dataset, setDataset] = useState(null)
   const [loading, setLoading] = useState(true)
   const [previewData, setPreviewData] = useState([])
+  const canonicalUrl = `https://fatepath.me/resources/${datasetId}`
 
   useEffect(() => {
     const loadDataset = async () => {
@@ -113,6 +114,7 @@ const DatasetDetail = () => {
         description={dataset.metadata.description}
         keywords={`${datasetId}, bazi dataset, chinese numerology data, json dataset, free download`}
         structuredData={generateStructuredData()}
+        canonical={canonicalUrl}
       />
       
       <main className="pt-20">

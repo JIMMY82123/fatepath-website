@@ -130,9 +130,11 @@ const BlogPost = () => {
     }
   }
 
-  const canonicalUrl = `https://fatepath.me/blog/${slug}`
+  const canonicalUrl = blogPost.canonical || `https://fatepath.me/blog/${slug}`
   const articleImage = blogPost.image || blogPost.coverImage || '/og-image.svg'
   const authorName = blogPost.author || 'FatePath'
+  const shouldNoIndex = Boolean(blogPost.noIndex)
+  const shouldNoFollow = Boolean(blogPost.noFollow)
 
   const articleStructuredData = {
     "@context": "https://schema.org",
@@ -230,6 +232,8 @@ const BlogPost = () => {
         ogUrl={canonicalUrl}
         canonical={canonicalUrl}
         structuredData={[articleStructuredData, breadcrumbStructuredData]}
+        noIndex={shouldNoIndex}
+        noFollow={shouldNoFollow}
       />
 
       <main className="min-h-screen bg-mystic-900 pt-20">

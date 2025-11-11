@@ -2220,6 +2220,8 @@ export const blogPostsData = {
       category: "BaZi Analysis",
       tags: ["Dragon Year", "2024", "Fortune", "Chinese Zodiac"],
       image: "/images/blog/blog-placeholder.svg",
+      canonical: "https://fatepath.me/blog/2024-year-dragon-fortune-forecast",
+      noIndex: true,
       relatedPosts: [
         {
           title: "Career Timing: When to Make Your Next Big Move",
