@@ -1,0 +1,47 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="630" rx="32" fill="url(#paint0_linear)"/>
+  <path d="M1110 540C1014 474 954 402 894 330C874 306 844 282 814 288C784 294 754 330 724 366C680 418 636 470 578 474C520 478 448 434 380 398C308 360 226 330 144 300" stroke="url(#paint1_linear)" stroke-opacity="0.25" stroke-width="6" stroke-linecap="round"/>
+  <path d="M1050 108C980 164 932 226 866 248C799 270 715 252 653 270C590 288 552 342 494 366C434 390 356 384 284 374C216 365 148 353 90 336" stroke="url(#paint2_linear)" stroke-opacity="0.3" stroke-width="6" stroke-linecap="round"/>
+  <g filter="url(#filter0_d)">
+    <path d="M924 450C924 523.498 828.274 582 708 582C587.726 582 492 523.498 492 450C492 376.502 587.726 318 708 318C828.274 318 924 376.502 924 450Z" fill="url(#paint3_radial)" fill-opacity="0.65"/>
+  </g>
+  <text x="120" y="228" fill="#FDE68A" font-family="Cinzel, 'Times New Roman', serif" font-size="64" font-weight="600" letter-spacing="0.08em">
+    BAZI CASE STUDY
+  </text>
+  <text x="120" y="320" fill="#F8FAFC" font-family="Inter, 'Segoe UI', sans-serif" font-size="48" font-weight="700">
+    1958 High-Ranking Official
+  </text>
+  <text x="120" y="384" fill="#CBD5F5" font-family="Inter, 'Segoe UI', sans-serif" font-size="32" font-weight="500">
+    Ren Water Day Master · Verified Outcomes
+  </text>
+  <text x="120" y="452" fill="#94A3B8" font-family="Inter, 'Segoe UI', sans-serif" font-size="26" font-weight="400">
+    Authority · Hidden Wealth · Health Timing · Family Patterns
+  </text>
+  <circle cx="948" cy="162" r="14" fill="#FDE68A" fill-opacity="0.6"/>
+  <circle cx="978" cy="138" r="8" fill="#FDE68A" fill-opacity="0.4"/>
+  <circle cx="1012" cy="168" r="6" fill="#FDE68A" fill-opacity="0.4"/>
+  <defs>
+    <filter id="filter0_d" x="432" y="270" width="552" height="372" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+      <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+      <feGaussianBlur stdDeviation="30" result="effect1_foregroundBlur"/>
+    </filter>
+    <linearGradient id="paint0_linear" x1="0" y1="0" x2="1200" y2="630" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0F172A"/>
+      <stop offset="1" stop-color="#1E1B4B"/>
+    </linearGradient>
+    <linearGradient id="paint1_linear" x1="1110" y1="540" x2="144" y2="300" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#7DD3FC"/>
+      <stop offset="1" stop-color="#FCD34D" stop-opacity="0.2"/>
+    </linearGradient>
+    <linearGradient id="paint2_linear" x1="1050" y1="108" x2="90" y2="336" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FDE68A" stop-opacity="0.8"/>
+      <stop offset="1" stop-color="#38BDF8" stop-opacity="0.15"/>
+    </linearGradient>
+    <radialGradient id="paint3_radial" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(708 450) rotate(90) scale(132 216)">
+      <stop stop-color="#F97316" stop-opacity="0.55"/>
+      <stop offset="1" stop-color="#F97316" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+</svg>
+

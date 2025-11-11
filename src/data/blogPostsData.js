@@ -54,6 +54,153 @@ export const blogPostsData = {
       }
     ]
   },
+  "bazi-case-study-high-ranking-official": {
+    title: "BaZi Case Study: Destiny Analysis of a High-Ranking Official (1958)",
+    excerpt: "A verified Ren Water case study following a 1958-born official from chart structure through eight life predictions covering career rank, health incidents, family patterns, property, and hidden wealth.",
+    content: `
+      <div class="space-y-8">
+        <section class="space-y-4">
+          <p class="text-mystic-200 leading-relaxed">
+            This anonymized case study examines a Ren Water (壬) Day Master born on the 8th day of the 5th lunar month in 1958 during Xu hour (19:00–21:00). The native was registered in Guozhen, Baoji County, Shaanxi Province. Verified feedback from the client and family members confirms each prediction.
+          </p>
+          <div class="bg-mystic-800/40 border border-mystic-700/40 rounded-lg p-6 space-y-4">
+            <h3 class="text-xl font-semibold text-gold-300">Four Pillars</h3>
+            <div class="grid md:grid-cols-2 gap-4 text-mystic-200 leading-relaxed">
+              <ul class="list-disc list-inside space-y-1">
+                <li><strong>Year:</strong> Wu Xu (戊戌) &mdash; Yang Earth over Yang Earth · Flatland Earth</li>
+                <li><strong>Month:</strong> Wu Wu (戊午) &mdash; Yang Earth over Yang Fire · Heaven Fire</li>
+                <li><strong>Day:</strong> Ren Shen (壬申) &mdash; Yang Water over Yang Metal · Sharp Sword Metal</li>
+                <li><strong>Hour:</strong> Jia Xu (甲戌) &mdash; Yang Wood over Yang Earth · Mountain Fire</li>
+              </ul>
+              <ul class="list-disc list-inside space-y-1">
+                <li><strong>Day Master:</strong> Ren Water &mdash; great river / heavenly water archetype</li>
+                <li><strong>Hidden Stems:</strong> Xin, Ding, Yi, Xin (辛丁乙辛)</li>
+                <li><strong>Element Totals:</strong> Earth 4 · Fire 2 · Metal 1 · Water 1 · Wood 1</li>
+                <li><strong>Special Structure:</strong> Double Xu Earth semi-combining with Wu Fire, reinforcing Earth / Killing stars</li>
+              </ul>
+            </div>
+            <div class="grid md:grid-cols-3 gap-4 text-mystic-200 leading-relaxed">
+              <div class="bg-mystic-900/60 border border-mystic-700/50 rounded-lg p-4">
+                <h4 class="text-gold-300 font-semibold mb-2">Fate Palaces</h4>
+                <ul class="list-disc list-inside space-y-1">
+                  <li>Fetal Palace: Ji You (己酉) &mdash; City Wall Earth</li>
+                  <li>Ming Palace: Yi Chou (乙丑) &mdash; Sea Metal</li>
+                  <li>Shen Palace: Ding Si (丁巳) &mdash; Sand Earth</li>
+                </ul>
+              </div>
+              <div class="bg-mystic-900/60 border border-mystic-700/50 rounded-lg p-4 md:col-span-2">
+                <h4 class="text-gold-300 font-semibold mb-2">Day Master Snapshot</h4>
+                <p class="text-mystic-200 leading-relaxed">
+                  Summer Wu month floods empower Ren Water, yet abundant Earth forms embankments that channel power into disciplined authority. Jia Wood in the hour pillar behaves like engineered reinforcements—supporting studies, refining Killing stars, and raising the chart’s official rank.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="space-y-6">
+          <h2 class="text-2xl font-bold text-white">II. Destiny Analysis with Verified Outcomes</h2>
+          <p class="text-mystic-200 leading-relaxed">
+            Each theme below includes the classical rationale plus client-confirmed feedback.
+          </p>
+
+          <div class="space-y-6">
+            <div class="bg-mystic-800/40 border border-mystic-700/40 rounded-lg p-6 space-y-3">
+              <h3 class="text-xl font-semibold text-gold-300">1. Career & Rank &mdash; Deputy Department → Department Benefits</h3>
+              <p class="text-mystic-200 leading-relaxed">
+                Wealth (Fire) seated on Wu month generates strong Killing (Earth). The Killing star is adjacent to the Day Master, granting administrative power. Jia Wood (hour pillar) functions as Proper Seal, taming Killing into legitimate authority. Shen Metal supplies additional Seal support. These layers forecast a government or military route culminating in deputy departmental rank with retirement benefits escalated to full departmental treatment.
+              </p>
+            </div>
+
+            <div class="bg-mystic-800/40 border border-mystic-700/40 rounded-lg p-6 space-y-3">
+              <h3 class="text-xl font-semibold text-gold-300">2. Injuries & Health Incidents &mdash; Dog Bites at Youth and Senior Years</h3>
+              <p class="text-mystic-200 leading-relaxed">
+                Xu branches symbolize dogs and scars. Year Xu covers youth (&lt;18), hour Xu covers later life (&gt;55). Earth corresponds to the left side of the body; year governs shoulders, hour governs legs. The Fetal Palace You Metal clashes Xu, depicting biting or piercing. Client records show left-shoulder and left-leg dog bites at the predicted ages.
+              </p>
+            </div>
+
+            <div class="bg-mystic-800/40 border border-mystic-700/40 rounded-lg p-6 space-y-3">
+              <h3 class="text-xl font-semibold text-gold-300">3. Half-Sister with Scholarly Talent</h3>
+              <p class="text-mystic-200 leading-relaxed">
+                Double Wu stems secretly combine with Gui Water (siblings). Gui sits on Azure Dragon imagery, indicating cultured traits. Chart notes a half-sister connected through shared parentage, corroborated by family genealogy.
+              </p>
+            </div>
+
+            <div class="bg-mystic-800/40 border border-mystic-700/40 rounded-lg p-6 space-y-3">
+              <h3 class="text-xl font-semibold text-gold-300">4. Stomach Ulcer Surgery after Age 55</h3>
+              <p class="text-mystic-200 leading-relaxed">
+                Jia Xu hour governs post-55 luck. Xu is hollow and rules spleen/stomach; Jia Wood pressing Xu resembles puncture. The palace clash with You Metal suggests surgical intervention. Medical reports confirm stomach ulcer perforation repaired via surgery in senior years.
+              </p>
+            </div>
+
+            <div class="bg-mystic-800/40 border border-mystic-700/40 rounded-lg p-6 space-y-3">
+              <h3 class="text-xl font-semibold text-gold-300">5. Lifelong Interest in Mysticism & Family Altar</h3>
+              <p class="text-mystic-200 leading-relaxed">
+                Xu denotes altars and Guanyin devotion. Its “open gate” quality signals metaphysical curiosity. Year Xu reflects ancestral practice; hour Xu extends the habit to descendants, though Jia Wood output shows younger generations engage more casually.
+              </p>
+            </div>
+
+            <div class="bg-mystic-800/40 border border-mystic-700/40 rounded-lg p-6 space-y-3">
+              <h3 class="text-xl font-semibold text-gold-300">6. Real Estate Portfolio &mdash; Four Homes, Three Off-Title</h3>
+              <p class="text-mystic-200 leading-relaxed">
+                Two Xu branches, Ming Palace Chou, plus a hidden Wei generated between Wu and Shen equal four property palaces. Xu’s hollow nature and Wei’s hidden status imply three newer apartments not registered under his name. Chou (ancestral earth) denotes the modest family home, still favored because it harmonizes with the chart’s element flow.
+              </p>
+            </div>
+
+            <div class="bg-mystic-800/40 border border-mystic-700/40 rounded-lg p-6 space-y-3">
+              <h3 class="text-xl font-semibold text-gold-300">7. Private Life Preference</h3>
+              <p class="text-mystic-200 leading-relaxed">
+                Using seven-pillar analysis (four pillars plus palaces), the dynamic among Chou (female), Xu (bed), and Shen (male) shows Chou actively receiving Shen while clashing Xu. The client acknowledged a preference for female-led positioning in intimacy.
+              </p>
+            </div>
+
+            <div class="bg-mystic-800/40 border border-mystic-700/40 rounded-lg p-6 space-y-3">
+              <h3 class="text-xl font-semibold text-gold-300">8. Wealth &mdash; 40M+ in Accumulated Assets</h3>
+              <p class="text-mystic-200 leading-relaxed">
+                Xu stores Fire, the Day Master’s Wealth element. Twin treasuries plus the Chou clash open the vault, while Wei (formed through Wu–Xu–Shen interactions) circulates hidden resources. Classical numerology linked to Xu estimates a minimum windfall of 40 million RMB through unexpected channels, matching the client’s declared assets.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section class="space-y-4">
+          <h2 class="text-2xl font-bold text-white">III. Practitioner Takeaways</h2>
+          <ul class="list-disc list-inside space-y-2 text-mystic-200 leading-relaxed">
+            <li><strong>Control the Killing star:</strong> Strong Earth becomes authority when properly harnessed by Jia Wood Seal support.</li>
+            <li><strong>Palace sequencing matters:</strong> Year and hour Xu anchor childhood and late-life events; palace clashes pinpoint timing and anatomy.</li>
+            <li><strong>Treasure activation:</strong> Multiple storage branches (戌, 丑, 未) can convert to major wealth if accompanied by hollow/hidden imagery that opens the vault.</li>
+            <li><strong>Verified logging:</strong> Recording “signal → reasoning → outcome” refines confidence in future military/government profiles with heavy Earth-Killing signatures.</li>
+          </ul>
+        </section>
+      </div>
+    `,
+    author: "Master XuanYin",
+    date: "2025-11-11",
+    readTime: "12 min read",
+    category: "BaZi Analysis",
+    tags: ["Case Study", "Ren Water Day Master", "Government Career", "Verified Feedback", "Wealth Analysis", "Health Timing"],
+    image: "/images/blog/high-ranking-official-case-study.svg",
+    relatedPosts: [
+      {
+        title: "BaZi Beyond Zi Ping: Rethinking Six Relatives, Luck Pillars & Shen Sha",
+        excerpt: "Organize functional roles, timing, and shen sha to read complex charts with confidence.",
+        image: "/images/blog/bazi-beyond-zi-ping-cover.svg",
+        slug: "bazi-beyond-zi-ping"
+      },
+      {
+        title: "Advanced BaZi Analysis: Reading Your Wealth Level and Financial Destiny",
+        excerpt: "Examine elemental inflow versus capacity before calling big-money outcomes.",
+        image: "/images/blog/advanced-bazi-wealth-analysis-cover.jpg",
+        slug: "advanced-bazi-wealth-analysis-mastery"
+      },
+      {
+        title: "Career Timing: Planning Your Next Big Move with BaZi",
+        excerpt: "Leverage 10-year pillars and annual triggers to manage authority and promotions.",
+        image: "/images/blog/career-timing-cover.jpg",
+        slug: "career-timing-next-big-move"
+      }
+    ]
+  },
   "bazi-beyond-zi-ping": {
     title: "BaZi Beyond Zi Ping: Rethinking Six Relatives, Luck Pillars & Shen Sha",
     excerpt: "Revisit early BaZi principles—functional Six Relatives, evidence-based Luck Pillars, and a minimal shen sha approach—through classical references and anonymized casework.",
