@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import { Link, useSearchParams } from 'react-router-dom'
-import { Tag } from 'lucide-react'
+import { Tag, Search } from 'lucide-react'
 import SEO from '../components/SEO'
 import { blogPostsData } from '../data/blogPostsData'
 
@@ -8,6 +8,7 @@ const Blog = () => {
   const [searchParams, setSearchParams] = useSearchParams()
   const [selectedCategory, setSelectedCategory] = useState('all')
   const [selectedTag, setSelectedTag] = useState('all')
+  const [tagSearchTerm, setTagSearchTerm] = useState('')
 
   // Handle URL parameters for tags
   useEffect(() => {
@@ -128,8 +129,27 @@ const Blog = () => {
     }
   }
 
-  // Get all unique tags from blog posts
-  const allTags = ['all', ...Array.from(new Set(blogPosts.flatMap(post => post.tags)))]
+  const uniqueTags = Array.from(new Set(blogPosts.flatMap(post => post.tags))).filter(Boolean)
+  const allTags = ['all', ...uniqueTags]
+
+  const tagFrequency = uniqueTags.reduce((acc, tag) => {
+    acc[tag] = blogPosts.reduce((count, post) => count + (post.tags.includes(tag) ? 1 : 0), 0)
+    return acc
+  }, {})
+
+  const popularTags = uniqueTags
+    .map(tag => ({ tag, count: tagFrequency[tag] || 0 }))
+    .sort((a, b) => {
+      const countDiff = (b.count || 0) - (a.count || 0)
+      if (countDiff !== 0) return countDiff
+      return a.tag.localeCompare(b.tag)
+    })
+    .slice(0, 12)
+    .map(item => item.tag)
+
+  const searchResults = tagSearchTerm.trim().length > 0
+    ? uniqueTags.filter(tag => tag.toLowerCase().includes(tagSearchTerm.trim().toLowerCase()))
+    : []
 
   const isTagFiltered = selectedTag !== 'all'
   const canonicalUrl = 'https://fatepath.me/blog'
@@ -145,6 +165,7 @@ const Blog = () => {
   const handleTagClick = (tag) => {
     setSelectedTag(tag)
     setSelectedCategory('all') // Reset category when selecting a tag
+    setTagSearchTerm('')
     
     // Update URL with tag parameter
     if (tag === 'all') {
@@ -220,13 +241,57 @@ const Blog = () => {
             </div>
 
             {/* Tag Filter */}
-            <div className="text-center">
-              <div className="flex items-center gap-2 mb-4 justify-center">
+            <div className="max-w-4xl mx-auto text-center space-y-6">
+              <div className="flex items-center gap-2 justify-center">
                 <Tag className="h-5 w-5 text-gold-400" />
                 <h3 className="text-lg font-semibold text-white">Filter by Tags</h3>
               </div>
+              <p className="text-sm text-mystic-400">
+                Search any topic or choose from the trending tags below.
+              </p>
+              
+              <div className="relative max-w-xl mx-auto">
+                <Search className="absolute left-4 top-1/2 -translate-y-1/2 text-mystic-400 h-4 w-4" />
+                <input
+                  type="text"
+                  value={tagSearchTerm}
+                  onChange={(e) => setTagSearchTerm(e.target.value)}
+                  placeholder="Search tags..."
+                  className="w-full pl-12 pr-4 py-3 bg-mystic-800 border border-mystic-700 rounded-lg text-white placeholder-mystic-500 focus:outline-none focus:border-gold-400 focus:ring-2 focus:ring-gold-400/20"
+                />
+                {tagSearchTerm.trim().length > 0 && (
+                  <div className="absolute left-0 right-0 mt-2 bg-mystic-800 border border-mystic-700/70 rounded-lg shadow-lg max-h-64 overflow-y-auto text-left z-10">
+                    {searchResults.length > 0 ? (
+                      searchResults.map(resultTag => (
+                        <button
+                          key={resultTag}
+                          onClick={() => handleTagClick(resultTag)}
+                          className="w-full text-left px-4 py-3 text-sm text-mystic-200 hover:bg-mystic-700/70 transition-colors"
+                        >
+                          {resultTag}
+                        </button>
+                      ))
+                    ) : (
+                      <div className="px-4 py-3 text-sm text-mystic-400">
+                        No tags found for “{tagSearchTerm.trim()}”
+                      </div>
+                    )}
+                  </div>
+                )}
+              </div>
+
               <div className="flex flex-wrap gap-2 justify-center">
-                {allTags.map((tag) => (
+                <button
+                  onClick={() => handleTagClick('all')}
+                  className={`px-3 py-2 rounded-full text-sm font-medium transition-all duration-200 ${
+                    selectedTag === 'all'
+                      ? 'bg-gold-400 text-white'
+                      : 'bg-mystic-700 text-mystic-300 hover:bg-mystic-600'
+                  }`}
+                >
+                  All Tags
+                </button>
+                {popularTags.map((tag) => (
                   <button
                     key={tag}
                     onClick={() => handleTagClick(tag)}
@@ -236,7 +301,7 @@ const Blog = () => {
                         : 'bg-mystic-700 text-mystic-300 hover:bg-mystic-600'
                     }`}
                   >
-                    {tag === 'all' ? 'All Tags' : tag}
+                    {tag}
                   </button>
                 ))}
               </div>
