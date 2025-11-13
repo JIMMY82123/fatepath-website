@@ -1,4 +1,268 @@
 export const blogPostsData = {
+  "decision-fatigue-burnout-recovery-four-pillars": {
+    title: "Decision Fatigue at Work: A Four Pillars Routine for Burnout Recovery",
+    excerpt: "Struggling with decision fatigue and burnout? Learn how Chinese Bazi (Four Pillars of Destiny) can help you create a personalized energy recovery plan based on the Five Elements. Discover targeted micro-habits to replenish your depleted energy and restore your decision-making power.",
+    content: `
+      <div class="space-y-8">
+        <div class="mb-8">
+          <div class="bg-gradient-to-r from-orange-500/20 to-amber-500/20 border border-orange-500/30 rounded-lg p-6 mb-8">
+            <h3 class="text-lg font-semibold text-orange-400 mb-3">🎯 Key Takeaways</h3>
+            <ul class="text-mystic-200 space-y-2">
+              <li>• Decision fatigue and burnout stem from energy depletion, not time management issues</li>
+              <li>• Five Elements (Wood, Fire, Earth, Metal, Water) can diagnose your specific burnout type</li>
+              <li>• Targeted micro-habits based on your depleted element can restore energy at its source</li>
+              <li>• Understanding your Luck Pillar (Da Yun) helps you flow with cycles instead of fighting them</li>
+            </ul>
+          </div>
+        </div>
+
+        <h2 class="text-2xl font-bold text-white mb-4 mt-8">Introduction</h2>
+        <p class="mb-6 text-lg text-mystic-200 leading-relaxed">
+          Have you ever experienced an afternoon where you stare at your computer screen, unable to even decide what to have for lunch? Replying to a simple email feels like moving a mountain. By the end of the workday, you're mentally foggy, emotionally irritable, and dread any task requiring thought.
+        </p>
+        <p class="mb-6 text-mystic-200 leading-relaxed">
+          This isn't laziness. These are classic signs of <strong>decision fatigue</strong> and <strong>burnout</strong>. Our brains are like muscles; every decision we make—whether it's strategic planning or choosing a coffee—depletes its energy. The modern workplace is a battlefield of decisions, and eventually, our willpower runs out.
+        </p>
+        <p class="mb-6 text-mystic-200 leading-relaxed">
+          While we often seek external solutions—more time-management hacks, stricter task prioritization—the results are often lackluster. Perhaps the problem isn't how we manage our time, but how we manage our energy.
+        </p>
+        <p class="mb-6 text-mystic-200 leading-relaxed">
+          This is where the ancient Chinese art of <strong>Four Pillars of Destiny (Bazi)</strong> can offer a revolutionary perspective. It is not a mystical belief in fate, but rather a detailed personal energy blueprint. By understanding your innate Five Elements composition, you can create a highly personalized recovery plan that replenishes your energy at its source, rather than fighting against the current.
+        </p>
+
+        <h2 class="text-2xl font-bold text-white mb-4 mt-8">The Five-Elements Diagnosis of Your Burnout</h2>
+        <p class="mb-6 text-mystic-200 leading-relaxed">
+          In Bazi theory, everything is composed of five elemental energies: Wood, Fire, Earth, Metal, and Water. The essence of burnout and decision fatigue is the depletion of your most needed "Useful God" elements and the excessive influence of your "Aversion God" elements.
+        </p>
+        <p class="mb-6 text-mystic-200 leading-relaxed">
+          Let's do a quick self-diagnosis. <strong>What is the primary manifestation of your burnout?</strong>
+        </p>
+
+        <div class="space-y-6 mb-6">
+          <div class="bg-gradient-to-r from-green-500/20 to-emerald-500/20 border border-green-500/30 rounded-lg p-6">
+            <h3 class="text-xl font-semibold text-green-400 mb-3">🌳 Depleted Wood Energy (Growth & Planning)</h3>
+            <div class="mb-4">
+              <p class="text-mystic-200 mb-2"><strong>Symptoms:</strong></p>
+              <ul class="list-disc list-inside text-mystic-200 space-y-1 mb-3">
+                <li>Lack of vision, feeling stuck</li>
+                <li>Inability to plan ahead</li>
+                <li>Loss of all creativity</li>
+              </ul>
+            </div>
+            <p class="text-mystic-200 leading-relaxed">
+              <strong>The Cause:</strong> Your <strong>Wood</strong> energy—representing growth, vision, and structure—is exhausted.
+            </p>
+          </div>
+
+          <div class="bg-gradient-to-r from-red-500/20 to-orange-500/20 border border-red-500/30 rounded-lg p-6">
+            <h3 class="text-xl font-semibold text-red-400 mb-3">🔥 Extinguished Fire Energy (Expression & Passion)</h3>
+            <div class="mb-4">
+              <p class="text-mystic-200 mb-2"><strong>Symptoms:</strong></p>
+              <ul class="list-disc list-inside text-mystic-200 space-y-1 mb-3">
+                <li>Loss of enthusiasm for work</li>
+                <li>Social interaction becomes unbearable</li>
+                <li>Inability to feel joy or inspiration</li>
+              </ul>
+            </div>
+            <p class="text-mystic-200 leading-relaxed">
+              <strong>The Cause:</strong> Your <strong>Fire</strong> energy—representing joy, passion, and social connection—has burnt out.
+            </p>
+          </div>
+
+          <div class="bg-gradient-to-r from-yellow-500/20 to-amber-500/20 border border-yellow-500/30 rounded-lg p-6">
+            <h3 class="text-xl font-semibold text-yellow-400 mb-3">🌍 Unbalanced Earth Energy (Stability & Center)</h3>
+            <div class="mb-4">
+              <p class="text-mystic-200 mb-2"><strong>Symptoms:</strong></p>
+              <ul class="list-disc list-inside text-mystic-200 space-y-1 mb-3">
+                <li>Excessive worry, overthinking</li>
+                <li>Feeling overwhelmed</li>
+                <li>Unable to "digest" work pressure</li>
+              </ul>
+            </div>
+            <p class="text-mystic-200 leading-relaxed">
+              <strong>The Cause:</strong> Your <strong>Earth</strong> energy—representing stability, support, and being grounded—is imbalanced and cannot support you.
+            </p>
+          </div>
+
+          <div class="bg-gradient-to-r from-gray-500/20 to-slate-500/20 border border-gray-500/30 rounded-lg p-6">
+            <h3 class="text-xl font-semibold text-gray-300 mb-3">⚔️ Blocked Metal Energy (Discipline & Boundaries)</h3>
+            <div class="mb-4">
+              <p class="text-mystic-200 mb-2"><strong>Symptoms:</strong></p>
+              <ul class="list-disc list-inside text-mystic-200 space-y-1 mb-3">
+                <li>Difficulty setting boundaries</li>
+                <li>Feeling taken advantage of</li>
+                <li>Losing patience with details</li>
+              </ul>
+            </div>
+            <p class="text-mystic-200 leading-relaxed">
+              <strong>The Cause:</strong> Your <strong>Metal</strong> energy—representing rules, boundaries, and precision—has become weak.
+            </p>
+          </div>
+
+          <div class="bg-gradient-to-r from-blue-500/20 to-cyan-500/20 border border-blue-500/30 rounded-lg p-6">
+            <h3 class="text-xl font-semibold text-blue-400 mb-3">💧 Dried-Up Water Energy (Wisdom & Recovery)</h3>
+            <div class="mb-4">
+              <p class="text-mystic-200 mb-2"><strong>Symptoms:</strong></p>
+              <ul class="list-disc list-inside text-mystic-200 space-y-1 mb-3">
+                <li>Deep-seated fear, inability to rest</li>
+                <li>A mind that won't "recharge"</li>
+                <li>Loss of inner wisdom</li>
+              </ul>
+            </div>
+            <p class="text-mystic-200 leading-relaxed">
+              <strong>The Cause:</strong> Your <strong>Water</strong> energy—representing wisdom, flow, and resilience—has dried up.
+            </p>
+          </div>
+        </div>
+
+        <h2 class="text-2xl font-bold text-white mb-4 mt-8">Your Four Pillars Energy Recovery Plan</h2>
+        <p class="mb-6 text-mystic-200 leading-relaxed">
+          Once you identify your main area of energy depletion, you can replenish it with targeted practices. Here are micro-habits for daily recovery, based on the Five Elements.
+        </p>
+
+        <div class="space-y-6 mb-6">
+          <div class="bg-gradient-to-r from-green-500/20 to-emerald-500/20 border border-green-500/30 rounded-lg p-6">
+            <h3 class="text-xl font-semibold text-green-400 mb-4">For Depleted WOOD Energy: Activate "Growth" Mode</h3>
+            <div class="space-y-4">
+              <div class="bg-mystic-800/40 rounded-lg p-4">
+                <p class="text-mystic-200 mb-2"><strong>🌅 Morning Ritual (7-9 am):</strong></p>
+                <p class="text-mystic-200 leading-relaxed">
+                  Spend 15 minutes planning your day. Not a passive to-do list, but actively thinking: "What one thing can I accomplish today to foster growth?" Keep a small green plant on your desk.
+                </p>
+              </div>
+              <div class="bg-mystic-800/40 rounded-lg p-4">
+                <p class="text-mystic-200 mb-2"><strong>🌆 Afternoon Reset (1-3 pm):</strong></p>
+                <p class="text-mystic-200 leading-relaxed">
+                  If feeling stuck, take a 5-minute break. Stand up and stretch your body upwards and outwards, like a tree reaching for the sky.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="bg-gradient-to-r from-red-500/20 to-orange-500/20 border border-red-500/30 rounded-lg p-6">
+            <h3 class="text-xl font-semibold text-red-400 mb-4">For Extinguished FIRE Energy: Rekindle the "Joy" Flame</h3>
+            <div class="space-y-4">
+              <div class="bg-mystic-800/40 rounded-lg p-4">
+                <p class="text-mystic-200 mb-2"><strong>☀️ Noon Ritual (11 am-1 pm):</strong></p>
+                <p class="text-mystic-200 leading-relaxed">
+                  This is the time of day with peak Fire energy. Step away from work and truly enjoy your lunch. Socialize with colleagues who bring you joy. Avoid eating at your desk while working.
+                </p>
+              </div>
+              <div class="bg-mystic-800/40 rounded-lg p-4">
+                <p class="text-mystic-200 mb-2"><strong>⚡ Micro-Break:</strong></p>
+                <p class="text-mystic-200 leading-relaxed">
+                  When feeling drained in the afternoon, watch a short, funny video or listen to a song that ignites your passion.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="bg-gradient-to-r from-yellow-500/20 to-amber-500/20 border border-yellow-500/30 rounded-lg p-6">
+            <h3 class="text-xl font-semibold text-yellow-400 mb-4">For Unbalanced EARTH Energy: Return to "Center"</h3>
+            <div class="space-y-4">
+              <div class="bg-mystic-800/40 rounded-lg p-4">
+                <p class="text-mystic-200 mb-2"><strong>🔄 Ritualize Small Tasks:</strong></p>
+                <p class="text-mystic-200 leading-relaxed">
+                  Do the same small thing at the same time every day, like drinking a cup of tea or organizing your desk. This predictability soothes Earth energy.
+                </p>
+              </div>
+              <div class="bg-mystic-800/40 rounded-lg p-4">
+                <p class="text-mystic-200 mb-2"><strong>🍵 Mindful Eating:</strong></p>
+                <p class="text-mystic-200 leading-relaxed">
+                  Slow down and chew thoroughly when you eat. This symbolizes your ability to effectively "digest" work pressures instead of being overwhelmed by them.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="bg-gradient-to-r from-gray-500/20 to-slate-500/20 border border-gray-500/30 rounded-lg p-6">
+            <h3 class="text-xl font-semibold text-gray-300 mb-4">For Blocked METAL Energy: Set "Non-Negotiable" Boundaries</h3>
+            <div class="space-y-4">
+              <div class="bg-mystic-800/40 rounded-lg p-4">
+                <p class="text-mystic-200 mb-2"><strong>🌙 Evening Ritual (5-7 pm):</strong></p>
+                <p class="text-mystic-200 leading-relaxed">
+                  Perform a symbolic "end of work" ritual. Power down your computer, cover it with a cloth, or say aloud, "My work for today is complete." This action reinforces Metal's sense of boundary.
+                </p>
+              </div>
+              <div class="bg-mystic-800/40 rounded-lg p-4">
+                <p class="text-mystic-200 mb-2"><strong>🚫 Practice Saying "No":</strong></p>
+                <p class="text-mystic-200 leading-relaxed">
+                  Decide in advance on one non-essential request you will decline this week. Protect your energy as you would protect your wealth.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="bg-gradient-to-r from-blue-500/20 to-cyan-500/20 border border-blue-500/30 rounded-lg p-6">
+            <h3 class="text-xl font-semibold text-blue-400 mb-4">For Dried-Up WATER Energy: Embrace "Deep Rest"</h3>
+            <div class="space-y-4">
+              <div class="bg-mystic-800/40 rounded-lg p-4">
+                <p class="text-mystic-200 mb-2"><strong>🔇 Sound Rest:</strong></p>
+                <p class="text-mystic-200 leading-relaxed">
+                  When feeling overstimulated, put on noise-canceling headphones and immerse yourself in silence or soothing nature sounds for 5 minutes.
+                </p>
+              </div>
+              <div class="bg-mystic-800/40 rounded-lg p-4">
+                <p class="text-mystic-200 mb-2"><strong>😴 Quality Sleep:</strong></p>
+                <p class="text-mystic-200 leading-relaxed">
+                  Water energy begins to recover late at night (9-11 pm). Start winding down 15 minutes earlier, away from screens. Read a book for pleasure to let your brain enter a relaxed state.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <h2 class="text-2xl font-bold text-white mb-4 mt-8">Beyond Recovery: Syncing with Your "Luck Pillar"</h2>
+        <p class="mb-6 text-mystic-200 leading-relaxed">
+          The Bazi concept of <strong>"Luck Pillars" (Da Yun)</strong> tells us that each ten-year period is influenced by a different dominant energy. If you are in a Luck Pillar that drains your "Useful God" energy, burnout can feel more intense.
+        </p>
+        <div class="bg-mystic-800/40 border border-mystic-700/40 rounded-lg p-6 mb-6">
+          <p class="text-mystic-200 leading-relaxed mb-3">
+            The strategy here is not to push harder, but to flow with the cycle. If your Luck Pillar calls for "lying low" (like Water energy), forcing yourself into frequent social situations (Fire energy) will drain you faster.
+          </p>
+          <p class="text-mystic-200 leading-relaxed">
+            Understanding your current cycle shifts your mindset from self-blame ("Why can't I keep up?") to self-care ("What kind of rest do I need right now?").
+          </p>
+        </div>
+
+        <div class="bg-gradient-to-r from-purple-500/20 to-indigo-500/20 border border-purple-500/30 rounded-lg p-6 mb-6">
+          <h3 class="text-xl font-semibold text-purple-400 mb-3">Final Thoughts</h3>
+          <p class="text-mystic-200 leading-relaxed mb-3">
+            Ultimately, combating decision fatigue and burnout isn't about thinking harder, but about <strong>resting smarter</strong>. Four Pillars provides a framework to stop seeing yourself as a machine that needs fixing, and start seeing yourself as an ecosystem with a unique energy landscape.
+          </p>
+          <p class="text-mystic-200 leading-relaxed">
+            Through small, targeted, daily acts of replenishment, you can rebuild your decision-making power and passion for work from the inside out.
+          </p>
+        </div>
+      </div>
+    `,
+    author: 'Master XuanYin',
+    date: '2025-11-13',
+    readTime: '10 min read',
+    category: 'Wealth & Career',
+    tags: ['Burnout Recovery', 'Decision Fatigue', 'BaZi', 'Five Elements', 'Work-Life Balance', 'Energy Management', 'Self-Care', 'Mental Health'],
+    image: '/images/blog/decision-fatigue-burnout-recovery-cover.svg',
+    relatedPosts: [
+      {
+        title: "Career Indecision? A Chinese Birth-Chart Way to Cut Choices from 6 to 2",
+        excerpt: "Use Chinese Bazi to narrow your career choices and make decisions aligned with your authentic self.",
+        image: "/images/blog/career-indecision-bazi-cut-choices-cover.svg",
+        slug: "career-indecision-bazi-cut-choices-6-to-2"
+      },
+      {
+        title: "2026 Red Horse Year: BaZi Career Playbook for Americans",
+        excerpt: "Learn how different BaZi chart patterns can prepare for career volatility and seize opportunities.",
+        image: "/images/blog/red-horse-2026-career.svg",
+        slug: "red-horse-2026-american-career-outlook"
+      },
+      {
+        title: "How to Read Your Wealth Level in BaZi: A Simple Guide to Financial Destiny",
+        excerpt: "Discover how your birth chart reveals your financial destiny and wealth cycles.",
+        image: "/images/blog/bazi-wealth-level-guide-cover.svg",
+        slug: "how-to-read-wealth-level-bazi-simple-guide"
+      }
+    ]
+  },
   "career-indecision-bazi-cut-choices-6-to-2": {
     title: "Career Indecision? A Chinese Birth-Chart Way to Cut Choices from 6 to 2",
     excerpt: "Stuck with six career options? Use Chinese Bazi (Four Pillars of Destiny) astrology to narrow your choices from 6 to 2. Learn how to identify your core energy, diagnose your power sources, and make decisions aligned with your authentic self.",
