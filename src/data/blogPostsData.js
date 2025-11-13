@@ -1,4 +1,219 @@
 export const blogPostsData = {
+  "career-indecision-bazi-cut-choices-6-to-2": {
+    title: "Career Indecision? A Chinese Birth-Chart Way to Cut Choices from 6 to 2",
+    excerpt: "Stuck with six career options? Use Chinese Bazi (Four Pillars of Destiny) astrology to narrow your choices from 6 to 2. Learn how to identify your core energy, diagnose your power sources, and make decisions aligned with your authentic self.",
+    content: `
+      <div class="space-y-8">
+        <div class="mb-8">
+          <div class="bg-gradient-to-r from-blue-500/20 to-purple-500/20 border border-blue-500/30 rounded-lg p-6 mb-8">
+            <h3 class="text-lg font-semibold text-blue-400 mb-3">🎯 Key Takeaways</h3>
+            <ul class="text-mystic-200 space-y-2">
+              <li>• Use Five Elements (Wood, Fire, Earth, Metal, Water) to categorize career options by energy type</li>
+              <li>• Identify your "Useful Gods" (Xi Yong Shen) and "Aversion Gods" (Ji Shen) to find your power sources</li>
+              <li>• Narrow from 6 options to 3 by matching energy types, then to 2 by aligning with your core needs</li>
+              <li>• Consider your current Luck Pillar (Da Yun) for final timing decisions</li>
+            </ul>
+          </div>
+        </div>
+
+        <h2 class="text-2xl font-bold text-white mb-4 mt-8">Introduction</h2>
+        <p class="mb-6 text-lg text-mystic-200 leading-relaxed">
+          Have you ever found yourself stuck in "analysis paralysis"? You have several seemingly plausible career paths laid out before you—maybe six exciting options—but you're frozen by fear and uncertainty, unable to take the first step.
+        </p>
+        <p class="mb-6 text-mystic-200 leading-relaxed">
+          In today's world that encourages us to "follow our passion," having too many choices can be a heavy burden. We frantically seek answers outwardly: taking personality tests, reading career guidebooks, asking mentors for advice. But what if we looked inward, using a personality analysis system millennia old to examine ourselves?
+        </p>
+        <p class="mb-6 text-mystic-200 leading-relaxed">
+          This system is Chinese Bazi (Four Pillars of Destiny) astrology. Don't get me wrong; this isn't about superstition. Think of it as an Eastern "energy blueprint" or a profound system of personality archetypes. Based on your exact date and time of birth (the four pillars of Year, Month, Day, and Hour), it reveals your innate talents, core drivers, and potential challenges. Today, we'll use it to clearly narrow your six choices down to two.
+        </p>
+
+        <h2 class="text-2xl font-bold text-white mb-4 mt-8">Step 1: Look Beyond "Liking It" to See Your Core Energy (From 6 to 3)</h2>
+        <p class="mb-6 text-mystic-200 leading-relaxed">
+          Before you even list your six options, you must first understand yourself. The Bazi system categorizes individuals into different "Day Masters" (representing the core self) and analyzes their relationship with the environment (other heavenly stems and earthly branches) through the lens of the Five Elements (Wu Xing): Wood, Fire, Earth, Metal, Water. This relationship determines your fundamental behavioral patterns.
+        </p>
+        <p class="mb-6 text-mystic-200 leading-relaxed">
+          Ask yourself: <strong>What kind of energy does each of your six options correspond to?</strong>
+        </p>
+
+        <div class="grid md:grid-cols-2 gap-6 mb-6">
+          <div class="bg-gradient-to-r from-green-500/20 to-emerald-500/20 border border-green-500/30 rounded-lg p-6">
+            <h3 class="text-xl font-semibold text-green-400 mb-3">🌳 Wood Energy</h3>
+            <p class="text-mystic-200 mb-3"><strong>Growth, Creativity, Planning</strong></p>
+            <p class="text-mystic-200 mb-3">Suitable for fields requiring development, innovation, and strategy.</p>
+            <p class="text-mystic-200"><strong>Examples:</strong> Education, Writing, Consulting, Environmental Protection, Social Enterprise.</p>
+            <p class="text-mystic-200 mt-3">If your Bazi chart favors Wood, such work will make you feel in your element, full of vitality.</p>
+          </div>
+
+          <div class="bg-gradient-to-r from-red-500/20 to-orange-500/20 border border-red-500/30 rounded-lg p-6">
+            <h3 class="text-xl font-semibold text-red-400 mb-3">🔥 Fire Energy</h3>
+            <p class="text-mystic-200 mb-3"><strong>Expression, Influence, Inspiration</strong></p>
+            <p class="text-mystic-200 mb-3">Suitable for fields requiring shining and spreading ideas.</p>
+            <p class="text-mystic-200"><strong>Examples:</strong> Marketing, PR, Performing Arts, Training, Psychology.</p>
+            <p class="text-mystic-200 mt-3">If your Bazi chart favors Fire, this work allows your passion to burn and gain recognition.</p>
+          </div>
+
+          <div class="bg-gradient-to-r from-yellow-500/20 to-amber-500/20 border border-yellow-500/30 rounded-lg p-6">
+            <h3 class="text-xl font-semibold text-yellow-400 mb-3">🌍 Earth Energy</h3>
+            <p class="text-mystic-200 mb-3"><strong>Stability, Building, Implementation</strong></p>
+            <p class="text-mystic-200 mb-3">Suitable for fields demanding patience, reliability, and execution.</p>
+            <p class="text-mystic-200"><strong>Examples:</strong> Project Management, Administration, Finance, Real Estate, HR.</p>
+            <p class="text-mystic-200 mt-3">If your Bazi chart favors Earth, such work provides a sense of security and accomplishment.</p>
+          </div>
+
+          <div class="bg-gradient-to-r from-gray-500/20 to-slate-500/20 border border-gray-500/30 rounded-lg p-6">
+            <h3 class="text-xl font-semibold text-gray-300 mb-3">⚔️ Metal Energy</h3>
+            <p class="text-mystic-200 mb-3"><strong>Rules, Precision, Decision</strong></p>
+            <p class="text-mystic-200 mb-3">Suitable for fields requiring structure, analysis, and efficiency.</p>
+            <p class="text-mystic-200"><strong>Examples:</strong> Law, Technology, Data Analysis, Precision Engineering, Law Enforcement.</p>
+            <p class="text-mystic-200 mt-3">If your Bazi chart favors Metal, this work satisfies your desire for order and precision.</p>
+          </div>
+        </div>
+
+        <div class="bg-gradient-to-r from-blue-500/20 to-cyan-500/20 border border-blue-500/30 rounded-lg p-6 mb-6">
+          <h3 class="text-lg font-semibold text-blue-400 mb-3">💧 Water Energy</h3>
+          <p class="text-mystic-200 mb-3"><strong>Wisdom, Flow, Strategy</strong></p>
+          <p class="text-mystic-200 mb-3">Suitable for fields requiring flexibility, communication, and strategic thinking.</p>
+          <p class="text-mystic-200"><strong>Examples:</strong> Trade, Logistics, Research, Investment, Diplomacy.</p>
+          <p class="text-mystic-200 mt-3">If your Bazi chart favors Water, this work allows you to use your fluid intelligence to navigate with ease.</p>
+        </div>
+
+        <div class="bg-mystic-800/40 border border-mystic-700/40 rounded-lg p-6 mb-6">
+          <h3 class="text-xl font-semibold text-gold-400 mb-3">Your Move</h3>
+          <p class="text-mystic-200 leading-relaxed mb-3">
+            Intuitively categorize your six career options into the energy types above. You'll likely find that two or three options essentially belong to the same energy category. This step helps you consolidate similar items, shifting your thinking from being based on "specific job titles" to being based on "energy needs."
+          </p>
+          <p class="text-mystic-200 leading-relaxed">
+            <strong>Your goal is to narrow six options down to 2-3 directions that best align with your core energy.</strong>
+          </p>
+        </div>
+
+        <h2 class="text-2xl font-bold text-white mb-4 mt-8">Step 2: Diagnose Your "Power Source" and "Points of Drainage" (From 3 to 2)</h2>
+        <p class="mb-6 text-mystic-200 leading-relaxed">
+          This is the most crucial step. The core of Bazi analysis lies in identifying your <strong>"Useful Gods" (Xi Yong Shen)</strong> and <strong>"Aversion Gods" (Ji Shen)</strong>.
+        </p>
+
+        <div class="grid md:grid-cols-2 gap-6 mb-6">
+          <div class="bg-gradient-to-r from-green-500/20 to-emerald-500/20 border border-green-500/30 rounded-lg p-6">
+            <h3 class="text-xl font-semibold text-green-400 mb-3">✅ Useful Gods</h3>
+            <p class="text-mystic-200 leading-relaxed mb-3">
+              Represent the one or two elements that nourish you, making you feel smooth and successful. Moving in this direction, you'll get twice the result with half the effort.
+            </p>
+            <p class="text-mystic-200 leading-relaxed">
+              These are your <strong>tailwind and favorable current</strong>—the elements that support your natural flow.
+            </p>
+          </div>
+
+          <div class="bg-gradient-to-r from-red-500/20 to-orange-500/20 border border-red-500/30 rounded-lg p-6">
+            <h3 class="text-xl font-semibold text-red-400 mb-3">❌ Aversion Gods</h3>
+            <p class="text-mystic-200 leading-relaxed mb-3">
+              Represent the elements that drain you, making you feel tired and frustrated. Going against the current requires immense effort for little gain.
+            </p>
+            <p class="text-mystic-200 leading-relaxed">
+              These are your <strong>headwind and adverse current</strong>—the elements that work against your natural energy.
+            </p>
+          </div>
+        </div>
+
+        <div class="bg-mystic-800/40 border border-mystic-700/40 rounded-lg p-6 mb-6">
+          <h3 class="text-xl font-semibold text-gold-400 mb-3">A Simple Metaphor</h3>
+          <p class="text-mystic-200 leading-relaxed">
+            If you are a boat (your Day Master), your "Useful Gods" are the tailwind and favorable current. Your "Aversion Gods" are the headwind and adverse current. A wise sailor adjusts the sails to harness the wind, not fight against it.
+          </p>
+        </div>
+
+        <h3 class="text-xl font-semibold text-gold-400 mb-4">How to Tell?</h3>
+        <p class="mb-6 text-mystic-200 leading-relaxed">
+          This requires a professional Bazi chart analysis, but you can gain insight from common patterns:
+        </p>
+
+        <div class="space-y-6 mb-6">
+          <div class="bg-gradient-to-r from-purple-500/20 to-indigo-500/20 border border-purple-500/30 rounded-lg p-6">
+            <h3 class="text-lg font-semibold text-purple-400 mb-3">If you are an Innovator (Strong Hurt Officer Star)</h3>
+            <p class="text-mystic-200 leading-relaxed mb-3">
+              You might be full of ideas but dislike constraints. Your "Useful Gods" are often <strong>Water</strong> (to flow creativity) and <strong>Wood</strong> (to express it), or <strong>Metal</strong> (to provide structure).
+            </p>
+            <p class="text-mystic-200 leading-relaxed">
+              Thus, working in a creative environment with some framework (like a tech company or design studio) would be smoother than in a completely rigid bureaucracy.
+            </p>
+          </div>
+
+          <div class="bg-gradient-to-r from-blue-500/20 to-cyan-500/20 border border-blue-500/30 rounded-lg p-6">
+            <h3 class="text-lg font-semibold text-blue-400 mb-3">If you are a Manager (Strong Direct Officer Star)</h3>
+            <p class="text-mystic-200 leading-relaxed mb-3">
+              You likely value order and responsibility. Your "Useful Gods" are often <strong>Fire</strong> (to bring warmth and passion) and <strong>Earth</strong> (to build a solid foundation).
+            </p>
+            <p class="text-mystic-200 leading-relaxed">
+              Therefore, developing within an organization with clear career paths and stable structures is easier than in a chaotic startup.
+            </p>
+          </div>
+        </div>
+
+        <div class="bg-mystic-800/40 border border-mystic-700/40 rounded-lg p-6 mb-6">
+          <h3 class="text-xl font-semibold text-gold-400 mb-3">Your Move</h3>
+          <p class="text-mystic-200 leading-relaxed">
+            Examine your remaining 2-3 options. Which one is more likely to provide an energy field aligned with your "Useful Gods," and which one might trap you in the draining battle of your "Aversion Gods"? For example, if your chart avers <strong>Earth</strong> (stability, repetition), a seemingly secure but monotonous desk job might feel suffocating in the long run.
+          </p>
+        </div>
+
+        <h2 class="text-2xl font-bold text-white mb-4 mt-8">Conclusion: From 2 to 1, Listen to Your Current "Luck Pillar"</h2>
+        <p class="mb-6 text-mystic-200 leading-relaxed">
+          When you've narrowed your choices down to the final two, you've done the hardest part. The final decision can be informed by "timing." The <strong>Luck Pillars (Da Yun)</strong> in Bazi, which change every ten years, indicate the dominant energy of your current life phase.
+        </p>
+
+        <div class="grid md:grid-cols-2 gap-6 mb-6">
+          <div class="bg-gradient-to-r from-orange-500/20 to-red-500/20 border border-orange-500/30 rounded-lg p-6">
+            <h3 class="text-lg font-semibold text-orange-400 mb-3">Risk-Taking Phase</h3>
+            <p class="text-mystic-200 leading-relaxed">
+              Perhaps you are in a Luck Pillar that encourages risk-taking and pioneering. Then, the more uncertain option might be the better choice now.
+            </p>
+          </div>
+
+          <div class="bg-gradient-to-r from-yellow-500/20 to-amber-500/20 border border-yellow-500/30 rounded-lg p-6">
+            <h3 class="text-lg font-semibold text-yellow-400 mb-3">Consolidation Phase</h3>
+            <p class="text-mystic-200 leading-relaxed">
+              Perhaps you are in a Luck Pillar that requires consolidation and accumulation. Then, the option that allows you to build a solid foundation is wiser.
+            </p>
+          </div>
+        </div>
+
+        <div class="bg-gradient-to-r from-blue-500/20 to-purple-500/20 border border-blue-500/30 rounded-lg p-6 mb-6">
+          <h3 class="text-xl font-semibold text-blue-400 mb-3">Final Thoughts</h3>
+          <p class="text-mystic-200 leading-relaxed mb-3">
+            Ultimately, Bazi is not about fatalism but about <strong>self-awareness</strong>. It doesn't provide a single answer but a personal map for navigating the sea of life efficiently. It helps transform career choice from blindly following external standards to aligning deeply with your intrinsic, authentic self.
+          </p>
+          <p class="text-mystic-200 leading-relaxed">
+            So, the next time you face six choices, don't panic. Pick up this ancient map. Step by step, you'll see which two paths truly lead to your peak—and which one perfectly catches the wind of your current decade.
+          </p>
+        </div>
+      </div>
+    `,
+    author: 'Master XuanYin',
+    date: '2025-11-13',
+    readTime: '8 min read',
+    category: 'Wealth & Career',
+    tags: ['Career', 'BaZi', 'Decision Making', 'Career Guidance', 'Chinese Astrology', 'Five Elements', 'Career Planning', 'Self-Awareness'],
+    image: '/images/blog/career-indecision-bazi-cut-choices-cover.svg',
+    relatedPosts: [
+      {
+        title: "2026 Red Horse Year: BaZi Career Playbook for Americans",
+        excerpt: "Learn how different BaZi chart patterns can prepare for career volatility and seize opportunities.",
+        image: "/images/blog/red-horse-2026-career.svg",
+        slug: "red-horse-2026-american-career-outlook"
+      },
+      {
+        title: "How to Read Your Wealth Level in BaZi: A Simple Guide to Financial Destiny",
+        excerpt: "Discover how your birth chart reveals your financial destiny and wealth cycles.",
+        image: "/images/blog/bazi-wealth-level-guide-cover.svg",
+        slug: "how-to-read-wealth-level-bazi-simple-guide"
+      },
+      {
+        title: "Career Timing: When to Make Your Next Big Move",
+        excerpt: "Master the art of perfect timing for career changes using traditional Chinese numerology.",
+        image: "/images/blog/career-timing-cover.jpg",
+        slug: "career-timing-next-big-move"
+      }
+    ]
+  },
   "red-horse-2026-american-career-outlook": {
     title: "2026 Red Horse Year: BaZi Career Playbook for Americans",
     excerpt: "The coming Bingwu Red Horse year accelerates change across U.S. industries. Learn how different BaZi chart patterns can prepare for the volatility, seize promotions, and protect income streams before 2026 arrives.",

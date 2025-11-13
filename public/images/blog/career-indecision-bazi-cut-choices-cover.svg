@@ -1,0 +1,46 @@
+<svg width="1200" height="675" viewBox="0 0 1200 675" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="675" fill="url(#paint0_linear)"/>
+  <g opacity="0.35">
+    <circle cx="1000" cy="120" r="200" fill="url(#paint1_radial)"/>
+    <circle cx="200" cy="550" r="240" fill="url(#paint2_radial)"/>
+  </g>
+  <path d="M180 420C280 360 380 340 480 360C580 380 650 360 750 300C850 240 920 240 980 250" stroke="rgba(255,255,255,0.22)" stroke-width="40" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M350 300C410 250 490 240 550 270C610 300 670 280 730 230" stroke="rgba(255,255,255,0.28)" stroke-width="28" stroke-linecap="round"/>
+  <path d="M250 250C300 190 380 150 460 180C540 210 560 230 630 200C700 170 780 120 870 140" stroke="rgba(255,255,255,0.16)" stroke-width="24" stroke-linecap="round"/>
+  <g opacity="0.85">
+    <path d="M720 200C680 190 650 165 665 145C680 125 715 135 730 150C745 165 770 190 800 185C830 180 875 140 885 115C895 90 920 95 930 120C940 145 920 185 875 215C830 245 800 255 780 260C760 265 740 255 720 200Z" fill="rgba(255,255,255,0.12)"/>
+    <path d="M812 242C798 221 803 195 825 190C847 185 865 195 868 215C872 235 858 260 840 267C822 273 812 263 812 242Z" fill="rgba(255,255,255,0.15)"/>
+  </g>
+  <rect x="120" y="110" width="480" height="60" rx="30" fill="rgba(255,255,255,0.12)"/>
+  <text x="145" y="150" fill="#FFE7B2" font-family="'Cinzel', 'Segoe UI', sans-serif" font-size="32" font-weight="600" letter-spacing="0.12em">CAREER DECISION GUIDE</text>
+  <text x="120" y="230" fill="#FFFFFF" font-family="'Playfair Display', 'Georgia', serif" font-size="64" font-weight="700" letter-spacing="0.02em">Career Indecision?</text>
+  <text x="120" y="300" fill="#FFFFFF" font-family="'Playfair Display', 'Georgia', serif" font-size="56" font-weight="600" letter-spacing="0.02em">A Chinese Birth-Chart Way</text>
+  <text x="120" y="360" fill="rgba(255,255,255,0.78)" font-family="'Inter', 'Segoe UI', sans-serif" font-size="26" font-weight="500">
+    <tspan x="120" y="360">Cut Choices from 6 to 2</tspan>
+  </text>
+  <text x="120" y="400" fill="rgba(255,255,255,0.62)" font-family="'Inter', 'Segoe UI', sans-serif" font-size="20">
+    <tspan x="120" y="400">BaZi • Five Elements • Career Planning • Decision Making</tspan>
+  </text>
+  <g opacity="0.6">
+    <circle cx="950" cy="450" r="80" fill="none" stroke="#FFE7B2" stroke-width="3"/>
+    <circle cx="950" cy="450" r="60" fill="none" stroke="#FFE7B2" stroke-width="2"/>
+    <circle cx="950" cy="450" r="40" fill="none" stroke="#FFE7B2" stroke-width="1.5"/>
+    <text x="920" y="460" fill="#FFE7B2" font-family="'Cinzel', 'Segoe UI', sans-serif" font-size="24" font-weight="600">6→2</text>
+  </g>
+  <defs>
+    <linearGradient id="paint0_linear" x1="160" y1="50" x2="1040" y2="625" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#0B1224"/>
+      <stop offset="0.4" stop-color="#111C3D"/>
+      <stop offset="1" stop-color="#1B2852"/>
+    </linearGradient>
+    <radialGradient id="paint1_radial" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(1000 120) rotate(90) scale(200)">
+      <stop stop-color="#3B82F6" stop-opacity="0.55"/>
+      <stop offset="1" stop-color="#3B82F6" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="paint2_radial" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(200 550) rotate(90) scale(240)">
+      <stop stop-color="#8B5CF6" stop-opacity="0.4"/>
+      <stop offset="1" stop-color="#8B5CF6" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+</svg>
+
