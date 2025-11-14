@@ -45,6 +45,12 @@ const Home = () => {
         author="FatePath"
         structuredData={structuredData}
       />
+      {/* H1 for search engines when JavaScript is disabled */}
+      <noscript>
+        <h1 style={{position:'static',opacity:1,padding:'2rem',textAlign:'center',color:'white',backgroundColor:'#0f172a'}}>
+          FatePath BaZi Readings · English Guidance for Worldwide Clients
+        </h1>
+      </noscript>
       <main className="min-h-screen bg-slate-900 font-inter">
       {/* Hero Section */}
       <section className="pt-32 pb-20 px-6 relative overflow-hidden">

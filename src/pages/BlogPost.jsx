@@ -56,13 +56,21 @@ const BlogPost = () => {
 
   if (isLoading) {
     return (
-      <div className="min-h-screen bg-mystic-900 pt-20 flex items-center justify-center">
-        <div className="text-center">
-          <Loader2 className="h-16 w-16 text-gold-400 animate-spin mx-auto mb-6" />
-          <h1 className="text-2xl font-bold text-white mb-4">Loading Your Destiny Report...</h1>
-          <p className="text-mystic-300">Please wait while we prepare your personalized analysis.</p>
+      <>
+        <SEO 
+          title={`Loading Blog Post | FatePath Chinese Astrology Blog`}
+          description="Loading blog post..."
+          keywords="chinese astrology, bazi analysis"
+          canonical={`https://fatepath.me/blog/${slug}`}
+        />
+        <div className="min-h-screen bg-mystic-900 pt-20 flex items-center justify-center">
+          <div className="text-center">
+            <Loader2 className="h-16 w-16 text-gold-400 animate-spin mx-auto mb-6" />
+            <h1 className="text-2xl font-bold text-white mb-4">Loading Your Destiny Report...</h1>
+            <p className="text-mystic-300">Please wait while we prepare your personalized analysis.</p>
+          </div>
         </div>
-      </div>
+      </>
     )
   }
 
@@ -101,18 +109,27 @@ const BlogPost = () => {
 
   if (!blogPost) {
     return (
-      <div className="min-h-screen bg-mystic-900 pt-20 flex items-center justify-center">
-        <div className="text-center">
-          <h1 className="text-4xl font-bold text-white mb-4">Blog Post Not Found</h1>
-          <p className="text-mystic-300 mb-8">The blog post you’re looking for doesn’t exist.</p>
-          <Link
-            to="/blog"
-            className="bg-gradient-to-r from-gold-400 to-gold-600 text-white px-6 py-3 rounded-lg hover:from-gold-500 hover:to-gold-700 transition-all duration-300"
-          >
-            Back to Blog
-          </Link>
+      <>
+        <SEO 
+          title={`Blog Post Not Found | FatePath Chinese Astrology Blog`}
+          description="The blog post you're looking for doesn't exist."
+          keywords="chinese astrology, bazi analysis"
+          canonical={`https://fatepath.me/blog/${slug}`}
+          noIndex={true}
+        />
+        <div className="min-h-screen bg-mystic-900 pt-20 flex items-center justify-center">
+          <div className="text-center">
+            <h1 className="text-4xl font-bold text-white mb-4">Blog Post Not Found</h1>
+            <p className="text-mystic-300 mb-8">The blog post you're looking for doesn't exist.</p>
+            <Link
+              to="/blog"
+              className="bg-gradient-to-r from-gold-400 to-gold-600 text-white px-6 py-3 rounded-lg hover:from-gold-500 hover:to-gold-700 transition-all duration-300"
+            >
+              Back to Blog
+            </Link>
+          </div>
         </div>
-      </div>
+      </>
     )
   }
 
@@ -235,7 +252,6 @@ const BlogPost = () => {
         noIndex={shouldNoIndex}
         noFollow={shouldNoFollow}
       />
-
       <main className="min-h-screen bg-mystic-900 pt-20">
         {/* Back to Blog Button */}
         <div className="container mx-auto px-4 py-6">

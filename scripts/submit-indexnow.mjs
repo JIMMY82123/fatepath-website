@@ -2,7 +2,7 @@ import { blogPostsData } from '../src/data/blogPostsData.js'
 
 const siteOrigin = 'https://fatepath.me'
 const host = 'fatepath.me'
-const indexNowKey = '8f4b6c9a2d7e4f10b23c5a8671d9e0ff'
+const indexNowKey = '99a3bf195de44612bc9bd02633917e6c'
 const keyLocation = `${siteOrigin}/indexnow.txt`
 
 const staticUrls = [

@@ -14,19 +14,26 @@ const SEO = ({
   noIndex = false,
   noFollow = false
 }) => {
-  useEffect(() => {
-    // 更新页面标题
+  // 立即设置标题，不等待 React 渲染（SEO 优化）
+  if (typeof document !== 'undefined' && title) {
     document.title = title
+  }
+
+  useEffect(() => {
+    // 确保页面标题已更新
+    if (title) {
+      document.title = title
+    }
     
     // 更新meta描述
     const metaDescription = document.querySelector('meta[name="description"]')
-    if (metaDescription) {
+    if (metaDescription && description) {
       metaDescription.setAttribute('content', description)
     }
     
     // 更新meta关键词
     const metaKeywords = document.querySelector('meta[name="keywords"]')
-    if (metaKeywords) {
+    if (metaKeywords && keywords) {
       metaKeywords.setAttribute('content', keywords)
     }
   }, [title, description, keywords])

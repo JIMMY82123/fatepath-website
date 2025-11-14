@@ -24,7 +24,7 @@ const Privacy = () => {
   }
 
   const seoProps = {
-    title: 'Privacy Policy | FatePath BaZi Services',
+    title: 'Privacy Policy - Data Security & GDPR Compliance | FatePath',
     description: 'Understand how FatePath secures your BaZi data, complies with GDPR/CCPA, and supports clients across the United States and worldwide.',
     keywords: 'fatepath privacy policy, bazi data security, gdpr compliance, ccpa rights, chinese astrology privacy usa',
     canonical: 'https://fatepath.me/privacy',

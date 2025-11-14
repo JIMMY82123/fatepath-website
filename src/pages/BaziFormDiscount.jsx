@@ -67,7 +67,7 @@ const BaziFormDiscount = () => {
   return (
     <>
       <SEO 
-        title="Quick BaZi Reading Form | Affordable Chinese Astrology Analysis | FatePath"
+        title="Quick BaZi Reading Form - $10 Affordable Analysis | FatePath"
         description="Get your essential BaZi reading at an affordable price! Submit your birth details for quick Chinese astrology analysis and life guidance."
         keywords="quick bazi reading, affordable chinese astrology, entry level bazi reading, budget birth chart analysis, chinese numerology quick"
         canonical="https://fatepath.me/form-bazi-discount"

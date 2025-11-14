@@ -103,7 +103,12 @@ const WealthSign = () => {
         ogImage="https://fatepath.me/og-image.svg"
         ogType="website"
       />
-      
+      {/* H1 for search engines when JavaScript is disabled */}
+      <noscript>
+        <h1 style={{position:'static',opacity:1,padding:'2rem',textAlign:'center',color:'white',backgroundColor:'#0f172a'}}>
+          Ancient Chinese Wisdom Oracle
+        </h1>
+      </noscript>
       <div className="min-h-screen pt-16 sm:pt-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-mystic-900 via-mystic-800 to-mystic-900">
         <div className="max-w-4xl mx-auto">
           {/* Header */}
