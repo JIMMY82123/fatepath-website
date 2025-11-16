@@ -2,8 +2,10 @@ import { blogPostsData } from '../src/data/blogPostsData.js'
 
 const siteOrigin = 'https://fatepath.me'
 const host = 'fatepath.me'
-const indexNowKey = '99a3bf195de44612bc9bd02633917e6c'
-const keyLocation = `${siteOrigin}/indexnow.txt`
+// IndexNow key generated from Bing Webmaster Tools
+const indexNowKey = '09d441e3206846bc9695f62239ca25ff'
+// Key file hosted at site root following Bing's recommended pattern: https://yourdomain.com/{key}.txt
+const keyLocation = `${siteOrigin}/${indexNowKey}.txt`
 
 const staticUrls = [
   `${siteOrigin}/`,
