@@ -1185,101 +1185,428 @@ const FreeBaziReport = () => {
     return tenGodContextAdvice[context]?.[tenGodKey]?.actions || []
   }
 
-  const enrichSection = (base, context, dayMaster, tenGodKey) => {
-    const segments = [base]
-    const narratives = []
-    const actions = new Set()
-
-    const strengthNarrative = getStrengthNarrative(dayMaster, context)
-    if (strengthNarrative) narratives.push(strengthNarrative)
-
-    const tenGodNarrative = getTenGodNarrative(tenGodKey, context)
-    if (tenGodNarrative) narratives.push(tenGodNarrative)
-
-    getStrengthActions(dayMaster, context).forEach(item => actions.add(item))
-    getTenGodActions(tenGodKey, context).forEach(item => actions.add(item))
-
-    if (narratives.length > 0) {
-      segments.push(narratives.join('\n\n'))
-    }
-
-    if (actions.size > 0) {
-      segments.push(`行动建议：\n- ${Array.from(actions).join('\n- ')}`)
-    }
-
-    return segments.join('\n\n')
-  }
-
-  const enrichSummary = (base, dayMaster, tenGods, branchDynamics) => {
-    const segments = [base]
-    if (dayMaster?.summary) {
-      segments.push(`日主调性：${dayMaster.summary}`)
-    }
-    if (tenGods?.summary) {
-      segments.push(`Ten God focus: ${tenGods.summary}`)
-    }
-    if (branchDynamics?.summary) {
-      segments.push(`地支互动：${branchDynamics.summary}`)
-    }
-    segments.push('Next step: align these insights with your personal timeline and consider booking a one-on-one consultation for deeper guidance when you need it.')
-    return segments.join('\n\n')
-  }
-
-  // 根据五行能量生成报告模板
-  const generateElementBasedReport = (data, fiveElements, dayMaster, tenGods, branchDynamics) => {
-    const { dominantElements, balanceScore, elements } = fiveElements
+  // Generate personalized report based on specific Bazi information
+  const generatePersonalizedReport = (bazi, fiveElements, dayMaster, tenGods, branchDynamics) => {
+    const dayStem = bazi.day?.charAt(0)
+    const dayElement = dayMaster?.dayElement
+    const dayStrength = dayMaster?.strength || 'balanced'
     const topTenGod = getTopTenGod(tenGods)
-    let baseReport
-
-    if (dominantElements.includes('Metal')) {
-      baseReport = {
-        wealth: generateMetalWealthAnalysis(data, elements),
-        love: generateMetalLoveAnalysis(data, elements),
-        health: generateMetalHealthAnalysis(data, elements),
-        summary: generateMetalSummary(data, elements)
-      }
-    } else if (dominantElements.includes('Wood')) {
-      baseReport = {
-        wealth: generateWoodWealthAnalysis(data, elements),
-        love: generateWoodLoveAnalysis(data, elements),
-        health: generateWoodHealthAnalysis(data, elements),
-        summary: generateWoodSummary(data, elements)
-      }
-    } else if (dominantElements.includes('Fire')) {
-      baseReport = {
-        wealth: generateFireWealthAnalysis(data, elements),
-        love: generateFireLoveAnalysis(data, elements),
-        health: generateFireHealthAnalysis(data, elements),
-        summary: generateFireSummary(data, elements)
-      }
-    } else if (dominantElements.includes('Water')) {
-      baseReport = {
-        wealth: generateWaterWealthAnalysis(data, elements),
-        love: generateWaterLoveAnalysis(data, elements),
-        health: generateWaterHealthAnalysis(data, elements),
-        summary: generateWaterSummary(data, elements)
-      }
-    } else if (dominantElements.includes('Earth')) {
-      baseReport = {
-        wealth: generateEarthWealthAnalysis(data, elements),
-        love: generateEarthLoveAnalysis(data, elements),
-        health: generateEarthHealthAnalysis(data, elements),
-        summary: generateEarthSummary(data, elements)
-      }
-    } else {
-      baseReport = {
-        wealth: generateBalancedWealthAnalysis(data, elements),
-        love: generateBalancedLoveAnalysis(data, elements),
-        health: generateBalancedHealthAnalysis(data, elements),
-        summary: generateBalancedSummary(data, elements)
-      }
-    }
+    const dominantTenGods = tenGods?.dominantGods || []
+    
+    // Analyze Wealth Stars (wealth-related)
+    const wealthGods = dominantTenGods.filter(g => ['DirectWealth', 'IndirectWealth'].includes(g.key))
+    const hasWealthGod = wealthGods.length > 0
+    
+    // Analyze Officer Stars (career, authority-related)
+    const officerGods = dominantTenGods.filter(g => ['DirectOfficer', 'SevenKillings'].includes(g.key))
+    const hasOfficerGod = officerGods.length > 0
+    
+    // Analyze Resource Stars (learning, support-related)
+    const resourceGods = dominantTenGods.filter(g => ['DirectResource', 'IndirectResource'].includes(g.key))
+    const hasResourceGod = resourceGods.length > 0
+    
+    // Analyze Output Stars (talent, creativity-related)
+    const outputGods = dominantTenGods.filter(g => ['EatingGod', 'HurtingOfficer'].includes(g.key))
+    const hasOutputGod = outputGods.length > 0
 
     return {
-      wealth: enrichSection(baseReport.wealth, 'wealth', dayMaster, topTenGod),
-      love: enrichSection(baseReport.love, 'love', dayMaster, topTenGod),
-      health: enrichSection(baseReport.health, 'health', dayMaster, topTenGod),
-      summary: enrichSummary(baseReport.summary, dayMaster, tenGods, branchDynamics),
+      personality: generatePersonalityAnalysis(bazi, dayMaster, tenGods, dayElement, dayStrength),
+      wealth: generatePersonalizedWealth(bazi, dayMaster, tenGods, wealthGods, hasWealthGod, dayStrength),
+      love: generatePersonalizedLove(bazi, dayMaster, tenGods, dayElement, dayStrength),
+      health: generatePersonalizedHealth(bazi, dayMaster, fiveElements, dayElement, dayStrength),
+      summary: generatePersonalizedSummary(bazi, dayMaster, tenGods, branchDynamics, fiveElements)
+    }
+  }
+
+  // Personality analysis - Strengths and weaknesses
+  const generatePersonalityAnalysis = (bazi, dayMaster, tenGods, dayElement, dayStrength) => {
+    let analysis = []
+    const dominantTenGods = tenGods?.dominantGods || []
+    
+    // Overall personality assessment
+    analysis.push(`Your core personality traits:`)
+    
+    if (dayStrength === 'strong') {
+      analysis.push(`You're naturally confident, decisive, and action-oriented. You know what you want and go after it. You're independent and can handle pressure well.`)
+    } else if (dayStrength === 'weak') {
+      analysis.push(`You're thoughtful, adaptable, and cooperative. You're good at working with others and prefer harmony over conflict. You're sensitive and intuitive.`)
+    } else {
+      analysis.push(`You have a balanced personality - neither too aggressive nor too passive. You're adaptable and can handle various situations well. You seek harmony and stability.`)
+    }
+
+    // Personality based on dominant ten gods
+    if (dominantTenGods.length > 0) {
+      const topGod = dominantTenGods[0]
+      
+      analysis.push(`\nYour strongest personality traits:`)
+      
+      if (topGod.key === 'DirectWealth') {
+        analysis.push(`• Practical and money-conscious\n• Good at planning and organization\n• Reliable and responsible\n• Values security and stability`)
+        analysis.push(`\nYour weaknesses:\n• Can be too conservative or cautious\n• May focus too much on material things\n• Sometimes resistant to change\n• May worry too much about finances`)
+      } else if (topGod.key === 'IndirectWealth') {
+        analysis.push(`• Flexible and adaptable\n• Good at spotting opportunities\n• Creative and resourceful\n• Enjoys variety and excitement`)
+        analysis.push(`\nYour weaknesses:\n• Can be impulsive or scattered\n• May struggle with follow-through\n• Sometimes too risk-taking\n• Can be inconsistent`)
+      } else if (topGod.key === 'DirectOfficer') {
+        analysis.push(`• Responsible and disciplined\n• Good at leadership and management\n• Values rules and structure\n• Reliable and trustworthy`)
+        analysis.push(`\nYour weaknesses:\n• Can be too rigid or controlling\n• May struggle with flexibility\n• Sometimes too serious\n• May be too focused on duty`)
+      } else if (topGod.key === 'SevenKillings') {
+        analysis.push(`• Ambitious and driven\n• Competitive and determined\n• Good under pressure\n• Strong willpower and focus`)
+        analysis.push(`\nYour weaknesses:\n• Can be too aggressive or impatient\n• May struggle with stress management\n• Sometimes too controlling\n• May have difficulty relaxing`)
+      } else if (topGod.key === 'EatingGod') {
+        analysis.push(`• Warm and caring\n• Good at communication and teaching\n• Creative and expressive\n• Generous and helpful`)
+        analysis.push(`\nYour weaknesses:\n• Can be too accommodating\n• May have trouble saying no\n• Sometimes too idealistic\n• May neglect your own needs`)
+      } else if (topGod.key === 'HurtingOfficer') {
+        analysis.push(`• Creative and innovative\n• Bold and expressive\n• Independent thinking\n• Good at problem-solving`)
+        analysis.push(`\nYour weaknesses:\n• Can be too direct or blunt\n• May struggle with authority\n• Sometimes too impulsive\n• May be rebellious`)
+      } else if (topGod.key === 'DirectResource') {
+        analysis.push(`• Thoughtful and analytical\n• Good at learning and research\n• Patient and persistent\n• Values knowledge and wisdom`)
+        analysis.push(`\nYour weaknesses:\n• Can be too cautious or hesitant\n• May overthink things\n• Sometimes too passive\n• May lack confidence`)
+      } else if (topGod.key === 'IndirectResource') {
+        analysis.push(`• Intuitive and insightful\n• Creative and original\n• Good at seeing hidden patterns\n• Independent and unique`)
+        analysis.push(`\nYour weaknesses:\n• Can be too detached or aloof\n• May be misunderstood\n• Sometimes too unconventional\n• May struggle with practical matters`)
+      }
+    }
+
+    // Element-based personality traits
+    analysis.push(`\nMore about your personality:`)
+    
+    if (dayElement === 'Wood') {
+      analysis.push(`• You're growth-oriented and always looking to improve\n• You're compassionate and care about others\n• You value fairness and justice\n• You can be idealistic and sometimes frustrated when things aren't perfect`)
+    } else if (dayElement === 'Fire') {
+      analysis.push(`• You're enthusiastic and energetic\n• You're expressive and enjoy being noticed\n• You're warm and friendly with others\n• You can be impulsive and need to learn patience`)
+    } else if (dayElement === 'Earth') {
+      analysis.push(`• You're practical and down-to-earth\n• You're reliable and steady\n• You value stability and security\n• You can be stubborn and resistant to change`)
+    } else if (dayElement === 'Metal') {
+      analysis.push(`• You're organized and methodical\n• You value quality and precision\n• You're principled and have strong values\n• You can be too rigid or perfectionistic`)
+    } else if (dayElement === 'Water') {
+      analysis.push(`• You're adaptable and flexible\n• You're intelligent and resourceful\n• You're good at handling change\n• You can be too cautious or indecisive`)
+    }
+
+    // Growth recommendations
+    analysis.push(`\nAreas for personal growth:`)
+    
+    if (dayStrength === 'strong') {
+      analysis.push(`• Learn to listen more and be less controlling\n• Practice patience with others who move slower\n• Take time to rest and recharge\n• Work on emotional sensitivity and empathy`)
+    } else if (dayStrength === 'weak') {
+      analysis.push(`• Build your confidence and assertiveness\n• Learn to say no when needed\n• Take more initiative in decisions\n• Trust your own judgment more`)
+    } else {
+      analysis.push(`• Continue balancing different aspects of your life\n• Don't be afraid to take calculated risks\n• Express your opinions more confidently\n• Maintain your adaptability while building stronger foundations`)
+    }
+
+    return analysis.join('\n')
+  }
+
+  // Personalized wealth analysis - Simplified and practical
+  const generatePersonalizedWealth = (bazi, dayMaster, tenGods, wealthGods, hasWealthGod, dayStrength) => {
+    const dayElement = dayMaster?.dayElement
+    let analysis = []
+    
+    // Start with practical wealth assessment
+    if (dayStrength === 'strong' && hasWealthGod) {
+      analysis.push(`Your financial potential is strong. You have good money-making abilities and can handle larger financial responsibilities.`)
+      if (wealthGods[0].key === 'DirectWealth') {
+        analysis.push(`You're naturally good at managing money through steady, reliable methods. Think stable jobs, smart budgeting, and long-term investments like real estate or retirement funds. You prefer security over risky bets.`)
+        analysis.push(`\nBest ways to build wealth:\n• Focus on career advancement in stable industries (finance, healthcare, government)\n• Create a solid budget and stick to it\n• Invest in real estate or conservative stock portfolios\n• Build an emergency fund covering 6 months of expenses`)
+      } else {
+        analysis.push(`You have an entrepreneurial spirit and can spot profitable opportunities that others miss. Side businesses, investments, or creative ventures work well for you.`)
+        analysis.push(`\nBest ways to build wealth:\n• Explore side businesses or freelance opportunities\n• Invest in growing markets or startups\n• Consider partnerships or investment opportunities\n• Stay flexible and ready to pivot when opportunities arise`)
+      }
+      analysis.push(`\nYour financial peak years: Your 30s to 50s will be your strongest money-making period. Use this time to build substantial savings and investments.`)
+    } else if (dayStrength === 'weak') {
+      analysis.push(`You need to be more careful with money. While you can still build wealth, it's better to take a steady, conservative approach rather than taking big risks.`)
+      analysis.push(`Focus first on building your skills and earning a stable income. Once you have a solid foundation, you can consider small investments.`)
+      analysis.push(`\nBest strategies for you:\n• Prioritize job security and steady income over risky ventures\n• Build skills that increase your earning power\n• Save at least 20% of your income before investing\n• Avoid high-risk investments or get-rich-quick schemes\n• Consider working with a financial advisor`)
+      analysis.push(`\nImportant: Don't rush into big financial decisions. Take your time, learn about money management, and build slowly.`)
+    } else {
+      analysis.push(`Your financial situation is balanced. You can build wealth steadily through a mix of work income and smart investments.`)
+      if (hasWealthGod) {
+        if (wealthGods[0].key === 'DirectWealth') {
+          analysis.push(`You're good at managing money through traditional methods. A mix of career income and conservative investments will work best.`)
+        } else {
+          analysis.push(`You can balance steady work with side opportunities. Consider keeping your main job while exploring additional income sources.`)
+        }
+      }
+      analysis.push(`\nRecommended approach:\n• Create a 5-year financial plan with clear goals\n• Split income: 60% living expenses, 20% savings, 20% investments\n• Build multiple income streams gradually\n• Keep 3-6 months of expenses in emergency savings`)
+    }
+
+    // Add specific career suggestions based on ten gods
+    const outputGods = tenGods?.dominantGods?.filter(g => ['EatingGod', 'HurtingOfficer'].includes(g.key)) || []
+    const officerGods = tenGods?.dominantGods?.filter(g => ['DirectOfficer', 'SevenKillings'].includes(g.key)) || []
+    
+    if (outputGods.length > 0 || officerGods.length > 0) {
+      analysis.push(`\nCareer paths that could work well for you:`)
+      if (outputGods.length > 0 && outputGods[0].key === 'EatingGod') {
+        analysis.push(`• Teaching, coaching, or consulting\n• Content creation (writing, videos, courses)\n• Healthcare or wellness services`)
+      }
+      if (officerGods.length > 0 && officerGods[0].key === 'DirectOfficer') {
+        analysis.push(`• Management or leadership roles\n• Government or public service\n• Education or healthcare administration`)
+      }
+      if (officerGods.length > 0 && officerGods[0].key === 'SevenKillings') {
+        analysis.push(`• Competitive fields (sales, law, finance)\n• Technology or innovation\n• Security or risk management`)
+      }
+    }
+
+    analysis.push(`\nThings to watch out for:\n• Don't put all your money in one place - diversify\n• Avoid emotional spending or impulse purchases\n• Set up automatic savings so you don't forget\n• Review your finances quarterly and adjust as needed`)
+
+    return analysis.join('\n')
+  }
+
+  // Personalized love analysis - Simplified and practical
+  const generatePersonalizedLove = (bazi, dayMaster, tenGods, dayElement, dayStrength) => {
+    let analysis = []
+    
+    // Start with relationship style
+    if (dayStrength === 'strong') {
+      analysis.push(`You're confident and take the lead in relationships. You know what you want and aren't afraid to pursue it. This makes you attractive, but you need to make sure you're not too controlling or demanding.`)
+    } else if (dayStrength === 'weak') {
+      analysis.push(`You're more gentle and supportive in relationships. You tend to care deeply for your partner and prioritize their needs. However, make sure you also take care of yourself and don't lose your own identity in the relationship.`)
+    } else {
+      analysis.push(`You have a balanced approach to relationships. You can give and take equally, which helps create stable, harmonious partnerships. You're good at compromise and finding middle ground.`)
+    }
+
+    // Analyze relationship personality traits
+    const outputGods = tenGods?.dominantGods?.filter(g => ['EatingGod', 'HurtingOfficer'].includes(g.key)) || []
+    const officerGods = tenGods?.dominantGods?.filter(g => ['DirectOfficer', 'SevenKillings'].includes(g.key)) || []
+    const wealthGods = tenGods?.dominantGods?.filter(g => ['DirectWealth', 'IndirectWealth'].includes(g.key)) || []
+    
+    analysis.push(`\nYour relationship style:`)
+    
+    if (outputGods.length > 0 && outputGods[0].key === 'EatingGod') {
+      analysis.push(`• You're warm, caring, and naturally nurturing\n• You show love through acts of service and taking care of your partner\n• You prefer peaceful, harmonious relationships\n• You're good at understanding your partner's emotional needs`)
+    } else if (outputGods.length > 0 && outputGods[0].key === 'HurtingOfficer') {
+      analysis.push(`• You're passionate and expressive in relationships\n• You value honesty and direct communication\n• You can be intense, which brings excitement but may need balance\n• You're attracted to partners who are independent and confident`)
+    }
+
+    if (officerGods.length > 0 && officerGods[0].key === 'DirectOfficer') {
+      analysis.push(`• You're serious about commitment and loyalty\n• You value stable, long-term relationships over casual dating\n• You're responsible and reliable as a partner\n• You prefer partners who share your values about commitment`)
+    } else if (officerGods.length > 0 && officerGods[0].key === 'SevenKillings') {
+      analysis.push(`• Your relationships can be intense and passionate\n• You're attracted to strong, independent partners\n• Relationships may have ups and downs, but they're rarely boring\n• You need to work on patience and avoiding conflict`)
+    }
+
+    if (wealthGods.length > 0) {
+      if (wealthGods[0].key === 'DirectWealth') {
+        analysis.push(`• You may have multiple relationship opportunities\n• Choose carefully - don't rush into commitments\n• You value stability and security in relationships\n• Once committed, you're loyal and dedicated`)
+      } else {
+        analysis.push(`• You're flexible and open-minded about relationships\n• You enjoy the excitement of new connections\n• Make sure you don't avoid commitment when you find the right person\n• You need variety and stimulation in relationships`)
+      }
+    }
+
+    // Relationship advice
+    analysis.push(`\nWhat works best for you in love:`)
+    
+    if (dayStrength === 'strong') {
+      analysis.push(`• Give your partner space and respect their independence\n• Use your confidence to initiate, but also listen actively\n• Find someone who appreciates your leadership but can challenge you\n• Avoid being too controlling - let your partner have their own opinions`)
+    } else if (dayStrength === 'weak') {
+      analysis.push(`• Build your self-confidence - you deserve a great partner\n• Find someone supportive who encourages your growth\n• Maintain your own interests and friends outside the relationship\n• Don't settle for less than you deserve just to avoid being alone`)
+    } else {
+      analysis.push(`• You work well with partners who value balance like you do\n• Look for someone with complementary strengths\n• Maintain open communication about needs and expectations\n• Create shared goals while respecting individual space`)
+    }
+
+    // Ideal partner traits
+    analysis.push(`\nWhat to look for in a partner:`)
+    const idealTraits = []
+    
+    if (dayStrength === 'strong') {
+      idealTraits.push(`Someone who can match your energy but also helps you slow down`)
+      idealTraits.push(`A partner who respects your decisions but isn't afraid to disagree`)
+    } else if (dayStrength === 'weak') {
+      idealTraits.push(`Someone supportive and understanding who helps build your confidence`)
+      idealTraits.push(`A partner who encourages your independence and growth`)
+    } else {
+      idealTraits.push(`Someone with similar values and life goals`)
+      idealTraits.push(`A partner who appreciates harmony and communication`)
+    }
+
+    if (outputGods.length > 0 && outputGods[0].key === 'EatingGod') {
+      idealTraits.push(`Someone gentle and caring who values emotional connection`)
+    }
+    if (officerGods.length > 0 && officerGods[0].key === 'DirectOfficer') {
+      idealTraits.push(`Someone committed and reliable who shares your long-term vision`)
+    }
+
+    idealTraits.forEach(trait => analysis.push(`• ${trait}`))
+
+    analysis.push(`\nRelationship warnings:`)
+    analysis.push(`• Don't lose yourself trying to please your partner`)
+    analysis.push(`• Avoid staying in unhealthy relationships out of fear`)
+    analysis.push(`• Communicate your needs clearly - don't expect your partner to read your mind`)
+    analysis.push(`• Take time to really know someone before making big commitments`)
+
+    return analysis.join('\n')
+  }
+
+  // Personalized health analysis - Simplified and practical
+  const generatePersonalizedHealth = (bazi, dayMaster, fiveElements, dayElement, dayStrength) => {
+    let analysis = []
+    
+    // Overall health assessment
+    if (dayStrength === 'strong') {
+      analysis.push(`Your overall health and energy levels are generally good. You have strong vitality, but you need to be careful not to overwork yourself or burn out. You can push yourself hard, but remember to rest.`)
+    } else if (dayStrength === 'weak') {
+      analysis.push(`You need to pay extra attention to your health. Your energy levels may be lower, and you're more sensitive to stress and fatigue. Prioritize rest, good nutrition, and regular checkups.`)
+    } else {
+      analysis.push(`Your health is fairly stable. As long as you maintain good habits, you should stay healthy. The key is consistency - don't let stress or bad habits build up over time.`)
+    }
+
+    // Specific health concerns based on element
+    analysis.push(`\nAreas to focus on for your health:`)
+    
+    if (dayElement === 'Wood') {
+      analysis.push(`• Liver and digestive system: Watch your diet and limit alcohol\n• Stress management: You may hold tension in your body, so regular exercise and relaxation are crucial\n• Eyes: Take breaks from screens and get regular eye checkups\n• Sleep: Maintain regular sleep schedules - staying up late affects you more`)
+      analysis.push(`\nRecommended habits:\n• Eat plenty of green leafy vegetables\n• Do stretching or yoga to release tension\n• Spend time outdoors in nature regularly\n• Limit alcohol and processed foods\n• Practice stress-reduction techniques (meditation, breathing exercises)`)
+    } else if (dayElement === 'Fire') {
+      analysis.push(`• Heart and circulation: Monitor blood pressure and heart health\n• Stress levels: You may be prone to anxiety or overstimulation\n• Sleep quality: Poor sleep affects you significantly\n• Energy balance: Avoid burnout from too much activity`)
+      analysis.push(`\nRecommended habits:\n• Get 7-9 hours of quality sleep every night\n• Practice calming activities (meditation, reading, nature walks)\n• Limit caffeine and stimulants, especially in the afternoon\n• Exercise regularly but avoid overexertion\n• Take time for relaxation and self-care`)
+    } else if (dayElement === 'Earth') {
+      analysis.push(`• Digestive system: Your stomach and digestion need attention\n• Muscle tension: You may hold stress in your muscles\n• Weight management: Maintain balanced eating habits\n• Energy levels: Keep your diet regular and don't skip meals`)
+      analysis.push(`\nRecommended habits:\n• Eat regular, balanced meals - don't skip breakfast\n• Chew food thoroughly and eat slowly\n• Avoid overeating or emotional eating\n• Include probiotics in your diet (yogurt, fermented foods)\n• Moderate exercise - walking is excellent for you`)
+    } else if (dayElement === 'Metal') {
+      analysis.push(`• Respiratory system: Protect your lungs and breathing\n• Skin health: Pay attention to your skin condition\n• Immune system: Strengthen your defenses\n• Air quality: Be aware of your environment`)
+      analysis.push(`\nRecommended habits:\n• Avoid smoking and secondhand smoke\n• Use air purifiers if you live in polluted areas\n• Do breathing exercises or cardio to strengthen lungs\n• Take care of your skin - use gentle products\n• Get regular fresh air and spend time outdoors\n• Consider getting flu shots and staying up on vaccinations`)
+    } else if (dayElement === 'Water') {
+      analysis.push(`• Kidney and urinary system: Stay well-hydrated\n• Bones and joints: Take care of your skeletal system\n• Energy conservation: Don't push yourself too hard\n• Sleep and rest: Adequate rest is essential for you`)
+      analysis.push(`\nRecommended habits:\n• Drink plenty of water throughout the day\n• Avoid excessive salt and processed foods\n• Get adequate sleep - 8 hours is important\n• Do low-impact exercises (swimming, walking, yoga)\n• Keep warm, especially in cold weather\n• Consider calcium and vitamin D supplements for bone health`)
+    }
+
+    // Analyze Five Elements balance
+    const { elements, balanceScore } = fiveElements
+    if (balanceScore < 0.4) {
+      const missingElements = Object.entries(elements)
+        .filter(([_, count]) => count === 0)
+        .map(([element, _]) => element)
+      
+      if (missingElements.length > 0) {
+        analysis.push(`\n⚠️ Health Alert:`)
+        analysis.push(`Your energy balance shows some weaknesses. Pay extra attention to:`)
+        
+        missingElements.forEach(element => {
+          const healthTips = {
+            'Wood': 'Include more greens, exercise regularly, manage stress',
+            'Fire': 'Get enough sleep, practice relaxation, monitor heart health',
+            'Earth': 'Maintain regular eating, support digestion, avoid overeating',
+            'Metal': 'Protect your lungs, breathe fresh air, care for your skin',
+            'Water': 'Stay hydrated, rest adequately, support kidney function'
+          }
+          if (healthTips[element]) {
+            analysis.push(`• ${element}: ${healthTips[element]}`)
+          }
+        })
+      }
+    }
+
+    // General health recommendations
+    analysis.push(`\nOverall health maintenance:`)
+    
+    if (dayStrength === 'weak') {
+      analysis.push(`• Schedule annual physical checkups\n• Don't ignore small symptoms - address them early\n• Build your energy gradually through consistent healthy habits\n• Consider working with a healthcare provider or nutritionist\n• Prioritize sleep - aim for 8-9 hours nightly\n• Eat nutrient-dense foods and consider supplements`)
+    } else {
+      analysis.push(`• Get regular checkups (every 1-2 years if you're healthy)\n• Maintain a consistent exercise routine\n• Eat a balanced diet with plenty of vegetables\n• Manage stress through hobbies and relaxation\n• Stay hydrated and get enough sleep\n• Listen to your body - rest when you need it`)
+    }
+
+    analysis.push(`\nWarning signs to watch for:`)
+    if (dayElement === 'Wood') analysis.push(`• Unexplained fatigue, digestive issues, eye strain`)
+    if (dayElement === 'Fire') analysis.push(`• Heart palpitations, high stress, sleep problems`)
+    if (dayElement === 'Earth') analysis.push(`• Digestive discomfort, bloating, low energy after meals`)
+    if (dayElement === 'Metal') analysis.push(`• Frequent colds, breathing issues, skin problems`)
+    if (dayElement === 'Water') analysis.push(`• Low back pain, frequent urination, feeling constantly tired`)
+
+    return analysis.join('\n')
+  }
+
+  // Personalized summary - Practical guidance and future considerations
+  const generatePersonalizedSummary = (bazi, dayMaster, tenGods, branchDynamics, fiveElements) => {
+    const dayElement = dayMaster?.dayElement
+    const dayStrength = dayMaster?.strength || 'balanced'
+    const dominantTenGods = tenGods?.dominantGods || []
+    let summary = []
+    
+    summary.push(`Key Takeaways:`)
+    
+    if (dayStrength === 'strong') {
+      summary.push(`You have strong natural abilities and energy. You can handle big challenges and pursue ambitious goals. However, don't forget to rest and avoid burning out. Your success comes from using your strength wisely.`)
+    } else if (dayStrength === 'weak') {
+      summary.push(`You're thoughtful and work well with others. Build your confidence and skills gradually. Don't try to do everything alone - ask for help when needed. Your success comes from steady progress and good partnerships.`)
+    } else {
+      summary.push(`You have a balanced approach to life. You can adapt to different situations well. Maintain this balance while continuing to grow. Your success comes from consistency and smart choices.`)
+    }
+
+    // Future considerations based on element and ten gods
+    summary.push(`\nWhat to focus on in the coming years:`)
+    
+    if (dayStrength === 'strong') {
+      summary.push(`• Build strong foundations - don't just chase quick wins\n• Develop deeper expertise in your field\n• Create systems and processes to manage your energy\n• Build relationships that last, not just transactional connections\n• Plan for long-term financial security`)
+    } else if (dayStrength === 'weak') {
+      summary.push(`• Focus on skill-building and continuous learning\n• Build a supportive network of mentors and friends\n• Create stable income sources before taking risks\n• Take care of your health - it's your foundation\n• Build confidence through small wins and achievements`)
+    } else {
+      summary.push(`• Balance different areas of your life - don't neglect any\n• Take calculated risks when opportunities arise\n• Build both stability and flexibility in your plans\n• Maintain good relationships across all areas of life\n• Keep learning and growing in multiple directions`)
+    }
+
+    // Specific recommendations based on dominant ten god
+    if (dominantTenGods.length > 0) {
+      const topGod = dominantTenGods[0]
+      summary.push(`\nSpecific opportunities based on your strengths:`)
+      
+      if (topGod.key === 'DirectWealth') {
+        summary.push(`• Focus on stable, reliable income sources\n• Build a solid savings and investment plan\n• Consider real estate or conservative investments\n• Develop financial management skills\n• Create multiple income streams gradually`)
+      } else if (topGod.key === 'IndirectWealth') {
+        summary.push(`• Be open to investment opportunities\n• Consider starting a side business\n• Network and build connections\n• Stay flexible and ready to adapt\n• Don't put all eggs in one basket`)
+      } else if (topGod.key === 'DirectOfficer') {
+        summary.push(`• Pursue leadership positions\n• Build your reputation and credibility\n• Consider public service or education\n• Focus on long-term career growth\n• Develop management and organizational skills`)
+      } else if (topGod.key === 'SevenKillings') {
+        summary.push(`• Take on challenging projects\n• Consider competitive fields\n• Build stress management skills\n• Learn to delegate and avoid burnout\n• Channel your drive into productive goals`)
+      } else if (topGod.key === 'EatingGod') {
+        summary.push(`• Share your knowledge through teaching or content\n• Build a personal brand around your expertise\n• Consider education, healthcare, or consulting\n• Create content that helps others\n• Focus on long-term value creation`)
+      } else if (topGod.key === 'HurtingOfficer') {
+        summary.push(`• Use your creativity and innovation\n• Consider artistic or creative fields\n• Express your unique perspective\n• Build products or services that stand out\n• Balance creativity with practical business sense`)
+      }
+    }
+
+    // Health and relationship reminders
+    summary.push(`\nImportant things to remember:`)
+    
+    if (dayElement === 'Wood') {
+      summary.push(`• Manage stress through exercise and nature time\n• Watch your diet and limit alcohol\n• Take care of your eyes with regular breaks\n• Build emotional resilience`)
+    } else if (dayElement === 'Fire') {
+      summary.push(`• Prioritize sleep and rest\n• Manage stress and anxiety\n• Monitor heart health\n• Practice calming activities`)
+    } else if (dayElement === 'Earth') {
+      summary.push(`• Maintain regular eating habits\n• Take care of your digestive system\n• Avoid overeating\n• Build physical strength gradually`)
+    } else if (dayElement === 'Metal') {
+      summary.push(`• Protect your lungs - avoid smoking and pollution\n• Take care of your skin\n• Strengthen your immune system\n• Get fresh air regularly`)
+    } else if (dayElement === 'Water') {
+      summary.push(`• Stay well-hydrated\n• Get enough rest and sleep\n• Take care of your kidneys\n• Keep warm in cold weather`)
+    }
+
+    // Relationship advice
+    summary.push(`\nFor your relationships:`)
+    if (dayStrength === 'strong') {
+      summary.push(`• Give your partner space and respect their independence\n• Practice active listening\n• Don't try to control everything`)
+    } else if (dayStrength === 'weak') {
+      summary.push(`• Build your confidence and self-worth\n• Communicate your needs clearly\n• Don't lose yourself in relationships`)
+    } else {
+      summary.push(`• Maintain balance between giving and receiving\n• Communicate openly about needs and expectations\n• Build shared goals while respecting individual space`)
+    }
+
+    // Final guidance
+    summary.push(`\nMoving forward:`)
+    summary.push(`This analysis gives you a foundation for understanding yourself better. Use it as a guide, but remember that you have the power to shape your future through your choices and actions. Focus on building your strengths, working on your weaknesses, and making decisions that align with your values and goals.`)
+    summary.push(`\nIf you want deeper insights into specific areas - like detailed career guidance, relationship compatibility, or timing for major decisions - consider a professional consultation for personalized analysis.`)
+
+    return summary.join('\n')
+  }
+
+  // Generate personalized report based on specific Bazi information
+  const generateElementBasedReport = (bazi, fiveElements, dayMaster, tenGods, branchDynamics) => {
+    const { balanceScore } = fiveElements
+    
+    // Use new personalized report generation function
+    const personalizedReport = generatePersonalizedReport(bazi, fiveElements, dayMaster, tenGods, branchDynamics)
+
+    return {
+      personality: personalizedReport.personality,
+      wealth: personalizedReport.wealth,
+      love: personalizedReport.love,
+      health: personalizedReport.health,
+      summary: personalizedReport.summary,
       balanceScore
     }
   }
@@ -1542,8 +1869,8 @@ const FreeBaziReport = () => {
     const dayun = buildDaYun(bazi, formData)
     const annualTrends = buildAnnualTrends(bazi, dayMasterInsights)
     
-    // 根据五行能量生成报告
-    const elementBasedReport = generateElementBasedReport(formData, fiveElements, dayMasterInsights, tenGodsProfile, branchDynamics)
+    // Generate personalized report based on specific Bazi information
+    const elementBasedReport = generateElementBasedReport(bazi, fiveElements, dayMasterInsights, tenGodsProfile, branchDynamics)
 
     // 生成完整报告
     const generatedReport = {
@@ -1555,6 +1882,7 @@ const FreeBaziReport = () => {
       branchDynamics,
       dayun,
       annualTrends,
+      personality: elementBasedReport.personality,
       wealth: elementBasedReport.wealth,
       love: elementBasedReport.love,
       health: elementBasedReport.health,
@@ -1616,25 +1944,6 @@ const FreeBaziReport = () => {
       overviewInsights.push(`Branch Interactions: ${report.branchDynamics.summary}`)
     }
 
-    const timingHighlights = []
-    if (report.dayun?.cycles?.length) {
-      const currentYear = new Date().getFullYear()
-      const activeCycle = report.dayun.cycles.find(cycle => currentYear >= cycle.startYear && currentYear <= cycle.endYear) || report.dayun.cycles[0]
-      if (activeCycle) {
-        timingHighlights.push(`Current Major Cycle (${activeCycle.startYear}-${activeCycle.endYear}): ${activeCycle.guidance}`)
-      }
-      const nextCycle = report.dayun.cycles.find(cycle => activeCycle && cycle.startYear > activeCycle.startYear)
-      if (nextCycle) {
-        timingHighlights.push(`Next Major Cycle (${nextCycle.startYear}-${nextCycle.endYear}): ${nextCycle.guidance}`)
-      }
-    }
-    if (report.annualTrends?.entries?.length) {
-      const currentYear = new Date().getFullYear()
-      const upcomingYear = report.annualTrends.entries.find(entry => entry.year >= currentYear) || report.annualTrends.entries[0]
-      if (upcomingYear) {
-        timingHighlights.push(`Upcoming Year ${upcomingYear.year}: ${upcomingYear.summary}`)
-      }
-    }
 
     const actionPool = [
       ...extractActions(report.wealth),
@@ -1689,7 +1998,7 @@ const FreeBaziReport = () => {
             </p>
           </motion.div>
 
-          {(overviewInsights.length > 0 || timingHighlights.length > 0) && (
+          {overviewInsights.length > 0 && (
             <motion.div
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
@@ -1697,26 +2006,14 @@ const FreeBaziReport = () => {
               className="mystic-card p-4 sm:p-8 mb-6 sm:mb-8"
             >
               <h2 className="text-xl sm:text-2xl font-cinzel font-bold mb-4 sm:mb-6 text-gold-400">Insight Summary</h2>
-              {overviewInsights.length > 0 && (
-                <div className="mb-4">
-                  <h3 className="text-base sm:text-lg font-semibold text-white mb-2">Core Signals</h3>
-                  <ul className="list-disc list-inside text-sm sm:text-base text-mystic-200 space-y-1">
-                    {overviewInsights.map((item, index) => (
-                      <li key={`overview-${index}`}>{item}</li>
-                    ))}
-                  </ul>
-                </div>
-              )}
-              {timingHighlights.length > 0 && (
-                <div>
-                  <h3 className="text-base sm:text-lg font-semibold text-white mb-2">Timing Highlights</h3>
-                  <ul className="list-disc list-inside text-sm sm:text-base text-mystic-200 space-y-1">
-                    {timingHighlights.map((item, index) => (
-                      <li key={`timing-${index}`}>{item}</li>
-                    ))}
-                  </ul>
-                </div>
-              )}
+              <div>
+                <h3 className="text-base sm:text-lg font-semibold text-white mb-2">Core Signals</h3>
+                <ul className="list-disc list-inside text-sm sm:text-base text-mystic-200 space-y-1">
+                  {overviewInsights.map((item, index) => (
+                    <li key={`overview-${index}`}>{item}</li>
+                  ))}
+                </ul>
+              </div>
             </motion.div>
           )}
 
@@ -1906,73 +2203,6 @@ const FreeBaziReport = () => {
             </motion.div>
           )}
 
-          {report.dayun?.cycles && (
-            <motion.div
-              initial={{ opacity: 0, y: 30 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 0.42 }}
-              className="mystic-card p-4 sm:p-8 mb-6 sm:mb-8"
-            >
-              <h2 className="text-xl sm:text-2xl font-cinzel font-bold mb-4 sm:mb-6 text-gold-400">Major Luck Cycles (Da Yun)</h2>
-              <p className="text-mystic-200 text-sm sm:text-base leading-relaxed mb-4">
-                Starting age: {report.dayun.startAge} · {report.dayun.direction === 'forward' ? 'Forward sequence' : 'Reverse sequence'}
-              </p>
-              <div className="grid md:grid-cols-2 gap-4 sm:gap-6">
-                {report.dayun.cycles.map((cycle) => (
-                  <div key={cycle.index} className="bg-mystic-800/40 border border-mystic-700/40 rounded-lg p-4 flex flex-col gap-3">
-                    <div className="flex items-center justify-between text-sm text-mystic-300">
-                      <span>Cycle {cycle.index} ({cycle.startYear} - {cycle.endYear})</span>
-                      <span className="font-semibold text-white">{cycle.stem}{cycle.branch}</span>
-                    </div>
-                    <div className="text-xs text-mystic-400">
-                      Ten God: {cycle.tenGodLabel} · Element: {cycle.element || 'Mixed'}
-                    </div>
-                    <p className="text-sm text-mystic-200 leading-relaxed">
-                      {cycle.guidance}
-                    </p>
-                  </div>
-                ))}
-              </div>
-            </motion.div>
-          )}
-
-          {report.annualTrends?.entries && (
-            <motion.div
-              initial={{ opacity: 0, y: 30 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 0.44 }}
-              className="mystic-card p-4 sm:p-8 mb-6 sm:mb-8"
-            >
-              <h2 className="text-xl sm:text-2xl font-cinzel font-bold mb-4 sm:mb-6 text-gold-400">Annual Outlook Snapshot</h2>
-              <p className="text-mystic-200 text-sm sm:text-base leading-relaxed mb-4">
-                Coverage: {report.annualTrends.startYear} - {report.annualTrends.entries.slice(-1)[0]?.year}
-              </p>
-              <div className="space-y-4">
-                {report.annualTrends.entries.map((entry) => (
-                  <div key={entry.year} className="bg-mystic-800/40 border border-mystic-700/40 rounded-lg p-4">
-                    <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2">
-                      <div className="text-white font-semibold text-lg">{entry.year}</div>
-                      <div className="text-xs text-mystic-400">
-                        {entry.stem}{entry.branch} · Element: {entry.element || 'Mixed'} · Ten God: {entry.tenGodLabel}
-                      </div>
-                    </div>
-                    <p className="text-sm text-mystic-200 leading-relaxed mt-2">{entry.summary}</p>
-                    {entry.interactions.length > 0 && (
-                      <ul className="mt-3 space-y-2">
-                        {entry.interactions.map((interaction, index) => (
-                          <li key={index} className="text-xs text-mystic-300 leading-relaxed border border-mystic-700/60 rounded-md p-3">
-                            <span className="block text-gold-300 font-semibold mb-1">{branchRelationTone[interaction.type].tone}</span>
-                            <span>{interaction.guidance}</span>
-                          </li>
-                        ))}
-                      </ul>
-                    )}
-                  </div>
-                ))}
-              </div>
-            </motion.div>
-          )}
-
           {report.branchDynamics && (
             <motion.div
               initial={{ opacity: 0, y: 30 }}
@@ -2012,19 +2242,59 @@ const FreeBaziReport = () => {
           )}
 
           {/* Report Sections */}
-          <div className="space-y-8">
+          <div className="space-y-6">
+            {/* Personality Analysis */}
+            {report.personality && (
+              <motion.div
+                initial={{ opacity: 0, y: 30 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.35 }}
+                className="relative overflow-hidden mystic-card p-6 sm:p-8 border-2 border-purple-500/30 bg-gradient-to-br from-purple-900/20 via-mystic-900/50 to-mystic-900/50 shadow-lg shadow-purple-500/10"
+              >
+                <div className="absolute top-0 right-0 w-32 h-32 bg-purple-500/10 rounded-full blur-3xl"></div>
+                <div className="relative z-10">
+                  <div className="flex items-center gap-4 mb-6">
+                    <div className="flex-shrink-0 w-14 h-14 rounded-xl bg-gradient-to-br from-purple-500 to-purple-600 flex items-center justify-center shadow-lg">
+                      <span className="text-2xl">✨</span>
+                    </div>
+                    <div>
+                      <h3 className="text-xl sm:text-2xl font-cinzel font-bold text-gold-400">Personality & Character Traits</h3>
+                      <p className="text-sm text-mystic-400 mt-1">Your core strengths and growth areas</p>
+                    </div>
+                  </div>
+                  <div className="text-mystic-200 leading-relaxed text-base sm:text-lg">
+                    <div className="whitespace-pre-line space-y-3">
+                      {report.personality}
+                    </div>
+                  </div>
+                </div>
+              </motion.div>
+            )}
+
             {/* Wealth Analysis */}
             <motion.div
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.4 }}
-              className="mystic-card p-8"
+              className="relative overflow-hidden mystic-card p-6 sm:p-8 border-2 border-green-500/30 bg-gradient-to-br from-green-900/20 via-mystic-900/50 to-mystic-900/50 shadow-lg shadow-green-500/10"
             >
-              <h3 className="text-xl font-cinzel font-bold mb-4 text-gold-400 flex items-center">
-                <span className="mr-2">💰</span>
-                Wealth Analysis
-              </h3>
-              <p className="text-mystic-200 leading-relaxed">{report.wealth}</p>
+              <div className="absolute top-0 right-0 w-32 h-32 bg-green-500/10 rounded-full blur-3xl"></div>
+              <div className="relative z-10">
+                <div className="flex items-center gap-4 mb-6">
+                  <div className="flex-shrink-0 w-14 h-14 rounded-xl bg-gradient-to-br from-green-500 to-emerald-600 flex items-center justify-center shadow-lg">
+                    <span className="text-2xl">💰</span>
+                  </div>
+                  <div>
+                    <h3 className="text-xl sm:text-2xl font-cinzel font-bold text-gold-400">Wealth Analysis</h3>
+                    <p className="text-sm text-mystic-400 mt-1">Financial opportunities and strategies</p>
+                  </div>
+                </div>
+                <div className="text-mystic-200 leading-relaxed text-base sm:text-lg">
+                  <div className="whitespace-pre-line space-y-3">
+                    {report.wealth}
+                  </div>
+                </div>
+              </div>
             </motion.div>
 
             {/* Love Analysis */}
@@ -2032,13 +2302,25 @@ const FreeBaziReport = () => {
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.5 }}
-              className="mystic-card p-8"
+              className="relative overflow-hidden mystic-card p-6 sm:p-8 border-2 border-pink-500/30 bg-gradient-to-br from-pink-900/20 via-mystic-900/50 to-mystic-900/50 shadow-lg shadow-pink-500/10"
             >
-              <h3 className="text-xl font-cinzel font-bold mb-4 text-gold-400 flex items-center">
-                <span className="mr-2">💕</span>
-                Love & Relationships
-              </h3>
-              <p className="text-mystic-200 leading-relaxed">{report.love}</p>
+              <div className="absolute top-0 right-0 w-32 h-32 bg-pink-500/10 rounded-full blur-3xl"></div>
+              <div className="relative z-10">
+                <div className="flex items-center gap-4 mb-6">
+                  <div className="flex-shrink-0 w-14 h-14 rounded-xl bg-gradient-to-br from-pink-500 to-rose-600 flex items-center justify-center shadow-lg">
+                    <span className="text-2xl">💕</span>
+                  </div>
+                  <div>
+                    <h3 className="text-xl sm:text-2xl font-cinzel font-bold text-gold-400">Love & Relationships</h3>
+                    <p className="text-sm text-mystic-400 mt-1">Your relationship style and compatibility</p>
+                  </div>
+                </div>
+                <div className="text-mystic-200 leading-relaxed text-base sm:text-lg">
+                  <div className="whitespace-pre-line space-y-3">
+                    {report.love}
+                  </div>
+                </div>
+              </div>
             </motion.div>
 
             {/* Health Analysis */}
@@ -2046,13 +2328,25 @@ const FreeBaziReport = () => {
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.6 }}
-              className="mystic-card p-8"
+              className="relative overflow-hidden mystic-card p-6 sm:p-8 border-2 border-blue-500/30 bg-gradient-to-br from-blue-900/20 via-mystic-900/50 to-mystic-900/50 shadow-lg shadow-blue-500/10"
             >
-              <h3 className="text-xl font-cinzel font-bold mb-4 text-gold-400 flex items-center">
-                <span className="mr-2">🏥</span>
-                Health & Wellness
-              </h3>
-              <p className="text-mystic-200 leading-relaxed">{report.health}</p>
+              <div className="absolute top-0 right-0 w-32 h-32 bg-blue-500/10 rounded-full blur-3xl"></div>
+              <div className="relative z-10">
+                <div className="flex items-center gap-4 mb-6">
+                  <div className="flex-shrink-0 w-14 h-14 rounded-xl bg-gradient-to-br from-blue-500 to-cyan-600 flex items-center justify-center shadow-lg">
+                    <span className="text-2xl">🏥</span>
+                  </div>
+                  <div>
+                    <h3 className="text-xl sm:text-2xl font-cinzel font-bold text-gold-400">Health & Wellness</h3>
+                    <p className="text-sm text-mystic-400 mt-1">Wellness guidance and preventive care</p>
+                  </div>
+                </div>
+                <div className="text-mystic-200 leading-relaxed text-base sm:text-lg">
+                  <div className="whitespace-pre-line space-y-3">
+                    {report.health}
+                  </div>
+                </div>
+              </div>
             </motion.div>
 
             {/* Summary */}
@@ -2060,47 +2354,59 @@ const FreeBaziReport = () => {
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.7 }}
-              className="mystic-card p-8"
+              className="relative overflow-hidden mystic-card p-6 sm:p-8 border-2 border-gold-500/40 bg-gradient-to-br from-gold-900/30 via-mystic-900/50 to-mystic-900/50 shadow-lg shadow-gold-500/20"
             >
-              <h3 className="text-xl font-cinzel font-bold mb-4 text-gold-400 flex items-center">
-                <span className="mr-2">📋</span>
-                Summary & Guidance
-              </h3>
-              <div className="space-y-5 text-mystic-200 text-sm sm:text-base leading-relaxed">
-                {overviewInsights.length > 0 && (
-                  <div>
-                    <h4 className="text-base font-semibold text-white mb-2">Core Takeaways</h4>
-                    <ul className="list-disc list-inside space-y-1">
-                      {overviewInsights.slice(0, 3).map((item, index) => (
-                        <li key={`summary-overview-${index}`}>{item}</li>
-                      ))}
-                    </ul>
+              <div className="absolute top-0 right-0 w-32 h-32 bg-gold-500/10 rounded-full blur-3xl"></div>
+              <div className="relative z-10">
+                <div className="flex items-center gap-4 mb-6">
+                  <div className="flex-shrink-0 w-14 h-14 rounded-xl bg-gradient-to-br from-gold-500 to-yellow-600 flex items-center justify-center shadow-lg">
+                    <span className="text-2xl">📋</span>
                   </div>
-                )}
-                {timingHighlights.length > 0 && (
                   <div>
-                    <h4 className="text-base font-semibold text-white mb-2">Timing Reminders</h4>
-                    <ul className="list-disc list-inside space-y-1">
-                      {timingHighlights.slice(0, 2).map((item, index) => (
-                        <li key={`summary-timing-${index}`}>{item}</li>
-                      ))}
-                    </ul>
+                    <h3 className="text-xl sm:text-2xl font-cinzel font-bold text-gold-400">Summary & Guidance</h3>
+                    <p className="text-sm text-mystic-400 mt-1">Key insights and future directions</p>
                   </div>
-                )}
-                {report.summary && (
-                  <div>
-                    <h4 className="text-base font-semibold text-white mb-2">Integration Notes</h4>
-                    <p>{report.summary}</p>
+                </div>
+                <div className="text-mystic-200 leading-relaxed text-base sm:text-lg mb-6">
+                  <div className="whitespace-pre-line space-y-3">
+                    {report.summary}
                   </div>
-                )}
-                {prioritizedActions.length > 0 && (
-                  <div>
-                    <h4 className="text-base font-semibold text-white mb-2">Next Moves</h4>
-                    <ul className="list-disc list-inside space-y-1">
-                      {prioritizedActions.slice(0, 3).map((item, index) => (
-                        <li key={`summary-action-${index}`}>{item}</li>
-                      ))}
-                    </ul>
+                </div>
+                
+                {(overviewInsights.length > 0 || prioritizedActions.length > 0) && (
+                  <div className="mt-8 pt-6 border-t border-gold-500/20">
+                    <div className="grid md:grid-cols-2 gap-6">
+                      {overviewInsights.length > 0 && (
+                        <div className="bg-mystic-800/40 rounded-lg p-5 border border-gold-500/20">
+                          <h4 className="text-lg font-semibold text-white mb-3 flex items-center gap-2">
+                            <span className="text-gold-400">●</span>
+                            Core Takeaways
+                          </h4>
+                          <ul className="space-y-2">
+                            {overviewInsights.slice(0, 3).map((item, index) => (
+                              <li key={`summary-overview-${index}`} className="text-mystic-200 text-sm leading-relaxed pl-4 border-l-2 border-gold-500/20">
+                                {item}
+                              </li>
+                            ))}
+                          </ul>
+                        </div>
+                      )}
+                      {prioritizedActions.length > 0 && (
+                        <div className="bg-mystic-800/40 rounded-lg p-5 border border-gold-500/20">
+                          <h4 className="text-lg font-semibold text-white mb-3 flex items-center gap-2">
+                            <span className="text-gold-400">→</span>
+                            Next Moves
+                          </h4>
+                          <ul className="space-y-2">
+                            {prioritizedActions.slice(0, 3).map((item, index) => (
+                              <li key={`summary-action-${index}`} className="text-mystic-200 text-sm leading-relaxed pl-4 border-l-2 border-gold-500/20">
+                                {item}
+                              </li>
+                            ))}
+                          </ul>
+                        </div>
+                      )}
+                    </div>
                   </div>
                 )}
               </div>
