@@ -328,7 +328,7 @@ const Blog = () => {
                       <div className="w-full h-48 bg-mystic-700 overflow-hidden">
                         <img 
                           src={post.image} 
-                          alt={post.title}
+                          alt={`${post.title} - BaZi reading blog article cover image about Chinese astrology and numerology`}
                           width={768}
                           height={384}
                           loading="lazy"
@@ -338,8 +338,8 @@ const Blog = () => {
                             e.target.nextSibling.style.display = 'flex';
                           }}
                         />
-                        <div className="w-full h-full bg-mystic-700 flex items-center justify-center hidden">
-                          <span className="text-mystic-400">Blog Image</span>
+                        <div className="w-full h-full bg-mystic-700 flex items-center justify-center hidden" aria-hidden="true">
+                          <span className="text-mystic-400">BaZi Blog Image</span>
                         </div>
                       </div>
                       <div className="p-6">

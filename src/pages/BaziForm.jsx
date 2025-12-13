@@ -57,32 +57,40 @@ const BaziForm = () => {
 
   if (isSubmitted) {
     return (
-      <div className="min-h-screen pt-20 px-4 sm:px-6 lg:px-8">
-        <div className="max-w-2xl mx-auto text-center">
-          <motion.div
-            initial={{ opacity: 0, scale: 0.8 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.6 }}
-            className="mystic-card p-12"
-          >
-            <CheckCircle className="h-16 w-16 text-green-400 mx-auto mb-6" />
-            <h1 className="text-3xl font-cinzel font-bold mb-4 text-white">
-              Thank You!
-            </h1>
-            <p className="text-mystic-300 mb-8 text-lg">
-              Your Bazi reading request has been submitted successfully. 
-                              I will analyze your birth chart and send your detailed report within 24 hours.
-            </p>
-            <Link
-              to="/"
-              className="inline-flex items-center space-x-2 bg-gradient-to-r from-gold-500 to-gold-600 text-black font-poppins font-semibold px-8 py-3 rounded-full hover:from-gold-400 hover:to-gold-500 transition-all duration-300"
+      <>
+        <SEO 
+          title="BaZi Reading Request Submitted | Thank You | FatePath"
+          description="Your BaZi reading request has been submitted successfully. Your detailed report will be delivered within 24 hours with comprehensive analysis of your personality, career, relationships, and life path."
+          keywords="bazi reading submitted, thank you, bazi report confirmation, chinese astrology request received"
+          canonical="https://fatepath.me/bazi-form"
+        />
+        <div className="min-h-screen pt-20 px-4 sm:px-6 lg:px-8">
+          <div className="max-w-2xl mx-auto text-center">
+            <motion.div
+              initial={{ opacity: 0, scale: 0.8 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 0.6 }}
+              className="mystic-card p-12"
             >
-              <ArrowLeft className="h-5 w-5" />
-              <span>Return to Home</span>
-            </Link>
-          </motion.div>
+              <CheckCircle className="h-16 w-16 text-green-400 mx-auto mb-6" />
+              <h1 className="text-3xl font-cinzel font-bold mb-4 text-white">
+                Thank You!
+              </h1>
+              <p className="text-mystic-300 mb-8 text-lg">
+                Your Bazi reading request has been submitted successfully. 
+                                I will analyze your birth chart and send your detailed report within 24 hours.
+              </p>
+              <Link
+                to="/"
+                className="inline-flex items-center space-x-2 bg-gradient-to-r from-gold-500 to-gold-600 text-black font-poppins font-semibold px-8 py-3 rounded-full hover:from-gold-400 hover:to-gold-500 transition-all duration-300"
+              >
+                <ArrowLeft className="h-5 w-5" />
+                <span>Return to Home</span>
+              </Link>
+            </motion.div>
+          </div>
         </div>
-      </div>
+      </>
     )
   }
 

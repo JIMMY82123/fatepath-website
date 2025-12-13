@@ -416,7 +416,7 @@ const Testimonials = () => {
                       <div className="relative overflow-hidden rounded-lg border-2 border-mystic-700/50 hover:border-gold-400/50 transition-all duration-300 hover:shadow-lg hover:shadow-gold-400/20">
                         <img
                           src={review.image}
-                          alt={`Reddit Review ${review.id}`}
+                          alt={`Authentic BaZi reading client review ${review.id} from Reddit - Chinese astrology testimonial with satisfied customer feedback`}
                           width={400}
                           height={400}
                           loading="lazy"
@@ -426,8 +426,8 @@ const Testimonials = () => {
                             e.target.nextSibling.style.display = 'flex';
                           }}
                         />
-                        <div className="w-full h-full bg-mystic-700 flex items-center justify-center hidden">
-                          <span className="text-mystic-400 text-sm">Review Image</span>
+                        <div className="w-full h-full bg-mystic-700 flex items-center justify-center hidden" aria-hidden="true">
+                          <span className="text-mystic-400 text-sm">BaZi Review Image</span>
                         </div>
                         
                         {/* Hover overlay */}
@@ -476,7 +476,7 @@ const Testimonials = () => {
               {/* Image */}
               <img
                 src={selectedRedditReview.image}
-                alt={`Reddit Review ${selectedRedditReview.id}`}
+                alt={`Genuine BaZi consultation review ${selectedRedditReview.id} from Reddit - Chinese numerology expert testimonial showing professional service quality`}
                 width={1200}
                 height={1200}
                 className="w-full h-auto max-h-[90vh] object-contain"
@@ -485,8 +485,8 @@ const Testimonials = () => {
                   e.target.nextSibling.style.display = 'flex';
                 }}
               />
-              <div className="w-full h-full bg-mystic-700 flex items-center justify-center hidden">
-                <span className="text-mystic-400">Review Image</span>
+              <div className="w-full h-full bg-mystic-700 flex items-center justify-center hidden" aria-hidden="true">
+                <span className="text-mystic-400">BaZi Review Image</span>
               </div>
             </motion.div>
           </motion.div>

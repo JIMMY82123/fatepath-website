@@ -7,13 +7,13 @@ const SampleReportCarousel = () => {
   const [isModalOpen, setIsModalOpen] = useState(false)
 
   const reportImages = [
-    { id: 1, src: '/images/report/sample-report-1.jpg', title: 'Report Cover' },
-    { id: 2, src: '/images/report/sample-report-2.jpg', title: 'BaZi Chart' },
-    { id: 3, src: '/images/report/sample-report-3.jpg', title: 'Personality Analysis' },
-    { id: 4, src: '/images/report/sample-report-4.jpg', title: 'Wealth Analysis' },
-    { id: 5, src: '/images/report/sample-report-5.jpg', title: 'Love Analysis' },
-    { id: 6, src: '/images/report/sample-report-6.jpg', title: 'Health Guidance' },
-    { id: 7, src: '/images/report/sample-report-7.jpg', title: 'Life Guidance' }
+    { id: 1, src: '/images/report/sample-report-1.jpg', title: 'BaZi reading report cover - Professional Chinese astrology analysis document' },
+    { id: 2, src: '/images/report/sample-report-2.jpg', title: 'BaZi chart visualization - Chinese numerology birth chart with four pillars analysis' },
+    { id: 3, src: '/images/report/sample-report-3.jpg', title: 'BaZi personality analysis - Chinese astrology character traits and destiny reading' },
+    { id: 4, src: '/images/report/sample-report-4.jpg', title: 'BaZi wealth analysis - Chinese numerology financial destiny and career guidance' },
+    { id: 5, src: '/images/report/sample-report-5.jpg', title: 'BaZi love compatibility analysis - Chinese astrology relationship and marriage guidance' },
+    { id: 6, src: '/images/report/sample-report-6.jpg', title: 'BaZi health guidance - Chinese numerology wellness and vitality analysis' },
+    { id: 7, src: '/images/report/sample-report-7.jpg', title: 'BaZi life path guidance - Chinese astrology destiny and purpose analysis' }
   ]
 
   const nextSlide = () => {

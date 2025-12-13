@@ -328,7 +328,7 @@ const Home = () => {
                 <div className="relative overflow-hidden rounded-lg border-2 border-slate-200 hover:border-amber-400 transition-all duration-300 hover:shadow-lg hover:shadow-amber-400/20">
                   <img
                     src="/images/reddit-reviews/reddit-review-1.jpg"
-                    alt="Reddit Review 1"
+                    alt="Authentic BaZi reading client review from Reddit - Chinese astrology testimonial showing satisfied customer feedback"
                     width={400}
                     height={400}
                     loading="lazy"
@@ -338,8 +338,8 @@ const Home = () => {
                       e.target.nextSibling.style.display = 'flex';
                     }}
                   />
-                  <div className="w-full h-full bg-slate-200 flex items-center justify-center hidden">
-                    <span className="text-slate-500 text-sm">Review Image</span>
+                  <div className="w-full h-full bg-slate-200 flex items-center justify-center hidden" aria-hidden="true">
+                    <span className="text-slate-500 text-sm">BaZi Review Image</span>
                   </div>
                   
                   {/* Hover overlay */}
@@ -362,7 +362,7 @@ const Home = () => {
                 <div className="relative overflow-hidden rounded-lg border-2 border-slate-200 hover:border-amber-400 transition-all duration-300 hover:shadow-lg hover:shadow-amber-400/20">
                   <img
                     src="/images/reddit-reviews/reddit-review-2.jpg"
-                    alt="Reddit Review 2"
+                    alt="Real BaZi consultation review from Reddit - Chinese numerology client testimonial with positive feedback"
                     width={400}
                     height={400}
                     loading="lazy"
@@ -372,8 +372,8 @@ const Home = () => {
                       e.target.nextSibling.style.display = 'flex';
                     }}
                   />
-                  <div className="w-full h-full bg-slate-200 flex items-center justify-center hidden">
-                    <span className="text-slate-500 text-sm">Review Image</span>
+                  <div className="w-full h-full bg-slate-200 flex items-center justify-center hidden" aria-hidden="true">
+                    <span className="text-slate-500 text-sm">BaZi Review Image</span>
                   </div>
                   
                   {/* Hover overlay */}
@@ -396,7 +396,7 @@ const Home = () => {
                 <div className="relative overflow-hidden rounded-lg border-2 border-slate-200 hover:border-amber-400 transition-all duration-300 hover:shadow-lg hover:shadow-amber-400/20">
                   <img
                     src="/images/reddit-reviews/reddit-review-3.jpg"
-                    alt="Reddit Review 3"
+                    alt="Genuine BaZi reading review from Reddit - Chinese astrology service testimonial from satisfied client"
                     width={400}
                     height={400}
                     loading="lazy"
@@ -406,8 +406,8 @@ const Home = () => {
                       e.target.nextSibling.style.display = 'flex';
                     }}
                   />
-                  <div className="w-full h-full bg-slate-200 flex items-center justify-center hidden">
-                    <span className="text-slate-500 text-sm">Review Image</span>
+                  <div className="w-full h-full bg-slate-200 flex items-center justify-center hidden" aria-hidden="true">
+                    <span className="text-slate-500 text-sm">BaZi Review Image</span>
                   </div>
                   
                   {/* Hover overlay */}
@@ -430,7 +430,7 @@ const Home = () => {
                 <div className="relative overflow-hidden rounded-lg border-2 border-slate-200 hover:border-amber-400 transition-all duration-300 hover:shadow-lg hover:shadow-amber-400/20">
                   <img
                     src="/images/reddit-reviews/reddit-review-4.jpg"
-                    alt="Reddit Review 4"
+                    alt="Authentic BaZi consultation review from Reddit - Chinese numerology expert testimonial with client success story"
                     width={400}
                     height={400}
                     loading="lazy"
@@ -440,8 +440,8 @@ const Home = () => {
                       e.target.nextSibling.style.display = 'flex';
                     }}
                   />
-                  <div className="w-full h-full bg-slate-200 flex items-center justify-center hidden">
-                    <span className="text-slate-500 text-sm">Review Image</span>
+                  <div className="w-full h-full bg-slate-200 flex items-center justify-center hidden" aria-hidden="true">
+                    <span className="text-slate-500 text-sm">BaZi Review Image</span>
                   </div>
                   
                   {/* Hover overlay */}
@@ -464,7 +464,7 @@ const Home = () => {
                 <div className="relative overflow-hidden rounded-lg border-2 border-slate-200 hover:border-amber-400 transition-all duration-300 hover:shadow-lg hover:shadow-amber-400/20">
                   <img
                     src="/images/reddit-reviews/reddit-review-5.jpg"
-                    alt="Reddit Review 5"
+                    alt="Real BaZi reading client review from Reddit - Chinese astrology service feedback from happy customer"
                     width={400}
                     height={400}
                     loading="lazy"
@@ -474,8 +474,8 @@ const Home = () => {
                       e.target.nextSibling.style.display = 'flex';
                     }}
                   />
-                  <div className="w-full h-full bg-slate-200 flex items-center justify-center hidden">
-                    <span className="text-slate-500 text-sm">Review Image</span>
+                  <div className="w-full h-full bg-slate-200 flex items-center justify-center hidden" aria-hidden="true">
+                    <span className="text-slate-500 text-sm">BaZi Review Image</span>
                   </div>
                   
                   {/* Hover overlay */}
@@ -498,7 +498,7 @@ const Home = () => {
                 <div className="relative overflow-hidden rounded-lg border-2 border-slate-200 hover:border-amber-400 transition-all duration-300 hover:shadow-lg hover:shadow-amber-400/20">
                   <img
                     src="/images/reddit-reviews/reddit-review-6.jpg"
-                    alt="Reddit Review 6"
+                    alt="Genuine BaZi consultation review from Reddit - Chinese numerology testimonial showing professional service quality"
                     width={400}
                     height={400}
                     loading="lazy"
@@ -508,8 +508,8 @@ const Home = () => {
                       e.target.nextSibling.style.display = 'flex';
                     }}
                   />
-                  <div className="w-full h-full bg-slate-200 flex items-center justify-center hidden">
-                    <span className="text-slate-500 text-sm">Review Image</span>
+                  <div className="w-full h-full bg-slate-200 flex items-center justify-center hidden" aria-hidden="true">
+                    <span className="text-slate-500 text-sm">BaZi Review Image</span>
                   </div>
                   
                   {/* Hover overlay */}
@@ -532,7 +532,7 @@ const Home = () => {
                 <div className="relative overflow-hidden rounded-lg border-2 border-slate-200 hover:border-amber-400 transition-all duration-300 hover:shadow-lg hover:shadow-amber-400/20">
                   <img
                     src="/images/reddit-reviews/reddit-review-7.jpg"
-                    alt="Reddit Review 7"
+                    alt="Authentic BaZi reading review from Reddit - Chinese astrology client testimonial with detailed feedback"
                     width={400}
                     height={400}
                     loading="lazy"
@@ -542,8 +542,8 @@ const Home = () => {
                       e.target.nextSibling.style.display = 'flex';
                     }}
                   />
-                  <div className="w-full h-full bg-slate-200 flex items-center justify-center hidden">
-                    <span className="text-slate-500 text-sm">Review Image</span>
+                  <div className="w-full h-full bg-slate-200 flex items-center justify-center hidden" aria-hidden="true">
+                    <span className="text-slate-500 text-sm">BaZi Review Image</span>
                   </div>
                   
                   {/* Hover overlay */}
@@ -566,7 +566,7 @@ const Home = () => {
                 <div className="relative overflow-hidden rounded-lg border-2 border-slate-200 hover:border-amber-400 transition-all duration-300 hover:shadow-lg hover:shadow-amber-400/20">
                   <img
                     src="/images/reddit-reviews/reddit-review-8.jpg"
-                    alt="Reddit Review 8"
+                    alt="Real BaZi consultation review from Reddit - Chinese numerology expert service testimonial from satisfied client"
                     width={400}
                     height={400}
                     loading="lazy"
@@ -576,8 +576,8 @@ const Home = () => {
                       e.target.nextSibling.style.display = 'flex';
                     }}
                   />
-                  <div className="w-full h-full bg-slate-200 flex items-center justify-center hidden">
-                    <span className="text-slate-500 text-sm">Review Image</span>
+                  <div className="w-full h-full bg-slate-200 flex items-center justify-center hidden" aria-hidden="true">
+                    <span className="text-slate-500 text-sm">BaZi Review Image</span>
                   </div>
                   
                   {/* Hover overlay */}
@@ -600,7 +600,7 @@ const Home = () => {
                 <div className="relative overflow-hidden rounded-lg border-2 border-slate-200 hover:border-amber-400 transition-all duration-300 hover:shadow-lg hover:shadow-amber-400/20">
                   <img
                     src="/images/reddit-reviews/reddit-review-9.jpg"
-                    alt="Reddit Review 9"
+                    alt="Genuine BaZi reading client review from Reddit - Chinese astrology testimonial with positive customer experience"
                     width={400}
                     height={400}
                     loading="lazy"
@@ -610,8 +610,8 @@ const Home = () => {
                       e.target.nextSibling.style.display = 'flex';
                     }}
                   />
-                  <div className="w-full h-full bg-slate-200 flex items-center justify-center hidden">
-                    <span className="text-slate-500 text-sm">Review Image</span>
+                  <div className="w-full h-full bg-slate-200 flex items-center justify-center hidden" aria-hidden="true">
+                    <span className="text-slate-500 text-sm">BaZi Review Image</span>
                   </div>
                   
                   {/* Hover overlay */}
@@ -634,7 +634,7 @@ const Home = () => {
                 <div className="relative overflow-hidden rounded-lg border-2 border-slate-200 hover:border-amber-400 transition-all duration-300 hover:shadow-lg hover:shadow-amber-400/20">
                   <img
                     src="/images/reddit-reviews/reddit-review-10.jpg"
-                    alt="Reddit Review 10"
+                    alt="Authentic BaZi consultation review from Reddit - Chinese numerology service testimonial from happy client"
                     width={400}
                     height={400}
                     loading="lazy"
@@ -644,8 +644,8 @@ const Home = () => {
                       e.target.nextSibling.style.display = 'flex';
                     }}
                   />
-                  <div className="w-full h-full bg-slate-200 flex items-center justify-center hidden">
-                    <span className="text-slate-500 text-sm">Review Image</span>
+                  <div className="w-full h-full bg-slate-200 flex items-center justify-center hidden" aria-hidden="true">
+                    <span className="text-slate-500 text-sm">BaZi Review Image</span>
                   </div>
                   
                   {/* Hover overlay */}
@@ -1092,7 +1092,7 @@ const Home = () => {
             {/* Image */}
             <img
               src={selectedRedditReview.image}
-              alt={`Reddit Review ${selectedRedditReview.id}`}
+              alt={`Authentic BaZi reading client review ${selectedRedditReview.id} from Reddit - Chinese astrology testimonial showing satisfied customer feedback`}
               width={1200}
               height={1200}
               className="w-full h-auto max-h-[90vh] object-contain"
@@ -1101,8 +1101,8 @@ const Home = () => {
                 e.target.nextSibling.style.display = 'flex';
               }}
             />
-            <div className="w-full h-full bg-slate-200 flex items-center justify-center hidden">
-              <span className="text-slate-500">Review Image</span>
+            <div className="w-full h-full bg-slate-200 flex items-center justify-center hidden" aria-hidden="true">
+              <span className="text-slate-500">BaZi Review Image</span>
             </div>
           </div>
         </div>

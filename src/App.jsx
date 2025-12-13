@@ -33,6 +33,7 @@ const BlogPost = lazy(() => import('./pages/BlogPost'))
 const Resources = lazy(() => import('./pages/Resources'))
 const DatasetDetail = lazy(() => import('./pages/DatasetDetail'))
 const LoveCompatibilityTest = lazy(() => import('./pages/LoveCompatibilityTest'))
+const AnimationDemo = lazy(() => import('./pages/AnimationDemo'))
 
 function App() {
   useEffect(() => {
@@ -87,13 +88,14 @@ function App() {
                   <Route path="/resources" element={<Resources />} />
                   <Route path="/resources/:datasetId" element={<DatasetDetail />} />
                   <Route path="/love-compatibility-test" element={<LoveCompatibilityTest />} />
+                  <Route path="/animation-demo" element={<AnimationDemo />} />
                 </Routes>
               </Suspense>
             </MobileGestureHandler>
             <Footer />
             
-            {/* 移动端性能监控组件 */}
-            <MobilePerformanceMonitor />
+            {/* 移动端性能监控组件 - 已隐藏 */}
+            {/* <MobilePerformanceMonitor /> */}
             
             {/* 移动端回到顶部按钮 */}
             <ScrollToTopButton />
