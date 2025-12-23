@@ -152,7 +152,15 @@ const Blog = () => {
     : []
 
   const isTagFiltered = selectedTag !== 'all'
-  const canonicalUrl = 'https://fatepath.me/blog'
+  const isCategoryFiltered = selectedCategory !== 'all'
+  
+  // Build canonical URL based on filters
+  let canonicalUrl = 'https://fatepath.me/blog'
+  if (isTagFiltered) {
+    canonicalUrl = `https://fatepath.me/blog?tag=${encodeURIComponent(selectedTag)}`
+  } else if (isCategoryFiltered) {
+    canonicalUrl = `https://fatepath.me/blog?category=${selectedCategory}`
+  }
 
   // Filter blog posts based on category and tag
   const filteredPosts = blogPosts.filter(post => {
@@ -161,6 +169,42 @@ const Blog = () => {
     
     return matchesCategory && matchesTag
   })
+
+  // Dynamic SEO content based on filters
+  const getSEOTitle = () => {
+    if (isTagFiltered) {
+      return `${selectedTag} Articles - Chinese Astrology Blog | FatePath`
+    }
+    if (isCategoryFiltered) {
+      const categoryName = categoryLabelMap[selectedCategory] || selectedCategory
+      return `${categoryName} - Chinese Astrology Blog | FatePath`
+    }
+    return "Chinese Astrology Blog - Ancient Wisdom for Modern Life | FatePath"
+  }
+
+  const getSEODescription = () => {
+    if (isTagFiltered) {
+      const postCount = filteredPosts.length
+      return `Explore ${postCount} ${selectedTag} articles on Chinese astrology, BaZi analysis, and fortune prediction. Discover ancient wisdom and practical guidance for modern life.`
+    }
+    if (isCategoryFiltered) {
+      const categoryName = categoryLabelMap[selectedCategory] || selectedCategory
+      const postCount = filteredPosts.length
+      return `Browse ${postCount} ${categoryName} articles covering Chinese astrology, BaZi readings, and destiny analysis. Expert insights and practical guidance.`
+    }
+    return "Discover ancient Chinese numerology insights, practical guidance, and spiritual wisdom through our comprehensive BaZi analysis blog."
+  }
+
+  const getSEOKeywords = () => {
+    if (isTagFiltered) {
+      return `${selectedTag}, chinese astrology, bazi analysis, chinese numerology, fortune prediction, ${selectedTag.toLowerCase()} guide`
+    }
+    if (isCategoryFiltered) {
+      const categoryName = categoryLabelMap[selectedCategory] || selectedCategory
+      return `${categoryName.toLowerCase()}, chinese astrology, bazi analysis, chinese numerology, ${categoryName.toLowerCase()} reading`
+    }
+    return "chinese astrology blog, bazi analysis, chinese numerology, fortune telling, destiny reading"
+  }
 
   const handleTagClick = (tag) => {
     setSelectedTag(tag)
@@ -183,28 +227,26 @@ const Blog = () => {
   return (
     <>
       <SEO 
-        title="Chinese Astrology Blog - Ancient Wisdom for Modern Life | FatePath"
-        description="Discover ancient Chinese numerology insights, practical guidance, and spiritual wisdom."
-        keywords="chinese astrology blog, bazi analysis, chinese numerology"
+        title={getSEOTitle()}
+        description={getSEODescription()}
+        keywords={getSEOKeywords()}
         author="FatePath"
         canonical={canonicalUrl}
-        ogTitle="Chinese Astrology Blog - Ancient Wisdom for Modern Life"
-        ogDescription="Discover ancient Chinese numerology insights, practical guidance, and spiritual wisdom."
+        ogTitle={getSEOTitle()}
+        ogDescription={getSEODescription()}
         ogImage="https://fatepath.me/og-image.svg"
         ogUrl={canonicalUrl}
-        noIndex={isTagFiltered}
+        noIndex={false}
         noFollow={false}
       />
       
       {/* Structured Data for SEO */}
-      {!isTagFiltered && (
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify(structuredData)
-          }}
-        />
-      )}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(structuredData)
+        }}
+      />
 
       <main className="min-h-screen bg-mystic-900 pt-20">
         {/* Hero Section */}
