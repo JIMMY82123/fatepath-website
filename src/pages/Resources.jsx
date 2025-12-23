@@ -191,16 +191,6 @@ const Resources = () => {
           lastUpdated: "2024-01-15"
         },
         {
-          title: "Element Strengths Dataset",
-          excerpt: "Element strength analysis including season strength, root strength, and support strength calculations.",
-          format: "JSON",
-          records: 20,
-          difficulty: "Advanced",
-          tags: ["Element Strength", "Advanced", "Calculations"],
-          filename: "element-strengths.json",
-          lastUpdated: "2024-01-15"
-        },
-        {
           title: "Health Indicators Dataset",
           excerpt: "BaZi health analysis indicators including organ correspondences, health patterns, and wellness timing.",
           format: "JSON",
@@ -208,16 +198,6 @@ const Resources = () => {
           difficulty: "Intermediate",
           tags: ["Health", "Wellness", "Medical"],
           filename: "health-indicators.json",
-          lastUpdated: "2024-01-15"
-        },
-        {
-          title: "Marriage Timing Dataset",
-          excerpt: "Marriage timing analysis data including favorable periods, compatibility factors, and relationship patterns.",
-          format: "JSON",
-          records: 24,
-          difficulty: "Intermediate",
-          tags: ["Marriage", "Timing", "Relationships"],
-          filename: "marriage-timing.json",
           lastUpdated: "2024-01-15"
         },
         {

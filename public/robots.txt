@@ -19,7 +19,9 @@ Allow: /faq
 Allow: /contact
 Allow: /free-bazi-report
 Allow: /resources
-Allow: /datasets/
+# Allow dataset JSON files but not directory listing
+Allow: /datasets/*.json
+Disallow: /datasets/
 
 # Specific instructions for important pages
 Allow: /bazi-form

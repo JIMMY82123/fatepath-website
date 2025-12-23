@@ -101,9 +101,26 @@ const DatasetDetail = () => {
 
   if (!dataset) {
     return (
-      <div className="pt-20 min-h-screen bg-mystic-900 flex items-center justify-center">
-        <div className="text-white">Dataset not found</div>
-      </div>
+      <>
+        <SEO 
+          title="Dataset Not Found | FatePath"
+          description="The requested dataset could not be found."
+          canonical={`https://fatepath.me/resources/${datasetId}`}
+          noIndex={true}
+        />
+        <div className="pt-20 min-h-screen bg-mystic-900 flex items-center justify-center">
+          <div className="text-center">
+            <h1 className="text-2xl font-bold text-white mb-4">Dataset Not Found</h1>
+            <p className="text-mystic-300 mb-8">The dataset you're looking for doesn't exist.</p>
+            <Link
+              to="/resources"
+              className="bg-gradient-to-r from-gold-400 to-gold-600 text-black px-6 py-3 rounded-lg hover:from-gold-500 hover:to-gold-700 transition-all duration-300 font-semibold"
+            >
+              Back to Resources
+            </Link>
+          </div>
+        </div>
+      </>
     )
   }
 
