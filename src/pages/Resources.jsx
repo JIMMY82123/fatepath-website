@@ -86,17 +86,6 @@ const Resources = () => {
           filename: "annual-forecasts-2024-2034.json",
           lastUpdated: "2025-11-07"
         },
-        {
-          title: "Solar Terms Energy Guide",
-          excerpt: "24 solar terms (节气) with five-element energy, lifestyle adjustments, and wellness tips adapted to American routines.",
-          format: "JSON",
-          records: 24,
-          difficulty: "Beginner",
-          tags: ["Seasonal", "Wellness", "Timing"],
-          featured: true,
-          filename: "solar-terms-energy.json",
-          lastUpdated: "2025-11-07"
-         }
       ]
     },
     {
@@ -143,16 +132,6 @@ const Resources = () => {
           tags: ["Love", "Relationships", "Compatibility"],
           filename: "love-compatibility.json",
           lastUpdated: "2024-01-15"
-        },
-        {
-          title: "Day Master Career Guide (US)",
-          excerpt: "Career strengths, U.S. industry matches, and strategy tips for all ten Day Masters.",
-          format: "JSON",
-          records: 10,
-          difficulty: "Intermediate",
-          tags: ["Career", "US Market", "Day Master"],
-          filename: "day-master-career-us.json",
-          lastUpdated: "2025-11-07"
         },
         {
           title: "Relationship Boundaries Matrix",
@@ -212,16 +191,6 @@ const Resources = () => {
           lastUpdated: "2024-01-15"
         },
         {
-          title: "Pillars Analysis Dataset",
-          excerpt: "Comprehensive analysis of the four pillars (年柱, 月柱, 日柱, 时柱) and their individual significance.",
-          format: "JSON",
-          records: 4,
-          difficulty: "Intermediate",
-          tags: ["Pillars", "Analysis", "Structure"],
-          filename: "pillars-analysis.json",
-          lastUpdated: "2024-01-15"
-        },
-        {
           title: "Element Strengths Dataset",
           excerpt: "Element strength analysis including season strength, root strength, and support strength calculations.",
           format: "JSON",
@@ -249,26 +218,6 @@ const Resources = () => {
           difficulty: "Intermediate",
           tags: ["Marriage", "Timing", "Relationships"],
           filename: "marriage-timing.json",
-          lastUpdated: "2024-01-15"
-        },
-        {
-          title: "Business Success Patterns",
-          excerpt: "Business and entrepreneurship success patterns derived from BaZi analysis for career and business planning.",
-          format: "JSON",
-          records: 30,
-          difficulty: "Intermediate",
-          tags: ["Business", "Success", "Entrepreneurship"],
-          filename: "business-success.json",
-          lastUpdated: "2024-01-15"
-        },
-        {
-          title: "Travel and Migration Data",
-          excerpt: "Travel and migration patterns analysis including favorable directions, timing, and location influences.",
-          format: "JSON",
-          records: 8,
-          difficulty: "Intermediate",
-          tags: ["Travel", "Migration", "Directions"],
-          filename: "travel-migration.json",
           lastUpdated: "2024-01-15"
         },
         {
@@ -306,16 +255,6 @@ const Resources = () => {
           difficulty: "Advanced",
           tags: ["Combination", "Punishment", "Relationships", "Advanced"],
           filename: "combination-punishment.json",
-          lastUpdated: "2024-01-15"
-        },
-        {
-          title: "Empty Branches Analysis",
-          excerpt: "Analysis of empty branches (空亡) and their significance in BaZi chart interpretation.",
-          format: "JSON",
-          records: 12,
-          difficulty: "Advanced",
-          tags: ["Empty Branches", "Advanced", "Interpretation"],
-          filename: "empty-branches.json",
           lastUpdated: "2024-01-15"
         },
         {
