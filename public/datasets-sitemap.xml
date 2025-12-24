@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-        xmlns:dataset="http://schema.org/Dataset">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <!-- Heavenly Stems Dataset -->
   <url>
@@ -8,13 +7,6 @@
     <lastmod>2024-01-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
-    <dataset:dataset>
-      <dataset:name>Heavenly Stems Dataset</dataset:name>
-      <dataset:description>Complete data for the 10 Heavenly Stems (天干) used in BaZi analysis, including Ten Gods relationships</dataset:description>
-      <dataset:url>https://fatepath.me/datasets/heavenly-stems.json</dataset:url>
-      <dataset:format>application/json</dataset:format>
-      <dataset:license>https://creativecommons.org/licenses/by-nc-sa/4.0/</dataset:license>
-    </dataset:dataset>
   </url>
 
   <!-- Earthly Branches Dataset -->
@@ -23,13 +15,6 @@
     <lastmod>2024-01-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
-    <dataset:dataset>
-      <dataset:name>Earthly Branches Dataset</dataset:name>
-      <dataset:description>Complete data for the 12 Earthly Branches (地支) used in BaZi analysis</dataset:description>
-      <dataset:url>https://fatepath.me/datasets/earthly-branches.json</dataset:url>
-      <dataset:format>application/json</dataset:format>
-      <dataset:license>https://creativecommons.org/licenses/by-nc-sa/4.0/</dataset:license>
-    </dataset:dataset>
   </url>
 
   <!-- Five Elements Dataset -->
@@ -38,13 +23,6 @@
     <lastmod>2024-01-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
-    <dataset:dataset>
-      <dataset:name>Five Elements Dataset</dataset:name>
-      <dataset:description>Complete data for the Five Elements (五行) system including generation and control cycles</dataset:description>
-      <dataset:url>https://fatepath.me/datasets/five-elements.json</dataset:url>
-      <dataset:format>application/json</dataset:format>
-      <dataset:license>https://creativecommons.org/licenses/by-nc-sa/4.0/</dataset:license>
-    </dataset:dataset>
   </url>
 
   <!-- Ten Gods System Dataset -->
@@ -53,13 +31,6 @@
     <lastmod>2024-01-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
-    <dataset:dataset>
-      <dataset:name>Ten Gods System Dataset</dataset:name>
-      <dataset:description>Complete data for the Ten Gods (十神) system used in BaZi analysis, including relationships, meanings, and applications</dataset:description>
-      <dataset:url>https://fatepath.me/datasets/ten-gods.json</dataset:url>
-      <dataset:format>application/json</dataset:format>
-      <dataset:license>https://creativecommons.org/licenses/by-nc-sa/4.0/</dataset:license>
-    </dataset:dataset>
   </url>
 
   <!-- Luck Cycles Dataset -->
@@ -68,13 +39,6 @@
     <lastmod>2024-01-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
-    <dataset:dataset>
-      <dataset:name>Luck Cycles Dataset</dataset:name>
-      <dataset:description>Complete data for BaZi luck cycles including Major Luck (大运), Annual Luck (流年), and Monthly Luck (流月) calculations and interpretations</dataset:description>
-      <dataset:url>https://fatepath.me/datasets/luck-cycles.json</dataset:url>
-      <dataset:format>application/json</dataset:format>
-      <dataset:license>https://creativecommons.org/licenses/by-nc-sa/4.0/</dataset:license>
-    </dataset:dataset>
   </url>
 
   <!-- Wealth Stars Dataset -->
@@ -83,13 +47,6 @@
     <lastmod>2024-01-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
-    <dataset:dataset>
-      <dataset:name>Wealth Stars Dataset</dataset:name>
-      <dataset:description>Complete data for BaZi wealth analysis including Wealth Stars (财星), Wealth Gods (财神), and wealth-related Ten Gods combinations</dataset:description>
-      <dataset:url>https://fatepath.me/datasets/wealth-stars.json</dataset:url>
-      <dataset:format>application/json</dataset:format>
-      <dataset:license>https://creativecommons.org/licenses/by-nc-sa/4.0/</dataset:license>
-    </dataset:dataset>
   </url>
 
   <!-- Love Compatibility Dataset -->
@@ -98,13 +55,6 @@
     <lastmod>2024-01-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
-    <dataset:dataset>
-      <dataset:name>Love Compatibility Dataset</dataset:name>
-      <dataset:description>Complete data for BaZi love and relationship analysis including compatibility factors, love stars, and relationship timing</dataset:description>
-      <dataset:url>https://fatepath.me/datasets/love-compatibility.json</dataset:url>
-      <dataset:format>application/json</dataset:format>
-      <dataset:license>https://creativecommons.org/licenses/by-nc-sa/4.0/</dataset:license>
-    </dataset:dataset>
   </url>
 
   <!-- Sixty Jiazi Dataset -->
@@ -113,13 +63,6 @@
     <lastmod>2025-08-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
-    <dataset:dataset>
-      <dataset:name>Sixty Jiazi Dataset</dataset:name>
-      <dataset:description>Complete data for the 60 Jiazi (甲子) combinations - all possible combinations of 10 Heavenly Stems and 12 Earthly Branches used in BaZi analysis</dataset:description>
-      <dataset:url>https://fatepath.me/datasets/sixty-jiazi.json</dataset:url>
-      <dataset:format>application/json</dataset:format>
-      <dataset:license>https://creativecommons.org/licenses/by-nc-sa/4.0/</dataset:license>
-    </dataset:dataset>
   </url>
 
   <!-- Main Resources Page -->
