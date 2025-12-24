@@ -398,14 +398,14 @@ const LoveCompatibilityTest = () => {
                 <div className="bg-gradient-to-r from-pink-500/20 to-purple-500/20 rounded-lg p-6 border border-pink-500/30">
                   <h3 className="text-xl font-bold text-white mb-3">Want More Detailed Analysis?</h3>
                   <p className="text-mystic-300 mb-4">
-                    Get a comprehensive love compatibility report with personalized insights, 
-                    relationship timing, and professional guidance.
+                    Get ongoing personalized love compatibility insights and relationship guidance 
+                    through our Patreon membership. Ask unlimited questions and receive regular updates.
                   </p>
                   <Link
-                    to="/love-form"
+                    to="/services"
                     className="inline-block bg-gradient-to-r from-pink-500 to-purple-600 text-white px-8 py-3 rounded-lg font-bold hover:from-pink-600 hover:to-purple-700 transition-all duration-300"
                   >
-                    Get Detailed Report - $44
+                    Join Patreon Membership
                   </Link>
                 </div>
 

@@ -43,38 +43,12 @@ const FreeBaziReport = () => {
     setShowOfferModal(false)
   }
 
-  // Ko-fi支付链接 - 添加返回URL参数
-  const paypalLink = "https://ko-fi.com/s/b41e787977?return_url=" + encodeURIComponent(window.location.origin + '/form-bazi-discount')
+  // Patreon 链接
+  const patreonUrl = "https://patreon.com/XuanYin178?utm_medium=unknown&utm_source=join_link&utm_campaign=creatorshare_creator&utm_content=copyLink"
 
-  const handlePaypalPayment = () => {
-    // 在新窗口打开Ko-fi支付页面
-    window.open(paypalLink, '_blank', 'noopener,noreferrer')
-    
-    // 显示支付状态提示
-    const showPaymentStatus = (message, isSuccess = false) => {
-      const notification = document.createElement('div')
-      notification.className = `fixed top-4 right-4 px-6 py-3 rounded-lg shadow-lg z-50 transform transition-all duration-300 ${
-        isSuccess ? 'bg-green-600 text-white' : 'bg-orange-600 text-white'
-      }`
-      notification.textContent = message
-      document.body.appendChild(notification)
-      
-      setTimeout(() => {
-        notification.style.transform = 'translateX(100%)'
-        setTimeout(() => {
-          document.body.removeChild(notification)
-        }, 300)
-      }, 3000)
-    }
-    
-    // 显示支付提示信息
-    showPaymentStatus('💳 Please complete the Ko-fi payment in the newly opened tab. Return here after checkout to enter your birth details.', false)
-    
-    // 提示用户支付完成后填写表单
-    setTimeout(() => {
-      showPaymentStatus('📝 Once payment is done, click the button below to fill in your birth information.', false)
-    }, 3000)
-    
+  const handlePatreonClick = () => {
+    // 在新窗口打开 Patreon 页面
+    window.open(patreonUrl, '_blank', 'noopener,noreferrer')
     closeOfferModal()
   }
 
@@ -144,7 +118,20 @@ const FreeBaziReport = () => {
 
   const heavenlyStems = ['甲', '乙', '丙', '丁', '戊', '己', '庚', '辛', '壬', '癸']
   const earthlyBranches = ['子', '丑', '寅', '卯', '辰', '巳', '午', '未', '申', '酉', '戌', '亥']
+  const zodiacAnimals = ['Rat', 'Ox', 'Tiger', 'Rabbit', 'Dragon', 'Snake', 'Horse', 'Goat', 'Monkey', 'Rooster', 'Dog', 'Pig']
+  const zodiacAnimalsCN = ['鼠', '牛', '虎', '兔', '龙', '蛇', '马', '羊', '猴', '鸡', '狗', '猪']
   const DAY_MS = 24 * 60 * 60 * 1000
+
+  // 根据年份地支获取生肖
+  const getZodiacAnimal = (yearBranch) => {
+    const branchIndex = earthlyBranches.indexOf(yearBranch)
+    if (branchIndex === -1) return null
+    return {
+      english: zodiacAnimals[branchIndex],
+      chinese: zodiacAnimalsCN[branchIndex],
+      branch: yearBranch
+    }
+  }
 
   const tenGodLabelMap = {
     Friend: '比肩 (Friend)',
@@ -1956,8 +1943,8 @@ const FreeBaziReport = () => {
       <>
         <SEO 
           title={`${report.name}'s Free Bazi Reading Report | Professional Chinese Numerology Analysis`}
-          description={`Get ${report.name}'s personalized Bazi reading report with detailed analysis of wealth, love, health, and life path based on traditional Chinese numerology. Free comprehensive Bazi chart analysis.`}
-          keywords={`bazi reading report, ${report.name} bazi analysis, free bazi chart, chinese numerology report, bazi wealth analysis, bazi love compatibility, bazi health reading, personalized bazi reading`}
+          description={`Get ${report.name}'s personalized Bazi reading report with detailed analysis of wealth, love, health, zodiac animal, and life path based on traditional Chinese numerology. Free comprehensive Bazi chart analysis.`}
+          keywords={`bazi reading report, ${report.name} bazi analysis, free bazi chart, chinese numerology report, bazi wealth analysis, bazi love compatibility, bazi health reading, personalized bazi reading, zodiac animal, chinese zodiac sign`}
           canonical={`${window.location.origin}/free-bazi-report`}
           ogImage={`${window.location.origin}/images/bazi-reading.jpg`}
           ogType="article"
@@ -2042,7 +2029,7 @@ const FreeBaziReport = () => {
             className="mystic-card p-4 sm:p-8 mb-6 sm:mb-8"
           >
             <h2 className="text-xl sm:text-2xl font-cinzel font-bold mb-4 sm:mb-6 text-gold-400">Your Bazi Chart</h2>
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-3 sm:gap-4">
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-3 sm:gap-4 mb-4 sm:mb-6">
               <div className="text-center p-3 sm:p-4 bg-mystic-800/50 rounded-lg border border-mystic-700/50">
                 <div className="text-xs sm:text-sm text-mystic-400 mb-1 sm:mb-2">Year Pillar</div>
                 <div className="text-lg sm:text-2xl font-bold text-white">{report.bazi.year}</div>
@@ -2060,6 +2047,26 @@ const FreeBaziReport = () => {
                 <div className="text-lg sm:text-2xl font-bold text-white">{report.bazi.hour}</div>
               </div>
             </div>
+            
+            {/* Zodiac Animal */}
+            {(() => {
+              const yearBranch = report.bazi.year?.charAt(1)
+              const zodiac = getZodiacAnimal(yearBranch)
+              if (zodiac) {
+                return (
+                  <div className="text-center p-4 sm:p-6 bg-gradient-to-r from-gold-500/10 to-yellow-500/10 rounded-lg border border-gold-500/30">
+                    <div className="text-xs sm:text-sm text-mystic-400 mb-2">Your Zodiac Animal (生肖)</div>
+                    <div className="text-2xl sm:text-3xl font-bold text-gold-400 mb-1">
+                      {zodiac.chinese} ({zodiac.english})
+                    </div>
+                    <div className="text-sm sm:text-base text-mystic-300">
+                      Year Branch: {zodiac.branch}
+                    </div>
+                  </div>
+                )
+              }
+              return null
+            })()}
           </motion.div>
 
           {/* Five Elements Analysis */}
@@ -2479,53 +2486,51 @@ const FreeBaziReport = () => {
                  {/* Header */}
                  <div className="text-center mb-6">
                    <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-gradient-to-r from-gold-500 to-yellow-500 mb-4">
-                     <Gift className="h-8 w-8 text-white" aria-hidden="true" />
+                     <Crown className="h-8 w-8 text-white" aria-hidden="true" />
                    </div>
                    <h3 className="text-2xl font-cinzel font-bold text-white mb-2">
-                     Quick Bazi Reading - Only $10!
+                     Join My Patreon Community
                    </h3>
                    <p className="text-mystic-300">
-                     You've been reading for {Math.floor(timeSpent / 60)}:{(timeSpent % 60).toString().padStart(2, '0')}
+                     You've been reading for {Math.floor(timeSpent / 60)}:{(timeSpent % 60).toString().padStart(2, '0')} - Get ongoing personalized guidance!
                    </p>
                  </div>
 
                  {/* Offer Content */}
                  <div className="space-y-4 mb-6">
                    <div className="bg-mystic-800/50 rounded-lg p-4 border border-mystic-700/50">
-                     <h4 className="text-lg font-semibold text-gold-400 mb-2">
-                       ⚡ Quick Bazi Reading Package
+                     <h4 className="text-lg font-semibold text-gold-400 mb-3">
+                       ✨ Membership Benefits
                      </h4>
                      <ul className="text-mystic-200 space-y-2 text-sm">
-                       <li>✓ Essential personality analysis</li>
-                       <li>✓ Career direction guidance</li>
-                       <li>✓ Life path insights</li>
-                       <li>✓ Key strengths & challenges</li>
-                       <li>✓ Basic recommendations</li>
+                       <li>✓ Unlimited questions about career, relationships, wealth, health</li>
+                       <li>✓ Personalized BaZi insights and fortune guidance</li>
+                       <li>✓ Regular fortune tips and energy updates</li>
+                       <li>✓ Access to exclusive community posts and Q&A</li>
+                       <li>✓ Priority responses and ongoing support</li>
                      </ul>
                    </div>
 
                    <div className="text-center">
-                     <div className="text-3xl font-bold text-gold-400 mb-2">
-                       <span className="line-through text-mystic-400 text-xl">$38</span>
-                       <span className="ml-2">$10</span>
+                     <div className="text-2xl font-bold text-gold-400 mb-2">
+                       Starting at $15/month
                      </div>
                      <p className="text-mystic-300 text-sm">
-                       Affordable entry-level option - Save 74%
+                       Choose from 3 membership tiers • Cancel anytime
                      </p>
                    </div>
                  </div>
 
                  {/* Action Buttons */}
                  <div className="space-y-3">
-                                       <button
-                      onClick={handlePaypalPayment}
-                      className="touch-target w-full bg-gradient-to-r from-blue-500 to-blue-600 text-white font-semibold rounded-lg hover:from-blue-400 hover:to-blue-500 transition-all duration-300 flex items-center justify-center space-x-2 animate-optimized"
-                    >
-                      <svg className="h-5 w-5" viewBox="0 0 24 24" fill="currentColor">
-                        <path d="M20.067 8.478c.492.315.844.825.844 1.406 0 .58-.352 1.09-.844 1.406-.492.315-1.156.51-1.875.51h-1.406c-.492 0-.844-.195-.844-.51 0-.315.352-.51.844-.51h1.406c.352 0 .703-.195.703-.406 0-.21-.351-.406-.703-.406h-1.406c-.492 0-.844-.195-.844-.51 0-.315.352-.51.844-.51h1.406c.719 0 1.383.195 1.875.51zM12.5 8.478c.492.315.844.825.844 1.406 0 .58-.352 1.09-.844 1.406-.492.315-1.156.51-1.875.51h-1.406c-.492 0-.844-.195-.844-.51 0-.315.352-.51.844-.51h1.406c.352 0 .703-.195.703-.406 0-.21-.351-.406-.703-.406h-1.406c-.492 0-.844-.195-.844-.51 0-.315.352-.51.844-.51h1.406c.719 0 1.383.195 1.875.51zM7.5 8.478c.492.315.844.825.844 1.406 0 .58-.352 1.09-.844 1.406-.492.315-1.156.51-1.875.51H4.219c-.492 0-.844-.195-.844-.51 0-.315.352-.51.844-.51h1.406c.352 0 .703-.195.703-.406 0-.21-.351-.406-.703-.406H4.219c-.492 0-.844-.195-.844-.51 0-.315.352-.51.844-.51h1.406c.719 0 1.383.195 1.875.51z"/>
-                      </svg>
-                      <span>KO-FI</span>
-                    </button>
+                   <button
+                     onClick={handlePatreonClick}
+                     className="touch-target w-full bg-gradient-to-r from-gold-500 to-yellow-500 text-black font-semibold rounded-lg hover:from-gold-400 hover:to-yellow-400 transition-all duration-300 flex items-center justify-center space-x-2 animate-optimized"
+                   >
+                     <Crown className="h-5 w-5" />
+                     <span>Join on Patreon</span>
+                     <ArrowRight className="h-5 w-5" />
+                   </button>
                    
                    <button
                      onClick={closeOfferModal}
@@ -2535,10 +2540,10 @@ const FreeBaziReport = () => {
                    </button>
                  </div>
 
-                 {/* Urgency Message */}
+                 {/* Footer Message */}
                  <div className="mt-4 text-center">
                    <p className="text-xs text-mystic-400">
-                     ⏰ This offer expires when you leave this page
+                     💡 Get continuous guidance, not just a one-time reading
                    </p>
                  </div>
                </motion.div>
@@ -2768,7 +2773,7 @@ const FreeBaziReport = () => {
                 Is this Chinese numerology report really free?
               </h3>
               <p className="text-mystic-300 text-sm leading-relaxed">
-                Yes, our basic BaZi reading report is completely free. We provide comprehensive analysis including your BaZi chart, five elements analysis, and personalized insights for wealth, love, and health. We also offer premium detailed readings for those seeking deeper analysis.
+                Yes, our basic BaZi reading report is completely free. We provide comprehensive analysis including your BaZi chart, five elements analysis, zodiac animal, and personalized insights for wealth, love, and health. For ongoing personalized guidance and unlimited questions, join our Patreon membership community starting at $15/month.
               </p>
             </div>
           </div>
@@ -2791,10 +2796,10 @@ const FreeBaziReport = () => {
               className="p-4 bg-mystic-800/50 border border-mystic-700/50 rounded-lg hover:border-gold-500/50 transition-colors group"
             >
               <h3 className="text-lg font-semibold text-white mb-2 group-hover:text-gold-400">
-                Professional BaZi Consultation
+                Patreon Membership
               </h3>
               <p className="text-mystic-300 text-sm">
-                Get detailed one-on-one consultation with our expert Chinese numerology master
+                Join our Patreon community for ongoing personalized BaZi insights, unlimited questions, and exclusive guidance starting at $15/month
               </p>
             </Link>
             

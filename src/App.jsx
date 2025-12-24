@@ -12,6 +12,7 @@ import { mobileDiagnostics } from './utils/mobileDiagnostics'
 
 // 直接导入Home组件，避免移动端懒加载问题
 import Home from './pages/Home'
+import RedirectToServices from './components/RedirectToServices'
 
 // 懒加载其他页面组件
 const Services = lazy(() => import('./pages/Services'))
@@ -19,14 +20,7 @@ const Contact = lazy(() => import('./pages/Contact'))
 const FAQ = lazy(() => import('./pages/FAQ'))
 const Testimonials = lazy(() => import('./pages/Testimonials'))
 const FreeBaziReport = lazy(() => import('./pages/FreeBaziReport'))
-const BaziForm = lazy(() => import('./pages/BaziForm'))
-const BaziFormDiscount = lazy(() => import('./pages/BaziFormDiscount'))
-const BaziDiscountThankYou = lazy(() => import('./pages/BaziDiscountThankYou'))
-const LoveForm = lazy(() => import('./pages/LoveForm'))
-const TalismanForm = lazy(() => import('./pages/TalismanForm'))
 const WealthSign = lazy(() => import('./pages/WealthSign'))
-const PaymentGuide = lazy(() => import('./pages/PaymentGuide'))
-const PaymentSuccess = lazy(() => import('./pages/PaymentSuccess'))
 const Privacy = lazy(() => import('./pages/Privacy'))
 const Blog = lazy(() => import('./pages/Blog'))
 const BlogPost = lazy(() => import('./pages/BlogPost'))
@@ -74,14 +68,16 @@ function App() {
                   <Route path="/faq" element={<FAQ />} />
                   <Route path="/testimonials" element={<Testimonials />} />
                   <Route path="/free-bazi-report" element={<FreeBaziReport />} />
-                  <Route path="/bazi-form" element={<BaziForm />} />
-                  <Route path="/form-bazi-discount" element={<BaziFormDiscount />} />
-                  <Route path="/bazi-discount-thank-you" element={<BaziDiscountThankYou />} />
-                  <Route path="/love-form" element={<LoveForm />} />
-                  <Route path="/talisman-form" element={<TalismanForm />} />
                   <Route path="/wealth-sign" element={<WealthSign />} />
-                  <Route path="/payment-guide" element={<PaymentGuide />} />
-                  <Route path="/payment-success" element={<PaymentSuccess />} />
+                  
+                  {/* 重定向旧的一次性服务路由到新的会员制服务页面 */}
+                  <Route path="/bazi-form" element={<RedirectToServices />} />
+                  <Route path="/form-bazi-discount" element={<RedirectToServices />} />
+                  <Route path="/bazi-discount-thank-you" element={<RedirectToServices />} />
+                  <Route path="/love-form" element={<RedirectToServices />} />
+                  <Route path="/talisman-form" element={<RedirectToServices />} />
+                  <Route path="/payment-guide" element={<RedirectToServices />} />
+                  <Route path="/payment-success" element={<RedirectToServices />} />
                   <Route path="/privacy" element={<Privacy />} />
                   <Route path="/blog" element={<Blog />} />
                   <Route path="/blog/:slug" element={<BlogPost />} />
