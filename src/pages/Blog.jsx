@@ -241,12 +241,12 @@ const Blog = () => {
       />
       
       {/* Structured Data for SEO */}
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify(structuredData)
-        }}
-      />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(structuredData)
+          }}
+        />
 
       <main className="min-h-screen bg-mystic-900 pt-20">
         {/* Hero Section */}

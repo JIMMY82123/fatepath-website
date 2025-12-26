@@ -122,78 +122,62 @@ const Services = () => {
                 initial={{ opacity: 0, y: 50 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: 0.3 + index * 0.1 }}
-                className={`relative mystic-card p-6 sm:p-8 rounded-2xl border-2 ${tier.borderColor} ${tier.popular ? 'border-gold-500 scale-105 shadow-2xl shadow-gold-500/30 ring-2 ring-gold-500/20' : 'shadow-lg'} flex flex-col h-full transition-all duration-300 hover:shadow-xl`}
+                className={`relative mystic-card p-6 sm:p-8 rounded-2xl border-2 ${tier.borderColor} ${tier.popular ? 'border-gold-500 scale-105 shadow-2xl shadow-gold-500/20' : ''} flex flex-col h-full`}
               >
                 {/* Popular Badge */}
                 {tier.popular && (
-                  <div className="absolute -top-5 left-1/2 transform -translate-x-1/2 z-10">
-                    <div className="bg-gradient-to-r from-gold-500 to-yellow-500 text-black px-5 py-2 rounded-full text-xs font-bold shadow-lg uppercase tracking-wider">
-                      ⭐ MOST POPULAR
+                  <div className="absolute -top-4 left-1/2 transform -translate-x-1/2">
+                    <div className="bg-gradient-to-r from-gold-500 to-yellow-500 text-black px-4 py-1 rounded-full text-xs font-bold">
+                      MOST POPULAR
                     </div>
                   </div>
                 )}
 
-                {/* Header Section */}
-                <div className="text-center mb-6">
-                  {/* Icon */}
-                  <div className={`inline-flex items-center justify-center w-20 h-20 rounded-full bg-gradient-to-r ${tier.color} mb-4 shadow-lg`}>
-                    <div className="text-white">
-                      {tier.icon}
-                    </div>
+                {/* Icon */}
+                <div className={`inline-flex items-center justify-center w-16 h-16 rounded-full bg-gradient-to-r ${tier.color} mb-4`}>
+                  <div className="text-white">
+                    {tier.icon}
                   </div>
+                </div>
 
-                  {/* Title */}
-                  <h2 className="text-2xl sm:text-3xl font-cinzel font-bold mb-2 text-white uppercase tracking-wide">
-                    {tier.name}
-                  </h2>
-                  
-                  {/* Subtitle */}
-                  <p className="text-base sm:text-lg text-gold-400 mb-4 font-poppins font-medium">
-                    {tier.subtitle}
-                  </p>
+                {/* Title & Subtitle */}
+                <h2 className="text-xl sm:text-2xl font-cinzel font-bold mb-2 text-white">
+                  {tier.name}
+                </h2>
+                <p className="text-sm sm:text-base text-gold-400 mb-4 font-poppins">
+                  {tier.subtitle}
+                </p>
 
-                  {/* Price - More Prominent */}
-                  <div className="mb-6 pb-6 border-b border-mystic-700/50">
-                    <div className="flex items-baseline justify-center">
-                      <span className="text-4xl sm:text-5xl font-bold text-white">{tier.price}</span>
-                      <span className="text-mystic-400 ml-2 text-lg">{tier.period}</span>
-                    </div>
+                {/* Price */}
+                <div className="mb-6">
+                  <div className="flex items-baseline">
+                    <span className="text-3xl sm:text-4xl font-bold text-white">{tier.price}</span>
+                    <span className="text-mystic-400 ml-2">{tier.period}</span>
                   </div>
                 </div>
 
                 {/* Description */}
-                <div className="mb-6">
-                  <p className="text-sm sm:text-base text-mystic-200 leading-relaxed text-center">
-                    {tier.description}
-                  </p>
-                </div>
+                <p className="text-sm sm:text-base text-mystic-300 mb-6 leading-relaxed flex-grow">
+                  {tier.description}
+                </p>
 
-                {/* Features Section */}
-                <div className="mb-6 flex-grow">
-                  <div className="bg-mystic-800/30 rounded-lg p-4 sm:p-5 border border-mystic-700/30">
-                    <h3 className="text-sm font-semibold text-gold-400 mb-4 uppercase tracking-wide">
-                      What's Included:
-                    </h3>
-                    <ul className="space-y-3">
-                      {tier.features.map((feature, featureIndex) => (
-                        <li key={featureIndex} className="flex items-start space-x-3">
-                          <div className={`flex-shrink-0 w-6 h-6 rounded-full bg-gradient-to-r ${tier.color} flex items-center justify-center mt-0.5`}>
-                            <Check className="h-4 w-4 text-white" />
-                          </div>
-                          <span className="text-sm sm:text-base text-mystic-200 leading-relaxed flex-1">{feature}</span>
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
+                {/* Features */}
+                <div className="mb-6">
+                  <ul className="space-y-3">
+                    {tier.features.map((feature, featureIndex) => (
+                      <li key={featureIndex} className="flex items-start space-x-3">
+                        <Check className={`h-5 w-5 flex-shrink-0 mt-0.5 text-transparent bg-clip-text bg-gradient-to-r ${tier.color}`} />
+                        <span className="text-sm sm:text-base text-mystic-300 leading-relaxed">{feature}</span>
+                      </li>
+                    ))}
+                  </ul>
                 </div>
 
                 {/* Note */}
                 {tier.note && (
-                  <div className="mb-6 p-3 bg-mystic-800/20 rounded-lg border-l-2 border-gold-500/50">
-                    <p className="text-xs sm:text-sm text-mystic-300 italic leading-relaxed">
-                      {tier.note}
-                    </p>
-                  </div>
+                  <p className="text-xs sm:text-sm text-mystic-400 mb-6 italic">
+                    {tier.note}
+                  </p>
                 )}
 
                 {/* CTA Button */}
@@ -201,12 +185,12 @@ const Services = () => {
                   href={patreonUrl}
                   target="_blank"
                   rel="noopener noreferrer"
-                  whileHover={{ scale: 1.03, y: -2 }}
+                  whileHover={{ scale: 1.02 }}
                   whileTap={{ scale: 0.98 }}
-                  className={`w-full bg-gradient-to-r ${tier.color} text-white font-poppins font-bold py-4 sm:py-5 px-6 rounded-full flex items-center justify-center space-x-2 hover:shadow-lg hover:shadow-${tier.color.split('-')[1]}-500/50 transition-all duration-300 tracking-wide text-base sm:text-lg mt-auto shadow-md`}
+                  className={`w-full bg-gradient-to-r ${tier.color} text-white font-poppins font-semibold py-3 sm:py-4 px-6 rounded-full flex items-center justify-center space-x-2 hover:opacity-90 transition-all duration-300 tracking-wide text-sm sm:text-base mt-auto`}
                 >
                   <span>Join on Patreon</span>
-                  <ArrowRight className="h-5 w-5" />
+                  <ArrowRight className="h-4 w-4 sm:h-5 sm:w-5" />
                 </motion.a>
               </motion.div>
             ))}
