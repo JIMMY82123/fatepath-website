@@ -28,6 +28,7 @@ const Resources = lazy(() => import('./pages/Resources'))
 const DatasetDetail = lazy(() => import('./pages/DatasetDetail'))
 const LoveCompatibilityTest = lazy(() => import('./pages/LoveCompatibilityTest'))
 const AnimationDemo = lazy(() => import('./pages/AnimationDemo'))
+const Forecast2026 = lazy(() => import('./pages/Forecast2026'))
 
 function App() {
   useEffect(() => {
@@ -85,6 +86,7 @@ function App() {
                   <Route path="/resources/:datasetId" element={<DatasetDetail />} />
                   <Route path="/love-compatibility-test" element={<LoveCompatibilityTest />} />
                   <Route path="/animation-demo" element={<AnimationDemo />} />
+                  <Route path="/2026-forecast" element={<Forecast2026 />} />
                 </Routes>
               </Suspense>
             </MobileGestureHandler>
