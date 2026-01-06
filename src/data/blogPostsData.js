@@ -1,4 +1,138 @@
 export const blogPostsData = {
+  "maduro-capture-red-horse-red-sheep-ww3-predictions-2026": {
+    title: "From Maduro's Capture to the Red Horse and Red Sheep Year: Predictions, Including the Outbreak of World War III This Year",
+    excerpt: "At the dawn of 2026, the global geopolitical landscape witnessed a stunning upheaval: U.S. military forces captured Venezuelan President Nicolás Maduro. This dramatic event coincides with the 'Red Horse and Red Sheep Year' cycle in traditional Chinese calendar lore—2026 is the Bingwu year (Fire Horse), followed by 2027 as the Dingwei year (Fire Sheep). This rare superposition of fire elements foretells turmoil and transformation, potentially marking the outbreak of World War III.",
+    content: `
+      <div class="space-y-8">
+        <div class="mb-8">
+          <div class="bg-gradient-to-r from-red-500/20 to-orange-500/20 border border-red-500/30 rounded-lg p-6 mb-8">
+            <h3 class="text-lg font-semibold text-red-400 mb-3">🔥 Key Event: Maduro's Capture</h3>
+            <p class="text-mystic-200 mb-2"><strong>Date:</strong> January 3, 2026</p>
+            <p class="text-mystic-200 mb-2"><strong>Location:</strong> Caracas, Venezuela</p>
+            <p class="text-mystic-200 mb-2"><strong>Action:</strong> U.S. military operation capturing President Nicolás Maduro and his wife, Cilia Flores</p>
+            <p class="text-mystic-200"><strong>Status:</strong> Transferred to federal court in New York for trial</p>
+          </div>
+        </div>
+
+        <h2 class="text-2xl font-bold text-white mb-4 mt-8">The Stunning Opening of 2026</h2>
+        <p class="mb-6 text-lg text-mystic-200 leading-relaxed">
+          At the dawn of 2026, the global geopolitical landscape witnessed a stunning upheaval: On January 3, U.S. military forces executed a daring operation in Caracas, Venezuela, capturing President Nicolás Maduro and his wife, Cilia Flores, before swiftly transferring them to a federal court in New York for trial. Maduro faces grave charges, including drug trafficking, money laundering, corruption, and terrorism-related offenses.
+        </p>
+        <p class="mb-6 text-mystic-200 leading-relaxed">
+          During his initial court appearance on January 5, he denied all allegations, insisting he remains Venezuela's "legitimate president" and describing the operation as a "kidnapping." This event not only culminates years of U.S. pressure on Venezuela but also sparks fierce international debate over sovereignty violations, igniting global uncertainty like a spark in dry tinder.
+        </p>
+
+        <h2 class="text-2xl font-bold text-white mb-4 mt-8">The Red Horse and Red Sheep Year Cycle</h2>
+        <p class="mb-6 text-lg text-mystic-200 leading-relaxed">
+          This dramatic opening coincides precisely with the "Red Horse and Red Sheep Year" cycle in traditional Chinese calendar lore—2026 is the Bingwu year (Fire Horse, red in color), followed by 2027 as the Dingwei year (Fire Sheep, also red). In folk prophetic traditions, this rare superposition of fire elements, occurring every 60 years, is seen as a harbinger of turmoil and transformation, foretelling regime changes, societal conflicts, or natural calamities.
+        </p>
+        
+        <div class="bg-gradient-to-r from-orange-500/20 to-red-500/20 border border-orange-500/30 rounded-lg p-6 mb-6">
+          <h3 class="text-lg font-semibold text-orange-400 mb-3">Historical Parallels</h3>
+          <p class="text-mystic-200 mb-3">
+            Historical parallels include the 1966–1967 cycle overlapping with China's Cultural Revolution and the 1126 Jingkang Incident during a Bingwu year, both marked by national chaos. Today, Maduro's capture seems to fulfill this "calamity," not merely as the beginning of a power vacuum in Latin America but as a prelude to the collapse of multipolar order, with fiery energy propelling the world from post-Cold War stability toward fragmented confrontation.
+          </p>
+        </div>
+
+        <h2 class="text-2xl font-bold text-white mb-4 mt-8">The Accelerating Global Shift</h2>
+        <p class="mb-6 text-lg text-mystic-200 leading-relaxed">
+          Viewed more broadly, this incident accelerates a profound shift in the global pattern. Geopolitically, U.S. unilateral intervention reshapes Latin America: As a major oil producer, Venezuela's regime change could disrupt energy supplies, drive up global oil prices, and provoke countermeasures from China and Russia in the region.
+        </p>
+        <p class="mb-6 text-mystic-200 leading-relaxed">
+          International responses are sharp—the Chinese Foreign Ministry calls for "respect for all nations' sovereignty," yet maintains its stance on Ukraine, exposing great-power hypocrisy. Economically, the Venezuela crisis may link to Middle East tensions, destabilizing OPEC+ decisions and exacerbating worldwide inflation.
+        </p>
+        <p class="mb-6 text-mystic-200 leading-relaxed">
+          From a civilizational clash perspective, it signals confrontation between Western hegemony and the rise of the Global South: Escalating protests in Iran, with the Trump administration issuing warnings like "locked and loaded," fuel fears among Iranian officials of becoming "the next Venezuela."
+        </p>
+
+        <h2 class="text-2xl font-bold text-white mb-4 mt-8">Primary Prediction: The Outbreak of World War III in 2026</h2>
+        <p class="mb-6 text-lg text-mystic-200 leading-relaxed">
+          Drawing from current trends and historical analogies, I offer several predictions here—not mystical speculation, but reasoned inferences from geopolitical logic, energetic patterns, and escalating conflicts. The primary forecast: <strong class="text-red-400">2026 will mark the outbreak of World War III.</strong>
+        </p>
+        <p class="mb-6 text-mystic-200 leading-relaxed">
+          This war will not resemble traditional full-scale nuclear confrontation but a multidomain, multipolar hybrid conflict, ignited by the Venezuela crisis and rapidly spreading to the Middle East, Europe, and Asia-Pacific. Nostradamus's quatrains mentioning a "seven-month great war" and "three fires" may align with this year's multiline conflicts, while Baba Vanga's 2026 visions include economic crises, natural disasters, and global war risks.
+        </p>
+        
+        <div class="bg-gradient-to-r from-red-500/20 to-pink-500/20 border border-red-500/30 rounded-lg p-6 mb-6">
+          <h3 class="text-lg font-semibold text-red-400 mb-3">The Chain Reaction Scenario</h3>
+          <p class="text-mystic-200 leading-relaxed">
+            Specifically, potential U.S. intervention in Iran could trigger a chain reaction: If Iranian protests are suppressed, the Trump administration might mimic the Maduro model with strikes, escalating Middle East "proxy wars" into direct great-power clashes—Russia deepening involvement in Ukraine and Iran, China pressing in the Taiwan Strait, forming a "three fires" battlefield.
+          </p>
+        </div>
+
+        <h2 class="text-2xl font-bold text-white mb-4 mt-8">Additional Predictions</h2>
+        
+        <div class="grid md:grid-cols-2 gap-6 mb-6">
+          <div class="bg-gradient-to-r from-yellow-500/20 to-orange-500/20 border border-yellow-500/30 rounded-lg p-6">
+            <h3 class="text-lg font-semibold text-yellow-400 mb-3">Venezuela: Civil War & Energy Crisis</h3>
+            <p class="text-mystic-200 leading-relaxed">
+              Venezuela will descend into short-term civil war, with oil production dropping 30% by mid-year and global energy prices surging to <strong>$150 per barrel</strong>.
+            </p>
+          </div>
+          
+          <div class="bg-gradient-to-r from-blue-500/20 to-indigo-500/20 border border-blue-500/30 rounded-lg p-6">
+            <h3 class="text-lg font-semibold text-blue-400 mb-3">U.S.-China Relations Deterioration</h3>
+            <p class="text-mystic-200 leading-relaxed">
+              U.S.-China relations will deteriorate sharply, synchronizing Latin American "resistance waves" with heightened Taiwan Strait tensions.
+            </p>
+          </div>
+          
+          <div class="bg-gradient-to-r from-purple-500/20 to-pink-500/20 border border-purple-500/30 rounded-lg p-6">
+            <h3 class="text-lg font-semibold text-purple-400 mb-3">Technological & Economic Restructuring</h3>
+            <p class="text-mystic-200 leading-relaxed">
+              Technological and economic restructuring will accelerate, with agent-level AI breakthroughs widening wealth gaps, though potentially birthing an "energy security pact" to mitigate confrontation.
+            </p>
+          </div>
+          
+          <div class="bg-gradient-to-r from-green-500/20 to-emerald-500/20 border border-green-500/30 rounded-lg p-6">
+            <h3 class="text-lg font-semibold text-green-400 mb-3">The Transformation Opportunity</h3>
+            <p class="text-mystic-200 leading-relaxed">
+              In sum, the "Red Horse and Red Sheep Year" foretells calamity, yet fire destroys the old while forging the new. As Nan Huai-Chin observed, this phase will manifest concentrated civilizational conflicts and breakthroughs.
+            </p>
+          </div>
+        </div>
+
+        <h2 class="text-2xl font-bold text-white mb-4 mt-8">The Path Forward: Transforming Danger into Opportunity</h2>
+        <p class="mb-6 text-lg text-mystic-200 leading-relaxed">
+          Amid this upheaval, only by adapting to the times can we transform danger into opportunity. The Red Horse and Red Sheep years bring not just challenges, but also the potential for profound transformation and the emergence of new global structures.
+        </p>
+        <p class="mb-6 text-mystic-200 leading-relaxed">
+          Understanding these cosmic patterns and geopolitical dynamics allows us to navigate the coming turbulence with greater awareness and preparation. While the predictions may seem dire, they also represent the breaking down of old systems to make way for new ones—a necessary process in the cycle of transformation.
+        </p>
+        
+        <div class="bg-gradient-to-r from-green-500/20 to-blue-500/20 border border-green-500/30 rounded-lg p-6 mb-6">
+          <h3 class="text-lg font-semibold text-green-400 mb-3">Key Takeaways</h3>
+          <ul class="text-mystic-200 space-y-2">
+            <li>• The Maduro capture marks a critical turning point in global geopolitics</li>
+            <li>• The 2026-2027 Red Horse and Red Sheep cycle historically correlates with major global upheavals</li>
+            <li>• A multidomain, multipolar hybrid conflict may emerge, spreading across multiple regions</li>
+            <li>• Energy markets and global supply chains face significant disruption</li>
+            <li>• Adaptation and awareness are key to navigating these transformative times</li>
+          </ul>
+        </div>
+      </div>
+    `,
+    author: 'Master XuanYin',
+    date: '2026-01-06',
+    readTime: '12 min read',
+    category: 'bazi',
+    tags: ['Global Analysis', 'Red Horse Red Sheep', 'Bingwu Dingwei', '2026-2027', 'Geopolitics', 'Venezuela', 'Maduro', 'World War III', 'Global Turmoil', 'Chinese Astrology', 'Historical Cycles', 'Predictions', 'Geopolitical Analysis'],
+    image: '/images/blog/red-horse-red-sheep-global-turmoil-2026-2027-cover.jpg',
+    relatedPosts: [
+      {
+        title: "US Increases Naval Presence Near South America, Citing Drug War; Tension Rises in Venezuela",
+        excerpt: "Deep analysis of US military deployment in Latin America and its connection to the upcoming Red Horse and Red Sheep years.",
+        image: "/images/blog/red-horse-red-sheep-global-turmoil-2026-2027-cover.jpg",
+        slug: "red-horse-red-sheep-global-turmoil-2026-2027"
+      },
+      {
+        title: "2026 Red Horse Year: BaZi Career Playbook for Americans",
+        excerpt: "The coming Bingwu Red Horse year accelerates change across U.S. industries. Learn how different BaZi chart patterns can prepare for the volatility.",
+        image: "/images/blog/red-horse-2026-career.svg",
+        slug: "red-horse-2026-american-career-outlook"
+      }
+    ]
+  },
   "decision-fatigue-burnout-recovery-four-pillars": {
     title: "Decision Fatigue at Work: A Four Pillars Routine for Burnout Recovery",
     excerpt: "Struggling with decision fatigue and burnout? Learn how Chinese Bazi (Four Pillars of Destiny) can help you create a personalized energy recovery plan based on the Five Elements. Discover targeted micro-habits to replenish your depleted energy and restore your decision-making power.",
