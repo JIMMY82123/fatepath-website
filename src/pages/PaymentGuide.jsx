@@ -7,6 +7,23 @@ const PaymentGuide = () => {
   const { service } = useParams()
 
   const serviceConfig = {
+    taster: {
+      name: "2026 Bazi Annual Outlook (Taster)",
+      price: "$15",
+      paypalLink: "https://ko-fi.com/c/aef3d0e0ae",
+      description: "Perfect for first-time clients curious about BaZi. Get a focused 2026 annual fortune report covering wealth, health, and relationship trends. 2-4 page PDF report delivered within 3-5 days. After payment, I will contact you via Ko-fi private message to collect your birth details.",
+      color: "from-green-500 to-emerald-500",
+      icon: "📄"
+    },
+    detailed: {
+      name: "5-Year Bazi Outlook (2026-2030) + WA Q&A",
+      price: "$30",
+      paypalLink: "https://ko-fi.com/c/36342951ca",
+      description: "Comprehensive 5-year fortune analysis with WhatsApp support. Detailed annual insights for 2026-2030 covering wealth, health, relationships, opportunities, and risks. 6-8 page PDF report + WhatsApp Q&A (3-5 questions) delivered within 5-7 days. After payment, I will contact you via Ko-fi private message to collect your birth details.",
+      color: "from-purple-500 to-pink-500",
+      icon: "📚"
+    },
+    // Legacy services (kept for backward compatibility)
     bazi: {
       name: "Detailed Bazi Reading",
       price: "$38",
@@ -45,7 +62,7 @@ const PaymentGuide = () => {
     }
   }
 
-  const config = serviceConfig[service] || serviceConfig.bazi
+  const config = serviceConfig[service] || serviceConfig.taster
   const canonicalUrl = service ? `https://fatepath.me/payment-guide?service=${service}` : 'https://fatepath.me/payment-guide'
   const priceValue = Number(config.price.replace(/[^0-9.]/g, ''))
   const pageTitle = `${config.name} Payment Guide | FatePath`
@@ -82,12 +99,12 @@ const PaymentGuide = () => {
       },
       {
         "@type": "HowToStep",
-        "name": "Submit Your Information",
+        "name": "Provide Your Information",
         "url": `${canonicalUrl}#form`,
         "itemListElement": [
           {
             "@type": "HowToDirection",
-            "text": "Fill out the BaZi information form with your birth details and questions."
+            "text": "After payment, I will contact you via Ko-fi private message to collect your birth details (date, time, location, gender) and any specific questions."
           }
         ]
       },
@@ -161,10 +178,12 @@ const PaymentGuide = () => {
               <h3 className="text-xl font-cinzel font-semibold text-white">Step 1: Complete Payment</h3>
             </div>
             <p className="text-mystic-300 mb-6">
-              Click the button below to complete your payment securely through Ko-fi. After successful payment, you'll be automatically redirected to the form page.
+              Click the button below to complete your payment securely through Ko-fi. After successful payment, I will contact you via Ko-fi private message to collect your birth details.
             </p>
             <a
-              href={config.paypalLink + "?return_url=" + encodeURIComponent(window.location.origin + config.formLink)}
+              href={config.paypalLink}
+              target="_blank"
+              rel="noopener noreferrer"
               className={`inline-block w-full bg-gradient-to-r ${config.color} text-white font-poppins font-semibold py-4 px-8 rounded-full hover:opacity-90 transition-all duration-300 text-center tracking-wide flex items-center justify-center space-x-2`}
             >
               <svg className="h-5 w-5" viewBox="0 0 24 24" fill="currentColor">
@@ -174,24 +193,30 @@ const PaymentGuide = () => {
             </a>
           </div>
 
-          {/* Step 2: Form */}
+          {/* Step 2: Information Collection */}
           <div id="form" className="mystic-card p-8">
             <div className="flex items-center space-x-3 mb-6">
               <div className="w-10 h-10 rounded-full bg-gold-500/20 flex items-center justify-center">
-                <FileText className="h-5 w-5 text-gold-400" aria-hidden="true" />
+                <MessageCircle className="h-5 w-5 text-gold-400" aria-hidden="true" />
               </div>
-              <h3 className="text-xl font-cinzel font-semibold text-white">Step 2: Fill Information Form</h3>
+              <h3 className="text-xl font-cinzel font-semibold text-white">Step 2: Provide Your Information</h3>
             </div>
             <p className="text-mystic-300 mb-6">
-              After payment, please fill out the information form to provide your birth details 
-              and any specific questions you have.
+              After payment, I will contact you via Ko-fi private message to collect your birth details. Please provide:
             </p>
-            <Link
-              to={config.formLink}
-              className="inline-block w-full border border-gold-500/50 text-gold-400 font-poppins font-semibold py-4 px-8 rounded-full hover:bg-gold-500/10 transition-all duration-300 text-center tracking-wide"
-            >
-              Fill Information Form
-            </Link>
+            <ul className="text-mystic-300 space-y-2 mb-6 text-sm">
+              <li>• Date of Birth (Year/Month/Day)</li>
+              <li>• Time of Birth (or "Unknown" if not sure)</li>
+              <li>• Gender</li>
+              <li>• Birth Location (City, Country)</li>
+              <li>• Focus Areas / Specific Questions (optional)</li>
+              {service === 'detailed' && <li>• WhatsApp Number (optional, for Q&A support)</li>}
+            </ul>
+            <div className="bg-mystic-800/50 rounded-lg p-4 border border-mystic-700/50">
+              <p className="text-xs text-mystic-400">
+                <strong className="text-gold-400">Note:</strong> I will send you a private message on Ko-fi after receiving your payment. Please check your Ko-fi messages.
+              </p>
+            </div>
           </div>
         </motion.div>
 

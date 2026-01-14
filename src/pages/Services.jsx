@@ -1,96 +1,77 @@
 import { motion } from 'framer-motion'
-import { Star, ArrowRight, MessageCircle, BookOpen, Crown, Check } from 'lucide-react'
+import { Star, ArrowRight, FileText, BookOpen, Check } from 'lucide-react'
+import { Link } from 'react-router-dom'
 import SEO from '../components/SEO'
-import { getContactLink } from '../config/externalLinks'
 
 const Services = () => {
-  const patreonUrl = "https://patreon.com/XuanYin178?utm_medium=unknown&utm_source=join_link&utm_campaign=creatorshare_creator&utm_content=copyLink"
-
-  const membershipTiers = [
+  const servicePackages = [
     {
       id: 0,
-      name: "Foundation Guidance",
-      subtitle: "Essential Guidance",
+      name: "2026 Bazi Annual Outlook (Taster)",
+      subtitle: "Taster / Basic",
       price: "$15",
-      period: "/month",
-      icon: <MessageCircle className="h-8 w-8" />,
-      description: "Your ongoing access to personalized BaZi insights and fortune guidance through direct chat. Perfect for daily questions, life decisions, or exploring your birth chart at your own pace.",
+      period: "",
+      icon: <FileText className="h-8 w-8" />,
+      description: "Perfect for first-time clients curious about BaZi. Get a focused 2026 annual fortune report covering wealth, health, and relationship trends.",
       features: [
-        "Unlimited questions – ask anything about career, relationships, wealth, health, or personal growth",
-        "Thoughtful, tailored responses (usually within 48 hours)",
-        "Regular fortune tips and energy updates",
-        "Access to exclusive community posts and Q&A threads"
+        "2026 single-year fortune report",
+        "Focus on wealth, health, and relationship trends",
+        "Important notes and precautions for 2026",
+        "2-4 page PDF report",
+        "Delivery within 3-5 days after payment",
+        "One-time report (no WA Q&A)"
       ],
-      note: "To begin: Send me your birth details (date, time, location, gender) via private message after joining – we can start anytime!",
-      color: "from-blue-500 to-cyan-500",
-      bgColor: "bg-blue-500/10",
-      borderColor: "border-blue-500/50",
-      popular: false
+      note: "Ideal for entry-level clients who want to experience BaZi analysis at an affordable price.",
+      color: "from-green-500 to-emerald-500",
+      bgColor: "bg-green-500/10",
+      borderColor: "border-green-500/50",
+      popular: false,
+      kofiLink: "https://ko-fi.com/c/aef3d0e0ae"
     },
     {
       id: 1,
-      name: "Advanced Personalized Reading",
-      subtitle: "Take your guidance to the next level",
-      price: "$38",
-      period: "/month",
+      name: "5-Year Bazi Outlook (2026-2030) + WA Q&A",
+      subtitle: "Detailed / Premium",
+      price: "$30",
+      period: "",
       icon: <BookOpen className="h-8 w-8" />,
-      description: "Take your guidance to the next level with fully customized BaZi analysis and feng shui insights.",
+      description: "Comprehensive 5-year fortune analysis with WhatsApp support. Perfect for clients seeking deep insights and interactive guidance.",
       features: [
-        "Everything in Essential Guidance, plus:",
-        "In-depth personalized BaZi reading based on your unique birth chart",
-        "Tailored feng shui recommendations for your home, office, or personal space",
-        "Unlimited questions with priority responses",
-        "Deeper exploration of career, wealth, relationships, and life decisions"
+        "Detailed 5-year fortune report (2026-2030)",
+        "Annual wealth, health, and relationship trends",
+        "Yearly opportunities, risks, and precautions",
+        "6-8 page PDF report",
+        "Delivery within 5-7 days after payment",
+        "WhatsApp Q&A support (3-5 questions, within 7 days after delivery)"
       ],
-      note: "Perfect for those seeking detailed, individual support year-round.",
+      note: "Perfect for clients who want long-term insights and interactive Q&A support.",
       color: "from-purple-500 to-pink-500",
       bgColor: "bg-purple-500/10",
       borderColor: "border-purple-500/50",
-      popular: true
-    },
-    {
-      id: 2,
-      name: "Premium Mastery Experience",
-      subtitle: "The ultimate personalized fortune package",
-      price: "$138",
-      period: "/month",
-      icon: <Crown className="h-8 w-8" />,
-      description: "The ultimate personalized fortune package with exclusive physical and digital perks.",
-      features: [
-        "Everything in Advanced Personalized Reading, plus:",
-        "Custom crystal fortune bracelet (one-time physical shipment worldwide)",
-        "Personal blessing ritual video tailored to your energy",
-        "In-depth feng shui guidance (feel free to share layout photos)",
-        "Unlimited questions with fastest responses and priority access",
-        "VIP bonus insights and seasonal recommendations"
-      ],
-      note: "For those ready to fully embrace and master their destiny.",
-      color: "from-gold-500 to-orange-500",
-      bgColor: "bg-gold-500/10",
-      borderColor: "border-gold-500/50",
-      popular: false
+      popular: true,
+      kofiLink: "https://ko-fi.com/c/36342951ca"
     }
   ]
 
   return (
     <>
       <SEO 
-        title="Patreon Membership - Personalized BaZi & Feng Shui Guidance | FatePath"
-        description="Join XuanYin's Patreon community for ongoing personalized BaZi insights, fortune guidance, and feng shui recommendations. Choose from three membership tiers starting at $15/month."
-        keywords="patreon membership, bazi reading membership, chinese astrology subscription, feng shui guidance, personalized fortune reading, monthly astrology consultation, bazi analysis subscription, chinese numerology membership"
+        title="BaZi Fortune Reading Services - 2026 Annual & 5-Year Outlook | FatePath"
+        description="Choose from two BaZi fortune reading packages: 2026 Annual Outlook Taster ($15) or Detailed 5-Year Outlook with WhatsApp Q&A ($30). Professional Chinese astrology analysis delivered via PDF report."
+        keywords="bazi reading, chinese astrology, fortune reading, 2026 bazi outlook, 5-year bazi reading, bazi analysis, chinese numerology, annual fortune report, bazi consultation"
         canonical={`${window.location.origin}/services`}
         ogImage={`${window.location.origin}/images/bazi-reading.jpg`}
         ogType="website"
         structuredData={{
           "@context": "https://schema.org",
           "@type": "Service",
-          "name": "Patreon Membership - Personalized BaZi & Feng Shui Guidance",
-          "description": "Monthly membership for ongoing personalized Chinese astrology consultation and BaZi reading services",
+          "name": "BaZi Fortune Reading Services",
+          "description": "Professional Chinese astrology BaZi reading services with annual and 5-year fortune analysis",
           "provider": {
             "@type": "Organization",
             "name": "FatePath"
           },
-          "serviceType": "Chinese Astrology Membership",
+          "serviceType": "Chinese Astrology Reading",
           "areaServed": "Worldwide"
         }}
       />
@@ -107,16 +88,16 @@ const Services = () => {
               <Star className="h-8 w-8 sm:h-10 sm:w-10 text-white" aria-hidden="true" />
             </div>
             <h1 className="text-2xl sm:text-3xl md:text-4xl font-cinzel font-bold mb-3 sm:mb-4 text-white">
-              Patreon Membership
+              BaZi Fortune Reading Services
             </h1>
             <p className="text-lg sm:text-xl text-mystic-300 max-w-3xl mx-auto">
-              Join my Patreon community for ongoing personalized BaZi insights, fortune guidance, and exclusive access to ancient Chinese wisdom
+              Choose from two professional BaZi reading packages. Get personalized fortune insights for 2026 or comprehensive 5-year analysis with interactive support.
             </p>
           </motion.div>
 
-          {/* Membership Tiers - Card Layout */}
-          <div className="grid md:grid-cols-3 gap-6 sm:gap-8 mb-12 sm:mb-16">
-            {membershipTiers.map((tier, index) => (
+          {/* Service Packages - Card Layout */}
+          <div className="grid md:grid-cols-2 gap-6 sm:gap-8 mb-12 sm:mb-16 max-w-5xl mx-auto">
+            {servicePackages.map((tier, index) => (
               <motion.div
                 key={tier.id}
                 initial={{ opacity: 0, y: 50 }}
@@ -152,7 +133,7 @@ const Services = () => {
                 <div className="mb-6">
                   <div className="flex items-baseline">
                     <span className="text-3xl sm:text-4xl font-bold text-white">{tier.price}</span>
-                    <span className="text-mystic-400 ml-2">{tier.period}</span>
+                    {tier.period && <span className="text-mystic-400 ml-2">{tier.period}</span>}
                   </div>
                 </div>
 
@@ -182,14 +163,14 @@ const Services = () => {
 
                 {/* CTA Button */}
                 <motion.a
-                  href={patreonUrl}
+                  href={tier.kofiLink}
                   target="_blank"
                   rel="noopener noreferrer"
                   whileHover={{ scale: 1.02 }}
                   whileTap={{ scale: 0.98 }}
                   className={`w-full bg-gradient-to-r ${tier.color} text-white font-poppins font-semibold py-3 sm:py-4 px-6 rounded-full flex items-center justify-center space-x-2 hover:opacity-90 transition-all duration-300 tracking-wide text-sm sm:text-base mt-auto`}
                 >
-                  <span>Join on Patreon</span>
+                  <span>Pay with Ko-fi</span>
                   <ArrowRight className="h-4 w-4 sm:h-5 sm:w-5" />
                 </motion.a>
               </motion.div>
@@ -197,7 +178,7 @@ const Services = () => {
           </div>
         </div>
 
-        {/* How to Contact After Joining */}
+        {/* Service Process */}
         <motion.div 
           initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: 1, y: 0 }}
@@ -207,88 +188,52 @@ const Services = () => {
           <div className="mystic-card p-6 sm:p-8 max-w-4xl mx-auto border-2 border-gold-500/30 bg-gradient-to-r from-gold-500/5 to-yellow-500/5">
             <div className="text-center mb-6">
               <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-gradient-to-r from-gold-500 to-yellow-500 mb-4">
-                <MessageCircle className="h-8 w-8 text-white" />
+                <Star className="h-8 w-8 text-white" />
               </div>
               <h3 className="text-xl sm:text-2xl font-cinzel font-semibold mb-3 text-white">
-                How to Contact After Joining
+                How It Works
               </h3>
               <p className="text-sm sm:text-base text-mystic-300 mb-6">
-                Once you've joined our Patreon community, you can reach out for personalized guidance through either of these convenient methods:
+                Simple three-step process to get your personalized BaZi fortune reading:
               </p>
             </div>
             
-            <div className="grid md:grid-cols-2 gap-4 sm:gap-6">
-              {/* Patreon Message Option */}
-              <div className="p-4 sm:p-6 bg-mystic-800/50 rounded-lg border border-mystic-700/50">
-                <div className="flex items-center space-x-3 mb-3">
-                  <div className="w-10 h-10 rounded-full bg-gradient-to-r from-orange-500 to-red-500 flex items-center justify-center">
-                    <MessageCircle className="h-5 w-5 text-white" />
-                  </div>
-                  <h4 className="text-lg font-semibold text-white">Patreon Direct Message</h4>
+            <div className="grid md:grid-cols-3 gap-4 sm:gap-6">
+              <div className="p-4 sm:p-6 bg-mystic-800/50 rounded-lg border border-mystic-700/50 text-center">
+                <div className="w-12 h-12 rounded-full bg-gradient-to-r from-blue-500 to-cyan-500 flex items-center justify-center mx-auto mb-3">
+                  <span className="text-white font-bold text-lg">1</span>
                 </div>
-                <p className="text-sm sm:text-base text-mystic-300 leading-relaxed mb-3">
-                  Send me a private message directly on Patreon. This is the easiest way to share your birth details and ask questions.
-                </p>
-                <p className="text-xs sm:text-sm text-mystic-400 italic">
-                  Simply go to your Patreon membership page and click "Message Creator"
+                <h4 className="text-lg font-semibold text-white mb-2">Complete Payment</h4>
+                <p className="text-sm text-mystic-300">
+                  Pay securely through Ko-fi using the payment link for your chosen package.
                 </p>
               </div>
 
-              {/* WhatsApp Option */}
-              <div className="p-4 sm:p-6 bg-mystic-800/50 rounded-lg border border-mystic-700/50">
-                <div className="flex items-center space-x-3 mb-3">
-                  <div className="w-10 h-10 rounded-full bg-gradient-to-r from-green-500 to-green-600 flex items-center justify-center">
-                    <MessageCircle className="h-5 w-5 text-white" />
-                  </div>
-                  <h4 className="text-lg font-semibold text-white">WhatsApp Consultation</h4>
+              <div className="p-4 sm:p-6 bg-mystic-800/50 rounded-lg border border-mystic-700/50 text-center">
+                <div className="w-12 h-12 rounded-full bg-gradient-to-r from-purple-500 to-pink-500 flex items-center justify-center mx-auto mb-3">
+                  <span className="text-white font-bold text-lg">2</span>
                 </div>
-                <p className="text-sm sm:text-base text-mystic-300 leading-relaxed mb-3">
-                  Add me on WhatsApp for direct messaging. Perfect for quick questions and ongoing conversations.
+                <h4 className="text-lg font-semibold text-white mb-2">Provide Your Information</h4>
+                <p className="text-sm text-mystic-300">
+                  I will contact you via Ko-fi private message to collect your birth details (date, time, location, gender) and any specific questions.
                 </p>
-                <a
-                  href={getContactLink('whatsapp')}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center space-x-2 text-green-400 hover:text-green-300 transition-colors text-sm sm:text-base font-medium"
-                >
-                  <span>Add on WhatsApp</span>
-                  <ArrowRight className="h-4 w-4" />
-                </a>
+              </div>
+
+              <div className="p-4 sm:p-6 bg-mystic-800/50 rounded-lg border border-mystic-700/50 text-center">
+                <div className="w-12 h-12 rounded-full bg-gradient-to-r from-green-500 to-emerald-500 flex items-center justify-center mx-auto mb-3">
+                  <span className="text-white font-bold text-lg">3</span>
+                </div>
+                <h4 className="text-lg font-semibold text-white mb-2">Receive Your Report</h4>
+                <p className="text-sm text-mystic-300">
+                  Get your personalized PDF report delivered to your email within the specified timeframe.
+                </p>
               </div>
             </div>
 
             <div className="mt-6 p-4 bg-mystic-800/30 rounded-lg border border-mystic-700/30">
               <p className="text-xs sm:text-sm text-mystic-300 text-center">
-                <span className="text-gold-400 font-semibold">💡 Tip:</span> After joining, send your birth details (date, time, location, gender) via your preferred method to get started with personalized guidance.
+                <span className="text-gold-400 font-semibold">💡 Note:</span> After payment, I will contact you via Ko-fi private message to collect your birth details. Please check your Ko-fi messages and provide accurate information for the most accurate analysis.
               </p>
-            </div>
-          </div>
-        </motion.div>
-
-        {/* Additional Info */}
-        <motion.div 
-          initial={{ opacity: 0, y: 50 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.7 }}
-          className="mt-16 text-center"
-        >
-          <div className="mystic-card p-8 max-w-4xl mx-auto">
-            <h3 className="text-2xl font-cinzel font-semibold mb-4 text-white">
-              Why Join My Patreon Community?
-            </h3>
-            <div className="grid md:grid-cols-3 gap-6 text-left">
-              <div>
-                <h4 className="font-semibold text-gold-400 mb-2">Ongoing Support</h4>
-                <p className="text-mystic-300 text-sm">Get continuous guidance and insights, not just a one-time reading. Ask questions anytime and receive personalized responses.</p>
-              </div>
-              <div>
-                <h4 className="font-semibold text-gold-400 mb-2">Exclusive Access</h4>
-                <p className="text-mystic-300 text-sm">Access exclusive community posts, Q&A sessions, and private guidance notes available only to members.</p>
-              </div>
-              <div>
-                <h4 className="font-semibold text-gold-400 mb-2">Flexible Membership</h4>
-                <p className="text-mystic-300 text-sm">Choose the tier that fits your needs. Cancel anytime - no long-term commitment required.</p>
-              </div>
             </div>
           </div>
         </motion.div>
