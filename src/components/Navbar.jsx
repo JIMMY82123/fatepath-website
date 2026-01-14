@@ -30,7 +30,7 @@ const Navbar = () => {
     { path: '/services', label: 'Services' },
     { path: '/blog', label: 'Blog' },
     { 
-      label: 'Astro Tools',
+      label: 'Bazi Tools',
       hasDropdown: true,
       items: [
         { path: '/free-bazi-report', label: 'Free Bazi Report' },
