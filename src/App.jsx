@@ -31,7 +31,6 @@ const AnimationDemo = lazy(() => import('./pages/AnimationDemo'))
 const Forecast2026 = lazy(() => import('./pages/Forecast2026'))
 const BaziForm = lazy(() => import('./pages/BaziForm'))
 const DayMasterCalculator = lazy(() => import('./pages/DayMasterCalculator'))
-const DayMasterCalculator = lazy(() => import('./pages/DayMasterCalculator'))
 
 function App() {
   useEffect(() => {
