@@ -562,10 +562,20 @@ const TenGodsAnalyzer = () => {
                 <div className="mystic-card p-6 sm:p-8">
                   <h3 className="text-xl font-cinzel font-bold mb-4 text-white">Dominant Ten Gods</h3>
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                    {result.tenGods.dominantGods.map((god, index) => (
+                    {result.tenGods.dominantGods.map((god, index) => {
+                      const getBorderColor = (category) => {
+                        switch(category) {
+                          case 'Wealth': return 'border-green-500/50'
+                          case 'Authority': return 'border-purple-500/50'
+                          case 'Resource': return 'border-blue-500/50'
+                          case 'Output': return 'border-yellow-500/50'
+                          default: return 'border-gray-500/50'
+                        }
+                      }
+                      return (
                       <div 
                         key={index}
-                        className={`bg-gradient-to-r ${getCategoryColor(god.category)}/20 border-2 border-${god.category === 'Wealth' ? 'green' : god.category === 'Authority' ? 'purple' : god.category === 'Resource' ? 'blue' : god.category === 'Output' ? 'yellow' : 'gray'}-500/50 rounded-lg p-4`}
+                        className={`bg-gradient-to-r ${getCategoryColor(god.category)}/20 border-2 ${getBorderColor(god.category)} rounded-lg p-4`}
                       >
                         <div className="flex items-center justify-between mb-2">
                           <h4 className="text-lg font-semibold text-white">{god.label}</h4>
