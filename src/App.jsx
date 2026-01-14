@@ -29,6 +29,7 @@ const DatasetDetail = lazy(() => import('./pages/DatasetDetail'))
 const LoveCompatibilityTest = lazy(() => import('./pages/LoveCompatibilityTest'))
 const AnimationDemo = lazy(() => import('./pages/AnimationDemo'))
 const Forecast2026 = lazy(() => import('./pages/Forecast2026'))
+const BaziForm = lazy(() => import('./pages/BaziForm'))
 
 function App() {
   useEffect(() => {
@@ -70,6 +71,9 @@ function App() {
                   <Route path="/testimonials" element={<Testimonials />} />
                   <Route path="/free-bazi-report" element={<FreeBaziReport />} />
                   <Route path="/wealth-sign" element={<WealthSign />} />
+                  
+                  {/* 表单页面 */}
+                  <Route path="/form-bazi" element={<BaziForm />} />
                   
                   {/* 重定向旧的一次性服务路由到新的会员制服务页面 */}
                   <Route path="/bazi-form" element={<RedirectToServices />} />
