@@ -17,32 +17,243 @@ const TrueSolarTimeCalculator = () => {
   const [result, setResult] = useState(null)
   const [isCalculating, setIsCalculating] = useState(false)
 
-  // 常见城市的经度数据
+  // 全球主要城市数据库（按国家/地区组织）
   const cityCoordinates = {
-    'New York': { longitude: -74.006, timezone: 'America/New_York' },
-    'Los Angeles': { longitude: -118.243, timezone: 'America/Los_Angeles' },
-    'Chicago': { longitude: -87.629, timezone: 'America/Chicago' },
-    'Houston': { longitude: -95.369, timezone: 'America/Chicago' },
-    'Phoenix': { longitude: -112.074, timezone: 'America/Phoenix' },
-    'Philadelphia': { longitude: -75.165, timezone: 'America/New_York' },
-    'San Antonio': { longitude: -98.493, timezone: 'America/Chicago' },
-    'San Diego': { longitude: -117.161, timezone: 'America/Los_Angeles' },
-    'Dallas': { longitude: -96.797, timezone: 'America/Chicago' },
-    'San Jose': { longitude: -121.886, timezone: 'America/Los_Angeles' },
-    'Beijing': { longitude: 116.407, timezone: 'Asia/Shanghai' },
-    'Shanghai': { longitude: 121.473, timezone: 'Asia/Shanghai' },
-    'Guangzhou': { longitude: 113.264, timezone: 'Asia/Shanghai' },
-    'Shenzhen': { longitude: 114.057, timezone: 'Asia/Shanghai' },
-    'Hong Kong': { longitude: 114.169, timezone: 'Asia/Hong_Kong' },
-    'Taipei': { longitude: 121.565, timezone: 'Asia/Taipei' },
+    // 美国
+    'New York, USA': { longitude: -74.006, timezone: 'America/New_York' },
+    'Los Angeles, USA': { longitude: -118.243, timezone: 'America/Los_Angeles' },
+    'Chicago, USA': { longitude: -87.629, timezone: 'America/Chicago' },
+    'Houston, USA': { longitude: -95.369, timezone: 'America/Chicago' },
+    'Phoenix, USA': { longitude: -112.074, timezone: 'America/Phoenix' },
+    'Philadelphia, USA': { longitude: -75.165, timezone: 'America/New_York' },
+    'San Antonio, USA': { longitude: -98.493, timezone: 'America/Chicago' },
+    'San Diego, USA': { longitude: -117.161, timezone: 'America/Los_Angeles' },
+    'Dallas, USA': { longitude: -96.797, timezone: 'America/Chicago' },
+    'San Jose, USA': { longitude: -121.886, timezone: 'America/Los_Angeles' },
+    'Austin, USA': { longitude: -97.743, timezone: 'America/Chicago' },
+    'Jacksonville, USA': { longitude: -81.655, timezone: 'America/New_York' },
+    'Fort Worth, USA': { longitude: -97.330, timezone: 'America/Chicago' },
+    'Columbus, USA': { longitude: -82.998, timezone: 'America/New_York' },
+    'Charlotte, USA': { longitude: -80.843, timezone: 'America/New_York' },
+    'San Francisco, USA': { longitude: -122.419, timezone: 'America/Los_Angeles' },
+    'Indianapolis, USA': { longitude: -86.158, timezone: 'America/Indiana/Indianapolis' },
+    'Seattle, USA': { longitude: -122.332, timezone: 'America/Los_Angeles' },
+    'Denver, USA': { longitude: -104.990, timezone: 'America/Denver' },
+    'Boston, USA': { longitude: -71.058, timezone: 'America/New_York' },
+    'El Paso, USA': { longitude: -106.485, timezone: 'America/Denver' },
+    'Detroit, USA': { longitude: -83.045, timezone: 'America/Detroit' },
+    'Nashville, USA': { longitude: -86.781, timezone: 'America/Chicago' },
+    'Portland, USA': { longitude: -122.679, timezone: 'America/Los_Angeles' },
+    'Oklahoma City, USA': { longitude: -97.516, timezone: 'America/Chicago' },
+    'Las Vegas, USA': { longitude: -115.173, timezone: 'America/Los_Angeles' },
+    'Memphis, USA': { longitude: -90.049, timezone: 'America/Chicago' },
+    'Louisville, USA': { longitude: -85.758, timezone: 'America/New_York' },
+    'Baltimore, USA': { longitude: -76.612, timezone: 'America/New_York' },
+    'Milwaukee, USA': { longitude: -87.907, timezone: 'America/Chicago' },
+    'Albuquerque, USA': { longitude: -106.651, timezone: 'America/Denver' },
+    'Tucson, USA': { longitude: -110.926, timezone: 'America/Phoenix' },
+    'Fresno, USA': { longitude: -119.787, timezone: 'America/Los_Angeles' },
+    'Sacramento, USA': { longitude: -121.494, timezone: 'America/Los_Angeles' },
+    'Kansas City, USA': { longitude: -94.579, timezone: 'America/Chicago' },
+    'Mesa, USA': { longitude: -111.832, timezone: 'America/Phoenix' },
+    'Atlanta, USA': { longitude: -84.388, timezone: 'America/New_York' },
+    'Omaha, USA': { longitude: -95.934, timezone: 'America/Chicago' },
+    'Colorado Springs, USA': { longitude: -104.821, timezone: 'America/Denver' },
+    'Raleigh, USA': { longitude: -78.639, timezone: 'America/New_York' },
+    'Miami, USA': { longitude: -80.192, timezone: 'America/New_York' },
+    'Virginia Beach, USA': { longitude: -76.005, timezone: 'America/New_York' },
+    'Oakland, USA': { longitude: -122.271, timezone: 'America/Los_Angeles' },
+    'Minneapolis, USA': { longitude: -93.265, timezone: 'America/Chicago' },
+    'Tulsa, USA': { longitude: -95.993, timezone: 'America/Chicago' },
+    'Cleveland, USA': { longitude: -81.695, timezone: 'America/New_York' },
+    'Wichita, USA': { longitude: -97.336, timezone: 'America/Chicago' },
+    'Arlington, USA': { longitude: -97.108, timezone: 'America/Chicago' },
+    
+    // 中国
+    'Beijing, China': { longitude: 116.407, timezone: 'Asia/Shanghai' },
+    'Shanghai, China': { longitude: 121.473, timezone: 'Asia/Shanghai' },
+    'Guangzhou, China': { longitude: 113.264, timezone: 'Asia/Shanghai' },
+    'Shenzhen, China': { longitude: 114.057, timezone: 'Asia/Shanghai' },
+    'Chengdu, China': { longitude: 104.066, timezone: 'Asia/Shanghai' },
+    'Hangzhou, China': { longitude: 120.155, timezone: 'Asia/Shanghai' },
+    'Wuhan, China': { longitude: 114.316, timezone: 'Asia/Shanghai' },
+    'Xi\'an, China': { longitude: 108.940, timezone: 'Asia/Shanghai' },
+    'Nanjing, China': { longitude: 118.797, timezone: 'Asia/Shanghai' },
+    'Tianjin, China': { longitude: 117.201, timezone: 'Asia/Shanghai' },
+    'Suzhou, China': { longitude: 120.585, timezone: 'Asia/Shanghai' },
+    'Chongqing, China': { longitude: 106.551, timezone: 'Asia/Shanghai' },
+    'Dongguan, China': { longitude: 113.752, timezone: 'Asia/Shanghai' },
+    'Foshan, China': { longitude: 113.122, timezone: 'Asia/Shanghai' },
+    'Jinan, China': { longitude: 117.121, timezone: 'Asia/Shanghai' },
+    'Dalian, China': { longitude: 121.615, timezone: 'Asia/Shanghai' },
+    'Qingdao, China': { longitude: 120.382, timezone: 'Asia/Shanghai' },
+    'Zhengzhou, China': { longitude: 113.665, timezone: 'Asia/Shanghai' },
+    'Changsha, China': { longitude: 112.938, timezone: 'Asia/Shanghai' },
+    'Kunming, China': { longitude: 102.833, timezone: 'Asia/Shanghai' },
+    'Shenyang, China': { longitude: 123.432, timezone: 'Asia/Shanghai' },
+    'Xiamen, China': { longitude: 118.110, timezone: 'Asia/Shanghai' },
+    'Harbin, China': { longitude: 126.642, timezone: 'Asia/Shanghai' },
+    'Fuzhou, China': { longitude: 119.306, timezone: 'Asia/Shanghai' },
+    'Changchun, China': { longitude: 125.324, timezone: 'Asia/Shanghai' },
+    'Shijiazhuang, China': { longitude: 114.514, timezone: 'Asia/Shanghai' },
+    'Ningbo, China': { longitude: 121.544, timezone: 'Asia/Shanghai' },
+    'Taiyuan, China': { longitude: 112.549, timezone: 'Asia/Shanghai' },
+    'Hefei, China': { longitude: 117.227, timezone: 'Asia/Shanghai' },
+    'Nanning, China': { longitude: 108.320, timezone: 'Asia/Shanghai' },
+    'Urumqi, China': { longitude: 87.617, timezone: 'Asia/Urumqi' },
+    'Lhasa, China': { longitude: 91.186, timezone: 'Asia/Shanghai' },
+    
+    // 中国特别行政区及台湾
+    'Hong Kong, China': { longitude: 114.169, timezone: 'Asia/Hong_Kong' },
+    'Macau, China': { longitude: 113.543, timezone: 'Asia/Macau' },
+    'Taipei, Taiwan': { longitude: 121.565, timezone: 'Asia/Taipei' },
+    'Kaohsiung, Taiwan': { longitude: 120.312, timezone: 'Asia/Taipei' },
+    'Taichung, Taiwan': { longitude: 120.672, timezone: 'Asia/Taipei' },
+    'Tainan, Taiwan': { longitude: 120.213, timezone: 'Asia/Taipei' },
+    
+    // 日本
+    'Tokyo, Japan': { longitude: 139.691, timezone: 'Asia/Tokyo' },
+    'Osaka, Japan': { longitude: 135.502, timezone: 'Asia/Tokyo' },
+    'Yokohama, Japan': { longitude: 139.650, timezone: 'Asia/Tokyo' },
+    'Nagoya, Japan': { longitude: 136.906, timezone: 'Asia/Tokyo' },
+    'Sapporo, Japan': { longitude: 141.354, timezone: 'Asia/Tokyo' },
+    'Fukuoka, Japan': { longitude: 130.401, timezone: 'Asia/Tokyo' },
+    'Kobe, Japan': { longitude: 135.195, timezone: 'Asia/Tokyo' },
+    'Kyoto, Japan': { longitude: 135.768, timezone: 'Asia/Tokyo' },
+    'Sendai, Japan': { longitude: 140.872, timezone: 'Asia/Tokyo' },
+    'Hiroshima, Japan': { longitude: 132.455, timezone: 'Asia/Tokyo' },
+    
+    // 韩国
+    'Seoul, South Korea': { longitude: 126.978, timezone: 'Asia/Seoul' },
+    'Busan, South Korea': { longitude: 129.075, timezone: 'Asia/Seoul' },
+    'Incheon, South Korea': { longitude: 126.705, timezone: 'Asia/Seoul' },
+    'Daegu, South Korea': { longitude: 128.591, timezone: 'Asia/Seoul' },
+    'Daejeon, South Korea': { longitude: 127.385, timezone: 'Asia/Seoul' },
+    'Gwangju, South Korea': { longitude: 126.853, timezone: 'Asia/Seoul' },
+    'Ulsan, South Korea': { longitude: 129.312, timezone: 'Asia/Seoul' },
+    
+    // 东南亚
     'Singapore': { longitude: 103.819, timezone: 'Asia/Singapore' },
-    'Tokyo': { longitude: 139.691, timezone: 'Asia/Tokyo' },
-    'London': { longitude: -0.127, timezone: 'Europe/London' },
-    'Paris': { longitude: 2.352, timezone: 'Europe/Paris' },
-    'Sydney': { longitude: 151.209, timezone: 'Australia/Sydney' },
-    'Melbourne': { longitude: 144.963, timezone: 'Australia/Melbourne' },
-    'Toronto': { longitude: -79.383, timezone: 'America/Toronto' },
-    'Vancouver': { longitude: -123.121, timezone: 'America/Vancouver' }
+    'Bangkok, Thailand': { longitude: 100.501, timezone: 'Asia/Bangkok' },
+    'Kuala Lumpur, Malaysia': { longitude: 101.686, timezone: 'Asia/Kuala_Lumpur' },
+    'Jakarta, Indonesia': { longitude: 106.845, timezone: 'Asia/Jakarta' },
+    'Manila, Philippines': { longitude: 120.984, timezone: 'Asia/Manila' },
+    'Ho Chi Minh City, Vietnam': { longitude: 106.629, timezone: 'Asia/Ho_Chi_Minh' },
+    'Hanoi, Vietnam': { longitude: 105.841, timezone: 'Asia/Ho_Chi_Minh' },
+    'Yangon, Myanmar': { longitude: 96.156, timezone: 'Asia/Yangon' },
+    'Phnom Penh, Cambodia': { longitude: 104.916, timezone: 'Asia/Phnom_Penh' },
+    'Vientiane, Laos': { longitude: 102.633, timezone: 'Asia/Vientiane' },
+    'Bandar Seri Begawan, Brunei': { longitude: 114.948, timezone: 'Asia/Brunei' },
+    
+    // 印度
+    'Mumbai, India': { longitude: 72.877, timezone: 'Asia/Kolkata' },
+    'Delhi, India': { longitude: 77.102, timezone: 'Asia/Kolkata' },
+    'Bangalore, India': { longitude: 77.594, timezone: 'Asia/Kolkata' },
+    'Hyderabad, India': { longitude: 78.486, timezone: 'Asia/Kolkata' },
+    'Chennai, India': { longitude: 80.271, timezone: 'Asia/Kolkata' },
+    'Kolkata, India': { longitude: 88.363, timezone: 'Asia/Kolkata' },
+    'Pune, India': { longitude: 73.856, timezone: 'Asia/Kolkata' },
+    'Ahmedabad, India': { longitude: 72.571, timezone: 'Asia/Kolkata' },
+    'Jaipur, India': { longitude: 75.787, timezone: 'Asia/Kolkata' },
+    'Surat, India': { longitude: 72.831, timezone: 'Asia/Kolkata' },
+    
+    // 欧洲
+    'London, UK': { longitude: -0.127, timezone: 'Europe/London' },
+    'Paris, France': { longitude: 2.352, timezone: 'Europe/Paris' },
+    'Berlin, Germany': { longitude: 13.405, timezone: 'Europe/Berlin' },
+    'Madrid, Spain': { longitude: -3.703, timezone: 'Europe/Madrid' },
+    'Rome, Italy': { longitude: 12.496, timezone: 'Europe/Rome' },
+    'Amsterdam, Netherlands': { longitude: 4.904, timezone: 'Europe/Amsterdam' },
+    'Brussels, Belgium': { longitude: 4.352, timezone: 'Europe/Brussels' },
+    'Vienna, Austria': { longitude: 16.373, timezone: 'Europe/Vienna' },
+    'Zurich, Switzerland': { longitude: 8.541, timezone: 'Europe/Zurich' },
+    'Stockholm, Sweden': { longitude: 18.068, timezone: 'Europe/Stockholm' },
+    'Copenhagen, Denmark': { longitude: 12.568, timezone: 'Europe/Copenhagen' },
+    'Oslo, Norway': { longitude: 10.752, timezone: 'Europe/Oslo' },
+    'Helsinki, Finland': { longitude: 24.938, timezone: 'Europe/Helsinki' },
+    'Dublin, Ireland': { longitude: -6.260, timezone: 'Europe/Dublin' },
+    'Lisbon, Portugal': { longitude: -9.139, timezone: 'Europe/Lisbon' },
+    'Athens, Greece': { longitude: 23.727, timezone: 'Europe/Athens' },
+    'Warsaw, Poland': { longitude: 21.012, timezone: 'Europe/Warsaw' },
+    'Prague, Czech Republic': { longitude: 14.437, timezone: 'Europe/Prague' },
+    'Budapest, Hungary': { longitude: 19.040, timezone: 'Europe/Budapest' },
+    'Bucharest, Romania': { longitude: 26.102, timezone: 'Europe/Bucharest' },
+    'Moscow, Russia': { longitude: 37.617, timezone: 'Europe/Moscow' },
+    'Saint Petersburg, Russia': { longitude: 30.315, timezone: 'Europe/Moscow' },
+    'Istanbul, Turkey': { longitude: 28.978, timezone: 'Europe/Istanbul' },
+    
+    // 加拿大
+    'Toronto, Canada': { longitude: -79.383, timezone: 'America/Toronto' },
+    'Vancouver, Canada': { longitude: -123.121, timezone: 'America/Vancouver' },
+    'Montreal, Canada': { longitude: -73.567, timezone: 'America/Toronto' },
+    'Calgary, Canada': { longitude: -114.071, timezone: 'America/Edmonton' },
+    'Ottawa, Canada': { longitude: -75.697, timezone: 'America/Toronto' },
+    'Edmonton, Canada': { longitude: -113.491, timezone: 'America/Edmonton' },
+    'Winnipeg, Canada': { longitude: -97.138, timezone: 'America/Winnipeg' },
+    'Quebec City, Canada': { longitude: -71.208, timezone: 'America/Toronto' },
+    'Hamilton, Canada': { longitude: -79.871, timezone: 'America/Toronto' },
+    'Halifax, Canada': { longitude: -63.575, timezone: 'America/Halifax' },
+    
+    // 澳大利亚
+    'Sydney, Australia': { longitude: 151.209, timezone: 'Australia/Sydney' },
+    'Melbourne, Australia': { longitude: 144.963, timezone: 'Australia/Melbourne' },
+    'Brisbane, Australia': { longitude: 153.025, timezone: 'Australia/Brisbane' },
+    'Perth, Australia': { longitude: 115.860, timezone: 'Australia/Perth' },
+    'Adelaide, Australia': { longitude: 138.600, timezone: 'Australia/Adelaide' },
+    'Gold Coast, Australia': { longitude: 153.430, timezone: 'Australia/Brisbane' },
+    'Newcastle, Australia': { longitude: 151.781, timezone: 'Australia/Sydney' },
+    'Canberra, Australia': { longitude: 149.130, timezone: 'Australia/Sydney' },
+    'Hobart, Australia': { longitude: 147.327, timezone: 'Australia/Hobart' },
+    'Darwin, Australia': { longitude: 130.841, timezone: 'Australia/Darwin' },
+    
+    // 新西兰
+    'Auckland, New Zealand': { longitude: 174.763, timezone: 'Pacific/Auckland' },
+    'Wellington, New Zealand': { longitude: 174.777, timezone: 'Pacific/Auckland' },
+    'Christchurch, New Zealand': { longitude: 172.636, timezone: 'Pacific/Auckland' },
+    'Hamilton, New Zealand': { longitude: 175.283, timezone: 'Pacific/Auckland' },
+    
+    // 中东
+    'Dubai, UAE': { longitude: 55.270, timezone: 'Asia/Dubai' },
+    'Abu Dhabi, UAE': { longitude: 54.377, timezone: 'Asia/Dubai' },
+    'Riyadh, Saudi Arabia': { longitude: 46.675, timezone: 'Asia/Riyadh' },
+    'Jeddah, Saudi Arabia': { longitude: 39.184, timezone: 'Asia/Riyadh' },
+    'Tel Aviv, Israel': { longitude: 34.782, timezone: 'Asia/Jerusalem' },
+    'Jerusalem, Israel': { longitude: 35.213, timezone: 'Asia/Jerusalem' },
+    'Tehran, Iran': { longitude: 51.389, timezone: 'Asia/Tehran' },
+    'Baghdad, Iraq': { longitude: 44.366, timezone: 'Asia/Baghdad' },
+    'Kuwait City, Kuwait': { longitude: 47.978, timezone: 'Asia/Kuwait' },
+    'Doha, Qatar': { longitude: 51.531, timezone: 'Asia/Qatar' },
+    'Manama, Bahrain': { longitude: 50.586, timezone: 'Asia/Bahrain' },
+    'Muscat, Oman': { longitude: 58.405, timezone: 'Asia/Muscat' },
+    
+    // 南美洲
+    'São Paulo, Brazil': { longitude: -46.633, timezone: 'America/Sao_Paulo' },
+    'Rio de Janeiro, Brazil': { longitude: -43.172, timezone: 'America/Sao_Paulo' },
+    'Buenos Aires, Argentina': { longitude: -58.381, timezone: 'America/Argentina/Buenos_Aires' },
+    'Lima, Peru': { longitude: -77.042, timezone: 'America/Lima' },
+    'Bogotá, Colombia': { longitude: -74.072, timezone: 'America/Bogota' },
+    'Santiago, Chile': { longitude: -70.669, timezone: 'America/Santiago' },
+    'Caracas, Venezuela': { longitude: -66.904, timezone: 'America/Caracas' },
+    'Quito, Ecuador': { longitude: -78.467, timezone: 'America/Guayaquil' },
+    'Montevideo, Uruguay': { longitude: -56.164, timezone: 'America/Montevideo' },
+    'Asunción, Paraguay': { longitude: -57.575, timezone: 'America/Asuncion' },
+    
+    // 非洲
+    'Cairo, Egypt': { longitude: 31.235, timezone: 'Africa/Cairo' },
+    'Johannesburg, South Africa': { longitude: 28.047, timezone: 'Africa/Johannesburg' },
+    'Cape Town, South Africa': { longitude: 18.424, timezone: 'Africa/Johannesburg' },
+    'Lagos, Nigeria': { longitude: 3.379, timezone: 'Africa/Lagos' },
+    'Nairobi, Kenya': { longitude: 36.821, timezone: 'Africa/Nairobi' },
+    'Casablanca, Morocco': { longitude: -7.589, timezone: 'Africa/Casablanca' },
+    'Tunis, Tunisia': { longitude: 10.181, timezone: 'Africa/Tunis' },
+    'Algiers, Algeria': { longitude: 3.058, timezone: 'Africa/Algiers' },
+    'Addis Ababa, Ethiopia': { longitude: 38.746, timezone: 'Africa/Addis_Ababa' },
+    'Dar es Salaam, Tanzania': { longitude: 39.208, timezone: 'Africa/Dar_es_Salaam' },
+    
+    // 其他
+    'Mexico City, Mexico': { longitude: -99.133, timezone: 'America/Mexico_City' },
+    'Guadalajara, Mexico': { longitude: -103.349, timezone: 'America/Mexico_City' },
+    'Monterrey, Mexico': { longitude: -100.316, timezone: 'America/Monterrey' }
   }
 
   const handleInputChange = (e) => {
@@ -298,22 +509,103 @@ const TrueSolarTimeCalculator = () => {
                 >
                   <option value="">Select a city or enter manually</option>
                   <optgroup label="United States">
+                    {Object.keys(cityCoordinates).filter(city => city.includes(', USA')).map(city => (
+                      <option key={city} value={city}>{city}</option>
+                    ))}
+                  </optgroup>
+                  <optgroup label="China">
+                    {Object.keys(cityCoordinates).filter(city => city.includes(', China')).map(city => (
+                      <option key={city} value={city}>{city}</option>
+                    ))}
+                  </optgroup>
+                  <optgroup label="Taiwan">
+                    {Object.keys(cityCoordinates).filter(city => city.includes(', Taiwan')).map(city => (
+                      <option key={city} value={city}>{city}</option>
+                    ))}
+                  </optgroup>
+                  <optgroup label="Japan">
+                    {Object.keys(cityCoordinates).filter(city => city.includes(', Japan')).map(city => (
+                      <option key={city} value={city}>{city}</option>
+                    ))}
+                  </optgroup>
+                  <optgroup label="South Korea">
+                    {Object.keys(cityCoordinates).filter(city => city.includes(', South Korea')).map(city => (
+                      <option key={city} value={city}>{city}</option>
+                    ))}
+                  </optgroup>
+                  <optgroup label="Southeast Asia">
                     {Object.keys(cityCoordinates).filter(city => 
-                      ['New York', 'Los Angeles', 'Chicago', 'Houston', 'Phoenix', 'Philadelphia', 'San Antonio', 'San Diego', 'Dallas', 'San Jose'].includes(city)
+                      city.includes('Singapore') || city.includes(', Thailand') || city.includes(', Malaysia') || 
+                      city.includes(', Indonesia') || city.includes(', Philippines') || city.includes(', Vietnam') ||
+                      city.includes(', Myanmar') || city.includes(', Cambodia') || city.includes(', Laos') || city.includes(', Brunei')
                     ).map(city => (
                       <option key={city} value={city}>{city}</option>
                     ))}
                   </optgroup>
-                  <optgroup label="China & Asia">
+                  <optgroup label="India">
+                    {Object.keys(cityCoordinates).filter(city => city.includes(', India')).map(city => (
+                      <option key={city} value={city}>{city}</option>
+                    ))}
+                  </optgroup>
+                  <optgroup label="Europe">
                     {Object.keys(cityCoordinates).filter(city => 
-                      ['Beijing', 'Shanghai', 'Guangzhou', 'Shenzhen', 'Hong Kong', 'Taipei', 'Singapore', 'Tokyo'].includes(city)
+                      city.includes(', UK') || city.includes(', France') || city.includes(', Germany') ||
+                      city.includes(', Spain') || city.includes(', Italy') || city.includes(', Netherlands') ||
+                      city.includes(', Belgium') || city.includes(', Austria') || city.includes(', Switzerland') ||
+                      city.includes(', Sweden') || city.includes(', Denmark') || city.includes(', Norway') ||
+                      city.includes(', Finland') || city.includes(', Ireland') || city.includes(', Portugal') ||
+                      city.includes(', Greece') || city.includes(', Poland') || city.includes(', Czech Republic') ||
+                      city.includes(', Hungary') || city.includes(', Romania') || city.includes(', Russia') ||
+                      city.includes(', Turkey')
+                    ).map(city => (
+                      <option key={city} value={city}>{city}</option>
+                    ))}
+                  </optgroup>
+                  <optgroup label="Canada">
+                    {Object.keys(cityCoordinates).filter(city => city.includes(', Canada')).map(city => (
+                      <option key={city} value={city}>{city}</option>
+                    ))}
+                  </optgroup>
+                  <optgroup label="Australia">
+                    {Object.keys(cityCoordinates).filter(city => city.includes(', Australia')).map(city => (
+                      <option key={city} value={city}>{city}</option>
+                    ))}
+                  </optgroup>
+                  <optgroup label="New Zealand">
+                    {Object.keys(cityCoordinates).filter(city => city.includes(', New Zealand')).map(city => (
+                      <option key={city} value={city}>{city}</option>
+                    ))}
+                  </optgroup>
+                  <optgroup label="Middle East">
+                    {Object.keys(cityCoordinates).filter(city => 
+                      city.includes(', UAE') || city.includes(', Saudi Arabia') || city.includes(', Israel') ||
+                      city.includes(', Iran') || city.includes(', Iraq') || city.includes(', Kuwait') ||
+                      city.includes(', Qatar') || city.includes(', Bahrain') || city.includes(', Oman')
+                    ).map(city => (
+                      <option key={city} value={city}>{city}</option>
+                    ))}
+                  </optgroup>
+                  <optgroup label="South America">
+                    {Object.keys(cityCoordinates).filter(city => 
+                      city.includes(', Brazil') || city.includes(', Argentina') || city.includes(', Peru') ||
+                      city.includes(', Colombia') || city.includes(', Chile') || city.includes(', Venezuela') ||
+                      city.includes(', Ecuador') || city.includes(', Uruguay') || city.includes(', Paraguay')
+                    ).map(city => (
+                      <option key={city} value={city}>{city}</option>
+                    ))}
+                  </optgroup>
+                  <optgroup label="Africa">
+                    {Object.keys(cityCoordinates).filter(city => 
+                      city.includes(', Egypt') || city.includes(', South Africa') || city.includes(', Nigeria') ||
+                      city.includes(', Kenya') || city.includes(', Morocco') || city.includes(', Tunisia') ||
+                      city.includes(', Algeria') || city.includes(', Ethiopia') || city.includes(', Tanzania')
                     ).map(city => (
                       <option key={city} value={city}>{city}</option>
                     ))}
                   </optgroup>
                   <optgroup label="Other">
                     {Object.keys(cityCoordinates).filter(city => 
-                      !['New York', 'Los Angeles', 'Chicago', 'Houston', 'Phoenix', 'Philadelphia', 'San Antonio', 'San Diego', 'Dallas', 'San Jose', 'Beijing', 'Shanghai', 'Guangzhou', 'Shenzhen', 'Hong Kong', 'Taipei', 'Singapore', 'Tokyo'].includes(city)
+                      city.includes(', Mexico')
                     ).map(city => (
                       <option key={city} value={city}>{city}</option>
                     ))}
