@@ -10,6 +10,7 @@ const BaziForm = () => {
   const [formData, setFormData] = useState({
     fullName: '',
     email: '',
+    waNumber: '',
     gender: '',
     dateOfBirth: '',
     timeOfBirth: '',
@@ -31,7 +32,7 @@ const BaziForm = () => {
     setIsSubmitting(true)
 
     try {
-      const response = await fetch('https://formbold.com/s/35AWZ', {
+      const response = await fetch('https://formbold.com/s/9BavY', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -162,6 +163,25 @@ const BaziForm = () => {
                 className="w-full px-4 py-3 text-base bg-mystic-800/50 border border-mystic-700/50 rounded-lg text-white placeholder-mystic-400 focus:border-gold-500/50 focus:outline-none transition-colors"
                 placeholder="Enter your email address"
               />
+            </div>
+
+            {/* WhatsApp Number */}
+            <div>
+              <label htmlFor="waNumber" className="block text-sm font-medium text-mystic-200 mb-2">
+                WA Number (Optional)
+              </label>
+              <input
+                type="text"
+                id="waNumber"
+                name="waNumber"
+                value={formData.waNumber}
+                onChange={handleInputChange}
+                className="w-full px-4 py-3 text-base bg-mystic-800/50 border border-mystic-700/50 rounded-lg text-white placeholder-mystic-400 focus:border-gold-500/50 focus:outline-none transition-colors"
+                placeholder="Enter your WhatsApp number (e.g., +1234567890)"
+              />
+              <p className="text-xs text-mystic-400 mt-2 leading-relaxed">
+                I will send you monthly fortune tips, monthly reminders, or BaZi knowledge (free benefits). Only used for this service, not for other purposes. Completely confidential.
+              </p>
             </div>
 
             {/* Gender */}
