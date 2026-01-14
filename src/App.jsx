@@ -30,6 +30,8 @@ const LoveCompatibilityTest = lazy(() => import('./pages/LoveCompatibilityTest')
 const AnimationDemo = lazy(() => import('./pages/AnimationDemo'))
 const Forecast2026 = lazy(() => import('./pages/Forecast2026'))
 const BaziForm = lazy(() => import('./pages/BaziForm'))
+const DayMasterCalculator = lazy(() => import('./pages/DayMasterCalculator'))
+const DayMasterCalculator = lazy(() => import('./pages/DayMasterCalculator'))
 
 function App() {
   useEffect(() => {
@@ -70,6 +72,7 @@ function App() {
                   <Route path="/faq" element={<FAQ />} />
                   <Route path="/testimonials" element={<Testimonials />} />
                   <Route path="/free-bazi-report" element={<FreeBaziReport />} />
+                  <Route path="/tools/day-master-calculator" element={<DayMasterCalculator />} />
                   <Route path="/wealth-sign" element={<WealthSign />} />
                   
                   {/* 表单页面 */}
