@@ -2207,6 +2207,29 @@ const FreeBaziReport = () => {
                   </div>
                 </div>
               )}
+
+              {/* Complete Ten Gods Statistics */}
+              <div className="mt-6">
+                <h3 className="text-lg font-semibold text-white mb-3">Complete Ten Gods Statistics</h3>
+                <div className="grid grid-cols-2 sm:grid-cols-5 gap-3">
+                  {Object.entries(report.tenGods.counts).map(([key, count]) => (
+                    <div 
+                      key={key} 
+                      className={`bg-mystic-800/40 rounded-lg p-3 text-center border ${
+                        count > 0 ? 'border-gold-500/50' : 'border-mystic-700/30'
+                      }`}
+                    >
+                      <p className="text-xs text-mystic-400 mb-1">{tenGodLabelMap[key]}</p>
+                      <p className={`text-xl font-bold ${count > 0 ? 'text-gold-400' : 'text-mystic-500'}`}>
+                        {count}
+                      </p>
+                    </div>
+                  ))}
+                </div>
+                <p className="text-xs text-mystic-400 mt-3 text-center">
+                  All Ten Gods are displayed. Count shows how many times each appears in your chart (Year, Month, Hour stems).
+                </p>
+              </div>
             </motion.div>
           )}
 
