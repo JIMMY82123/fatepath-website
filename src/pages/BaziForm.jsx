@@ -120,51 +120,13 @@ const BaziForm = () => {
           <h1 className="text-2xl sm:text-3xl md:text-4xl font-cinzel font-bold mb-3 sm:mb-4 text-white tracking-wide">
             Detailed Bazi Reading Service
           </h1>
-          <p className="text-lg sm:text-xl text-mystic-300">
-            10,000+ Word Report + Expert Consultation + Annual Fortune Analysis
-          </p>
-        </motion.div>
-
-        {/* Service Introduction */}
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.2 }}
-          className="mystic-card p-6 sm:p-8 mb-6 sm:mb-8"
-        >
-          <div className="text-center mb-6 sm:mb-8">
-            <h2 className="text-xl sm:text-2xl font-cinzel font-bold mb-4 text-gold-400">Service Content</h2>
-            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 sm:gap-6">
-              <div className="p-4 bg-mystic-800/30 rounded-lg border border-mystic-700/50">
-                <div className="text-2xl sm:text-3xl mb-2">📄</div>
-                <h3 className="font-semibold text-white mb-2 text-sm sm:text-base">10,000+ Word Report</h3>
-                <p className="text-xs sm:text-sm text-mystic-300">Comprehensive analysis covering wealth, relationships, health, and career</p>
-              </div>
-              <div className="p-4 bg-mystic-800/30 rounded-lg border border-mystic-700/50">
-                <div className="text-2xl sm:text-3xl mb-2">👨‍🏫</div>
-                <h3 className="font-semibold text-white mb-2 text-sm sm:text-base">Expert Consultation</h3>
-                <p className="text-xs sm:text-sm text-mystic-300">One-on-one consultation with experienced Bazi master</p>
-              </div>
-              <div className="p-4 bg-mystic-800/30 rounded-lg border border-mystic-700/50 sm:col-span-2 md:col-span-1">
-                <div className="text-2xl sm:text-3xl mb-2">📅</div>
-                <h3 className="font-semibold text-white mb-2 text-sm sm:text-base">Annual Fortune Analysis</h3>
-                <p className="text-xs sm:text-sm text-mystic-300">3-year fortune prediction with guidance for success</p>
-              </div>
-            </div>
-          </div>
-          
-          <div className="text-center p-4 sm:p-6 bg-gradient-to-r from-gold-500/20 to-yellow-500/20 rounded-lg border border-gold-500/30">
-            <h3 className="text-lg sm:text-xl font-cinzel font-bold mb-2 text-gold-400">Service Price</h3>
-            <div className="text-2xl sm:text-3xl font-bold text-white mb-2">$38</div>
-                            <p className="text-sm sm:text-base text-mystic-300">Completed within 24 hours, PayPal payment accepted</p>
-          </div>
         </motion.div>
 
         {/* Form */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.3 }}
+          transition={{ duration: 0.8, delay: 0.2 }}
           className="mystic-card p-6 sm:p-8"
         >
           <form onSubmit={handleSubmit} className="space-y-5 sm:space-y-6">
