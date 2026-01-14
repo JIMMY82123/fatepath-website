@@ -14,13 +14,20 @@ const TenGodsAnalyzer = () => {
   const [result, setResult] = useState(null)
   const [isCalculating, setIsCalculating] = useState(false)
 
-  // 五行元素映射表
+  // 五行元素映射表（与FreeBaziReport.jsx保持一致）
   const elementMapping = {
+    // 天干五行
     '甲': 'Wood', '乙': 'Wood',
     '丙': 'Fire', '丁': 'Fire', 
     '戊': 'Earth', '己': 'Earth',
     '庚': 'Metal', '辛': 'Metal',
-    '壬': 'Water', '癸': 'Water'
+    '壬': 'Water', '癸': 'Water',
+    // 地支五行（虽然十神只看天干，但保留完整映射）
+    '寅': 'Wood', '卯': 'Wood',
+    '巳': 'Fire', '午': 'Fire',
+    '辰': 'Earth', '戌': 'Earth', '丑': 'Earth', '未': 'Earth',
+    '申': 'Metal', '酉': 'Metal',
+    '子': 'Water', '亥': 'Water'
   }
 
   const yinYangMap = {
@@ -31,20 +38,20 @@ const TenGodsAnalyzer = () => {
     '壬': 'Yang', '癸': 'Yin'
   }
 
-  const elementProducingMap = {
-    Wood: 'Water',
-    Fire: 'Wood',
-    Earth: 'Fire',
-    Metal: 'Earth',
-    Water: 'Metal'
-  }
-
   const generatingElementMap = {
     Wood: 'Fire',
     Fire: 'Earth',
     Earth: 'Metal',
     Metal: 'Water',
     Water: 'Wood'
+  }
+
+  const elementProducingMap = {
+    Wood: 'Water',
+    Fire: 'Wood',
+    Earth: 'Fire',
+    Metal: 'Earth',
+    Water: 'Metal'
   }
 
   const controllingElementMap = {
@@ -187,7 +194,7 @@ const TenGodsAnalyzer = () => {
     }))
   }
 
-  // 计算十神
+  // 计算十神（完全复制FreeBaziReport.jsx中的逻辑）
   const getTenGod = (dayStem, targetStem) => {
     if (!dayStem || !targetStem) return null
 
