@@ -7,16 +7,20 @@ const today = new Date().toISOString().split('T')[0]; // YYYY-MM-DD format
 
 // 静态页面配置
 const staticPages = [
-  { url: '/', priority: '1.0', changefreq: 'weekly', lastmod: '2025-12-17' },
-  { url: '/services', priority: '0.9', changefreq: 'monthly', lastmod: '2025-12-23' },
+  { url: '/', priority: '1.0', changefreq: 'weekly', lastmod: today },
+  { url: '/services', priority: '0.9', changefreq: 'monthly', lastmod: today },
   { url: '/blog', priority: '0.8', changefreq: 'weekly', lastmod: today },
-  { url: '/faq', priority: '0.7', changefreq: 'monthly', lastmod: '2025-12-17' },
-  { url: '/contact', priority: '0.7', changefreq: 'monthly', lastmod: '2025-12-17' },
-  { url: '/testimonials', priority: '0.6', changefreq: 'monthly', lastmod: '2025-12-17' },
-  { url: '/free-bazi-report', priority: '0.9', changefreq: 'weekly', lastmod: '2025-12-17' },
-  { url: '/love-compatibility-test', priority: '0.6', changefreq: 'monthly', lastmod: '2025-12-17' },
-  { url: '/privacy', priority: '0.3', changefreq: 'yearly', lastmod: '2025-12-17' },
-  { url: '/wealth-sign', priority: '0.8', changefreq: 'weekly', lastmod: '2025-12-17' },
+  { url: '/faq', priority: '0.7', changefreq: 'monthly', lastmod: today },
+  { url: '/contact', priority: '0.7', changefreq: 'monthly', lastmod: today },
+  { url: '/testimonials', priority: '0.6', changefreq: 'monthly', lastmod: today },
+  { url: '/resources', priority: '0.7', changefreq: 'monthly', lastmod: today },
+  { url: '/free-bazi-report', priority: '0.9', changefreq: 'weekly', lastmod: today },
+  { url: '/tools/day-master-calculator', priority: '0.8', changefreq: 'monthly', lastmod: today },
+  { url: '/tools/true-solar-time-calculator', priority: '0.8', changefreq: 'monthly', lastmod: today },
+  { url: '/tools/ten-gods-analyzer', priority: '0.8', changefreq: 'monthly', lastmod: today },
+  { url: '/love-compatibility-test', priority: '0.6', changefreq: 'monthly', lastmod: today },
+  { url: '/privacy', priority: '0.3', changefreq: 'yearly', lastmod: today },
+  { url: '/wealth-sign', priority: '0.8', changefreq: 'weekly', lastmod: today },
   { url: '/2026-forecast', priority: '0.9', changefreq: 'monthly', lastmod: today },
 ];
 

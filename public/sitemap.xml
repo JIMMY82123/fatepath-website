@@ -3,13 +3,13 @@
   <!-- 主页 -->
   <url>
     <loc>https://fatepath.me/</loc>
-    <lastmod>2025-12-17</lastmod>
+    <lastmod>2025-12-29</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>https://fatepath.me/services</loc>
-    <lastmod>2025-12-23</lastmod>
+    <lastmod>2025-12-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
@@ -21,43 +21,67 @@
   </url>
   <url>
     <loc>https://fatepath.me/faq</loc>
-    <lastmod>2025-12-17</lastmod>
+    <lastmod>2025-12-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://fatepath.me/contact</loc>
-    <lastmod>2025-12-17</lastmod>
+    <lastmod>2025-12-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://fatepath.me/testimonials</loc>
-    <lastmod>2025-12-17</lastmod>
+    <lastmod>2025-12-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://fatepath.me/resources</loc>
+    <lastmod>2025-12-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://fatepath.me/free-bazi-report</loc>
-    <lastmod>2025-12-17</lastmod>
+    <lastmod>2025-12-29</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
+    <loc>https://fatepath.me/tools/day-master-calculator</loc>
+    <lastmod>2025-12-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://fatepath.me/tools/true-solar-time-calculator</loc>
+    <lastmod>2025-12-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://fatepath.me/tools/ten-gods-analyzer</loc>
+    <lastmod>2025-12-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://fatepath.me/love-compatibility-test</loc>
-    <lastmod>2025-12-17</lastmod>
+    <lastmod>2025-12-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://fatepath.me/privacy</loc>
-    <lastmod>2025-12-17</lastmod>
+    <lastmod>2025-12-29</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
   <url>
     <loc>https://fatepath.me/wealth-sign</loc>
-    <lastmod>2025-12-17</lastmod>
+    <lastmod>2025-12-29</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -69,6 +93,18 @@
   </url>
 
   <!-- 博客文章 - 按发布时间排序（最新的在前） -->
+  <url>
+    <loc>https://fatepath.me/blog/yu-zhao-shen-ying-zhen-jing-vs-zi-ping-bazi</loc>
+    <lastmod>2025-12-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://fatepath.me/blog/maduro-capture-red-horse-red-sheep-ww3-predictions-2026</loc>
+    <lastmod>2025-12-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
   <url>
     <loc>https://fatepath.me/blog/tylor-chase-tragic-fate-chinese-metaphysics-bazi-fengshui</loc>
     <lastmod>2025-12-25</lastmod>
