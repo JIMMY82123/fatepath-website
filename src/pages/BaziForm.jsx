@@ -61,7 +61,7 @@ const BaziForm = () => {
       <>
         <SEO 
           title="BaZi Reading Request Submitted | Thank You | FatePath"
-          description="Your BaZi reading request has been submitted successfully. Your detailed report will be delivered within 24 hours with comprehensive analysis of your personality, career, relationships, and life path."
+          description="Your BaZi reading request has been submitted successfully. Your detailed report will be delivered within 3 to 5 days with comprehensive analysis of your personality, career, relationships, and life path."
           keywords="bazi reading submitted, thank you, bazi report confirmation, chinese astrology request received"
           canonical="https://fatepath.me/bazi-form"
         />
@@ -79,7 +79,7 @@ const BaziForm = () => {
               </h1>
               <p className="text-mystic-300 mb-8 text-lg">
                 Your Bazi reading request has been submitted successfully. 
-                                I will analyze your birth chart and send your detailed report within 24 hours.
+                                I will analyze your birth chart and send your detailed report within 3 to 5 days.
               </p>
               <Link
                 to="/"
