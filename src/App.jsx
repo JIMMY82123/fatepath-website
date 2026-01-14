@@ -32,6 +32,7 @@ const Forecast2026 = lazy(() => import('./pages/Forecast2026'))
 const BaziForm = lazy(() => import('./pages/BaziForm'))
 const DayMasterCalculator = lazy(() => import('./pages/DayMasterCalculator'))
 const TrueSolarTimeCalculator = lazy(() => import('./pages/TrueSolarTimeCalculator'))
+const TenGodsAnalyzer = lazy(() => import('./pages/TenGodsAnalyzer'))
 
 function App() {
   useEffect(() => {
@@ -74,6 +75,7 @@ function App() {
                   <Route path="/free-bazi-report" element={<FreeBaziReport />} />
                   <Route path="/tools/day-master-calculator" element={<DayMasterCalculator />} />
                   <Route path="/tools/true-solar-time-calculator" element={<TrueSolarTimeCalculator />} />
+                  <Route path="/tools/ten-gods-analyzer" element={<TenGodsAnalyzer />} />
                   <Route path="/wealth-sign" element={<WealthSign />} />
                   
                   {/* 表单页面 */}

@@ -36,6 +36,7 @@ const Navbar = () => {
         { path: '/free-bazi-report', label: 'Free Bazi Report' },
         { path: '/tools/day-master-calculator', label: 'Day Master Strength Calculator' },
         { path: '/tools/true-solar-time-calculator', label: 'True Solar Time Calculator' },
+        { path: '/tools/ten-gods-analyzer', label: 'Ten Gods Analyzer' },
         { path: '/resources', label: 'Resources' }
       ]
     },
