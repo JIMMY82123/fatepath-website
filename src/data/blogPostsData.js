@@ -4967,9 +4967,18 @@ export const blogPostsData = {
       ]
     },
     "health-destiny-report-woman-wellness-path": {
-      title: "Health Destiny Report: A Woman's Wellness Path Through BaZi",
-      excerpt: "Discover how your birth chart reveals your health destiny. Learn about wellness cycles, key years for health optimization, and practical strategies for maintaining vitality through BaZi analysis.",
-      content: `
+      title: {
+        en: "Health Destiny Report: A Woman's Wellness Path Through BaZi",
+        ja: "健康運命レポート：八字を通じた女性のウェルネスパス",
+        ko: "건강 운명 보고서：사주를 통한 여성의 웰니스 경로"
+      },
+      excerpt: {
+        en: "Discover how your birth chart reveals your health destiny. Learn about wellness cycles, key years for health optimization, and practical strategies for maintaining vitality through BaZi analysis.",
+        ja: "あなたの出生チャートが健康運命をどのように明らかにするかを発見してください。ウェルネスサイクル、健康最適化の重要な年、八字分析を通じた活力維持の実用的な戦略について学びます。",
+        ko: "당신의 출생 차트가 건강 운명을 어떻게 드러내는지 발견하세요。웰니스 사이클，건강 최적화의 핵심 연도，사주 분석을 통한 활력 유지의 실용적인 전략에 대해 배웁니다。"
+      },
+      content: {
+        en: `
         <div class="mb-8">
           <div class="bg-gradient-to-r from-green-500/20 to-emerald-500/20 border border-green-500/30 rounded-lg p-6 mb-8">
             <h3 class="text-lg font-semibold text-green-400 mb-3">🌿 Health Report Summary</h3>
@@ -5160,6 +5169,331 @@ export const blogPostsData = {
           </p>
         </div>
       `,
+        ja: `
+        <div class="mb-8">
+          <div class="bg-gradient-to-r from-green-500/20 to-emerald-500/20 border border-green-500/30 rounded-lg p-6 mb-8">
+            <h3 class="text-lg font-semibold text-green-400 mb-3">🌿 健康レポートの要約</h3>
+            <p class="text-mystic-200 mb-2"><strong>対象：</strong> 女性、1988年10月21日生まれ</p>
+            <p class="text-mystic-200 mb-2"><strong>旧暦日付：</strong> 9月13日、午前7時</p>
+            <p class="text-mystic-200 mb-2"><strong>重要な発見：</strong> 健康と活力はライフスタイルのバランスと深く結びついています</p>
+            <p class="text-mystic-200"><strong>ピークウェルネス期間：</strong> 2026-2030年（30代後半から40代前半）</p>
+          </div>
+        </div>
+
+        <h2 class="text-2xl font-bold text-white mb-4 mt-8">1. はじめに</h2>
+        <p class="mb-6 text-lg text-mystic-200 leading-relaxed">
+          あなたの八字チャートは、バランスと予防ケアを強調する健康運命を明らかにします。あなたの金の日主（辛金）は強い体質を示唆していますが、あなたのチャートはまた、活力を維持するには、特にストレス管理と一貫したルーティンの維持において、ライフスタイルの調和への注意が必要であることを示しています。
+        </p>
+
+        <h2 class="text-2xl font-bold text-white mb-4 mt-8">2. あなたのチャートの健康構造</h2>
+        
+        <div class="grid md:grid-cols-2 gap-6 mb-6">
+          <div class="bg-mystic-800/30 rounded-lg p-6 border border-mystic-700/50">
+            <h3 class="text-lg font-semibold text-green-400 mb-3">日主と健康星</h3>
+            <p class="text-mystic-200 mb-3">
+              <strong>金の日主（辛金）</strong>として、あなたの健康星は<strong>土</strong>です。あなたのチャートでは、土が強く、良好な消化器系の健康と安定性を示しています。しかし、金は環境の変化とストレスに敏感になる可能性があります。
+            </p>
+          </div>
+          
+          <div class="bg-mystic-800/30 rounded-lg p-6 border border-mystic-700/50">
+            <h3 class="text-lg font-semibold text-green-400 mb-3">健康宮（月支）</h3>
+            <p class="text-mystic-200 mb-3">
+              月支には<strong>水と木</strong>のエネルギーが含まれており、あなたの呼吸器系と循環器系が十分にサポートされていることを示しています。この組み合わせは、季節の変化への良好な適応性も示唆しています。
+            </p>
+          </div>
+        </div>
+
+        <div class="bg-gradient-to-r from-blue-500/20 to-cyan-500/20 border border-blue-500/30 rounded-lg p-6 mb-6">
+          <h3 class="text-lg font-semibold text-blue-400 mb-3">体質分析</h3>
+          <p class="text-mystic-200 leading-relaxed">
+            あなたのチャートは、強い金と土の要素を持つ<strong>バランスの取れた体質</strong>を示しています。これは良好な身体的持久力と回復能力を示唆していますが、最適な健康を維持するために一貫したルーティンとストレス管理の必要性も示しています。
+          </p>
+        </div>
+
+        <h2 class="text-2xl font-bold text-white mb-4 mt-8">3. 健康の強みと焦点領域</h2>
+        
+        <div class="space-y-6 mb-6">
+          <div class="bg-gradient-to-r from-green-500/20 to-emerald-500/20 border border-green-500/30 rounded-lg p-6">
+            <h3 class="text-lg font-semibold text-green-400 mb-3">自然な強み</h3>
+            <p class="text-mystic-200 leading-relaxed">
+              金のエネルギーによる<strong>強い免疫システム</strong>、土のサポートからの良好な消化器系の健康、そして水-木の組み合わせからの優れた適応性。あなたの体質は自然に一般的な季節性疾患に抵抗します。
+            </p>
+          </div>
+          
+          <div class="bg-gradient-to-r from-yellow-500/20 to-orange-500/20 border border-yellow-500/30 rounded-lg p-6">
+            <h3 class="text-lg font-semibold text-yellow-400 mb-3">注意が必要な領域</h3>
+            <p class="text-mystic-200 leading-relaxed">
+              金の性質による<strong>ストレス感受性</strong>、季節の移行期における潜在的な呼吸器系の感受性、そして管理されない場合に精神的ウェルネスに影響を与える可能性のある完璧主義への傾向。
+            </p>
+          </div>
+          
+          <div class="bg-gradient-to-r from-purple-500/20 to-indigo-500/20 border border-purple-500/30 rounded-lg p-6">
+            <h3 class="text-lg font-semibold text-purple-400 mb-3">ライフスタイルの推奨事項</h3>
+            <p class="text-mystic-200 leading-relaxed">
+              <strong>一貫したルーティン</strong>は、あなたの金の性質にとって重要です。定期的な運動、特に土のエネルギーとつながる屋外活動、そして瞑想やヨガなどのストレス軽減の実践は、非常に有益です。
+            </p>
+          </div>
+        </div>
+
+        <h2 class="text-2xl font-bold text-white mb-4 mt-8">4. 健康運サイクルとタイミング</h2>
+        
+        <div class="space-y-6 mb-6">
+          <div class="bg-gradient-to-r from-blue-500/20 to-indigo-500/20 border border-blue-500/30 rounded-lg p-6">
+            <h3 class="text-lg font-semibold text-blue-400 mb-3">2025-2026年：ウェルネス基盤</h3>
+            <p class="text-mystic-200 leading-relaxed">
+              この期間は<strong>健康的な習慣の構築</strong>とルーティンの確立を強調します。一貫した運動、バランスの取れた栄養、ストレス管理に焦点を当ててください。この基盤は、今後何年にもわたってあなたの健康をサポートします。
+            </p>
+          </div>
+          
+          <div class="bg-gradient-to-r from-green-500/20 to-emerald-500/20 border border-green-500/30 rounded-lg p-6">
+            <h3 class="text-lg font-semibold text-green-400 mb-3">2026-2030年：ピーク活力期間</h3>
+            <p class="text-mystic-200 leading-relaxed">
+              これはあなたの<strong>最も強い健康段階</strong>です。エネルギーレベルは高く、回復は優れており、新しい身体的挑戦に取り組む意欲を感じるでしょう。これは長期的なフィットネス目標を確立する理想的な時期です。
+            </p>
+          </div>
+          
+          <div class="bg-gradient-to-r from-yellow-500/20 to-orange-500/20 border border-yellow-500/30 rounded-lg p-6">
+            <h3 class="text-lg font-semibold text-yellow-400 mb-3">2030-2035年：維持と予防</h3>
+            <p class="text-mystic-200 leading-relaxed">
+              <strong>利益の維持</strong>と衰退の防止の期間。予防ケア、定期的な健康診断、前年に確立された健康的な習慣の維持に焦点を当ててください。これはまた、高度なウェルネス実践のための良い時期でもあります。
+            </p>
+          </div>
+        </div>
+
+        <h2 class="text-2xl font-bold text-white mb-4 mt-8">5. 実用的な健康戦略</h2>
+        
+        <div class="space-y-4 mb-6">
+          <div class="flex items-start space-x-4">
+            <div class="w-8 h-8 rounded-full bg-green-500 flex items-center justify-center flex-shrink-0 mt-1">
+              <span class="text-black text-sm font-bold">1</span>
+            </div>
+            <div>
+              <h3 class="text-lg font-semibold text-white mb-2">一貫したルーティンを確立する</h3>
+              <p class="text-mystic-200">
+                あなたの金の性質は構造で繁栄します。運動、食事時間、睡眠スケジュールを含む毎日の健康ルーティンを作成してください。強度よりも一貫性が重要です。
+              </p>
+            </div>
+          </div>
+          
+          <div class="flex items-start space-x-4">
+            <div class="w-8 h-8 rounded-full bg-green-500 flex items-center justify-center flex-shrink-0 mt-1">
+              <span class="text-black text-sm font-bold">2</span>
+            </div>
+            <div>
+              <h3 class="text-lg font-semibold text-white mb-2">土のエネルギーとつながる</h3>
+              <p class="text-mystic-200">
+                屋外で時間を過ごし、特に自然環境で。ガーデニング、ハイキング、または単に公園を歩くことは、あなたの土の要素を強化し、全体的な活力を改善します。
+              </p>
+            </div>
+          </div>
+          
+          <div class="flex items-start space-x-4">
+            <div class="w-8 h-8 rounded-full bg-green-500 flex items-center justify-center flex-shrink-0 mt-1">
+              <span class="text-black text-sm font-bold">3</span>
+            </div>
+            <div>
+              <h3 class="text-lg font-semibold text-white mb-2">ストレスを積極的に管理する</h3>
+              <p class="text-mystic-200">
+                あなたの金の性質はストレスに敏感です。精神的ウェルネスを維持するために、瞑想、深呼吸、または穏やかなヨガなどの定期的なストレス軽減技術を実践してください。
+              </p>
+            </div>
+          </div>
+          
+          <div class="flex items-start space-x-4">
+            <div class="w-8 h-8 rounded-full bg-green-500 flex items-center justify-center flex-shrink-0 mt-1">
+              <span class="text-black text-sm font-bold">4</span>
+            </div>
+            <div>
+              <h3 class="text-lg font-semibold text-white mb-2">季節の健康意識</h3>
+              <p class="text-mystic-200">
+                季節の移行、特に秋と春に注意を払ってください。これらの期間は、あなたの呼吸器系と免疫機能に特別なケアが必要な場合があります。
+              </p>
+            </div>
+          </div>
+          
+          <div class="flex items-start space-x-4">
+            <div class="w-8 h-8 rounded-full bg-green-500 flex items-center justify-center flex-shrink-0 mt-1">
+              <span class="text-black text-sm font-bold">5</span>
+            </div>
+            <div>
+              <h3 class="text-lg font-semibold text-white mb-2">予防ケアの焦点</h3>
+              <p class="text-mystic-200">
+                症状が現れるのを待たないでください。定期的な健康診断、スクリーニング、予防措置は、あなたの体質タイプにとって非常に効果的です。
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-gradient-to-r from-green-500/20 to-emerald-500/20 border border-green-500/30 rounded-lg p-6 mb-8">
+          <h3 class="text-lg font-semibold text-green-400 mb-3">🌱 ウェルネス要約</h3>
+          <p class="text-mystic-200 leading-relaxed">
+            あなたの八字チャートは、人生を通じて活力を維持するための優れた可能性を持つ、自然に強い体質を示しています。この可能性を解き放つ鍵は、一貫したルーティンの確立、ストレスの積極的な管理、そして自然環境とのつながりにあります。反応的なケアではなく、予防とバランスに焦点を当てることで、あなたは後年まで最適な健康を享受できます。
+          </p>
+        </div>
+      `,
+        ko: `
+        <div class="mb-8">
+          <div class="bg-gradient-to-r from-green-500/20 to-emerald-500/20 border border-green-500/30 rounded-lg p-6 mb-8">
+            <h3 class="text-lg font-semibold text-green-400 mb-3">🌿 건강 보고서 요약</h3>
+            <p class="text-mystic-200 mb-2"><strong>대상：</strong> 여성，1988년 10월 21일 생</p>
+            <p class="text-mystic-200 mb-2"><strong>음력 날짜：</strong> 9월 13일，오전 7시</p>
+            <p class="text-mystic-200 mb-2"><strong>핵심 발견：</strong> 건강과 활력은 라이프스타일 균형과 깊이 연결되어 있습니다</p>
+            <p class="text-mystic-200"><strong>피크 웰니스 기간：</strong> 2026-2030년（30대 후반부터 40대 초반）</p>
+          </div>
+        </div>
+
+        <h2 class="text-2xl font-bold text-white mb-4 mt-8">1. 서론</h2>
+        <p class="mb-6 text-lg text-mystic-200 leading-relaxed">
+          당신의 사주 차트는 균형과 예방 케어를 강조하는 건강 운명을 드러냅니다。당신의 금 일주（辛金）는 강한 체질을 시사하지만，당신의 차트는 또한 활력을 유지하려면，특히 스트레스 관리와 일관된 루틴 유지에서，라이프스타일 조화에 대한 주의가 필요함을 나타냅니다。
+        </p>
+
+        <h2 class="text-2xl font-bold text-white mb-4 mt-8">2. 당신의 차트의 건강 구조</h2>
+        
+        <div class="grid md:grid-cols-2 gap-6 mb-6">
+          <div class="bg-mystic-800/30 rounded-lg p-6 border border-mystic-700/50">
+            <h3 class="text-lg font-semibold text-green-400 mb-3">일주와 건강성</h3>
+            <p class="text-mystic-200 mb-3">
+              <strong>금 일주（辛金）</strong>로서，당신의 건강성은<strong>토</strong>입니다。당신의 차트에서，토가 강하여，좋은 소화기 건강과 안정성을 나타냅니다。그러나 금은 환경 변화와 스트레스에 민감할 수 있습니다。
+            </p>
+          </div>
+          
+          <div class="bg-mystic-800/30 rounded-lg p-6 border border-mystic-700/50">
+            <h3 class="text-lg font-semibold text-green-400 mb-3">건강궁（월지）</h3>
+            <p class="text-mystic-200 mb-3">
+              월지에는<strong>수와 목</strong>의 에너지가 포함되어 있으며，당신의 호흡기계와 순환계가 잘 지원되고 있음을 보여줍니다。이 조합은 또한 계절 변화에 대한 좋은 적응성을 시사합니다。
+            </p>
+          </div>
+        </div>
+
+        <div class="bg-gradient-to-r from-blue-500/20 to-cyan-500/20 border border-blue-500/30 rounded-lg p-6 mb-6">
+          <h3 class="text-lg font-semibold text-blue-400 mb-3">체질 분석</h3>
+          <p class="text-mystic-200 leading-relaxed">
+            당신의 차트는 강한 금과 토 요소를 가진<strong>균형 잡힌 체질</strong>을 보여줍니다。이것은 좋은 신체적 지구력과 회복 능력을 시사하지만，최적의 건강을 유지하기 위해 일관된 루틴과 스트레스 관리의 필요성도 나타냅니다。
+          </p>
+        </div>
+
+        <h2 class="text-2xl font-bold text-white mb-4 mt-8">3. 건강 강점 및 집중 영역</h2>
+        
+        <div class="space-y-6 mb-6">
+          <div class="bg-gradient-to-r from-green-500/20 to-emerald-500/20 border border-green-500/30 rounded-lg p-6">
+            <h3 class="text-lg font-semibold text-green-400 mb-3">자연적 강점</h3>
+            <p class="text-mystic-200 leading-relaxed">
+              금 에너지로 인한<strong>강한 면역 시스템</strong>，토 지원으로부터의 좋은 소화기 건강，그리고 수-목 조합으로부터의 우수한 적응성。당신의 체질은 자연스럽게 일반적인 계절성 질병에 저항합니다。
+            </p>
+          </div>
+          
+          <div class="bg-gradient-to-r from-yellow-500/20 to-orange-500/20 border border-yellow-500/30 rounded-lg p-6">
+            <h3 class="text-lg font-semibold text-yellow-400 mb-3">주의가 필요한 영역</h3>
+            <p class="text-mystic-200 leading-relaxed">
+              금의 성질로 인한<strong>스트레스 감수성</strong>，계절 전환기 동안의 잠재적 호흡기 감수성，그리고 관리되지 않으면 정신적 웰니스에 영향을 줄 수 있는 완벽주의 경향。
+            </p>
+          </div>
+          
+          <div class="bg-gradient-to-r from-purple-500/20 to-indigo-500/20 border border-purple-500/30 rounded-lg p-6">
+            <h3 class="text-lg font-semibold text-purple-400 mb-3">라이프스타일 권장사항</h3>
+            <p class="text-mystic-200 leading-relaxed">
+              <strong>일관된 루틴</strong>은 당신의 금 성질에 중요합니다。정기적인 운동，특히 토 에너지와 연결되는 야외 활동，그리고 명상이나 요가와 같은 스트레스 감소 실천은 매우 유익합니다。
+            </p>
+          </div>
+        </div>
+
+        <h2 class="text-2xl font-bold text-white mb-4 mt-8">4. 건강 운 사이클 및 타이밍</h2>
+        
+        <div class="space-y-6 mb-6">
+          <div class="bg-gradient-to-r from-blue-500/20 to-indigo-500/20 border border-blue-500/30 rounded-lg p-6">
+            <h3 class="text-lg font-semibold text-blue-400 mb-3">2025-2026년：웰니스 기반</h3>
+            <p class="text-mystic-200 leading-relaxed">
+              이 기간은<strong>건강한 습관 구축</strong>과 루틴 확립을 강조합니다。일관된 운동，균형 잡힌 영양，스트레스 관리에 집중하세요。이 기반은 앞으로 몇 년 동안 당신의 건강을 지원할 것입니다。
+            </p>
+          </div>
+          
+          <div class="bg-gradient-to-r from-green-500/20 to-emerald-500/20 border border-green-500/30 rounded-lg p-6">
+            <h3 class="text-lg font-semibold text-green-400 mb-3">2026-2030년：피크 활력 기간</h3>
+            <p class="text-mystic-200 leading-relaxed">
+              이것은 당신의<strong>가장 강한 건강 단계</strong>입니다。에너지 수준은 높고，회복은 우수하며，새로운 신체적 도전에 도전할 동기를 느낄 것입니다。이것은 장기적인 피트니스 목표를 확립하는 이상적인 시기입니다。
+            </p>
+          </div>
+          
+          <div class="bg-gradient-to-r from-yellow-500/20 to-orange-500/20 border border-yellow-500/30 rounded-lg p-6">
+            <h3 class="text-lg font-semibold text-yellow-400 mb-3">2030-2035년：유지 및 예방</h3>
+            <p class="text-mystic-200 leading-relaxed">
+              <strong>이득 유지</strong>와 쇠퇴 방지의 기간。예방 케어，정기적인 건강 검진，이전 연도에 확립된 건강한 습관 유지에 집중하세요。이것은 또한 고급 웰니스 실천을 위한 좋은 시기입니다。
+            </p>
+          </div>
+        </div>
+
+        <h2 class="text-2xl font-bold text-white mb-4 mt-8">5. 실용적인 건강 전략</h2>
+        
+        <div class="space-y-4 mb-6">
+          <div class="flex items-start space-x-4">
+            <div class="w-8 h-8 rounded-full bg-green-500 flex items-center justify-center flex-shrink-0 mt-1">
+              <span class="text-black text-sm font-bold">1</span>
+            </div>
+            <div>
+              <h3 class="text-lg font-semibold text-white mb-2">일관된 루틴 확립</h3>
+              <p class="text-mystic-200">
+                당신의 금 성질은 구조에서 번영합니다。운동，식사 시간，수면 일정을 포함한 일일 건강 루틴을 만드세요。강도보다 일관성이 중요합니다。
+              </p>
+            </div>
+          </div>
+          
+          <div class="flex items-start space-x-4">
+            <div class="w-8 h-8 rounded-full bg-green-500 flex items-center justify-center flex-shrink-0 mt-1">
+              <span class="text-black text-sm font-bold">2</span>
+            </div>
+            <div>
+              <h3 class="text-lg font-semibold text-white mb-2">토 에너지와 연결</h3>
+              <p class="text-mystic-200">
+                야외에서 시간을 보내세요，특히 자연 환경에서。원예，하이킹，또는 단순히 공원을 걷는 것은 당신의 토 요소를 강화하고 전반적인 활력을 개선합니다。
+              </p>
+            </div>
+          </div>
+          
+          <div class="flex items-start space-x-4">
+            <div class="w-8 h-8 rounded-full bg-green-500 flex items-center justify-center flex-shrink-0 mt-1">
+              <span class="text-black text-sm font-bold">3</span>
+            </div>
+            <div>
+              <h3 class="text-lg font-semibold text-white mb-2">스트레스를 적극적으로 관리</h3>
+              <p class="text-mystic-200">
+                당신의 금 성질은 스트레스에 민감합니다。정신적 웰니스를 유지하기 위해 명상，깊은 호흡，또는 부드러운 요가와 같은 정기적인 스트레스 감소 기술을 실천하세요。
+              </p>
+            </div>
+          </div>
+          
+          <div class="flex items-start space-x-4">
+            <div class="w-8 h-8 rounded-full bg-green-500 flex items-center justify-center flex-shrink-0 mt-1">
+              <span class="text-black text-sm font-bold">4</span>
+            </div>
+            <div>
+              <h3 class="text-lg font-semibold text-white mb-2">계절 건강 인식</h3>
+              <p class="text-mystic-200">
+                계절 전환，특히 가을과 봄에 주의를 기울이세요。이러한 기간은 당신의 호흡기계와 면역 기능에 추가 케어가 필요할 수 있습니다。
+              </p>
+            </div>
+          </div>
+          
+          <div class="flex items-start space-x-4">
+            <div class="w-8 h-8 rounded-full bg-green-500 flex items-center justify-center flex-shrink-0 mt-1">
+              <span class="text-black text-sm font-bold">5</span>
+            </div>
+            <div>
+              <h3 class="text-lg font-semibold text-white mb-2">예방 케어 집중</h3>
+              <p class="text-mystic-200">
+                증상이 나타날 때까지 기다리지 마세요。정기적인 건강 검진，스크리닝，예방 조치는 당신의 체질 유형에 매우 효과적입니다。
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-gradient-to-r from-green-500/20 to-emerald-500/20 border border-green-500/30 rounded-lg p-6 mb-8">
+          <h3 class="text-lg font-semibold text-green-400 mb-3">🌱 웰니스 요약</h3>
+          <p class="text-mystic-200 leading-relaxed">
+            당신의 사주 차트는 인생 전반에 걸쳐 활력을 유지하기 위한 우수한 잠재력을 가진 자연스럽게 강한 체질을 나타냅니다。이 잠재력을 해제하는 열쇠는 일관된 루틴 확립，스트레스의 적극적 관리，그리고 자연 환경과의 연결에 있습니다。반응적 케어보다는 예방과 균형에 집중함으로써，당신은 후년까지 최적의 건강을 즐길 수 있습니다。
+          </p>
+        </div>
+      `
+      },
       author: "Master Chen",
       date: "2025-01-23",
       readTime: "7 min read",
