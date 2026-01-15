@@ -665,7 +665,7 @@ const TrueSolarTimeCalculator = () => {
                 whileTap={{ scale: 0.98 }}
                 className="w-full bg-gradient-to-r from-blue-500 to-cyan-500 text-white font-poppins font-semibold py-4 px-6 sm:px-8 rounded-full hover:from-blue-400 hover:to-cyan-400 transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed tracking-wide text-base"
               >
-                {isCalculating ? 'Calculating...' : 'Calculate True Solar Time'}
+                {isCalculating ? t('tools.trueSolarTime.calculating') : t('tools.trueSolarTime.calculate')}
               </motion.button>
             </form>
           </motion.div>
