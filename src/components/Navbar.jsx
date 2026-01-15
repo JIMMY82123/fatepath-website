@@ -8,10 +8,7 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false)
   const [isToolsOpen, setIsToolsOpen] = useState(false)
   const [isMobileToolsOpen, setIsMobileToolsOpen] = useState(false)
-  const [isCelebritiesOpen, setIsCelebritiesOpen] = useState(false)
-  const [isMobileCelebritiesOpen, setIsMobileCelebritiesOpen] = useState(false)
   const toolsMenuRef = useRef(null)
-  const celebritiesMenuRef = useRef(null)
   const location = useLocation()
 
   // 关闭下拉菜单当点击外部
@@ -19,9 +16,6 @@ const Navbar = () => {
     const handleClickOutside = (event) => {
       if (toolsMenuRef.current && !toolsMenuRef.current.contains(event.target)) {
         setIsToolsOpen(false)
-      }
-      if (celebritiesMenuRef.current && !celebritiesMenuRef.current.contains(event.target)) {
-        setIsCelebritiesOpen(false)
       }
     }
 
@@ -43,14 +37,8 @@ const Navbar = () => {
         { path: '/tools/day-master-calculator', label: 'Day Master Strength Calculator' },
         { path: '/tools/true-solar-time-calculator', label: 'True Solar Time Calculator' },
         { path: '/tools/ten-gods-analyzer', label: 'Ten Gods Analyzer' },
+        { path: '/celebrities-born-today', label: 'Famous People Born Today' },
         { path: '/resources', label: 'Resources' }
-      ]
-    },
-    {
-      label: 'Famous People',
-      hasDropdown: true,
-      items: [
-        { path: '/celebrities-born-today', label: 'Born Today' }
       ]
     },
     { path: '/testimonials', label: 'Testimonials' },
@@ -60,9 +48,6 @@ const Navbar = () => {
 
   // 检查当前路径是否在工具菜单中
   const isToolsActive = navItems.find(item => item.hasDropdown && item.items?.some(subItem => location.pathname === subItem.path))
-  
-  // 检查当前路径是否在名人菜单中
-  const isCelebritiesActive = navItems.find(item => item.label === 'Famous People' && item.hasDropdown && item.items?.some(subItem => location.pathname === subItem.path))
 
   const isActive = (path) => location.pathname === path
 
@@ -86,33 +71,27 @@ const Navbar = () => {
           <div className="hidden md:flex items-center space-x-6 lg:space-x-8">
             {navItems.map((item) => {
               if (item.hasDropdown) {
-                const isCelebritiesMenu = item.label === 'Famous People'
-                const menuRef = isCelebritiesMenu ? celebritiesMenuRef : toolsMenuRef
-                const isMenuOpen = isCelebritiesMenu ? isCelebritiesOpen : isToolsOpen
-                const setIsMenuOpen = isCelebritiesMenu ? setIsCelebritiesOpen : setIsToolsOpen
-                const isActiveMenu = isCelebritiesMenu ? isCelebritiesActive : isToolsActive
-
                 return (
                   <div 
                     key={item.label}
-                    ref={menuRef}
+                    ref={toolsMenuRef}
                     className="relative"
-                    onMouseEnter={() => setIsMenuOpen(true)}
-                    onMouseLeave={() => setIsMenuOpen(false)}
+                    onMouseEnter={() => setIsToolsOpen(true)}
+                    onMouseLeave={() => setIsToolsOpen(false)}
                   >
                     <button
                       className={`relative px-3 py-2 text-sm font-medium transition-colors duration-200 flex items-center space-x-1 ${
-                        isActiveMenu
+                        isToolsActive
                           ? 'text-gold-400' 
                           : 'text-mystic-300 hover:text-gold-400'
                       }`}
                     >
                       <span>{item.label}</span>
-                      <ChevronDown className={`h-4 w-4 transition-transform duration-200 ${isMenuOpen ? 'rotate-180' : ''}`} />
+                      <ChevronDown className={`h-4 w-4 transition-transform duration-200 ${isToolsOpen ? 'rotate-180' : ''}`} />
                     </button>
-                    {isActiveMenu && (
+                    {isToolsActive && (
                       <motion.div
-                        layoutId={`activeTab-${item.label}`}
+                        layoutId="activeTab"
                         className="absolute bottom-0 left-0 right-0 h-0.5 bg-gold-400"
                         initial={false}
                         transition={{ type: "spring", stiffness: 500, damping: 30 }}
@@ -120,7 +99,7 @@ const Navbar = () => {
                     )}
                     
                     <AnimatePresence>
-                      {isMenuOpen && (
+                      {isToolsOpen && (
                         <motion.div
                           initial={{ opacity: 0, y: 10 }}
                           animate={{ opacity: 1, y: 0 }}
@@ -138,7 +117,7 @@ const Navbar = () => {
                                     ? 'text-gold-400 bg-mystic-800/50'
                                     : 'text-mystic-300 hover:text-gold-400 hover:bg-mystic-800/30'
                                 }`}
-                                onClick={() => setIsMenuOpen(false)}
+                                onClick={() => setIsToolsOpen(false)}
                               >
                                 {subItem.label}
                               </Link>
@@ -202,26 +181,21 @@ const Navbar = () => {
             <div className="px-2 pt-2 pb-3 space-y-2 border-t border-mystic-700/50">
               {navItems.map((item) => {
                 if (item.hasDropdown) {
-                  const isCelebritiesMenu = item.label === 'Famous People'
-                  const isMobileMenuOpen = isCelebritiesMenu ? isMobileCelebritiesOpen : isMobileToolsOpen
-                  const setIsMobileMenuOpen = isCelebritiesMenu ? setIsMobileCelebritiesOpen : setIsMobileToolsOpen
-                  const isActiveMenu = isCelebritiesMenu ? isCelebritiesActive : isToolsActive
-
                   return (
                     <div key={item.label}>
                       <button
-                        onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+                        onClick={() => setIsMobileToolsOpen(!isMobileToolsOpen)}
                         className={`mobile-nav-item w-full text-left block text-base font-medium transition-colors duration-200 rounded-lg px-3 py-2 flex items-center justify-between ${
-                          isActiveMenu
+                          isToolsActive
                             ? 'text-gold-400 bg-mystic-800/50' 
                             : 'text-mystic-300 hover:text-gold-400 hover:bg-mystic-800/30'
                         }`}
                       >
                         <span>{item.label}</span>
-                        <ChevronDown className={`h-4 w-4 transition-transform duration-200 ${isMobileMenuOpen ? 'rotate-180' : ''}`} />
+                        <ChevronDown className={`h-4 w-4 transition-transform duration-200 ${isMobileToolsOpen ? 'rotate-180' : ''}`} />
                       </button>
                       <AnimatePresence>
-                        {isMobileMenuOpen && (
+                        {isMobileToolsOpen && (
                           <motion.div
                             initial={{ opacity: 0, height: 0 }}
                             animate={{ opacity: 1, height: 'auto' }}
@@ -234,7 +208,7 @@ const Navbar = () => {
                                 to={subItem.path}
                                 onClick={() => {
                                   setIsOpen(false)
-                                  setIsMobileMenuOpen(false)
+                                  setIsMobileToolsOpen(false)
                                 }}
                                 className={`mobile-nav-item block text-sm font-medium transition-colors duration-200 rounded-lg px-3 py-2 ${
                                   isActive(subItem.path)
