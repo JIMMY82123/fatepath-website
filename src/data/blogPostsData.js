@@ -2245,9 +2245,18 @@ export const blogPostsData = {
     ]
   },
   "bazi-case-study-high-ranking-official": {
-    title: "BaZi Case Study: Destiny Analysis of a High-Ranking Official (1958)",
-    excerpt: "A verified Ren Water case study following a 1958-born official from chart structure through eight life predictions covering career rank, health incidents, family patterns, property, and hidden wealth.",
-    content: `
+    title: {
+      en: "BaZi Case Study: Destiny Analysis of a High-Ranking Official (1958)",
+      ja: "八字ケーススタディ：高官の運命分析（1958年）",
+      ko: "사주 사례 연구: 고위 공무원의 운명 분석 (1958년)"
+    },
+    excerpt: {
+      en: "A verified Ren Water case study following a 1958-born official from chart structure through eight life predictions covering career rank, health incidents, family patterns, property, and hidden wealth.",
+      ja: "1958年生まれの高官を、チャート構造から8つの人生予測（キャリア階級、健康事件、家族パターン、財産、隠された富）まで追跡した検証済みの壬水ケーススタディ。",
+      ko: "1958년생 고위 공무원을 차트 구조부터 8가지 인생 예측（직업 계급，건강 사건，가족 패턴，재산，숨겨진 부）까지 추적한 검증된 임수 사례 연구。"
+    },
+    content: {
+      en: `
       <div class="space-y-8">
         <section class="space-y-4">
           <p class="text-mystic-200 leading-relaxed">
@@ -2364,6 +2373,241 @@ export const blogPostsData = {
         </section>
       </div>
     `,
+      ja: `
+      <div class="space-y-8">
+        <section class="space-y-4">
+          <p class="text-mystic-200 leading-relaxed">
+            この匿名化されたケーススタディは、1958年5月8日（旧暦）の戌時（19:00-21:00）に生まれた壬水（壬）の日主を検証します。本人は陝西省宝鶏県国鎮に登録されていました。クライアントと家族からの検証済みフィードバックが各予測を確認しています。
+          </p>
+          <div class="bg-mystic-800/40 border border-mystic-700/40 rounded-lg p-6 space-y-4">
+            <h3 class="text-xl font-semibold text-gold-300">四柱</h3>
+            <div class="grid md:grid-cols-2 gap-4 text-mystic-200 leading-relaxed">
+              <ul class="list-disc list-inside space-y-1">
+                <li><strong>年：</strong> 戊戌（ぼじゅつ）&mdash; 陽土の上に陽土・平地土</li>
+                <li><strong>月：</strong> 戊午（ぼご）&mdash; 陽土の上に陽火・天火</li>
+                <li><strong>日：</strong> 壬申（じんしん）&mdash; 陽水の上に陽金・剣鋒金</li>
+                <li><strong>時：</strong> 甲戌（こうじゅつ）&mdash; 陽木の上に陽土・山頭火</li>
+              </ul>
+              <ul class="list-disc list-inside space-y-1">
+                <li><strong>日主：</strong> 壬水 &mdash; 大河/天の水の原型</li>
+                <li><strong>蔵干：</strong> 辛、丁、乙、辛（しんていおつしん）</li>
+                <li><strong>要素合計：</strong> 土4・火2・金1・水1・木1</li>
+                <li><strong>特殊構造：</strong> 二重戌土が午火と半合し、土/七殺星を強化</li>
+              </ul>
+            </div>
+            <div class="grid md:grid-cols-3 gap-4 text-mystic-200 leading-relaxed">
+              <div class="bg-mystic-900/60 border border-mystic-700/50 rounded-lg p-4">
+                <h4 class="text-gold-300 font-semibold mb-2">命宮</h4>
+                <ul class="list-disc list-inside space-y-1">
+                  <li>胎宮：己酉（きゆう）&mdash; 城頭土</li>
+                  <li>命宮：乙丑（いつちゅう）&mdash; 海中金</li>
+                  <li>身宮：丁巳（ていし）&mdash; 沙中土</li>
+                </ul>
+              </div>
+              <div class="bg-mystic-900/60 border border-mystic-700/50 rounded-lg p-4 md:col-span-2">
+                <h4 class="text-gold-300 font-semibold mb-2">日主スナップショット</h4>
+                <p class="text-mystic-200 leading-relaxed">
+                  夏の戊月の洪水が壬水に力を与えますが、豊富な土が堤防を形成し、力を規律ある権威に導きます。時柱の甲木は設計された補強材のように機能し—学習を支援し、七殺星を精製し、チャートの官階を上げます。
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="space-y-6">
+          <h2 class="text-2xl font-bold text-white">II. 検証済み結果による運命分析</h2>
+          <p class="text-mystic-200 leading-relaxed">
+            以下の各テーマには、古典的な根拠とクライアント確認済みのフィードバックが含まれています。
+          </p>
+
+          <div class="space-y-6">
+            <div class="bg-mystic-800/40 border border-mystic-700/40 rounded-lg p-6 space-y-3">
+              <h3 class="text-xl font-semibold text-gold-300">1. キャリアと階級 &mdash; 副部級 → 部級待遇</h3>
+              <p class="text-mystic-200 leading-relaxed">
+                戊月に座る財（火）は強い七殺（土）を生み出します。七殺星は日主に隣接し、行政権力を与えます。甲木（時柱）は正印として機能し、七殺を正当な権威に調教します。申金は追加の印のサポートを提供します。これらの層は、副部級で頂点に達し、退職給付が完全な部級待遇にエスカレートする政府または軍事ルートを予測します。
+              </p>
+            </div>
+
+            <div class="bg-mystic-800/40 border border-mystic-700/40 rounded-lg p-6 space-y-3">
+              <h3 class="text-xl font-semibold text-gold-300">2. 怪我と健康事件 &mdash; 青年期と高齢期の犬咬傷</h3>
+              <p class="text-mystic-200 leading-relaxed">
+                戌支は犬と傷跡を象徴します。年戌は青年期（&lt;18）をカバーし、時戌は後期（&gt;55）をカバーします。土は体の左側に対応します；年は肩を支配し、時は脚を支配します。胎宮の酉金が戌と衝突し、咬傷または穿孔を描写します。クライアントの記録は、予測された年齢での左肩と左脚の犬咬傷を示しています。
+              </p>
+            </div>
+
+            <div class="bg-mystic-800/40 border border-mystic-700/40 rounded-lg p-6 space-y-3">
+              <h3 class="text-xl font-semibold text-gold-300">3. 学術的才能を持つ異母姉</h3>
+              <p class="text-mystic-200 leading-relaxed">
+                二重戊干が癸水（兄弟）と密かに結合します。癸は青龍のイメージに座り、文化的な特徴を示します。チャートは、共有された親子関係を通じて接続された異母姉を記録し、家族の系図によって裏付けられています。
+              </p>
+            </div>
+
+            <div class="bg-mystic-800/40 border border-mystic-700/40 rounded-lg p-6 space-y-3">
+              <h3 class="text-xl font-semibold text-gold-300">4. 55歳後の胃潰瘍手術</h3>
+              <p class="text-mystic-200 leading-relaxed">
+                甲戌時は55歳後の運を支配します。戌は中空で脾/胃を支配します；甲木が戌を押すことは穿孔に似ています。酉金との宮の衝突は外科的介入を示唆します。医療記録は、高齢期に手術によって修復された胃潰瘍穿孔を確認しています。
+              </p>
+            </div>
+
+            <div class="bg-mystic-800/40 border border-mystic-700/40 rounded-lg p-6 space-y-3">
+              <h3 class="text-xl font-semibold text-gold-300">5. 神秘主義への生涯の関心と家族の祭壇</h3>
+              <p class="text-mystic-200 leading-relaxed">
+                戌は祭壇と観音信仰を表します。その「開門」の性質は形而上学的な好奇心を示します。年戌は祖先の実践を反映します；時戌は習慣を子孫に拡張しますが、甲木の出力は若い世代がよりカジュアルに従事することを示しています。
+              </p>
+            </div>
+
+            <div class="bg-mystic-800/40 border border-mystic-700/40 rounded-lg p-6 space-y-3">
+              <h3 class="text-xl font-semibold text-gold-300">6. 不動産ポートフォリオ &mdash; 4つの家、3つは名義外</h3>
+              <p class="text-mystic-200 leading-relaxed">
+                二つの戌支、命宮の丑、さらに戊と申の間で生成された隠された未は、4つの財産宮に等しくなります。戌の中空の性質と未の隠された状態は、彼の名義で登録されていない3つの新しいアパートを暗示します。丑（祖先の土）は控えめな家族の家を表し、チャートの要素の流れと調和するため、依然として好まれています。
+              </p>
+            </div>
+
+            <div class="bg-mystic-800/40 border border-mystic-700/40 rounded-lg p-6 space-y-3">
+              <h3 class="text-xl font-semibold text-gold-300">7. 私生活の好み</h3>
+              <p class="text-mystic-200 leading-relaxed">
+                七柱分析（四柱プラス宮）を使用すると、丑（女性）、戌（ベッド）、申（男性）の間の動的関係は、丑が戌と衝突しながら申を積極的に受け入れることを示します。クライアントは、親密さにおける女性主導のポジショニングへの好みを認めました。
+              </p>
+            </div>
+
+            <div class="bg-mystic-800/40 border border-mystic-700/40 rounded-lg p-6 space-y-3">
+              <h3 class="text-xl font-semibold text-gold-300">8. 富 &mdash; 累積資産4000万円以上</h3>
+              <p class="text-mystic-200 leading-relaxed">
+                戌は火を蓄え、日主の財要素です。双子の宝庫プラス丑の衝突が金庫を開き、未（戊-戌-申の相互作用を通じて形成）が隠された資源を循環させます。戌に関連する古典的な数秘術は、予期しないチャネルを通じて最低4000万元の風当たりを推定し、クライアントの申告資産と一致します。
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section class="space-y-4">
+          <h2 class="text-2xl font-bold text-white">III. 実践者の要点</h2>
+          <ul class="list-disc list-inside space-y-2 text-mystic-200 leading-relaxed">
+            <li><strong>七殺星を制御する：</strong> 強い土は、甲木印のサポートによって適切に利用されると権威になります。</li>
+            <li><strong>宮の順序が重要：</strong> 年と時の戌は幼少期と後期の出来事を固定します；宮の衝突はタイミングと解剖学を特定します。</li>
+            <li><strong>宝の活性化：</strong> 複数の貯蔵支（戌、丑、未）は、金庫を開く中空/隠されたイメージを伴う場合、主要な富に変換できます。</li>
+            <li><strong>検証済みロギング：</strong> 「信号 → 推論 → 結果」を記録することは、重い土-七殺の署名を持つ将来の軍事/政府プロファイルへの信頼を向上させます。</li>
+          </ul>
+        </section>
+      </div>
+    `,
+      ko: `
+      <div class="space-y-8">
+        <section class="space-y-4">
+          <p class="text-mystic-200 leading-relaxed">
+            이 익명화된 사례 연구는 1958년 음력 5월 8일 술시（19:00-21:00）에 태어난 임수（壬） 일주를 검토합니다。본인은 섬서성 보계현 국진에 등록되어 있었습니다。클라이언트와 가족 구성원으로부터의 검증된 피드백이 각 예측을 확인합니다。
+          </p>
+          <div class="bg-mystic-800/40 border border-mystic-700/40 rounded-lg p-6 space-y-4">
+            <h3 class="text-xl font-semibold text-gold-300">사주</h3>
+            <div class="grid md:grid-cols-2 gap-4 text-mystic-200 leading-relaxed">
+              <ul class="list-disc list-inside space-y-1">
+                <li><strong>년：</strong> 무술（戊戌）&mdash; 양토 위에 양토・평지토</li>
+                <li><strong>월：</strong> 무오（戊午）&mdash; 양토 위에 양화・천화</li>
+                <li><strong>일：</strong> 임신（壬申）&mdash; 양수 위에 양금・검봉금</li>
+                <li><strong>시：</strong> 갑술（甲戌）&mdash; 양목 위에 양토・산두화</li>
+              </ul>
+              <ul class="list-disc list-inside space-y-1">
+                <li><strong>일주：</strong> 임수 &mdash; 대하/천수 원형</li>
+                <li><strong>장간：</strong> 신, 정, 을, 신（辛丁乙辛）</li>
+                <li><strong>요소 합계：</strong> 토 4・화 2・금 1・수 1・목 1</li>
+                <li><strong>특수 구조：</strong> 이중 술토가 오화와 반합하여 토/칠살성을 강화</li>
+              </ul>
+            </div>
+            <div class="grid md:grid-cols-3 gap-4 text-mystic-200 leading-relaxed">
+              <div class="bg-mystic-900/60 border border-mystic-700/50 rounded-lg p-4">
+                <h4 class="text-gold-300 font-semibold mb-2">명궁</h4>
+                <ul class="list-disc list-inside space-y-1">
+                  <li>태궁：기유（己酉）&mdash; 성두토</li>
+                  <li>명궁：을축（乙丑）&mdash; 해중금</li>
+                  <li>신궁：정사（丁巳）&mdash; 사중토</li>
+                </ul>
+              </div>
+              <div class="bg-mystic-900/60 border border-mystic-700/50 rounded-lg p-4 md:col-span-2">
+                <h4 class="text-gold-300 font-semibold mb-2">일주 스냅샷</h4>
+                <p class="text-mystic-200 leading-relaxed">
+                  여름 무월의 홍수가 임수에 힘을 부여하지만，풍부한 토가 제방을 형성하여 힘을 규율 있는 권위로 이끕니다。시주의 갑목은 설계된 보강재처럼 작동합니다—학습을 지원하고，칠살성을 정제하며，차트의 관계를 높입니다。
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="space-y-6">
+          <h2 class="text-2xl font-bold text-white">II. 검증된 결과를 통한 운명 분석</h2>
+          <p class="text-mystic-200 leading-relaxed">
+            아래의 각 테마는 고전적 근거와 클라이언트 확인 피드백을 포함합니다。
+          </p>
+
+          <div class="space-y-6">
+            <div class="bg-mystic-800/40 border border-mystic-700/40 rounded-lg p-6 space-y-3">
+              <h3 class="text-xl font-semibold text-gold-300">1. 직업 및 계급 &mdash; 부부급 → 부급 대우</h3>
+              <p class="text-mystic-200 leading-relaxed">
+                무월에 앉은 재（화）는 강한 칠살（토）을 생성합니다。칠살성은 일주에 인접하여 행정 권력을 부여합니다。갑목（시주）은 정인으로 기능하여 칠살을 합법적인 권위로 길들입니다。신금은 추가 인 지원을 제공합니다。이러한 층은 부부급에서 정점에 도달하고 퇴직 급여가 완전한 부급 대우로 에스컬레이션되는 정부 또는 군사 경로를 예측합니다。
+              </p>
+            </div>
+
+            <div class="bg-mystic-800/40 border border-mystic-700/40 rounded-lg p-6 space-y-3">
+              <h3 class="text-xl font-semibold text-gold-300">2. 부상 및 건강 사건 &mdash; 청년기와 고령기의 개 물림</h3>
+              <p class="text-mystic-200 leading-relaxed">
+                술지는 개와 상처를 상징합니다。년 술은 청년기（&lt;18）를 다루고，시 술은 후기（&gt;55）를 다룹니다。토는 신체의 왼쪽에 해당합니다；년은 어깨를 지배하고，시는 다리를 지배합니다。태궁의 유금이 술과 충돌하여 물림 또는 천공을 묘사합니다。클라이언트 기록은 예측된 연령에서의 왼쪽 어깨와 왼쪽 다리의 개 물림을 보여줍니다。
+              </p>
+            </div>
+
+            <div class="bg-mystic-800/40 border border-mystic-700/40 rounded-lg p-6 space-y-3">
+              <h3 class="text-xl font-semibold text-gold-300">3. 학술적 재능을 가진 이복 누나</h3>
+              <p class="text-mystic-200 leading-relaxed">
+                이중 무간이 계수（형제）와 비밀리에 결합합니다。계는 청룡 이미지에 앉아 문화적 특성을 나타냅니다。차트는 공유된 부모 관계를 통해 연결된 이복 누나를 기록하며，가족 계보에 의해 뒷받침됩니다。
+              </p>
+            </div>
+
+            <div class="bg-mystic-800/40 border border-mystic-700/40 rounded-lg p-6 space-y-3">
+              <h3 class="text-xl font-semibold text-gold-300">4. 55세 후 위궤양 수술</h3>
+              <p class="text-mystic-200 leading-relaxed">
+                갑술시는 55세 후 운을 지배합니다。술은 중공이며 비/위를 지배합니다；갑목이 술을 누르는 것은 천공과 유사합니다。유금과의 궁 충돌은 외과적 개입을 시사합니다。의료 기록은 고령기에 수술로 수리된 위궤양 천공을 확인합니다。
+              </p>
+            </div>
+
+            <div class="bg-mystic-800/40 border border-mystic-700/40 rounded-lg p-6 space-y-3">
+              <h3 class="text-xl font-semibold text-gold-300">5. 신비주의에 대한 평생 관심과 가족 제단</h3>
+              <p class="text-mystic-200 leading-relaxed">
+                술은 제단과 관음 신앙을 나타냅니다。그 "개문" 품질은 형이상학적 호기심을 나타냅니다。년 술은 조상의 실천을 반영합니다；시 술은 습관을 자손에게 확장하지만，갑목 출력은 젊은 세대가 더 캐주얼하게 참여함을 보여줍니다。
+              </p>
+            </div>
+
+            <div class="bg-mystic-800/40 border border-mystic-700/40 rounded-lg p-6 space-y-3">
+              <h3 class="text-xl font-semibold text-gold-300">6. 부동산 포트폴리오 &mdash; 4개의 집，3개는 명의 외</h3>
+              <p class="text-mystic-200 leading-relaxed">
+                두 개의 술지，명궁 축，더하여 무와 신 사이에서 생성된 숨겨진 미는 4개의 재산 궁과 같습니다。술의 중공 특성과 미의 숨겨진 상태는 그의 명의로 등록되지 않은 3개의 새로운 아파트를 암시합니다。축（조상의 토）은 겸손한 가족 집을 나타내며，차트의 요소 흐름과 조화를 이루기 때문에 여전히 선호됩니다。
+              </p>
+            </div>
+
+            <div class="bg-mystic-800/40 border border-mystic-700/40 rounded-lg p-6 space-y-3">
+              <h3 class="text-xl font-semibold text-gold-300">7. 사생활 선호</h3>
+              <p class="text-mystic-200 leading-relaxed">
+                칠주 분석（사주 플러스 궁）을 사용하면，축（여성），술（침대），신（남성） 사이의 역동적 관계는 축이 술과 충돌하면서 신을 적극적으로 받아들임을 보여줍니다。클라이언트는 친밀함에서 여성 주도적 포지셔닝에 대한 선호를 인정했습니다。
+              </p>
+            </div>
+
+            <div class="bg-mystic-800/40 border border-mystic-700/40 rounded-lg p-6 space-y-3">
+              <h3 class="text-xl font-semibold text-gold-300">8. 부 &mdash; 누적 자산 4000만원 이상</h3>
+              <p class="text-mystic-200 leading-relaxed">
+                술은 화를 저장하며，일주의 재 요소입니다。쌍둥이 금고 플러스 축 충돌이 금고를 열고，미（무-술-신 상호작용을 통해 형성）가 숨겨진 자원을 순환시킵니다。술과 관련된 고전적 수비학은 예상치 못한 채널을 통해 최소 4000만원의 횡재를 추정하며，클라이언트의 신고 자산과 일치합니다。
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section class="space-y-4">
+          <h2 class="text-2xl font-bold text-white">III. 실천자 요약</h2>
+          <ul class="list-disc list-inside space-y-2 text-mystic-200 leading-relaxed">
+            <li><strong>칠살성 제어：</strong> 강한 토는 갑목 인 지원에 의해 적절히 활용될 때 권위가 됩니다。</li>
+            <li><strong>궁 순서가 중요：</strong> 년과 시 술은 어린 시절과 후기 사건을 고정합니다；궁 충돌은 타이밍과 해부학을 특정합니다。</li>
+            <li><strong>보물 활성화：</strong> 여러 저장 지（술，축，미）는 금고를 여는 중공/숨겨진 이미지를 동반하는 경우 주요 부로 변환할 수 있습니다。</li>
+            <li><strong>검증된 로깅：</strong> "신호 → 추론 → 결과"를 기록하는 것은 무거운 토-칠살 서명을 가진 미래의 군사/정부 프로필에 대한 신뢰를 향상시킵니다。</li>
+          </ul>
+        </section>
+      </div>
+    `
+    },
     author: "Master XuanYin",
     date: "2025-11-11",
     readTime: "12 min read",
