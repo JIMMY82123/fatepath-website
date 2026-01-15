@@ -6,7 +6,8 @@ import SEO from '../components/SEO'
 import { blogPostsData } from '../data/blogPostsData'
 
 const Blog = () => {
-  const { t } = useTranslation()
+  const { t, i18n } = useTranslation()
+  const currentLanguage = i18n.language || 'en'
   const [searchParams, setSearchParams] = useSearchParams()
   const [selectedCategory, setSelectedCategory] = useState('all')
   const [selectedTag, setSelectedTag] = useState('all')
@@ -39,10 +40,17 @@ const Blog = () => {
   const blogPosts = Object.entries(blogPostsData)
     .map(([slug, post]) => {
       const categoryId = getCategoryId(post.category || '')
+      // Support multilingual title and excerpt
+      const title = typeof post.title === 'object' 
+        ? (post.title[currentLanguage] || post.title.en || post.title)
+        : post.title
+      const excerpt = typeof post.excerpt === 'object'
+        ? (post.excerpt[currentLanguage] || post.excerpt.en || post.excerpt)
+        : post.excerpt
       return {
         slug,
-        title: post.title,
-        excerpt: post.excerpt,
+        title,
+        excerpt,
         category: categoryId,
         categoryLabel: categoryLabelMap[categoryId],
         tags: post.tags || [],
