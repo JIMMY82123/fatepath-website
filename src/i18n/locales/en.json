@@ -466,5 +466,25 @@
     "clearFilters": "Clear All Filters",
     "libraryTitle": "BaZi Data Library",
     "libraryDescription": "Explore our comprehensive collection of BaZi datasets, organized by category and complexity. From core data to advanced applications, find everything you need for BaZi analysis and development."
+  },
+  "freeBaziReport": {
+    "title": "Free Bazi Reading Report",
+    "subtitle": "Enter your birth information to get your personalized Bazi analysis instantly",
+    "seoDescription1": "Discover your destiny through ancient Chinese numerology with our free Bazi reading report",
+    "seoDescription2": "Professional BaZi chart analysis for wealth, love, health, and life path guidance",
+    "form": {
+      "fullName": "Full Name",
+      "fullNamePlaceholder": "Enter your full name",
+      "gender": "Gender",
+      "selectGender": "Select your gender",
+      "male": "Male",
+      "female": "Female",
+      "dateOfBirth": "Date of Birth",
+      "timeOfBirth": "Time of Birth",
+      "birthLocation": "Birth Location",
+      "birthLocationPlaceholder": "City, Country (e.g., New York, USA)",
+      "generating": "Generating Your Report...",
+      "generateButton": "Generate Free Report"
+    }
   }
 }

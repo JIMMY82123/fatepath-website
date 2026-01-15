@@ -475,5 +475,25 @@
     "clearFilters": "모든 필터 지우기",
     "libraryTitle": "팔자 데이터 라이브러리",
     "libraryDescription": "카테고리와 복잡성으로 구성된 포괄적인 팔자 데이터셋 컬렉션을 탐색하세요. 핵심 데이터부터 고급 애플리케이션까지, 팔자 분석 및 개발에 필요한 모든 것을 찾으세요."
+  },
+  "freeBaziReport": {
+    "title": "무료 팔자 리딩 리포트",
+    "subtitle": "생년월일 정보를 입력하여 개인화된 팔자 분석을 즉시 받으세요",
+    "seoDescription1": "무료 팔자 리딩 리포트로 고대 중국 수비학을 통해 운명을 발견하세요",
+    "seoDescription2": "재운, 연애, 건강, 인생 길에 대한 전문 팔자 차트 분석",
+    "form": {
+      "fullName": "이름",
+      "fullNamePlaceholder": "이름을 입력하세요",
+      "gender": "성별",
+      "selectGender": "성별을 선택하세요",
+      "male": "남성",
+      "female": "여성",
+      "dateOfBirth": "생년월일",
+      "timeOfBirth": "출생 시간",
+      "birthLocation": "출생지",
+      "birthLocationPlaceholder": "도시, 국가（예：뉴욕, USA）",
+      "generating": "리포트 생성 중...",
+      "generateButton": "무료 리포트 생성"
+    }
   }
 }

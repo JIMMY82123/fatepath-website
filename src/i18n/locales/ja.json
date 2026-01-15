@@ -475,5 +475,25 @@
     "clearFilters": "すべてのフィルターをクリア",
     "libraryTitle": "八字データライブラリ",
     "libraryDescription": "カテゴリと複雑さで整理された、包括的な八字データセットコレクションを探索してください。コアデータから高度なアプリケーションまで、八字分析と開発に必要なすべてを見つけてください。"
+  },
+  "freeBaziReport": {
+    "title": "無料八字リーディングレポート",
+    "subtitle": "生年月日情報を入力して、個人的な八字分析を即座に取得",
+    "seoDescription1": "無料の八字リーディングレポートで古代中国の数秘術を通じて運命を発見",
+    "seoDescription2": "財運、恋愛、健康、人生の道のガイダンスのためのプロフェッショナルな八字チャート分析",
+    "form": {
+      "fullName": "氏名",
+      "fullNamePlaceholder": "氏名を入力",
+      "gender": "性別",
+      "selectGender": "性別を選択",
+      "male": "男性",
+      "female": "女性",
+      "dateOfBirth": "生年月日",
+      "timeOfBirth": "出生時刻",
+      "birthLocation": "出生地",
+      "birthLocationPlaceholder": "都市、国（例：ニューヨーク、USA）",
+      "generating": "レポートを生成中...",
+      "generateButton": "無料レポートを生成"
+    }
   }
 }
