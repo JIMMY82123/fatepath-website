@@ -7319,9 +7319,18 @@ export const blogPostsData = {
       ]
     },
     "wealth-archetypes-chinese-astrology": {
-      title: "Wealth Archetypes in Chinese Astrology",
-      excerpt: "Discover your unique wealth personality type through BaZi analysis. Learn how your birth chart reveals your financial potential and the best strategies for wealth accumulation.",
-      content: `
+      title: {
+        en: "Wealth Archetypes in Chinese Astrology",
+        ja: "中国占星術における富の原型",
+        ko: "중국 점성술에서의 부 원형"
+      },
+      excerpt: {
+        en: "Discover your unique wealth personality type through BaZi analysis. Learn how your birth chart reveals your financial potential and the best strategies for wealth accumulation.",
+        ja: "八字分析を通じてあなたの独特な富の性格タイプを発見してください。あなたの出生チャートが金融の可能性と富の蓄積のための最良の戦略をどのように明らかにするかを学びます。",
+        ko: "사주 분석을 통해 당신의 고유한 부 성격 유형을 발견하세요。당신의 출생 차트가 금융 잠재력과 부 축적을 위한 최상의 전략을 어떻게 드러내는지 배웁니다。"
+      },
+      content: {
+        en: `
         <p class="mb-6 text-lg text-mystic-200 leading-relaxed">
           Your BaZi chart contains powerful insights about your wealth potential and financial destiny. 
           By understanding your wealth archetype, you can develop strategies that align with your 
@@ -7377,6 +7386,87 @@ export const blogPostsData = {
           Timing these moves correctly can significantly increase your success rate.
         </p>
       `,
+        ja: `
+        <p class="mb-6 text-lg text-mystic-200 leading-relaxed">
+          あなたの八字チャートには、富の可能性と金融運命に関する強力な洞察が含まれています。あなたの富の原型を理解することで、あなたの自然な金儲け能力と一致する戦略を開発することができます。
+        </p>
+        
+        <h2 class="text-2xl font-bold text-white mb-4 mt-8">八字における財星</h2>
+        <p class="mb-6 text-mystic-200 leading-relaxed">
+          八字分析では、財星はお金を蓄積し、管理するあなたの能力を表します。チャートにおけるその位置と強さは、あなたが自然に富の創造に才能があるか、金融管理により多くの努力が必要かを明らかにします。
+        </p>
+        
+        <h2 class="text-2xl font-bold text-white mb-4 mt-8">起業家の原型</h2>
+        <p class="mb-6 text-mystic-200 leading-relaxed">
+          強い火と木の要素を持つ人々は、しばしばこのカテゴリーに分類されます。彼らは革新的なアイデアを収益性の高いビジネスに変えることができる自然なリスクテイカーです。彼らの富は、新しい機会を作り出し、他の人を導くことから来ます。
+        </p>
+        
+        <h2 class="text-2xl font-bold text-white mb-4 mt-8">蓄積者の原型</h2>
+        <p class="mb-6 text-mystic-200 leading-relaxed">
+          土と金の要素がこの原型を支配しています。これらの個人は、お金を節約し、賢明な投資を行い、ゆっくりと着実に富を構築することに優れています。彼らは金融アプローチにおいて忍耐強く、規律正しいです。
+        </p>
+        
+        <h2 class="text-2xl font-bold text-white mb-4 mt-8">ネットワーカーの原型</h2>
+        <p class="mb-6 text-mystic-200 leading-relaxed">
+          水と木の要素がこの富の性格を作り出します。これらの人々は、関係、パートナーシップ、協力的な事業を通じて富を構築します。彼らは人々をつなぎ、ネットワークを通じて価値を創造することに優れています。
+        </p>
+        
+        <h2 class="text-2xl font-bold text-white mb-4 mt-8">専門家の原型</h2>
+        <p class="mb-6 text-mystic-200 leading-relaxed">
+          金と水の要素がしばしばこの原型を作り出します。これらの個人は、特定の分野で深い専門知識を開発することによって富を構築します。彼らは自分の分野で頼りになる専門家になり、自分の知識に対してプレミアム価格を要求します。
+        </p>
+        
+        <h2 class="text-2xl font-bold text-white mb-4 mt-8">あなたの富の可能性を最適化する</h2>
+        <p class="mb-6 text-mystic-200 leading-relaxed">
+          あなたの富の原型を理解したら、あなたの強みを活かす活動に焦点を当てることができます。これは、ビジネスを始める、キャリアを構築する、戦略的に投資する、または専門的なスキルを開発することを意味するかもしれません。
+        </p>
+        
+        <h2 class="text-2xl font-bold text-white mb-4 mt-8">あなたの富の動きのタイミング</h2>
+        <p class="mb-6 text-mystic-200 leading-relaxed">
+          あなたの八字チャートはまた、金融決定を行う最良の時期を明らかにします。特定の年と月は、ビジネスを始める、投資を行う、またはキャリアを変えるのにより好都合です。これらの動きを正しくタイミングを計ることで、成功率を大幅に向上させることができます。
+        </p>
+      `,
+        ko: `
+        <p class="mb-6 text-lg text-mystic-200 leading-relaxed">
+          당신의 사주 차트는 부의 잠재력과 금융 운명에 대한 강력한 통찰력을 포함하고 있습니다。당신의 부 원형을 이해함으로써，당신의 자연스러운 돈 버는 능력과 일치하는 전략을 개발할 수 있습니다。
+        </p>
+        
+        <h2 class="text-2xl font-bold text-white mb-4 mt-8">사주에서의 재성</h2>
+        <p class="mb-6 text-mystic-200 leading-relaxed">
+          사주 분석에서，재성은 돈을 축적하고 관리하는 당신의 능력을 나타냅니다。당신의 차트에서 그 위치와 강도는 당신이 자연스럽게 부 창조에 재능이 있는지，또는 금융 관리에 더 많은 노력이 필요한지를 드러냅니다。
+        </p>
+        
+        <h2 class="text-2xl font-bold text-white mb-4 mt-8">기업가 원형</h2>
+        <p class="mb-6 text-mystic-200 leading-relaxed">
+          강한 화와 목 요소를 가진 사람들은 종종 이 범주에 속합니다。그들은 혁신적인 아이디어를 수익성 있는 사업으로 전환할 수 있는 자연스러운 위험 감수자입니다。그들의 부는 새로운 기회를 만들고 다른 사람을 이끄는 것에서 옵니다。
+        </p>
+        
+        <h2 class="text-2xl font-bold text-white mb-4 mt-8">축적자 원형</h2>
+        <p class="mb-6 text-mystic-200 leading-relaxed">
+          토와 금 요소가 이 원형을 지배합니다。이러한 개인들은 돈을 저축하고，현명한 투자를 하며，천천히 그러나 꾸준히 부를 구축하는 데 뛰어납니다。그들은 금융 접근 방식에서 인내심 있고 규율이 있습니다。
+        </p>
+        
+        <h2 class="text-2xl font-bold text-white mb-4 mt-8">네트워커 원형</h2>
+        <p class="mb-6 text-mystic-200 leading-relaxed">
+          수와 목 요소가 이 부 성격을 만듭니다。이러한 사람들은 관계，파트너십，협력적 사업을 통해 부를 구축합니다。그들은 사람들을 연결하고 네트워크를 통해 가치를 창조하는 데 뛰어납니다。
+        </p>
+        
+        <h2 class="text-2xl font-bold text-white mb-4 mt-8">전문가 원형</h2>
+        <p class="mb-6 text-mystic-200 leading-relaxed">
+          금과 수 요소가 종종 이 원형을 만듭니다。이러한 개인들은 특정 영역에서 깊은 전문 지식을 개발함으로써 부를 구축합니다。그들은 자신의 분야에서 찾아가는 전문가가 되고 자신의 지식에 대해 프리미엄 가격을 요구합니다。
+        </p>
+        
+        <h2 class="text-2xl font-bold text-white mb-4 mt-8">당신의 부 잠재력 최적화</h2>
+        <p class="mb-6 text-mystic-200 leading-relaxed">
+          당신의 부 원형을 이해하면，당신의 강점을 활용하는 활동에 집중할 수 있습니다。이것은 사업을 시작하거나，경력을 구축하거나，전략적으로 투자하거나，또는 전문 기술을 개발하는 것을 의미할 수 있습니다。
+        </p>
+        
+        <h2 class="text-2xl font-bold text-white mb-4 mt-8">당신의 부 움직임 타이밍</h2>
+        <p class="mb-6 text-mystic-200 leading-relaxed">
+          당신의 사주 차트는 또한 금융 결정을 내리는 최상의 시기를 드러냅니다。특정 연도와 월은 사업을 시작하거나，투자를 하거나，또는 경력을 변경하는 데 더 유리합니다。이러한 움직임을 올바르게 타이밍하면 성공률을 크게 높일 수 있습니다。
+        </p>
+      `
+      },
       author: "Master Chen",
       date: "2024-01-05",
       readTime: "6 min read",
