@@ -570,5 +570,55 @@
     ],
     "disclaimerLabel": "Disclaimer",
     "disclaimer": "All readings and tools are for entertainment and reflection only. Not professional advice or prediction. Chinese astrology and Bazi analysis are traditional cultural practices meant for personal insight and self-reflection. Chinese astrology reading results should not be used as the sole basis for major life decisions."
+  },
+  "notFound": {
+    "seoTitle": "404 - Page Not Found | Chinese Astrology & Bazi Analysis | FatePath",
+    "seoDescription": "The page you're looking for doesn't exist. Explore our Chinese astrology services and Bazi analysis tools. Bazi, also known as Four Pillars in Chinese astrology, offers deep insights into your destiny.",
+    "title": "Page Not Found - Chinese Astrology Resources",
+    "description": "The page you're looking for doesn't exist or has been moved. Bazi, also known as Four Pillars in Chinese astrology, is a powerful system for understanding your destiny through Chinese astrology principles.",
+    "goHome": "Go Home",
+    "goBack": "Go Back",
+    "discoverTitle": "Discover Chinese Astrology & Bazi Analysis",
+    "discoverDesc1": "Chinese astrology is an ancient system that has guided millions for thousands of years. Bazi, also known as Four Pillars in Chinese astrology, is one of the most accurate methods in Chinese astrology for predicting life events and understanding personality traits through Chinese astrology principles.",
+    "discoverDesc2": "Our Chinese astrology platform offers comprehensive Bazi analysis tools. Bazi, also known as Four Pillars in Chinese astrology, combines the wisdom of Chinese astrology with modern analysis techniques to provide detailed insights into your Chinese astrology chart.",
+    "card1": {
+      "title": "Free Bazi Report",
+      "description": "Get your free personalized Bazi reading based on Chinese astrology principles. Bazi, also known as Four Pillars in Chinese astrology, reveals your Chinese astrology destiny through comprehensive Chinese astrology analysis.",
+      "link": "Get Free Report"
+    },
+    "card2": {
+      "title": "Bazi Tools",
+      "description": "Explore our Chinese astrology tools for Bazi analysis. Bazi, also known as Four Pillars in Chinese astrology, can be analyzed using various Chinese astrology calculators and Chinese astrology techniques.",
+      "link": "View Tools"
+    },
+    "whatIsTitle": "What is Chinese Astrology?",
+    "whatIsDesc1": "Chinese astrology is a complex system that has been practiced for over 2,000 years. Chinese astrology uses the principles of the Five Elements, Yin and Yang, and the Chinese zodiac to provide insights through Chinese astrology analysis. Bazi, also known as Four Pillars in Chinese astrology, is a core component of Chinese astrology that analyzes your birth chart using Chinese astrology methods.",
+    "whatIsDesc2": "The accuracy of Chinese astrology, especially Bazi analysis, has made Chinese astrology one of the most respected systems worldwide. Chinese astrology practitioners use Bazi, also known as Four Pillars in Chinese astrology, to predict career success, relationships, health, and wealth through Chinese astrology principles.",
+    "whyChooseTitle": "Why Choose Chinese Astrology?",
+    "whyChooseDesc1": "Chinese astrology offers detailed insights that other systems cannot match. Bazi, also known as Four Pillars in Chinese astrology, provides precise timing predictions through Chinese astrology analysis. Our Chinese astrology experts use advanced Chinese astrology techniques to deliver accurate Chinese astrology readings.",
+    "whyChooseDesc2": "Whether you're new to Chinese astrology or an experienced practitioner, our Chinese astrology platform provides comprehensive Bazi analysis. Chinese astrology has helped millions understand their destiny, and Bazi, also known as Four Pillars in Chinese astrology, is the most accurate method in Chinese astrology for personal analysis.",
+    "popularServicesTitle": "Popular Chinese Astrology Services",
+    "service1": {
+      "title": "Free Bazi Reading",
+      "description": "Get a comprehensive Bazi analysis using Chinese astrology. Bazi, also known as Four Pillars in Chinese astrology, reveals your Chinese astrology destiny through professional Chinese astrology analysis.",
+      "link": "Try Free Reading",
+      "alt": "Free Bazi reading service using Chinese astrology principles"
+    },
+    "service2": {
+      "title": "Bazi Tools",
+      "description": "Access professional Chinese astrology tools for Bazi analysis. Bazi, also known as Four Pillars in Chinese astrology, can be calculated using our Chinese astrology calculators and Chinese astrology resources.",
+      "link": "Explore Tools",
+      "alt": "Bazi analysis tools for Chinese astrology calculations"
+    },
+    "service3": {
+      "title": "Professional Services",
+      "description": "Book a detailed Chinese astrology consultation with our Chinese astrology experts. Bazi, also known as Four Pillars in Chinese astrology, provides accurate predictions through personalized Chinese astrology readings.",
+      "link": "View Services",
+      "alt": "Professional Chinese astrology consultation services"
+    },
+    "ctaTitle": "Start Your Chinese Astrology Journey Today",
+    "ctaDescription": "Discover the power of Chinese astrology through Bazi analysis. Bazi, also known as Four Pillars in Chinese astrology, offers the most accurate insights in Chinese astrology. Experience professional Chinese astrology analysis and unlock your Chinese astrology destiny.",
+    "ctaButton1": "Get Free Bazi Report",
+    "ctaButton2": "Read Chinese Astrology Blog"
   }
 }
