@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useMemo } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import { Link } from 'react-router-dom'
-import { Search, Filter, Calendar, MapPin, Briefcase, Star, ChevronRight } from 'lucide-react'
+import { Search, Filter, Calendar, MapPin, Briefcase, Star } from 'lucide-react'
 import SEO from '../components/SEO'
 
 const CelebritiesBornToday = () => {
@@ -431,12 +431,6 @@ const CelebritiesBornToday = () => {
                             </div>
                           </div>
                         </div>
-                        <Link
-                          to={`/free-bazi-report?name=${encodeURIComponent(celeb.name)}&birthDate=${celeb.birthDate}`}
-                          className="text-gold-400 hover:text-gold-300 transition-colors"
-                        >
-                          <ChevronRight className="h-5 w-5" />
-                        </Link>
                       </div>
                     </motion.div>
                   ))}
@@ -504,12 +498,6 @@ const CelebritiesBornToday = () => {
                             </div>
                           </div>
                         </div>
-                        <Link
-                          to={`/free-bazi-report?name=${encodeURIComponent(celeb.name)}&birthDate=${celeb.birthDate}`}
-                          className="text-gold-400 hover:text-gold-300 transition-colors"
-                        >
-                          <ChevronRight className="h-5 w-5" />
-                        </Link>
                       </div>
                     </motion.div>
                   ))}
@@ -588,12 +576,6 @@ const CelebritiesBornToday = () => {
                                 </div>
                               </div>
                             </div>
-                            <Link
-                              to={`/free-bazi-report?name=${encodeURIComponent(celeb.name)}&birthDate=${celeb.birthDate}`}
-                              className="text-gold-400 hover:text-gold-300 transition-colors"
-                            >
-                              <ChevronRight className="h-5 w-5" />
-                            </Link>
                           </div>
                         </motion.div>
                       ))}
