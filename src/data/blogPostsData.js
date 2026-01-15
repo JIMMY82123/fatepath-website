@@ -796,6 +796,9 @@ export const blogPostsData = {
         </div>
       </div>
     `,
+      ja: ``,
+      ko: ``
+    },
     author: 'Master XuanYin',
     date: '2025-11-13',
     readTime: '10 min read',
