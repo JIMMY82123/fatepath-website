@@ -61,38 +61,28 @@ const ChineseAstrologyGuide = () => {
 
   const servicePackages = useMemo(() => [
     {
-      name: "Perfect for Beginners – Get Your 2026 Bazi Annual Report",
-      subtitle: "2026 Annual Bazi Report",
-      price: "$15",
-      description: "Perfect for first-time clients exploring Chinese astrology. Get a focused 2026 annual fortune report covering wealth, health, and relationship trends through professional Chinese astrology reading.",
-      features: [
-        "2026 single-year fortune report",
-        "Focus on wealth, health, and relationship trends",
-        "2-4 page PDF report",
-        "Delivery within 3-5 days"
-      ],
+      name: t('chineseAstrologyGuide.packages.package1.name'),
+      subtitle: t('chineseAstrologyGuide.packages.package1.subtitle'),
+      price: t('chineseAstrologyGuide.packages.package1.price'),
+      description: t('chineseAstrologyGuide.packages.package1.description'),
+      features: t('chineseAstrologyGuide.packages.package1.features', { returnObjects: true }),
       link: "https://ko-fi.com/c/aef3d0e0ae",
       color: "from-green-500 to-emerald-500",
       icon: <FileText className="h-6 w-6" />,
-      badge: "Best Value"
+      badge: t('chineseAstrologyGuide.packages.package1.badge')
     },
     {
-      name: "Deep Insights – 5-Year Detailed Bazi Outlook + WA Q&A",
-      subtitle: "5-Year Detailed Outlook + WA Q&A",
-      price: "$30",
-      description: "Comprehensive 5-year fortune analysis (2026-2030) with WhatsApp support. Perfect for serious students of Chinese astrology seeking deep insights through detailed Bazi reading.",
-      features: [
-        "Detailed 5-year fortune report (2026-2030)",
-        "Annual wealth, health, and relationship trends",
-        "6-8 page PDF report",
-        "WhatsApp Q&A support (3-5 questions)"
-      ],
+      name: t('chineseAstrologyGuide.packages.package2.name'),
+      subtitle: t('chineseAstrologyGuide.packages.package2.subtitle'),
+      price: t('chineseAstrologyGuide.packages.package2.price'),
+      description: t('chineseAstrologyGuide.packages.package2.description'),
+      features: t('chineseAstrologyGuide.packages.package2.features', { returnObjects: true }),
       link: "https://ko-fi.com/c/36342951ca",
       color: "from-purple-500 to-pink-500",
       icon: <BookOpen className="h-6 w-6" />,
-      badge: "Most Popular"
+      badge: t('chineseAstrologyGuide.packages.package2.badge')
     }
-  ]
+  ], [t])
 
   const faqData = useMemo(() => t('chineseAstrologyGuide.faq', { returnObjects: true }), [t])
 
