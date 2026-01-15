@@ -2636,9 +2636,18 @@ export const blogPostsData = {
     ]
   },
   "bazi-beyond-zi-ping": {
-    title: "BaZi Beyond Zi Ping: Rethinking Six Relatives, Luck Pillars & Shen Sha",
-    excerpt: "Revisit early BaZi principles—functional Six Relatives, evidence-based Luck Pillars, and a minimal shen sha approach—through classical references and anonymized casework.",
-    content: `
+    title: {
+      en: "BaZi Beyond Zi Ping: Rethinking Six Relatives, Luck Pillars & Shen Sha",
+      ja: "子平を超えた八字：六親、運柱、神煞の再考",
+      ko: "자평을 넘어선 사주: 육친, 운주, 신살 재고"
+    },
+    excerpt: {
+      en: "Revisit early BaZi principles—functional Six Relatives, evidence-based Luck Pillars, and a minimal shen sha approach—through classical references and anonymized casework.",
+      ja: "古典的な参考文献と匿名化されたケースワークを通じて、初期の八字原則—機能的六親、証拠に基づく運柱、最小限の神煞アプローチ—を再訪します。",
+      ko: "고전적 참고문헌과 익명화된 사례 작업을 통해 초기 사주 원칙—기능적 육친, 증거 기반 운주, 최소한의 신살 접근법—를 재검토합니다。"
+    },
+    content: {
+      en: `
       <div class="space-y-6">
         <p class="text-mystic-200 leading-relaxed">
           In Chinese metaphysics the proverb “Fate, Luck, Feng Shui” places a person’s natal chart and timing cycles ahead of environment. Modern practice is dominated by the Zi Ping school, often blended with later sub-schools and a dense forest of <em>shen sha</em> labels such as Peach Blossom or Traveling Horse. This essay returns to perspectives found in early sources including <strong>Yuzhao Zhenjing (玉照神应真经)</strong> and lessons gathered from day-to-day client work, with takeaways for today’s international seekers.
@@ -2735,6 +2744,201 @@ export const blogPostsData = {
         </p>
       </div>
     `,
+      ja: `
+      <div class="space-y-6">
+        <p class="text-mystic-200 leading-relaxed">
+          中国の形而上学では、「運命、運、風水」という格言が、人の出生チャートとタイミングサイクルを環境よりも優先します。現代の実践は子平学派によって支配されており、しばしば後の分派や、桃の花や驛馬などの神煞ラベルの密林と混合されています。このエッセイは、<strong>玉照神応真経（ぎょくしょうしんおうしんきょう）</strong>を含む初期の資料に見られる視点と、日常のクライアント作業から集められた教訓に戻り、今日の国際的な探求者への要点を提供します。
+        </p>
+
+        <h2 class="text-2xl font-bold text-white mt-8 mb-4">1) 「六親」は機能的であり、文字通りのものではない</h2>
+        <p class="text-mystic-200 leading-relaxed">
+          十神（じっしん）は、固定された家族メンバーではなく、機能的ダイナミクスを記述します：
+        </p>
+        <ul class="list-disc list-inside space-y-2 text-mystic-200 leading-relaxed">
+          <li><strong>資源/印（いん）：</strong> サポート、栄養、保護、学習。</li>
+          <li><strong>出力（しょくしょう）：</strong> 表現、生産、圧力の解放。</li>
+          <li><strong>財（ざい）：</strong> 獲得、交換、責任、義務。</li>
+          <li><strong>権力/権威（かんさつ）：</strong> 規則、圧力、説明責任。</li>
+          <li><strong>同輩（ひごう）：</strong> 同等、競争、同盟、自己主張。</li>
+        </ul>
+        <p class="text-mystic-200 leading-relaxed">
+          伝統的な記憶術は、これらの機能を親族にマッピングします—印を母親として、財を配偶者として（男性の日主の場合）、など。これらの近道は家族のダイナミクスを示唆しますが、実際の生活は役割を流動的に割り当てます。メンターや叔母が真の印サポートとして行動できる一方で、生物学的親はそうでない場合があります。財政的義務を生み出すビジネスパートナーシップは、婚姻状況に関係なく財として機能します。実践ルール：機能を最初に読み、親族関係を2番目に。生活の証拠が文字通りの親族を確認する場合、素晴らしい；そうでなければ、誤った確実性を避けるためにラベルを役割ベースに保ちます。十神の基礎を復習したいですか？<a class="text-gold-300 underline" href="/blog/understanding-bazi-chart-beginners-guide">八字チャートの理解：初心者ガイド</a>を再訪してください。
+        </p>
+
+        <h2 class="text-2xl font-bold text-white mt-8 mb-4">2) 運柱には方法論的注意が必要</h2>
+        <p class="text-mystic-200 leading-relaxed">
+          運柱（大運）の開始年齢ルール—「陽の男性は前進、陰の女性は後退」、出生から次の月の境界まで数える、または季節的フレームワークを使用する—は伝統によって異なります。歴史的資料は、単一の無争議の公式に決着することはありません。2つの習慣が精度を向上させます：
+        </p>
+        <ol class="list-decimal list-inside space-y-2 text-mystic-200 leading-relaxed">
+          <li><strong>相互検証：</strong> 教育、転居、結婚、病気、キャリアの中断などの検証済みマイルストーンに対して、いくつかの開始年齢の慣習をテストします。個々のチャートのトリガーと結果を最もよく追跡する慣習を保持します。</li>
+          <li><strong>トリガーチェーン思考：</strong> 年/月のエネルギーをアクティベーターとして扱います。それらは最初に宮（配偶者、資産、キャリア、子供）と結びつくか衝突します；柱の算術は時計であり、イベント自体ではありません。衝突が昨年始まり、今年強化された場合、生活のイベントは両方のカレンダーにまたがる可能性があります。</li>
+        </ol>
+        <p class="text-mystic-200 leading-relaxed">
+          要するに：運柱は不可欠なタイミングの足場ですが、自己証明ではありません。前進を予測する前に、現実に対して検証してください。このワークフローを<a class="text-gold-300 underline" href="/blog/career-timing-next-big-move">キャリアタイミング：八字で次の大きな動きを計画する</a>で概説されたプロジェクト計画のステップと組み合わせてください。
+        </p>
+
+        <h2 class="text-2xl font-bold text-white mt-8 mb-4">3) 「神煞」について：オプションの層、エンジンではない</h2>
+        <p class="text-mystic-200 leading-relaxed">
+          桃の花、驛馬、または学術星などのラベルは色を追加しますが、補助的です。過度の依存は主要なメカニズムを曖昧にする可能性があります：
+        </p>
+        <ul class="list-disc list-inside space-y-2 text-mystic-200 leading-relaxed">
+          <li><strong>要素の流れ：</strong> 誰が誰を生成しますか？誰が誰を抑制しますか？圧力はどこに蓄積または解放されますか？</li>
+          <li><strong>構造と容量：</strong> チャートは富や圧力を運ぶことができますか？容量なしの流入は撹拌と損失になります。より深い研究については、<a class="text-gold-300 underline" href="/blog/advanced-bazi-wealth-analysis-mastery">高度な八字富分析</a>をレビューしてください。</li>
+          <li><strong>時空間トリガー：</strong> どの宮（配偶者、資産、キャリア、子供、健康）が今年/月に結びつき、衝突、または組み合わせによって活性化されますか？</li>
+        </ul>
+        <p class="text-mystic-200 leading-relaxed">
+          神煞は、すでに健全な構造的読みを明確にする場合にのみ使用してください。ノイズや矛盾を増やす場合は、それらをスキップしてください。
+        </p>
+
+        <h2 class="text-2xl font-bold text-white mt-8 mb-4">4) ケーススケッチ（匿名化および教育的）</h2>
+        <p class="text-mystic-200 leading-relaxed">
+          フォーマット：信号 → 推論 → 結果（報告） → 要点。日付と識別詳細はプライバシーのために調整されています。
+        </p>
+
+        <div class="space-y-4 bg-mystic-800/40 border border-mystic-700/40 p-6 rounded-lg">
+          <h3 class="text-xl font-semibold text-gold-300">ケースA — 家族と金融の衝撃</h3>
+          <p class="text-mystic-200 leading-relaxed">
+            <strong>信号：</strong> 年が日支でまたはその近くで戌（いぬ）を活性化します；潜在的な卯–戌相互作用が存在します。前年はすでに木対土の緊張を特徴としていました。<br/>
+            <strong>推論：</strong> 木が配偶者/資産宮で土に挑戦し、年/月がそれらの結びつきを強化する場合、法的または金融的ストレスと国内の破裂を予期してください。チェーンは以前に始まり、今頂点に達する可能性があります。<br/>
+            <strong>結果：</strong> 債務が螺旋状になり、資産が清算され、一時的な分離が扶養家族を保護しました。<br/>
+            <strong>要点：</strong> 2つのカレンダーにわたるチェーンで考える（前年のトリガー → 現在の年の結果）ことで、「驚き」イベントを減らします。
+          </p>
+        </div>
+
+        <div class="space-y-4 bg-mystic-800/40 border border-mystic-700/40 p-6 rounded-lg">
+          <h3 class="text-xl font-semibold text-gold-300">ケースB — 結婚状況の転換</h3>
+          <p class="text-mystic-200 leading-relaxed">
+            <strong>信号：</strong> 年が寅（とら）をもたらし、日支未（ひつじ）（配偶者宮）を押します。前の乙卯月は天地の動揺を生み出しました。<br/>
+            <strong>推論：</strong> 木→土の圧力の下の配偶者宮プラス完全な動揺は、結婚状況の決定点を示唆します。<br/>
+            <strong>結果：</strong> 法的離婚が前月に完了しました；生活の取り決めは即座の転居なしで調整されました。<br/>
+            <strong>要点：</strong> 宮の状態プラス時限トリガーは、一般的な「賛成対反対」を上回ります。関係の窓についての詳細は<a class="text-gold-300 underline" href="/blog/marriage-relationship-destiny-report-woman-love-path">結婚と関係の運命レポート</a>を参照してください。
+          </p>
+        </div>
+
+        <div class="space-y-4 bg-mystic-800/40 border border-mystic-700/40 p-6 rounded-lg">
+          <h3 class="text-xl font-semibold text-gold-300">ケースC — 結婚の窓と富の容量</h3>
+          <p class="text-mystic-200 leading-relaxed">
+            <strong>信号：</strong> 散在するサポートを持つ庚（かのえ）の日主；特定の期間が日干と組み合わされ、子/寅宮を活性化します。<br/>
+            <strong>推論：</strong> 組み合わせが圧力を緩和します；宮の活性化が求愛 → 結婚の窓を作成します。財星が現れますが、容量は限られています—構造的サポートなしでは、流入 ≠ 保持。<br/>
+            <strong>結果：</strong> デートが1年で始まりました；法的結婚が続きました；収入は安定していますが、大きな蓄積はありません。<br/>
+            <strong>要点：</strong> 「大金」を予測する前に、「チャートはそれを運ぶことができますか？」と尋ねてください。容量は、財星の単なる存在よりも結果を決定することがよくあります。
+          </p>
+        </div>
+
+        <h2 class="text-2xl font-bold text-white mt-8 mb-4">5) 実践的な八字ワークフローチェックリスト</h2>
+        <ol class="list-decimal list-inside space-y-2 text-mystic-200 leading-relaxed">
+          <li><strong>質問を明確にフレーム化します。</strong> キャリアの転換点？富の保持？結婚のタイミング？質問は、どの宮が焦点に値するかを決定します。</li>
+          <li><strong>文字通りの親族の前に機能的役割を読みます。</strong> 実際の生活で印/財/権力/同輩/出力として行動する人を特定します。</li>
+          <li><strong>容量を早期に判断します。</strong> 封じ込めなしの富は漏れます；バッファーなしの権力は燃えます；受信なしの出力は散らばります。</li>
+          <li><strong>トリガーチェーンをマッピングします。</strong> 宮への年/月の結びつきを追跡し、セットアップと解放のために隣接する年を追加します。</li>
+          <li><strong>運柱を検証します。</strong> 開始年齢の慣習を選択し、検証済みマイルストーンをバックテストし、例外を文書化し、その後予測します。</li>
+          <li><strong>神煞を控えめに使用します。</strong> それらが明確にする場合に追加します—ノイズを追加する場合は省略します。</li>
+          <li><strong>推論を文書化します。</strong> 精度を向上させるために、信号 → 推論 → 結果ログを保持します。上記のケーススタディや<a class="text-gold-300 underline" href="/blog/advanced-bazi-wealth-analysis-mastery">高度な八字富分析</a>の富の容量の内訳と比較します。</li>
+        </ol>
+
+        <p class="text-mystic-200 leading-relaxed">
+          基礎的な論理—機能的役割、検証されたタイミング、クリーンな構造分析—に戻ることは、実践者が神話に溺れることなく現代のクライアントにサービスを提供するのに役立ちます。初期の古典は、現代の生活を通じて解釈されるとき、依然として共鳴します。
+        </p>
+      </div>
+    `,
+      ko: `
+      <div class="space-y-6">
+        <p class="text-mystic-200 leading-relaxed">
+          중국 형이상학에서 "운명, 운, 풍수"라는 속담은 사람의 출생 차트와 타이밍 사이클을 환경보다 앞서 배치합니다。현대 실천은 자평 학파에 의해 지배되며，종종 후기 하위 학파와 도화 또는 역마와 같은 신살 라벨의 밀집한 숲과 혼합됩니다。이 에세이는 <strong>옥조신응진경（玉照神應真經）</strong>을 포함한 초기 자료에서 발견된 관점과 일상적인 클라이언트 작업에서 수집된 교훈으로 돌아가며，오늘날의 국제적 탐구자들을 위한 요점을 제공합니다。
+        </p>
+
+        <h2 class="text-2xl font-bold text-white mt-8 mb-4">1) "육친"은 기능적이며，문자 그대로가 아니다</h2>
+        <p class="text-mystic-200 leading-relaxed">
+          십신（十神）은 고정된 가족 구성원이 아니라 기능적 역학을 설명합니다：
+        </p>
+        <ul class="list-disc list-inside space-y-2 text-mystic-200 leading-relaxed">
+          <li><strong>자원/인（印）：</strong> 지원，영양，보호，학습。</li>
+          <li><strong>출력（食傷）：</strong> 표현，생산，압력 해제。</li>
+          <li><strong>재（財）：</strong> 획득，교환，책임，의무。</li>
+          <li><strong>권력/권위（官殺）：</strong> 규칙，압력，책임。</li>
+          <li><strong>동료（比劫）：</strong> 동등，경쟁，동맹，자기 주장。</li>
+        </ul>
+        <p class="text-mystic-200 leading-relaxed">
+          전통적인 기억술은 이러한 기능을 친족에 매핑합니다—인을 어머니로，재를 배우자로（남성 일주의 경우），등등。이러한 지름길은 가족 역학을 암시하지만，실제 생활은 역할을 유동적으로 할당합니다。멘토나 이모가 진정한 인 지원으로 행동할 수 있는 반면，생물학적 부모는 그렇지 않을 수 있습니다。재정적 의무를 만드는 비즈니스 파트너십은 결혼 상태와 관계없이 재로 기능합니다。실천 규칙：기능을 먼저 읽고，친족 관계를 두 번째로。생활 증거가 문자 그대로의 친족을 확인하면 좋습니다；그렇지 않으면 잘못된 확실성을 피하기 위해 라벨을 역할 기반으로 유지합니다。십신 기초를 복습하고 싶으신가요？<a class="text-gold-300 underline" href="/blog/understanding-bazi-chart-beginners-guide">사주 차트 이해하기：초보자 가이드</a>를 다시 방문하세요。
+        </p>
+
+        <h2 class="text-2xl font-bold text-white mt-8 mb-4">2) 운주는 방법론적 주의가 필요하다</h2>
+        <p class="text-mystic-200 leading-relaxed">
+          운주（대운）의 시작 연령 규칙—"양 남성은 전진，음 여성은 후퇴"，출생부터 다음 달 경계까지 계산，또는 계절적 프레임워크 사용—는 전통에 따라 다릅니다。역사적 자료는 단일 무쟁의 공식에 정착한 적이 없습니다。두 가지 습관이 정확도를 향상시킵니다：
+        </p>
+        <ol class="list-decimal list-inside space-y-2 text-mystic-200 leading-relaxed">
+          <li><strong>교차 검증：</strong> 교육，이전，결혼，질병，또는 경력 중단과 같은 검증된 마일스톤에 대해 여러 시작 연령 관례를 테스트합니다。개별 차트의 트리거와 결과를 가장 잘 추적하는 관례를 유지합니다。</li>
+          <li><strong>트리거 체인 사고：</strong> 연/월 에너지를 활성화제로 취급합니다。그들은 먼저 궁（배우자，자산，경력，자녀）과 연결되거나 충돌합니다；주 산술은 시계이며，이벤트 자체가 아닙니다。충돌이 작년에 시작되고 올해 강화되면，생활 이벤트는 두 달력에 걸칠 수 있습니다。</li>
+        </ol>
+        <p class="text-mystic-200 leading-relaxed">
+          요약：운주는 필수적인 타이밍 비계이지만，자기 증명은 아닙니다。앞으로 예측하기 전에 현실에 대해 검증하세요。이 워크플로우를<a class="text-gold-300 underline" href="/blog/career-timing-next-big-move">경력 타이밍：사주로 다음 큰 움직임 계획하기</a>에서 설명한 프로젝트 계획 단계와 결합하세요。
+        </p>
+
+        <h2 class="text-2xl font-bold text-white mt-8 mb-4">3) "신살"에 대해：선택적 층，엔진이 아니다</h2>
+        <p class="text-mystic-200 leading-relaxed">
+          도화，역마，또는 학술성과 같은 라벨은 색상을 추가하지만，보조적입니다。과도한 의존은 주요 메커니즘을 모호하게 할 수 있습니다：
+        </p>
+        <ul class="list-disc list-inside space-y-2 text-mystic-200 leading-relaxed">
+          <li><strong>요소 흐름：</strong> 누가 누구를 생성합니까？누가 누구를 억제합니까？압력은 어디에 축적되거나 해제됩니까？</li>
+          <li><strong>구조 및 용량：</strong> 차트가 부나 압력을 운반할 수 있습니까？용량 없는 유입은 교반과 손실이 됩니다。더 깊은 연구를 위해<a class="text-gold-300 underline" href="/blog/advanced-bazi-wealth-analysis-mastery">고급 사주 부 분석</a>을 검토하세요。</li>
+          <li><strong>시공간 트리거：</strong> 어떤 궁（배우자，자산，경력，자녀，건강）이 올해/월에 연결，충돌，또는 조합으로 활성화됩니까？</li>
+        </ul>
+        <p class="text-mystic-200 leading-relaxed">
+          신살은 이미 건전한 구조적 읽기를 명확히 할 때만 사용하세요。그들이 노이즈나 모순을 증가시키면 건너뛰세요。
+        </p>
+
+        <h2 class="text-2xl font-bold text-white mt-8 mb-4">4) 사례 스케치（익명화 및 교육적）</h2>
+        <p class="text-mystic-200 leading-relaxed">
+          형식：신호 → 추론 → 결과（보고） → 요점。날짜와 식별 세부사항은 개인정보 보호를 위해 조정되었습니다。
+        </p>
+
+        <div class="space-y-4 bg-mystic-800/40 border border-mystic-700/40 p-6 rounded-lg">
+          <h3 class="text-xl font-semibold text-gold-300">사례 A — 가족 및 금융 충격</h3>
+          <p class="text-mystic-200 leading-relaxed">
+            <strong>신호：</strong> 연이 일지에서 또는 그 근처에서 술（戌）을 활성화합니다；잠재적 묘–술 상호작용이 존재합니다。전년은 이미 목 대 토의 긴장을 특징으로 했습니다。<br/>
+            <strong>추론：</strong> 목이 배우자/자산 궁에서 토에 도전하고 연/월이 이러한 연결을 강화할 때，법적 또는 금융적 스트레스와 국내 파열을 예상하세요。체인은 이전에 시작되어 지금 정점에 도달할 수 있습니다。<br/>
+            <strong>결과：</strong> 부채가 나선형으로 증가하고，자산이 청산되었으며，일시적 분리가 부양 가족을 보호했습니다。<br/>
+            <strong>요점：</strong> 두 달력에 걸친 체인으로 생각（전년 트리거 → 현재 연 결과）하여 "놀라움" 이벤트를 줄입니다。
+          </p>
+        </div>
+
+        <div class="space-y-4 bg-mystic-800/40 border border-mystic-700/40 p-6 rounded-lg">
+          <h3 class="text-xl font-semibold text-gold-300">사례 B — 결혼 상태 전환</h3>
+          <p class="text-mystic-200 leading-relaxed">
+            <strong>신호：</strong> 연이 인（寅）을 가져와 일지 미（未）（배우자 궁）를 누릅니다。이전 을묘월은 천지 동요를 생성했습니다。<br/>
+            <strong>추론：</strong> 목→토 압력 하의 배우자 궁 플러스 완전한 동요는 결혼 상태의 결정점을 시사합니다。<br/>
+            <strong>결과：</strong> 법적 이혼이 전월에 완료되었습니다；생활 배치는 즉각적인 이전 없이 조정되었습니다。<br/>
+            <strong>요점：</strong> 궁 상태 플러스 시간 제한 트리거는 일반적인 "찬성 대 반대"를 능가합니다。관계 창에 대한 자세한 내용은<a class="text-gold-300 underline" href="/blog/marriage-relationship-destiny-report-woman-love-path">결혼 및 관계 운명 보고서</a>를 참조하세요。
+          </p>
+        </div>
+
+        <div class="space-y-4 bg-mystic-800/40 border border-mystic-700/40 p-6 rounded-lg">
+          <h3 class="text-xl font-semibold text-gold-300">사례 C — 결혼 창 및 부 용량</h3>
+          <p class="text-mystic-200 leading-relaxed">
+            <strong>신호：</strong> 산재된 지원을 가진 경（庚） 일주；특정 기간이 일간과 결합되고 자/인 궁을 활성화합니다。<br/>
+            <strong>추론：</strong> 조합이 압력을 완화합니다；궁 활성화가 구애 → 결혼 창을 만듭니다。재성이 나타나지만 용량은 제한됩니다—구조적 지원 없이는 유입 ≠ 보유。<br/>
+            <strong>결과：</strong> 데이트가 1년에 시작되었습니다；법적 결혼이 이어졌습니다；수입은 안정적이지만 큰 축적은 없습니다。<br/>
+            <strong>요점：</strong> "큰 돈"을 예측하기 전에，"차트가 그것을 운반할 수 있습니까？"라고 물어보세요。용량은 재성의 단순한 존재보다 결과를 결정하는 경우가 많습니다。
+          </p>
+        </div>
+
+        <h2 class="text-2xl font-bold text-white mt-8 mb-4">5) 실용적인 사주 워크플로우 체크리스트</h2>
+        <ol class="list-decimal list-inside space-y-2 text-mystic-200 leading-relaxed">
+          <li><strong>질문을 명확하게 프레임화합니다。</strong> 경력 전환점？부 보유？결혼 타이밍？질문은 어떤 궁이 초점에 가치가 있는지 결정합니다。</li>
+          <li><strong>문자 그대로의 친족 전에 기능적 역할을 읽습니다。</strong> 실제 생활에서 인/재/권력/동료/출력으로 행동하는 사람을 식별합니다。</li>
+          <li><strong>용량을 조기에 판단합니다。</strong> 억제 없는 부는 누출됩니다；버퍼 없는 권력은 타오릅니다；수신 없는 출력은 흩어집니다。</li>
+          <li><strong>트리거 체인을 매핑합니다。</strong> 궁에 대한 연/월 연결을 추적하고 설정 및 해제를 위해 인접 연을 추가합니다。</li>
+          <li><strong>운주를 검증합니다。</strong> 시작 연령 관례를 선택하고，검증된 마일스톤을 백테스트하며，예외를 문서화한 다음 예측합니다。</li>
+          <li><strong>신살을 절제하여 사용합니다。</strong> 그들이 명확히 할 때 추가합니다—노이즈를 추가할 때는 생략합니다。</li>
+          <li><strong>추론을 문서화합니다。</strong> 정확도를 향상시키기 위해 신호 → 추론 → 결과 로그를 유지합니다。위의 사례 연구나<a class="text-gold-300 underline" href="/blog/advanced-bazi-wealth-analysis-mastery">고급 사주 부 분석</a>의 부 용량 분석과 비교합니다。</li>
+        </ol>
+
+        <p class="text-mystic-200 leading-relaxed">
+          기초 논리—기능적 역할，검증된 타이밍，깨끗한 구조 분석—로 돌아가는 것은 실천자가 신화에 빠지지 않고 현대 클라이언트에게 서비스를 제공하는 데 도움이 됩니다。초기 고전은 현대 생활을 통해 해석될 때 여전히 공명합니다。
+        </p>
+      </div>
+    `
+    },
     author: 'Master XuanYin',
     date: '2025-11-08',
     readTime: '10 min read',
