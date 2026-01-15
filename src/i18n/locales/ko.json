@@ -378,5 +378,27 @@
     "plantingGingerAriaLabel": "번영 생강 심기 의식에 대해 읽기",
     "plantingGingerTitle": "'록근' 생강 심기：간단하고 집에 안전한 번영 의식",
     "sendEmailAriaLabel": "이메일 보내기"
+  },
+  "blog": {
+    "heroTitle": "고대의 지혜",
+    "heroSubtitle": "현대의 통찰",
+    "heroDescription": "전문가 분석, 실용적인 가이드, 그리고 당신의 인생 여정을 밝히는 영적 통찰을 통해 중국 점성술의 영원한 지혜를 발견하세요.",
+    "allArticles": "모든 기사",
+    "category": {
+      "bazi": "팔자 분석",
+      "love": "연애와 관계",
+      "wealth": "재운과 직업"
+    },
+    "filterByTags": "태그로 필터링",
+    "tagSearchHint": "주제를 검색하거나 아래의 인기 태그에서 선택하세요.",
+    "searchTagsPlaceholder": "태그 검색...",
+    "noTagsFound": "\"{{term}}\"에 대한 태그를 찾을 수 없습니다",
+    "allTags": "모든 태그",
+    "noArticlesFound": "기사를 찾을 수 없습니다",
+    "tryAdjustingFilters": "필터 조건을 조정해 보세요.",
+    "readMore": "더 읽기",
+    "ctaTitle": "당신의 운명을 발견할 준비가 되셨나요?",
+    "ctaDescription": "개인화된 팔자 리딩을 받고 당신의 인생 여정을 안내할 고대의 지혜를 풀어보세요.",
+    "ctaButton": "무료 리딩 시작"
   }
 }

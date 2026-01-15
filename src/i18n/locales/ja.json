@@ -378,5 +378,27 @@
     "plantingGingerAriaLabel": "繁栄の生姜を植える儀式について読む",
     "plantingGingerTitle": "'禄根'生姜を植える：シンプルで家に安全な繁栄の儀式",
     "sendEmailAriaLabel": "メールを送信"
+  },
+  "blog": {
+    "heroTitle": "古代の知恵",
+    "heroSubtitle": "現代の洞察",
+    "heroDescription": "専門家の分析、実用的なガイダンス、そしてあなたの人生の道を照らすスピリチュアルな洞察を通じて、中国占星術の永続的な知恵を発見してください。",
+    "allArticles": "すべての記事",
+    "category": {
+      "bazi": "八字分析",
+      "love": "恋愛と関係",
+      "wealth": "財運とキャリア"
+    },
+    "filterByTags": "タグでフィルター",
+    "tagSearchHint": "任意のトピックを検索するか、以下のトレンドタグから選択してください。",
+    "searchTagsPlaceholder": "タグを検索...",
+    "noTagsFound": "\"{{term}}\"のタグが見つかりません",
+    "allTags": "すべてのタグ",
+    "noArticlesFound": "記事が見つかりません",
+    "tryAdjustingFilters": "フィルター条件を調整してみてください。",
+    "readMore": "続きを読む",
+    "ctaTitle": "運命を発見する準備はできていますか？",
+    "ctaDescription": "個人的な八字リーディングを取得し、あなたの人生の旅を導く古代の知恵を解き放ってください。",
+    "ctaButton": "無料リーディングを開始"
   }
 }

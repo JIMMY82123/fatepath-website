@@ -1,10 +1,12 @@
 import React, { useState, useEffect } from 'react'
 import { Link, useSearchParams } from 'react-router-dom'
 import { Tag, Search } from 'lucide-react'
+import { useTranslation } from 'react-i18next'
 import SEO from '../components/SEO'
 import { blogPostsData } from '../data/blogPostsData'
 
 const Blog = () => {
+  const { t } = useTranslation()
   const [searchParams, setSearchParams] = useSearchParams()
   const [selectedCategory, setSelectedCategory] = useState('all')
   const [selectedTag, setSelectedTag] = useState('all')
@@ -20,9 +22,9 @@ const Blog = () => {
   }, [searchParams])
 
   const categoryLabelMap = {
-    bazi: 'BaZi Analysis',
-    love: 'Love & Relationships',
-    wealth: 'Wealth & Career'
+    bazi: t('blog.category.bazi'),
+    love: t('blog.category.love'),
+    wealth: t('blog.category.wealth')
   }
 
   const getCategoryId = (category = '') => {
@@ -61,7 +63,7 @@ const Blog = () => {
   const categoryOrder = Object.keys(categoryLabelMap)
 
   const categories = [
-    { id: 'all', name: 'All Articles', count: blogPosts.length },
+    { id: 'all', name: t('blog.allArticles'), count: blogPosts.length },
     ...Object.entries(categoryCounts)
       .sort(([a], [b]) => {
         const indexA = categoryOrder.indexOf(a)
@@ -253,12 +255,11 @@ const Blog = () => {
         <section className="py-20 bg-gradient-to-br from-mystic-800 to-mystic-900">
           <div className="container mx-auto px-4 text-center">
             <h1 className="text-5xl md:text-6xl font-bold text-white mb-6">
-              Ancient Wisdom
-              <span className="block text-gold-400">Modern Insights</span>
+              {t('blog.heroTitle')}
+              <span className="block text-gold-400">{t('blog.heroSubtitle')}</span>
             </h1>
             <p className="text-xl text-mystic-300 max-w-3xl mx-auto mb-8">
-              Discover the timeless wisdom of Chinese astrology through expert analysis, 
-              practical guidance, and spiritual insights that illuminate your life's path.
+              {t('blog.heroDescription')}
             </p>
           </div>
         </section>
@@ -286,10 +287,10 @@ const Blog = () => {
             <div className="max-w-4xl mx-auto text-center space-y-6">
               <div className="flex items-center gap-2 justify-center">
                 <Tag className="h-5 w-5 text-gold-400" />
-                <h3 className="text-lg font-semibold text-white">Filter by Tags</h3>
+                <h3 className="text-lg font-semibold text-white">{t('blog.filterByTags')}</h3>
               </div>
               <p className="text-sm text-mystic-400">
-                Search any topic or choose from the trending tags below.
+                {t('blog.tagSearchHint')}
               </p>
               
               <div className="relative max-w-xl mx-auto">
@@ -298,7 +299,7 @@ const Blog = () => {
                   type="text"
                   value={tagSearchTerm}
                   onChange={(e) => setTagSearchTerm(e.target.value)}
-                  placeholder="Search tags..."
+                  placeholder={t('blog.searchTagsPlaceholder')}
                   className="w-full pl-12 pr-4 py-3 bg-mystic-800 border border-mystic-700 rounded-lg text-white placeholder-mystic-500 focus:outline-none focus:border-gold-400 focus:ring-2 focus:ring-gold-400/20"
                 />
                 {tagSearchTerm.trim().length > 0 && (
@@ -315,7 +316,7 @@ const Blog = () => {
                       ))
                     ) : (
                       <div className="px-4 py-3 text-sm text-mystic-400">
-                        No tags found for “{tagSearchTerm.trim()}”
+                        {t('blog.noTagsFound', { term: tagSearchTerm.trim() })}
                       </div>
                     )}
                   </div>
@@ -331,7 +332,7 @@ const Blog = () => {
                       : 'bg-mystic-700 text-mystic-300 hover:bg-mystic-600'
                   }`}
                 >
-                  All Tags
+                  {t('blog.allTags')}
                 </button>
                 {popularTags.map((tag) => (
                   <button
@@ -356,8 +357,8 @@ const Blog = () => {
           <div className="container mx-auto px-4">
             {filteredPosts.length === 0 ? (
               <div className="text-center py-20">
-                <h3 className="text-2xl font-bold text-white mb-4">No articles found</h3>
-                <p className="text-mystic-300">Try adjusting your filter criteria.</p>
+                <h3 className="text-2xl font-bold text-white mb-4">{t('blog.noArticlesFound')}</h3>
+                <p className="text-mystic-300">{t('blog.tryAdjustingFilters')}</p>
               </div>
             ) : (
               <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -410,7 +411,7 @@ const Blog = () => {
                         </div>
                         
                         <div className="flex items-center text-gold-400 hover:text-gold-300 font-semibold transition-colors">
-                          Read More
+                          {t('blog.readMore')}
                           <span className="ml-2">→</span>
                         </div>
                       </div>
@@ -426,17 +427,16 @@ const Blog = () => {
         <section className="py-20 bg-gradient-to-r from-mystic-800 to-mystic-900">
           <div className="container mx-auto px-4 text-center">
             <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
-              Ready to Discover Your Destiny?
+              {t('blog.ctaTitle')}
             </h2>
             <p className="text-xl text-mystic-300 mb-8 max-w-2xl mx-auto">
-              Get your personalized BaZi reading and unlock the ancient wisdom 
-              that will guide your life's journey.
+              {t('blog.ctaDescription')}
             </p>
             <Link
               to="/free-bazi-report"
               className="bg-gradient-to-r from-gold-400 to-gold-600 text-white px-10 py-5 rounded-lg text-xl font-bold hover:from-gold-500 hover:to-gold-700 transition-all duration-300 transform hover:scale-105"
             >
-              Start Your Free Reading
+              {t('blog.ctaButton')}
             </Link>
           </div>
         </section>
