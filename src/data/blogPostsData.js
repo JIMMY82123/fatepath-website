@@ -1489,8 +1489,376 @@ export const blogPostsData = {
         </div>
       </div>
     `,
-      ja: ``,
-      ko: ``
+      ja: `
+      <div class="space-y-8">
+        <div class="mb-8">
+          <div class="bg-gradient-to-r from-blue-500/20 to-purple-500/20 border border-blue-500/30 rounded-lg p-6 mb-8">
+            <h3 class="text-lg font-semibold text-blue-400 mb-3">🎯 重要なポイント</h3>
+            <ul class="text-mystic-200 space-y-2">
+              <li>• 五行（木、火、土、金、水）を使用して、キャリア選択肢をエネルギータイプで分類</li>
+              <li>• 「用神」（喜用神）と「忌神」（忌神）を特定して、パワーソースを見つける</li>
+              <li>• エネルギータイプを一致させることで6つの選択肢を3つに絞り、コアニーズに合わせて2つに絞る</li>
+              <li>• 最終的なタイミング決定のために現在の運柱（大運）を考慮する</li>
+            </ul>
+          </div>
+        </div>
+
+        <h2 class="text-2xl font-bold text-white mb-4 mt-8">はじめに</h2>
+        <p class="mb-6 text-lg text-mystic-200 leading-relaxed">
+          「分析麻痺」に陥ったことはありますか？あなたの前にいくつかの一見もっともらしいキャリアパスが広がっています—おそらく6つのエキサイティングな選択肢—しかし、あなたは恐怖と不確実性によって凍りつき、最初の一歩を踏み出すことができません。
+        </p>
+        <p class="mb-6 text-mystic-200 leading-relaxed">
+          「情熱に従う」ことを奨励する今日の世界では、選択肢が多すぎることは重い負担になる可能性があります。私たちは外側に向かって必死に答えを求めます：性格テストを受ける、キャリアガイドブックを読む、メンターにアドバイスを求める。しかし、数千年の歴史を持つ性格分析システムを使用して内側を見る場合はどうでしょうか？
+        </p>
+        <p class="mb-6 text-mystic-200 leading-relaxed">
+          このシステムは中国の八字（四柱推命）占星術です。誤解しないでください；これは迷信についてではありません。それを東洋の「エネルギーの青写真」または深遠な性格原型のシステムと考えてください。あなたの正確な生年月日時（年、月、日、時の四柱）に基づいて、それはあなたの生来の才能、コアドライバー、潜在的な課題を明らかにします。今日、私たちはそれを使用して、6つの選択肢を明確に2つに絞り込みます。
+        </p>
+
+        <h2 class="text-2xl font-bold text-white mb-4 mt-8">ステップ1：「好き」を超えてコアエネルギーを見る（6から3へ）</h2>
+        <p class="mb-6 text-mystic-200 leading-relaxed">
+          6つの選択肢をリストアップする前に、まず自分自身を理解する必要があります。八字システムは個人を異なる「日主」（コア自己を表す）に分類し、五行（五行）：木、火、土、金、水のレンズを通じて環境（他の天干と地支）との関係を分析します。この関係があなたの基本的な行動パターンを決定します。
+        </p>
+        <p class="mb-6 text-mystic-200 leading-relaxed">
+          自問してください：<strong>あなたの6つの選択肢のそれぞれは、どのような種類のエネルギーに対応していますか？</strong>
+        </p>
+
+        <div class="grid md:grid-cols-2 gap-6 mb-6">
+          <div class="bg-gradient-to-r from-green-500/20 to-emerald-500/20 border border-green-500/30 rounded-lg p-6">
+            <h3 class="text-xl font-semibold text-green-400 mb-3">🌳 木のエネルギー</h3>
+            <p class="text-mystic-200 mb-3"><strong>成長、創造性、計画</strong></p>
+            <p class="text-mystic-200 mb-3">開発、革新、戦略を必要とする分野に適しています。</p>
+            <p class="text-mystic-200"><strong>例：</strong> 教育、執筆、コンサルティング、環境保護、社会企業。</p>
+            <p class="text-mystic-200 mt-3">あなたの八字チャートが木を好む場合、そのような仕事はあなたを本来の状態に感じさせ、活力に満ちたものにします。</p>
+          </div>
+
+          <div class="bg-gradient-to-r from-red-500/20 to-orange-500/20 border border-red-500/30 rounded-lg p-6">
+            <h3 class="text-xl font-semibold text-red-400 mb-3">🔥 火のエネルギー</h3>
+            <p class="text-mystic-200 mb-3"><strong>表現、影響力、インスピレーション</strong></p>
+            <p class="text-mystic-200 mb-3">アイデアを輝かせ、広めることを必要とする分野に適しています。</p>
+            <p class="text-mystic-200"><strong>例：</strong> マーケティング、PR、舞台芸術、トレーニング、心理学。</p>
+            <p class="text-mystic-200 mt-3">あなたの八字チャートが火を好む場合、この仕事はあなたの情熱を燃やし、認められることを可能にします。</p>
+          </div>
+
+          <div class="bg-gradient-to-r from-yellow-500/20 to-amber-500/20 border border-yellow-500/30 rounded-lg p-6">
+            <h3 class="text-xl font-semibold text-yellow-400 mb-3">🌍 土のエネルギー</h3>
+            <p class="text-mystic-200 mb-3"><strong>安定性、構築、実装</strong></p>
+            <p class="text-mystic-200 mb-3">忍耐、信頼性、実行を要求する分野に適しています。</p>
+            <p class="text-mystic-200"><strong>例：</strong> プロジェクト管理、管理、金融、不動産、人事。</p>
+            <p class="text-mystic-200 mt-3">あなたの八字チャートが土を好む場合、そのような仕事は安心感と達成感を提供します。</p>
+          </div>
+
+          <div class="bg-gradient-to-r from-gray-500/20 to-slate-500/20 border border-gray-500/30 rounded-lg p-6">
+            <h3 class="text-xl font-semibold text-gray-300 mb-3">⚔️ 金のエネルギー</h3>
+            <p class="text-mystic-200 mb-3"><strong>ルール、精密さ、決定</strong></p>
+            <p class="text-mystic-200 mb-3">構造、分析、効率を必要とする分野に適しています。</p>
+            <p class="text-mystic-200"><strong>例：</strong> 法律、技術、データ分析、精密工学、法執行。</p>
+            <p class="text-mystic-200 mt-3">あなたの八字チャートが金を好む場合、この仕事は秩序と精密さへの欲求を満たします。</p>
+          </div>
+        </div>
+
+        <div class="bg-gradient-to-r from-blue-500/20 to-cyan-500/20 border border-blue-500/30 rounded-lg p-6 mb-6">
+          <h3 class="text-lg font-semibold text-blue-400 mb-3">💧 水のエネルギー</h3>
+          <p class="text-mystic-200 mb-3"><strong>知恵、流れ、戦略</strong></p>
+          <p class="text-mystic-200 mb-3">柔軟性、コミュニケーション、戦略的思考を必要とする分野に適しています。</p>
+          <p class="text-mystic-200"><strong>例：</strong> 貿易、物流、研究、投資、外交。</p>
+          <p class="text-mystic-200 mt-3">あなたの八字チャートが水を好む場合、この仕事は流動的な知性を使用して簡単にナビゲートすることを可能にします。</p>
+        </div>
+
+        <div class="bg-mystic-800/40 border border-mystic-700/40 rounded-lg p-6 mb-6">
+          <h3 class="text-xl font-semibold text-gold-400 mb-3">あなたの動き</h3>
+          <p class="text-mystic-200 leading-relaxed mb-3">
+            直感的に6つのキャリア選択肢を上記のエネルギータイプに分類します。おそらく、2つまたは3つの選択肢が本質的に同じエネルギーカテゴリーに属していることがわかるでしょう。このステップは、類似項目を統合し、「特定の職種」に基づく思考から「エネルギーニーズ」に基づく思考にシフトするのに役立ちます。
+          </p>
+          <p class="text-mystic-200 leading-relaxed">
+            <strong>あなたの目標は、6つの選択肢をコアエネルギーに最も一致する2-3の方向に絞り込むことです。</strong>
+          </p>
+        </div>
+
+        <h2 class="text-2xl font-bold text-white mb-4 mt-8">ステップ2：「パワーソース」と「消耗ポイント」を診断する（3から2へ）</h2>
+        <p class="mb-6 text-mystic-200 leading-relaxed">
+          これが最も重要なステップです。八字分析の核心は、<strong>「用神」（喜用神）</strong>と<strong>「忌神」（忌神）</strong>を特定することにあります。
+        </p>
+
+        <div class="grid md:grid-cols-2 gap-6 mb-6">
+          <div class="bg-gradient-to-r from-green-500/20 to-emerald-500/20 border border-green-500/30 rounded-lg p-6">
+            <h3 class="text-xl font-semibold text-green-400 mb-3">✅ 用神</h3>
+            <p class="text-mystic-200 leading-relaxed mb-3">
+              あなたを養い、スムーズで成功したと感じさせる1つまたは2つの要素を表します。この方向に進むと、半分の努力で2倍の結果が得られます。
+            </p>
+            <p class="text-mystic-200 leading-relaxed">
+              これらはあなたの<strong>追い風と有利な流れ</strong>—あなたの自然な流れをサポートする要素です。
+            </p>
+          </div>
+
+          <div class="bg-gradient-to-r from-red-500/20 to-orange-500/20 border border-red-500/30 rounded-lg p-6">
+            <h3 class="text-xl font-semibold text-red-400 mb-3">❌ 忌神</h3>
+            <p class="text-mystic-200 leading-relaxed mb-3">
+              あなたを消耗させ、疲れとフラストレーションを感じさせる要素を表します。流れに逆らうことは、わずかな利益のために多大な努力を必要とします。
+            </p>
+            <p class="text-mystic-200 leading-relaxed">
+              これらはあなたの<strong>向かい風と不利な流れ</strong>—あなたの自然なエネルギーに逆らう要素です。
+            </p>
+          </div>
+        </div>
+
+        <div class="bg-mystic-800/40 border border-mystic-700/40 rounded-lg p-6 mb-6">
+          <h3 class="text-xl font-semibold text-gold-400 mb-3">簡単な比喩</h3>
+          <p class="text-mystic-200 leading-relaxed">
+            あなたが船（あなたの日主）である場合、あなたの「用神」は追い風と有利な流れです。あなたの「忌神」は向かい風と不利な流れです。賢い船員は帆を調整して風を利用し、それに逆らうことはありません。
+          </p>
+        </div>
+
+        <h3 class="text-xl font-semibold text-gold-400 mb-4">どうやって見分ける？</h3>
+        <p class="mb-6 text-mystic-200 leading-relaxed">
+          これには専門的な八字チャート分析が必要ですが、一般的なパターンから洞察を得ることができます：
+        </p>
+
+        <div class="space-y-6 mb-6">
+          <div class="bg-gradient-to-r from-purple-500/20 to-indigo-500/20 border border-purple-500/30 rounded-lg p-6">
+            <h3 class="text-lg font-semibold text-purple-400 mb-3">あなたが革新者（強い傷官星）の場合</h3>
+            <p class="text-mystic-200 leading-relaxed mb-3">
+              あなたはアイデアに満ちているかもしれませんが、制約を嫌います。あなたの「用神」はしばしば<strong>水</strong>（創造性を流すため）と<strong>木</strong>（それを表現するため）、または<strong>金</strong>（構造を提供するため）です。
+            </p>
+            <p class="text-mystic-200 leading-relaxed">
+              したがって、いくつかのフレームワークを持つ創造的な環境（テクノロジー会社やデザインスタジオなど）で働くことは、完全に硬直した官僚制よりもスムーズです。
+            </p>
+          </div>
+
+          <div class="bg-gradient-to-r from-blue-500/20 to-cyan-500/20 border border-blue-500/30 rounded-lg p-6">
+            <h3 class="text-lg font-semibold text-blue-400 mb-3">あなたが管理者（強い正官星）の場合</h3>
+            <p class="text-mystic-200 leading-relaxed mb-3">
+              あなたはおそらく秩序と責任を重視します。あなたの「用神」はしばしば<strong>火</strong>（温かさと情熱をもたらすため）と<strong>土</strong>（堅固な基盤を構築するため）です。
+            </p>
+            <p class="text-mystic-200 leading-relaxed">
+              したがって、明確なキャリアパスと安定した構造を持つ組織内で発展することは、混沌としたスタートアップよりも簡単です。
+            </p>
+          </div>
+        </div>
+
+        <div class="bg-mystic-800/40 border border-mystic-700/40 rounded-lg p-6 mb-6">
+          <h3 class="text-xl font-semibold text-gold-400 mb-3">あなたの動き</h3>
+          <p class="text-mystic-200 leading-relaxed">
+            残りの2-3の選択肢を検討してください。どちらが「用神」に一致するエネルギーフィールドを提供する可能性が高く、どちらが「忌神」の消耗戦にあなたを閉じ込める可能性がありますか？例えば、あなたのチャートが<strong>土</strong>（安定性、反復）を忌む場合、一見安全だが単調なデスクワークは長期的には息苦しく感じるかもしれません。
+          </p>
+        </div>
+
+        <h2 class="text-2xl font-bold text-white mb-4 mt-8">結論：2から1へ、現在の「運柱」に耳を傾ける</h2>
+        <p class="mb-6 text-mystic-200 leading-relaxed">
+          選択肢を最後の2つに絞り込んだとき、あなたは最も困難な部分を完了しました。最終決定は「タイミング」によって情報を得ることができます。10年ごとに変わる八字の<strong>運柱（大運）</strong>は、あなたの現在の人生段階の支配的なエネルギーを示します。
+        </p>
+
+        <div class="grid md:grid-cols-2 gap-6 mb-6">
+          <div class="bg-gradient-to-r from-orange-500/20 to-red-500/20 border border-orange-500/30 rounded-lg p-6">
+            <h3 class="text-lg font-semibold text-orange-400 mb-3">リスクテイク段階</h3>
+            <p class="text-mystic-200 leading-relaxed">
+              おそらくあなたはリスクテイクと開拓を奨励する運柱にいます。その場合、より不確実な選択肢が今はより良い選択かもしれません。
+            </p>
+          </div>
+
+          <div class="bg-gradient-to-r from-yellow-500/20 to-amber-500/20 border border-yellow-500/30 rounded-lg p-6">
+            <h3 class="text-lg font-semibold text-yellow-400 mb-3">統合段階</h3>
+            <p class="text-mystic-200 leading-relaxed">
+              おそらくあなたは統合と蓄積を要求する運柱にいます。その場合、堅固な基盤を構築できる選択肢が賢明です。
+            </p>
+          </div>
+        </div>
+
+        <div class="bg-gradient-to-r from-blue-500/20 to-purple-500/20 border border-blue-500/30 rounded-lg p-6 mb-6">
+          <h3 class="text-xl font-semibold text-blue-400 mb-3">最後の考え</h3>
+          <p class="text-mystic-200 leading-relaxed mb-3">
+            最終的に、八字は運命論についてではなく、<strong>自己認識</strong>についてです。それは単一の答えを提供するのではなく、人生の海を効率的にナビゲートするための個人的な地図を提供します。それはキャリア選択を、外部基準に盲目的に従うことから、あなたの本質的で本物の自己と深く一致させることに変換するのに役立ちます。
+          </p>
+          <p class="text-mystic-200 leading-relaxed">
+            だから、次に6つの選択肢に直面したとき、パニックにならないでください。この古代の地図を手に取ってください。段階的に、どの2つの道が本当にあなたのピークに導くか、そしてどちらが現在の10年間の風を完璧に捉えるかがわかります。
+          </p>
+        </div>
+      </div>
+    `,
+      ko: `
+      <div class="space-y-8">
+        <div class="mb-8">
+          <div class="bg-gradient-to-r from-blue-500/20 to-purple-500/20 border border-blue-500/30 rounded-lg p-6 mb-8">
+            <h3 class="text-lg font-semibold text-blue-400 mb-3">🎯 핵심 요약</h3>
+            <ul class="text-mystic-200 space-y-2">
+              <li>• 오행（목, 화, 토, 금, 수）을 사용하여 직업 선택지를 에너지 유형별로 분류</li>
+              <li>• "용신"（喜用神）과 "기신"（忌神）을 식별하여 파워 소스 찾기</li>
+              <li>• 에너지 유형을 일치시켜 6가지 선택지를 3가지로 좁히고, 핵심 니즈에 맞춰 2가지로 좁히기</li>
+              <li>• 최종 타이밍 결정을 위해 현재 운주（대운） 고려하기</li>
+            </ul>
+          </div>
+        </div>
+
+        <h2 class="text-2xl font-bold text-white mb-4 mt-8">서론</h2>
+        <p class="mb-6 text-lg text-mystic-200 leading-relaxed">
+          "분석 마비"에 빠진 적이 있나요？여러 개의 그럴듯해 보이는 직업 경로가 당신 앞에 펼쳐져 있습니다—아마도 여섯 가지 흥미진진한 선택지—하지만 당신은 두려움과 불확실성으로 얼어붙어 첫 걸음을 내딛을 수 없습니다。
+        </p>
+        <p class="mb-6 text-mystic-200 leading-relaxed">
+          "열정을 따르라"고 권장하는 오늘날의 세계에서，선택지가 너무 많으면 무거운 부담이 될 수 있습니다。우리는 외부로 답을 찾으려 필사적으로 노력합니다：성격 테스트를 받고，직업 가이드북을 읽고，멘토에게 조언을 구합니다。하지만 수천 년 된 성격 분석 시스템을 사용하여 내면을 살펴본다면 어떨까요？
+        </p>
+        <p class="mb-6 text-mystic-200 leading-relaxed">
+          이 시스템은 중국 팔자（사주） 점성술입니다。오해하지 마세요；이것은 미신에 관한 것이 아닙니다。동양의 "에너지 청사진" 또는 깊이 있는 성격 원형 시스템으로 생각하세요。당신의 정확한 생년월일시（년，월，일，시의 사주）를 기반으로，그것은 당신의 타고난 재능，핵심 동력，잠재적 도전을 드러냅니다。오늘，우리는 그것을 사용하여 여섯 가지 선택지를 명확하게 두 가지로 좁힐 것입니다。
+        </p>
+
+        <h2 class="text-2xl font-bold text-white mb-4 mt-8">1단계："좋아함"을 넘어 핵심 에너지 보기（6에서 3으로）</h2>
+        <p class="mb-6 text-mystic-200 leading-relaxed">
+          여섯 가지 선택지를 나열하기 전에，먼저 자신을 이해해야 합니다。팔자 시스템은 개인을 다른 "일주"（핵심 자아를 나타냄）로 분류하고，오행（五行）：목，화，토，금，수의 렌즈를 통해 환경（다른 천간과 지지）과의 관계를 분석합니다。이 관계가 당신의 기본 행동 패턴을 결정합니다。
+        </p>
+        <p class="mb-6 text-mystic-200 leading-relaxed">
+          스스로에게 물어보세요：<strong>여섯 가지 선택지 각각은 어떤 종류의 에너지에 해당합니까？</strong>
+        </p>
+
+        <div class="grid md:grid-cols-2 gap-6 mb-6">
+          <div class="bg-gradient-to-r from-green-500/20 to-emerald-500/20 border border-green-500/30 rounded-lg p-6">
+            <h3 class="text-xl font-semibold text-green-400 mb-3">🌳 목 에너지</h3>
+            <p class="text-mystic-200 mb-3"><strong>성장，창의성，계획</strong></p>
+            <p class="text-mystic-200 mb-3">개발，혁신，전략이 필요한 분야에 적합합니다。</p>
+            <p class="text-mystic-200"><strong>예：</strong> 교육，작문，컨설팅，환경 보호，사회 기업。</p>
+            <p class="text-mystic-200 mt-3">당신의 팔자 차트가 목을 선호한다면，그러한 일은 당신을 본래의 상태로 느끼게 하고 활력으로 가득 차게 합니다。</p>
+          </div>
+
+          <div class="bg-gradient-to-r from-red-500/20 to-orange-500/20 border border-red-500/30 rounded-lg p-6">
+            <h3 class="text-xl font-semibold text-red-400 mb-3">🔥 화 에너지</h3>
+            <p class="text-mystic-200 mb-3"><strong>표현，영향력，영감</strong></p>
+            <p class="text-mystic-200 mb-3">아이디어를 빛나게 하고 퍼뜨리는 것이 필요한 분야에 적합합니다。</p>
+            <p class="text-mystic-200"><strong>예：</strong> 마케팅，PR，공연 예술，훈련，심리학。</p>
+            <p class="text-mystic-200 mt-3">당신의 팔자 차트가 화를 선호한다면，이 일은 당신의 열정을 타오르게 하고 인정을 받게 합니다。</p>
+          </div>
+
+          <div class="bg-gradient-to-r from-yellow-500/20 to-amber-500/20 border border-yellow-500/30 rounded-lg p-6">
+            <h3 class="text-xl font-semibold text-yellow-400 mb-3">🌍 토 에너지</h3>
+            <p class="text-mystic-200 mb-3"><strong>안정성，구축，구현</strong></p>
+            <p class="text-mystic-200 mb-3">인내，신뢰성，실행을 요구하는 분야에 적합합니다。</p>
+            <p class="text-mystic-200"><strong>예：</strong> 프로젝트 관리，행정，금융，부동산，인사。</p>
+            <p class="text-mystic-200 mt-3">당신의 팔자 차트가 토를 선호한다면，그러한 일은 안전감과 성취감을 제공합니다。</p>
+          </div>
+
+          <div class="bg-gradient-to-r from-gray-500/20 to-slate-500/20 border border-gray-500/30 rounded-lg p-6">
+            <h3 class="text-xl font-semibold text-gray-300 mb-3">⚔️ 금 에너지</h3>
+            <p class="text-mystic-200 mb-3"><strong>규칙，정밀함，결정</strong></p>
+            <p class="text-mystic-200 mb-3">구조，분석，효율성이 필요한 분야에 적합합니다。</p>
+            <p class="text-mystic-200"><strong>예：</strong> 법률，기술，데이터 분석，정밀 공학，법 집행。</p>
+            <p class="text-mystic-200 mt-3">당신의 팔자 차트가 금을 선호한다면，이 일은 질서와 정밀함에 대한 욕구를 만족시킵니다。</p>
+          </div>
+        </div>
+
+        <div class="bg-gradient-to-r from-blue-500/20 to-cyan-500/20 border border-blue-500/30 rounded-lg p-6 mb-6">
+          <h3 class="text-lg font-semibold text-blue-400 mb-3">💧 수 에너지</h3>
+          <p class="text-mystic-200 mb-3"><strong>지혜，흐름，전략</strong></p>
+          <p class="text-mystic-200 mb-3">유연성，의사소통，전략적 사고가 필요한 분야에 적합합니다。</p>
+          <p class="text-mystic-200"><strong>예：</strong> 무역，물류，연구，투자，외교。</p>
+          <p class="text-mystic-200 mt-3">당신의 팔자 차트가 수를 선호한다면，이 일은 유동적인 지능을 사용하여 쉽게 탐색할 수 있게 합니다。</p>
+        </div>
+
+        <div class="bg-mystic-800/40 border border-mystic-700/40 rounded-lg p-6 mb-6">
+          <h3 class="text-xl font-semibold text-gold-400 mb-3">당신의 행동</h3>
+          <p class="text-mystic-200 leading-relaxed mb-3">
+            직관적으로 여섯 가지 직업 선택지를 위의 에너지 유형으로 분류하세요。아마도 두 개 또는 세 개의 선택지가 본질적으로 같은 에너지 카테고리에 속한다는 것을 발견할 것입니다。이 단계는 유사한 항목을 통합하고，"특정 직업 제목"에 기반한 사고에서 "에너지 니즈"에 기반한 사고로 전환하는 데 도움이 됩니다。
+          </p>
+          <p class="text-mystic-200 leading-relaxed">
+            <strong>당신의 목표는 여섯 가지 선택지를 핵심 에너지에 가장 잘 맞는 2-3가지 방향으로 좁히는 것입니다。</strong>
+          </p>
+        </div>
+
+        <h2 class="text-2xl font-bold text-white mb-4 mt-8">2단계："파워 소스"와 "고갈 지점" 진단하기（3에서 2로）</h2>
+        <p class="mb-6 text-mystic-200 leading-relaxed">
+          이것이 가장 중요한 단계입니다。팔자 분석의 핵심은 <strong>"용신"（喜用神）</strong>과 <strong>"기신"（忌神）</strong>을 식별하는 것입니다。
+        </p>
+
+        <div class="grid md:grid-cols-2 gap-6 mb-6">
+          <div class="bg-gradient-to-r from-green-500/20 to-emerald-500/20 border border-green-500/30 rounded-lg p-6">
+            <h3 class="text-xl font-semibold text-green-400 mb-3">✅ 용신</h3>
+            <p class="text-mystic-200 leading-relaxed mb-3">
+              당신을 양육하고，부드럽고 성공적으로 느끼게 하는 하나 또는 두 개의 요소를 나타냅니다。이 방향으로 움직이면，절반의 노력으로 두 배의 결과를 얻을 수 있습니다。
+            </p>
+            <p class="text-mystic-200 leading-relaxed">
+              이것들은 당신의 <strong>순풍과 유리한 흐름</strong>—당신의 자연스러운 흐름을 지지하는 요소입니다。
+            </p>
+          </div>
+
+          <div class="bg-gradient-to-r from-red-500/20 to-orange-500/20 border border-red-500/30 rounded-lg p-6">
+            <h3 class="text-xl font-semibold text-red-400 mb-3">❌ 기신</h3>
+            <p class="text-mystic-200 leading-relaxed mb-3">
+              당신을 고갈시키고，피곤하고 좌절감을 느끼게 하는 요소를 나타냅니다。흐름에 맞서는 것은 적은 이익을 위해 엄청난 노력을 필요로 합니다。
+            </p>
+            <p class="text-mystic-200 leading-relaxed">
+              이것들은 당신의 <strong>역풍과 불리한 흐름</strong>—당신의 자연스러운 에너지에 맞서는 요소입니다。
+            </p>
+          </div>
+        </div>
+
+        <div class="bg-mystic-800/40 border border-mystic-700/40 rounded-lg p-6 mb-6">
+          <h3 class="text-xl font-semibold text-gold-400 mb-3">간단한 비유</h3>
+          <p class="text-mystic-200 leading-relaxed">
+            당신이 배（당신의 일주）라면，당신의 "용신"은 순풍과 유리한 흐름입니다。당신의 "기신"은 역풍과 불리한 흐름입니다。현명한 선원은 돛을 조정하여 바람을 활용하고，그것에 맞서 싸우지 않습니다。
+          </p>
+        </div>
+
+        <h3 class="text-xl font-semibold text-gold-400 mb-4">어떻게 알 수 있나요？</h3>
+        <p class="mb-6 text-mystic-200 leading-relaxed">
+          이것은 전문적인 팔자 차트 분석이 필요하지만，일반적인 패턴에서 통찰을 얻을 수 있습니다：
+        </p>
+
+        <div class="space-y-6 mb-6">
+          <div class="bg-gradient-to-r from-purple-500/20 to-indigo-500/20 border border-purple-500/30 rounded-lg p-6">
+            <h3 class="text-lg font-semibold text-purple-400 mb-3">당신이 혁신가（강한 상관성）인 경우</h3>
+            <p class="text-mystic-200 leading-relaxed mb-3">
+              당신은 아이디어로 가득 차 있을 수 있지만 제약을 싫어합니다。당신의 "용신"은 종종 <strong>수</strong>（창의성을 흐르게 하기 위해）와 <strong>목</strong>（그것을 표현하기 위해），또는 <strong>금</strong>（구조를 제공하기 위해）입니다。
+            </p>
+            <p class="text-mystic-200 leading-relaxed">
+              따라서，일부 프레임워크가 있는 창의적인 환경（기술 회사나 디자인 스튜디오와 같은）에서 일하는 것이 완전히 경직된 관료제보다 더 부드럽습니다。
+            </p>
+          </div>
+
+          <div class="bg-gradient-to-r from-blue-500/20 to-cyan-500/20 border border-blue-500/30 rounded-lg p-6">
+            <h3 class="text-lg font-semibold text-blue-400 mb-3">당신이 관리자（강한 정관성）인 경우</h3>
+            <p class="text-mystic-200 leading-relaxed mb-3">
+              당신은 아마도 질서와 책임을 중시합니다。당신의 "용신"은 종종 <strong>화</strong>（온기와 열정을 가져오기 위해）와 <strong>토</strong>（견고한 기초를 구축하기 위해）입니다。
+            </p>
+            <p class="text-mystic-200 leading-relaxed">
+              따라서，명확한 직업 경로와 안정적인 구조를 가진 조직 내에서 발전하는 것이 혼란스러운 스타트업보다 더 쉽습니다。
+            </p>
+          </div>
+        </div>
+
+        <div class="bg-mystic-800/40 border border-mystic-700/40 rounded-lg p-6 mb-6">
+          <h3 class="text-xl font-semibold text-gold-400 mb-3">당신의 행동</h3>
+          <p class="text-mystic-200 leading-relaxed">
+            남은 2-3가지 선택지를 검토하세요。어느 것이 "용신"에 맞는 에너지 필드를 제공할 가능성이 높고，어느 것이 "기신"의 고갈 전투에 당신을 가둘 수 있습니까？예를 들어，당신의 차트가 <strong>토</strong>（안정성，반복）를 기신으로 한다면，겉보기에 안전하지만 단조로운 사무직은 장기적으로는 숨막히게 느껴질 수 있습니다。
+          </p>
+        </div>
+
+        <h2 class="text-2xl font-bold text-white mb-4 mt-8">결론：2에서 1로，현재 "운주"에 귀 기울이기</h2>
+        <p class="mb-6 text-mystic-200 leading-relaxed">
+          선택지를 마지막 두 가지로 좁혔을 때，당신은 가장 어려운 부분을 완료했습니다。최종 결정은 "타이밍"에 의해 정보를 얻을 수 있습니다。10년마다 변하는 팔자의 <strong>운주（대운）</strong>는 당신의 현재 인생 단계의 지배적인 에너지를 나타냅니다。
+        </p>
+
+        <div class="grid md:grid-cols-2 gap-6 mb-6">
+          <div class="bg-gradient-to-r from-orange-500/20 to-red-500/20 border border-orange-500/30 rounded-lg p-6">
+            <h3 class="text-lg font-semibold text-orange-400 mb-3">위험 감수 단계</h3>
+            <p class="text-mystic-200 leading-relaxed">
+              아마도 당신은 위험 감수와 개척을 장려하는 운주에 있습니다。그렇다면，더 불확실한 선택지가 지금은 더 나은 선택일 수 있습니다。
+            </p>
+          </div>
+
+          <div class="bg-gradient-to-r from-yellow-500/20 to-amber-500/20 border border-yellow-500/30 rounded-lg p-6">
+            <h3 class="text-lg font-semibold text-yellow-400 mb-3">통합 단계</h3>
+            <p class="text-mystic-200 leading-relaxed">
+              아마도 당신은 통합과 축적을 요구하는 운주에 있습니다。그렇다면，견고한 기초를 구축할 수 있는 선택지가 더 현명합니다。
+            </p>
+          </div>
+        </div>
+
+        <div class="bg-gradient-to-r from-blue-500/20 to-purple-500/20 border border-blue-500/30 rounded-lg p-6 mb-6">
+          <h3 class="text-xl font-semibold text-blue-400 mb-3">마지막 생각</h3>
+          <p class="text-mystic-200 leading-relaxed mb-3">
+            궁극적으로，팔자는 운명론에 관한 것이 아니라 <strong>자기 인식</strong>에 관한 것입니다。그것은 단일 답을 제공하는 것이 아니라，인생의 바다를 효율적으로 탐색하기 위한 개인 지도를 제공합니다。그것은 직업 선택을 외부 기준에 맹목적으로 따르는 것에서 당신의 본질적이고 진정한 자신과 깊이 일치시키는 것으로 변환하는 데 도움이 됩니다。
+          </p>
+          <p class="text-mystic-200 leading-relaxed">
+            그래서，다음에 여섯 가지 선택지에 직면할 때，당황하지 마세요。이 고대 지도를 집어 들으세요。단계적으로，어떤 두 경로가 정말로 당신의 정점으로 이끄는지，그리고 어느 것이 현재 10년의 바람을 완벽하게 잡는지 볼 수 있습니다。
+          </p>
+        </div>
+      </div>
+    `
     },
     author: 'Master XuanYin',
     date: '2025-11-13',
