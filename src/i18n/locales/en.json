@@ -486,5 +486,89 @@
       "generating": "Generating Your Report...",
       "generateButton": "Generate Free Report"
     }
+  },
+  "chineseAstrologyGuide": {
+    "heroTitle": "Chinese Astrology: Your Complete Guide to Bazi and Beyond",
+    "heroDesc1": "Chinese astrology has guided millions for over 2,000 years. This ancient system includes the Chinese zodiac, Feng Shui, Zi Wei Dou Shu, and most importantly, Bazi (Four Pillars of Destiny) – the most detailed method in Chinese astrology for personal destiny analysis. Chinese astrology 2026 continues to evolve while maintaining its core wisdom.",
+    "heroDesc2": "Among all Chinese astrology systems, Bazi stands out as the most detailed and accurate method for personal destiny analysis. Bazi, also known as Four Pillars in Chinese astrology, analyzes your birth date and time to reveal your personality traits, career potential, relationship patterns, health indicators, and optimal timing for major life decisions. Our Chinese astrology calculator makes this ancient wisdom accessible to everyone.",
+    "heroDesc3": "While Chinese astrology includes many traditions, Bazi is the core system for accurate personal readings in Chinese astrology. Start exploring with our free Chinese astrology tools below, or get a professional Chinese astrology reading for deeper insights!",
+    "heroCTA": "Start Your Free Bazi Chart Now",
+    "stickyCTA": "Start Your Free Bazi Chart Now",
+    "toolsTitle": "Free Chinese Astrology Tools",
+    "toolsDescription": "Explore your destiny with our professional Bazi analysis tools. All tools are free and provide instant insights into your Chinese astrology chart. These Chinese astrology calculators are designed to make Chinese astrology reading accessible to everyone.",
+    "tryNow": "Try Now",
+    "tools": {
+      "tool1": {
+        "name": "Free Bazi Chart Calculator",
+        "description": "Generate your complete Bazi chart with detailed analysis of your Four Pillars of Destiny",
+        "detailedDescription": "Generate your complete Four Pillars chart instantly – accurate with true solar time. This Chinese astrology calculator provides comprehensive Bazi analysis based on your birth date, time, and location."
+      },
+      "tool2": {
+        "name": "Day Master Strength Analyzer",
+        "description": "Determine if your Day Master is strong, balanced, or weak for accurate Bazi analysis",
+        "detailedDescription": "Find out if your Day Master is strong or weak, plus joy gods & favorable elements. This Chinese astrology tool helps you understand your core energy and optimal timing in Chinese astrology 2026."
+      },
+      "tool3": {
+        "name": "True Solar Time Bazi Adjustment",
+        "description": "Convert standard time to true solar time for precise Bazi chart calculations",
+        "detailedDescription": "Convert standard time to true solar time for accurate Chinese astrology readings. Essential for precise Bazi calculations in Chinese astrology, especially for locations far from standard time zones."
+      },
+      "tool4": {
+        "name": "Ten Gods Analyzer",
+        "description": "Analyze the Ten Gods in your Bazi chart to understand personality and destiny patterns",
+        "detailedDescription": "Analyze the Ten Gods in your Bazi chart to understand personality traits and destiny patterns. This advanced Chinese astrology calculator reveals your relationship dynamics and career potential through Chinese zodiac and Bazi analysis."
+      }
+    },
+    "midCTATitle": "Ready to Discover Your Chinese Astrology Destiny?",
+    "midCTADescription": "Get your free Bazi chart analysis now using our Chinese astrology calculator. No payment required – start your Chinese astrology reading journey today!",
+    "packagesTitle": "Get Professional Chinese Astrology Readings",
+    "packagesDescription": "Take your Chinese astrology journey deeper with personalized Bazi readings from our expert practitioners. Professional Chinese astrology reading services for Chinese astrology 2026 and beyond.",
+    "packages": {
+      "package1": {
+        "name": "Perfect for Beginners – Get Your 2026 Bazi Annual Report",
+        "subtitle": "2026 Annual Bazi Report",
+        "price": "$15",
+        "description": "Perfect for first-time clients exploring Chinese astrology. Get a focused 2026 annual fortune report covering wealth, health, and relationship trends through professional Chinese astrology reading.",
+        "features": [
+          "2026 single-year fortune report",
+          "Focus on wealth, health, and relationship trends",
+          "2-4 page PDF report",
+          "Delivery within 3-5 days"
+        ],
+        "badge": "Best Value"
+      },
+      "package2": {
+        "name": "Deep Insights – 5-Year Detailed Bazi Outlook + WA Q&A",
+        "subtitle": "5-Year Detailed Outlook + WA Q&A",
+        "price": "$30",
+        "description": "Comprehensive 5-year fortune analysis (2026-2030) with WhatsApp support. Perfect for serious students of Chinese astrology seeking deep insights through detailed Bazi reading.",
+        "features": [
+          "Detailed 5-year fortune report (2026-2030)",
+          "Annual wealth, health, and relationship trends",
+          "6-8 page PDF report",
+          "WhatsApp Q&A support (3-5 questions)"
+        ],
+        "badge": "Most Popular"
+      }
+    },
+    "getStarted": "Get Started",
+    "faqTitle": "Frequently Asked Questions About Chinese Astrology",
+    "faqDescription": "Common questions about Chinese astrology, Bazi, and our Chinese astrology reading services",
+    "faq": [
+      {
+        "question": "What is Chinese astrology?",
+        "answer": "Chinese astrology is an ancient divination system that has guided millions for over 2,000 years. This comprehensive system encompasses various traditions including the Chinese zodiac (based on 12 animal signs), Feng Shui (the art of placement), Zi Wei Dou Shu (Purple Star astrology), and most importantly, Bazi (Four Pillars of Destiny). Chinese astrology 2026 continues to provide valuable insights for personal destiny analysis and life guidance."
+      },
+      {
+        "question": "How does Bazi differ from Chinese zodiac?",
+        "answer": "While the Chinese zodiac focuses on your birth year animal sign (one of 12 animals), Bazi (Four Pillars of Destiny) is a much more detailed system in Chinese astrology. Bazi analyzes your complete birth chart using year, month, day, and hour pillars, revealing personality traits, career potential, relationship patterns, and optimal timing. Chinese zodiac and Bazi work together, but Bazi provides far more comprehensive insights for Chinese astrology readings."
+      },
+      {
+        "question": "Is Bazi accurate?",
+        "answer": "Bazi, as a core component of Chinese astrology, has been validated over thousands of years. The accuracy of Chinese astrology readings depends on precise birth information, especially the exact time of birth. Our Chinese astrology calculator uses true solar time adjustments for maximum accuracy. However, all Chinese astrology readings, including Bazi analysis, are for entertainment and reflection purposes only, not professional advice."
+      }
+    ],
+    "disclaimerLabel": "Disclaimer",
+    "disclaimer": "All readings and tools are for entertainment and reflection only. Not professional advice or prediction. Chinese astrology and Bazi analysis are traditional cultural practices meant for personal insight and self-reflection. Chinese astrology reading results should not be used as the sole basis for major life decisions."
   }
 }

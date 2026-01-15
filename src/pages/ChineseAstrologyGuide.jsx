@@ -1,10 +1,12 @@
-import React, { useState } from 'react'
+import React, { useState, useMemo } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import { Link } from 'react-router-dom'
+import { useTranslation } from 'react-i18next'
 import { Star, Calculator, Clock, BarChart3, ArrowRight, FileText, BookOpen, Sparkles, ChevronDown, ChevronUp, Calendar, Zap } from 'lucide-react'
 import SEO from '../components/SEO'
 
 const ChineseAstrologyGuide = () => {
+  const { t } = useTranslation()
   const [openFAQ, setOpenFAQ] = useState(new Set([0])) // First FAQ open by default
 
   const toggleFAQ = (index) => {
@@ -22,42 +24,42 @@ const ChineseAstrologyGuide = () => {
     console.log('ChineseAstrologyGuide component is rendering')
   }
 
-  const tools = [
+  const tools = useMemo(() => [
     {
-      name: "Free Bazi Chart Calculator",
-      description: "Generate your complete Bazi chart with detailed analysis of your Four Pillars of Destiny",
-      detailedDescription: "Generate your complete Four Pillars chart instantly – accurate with true solar time. This Chinese astrology calculator provides comprehensive Bazi analysis based on your birth date, time, and location.",
+      name: t('chineseAstrologyGuide.tools.tool1.name'),
+      description: t('chineseAstrologyGuide.tools.tool1.description'),
+      detailedDescription: t('chineseAstrologyGuide.tools.tool1.detailedDescription'),
       icon: <Calculator className="h-8 w-8" />,
       link: "/free-bazi-report",
       color: "from-blue-500 to-cyan-500"
     },
     {
-      name: "Day Master Strength Analyzer",
-      description: "Determine if your Day Master is strong, balanced, or weak for accurate Bazi analysis",
-      detailedDescription: "Find out if your Day Master is strong or weak, plus joy gods & favorable elements. This Chinese astrology tool helps you understand your core energy and optimal timing in Chinese astrology 2026.",
+      name: t('chineseAstrologyGuide.tools.tool2.name'),
+      description: t('chineseAstrologyGuide.tools.tool2.description'),
+      detailedDescription: t('chineseAstrologyGuide.tools.tool2.detailedDescription'),
       icon: <BarChart3 className="h-8 w-8" />,
       link: "/tools/day-master-calculator",
       color: "from-purple-500 to-pink-500"
     },
     {
-      name: "True Solar Time Bazi Adjustment",
-      description: "Convert standard time to true solar time for precise Bazi chart calculations",
-      detailedDescription: "Convert standard time to true solar time for accurate Chinese astrology readings. Essential for precise Bazi calculations in Chinese astrology, especially for locations far from standard time zones.",
+      name: t('chineseAstrologyGuide.tools.tool3.name'),
+      description: t('chineseAstrologyGuide.tools.tool3.description'),
+      detailedDescription: t('chineseAstrologyGuide.tools.tool3.detailedDescription'),
       icon: <Clock className="h-8 w-8" />,
       link: "/tools/true-solar-time-calculator",
       color: "from-green-500 to-emerald-500"
     },
     {
-      name: "Ten Gods Analyzer",
-      description: "Analyze the Ten Gods in your Bazi chart to understand personality and destiny patterns",
-      detailedDescription: "Analyze the Ten Gods in your Bazi chart to understand personality traits and destiny patterns. This advanced Chinese astrology calculator reveals your relationship dynamics and career potential through Chinese zodiac and Bazi analysis.",
+      name: t('chineseAstrologyGuide.tools.tool4.name'),
+      description: t('chineseAstrologyGuide.tools.tool4.description'),
+      detailedDescription: t('chineseAstrologyGuide.tools.tool4.detailedDescription'),
       icon: <Star className="h-8 w-8" />,
       link: "/tools/ten-gods-analyzer",
       color: "from-amber-500 to-orange-500"
     }
-  ]
+  ], [t])
 
-  const servicePackages = [
+  const servicePackages = useMemo(() => [
     {
       name: "Perfect for Beginners – Get Your 2026 Bazi Annual Report",
       subtitle: "2026 Annual Bazi Report",
@@ -92,20 +94,7 @@ const ChineseAstrologyGuide = () => {
     }
   ]
 
-  const faqData = [
-    {
-      question: "What is Chinese astrology?",
-      answer: "Chinese astrology is an ancient divination system that has guided millions for over 2,000 years. This comprehensive system encompasses various traditions including the Chinese zodiac (based on 12 animal signs), Feng Shui (the art of placement), Zi Wei Dou Shu (Purple Star astrology), and most importantly, Bazi (Four Pillars of Destiny). Chinese astrology 2026 continues to provide valuable insights for personal destiny analysis and life guidance."
-    },
-    {
-      question: "How does Bazi differ from Chinese zodiac?",
-      answer: "While the Chinese zodiac focuses on your birth year animal sign (one of 12 animals), Bazi (Four Pillars of Destiny) is a much more detailed system in Chinese astrology. Bazi analyzes your complete birth chart using year, month, day, and hour pillars, revealing personality traits, career potential, relationship patterns, and optimal timing. Chinese zodiac and Bazi work together, but Bazi provides far more comprehensive insights for Chinese astrology readings."
-    },
-    {
-      question: "Is Bazi accurate?",
-      answer: "Bazi, as a core component of Chinese astrology, has been validated over thousands of years. The accuracy of Chinese astrology readings depends on precise birth information, especially the exact time of birth. Our Chinese astrology calculator uses true solar time adjustments for maximum accuracy. However, all Chinese astrology readings, including Bazi analysis, are for entertainment and reflection purposes only, not professional advice."
-    }
-  ]
+  const faqData = useMemo(() => t('chineseAstrologyGuide.faq', { returnObjects: true }), [t])
 
   const faqStructuredData = {
     "@context": "https://schema.org",
@@ -160,7 +149,7 @@ const ChineseAstrologyGuide = () => {
           className="flex items-center gap-3 bg-gradient-to-r from-gold-400 to-yellow-500 text-mystic-900 px-6 py-4 rounded-full font-bold text-lg shadow-2xl shadow-gold-400/50 hover:from-gold-500 hover:to-yellow-600 transition-all duration-300 transform hover:scale-105"
         >
           <Zap className="h-5 w-5" />
-          <span>Start Your Free Bazi Chart Now</span>
+          <span>{t('chineseAstrologyGuide.stickyCTA')}</span>
         </Link>
       </motion.div>
 
@@ -185,17 +174,17 @@ const ChineseAstrologyGuide = () => {
                 <Sparkles className="h-10 w-10 text-mystic-900" />
               </div>
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight">
-                Chinese Astrology: Your Complete Guide to Bazi and Beyond
+                {t('chineseAstrologyGuide.heroTitle')}
               </h1>
               <div className="max-w-4xl mx-auto text-left">
                 <p className="text-lg md:text-xl text-mystic-200 leading-relaxed mb-4">
-                  Chinese astrology has guided millions for over 2,000 years. This ancient system includes the Chinese zodiac, Feng Shui, Zi Wei Dou Shu, and most importantly, Bazi (Four Pillars of Destiny) – the most detailed method in Chinese astrology for personal destiny analysis. Chinese astrology 2026 continues to evolve while maintaining its core wisdom.
+                  {t('chineseAstrologyGuide.heroDesc1')}
                 </p>
                 <p className="text-lg md:text-xl text-mystic-200 leading-relaxed mb-4">
-                  Among all Chinese astrology systems, Bazi stands out as the most detailed and accurate method for personal destiny analysis. Bazi, also known as Four Pillars in Chinese astrology, analyzes your birth date and time to reveal your personality traits, career potential, relationship patterns, health indicators, and optimal timing for major life decisions. Our Chinese astrology calculator makes this ancient wisdom accessible to everyone.
+                  {t('chineseAstrologyGuide.heroDesc2')}
                 </p>
                 <p className="text-lg md:text-xl text-mystic-200 leading-relaxed mb-6">
-                  While Chinese astrology includes many traditions, Bazi is the core system for accurate personal readings in Chinese astrology. Start exploring with our free Chinese astrology tools below, or get a professional Chinese astrology reading for deeper insights!
+                  {t('chineseAstrologyGuide.heroDesc3')}
                 </p>
                 {/* Hero CTA */}
                 <div className="text-center mt-8">
@@ -204,7 +193,7 @@ const ChineseAstrologyGuide = () => {
                     className="inline-flex items-center gap-2 bg-gradient-to-r from-gold-400 to-yellow-500 text-mystic-900 px-8 py-4 rounded-lg font-bold text-lg hover:from-gold-500 hover:to-yellow-600 transition-all duration-300 transform hover:scale-105 shadow-lg shadow-gold-400/30"
                   >
                     <Zap className="h-5 w-5" />
-                    <span>Start Your Free Bazi Chart Now</span>
+                    <span>{t('chineseAstrologyGuide.heroCTA')}</span>
                   </Link>
                 </div>
               </div>
@@ -223,10 +212,10 @@ const ChineseAstrologyGuide = () => {
               className="text-center mb-12"
             >
               <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
-                Free Chinese Astrology Tools
+                {t('chineseAstrologyGuide.toolsTitle')}
               </h2>
               <p className="text-lg text-mystic-300 max-w-2xl mx-auto">
-                Explore your destiny with our professional Bazi analysis tools. All tools are free and provide instant insights into your Chinese astrology chart. These Chinese astrology calculators are designed to make Chinese astrology reading accessible to everyone.
+                {t('chineseAstrologyGuide.toolsDescription')}
               </p>
             </motion.div>
 
@@ -258,7 +247,7 @@ const ChineseAstrologyGuide = () => {
                           {tool.detailedDescription}
                         </p>
                         <div className="flex items-center text-gold-400 font-semibold group-hover:gap-2 transition-all">
-                          <span>Try Now</span>
+                          <span>{t('chineseAstrologyGuide.tryNow')}</span>
                           <ArrowRight className="h-4 w-4 ml-1 group-hover:translate-x-1 transition-transform" />
                         </div>
                       </div>
@@ -281,17 +270,17 @@ const ChineseAstrologyGuide = () => {
               className="bg-mystic-800 rounded-lg p-8 border-2 border-gold-400/30"
             >
               <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
-                Ready to Discover Your Chinese Astrology Destiny?
+                {t('chineseAstrologyGuide.midCTATitle')}
               </h2>
               <p className="text-lg text-mystic-300 mb-6">
-                Get your free Bazi chart analysis now using our Chinese astrology calculator. No payment required – start your Chinese astrology reading journey today!
+                {t('chineseAstrologyGuide.midCTADescription')}
               </p>
               <Link
                 to="/free-bazi-report"
                 className="inline-flex items-center gap-2 bg-gradient-to-r from-gold-400 to-yellow-500 text-mystic-900 px-8 py-4 rounded-lg font-bold text-lg hover:from-gold-500 hover:to-yellow-600 transition-all duration-300 transform hover:scale-105 shadow-lg shadow-gold-400/30"
               >
                 <Zap className="h-5 w-5" />
-                <span>Start Your Free Bazi Chart Now</span>
+                <span>{t('chineseAstrologyGuide.heroCTA')}</span>
               </Link>
             </motion.div>
           </div>
@@ -308,10 +297,10 @@ const ChineseAstrologyGuide = () => {
               className="text-center mb-12"
             >
               <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
-                Get Professional Chinese Astrology Readings
+                {t('chineseAstrologyGuide.packagesTitle')}
               </h2>
               <p className="text-lg text-mystic-300 max-w-2xl mx-auto">
-                Take your Chinese astrology journey deeper with personalized Bazi readings from our expert practitioners. Professional Chinese astrology reading services for Chinese astrology 2026 and beyond.
+                {t('chineseAstrologyGuide.packagesDescription')}
               </p>
             </motion.div>
 
@@ -358,7 +347,7 @@ const ChineseAstrologyGuide = () => {
                       rel="noopener noreferrer"
                       className={`block w-full text-center py-4 rounded-lg font-bold text-white bg-gradient-to-r ${pkg.color} hover:shadow-lg hover:shadow-gold-400/30 transition-all duration-300 transform hover:scale-105`}
                     >
-                      Get Started →
+                      {t('chineseAstrologyGuide.getStarted')} →
                     </a>
                   </div>
                 </motion.div>
@@ -378,10 +367,10 @@ const ChineseAstrologyGuide = () => {
               className="text-center mb-12"
             >
               <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
-                Frequently Asked Questions About Chinese Astrology
+                {t('chineseAstrologyGuide.faqTitle')}
               </h2>
               <p className="text-lg text-mystic-300">
-                Common questions about Chinese astrology, Bazi, and our Chinese astrology reading services
+                {t('chineseAstrologyGuide.faqDescription')}
               </p>
             </motion.div>
 
@@ -434,7 +423,7 @@ const ChineseAstrologyGuide = () => {
         <section className="py-12 px-4 bg-mystic-900 border-t border-mystic-700">
           <div className="max-w-4xl mx-auto text-center">
             <p className="text-mystic-400 text-sm leading-relaxed">
-              <strong className="text-mystic-300">Disclaimer:</strong> All readings and tools are for entertainment and reflection only. Not professional advice or prediction. Chinese astrology and Bazi analysis are traditional cultural practices meant for personal insight and self-reflection. Chinese astrology reading results should not be used as the sole basis for major life decisions.
+              <strong className="text-mystic-300">{t('chineseAstrologyGuide.disclaimerLabel')}:</strong> {t('chineseAstrologyGuide.disclaimer')}
             </p>
           </div>
         </section>
