@@ -113,14 +113,14 @@ const ChineseAstrologyGuide = () => {
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight">
                 Chinese Astrology: Your Complete Guide to Bazi and Beyond
               </h1>
-              <div className="prose prose-lg prose-invert max-w-none text-left mx-auto">
-                <p className="text-xl text-mystic-200 leading-relaxed mb-4">
+              <div className="max-w-4xl mx-auto text-left">
+                <p className="text-lg md:text-xl text-mystic-200 leading-relaxed mb-4">
                   Chinese astrology is an ancient divination system that has guided millions for over 2,000 years. This comprehensive system encompasses various traditions including the Chinese zodiac (based on 12 animal signs), Feng Shui (the art of placement), Zi Wei Dou Shu (Purple Star astrology), and most importantly, Bazi (Four Pillars of Destiny).
                 </p>
-                <p className="text-xl text-mystic-200 leading-relaxed mb-4">
+                <p className="text-lg md:text-xl text-mystic-200 leading-relaxed mb-4">
                   Among all Chinese astrology systems, Bazi stands out as the most detailed and accurate method for personal destiny analysis. Bazi, also known as Four Pillars in Chinese astrology, analyzes your birth date and time to reveal your personality traits, career potential, relationship patterns, health indicators, and optimal timing for major life decisions.
                 </p>
-                <p className="text-xl text-mystic-200 leading-relaxed">
+                <p className="text-lg md:text-xl text-mystic-200 leading-relaxed">
                   While Chinese astrology includes many traditions, Bazi is the core system for accurate personal readings. Start exploring with our free tools below!
                 </p>
               </div>
