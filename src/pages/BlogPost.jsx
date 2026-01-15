@@ -62,13 +62,22 @@ const BlogPost = () => {
   const rawPost = blogPostsData[slug] || blogPostsData['understanding-bazi-chart-beginners-guide']
   
   // Support multilingual content
+  // Check if title/excerpt/content are objects (multilingual) or strings (English only)
   const blogPost = {
     ...rawPost,
-    title: rawPost.title?.[currentLanguage] || rawPost.title || '',
-    excerpt: rawPost.excerpt?.[currentLanguage] || rawPost.excerpt || '',
-    content: rawPost.content?.[currentLanguage] || rawPost.content || '',
-    // If content is not translated, show English with a notice
-    isTranslated: rawPost.content?.[currentLanguage] ? true : false
+    title: typeof rawPost.title === 'object' 
+      ? (rawPost.title[currentLanguage] || rawPost.title.en || rawPost.title)
+      : rawPost.title || '',
+    excerpt: typeof rawPost.excerpt === 'object'
+      ? (rawPost.excerpt[currentLanguage] || rawPost.excerpt.en || rawPost.excerpt)
+      : rawPost.excerpt || '',
+    content: typeof rawPost.content === 'object'
+      ? (rawPost.content[currentLanguage] || rawPost.content.en || rawPost.content)
+      : rawPost.content || '',
+    // If content is not translated (not an object and language is not English), show notice
+    isTranslated: typeof rawPost.content === 'object' 
+      ? !!rawPost.content[currentLanguage]
+      : currentLanguage === 'en'
   }
 
   if (isLoading) {
