@@ -2967,9 +2967,18 @@ export const blogPostsData = {
     ]
   },
   "chinese-astrology-ancient-wisdom-guiding-destiny": {
-    title: "Chinese Astrology: Ancient Wisdom Guiding Modern Destiny",
-    excerpt: "Discover how classical BaZi principles from ancient China translate into actionable guidance for modern professionals, couples, and visionaries planning their next decade.",
-    content: `
+    title: {
+      en: "Chinese Astrology: Ancient Wisdom Guiding Modern Destiny",
+      ja: "中国占星術：現代の運命を導く古代の知恵",
+      ko: "중국 점성술: 현대 운명을 이끄는 고대 지혜"
+    },
+    excerpt: {
+      en: "Discover how classical BaZi principles from ancient China translate into actionable guidance for modern professionals, couples, and visionaries planning their next decade.",
+      ja: "古代中国からの古典的な八字原則が、次の10年を計画している現代の専門家、カップル、ビジョナリーのために実行可能なガイダンスに変換される方法を発見してください。",
+      ko: "고대 중국의 고전적 사주 원칙이 다음 10년을 계획하는 현대 전문가，커플，비전가를 위한 실행 가능한 지침으로 변환되는 방법을 발견하세요。"
+    },
+    content: {
+      en: `
       <div class="space-y-6">
         <p class="text-mystic-200 leading-relaxed">
           Chinese astrology is often portrayed as mysterious fortune telling, yet the classical BaZi system was designed as a practical decision-making tool for state leaders, healers, and merchants.
@@ -2988,7 +2997,7 @@ export const blogPostsData = {
           When the chart shows strong Wood and weak Metal, an individual thrives in creative roles but must build structure and systems to scale.
           A Water Day Master entering a Fire luck cycle needs to prioritize visibility and public speaking, even if introverted.
           Executives use these diagnostics to schedule launches, negotiate contracts, or switch industries when their personal element is strongest.
-          If你刚接触命盘分析，可以先阅读<a class="text-gold-300 underline" href="/blog/understanding-bazi-chart-beginners-guide">BaZi 入门指南</a>，把天干地支与十神概念补充完整，再以此文章的策略套用到自己的职涯规划里。
+          If you're new to chart analysis, start with <a class="text-gold-300 underline" href="/blog/understanding-bazi-chart-beginners-guide">Understanding Your BaZi Chart: A Beginner's Guide</a> to complete your foundation in Heavenly Stems, Earthly Branches, and Ten Gods concepts, then apply this article's strategies to your career planning.
         </p>
 
         <h2 class="text-2xl font-bold text-white mt-8 mb-4">Relationships and Family Planning</h2>
@@ -2996,7 +3005,7 @@ export const blogPostsData = {
           Classical matchmakers evaluated BaZi charts to gauge compatibility, support, and timing.
           Modern couples still benefit from that insight: which partner holds Resource energy and stabilizes the household, who needs independence, and the ideal window for marriage or IVF treatments based on supportive luck pillars.
           Rather than “fate versus free will,” BaZi describes seasons—certain years are optimal for commitment while others highlight inner healing.
-          想深入体会婚恋节奏，可以搭配<a class="text-gold-300 underline" href="/blog/marriage-relationship-destiny-report-woman-love-path">婚姻与感情命运报告</a>的案例，一起理解 Resource 与官星的互动。
+          To deepen your understanding of relationship rhythms, pair this with case studies from <a class="text-gold-300 underline" href="/blog/marriage-relationship-destiny-report-woman-love-path">Marriage & Relationship Destiny Report</a> to understand the interaction between Resource and Authority stars.
         </p>
 
         <h2 class="text-2xl font-bold text-white mt-8 mb-4">Health and Lifestyle Alignment</h2>
@@ -3011,7 +3020,7 @@ export const blogPostsData = {
           A Metal Day Master client approached FatePath during a shifting cycle where Fire dominated her chart.
           Classical interpretation revealed a mandate to stop hiding behind data and step into thought leadership.
           We scheduled her public speaking tour during supportive Water months, added Wood routines for creativity, and she negotiated a VP promotion with a larger equity package.
-          类似的职业调度技巧，也可参考<a class="text-gold-300 underline" href="/blog/career-timing-next-big-move">Career Timing 文章</a>，将十年大运与年度流年结合成更完整的规划。
+          Similar career scheduling techniques can also be found in <a class="text-gold-300 underline" href="/blog/career-timing-next-big-move">Career Timing: Planning Your Next Big Move with BaZi</a>, combining 10-year luck pillars with annual flows for more complete planning.
         </p>
 
         <h2 class="text-2xl font-bold text-white mt-8 mb-4">Action Steps to Work with BaZi Wisdom</h2>
@@ -3029,6 +3038,127 @@ export const blogPostsData = {
         </p>
       </div>
     `,
+      ja: `
+      <div class="space-y-6">
+        <p class="text-mystic-200 leading-relaxed">
+          中国占星術はしばしば神秘的な占いとして描かれますが、古典的な八字システムは国家指導者、治療者、商人のための実用的な意思決定ツールとして設計されました。
+          今日、それらの同じ公式は、専門家がキャリアの転換点をナビゲートし、起業家が立ち上げのタイミングを計り、カップルが自信を持って結婚や転居を計画するのに役立ちます。
+        </p>
+
+        <h2 class="text-2xl font-bold text-white mt-8 mb-4">古典的な青写真</h2>
+        <p class="text-mystic-200 leading-relaxed">
+          八字は、天干と地支を通じてあなたの出生データを解釈し、要素のバランス、生来の才能、盲点、ライフサイクルを明らかにします。
+          古代の宮廷占星術師は、<em>地天歳</em>や<em>曾國藩の八字論文</em>などのテキストを研究して、皇帝に軍事戦略、作物計画、外交について助言しました。
+          同じ論理が依然として適用されます—あなたの戦場がウォールストリート、シリコンバレー、または医療システムである可能性があることを除いて。
+        </p>
+
+        <h2 class="text-2xl font-bold text-white mt-8 mb-4">現代のキャリアへの知恵の翻訳</h2>
+        <p class="text-mystic-200 leading-relaxed">
+          チャートが強い木と弱い金を示す場合、個人は創造的な役割で繁栄しますが、スケールするために構造とシステムを構築する必要があります。
+          火の運サイクルに入る水の日主は、内向的であっても、可視性と公開スピーキングを優先する必要があります。
+          エグゼクティブは、これらの診断を使用して、個人的な要素が最も強いときに立ち上げをスケジュールし、契約を交渉し、または業界を切り替えます。
+          命盤分析に初めて触れる場合は、<a class="text-gold-300 underline" href="/blog/understanding-bazi-chart-beginners-guide">八字入門ガイド</a>を読んで、天干地支と十神の概念を完全に補完してから、この記事の戦略を自分のキャリア計画に適用してください。
+        </p>
+
+        <h2 class="text-2xl font-bold text-white mt-8 mb-4">関係と家族計画</h2>
+        <p class="text-mystic-200 leading-relaxed">
+          古典的な仲人は、八字チャートを評価して、相性、サポート、タイミングを測定しました。
+          現代のカップルは依然としてその洞察から利益を得ています：どのパートナーが資源エネルギーを保持し、世帯を安定させ、誰が独立性を必要とし、支援的な運柱に基づいて結婚やIVF治療の理想的な窓。
+          「運命対自由意志」ではなく、八字は季節を記述します—特定の年はコミットメントに最適であり、他の年は内面の癒しを強調します。
+          婚恋のリズムを深く理解したい場合は、<a class="text-gold-300 underline" href="/blog/marriage-relationship-destiny-report-woman-love-path">結婚と感情の運命レポート</a>のケースと組み合わせて、資源と官星の相互作用を理解してください。
+        </p>
+
+        <h2 class="text-2xl font-bold text-white mt-8 mb-4">健康とライフスタイルの調整</h2>
+        <p class="text-mystic-200 leading-relaxed">
+          五行は臓器と感情パターンに対応します。
+          火で過負荷になったチャートは、熱い運サイクル中に炎症、燃え尽き、心血管の緊張を示す可能性があります。
+          古代の医師は水の培養実践を処方しました；今日、それは早めの就寝時間、陰の食べ物、回復的な運動、そしてあなたのチャートに合わせた水分補給の儀式を意味します。
+        </p>
+
+        <h2 class="text-2xl font-bold text-white mt-8 mb-4">ケーススタディ：転換期のテックエグゼクティブ</h2>
+        <p class="text-mystic-200 leading-relaxed">
+          金の日主のクライアントが、火が彼女のチャートを支配する転換サイクル中にFatePathにアプローチしました。
+          古典的な解釈は、データの後ろに隠れるのをやめ、思想リーダーシップに足を踏み入れるという命令を明らかにしました。
+          私たちは支援的な水の月の間に彼女の公開スピーキングツアーをスケジュールし、創造性のために木のルーティンを追加し、彼女はより大きなエクイティパッケージでVP昇進を交渉しました。
+          同様のキャリアスケジューリング技術は、<a class="text-gold-300 underline" href="/blog/career-timing-next-big-move">キャリアタイミングの記事</a>を参照して、10年の大運と年間の流年を組み合わせてより完全な計画を作成することもできます。
+        </p>
+
+        <h2 class="text-2xl font-bold text-white mt-8 mb-4">八字の知恵で働くためのアクションステップ</h2>
+        <ul class="list-disc list-inside text-mystic-200 leading-relaxed space-y-2">
+          <li>現在の10年と年間の運サイクルをマッピングして、季節のテーマを理解します。</li>
+          <li>要素の衝突と戦うのではなく、日主をサポートする要素とキャリアの動きを一致させます。</li>
+          <li>資源と出力星を後押しする育成サイクル中に、関係のマイルストーンや家族計画をスケジュールします。</li>
+          <li>過剰な要素をバランスさせるライフスタイルの儀式を採用します—強い火のための冷却水の実践、落ち着きのない木のための接地土。</li>
+          <li>新しい干と支がプレイに回転するにつれて、戦術を調整するために毎年チャートをレビューします。</li>
+        </ul>
+
+        <p class="text-mystic-200 leading-relaxed">
+          古代の知恵は、行動に変換されると強力になります。
+          八字の洞察と現代の戦略を組み合わせることで、運命を尊重しながら日常の選択を強化するロードマップを獲得します。
+        </p>
+      </div>
+    `,
+      ko: `
+      <div class="space-y-6">
+        <p class="text-mystic-200 leading-relaxed">
+          중국 점성술은 종종 신비로운 운세로 묘사되지만，고전적인 사주 시스템은 국가 지도자，치유자，상인을 위한 실용적인 의사결정 도구로 설계되었습니다。
+          오늘날，동일한 공식은 전문가가 경력 전환점을 탐색하고，기업가가 출시 시기를 조정하며，커플이 자신 있게 결혼이나 이전을 계획하는 데 도움이 됩니다。
+        </p>
+
+        <h2 class="text-2xl font-bold text-white mt-8 mb-4">고전적 청사진</h2>
+        <p class="text-mystic-200 leading-relaxed">
+          사주는 천간과 지지를 통해 당신의 출생 데이터를 해석하여，요소 균형，타고난 재능，맹점，생명 주기를 드러냅니다。
+          고대 궁정 점성가들은 <em>지천세</em>와 <em>증국번의 사주 논문</em>과 같은 텍스트를 연구하여 황제에게 군사 전략，작물 계획，외교에 대해 조언했습니다。
+          동일한 논리가 여전히 적용됩니다—당신의 전장이 월스트리트，실리콘 밸리，또는 의료 시스템일 수 있다는 점을 제외하고。
+        </p>
+
+        <h2 class="text-2xl font-bold text-white mt-8 mb-4">현대 경력에 대한 지혜의 번역</h2>
+        <p class="text-mystic-200 leading-relaxed">
+          차트가 강한 목과 약한 금을 보여줄 때，개인은 창의적인 역할에서 번영하지만 규모를 조정하기 위해 구조와 시스템을 구축해야 합니다。
+          화 운 사이클에 들어가는 수 일주는 내향적이더라도 가시성과 공개 연설을 우선시해야 합니다。
+          임원은 이러한 진단을 사용하여 개인 요소가 가장 강할 때 출시를 스케줄하고，계약을 협상하거나，또는 업계를 전환합니다。
+          명반 분석에 처음 접하는 경우，<a class="text-gold-300 underline" href="/blog/understanding-bazi-chart-beginners-guide">사주 입문 가이드</a>를 읽어 천간 지지와 십신 개념을 완전히 보완한 다음，이 기사의 전략을 자신의 경력 계획에 적용하세요。
+        </p>
+
+        <h2 class="text-2xl font-bold text-white mt-8 mb-4">관계 및 가족 계획</h2>
+        <p class="text-mystic-200 leading-relaxed">
+          고전적인 중매인은 사주 차트를 평가하여 호환성，지원，타이밍을 측정했습니다。
+          현대 커플은 여전히 그 통찰에서 이익을 얻습니다：어떤 파트너가 자원 에너지를 보유하고 가정을 안정화하며，누가 독립성을 필요로 하며，지원적인 운주를 기반으로 결혼이나 IVF 치료를 위한 이상적인 창문。
+          "운명 대 자유 의지"가 아니라，사주는 계절을 설명합니다—특정 연도는 헌신에 최적이며，다른 연도는 내면 치유를 강조합니다。
+          혼인 리듬을 깊이 이해하려면，<a class="text-gold-300 underline" href="/blog/marriage-relationship-destiny-report-woman-love-path">결혼 및 감정 운명 보고서</a>의 사례와 함께 자원과 관성의 상호작용을 이해하세요。
+        </p>
+
+        <h2 class="text-2xl font-bold text-white mt-8 mb-4">건강 및 라이프스타일 조정</h2>
+        <p class="text-mystic-200 leading-relaxed">
+          오행은 장기와 감정 패턴에 해당합니다。
+          화로 과부하된 차트는 뜨거운 운 사이클 중에 염증，번아웃，심혈관 긴장을 보여줄 수 있습니다。
+          고대 의사는 수의 재배 실천을 처방했습니다；오늘날，그것은 일찍 취침 시간，음식，회복 운동，그리고 당신의 차트에 맞춘 수분 보충 의식을 의미합니다。
+        </p>
+
+        <h2 class="text-2xl font-bold text-white mt-8 mb-4">사례 연구：전환기의 기술 임원</h2>
+        <p class="text-mystic-200 leading-relaxed">
+          금 일주 클라이언트가 화가 그녀의 차트를 지배하는 전환 사이클 중에 FatePath에 접근했습니다。
+          고전적 해석은 데이터 뒤에 숨는 것을 멈추고 사상 리더십에 발을 내딛는 명령을 드러냈습니다。
+          우리는 지원적인 수의 달 동안 그녀의 공개 연설 투어를 스케줄하고，창의성을 위해 목 루틴을 추가했으며，그녀는 더 큰 지분 패키지로 VP 승진을 협상했습니다。
+          유사한 경력 스케줄링 기술은 <a class="text-gold-300 underline" href="/blog/career-timing-next-big-move">경력 타이밍 기사</a>를 참조하여 10년 대운과 연간 유년을 결합하여 더 완전한 계획을 만들 수도 있습니다。
+        </p>
+
+        <h2 class="text-2xl font-bold text-white mt-8 mb-4">사주 지혜로 작업하기 위한 액션 스텝</h2>
+        <ul class="list-disc list-inside text-mystic-200 leading-relaxed space-y-2">
+          <li>현재 10년 및 연간 운 사이클을 매핑하여 계절적 테마를 이해합니다。</li>
+          <li>요소 충돌과 싸우는 대신，일주를 지원하는 요소와 경력 움직임을 일치시킵니다。</li>
+          <li>자원과 출력성을 부양하는 양육 사이클 중에 관계 마일스톤이나 가족 계획을 스케줄합니다。</li>
+          <li>과잉 요소를 균형시키는 라이프스타일 의식을 채택합니다—강한 화를 위한 냉각 수의 실천，불안한 목을 위한 접지 토。</li>
+          <li>새로운 간과 지가 플레이로 회전함에 따라 전술을 조정하기 위해 매년 차트를 검토합니다。</li>
+        </ul>
+
+        <p class="text-mystic-200 leading-relaxed">
+          고대 지혜는 행동으로 변환될 때 강력해집니다。
+          사주 통찰과 현대 전략을 결합함으로써，운명을 존중하면서 일상 선택을 강화하는 로드맵을 얻습니다。
+        </p>
+      </div>
+    `
+    },
     author: 'Master XuanYin',
     date: '2024-06-15',
     readTime: '8 min read',
