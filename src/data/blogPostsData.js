@@ -417,9 +417,18 @@ export const blogPostsData = {
     ]
   },
   "maduro-capture-red-horse-red-sheep-ww3-predictions-2026": {
-    title: "From Maduro's Capture to the Red Horse and Red Sheep Year: Predictions, Including the Outbreak of World War III This Year",
-    excerpt: "At the dawn of 2026, the global geopolitical landscape witnessed a stunning upheaval: U.S. military forces captured Venezuelan President Nicolás Maduro. This dramatic event coincides with the 'Red Horse and Red Sheep Year' cycle in traditional Chinese calendar lore—2026 is the Bingwu year (Fire Horse), followed by 2027 as the Dingwei year (Fire Sheep). This rare superposition of fire elements foretells turmoil and transformation, potentially marking the outbreak of World War III.",
-    content: `
+    title: {
+      en: "From Maduro's Capture to the Red Horse and Red Sheep Year: Predictions, Including the Outbreak of World War III This Year",
+      ja: "マドゥロ逮捕から赤馬・赤羊年へ：予測、今年の第三次世界大戦勃発を含む",
+      ko: "마두로 체포에서 적마·적양년으로: 예측, 올해 제3차 세계대전 발발 포함"
+    },
+    excerpt: {
+      en: "At the dawn of 2026, the global geopolitical landscape witnessed a stunning upheaval: U.S. military forces captured Venezuelan President Nicolás Maduro. This dramatic event coincides with the 'Red Horse and Red Sheep Year' cycle in traditional Chinese calendar lore—2026 is the Bingwu year (Fire Horse), followed by 2027 as the Dingwei year (Fire Sheep). This rare superposition of fire elements foretells turmoil and transformation, potentially marking the outbreak of World War III.",
+      ja: "2026年の夜明け、世界の地政学的景観は驚くべき大変動を目撃しました：米軍がベネズエラのニコラス・マドゥロ大統領を逮捕しました。この劇的な出来事は、伝統的な中国暦の「赤馬・赤羊年」サイクルと一致しています—2026年は丙午年（火の馬、赤色）、続いて2027年は丁未年（火の羊、これも赤色）です。この60年に一度の火要素の重複は、混乱と変革の前兆と見なされ、政権交代、社会的対立、または自然災害を予告します。",
+      ko: "2026년 새벽, 글로벌 지정학적 풍경은 놀라운 대변동을 목격했습니다：미군이 베네수엘라의 니콜라스 마두로 대통령을 체포했습니다。이 극적인 사건은 전통 중국력의 "적마·적양년" 사이클과 정확히 일치합니다—2026년은 병오년（화마, 적색），이어서 2027년은 정미년（화양, 역시 적색）입니다。이 60년마다 발생하는 희귀한 화 요소의 중첩은 혼란과 변혁의 전조로 여겨지며，정권 교체，사회적 갈등，또는 자연 재해를 예고합니다。"
+    },
+    content: {
+      en: `
       <div class="space-y-8">
         <div class="mb-8">
           <div class="bg-gradient-to-r from-red-500/20 to-orange-500/20 border border-red-500/30 rounded-lg p-6 mb-8">
@@ -529,6 +538,9 @@ export const blogPostsData = {
         </div>
       </div>
     `,
+      ja: ``,
+      ko: ``
+    },
     author: 'Master XuanYin',
     date: '2026-01-06',
     readTime: '12 min read',
