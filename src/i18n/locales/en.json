@@ -423,5 +423,48 @@
     "redditTitle": "Community Love on Reddit",
     "redditDescription": "Click on any review to see it in full size",
     "clickToEnlarge": "Click to enlarge"
+  },
+  "resources": {
+    "heroTitle": "BaZi Data Library",
+    "heroDescription": "Your comprehensive source for BaZi datasets. Download structured data for analysis, development, and research in Chinese numerology and destiny analysis. ",
+    "heroHighlight": "25+ professional datasets",
+    "heroDescription2": " covering all aspects of BaZi study.",
+    "features": {
+      "json": "JSON Datasets",
+      "dictionaries": "Field Dictionaries",
+      "api": "API Ready",
+      "free": "Free Downloads"
+    },
+    "stats": {
+      "datasets": "Datasets",
+      "records": "Data Records",
+      "categories": "Categories",
+      "free": "Free Access"
+    },
+    "searchPlaceholder": "Search datasets by name, description, or tags...",
+    "filters": {
+      "allCategories": "All Categories",
+      "allLevels": "All Levels",
+      "allTags": "All Tags"
+    },
+    "difficulty": {
+      "beginner": "Beginner",
+      "intermediate": "Intermediate",
+      "advanced": "Advanced"
+    },
+    "showingResults": "Showing {{count}} of {{total}} datasets",
+    "filteredTitle": "Filtered Datasets",
+    "allDatasetsTitle": "All Datasets",
+    "filteredDescription": "Browse through our comprehensive collection of BaZi datasets based on your search criteria.",
+    "allDatasetsDescription": "Explore our comprehensive collection of BaZi datasets, carefully curated to provide complete analysis capabilities.",
+    "records": "{{count}} records",
+    "lastUpdated": "Updated",
+    "viewDetails": "View Details",
+    "download": "Download",
+    "noResults": "No datasets found",
+    "tryAdjusting": "Try adjusting your search criteria or filters to find what you're looking for.",
+    "clearFilters": "Clear All Filters",
+    "libraryTitle": "BaZi Data Library",
+    "libraryDescription": "Explore our comprehensive collection of BaZi datasets, organized by category and complexity. From core data to advanced applications, find everything you need for BaZi analysis and development."
   }
 }

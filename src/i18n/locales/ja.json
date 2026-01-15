@@ -432,5 +432,48 @@
     "redditTitle": "Redditでのコミュニティの愛",
     "redditDescription": "レビューをクリックしてフルサイズで表示",
     "clickToEnlarge": "クリックして拡大"
+  },
+  "resources": {
+    "heroTitle": "八字データライブラリ",
+    "heroDescription": "八字データセットの包括的なソース。中国の数秘術と運命分析の分析、開発、研究のための構造化データをダウンロード。",
+    "heroHighlight": "25以上のプロフェッショナルなデータセット",
+    "heroDescription2": "が八字研究のすべての側面をカバーしています。",
+    "features": {
+      "json": "JSONデータセット",
+      "dictionaries": "フィールド辞書",
+      "api": "API対応",
+      "free": "無料ダウンロード"
+    },
+    "stats": {
+      "datasets": "データセット",
+      "records": "データレコード",
+      "categories": "カテゴリ",
+      "free": "無料アクセス"
+    },
+    "searchPlaceholder": "名前、説明、またはタグでデータセットを検索...",
+    "filters": {
+      "allCategories": "すべてのカテゴリ",
+      "allLevels": "すべてのレベル",
+      "allTags": "すべてのタグ"
+    },
+    "difficulty": {
+      "beginner": "初心者",
+      "intermediate": "中級",
+      "advanced": "上級"
+    },
+    "showingResults": "{{total}}のデータセットのうち{{count}}を表示",
+    "filteredTitle": "フィルターされたデータセット",
+    "allDatasetsTitle": "すべてのデータセット",
+    "filteredDescription": "検索条件に基づいて、包括的な八字データセットコレクションを閲覧してください。",
+    "allDatasetsDescription": "カテゴリと複雑さで整理された、包括的な八字データセットコレクションを探索してください。コアデータから高度なアプリケーションまで、八字分析と開発に必要なすべてを見つけてください。",
+    "records": "{{count}}レコード",
+    "lastUpdated": "更新日",
+    "viewDetails": "詳細を見る",
+    "download": "ダウンロード",
+    "noResults": "データセットが見つかりません",
+    "tryAdjusting": "検索条件やフィルターを調整して、探しているものを見つけてください。",
+    "clearFilters": "すべてのフィルターをクリア",
+    "libraryTitle": "八字データライブラリ",
+    "libraryDescription": "カテゴリと複雑さで整理された、包括的な八字データセットコレクションを探索してください。コアデータから高度なアプリケーションまで、八字分析と開発に必要なすべてを見つけてください。"
   }
 }

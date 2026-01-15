@@ -432,5 +432,48 @@
     "redditTitle": "Reddit에서의 커뮤니티 사랑",
     "redditDescription": "리뷰를 클릭하여 전체 크기로 보기",
     "clickToEnlarge": "클릭하여 확대"
+  },
+  "resources": {
+    "heroTitle": "팔자 데이터 라이브러리",
+    "heroDescription": "팔자 데이터셋의 포괄적인 소스. 중국 수비학과 운명 분석을 위한 분석, 개발, 연구를 위한 구조화된 데이터를 다운로드하세요. ",
+    "heroHighlight": "25개 이상의 전문 데이터셋",
+    "heroDescription2": "이 팔자 연구의 모든 측면을 다룹니다.",
+    "features": {
+      "json": "JSON 데이터셋",
+      "dictionaries": "필드 사전",
+      "api": "API 준비됨",
+      "free": "무료 다운로드"
+    },
+    "stats": {
+      "datasets": "데이터셋",
+      "records": "데이터 레코드",
+      "categories": "카테고리",
+      "free": "무료 액세스"
+    },
+    "searchPlaceholder": "이름, 설명 또는 태그로 데이터셋 검색...",
+    "filters": {
+      "allCategories": "모든 카테고리",
+      "allLevels": "모든 레벨",
+      "allTags": "모든 태그"
+    },
+    "difficulty": {
+      "beginner": "초급",
+      "intermediate": "중급",
+      "advanced": "고급"
+    },
+    "showingResults": "{{total}}개의 데이터셋 중 {{count}}개 표시",
+    "filteredTitle": "필터링된 데이터셋",
+    "allDatasetsTitle": "모든 데이터셋",
+    "filteredDescription": "검색 조건에 따라 포괄적인 팔자 데이터셋 컬렉션을 탐색하세요.",
+    "allDatasetsDescription": "카테고리와 복잡성으로 구성된 포괄적인 팔자 데이터셋 컬렉션을 탐색하세요. 핵심 데이터부터 고급 애플리케이션까지, 팔자 분석 및 개발에 필요한 모든 것을 찾으세요.",
+    "records": "{{count}}개 레코드",
+    "lastUpdated": "업데이트",
+    "viewDetails": "세부 정보 보기",
+    "download": "다운로드",
+    "noResults": "데이터셋을 찾을 수 없습니다",
+    "tryAdjusting": "검색 조건이나 필터를 조정하여 찾고 있는 것을 찾아보세요.",
+    "clearFilters": "모든 필터 지우기",
+    "libraryTitle": "팔자 데이터 라이브러리",
+    "libraryDescription": "카테고리와 복잡성으로 구성된 포괄적인 팔자 데이터셋 컬렉션을 탐색하세요. 핵심 데이터부터 고급 애플리케이션까지, 팔자 분석 및 개발에 필요한 모든 것을 찾으세요."
   }
 }
