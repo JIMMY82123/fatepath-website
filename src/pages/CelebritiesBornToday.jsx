@@ -1,10 +1,12 @@
 import React, { useState, useEffect, useMemo } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import { Link } from 'react-router-dom'
+import { useTranslation } from 'react-i18next'
 import { Search, Filter, Calendar, MapPin, Briefcase, Star } from 'lucide-react'
 import SEO from '../components/SEO'
 
 const CelebritiesBornToday = () => {
+  const { t } = useTranslation()
   const [celebrities, setCelebrities] = useState([])
   const [loading, setLoading] = useState(true)
   const [searchTerm, setSearchTerm] = useState('')
@@ -165,7 +167,7 @@ const CelebritiesBornToday = () => {
     const [year] = birthDate.split('-').map(Number)
     const currentYear = new Date().getFullYear()
     const age = currentYear - year
-    return age > 0 ? `${age} years ago` : `${Math.abs(age)} years from now`
+    return age > 0 ? `${age} ${t('celebrities.yearsAgo')}` : `${Math.abs(age)} ${t('celebrities.yearsFromNow', 'years from now')}`
   }
 
   // Format date
@@ -289,14 +291,14 @@ const CelebritiesBornToday = () => {
                 <div>
                   <label className="block text-sm font-medium text-mystic-300 mb-2">
                     <Briefcase className="h-4 w-4 inline mr-2" />
-                    Occupation
+                    {t('celebrities.occupation')}
                   </label>
                   <select
                     value={selectedOccupation}
                     onChange={(e) => setSelectedOccupation(e.target.value)}
                     className="w-full px-4 py-2 bg-mystic-900 border border-mystic-700 rounded-lg text-white focus:outline-none focus:border-gold-400"
                   >
-                    <option value="Any">Any</option>
+                    <option value="Any">{t('common.any')}</option>
                     {occupations.map(occ => (
                       <option key={occ} value={occ}>{occ}</option>
                     ))}
@@ -307,14 +309,14 @@ const CelebritiesBornToday = () => {
                 <div>
                   <label className="block text-sm font-medium text-mystic-300 mb-2">
                     <MapPin className="h-4 w-4 inline mr-2" />
-                    Nationality
+                    {t('celebrities.nationality')}
                   </label>
                   <select
                     value={selectedNationality}
                     onChange={(e) => setSelectedNationality(e.target.value)}
                     className="w-full px-4 py-2 bg-mystic-900 border border-mystic-700 rounded-lg text-white focus:outline-none focus:border-gold-400"
                   >
-                    <option value="Any">Any</option>
+                    <option value="Any">{t('common.any')}</option>
                     {nationalities.map(nat => (
                       <option key={nat} value={nat}>{nat}</option>
                     ))}
@@ -451,7 +453,7 @@ const CelebritiesBornToday = () => {
               >
                 <h2 className="text-3xl font-bold text-white mb-6 flex items-center gap-2">
                   <Calendar className="h-6 w-6 text-gold-400" />
-                  Famous celebrities born on {formatDate(`${new Date().getFullYear()}-${String(tomorrowMonth).padStart(2, '0')}-${String(tomorrowDay).padStart(2, '0')}`).split(',')[0]} (Tomorrow)
+                  {t('celebrities.bornOn')} {formatDate(`${new Date().getFullYear()}-${String(tomorrowMonth).padStart(2, '0')}-${String(tomorrowDay).padStart(2, '0')}`).split(',')[0]} ({t('celebrities.tomorrow')})
                 </h2>
                 
                 <div className="space-y-3">

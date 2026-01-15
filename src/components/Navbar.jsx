@@ -26,24 +26,24 @@ const Navbar = () => {
   }, [])
 
   const navItems = [
-    { path: '/', label: 'Home' },
-    { path: '/services', label: 'Services' },
-    { path: '/blog', label: 'Blog' },
+    { path: '/', label: t('common.home') },
+    { path: '/services', label: t('common.services') },
+    { path: '/blog', label: t('common.blog') },
     { 
-      label: 'Bazi Tools',
+      label: t('nav.baziTools'),
       hasDropdown: true,
       items: [
-        { path: '/free-bazi-report', label: 'Free Bazi Report' },
-        { path: '/tools/day-master-calculator', label: 'Day Master Strength Calculator' },
-        { path: '/tools/true-solar-time-calculator', label: 'True Solar Time Calculator' },
-        { path: '/tools/ten-gods-analyzer', label: 'Ten Gods Analyzer' },
-        { path: '/celebrities-born-today', label: 'Famous People Born Today' },
-        { path: '/resources', label: 'Resources' }
+        { path: '/free-bazi-report', label: t('nav.freeBaziReport') },
+        { path: '/tools/day-master-calculator', label: t('nav.dayMasterCalculator') },
+        { path: '/tools/true-solar-time-calculator', label: t('nav.trueSolarTimeCalculator') },
+        { path: '/tools/ten-gods-analyzer', label: t('nav.tenGodsAnalyzer') },
+        { path: '/celebrities-born-today', label: t('nav.famousPeopleBornToday') },
+        { path: '/resources', label: t('nav.resources') }
       ]
     },
-    { path: '/testimonials', label: 'Testimonials' },
-    { path: '/faq', label: 'FAQ' },
-    { path: '/contact', label: 'Contact' }
+    { path: '/testimonials', label: t('common.testimonials') },
+    { path: '/faq', label: t('common.faq') },
+    { path: '/contact', label: t('common.contact') }
   ]
 
   // 检查当前路径是否在工具菜单中
@@ -151,6 +151,9 @@ const Navbar = () => {
                 </Link>
               )
             })}
+            
+            {/* Language Switcher */}
+            <LanguageSwitcher />
             
             {/* GPT Button */}
             <GPTButton variant="default" />

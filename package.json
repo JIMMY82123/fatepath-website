@@ -18,11 +18,14 @@
   "dependencies": {
     "@mediapipe/face_detection": "^0.4.1646425229",
     "framer-motion": "^10.16.4",
+    "i18next": "^23.7.6",
+    "i18next-browser-languagedetector": "^7.2.0",
     "lucide-react": "^0.294.0",
     "lunar-javascript": "^1.7.3",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-helmet-async": "^2.0.5",
+    "react-i18next": "^13.5.0",
     "react-router-dom": "^6.8.1",
     "three": "^0.179.1"
   },
