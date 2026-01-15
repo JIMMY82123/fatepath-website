@@ -25,6 +25,9 @@ i18n
     detection: {
       order: ['localStorage', 'navigator'],
       caches: ['localStorage']
+    },
+    react: {
+      useSuspense: false // 避免 Suspense 问题
     }
   })
 
