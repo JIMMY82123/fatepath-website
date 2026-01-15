@@ -13,6 +13,8 @@ import { mobileDiagnostics } from './utils/mobileDiagnostics'
 // 直接导入Home组件，避免移动端懒加载问题
 import Home from './pages/Home'
 import RedirectToServices from './components/RedirectToServices'
+// 直接导入ChineseAstrologyGuide，避免懒加载问题
+import ChineseAstrologyGuide from './pages/ChineseAstrologyGuide'
 
 // 懒加载其他页面组件
 const Services = lazy(() => import('./pages/Services'))
@@ -33,7 +35,6 @@ const BaziForm = lazy(() => import('./pages/BaziForm'))
 const DayMasterCalculator = lazy(() => import('./pages/DayMasterCalculator'))
 const TrueSolarTimeCalculator = lazy(() => import('./pages/TrueSolarTimeCalculator'))
 const TenGodsAnalyzer = lazy(() => import('./pages/TenGodsAnalyzer'))
-const ChineseAstrologyGuide = lazy(() => import('./pages/ChineseAstrologyGuide'))
 const NotFound = lazy(() => import('./pages/NotFound'))
 
 function App() {
