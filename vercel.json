@@ -85,52 +85,52 @@
     {
       "source": "/blog/bitcoin-crash-bazi-destiny",
       "destination": "/404",
-      "permanent": true,
+      "permanent": true
     },
     {
       "source": "/blog/best-bazi-wealth-chinese-astrology-blueprint",
       "destination": "/404",
-      "permanent": true,
+      "permanent": true
     },
     {
       "source": "/resources/flying-stars",
       "destination": "/404",
-      "permanent": true,
+      "permanent": true
     },
     {
       "source": "/resources/combination-punishment",
       "destination": "/404",
-      "permanent": true,
+      "permanent": true
     },
     {
       "source": "/resources/travel-migration",
       "destination": "/404",
-      "permanent": true,
+      "permanent": true
     },
     {
       "source": "/resources/day-master-career-us",
       "destination": "/404",
-      "permanent": true,
+      "permanent": true
     },
     {
       "source": "/resources/business-success",
       "destination": "/404",
-      "permanent": true,
+      "permanent": true
     },
     {
       "source": "/resources/pillars-analysis",
       "destination": "/404",
-      "permanent": true,
+      "permanent": true
     },
     {
       "source": "/resources/solar-terms-energy",
       "destination": "/404",
-      "permanent": true,
+      "permanent": true
     },
     {
       "source": "/resources/empty-branches",
       "destination": "/404",
-      "permanent": true,
+      "permanent": true
     }
   ],
   "rewrites": [
