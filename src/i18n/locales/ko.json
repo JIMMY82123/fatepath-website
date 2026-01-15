@@ -629,5 +629,22 @@
     "ctaDescription": "팔자 분석을 통해 중국 점성술의 힘을 발견하세요. 팔자（중국 점성술에서 사주로도 알려짐）는 중국 점성술에서 가장 정확한 통찰을 제공합니다. 전문 중국 점성술 분석을 경험하고 중국 점성술 운명을 해제하세요.",
     "ctaButton1": "무료 팔자 리포트 받기",
     "ctaButton2": "중국 점성술 블로그 읽기"
+  },
+  "blogPost": {
+    "loading": "운명 리포트 로딩 중...",
+    "loadingDesc": "개인화된 분석을 준비하는 동안 기다려 주세요.",
+    "errorTitle": "앗! 문제가 발생했습니다",
+    "errorDesc": "운명 리포트를 로드하는 데 문제가 있습니다. 연결을 확인하고 다시 시도하세요.",
+    "tryAgain": "다시 시도",
+    "notFound": "블로그 게시물을 찾을 수 없습니다",
+    "notFoundDesc": "찾고 있는 블로그 게시물이 존재하지 않습니다.",
+    "backToBlog": "블로그로 돌아가기",
+    "linkCopied": "링크가 클립보드에 복사되었습니다！",
+    "author": "작성자",
+    "date": "날짜",
+    "readTime": "읽는 시간",
+    "jsRequired": "전체 대화형 경험을 위해서는 JavaScript가 필요합니다. 애니메이션과 향상된 기능이 포함된 전체 기사를 보려면 JavaScript를 활성화하세요.",
+    "shareArticle": "기사 공유",
+    "relatedArticles": "관련 기사"
   }
 }

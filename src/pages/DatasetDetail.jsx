@@ -1,9 +1,11 @@
 import React, { useState, useEffect } from 'react'
 import { motion } from 'framer-motion'
 import { useParams, Link, useNavigate } from 'react-router-dom'
+import { useTranslation } from 'react-i18next'
 import SEO from '../components/SEO'
 
 const DatasetDetail = () => {
+  const { t } = useTranslation()
   const { datasetId } = useParams()
   const navigate = useNavigate()
   const [dataset, setDataset] = useState(null)
@@ -101,7 +103,7 @@ const DatasetDetail = () => {
   if (loading) {
     return (
       <div className="pt-20 min-h-screen bg-mystic-900 flex items-center justify-center">
-        <div className="text-white">Loading dataset...</div>
+        <div className="text-white">{t('datasetDetail.loading')}</div>
       </div>
     )
   }
@@ -117,13 +119,13 @@ const DatasetDetail = () => {
         />
         <div className="pt-20 min-h-screen bg-mystic-900 flex items-center justify-center">
           <div className="text-center">
-            <h1 className="text-2xl font-bold text-white mb-4">Dataset Not Found</h1>
-            <p className="text-mystic-300 mb-8">The dataset you're looking for doesn't exist.</p>
+            <h1 className="text-2xl font-bold text-white mb-4">{t('datasetDetail.notFound')}</h1>
+            <p className="text-mystic-300 mb-8">{t('datasetDetail.notFoundDesc')}</p>
             <Link
               to="/resources"
               className="bg-gradient-to-r from-gold-400 to-gold-600 text-black px-6 py-3 rounded-lg hover:from-gold-500 hover:to-gold-700 transition-all duration-300 font-semibold"
             >
-              Back to Resources
+              {t('datasetDetail.backToResources')}
             </Link>
           </div>
         </div>
@@ -161,26 +163,26 @@ const DatasetDetail = () => {
                 {dataset.metadata.description}
               </p>
               <div className="flex flex-wrap justify-center gap-6 text-sm text-mystic-400 mb-8">
-                <span>Format: {dataset.metadata.format}</span>
+                <span>{t('datasetDetail.format')}: {dataset.metadata.format}</span>
                 <span>•</span>
-                <span>Records: {dataset.metadata.totalRecords}</span>
+                <span>{t('datasetDetail.records')}: {dataset.metadata.totalRecords}</span>
                 <span>•</span>
-                <span>Version: {dataset.metadata.version}</span>
+                <span>{t('datasetDetail.version')}: {dataset.metadata.version}</span>
                 <span>•</span>
-                <span>Updated: {dataset.metadata.lastUpdated}</span>
+                <span>{t('datasetDetail.updated')}: {dataset.metadata.lastUpdated}</span>
               </div>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <button
                   onClick={downloadDataset}
                   className="bg-gradient-to-r from-yellow-400 to-yellow-600 text-mystic-900 px-8 py-4 rounded-lg text-lg font-bold hover:from-yellow-500 hover:to-yellow-700 transition-all duration-300 transform hover:scale-105"
                 >
-                  Download Dataset
+                  {t('datasetDetail.download')}
                 </button>
                 <Link
                   to="/resources"
                   className="bg-mystic-700 text-white px-8 py-4 rounded-lg text-lg font-bold hover:bg-mystic-600 transition-all duration-300"
                 >
-                  View All Datasets
+                  {t('datasetDetail.viewAll')}
                 </Link>
               </div>
             </motion.div>
@@ -197,8 +199,8 @@ const DatasetDetail = () => {
               viewport={{ once: true }}
               className="text-center mb-12"
             >
-              <h2 className="text-2xl font-bold text-white mb-4">Citation & AI Integration</h2>
-              <p className="text-mystic-300">Ready-to-use citation formats for academic and AI applications</p>
+              <h2 className="text-2xl font-bold text-white mb-4">{t('datasetDetail.citationTitle')}</h2>
+              <p className="text-mystic-300">{t('datasetDetail.citationDesc')}</p>
             </motion.div>
 
             <div className="grid md:grid-cols-2 gap-8">
@@ -209,7 +211,7 @@ const DatasetDetail = () => {
                 viewport={{ once: true }}
                 className="bg-mystic-800 rounded-lg p-6 border border-mystic-700/50"
               >
-                <h3 className="text-yellow-400 font-bold text-lg mb-4">Academic Citation</h3>
+                <h3 className="text-yellow-400 font-bold text-lg mb-4">{t('datasetDetail.academicCitation')}</h3>
                 <div className="bg-mystic-700/30 rounded p-4">
                   <p className="text-mystic-300 text-sm font-mono">
                     FatePath BaZi Master. ({dataset.metadata.lastUpdated}). {dataset.metadata.name}. 
@@ -225,13 +227,13 @@ const DatasetDetail = () => {
                 viewport={{ once: true }}
                 className="bg-mystic-800 rounded-lg p-6 border border-mystic-700/50"
               >
-                <h3 className="text-yellow-400 font-bold text-lg mb-4">API Endpoint</h3>
+                <h3 className="text-yellow-400 font-bold text-lg mb-4">{t('datasetDetail.apiEndpoint')}</h3>
                 <div className="bg-mystic-700/30 rounded p-4">
                   <p className="text-mystic-300 text-sm font-mono">
                     GET {window.location.origin}/datasets/{datasetId}.json
                   </p>
                   <p className="text-mystic-400 text-xs mt-2">
-                    Returns complete dataset with metadata and schema
+                    {t('datasetDetail.apiDesc')}
                   </p>
                 </div>
               </motion.div>
@@ -250,10 +252,10 @@ const DatasetDetail = () => {
               className="text-center mb-16"
             >
               <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
-                Field Dictionary
+                {t('datasetDetail.fieldDictionary')}
               </h2>
               <p className="text-lg text-mystic-300 max-w-2xl mx-auto">
-                Complete documentation of all fields in this dataset with descriptions, data types, and examples.
+                {t('datasetDetail.fieldDictionaryDesc')}
               </p>
             </motion.div>
 
@@ -275,7 +277,7 @@ const DatasetDetail = () => {
                   </div>
                   <p className="text-mystic-300 text-sm mb-4">{field.description}</p>
                   <div className="bg-mystic-700/30 rounded p-3">
-                    <span className="text-mystic-400 text-xs">Example:</span>
+                    <span className="text-mystic-400 text-xs">{t('datasetDetail.example')}:</span>
                     <div className="text-white text-sm mt-1 font-mono">
                       {typeof field.example === 'object' 
                         ? JSON.stringify(field.example, null, 2)
@@ -300,12 +302,12 @@ const DatasetDetail = () => {
               className="text-center mb-16"
             >
               <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
-                Data Preview
+                {t('datasetDetail.dataPreview')}
               </h2>
                              <p className="text-lg text-mystic-300 max-w-2xl mx-auto">
                  {datasetId === 'ten-gods' 
-                   ? `Complete preview of all ${dataset.metadata.totalRecords} Ten Gods records.` 
-                   : `Preview of the first 5 records in this dataset. Download the complete dataset to access all ${dataset.metadata.totalRecords} records.`
+                   ? t('datasetDetail.previewDesc1', { count: dataset.metadata.totalRecords })
+                   : t('datasetDetail.previewDesc2', { count: dataset.metadata.totalRecords })
                  }
                </p>
             </motion.div>
@@ -353,10 +355,10 @@ const DatasetDetail = () => {
               className="text-center mb-16"
             >
               <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
-                Usage Examples
+                {t('datasetDetail.usageExamples')}
               </h2>
               <p className="text-lg text-mystic-300 max-w-2xl mx-auto">
-                Code examples showing how to use this dataset in different programming languages and applications.
+                {t('datasetDetail.usageExamplesDesc')}
               </p>
             </motion.div>
 
@@ -434,57 +436,57 @@ wood_stems = [
               className="text-center mb-16"
             >
               <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
-                Dataset Information
+                {t('datasetDetail.datasetInfo')}
               </h2>
               <p className="text-lg text-mystic-300 max-w-2xl mx-auto">
-                Technical details and structured data for this dataset.
+                {t('datasetDetail.datasetInfoDesc')}
               </p>
             </motion.div>
 
             <div className="bg-mystic-900 rounded-lg p-8 border border-mystic-700/50">
               <div className="grid md:grid-cols-2 gap-8">
                 <div>
-                  <h3 className="text-2xl font-bold text-yellow-400 mb-4">Dataset Metadata</h3>
+                  <h3 className="text-2xl font-bold text-yellow-400 mb-4">{t('datasetDetail.metadata')}</h3>
                   <div className="space-y-3">
                     <div className="flex justify-between">
-                      <span className="text-mystic-300">Name:</span>
+                      <span className="text-mystic-300">{t('datasetDetail.name')}:</span>
                       <span className="text-white">{dataset.metadata.name}</span>
                     </div>
                     <div className="flex justify-between">
-                      <span className="text-mystic-300">Version:</span>
+                      <span className="text-mystic-300">{t('datasetDetail.version')}:</span>
                       <span className="text-white">{dataset.metadata.version}</span>
                     </div>
                     <div className="flex justify-between">
-                      <span className="text-mystic-300">Format:</span>
+                      <span className="text-mystic-300">{t('datasetDetail.format')}:</span>
                       <span className="text-white">{dataset.metadata.format}</span>
                     </div>
                     <div className="flex justify-between">
-                      <span className="text-mystic-300">Records:</span>
+                      <span className="text-mystic-300">{t('datasetDetail.records')}:</span>
                       <span className="text-white">{dataset.metadata.totalRecords}</span>
                     </div>
                     <div className="flex justify-between">
-                      <span className="text-mystic-300">License:</span>
+                      <span className="text-mystic-300">{t('datasetDetail.license')}:</span>
                       <span className="text-white">{dataset.metadata.license}</span>
                     </div>
                     <div className="flex justify-between">
-                      <span className="text-mystic-300">Author:</span>
+                      <span className="text-mystic-300">{t('datasetDetail.author')}:</span>
                       <span className="text-white">{dataset.metadata.author}</span>
                     </div>
                   </div>
                 </div>
                 <div>
-                  <h3 className="text-2xl font-bold text-yellow-400 mb-4">Download Options</h3>
+                  <h3 className="text-2xl font-bold text-yellow-400 mb-4">{t('datasetDetail.downloadOptions')}</h3>
                   <div className="space-y-4">
                     <button
                       onClick={downloadDataset}
                       className="w-full bg-yellow-400 text-mystic-900 px-6 py-3 rounded font-semibold hover:bg-yellow-500 transition-colors"
                     >
-                      Download JSON ({datasetId}.json)
+                      {t('datasetDetail.downloadJson', { filename: `${datasetId}.json` })}
                     </button>
                     <div className="text-mystic-400 text-sm">
-                      <p>• Complete dataset with metadata and schema</p>
-                      <p>• Structured for easy integration</p>
-                      <p>• Includes field documentation</p>
+                      <p>• {t('datasetDetail.downloadFeature1')}</p>
+                      <p>• {t('datasetDetail.downloadFeature2')}</p>
+                      <p>• {t('datasetDetail.downloadFeature3')}</p>
                     </div>
                   </div>
                 </div>

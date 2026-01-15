@@ -620,5 +620,22 @@
     "ctaDescription": "Discover the power of Chinese astrology through Bazi analysis. Bazi, also known as Four Pillars in Chinese astrology, offers the most accurate insights in Chinese astrology. Experience professional Chinese astrology analysis and unlock your Chinese astrology destiny.",
     "ctaButton1": "Get Free Bazi Report",
     "ctaButton2": "Read Chinese Astrology Blog"
+  },
+  "blogPost": {
+    "loading": "Loading Your Destiny Report...",
+    "loadingDesc": "Please wait while we prepare your personalized analysis.",
+    "errorTitle": "Oops! Something Went Wrong",
+    "errorDesc": "We're having trouble loading your destiny report. Please check your connection and try again.",
+    "tryAgain": "Try Again",
+    "notFound": "Blog Post Not Found",
+    "notFoundDesc": "The blog post you're looking for doesn't exist.",
+    "backToBlog": "Back to Blog",
+    "linkCopied": "Link copied to clipboard!",
+    "author": "Author",
+    "date": "Date",
+    "readTime": "Read Time",
+    "jsRequired": "JavaScript is required for the full interactive experience. Please enable JavaScript to view the complete article with animations and enhanced features.",
+    "shareArticle": "Share Article",
+    "relatedArticles": "Related Articles"
   }
 }
