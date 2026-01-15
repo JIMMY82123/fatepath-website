@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion'
 import { MessageCircle, Mail, Phone, MapPin, Clock, Star, Sparkles, CheckCircle } from 'lucide-react'
-import { useState } from 'react'
+import { useState, useMemo } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
 import { getFormUrl } from '../config/formIds'
@@ -135,37 +135,37 @@ const Contact = () => {
     }
   }
 
-  const contactInfo = [
+  const contactInfo = useMemo(() => [
     {
       icon: <MessageCircle className="h-6 w-6" />,
-      title: "WhatsApp",
-      value: "+86 15914228258",
-      description: "Fastest way to reach me",
+      title: t('contact.whatsapp'),
+      value: t('contact.whatsappValue'),
+      description: t('contact.whatsappDesc'),
       action: handleWhatsAppClick,
       color: "from-green-500 to-green-600"
     },
     {
       icon: <Mail className="h-6 w-6" />,
-      title: "Email",
-      value: "chenxiao0801@hotmail.com",
-      description: "For detailed inquiries",
+      title: t('contact.emailLabel'),
+      value: t('contact.emailValue'),
+      description: t('contact.emailDesc'),
       action: () => window.open('mailto:chenxiao0801@hotmail.com'),
       color: "from-blue-500 to-blue-600"
     }
-  ]
+  ], [t])
 
-  const businessHours = [
-    { day: "Monday - Friday", hours: "9:00 AM - 8:00 PM (CST)" },
-    { day: "Saturday", hours: "10:00 AM - 6:00 PM (CST)" },
-    { day: "Sunday", hours: "12:00 PM - 5:00 PM (CST)" }
-  ]
+  const businessHours = useMemo(() => [
+    { day: t('contact.mondayFriday'), hours: t('contact.hours1') },
+    { day: t('contact.saturday'), hours: t('contact.hours2') },
+    { day: t('contact.sunday'), hours: t('contact.hours3') }
+  ], [t])
 
-  const usTimeZones = [
-    { zone: "Eastern Time (EST/EDT)", offset: "UTC-5/UTC-4" },
-    { zone: "Central Time (CST/CDT)", offset: "UTC-6/UTC-5" },
-    { zone: "Mountain Time (MST/MDT)", offset: "UTC-7/UTC-6" },
-    { zone: "Pacific Time (PST/PDT)", offset: "UTC-8/UTC-7" }
-  ]
+  const usTimeZones = useMemo(() => [
+    { zone: t('contact.easternTime'), offset: t('contact.easternOffset') },
+    { zone: t('contact.centralTime'), offset: t('contact.centralOffset') },
+    { zone: t('contact.mountainTime'), offset: t('contact.mountainOffset') },
+    { zone: t('contact.pacificTime'), offset: t('contact.pacificOffset') }
+  ], [t])
 
   return (
     <>
