@@ -246,17 +246,15 @@ const CelebritiesBornToday = () => {
               transition={{ duration: 0.6 }}
             >
               <div className="flex items-center gap-2 text-mystic-400 text-sm mb-4">
-                <Link to="/" className="hover:text-gold-400 transition-colors">Home</Link>
+                <Link to="/" className="hover:text-gold-400 transition-colors">{t('common.home')}</Link>
                 <span>/</span>
-                <Link to="/celebrities-born-today" className="hover:text-gold-400 transition-colors">Famous People</Link>
-                <span>/</span>
-                <span className="text-mystic-300">Famous People Born Today</span>
+                <Link to="/celebrities-born-today" className="hover:text-gold-400 transition-colors">{t('celebrities.title')}</Link>
               </div>
               <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">
-                Famous People Born Today
+                {t('celebrities.title')}
               </h1>
               <p className="text-lg text-mystic-300">
-                Discover celebrities and historical figures born on this date, with BaZi (Four Pillars) analysis insights
+                {t('celebrities.description')}
               </p>
             </motion.div>
           </div>
@@ -276,13 +274,13 @@ const CelebritiesBornToday = () => {
                 <div className="lg:col-span-2">
                   <label className="block text-sm font-medium text-mystic-300 mb-2">
                     <Search className="h-4 w-4 inline mr-2" />
-                    Seek: Celebrity Name
+                    {t('celebrities.search')}
                   </label>
                   <input
                     type="text"
                     value={searchTerm}
                     onChange={(e) => setSearchTerm(e.target.value)}
-                    placeholder="Enter celebrity name..."
+                    placeholder={t('celebrities.searchPlaceholder', 'Enter celebrity name...')}
                     className="w-full px-4 py-2 bg-mystic-900 border border-mystic-700 rounded-lg text-white placeholder-mystic-500 focus:outline-none focus:border-gold-400"
                   />
                 </div>
@@ -531,7 +529,7 @@ const CelebritiesBornToday = () => {
                   >
                     <h2 className="text-3xl font-bold text-white mb-6 flex items-center gap-2">
                       <Calendar className="h-6 w-6 text-gold-400" />
-                      Famous celebrities born on {formatDate(`${new Date().getFullYear()}-${String(dayInfo.month).padStart(2, '0')}-${String(dayInfo.day).padStart(2, '0')}`).split(',')[0]}
+                      {t('celebrities.bornOn')} {formatDate(`${new Date().getFullYear()}-${String(dayInfo.month).padStart(2, '0')}-${String(dayInfo.day).padStart(2, '0')}`).split(',')[0]}
                     </h2>
                     
                     <div className="space-y-3">

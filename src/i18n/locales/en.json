@@ -111,6 +111,7 @@
     "title": "Famous People Born Today",
     "description": "Discover celebrities and historical figures born on this date, with BaZi (Four Pillars) analysis insights",
     "search": "Seek: Celebrity Name",
+    "searchPlaceholder": "Enter celebrity name...",
     "occupation": "Occupation",
     "nationality": "Nationality",
     "gender": "Gender",
@@ -124,7 +125,11 @@
     "tomorrow": "Tomorrow",
     "bornOn": "Famous celebrities born on",
     "yearsAgo": "years ago",
-    "getYourFreeBaziChart": "Get Your Free Bazi Chart"
+    "yearsFromNow": "years from now",
+    "getYourFreeBaziChart": "Get Your Free Bazi Chart",
+    "discoverYourOwn": "Discover Your Own BaZi Chart",
+    "discoverDescription": "Just like these famous people, discover your destiny through BaZi (Four Pillars) analysis",
+    "noResults": "No celebrities found for today matching your filters."
   },
   "footer": {
     "description": "Discover your true path through ancient wisdom and personalized guidance.",
