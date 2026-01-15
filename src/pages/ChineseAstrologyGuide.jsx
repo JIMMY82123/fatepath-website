@@ -99,7 +99,7 @@ const ChineseAstrologyGuide = () => {
         structuredData={structuredData}
       />
 
-      <main className="min-h-screen bg-mystic-900 pt-20">
+      <main className="min-h-screen bg-mystic-900 pt-20 pb-20">
         {/* Hero Section */}
         <section className="relative py-20 px-4 overflow-hidden">
           {/* Background Gradient */}
