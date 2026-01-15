@@ -1,8 +1,17 @@
 export const blogPostsData = {
   "yu-zhao-shen-ying-zhen-jing-vs-zi-ping-bazi": {
-    title: "The Hidden Ancient Truth of Chinese Bazi: Why the Original \"Yu Zhao Shen Ying Zhen Jing\" Is More Accurate Than Modern Zi Ping Eight Characters",
-    excerpt: "Ancient wisdom says: \"First comes fate, second comes luck, third comes feng shui.\" Long before Zi Ping Bazi, during the Eastern Han Dynasty, Guo Pu wrote the classic Yu Zhao Shen Ying Zhen Jing (The True Scripture of Jade Illumination and Divine Response). Discover why this original foundational text is more accurate than modern Zi Ping methods, with three real-life case studies demonstrating its precision.",
-    content: `
+    title: {
+      en: "The Hidden Ancient Truth of Chinese Bazi: Why the Original \"Yu Zhao Shen Ying Zhen Jing\" Is More Accurate Than Modern Zi Ping Eight Characters",
+      ja: "中国八字の隠された古代の真実：なぜ元の「玉照神応真経」が現代の子平八字よりも正確なのか",
+      ko: "중국 팔자의 숨겨진 고대 진실: 왜 원본 '옥조신응진경'이 현대 자평팔자보다 더 정확한가"
+    },
+    excerpt: {
+      en: "Ancient wisdom says: \"First comes fate, second comes luck, third comes feng shui.\" Long before Zi Ping Bazi, during the Eastern Han Dynasty, Guo Pu wrote the classic Yu Zhao Shen Ying Zhen Jing (The True Scripture of Jade Illumination and Divine Response). Discover why this original foundational text is more accurate than modern Zi Ping methods, with three real-life case studies demonstrating its precision.",
+      ja: "古代の知恵は言います：「第一に運命、第二に運、第三に風水」。子平八字よりずっと前、後漢時代に、郭璞が古典『玉照神応真経』を書きました。この元の基礎テキストが現代の子平法よりも正確である理由を、3つの実例研究でその精度を実証しながら発見してください。",
+      ko: "고대 지혜는 말합니다: \"첫째는 운명, 둘째는 운, 셋째는 풍수\"입니다. 자평팔자보다 훨씬 이전인 후한 시대에 곽박이 고전 『옥조신응진경』을 저술했습니다. 이 원본 기초 텍스트가 현대 자평법보다 더 정확한 이유를 세 가지 실제 사례 연구로 그 정확성을 입증하며 발견하세요."
+    },
+    content: {
+      en: `
       <div class="space-y-8">
         <div class="mb-8">
           <div class="bg-gradient-to-r from-amber-500/20 to-yellow-500/20 border border-amber-500/30 rounded-lg p-6 mb-8">
@@ -160,6 +169,9 @@ export const blogPostsData = {
         </div>
       </div>
     `,
+      ja: ``,
+      ko: ``
+    },
     author: 'Master XuanYin',
     date: '2026-01-07',
     readTime: '15 min read',
