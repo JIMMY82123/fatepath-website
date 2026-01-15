@@ -538,8 +538,226 @@ export const blogPostsData = {
         </div>
       </div>
     `,
-      ja: ``,
-      ko: ``
+      ja: `
+      <div class="space-y-8">
+        <div class="mb-8">
+          <div class="bg-gradient-to-r from-red-500/20 to-orange-500/20 border border-red-500/30 rounded-lg p-6 mb-8">
+            <h3 class="text-lg font-semibold text-red-400 mb-3">🔥 重要な出来事：マドゥロ逮捕</h3>
+            <p class="text-mystic-200 mb-2"><strong>日付：</strong> 2026年1月3日</p>
+            <p class="text-mystic-200 mb-2"><strong>場所：</strong> ベネズエラ、カラカス</p>
+            <p class="text-mystic-200 mb-2"><strong>行動：</strong> 米軍がニコラス・マドゥロ大統領とその妻シリア・フローレスを逮捕する作戦</p>
+            <p class="text-mystic-200"><strong>状況：</strong> ニューヨークの連邦裁判所に移送され裁判に</p>
+          </div>
+        </div>
+
+        <h2 class="text-2xl font-bold text-white mb-4 mt-8">2026年の驚くべき幕開け</h2>
+        <p class="mb-6 text-lg text-mystic-200 leading-relaxed">
+          2026年の夜明け、世界の地政学的景観は驚くべき大変動を目撃しました：1月3日、米軍はベネズエラのカラカスで大胆な作戦を実行し、ニコラス・マドゥロ大統領とその妻シリア・フローレスを逮捕し、迅速にニューヨークの連邦裁判所に移送して裁判にかけました。マドゥロは、麻薬密輸、資金洗浄、汚職、テロ関連の犯罪を含む重大な容疑に直面しています。
+        </p>
+        <p class="mb-6 text-mystic-200 leading-relaxed">
+          1月5日の初公判で、彼はすべての容疑を否定し、自分がベネズエラの「正当な大統領」であり続けると主張し、この作戦を「誘拐」と表現しました。この出来事は、ベネズエラに対する米国の長年の圧力の集大成であるだけでなく、主権侵害をめぐる激しい国際的な議論を引き起こし、乾いた火種に火花を散らすように世界的な不確実性に火をつけました。
+        </p>
+
+        <h2 class="text-2xl font-bold text-white mb-4 mt-8">赤馬・赤羊年のサイクル</h2>
+        <p class="mb-6 text-lg text-mystic-200 leading-relaxed">
+          この劇的な幕開けは、伝統的な中国暦の「赤馬・赤羊年」サイクルと正確に一致しています—2026年は丙午年（火の馬、赤色）、続いて2027年は丁未年（火の羊、これも赤色）です。民間の予言的伝統では、60年ごとに発生するこの火要素の希少な重複は、混乱と変革の前兆と見なされ、政権交代、社会的対立、または自然災害を予告します。
+        </p>
+        
+        <div class="bg-gradient-to-r from-orange-500/20 to-red-500/20 border border-orange-500/30 rounded-lg p-6 mb-6">
+          <h3 class="text-lg font-semibold text-orange-400 mb-3">歴史的類似点</h3>
+          <p class="text-mystic-200 mb-3">
+            歴史的類似点には、1966-1967年のサイクルが中国の文化大革命と重なり、1126年の靖康の変が丙午年に発生したことが含まれ、どちらも国家的混乱を特徴としています。今日、マドゥロの逮捕はこの「災難」を実現しているように見え、単にラテンアメリカの権力の空白の始まりではなく、多極秩序の崩壊への前奏曲として、火のエネルギーが世界を冷戦後の安定から断片化された対立へと推進しています。
+          </p>
+        </div>
+
+        <h2 class="text-2xl font-bold text-white mb-4 mt-8">加速する世界的シフト</h2>
+        <p class="mb-6 text-lg text-mystic-200 leading-relaxed">
+          より広く見ると、この事件は世界的パターンの深いシフトを加速させます。地政学的には、米国の一方的な介入がラテンアメリカを再形成しています：主要な石油生産国として、ベネズエラの政権交代はエネルギー供給を混乱させ、世界的な石油価格を押し上げ、中国とロシアの地域での対抗措置を引き起こす可能性があります。
+        </p>
+        <p class="mb-6 text-mystic-200 leading-relaxed">
+          国際的な反応は鋭い—中国外務省は「すべての国の主権の尊重」を呼びかけていますが、ウクライナに関する立場を維持し、大国の偽善を暴露しています。経済的には、ベネズエラ危機は中東の緊張と結びつき、OPEC+の決定を不安定化させ、世界的なインフレを悪化させる可能性があります。
+        </p>
+        <p class="mb-6 text-mystic-200 leading-relaxed">
+          文明衝突の観点から、それは西洋の覇権とグローバルサウスの台頭の間の対立を示しています：イランでの抗議のエスカレート、トランプ政権が「ロック・アンド・ロード」のような警告を発し、イラン当局者が「次のベネズエラ」になることへの恐怖を煽っています。
+        </p>
+
+        <h2 class="text-2xl font-bold text-white mb-4 mt-8">主要な予測：2026年の第三次世界大戦の勃発</h2>
+        <p class="mb-6 text-lg text-mystic-200 leading-relaxed">
+          現在の傾向と歴史的類推から、ここでいくつかの予測を提供します—神秘的な推測ではなく、地政学的論理、エネルギーパターン、エスカレートする紛争からの合理的な推論です。主要な予測：<strong class="text-red-400">2026年は第三次世界大戦の勃発をマークします。</strong>
+        </p>
+        <p class="mb-6 text-mystic-200 leading-relaxed">
+          この戦争は伝統的な全面核対立に似るものではなく、ベネズエラ危機によって点火され、中東、ヨーロッパ、アジア太平洋に急速に広がる多領域、多極のハイブリッド紛争です。ノストラダムスの四行詩が言及する「7ヶ月の大戦」と「三つの火」は、今年の多線紛争と一致する可能性があり、ババ・ヴァンガの2026年のビジョンには経済危機、自然災害、世界的な戦争リスクが含まれています。
+        </p>
+        
+        <div class="bg-gradient-to-r from-red-500/20 to-pink-500/20 border border-red-500/30 rounded-lg p-6 mb-6">
+          <h3 class="text-lg font-semibold text-red-400 mb-3">連鎖反応シナリオ</h3>
+          <p class="text-mystic-200 leading-relaxed">
+            具体的には、イランへの潜在的な米国の介入が連鎖反応を引き起こす可能性があります：イランの抗議が抑制された場合、トランプ政権はマドゥロモデルを模倣して空爆を行い、中東の「代理戦争」を直接的な大国衝突にエスカレートさせる可能性があります—ロシアがウクライナとイランへの関与を深め、中国が台湾海峡で圧力をかけ、「三つの火」の戦場を形成します。
+          </p>
+        </div>
+
+        <h2 class="text-2xl font-bold text-white mb-4 mt-8">追加の予測</h2>
+        
+        <div class="grid md:grid-cols-2 gap-6 mb-6">
+          <div class="bg-gradient-to-r from-yellow-500/20 to-orange-500/20 border border-yellow-500/30 rounded-lg p-6">
+            <h3 class="text-lg font-semibold text-yellow-400 mb-3">ベネズエラ：内戦とエネルギー危機</h3>
+            <p class="text-mystic-200 leading-relaxed">
+              ベネズエラは短期間の内戦に陥り、年中までに石油生産が30%減少し、世界的なエネルギー価格が<strong>1バレルあたり150ドル</strong>に急騰します。
+            </p>
+          </div>
+          
+          <div class="bg-gradient-to-r from-blue-500/20 to-indigo-500/20 border border-blue-500/30 rounded-lg p-6">
+            <h3 class="text-lg font-semibold text-blue-400 mb-3">米中関係の悪化</h3>
+            <p class="text-mystic-200 leading-relaxed">
+              米中関係は急激に悪化し、ラテンアメリカの「抵抗の波」と台湾海峡の緊張の高まりが同期します。
+            </p>
+          </div>
+          
+          <div class="bg-gradient-to-r from-purple-500/20 to-pink-500/20 border border-purple-500/30 rounded-lg p-6">
+            <h3 class="text-lg font-semibold text-purple-400 mb-3">技術的・経済的再構築</h3>
+            <p class="text-mystic-200 leading-relaxed">
+              技術的・経済的再構築が加速し、エージェントレベルのAIのブレークスルーが富の格差を拡大しますが、対立を緩和する「エネルギー安全保障協定」を生み出す可能性があります。
+            </p>
+          </div>
+          
+          <div class="bg-gradient-to-r from-green-500/20 to-emerald-500/20 border border-green-500/30 rounded-lg p-6">
+            <h3 class="text-lg font-semibold text-green-400 mb-3">変革の機会</h3>
+            <p class="text-mystic-200 leading-relaxed">
+              要するに、「赤馬・赤羊年」は災難を予告しますが、火は古いものを破壊しながら新しいものを鍛造します。南懐瑾が観察したように、この段階は集中した文明衝突とブレークスルーを明らかにします。
+            </p>
+          </div>
+        </div>
+
+        <h2 class="text-2xl font-bold text-white mb-4 mt-8">前進の道：危険を機会に変える</h2>
+        <p class="mb-6 text-lg text-mystic-200 leading-relaxed">
+          この大変動の中で、時代に適応することによってのみ、私たちは危険を機会に変えることができます。赤馬・赤羊年は、単に課題をもたらすだけでなく、深遠な変革と新しい世界的構造の出現の可能性ももたらします。
+        </p>
+        <p class="mb-6 text-mystic-200 leading-relaxed">
+          これらの宇宙パターンと地政学的ダイナミクスを理解することで、私たちはより大きな意識と準備を持って来るべき混乱をナビゲートできます。予測は厳しいように見えるかもしれませんが、それらはまた、新しいシステムのための道を開くために古いシステムを破壊することを表しています—変革のサイクルにおける必要なプロセスです。
+        </p>
+        
+        <div class="bg-gradient-to-r from-green-500/20 to-blue-500/20 border border-green-500/30 rounded-lg p-6 mb-6">
+          <h3 class="text-lg font-semibold text-green-400 mb-3">重要なポイント</h3>
+          <ul class="text-mystic-200 space-y-2">
+            <li>• マドゥロ逮捕は世界の地政学における重要な転換点をマークします</li>
+            <li>• 2026-2027年の赤馬・赤羊サイクルは、歴史的に主要な世界的な大変動と相関しています</li>
+            <li>• 多領域、多極のハイブリッド紛争が出現し、複数の地域に広がる可能性があります</li>
+            <li>• エネルギー市場と世界的なサプライチェーンは重大な混乱に直面しています</li>
+            <li>• 適応と意識は、これらの変革的な時代をナビゲートするための鍵です</li>
+          </ul>
+        </div>
+      </div>
+    `,
+      ko: `
+      <div class="space-y-8">
+        <div class="mb-8">
+          <div class="bg-gradient-to-r from-red-500/20 to-orange-500/20 border border-red-500/30 rounded-lg p-6 mb-8">
+            <h3 class="text-lg font-semibold text-red-400 mb-3">🔥 주요 사건: 마두로 체포</h3>
+            <p class="text-mystic-200 mb-2"><strong>날짜：</strong> 2026년 1월 3일</p>
+            <p class="text-mystic-200 mb-2"><strong>위치：</strong> 베네수엘라, 카라카스</p>
+            <p class="text-mystic-200 mb-2"><strong>행동：</strong> 미군이 니콜라스 마두로 대통령과 그의 아내 실리아 플로레스를 체포하는 작전</p>
+            <p class="text-mystic-200"><strong>상태：</strong> 뉴욕 연방 법원으로 이송되어 재판에</p>
+          </div>
+        </div>
+
+        <h2 class="text-2xl font-bold text-white mb-4 mt-8">2026년의 놀라운 시작</h2>
+        <p class="mb-6 text-lg text-mystic-200 leading-relaxed">
+          2026년 새벽，글로벌 지정학적 풍경은 놀라운 대변동을 목격했습니다：1월 3일，미군은 베네수엘라의 카라카스에서 대담한 작전을 실행하여 니콜라스 마두로 대통령과 그의 아내 실리아 플로레스를 체포한 후，신속하게 뉴욕 연방 법원으로 이송하여 재판에 회부했습니다。마두로는 마약 밀매，자금 세탁，부패，테러 관련 범죄를 포함한 중대한 혐의에 직면하고 있습니다。
+        </p>
+        <p class="mb-6 text-mystic-200 leading-relaxed">
+          1월 5일 첫 공판에서，그는 모든 혐의를 부인하고 자신이 베네수엘라의 "합법적인 대통령"으로 남아있다고 주장하며，이 작전을 "납치"라고 표현했습니다。이 사건은 베네수엘라에 대한 미국의 수년간의 압력의 집대성일 뿐만 아니라，주권 침해를 둘러싼 격렬한 국제적 논쟁을 촉발하여，마른 불쏘시개에 불꽃을 튀기듯 글로벌 불확실성에 불을 붙였습니다。
+        </p>
+
+        <h2 class="text-2xl font-bold text-white mb-4 mt-8">적마·적양년 사이클</h2>
+        <p class="mb-6 text-lg text-mystic-200 leading-relaxed">
+          이 극적인 시작은 전통 중국력의 "적마·적양년" 사이클과 정확히 일치합니다—2026년은 병오년（화마, 적색），이어서 2027년은 정미년（화양, 역시 적색）입니다。민간 예언적 전통에서，60년마다 발생하는 이 화 요소의 희귀한 중첩은 혼란과 변혁의 전조로 여겨지며，정권 교체，사회적 갈등，또는 자연 재해를 예고합니다。
+        </p>
+        
+        <div class="bg-gradient-to-r from-orange-500/20 to-red-500/20 border border-orange-500/30 rounded-lg p-6 mb-6">
+          <h3 class="text-lg font-semibold text-orange-400 mb-3">역사적 유사점</h3>
+          <p class="text-mystic-200 mb-3">
+            역사적 유사점에는 1966-1967년 사이클이 중국의 문화대혁명과 겹치고，1126년 정강의 변이 병오년에 발생한 것이 포함되며，둘 다 국가적 혼란을 특징으로 합니다。오늘날，마두로의 체포는 이 "재난"을 실현하는 것처럼 보이며，단순히 라틴 아메리카의 권력 공백의 시작이 아니라，다극 질서의 붕괴로의 전주곡으로，화의 에너지가 세계를 냉전 후 안정에서 단편화된 대립으로 추진하고 있습니다。
+          </p>
+        </div>
+
+        <h2 class="text-2xl font-bold text-white mb-4 mt-8">가속화되는 글로벌 전환</h2>
+        <p class="mb-6 text-lg text-mystic-200 leading-relaxed">
+          더 넓게 보면，이 사건은 글로벌 패턴의 깊은 전환을 가속화합니다。지정학적으로，미국의 일방적 개입이 라틴 아메리카를 재형성하고 있습니다：주요 석유 생산국으로서，베네수엘라의 정권 교체는 에너지 공급을 혼란시키고，글로벌 석유 가격을 상승시키며，중국과 러시아의 지역 내 대응 조치를 유발할 수 있습니다。
+        </p>
+        <p class="mb-6 text-mystic-200 leading-relaxed">
+          국제적 반응은 날카롭습니다—중국 외교부는 "모든 국가의 주권 존중"을 호소하지만，우크라이나에 대한 입장을 유지하여 대국의 위선을 노출하고 있습니다。경제적으로，베네수엘라 위기는 중동 긴장과 연결되어 OPEC+ 결정을 불안정하게 만들고，전 세계적 인플레이션을 악화시킬 수 있습니다。
+        </p>
+        <p class="mb-6 text-mystic-200 leading-relaxed">
+          문명 충돌 관점에서，그것은 서구 패권과 글로벌 사우스의 부상 사이의 대립을 나타냅니다：이란에서의 항의 확대，트럼프 행정부가 "로크 앤 로드"와 같은 경고를 발하며，이란 당국자들이 "다음 베네수엘라"가 되는 것에 대한 두려움을 부채질하고 있습니다。
+        </p>
+
+        <h2 class="text-2xl font-bold text-white mb-4 mt-8">주요 예측：2026년 제3차 세계대전의 발발</h2>
+        <p class="mb-6 text-lg text-mystic-200 leading-relaxed">
+          현재 추세와 역사적 유사점에서，여기서 여러 예측을 제공합니다—신비로운 추측이 아니라，지정학적 논리，에너지 패턴，에스컬레이팅하는 갈등으로부터의 합리적인 추론입니다。주요 예측：<strong class="text-red-400">2026년은 제3차 세계대전의 발발을 표시할 것입니다。</strong>
+        </p>
+        <p class="mb-6 text-mystic-200 leading-relaxed">
+          이 전쟁은 전통적인 전면 핵 대결과 유사하지 않으며，베네수엘라 위기에 의해 점화되고 중동，유럽，아시아 태평양으로 빠르게 퍼지는 다영역，다극 하이브리드 갈등입니다。노스트라다무스의 4행시가 언급하는 "7개월의 대전"과 "세 개의 불"은 올해의 다선 갈등과 일치할 수 있으며，바바 방가의 2026년 비전에는 경제 위기，자연 재해，글로벌 전쟁 위험이 포함됩니다。
+        </p>
+        
+        <div class="bg-gradient-to-r from-red-500/20 to-pink-500/20 border border-red-500/30 rounded-lg p-6 mb-6">
+          <h3 class="text-lg font-semibold text-red-400 mb-3">연쇄 반응 시나리오</h3>
+          <p class="text-mystic-200 leading-relaxed">
+            구체적으로，이란에 대한 잠재적 미국 개입이 연쇄 반응을 유발할 수 있습니다：이란 항의가 억압되면，트럼프 행정부는 마두로 모델을 모방하여 공습을 가할 수 있으며，중동의 "대리 전쟁"을 직접적인 대국 충돌로 에스컬레이션시킬 수 있습니다—러시아가 우크라이나와 이란에 대한 개입을 심화하고，중국이 대만 해협에서 압력을 가하며，"세 개의 불" 전장을 형성합니다。
+          </p>
+        </div>
+
+        <h2 class="text-2xl font-bold text-white mb-4 mt-8">추가 예측</h2>
+        
+        <div class="grid md:grid-cols-2 gap-6 mb-6">
+          <div class="bg-gradient-to-r from-yellow-500/20 to-orange-500/20 border border-yellow-500/30 rounded-lg p-6">
+            <h3 class="text-lg font-semibold text-yellow-400 mb-3">베네수엘라：내전과 에너지 위기</h3>
+            <p class="text-mystic-200 leading-relaxed">
+              베네수엘라는 단기 내전에 빠질 것이며，연중까지 석유 생산이 30% 감소하고 글로벌 에너지 가격이 <strong>배럴당 150달러</strong>로 급등할 것입니다。
+            </p>
+          </div>
+          
+          <div class="bg-gradient-to-r from-blue-500/20 to-indigo-500/20 border border-blue-500/30 rounded-lg p-6">
+            <h3 class="text-lg font-semibold text-blue-400 mb-3">미중 관계 악화</h3>
+            <p class="text-mystic-200 leading-relaxed">
+              미중 관계는 급격히 악화될 것이며，라틴 아메리카의 "저항의 물결"과 대만 해협 긴장의 고조가 동기화됩니다。
+            </p>
+          </div>
+          
+          <div class="bg-gradient-to-r from-purple-500/20 to-pink-500/20 border border-purple-500/30 rounded-lg p-6">
+            <h3 class="text-lg font-semibold text-purple-400 mb-3">기술적·경제적 재구조화</h3>
+            <p class="text-mystic-200 leading-relaxed">
+              기술적·경제적 재구조화가 가속화될 것이며，에이전트 수준의 AI 돌파구가 부의 격차를 확대하지만，대립을 완화하기 위한 "에너지 안보 협정"을 탄생시킬 수 있습니다。
+            </p>
+          </div>
+          
+          <div class="bg-gradient-to-r from-green-500/20 to-emerald-500/20 border border-green-500/30 rounded-lg p-6">
+            <h3 class="text-lg font-semibold text-green-400 mb-3">변혁의 기회</h3>
+            <p class="text-mystic-200 leading-relaxed">
+              요약하면，"적마·적양년"은 재난을 예고하지만，불은 오래된 것을 파괴하면서 새로운 것을 단조합니다。남회근이 관찰한 바와 같이，이 단계는 집중된 문명 충돌과 돌파구를 나타낼 것입니다。
+            </p>
+          </div>
+        </div>
+
+        <h2 class="text-2xl font-bold text-white mb-4 mt-8">앞으로의 길：위험을 기회로 전환</h2>
+        <p class="mb-6 text-lg text-mystic-200 leading-relaxed">
+          이 대변동 속에서，시대에 적응함으로써만 우리는 위험을 기회로 전환할 수 있습니다。적마·적양년은 단순히 도전을 가져오는 것이 아니라，깊은 변혁과 새로운 글로벌 구조의 출현의 잠재력도 가져옵니다。
+        </p>
+        <p class="mb-6 text-mystic-200 leading-relaxed">
+          이러한 우주 패턴과 지정학적 역학을 이해하면，우리는 더 큰 인식과 준비로 다가오는 혼란을 탐색할 수 있습니다。예측이 심각해 보일 수 있지만，그들은 또한 새로운 시스템을 위한 길을 만들기 위해 오래된 시스템을 무너뜨리는 것을 나타냅니다—변혁의 사이클에서 필요한 과정입니다。
+        </p>
+        
+        <div class="bg-gradient-to-r from-green-500/20 to-blue-500/20 border border-green-500/30 rounded-lg p-6 mb-6">
+          <h3 class="text-lg font-semibold text-green-400 mb-3">핵심 요약</h3>
+          <ul class="text-mystic-200 space-y-2">
+            <li>• 마두로 체포는 글로벌 지정학에서 중요한 전환점을 표시합니다</li>
+            <li>• 2026-2027년 적마·적양 사이클은 역사적으로 주요 글로벌 대변동과 상관관계가 있습니다</li>
+            <li>• 다영역，다극 하이브리드 갈등이 나타나 여러 지역으로 퍼질 수 있습니다</li>
+            <li>• 에너지 시장과 글로벌 공급망은 중대한 혼란에 직면합니다</li>
+            <li>• 적응과 인식은 이러한 변혁적인 시대를 탐색하는 데 핵심입니다</li>
+          </ul>
+        </div>
+      </div>
+    `
     },
     author: 'Master XuanYin',
     date: '2026-01-06',
