@@ -1,10 +1,12 @@
 import { motion } from 'framer-motion'
 import { Link } from 'react-router-dom'
 import { MessageCircle, Mail, Phone, MapPin, Star, Sparkles, Clock, Globe, Sprout } from 'lucide-react'
+import { useTranslation } from 'react-i18next'
 import { getContactLink } from '../config/externalLinks'
 import GPTButton from './GPTButton'
 
 const Footer = () => {
+  const { t } = useTranslation()
   const handleWhatsAppClick = () => {
     window.open(getContactLink('whatsapp'), '_blank')
   }
@@ -31,7 +33,7 @@ const Footer = () => {
               </span>
             </div>
             <p className="text-sm sm:text-base text-mystic-300 mb-4 leading-relaxed">
-              Professional Chinese numerology and BaZi reading services. Discover your true path through ancient wisdom and personalized guidance.
+              {t('footer.description')}
             </p>
             <div className="flex space-x-4">
               <a 
@@ -68,26 +70,26 @@ const Footer = () => {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.1 }}
           >
-            <h3 className="text-lg sm:text-xl font-cinzel font-semibold text-white mb-4 sm:mb-6">Quick Links</h3>
+            <h3 className="text-lg sm:text-xl font-cinzel font-semibold text-white mb-4 sm:mb-6">{t('footer.quickLinks')}</h3>
             <ul className="space-y-2 sm:space-y-3">
               <li>
                 <Link to="/" className="text-sm sm:text-base text-mystic-300 hover:text-gold-400 transition-colors duration-300">
-                  Home
+                  {t('common.home')}
                 </Link>
               </li>
               <li>
                 <Link to="/services" className="text-sm sm:text-base text-mystic-300 hover:text-gold-400 transition-colors duration-300">
-                  Services
+                  {t('common.services')}
                 </Link>
               </li>
               <li>
                 <Link to="/blog" className="text-sm sm:text-base text-mystic-300 hover:text-gold-400 transition-colors duration-300">
-                  Blog
+                  {t('common.blog')}
                 </Link>
               </li>
               <li>
                 <Link to="/free-bazi-report" className="text-sm sm:text-base text-mystic-300 hover:text-gold-400 transition-colors duration-300">
-                  Free Bazi Report
+                  {t('nav.freeBaziReport')}
                 </Link>
               </li>
 
@@ -96,7 +98,7 @@ const Footer = () => {
               </li>
               <li>
                 <Link to="/privacy" className="text-sm sm:text-base text-mystic-300 hover:text-gold-400 transition-colors duration-300">
-                  Privacy Policy
+                  {t('common.privacy')}
                 </Link>
               </li>
             </ul>
@@ -108,7 +110,7 @@ const Footer = () => {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.15 }}
           >
-            <h3 className="text-lg sm:text-xl font-cinzel font-semibold text-white mb-4 sm:mb-6">External Resources</h3>
+            <h3 className="text-lg sm:text-xl font-cinzel font-semibold text-white mb-4 sm:mb-6">{t('footer.externalResources', { defaultValue: 'External Resources' })}</h3>
             <div className="space-y-2 sm:space-y-3">
               <div className="flex items-center space-x-3">
                 <Sprout className="h-4 w-4 sm:h-5 sm:w-5 text-gold-400" aria-hidden="true" />
@@ -117,14 +119,14 @@ const Footer = () => {
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="text-sm sm:text-base text-mystic-300 hover:text-gold-400 transition-colors duration-300"
-                  aria-label="Read about planting prosperity ginger ritual"
-                  title="Planting 'Lu-Gen' Ginger: a Simple, House-Safe Prosperity Ritual"
+                  aria-label={t('footer.plantingGingerAriaLabel', { defaultValue: 'Read about planting prosperity ginger ritual' })}
+                  title={t('footer.plantingGingerTitle', { defaultValue: "Planting 'Lu-Gen' Ginger: a Simple, House-Safe Prosperity Ritual" })}
                 >
-                  Planting Prosperity Ginger
+                  {t('footer.plantingGinger', { defaultValue: 'Planting Prosperity Ginger' })}
                 </a>
               </div>
               <p className="text-xs text-mystic-400 leading-relaxed">
-                Learn about the traditional Chinese folk ritual of planting ginger for prosperity and wealth enhancement.
+                {t('footer.plantingGingerDesc', { defaultValue: 'Learn about the traditional Chinese folk ritual of planting ginger for prosperity and wealth enhancement.' })}
               </p>
             </div>
           </motion.div>
@@ -135,25 +137,25 @@ const Footer = () => {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
           >
-            <h3 className="text-lg sm:text-xl font-cinzel font-semibold text-white mb-4 sm:mb-6">Contact</h3>
+            <h3 className="text-lg sm:text-xl font-cinzel font-semibold text-white mb-4 sm:mb-6">{t('footer.contact')}</h3>
             <div className="space-y-2 sm:space-y-3">
               <div className="flex items-center space-x-3">
                 <Mail className="h-4 w-4 sm:h-5 sm:w-5 text-gold-400" aria-hidden="true" />
                 <a 
                   href="mailto:contact@fatepath.com" 
                   className="text-sm sm:text-base text-mystic-300 hover:text-gold-400 transition-colors"
-                  aria-label="Send us an email"
+                  aria-label={t('footer.sendEmailAriaLabel', { defaultValue: 'Send us an email' })}
                 >
                   contact@fatepath.com
                 </a>
               </div>
               <div className="flex items-center space-x-3">
                 <Clock className="h-4 w-4 sm:h-5 sm:w-5 text-gold-400" aria-hidden="true" />
-                <span className="text-sm sm:text-base text-mystic-300">24/7 Online Service</span>
+                <span className="text-sm sm:text-base text-mystic-300">{t('footer.available24_7')}</span>
               </div>
               <div className="flex items-center space-x-3">
                 <Globe className="h-4 w-4 sm:h-5 sm:w-5 text-gold-400" aria-hidden="true" />
-                <span className="text-sm sm:text-base text-mystic-300">Worldwide Clients</span>
+                <span className="text-sm sm:text-base text-mystic-300">{t('footer.worldwideClients')}</span>
               </div>
             </div>
           </motion.div>
@@ -162,8 +164,10 @@ const Footer = () => {
         {/* Disclaimer */}
         <div className="mt-6 sm:mt-8 pt-4 border-t border-mystic-700/30">
           <p className="text-xs sm:text-sm text-mystic-500 text-center">
-            Results are based on traditional cultural research and are for entertainment purposes only. 
-            Not intended as professional advice or decision-making guidance.
+            {t('footer.disclaimer')}
+          </p>
+          <p className="text-xs sm:text-sm text-mystic-500 text-center mt-2">
+            {t('footer.copyright')}
           </p>
         </div>
       </div>

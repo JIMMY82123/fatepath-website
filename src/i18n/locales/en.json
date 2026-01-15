@@ -80,7 +80,39 @@
   "home": {
     "title": "Discover Your Destiny Through BaZi",
     "subtitle": "Ancient Chinese Astrology for Modern Life",
-    "cta": "Get Your Free BaZi Chart"
+    "cta": "Get Free BaZi Report",
+    "heroTitle": "Discover Your Destiny",
+    "heroSubtitle": "Through BaZi Wisdom",
+    "heroDescription": "Unlock the ancient secrets of Chinese astrology and discover your life's true path. Professional BaZi analysis reveals your personality, career potential, and life timing.",
+    "viewServices": "View Services",
+    "whatIsBazi": "What is BaZi?",
+    "whatIsBaziDesc": "BaZi (八字) is an ancient Chinese system of destiny analysis that reveals your life's blueprint through the study of your birth date and time.",
+    "yinYangTheory": "Yin-Yang Theory",
+    "yinYangTheoryDesc": "BaZi is based on the fundamental Chinese philosophy of Yin and Yang, representing the dual nature of all things in the universe and how they interact to create balance and harmony.",
+    "fiveElements": "Five Elements",
+    "fiveElementsDesc": "The Five Elements (Wood, Fire, Earth, Metal, Water) represent different aspects of your personality and how they influence your life path, relationships, and career choices.",
+    "timingCycles": "Timing & Cycles",
+    "timingCyclesDesc": "BaZi reveals the timing of important life events, helping you understand when to act, when to wait, and when to make major life decisions for maximum success.",
+    "whyChooseBazi": "Why Choose BaZi Over Western Astrology?",
+    "whyChooseBaziDesc": "While both systems offer insights into personality and life patterns, BaZi provides unique advantages that make it particularly valuable for practical life guidance.",
+    "westernAstrology": "🌟 Western Astrology",
+    "baziAstrology": "🎯 BaZi (Chinese Astrology)",
+    "keyAdvantage": "Key Advantage: Precision & Practicality",
+    "keyAdvantageDesc": "BaZi's unique strength lies in its ability to provide specific timing for life events and practical strategies for personal development. Unlike general horoscopes, BaZi gives you a personalized roadmap for success based on your exact birth moment.",
+    "whatCanBaziHelp": "What Can BaZi Help You With?",
+    "whatCanBaziHelpDesc": "BaZi destiny analysis is not just an ancient study, but a wisdom tool for modern people to understand themselves and plan their lives.",
+    "careerLifeDirection": "Career & Life Direction",
+    "careerLifeDirectionDesc1": "Discover your natural talents and the career paths that align with your destiny. Understand your timing for career changes and business opportunities.",
+    "careerLifeDirectionDesc2": "BaZi reveals when you're in a period of growth, stability, or transformation, helping you make informed decisions about your professional life.",
+    "relationshipsCompatibility": "Relationships & Compatibility",
+    "relationshipsCompatibilityDesc1": "Understand your relationship patterns and find compatible partners. Learn about timing for love and marriage, and how to improve existing relationships.",
+    "relationshipsCompatibilityDesc2": "BaZi compatibility analysis shows how your elements interact with others, revealing the foundation for lasting and harmonious relationships.",
+    "healthWellness": "Health & Wellness",
+    "healthWellnessDesc1": "Understand your body's natural constitution and potential health concerns. Learn about the best times for medical treatments and preventive care.",
+    "healthWellnessDesc2": "BaZi reveals your elemental balance, helping you maintain physical and mental well-being through understanding your body's natural rhythms.",
+    "wealthProsperity": "Wealth & Prosperity",
+    "wealthProsperityDesc1": "Discover your wealth potential and the best timing for financial decisions. Understand your relationship with money and how to enhance prosperity.",
+    "wealthProsperityDesc2": "BaZi analysis reveals your financial patterns, helping you identify opportunities for wealth accumulation and avoid periods of financial risk."
   },
   "services": {
     "title": "BaZi Fortune Reading Services",
@@ -278,7 +310,7 @@
     "noResults": "No celebrities found for today matching your filters."
   },
   "footer": {
-    "description": "Discover your true path through ancient wisdom and personalized guidance.",
+    "description": "Professional Chinese numerology and BaZi reading services. Discover your true path through ancient wisdom and personalized guidance.",
     "quickLinks": "Quick Links",
     "services": "Services",
     "tools": "Tools",
@@ -287,6 +319,12 @@
     "available24_7": "24/7 Online Service",
     "worldwideClients": "Worldwide Clients",
     "disclaimer": "Results are based on traditional cultural research and are for entertainment purposes only. Not intended as professional advice or decision-making guidance.",
-    "copyright": "© 2026 FatePath. All rights reserved."
+    "copyright": "© 2026 FatePath. All rights reserved.",
+    "externalResources": "External Resources",
+    "plantingGinger": "Planting Prosperity Ginger",
+    "plantingGingerDesc": "Learn about the traditional Chinese folk ritual of planting ginger for prosperity and wealth enhancement.",
+    "plantingGingerAriaLabel": "Read about planting prosperity ginger ritual",
+    "plantingGingerTitle": "Planting 'Lu-Gen' Ginger: a Simple, House-Safe Prosperity Ritual",
+    "sendEmailAriaLabel": "Send us an email"
   }
 }

@@ -1,8 +1,10 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
+import { useTranslation } from 'react-i18next'
 import SEO from '../components/SEO'
 
 const Home = () => {
+  const { t } = useTranslation()
   const [selectedRedditReview, setSelectedRedditReview] = useState(null) // For modal
 
   const handleRedditReviewClick = (review) => {
@@ -75,25 +77,24 @@ const Home = () => {
         <div className="container mx-auto max-w-6xl relative z-10">
           <div className="text-center mb-16">
             <h1 className="text-5xl md:text-7xl font-playfair font-semibold text-white mb-8 tracking-tight">
-              Discover Your Destiny
-              <span className="block text-amber-400">Through BaZi Wisdom</span>
+              {t('home.heroTitle', { defaultValue: 'Discover Your Destiny' })}
+              <span className="block text-amber-400">{t('home.heroSubtitle', { defaultValue: 'Through BaZi Wisdom' })}</span>
             </h1>
             <p className="text-xl text-slate-300 max-w-4xl mx-auto leading-relaxed">
-              Unlock the ancient secrets of Chinese astrology and discover your life's true path. 
-              Professional BaZi analysis reveals your personality, career potential, and life timing.
+              {t('home.heroDescription', { defaultValue: "Unlock the ancient secrets of Chinese astrology and discover your life's true path. Professional BaZi analysis reveals your personality, career potential, and life timing." })}
             </p>
             <div className="mt-12 flex flex-col sm:flex-row gap-4 justify-center">
               <Link
                 to="/free-bazi-report"
                 className="bg-amber-400 text-slate-900 px-8 py-4 rounded-lg font-semibold text-lg hover:bg-amber-300 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105"
               >
-                Get Free BaZi Report
+                {t('home.cta')}
               </Link>
               <Link
                 to="/services"
                 className="border border-slate-300 text-slate-300 px-8 py-4 rounded-lg font-semibold text-lg hover:bg-white/10 transition-all duration-300"
               >
-                View Services
+                {t('home.viewServices', { defaultValue: 'View Services' })}
               </Link>
             </div>
           </div>
@@ -118,10 +119,9 @@ const Home = () => {
               <div className="w-16 h-16 bg-amber-100 rounded-full mx-auto mb-6 flex items-center justify-center border border-amber-200">
                 <div className="text-2xl text-amber-600">☯</div>
               </div>
-              <h3 className="text-xl font-playfair font-semibold text-slate-900 mb-4">Yin-Yang Theory</h3>
+              <h3 className="text-xl font-playfair font-semibold text-slate-900 mb-4">{t('home.yinYangTheory')}</h3>
               <p className="text-slate-700 leading-relaxed">
-                BaZi is based on the fundamental Chinese philosophy of Yin and Yang, representing the dual nature 
-                of all things in the universe and how they interact to create balance and harmony.
+                {t('home.yinYangTheoryDesc')}
               </p>
             </div>
             
@@ -129,10 +129,9 @@ const Home = () => {
               <div className="w-16 h-16 bg-amber-100 rounded-full mx-auto mb-6 flex items-center justify-center border border-amber-200">
                 <div className="text-2xl text-amber-600">五行</div>
               </div>
-              <h3 className="text-xl font-playfair font-semibold text-slate-900 mb-4">Five Elements</h3>
+              <h3 className="text-xl font-playfair font-semibold text-slate-900 mb-4">{t('home.fiveElements')}</h3>
               <p className="text-slate-700 leading-relaxed">
-                The Five Elements (Wood, Fire, Earth, Metal, Water) represent different aspects of your personality 
-                and how they influence your life path, relationships, and career choices.
+                {t('home.fiveElementsDesc')}
               </p>
             </div>
             
@@ -140,10 +139,9 @@ const Home = () => {
               <div className="w-16 h-16 bg-amber-100 rounded-full mx-auto mb-6 flex items-center justify-center border border-amber-200">
                 <div className="text-2xl text-amber-600">⏰</div>
               </div>
-              <h3 className="text-xl font-playfair font-semibold text-slate-900 mb-4">Timing & Cycles</h3>
+              <h3 className="text-xl font-playfair font-semibold text-slate-900 mb-4">{t('home.timingCycles')}</h3>
               <p className="text-slate-700 leading-relaxed">
-                BaZi reveals the timing of important life events, helping you understand when to act, 
-                when to wait, and when to make major life decisions for maximum success.
+                {t('home.timingCyclesDesc')}
               </p>
             </div>
           </div>
@@ -152,11 +150,10 @@ const Home = () => {
           <div className="bg-gradient-to-r from-amber-50 to-slate-50 p-8 rounded-lg border border-amber-200">
             <div className="text-center mb-8">
               <h3 className="text-2xl font-playfair font-semibold text-slate-900 mb-4">
-                Why Choose BaZi Over Western Astrology?
+                {t('home.whyChooseBazi')}
               </h3>
               <p className="text-slate-700 max-w-3xl mx-auto">
-                While both systems offer insights into personality and life patterns, BaZi provides unique advantages 
-                that make it particularly valuable for practical life guidance.
+                {t('home.whyChooseBaziDesc')}
               </p>
             </div>
             
@@ -187,7 +184,7 @@ const Home = () => {
               
               <div className="space-y-4">
                 <h4 className="text-lg font-playfair font-semibold text-slate-900 text-center mb-4">
-                  🎯 BaZi (Chinese Astrology)
+                  {t('home.baziAstrology')}
                 </h4>
                 <div className="space-y-3">
                   <div className="flex items-start space-x-3">
@@ -212,12 +209,10 @@ const Home = () => {
             
             <div className="mt-8 p-6 bg-white rounded-lg border border-slate-200">
               <h4 className="text-lg font-playfair font-semibold text-slate-900 mb-3 text-center">
-                Key Advantage: Precision & Practicality
+                {t('home.keyAdvantage')}
               </h4>
               <p className="text-slate-700 text-center leading-relaxed">
-                BaZi's unique strength lies in its ability to provide <span className="font-semibold text-amber-600">specific timing</span> for life events 
-                and <span className="font-semibold text-amber-600">practical strategies</span> for personal development. Unlike general horoscopes, 
-                BaZi gives you a personalized roadmap for success based on your exact birth moment.
+                {t('home.keyAdvantageDesc')}
               </p>
             </div>
           </div>
@@ -229,11 +224,10 @@ const Home = () => {
         <div className="container mx-auto px-6 max-w-6xl">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-playfair font-semibold text-slate-900 mb-6 tracking-tight">
-              What Can BaZi Help You With?
+              {t('home.whatCanBaziHelp')}
             </h2>
             <p className="text-lg text-slate-700 max-w-3xl mx-auto leading-relaxed">
-              BaZi destiny analysis is not just an ancient study, but a wisdom tool for modern people 
-              to understand themselves and plan their lives.
+              {t('home.whatCanBaziHelpDesc')}
             </p>
           </div>
           
