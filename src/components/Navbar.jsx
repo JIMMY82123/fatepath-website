@@ -1,7 +1,7 @@
 import { useState, useRef, useEffect } from 'react'
 import { Link, useLocation } from 'react-router-dom'
 import { motion, AnimatePresence } from 'framer-motion'
-import { Menu, X, Sparkles, ChevronDown } from 'lucide-react'
+import { Menu, X, Sparkles } from 'lucide-react'
 import GPTButton from './GPTButton'
 
 const Navbar = () => {
@@ -191,7 +191,6 @@ const Navbar = () => {
                         }`}
                       >
                         <span>{item.label}</span>
-                        <ChevronDown className={`h-4 w-4 transition-transform duration-200 ${isMobileToolsOpen ? 'rotate-180' : ''}`} />
                       </button>
                       <AnimatePresence>
                         {isMobileToolsOpen && (
