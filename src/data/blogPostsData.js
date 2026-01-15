@@ -7002,9 +7002,18 @@ export const blogPostsData = {
       ]
     },
     "understanding-bazi-chart-beginners-guide": {
-      title: "Understanding Your BaZi Chart: A Beginner's Guide",
-      excerpt: "Master the fundamentals of BaZi (八字) analysis and discover how your birth chart reveals your life's blueprint, personality traits, and destiny path through ancient Chinese wisdom.",
-      content: `
+      title: {
+        en: "Understanding Your BaZi Chart: A Beginner's Guide",
+        ja: "あなたの八字チャートを理解する：初心者ガイド",
+        ko: "당신의 사주 차트 이해하기：초보자 가이드"
+      },
+      excerpt: {
+        en: "Master the fundamentals of BaZi (八字) analysis and discover how your birth chart reveals your life's blueprint, personality traits, and destiny path through ancient Chinese wisdom.",
+        ja: "八字（八字）分析の基礎をマスターし、あなたの出生チャートが古代中国の知恵を通じてあなたの人生の青写真、性格特性、運命の道をどのように明らかにするかを発見してください。",
+        ko: "사주（八字）분석의 기초를 마스터하고，당신의 출생 차트가 고대 중국 지혜를 통해 당신의 인생 청사진，성격 특성，운명의 길을 어떻게 드러내는지 발견하세요。"
+      },
+      content: {
+        en: `
         <p class="mb-6 text-lg text-mystic-200 leading-relaxed">
           BaZi, also known as the Four Pillars of Destiny, is one of the most profound systems in Chinese astrology. 
           It's based on the principle that the time of your birth contains the blueprint of your entire life journey.
@@ -7048,6 +7057,77 @@ export const blogPostsData = {
           understand your chart and provide guidance on how to work with your destiny rather than against it.
         </p>
       `,
+        ja: `
+        <p class="mb-6 text-lg text-mystic-200 leading-relaxed">
+          八字は、運命の四柱としても知られており、中国占星術の中で最も深遠なシステムの1つです。それは、あなたの出生時刻があなたの人生全体の旅の青写真を含んでいるという原則に基づいています。
+        </p>
+        
+        <h2 class="text-2xl font-bold text-white mb-4 mt-8">八字とは何ですか？</h2>
+        <p class="mb-6 text-mystic-200 leading-relaxed">
+          八字は文字通り中国語で「8文字」を意味します。これらの文字は、あなたの出生の年、月、日、時を表し、それぞれ天干と地支の観点から表現されます。
+        </p>
+        
+        <h2 class="text-2xl font-bold text-white mb-4 mt-8">四柱</h2>
+        <p class="mb-6 text-mystic-200 leading-relaxed">
+          各柱は2つの文字で構成されています：天干（天干）と地支（地支）。天干は能動的な陽のエネルギーを表し、地支は受動的な陰のエネルギーを表します。
+        </p>
+        
+        <h2 class="text-2xl font-bold text-white mb-4 mt-8">あなたのチャートを理解する</h2>
+        <p class="mb-6 text-mystic-200 leading-relaxed">
+          あなたの八字チャートは、あなたの固有の性格特性、強み、弱み、そして重要な人生イベントのタイミングを明らかにします。それはあなたの運命の詳細な地図を持っているようなものです。
+        </p>
+        
+        <h2 class="text-2xl font-bold text-white mb-4 mt-8">五行</h2>
+        <p class="mb-6 text-mystic-200 leading-relaxed">
+          各天干と地支は、五行の1つに対応しています：木、火、土、金、水。あなたのチャートにおけるこれらの要素のバランスと相互作用が、あなたの性格と人生の道を決定します。
+        </p>
+        
+        <h2 class="text-2xl font-bold text-white mb-4 mt-8">実用的な応用</h2>
+        <p class="mb-6 text-mystic-200 leading-relaxed">
+          あなたの八字を理解することで、キャリアの選択、関係、重要な決定のタイミング、そして個人的な発展についてより良い決定を下すことができます。
+        </p>
+        
+        <h2 class="text-2xl font-bold text-white mb-4 mt-8">はじめに</h2>
+        <p class="mb-6 text-mystic-200 leading-relaxed">
+          あなたの八字の旅を始める最良の方法は、専門的なリーディングを受けることです。専門家はあなたのチャートを理解し、運命に逆らうのではなく、運命と協力する方法についてのガイダンスを提供できます。
+        </p>
+      `,
+        ko: `
+        <p class="mb-6 text-lg text-mystic-200 leading-relaxed">
+          사주는 운명의 사주（四柱）로도 알려져 있으며，중국 점성술에서 가장 심오한 시스템 중 하나입니다。그것은 당신의 출생 시간이 당신의 인생 전체 여정의 청사진을 포함하고 있다는 원칙에 기반합니다。
+        </p>
+        
+        <h2 class="text-2xl font-bold text-white mb-4 mt-8">사주란 무엇인가요？</h2>
+        <p class="mb-6 text-mystic-200 leading-relaxed">
+          사주는 문자 그대로 중국어로 "8자"를 의미합니다。이 문자들은 당신의 출생의 연，월，일，시를 나타내며，각각 천간과 지지의 관점에서 표현됩니다。
+        </p>
+        
+        <h2 class="text-2xl font-bold text-white mb-4 mt-8">사주</h2>
+        <p class="mb-6 text-mystic-200 leading-relaxed">
+          각 기둥은 두 문자로 구성됩니다：천간（天干）과 지지（地支）。천간은 능동적인 양 에너지를 나타내고，지지는 수동적인 음 에너지를 나타냅니다。
+        </p>
+        
+        <h2 class="text-2xl font-bold text-white mb-4 mt-8">당신의 차트 이해하기</h2>
+        <p class="mb-6 text-mystic-200 leading-relaxed">
+          당신의 사주 차트는 당신의 고유한 성격 특성，강점，약점，그리고 중요한 인생 사건의 타이밍을 드러냅니다。그것은 당신의 운명의 상세한 지도를 가지고 있는 것과 같습니다。
+        </p>
+        
+        <h2 class="text-2xl font-bold text-white mb-4 mt-8">오행</h2>
+        <p class="mb-6 text-mystic-200 leading-relaxed">
+          각 천간과 지지는 오행 중 하나에 해당합니다：목，화，토，금，수。당신의 차트에서 이러한 요소들의 균형과 상호작용이 당신의 성격과 인생 경로를 결정합니다。
+        </p>
+        
+        <h2 class="text-2xl font-bold text-white mb-4 mt-8">실용적인 응용</h2>
+        <p class="mb-6 text-mystic-200 leading-relaxed">
+          당신의 사주를 이해하면，경력 선택，관계，중요한 결정의 타이밍，그리고 개인적 발전에 대해 더 나은 결정을 내릴 수 있습니다。
+        </p>
+        
+        <h2 class="text-2xl font-bold text-white mb-4 mt-8">시작하기</h2>
+        <p class="mb-6 text-mystic-200 leading-relaxed">
+          당신의 사주 여정을 시작하는 최선의 방법은 전문적인 읽기를 받는 것입니다。전문가는 당신의 차트를 이해하고，운명에 맞서는 것이 아니라 운명과 함께 일하는 방법에 대한 지침을 제공할 수 있습니다。
+        </p>
+      `
+      },
       author: "Master Chen",
       date: "2024-01-15",
       readTime: "5 min read",
