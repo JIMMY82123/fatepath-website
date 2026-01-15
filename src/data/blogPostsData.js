@@ -6063,9 +6063,18 @@ export const blogPostsData = {
       ]
     },
     "financial-destiny-report-woman-wealth-path": {
-      title: "Financial Destiny Report: A Woman's Wealth Path Through BaZi",
-      excerpt: "Discover how your birth chart reveals your financial destiny. Learn about wealth cycles, key years for financial growth, and practical strategies for building wealth through consistent effort and strategic planning.",
-      content: `
+      title: {
+        en: "Financial Destiny Report: A Woman's Wealth Path Through BaZi",
+        ja: "金融運命レポート：八字を通じた女性の富のパス",
+        ko: "금융 운명 보고서：사주를 통한 여성의 부 경로"
+      },
+      excerpt: {
+        en: "Discover how your birth chart reveals your financial destiny. Learn about wealth cycles, key years for financial growth, and practical strategies for building wealth through consistent effort and strategic planning.",
+        ja: "あなたの出生チャートが金融運命をどのように明らかにするかを発見してください。富のサイクル、金融成長の重要な年、一貫した努力と戦略的計画を通じた富を構築する実用的な戦略について学びます。",
+        ko: "당신의 출생 차트가 금융 운명을 어떻게 드러내는지 발견하세요。부의 사이클，금융 성장의 핵심 연도，일관된 노력과 전략적 계획을 통한 부 구축의 실용적인 전략에 대해 배웁니다。"
+      },
+      content: {
+        en: `
         <div class="mb-8">
           <div class="bg-gradient-to-r from-amber-500/20 to-yellow-500/20 border border-amber-500/30 rounded-lg p-6 mb-8">
             <h3 class="text-lg font-semibold text-amber-400 mb-3">📊 Report Summary</h3>
@@ -6239,6 +6248,331 @@ export const blogPostsData = {
           </p>
         </div>
       `,
+        ja: `
+        <div class="mb-8">
+          <div class="bg-gradient-to-r from-amber-500/20 to-yellow-500/20 border border-amber-500/30 rounded-lg p-6 mb-8">
+            <h3 class="text-lg font-semibold text-amber-400 mb-3">📊 レポート要約</h3>
+            <p class="text-mystic-200 mb-2"><strong>対象：</strong> 女性、1988年10月21日生まれ</p>
+            <p class="text-mystic-200 mb-2"><strong>旧暦日付：</strong> 9月13日、午前7時</p>
+            <p class="text-mystic-200 mb-2"><strong>重要な発見：</strong> 一貫した努力と戦略的計画を通じた着実な富の蓄積</p>
+            <p class="text-mystic-200"><strong>ピーク富期間：</strong> 2028-2038年（40歳以降）</p>
+          </div>
+        </div>
+
+        <h2 class="text-2xl font-bold text-white mb-4 mt-8">1. はじめに</h2>
+        <p class="mb-6 text-lg text-mystic-200 leading-relaxed">
+          あなたのチャートは、一夜にしての大当たりではなく、着実な蓄積によって特徴づけられる金融パスを明らかにします。あなたの人生における富の機会は、投機的な事業ではなく、一貫した努力、専門的なスキル、そして戦略的なパートナーシップを通じて来る傾向があります。これは拡大の前に基盤を重視するチャートです—構造をうまく設定すれば、富は自然に流れ込みます。
+        </p>
+
+        <h2 class="text-2xl font-bold text-white mb-4 mt-8">2. 八字富構造分析</h2>
+        
+        <div class="grid md:grid-cols-2 gap-6 mb-6">
+          <div class="bg-mystic-800/30 rounded-lg p-6 border border-mystic-700/50">
+            <h3 class="text-lg font-semibold text-gold-400 mb-3">要素のバランス</h3>
+            <p class="text-mystic-200 mb-3">
+              <strong>金（辛）</strong>はあなたの日主です。金は土（あなたの資源）によってサポートされると繁栄し、火（あなたの出力）によって挑戦されます。あなたのチャートでは、土が強いため、資源、家族、または安定した環境からの良好なサポートがあることを意味します。
+            </p>
+          </div>
+          
+          <div class="bg-mystic-800/30 rounded-lg p-6 border border-mystic-700/50">
+            <h3 class="text-lg font-semibold text-gold-400 mb-3">財星</h3>
+            <p class="text-mystic-200 mb-3">
+              金の日主にとって、<strong>木は富を表します</strong>。あなたのチャートでは、木は隠されており、支配的ではないため、金融の利益には積極的な探求が必要であることを示唆しています—お金はあなたの膝の上に落ちません。
+            </p>
+          </div>
+        </div>
+
+        <div class="bg-gradient-to-r from-blue-500/20 to-cyan-500/20 border border-blue-500/30 rounded-lg p-6 mb-6">
+          <h3 class="text-lg font-semibold text-blue-400 mb-3">資源-出力-富の流れ</h3>
+          <p class="text-mystic-200 leading-relaxed">
+            強い土はあなたに安定性と計画能力を与えますが、保守的になる傾向もあります。鍵は、より多くの富の機会を生み出すために出力（火）を活性化することです。そうでなければ、資源は未使用のままです。
+          </p>
+        </div>
+
+        <h2 class="text-2xl font-bold text-white mb-4 mt-8">3. 運サイクル（大運）富の傾向</h2>
+        
+        <div class="space-y-6 mb-6">
+          <div class="bg-gradient-to-r from-blue-500/20 to-indigo-500/20 border border-blue-500/30 rounded-lg p-6">
+            <h3 class="text-lg font-semibold text-blue-400 mb-3">2018-2028年：水運サイクル（壬）</h3>
+            <p class="text-mystic-200 leading-relaxed">
+              これはあなたの知性と学習をサポートする水運サイクルですが、富の成長は間接的です—収入はスキルアップ、専門的な権威、または信頼性の構築に関連しています。
+            </p>
+          </div>
+          
+          <div class="bg-gradient-to-r from-green-500/20 to-emerald-500/20 border border-green-500/30 rounded-lg p-6">
+            <h3 class="text-lg font-semibold text-green-400 mb-3">2028-2038年：木運サイクル</h3>
+            <p class="text-mystic-200 leading-relaxed">
+              主要な富の段階が始まります。木のエネルギーが上昇し、あなたの財星を直接活性化します。現在のサイクルで準備すれば、これは重要な金融利益のための最適な時期になります。
+            </p>
+          </div>
+        </div>
+
+        <div class="bg-gradient-to-r from-amber-500/20 to-orange-500/20 border border-amber-500/30 rounded-lg p-6 mb-6">
+          <h3 class="text-lg font-semibold text-amber-400 mb-3">重要な洞察</h3>
+          <p class="text-mystic-200 leading-relaxed">
+            あなたの富の運は40歳以降に大幅に改善しますが、今後5年間の準備がその成功の規模を決定します。
+          </p>
+        </div>
+
+        <h2 class="text-2xl font-bold text-white mb-4 mt-8">4. 注目すべき重要な年</h2>
+        
+        <div class="grid md:grid-cols-3 gap-4 mb-6">
+          <div class="bg-gradient-to-r from-blue-500/20 to-purple-500/20 border border-blue-500/30 rounded-lg p-4 text-center">
+            <h3 class="text-lg font-semibold text-blue-400 mb-2">2025-2026年</h3>
+            <p class="text-sm text-mystic-200">
+              強い水+火の影響—仕事のシフト、新しい収入チャネル、または副業の可能性。計算されたリスクを取ってください。
+            </p>
+          </div>
+          
+          <div class="bg-gradient-to-r from-green-500/20 to-emerald-500/20 border border-green-500/30 rounded-lg p-4 text-center">
+            <h3 class="text-lg font-semibold text-green-400 mb-2">2030年</h3>
+            <p class="text-sm text-mystic-200">
+              ピーク富の活性化—拡大、不動産購入、または大規模投資の年。
+            </p>
+          </div>
+          
+          <div class="bg-gradient-to-r from-red-500/20 to-pink-500/20 border border-red-500/30 rounded-lg p-4 text-center">
+            <h3 class="text-lg font-semibold text-red-400 mb-2">2034-2035年</h3>
+            <p class="text-sm text-mystic-200">
+              キャッシュフローの緊張；ストレスを避けるために流動性を強く保ってください。
+            </p>
+          </div>
+        </div>
+
+        <h2 class="text-2xl font-bold text-white mb-4 mt-8">5. 実用的な富のアドバイス</h2>
+        
+        <div class="space-y-4 mb-6">
+          <div class="flex items-start space-x-4">
+            <div class="w-8 h-8 rounded-full bg-gold-500 flex items-center justify-center flex-shrink-0 mt-1">
+              <span class="text-black text-sm font-bold">1</span>
+            </div>
+            <div>
+              <h3 class="text-lg font-semibold text-white mb-2">今すぐアクティブな収入源を構築する</h3>
+              <p class="text-mystic-200">
+                給与だけに頼らないでください；コンサルティング、デジタル製品、または専門サービスを検討してください。
+              </p>
+            </div>
+          </div>
+          
+          <div class="flex items-start space-x-4">
+            <div class="w-8 h-8 rounded-full bg-gold-500 flex items-center justify-center flex-shrink-0 mt-1">
+              <span class="text-black text-sm font-bold">2</span>
+            </div>
+            <div>
+              <h3 class="text-lg font-semibold text-white mb-2">スケールするスキルに投資する</h3>
+              <p class="text-mystic-200">
+                あなたのチャートは、純粋に肉体的な労働よりも知識ベースの収益（例：トレーニング、ニッチな専門知識）を好みます。
+              </p>
+            </div>
+          </div>
+          
+          <div class="flex items-start space-x-4">
+            <div class="w-8 h-8 rounded-full bg-gold-500 flex items-center justify-center flex-shrink-0 mt-1">
+              <span class="text-black text-sm font-bold">3</span>
+            </div>
+            <div>
+              <h3 class="text-lg font-semibold text-white mb-2">資源ネットワークを活用する</h3>
+              <p class="text-mystic-200">
+                つながりとメンターを活用してください；協力は結果を加速します。
+              </p>
+            </div>
+          </div>
+          
+          <div class="flex items-start space-x-4">
+            <div class="w-8 h-8 rounded-full bg-gold-500 flex items-center justify-center flex-shrink-0 mt-1">
+              <span class="text-black text-sm font-bold">4</span>
+            </div>
+            <div>
+              <h3 class="text-lg font-semibold text-white mb-2">衝動的な投資を避ける</h3>
+              <p class="text-mystic-200">
+                特に2028年以前は、流動性の罠を避けるために投資を保守的に保ってください。
+              </p>
+            </div>
+          </div>
+          
+          <div class="flex items-start space-x-4">
+            <div class="w-8 h-8 rounded-full bg-gold-500 flex items-center justify-center flex-shrink-0 mt-1">
+              <span class="text-black text-sm font-bold">5</span>
+            </div>
+            <div>
+              <h3 class="text-lg font-semibold text-white mb-2">2028年の準備</h3>
+              <p class="text-mystic-200">
+                今後5年間を「種まき」段階として扱ってください—後でスケールしたいプロジェクトを開始してください。
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-gradient-to-r from-gold-500/20 to-amber-500/20 border border-gold-500/30 rounded-lg p-6 mb-8">
+          <h3 class="text-lg font-semibold text-gold-400 mb-3">💡 戦略的要約</h3>
+          <p class="text-mystic-200 leading-relaxed">
+            あなたの金融運命は、迅速な勝利についてではなく、2028年以降に重要な富の成長をサポートする強固な基盤を構築することについてです。今後5年間、スキルの開発、ネットワークの構築、スケーラブルな収入源の作成に焦点を当ててください。今投資する忍耐と準備が、40代以降の金融的成功の規模を決定します。
+          </p>
+        </div>
+      `,
+        ko: `
+        <div class="mb-8">
+          <div class="bg-gradient-to-r from-amber-500/20 to-yellow-500/20 border border-amber-500/30 rounded-lg p-6 mb-8">
+            <h3 class="text-lg font-semibold text-amber-400 mb-3">📊 보고서 요약</h3>
+            <p class="text-mystic-200 mb-2"><strong>대상：</strong> 여성，1988년 10월 21일 생</p>
+            <p class="text-mystic-200 mb-2"><strong>음력 날짜：</strong> 9월 13일，오전 7시</p>
+            <p class="text-mystic-200 mb-2"><strong>핵심 발견：</strong> 일관된 노력과 전략적 계획을 통한 꾸준한 부의 축적</p>
+            <p class="text-mystic-200"><strong>피크 부 기간：</strong> 2028-2038년（40세 이후）</p>
+          </div>
+        </div>
+
+        <h2 class="text-2xl font-bold text-white mb-4 mt-8">1. 서론</h2>
+        <p class="mb-6 text-lg text-mystic-200 leading-relaxed">
+          당신의 차트는 하룻밤의 대박이 아닌 꾸준한 축적으로 특징지어지는 금융 경로를 드러냅니다。당신의 인생에서 부의 기회는 투기적 사업보다는 일관된 노력，전문적 기술，그리고 전략적 파트너십을 통해 오는 경향이 있습니다。이것은 확장 전에 기반을 중시하는 차트입니다—구조를 잘 설정하면，부는 자연스럽게 흐를 것입니다。
+        </p>
+
+        <h2 class="text-2xl font-bold text-white mb-4 mt-8">2. 사주 부 구조 분석</h2>
+        
+        <div class="grid md:grid-cols-2 gap-6 mb-6">
+          <div class="bg-mystic-800/30 rounded-lg p-6 border border-mystic-700/50">
+            <h3 class="text-lg font-semibold text-gold-400 mb-3">요소 균형</h3>
+            <p class="text-mystic-200 mb-3">
+              <strong>금（辛）</strong>은 당신의 일주입니다。금은 토（당신의 자원）에 의해 지원될 때 번영하고，화（당신의 출력）에 의해 도전받습니다。당신의 차트에서，토가 강하므로，자원，가족，또는 안정된 환경으로부터의 좋은 지원이 있음을 의미합니다。
+            </p>
+          </div>
+          
+          <div class="bg-mystic-800/30 rounded-lg p-6 border border-mystic-700/50">
+            <h3 class="text-lg font-semibold text-gold-400 mb-3">재성</h3>
+            <p class="text-mystic-200 mb-3">
+              금 일주에게，<strong>목은 부를 나타냅니다</strong>。당신의 차트에서，목은 숨겨져 있고 지배적이지 않으므로，금융 이득에는 적극적인 탐색이 필요함을 시사합니다—돈은 당신의 무릎에 떨어지지 않을 것입니다。
+            </p>
+          </div>
+        </div>
+
+        <div class="bg-gradient-to-r from-blue-500/20 to-cyan-500/20 border border-blue-500/30 rounded-lg p-6 mb-6">
+          <h3 class="text-lg font-semibold text-blue-400 mb-3">자원-출력-부의 흐름</h3>
+          <p class="text-mystic-200 leading-relaxed">
+            강한 토는 당신에게 안정성과 계획 능력을 제공하지만，보수적이 되는 경향도 있습니다。열쇠는 더 많은 부의 기회를 생성하기 위해 출력（화）을 활성화하는 것입니다。그렇지 않으면 자원은 미사용 상태로 남습니다。
+          </p>
+        </div>
+
+        <h2 class="text-2xl font-bold text-white mb-4 mt-8">3. 운 사이클（대운）부의 추세</h2>
+        
+        <div class="space-y-6 mb-6">
+          <div class="bg-gradient-to-r from-blue-500/20 to-indigo-500/20 border border-blue-500/30 rounded-lg p-6">
+            <h3 class="text-lg font-semibold text-blue-400 mb-3">2018-2028년：수운 사이클（壬）</h3>
+            <p class="text-mystic-200 leading-relaxed">
+              이것은 당신의 지성과 학습을 지원하는 수운 사이클이지만，부의 성장은 간접적입니다—수입은 기술 업그레이드，전문적 권위，또는 신뢰성 구축과 연결되어 있습니다。
+            </p>
+          </div>
+          
+          <div class="bg-gradient-to-r from-green-500/20 to-emerald-500/20 border border-green-500/30 rounded-lg p-6">
+            <h3 class="text-lg font-semibold text-green-400 mb-3">2028-2038년：목운 사이클</h3>
+            <p class="text-mystic-200 leading-relaxed">
+              주요 부 단계가 시작됩니다。목 에너지가 상승하여 당신의 재성을 직접 활성화합니다。현재 사이클에서 준비하면，이것은 중요한 금융 이득을 위한 최적의 시기가 될 것입니다。
+            </p>
+          </div>
+        </div>
+
+        <div class="bg-gradient-to-r from-amber-500/20 to-orange-500/20 border border-amber-500/30 rounded-lg p-6 mb-6">
+          <h3 class="text-lg font-semibold text-amber-400 mb-3">핵심 통찰</h3>
+          <p class="text-mystic-200 leading-relaxed">
+            당신의 부 운은 40세 이후에 크게 개선되지만，앞으로 5년간의 준비가 그 성공의 규모를 결정합니다。
+          </p>
+        </div>
+
+        <h2 class="text-2xl font-bold text-white mb-4 mt-8">4. 주목해야 할 핵심 연도</h2>
+        
+        <div class="grid md:grid-cols-3 gap-4 mb-6">
+          <div class="bg-gradient-to-r from-blue-500/20 to-purple-500/20 border border-blue-500/30 rounded-lg p-4 text-center">
+            <h3 class="text-lg font-semibold text-blue-400 mb-2">2025-2026년</h3>
+            <p class="text-sm text-mystic-200">
+              강한 수+화 영향—직업 전환，새로운 수입 채널，또는 부업의 가능성。계산된 위험을 감수하세요。
+            </p>
+          </div>
+          
+          <div class="bg-gradient-to-r from-green-500/20 to-emerald-500/20 border border-green-500/30 rounded-lg p-4 text-center">
+            <h3 class="text-lg font-semibold text-green-400 mb-2">2030년</h3>
+            <p class="text-sm text-mystic-200">
+              피크 부 활성화—확장，부동산 구매，또는 대규모 투자의 해。
+            </p>
+          </div>
+          
+          <div class="bg-gradient-to-r from-red-500/20 to-pink-500/20 border border-red-500/30 rounded-lg p-4 text-center">
+            <h3 class="text-lg font-semibold text-red-400 mb-2">2034-2035년</h3>
+            <p class="text-sm text-mystic-200">
+              현금 흐름 긴장；스트레스를 피하기 위해 유동성을 강하게 유지하세요。
+            </p>
+          </div>
+        </div>
+
+        <h2 class="text-2xl font-bold text-white mb-4 mt-8">5. 실용적인 부 조언</h2>
+        
+        <div class="space-y-4 mb-6">
+          <div class="flex items-start space-x-4">
+            <div class="w-8 h-8 rounded-full bg-gold-500 flex items-center justify-center flex-shrink-0 mt-1">
+              <span class="text-black text-sm font-bold">1</span>
+            </div>
+            <div>
+              <h3 class="text-lg font-semibold text-white mb-2">지금 활성 수입원 구축</h3>
+              <p class="text-mystic-200">
+                급여만 의존하지 마세요；컨설팅，디지털 제품，또는 전문 서비스를 고려하세요。
+              </p>
+            </div>
+          </div>
+          
+          <div class="flex items-start space-x-4">
+            <div class="w-8 h-8 rounded-full bg-gold-500 flex items-center justify-center flex-shrink-0 mt-1">
+              <span class="text-black text-sm font-bold">2</span>
+            </div>
+            <div>
+              <h3 class="text-lg font-semibold text-white mb-2">스케일 가능한 기술에 투자</h3>
+              <p class="text-mystic-200">
+                당신의 차트는 순수한 육체적 노동보다 지식 기반 수익（예：훈련，니치 전문 지식）을 선호합니다。
+              </p>
+            </div>
+          </div>
+          
+          <div class="flex items-start space-x-4">
+            <div class="w-8 h-8 rounded-full bg-gold-500 flex items-center justify-center flex-shrink-0 mt-1">
+              <span class="text-black text-sm font-bold">3</span>
+            </div>
+            <div>
+              <h3 class="text-lg font-semibold text-white mb-2">자원 네트워크 활용</h3>
+              <p class="text-mystic-200">
+                연결과 멘토를 활용하세요；협력은 결과를 가속화합니다。
+              </p>
+            </div>
+          </div>
+          
+          <div class="flex items-start space-x-4">
+            <div class="w-8 h-8 rounded-full bg-gold-500 flex items-center justify-center flex-shrink-0 mt-1">
+              <span class="text-black text-sm font-bold">4</span>
+            </div>
+            <div>
+              <h3 class="text-lg font-semibold text-white mb-2">충동적 투자 피하기</h3>
+              <p class="text-mystic-200">
+                특히 2028년 이전에는 유동성 함정을 피하기 위해 투자를 보수적으로 유지하세요。
+              </p>
+            </div>
+          </div>
+          
+          <div class="flex items-start space-x-4">
+            <div class="w-8 h-8 rounded-full bg-gold-500 flex items-center justify-center flex-shrink-0 mt-1">
+              <span class="text-black text-sm font-bold">5</span>
+            </div>
+            <div>
+              <h3 class="text-lg font-semibold text-white mb-2">2028년 준비</h3>
+              <p class="text-mystic-200">
+                앞으로 5년을 "씨 뿌리기" 단계로 취급하세요—나중에 스케일하고 싶은 프로젝트를 시작하세요。
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-gradient-to-r from-gold-500/20 to-amber-500/20 border border-gold-500/30 rounded-lg p-6 mb-8">
+          <h3 class="text-lg font-semibold text-gold-400 mb-3">💡 전략적 요약</h3>
+          <p class="text-mystic-200 leading-relaxed">
+            당신의 금융 운명은 빠른 승리에 관한 것이 아니라，2028년 이후에 중요한 부의 성장을 지원할 견고한 기반을 구축하는 것입니다。앞으로 5년 동안 기술 개발，네트워크 구축，스케일 가능한 수입원 생성에 집중하세요。지금 투자하는 인내와 준비가 40대 이후의 금융적 성공의 규모를 결정합니다。
+          </p>
+        </div>
+      `
+      },
       author: "Master Chen",
       date: "2025-01-21",
       readTime: "7 min read",
