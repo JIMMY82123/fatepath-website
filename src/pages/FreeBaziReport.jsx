@@ -2,11 +2,13 @@ import { useState, useEffect } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import { Star, ArrowLeft, Download, Share2, Crown, X, Clock, Gift, Sparkles, ArrowRight } from 'lucide-react'
 import { Link } from 'react-router-dom'
+import { useTranslation } from 'react-i18next'
 import { Lunar } from 'lunar-javascript'
 import SEO from '../components/SEO'
 import jieqiTable from '../data/jieqi.json'
 
 const FreeBaziReport = () => {
+  const { t } = useTranslation()
   const [formData, setFormData] = useState({
     fullName: '',
     gender: '',
@@ -2608,19 +2610,19 @@ const FreeBaziReport = () => {
             <Star className="h-8 w-8 sm:h-10 sm:w-10 text-white" aria-hidden="true" />
           </div>
           <h1 className="text-2xl sm:text-3xl md:text-4xl font-cinzel font-bold mb-3 sm:mb-4 text-white tracking-wide">
-            Free Bazi Reading Report
+            {t('freeBaziReport.title')}
           </h1>
           <p className="text-lg sm:text-xl text-mystic-300">
-            Enter your birth information to get your personalized Bazi analysis instantly
+            {t('freeBaziReport.subtitle')}
           </p>
           
           {/* SEO Content Section */}
           <div className="mt-6 text-center">
             <p className="text-sm text-mystic-400 mb-2">
-              Discover your destiny through ancient Chinese numerology with our free Bazi reading report
+              {t('freeBaziReport.seoDescription1')}
             </p>
             <p className="text-sm text-mystic-400">
-              Professional BaZi chart analysis for wealth, love, health, and life path guidance
+              {t('freeBaziReport.seoDescription2')}
             </p>
           </div>
         </motion.div>
@@ -2636,7 +2638,7 @@ const FreeBaziReport = () => {
             {/* Full Name */}
             <div>
               <label htmlFor="fullName" className="block text-sm font-medium text-mystic-200 mb-2">
-                Full Name *
+                {t('freeBaziReport.form.fullName')} *
               </label>
               <input
                 type="text"
@@ -2646,7 +2648,7 @@ const FreeBaziReport = () => {
                 value={formData.fullName}
                 onChange={handleInputChange}
                 className="form-input w-full bg-mystic-800/50 border border-mystic-700/50 rounded-lg text-white placeholder-mystic-400 focus:border-gold-500/50 focus:outline-none transition-colors"
-                placeholder="Enter your full name"
+                placeholder={t('freeBaziReport.form.fullNamePlaceholder')}
                 autoComplete="name"
               />
             </div>
@@ -2654,7 +2656,7 @@ const FreeBaziReport = () => {
             {/* Gender */}
             <div>
               <label htmlFor="gender" className="block text-sm font-medium text-mystic-200 mb-2">
-                Gender *
+                {t('freeBaziReport.form.gender')} *
               </label>
               <select
                 id="gender"
@@ -2664,16 +2666,16 @@ const FreeBaziReport = () => {
                 onChange={handleInputChange}
                 className="w-full px-3 sm:px-4 py-3 bg-mystic-800/50 border border-mystic-700/50 rounded-lg text-white focus:border-gold-500/50 focus:outline-none transition-colors text-base"
               >
-                <option value="">Select your gender</option>
-                <option value="Male">Male</option>
-                <option value="Female">Female</option>
+                <option value="">{t('freeBaziReport.form.selectGender')}</option>
+                <option value="Male">{t('freeBaziReport.form.male')}</option>
+                <option value="Female">{t('freeBaziReport.form.female')}</option>
               </select>
             </div>
 
             {/* Date of Birth */}
             <div>
               <label htmlFor="dateOfBirth" className="block text-sm font-medium text-mystic-200 mb-2">
-                Date of Birth *
+                {t('freeBaziReport.form.dateOfBirth')} *
               </label>
               <input
                 type="date"
@@ -2689,7 +2691,7 @@ const FreeBaziReport = () => {
             {/* Time of Birth */}
             <div>
               <label htmlFor="timeOfBirth" className="block text-sm font-medium text-mystic-200 mb-2">
-                Time of Birth *
+                {t('freeBaziReport.form.timeOfBirth')} *
               </label>
               <input
                 type="time"
@@ -2705,7 +2707,7 @@ const FreeBaziReport = () => {
             {/* Birth Location */}
             <div>
               <label htmlFor="birthLocation" className="block text-sm font-medium text-mystic-200 mb-2">
-                Birth Location *
+                {t('freeBaziReport.form.birthLocation')} *
               </label>
               <input
                 type="text"
@@ -2715,7 +2717,7 @@ const FreeBaziReport = () => {
                 value={formData.birthLocation}
                 onChange={handleInputChange}
                 className="w-full px-3 sm:px-4 py-3 bg-mystic-800/50 border border-mystic-700/50 rounded-lg text-white placeholder-mystic-400 focus:border-gold-500/50 focus:outline-none transition-colors text-base"
-                placeholder="City, Country (e.g., New York, USA)"
+                placeholder={t('freeBaziReport.form.birthLocationPlaceholder')}
               />
             </div>
 
@@ -2729,12 +2731,12 @@ const FreeBaziReport = () => {
                 {isGenerating ? (
                   <>
                     <div className="animate-spin rounded-full h-4 w-4 sm:h-5 sm:w-5 border-b-2 border-black"></div>
-                    <span>Generating Your Report...</span>
+                    <span>{t('freeBaziReport.form.generating')}</span>
                   </>
                 ) : (
                   <>
                     <Sparkles className="h-4 w-4 sm:h-5 sm:w-5 group-hover:animate-pulse" />
-                    <span>Generate Free Report</span>
+                    <span>{t('freeBaziReport.form.generateButton')}</span>
                     <ArrowRight className="h-4 w-4 sm:h-5 sm:w-5 group-hover:translate-x-1 transition-transform" />
                   </>
                 )}
