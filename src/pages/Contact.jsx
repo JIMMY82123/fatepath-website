@@ -2,10 +2,12 @@ import { motion } from 'framer-motion'
 import { MessageCircle, Mail, Phone, MapPin, Clock, Star, Sparkles, CheckCircle } from 'lucide-react'
 import { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
+import { useTranslation } from 'react-i18next'
 import { getFormUrl } from '../config/formIds'
 import SEO from '../components/SEO'
 
 const Contact = () => {
+  const { t } = useTranslation()
   const navigate = useNavigate()
   const [isSubmitting, setIsSubmitting] = useState(false)
   const [isSubmitted, setIsSubmitted] = useState(false)
@@ -41,37 +43,37 @@ const Contact = () => {
     
     // 验证姓名
     if (!formData.firstName.trim()) {
-      newErrors.firstName = '请输入您的名字'
+      newErrors.firstName = t('contact.errors.firstNameRequired')
     } else if (formData.firstName.trim().length < 2) {
-      newErrors.firstName = '名字至少需要2个字符'
+      newErrors.firstName = t('contact.errors.firstNameMin')
     }
     
     if (!formData.lastName.trim()) {
-      newErrors.lastName = '请输入您的姓氏'
+      newErrors.lastName = t('contact.errors.lastNameRequired')
     } else if (formData.lastName.trim().length < 2) {
-      newErrors.lastName = '姓氏至少需要2个字符'
+      newErrors.lastName = t('contact.errors.lastNameMin')
     }
     
     // 验证邮箱
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
     if (!formData.email.trim()) {
-      newErrors.email = '请输入您的邮箱地址'
+      newErrors.email = t('contact.errors.emailRequired')
     } else if (!emailRegex.test(formData.email)) {
-      newErrors.email = '请输入有效的邮箱地址'
+      newErrors.email = t('contact.errors.emailInvalid')
     }
     
     // 验证服务兴趣
     if (!formData.serviceInterest.trim()) {
-      newErrors.serviceInterest = '请选择您感兴趣的服务'
+      newErrors.serviceInterest = t('contact.errors.serviceInterestRequired')
     }
     
     // 验证消息
     if (!formData.message.trim()) {
-      newErrors.message = '请输入您的消息'
+      newErrors.message = t('contact.errors.messageRequired')
     } else if (formData.message.trim().length < 10) {
-      newErrors.message = '消息至少需要10个字符'
+      newErrors.message = t('contact.errors.messageMin')
     } else if (formData.message.trim().length > 1000) {
-      newErrors.message = '消息不能超过1000个字符'
+      newErrors.message = t('contact.errors.messageMax')
     }
     
     setErrors(newErrors)
@@ -119,7 +121,7 @@ const Contact = () => {
       // 显示友好的错误提示
       const errorMessage = document.createElement('div')
       errorMessage.className = 'fixed top-4 right-4 bg-red-600 text-white px-6 py-3 rounded-lg shadow-lg z-50 transform transition-all duration-300'
-      errorMessage.textContent = '提交失败，请稍后重试或直接联系我'
+      errorMessage.textContent = t('contact.errors.submitFailed', { defaultValue: 'Submission failed, please try again later or contact me directly' })
       document.body.appendChild(errorMessage)
       
       setTimeout(() => {
@@ -199,11 +201,10 @@ const Contact = () => {
           className="text-center mb-12 sm:mb-16"
         >
           <h1 className="text-3xl sm:text-4xl md:text-6xl font-playfair font-bold mb-4 sm:mb-6">
-            <span className="gradient-text">Get In Touch</span>
+            <span className="gradient-text">{t('contact.heroTitle')}</span>
           </h1>
           <p className="text-lg sm:text-xl text-mystic-300 max-w-3xl mx-auto leading-relaxed">
-            Ready to discover your destiny? I'm here to guide you on your spiritual journey. 
-            Choose your preferred way to connect and let's begin your transformation.
+            {t('contact.heroDescription')}
           </p>
         </motion.div>
 
@@ -216,17 +217,17 @@ const Contact = () => {
         >
           <div className="max-w-4xl mx-auto">
             <h2 className="text-2xl sm:text-3xl font-playfair font-semibold mb-6 text-white text-center">
-              Your Journey Begins Here
+              {t('contact.journeyBegins')}
             </h2>
             <div className="space-y-6 text-center">
               <p className="text-lg text-mystic-300 leading-relaxed">
-                Embarking on a spiritual journey requires trust, guidance, and a connection with someone who understands the ancient wisdom you seek. As 玄印 (Xuan Yin), I've dedicated over 15 years to mastering traditional Chinese BaZi analysis, helping hundreds of individuals discover their true path and unlock their hidden potential.
+                {t('contact.journeyDesc1')}
               </p>
               <p className="text-lg text-mystic-300 leading-relaxed">
-                Whether you're seeking clarity about your career direction, understanding your relationship patterns, or looking for spiritual protection through custom talismans, I'm here to provide personalized guidance based on your unique birth chart. Every consultation is conducted with the utmost respect for your privacy and the sacred nature of this ancient practice.
+                {t('contact.journeyDesc2')}
               </p>
               <p className="text-lg text-mystic-300 leading-relaxed">
-                Choose your preferred method of contact below, and let's begin your transformation. Whether through WhatsApp for immediate responses, email for detailed inquiries, or our contact form for comprehensive consultations, I'm committed to being your guide on this profound journey of self-discovery and spiritual growth.
+                {t('contact.journeyDesc3')}
               </p>
             </div>
           </div>
@@ -241,7 +242,7 @@ const Contact = () => {
             className="space-y-6"
           >
             <h2 className="text-2xl font-playfair font-semibold mb-6 text-white">
-              Contact Methods
+              {t('contact.contactMethods')}
             </h2>
             
             {contactInfo.map((contact, index) => (
@@ -283,7 +284,7 @@ const Contact = () => {
             >
               <div className="flex items-center space-x-3 mb-4">
                 <Clock className="h-6 w-6 text-gold-400" />
-                <h3 className="font-semibold text-white">Business Hours</h3>
+                <h3 className="font-semibold text-white">{t('contact.businessHours')}</h3>
               </div>
               <div className="space-y-2">
                 {businessHours.map((schedule, index) => (
@@ -304,7 +305,7 @@ const Contact = () => {
             className="mystic-card p-8"
           >
             <h2 className="text-xl sm:text-2xl font-playfair font-semibold mb-4 sm:mb-6 text-white">
-              Send Me a Message
+              {t('contact.formTitle')}
             </h2>
             
             {isSubmitted ? (
@@ -316,16 +317,16 @@ const Contact = () => {
               >
                 <CheckCircle className="h-16 w-16 text-green-400 mx-auto mb-4" />
                 <h3 className="text-2xl font-cinzel font-bold mb-2 text-white">
-                  Message Sent!
+                  {t('contact.submitted')}
                 </h3>
                 <p className="text-mystic-300 mb-6">
-                  Thank you for your message. I'll get back to you within 24 hours.
+                  {t('contact.submittedDesc')}
                 </p>
                 <button
                   onClick={() => setIsSubmitted(false)}
                   className="bg-gradient-to-r from-gold-500 to-gold-600 text-black font-semibold py-2 px-6 rounded-lg hover:from-gold-400 hover:to-gold-500 transition-all duration-300"
                 >
-                  Send Another Message
+                  {t('contact.sendAnotherMessage')}
                 </button>
               </motion.div>
             ) : (
@@ -333,7 +334,7 @@ const Contact = () => {
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                   <div>
                     <label className="block text-sm font-medium text-mystic-300 mb-2">
-                      First Name *
+                      {t('contact.firstName')} *
                     </label>
                     <input
                       type="text"
@@ -344,7 +345,7 @@ const Contact = () => {
                       className={`w-full px-4 py-3 text-base bg-mystic-800/50 border rounded-lg text-white placeholder-mystic-400 focus:outline-none transition-colors ${
                         errors.firstName ? 'border-red-500 focus:border-red-500' : 'border-mystic-700/50 focus:border-gold-500/50'
                       }`}
-                      placeholder="Your first name"
+                      placeholder={t('contact.placeholders.firstName')}
                     />
                     {errors.firstName && (
                       <p className="text-red-400 text-sm mt-1">{errors.firstName}</p>
@@ -352,7 +353,7 @@ const Contact = () => {
                   </div>
                   <div>
                     <label className="block text-sm font-medium text-mystic-300 mb-2">
-                      Last Name *
+                      {t('contact.lastName')} *
                     </label>
                     <input
                       type="text"
@@ -363,7 +364,7 @@ const Contact = () => {
                       className={`w-full px-4 py-3 text-base bg-mystic-800/50 border rounded-lg text-white placeholder-mystic-400 focus:outline-none transition-colors ${
                         errors.lastName ? 'border-red-500 focus:border-red-500' : 'border-mystic-700/50 focus:border-gold-500/50'
                       }`}
-                      placeholder="Your last name"
+                      placeholder={t('contact.placeholders.lastName')}
                     />
                     {errors.lastName && (
                       <p className="text-red-400 text-sm mt-1">{errors.lastName}</p>
@@ -373,7 +374,7 @@ const Contact = () => {
 
                 <div>
                   <label className="block text-sm font-medium text-mystic-300 mb-2">
-                    Email *
+                    {t('contact.email')} *
                   </label>
                   <input
                     type="email"
@@ -384,7 +385,7 @@ const Contact = () => {
                     className={`w-full px-4 py-3 bg-mystic-800/50 border rounded-lg text-white placeholder-mystic-400 focus:outline-none transition-colors ${
                       errors.email ? 'border-red-500 focus:border-red-500' : 'border-mystic-700/50 focus:border-gold-500/50'
                     }`}
-                    placeholder="your.email@example.com"
+                    placeholder={t('contact.placeholders.email')}
                   />
                   {errors.email && (
                     <p className="text-red-400 text-sm mt-1">{errors.email}</p>
@@ -393,7 +394,7 @@ const Contact = () => {
 
                 <div>
                   <label className="block text-sm font-medium text-mystic-300 mb-2">
-                    Service Interest
+                    {t('contact.serviceInterest')}
                   </label>
                   <select 
                     name="serviceInterest"
@@ -403,11 +404,11 @@ const Contact = () => {
                       errors.serviceInterest ? 'border-red-500 focus:border-red-500' : 'border-mystic-700/50 focus:border-gold-500/50'
                     }`}
                   >
-                    <option value="">Select a service</option>
-                    <option value="bazi-reading">Detailed Bazi Reading</option>
-                    <option value="love-compatibility">Love Compatibility Reading</option>
-                    <option value="custom-talisman">Custom Talisman</option>
-                    <option value="general-inquiry">General Inquiry</option>
+                    <option value="">{t('contact.selectService', { defaultValue: 'Select a service' })}</option>
+                    <option value="bazi-reading">{t('contact.serviceOptions.baziReading', { defaultValue: 'Detailed Bazi Reading' })}</option>
+                    <option value="love-compatibility">{t('contact.serviceOptions.loveCompatibility', { defaultValue: 'Love Compatibility Reading' })}</option>
+                    <option value="custom-talisman">{t('contact.serviceOptions.customTalisman', { defaultValue: 'Custom Talisman' })}</option>
+                    <option value="general-inquiry">{t('contact.serviceOptions.generalInquiry', { defaultValue: 'General Inquiry' })}</option>
                   </select>
                   {errors.serviceInterest && (
                     <p className="text-red-400 text-sm mt-1">{errors.serviceInterest}</p>
@@ -416,7 +417,7 @@ const Contact = () => {
 
                 <div>
                   <label className="block text-sm font-medium text-mystic-300 mb-2">
-                    Message *
+                    {t('contact.message')} *
                   </label>
                   <textarea
                     name="message"
@@ -427,7 +428,7 @@ const Contact = () => {
                     className={`w-full px-4 py-3 text-base bg-mystic-800/50 border rounded-lg text-white placeholder-mystic-400 focus:outline-none transition-colors resize-none ${
                       errors.message ? 'border-red-500 focus:border-red-500' : 'border-mystic-700/50 focus:border-gold-500/50'
                     }`}
-                    placeholder="Tell me about what you're seeking guidance on..."
+                    placeholder={t('contact.placeholders.message')}
                   ></textarea>
                   {errors.message && (
                     <p className="text-red-400 text-sm mt-1">{errors.message}</p>
@@ -441,7 +442,7 @@ const Contact = () => {
                     whileTap={{ scale: 0.98 }}
                     className="w-full bg-gradient-to-r from-gold-500 to-gold-600 text-black font-semibold py-4 px-8 rounded-lg hover:from-gold-400 hover:to-gold-500 transition-all duration-300 mystic-glow disabled:opacity-50 disabled:cursor-not-allowed"
                   >
-                    {isSubmitting ? 'Sending...' : 'Send Message'}
+                    {isSubmitting ? t('contact.submitting') : t('contact.sendMessage', { defaultValue: 'Send Message' })}
                   </motion.button>
               </form>
             )}

@@ -1,9 +1,11 @@
 import { motion } from 'framer-motion'
 import { ChevronDown, ChevronUp } from 'lucide-react'
-import { useState } from 'react'
+import { useState, useMemo } from 'react'
+import { useTranslation } from 'react-i18next'
 import SEO from '../components/SEO'
 
 const FAQ = () => {
+  const { t } = useTranslation()
   const [openItems, setOpenItems] = useState(new Set([0])) // First item open by default
 
   const toggleItem = (index) => {
@@ -16,7 +18,7 @@ const FAQ = () => {
     setOpenItems(newOpenItems)
   }
 
-  const faqData = [
+  const faqData = useMemo(() => t('faq.questions', { returnObjects: true }), [t])
     {
       question: "What is BaZi (八字) Analysis?",
       answer: "BaZi analysis is a fundamental component of traditional Chinese metaphysics, analyzing the year, month, day, and hour of your birth to understand your personality traits, life path, career development, and relationships. Based on Yin-Yang and Five Elements theory, BaZi reveals your innate potential, suitable career directions, and opportunities and challenges at different life stages."
@@ -102,9 +104,9 @@ const FAQ = () => {
              transition={{ duration: 0.8, delay: 0.2 }}
              className="text-3xl sm:text-4xl md:text-6xl font-cinzel font-bold mb-4 sm:mb-6"
            >
-             <span className="gradient-text">Frequently Asked</span>
+             <span className="gradient-text">{t('faq.heroTitle')}</span>
              <br />
-             <span className="text-white">Questions</span>
+             <span className="text-white">{t('faq.heroSubtitle')}</span>
            </motion.h1>
            
            <motion.p 
@@ -113,7 +115,7 @@ const FAQ = () => {
              transition={{ duration: 0.8, delay: 0.4 }}
              className="text-lg sm:text-xl text-mystic-300 max-w-2xl mx-auto mb-8 sm:mb-12"
            >
-             Answers to common questions about finding life direction, career guidance, Chinese astrology, BaZi analysis, love compatibility readings, and custom talismans
+             {t('faq.heroDescription')}
            </motion.p>
         </div>
       </motion.div>
@@ -183,25 +185,25 @@ const FAQ = () => {
         >
                      <div className="mystic-card border border-gold-500/30 p-6 sm:p-8">
              <h3 className="text-xl sm:text-2xl font-cinzel font-bold text-white mb-3 sm:mb-4">
-               Still have questions?
+               {t('faq.stillHaveQuestions')}
              </h3>
              <p className="text-sm sm:text-base text-mystic-300 mb-4 sm:mb-6">
-               If you couldn't find the answer to your question here, feel free to contact me anytime
+               {t('faq.stillHaveQuestionsDesc')}
              </p>
              <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center">
                <a
-                 href="https://wa.me/your-whatsapp-number"
+                 href="https://wa.me/8615914228258"
                  target="_blank"
                  rel="noopener noreferrer"
                  className="inline-flex items-center justify-center px-4 sm:px-6 py-3 bg-green-600 hover:bg-green-700 text-white font-semibold rounded-full transition-colors duration-300 text-sm sm:text-base"
                >
-                 WhatsApp Consultation
+                 {t('faq.whatsappConsultation')}
                </a>
                <a
                  href="mailto:chenxiao0801@hotmail.com"
                  className="inline-flex items-center justify-center px-4 sm:px-6 py-3 bg-gold-500 hover:bg-gold-600 text-black font-semibold rounded-full transition-colors duration-300 text-sm sm:text-base"
                >
-                 Email Consultation
+                 {t('faq.emailConsultation')}
                </a>
              </div>
            </div>

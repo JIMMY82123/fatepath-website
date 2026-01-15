@@ -141,12 +141,68 @@
   },
   "faq": {
     "title": "Frequently Asked Questions",
-    "subtitle": "Everything you need to know about BaZi readings and our services"
+    "subtitle": "Everything you need to know about BaZi readings and our services",
+    "heroTitle": "Frequently Asked",
+    "heroSubtitle": "Questions",
+    "heroDescription": "Answers to common questions about finding life direction, career guidance, Chinese astrology, BaZi analysis, love compatibility readings, and custom talismans",
+    "stillHaveQuestions": "Still have questions?",
+    "stillHaveQuestionsDesc": "If you couldn't find the answer to your question here, feel free to contact me anytime",
+    "whatsappConsultation": "WhatsApp Consultation",
+    "emailConsultation": "Email Consultation",
+    "questions": [
+      {
+        "question": "What is BaZi (八字) Analysis?",
+        "answer": "BaZi analysis is a fundamental component of traditional Chinese metaphysics, analyzing the year, month, day, and hour of your birth to understand your personality traits, life path, career development, and relationships. Based on Yin-Yang and Five Elements theory, BaZi reveals your innate potential, suitable career directions, and opportunities and challenges at different life stages."
+      },
+      {
+        "question": "What information do I need for BaZi analysis?",
+        "answer": "For BaZi analysis, I need your accurate birth information:<br/><br/>• <strong>Birth Date</strong>: Year, month, day<br/>• <strong>Birth Time</strong>: As precise as possible to the hour<br/>• <strong>Birth Location</strong>: City or region<br/>• <strong>Gender</strong>: Male/Female<br/><br/>The more precise your birth time, the more accurate the analysis. If you're unsure about the exact time, we can infer it based on your life experiences."
+      },
+      {
+        "question": "What can Love Compatibility Reading tell me?",
+        "answer": "Love compatibility reading compares two people's BaZi charts to reveal:<br/><br/>• <strong>Personality Compatibility</strong>: Whether your personalities complement each other<br/>• <strong>Emotional Patterns</strong>: How you behave in relationships<br/>• <strong>Potential Challenges</strong>: Possible conflicts and tensions<br/>• <strong>Relationship Development</strong>: How your relationship will evolve<br/>• <strong>Improvement Suggestions</strong>: How to enhance harmony<br/><br/>This helps you better understand your partner and build healthier relationships."
+      },
+      {
+        "question": "How do talismans work?",
+        "answer": "Talismans are personalized protective items based on traditional metaphysical principles:<br/><br/>• <strong>Personalized Design</strong>: Customized based on your BaZi chart and needs<br/>• <strong>Five Elements Balance</strong>: Supplements missing or weak elements in your chart<br/>• <strong>Energy Protection</strong>: Shields against negative energy and unfavorable influences<br/>• <strong>Psychological Support</strong>: Enhances confidence and positive mindset<br/>• <strong>Traditional Craftsmanship</strong>: Made using traditional methods and materials<br/><br/>Talisman effects vary by individual, but maintaining a positive mindset and proper usage is most important."
+      },
+      {
+        "question": "Do BaZi analysis results change?",
+        "answer": "BaZi analysis reveals your basic metaphysical structure, which is relatively stable. However:<br/><br/>• <strong>Luck Changes</strong>: Annual luck varies each year<br/>• <strong>Environment Matters</strong>: Living location and career choices affect luck<br/>• <strong>Mindset is Key</strong>: Positive attitude can improve fortune<br/>• <strong>Action is Crucial</strong>: Right actions help seize opportunities<br/><br/>The purpose of BaZi analysis isn't to predict fate, but to help you better understand yourself and make wise choices."
+      },
+      {
+        "question": "How long does it take to receive results?",
+        "answer": "Delivery times for different services:<br/><br/>• <strong>Detailed BaZi Reading</strong>: 24 hours<br/>• <strong>Love Compatibility Reading</strong>: 24 hours<br/>• <strong>Custom Talisman</strong>: 7-10 business days (including production time)<br/><br/>I'll send detailed analysis reports via email and provide follow-up text consultation support when needed."
+      },
+      {
+        "question": "Can consultations be done remotely?",
+        "answer": "Yes, all services can be conducted remotely:<br/><br/>• <strong>Online Analysis</strong>: Collect information through email and forms<br/>• <strong>Text Consultation</strong>: Communicate via email or WhatsApp text<br/>• <strong>Detailed Reports</strong>: Provide comprehensive written analysis reports<br/>• <strong>Ongoing Support</strong>: Provide continuous consultation and guidance<br/><br/>Remote consultation is equally professional and effective, ensuring detailed analysis reports and personalized advice."
+      },
+      {
+        "question": "How do you protect my privacy?",
+        "answer": "I highly value client privacy protection:<br/><br/>• <strong>Information Confidentiality</strong>: All personal information is strictly confidential<br/>• <strong>Secure Transmission</strong>: Use encrypted form systems<br/>• <strong>Data Deletion</strong>: Sensitive information can be deleted after analysis<br/>• <strong>Professional Ethics</strong>: Follow metaphysical practitioner ethics<br/>• <strong>Client Consent</strong>: Never share any information without consent<br/><br/>Your trust is very important to me, and I'll do everything possible to protect your privacy."
+      },
+      {
+        "question": "What if I have questions about the analysis results?",
+        "answer": "I provide complete follow-up support:<br/><br/>• <strong>Free Consultation</strong>: Free question answering within 7 days after analysis<br/>• <strong>Detailed Explanations</strong>: Explain any unclear points in detail<br/>• <strong>Personalized Advice</strong>: Provide suggestions based on your specific situation<br/>• <strong>Ongoing Support</strong>: Long-term metaphysical consultation services<br/>• <strong>Satisfaction Guarantee</strong>: Ensure you're satisfied with the service<br/><br/>My goal is to help you get maximum value, and you can contact me anytime with questions."
+      },
+      {
+        "question": "Is BaZi analysis accurate?",
+        "answer": "The accuracy of BaZi analysis depends on several factors:<br/><br/>• <strong>Information Accuracy</strong>: More precise birth time leads to more accurate analysis<br/>• <strong>Professional Level</strong>: Experienced practitioners provide more accurate analysis<br/>• <strong>Comprehensive Analysis</strong>: Analysis combining multiple dimensions<br/>• <strong>Personal Effort</strong>: Analysis results need to be combined with personal action<br/>• <strong>Continuous Verification</strong>: Verify analysis results through practice<br/><br/>BaZi analysis is ancient wisdom validated over thousands of years, with high reference value."
+      }
+    ]
   },
   "contact": {
     "title": "Get Life Direction Help",
     "subtitle": "Feeling lost or stuck in life? Contact our professional Chinese astrology expert for personalized life direction and career guidance.",
-    "formTitle": "Send Us a Message",
+    "heroTitle": "Get In Touch",
+    "heroDescription": "Ready to discover your destiny? I'm here to guide you on your spiritual journey. Choose your preferred way to connect and let's begin your transformation.",
+    "journeyBegins": "Your Journey Begins Here",
+    "journeyDesc1": "Embarking on a spiritual journey requires trust, guidance, and a connection with someone who understands the ancient wisdom you seek. As 玄印 (Xuan Yin), I've dedicated over 15 years to mastering traditional Chinese BaZi analysis, helping hundreds of individuals discover their true path and unlock their hidden potential.",
+    "journeyDesc2": "Whether you're seeking clarity about your career direction, understanding your relationship patterns, or looking for spiritual protection through custom talismans, I'm here to provide personalized guidance based on your unique birth chart. Every consultation is conducted with the utmost respect for your privacy and the sacred nature of this ancient practice.",
+    "journeyDesc3": "Choose your preferred method of contact below, and let's begin your transformation. Whether through WhatsApp for immediate responses, email for detailed inquiries, or our contact form for comprehensive consultations, I'm committed to being your guide on this profound journey of self-discovery and spiritual growth.",
+    "contactMethods": "Contact Methods",
+    "formTitle": "Send Me a Message",
     "firstName": "First Name",
     "lastName": "Last Name",
     "email": "Email",
@@ -175,8 +231,27 @@
     "mountainTime": "Mountain Time (MST/MDT)",
     "pacificTime": "Pacific Time (PST/PDT)",
     "submitting": "Submitting...",
-    "submitted": "Message Sent Successfully!",
-    "submittedDesc": "Thank you for contacting us. We'll get back to you as soon as possible."
+    "submitted": "Message Sent!",
+    "submittedDesc": "Thank you for your message. I'll get back to you within 24 hours.",
+    "sendAnotherMessage": "Send Another Message",
+    "placeholders": {
+      "firstName": "Your first name",
+      "lastName": "Your last name",
+      "email": "your.email@example.com",
+      "message": "Tell me about your questions or concerns..."
+    },
+    "errors": {
+      "firstNameRequired": "Please enter your first name",
+      "firstNameMin": "First name must be at least 2 characters",
+      "lastNameRequired": "Please enter your last name",
+      "lastNameMin": "Last name must be at least 2 characters",
+      "emailRequired": "Please enter your email address",
+      "emailInvalid": "Please enter a valid email address",
+      "serviceInterestRequired": "Please select a service interest",
+      "messageRequired": "Please enter your message",
+      "messageMin": "Message must be at least 10 characters",
+      "messageMax": "Message cannot exceed 1000 characters"
+    }
   },
   "celebrities": {
     "title": "Famous People Born Today",
