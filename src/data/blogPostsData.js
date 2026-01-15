@@ -3181,9 +3181,18 @@ export const blogPostsData = {
     ]
   },
   "heatwave-bazi-fire-imbalance": {
-    title: "Heatwave Survival Through BaZi Fire Imbalance",
-    excerpt: "Extreme summers can aggravate the Fire element in your BaZi chart. Learn how to cool your health, mindset, and finances when temperatures—and stress—spike.",
-    content: `
+    title: {
+      en: "Heatwave Survival Through BaZi Fire Imbalance",
+      ja: "八字の火の不均衡を通じた熱波の生存",
+      ko: "사주 화 불균형을 통한 폭염 생존"
+    },
+    excerpt: {
+      en: "Extreme summers can aggravate the Fire element in your BaZi chart. Learn how to cool your health, mindset, and finances when temperatures—and stress—spike.",
+      ja: "極端な夏は、あなたの八字チャートの火要素を悪化させる可能性があります。気温とストレスが急上昇したときに、健康、マインドセット、財務を冷やす方法を学びましょう。",
+      ko: "극단적인 여름은 당신의 사주 차트에서 화 요소를 악화시킬 수 있습니다。온도와 스트레스가 급등할 때 건강，마음가짐，재정을 식히는 방법을 배우세요。"
+    },
+    content: {
+      en: `
       <div class="space-y-6">
         <p class="text-mystic-200 leading-relaxed">
           Record-breaking heatwaves are more than a climate headline; they reveal a global surge of Fire energy.
@@ -3203,7 +3212,7 @@ export const blogPostsData = {
           <li>Fire Day Masters entering another Fire luck cycle or encountering Horse, Snake, or Goat branches.</li>
           <li>Charts missing Water elements, especially those born in summer months when Fire is already seasonal king.</li>
           <li>Presence of too many Output or Wealth stars, signalling constant performance pressure.</li>
-          <li>Frequent clashes with Rat or Pig branches that trigger emotional steam. 想确认季节对你体感的影响，可回顾<a class="text-gold-300 underline" href="/blog/seasons-fate-cycles">四季命运解析</a>一文，把出生月份的五行背景一起纳入评估。</li>
+          <li>Frequent clashes with Rat or Pig branches that trigger emotional steam. To confirm how seasons affect your physical experience, review <a class="text-gold-300 underline" href="/blog/seasons-fate-cycles">The Four Seasons of Fate</a> to incorporate your birth month's Five Elements background into the assessment.</li>
         </ul>
 
         <h2 class="text-2xl font-bold text-white mt-8 mb-4">Cooling Lifestyle Rituals</h2>
@@ -3217,7 +3226,7 @@ export const blogPostsData = {
         <p class="text-mystic-200 leading-relaxed">
           Fire compels rapid expansion, but during heatwaves it is wiser to audit spending, consolidate debt, and delay speculative investments.
           Professionals should pace visibility—schedule breaks between presentations, share leadership with teammates, and set non-negotiable cooldown days in calendars.
-          若想逐项调整财富结构，可以搭配<a class="text-gold-300 underline" href="/blog/advanced-bazi-wealth-analysis-mastery">财富等级进阶解析</a>，检查你 chart 里的财星是否被炎热周期放大。
+          To adjust your wealth structure item by item, pair this with <a class="text-gold-300 underline" href="/blog/advanced-bazi-wealth-analysis-mastery">Advanced BaZi Wealth Analysis</a> to check if Wealth stars in your chart are amplified by hot cycles.
         </p>
 
         <h2 class="text-2xl font-bold text-white mt-8 mb-4">Emotional First Aid</h2>
@@ -3232,7 +3241,7 @@ export const blogPostsData = {
           <li>Schedule major launches or relocations in Metal or Water months for support.</li>
           <li>Rotate yin nourishing meals, cooling herbal teas, and 90-minute digital sunset routines.</li>
           <li>Introduce Water décor—fountains, blue tones, or reflective surfaces—to your workspace.</li>
-          <li>Plan vacations near lakes or oceans to reset your nervous system。也别忘了对照<a class="text-gold-300 underline" href="/blog/financial-destiny-report-woman-wealth-path">财富命运报告案例</a>，在理财动作上预留缓冲，避免被火旺时期的冲动消费拖累。</li>
+          <li>Plan vacations near lakes or oceans to reset your nervous system. Also remember to reference <a class="text-gold-300 underline" href="/blog/financial-destiny-report-woman-wealth-path">Financial Destiny Report</a> case studies to build buffers in financial actions and avoid being dragged down by impulsive spending during Fire-strong periods.</li>
         </ul>
 
         <p class="text-mystic-200 leading-relaxed">
@@ -3240,6 +3249,121 @@ export const blogPostsData = {
         </p>
       </div>
     `,
+      ja: `
+      <div class="space-y-6">
+        <p class="text-mystic-200 leading-relaxed">
+          記録破りの熱波は気候の見出し以上のものです；それらは火のエネルギーの世界的な急増を明らかにします。
+          あなたの八字チャートがすでに強い火を含んでいるか、バランスを取る水が不足している場合、燃え尽き、炎症、衝動的な支出、そしてぼろぼろの関係を経験する可能性があります。
+          伝統的な形而上学は、接地を保つための正確な治療法を提供します。
+        </p>
+
+        <h2 class="text-2xl font-bold text-white mt-8 mb-4">火の不均衡が現れる方法</h2>
+        <p class="text-mystic-200 leading-relaxed">
+          火は心臓、小腸、喜び、可視性を支配します。
+          過剰になると、落ち着きのなさ、不眠症、過熱、散漫な注意、「熱いお金」の決定を生み出します。
+          女性はホルモン的に動揺を感じる可能性があり、男性は心血管の緊張やオンラインでの評判の急上昇を経験します。
+        </p>
+
+        <h2 class="text-2xl font-bold text-white mt-8 mb-4">過剰な火のチャート指標</h2>
+        <ul class="list-disc list-inside text-mystic-200 leading-relaxed space-y-2">
+          <li>別の火の運サイクルに入るか、馬、蛇、または山羊の支に遭遇する火の日主。</li>
+          <li>水要素が欠けているチャート、特に火がすでに季節の王である夏の月に生まれた人。</li>
+          <li>一定のパフォーマンス圧力を示す、あまりにも多くの出力または財星の存在。</li>
+          <li>感情的な蒸気を引き起こすネズミや豚の支との頻繁な衝突。季節があなたの体感に与える影響を確認するには、<a class="text-gold-300 underline" href="/blog/seasons-fate-cycles">四季の運命解析</a>の記事をレビューして、出生月の五行背景を評価に組み込んでください。</li>
+        </ul>
+
+        <h2 class="text-2xl font-bold text-white mt-8 mb-4">冷却ライフスタイルの儀式</h2>
+        <p class="text-mystic-200 leading-relaxed">
+          古代の医師は水の培養を処方しました—今日、それは電解質を含む構造化された水分補給、キュウリや緑豆などの陰の食べ物、心臓をサポートするための午後11時前の早めの就寝時間を意味します。
+          熱いHIITワークアウトを水泳、陰ヨガ、または月明かりの散歩と交換してください。
+          デジタルデトックスの夜は神（精神）を落ち着かせ、運命スクロール誘発の熱を防ぎます。
+        </p>
+
+        <h2 class="text-2xl font-bold text-white mt-8 mb-4">金融とキャリアの調整</h2>
+        <p class="text-mystic-200 leading-relaxed">
+          火は急速な拡大を強制しますが、熱波中は支出を監査し、債務を統合し、投機的投資を遅らせる方が賢明です。
+          専門家は可視性のペースを調整する必要があります—プレゼンテーションの間に休憩をスケジュールし、チームメイトとリーダーシップを共有し、カレンダーに交渉不可能なクールダウン日を設定します。
+          財富構造を項目ごとに調整したい場合は、<a class="text-gold-300 underline" href="/blog/advanced-bazi-wealth-analysis-mastery">財富等級進階解析</a>と組み合わせて、チャート内の財星が熱いサイクルによって増幅されているかどうかを確認してください。
+        </p>
+
+        <h2 class="text-2xl font-bold text-white mt-8 mb-4">感情の応急処置</h2>
+        <p class="text-mystic-200 leading-relaxed">
+          火の不均衡は焦りと衝突を煽ります。
+          雨の音を聞く、水域の近くで日記を書く、または落ち着いたマントラを唱えるなどの水の瞑想を実践してください。
+          境界を優しくしかし断固として伝えます；火がピークに達したときに深夜の議論を避けてください。
+        </p>
+
+        <h2 class="text-2xl font-bold text-white mt-8 mb-4">季節計画のヒント</h2>
+        <ul class="list-disc list-inside text-mystic-200 leading-relaxed space-y-2">
+          <li>サポートのために金または水の月に主要な立ち上げや転居をスケジュールします。</li>
+          <li>陰の栄養のある食事、冷却ハーブティー、90分のデジタルサンセットルーティンをローテーションします。</li>
+          <li>ワークスペースに水の装飾—噴水、青いトーン、または反射面—を導入します。</li>
+          <li>神経系をリセットするために湖や海の近くで休暇を計画します。また、<a class="text-gold-300 underline" href="/blog/financial-destiny-report-woman-wealth-path">財富運命レポートのケース</a>を参照して、金融行動にバッファを構築し、火が強い時期の衝動的な支出に引きずられないようにすることを忘れないでください。</li>
+        </ul>
+
+        <p class="text-mystic-200 leading-relaxed">
+          水の実践とマインドフルなペーシングを受け入れることで、抑圧的な熱を明確さ、集中した創造性、そして回復力のある富の構築の季節に変換します。
+        </p>
+      </div>
+    `,
+      ko: `
+      <div class="space-y-6">
+        <p class="text-mystic-200 leading-relaxed">
+          기록적인 폭염은 기후 헤드라인 이상입니다；그들은 화 에너지의 글로벌 급증을 드러냅니다。
+          당신의 사주 차트가 이미 강한 화를 포함하거나 균형을 이루는 수가 부족한 경우，번아웃，염증，충동적 지출，그리고 지친 관계를 경험할 수 있습니다。
+          전통적인 형이상학은 접지를 유지하기 위한 정확한 치료법을 제공합니다。
+        </p>
+
+        <h2 class="text-2xl font-bold text-white mt-8 mb-4">화 불균형이 나타나는 방법</h2>
+        <p class="text-mystic-200 leading-relaxed">
+          화는 심장，소장，기쁨，가시성을 지배합니다。
+          과잉일 때，불안，불면증，과열，산만한 주의，"뜨거운 돈" 결정을 만듭니다。
+          여성은 호르몬적으로 동요를 느낄 수 있으며，남성은 심혈관 긴장이나 온라인에서의 평판 급등을 경험합니다。
+        </p>
+
+        <h2 class="text-2xl font-bold text-white mt-8 mb-4">과잉 화의 차트 지표</h2>
+        <ul class="list-disc list-inside text-mystic-200 leading-relaxed space-y-2">
+          <li>다른 화 운 사이클에 들어가거나 말，뱀，또는 염소 지지와 만나는 화 일주。</li>
+          <li>수 요소가 부족한 차트，특히 화가 이미 계절 왕인 여름 달에 태어난 사람。</li>
+          <li>지속적인 성능 압력을 나타내는 너무 많은 출력 또는 재성의 존재。</li>
+          <li>감정적 증기를 유발하는 쥐 또는 돼지 지지와의 빈번한 충돌。계절이 당신의 체감에 미치는 영향을 확인하려면，<a class="text-gold-300 underline" href="/blog/seasons-fate-cycles">사계절 운명 해석</a> 기사를 검토하여 출생 월의 오행 배경을 평가에 포함하세요。</li>
+        </ul>
+
+        <h2 class="text-2xl font-bold text-white mt-8 mb-4">냉각 라이프스타일 의식</h2>
+        <p class="text-mystic-200 leading-relaxed">
+          고대 의사는 수의 재배를 처방했습니다—오늘날，그것은 전해질을 포함한 구조화된 수분 보충，오이와 녹두와 같은 음식，심장을 지원하기 위한 오후 11시 이전의 일찍 취침 시간을 의미합니다。
+          뜨거운 HIIT 운동을 수영，음 요가，또는 달빛 산책으로 교체하세요。
+          디지털 디톡스 저녁은 신（정신）을 진정시키고 운명 스크롤 유발 열을 방지합니다。
+        </p>
+
+        <h2 class="text-2xl font-bold text-white mt-8 mb-4">금융 및 경력 조정</h2>
+        <p class="text-mystic-200 leading-relaxed">
+          화는 급속한 확장을 강제하지만，폭염 중에는 지출을 감사하고，부채를 통합하고，투기적 투자를 지연시키는 것이 더 현명합니다。
+          전문가는 가시성의 속도를 조절해야 합니다—프레젠테이션 사이에 휴식을 스케줄하고，팀원과 리더십을 공유하고，캘린더에 협상 불가능한 쿨다운 일을 설정합니다。
+          재산 구조를 항목별로 조정하려면，<a class="text-gold-300 underline" href="/blog/advanced-bazi-wealth-analysis-mastery">재산 등급 진급 해석</a>과 함께 차트 내 재성이 뜨거운 사이클에 의해 증폭되는지 확인하세요。
+        </p>
+
+        <h2 class="text-2xl font-bold text-white mt-8 mb-4">감정 응급 처치</h2>
+        <p class="text-mystic-200 leading-relaxed">
+          화 불균형은 인내심과 갈등을 부채질합니다。
+          비 소리를 듣기，수역 근처에서 일기 쓰기，또는 진정 만트라를 암송하는 등의 수 명상을 실천하세요。
+          경계를 부드럽지만 단호하게 전달합니다；화가 정점에 도달했을 때 심야 논쟁을 피하세요。
+        </p>
+
+        <h2 class="text-2xl font-bold text-white mt-8 mb-4">계절 계획 팁</h2>
+        <ul class="list-disc list-inside text-mystic-200 leading-relaxed space-y-2">
+          <li>지원을 위해 금 또는 수의 달에 주요 출시나 이전을 스케줄합니다。</li>
+          <li>음 영양 식사，냉각 허브 차，90분 디지털 일몰 루틴을 로테이션합니다。</li>
+          <li>작업 공간에 수의 장식—분수，파란 톤，또는 반사 표면—을 도입합니다。</li>
+          <li>신경계를 재설정하기 위해 호수나 바다 근처에서 휴가를 계획합니다。또한 <a class="text-gold-300 underline" href="/blog/financial-destiny-report-woman-wealth-path">재산 운명 보고서 사례</a>를 참조하여 금융 행동에 버퍼를 구축하고 화가 강한 시기의 충동적 지출에 끌려가지 않도록 하는 것을 기억하세요。</li>
+        </ul>
+
+        <p class="text-mystic-200 leading-relaxed">
+          수의 실천과 마음챙김 속도를 받아들임으로써，억압적인 열을 명확함，집중된 창의성，그리고 회복력 있는 부 구축의 계절로 변환합니다。
+        </p>
+      </div>
+    `
+    },
     author: 'Master XuanYin',
     date: '2024-07-22',
     readTime: '6 min read',
