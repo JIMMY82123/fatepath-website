@@ -536,11 +536,10 @@ const Contact = () => {
         >
           <div className="mystic-card p-6 sm:p-8 max-w-2xl mx-auto">
             <h3 className="text-xl sm:text-2xl font-playfair font-semibold mb-3 sm:mb-4 text-white">
-              Ready to Begin Your Journey?
+              {t('contact.readyToBegin')}
             </h3>
             <p className="text-sm sm:text-base text-mystic-300 mb-4 sm:mb-6">
-              Don't wait to discover your true potential. Reach out today and take the first step 
-              towards a more enlightened and fulfilling life.
+              {t('contact.readyToBeginDesc')}
             </p>
             <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center">
               <button
@@ -548,13 +547,13 @@ const Contact = () => {
                 className="bg-gradient-to-r from-green-500 to-green-600 text-white font-semibold px-6 sm:px-8 py-3 sm:py-4 rounded-full hover:from-green-400 hover:to-green-500 transition-all duration-300 flex items-center justify-center space-x-2 text-sm sm:text-base"
               >
                 <MessageCircle className="h-4 w-4 sm:h-5 sm:w-5" />
-                <span>Chat on WhatsApp</span>
+                <span>{t('contact.chatOnWhatsApp')}</span>
               </button>
               <button 
                 onClick={() => navigate('/services')}
                 className="border border-gold-500/50 text-gold-400 font-semibold px-6 sm:px-8 py-3 sm:py-4 rounded-full hover:bg-gold-500/10 transition-all duration-300 text-sm sm:text-base"
               >
-                Book a Reading
+                {t('contact.bookReading')}
               </button>
             </div>
           </div>
