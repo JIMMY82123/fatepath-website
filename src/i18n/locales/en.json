@@ -369,5 +369,27 @@
     "plantingGingerAriaLabel": "Read about planting prosperity ginger ritual",
     "plantingGingerTitle": "Planting 'Lu-Gen' Ginger: a Simple, House-Safe Prosperity Ritual",
     "sendEmailAriaLabel": "Send us an email"
+  },
+  "blog": {
+    "heroTitle": "Ancient Wisdom",
+    "heroSubtitle": "Modern Insights",
+    "heroDescription": "Discover the timeless wisdom of Chinese astrology through expert analysis, practical guidance, and spiritual insights that illuminate your life's path.",
+    "allArticles": "All Articles",
+    "category": {
+      "bazi": "BaZi Analysis",
+      "love": "Love & Relationships",
+      "wealth": "Wealth & Career"
+    },
+    "filterByTags": "Filter by Tags",
+    "tagSearchHint": "Search any topic or choose from the trending tags below.",
+    "searchTagsPlaceholder": "Search tags...",
+    "noTagsFound": "No tags found for \"{{term}}\"",
+    "allTags": "All Tags",
+    "noArticlesFound": "No articles found",
+    "tryAdjustingFilters": "Try adjusting your filter criteria.",
+    "readMore": "Read More",
+    "ctaTitle": "Ready to Discover Your Destiny?",
+    "ctaDescription": "Get your personalized BaZi reading and unlock the ancient wisdom that will guide your life's journey.",
+    "ctaButton": "Start Your Free Reading"
   }
 }
