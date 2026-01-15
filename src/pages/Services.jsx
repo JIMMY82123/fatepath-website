@@ -1,27 +1,22 @@
 import { motion } from 'framer-motion'
 import { Star, ArrowRight, FileText, BookOpen, Check } from 'lucide-react'
 import { Link } from 'react-router-dom'
+import { useTranslation } from 'react-i18next'
 import SEO from '../components/SEO'
 
 const Services = () => {
+  const { t } = useTranslation()
   const servicePackages = [
     {
       id: 0,
-      name: "2026 Bazi Annual Outlook (Taster)",
-      subtitle: "Taster / Basic",
-      price: "$15",
+      name: t('services.taster.name'),
+      subtitle: t('services.taster.subtitle'),
+      price: t('services.taster.price'),
       period: "",
       icon: <FileText className="h-8 w-8" />,
-      description: "Perfect for first-time clients curious about BaZi. Get a focused 2026 annual fortune report covering wealth, health, and relationship trends.",
-      features: [
-        "2026 single-year fortune report",
-        "Focus on wealth, health, and relationship trends",
-        "Important notes and precautions for 2026",
-        "2-4 page PDF report",
-        "Delivery within 3-5 days after payment",
-        "One-time report (no WA Q&A)"
-      ],
-      note: "Ideal for entry-level clients who want to experience BaZi analysis at an affordable price.",
+      description: t('services.taster.description'),
+      features: t('services.taster.features', { returnObjects: true }),
+      note: t('services.taster.note'),
       color: "from-green-500 to-emerald-500",
       bgColor: "bg-green-500/10",
       borderColor: "border-green-500/50",
@@ -30,21 +25,14 @@ const Services = () => {
     },
     {
       id: 1,
-      name: "5-Year Bazi Outlook (2026-2030) + WA Q&A",
-      subtitle: "Detailed / Premium",
-      price: "$30",
+      name: t('services.detailed.name'),
+      subtitle: t('services.detailed.subtitle'),
+      price: t('services.detailed.price'),
       period: "",
       icon: <BookOpen className="h-8 w-8" />,
-      description: "Comprehensive 5-year fortune analysis with WhatsApp support. Perfect for clients seeking deep insights and interactive guidance.",
-      features: [
-        "Detailed 5-year fortune report (2026-2030)",
-        "Annual wealth, health, and relationship trends",
-        "Yearly opportunities, risks, and precautions",
-        "6-8 page PDF report",
-        "Delivery within 5-7 days after payment",
-        "WhatsApp Q&A support (3-5 questions, within 7 days after delivery)"
-      ],
-      note: "Perfect for clients who want long-term insights and interactive Q&A support.",
+      description: t('services.detailed.description'),
+      features: t('services.detailed.features', { returnObjects: true }),
+      note: t('services.detailed.note'),
       color: "from-purple-500 to-pink-500",
       bgColor: "bg-purple-500/10",
       borderColor: "border-purple-500/50",
@@ -88,10 +76,10 @@ const Services = () => {
               <Star className="h-8 w-8 sm:h-10 sm:w-10 text-white" aria-hidden="true" />
             </div>
             <h1 className="text-2xl sm:text-3xl md:text-4xl font-cinzel font-bold mb-3 sm:mb-4 text-white">
-              BaZi Fortune Reading Services
+              {t('services.title')}
             </h1>
             <p className="text-lg sm:text-xl text-mystic-300 max-w-3xl mx-auto">
-              Choose from two professional BaZi reading packages. Get personalized fortune insights for 2026 or comprehensive 5-year analysis with interactive support.
+              {t('services.subtitle')}
             </p>
           </motion.div>
 
@@ -109,7 +97,7 @@ const Services = () => {
                 {tier.popular && (
                   <div className="absolute -top-4 left-1/2 transform -translate-x-1/2">
                     <div className="bg-gradient-to-r from-gold-500 to-yellow-500 text-black px-4 py-1 rounded-full text-xs font-bold">
-                      MOST POPULAR
+                      {t('services.detailed.popular')}
                     </div>
                   </div>
                 )}
@@ -170,7 +158,7 @@ const Services = () => {
                   whileTap={{ scale: 0.98 }}
                   className={`w-full bg-gradient-to-r ${tier.color} text-white font-poppins font-semibold py-3 sm:py-4 px-6 rounded-full flex items-center justify-center space-x-2 hover:opacity-90 transition-all duration-300 tracking-wide text-sm sm:text-base mt-auto`}
                 >
-                  <span>Pay with Ko-fi</span>
+                  <span>{t('services.taster.purchaseNow')}</span>
                   <ArrowRight className="h-4 w-4 sm:h-5 sm:w-5" />
                 </motion.a>
               </motion.div>
@@ -191,10 +179,10 @@ const Services = () => {
                 <Star className="h-8 w-8 text-white" />
               </div>
               <h3 className="text-xl sm:text-2xl font-cinzel font-semibold mb-3 text-white">
-                How It Works
+                {t('services.howItWorks.title')}
               </h3>
               <p className="text-sm sm:text-base text-mystic-300 mb-6">
-                Simple three-step process to get your personalized BaZi fortune reading:
+                {t('services.howItWorks.description')}
               </p>
             </div>
             
@@ -203,9 +191,9 @@ const Services = () => {
                 <div className="w-12 h-12 rounded-full bg-gradient-to-r from-blue-500 to-cyan-500 flex items-center justify-center mx-auto mb-3">
                   <span className="text-white font-bold text-lg">1</span>
                 </div>
-                <h4 className="text-lg font-semibold text-white mb-2">Complete Payment</h4>
+                <h4 className="text-lg font-semibold text-white mb-2">{t('services.howItWorks.step1.title')}</h4>
                 <p className="text-sm text-mystic-300">
-                  Pay securely through Ko-fi using the payment link for your chosen package.
+                  {t('services.howItWorks.step1.description')}
                 </p>
               </div>
 
@@ -213,9 +201,9 @@ const Services = () => {
                 <div className="w-12 h-12 rounded-full bg-gradient-to-r from-purple-500 to-pink-500 flex items-center justify-center mx-auto mb-3">
                   <span className="text-white font-bold text-lg">2</span>
                 </div>
-                <h4 className="text-lg font-semibold text-white mb-2">Provide Your Information</h4>
+                <h4 className="text-lg font-semibold text-white mb-2">{t('services.howItWorks.step2.title')}</h4>
                 <p className="text-sm text-mystic-300">
-                  I will contact you via Ko-fi private message to collect your birth details (date, time, location, gender) and any specific questions.
+                  {t('services.howItWorks.step2.description')}
                 </p>
               </div>
 
@@ -223,16 +211,16 @@ const Services = () => {
                 <div className="w-12 h-12 rounded-full bg-gradient-to-r from-green-500 to-emerald-500 flex items-center justify-center mx-auto mb-3">
                   <span className="text-white font-bold text-lg">3</span>
                 </div>
-                <h4 className="text-lg font-semibold text-white mb-2">Receive Your Report</h4>
+                <h4 className="text-lg font-semibold text-white mb-2">{t('services.howItWorks.step3.title')}</h4>
                 <p className="text-sm text-mystic-300">
-                  Get your personalized PDF report delivered to your email within the specified timeframe.
+                  {t('services.howItWorks.step3.description')}
                 </p>
               </div>
             </div>
 
             <div className="mt-6 p-4 bg-mystic-800/30 rounded-lg border border-mystic-700/30">
               <p className="text-xs sm:text-sm text-mystic-300 text-center">
-                <span className="text-gold-400 font-semibold">💡 Note:</span> After payment, I will contact you via Ko-fi private message to collect your birth details. Please check your Ko-fi messages and provide accurate information for the most accurate analysis.
+                {t('services.howItWorks.note')}
               </p>
             </div>
           </div>

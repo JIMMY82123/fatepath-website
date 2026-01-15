@@ -3,7 +3,8 @@ import { initReactI18next } from 'react-i18next'
 import LanguageDetector from 'i18next-browser-languagedetector'
 
 import enTranslations from './locales/en.json'
-import zhTranslations from './locales/zh.json'
+import jaTranslations from './locales/ja.json'
+import koTranslations from './locales/ko.json'
 
 i18n
   .use(LanguageDetector) // 自动检测浏览器语言
@@ -13,8 +14,11 @@ i18n
       en: {
         translation: enTranslations
       },
-      zh: {
-        translation: zhTranslations
+      ja: {
+        translation: jaTranslations
+      },
+      ko: {
+        translation: koTranslations
       }
     },
     fallbackLng: 'en', // 默认语言

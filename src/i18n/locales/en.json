@@ -83,29 +83,100 @@
     "cta": "Get Your Free BaZi Chart"
   },
   "services": {
-    "title": "Our Services",
+    "title": "BaZi Fortune Reading Services",
+    "subtitle": "Choose from two professional BaZi reading packages. Get personalized fortune insights for 2026 or comprehensive 5-year analysis with interactive support.",
     "taster": {
-      "name": "2026 Annual Bazi Report",
+      "name": "2026 Bazi Annual Outlook (Taster)",
+      "subtitle": "Taster / Basic",
       "price": "$15",
-      "description": "Perfect for first-time clients. Get a focused 2026 annual fortune report covering wealth, health, and relationship trends.",
+      "description": "Perfect for first-time clients curious about BaZi. Get a focused 2026 annual fortune report covering wealth, health, and relationship trends.",
       "features": [
         "2026 single-year fortune report",
         "Focus on wealth, health, and relationship trends",
+        "Important notes and precautions for 2026",
         "2-4 page PDF report",
-        "Delivery within 3-5 days"
-      ]
+        "Delivery within 3-5 days after payment",
+        "One-time report (no WA Q&A)"
+      ],
+      "note": "Ideal for entry-level clients who want to experience BaZi analysis at an affordable price.",
+      "popular": "Most Popular",
+      "purchaseNow": "Purchase Now",
+      "viewDetails": "View Details"
     },
     "detailed": {
-      "name": "5-Year Detailed Outlook + WA Q&A",
+      "name": "5-Year Bazi Outlook (2026-2030) + WA Q&A",
+      "subtitle": "Detailed / Premium",
       "price": "$30",
-      "description": "Comprehensive 5-year fortune analysis (2026-2030) with WhatsApp support for interactive guidance.",
+      "description": "Comprehensive 5-year fortune analysis with WhatsApp support. Perfect for clients seeking deep insights and interactive guidance.",
       "features": [
         "Detailed 5-year fortune report (2026-2030)",
         "Annual wealth, health, and relationship trends",
+        "Yearly opportunities, risks, and precautions",
         "6-8 page PDF report",
-        "WhatsApp Q&A support (3-5 questions)"
-      ]
+        "Delivery within 5-7 days after payment",
+        "WhatsApp Q&A support (3-5 questions, within 7 days after delivery)"
+      ],
+      "note": "Perfect for clients who want long-term insights and interactive Q&A support.",
+      "popular": "Most Popular",
+      "purchaseNow": "Pay with Ko-fi",
+      "viewDetails": "View Details"
+    },
+    "howItWorks": {
+      "title": "How It Works",
+      "description": "Simple three-step process to get your personalized BaZi fortune reading:",
+      "step1": {
+        "title": "Complete Payment",
+        "description": "Pay securely through Ko-fi using the payment link for your chosen package."
+      },
+      "step2": {
+        "title": "Provide Your Information",
+        "description": "I will contact you via Ko-fi private message to collect your birth details (date, time, location, gender) and any specific questions."
+      },
+      "step3": {
+        "title": "Receive Your Report",
+        "description": "Get your personalized PDF report delivered to your email within the specified timeframe."
+      },
+      "note": "💡 Note: After payment, I will contact you via Ko-fi private message to collect your birth details. Please check your Ko-fi messages and provide accurate information for the most accurate analysis."
     }
+  },
+  "faq": {
+    "title": "Frequently Asked Questions",
+    "subtitle": "Everything you need to know about BaZi readings and our services"
+  },
+  "contact": {
+    "title": "Get Life Direction Help",
+    "subtitle": "Feeling lost or stuck in life? Contact our professional Chinese astrology expert for personalized life direction and career guidance.",
+    "formTitle": "Send Us a Message",
+    "firstName": "First Name",
+    "lastName": "Last Name",
+    "email": "Email",
+    "serviceInterest": "Service Interest",
+    "message": "Message",
+    "whatsapp": "WhatsApp",
+    "whatsappValue": "+86 15914228258",
+    "whatsappDesc": "Fastest way to reach me",
+    "emailLabel": "Email",
+    "emailValue": "chenxiao0801@hotmail.com",
+    "emailDesc": "For detailed inquiries",
+    "chatOnWhatsApp": "Chat on WhatsApp",
+    "bookReading": "Book a Reading",
+    "readyToBegin": "Ready to Begin Your Journey?",
+    "readyToBeginDesc": "Don't wait to discover your true potential. Reach out today and take the first step towards a more enlightened and fulfilling life.",
+    "businessHours": "Business Hours",
+    "mondayFriday": "Monday - Friday",
+    "saturday": "Saturday",
+    "sunday": "Sunday",
+    "hours1": "9:00 AM - 8:00 PM (CST)",
+    "hours2": "10:00 AM - 6:00 PM (CST)",
+    "hours3": "12:00 PM - 5:00 PM (CST)",
+    "usTimeZones": "US Time Zone Conversions",
+    "easternTime": "Eastern Time (EST/EDT)",
+    "centralTime": "Central Time (CST/CDT)",
+    "mountainTime": "Mountain Time (MST/MDT)",
+    "pacificTime": "Pacific Time (PST/PDT)",
+    "submitting": "Submitting...",
+    "submitted": "Message Sent Successfully!",
+    "submittedDesc": "Thank you for contacting us. We'll get back to you as soon as possible."
   },
   "celebrities": {
     "title": "Famous People Born Today",
