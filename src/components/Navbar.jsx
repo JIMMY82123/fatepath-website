@@ -1,10 +1,13 @@
-import { useState, useRef, useEffect } from 'react'
+import { useState, useRef, useEffect, useMemo } from 'react'
 import { Link, useLocation } from 'react-router-dom'
 import { motion, AnimatePresence } from 'framer-motion'
 import { Menu, X, Sparkles } from 'lucide-react'
+import { useTranslation } from 'react-i18next'
 import GPTButton from './GPTButton'
+import LanguageSwitcher from './LanguageSwitcher'
 
 const Navbar = () => {
+  const { t } = useTranslation()
   const [isOpen, setIsOpen] = useState(false)
   const [isToolsOpen, setIsToolsOpen] = useState(false)
   const [isMobileToolsOpen, setIsMobileToolsOpen] = useState(false)
@@ -25,7 +28,7 @@ const Navbar = () => {
     }
   }, [])
 
-  const navItems = [
+  const navItems = useMemo(() => [
     { path: '/', label: t('common.home') },
     { path: '/services', label: t('common.services') },
     { path: '/blog', label: t('common.blog') },
@@ -44,7 +47,7 @@ const Navbar = () => {
     { path: '/testimonials', label: t('common.testimonials') },
     { path: '/faq', label: t('common.faq') },
     { path: '/contact', label: t('common.contact') }
-  ]
+  ], [t])
 
   // 检查当前路径是否在工具菜单中
   const isToolsActive = navItems.find(item => item.hasDropdown && item.items?.some(subItem => location.pathname === subItem.path))
