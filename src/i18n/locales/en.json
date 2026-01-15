@@ -391,5 +391,37 @@
     "ctaTitle": "Ready to Discover Your Destiny?",
     "ctaDescription": "Get your personalized BaZi reading and unlock the ancient wisdom that will guide your life's journey.",
     "ctaButton": "Start Your Free Reading"
+  },
+  "testimonials": {
+    "heroTitle": "Client Success Stories",
+    "heroDescription": "Discover how our BaZi reading services have transformed lives across the globe. Real stories from real people who found clarity, direction, and purpose.",
+    "stats": {
+      "clients": "Happy Clients",
+      "experience": "Years Experience",
+      "rating": "Average Rating"
+    },
+    "tabs": {
+      "personal": "Personal Stories",
+      "reddit": "Reddit Community"
+    },
+    "searchPlaceholder": "Search testimonials...",
+    "services": {
+      "all": "All Services",
+      "fullBazi": "Full BaZi Reading",
+      "career": "Career Guidance",
+      "love": "Love Compatibility",
+      "relationship": "Relationship Reading",
+      "talisman": "Custom Talisman"
+    },
+    "ratings": {
+      "all": "All Ratings",
+      "five": "5 Stars",
+      "four": "4+ Stars"
+    },
+    "noResults": "No testimonials found",
+    "tryAdjusting": "Try adjusting your search criteria or filters.",
+    "redditTitle": "Community Love on Reddit",
+    "redditDescription": "Click on any review to see it in full size",
+    "clickToEnlarge": "Click to enlarge"
   }
 }

@@ -400,5 +400,37 @@
     "ctaTitle": "당신의 운명을 발견할 준비가 되셨나요?",
     "ctaDescription": "개인화된 팔자 리딩을 받고 당신의 인생 여정을 안내할 고대의 지혜를 풀어보세요.",
     "ctaButton": "무료 리딩 시작"
+  },
+  "testimonials": {
+    "heroTitle": "고객 성공 스토리",
+    "heroDescription": "우리의 팔자 리딩 서비스가 전 세계 사람들의 삶을 어떻게 변화시켰는지 발견하세요. 명확성, 방향성, 목적을 찾은 실제 사람들의 실제 스토리.",
+    "stats": {
+      "clients": "만족한 고객",
+      "experience": "년의 경험",
+      "rating": "평균 평점"
+    },
+    "tabs": {
+      "personal": "개인 스토리",
+      "reddit": "Reddit 커뮤니티"
+    },
+    "searchPlaceholder": "고객 후기를 검색...",
+    "services": {
+      "all": "모든 서비스",
+      "fullBazi": "전체 팔자 리딩",
+      "career": "직업 가이드",
+      "love": "연애 궁합",
+      "relationship": "관계 리딩",
+      "talisman": "맞춤 탈리스만"
+    },
+    "ratings": {
+      "all": "모든 평점",
+      "five": "5성",
+      "four": "4성 이상"
+    },
+    "noResults": "고객 후기를 찾을 수 없습니다",
+    "tryAdjusting": "검색 조건이나 필터를 조정해 보세요.",
+    "redditTitle": "Reddit에서의 커뮤니티 사랑",
+    "redditDescription": "리뷰를 클릭하여 전체 크기로 보기",
+    "clickToEnlarge": "클릭하여 확대"
   }
 }

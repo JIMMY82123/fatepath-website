@@ -400,5 +400,37 @@
     "ctaTitle": "運命を発見する準備はできていますか？",
     "ctaDescription": "個人的な八字リーディングを取得し、あなたの人生の旅を導く古代の知恵を解き放ってください。",
     "ctaButton": "無料リーディングを開始"
+  },
+  "testimonials": {
+    "heroTitle": "お客様の成功ストーリー",
+    "heroDescription": "私たちの八字リーディングサービスが世界中の人々の人生をどのように変えたかを発見してください。明確さ、方向性、目的を見つけた実際の人々からの実際のストーリー。",
+    "stats": {
+      "clients": "満足したお客様",
+      "experience": "年の経験",
+      "rating": "平均評価"
+    },
+    "tabs": {
+      "personal": "個人のストーリー",
+      "reddit": "Redditコミュニティ"
+    },
+    "searchPlaceholder": "お客様の声を検索...",
+    "services": {
+      "all": "すべてのサービス",
+      "fullBazi": "完全八字リーディング",
+      "career": "キャリアガイダンス",
+      "love": "恋愛相性",
+      "relationship": "関係リーディング",
+      "talisman": "カスタムタリスマン"
+    },
+    "ratings": {
+      "all": "すべての評価",
+      "five": "5つ星",
+      "four": "4つ星以上"
+    },
+    "noResults": "お客様の声が見つかりませんでした",
+    "tryAdjusting": "検索条件やフィルターを調整してみてください。",
+    "redditTitle": "Redditでのコミュニティの愛",
+    "redditDescription": "レビューをクリックしてフルサイズで表示",
+    "clickToEnlarge": "クリックして拡大"
   }
 }

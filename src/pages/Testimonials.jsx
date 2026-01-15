@@ -1,10 +1,12 @@
-import { useState, useEffect } from 'react'
+import { useState, useEffect, useMemo } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import { Star, Heart, Shield, Star as StarIcon, Filter, Search, MessageCircle, X } from 'lucide-react'
+import { useTranslation } from 'react-i18next'
 import SEO from '../components/SEO'
 import { getCachedAIAvatar, generateAvatarUrls } from '../utils/aiAvatarGenerator'
 
 const Testimonials = () => {
+  const { t } = useTranslation()
   const [searchTerm, setSearchTerm] = useState('')
   const [selectedService, setSelectedService] = useState('all')
   const [selectedRating, setSelectedRating] = useState('all')
@@ -123,20 +125,20 @@ const Testimonials = () => {
     setTestimonialsWithAvatars(testimonialsWithAI)
   }, [])
 
-  const services = [
-    { value: 'all', label: 'All Services' },
-    { value: 'Full BaZi Reading', label: 'Full BaZi Reading' },
-    { value: 'Career Guidance Reading', label: 'Career Guidance' },
-    { value: 'Love Compatibility Reading', label: 'Love Compatibility' },
-    { value: 'Relationship Reading', label: 'Relationship Reading' },
-    { value: 'Custom Talisman', label: 'Custom Talisman' }
-  ]
+  const services = useMemo(() => [
+    { value: 'all', label: t('testimonials.services.all') },
+    { value: 'Full BaZi Reading', label: t('testimonials.services.fullBazi') },
+    { value: 'Career Guidance Reading', label: t('testimonials.services.career') },
+    { value: 'Love Compatibility Reading', label: t('testimonials.services.love') },
+    { value: 'Relationship Reading', label: t('testimonials.services.relationship') },
+    { value: 'Custom Talisman', label: t('testimonials.services.talisman') }
+  ], [t])
 
-  const ratings = [
-    { value: 'all', label: 'All Ratings' },
-    { value: '5', label: '5 Stars' },
-    { value: '4', label: '4+ Stars' }
-  ]
+  const ratings = useMemo(() => [
+    { value: 'all', label: t('testimonials.ratings.all') },
+    { value: '5', label: t('testimonials.ratings.five') },
+    { value: '4', label: t('testimonials.ratings.four') }
+  ], [t])
 
   const renderStars = (rating) => {
     return Array.from({ length: 5 }, (_, i) => (
@@ -195,11 +197,10 @@ const Testimonials = () => {
             className="text-center mb-12 sm:mb-16"
           >
             <h1 className="text-3xl sm:text-4xl md:text-6xl font-playfair font-bold mb-4 sm:mb-6">
-              <span className="gradient-text">Client Success Stories</span>
+              <span className="gradient-text">{t('testimonials.heroTitle')}</span>
             </h1>
             <p className="text-lg sm:text-xl text-mystic-300 max-w-3xl mx-auto leading-relaxed">
-              Discover how our BaZi reading services have transformed lives across the globe. 
-              Real stories from real people who found clarity, direction, and purpose.
+              {t('testimonials.heroDescription')}
             </p>
           </motion.div>
 
@@ -212,15 +213,15 @@ const Testimonials = () => {
           >
             <div className="mystic-card p-6 text-center">
               <div className="text-3xl font-bold text-gold-400 mb-2">500+</div>
-              <div className="text-mystic-300">Happy Clients</div>
+              <div className="text-mystic-300">{t('testimonials.stats.clients')}</div>
             </div>
             <div className="mystic-card p-6 text-center">
               <div className="text-3xl font-bold text-gold-400 mb-2">15+</div>
-              <div className="text-mystic-300">Years Experience</div>
+              <div className="text-mystic-300">{t('testimonials.stats.experience')}</div>
             </div>
             <div className="mystic-card p-6 text-center">
               <div className="text-3xl font-bold text-gold-400 mb-2">5.0</div>
-              <div className="text-mystic-300">Average Rating</div>
+              <div className="text-mystic-300">{t('testimonials.stats.rating')}</div>
             </div>
           </motion.div>
 
@@ -242,7 +243,7 @@ const Testimonials = () => {
                   }`}
                 >
                   <Star className="inline-block h-4 w-4 mr-2" />
-                  Personal Stories
+                  {t('testimonials.tabs.personal')}
                 </button>
                 <button
                   onClick={() => setActiveTab('reddit')}
@@ -253,7 +254,7 @@ const Testimonials = () => {
                   }`}
                 >
                   <MessageCircle className="inline-block h-4 w-4 mr-2" />
-                  Reddit Community
+                  {t('testimonials.tabs.reddit')}
                 </button>
               </div>
             </div>
@@ -275,7 +276,7 @@ const Testimonials = () => {
                     <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 h-5 w-5 text-mystic-400" aria-hidden="true" />
                     <input
                       type="text"
-                      placeholder="Search testimonials..."
+                      placeholder={t('testimonials.searchPlaceholder')}
                       value={searchTerm}
                       onChange={(e) => setSearchTerm(e.target.value)}
                       className="w-full pl-10 pr-4 py-3 text-base bg-mystic-800/50 border border-mystic-700/50 rounded-lg text-white placeholder-mystic-400 focus:border-gold-500/50 focus:outline-none transition-colors"
@@ -383,8 +384,8 @@ const Testimonials = () => {
                   className="text-center py-12"
                 >
                   <div className="text-6xl mb-4">🔍</div>
-                  <h3 className="text-xl font-semibold text-white mb-2">No testimonials found</h3>
-                  <p className="text-mystic-400">Try adjusting your search criteria or filters.</p>
+                  <h3 className="text-xl font-semibold text-white mb-2">{t('testimonials.noResults')}</h3>
+                  <p className="text-mystic-400">{t('testimonials.tryAdjusting')}</p>
                 </motion.div>
               )}
             </>
@@ -398,8 +399,8 @@ const Testimonials = () => {
                 className="mb-12"
               >
                 <div className="text-center mb-8">
-                  <h2 className="text-2xl font-bold text-white mb-4">Community Love on Reddit</h2>
-                  <p className="text-mystic-300">Click on any review to see it in full size</p>
+                  <h2 className="text-2xl font-bold text-white mb-4">{t('testimonials.redditTitle')}</h2>
+                  <p className="text-mystic-300">{t('testimonials.redditDescription')}</p>
                 </div>
                 
                 {/* Mosaic Grid */}
@@ -434,7 +435,7 @@ const Testimonials = () => {
                         <div className="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
                           <div className="text-center text-white">
                             <MessageCircle className="h-8 w-8 mx-auto mb-2 text-gold-400" />
-                            <p className="text-sm font-medium">Click to enlarge</p>
+                            <p className="text-sm font-medium">{t('testimonials.clickToEnlarge')}</p>
                           </div>
                         </div>
                       </div>
