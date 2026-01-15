@@ -551,9 +551,18 @@ export const blogPostsData = {
     ]
   },
   "decision-fatigue-burnout-recovery-four-pillars": {
-    title: "Decision Fatigue at Work: A Four Pillars Routine for Burnout Recovery",
-    excerpt: "Struggling with decision fatigue and burnout? Learn how Chinese Bazi (Four Pillars of Destiny) can help you create a personalized energy recovery plan based on the Five Elements. Discover targeted micro-habits to replenish your depleted energy and restore your decision-making power.",
-    content: `
+    title: {
+      en: "Decision Fatigue at Work: A Four Pillars Routine for Burnout Recovery",
+      ja: "仕事での決断疲れ：燃え尽きからの回復のための四柱ルーティン",
+      ko: "직장에서의 결정 피로: 번아웃 회복을 위한 사주 루틴"
+    },
+    excerpt: {
+      en: "Struggling with decision fatigue and burnout? Learn how Chinese Bazi (Four Pillars of Destiny) can help you create a personalized energy recovery plan based on the Five Elements. Discover targeted micro-habits to replenish your depleted energy and restore your decision-making power.",
+      ja: "決断疲れや燃え尽きに苦しんでいますか？中国の八字（四柱推命）が五行に基づいて個人的なエネルギー回復計画を作成するのにどのように役立つかを学びましょう。枯渇したエネルギーを補充し、意思決定力を回復するためのターゲットを絞ったマイクロ習慣を発見してください。",
+      ko: "결정 피로와 번아웃으로 고생하고 계신가요? 중국 팔자（사주）가 오행에 기반하여 개인화된 에너지 회복 계획을 만드는 데 어떻게 도움이 되는지 알아보세요. 고갈된 에너지를 보충하고 의사 결정력을 회복하기 위한 타겟팅된 마이크로 습관을 발견하세요."
+    },
+    content: {
+      en: `
       <div class="space-y-8">
         <div class="mb-8">
           <div class="bg-gradient-to-r from-orange-500/20 to-amber-500/20 border border-orange-500/30 rounded-lg p-6 mb-8">
