@@ -7150,9 +7150,18 @@ export const blogPostsData = {
       ]
     },
     "five-elements-love-perfect-match": {
-      title: "The Five Elements in Love: Finding Your Perfect Match",
-      excerpt: "Unlock the secrets of romantic compatibility through the Five Elements (五行) system. Learn how Wood, Fire, Earth, Metal, and Water energies create harmony or conflict in relationships.",
-      content: `
+      title: {
+        en: "The Five Elements in Love: Finding Your Perfect Match",
+        ja: "愛における五行：あなたの完璧なマッチを見つける",
+        ko: "사랑에서의 오행：당신의 완벽한 짝 찾기"
+      },
+      excerpt: {
+        en: "Unlock the secrets of romantic compatibility through the Five Elements (五行) system. Learn how Wood, Fire, Earth, Metal, and Water energies create harmony or conflict in relationships.",
+        ja: "五行（五行）システムを通じてロマンチックな互換性の秘密を解き放ちます。木、火、土、金、水のエネルギーが関係において調和または対立をどのように作り出すかを学びます。",
+        ko: "오행（五行）시스템을 통해 낭만적 호환성의 비밀을 풀어보세요。목，화，토，금，수의 에너지가 관계에서 조화 또는 갈등을 어떻게 만드는지 배웁니다。"
+      },
+      content: {
+        en: `
         <p class="mb-6 text-lg text-mystic-200 leading-relaxed">
           Love and relationships in Chinese astrology are deeply influenced by the Five Elements theory. 
           Understanding how these elemental energies interact can help you find your perfect match and 
@@ -7207,6 +7216,87 @@ export const blogPostsData = {
           Metal collects Water. Understanding these cycles can help you identify compatible partners.
         </p>
       `,
+        ja: `
+        <p class="mb-6 text-lg text-mystic-200 leading-relaxed">
+          中国占星術における愛と関係は、五行理論に深く影響されています。これらの要素エネルギーの相互作用を理解することで、あなたの完璧なマッチを見つけ、調和の取れた関係を構築することができます。
+        </p>
+        
+        <h2 class="text-2xl font-bold text-white mb-4 mt-8">関係における五行</h2>
+        <p class="mb-6 text-mystic-200 leading-relaxed">
+          各人は、木、火、土、金、水の五行の独特な組み合わせを持っています。これらの要素は、ロマンチックな絆を強化または弱める特定の方法で相互作用します。
+        </p>
+        
+        <h2 class="text-2xl font-bold text-white mb-4 mt-8">木の要素（木）</h2>
+        <p class="mb-6 text-mystic-200 leading-relaxed">
+          木は成長、拡張、上向きの動きを表します。強い木のエネルギーを持つ人々は、野心的で理想的であり、常に成長を求めています。関係では、彼らは自分の夢をサポートし、拡張するためのスペースを与えるパートナーを必要とします。
+        </p>
+        
+        <h2 class="text-2xl font-bold text-white mb-4 mt-8">火の要素（火）</h2>
+        <p class="mb-6 text-mystic-200 leading-relaxed">
+          火は情熱、温かさ、変容を表します。火の人々はカリスマ的で表現力があり、関係に興奮をもたらします。彼らは自分の強度を処理し、感情的な安定を提供できるパートナーを必要とします。
+        </p>
+        
+        <h2 class="text-2xl font-bold text-white mb-4 mt-8">土の要素（土）</h2>
+        <p class="mb-6 text-mystic-200 leading-relaxed">
+          土は安定、育成、実用性を表します。土の人々は信頼でき、思いやりがあり、長期的な関係を構築することに優れています。彼らは自分の安定した性質を評価し、当然のことと思わないパートナーを必要とします。
+        </p>
+        
+        <h2 class="text-2xl font-bold text-white mb-4 mt-8">金の要素（金）</h2>
+        <p class="mb-6 text-mystic-200 leading-relaxed">
+          金は精密さ、明確さ、構造を表します。金の人々は組織化され、原則的で、量よりも質を重視します。関係では、彼らは自分の境界を尊重し、自分の価値観を共有するパートナーを必要とします。
+        </p>
+        
+        <h2 class="text-2xl font-bold text-white mb-4 mt-8">水の要素（水）</h2>
+        <p class="mb-6 text-mystic-200 leading-relaxed">
+          水は知恵、適応性、流れを表します。水の人々は直感的で、柔軟で、優れたコミュニケーターです。彼らは自分の感情的な深さに匹敵し、自分の知恵を評価できるパートナーを必要とします。
+        </p>
+        
+        <h2 class="text-2xl font-bold text-white mb-4 mt-8">あなたの要素マッチを見つける</h2>
+        <p class="mb-6 text-mystic-200 leading-relaxed">
+          最良の関係は、しばしば互いにサポートする要素の間で発生します。例えば、水は木を育み、木は火を養い、火は土を作り、土は金を生み出し、金は水を集めます。これらのサイクルを理解することで、互換性のあるパートナーを特定することができます。
+        </p>
+      `,
+        ko: `
+        <p class="mb-6 text-lg text-mystic-200 leading-relaxed">
+          중국 점성술에서 사랑과 관계는 오행 이론에 깊이 영향을 받습니다。이러한 요소 에너지의 상호작용을 이해하면，당신의 완벽한 짝을 찾고 조화로운 관계를 구축할 수 있습니다。
+        </p>
+        
+        <h2 class="text-2xl font-bold text-white mb-4 mt-8">관계에서의 오행</h2>
+        <p class="mb-6 text-mystic-200 leading-relaxed">
+          각 사람은 목，화，토，금，수의 오행의 고유한 조합을 가지고 있습니다。이러한 요소들은 낭만적 유대를 강화하거나 약화시킬 수 있는 특정한 방식으로 상호작용합니다。
+        </p>
+        
+        <h2 class="text-2xl font-bold text-white mb-4 mt-8">목 요소（목）</h2>
+        <p class="mb-6 text-mystic-200 leading-relaxed">
+          목은 성장，확장，상승 운동을 나타냅니다。강한 목 에너지를 가진 사람들은 야심적이고 이상주의적이며，항상 성장을 추구합니다。관계에서，그들은 자신의 꿈을 지원하고 확장할 공간을 제공하는 파트너가 필요합니다。
+        </p>
+        
+        <h2 class="text-2xl font-bold text-white mb-4 mt-8">화 요소（화）</h2>
+        <p class="mb-6 text-mystic-200 leading-relaxed">
+          화는 열정，따뜻함，변환을 나타냅니다。화 사람들은 카리스마적이고 표현력이 있으며，관계에 흥미를 가져옵니다。그들은 자신의 강도를 처리하고 감정적 안정을 제공할 수 있는 파트너가 필요합니다。
+        </p>
+        
+        <h2 class="text-2xl font-bold text-white mb-4 mt-8">토 요소（토）</h2>
+        <p class="mb-6 text-mystic-200 leading-relaxed">
+          토는 안정성，육성，실용성을 나타냅니다。토 사람들은 신뢰할 수 있고 배려심이 있으며，장기적인 관계 구축에 뛰어납니다。그들은 자신의 안정적인 성질을 평가하고 당연하게 여기지 않는 파트너가 필요합니다。
+        </p>
+        
+        <h2 class="text-2xl font-bold text-white mb-4 mt-8">금 요소（금）</h2>
+        <p class="mb-6 text-mystic-200 leading-relaxed">
+          금은 정밀함，명확함，구조를 나타냅니다。금 사람들은 조직적이고 원칙적이며，양보다 질을 중시합니다。관계에서，그들은 자신의 경계를 존중하고 자신의 가치관을 공유하는 파트너가 필요합니다。
+        </p>
+        
+        <h2 class="text-2xl font-bold text-white mb-4 mt-8">수 요소（수）</h2>
+        <p class="mb-6 text-mystic-200 leading-relaxed">
+          수는 지혜，적응력，흐름을 나타냅니다。수 사람들은 직관적이고 유연하며，우수한 커뮤니케이터입니다。그들은 자신의 감정적 깊이에 맞고 자신의 지혜를 평가할 수 있는 파트너가 필요합니다。
+        </p>
+        
+        <h2 class="text-2xl font-bold text-white mb-4 mt-8">당신의 요소 매치 찾기</h2>
+        <p class="mb-6 text-mystic-200 leading-relaxed">
+          최고의 관계는 종종 서로를 지원하는 요소들 사이에서 발생합니다。예를 들어，수는 목을 육성하고，목은 화를 기르고，화는 토를 만들고，토는 금을 생산하며，금은 수를 수집합니다。이러한 사이클을 이해하면 호환 가능한 파트너를 식별할 수 있습니다。
+        </p>
+      `
+      },
       author: "Master Chen",
       date: "2024-01-10",
       readTime: "7 min read",
