@@ -1,0 +1,219 @@
+{
+  "metadata": {
+    "name": "Celebrities Database",
+    "description": "Database of famous people with birth dates, occupations, and BaZi information",
+    "version": "1.0.0",
+    "lastUpdated": "2026-01-15",
+    "license": "CC BY-NC-SA 4.0",
+    "author": "FatePath",
+    "totalRecords": 0,
+    "format": "JSON",
+    "language": "en"
+  },
+  "celebrities": [
+    {
+      "id": 1,
+      "name": "Martin Luther King Jr.",
+      "birthDate": "1929-01-15",
+      "birthTime": "12:00",
+      "birthPlace": "Atlanta, Georgia, USA",
+      "occupation": ["Politician", "Writer", "Spiritual Leader", "Spokesman"],
+      "nationality": "US",
+      "gender": "Male",
+      "popularity": 95,
+      "bazi": {
+        "dayMaster": "Yang Wood",
+        "element": "Wood",
+        "strength": "Strong"
+      },
+      "description": "Civil rights leader and Nobel Peace Prize winner"
+    },
+    {
+      "id": 2,
+      "name": "Lloyd Bridges",
+      "birthDate": "1913-01-15",
+      "birthTime": "00:00",
+      "birthPlace": "San Leandro, California, USA",
+      "occupation": ["Actor"],
+      "nationality": "US",
+      "gender": "Male",
+      "popularity": 75,
+      "bazi": {
+        "dayMaster": "Yang Fire",
+        "element": "Fire",
+        "strength": "Balanced"
+      },
+      "description": "American actor known for Sea Hunt"
+    },
+    {
+      "id": 3,
+      "name": "Pitbull",
+      "birthDate": "1981-01-15",
+      "birthTime": "00:00",
+      "birthPlace": "Miami, Florida, USA",
+      "occupation": ["Singer", "Actor"],
+      "nationality": "US",
+      "gender": "Male",
+      "popularity": 85,
+      "bazi": {
+        "dayMaster": "Yin Metal",
+        "element": "Metal",
+        "strength": "Strong"
+      },
+      "description": "Grammy-winning rapper and singer"
+    },
+    {
+      "id": 4,
+      "name": "Joan of Arc",
+      "birthDate": "1412-01-06",
+      "birthTime": "00:00",
+      "birthPlace": "Domrémy, France",
+      "occupation": ["Heroine", "Saint"],
+      "nationality": "FR",
+      "gender": "Female",
+      "popularity": 90,
+      "bazi": {
+        "dayMaster": "Yang Fire",
+        "element": "Fire",
+        "strength": "Very Strong"
+      },
+      "description": "Heroine of France, canonized as a Roman Catholic saint"
+    },
+    {
+      "id": 5,
+      "name": "Aaliyah",
+      "birthDate": "1979-01-16",
+      "birthTime": "00:00",
+      "birthPlace": "Brooklyn, New York, USA",
+      "occupation": ["Actress", "Singer"],
+      "nationality": "US",
+      "gender": "Female",
+      "popularity": 88,
+      "bazi": {
+        "dayMaster": "Yin Earth",
+        "element": "Earth",
+        "strength": "Balanced"
+      },
+      "description": "R&B singer and actress"
+    },
+    {
+      "id": 6,
+      "name": "Kate Moss",
+      "birthDate": "1974-01-16",
+      "birthTime": "00:00",
+      "birthPlace": "Croydon, London, UK",
+      "occupation": ["Model", "Singer"],
+      "nationality": "GB",
+      "gender": "Female",
+      "popularity": 82,
+      "bazi": {
+        "dayMaster": "Yang Wood",
+        "element": "Wood",
+        "strength": "Strong"
+      },
+      "description": "Supermodel and fashion icon"
+    },
+    {
+      "id": 7,
+      "name": "Jim Carrey",
+      "birthDate": "1962-01-17",
+      "birthTime": "00:00",
+      "birthPlace": "Newmarket, Ontario, Canada",
+      "occupation": ["Actor"],
+      "nationality": "CA",
+      "gender": "Male",
+      "popularity": 92,
+      "bazi": {
+        "dayMaster": "Yang Water",
+        "element": "Water",
+        "strength": "Very Strong"
+      },
+      "description": "Comedian and actor known for The Mask and Ace Ventura"
+    },
+    {
+      "id": 8,
+      "name": "Muhammad Ali",
+      "birthDate": "1942-01-17",
+      "birthTime": "00:00",
+      "birthPlace": "Louisville, Kentucky, USA",
+      "occupation": ["Boxer"],
+      "nationality": "US",
+      "gender": "Male",
+      "popularity": 98,
+      "bazi": {
+        "dayMaster": "Yang Water",
+        "element": "Water",
+        "strength": "Very Strong"
+      },
+      "description": "Heavyweight boxing champion and civil rights activist"
+    },
+    {
+      "id": 9,
+      "name": "Michelle Obama",
+      "birthDate": "1964-01-17",
+      "birthTime": "00:00",
+      "birthPlace": "Chicago, Illinois, USA",
+      "occupation": ["Lawyer", "First Lady", "Author"],
+      "nationality": "US",
+      "gender": "Female",
+      "popularity": 95,
+      "bazi": {
+        "dayMaster": "Yin Wood",
+        "element": "Wood",
+        "strength": "Strong"
+      },
+      "description": "Former First Lady of the United States"
+    },
+    {
+      "id": 10,
+      "name": "Benjamin Franklin",
+      "birthDate": "1706-01-17",
+      "birthTime": "00:00",
+      "birthPlace": "Boston, Massachusetts, USA",
+      "occupation": ["Statesman", "Diplomat", "Scientist", "Writer", "Publisher"],
+      "nationality": "US",
+      "gender": "Male",
+      "popularity": 96,
+      "bazi": {
+        "dayMaster": "Yang Fire",
+        "element": "Fire",
+        "strength": "Very Strong"
+      },
+      "description": "Founding Father of the United States"
+    },
+    {
+      "id": 11,
+      "name": "Tom Cruise",
+      "birthDate": "1962-07-03",
+      "birthTime": "12:00",
+      "birthPlace": "Syracuse, New York, USA",
+      "occupation": ["Actor"],
+      "nationality": "US",
+      "gender": "Male",
+      "popularity": 94,
+      "bazi": {
+        "dayMaster": "Yang Fire",
+        "element": "Fire",
+        "strength": "Very Strong"
+      },
+      "description": "Hollywood superstar and producer"
+    },
+    {
+      "id": 12,
+      "name": "Steve Jobs",
+      "birthDate": "1955-02-24",
+      "birthTime": "19:15",
+      "birthPlace": "San Francisco, California, USA",
+      "occupation": ["Entrepreneur", "Inventor", "CEO"],
+      "nationality": "US",
+      "gender": "Male",
+      "popularity": 97,
+      "bazi": {
+        "dayMaster": "Yang Wood",
+        "element": "Wood",
+        "strength": "Very Strong"
+      },
+      "description": "Co-founder of Apple Inc."
+    }
+  ]
+}

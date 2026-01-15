@@ -8,7 +8,10 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false)
   const [isToolsOpen, setIsToolsOpen] = useState(false)
   const [isMobileToolsOpen, setIsMobileToolsOpen] = useState(false)
+  const [isCelebritiesOpen, setIsCelebritiesOpen] = useState(false)
+  const [isMobileCelebritiesOpen, setIsMobileCelebritiesOpen] = useState(false)
   const toolsMenuRef = useRef(null)
+  const celebritiesMenuRef = useRef(null)
   const location = useLocation()
 
   // 关闭下拉菜单当点击外部
@@ -16,6 +19,9 @@ const Navbar = () => {
     const handleClickOutside = (event) => {
       if (toolsMenuRef.current && !toolsMenuRef.current.contains(event.target)) {
         setIsToolsOpen(false)
+      }
+      if (celebritiesMenuRef.current && !celebritiesMenuRef.current.contains(event.target)) {
+        setIsCelebritiesOpen(false)
       }
     }
 
@@ -40,6 +46,13 @@ const Navbar = () => {
         { path: '/resources', label: 'Resources' }
       ]
     },
+    {
+      label: 'Famous People',
+      hasDropdown: true,
+      items: [
+        { path: '/celebrities-born-today', label: 'Born Today' }
+      ]
+    },
     { path: '/testimonials', label: 'Testimonials' },
     { path: '/faq', label: 'FAQ' },
     { path: '/contact', label: 'Contact' }
@@ -47,6 +60,9 @@ const Navbar = () => {
 
   // 检查当前路径是否在工具菜单中
   const isToolsActive = navItems.find(item => item.hasDropdown && item.items?.some(subItem => location.pathname === subItem.path))
+  
+  // 检查当前路径是否在名人菜单中
+  const isCelebritiesActive = navItems.find(item => item.label === 'Famous People' && item.hasDropdown && item.items?.some(subItem => location.pathname === subItem.path))
 
   const isActive = (path) => location.pathname === path
 
@@ -70,27 +86,33 @@ const Navbar = () => {
           <div className="hidden md:flex items-center space-x-6 lg:space-x-8">
             {navItems.map((item) => {
               if (item.hasDropdown) {
+                const isCelebritiesMenu = item.label === 'Famous People'
+                const menuRef = isCelebritiesMenu ? celebritiesMenuRef : toolsMenuRef
+                const isMenuOpen = isCelebritiesMenu ? isCelebritiesOpen : isToolsOpen
+                const setIsMenuOpen = isCelebritiesMenu ? setIsCelebritiesOpen : setIsToolsOpen
+                const isActiveMenu = isCelebritiesMenu ? isCelebritiesActive : isToolsActive
+
                 return (
                   <div 
                     key={item.label}
-                    ref={toolsMenuRef}
+                    ref={menuRef}
                     className="relative"
-                    onMouseEnter={() => setIsToolsOpen(true)}
-                    onMouseLeave={() => setIsToolsOpen(false)}
+                    onMouseEnter={() => setIsMenuOpen(true)}
+                    onMouseLeave={() => setIsMenuOpen(false)}
                   >
                     <button
                       className={`relative px-3 py-2 text-sm font-medium transition-colors duration-200 flex items-center space-x-1 ${
-                        isToolsActive
+                        isActiveMenu
                           ? 'text-gold-400' 
                           : 'text-mystic-300 hover:text-gold-400'
                       }`}
                     >
                       <span>{item.label}</span>
-                      <ChevronDown className={`h-4 w-4 transition-transform duration-200 ${isToolsOpen ? 'rotate-180' : ''}`} />
+                      <ChevronDown className={`h-4 w-4 transition-transform duration-200 ${isMenuOpen ? 'rotate-180' : ''}`} />
                     </button>
-                    {isToolsActive && (
+                    {isActiveMenu && (
                       <motion.div
-                        layoutId="activeTab"
+                        layoutId={`activeTab-${item.label}`}
                         className="absolute bottom-0 left-0 right-0 h-0.5 bg-gold-400"
                         initial={false}
                         transition={{ type: "spring", stiffness: 500, damping: 30 }}
@@ -98,7 +120,7 @@ const Navbar = () => {
                     )}
                     
                     <AnimatePresence>
-                      {isToolsOpen && (
+                      {isMenuOpen && (
                         <motion.div
                           initial={{ opacity: 0, y: 10 }}
                           animate={{ opacity: 1, y: 0 }}
@@ -116,7 +138,7 @@ const Navbar = () => {
                                     ? 'text-gold-400 bg-mystic-800/50'
                                     : 'text-mystic-300 hover:text-gold-400 hover:bg-mystic-800/30'
                                 }`}
-                                onClick={() => setIsToolsOpen(false)}
+                                onClick={() => setIsMenuOpen(false)}
                               >
                                 {subItem.label}
                               </Link>

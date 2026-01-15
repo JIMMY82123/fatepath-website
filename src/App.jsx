@@ -35,6 +35,7 @@ const BaziForm = lazy(() => import('./pages/BaziForm'))
 const DayMasterCalculator = lazy(() => import('./pages/DayMasterCalculator'))
 const TrueSolarTimeCalculator = lazy(() => import('./pages/TrueSolarTimeCalculator'))
 const TenGodsAnalyzer = lazy(() => import('./pages/TenGodsAnalyzer'))
+const CelebritiesBornToday = lazy(() => import('./pages/CelebritiesBornToday'))
 const NotFound = lazy(() => import('./pages/NotFound'))
 
 function App() {
@@ -101,6 +102,7 @@ function App() {
                   <Route path="/animation-demo" element={<AnimationDemo />} />
                   <Route path="/2026-forecast" element={<Forecast2026 />} />
                   <Route path="/chinese-astrology-guide" element={<ChineseAstrologyGuide />} />
+                  <Route path="/celebrities-born-today" element={<CelebritiesBornToday />} />
                   <Route path="/404" element={<NotFound />} />
                   <Route path="*" element={<NotFound />} />
                 </Routes>
