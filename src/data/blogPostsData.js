@@ -4529,6 +4529,417 @@ export const blogPostsData = {
           </ul>
         </div>
       `,
+        ja: `
+        <div class="mb-8">
+          <div class="bg-gradient-to-r from-yellow-500/20 to-orange-500/20 border border-yellow-500/30 rounded-lg p-6 mb-8">
+            <h3 class="text-lg font-semibold text-yellow-400 mb-3">💰 富分析の要約</h3>
+            <p class="text-mystic-200 mb-2"><strong>重要な概念：</strong> 八字における富は、あなたの財布をチェックするようなものです</p>
+            <p class="text-mystic-200 mb-2"><strong>3つの要因：</strong> 財星、日主の強さ、運サイクル</p>
+            <p class="text-mystic-200 mb-2"><strong>目標：</strong> お金を増やすための適切なタイミングと方法を見つける</p>
+            <p class="text-mystic-200"><strong>結果：</strong> 急激な利益と損失ではなく、着実な富の成長</p>
+          </div>
+        </div>
+
+        <h2 class="text-2xl font-bold text-white mb-4 mt-8">はじめに</h2>
+        <p class="mb-6 text-lg text-mystic-200 leading-relaxed">
+          人々が私のところに八字リーディングに来るとき、最も一般的な質問の1つは：「私はお金持ちになりますか？そして、どれくらいのお金を稼ぐことができますか？」
+        </p>
+        <p class="mb-6 text-lg text-mystic-200 leading-relaxed">
+          八字では、あなたの富のレベルを理解することは、あなたの財布をチェックするようなものです—それがどれくらい大きいか、お金を保持できるか、漏れるかどうか。私たちはこれらすべての要因を一緒に見ます。
+        </p>
+
+        <h2 class="text-2xl font-bold text-white mb-4 mt-8">ステップ1：「財星」を見つける</h2>
+        <p class="mb-6 text-lg text-mystic-200 leading-relaxed">
+          八字では、財星はお金を表します。異なる人々にとって、お金は異なる要素に属します。異なるバッグが異なるものを保持するのと同じように：
+        </p>
+        
+        <div class="grid md:grid-cols-3 gap-6 mb-6">
+          <div class="bg-mystic-800/30 rounded-lg p-6 border border-mystic-700/50">
+            <h3 class="text-lg font-semibold text-green-400 mb-3">土がお金</h3>
+            <p class="text-mystic-200 mb-3">
+              一部の人にとって、<strong>土がお金</strong>です（例：甲木の日に生まれた人）。これらの個人は、安定性、不動産、実用的な投資を通じて富を見つけます。
+            </p>
+          </div>
+          
+          <div class="bg-mystic-800/30 rounded-lg p-6 border border-mystic-700/50">
+            <h3 class="text-lg font-semibold text-blue-400 mb-3">金がお金</h3>
+            <p class="text-mystic-200 mb-3">
+              他の人にとって、<strong>金がお金</strong>です（例：丙火の日に生まれた人）。これらの人々は、金融、技術、精密ベースの富の構築に優れています。
+            </p>
+          </div>
+          
+          <div class="bg-mystic-800/30 rounded-lg p-6 border border-mystic-700/50">
+            <h3 class="text-lg font-semibold text-cyan-400 mb-3">水がお金</h3>
+            <p class="text-mystic-200 mb-3">
+              他の人にとって、<strong>水がお金</strong>です（例：戊土の日に生まれた人）。これらの個人は、コミュニケーション、旅行、流動的な機会を通じて富を見つけます。
+            </p>
+          </div>
+        </div>
+
+        <div class="bg-gradient-to-r from-yellow-500/20 to-orange-500/20 border border-yellow-500/30 rounded-lg p-6 mb-6">
+          <h3 class="text-lg font-semibold text-yellow-400 mb-3">富の要素を見つける</h3>
+          <p class="text-mystic-200 leading-relaxed">
+            まず、どの要素があなたの「お金」であるかを調べて、あなたのチャートに良い財布があるかどうかを確認できます。これはあなたの日主要素によって決定され、特定の八字ルールに従います。
+          </p>
+        </div>
+
+        <h2 class="text-2xl font-bold text-white mb-4 mt-8">ステップ2：バッグが強いかどうかを確認する</h2>
+        <p class="mb-6 text-lg text-mystic-200 leading-relaxed">
+          八字の「日主」はあなたを表します。あなたが強い場合、大きなバッグを運び、お金を安全に保つことができます；あなたが弱い場合、重いバッグはあなたを疲れさせ、漏れる可能性さえあります。
+        </p>
+        
+        <div class="space-y-6 mb-6">
+          <div class="bg-gradient-to-r from-green-500/20 to-emerald-500/20 border border-green-500/30 rounded-lg p-6">
+            <h3 class="text-lg font-semibold text-green-400 mb-3">強い日主</h3>
+            <p class="text-mystic-200 leading-relaxed">
+              <strong>お金を処理し、保持できます。</strong> あなたは大きな金額を管理し、賢明な投資を行い、時間の経過とともに富を維持する能力を持っています。あなたの財布は堅牢で信頼性があります。
+            </p>
+          </div>
+          
+          <div class="bg-gradient-to-r from-yellow-500/20 to-orange-500/20 border border-yellow-500/30 rounded-lg p-6">
+            <h3 class="text-lg font-semibold text-yellow-400 mb-3">弱い日主</h3>
+            <p class="text-mystic-200 leading-relaxed">
+              <strong>お金が多すぎると負担になり、節約が難しくなります。</strong> お金が急速に入ってくるが、同じように速く出ていくことを経験するかもしれません。まず、あなたの能力を構築することに焦点を当ててください。
+            </p>
+          </div>
+          
+          <div class="bg-gradient-to-r from-blue-500/20 to-indigo-500/20 border border-blue-500/30 rounded-lg p-6">
+            <h3 class="text-lg font-semibold text-blue-400 mb-3">財星なし</h3>
+            <p class="text-mystic-200 leading-relaxed">
+              <strong>パニックにならないでください</strong> — あなたの幸運なサイクルが到着すると、バッグは自然に満たされます。あなたの富は、一定の流れではなく、タイミングと機会を通じて来ます。
+            </p>
+          </div>
+        </div>
+
+        <h2 class="text-2xl font-bold text-white mb-4 mt-8">ステップ3：運がお金をもたらしているかどうかを確認する</h2>
+        <p class="mb-6 text-lg text-mystic-200 leading-relaxed">
+          あなたの運サイクルは、あなたにお金を貸してくれる友人に似ています—時には寛大で、時には破産しています。
+        </p>
+        
+        <div class="grid md:grid-cols-3 gap-6 mb-6">
+          <div class="bg-gradient-to-r from-green-500/20 to-emerald-500/20 border border-green-500/30 rounded-lg p-6">
+            <h3 class="text-lg font-semibold text-green-400 mb-3">富の運</h3>
+            <p class="text-mystic-200 leading-relaxed">
+              <strong>お金がより速く来て、機会が増加します。</strong> これは、あなたの財星が活性化され、直接的な金融利益と投資機会をもたらすときです。
+            </p>
+          </div>
+          
+          <div class="bg-gradient-to-r from-blue-500/20 to-cyan-500/20 border border-blue-500/30 rounded-lg p-6">
+            <h3 class="text-lg font-semibold text-blue-400 mb-3">出力星の運</h3>
+            <p class="text-mystic-200 leading-relaxed">
+              <strong>副業、スキル、または創造性を通じた追加収入。</strong> これは、あなたの才能と能力を通じて追加の収入源をもたらします。
+            </p>
+          </div>
+          
+          <div class="bg-gradient-to-r from-purple-500/20 to-indigo-500/20 border border-purple-500/30 rounded-lg p-6">
+            <h3 class="text-lg font-semibold text-purple-400 mb-3">資源星の運</h3>
+            <p class="text-mystic-200 leading-relaxed">
+              <strong>即座の現金ではありませんが、より良いお金の管理と投資能力。</strong> これは、あなたの金融の知恵と意思決定スキルを強化します。
+            </p>
+          </div>
+        </div>
+
+        <h2 class="text-2xl font-bold text-white mb-4 mt-8">ステップ4：富のレベルの理解</h2>
+        
+        <div class="space-y-6 mb-6">
+          <div class="bg-gradient-to-r from-green-500/20 to-emerald-500/20 border border-green-500/30 rounded-lg p-6">
+            <h3 class="text-lg font-semibold text-green-400 mb-3">高い富のレベル</h3>
+            <p class="text-mystic-200 leading-relaxed">
+              <strong>大きく、堅牢なバッグ + 運サイクルからの頻繁な資金の流れ。</strong> あなたは富を処理する能力とそれを受け取るタイミングの両方を持っています。この組み合わせは、持続可能な金融成長を生み出します。
+            </p>
+          </div>
+          
+          <div class="bg-gradient-to-r from-yellow-500/20 to-orange-500/20 border border-yellow-500/30 rounded-lg p-6">
+            <h3 class="text-lg font-semibold text-yellow-400 mb-3">中程度の富のレベル</h3>
+            <p class="text-mystic-200 leading-relaxed">
+              <strong>平均的なバッグですが、運が時々ブーストを提供します。</strong> あなたは中程度の能力を持っていますが、好ましい運サイクル中に大きな利益を経験することができます。タイミングが重要になります。
+            </p>
+          </div>
+          
+          <div class="bg-gradient-to-r from-red-500/20 to-pink-500/20 border border-red-500/30 rounded-lg p-6">
+            <h3 class="text-lg font-semibold text-red-400 mb-3">低い富のレベル</h3>
+            <p class="text-mystic-200 leading-relaxed">
+              <strong>バッグは簡単に漏れ、運はまだ多くを送っていません—まず「バッグを修正する」ことに焦点を当ててください。</strong> 大きな金融利益を求める前に、あなたの能力とスキルを構築してください。
+            </p>
+          </div>
+        </div>
+
+        <h2 class="text-2xl font-bold text-white mb-4 mt-8">実用的な応用</h2>
+        
+        <div class="space-y-4 mb-6">
+          <div class="flex items-start space-x-4">
+            <div class="w-8 h-8 rounded-full bg-yellow-500 flex items-center justify-center flex-shrink-0 mt-1">
+              <span class="text-black text-sm font-bold">1</span>
+            </div>
+            <div>
+              <h3 class="text-lg font-semibold text-white mb-2">あなたの富の要素を知る</h3>
+              <p class="text-mystic-200">
+                あなたのチャートでどの要素がお金を表すかを特定します。これは、あなたの富の構築に最適な業界と投資タイプを教えてくれます。
+              </p>
+            </div>
+          </div>
+          
+          <div class="flex items-start space-x-4">
+            <div class="w-8 h-8 rounded-full bg-yellow-500 flex items-center justify-center flex-shrink-0 mt-1">
+              <span class="text-black text-sm font-bold">2</span>
+            </div>
+            <div>
+              <h3 class="text-lg font-semibold text-white mb-2">あなたの能力を評価する</h3>
+              <p class="text-mystic-200">
+                あなたの日主が富を処理するのに十分強いかどうかを判断します。弱い場合は、大きな利益を求める前に、スキルと能力を構築することに焦点を当ててください。
+              </p>
+            </div>
+          </div>
+          
+          <div class="flex items-start space-x-4">
+            <div class="w-8 h-8 rounded-full bg-yellow-500 flex items-center justify-center flex-shrink-0 mt-1">
+              <span class="text-black text-sm font-bold">3</span>
+            </div>
+            <div>
+              <h3 class="text-lg font-semibold text-white mb-2">あなたの運サイクルを追跡する</h3>
+              <p class="text-mystic-200">
+                富の運、出力星の運、または資源星の運がアクティブなときを監視します。これらは、金融の進歩のための最適な時期です。
+              </p>
+            </div>
+          </div>
+          
+          <div class="flex items-start space-x-4">
+            <div class="w-8 h-8 rounded-full bg-yellow-500 flex items-center justify-center flex-shrink-0 mt-1">
+              <span class="text-black text-sm font-bold">4</span>
+            </div>
+            <div>
+              <h3 class="text-lg font-semibold text-white mb-2">適切な戦略を選択する</h3>
+              <p class="text-mystic-200">
+                あなたの富のレベルに基づいて、適切な戦略を選択します：高いレベルの積極的な成長、中程度のバランスの取れたアプローチ、低いレベルの能力構築。
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-gradient-to-r from-yellow-500/20 to-orange-500/20 border border-yellow-500/30 rounded-lg p-6 mb-8">
+          <h3 class="text-lg font-semibold text-yellow-400 mb-3">💡 最終的な考え</h3>
+          <p class="text-mystic-200 leading-relaxed">
+            八字で富を読むことは、あなたを一生「金持ち」または「貧しい」と刻印することではありません。それは、あなたがお金を増やすための適切なタイミングと方法を見つけるのを助けることです。いつ押し進め、いつ控えるべきかを知ることで、あなたの富が着実に成長することを保証します—急速に来て、同じように速く消えるのではなく。
+          </p>
+        </div>
+
+        <div class="bg-gradient-to-r from-blue-500/20 to-indigo-500/20 border border-blue-500/30 rounded-lg p-6 mb-8">
+          <h3 class="text-lg font-semibold text-blue-400 mb-3">🎯 重要なポイント</h3>
+          <ul class="text-mystic-200 space-y-2">
+            <li>• <strong>財星：</strong> あなたのチャートでどの要素がお金を表すかを識別します</li>
+            <li>• <strong>日主の強さ：</strong> 富を処理し、保持するあなたの能力を決定します</li>
+            <li>• <strong>運サイクル：</strong> お金の機会が最も好ましいときを示します</li>
+            <li>• <strong>富のレベル：</strong> あなたの金融戦略と期待を導きます</li>
+            <li>• <strong>タイミング：</strong> 持続可能な富の構築にとって重要です</li>
+          </ul>
+        </div>
+      `,
+        ko: `
+        <div class="mb-8">
+          <div class="bg-gradient-to-r from-yellow-500/20 to-orange-500/20 border border-yellow-500/30 rounded-lg p-6 mb-8">
+            <h3 class="text-lg font-semibold text-yellow-400 mb-3">💰 부 분석 요약</h3>
+            <p class="text-mystic-200 mb-2"><strong>핵심 개념：</strong> 사주에서 부는 당신의 지갑을 확인하는 것과 같습니다</p>
+            <p class="text-mystic-200 mb-2"><strong>세 가지 요인：</strong> 재성，일주의 강도，운 사이클</p>
+            <p class="text-mystic-200 mb-2"><strong>목표：</strong> 돈을 늘리기 위한 적절한 타이밍과 방법 찾기</p>
+            <p class="text-mystic-200"><strong>결과：</strong> 빠른 이득과 손실 대신 꾸준한 부의 성장</p>
+          </div>
+        </div>
+
+        <h2 class="text-2xl font-bold text-white mb-4 mt-8">서론</h2>
+        <p class="mb-6 text-lg text-mystic-200 leading-relaxed">
+          사람들이 나에게 사주 읽기를 위해 올 때，가장 일반적인 질문 중 하나는："나는 부자가 될까요？그리고 얼마나 많은 돈을 벌 수 있을까요？"
+        </p>
+        <p class="mb-6 text-lg text-mystic-200 leading-relaxed">
+          사주에서，당신의 부 수준을 파악하는 것은 당신의 지갑을 확인하는 것과 같습니다—그것이 얼마나 큰지，돈을 보유할 수 있는지，그리고 누출될지 여부。우리는 이러한 모든 요인을 함께 봅니다。
+        </p>
+
+        <h2 class="text-2xl font-bold text-white mb-4 mt-8">1단계："재성" 찾기</h2>
+        <p class="mb-6 text-lg text-mystic-200 leading-relaxed">
+          사주에서，재성은 돈을 나타냅니다。다른 사람들에게，돈은 다른 요소에 속합니다。다른 가방이 다른 것을 보유하는 것과 같습니다：
+        </p>
+        
+        <div class="grid md:grid-cols-3 gap-6 mb-6">
+          <div class="bg-mystic-800/30 rounded-lg p-6 border border-mystic-700/50">
+            <h3 class="text-lg font-semibold text-green-400 mb-3">토가 돈</h3>
+            <p class="text-mystic-200 mb-3">
+              일부 사람들에게，<strong>토가 돈</strong>입니다（예：갑목의 날에 태어난 사람）。이러한 개인은 안정성，부동산，실용적인 투자를 통해 부를 찾습니다。
+            </p>
+          </div>
+          
+          <div class="bg-mystic-800/30 rounded-lg p-6 border border-mystic-700/50">
+            <h3 class="text-lg font-semibold text-blue-400 mb-3">금이 돈</h3>
+            <p class="text-mystic-200 mb-3">
+              다른 사람들에게，<strong>금이 돈</strong>입니다（예：병화의 날에 태어난 사람）。이러한 사람들은 금융，기술，정밀 기반 부 구축에 뛰어납니다。
+            </p>
+          </div>
+          
+          <div class="bg-mystic-800/30 rounded-lg p-6 border border-mystic-700/50">
+            <h3 class="text-lg font-semibold text-cyan-400 mb-3">수가 돈</h3>
+            <p class="text-mystic-200 mb-3">
+              다른 사람들에게，<strong>수가 돈</strong>입니다（예：무토의 날에 태어난 사람）。이러한 개인은 커뮤니케이션，여행，유동적 기회를 통해 부를 찾습니다。
+            </p>
+          </div>
+        </div>
+
+        <div class="bg-gradient-to-r from-yellow-500/20 to-orange-500/20 border border-yellow-500/30 rounded-lg p-6 mb-6">
+          <h3 class="text-lg font-semibold text-yellow-400 mb-3">부의 요소 찾기</h3>
+          <p class="text-mystic-200 leading-relaxed">
+            먼저，어떤 요소가 당신의 "돈"인지 알아내어，당신의 차트에 좋은 지갑이 있는지 확인할 수 있습니다。이것은 당신의 일주 요소에 의해 결정되며，특정 사주 규칙을 따릅니다。
+          </p>
+        </div>
+
+        <h2 class="text-2xl font-bold text-white mb-4 mt-8">2단계：가방이 강한지 확인</h2>
+        <p class="mb-6 text-lg text-mystic-200 leading-relaxed">
+          사주에서 "일주"는 당신을 나타냅니다。당신이 강하면，큰 가방을 운반하고 돈을 안전하게 보관할 수 있습니다；당신이 약하면，무거운 가방이 당신을 피곤하게 만들고 누출될 수도 있습니다。
+        </p>
+        
+        <div class="space-y-6 mb-6">
+          <div class="bg-gradient-to-r from-green-500/20 to-emerald-500/20 border border-green-500/30 rounded-lg p-6">
+            <h3 class="text-lg font-semibold text-green-400 mb-3">강한 일주</h3>
+            <p class="text-mystic-200 leading-relaxed">
+              <strong>돈을 처리하고 보유할 수 있습니다。</strong> 당신은 큰 금액을 관리하고，현명한 투자를 하며，시간이 지나면서 부를 유지할 수 있는 능력을 가지고 있습니다。당신의 지갑은 견고하고 신뢰할 수 있습니다。
+            </p>
+          </div>
+          
+          <div class="bg-gradient-to-r from-yellow-500/20 to-orange-500/20 border border-yellow-500/30 rounded-lg p-6">
+            <h3 class="text-lg font-semibold text-yellow-400 mb-3">약한 일주</h3>
+            <p class="text-mystic-200 leading-relaxed">
+              <strong>돈이 너무 많으면 부담이 되고，저축하기가 더 어려워집니다。</strong> 당신은 돈이 빠르게 들어오지만，같은 속도로 나가는 것을 경험할 수 있습니다。먼저 당신의 능력을 구축하는 것에 집중하세요。
+            </p>
+          </div>
+          
+          <div class="bg-gradient-to-r from-blue-500/20 to-indigo-500/20 border border-blue-500/30 rounded-lg p-6">
+            <h3 class="text-lg font-semibold text-blue-400 mb-3">재성 없음</h3>
+            <p class="text-mystic-200 leading-relaxed">
+              <strong>당황하지 마세요</strong> — 당신의 운 좋은 사이클이 도착하면，가방은 자연스럽게 채워집니다。당신의 부는 지속적인 흐름보다는 타이밍과 기회를 통해 옵니다。
+            </p>
+          </div>
+        </div>
+
+        <h2 class="text-2xl font-bold text-white mb-4 mt-8">3단계：운이 돈을 가져오는지 확인</h2>
+        <p class="mb-6 text-lg text-mystic-200 leading-relaxed">
+          당신의 운 사이클은 당신에게 돈을 빌려주는 친구와 같습니다—때로는 관대하고，때로는 파산합니다。
+        </p>
+        
+        <div class="grid md:grid-cols-3 gap-6 mb-6">
+          <div class="bg-gradient-to-r from-green-500/20 to-emerald-500/20 border border-green-500/30 rounded-lg p-6">
+            <h3 class="text-lg font-semibold text-green-400 mb-3">부의 운</h3>
+            <p class="text-mystic-200 leading-relaxed">
+              <strong>돈이 더 빨리 오고 기회가 증가합니다。</strong> 이것은 당신의 재성이 활성화되어 직접적인 금융 이득과 투자 기회를 가져올 때입니다。
+            </p>
+          </div>
+          
+          <div class="bg-gradient-to-r from-blue-500/20 to-cyan-500/20 border border-blue-500/30 rounded-lg p-6">
+            <h3 class="text-lg font-semibold text-blue-400 mb-3">출력성의 운</h3>
+            <p class="text-mystic-200 leading-relaxed">
+              <strong>부업，기술，또는 창의성을 통한 추가 수입。</strong> 이것은 당신의 재능과 능력을 통해 추가 수입원을 가져옵니다。
+            </p>
+          </div>
+          
+          <div class="bg-gradient-to-r from-purple-500/20 to-indigo-500/20 border border-purple-500/30 rounded-lg p-6">
+            <h3 class="text-lg font-semibold text-purple-400 mb-3">자원성의 운</h3>
+            <p class="text-mystic-200 leading-relaxed">
+              <strong>즉시 현금은 아니지만，더 나은 돈 관리와 투자 능력。</strong> 이것은 당신의 금융 지혜와 의사 결정 기술을 향상시킵니다。
+            </p>
+          </div>
+        </div>
+
+        <h2 class="text-2xl font-bold text-white mb-4 mt-8">4단계：부 수준 이해</h2>
+        
+        <div class="space-y-6 mb-6">
+          <div class="bg-gradient-to-r from-green-500/20 to-emerald-500/20 border border-green-500/30 rounded-lg p-6">
+            <h3 class="text-lg font-semibold text-green-400 mb-3">높은 부 수준</h3>
+            <p class="text-mystic-200 leading-relaxed">
+              <strong>크고 견고한 가방 + 운 사이클로부터의 빈번한 돈 흐름。</strong> 당신은 부를 처리할 수 있는 능력과 그것을 받을 타이밍을 모두 가지고 있습니다。이 조합은 지속 가능한 금융 성장을 만듭니다。
+            </p>
+          </div>
+          
+          <div class="bg-gradient-to-r from-yellow-500/20 to-orange-500/20 border border-yellow-500/30 rounded-lg p-6">
+            <h3 class="text-lg font-semibold text-yellow-400 mb-3">중간 부 수준</h3>
+            <p class="text-mystic-200 leading-relaxed">
+              <strong>평균적인 가방이지만，운이 때때로 부스트를 제공합니다。</strong> 당신은 중간 능력을 가지고 있지만，유리한 운 사이클 동안 상당한 이득을 경험할 수 있습니다。타이밍이 중요해집니다。
+            </p>
+          </div>
+          
+          <div class="bg-gradient-to-r from-red-500/20 to-pink-500/20 border border-red-500/30 rounded-lg p-6">
+            <h3 class="text-lg font-semibold text-red-400 mb-3">낮은 부 수준</h3>
+            <p class="text-mystic-200 leading-relaxed">
+              <strong>가방이 쉽게 누출되고 운이 아직 많이 보내지 않았습니다—먼저 "가방을 수정하는" 것에 집중하세요。</strong> 큰 금융 이득을 추구하기 전에 당신의 능력과 기술을 구축하세요。
+            </p>
+          </div>
+        </div>
+
+        <h2 class="text-2xl font-bold text-white mb-4 mt-8">실용적인 응용</h2>
+        
+        <div class="space-y-4 mb-6">
+          <div class="flex items-start space-x-4">
+            <div class="w-8 h-8 rounded-full bg-yellow-500 flex items-center justify-center flex-shrink-0 mt-1">
+              <span class="text-black text-sm font-bold">1</span>
+            </div>
+            <div>
+              <h3 class="text-lg font-semibold text-white mb-2">당신의 부 요소 알기</h3>
+              <p class="text-mystic-200">
+                당신의 차트에서 어떤 요소가 돈을 나타내는지 식별합니다。이것은 당신의 부 구축을 위한 최고의 산업과 투자 유형을 알려줍니다。
+              </p>
+            </div>
+          </div>
+          
+          <div class="flex items-start space-x-4">
+            <div class="w-8 h-8 rounded-full bg-yellow-500 flex items-center justify-center flex-shrink-0 mt-1">
+              <span class="text-black text-sm font-bold">2</span>
+            </div>
+            <div>
+              <h3 class="text-lg font-semibold text-white mb-2">당신의 능력 평가</h3>
+              <p class="text-mystic-200">
+                당신의 일주가 부를 처리하기에 충분히 강한지 결정합니다。약한 경우，큰 이득을 추구하기 전에 기술과 능력을 구축하는 것에 집중하세요。
+              </p>
+            </div>
+          </div>
+          
+          <div class="flex items-start space-x-4">
+            <div class="w-8 h-8 rounded-full bg-yellow-500 flex items-center justify-center flex-shrink-0 mt-1">
+              <span class="text-black text-sm font-bold">3</span>
+            </div>
+            <div>
+              <h3 class="text-lg font-semibold text-white mb-2">당신의 운 사이클 추적</h3>
+              <p class="text-mystic-200">
+                부의 운，출력성의 운，또는 자원성의 운이 활성화될 때를 모니터링합니다。이것들은 금융 발전을 위한 최적의 시간입니다。
+              </p>
+            </div>
+          </div>
+          
+          <div class="flex items-start space-x-4">
+            <div class="w-8 h-8 rounded-full bg-yellow-500 flex items-center justify-center flex-shrink-0 mt-1">
+              <span class="text-black text-sm font-bold">4</span>
+            </div>
+            <div>
+              <h3 class="text-lg font-semibold text-white mb-2">올바른 전략 선택</h3>
+              <p class="text-mystic-200">
+                당신의 부 수준에 기반하여，적절한 전략을 선택합니다：높은 수준의 공격적 성장，중간의 균형 잡힌 접근，낮은 수준의 능력 구축。
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-gradient-to-r from-yellow-500/20 to-orange-500/20 border border-yellow-500/30 rounded-lg p-6 mb-8">
+          <h3 class="text-lg font-semibold text-yellow-400 mb-3">💡 최종 생각</h3>
+          <p class="text-mystic-200 leading-relaxed">
+            사주에서 부를 읽는 것은 당신을 평생 "부자" 또는 "가난한" 사람으로 찍는 것이 아닙니다。그것은 당신이 돈을 늘리기 위한 올바른 타이밍과 방법을 찾는 것을 돕는 것입니다。언제 밀어붙이고 언제 물러설지 아는 것은 당신의 부가 꾸준히 성장하도록 보장합니다—빠르게 와서 같은 속도로 사라지는 대신。
+          </p>
+        </div>
+
+        <div class="bg-gradient-to-r from-blue-500/20 to-indigo-500/20 border border-blue-500/30 rounded-lg p-6 mb-8">
+          <h3 class="text-lg font-semibold text-blue-400 mb-3">🎯 핵심 요약</h3>
+          <ul class="text-mystic-200 space-y-2">
+            <li>• <strong>재성：</strong> 당신의 차트에서 어떤 요소가 돈을 나타내는지 식별합니다</li>
+            <li>• <strong>일주의 강도：</strong> 부를 처리하고 보유할 수 있는 당신의 능력을 결정합니다</li>
+            <li>• <strong>운 사이클：</strong> 돈 기회가 가장 유리한 때를 보여줍니다</li>
+            <li>• <strong>부 수준：</strong> 당신의 금융 전략과 기대를 안내합니다</li>
+            <li>• <strong>타이밍：</strong> 지속 가능한 부 구축에 중요합니다</li>
+          </ul>
+        </div>
+      `
+      },
       author: "FatePath Master",
                 date: "2025-01-24",
       readTime: "6 min read",
