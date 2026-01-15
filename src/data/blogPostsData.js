@@ -4313,9 +4313,18 @@ export const blogPostsData = {
       tags: ['BaZi', '2025', 'Chinese Astrology', 'Immigration', 'Fire-Metal Clash', 'Destiny', 'Global Events', 'Yi-Si Year']
     },
     "how-to-read-wealth-level-bazi-simple-guide": {
-      title: "How to Read Your Wealth Level in BaZi: A Simple Guide to Financial Destiny",
-      excerpt: "Discover how to analyze your wealth potential through BaZi reading. Learn about Wealth Stars, Day Master strength, and luck cycles that determine your financial destiny and money-making ability.",
-      content: `
+      title: {
+        en: "How to Read Your Wealth Level in BaZi: A Simple Guide to Financial Destiny",
+        ja: "八字で富のレベルを読む方法：金融運命のシンプルガイド",
+        ko: "사주에서 부의 수준을 읽는 방법：금융 운명의 간단한 가이드"
+      },
+      excerpt: {
+        en: "Discover how to analyze your wealth potential through BaZi reading. Learn about Wealth Stars, Day Master strength, and luck cycles that determine your financial destiny and money-making ability.",
+        ja: "八字リーディングを通じて富の可能性を分析する方法を発見してください。金融運命と金儲け能力を決定する財星、日主の強さ、運サイクルについて学びます。",
+        ko: "사주 읽기를 통해 부의 잠재력을 분석하는 방법을 발견하세요。금융 운명과 돈 버는 능력을 결정하는 재성，일주의 강도，운 사이클에 대해 배웁니다。"
+      },
+      content: {
+        en: `
         <div class="mb-8">
           <div class="bg-gradient-to-r from-yellow-500/20 to-orange-500/20 border border-yellow-500/30 rounded-lg p-6 mb-8">
             <h3 class="text-lg font-semibold text-yellow-400 mb-3">💰 Wealth Analysis Summary</h3>
