@@ -5,6 +5,7 @@ import { Link } from 'react-router-dom'
 import SEO from '../components/SEO'
 
 const TrueSolarTimeCalculator = () => {
+  const { t } = useTranslation()
   const [formData, setFormData] = useState({
     date: '',
     standardTime: '',
@@ -416,10 +417,10 @@ const TrueSolarTimeCalculator = () => {
               <Sun className="h-8 w-8 sm:h-10 sm:w-10 text-white" aria-hidden="true" />
             </div>
             <h1 className="text-2xl sm:text-3xl md:text-4xl font-cinzel font-bold mb-3 sm:mb-4 text-white tracking-wide">
-              True Solar Time Calculator
+              {t('tools.trueSolarTime.title')}
             </h1>
             <p className="text-lg sm:text-xl text-mystic-300 max-w-3xl mx-auto">
-              Convert standard time to true solar time for accurate Bazi readings. Essential for precise Chinese astrology calculations based on your exact birth location.
+              {t('tools.trueSolarTime.description')}
             </p>
           </motion.div>
 

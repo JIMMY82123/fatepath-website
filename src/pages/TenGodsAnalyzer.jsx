@@ -6,6 +6,7 @@ import { Lunar } from 'lunar-javascript'
 import SEO from '../components/SEO'
 
 const TenGodsAnalyzer = () => {
+  const { t } = useTranslation()
   const [formData, setFormData] = useState({
     dateOfBirth: '',
     timeOfBirth: ''
@@ -383,10 +384,10 @@ const TenGodsAnalyzer = () => {
               <Sparkles className="h-8 w-8 sm:h-10 sm:w-10 text-white" aria-hidden="true" />
             </div>
             <h1 className="text-2xl sm:text-3xl md:text-4xl font-cinzel font-bold mb-3 sm:mb-4 text-white tracking-wide">
-              Ten Gods Analyzer - Free Bazi Ten Gods Calculator
+              {t('tools.tenGods.title')}
             </h1>
             <p className="text-lg sm:text-xl text-mystic-300 max-w-3xl mx-auto">
-              Analyze the Ten Gods (十神) in your BaZi chart. Understand your personality traits, career potential, wealth patterns, and relationship dynamics through Ten Gods analysis.
+              {t('tools.tenGods.description')}
             </p>
           </motion.div>
 

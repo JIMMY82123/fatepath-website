@@ -77,6 +77,37 @@
     "famousPeopleBornToday": "Famous People Born Today",
     "resources": "Resources"
   },
+  "tools": {
+    "dayMaster": {
+      "title": "Free Bazi Day Master Strength Calculator - Day Dry Strong or Weak Analysis",
+      "description": "Use this free bazi day master calculator to instantly check if your Day Master is strong or weak. Get accurate bazi day master analysis with strength level, joy gods, favorable elements, and complete five elements balance assessment.",
+      "howToDetermine": "How to Determine Day Master Strength in Bazi",
+      "dateOfBirth": "Date of Birth",
+      "timeOfBirth": "Time of Birth (Optional)",
+      "timeHint": "If you don't know the exact time, leave this blank (defaults to noon)",
+      "birthLocation": "Birth Location (Optional)",
+      "locationPlaceholder": "City, Country (e.g., New York, USA)",
+      "locationHint": "Used for true solar time correction (optional)",
+      "calculate": "Calculate Day Master Strength",
+      "calculating": "Calculating...",
+      "resultTitle": "Day Master Strength Result",
+      "joyGods": "Joy Gods",
+      "favorableElements": "Favorable Elements",
+      "fiveElementsBalance": "Five Elements Balance"
+    },
+    "trueSolarTime": {
+      "title": "True Solar Time Calculator",
+      "description": "Convert standard time to true solar time for accurate Bazi readings. Essential for precise Chinese astrology calculations based on your exact birth location.",
+      "calculate": "Calculate True Solar Time",
+      "calculating": "Calculating..."
+    },
+    "tenGods": {
+      "title": "Ten Gods Analyzer - Free Bazi Ten Gods Calculator",
+      "description": "Analyze the Ten Gods (十神) in your BaZi chart. Understand your personality traits, career potential, wealth patterns, and relationship dynamics through Ten Gods analysis.",
+      "calculate": "Analyze Ten Gods",
+      "calculating": "Analyzing..."
+    }
+  },
   "home": {
     "title": "Discover Your Destiny Through BaZi",
     "subtitle": "Ancient Chinese Astrology for Modern Life",
