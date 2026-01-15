@@ -202,21 +202,26 @@ const Navbar = () => {
             <div className="px-2 pt-2 pb-3 space-y-2 border-t border-mystic-700/50">
               {navItems.map((item) => {
                 if (item.hasDropdown) {
+                  const isCelebritiesMenu = item.label === 'Famous People'
+                  const isMobileMenuOpen = isCelebritiesMenu ? isMobileCelebritiesOpen : isMobileToolsOpen
+                  const setIsMobileMenuOpen = isCelebritiesMenu ? setIsMobileCelebritiesOpen : setIsMobileToolsOpen
+                  const isActiveMenu = isCelebritiesMenu ? isCelebritiesActive : isToolsActive
+
                   return (
                     <div key={item.label}>
                       <button
-                        onClick={() => setIsMobileToolsOpen(!isMobileToolsOpen)}
+                        onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
                         className={`mobile-nav-item w-full text-left block text-base font-medium transition-colors duration-200 rounded-lg px-3 py-2 flex items-center justify-between ${
-                          isToolsActive
+                          isActiveMenu
                             ? 'text-gold-400 bg-mystic-800/50' 
                             : 'text-mystic-300 hover:text-gold-400 hover:bg-mystic-800/30'
                         }`}
                       >
                         <span>{item.label}</span>
-                        <ChevronDown className={`h-4 w-4 transition-transform duration-200 ${isMobileToolsOpen ? 'rotate-180' : ''}`} />
+                        <ChevronDown className={`h-4 w-4 transition-transform duration-200 ${isMobileMenuOpen ? 'rotate-180' : ''}`} />
                       </button>
                       <AnimatePresence>
-                        {isMobileToolsOpen && (
+                        {isMobileMenuOpen && (
                           <motion.div
                             initial={{ opacity: 0, height: 0 }}
                             animate={{ opacity: 1, height: 'auto' }}
@@ -229,7 +234,7 @@ const Navbar = () => {
                                 to={subItem.path}
                                 onClick={() => {
                                   setIsOpen(false)
-                                  setIsMobileToolsOpen(false)
+                                  setIsMobileMenuOpen(false)
                                 }}
                                 className={`mobile-nav-item block text-sm font-medium transition-colors duration-200 rounded-lg px-3 py-2 ${
                                   isActive(subItem.path)
