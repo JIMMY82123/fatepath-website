@@ -244,18 +244,25 @@ const staticPages = [
   }
 ]
 
-const blogPages = Object.entries(blogPostsData).map(([slug, post]) => ({
-  output: `blog/${slug}/index.html`,
-  url: `${siteOrigin}/blog/${slug}`,
-  title: `${post.title} | FatePath Chinese Astrology Blog`,
-  description: post.excerpt || post.title,
-  keywords: `${(post.tags || []).join(', ')}, chinese astrology, bazi analysis`,
-  ogImage: post.image ? `${siteOrigin}${post.image}` : defaultImage,
-  ogType: 'article',
-  author: post.author || 'FatePath',
-  heading: post.title,
-  seoText: `${post.excerpt || ''} ${htmlToPlainText(post.content || '')}`.trim()
-}))
+const blogPages = Object.entries(blogPostsData).map(([slug, post]) => {
+  // Support multilingual format: extract English version if object, otherwise use string
+  const title = typeof post.title === 'object' ? (post.title.en || post.title) : post.title
+  const excerpt = typeof post.excerpt === 'object' ? (post.excerpt.en || post.excerpt) : post.excerpt
+  const content = typeof post.content === 'object' ? (post.content.en || post.content) : post.content
+  
+  return {
+    output: `blog/${slug}/index.html`,
+    url: `${siteOrigin}/blog/${slug}`,
+    title: `${title} | FatePath Chinese Astrology Blog`,
+    description: excerpt || title,
+    keywords: `${(post.tags || []).join(', ')}, chinese astrology, bazi analysis`,
+    ogImage: post.image ? `${siteOrigin}${post.image}` : defaultImage,
+    ogType: 'article',
+    author: post.author || 'FatePath',
+    heading: title,
+    seoText: `${excerpt || ''} ${htmlToPlainText(content || '')}`.trim()
+  }
+})
 
 const legacyBlogPages = [
   {
