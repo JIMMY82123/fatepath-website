@@ -680,10 +680,10 @@ const Home = () => {
             <div className="bg-white p-12 rounded-lg border border-slate-200 shadow-lg">
               <div className="text-center mb-12">
                 <h3 className="text-3xl font-playfair font-semibold text-slate-900 mb-4">
-                  Tom Cruise - Hollywood Superstar
+                  {t('home.tomCruiseTitle')}
                 </h3>
                 <p className="text-slate-700 text-lg">
-                  July 3, 1962, 12:00 PM, Syracuse, New York, USA
+                  {t('home.tomCruiseBirth')}
                 </p>
               </div>
               
@@ -698,35 +698,29 @@ const Home = () => {
                     className="w-48 h-48 rounded-full mx-auto mb-6 object-cover border-4 border-amber-200"
                   />
                   <p className="text-slate-700 text-sm">
-                    Tom Cruise's BaZi chart reveals his extraordinary career timing and success patterns
+                    {t('home.tomCruiseChart')}
                   </p>
                 </div>
                 
                 <div className="space-y-6">
                   <div>
-                    <h4 className="text-lg font-playfair font-semibold text-slate-900 mb-2">Career Success Pattern</h4>
+                    <h4 className="text-lg font-playfair font-semibold text-slate-900 mb-2">{t('home.tomCruiseCareer')}</h4>
                     <p className="text-slate-700 leading-relaxed">
-                      Tom Cruise's BaZi chart shows a strong Fire element with Metal support, creating the perfect 
-                      combination for entertainment industry success. His chart indicates peak performance periods 
-                      that align with his biggest box office hits.
+                      {t('home.tomCruiseCareerDesc')}
                     </p>
                   </div>
                   
                   <div>
-                    <h4 className="text-lg font-playfair font-semibold text-slate-900 mb-2">Timing for Success</h4>
+                    <h4 className="text-lg font-playfair font-semibold text-slate-900 mb-2">{t('home.tomCruiseTiming')}</h4>
                     <p className="text-slate-700 leading-relaxed">
-                      His chart reveals that 1986-1996 was a "Golden Period" for career breakthroughs, 
-                      perfectly matching his rise to stardom with films like "Top Gun" and "Rain Man." 
-                      The 2000s brought another peak with the "Mission: Impossible" series.
+                      {t('home.tomCruiseTimingDesc')}
                     </p>
                   </div>
                   
                   <div>
-                    <h4 className="text-lg font-playfair font-semibold text-slate-900 mb-2">Personality Traits</h4>
+                    <h4 className="text-lg font-playfair font-semibold text-slate-900 mb-2">{t('home.tomCruisePersonality')}</h4>
                     <p className="text-slate-700 leading-relaxed">
-                      His strong Fire element explains his charismatic personality, intense work ethic, 
-                      and ability to perform dangerous stunts. The Metal element gives him precision, 
-                      discipline, and the drive for perfection that defines his acting career.
+                      {t('home.tomCruisePersonalityDesc')}
                     </p>
                   </div>
                 </div>
@@ -734,8 +728,7 @@ const Home = () => {
               
               <div className="text-center mt-8 p-6 bg-slate-50 rounded-lg border border-slate-200">
                 <p className="text-slate-700 italic">
-                  "Through correctly understanding one's innate talents and combining with unremitting effort, 
-                  everyone can create miracles based on destiny."
+                  "{t('home.tomCruiseQuote')}"
                 </p>
               </div>
             </div>
@@ -744,10 +737,10 @@ const Home = () => {
             <div className="bg-white p-12 rounded-lg border border-slate-200 shadow-lg mt-12">
               <div className="text-center mb-12">
                 <h3 className="text-3xl font-playfair font-semibold text-slate-900 mb-4">
-                  Steve Jobs - Tech Visionary & Apple Co-founder
+                  {t('home.steveJobsTitle')}
                 </h3>
                 <p className="text-slate-700 text-lg">
-                  February 24, 1955, 7:15 PM, San Francisco, California, USA
+                  {t('home.steveJobsBirth')}
                 </p>
               </div>
               
@@ -762,35 +755,29 @@ const Home = () => {
                     className="w-48 h-48 rounded-full mx-auto mb-6 object-cover border-4 border-amber-200"
                   />
                   <p className="text-slate-700 text-sm">
-                    Steve Jobs' BaZi chart reveals his revolutionary innovation timing and leadership patterns
+                    {t('home.steveJobsChart')}
                   </p>
                 </div>
                 
                 <div className="space-y-6">
                   <div>
-                    <h4 className="text-lg font-playfair font-semibold text-slate-900 mb-2">Innovation Leadership Pattern</h4>
+                    <h4 className="text-lg font-playfair font-semibold text-slate-900 mb-2">{t('home.steveJobsInnovation')}</h4>
                     <p className="text-slate-700 leading-relaxed">
-                      Steve Jobs' BaZi chart shows a strong Wood element with Fire support, creating the perfect 
-                      combination for technological innovation and visionary leadership. His chart indicates 
-                      breakthrough periods that align with Apple's major product launches.
+                      {t('home.steveJobsInnovationDesc')}
                     </p>
                   </div>
                   
                   <div>
-                    <h4 className="text-lg font-playfair font-semibold text-slate-900 mb-2">Revolutionary Timing</h4>
+                    <h4 className="text-lg font-playfair font-semibold text-slate-900 mb-2">{t('home.steveJobsTiming')}</h4>
                     <p className="text-slate-700 leading-relaxed">
-                      His chart reveals that 1976-1985 was a "Wood-Fire Period" for founding and innovation, 
-                      perfectly matching Apple's creation and the personal computer revolution. The 1997-2011 
-                      period brought another peak with the iPod, iPhone, and iPad revolutions.
+                      {t('home.steveJobsTimingDesc')}
                     </p>
                   </div>
                   
                   <div>
-                    <h4 className="text-lg font-playfair font-semibold text-slate-900 mb-2">Leadership Traits</h4>
+                    <h4 className="text-lg font-playfair font-semibold text-slate-900 mb-2">{t('home.steveJobsLeadership')}</h4>
                     <p className="text-slate-700 leading-relaxed">
-                      His strong Wood element explains his visionary thinking, ability to see future trends, 
-                      and relentless pursuit of perfection. The Fire element gives him the charisma, 
-                      passion, and drive to inspire teams and revolutionize entire industries.
+                      {t('home.steveJobsLeadershipDesc')}
                     </p>
                   </div>
                 </div>
@@ -798,8 +785,7 @@ const Home = () => {
               
               <div className="text-center mt-8 p-6 bg-slate-50 rounded-lg border border-slate-200">
                 <p className="text-slate-700 italic">
-                  "Innovation distinguishes between a leader and a follower. Your BaZi chart reveals 
-                  when you're destined to lead and when to follow your vision."
+                  "{t('home.steveJobsQuote')}"
                 </p>
               </div>
             </div>
@@ -813,11 +799,10 @@ const Home = () => {
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-16">
               <h2 className="text-4xl font-playfair font-semibold text-slate-900 mb-8 tracking-tight">
-                Master XuanYin
+                {t('home.masterTitle')}
               </h2>
               <p className="text-lg text-slate-700 leading-relaxed mb-12 max-w-4xl mx-auto">
-                Devoted to studying BaZi destiny analysis for decades, proficient in traditional Chinese destiny analysis, 
-                committed to helping people understand their destiny codes, find their life direction, and achieve their goals.
+                {t('home.masterDesc')}
               </p>
             </div>
             
@@ -832,34 +817,29 @@ const Home = () => {
                   className="w-80 h-80 rounded-full mx-auto mb-8 object-cover border-4 border-amber-200 shadow-xl"
                 />
                 <h3 className="text-2xl font-playfair font-semibold text-slate-900 mb-4">
-                  BaZi Destiny Expert & Traditional Chinese Numerology Master
+                  {t('home.masterExpert')}
                 </h3>
               </div>
               
               <div className="space-y-6">
                 <div className="bg-white p-8 rounded-lg border border-slate-200 shadow-sm">
-                  <h3 className="text-xl font-playfair font-semibold text-slate-900 mb-4">Professional Background</h3>
+                  <h3 className="text-xl font-playfair font-semibold text-slate-900 mb-4">{t('home.masterBackground')}</h3>
                   <p className="text-slate-700 leading-relaxed">
-                    With over 15 years of experience in traditional Chinese numerology, Master XuanYin has 
-                    studied under renowned masters and has helped hundreds of clients worldwide discover their 
-                    true potential and life purpose through BaZi analysis.
+                    {t('home.masterBackgroundDesc')}
                   </p>
                 </div>
                 
                 <div className="bg-white p-8 rounded-lg border border-slate-200 shadow-sm">
-                  <h3 className="text-xl font-playfair font-semibold text-slate-900 mb-4">Theoretical Innovation</h3>
+                  <h3 className="text-xl font-playfair font-semibold text-slate-900 mb-4">{t('home.masterInnovation')}</h3>
                   <p className="text-slate-700 leading-relaxed">
-                    Combining ancient wisdom with modern interpretation methods, Master XuanYin has developed 
-                    unique insights into BaZi analysis, making this ancient knowledge accessible and practical 
-                    for contemporary life challenges.
+                    {t('home.masterInnovationDesc')}
                   </p>
                 </div>
                 
                 <div className="bg-white p-8 rounded-lg border border-slate-200 shadow-sm">
-                  <h3 className="text-xl font-playfair font-semibold text-slate-900 mb-4">Service Philosophy</h3>
+                  <h3 className="text-xl font-playfair font-semibold text-slate-900 mb-4">{t('home.masterPhilosophy')}</h3>
                   <p className="text-slate-700 leading-relaxed">
-                    "True destiny masters are not prophets, but life mentors. We must not only tell people how destiny is, 
-                    but also guide people on how to face destiny, how to create better lives based on destiny."
+                    "{t('home.masterPhilosophyDesc')}"
                   </p>
                 </div>
               </div>
@@ -873,17 +853,17 @@ const Home = () => {
         <div className="container mx-auto px-6 text-center">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-4xl font-playfair font-semibold text-white mb-8 tracking-tight">
-              Begin Your Destiny Journey
+              {t('home.beginJourneyTitle')}
             </h2>
             <p className="text-xl text-slate-300 mb-8">
-              Through professional BaZi analysis, understand your innate potential and find your life direction
+              {t('home.beginJourneyDesc')}
             </p>
             
             <Link
               to="/free-bazi-report"
               className="inline-flex items-center space-x-2 bg-amber-400 text-slate-900 py-4 px-8 rounded-lg font-semibold text-xl hover:bg-amber-300 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105"
             >
-              <span>Free BaZi Analysis</span>
+              <span>{t('home.freeBaziAnalysis')}</span>
               <div className="w-2 h-2 bg-slate-900 rounded-full"></div>
             </Link>
             
@@ -893,9 +873,9 @@ const Home = () => {
                 <div className="w-16 h-16 bg-amber-100 rounded-full mx-auto mb-4 flex items-center justify-center border border-amber-200">
                   <div className="text-2xl text-amber-600">⭐</div>
                 </div>
-                <h3 className="text-xl font-playfair font-semibold text-white mb-2">Professional Expertise</h3>
+                <h3 className="text-xl font-playfair font-semibold text-white mb-2">{t('home.professionalExpertise')}</h3>
                 <p className="text-slate-300">
-                  15+ years of experience in traditional Chinese numerology
+                  {t('home.professionalExpertiseDesc')}
                 </p>
               </div>
               
@@ -903,9 +883,9 @@ const Home = () => {
                 <div className="w-16 h-16 bg-amber-100 rounded-full mx-auto mb-4 flex items-center justify-center border border-amber-200">
                   <div className="text-2xl text-amber-600">🌍</div>
                 </div>
-                <h3 className="text-xl font-playfair font-semibold text-white mb-2">Global Clients</h3>
+                <h3 className="text-xl font-playfair font-semibold text-white mb-2">{t('home.globalClients')}</h3>
                 <p className="text-slate-300">
-                  Helping people worldwide discover their life purpose
+                  {t('home.globalClientsDesc')}
                 </p>
               </div>
               
@@ -913,9 +893,9 @@ const Home = () => {
                 <div className="w-16 h-16 bg-amber-100 rounded-full mx-auto mb-4 flex items-center justify-center border border-amber-200">
                   <div className="text-2xl text-amber-600">📊</div>
                 </div>
-                <h3 className="text-xl font-playfair font-semibold text-white mb-2">Proven Results</h3>
+                <h3 className="text-xl font-playfair font-semibold text-white mb-2">{t('home.provenResults')}</h3>
                 <p className="text-slate-300">
-                  Hundreds of satisfied clients with life-changing insights
+                  {t('home.provenResultsDesc')}
                 </p>
               </div>
             </div>
