@@ -796,8 +796,474 @@ export const blogPostsData = {
         </div>
       </div>
     `,
-      ja: ``,
-      ko: ``
+      ja: `
+      <div class="space-y-8">
+        <div class="mb-8">
+          <div class="bg-gradient-to-r from-orange-500/20 to-amber-500/20 border border-orange-500/30 rounded-lg p-6 mb-8">
+            <h3 class="text-lg font-semibold text-orange-400 mb-3">🎯 重要なポイント</h3>
+            <ul class="text-mystic-200 space-y-2">
+              <li>• 決断疲れと燃え尽きは時間管理の問題ではなく、エネルギー枯渇から生じます</li>
+              <li>• 五行（木、火、土、金、水）はあなたの特定の燃え尽きタイプを診断できます</li>
+              <li>• 枯渇した要素に基づいたターゲットを絞ったマイクロ習慣は、源でエネルギーを回復できます</li>
+              <li>• 運柱（大運）を理解することで、それらと戦うのではなく、サイクルと共に流れることができます</li>
+            </ul>
+          </div>
+        </div>
+
+        <h2 class="text-2xl font-bold text-white mb-4 mt-8">はじめに</h2>
+        <p class="mb-6 text-lg text-mystic-200 leading-relaxed">
+          コンピューター画面を見つめながら、ランチに何を食べるかさえ決められない午後を経験したことはありますか？簡単なメールに返信することさえ、山を動かすように感じられます。仕事の終わりには、精神的に曇り、感情的にはイライラし、思考を必要とするあらゆるタスクを恐れます。
+        </p>
+        <p class="mb-6 text-mystic-200 leading-relaxed">
+          これは怠惰ではありません。これらは<strong>決断疲れ</strong>と<strong>燃え尽き</strong>の典型的な兆候です。私たちの脳は筋肉のようなものです。戦略的計画であれコーヒーを選ぶことであれ、私たちが行うすべての決定はそのエネルギーを消耗します。現代の職場は決定の戦場であり、最終的に私たちの意志力は尽きてしまいます。
+        </p>
+        <p class="mb-6 text-mystic-200 leading-relaxed">
+          私たちはしばしば外部の解決策を求めます—より多くの時間管理のハック、より厳格なタスクの優先順位付け—しかし結果はしばしば精彩を欠いています。おそらく問題は時間の管理方法ではなく、エネルギーの管理方法です。
+        </p>
+        <p class="mb-6 text-mystic-200 leading-relaxed">
+          ここで、古代中国の<strong>四柱推命（八字）</strong>の技術が革命的な視点を提供できます。それは運命への神秘的な信念ではなく、詳細な個人的なエネルギーの青写真です。あなたの生来の五行構成を理解することで、流れに逆らうのではなく、源でエネルギーを補充する高度に個人的な回復計画を作成できます。
+        </p>
+
+        <h2 class="text-2xl font-bold text-white mb-4 mt-8">あなたの燃え尽きの五行診断</h2>
+        <p class="mb-6 text-mystic-200 leading-relaxed">
+          八字理論では、すべては五つの要素エネルギーで構成されています：木、火、土、金、水。燃え尽きと決断疲れの本質は、最も必要な「用神」要素の枯渇と「忌神」要素の過度の影響です。
+        </p>
+        <p class="mb-6 text-mystic-200 leading-relaxed">
+          簡単な自己診断をしましょう。<strong>あなたの燃え尽きの主な現れは何ですか？</strong>
+        </p>
+
+        <div class="space-y-6 mb-6">
+          <div class="bg-gradient-to-r from-green-500/20 to-emerald-500/20 border border-green-500/30 rounded-lg p-6">
+            <h3 class="text-xl font-semibold text-green-400 mb-3">🌳 枯渇した木のエネルギー（成長と計画）</h3>
+            <div class="mb-4">
+              <p class="text-mystic-200 mb-2"><strong>症状：</strong></p>
+              <ul class="list-disc list-inside text-mystic-200 space-y-1 mb-3">
+                <li>ビジョンの欠如、行き詰まり感</li>
+                <li>先を計画できない</li>
+                <li>すべての創造性の喪失</li>
+              </ul>
+            </div>
+            <p class="text-mystic-200 leading-relaxed">
+              <strong>原因：</strong> 成長、ビジョン、構造を表す<strong>木</strong>のエネルギーが枯渇しています。
+            </p>
+          </div>
+
+          <div class="bg-gradient-to-r from-red-500/20 to-orange-500/20 border border-red-500/30 rounded-lg p-6">
+            <h3 class="text-xl font-semibold text-red-400 mb-3">🔥 消えた火のエネルギー（表現と情熱）</h3>
+            <div class="mb-4">
+              <p class="text-mystic-200 mb-2"><strong>症状：</strong></p>
+              <ul class="list-disc list-inside text-mystic-200 space-y-1 mb-3">
+                <li>仕事への熱意の喪失</li>
+                <li>社会的相互作用が耐えられなくなる</li>
+                <li>喜びやインスピレーションを感じられない</li>
+              </ul>
+            </div>
+            <p class="text-mystic-200 leading-relaxed">
+              <strong>原因：</strong> 喜び、情熱、社会的つながりを表す<strong>火</strong>のエネルギーが燃え尽きています。
+            </p>
+          </div>
+
+          <div class="bg-gradient-to-r from-yellow-500/20 to-amber-500/20 border border-yellow-500/30 rounded-lg p-6">
+            <h3 class="text-xl font-semibold text-yellow-400 mb-3">🌍 バランスの崩れた土のエネルギー（安定性と中心）</h3>
+            <div class="mb-4">
+              <p class="text-mystic-200 mb-2"><strong>症状：</strong></p>
+              <ul class="list-disc list-inside text-mystic-200 space-y-1 mb-3">
+                <li>過度の心配、考えすぎ</li>
+                <li>圧倒される感覚</li>
+                <li>仕事のプレッシャーを「消化」できない</li>
+              </ul>
+            </div>
+            <p class="text-mystic-200 leading-relaxed">
+              <strong>原因：</strong> 安定性、サポート、地に足をつけることを表す<strong>土</strong>のエネルギーが不均衡で、あなたを支えることができません。
+            </p>
+          </div>
+
+          <div class="bg-gradient-to-r from-gray-500/20 to-slate-500/20 border border-gray-500/30 rounded-lg p-6">
+            <h3 class="text-xl font-semibold text-gray-300 mb-3">⚔️ ブロックされた金のエネルギー（規律と境界）</h3>
+            <div class="mb-4">
+              <p class="text-mystic-200 mb-2"><strong>症状：</strong></p>
+              <ul class="list-disc list-inside text-mystic-200 space-y-1 mb-3">
+                <li>境界を設定するのが困難</li>
+                <li>利用されていると感じる</li>
+                <li>詳細に対する忍耐力の喪失</li>
+              </ul>
+            </div>
+            <p class="text-mystic-200 leading-relaxed">
+              <strong>原因：</strong> ルール、境界、精密さを表す<strong>金</strong>のエネルギーが弱くなっています。
+            </p>
+          </div>
+
+          <div class="bg-gradient-to-r from-blue-500/20 to-cyan-500/20 border border-blue-500/30 rounded-lg p-6">
+            <h3 class="text-xl font-semibold text-blue-400 mb-3">💧 枯渇した水のエネルギー（知恵と回復）</h3>
+            <div class="mb-4">
+              <p class="text-mystic-200 mb-2"><strong>症状：</strong></p>
+              <ul class="list-disc list-inside text-mystic-200 space-y-1 mb-3">
+                <li>根深い恐怖、休息できない</li>
+                <li>「充電」できない心</li>
+                <li>内なる知恵の喪失</li>
+              </ul>
+            </div>
+            <p class="text-mystic-200 leading-relaxed">
+              <strong>原因：</strong> 知恵、流れ、回復力を表す<strong>水</strong>のエネルギーが枯渇しています。
+            </p>
+          </div>
+        </div>
+
+        <h2 class="text-2xl font-bold text-white mb-4 mt-8">あなたの四柱エネルギー回復計画</h2>
+        <p class="mb-6 text-mystic-200 leading-relaxed">
+          エネルギー枯渇の主な領域を特定したら、ターゲットを絞った実践でそれを補充できます。以下は、五行に基づいた日常回復のためのマイクロ習慣です。
+        </p>
+
+        <div class="space-y-6 mb-6">
+          <div class="bg-gradient-to-r from-green-500/20 to-emerald-500/20 border border-green-500/30 rounded-lg p-6">
+            <h3 class="text-xl font-semibold text-green-400 mb-4">枯渇した木のエネルギーの場合：「成長」モードを活性化</h3>
+            <div class="space-y-4">
+              <div class="bg-mystic-800/40 rounded-lg p-4">
+                <p class="text-mystic-200 mb-2"><strong>🌅 朝の儀式（午前7-9時）：</strong></p>
+                <p class="text-mystic-200 leading-relaxed">
+                  15分間、一日を計画します。受動的なToDoリストではなく、積極的に考えます：「今日、成長を促進するために何を一つ達成できるか？」机に小さな緑の植物を置いておきます。
+                </p>
+              </div>
+              <div class="bg-mystic-800/40 rounded-lg p-4">
+                <p class="text-mystic-200 mb-2"><strong>🌆 午後のリセット（午後1-3時）：</strong></p>
+                <p class="text-mystic-200 leading-relaxed">
+                  行き詰まりを感じたら、5分間の休憩を取ります。立ち上がり、空に向かって伸びる木のように、体を上向き、外向きに伸ばします。
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="bg-gradient-to-r from-red-500/20 to-orange-500/20 border border-red-500/30 rounded-lg p-6">
+            <h3 class="text-xl font-semibold text-red-400 mb-4">消えた火のエネルギーの場合：「喜び」の炎を再点火</h3>
+            <div class="space-y-4">
+              <div class="bg-mystic-800/40 rounded-lg p-4">
+                <p class="text-mystic-200 mb-2"><strong>☀️ 正午の儀式（午前11時-午後1時）：</strong></p>
+                <p class="text-mystic-200 leading-relaxed">
+                  これは火のエネルギーがピークの時間です。仕事から離れ、本当にランチを楽しみます。あなたに喜びをもたらす同僚と交流します。仕事をしながら机で食べることは避けます。
+                </p>
+              </div>
+              <div class="bg-mystic-800/40 rounded-lg p-4">
+                <p class="text-mystic-200 mb-2"><strong>⚡ マイクロ休憩：</strong></p>
+                <p class="text-mystic-200 leading-relaxed">
+                  午後に消耗を感じたら、短い面白い動画を見るか、情熱に火をつける曲を聴きます。
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="bg-gradient-to-r from-yellow-500/20 to-amber-500/20 border border-yellow-500/30 rounded-lg p-6">
+            <h3 class="text-xl font-semibold text-yellow-400 mb-4">バランスの崩れた土のエネルギーの場合：「中心」に戻る</h3>
+            <div class="space-y-4">
+              <div class="bg-mystic-800/40 rounded-lg p-4">
+                <p class="text-mystic-200 mb-2"><strong>🔄 小さなタスクを儀式化：</strong></p>
+                <p class="text-mystic-200 leading-relaxed">
+                  毎日同じ時間に同じ小さなことを行います。お茶を飲むことや机を整理することなど。この予測可能性が土のエネルギーを落ち着かせます。
+                </p>
+              </div>
+              <div class="bg-mystic-800/40 rounded-lg p-4">
+                <p class="text-mystic-200 mb-2"><strong>🍵 マインドフルな食事：</strong></p>
+                <p class="text-mystic-200 leading-relaxed">
+                  食べるときはゆっくりと、よく噛みます。これは、圧倒されるのではなく、仕事のプレッシャーを効果的に「消化」する能力を象徴します。
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="bg-gradient-to-r from-gray-500/20 to-slate-500/20 border border-gray-500/30 rounded-lg p-6">
+            <h3 class="text-xl font-semibold text-gray-300 mb-4">ブロックされた金のエネルギーの場合：「交渉不可」の境界を設定</h3>
+            <div class="space-y-4">
+              <div class="bg-mystic-800/40 rounded-lg p-4">
+                <p class="text-mystic-200 mb-2"><strong>🌙 夕方の儀式（午後5-7時）：</strong></p>
+                <p class="text-mystic-200 leading-relaxed">
+                  象徴的な「仕事の終わり」の儀式を行います。コンピューターの電源を切る、布で覆う、または声に出して「今日の仕事は完了しました」と言います。この行動は金の境界感覚を強化します。
+                </p>
+              </div>
+              <div class="bg-mystic-800/40 rounded-lg p-4">
+                <p class="text-mystic-200 mb-2"><strong>🚫 「いいえ」と言う練習：</strong></p>
+                <p class="text-mystic-200 leading-relaxed">
+                  事前に、今週断る非必須のリクエストを一つ決めます。富を守るようにエネルギーを守ります。
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="bg-gradient-to-r from-blue-500/20 to-cyan-500/20 border border-blue-500/30 rounded-lg p-6">
+            <h3 class="text-xl font-semibold text-blue-400 mb-4">枯渇した水のエネルギーの場合：「深い休息」を受け入れる</h3>
+            <div class="space-y-4">
+              <div class="bg-mystic-800/40 rounded-lg p-4">
+                <p class="text-mystic-200 mb-2"><strong>🔇 音の休息：</strong></p>
+                <p class="text-mystic-200 leading-relaxed">
+                  過度に刺激されていると感じたら、ノイズキャンセリングヘッドフォンを着用し、5分間、沈黙または心地よい自然の音に浸ります。
+                </p>
+              </div>
+              <div class="bg-mystic-800/40 rounded-lg p-4">
+                <p class="text-mystic-200 mb-2"><strong>😴 質の高い睡眠：</strong></p>
+                <p class="text-mystic-200 leading-relaxed">
+                  水のエネルギーは夜遅く（午後9-11時）に回復し始めます。15分早く、画面から離れてリラックスし始めます。楽しみのために本を読んで、脳をリラックスした状態に入らせます。
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <h2 class="text-2xl font-bold text-white mb-4 mt-8">回復を超えて：「運柱」と同期する</h2>
+        <p class="mb-6 text-mystic-200 leading-relaxed">
+          八字の<strong>「運柱」（大運）</strong>の概念は、各10年間の期間が異なる支配的なエネルギーに影響されることを教えてくれます。あなたの「用神」エネルギーを消耗する運柱にいる場合、燃え尽きはより強く感じられるかもしれません。
+        </p>
+        <div class="bg-mystic-800/40 border border-mystic-700/40 rounded-lg p-6 mb-6">
+          <p class="text-mystic-200 leading-relaxed mb-3">
+            ここでの戦略は、より強く押すことではなく、サイクルと共に流れることです。あなたの運柱が「低姿勢」（水のエネルギーのような）を要求する場合、頻繁な社会的状況（火のエネルギー）に自分を強制すると、より速く消耗します。
+          </p>
+          <p class="text-mystic-200 leading-relaxed">
+            現在のサイクルを理解することで、自己非難（「なぜついていけないのか？」）から自己ケア（「今、どんな休息が必要か？」）へとマインドセットがシフトします。
+          </p>
+        </div>
+
+        <div class="bg-gradient-to-r from-purple-500/20 to-indigo-500/20 border border-purple-500/30 rounded-lg p-6 mb-6">
+          <h3 class="text-xl font-semibold text-purple-400 mb-3">最後の考え</h3>
+          <p class="text-mystic-200 leading-relaxed mb-3">
+            最終的に、決断疲れと燃え尽きと戦うことは、より一生懸命考えることではなく、<strong>より賢く休息すること</strong>です。四柱は、自分を修正が必要な機械として見るのをやめ、独自のエネルギー景観を持つ生態系として自分を見始めるためのフレームワークを提供します。
+          </p>
+          <p class="text-mystic-200 leading-relaxed">
+            小さく、ターゲットを絞った、日常的な補充の行為を通じて、内側から外側へと意思決定力と仕事への情熱を再構築できます。
+          </p>
+        </div>
+      </div>
+    `,
+      ko: `
+      <div class="space-y-8">
+        <div class="mb-8">
+          <div class="bg-gradient-to-r from-orange-500/20 to-amber-500/20 border border-orange-500/30 rounded-lg p-6 mb-8">
+            <h3 class="text-lg font-semibold text-orange-400 mb-3">🎯 핵심 요약</h3>
+            <ul class="text-mystic-200 space-y-2">
+              <li>• 결정 피로와 번아웃은 시간 관리 문제가 아니라 에너지 고갈에서 비롯됩니다</li>
+              <li>• 오행（목, 화, 토, 금, 수）은 당신의 특정 번아웃 유형을 진단할 수 있습니다</li>
+              <li>• 고갈된 요소에 기반한 타겟팅된 마이크로 습관은 원천에서 에너지를 회복할 수 있습니다</li>
+              <li>• 운주（대운）를 이해하면 그것들과 싸우는 대신 사이클과 함께 흐를 수 있습니다</li>
+            </ul>
+          </div>
+        </div>
+
+        <h2 class="text-2xl font-bold text-white mb-4 mt-8">서론</h2>
+        <p class="mb-6 text-lg text-mystic-200 leading-relaxed">
+          컴퓨터 화면을 응시하면서 점심에 무엇을 먹을지조차 결정할 수 없는 오후를 경험한 적이 있나요？간단한 이메일에 답장하는 것조차 산을 옮기는 것처럼 느껴집니다。하루 일과가 끝나면 정신적으로 흐릿하고，감정적으로 짜증나며，사고를 요구하는 모든 작업을 두려워합니다。
+        </p>
+        <p class="mb-6 text-mystic-200 leading-relaxed">
+          이것은 게으름이 아닙니다。이것들은 <strong>결정 피로</strong>와 <strong>번아웃</strong>의 전형적인 징후입니다。우리의 뇌는 근육과 같습니다。전략적 계획이든 커피를 선택하는 것이든，우리가 내리는 모든 결정은 그 에너지를 고갈시킵니다。현대 직장은 결정의 전장이며，결국 우리의 의지력은 고갈됩니다。
+        </p>
+        <p class="mb-6 text-mystic-200 leading-relaxed">
+          우리는 종종 외부 해결책을 찾습니다—더 많은 시간 관리 팁，더 엄격한 작업 우선순위 설정—하지만 결과는 종종 실망스럽습니다。아마도 문제는 시간을 관리하는 방법이 아니라 에너지를 관리하는 방법일 것입니다。
+        </p>
+        <p class="mb-6 text-mystic-200 leading-relaxed">
+          여기서 고대 중국의 <strong>사주（팔자）</strong> 기술이 혁명적인 관점을 제공할 수 있습니다。그것은 운명에 대한 신비로운 믿음이 아니라，상세한 개인 에너지 청사진입니다。당신의 타고난 오행 구성을 이해함으로써，흐름에 맞서 싸우는 대신 원천에서 에너지를 보충하는 고도로 개인화된 회복 계획을 만들 수 있습니다。
+        </p>
+
+        <h2 class="text-2xl font-bold text-white mb-4 mt-8">당신의 번아웃의 오행 진단</h2>
+        <p class="mb-6 text-mystic-200 leading-relaxed">
+          팔자 이론에서，모든 것은 다섯 가지 요소 에너지로 구성됩니다：목，화，토，금，수。번아웃과 결정 피로의 본질은 가장 필요한 "용신" 요소의 고갈과 "기신" 요소의 과도한 영향입니다。
+        </p>
+        <p class="mb-6 text-mystic-200 leading-relaxed">
+          빠른 자가 진단을 해봅시다。<strong>당신의 번아웃의 주요 표현은 무엇입니까？</strong>
+        </p>
+
+        <div class="space-y-6 mb-6">
+          <div class="bg-gradient-to-r from-green-500/20 to-emerald-500/20 border border-green-500/30 rounded-lg p-6">
+            <h3 class="text-xl font-semibold text-green-400 mb-3">🌳 고갈된 목 에너지（성장과 계획）</h3>
+            <div class="mb-4">
+              <p class="text-mystic-200 mb-2"><strong>증상：</strong></p>
+              <ul class="list-disc list-inside text-mystic-200 space-y-1 mb-3">
+                <li>비전 부족，막힌 느낌</li>
+                <li>앞으로 계획할 수 없음</li>
+                <li>모든 창의성 상실</li>
+              </ul>
+            </div>
+            <p class="text-mystic-200 leading-relaxed">
+              <strong>원인：</strong> 성장，비전，구조를 나타내는 <strong>목</strong> 에너지가 고갈되었습니다。
+            </p>
+          </div>
+
+          <div class="bg-gradient-to-r from-red-500/20 to-orange-500/20 border border-red-500/30 rounded-lg p-6">
+            <h3 class="text-xl font-semibold text-red-400 mb-3">🔥 꺼진 화 에너지（표현과 열정）</h3>
+            <div class="mb-4">
+              <p class="text-mystic-200 mb-2"><strong>증상：</strong></p>
+              <ul class="list-disc list-inside text-mystic-200 space-y-1 mb-3">
+                <li>일에 대한 열정 상실</li>
+                <li>사회적 상호작용이 견딜 수 없게 됨</li>
+                <li>기쁨이나 영감을 느낄 수 없음</li>
+              </ul>
+            </div>
+            <p class="text-mystic-200 leading-relaxed">
+              <strong>원인：</strong> 기쁨，열정，사회적 연결을 나타내는 <strong>화</strong> 에너지가 타버렸습니다。
+            </p>
+          </div>
+
+          <div class="bg-gradient-to-r from-yellow-500/20 to-amber-500/20 border border-yellow-500/30 rounded-lg p-6">
+            <h3 class="text-xl font-semibold text-yellow-400 mb-3">🌍 불균형한 토 에너지（안정성과 중심）</h3>
+            <div class="mb-4">
+              <p class="text-mystic-200 mb-2"><strong>증상：</strong></p>
+              <ul class="list-disc list-inside text-mystic-200 space-y-1 mb-3">
+                <li>과도한 걱정，과도한 사고</li>
+                <li>압도되는 느낌</li>
+                <li>업무 압력을 "소화"할 수 없음</li>
+              </ul>
+            </div>
+            <p class="text-mystic-200 leading-relaxed">
+              <strong>원인：</strong> 안정성，지지，땅에 발을 딛는 것을 나타내는 <strong>토</strong> 에너지가 불균형하여 당신을 지지할 수 없습니다。
+            </p>
+          </div>
+
+          <div class="bg-gradient-to-r from-gray-500/20 to-slate-500/20 border border-gray-500/30 rounded-lg p-6">
+            <h3 class="text-xl font-semibold text-gray-300 mb-3">⚔️ 막힌 금 에너지（규율과 경계）</h3>
+            <div class="mb-4">
+              <p class="text-mystic-200 mb-2"><strong>증상：</strong></p>
+              <ul class="list-disc list-inside text-mystic-200 space-y-1 mb-3">
+                <li>경계 설정의 어려움</li>
+                <li>이용당하는 느낌</li>
+                <li>세부 사항에 대한 인내심 상실</li>
+              </ul>
+            </div>
+            <p class="text-mystic-200 leading-relaxed">
+              <strong>원인：</strong> 규칙，경계，정밀함을 나타내는 <strong>금</strong> 에너지가 약해졌습니다。
+            </p>
+          </div>
+
+          <div class="bg-gradient-to-r from-blue-500/20 to-cyan-500/20 border border-blue-500/30 rounded-lg p-6">
+            <h3 class="text-xl font-semibold text-blue-400 mb-3">💧 말라버린 수 에너지（지혜와 회복）</h3>
+            <div class="mb-4">
+              <p class="text-mystic-200 mb-2"><strong>증상：</strong></p>
+              <ul class="list-disc list-inside text-mystic-200 space-y-1 mb-3">
+                <li>깊이 뿌리박힌 두려움，휴식할 수 없음</li>
+                <li>"충전"되지 않는 마음</li>
+                <li>내면의 지혜 상실</li>
+              </ul>
+            </div>
+            <p class="text-mystic-200 leading-relaxed">
+              <strong>원인：</strong> 지혜，흐름，회복력을 나타내는 <strong>수</strong> 에너지가 말라버렸습니다。
+            </p>
+          </div>
+        </div>
+
+        <h2 class="text-2xl font-bold text-white mb-4 mt-8">당신의 사주 에너지 회복 계획</h2>
+        <p class="mb-6 text-mystic-200 leading-relaxed">
+          에너지 고갈의 주요 영역을 식별하면，타겟팅된 실천으로 그것을 보충할 수 있습니다。다음은 오행에 기반한 일일 회복을 위한 마이크로 습관입니다。
+        </p>
+
+        <div class="space-y-6 mb-6">
+          <div class="bg-gradient-to-r from-green-500/20 to-emerald-500/20 border border-green-500/30 rounded-lg p-6">
+            <h3 class="text-xl font-semibold text-green-400 mb-4">고갈된 목 에너지의 경우："성장" 모드 활성화</h3>
+            <div class="space-y-4">
+              <div class="bg-mystic-800/40 rounded-lg p-4">
+                <p class="text-mystic-200 mb-2"><strong>🌅 아침 의식（오전 7-9시）：</strong></p>
+                <p class="text-mystic-200 leading-relaxed">
+                  15분 동안 하루를 계획합니다。수동적인 할 일 목록이 아니라，적극적으로 생각합니다："오늘 성장을 촉진하기 위해 무엇을 하나 달성할 수 있을까？"책상에 작은 녹색 식물을 두세요。
+                </p>
+              </div>
+              <div class="bg-mystic-800/40 rounded-lg p-4">
+                <p class="text-mystic-200 mb-2"><strong>🌆 오후 리셋（오후 1-3시）：</strong></p>
+                <p class="text-mystic-200 leading-relaxed">
+                  막힌 느낌이 들면，5분 휴식을 취하세요。일어나서 하늘을 향해 뻗는 나무처럼 몸을 위로，밖으로 뻗으세요。
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="bg-gradient-to-r from-red-500/20 to-orange-500/20 border border-red-500/30 rounded-lg p-6">
+            <h3 class="text-xl font-semibold text-red-400 mb-4">꺼진 화 에너지의 경우："기쁨"의 불꽃을 다시 켜기</h3>
+            <div class="space-y-4">
+              <div class="bg-mystic-800/40 rounded-lg p-4">
+                <p class="text-mystic-200 mb-2"><strong>☀️ 정오 의식（오전 11시-오후 1시）：</strong></p>
+                <p class="text-mystic-200 leading-relaxed">
+                  이것은 화 에너지가 정점인 시간입니다。일에서 벗어나 정말로 점심을 즐기세요。당신에게 기쁨을 가져다주는 동료들과 교류하세요。일하면서 책상에서 먹는 것은 피하세요。
+                </p>
+              </div>
+              <div class="bg-mystic-800/40 rounded-lg p-4">
+                <p class="text-mystic-200 mb-2"><strong>⚡ 마이크로 휴식：</strong></p>
+                <p class="text-mystic-200 leading-relaxed">
+                  오후에 고갈을 느끼면，짧고 재미있는 비디오를 보거나 열정에 불을 붙이는 노래를 들으세요。
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="bg-gradient-to-r from-yellow-500/20 to-amber-500/20 border border-yellow-500/30 rounded-lg p-6">
+            <h3 class="text-xl font-semibold text-yellow-400 mb-4">불균형한 토 에너지의 경우："중심"으로 돌아가기</h3>
+            <div class="space-y-4">
+              <div class="bg-mystic-800/40 rounded-lg p-4">
+                <p class="text-mystic-200 mb-2"><strong>🔄 작은 작업을 의식화：</strong></p>
+                <p class="text-mystic-200 leading-relaxed">
+                  매일 같은 시간에 같은 작은 일을 합니다。차를 마시거나 책상을 정리하는 것처럼。이 예측 가능성이 토 에너지를 진정시킵니다。
+                </p>
+              </div>
+              <div class="bg-mystic-800/40 rounded-lg p-4">
+                <p class="text-mystic-200 mb-2"><strong>🍵 마음챙김 식사：</strong></p>
+                <p class="text-mystic-200 leading-relaxed">
+                  먹을 때 천천히，충분히 씹으세요。이것은 압도되는 대신 업무 압력을 효과적으로 "소화"하는 능력을 상징합니다。
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="bg-gradient-to-r from-gray-500/20 to-slate-500/20 border border-gray-500/30 rounded-lg p-6">
+            <h3 class="text-xl font-semibold text-gray-300 mb-4">막힌 금 에너지의 경우："협상 불가" 경계 설정</h3>
+            <div class="space-y-4">
+              <div class="bg-mystic-800/40 rounded-lg p-4">
+                <p class="text-mystic-200 mb-2"><strong>🌙 저녁 의식（오후 5-7시）：</strong></p>
+                <p class="text-mystic-200 leading-relaxed">
+                  상징적인 "일의 끝" 의식을 수행합니다。컴퓨터를 끄고，천으로 덮거나，소리 내어 "오늘의 일은 완료되었습니다"라고 말하세요。이 행동은 금의 경계 감각을 강화합니다。
+                </p>
+              </div>
+              <div class="bg-mystic-800/40 rounded-lg p-4">
+                <p class="text-mystic-200 mb-2"><strong>🚫 "아니오"라고 말하는 연습：</strong></p>
+                <p class="text-mystic-200 leading-relaxed">
+                  미리 이번 주에 거절할 비필수 요청을 하나 정하세요。부를 보호하듯 에너지를 보호하세요。
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="bg-gradient-to-r from-blue-500/20 to-cyan-500/20 border border-blue-500/30 rounded-lg p-6">
+            <h3 class="text-xl font-semibold text-blue-400 mb-4">말라버린 수 에너지의 경우："깊은 휴식" 받아들이기</h3>
+            <div class="space-y-4">
+              <div class="bg-mystic-800/40 rounded-lg p-4">
+                <p class="text-mystic-200 mb-2"><strong>🔇 소리 휴식：</strong></p>
+                <p class="text-mystic-200 leading-relaxed">
+                  과도하게 자극받고 있다고 느끼면，노이즈 캔슬링 헤드폰을 착용하고 5분 동안 침묵이나 진정시키는 자연의 소리에 몰입하세요。
+                </p>
+              </div>
+              <div class="bg-mystic-800/40 rounded-lg p-4">
+                <p class="text-mystic-200 mb-2"><strong>😴 질 좋은 수면：</strong></p>
+                <p class="text-mystic-200 leading-relaxed">
+                  수 에너지는 밤늦게（오후 9-11시）회복하기 시작합니다。15분 일찍，화면에서 떨어져 긴장을 풀기 시작하세요。즐거움을 위해 책을 읽어 뇌가 편안한 상태에 들어가도록 하세요。
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <h2 class="text-2xl font-bold text-white mb-4 mt-8">회복을 넘어서：당신의 "운주"와 동기화</h2>
+        <p class="mb-6 text-mystic-200 leading-relaxed">
+          팔자의 <strong>"운주"（대운）</strong> 개념은 각 10년 기간이 다른 지배적인 에너지의 영향을 받는다고 알려줍니다。당신의 "용신" 에너지를 고갈시키는 운주에 있다면，번아웃은 더 강하게 느껴질 수 있습니다。
+        </p>
+        <div class="bg-mystic-800/40 border border-mystic-700/40 rounded-lg p-6 mb-6">
+          <p class="text-mystic-200 leading-relaxed mb-3">
+            여기서의 전략은 더 강하게 밀어붙이는 것이 아니라 사이클과 함께 흐르는 것입니다。당신의 운주가 "낮게 누워 있기"（수 에너지와 같은）를 요구한다면，자신을 빈번한 사회적 상황（화 에너지）에 강제로 밀어넣으면 더 빠르게 고갈됩니다。
+          </p>
+          <p class="text-mystic-200 leading-relaxed">
+            현재 사이클을 이해하면，자기 비난（"왜 따라갈 수 없을까？"）에서 자기 돌봄（"지금 어떤 휴식이 필요한가？"）으로 마음가짐이 전환됩니다。
+          </p>
+        </div>
+
+        <div class="bg-gradient-to-r from-purple-500/20 to-indigo-500/20 border border-purple-500/30 rounded-lg p-6 mb-6">
+          <h3 class="text-xl font-semibold text-purple-400 mb-3">마지막 생각</h3>
+          <p class="text-mystic-200 leading-relaxed mb-3">
+            궁극적으로，결정 피로와 번아웃과 싸우는 것은 더 열심히 생각하는 것이 아니라 <strong>더 똑똑하게 휴식하는 것</strong>입니다。사주는 자신을 수리가 필요한 기계로 보는 것을 멈추고，고유한 에너지 풍경을 가진 생태계로 자신을 보기 시작하는 프레임워크를 제공합니다。
+          </p>
+          <p class="text-mystic-200 leading-relaxed">
+            작고，타겟팅된，일상적인 보충 행동을 통해，안에서 밖으로 의사 결정력과 일에 대한 열정을 재구축할 수 있습니다。
+          </p>
+        </div>
+      </div>
+    `
     },
     author: 'Master XuanYin',
     date: '2025-11-13',
