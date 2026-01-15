@@ -368,6 +368,16 @@ const BlogPost = () => {
                 />
               </motion.div>
 
+              {!blogPost.isTranslated && currentLanguage !== 'en' && (
+                <motion.div
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  className="bg-amber-500/20 border border-amber-500/30 rounded-lg p-6 mb-8"
+                >
+                  <p className="text-amber-400 font-semibold mb-2">{t('blogPost.translationNotice')}</p>
+                  <p className="text-mystic-300 text-sm">{t('blogPost.translationNoticeDesc')}</p>
+                </motion.div>
+              )}
               <motion.article
                 initial={{ opacity: 0, y: 30 }}
                 animate={{ opacity: 1, y: 0 }}
