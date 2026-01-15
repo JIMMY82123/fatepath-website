@@ -106,11 +106,10 @@ const Home = () => {
         <div className="container mx-auto px-6 max-w-6xl">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-playfair font-semibold text-slate-900 mb-6 tracking-tight">
-              What is BaZi?
+              {t('home.whatIsBazi')}
             </h2>
             <p className="text-lg text-slate-700 max-w-3xl mx-auto leading-relaxed">
-              BaZi (八字) is an ancient Chinese system of destiny analysis that reveals your life's blueprint 
-              through the study of your birth date and time.
+              {t('home.whatIsBaziDesc')}
             </p>
           </div>
           
@@ -165,19 +164,19 @@ const Home = () => {
                 <div className="space-y-3">
                   <div className="flex items-start space-x-3">
                     <div className="w-2 h-2 bg-slate-400 rounded-full mt-2 flex-shrink-0"></div>
-                    <p className="text-slate-600 text-sm">Based on sun sign (month of birth)</p>
+                    <p className="text-slate-600 text-sm">{t('home.westernAstrologyPoint1')}</p>
                   </div>
                   <div className="flex items-start space-x-3">
                     <div className="w-2 h-2 bg-slate-400 rounded-full mt-2 flex-shrink-0"></div>
-                    <p className="text-slate-600 text-sm">12 zodiac signs with general traits</p>
+                    <p className="text-slate-600 text-sm">{t('home.westernAstrologyPoint2')}</p>
                   </div>
                   <div className="flex items-start space-x-3">
                     <div className="w-2 h-2 bg-slate-400 rounded-full mt-2 flex-shrink-0"></div>
-                    <p className="text-slate-600 text-sm">Daily horoscopes and general predictions</p>
+                    <p className="text-slate-600 text-sm">{t('home.westernAstrologyPoint3')}</p>
                   </div>
                   <div className="flex items-start space-x-3">
                     <div className="w-2 h-2 bg-slate-400 rounded-full mt-2 flex-shrink-0"></div>
-                    <p className="text-slate-600 text-sm">Less emphasis on timing and cycles</p>
+                    <p className="text-slate-600 text-sm">{t('home.westernAstrologyPoint4')}</p>
                   </div>
                 </div>
               </div>
@@ -189,19 +188,19 @@ const Home = () => {
                 <div className="space-y-3">
                   <div className="flex items-start space-x-3">
                     <div className="w-2 h-2 bg-amber-500 rounded-full mt-2 flex-shrink-0"></div>
-                    <p className="text-slate-600 text-sm">Precise birth date, time, and location analysis</p>
+                    <p className="text-slate-600 text-sm">{t('home.baziAstrologyPoint1')}</p>
                   </div>
                   <div className="flex items-start space-x-3">
                     <div className="w-2 h-2 bg-amber-500 rounded-full mt-2 flex-shrink-0"></div>
-                    <p className="text-slate-600 text-sm">8 characters reveal unique personality blueprint</p>
+                    <p className="text-slate-600 text-sm">{t('home.baziAstrologyPoint2')}</p>
                   </div>
                   <div className="flex items-start space-x-3">
                     <div className="w-2 h-2 bg-amber-500 rounded-full mt-2 flex-shrink-0"></div>
-                    <p className="text-slate-600 text-sm">Specific timing for career, relationships, and success</p>
+                    <p className="text-slate-600 text-sm">{t('home.baziAstrologyPoint3')}</p>
                   </div>
                   <div className="flex items-start space-x-3">
                     <div className="w-2 h-2 bg-amber-500 rounded-full mt-2 flex-shrink-0"></div>
-                    <p className="text-slate-600 text-sm">Practical guidance for life decisions and planning</p>
+                    <p className="text-slate-600 text-sm">{t('home.baziAstrologyPoint4')}</p>
                   </div>
                 </div>
               </div>
