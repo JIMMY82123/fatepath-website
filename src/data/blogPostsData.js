@@ -6803,9 +6803,18 @@ export const blogPostsData = {
       ]
     },
     "bazi-chat-pressure-turning-points-gui-hai-woman": {
-      title: "BaZi Chat｜The 'Pressure and Turning Points' of a Gui Hai – Yi Chou – Geng Xu – Wu Yin Woman",
-      excerpt: "Discover the unique challenges and opportunities in this BaZi chart analysis. Learn how pressure transforms into momentum and when the breakthrough years arrive for this winter-born Geng Metal woman.",
-      content: `
+      title: {
+        en: "BaZi Chat｜The 'Pressure and Turning Points' of a Gui Hai – Yi Chou – Geng Xu – Wu Yin Woman",
+        ja: "八字チャット｜癸亥・乙丑・庚戌・戊寅女性の「圧力と転換点」",
+        ko: "사주 채팅｜계해·을축·경술·무인 여성의 '압력과 전환점'"
+      },
+      excerpt: {
+        en: "Discover the unique challenges and opportunities in this BaZi chart analysis. Learn how pressure transforms into momentum and when the breakthrough years arrive for this winter-born Geng Metal woman.",
+        ja: "この八字チャート分析における独特な課題と機会を発見してください。圧力がどのように勢いに変わるか、そしてこの冬生まれの庚金女性に転機の年がいつ来るかを学びます。",
+        ko: "이 사주 차트 분석에서 고유한 도전과 기회를 발견하세요。압력이 어떻게 모멘텀으로 변환되는지，그리고 이 겨울에 태어난 경금 여성에게 돌파구의 해가 언제 도래하는지 배웁니다。"
+      },
+      content: {
+        en: `
         <p class="mb-6 text-lg text-mystic-200 leading-relaxed">
           On January 17, 1984, at 2 a.m., a baby girl was born in the deep cold of mid-winter. It was the lunar Chou month, when the earth is still frozen and the chill is heavy in the air. Her BaZi chart reads: Gui Hai, Yi Chou, Geng Xu, Wu Yin. Just from these four pillars, you can already sense the vibe — capable, but often having to push forward under outside pressure.
         </p>
