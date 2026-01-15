@@ -6869,6 +6869,117 @@ export const blogPostsData = {
           In short, this chart describes someone who's never short of challenges — or ability. Once she learns to warm herself up and stabilize her footing, pressure turns into momentum. And 2026? That's the year she can break past her limits and start a whole new chapter. When that time comes, the ore in the cold earth will finally glitter in the sunlight.
         </p>
       `,
+        ja: `
+        <p class="mb-6 text-lg text-mystic-200 leading-relaxed">
+          1984年1月17日、午前2時、真冬の深い寒さの中で女の子が生まれました。旧暦の丑月で、大地はまだ凍りつき、空気には寒さが重く漂っています。彼女の八字チャートは：癸亥、乙丑、庚戌、戊寅。この四柱から、すでに雰囲気を感じることができます—有能ですが、しばしば外部の圧力の下で前進しなければなりません。
+        </p>
+        
+        <h2 class="text-2xl font-bold text-white mb-4 mt-8">チャート構造</h2>
+        <p class="mb-6 text-mystic-200 leading-relaxed">
+          丑月に庚金として生まれた彼女は、冬の土に深く埋もれた鉱石のようなものです—強くて堅固ですが、真に輝くには火の温かさが必要です。彼女のチャートでは、年柱の癸水が強く、七殺（七殺）構造を形成しており、彼女の人生には課題が欠けることがないことを意味します—上司、ルール、状況がすべて彼女を試練にさらします。
+        </p>
+        
+        <h2 class="text-2xl font-bold text-white mb-4 mt-8">要素分析</h2>
+        <p class="mb-6 text-mystic-200 leading-relaxed">
+          月干の乙木は財星ですが、冷たく重い土によって抑えられているため、金融の運は上下します。幸いなことに、時干の戊土は間接的な資源として機能し、圧力の一部から彼女を守るのに役立ちますが、圧倒的な強さではありません。時支の寅木には丙火が隠されています—温かさの小さな火花—しかし冬にはかすかで、注意深い育成が必要です。
+        </p>
+        
+        <h2 class="text-2xl font-bold text-white mb-4 mt-8">強みと課題</h2>
+        <p class="mb-6 text-mystic-200 leading-relaxed">
+          この設定では、彼女の強みは責任感と困難な仕事から逃げないことです。欠点は、彼女がしばしば望むからではなく、しなければならないから動くことです。職場では、彼女はしばしば高い基準と要求の厳しい上司の環境にいます；お金を稼ぐことはできますが、支出と責任が同じペースで成長するため、節約は困難です。
+        </p>
+        
+        <h2 class="text-2xl font-bold text-white mb-4 mt-8">関係のダイナミクス</h2>
+        <p class="mb-6 text-mystic-200 leading-relaxed">
+          関係では、彼女は強力だが支配的なパートナーに引き寄せられる可能性があり、これにより彼女は受動的に感じる可能性があります。身体的には、彼女の冷湿体質は、弱い消化、腰と腎臓の感受性、手足の冷えなどの問題を引き起こす可能性があります。
+        </p>
+        
+        <h2 class="text-2xl font-bold text-white mb-4 mt-8">根本原因と解決策</h2>
+        <p class="mb-6 text-mystic-200 leading-relaxed">
+          これらの問題の根本原因は明確です：水が強すぎ、火が弱すぎます。強い水はより多くの圧力を意味し、弱い火は持続的な推進力と温かさの欠如を意味します。修正は概念的にシンプルです—まず温めてから安定させます。つまり、より多くの日光を浴び、汗をかく活動を行い、赤、オレンジ、ベージュなどの暖かい色を着て、冷たい色調の服を避けることです。
+        </p>
+        
+        <h2 class="text-2xl font-bold text-white mb-4 mt-8">実用的な推奨事項</h2>
+        <p class="mb-6 text-mystic-200 leading-relaxed">
+          家や職場では、可能であれば南東または南を向き、緑の植物や暖色系の装飾を追加してください。食事では、生姜茶、ナツメ、ヤムイモ、カボチャなどの温める食品を好み、特に冬にはアイスや冷たいアイテムを減らしてください。
+        </p>
+        
+        <h2 class="text-2xl font-bold text-white mb-4 mt-8">キャリアガイダンス</h2>
+        <p class="mb-6 text-mystic-200 leading-relaxed">
+          キャリア面では、彼女は管理、計画、トレーニング、コンサルティング、または教育などの土と火に関連する分野により適しています。これらの役割は、重い金-水環境の抑圧的な感覚を減らしながら、彼女の組織スキルを使用することを可能にします。現在の業界に留まる場合、より多くの意思決定力を得るために、戦略的または管理的な役割にシフトすることを試みるべきです。
+        </p>
+        
+        <h2 class="text-2xl font-bold text-white mb-4 mt-8">関係と金融のアドバイス</h2>
+        <p class="mb-6 text-mystic-200 leading-relaxed">
+          関係では、平和を保つために自分のアイデンティティを放棄しないことが重要です。彼女は自分の独立性を尊重するパートナーを選択すべきです。金融については、支出の前に節約に慣れる必要があり、理想的には、圧力が1つの仕事にすべてかからないように、複数の収入源を開発する必要があります。
+        </p>
+        
+        <h2 class="text-2xl font-bold text-white mb-4 mt-8">将来の見通し</h2>
+        <p class="mb-6 text-mystic-200 leading-relaxed">
+          先を見ると、2025年（乙巳年）は火が現れ始めるため、より目に見える機会をもたらしますが、対人摩擦に注意する必要があります。2026年（丙午年）はまれな高エネルギー年—キャリアと愛の両方で突破の理想的な時期です。2027年（丁未年）は利益を統合し、最近の勝利を長期的な安定に変えることについてです。
+        </p>
+        
+        <h2 class="text-2xl font-bold text-white mb-4 mt-8">結論</h2>
+        <p class="mb-6 text-mystic-200 leading-relaxed">
+          要するに、このチャートは、課題—または能力—に欠けることがない人を説明しています。彼女が自分を温め、足場を安定させることを学ぶと、圧力は勢いに変わります。そして2026年？それは彼女が限界を突破し、全く新しい章を始めることができる年です。その時が来たら、冷たい土の中の鉱石はついに日光の中で輝くでしょう。
+        </p>
+      `,
+        ko: `
+        <p class="mb-6 text-lg text-mystic-200 leading-relaxed">
+          1984년 1월 17일，새벽 2시，한겨울의 깊은 추위 속에서 여자 아기가 태어났습니다。음력 축월이었고，대지는 여전히 얼어있고 공기에는 추위가 무겁게 맴돌고 있었습니다。그녀의 사주 차트는：계해，을축，경술，무인。이 네 기둥만으로도 이미 분위기를 느낄 수 있습니다—유능하지만，종종 외부 압력 아래에서 앞으로 밀어붙여야 합니다。
+        </p>
+        
+        <h2 class="text-2xl font-bold text-white mb-4 mt-8">차트 구조</h2>
+        <p class="mb-6 text-mystic-200 leading-relaxed">
+          축월에 경금으로 태어난 그녀는，겨울 토양에 깊이 묻힌 광석과 같습니다—강하고 견고하지만，진정으로 빛나려면 화의 따뜻함이 필요합니다。그녀의 차트에서，년주의 계수는 강하여 칠살（七殺） 구조를 형성하며，그녀의 인생에 도전이 부족하지 않을 것임을 의미합니다—상급자，규칙，상황이 모두 그녀를 시험에 들게 할 것입니다。
+        </p>
+        
+        <h2 class="text-2xl font-bold text-white mb-4 mt-8">요소 분석</h2>
+        <p class="mb-6 text-mystic-200 leading-relaxed">
+          월간의 을목은 재성이지만，차갑고 무거운 토에 의해 억압되어 있어，금융 운은 오르내립니다。다행히，시간의 무토는 간접적인 자원으로 작용하여，압력의 일부로부터 그녀를 보호하는 데 도움이 되지만，압도적인 강도는 아닙니다。시지의 인목에는 병화가 숨겨져 있습니다—따뜻함의 작은 불꽃—하지만 겨울에는 희미하고，주의 깊은 육성이 필요합니다。
+        </p>
+        
+        <h2 class="text-2xl font-bold text-white mb-4 mt-8">강점과 도전</h2>
+        <p class="mb-6 text-mystic-200 leading-relaxed">
+          이 설정에서，그녀의 강점은 책임감과 어려운 일을 피하지 않는 것입니다。단점은 그녀가 종종 원해서가 아니라 해야 해서 움직인다는 것입니다。직장에서，그녀는 종종 높은 기준과 까다로운 상사의 환경에 있습니다；돈을 벌 수는 있지만，지출과 책임이 같은 속도로 성장하므로 저축은 어렵습니다。
+        </p>
+        
+        <h2 class="text-2xl font-bold text-white mb-4 mt-8">관계 역학</h2>
+        <p class="mb-6 text-mystic-200 leading-relaxed">
+          관계에서，그녀는 강력하지만 통제적인 파트너에게 끌릴 수 있으며，이는 그녀를 수동적으로 느끼게 할 수 있습니다。신체적으로，그녀의 한습 체질은 약한 소화，허리와 신장 감수성，그리고 손발이 차가운 것과 같은 문제를 일으킬 수 있습니다。
+        </p>
+        
+        <h2 class="text-2xl font-bold text-white mb-4 mt-8">근본 원인과 해결책</h2>
+        <p class="mb-6 text-mystic-200 leading-relaxed">
+          이러한 문제의 근본 원인은 명확합니다：수가 너무 강하고，화가 너무 약합니다。강한 수는 더 많은 압력을 의미하고，약한 화는 지속적인 추진력과 따뜻함의 부족을 의미합니다。수정은 개념적으로 간단합니다—먼저 따뜻하게 한 다음 안정화합니다。즉，더 많은 햇빛을 받고，땀을 나게 하는 활동을 하며，빨강，주황，베이지와 같은 따뜻한 색상을 입고，차가운 톤의 옷을 너무 많이 피하는 것입니다。
+        </p>
+        
+        <h2 class="text-2xl font-bold text-white mb-4 mt-8">실용적인 권장사항</h2>
+        <p class="mb-6 text-mystic-200 leading-relaxed">
+          집이나 직장에서，가능하면 남동쪽 또는 남쪽을 향하고，녹색 식물이나 따뜻한 톤의 장식을 추가하세요。식단에서는，생강 차，대추，마，호박과 같은 따뜻한 음식을 선호하고，특히 겨울에는 아이스나 차가운 항목을 줄이세요。
+        </p>
+        
+        <h2 class="text-2xl font-bold text-white mb-4 mt-8">경력 가이드</h2>
+        <p class="mb-6 text-mystic-200 leading-relaxed">
+          경력 측면에서，그녀는 관리，계획，훈련，컨설팅，또는 교육과 같은 토 및 화 관련 분야에 더 적합합니다。이러한 역할은 무거운 금-수 환경의 압박적인 느낌을 줄이면서 그녀의 조직 기술을 사용할 수 있게 합니다。현재 업계에 머물 경우，더 많은 의사 결정력을 얻기 위해 전략적 또는 관리적 역할로 전환하려고 시도해야 합니다。
+        </p>
+        
+        <h2 class="text-2xl font-bold text-white mb-4 mt-8">관계 및 금융 조언</h2>
+        <p class="mb-6 text-mystic-200 leading-relaxed">
+          관계에서，평화를 유지하기 위해 자신의 정체성을 포기하지 않는 것이 중요합니다。그녀는 자신의 독립성을 존중하는 파트너를 선택해야 합니다。금융의 경우，지출 전에 저축에 익숙해져야 하며，이상적으로는 압력이 한 직업에 모두 집중되지 않도록 여러 수입원을 개발해야 합니다。
+        </p>
+        
+        <h2 class="text-2xl font-bold text-white mb-4 mt-8">미래 전망</h2>
+        <p class="mb-6 text-mystic-200 leading-relaxed">
+          앞을 보면，2025년（을사년）은 화가 나타나기 시작하면서 더 눈에 띄는 기회를 가져오지만，대인 마찰에 주의해야 합니다。2026년（병오년）은 드문 고에너지 해—경력과 사랑 모두에서 돌파구를 위한 이상적인 시기입니다。2027년（정미년）은 이득을 통합하고 최근의 승리를 장기적인 안정으로 전환하는 것에 관한 것입니다。
+        </p>
+        
+        <h2 class="text-2xl font-bold text-white mb-4 mt-8">결론</h2>
+        <p class="mb-6 text-mystic-200 leading-relaxed">
+          요약하면，이 차트는 도전—또는 능력—에 부족함이 없는 사람을 설명합니다。그녀가 자신을 따뜻하게 하고 발판을 안정화하는 것을 배우면，압력은 모멘텀으로 변합니다。그리고 2026년？그것은 그녀가 한계를 뛰어넘고 완전히 새로운 장을 시작할 수 있는 해입니다。그 때가 오면，차가운 땅 속의 광석이 마침내 햇빛 속에서 반짝일 것입니다。
+        </p>
+      `
+      },
       author: "Master Chen",
       date: "2025-08-11",
       readTime: "8 min read",
