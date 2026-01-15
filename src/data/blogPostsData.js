@@ -6595,9 +6595,18 @@ export const blogPostsData = {
       ]
     },
     "bazi-mbti-personality-comparison": {
-      title: "BaZi Meets MBTI: A Fascinating East–West Dialogue on Personality",
-      excerpt: "BaZi gives you the 'inborn color palette,' MBTI reveals your 'usage habits.' Put the map and the manual together, and you get a fuller picture of yourself.",
-      content: `
+      title: {
+        en: "BaZi Meets MBTI: A Fascinating East–West Dialogue on Personality",
+        ja: "八字とMBTIの出会い：性格に関する魅力的な東西対話",
+        ko: "사주와 MBTI의 만남：성격에 관한 매혹적인 동서 대화"
+      },
+      excerpt: {
+        en: "BaZi gives you the 'inborn color palette,' MBTI reveals your 'usage habits.' Put the map and the manual together, and you get a fuller picture of yourself.",
+        ja: "八字は「生まれつきの色パレット」を与え、MBTIは「使用習慣」を明らかにします。地図とマニュアルを組み合わせると、より完全な自分自身の絵が得られます。",
+        ko: "사주는 '타고난 색상 팔레트'를 제공하고，MBTI는 '사용 습관'을 드러냅니다。지도와 매뉴얼을 함께하면，더 완전한 자신의 그림을 얻을 수 있습니다。"
+      },
+      content: {
+        en: `
         <p class="mb-6 text-lg text-mystic-200 leading-relaxed">
           BaZi gives you the "inborn color palette," MBTI reveals your "usage habits." Put the map and the manual together, and you get a fuller picture of yourself.
         </p>
@@ -6655,6 +6664,123 @@ export const blogPostsData = {
           BaZi is the map; MBTI is the manual. Put them together, and you're more likely to walk the right road—and walk it steadily.
         </p>
       `,
+        ja: `
+        <p class="mb-6 text-lg text-mystic-200 leading-relaxed">
+          八字は「生まれつきの色パレット」を与え、MBTIは「使用習慣」を明らかにします。地図とマニュアルを組み合わせると、より完全な自分自身の絵が得られます。
+        </p>
+        
+        <h2 class="text-2xl font-bold text-white mb-4 mt-8">1. 八字：生まれつきの基本トーン</h2>
+        <p class="mb-6 text-mystic-200 leading-relaxed">
+          八字では、あなたの年、月、日、時が天干と地支を形成します。五行はあなたの性格の基盤を形成します：
+        </p>
+        <ul class="mb-6 text-mystic-200 leading-relaxed list-disc list-inside space-y-2">
+          <li><strong>木：</strong> 成長、ビジョン、計画、変化への落ち着きのなさ。</li>
+          <li><strong>火：</strong> 温かさ、表現力、迅速な行動。</li>
+          <li><strong>土：</strong> 安定、秩序、安全志向、温まるのは遅いが長続きする。</li>
+          <li><strong>金：</strong> 決断力、ルール重視、効率的、時には頑固。</li>
+          <li><strong>水：</strong> 柔軟、観察力、適応性、創造的、しかし変わりやすい可能性がある。</li>
+        </ul>
+        
+        <h2 class="text-2xl font-bold text-white mb-4 mt-8">2. MBTI：あなたの習慣的な操作モード</h2>
+        <p class="mb-6 text-mystic-200 leading-relaxed">
+          MBTIは4つの次元—E/I、S/N、T/F、J/P—を使用して、世界を認識し、決定を下す際のあなたの好みを説明します。固定されたラベルではなく、行動の傾向です。
+        </p>
+        
+        <h2 class="text-2xl font-bold text-white mb-4 mt-8">3. 五行とMBTIの間の一般的なパターン</h2>
+        <ul class="mb-6 text-mystic-200 leading-relaxed list-disc list-inside space-y-2">
+          <li>強い木/火 → しばしばE、N、F、Pが高い</li>
+          <li>強い土/金 → しばしばI、S、T、Jが高い</li>
+          <li>強い金/水 → T（思考）の可能性が高い</li>
+          <li>強い木/火 → F（感情）の可能性が高い</li>
+        </ul>
+        <p class="mb-6 text-mystic-200 leading-relaxed italic">
+          <em>注：これらはパターンであり、厳格なルールではありません。</em>
+        </p>
+        
+        <h2 class="text-2xl font-bold text-white mb-4 mt-8">4. 2つの簡単な例</h2>
+        <ul class="mb-6 text-mystic-200 leading-relaxed list-disc list-inside space-y-2">
+          <li><strong>火+金が強く、木+水が弱い</strong> → しばしばENTJ：外向的で駆動的、ルールと結果重視、戦略的で実行志向。</li>
+          <li><strong>水+木が強く、土+火が弱い</strong> → しばしばINFP：理想的、価値駆動、創造的だが実行にはより多くの構造が必要。</li>
+        </ul>
+        
+        <h2 class="text-2xl font-bold text-white mb-4 mt-8">5. 2つを組み合わせる方法</h2>
+        <ul class="mb-6 text-mystic-200 leading-relaxed list-disc list-inside space-y-2">
+          <li>八字はあなたの自然な要素のバランスと、より多くまたは少なく必要とするものを示します。</li>
+          <li>MBTIはあなたの習慣的なコミュニケーション、意思決定、および仕事のスタイルを示します。</li>
+          <li>一緒に、それらは答えます：あなたの才能がどこにあるか、どのようにそれらを使用するか、そしてギャップを埋める方法。</li>
+        </ul>
+        
+        <h2 class="text-2xl font-bold text-white mb-4 mt-8">6. 応用</h2>
+        <ul class="mb-6 text-mystic-200 leading-relaxed list-disc list-inside space-y-2">
+          <li><strong>キャリア：</strong> 八字は方向性（要素の好み）を定義し、MBTIは仕事のスタイルとチームの適合性を選択します。</li>
+          <li><strong>関係：</strong> 八字はあなたが引き寄せる人々のタイプを示し、MBTIはあなたのコミュニケーションスタイルを調整するのに役立ちます。</li>
+          <li><strong>成長：</strong> 八字は要素のギャップを埋め、MBTIは永続的な習慣のための機能的好みを微調整します。</li>
+        </ul>
+        
+        <h2 class="text-2xl font-bold text-white mb-4 mt-8">結び</h2>
+        <p class="mb-6 text-lg text-mystic-200 leading-relaxed">
+          八字は地図です；MBTIはマニュアルです。それらを組み合わせると、正しい道を歩く可能性が高くなり、着実に歩くことができます。
+        </p>
+      `,
+        ko: `
+        <p class="mb-6 text-lg text-mystic-200 leading-relaxed">
+          사주는 "타고난 색상 팔레트"를 제공하고，MBTI는 "사용 습관"을 드러냅니다。지도와 매뉴얼을 함께하면，더 완전한 자신의 그림을 얻을 수 있습니다。
+        </p>
+        
+        <h2 class="text-2xl font-bold text-white mb-4 mt-8">1. 사주：타고난 기본 톤</h2>
+        <p class="mb-6 text-mystic-200 leading-relaxed">
+          사주에서，당신의 연，월，일，시가 천간과 지지를 형성합니다。오행은 당신의 성격의 기반을 형성합니다：
+        </p>
+        <ul class="mb-6 text-mystic-200 leading-relaxed list-disc list-inside space-y-2">
+          <li><strong>목：</strong> 성장，비전，계획，변화에 대한 불안정함。</li>
+          <li><strong>화：</strong> 따뜻함，표현력，빠른 행동。</li>
+          <li><strong>토：</strong> 안정적，질서 정연，안전 지향，따뜻해지는 것은 느리지만 오래 지속。</li>
+          <li><strong>금：</strong> 결단력，규칙 중심，효율적，때로는 고집스러움。</li>
+          <li><strong>수：</strong> 유연，관찰력，적응력，창의적，그러나 변하기 쉬울 수 있음。</li>
+        </ul>
+        
+        <h2 class="text-2xl font-bold text-white mb-4 mt-8">2. MBTI：당신의 습관적 운영 모드</h2>
+        <p class="mb-6 text-mystic-200 leading-relaxed">
+          MBTI는 4가지 차원—E/I，S/N，T/F，J/P—를 사용하여 세계를 인식하고 결정을 내리는 데 있어 당신의 선호도를 설명합니다。고정된 라벨이 아니라 행동 경향입니다。
+        </p>
+        
+        <h2 class="text-2xl font-bold text-white mb-4 mt-8">3. 오행과 MBTI 사이의 일반적인 패턴</h2>
+        <ul class="mb-6 text-mystic-200 leading-relaxed list-disc list-inside space-y-2">
+          <li>강한 목/화 → 종종 E，N，F，P가 높음</li>
+          <li>강한 토/금 → 종종 I，S，T，J가 높음</li>
+          <li>강한 금/수 → T（사고）일 가능성이 높음</li>
+          <li>강한 목/화 → F（감정）일 가능성이 높음</li>
+        </ul>
+        <p class="mb-6 text-mystic-200 leading-relaxed italic">
+          <em>참고：이것들은 패턴이며，엄격한 규칙은 아닙니다。</em>
+        </p>
+        
+        <h2 class="text-2xl font-bold text-white mb-4 mt-8">4. 두 가지 간단한 예</h2>
+        <ul class="mb-6 text-mystic-200 leading-relaxed list-disc list-inside space-y-2">
+          <li><strong>화+금이 강하고，목+수가 약함</strong> → 종종 ENTJ：외향적이고 추진력 있는，규칙과 결과 중심，전략적이고 실행 지향。</li>
+          <li><strong>수+목이 강하고，토+화가 약함</strong> → 종종 INFP：이상주의적，가치 지향，창의적이지만 실행에는 더 많은 구조가 필요。</li>
+        </ul>
+        
+        <h2 class="text-2xl font-bold text-white mb-4 mt-8">5. 두 가지를 결합하는 방법</h2>
+        <ul class="mb-6 text-mystic-200 leading-relaxed list-disc list-inside space-y-2">
+          <li>사주는 당신의 자연스러운 요소 균형과 더 많거나 적게 필요한 것을 보여줍니다。</li>
+          <li>MBTI는 당신의 습관적 커뮤니케이션，의사 결정，그리고 작업 스타일을 보여줍니다。</li>
+          <li>함께，그들은 답합니다：당신의 재능이 어디에 있는지，어떻게 사용하는지，그리고 격차를 메우는 방법。</li>
+        </ul>
+        
+        <h2 class="text-2xl font-bold text-white mb-4 mt-8">6. 응용</h2>
+        <ul class="mb-6 text-mystic-200 leading-relaxed list-disc list-inside space-y-2">
+          <li><strong>경력：</strong> 사주는 방향（요소 선호도）을 정의하고，MBTI는 작업 스타일과 팀 적합성을 선택합니다。</li>
+          <li><strong>관계：</strong> 사주는 당신이 끌어들이는 사람들의 유형을 보여주고，MBTI는 당신의 커뮤니케이션 스타일을 조정하는 데 도움이 됩니다。</li>
+          <li><strong>성장：</strong> 사주는 요소 격차를 메우고，MBTI는 지속적인 습관을 위한 기능적 선호도를 미세 조정합니다。</li>
+        </ul>
+        
+        <h2 class="text-2xl font-bold text-white mb-4 mt-8">마무리</h2>
+        <p class="mb-6 text-lg text-mystic-200 leading-relaxed">
+          사주는 지도입니다；MBTI는 매뉴얼입니다。그들을 함께하면，올바른 길을 걸을 가능성이 높아지고，꾸준히 걸을 수 있습니다。
+        </p>
+      `
+      },
       author: "Master Chen",
       date: "2025-01-20",
       readTime: "6 min read",
