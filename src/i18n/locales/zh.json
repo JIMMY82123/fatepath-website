@@ -109,7 +109,9 @@
   },
   "celebrities": {
     "title": "今日出生的名人",
+    "description": "发现今天出生的名人和历史人物，包含八字（四柱）分析洞察",
     "search": "搜索：名人姓名",
+    "searchPlaceholder": "输入名人姓名...",
     "occupation": "职业",
     "nationality": "国籍",
     "gender": "性别",
@@ -123,7 +125,11 @@
     "tomorrow": "明天",
     "bornOn": "出生于",
     "yearsAgo": "年前",
-    "getYourFreeBaziChart": "获取您的免费八字图表"
+    "yearsFromNow": "年后",
+    "getYourFreeBaziChart": "获取您的免费八字图表",
+    "discoverYourOwn": "发现您自己的八字图表",
+    "discoverDescription": "就像这些名人一样，通过八字（四柱）分析发现您的命运",
+    "noResults": "今天没有找到符合筛选条件的名人。"
   },
   "footer": {
     "description": "通过古老的智慧和个性化指导，发现您的真实道路。",

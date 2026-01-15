@@ -326,32 +326,32 @@ const CelebritiesBornToday = () => {
                 {/* Gender */}
                 <div>
                   <label className="block text-sm font-medium text-mystic-300 mb-2">
-                    Gender
+                    {t('celebrities.gender')}
                   </label>
                   <select
                     value={selectedGender}
                     onChange={(e) => setSelectedGender(e.target.value)}
                     className="w-full px-4 py-2 bg-mystic-900 border border-mystic-700 rounded-lg text-white focus:outline-none focus:border-gold-400"
                   >
-                    <option value="Any">Any</option>
-                    <option value="Male">Male</option>
-                    <option value="Female">Female</option>
+                    <option value="Any">{t('common.any')}</option>
+                    <option value="Male">{t('celebrities.male')}</option>
+                    <option value="Female">{t('celebrities.female')}</option>
                   </select>
                 </div>
 
                 {/* Sort By */}
                 <div>
                   <label className="block text-sm font-medium text-mystic-300 mb-2">
-                    Sort by
+                    {t('celebrities.sortBy')}
                   </label>
                   <select
                     value={sortBy}
                     onChange={(e) => setSortBy(e.target.value)}
                     className="w-full px-4 py-2 bg-mystic-900 border border-mystic-700 rounded-lg text-white focus:outline-none focus:border-gold-400"
                   >
-                    <option value="Popularity">Popularity</option>
-                    <option value="Name">Name</option>
-                    <option value="Birth Year">Birth Year</option>
+                    <option value="Popularity">{t('celebrities.popularity')}</option>
+                    <option value="Name">{t('celebrities.name')}</option>
+                    <option value="Birth Year">{t('celebrities.birthYear')}</option>
                   </select>
                 </div>
 
@@ -361,7 +361,7 @@ const CelebritiesBornToday = () => {
                     to="/free-bazi-report"
                     className="w-full bg-gradient-to-r from-gold-400 to-yellow-500 text-mystic-900 px-6 py-2 rounded-lg font-bold text-center hover:from-gold-500 hover:to-yellow-600 transition-all duration-300"
                   >
-                    Get Your Free Bazi Chart
+                    {t('celebrities.getYourFreeBaziChart')}
                   </Link>
                 </div>
               </div>
@@ -379,12 +379,12 @@ const CelebritiesBornToday = () => {
             >
               <h2 className="text-3xl font-bold text-white mb-6 flex items-center gap-2">
                 <Calendar className="h-6 w-6 text-gold-400" />
-                Famous celebrities born on {formatDate(`${new Date().getFullYear()}-${String(todayMonth).padStart(2, '0')}-${String(todayDay).padStart(2, '0')}`).split(',')[0]} (Today)
+                {t('celebrities.bornOn')} {formatDate(`${new Date().getFullYear()}-${String(todayMonth).padStart(2, '0')}-${String(todayDay).padStart(2, '0')}`).split(',')[0]} ({t('celebrities.today')})
               </h2>
               
               {filteredToday.length === 0 ? (
                 <div className="bg-mystic-800 rounded-lg p-8 border border-mystic-700 text-center">
-                  <p className="text-mystic-400">No celebrities found for today matching your filters.</p>
+                  <p className="text-mystic-400">{t('celebrities.noResults')}</p>
                 </div>
               ) : (
                 <div className="space-y-3">
@@ -425,7 +425,7 @@ const CelebritiesBornToday = () => {
                               )}
                               {celeb.bazi && (
                                 <span className="text-gold-400">
-                                  Day Master: {celeb.bazi.dayMaster}
+                                  {t('bazi.dayMaster')}: {t(`bazi.${celeb.bazi.dayMaster.toLowerCase().replace(/\s+/g, '')}`, celeb.bazi.dayMaster)}
                                 </span>
                               )}
                             </div>
@@ -492,7 +492,7 @@ const CelebritiesBornToday = () => {
                               )}
                               {celeb.bazi && (
                                 <span className="text-gold-400">
-                                  Day Master: {celeb.bazi.dayMaster}
+                                  {t('bazi.dayMaster')}: {t(`bazi.${celeb.bazi.dayMaster.toLowerCase().replace(/\s+/g, '')}`, celeb.bazi.dayMaster)}
                                 </span>
                               )}
                             </div>
@@ -597,16 +597,16 @@ const CelebritiesBornToday = () => {
               transition={{ duration: 0.6 }}
             >
               <h2 className="text-3xl font-bold text-white mb-4">
-                Discover Your Own BaZi Chart
+                {t('celebrities.discoverYourOwn')}
               </h2>
               <p className="text-lg text-mystic-300 mb-8">
-                Just like these famous people, discover your destiny through BaZi (Four Pillars) analysis
+                {t('celebrities.discoverDescription')}
               </p>
               <Link
                 to="/free-bazi-report"
                 className="inline-flex items-center gap-2 bg-gradient-to-r from-gold-400 to-yellow-500 text-mystic-900 px-8 py-4 rounded-lg font-bold text-lg hover:from-gold-500 hover:to-yellow-600 transition-all duration-300 transform hover:scale-105 shadow-lg shadow-gold-400/30"
               >
-                Get Your Free Bazi Chart Now
+                {t('celebrities.getYourFreeBaziChart')}
               </Link>
             </motion.div>
           </div>
