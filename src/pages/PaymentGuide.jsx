@@ -1,9 +1,11 @@
 import { motion } from 'framer-motion'
 import { ArrowLeft, CreditCard, FileText, CheckCircle, Mail, MessageCircle } from 'lucide-react'
 import { Link, useParams } from 'react-router-dom'
+import { useTranslation } from 'react-i18next'
 import SEO from '../components/SEO'
 
 const PaymentGuide = () => {
+  const { t } = useTranslation()
   const { service } = useParams()
 
   const serviceConfig = {
@@ -175,10 +177,10 @@ const PaymentGuide = () => {
               <div className="w-10 h-10 rounded-full bg-gold-500/20 flex items-center justify-center">
                 <CreditCard className="h-5 w-5 text-gold-400" aria-hidden="true" />
               </div>
-              <h3 className="text-xl font-cinzel font-semibold text-white">Step 1: Complete Payment</h3>
+              <h3 className="text-xl font-cinzel font-semibold text-white">{t('paymentGuide.step1Title')}</h3>
             </div>
             <p className="text-mystic-300 mb-6">
-              Click the button below to complete your payment securely through Ko-fi. After successful payment, I will contact you via Ko-fi private message to collect your birth details.
+              {t('paymentGuide.step1Desc')}
             </p>
             <a
               href={config.paypalLink}
@@ -189,7 +191,7 @@ const PaymentGuide = () => {
               <svg className="h-5 w-5" viewBox="0 0 24 24" fill="currentColor">
                 <path d="M20.067 8.478c.492.315.844.825.844 1.406 0 .58-.352 1.09-.844 1.406-.492.315-1.156.51-1.875.51h-1.406c-.492 0-.844-.195-.844-.51 0-.315.352-.51.844-.51h1.406c.352 0 .703-.195.703-.406 0-.21-.351-.406-.703-.406h-1.406c-.492 0-.844-.195-.844-.51 0-.315.352-.51.844-.51h1.406c.719 0 1.383.195 1.875.51zM12.5 8.478c.492.315.844.825.844 1.406 0 .58-.352 1.09-.844 1.406-.492.315-1.156.51-1.875.51h-1.406c-.492 0-.844-.195-.844-.51 0-.315.352-.51.844-.51h1.406c.352 0 .703-.195.703-.406 0-.21-.351-.406-.703-.406h-1.406c-.492 0-.844-.195-.844-.51 0-.315.352-.51.844-.51h1.406c.719 0 1.383.195 1.875.51zM7.5 8.478c.492.315.844.825.844 1.406 0 .58-.352 1.09-.844 1.406-.492.315-1.156.51-1.875.51H4.219c-.492 0-.844-.195-.844-.51 0-.315.352-.51.844-.51h1.406c.352 0 .703-.195.703-.406 0-.21-.351-.406-.703-.406H4.219c-.492 0-.844-.195-.844-.51 0-.315.352-.51.844-.51h1.406c.719 0 1.383.195 1.875.51z"/>
               </svg>
-              <span>Pay with Ko-fi</span>
+              <span>{t('paymentGuide.payWithKofi')}</span>
             </a>
           </div>
 
@@ -199,22 +201,22 @@ const PaymentGuide = () => {
               <div className="w-10 h-10 rounded-full bg-gold-500/20 flex items-center justify-center">
                 <MessageCircle className="h-5 w-5 text-gold-400" aria-hidden="true" />
               </div>
-              <h3 className="text-xl font-cinzel font-semibold text-white">Step 2: Provide Your Information</h3>
+              <h3 className="text-xl font-cinzel font-semibold text-white">{t('paymentGuide.step2Title')}</h3>
             </div>
             <p className="text-mystic-300 mb-6">
-              After payment, I will contact you via Ko-fi private message to collect your birth details. Please provide:
+              {t('paymentGuide.step2Desc')}
             </p>
             <ul className="text-mystic-300 space-y-2 mb-6 text-sm">
-              <li>• Date of Birth (Year/Month/Day)</li>
-              <li>• Time of Birth (or "Unknown" if not sure)</li>
-              <li>• Gender</li>
-              <li>• Birth Location (City, Country)</li>
-              <li>• Focus Areas / Specific Questions (optional)</li>
-              {service === 'detailed' && <li>• WhatsApp Number (optional, for Q&A support)</li>}
+              <li>• {t('paymentGuide.dob')}</li>
+              <li>• {t('paymentGuide.tob')}</li>
+              <li>• {t('paymentGuide.gender')}</li>
+              <li>• {t('paymentGuide.birthLocation')}</li>
+              <li>• {t('paymentGuide.focusAreas')}</li>
+              {service === 'detailed' && <li>• {t('paymentGuide.whatsappNumber')}</li>}
             </ul>
             <div className="bg-mystic-800/50 rounded-lg p-4 border border-mystic-700/50">
               <p className="text-xs text-mystic-400">
-                <strong className="text-gold-400">Note:</strong> I will send you a private message on Ko-fi after receiving your payment. Please check your Ko-fi messages.
+                <strong className="text-gold-400">{t('paymentGuide.note')}:</strong> {t('paymentGuide.noteDesc')}
               </p>
             </div>
           </div>
@@ -229,28 +231,28 @@ const PaymentGuide = () => {
           id="delivery"
         >
           <h3 className="text-xl sm:text-2xl font-cinzel font-semibold text-white mb-4 sm:mb-6 text-center">
-            What Happens Next?
+            {t('paymentGuide.whatHappensNext')}
           </h3>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 sm:gap-6">
             <div className="text-center">
               <CheckCircle className="h-8 w-8 text-green-400 mx-auto mb-3" aria-hidden="true" />
-              <h4 className="font-semibold text-gold-400 mb-2">Payment Confirmation</h4>
+              <h4 className="font-semibold text-gold-400 mb-2">{t('paymentGuide.paymentConfirmation')}</h4>
               <p className="text-mystic-300 text-sm">
-                You'll receive a payment confirmation email from Ko-fi
+                {t('paymentGuide.paymentConfirmationDesc')}
               </p>
             </div>
             <div className="text-center">
               <CheckCircle className="h-8 w-8 text-green-400 mx-auto mb-3" aria-hidden="true" />
-              <h4 className="font-semibold text-gold-400 mb-2">Form Submission</h4>
+              <h4 className="font-semibold text-gold-400 mb-2">{t('paymentGuide.formSubmission')}</h4>
               <p className="text-mystic-300 text-sm">
-                Submit your information form and receive confirmation
+                {t('paymentGuide.formSubmissionDesc')}
               </p>
             </div>
             <div className="text-center">
               <CheckCircle className="h-8 w-8 text-green-400 mx-auto mb-3" aria-hidden="true" />
-              <h4 className="font-semibold text-gold-400 mb-2">Service Delivery</h4>
+              <h4 className="font-semibold text-gold-400 mb-2">{t('paymentGuide.serviceDelivery')}</h4>
               <p className="text-mystic-300 text-sm">
-                Receive your detailed report within 24 hours (or 7-10 days for talismans)
+                {t('paymentGuide.serviceDeliveryDesc')}
               </p>
             </div>
           </div>
@@ -265,19 +267,19 @@ const PaymentGuide = () => {
         >
           <div className="mystic-card p-6 sm:p-8 max-w-2xl mx-auto">
             <h3 className="text-lg sm:text-xl font-cinzel font-semibold text-white mb-3 sm:mb-4">
-              Contact Information
+              {t('paymentGuide.contactInfo')}
             </h3>
             <div className="space-y-3 text-mystic-200">
               <div className="flex items-center space-x-3">
                 <Mail className="h-5 w-5 text-gold-400" aria-hidden="true" />
-                <span>Email: chenxiao0801@hotmail.com</span>
+                <span>{t('paymentGuide.email')}: chenxiao0801@hotmail.com</span>
               </div>
               <div className="flex items-center space-x-3">
                 <MessageCircle className="h-5 w-5 text-gold-400" aria-hidden="true" />
-                <span>WhatsApp: Available after payment</span>
+                <span>{t('paymentGuide.whatsapp')}: {t('paymentGuide.whatsappAvailable')}</span>
               </div>
               <p className="text-sm text-mystic-300 mt-3">
-                Please include your payment confirmation number when contacting me.
+                {t('paymentGuide.contactNote')}
               </p>
             </div>
           </div>
@@ -295,14 +297,14 @@ const PaymentGuide = () => {
             className="inline-flex items-center space-x-2 text-mystic-300 hover:text-gold-400 transition-colors"
           >
             <ArrowLeft className="h-4 w-4" />
-            <span>Back to Services</span>
+            <span>{t('paymentGuide.backToServices')}</span>
           </Link>
           <Link
             to="/"
             className="inline-flex items-center space-x-2 text-mystic-300 hover:text-gold-400 transition-colors"
           >
             <ArrowLeft className="h-4 w-4" />
-            <span>Back to Home</span>
+            <span>{t('paymentGuide.backToHome')}</span>
           </Link>
         </motion.div>
       </div>
