@@ -3649,9 +3649,18 @@ export const blogPostsData = {
     ]
   },
   "right-person-not-chase": {
-    title: "The Right Person Is Not the One You Have to Chase",
-    excerpt: "A poetic exploration of what true love looks like—not the dramatic chase, but the quiet moments of being seen, understood, and properly placed in someone's life.",
-    content: `
+    title: {
+      en: "The Right Person Is Not the One You Have to Chase",
+      ja: "正しい人は追いかける必要がない人",
+      ko: "올바른 사람은 쫓아야 할 사람이 아닙니다"
+    },
+    excerpt: {
+      en: "A poetic exploration of what true love looks like—not the dramatic chase, but the quiet moments of being seen, understood, and properly placed in someone's life.",
+      ja: "真の愛がどのように見えるか—劇的な追跡ではなく、見られ、理解され、誰かの人生に適切に配置される静かな瞬間—の詩的な探求。",
+      ko: "진정한 사랑이 어떻게 보이는지—극적인 추적이 아니라，보이고，이해되며，누군가의 삶에 적절히 배치되는 조용한 순간—에 대한 시적인 탐구。"
+    },
+    content: {
+      en: `
       <div class="space-y-6">
         <p class="text-mystic-200 leading-relaxed">
           Love is not a sprint to win someone's attention. This essay reminds readers that emotional safety, steady presence, and mutual pace matter more than fireworks. It speaks directly to women who have over-given in relationships and are ready for healthier compatibility.
@@ -3664,6 +3673,33 @@ export const blogPostsData = {
         </p>
       </div>
     `,
+      ja: `
+      <div class="space-y-6">
+        <p class="text-mystic-200 leading-relaxed">
+          愛は誰かの注意を勝ち取るための短距離走ではありません。このエッセイは、感情的な安全性、安定した存在、相互のペースが花火よりも重要であることを読者に思い出させます。それは、関係で過度に与えてきた、より健康的な相性の準備ができている女性に直接語りかけます。
+        </p>
+        <blockquote class="bg-mystic-800/40 border border-mystic-700/50 rounded-lg p-6 text-mystic-100 italic">
+          正しい人は、あなたがペースを保てないときに遅くなり、世界がうるさくなったときに世界を下げ、人生の普通の儀式であなたに会います。
+        </blockquote>
+        <p class="text-mystic-200 leading-relaxed">
+          エッセイは実用的なリマインダーで締めくくられます：交渉不可能なものを設定し、冷静が戻った後にコミュニケーションを実践し、強度を追いかける代わりに普通の温かさで休むことを学びます。
+        </p>
+      </div>
+    `,
+      ko: `
+      <div class="space-y-6">
+        <p class="text-mystic-200 leading-relaxed">
+          사랑은 누군가의 관심을 얻기 위한 단거리 경주가 아닙니다。이 에세이는 감정적 안전，안정적인 존재，상호 속도가 불꽃놀이보다 중요하다는 것을 독자에게 상기시킵니다。관계에서 과도하게 주었고 더 건강한 호환성을 위한 준비가 된 여성들에게 직접 말합니다。
+        </p>
+        <blockquote class="bg-mystic-800/40 border border-mystic-700/50 rounded-lg p-6 text-mystic-100 italic">
+          올바른 사람은 당신이 속도를 유지할 수 없을 때 느려지고，세상이 시끄러워졌을 때 세상을 낮추며，삶의 평범한 의식에서 당신을 만납니다。
+        </blockquote>
+        <p class="text-mystic-200 leading-relaxed">
+          에세이는 실용적인 상기로 마무리됩니다：협상 불가능한 것을 설정하고，차분함이 돌아온 후 의사소통을 실천하고，강도를 쫓는 대신 평범한 따뜻함에서 휴식을 취하는 것을 배웁니다。
+        </p>
+      </div>
+    `
+    },
     author: 'FatePath',
     date: '2025-08-18',
     readTime: '4 min read',
