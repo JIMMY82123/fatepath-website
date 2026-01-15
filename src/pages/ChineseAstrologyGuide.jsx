@@ -5,6 +5,11 @@ import { Star, Calculator, Clock, BarChart3, ArrowRight, FileText, BookOpen, Spa
 import SEO from '../components/SEO'
 
 const ChineseAstrologyGuide = () => {
+  // 确保组件正确渲染
+  if (typeof window !== 'undefined') {
+    console.log('ChineseAstrologyGuide component is rendering')
+  }
+
   const tools = [
     {
       name: "Free Bazi Chart Calculator",
