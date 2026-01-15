@@ -55,7 +55,21 @@ const BlogPost = () => {
     }
   }, [slug])
 
-  const blogPost = blogPostsData[slug] || blogPostsData['understanding-bazi-chart-beginners-guide']
+  const { i18n } = useTranslation()
+  const currentLanguage = i18n.language || 'en'
+  
+  // Get blog post data
+  const rawPost = blogPostsData[slug] || blogPostsData['understanding-bazi-chart-beginners-guide']
+  
+  // Support multilingual content
+  const blogPost = {
+    ...rawPost,
+    title: rawPost.title?.[currentLanguage] || rawPost.title || '',
+    excerpt: rawPost.excerpt?.[currentLanguage] || rawPost.excerpt || '',
+    content: rawPost.content?.[currentLanguage] || rawPost.content || '',
+    // If content is not translated, show English with a notice
+    isTranslated: rawPost.content?.[currentLanguage] ? true : false
+  }
 
   if (isLoading) {
     return (

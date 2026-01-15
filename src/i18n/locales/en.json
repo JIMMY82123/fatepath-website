@@ -693,7 +693,9 @@
     "readTime": "Read Time",
     "jsRequired": "JavaScript is required for the full interactive experience. Please enable JavaScript to view the complete article with animations and enhanced features.",
     "shareArticle": "Share Article",
-    "relatedArticles": "Related Articles"
+    "relatedArticles": "Related Articles",
+    "translationNotice": "Translation Notice",
+    "translationNoticeDesc": "This article is currently available in English only. We are working on providing translations in other languages. Thank you for your understanding."
   },
   "paymentGuide": {
     "step1Title": "Step 1: Complete Payment",

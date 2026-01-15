@@ -702,7 +702,9 @@
     "readTime": "読む時間",
     "jsRequired": "完全なインタラクティブ体験にはJavaScriptが必要です。アニメーションと拡張機能を含む完全な記事を表示するには、JavaScriptを有効にしてください。",
     "shareArticle": "記事を共有",
-    "relatedArticles": "関連記事"
+    "relatedArticles": "関連記事",
+    "translationNotice": "翻訳に関するお知らせ",
+    "translationNoticeDesc": "この記事は現在英語版のみ提供されています。他の言語への翻訳を準備中です。ご理解いただきありがとうございます。"
   },
   "paymentGuide": {
     "step1Title": "ステップ1：支払いを完了",
