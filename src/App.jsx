@@ -33,6 +33,8 @@ const BaziForm = lazy(() => import('./pages/BaziForm'))
 const DayMasterCalculator = lazy(() => import('./pages/DayMasterCalculator'))
 const TrueSolarTimeCalculator = lazy(() => import('./pages/TrueSolarTimeCalculator'))
 const TenGodsAnalyzer = lazy(() => import('./pages/TenGodsAnalyzer'))
+const ChineseAstrologyGuide = lazy(() => import('./pages/ChineseAstrologyGuide'))
+const NotFound = lazy(() => import('./pages/NotFound'))
 
 function App() {
   useEffect(() => {
@@ -97,6 +99,9 @@ function App() {
                   <Route path="/love-compatibility-test" element={<LoveCompatibilityTest />} />
                   <Route path="/animation-demo" element={<AnimationDemo />} />
                   <Route path="/2026-forecast" element={<Forecast2026 />} />
+                  <Route path="/chinese-astrology-guide" element={<ChineseAstrologyGuide />} />
+                  <Route path="/404" element={<NotFound />} />
+                  <Route path="*" element={<NotFound />} />
                 </Routes>
               </Suspense>
             </MobileGestureHandler>

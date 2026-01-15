@@ -1,10 +1,11 @@
 import React, { useState, useEffect } from 'react'
 import { motion } from 'framer-motion'
-import { useParams, Link } from 'react-router-dom'
+import { useParams, Link, useNavigate } from 'react-router-dom'
 import SEO from '../components/SEO'
 
 const DatasetDetail = () => {
   const { datasetId } = useParams()
+  const navigate = useNavigate()
   const [dataset, setDataset] = useState(null)
   const [loading, setLoading] = useState(true)
   const [previewData, setPreviewData] = useState([])
@@ -14,6 +15,11 @@ const DatasetDetail = () => {
     const loadDataset = async () => {
       try {
         const response = await fetch(`/datasets/${datasetId}.json`)
+        if (!response.ok || response.status === 404) {
+          // 重定向到404页面
+          navigate('/404', { replace: true })
+          return
+        }
         const data = await response.json()
         setDataset(data)
         // 对于十神数据集，显示所有记录；其他数据集显示前5条
@@ -22,12 +28,13 @@ const DatasetDetail = () => {
         setLoading(false)
       } catch (error) {
         console.error('Error loading dataset:', error)
-        setLoading(false)
+        // 重定向到404页面
+        navigate('/404', { replace: true })
       }
     }
 
     loadDataset()
-  }, [datasetId])
+  }, [datasetId, navigate])
 
   const downloadDataset = () => {
     const link = document.createElement('a')

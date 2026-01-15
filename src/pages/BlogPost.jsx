@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'
-import { useParams, Link } from 'react-router-dom'
+import { useParams, Link, useNavigate } from 'react-router-dom'
 import { motion } from 'framer-motion'
 import { Calendar, Clock, ArrowLeft, Share2, BookOpen, User, Tag, AlertCircle, Loader2 } from 'lucide-react'
 import SEO from '../components/SEO'
@@ -9,6 +9,7 @@ import { blogPostsData } from '../data/blogPostsData'
 
 const BlogPost = () => {
   const { slug } = useParams()
+  const navigate = useNavigate()
   const [isLoading, setIsLoading] = useState(true)
   const [hasError, setHasError] = useState(false)
   const [retryCount, setRetryCount] = useState(0)
@@ -18,8 +19,8 @@ const BlogPost = () => {
     setHasError(false)
 
     if (!blogPostsData[slug]) {
-      setHasError(true)
-      setIsLoading(false)
+      // 重定向到404页面
+      navigate('/404', { replace: true })
       return
     }
 

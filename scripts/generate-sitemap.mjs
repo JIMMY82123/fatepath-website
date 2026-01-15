@@ -22,6 +22,7 @@ const staticPages = [
   { url: '/privacy', priority: '0.3', changefreq: 'yearly', lastmod: today },
   { url: '/wealth-sign', priority: '0.8', changefreq: 'weekly', lastmod: today },
   { url: '/2026-forecast', priority: '0.9', changefreq: 'monthly', lastmod: today },
+  { url: '/chinese-astrology-guide', priority: '0.9', changefreq: 'monthly', lastmod: today },
 ];
 
 // 获取所有博客文章并按日期排序
