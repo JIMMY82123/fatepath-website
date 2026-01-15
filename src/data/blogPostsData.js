@@ -3386,16 +3386,25 @@ export const blogPostsData = {
     ]
   },
   "2024-year-dragon-fortune-forecast": {
-    title: "2024 Wood Dragon Fortune Forecast",
-    excerpt: "Explore the 2024 Jia Chen Wood Dragon year—its cosmic themes, timing windows, and personalized recommendations for each Day Master.",
-    content: `
+    title: {
+      en: "2024 Wood Dragon Fortune Forecast",
+      ja: "2024年木龍の運勢予測",
+      ko: "2024년 목룡 운세 예측"
+    },
+    excerpt: {
+      en: "Explore the 2024 Jia Chen Wood Dragon year—its cosmic themes, timing windows, and personalized recommendations for each Day Master.",
+      ja: "2024年の甲辰木龍年を探索してください—その宇宙のテーマ、タイミングウィンドウ、各日主への個別化された推奨事項。",
+      ko: "2024년 갑진 목룡년을 탐색하세요—우주적 테마，타이밍 창，각 일주에 대한 개인화된 권장사항。"
+    },
+    content: {
+      en: `
       <div class="space-y-6">
         <p class="text-mystic-200 leading-relaxed">
           The 2024 Wood Dragon year heralds expansion, bold restructuring, and technological leaps.
           Jia Wood (甲) sits atop the earthly Dragon (辰), an Earth branch containing hidden Water and Wood.
           Expect ambitious infrastructure projects, AI breakthroughs, and governments redrawing policy maps.
           Individually, we are invited to think bigger while staying grounded.
-          想回顾上一轮重大火运，可对照<a class="text-gold-300 underline" href="/blog/red-horse-2026-american-career-outlook">2026 红马年攻略</a>，了解未来几年能量接力的关系。
+          To review the previous major Fire cycle, compare with <a class="text-gold-300 underline" href="/blog/red-horse-2026-american-career-outlook">2026 Red Horse Year Playbook</a> to understand the energy relay relationship in the coming years.
         </p>
 
         <h2 class="text-2xl font-bold text-white mt-8 mb-4">Key Energy Themes</h2>
@@ -3418,8 +3427,8 @@ export const blogPostsData = {
           Wood and Fire Day Masters ride supportive waves—launch thought leadership, raise capital, and expand teams.
           Earth Day Masters must manage stress and resist micromanagement.
           Metal Day Masters should focus on strategic partnerships rather than solo scaling.
-          Water Day Masters thrive by building platforms that educate or coach communities。
-          如果你正筹备转职或创业，不妨结合<a class="text-gold-300 underline" href="/blog/career-timing-next-big-move">Career Timing 规划指南</a>，把龙年的年度主题与个人大运时间表排出优先级。
+          Water Day Masters thrive by building platforms that educate or coach communities.
+          If you're preparing for a career transition or starting a business, combine this with <a class="text-gold-300 underline" href="/blog/career-timing-next-big-move">Career Timing Planning Guide</a> to prioritize the Dragon year's annual themes with your personal 10-year luck pillar schedule.
         </p>
 
         <h2 class="text-2xl font-bold text-white mt-8 mb-4">Relationships and Family</h2>
@@ -3427,7 +3436,7 @@ export const blogPostsData = {
           The Dragon favors long-term commitments and legacy building.
           Couples can plan engagements, IVF, or relocation after reviewing each partner’s luck cycles.
           Single clients should socialize through professional networks or learning communities where Wood and Earth energies mingle.
-          若需要更精细的恋爱策略，可以搭配<a class="text-gold-300 underline" href="/blog/marriage-relationship-destiny-report-woman-love-path">婚姻命运案例</a>，比对自己的十神结构。
+          For more refined relationship strategies, pair this with <a class="text-gold-300 underline" href="/blog/marriage-relationship-destiny-report-woman-love-path">Marriage & Relationship Destiny Report</a> case studies to compare with your Ten Gods structure.
         </p>
 
         <h2 class="text-2xl font-bold text-white mt-8 mb-4">Health and Wellness</h2>
@@ -3452,6 +3461,135 @@ export const blogPostsData = {
         </p>
       </div>
     `,
+      ja: `
+      <div class="space-y-6">
+        <p class="text-mystic-200 leading-relaxed">
+          2024年の木龍年は、拡大、大胆な再構築、技術的飛躍を告げます。
+          甲木（こうぼく）は地上の龍（辰）の上に座り、隠された水と木を含む土の支です。
+          野心的なインフラプロジェクト、AIのブレークスルー、政策マップを再描画する政府を期待してください。
+          個人的には、接地を保ちながらより大きく考えるように招待されています。
+          前回の主要な火運をレビューしたい場合は、<a class="text-gold-300 underline" href="/blog/red-horse-2026-american-career-outlook">2026年赤馬年攻略</a>と比較して、今後数年間のエネルギーリレーの関係を理解してください。
+        </p>
+
+        <h2 class="text-2xl font-bold text-white mt-8 mb-4">主要なエネルギーテーマ</h2>
+        <ul class="list-disc list-inside text-mystic-200 leading-relaxed space-y-2">
+          <li><strong>ビジョナリーリーダーシップ：</strong> 甲木は長期計画、倫理的イノベーション、透明なリーダーシップを支持します。</li>
+          <li><strong>龍の土：</strong> 龍は水を蓄え、金融、不動産、気候プロジェクトに隠されたサポートを提供します。</li>
+          <li><strong>突然の明らかになること：</strong> 龍は貯蔵支です—技術、経済、または公人に関する秘密が表面化することを期待してください。</li>
+        </ul>
+
+        <h2 class="text-2xl font-bold text-white mt-8 mb-4">タイムラインのハイライト</h2>
+        <p class="text-mystic-200 leading-relaxed">
+          春の木の月（2月-4月）は新しいイニシアチブを点火し、特に木と火の日主にとって。
+          夏の火の月は可視性を加速しますが、規律を必要とします。
+          秋の金の月はビジネスモデルをテストし、システムを精製した人に報酬を与えます。
+          冬の水の月はエネルギーを回復し、合併や政策の変化を明らかにします。
+        </p>
+
+        <h2 class="text-2xl font-bold text-white mt-8 mb-4">キャリアと富の見通し</h2>
+        <p class="text-mystic-200 leading-relaxed">
+          木と火の日主は支援的な波に乗ります—思想リーダーシップを立ち上げ、資本を調達し、チームを拡大します。
+          土の日主はストレスを管理し、マイクロマネジメントに抵抗する必要があります。
+          金の日主は、単独のスケーリングではなく、戦略的パートナーシップに焦点を当てるべきです。
+          水の日主は、コミュニティを教育またはコーチングするプラットフォームを構築することで繁栄します。
+          転職や起業を準備している場合は、<a class="text-gold-300 underline" href="/blog/career-timing-next-big-move">キャリアタイミング計画ガイド</a>と組み合わせて、龍年の年間テーマと個人的な大運スケジュールに優先順位を付けてください。
+        </p>
+
+        <h2 class="text-2xl font-bold text-white mt-8 mb-4">関係と家族</h2>
+        <p class="text-mystic-200 leading-relaxed">
+          龍は長期のコミットメントと遺産の構築を支持します。
+          カップルは、各パートナーの運サイクルをレビューした後、婚約、IVF、または転居を計画できます。
+          独身のクライアントは、木と土のエネルギーが混ざり合う専門ネットワークや学習コミュニティを通じて社交すべきです。
+          より洗練された恋愛戦略が必要な場合は、<a class="text-gold-300 underline" href="/blog/marriage-relationship-destiny-report-woman-love-path">結婚運命ケース</a>と組み合わせて、自分の十神構造と比較してください。
+        </p>
+
+        <h2 class="text-2xl font-bold text-white mt-8 mb-4">健康とウェルネス</h2>
+        <p class="text-mystic-200 leading-relaxed">
+          龍年は消化器系と脾臓関連の不均衡を引き起こす可能性があります。
+          土を栄養する食べ物（サツマイモ、オーツ）で自分を接地し、一貫した睡眠を維持し、停滞を防ぐためにリンパまたは筋膜ケアをスケジュールしてください。
+          呼吸法と気功は、急速な変化によって引き起こされる神経系のスパイクを調節するのに役立ちます。
+        </p>
+
+        <h2 class="text-2xl font-bold text-white mt-8 mb-4">個人的なアクションプラン</h2>
+        <ol class="list-decimal list-inside text-mystic-200 leading-relaxed space-y-2">
+          <li>2024年の年間運柱をレビューしてください—龍との衝突または組み合わせを特定します。</li>
+          <li>1つの大胆で長期のプロジェクトを選択し、四半期ごとのマイルストーンにコミットします。</li>
+          <li>影響力を拡大する教育または認定に投資します。</li>
+          <li>金の猿の月（8月）が予算をストレステストする前に、金融準備金を強化します。</li>
+          <li>明確さを保つために、水の月の間にリトリートまたはデジタルデトックスをスケジュールします。</li>
+        </ol>
+
+        <p class="text-mystic-200 leading-relaxed">
+          木龍は、野心と誠実さのバランスを取る勇敢なビジョナリーに報酬を与えます。
+          戦略を要素のサポートと一致させると、2024年は繁栄する9年サイクルの発射台になります。
+        </p>
+      </div>
+    `,
+      ko: `
+      <div class="space-y-6">
+        <p class="text-mystic-200 leading-relaxed">
+          2024년 목룡년은 확장，대담한 재구조화，기술적 도약을 예고합니다。
+          갑목（甲木）은 지상의 용（辰） 위에 앉아 있으며，숨겨진 수와 목을 포함하는 토의 지지입니다。
+          야심찬 인프라 프로젝트，AI 돌파구，정책 지도를 재그리는 정부를 기대하세요。
+          개인적으로，우리는 접지를 유지하면서 더 크게 생각하도록 초대받습니다。
+          이전 주요 화 운을 검토하려면，<a class="text-gold-300 underline" href="/blog/red-horse-2026-american-career-outlook">2026년 적마년 공략</a>과 비교하여 향후 몇 년간의 에너지 릴레이 관계를 이해하세요。
+        </p>
+
+        <h2 class="text-2xl font-bold text-white mt-8 mb-4">핵심 에너지 테마</h2>
+        <ul class="list-disc list-inside text-mystic-200 leading-relaxed space-y-2">
+          <li><strong>비전 리더십：</strong> 갑목은 장기 계획，윤리적 혁신，투명한 리더십을 선호합니다。</li>
+          <li><strong>용의 토：</strong> 용은 물을 저장하여 금융，부동산，기후 프로젝트에 숨겨진 지원을 제공합니다。</li>
+          <li><strong>갑작스러운 드러남：</strong> 용은 저장 지지입니다—기술，경제，또는 공인에 대한 비밀이 표면화될 것으로 예상하세요。</li>
+        </ul>
+
+        <h2 class="text-2xl font-bold text-white mt-8 mb-4">타임라인 하이라이트</h2>
+        <p class="text-mystic-200 leading-relaxed">
+          봄 목의 달（2월-4월）은 새로운 이니셔티브를 점화하며，특히 목과 화의 일주에게。
+          여름 화의 달은 가시성을 가속화하지만 규율이 필요합니다。
+          가을 금의 달은 비즈니스 모델을 테스트하며，시스템을 정제한 사람들에게 보상을 제공합니다。
+          겨울 수의 달은 에너지를 회복하고 합병이나 정책 변화를 드러냅니다。
+        </p>
+
+        <h2 class="text-2xl font-bold text-white mt-8 mb-4">경력 및 부의 전망</h2>
+        <p class="text-mystic-200 leading-relaxed">
+          목과 화의 일주는 지원적인 파도를 타고—사상 리더십을 시작하고，자본을 조달하며，팀을 확장합니다。
+          토의 일주는 스트레스를 관리하고 마이크로 매니지먼트에 저항해야 합니다。
+          금의 일주는 단독 스케일링보다 전략적 파트너십에 집중해야 합니다。
+          수의 일주는 커뮤니티를 교육하거나 코칭하는 플랫폼을 구축함으로써 번영합니다。
+          전직이나 창업을 준비하고 있다면，<a class="text-gold-300 underline" href="/blog/career-timing-next-big-move">경력 타이밍 계획 가이드</a>와 결합하여 용년의 연간 테마와 개인 대운 일정에 우선순위를 매기세요。
+        </p>
+
+        <h2 class="text-2xl font-bold text-white mt-8 mb-4">관계 및 가족</h2>
+        <p class="text-mystic-200 leading-relaxed">
+          용은 장기적 헌신과 유산 구축을 선호합니다。
+          커플은 각 파트너의 운 사이클을 검토한 후 약혼，IVF，또는 이전을 계획할 수 있습니다。
+          독신 클라이언트는 목과 토의 에너지가 섞이는 전문 네트워크나 학습 커뮤니티를 통해 사교해야 합니다。
+          더 정교한 연애 전략이 필요한 경우，<a class="text-gold-300 underline" href="/blog/marriage-relationship-destiny-report-woman-love-path">결혼 운명 사례</a>와 함께 자신의 십신 구조와 비교하세요。
+        </p>
+
+        <h2 class="text-2xl font-bold text-white mt-8 mb-4">건강 및 웰니스</h2>
+        <p class="text-mystic-200 leading-relaxed">
+          용년은 소화 및 비장 관련 불균형을 유발할 수 있습니다。
+          토를 영양하는 음식（고구마，귀리）으로 자신을 접지하고，일관된 수면을 유지하며，정체를 방지하기 위해 림프 또는 근막 케어를 스케줄하세요。
+          호흡법과 기공은 급속한 변화로 인한 신경계 급증을 조절하는 데 도움이 됩니다。
+        </p>
+
+        <h2 class="text-2xl font-bold text-white mt-8 mb-4">개인 액션 플랜</h2>
+        <ol class="list-decimal list-inside text-mystic-200 leading-relaxed space-y-2">
+          <li>2024년 연간 운주를 검토하세요—용과의 충돌 또는 조합을 식별합니다。</li>
+          <li>하나의 대담하고 장기적인 프로젝트를 선택하고 분기별 마일스톤에 헌신합니다。</li>
+          <li>영향력을 확장하는 교육이나 인증에 투자합니다。</li>
+          <li>금의 원월（8월）이 예산을 스트레스 테스트하기 전에 금융 준비금을 강화합니다。</li>
+          <li>명확성을 보존하기 위해 수의 달 동안 휴양지나 디지털 디톡스를 스케줄합니다。</li>
+        </ol>
+
+        <p class="text-mystic-200 leading-relaxed">
+          목룡은 야망과 정직함의 균형을 맞추는 용감한 비전가에게 보상을 제공합니다。
+          전략을 요소 지원과 일치시키면，2024년은 번영하는 9년 사이클의 발사대가 됩니다。
+        </p>
+      </div>
+    `
+    },
     author: 'Master XuanYin',
     date: '2024-01-05',
     readTime: '7 min read',
