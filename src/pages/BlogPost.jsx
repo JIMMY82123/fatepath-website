@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import { useParams, Link, useNavigate } from 'react-router-dom'
 import { motion } from 'framer-motion'
+import { useTranslation } from 'react-i18next'
 import { Calendar, Clock, ArrowLeft, Share2, BookOpen, User, Tag, AlertCircle, Loader2 } from 'lucide-react'
 import SEO from '../components/SEO'
 import LazyImage from '../components/LazyImage'
@@ -8,6 +9,7 @@ import LazyImage from '../components/LazyImage'
 import { blogPostsData } from '../data/blogPostsData'
 
 const BlogPost = () => {
+  const { t } = useTranslation()
   const { slug } = useParams()
   const navigate = useNavigate()
   const [isLoading, setIsLoading] = useState(true)
@@ -67,8 +69,8 @@ const BlogPost = () => {
         <div className="min-h-screen bg-mystic-900 pt-20 flex items-center justify-center">
           <div className="text-center">
             <Loader2 className="h-16 w-16 text-gold-400 animate-spin mx-auto mb-6" />
-            <h1 className="text-2xl font-bold text-white mb-4">Loading Your Destiny Report...</h1>
-            <p className="text-mystic-300">Please wait while we prepare your personalized analysis.</p>
+            <h1 className="text-2xl font-bold text-white mb-4">{t('blogPost.loading')}</h1>
+            <p className="text-mystic-300">{t('blogPost.loadingDesc')}</p>
           </div>
         </div>
       </>
@@ -80,9 +82,9 @@ const BlogPost = () => {
       <div className="min-h-screen bg-mystic-900 pt-20 flex items-center justify-center">
         <div className="text-center max-w-md mx-auto px-4">
           <AlertCircle className="h-16 w-16 text-red-400 mx-auto mb-6" />
-          <h1 className="text-2xl font-bold text-white mb-4">Oops! Something Went Wrong</h1>
+          <h1 className="text-2xl font-bold text-white mb-4">{t('blogPost.errorTitle')}</h1>
           <p className="text-mystic-300 mb-6">
-            We’re having trouble loading your destiny report. Please check your connection and try again.
+            {t('blogPost.errorDesc')}
           </p>
           <div className="space-y-3">
             <button
@@ -94,7 +96,7 @@ const BlogPost = () => {
               }}
               className="w-full bg-gradient-to-r from-gold-400 to-gold-600 text-white px-6 py-3 rounded-lg hover:from-gold-500 hover:to-gold-700 transition-all duration-300"
             >
-              Try Again
+              {t('blogPost.tryAgain')}
             </button>
             <Link
               to="/blog"
@@ -120,13 +122,13 @@ const BlogPost = () => {
         />
         <div className="min-h-screen bg-mystic-900 pt-20 flex items-center justify-center">
           <div className="text-center">
-            <h1 className="text-4xl font-bold text-white mb-4">Blog Post Not Found</h1>
-            <p className="text-mystic-300 mb-8">The blog post you're looking for doesn't exist.</p>
+            <h1 className="text-4xl font-bold text-white mb-4">{t('blogPost.notFound')}</h1>
+            <p className="text-mystic-300 mb-8">{t('blogPost.notFoundDesc')}</p>
             <Link
               to="/blog"
               className="bg-gradient-to-r from-gold-400 to-gold-600 text-white px-6 py-3 rounded-lg hover:from-gold-500 hover:to-gold-700 transition-all duration-300"
             >
-              Back to Blog
+              {t('blogPost.backToBlog')}
             </Link>
           </div>
         </div>
@@ -144,7 +146,7 @@ const BlogPost = () => {
     } else {
       // Fallback: copy to clipboard
       navigator.clipboard.writeText(window.location.href)
-      alert('Link copied to clipboard!')
+      alert(t('blogPost.linkCopied'))
     }
   }
 
@@ -220,9 +222,9 @@ const BlogPost = () => {
             {blogPost.excerpt}
           </p>
           <div style={{marginBottom: '2rem'}}>
-            <strong>Author:</strong> {blogPost.author} | 
-            <strong>Date:</strong> {blogPost.date} | 
-            <strong>Read Time:</strong> {blogPost.readTime}
+            <strong>{t('blogPost.author')}:</strong> {blogPost.author} | 
+            <strong>{t('blogPost.date')}:</strong> {blogPost.date} | 
+            <strong>{t('blogPost.readTime')}:</strong> {blogPost.readTime}
           </div>
           <div style={{
             backgroundColor: '#1e293b',
@@ -233,8 +235,7 @@ const BlogPost = () => {
             <div dangerouslySetInnerHTML={{ __html: blogPost.content }} />
           </div>
           <p style={{marginTop: '2rem', fontSize: '0.9rem', color: '#94a3b8'}}>
-            JavaScript is required for the full interactive experience. 
-            Please enable JavaScript to view the complete article with animations and enhanced features.
+            {t('blogPost.jsRequired')}
           </p>
         </div>
       </noscript>
@@ -261,7 +262,7 @@ const BlogPost = () => {
             className="inline-flex items-center text-gold-400 hover:text-gold-300 transition-colors"
           >
             <ArrowLeft className="h-4 w-4 mr-2" />
-            Back to Blog
+            {t('blogPost.backToBlog')}
           </Link>
         </div>
 
@@ -319,7 +320,7 @@ const BlogPost = () => {
                   className="inline-flex items-center px-6 py-3 bg-mystic-700 hover:bg-mystic-600 text-white rounded-lg transition-colors"
                 >
                   <Share2 className="h-4 w-4 mr-2" />
-                  Share Article
+                  {t('blogPost.shareArticle')}
                 </button>
               </div>
             </motion.div>
@@ -365,7 +366,7 @@ const BlogPost = () => {
               viewport={{ once: true }}
             >
               <h2 className="text-3xl font-bold text-white text-center mb-12">
-                Related Articles
+                {t('blogPost.relatedArticles')}
               </h2>
               <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
                 {blogPost.relatedPosts.map((post, index) => (
