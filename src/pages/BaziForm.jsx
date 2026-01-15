@@ -1,10 +1,12 @@
 import { useState } from 'react'
 import { motion } from 'framer-motion'
+import { useTranslation } from 'react-i18next'
 import { Star, ArrowLeft, CheckCircle } from 'lucide-react'
 import { Link } from 'react-router-dom'
 import SEO from '../components/SEO'
 
 const BaziForm = () => {
+  const { t } = useTranslation()
   const [isSubmitting, setIsSubmitting] = useState(false)
   const [isSubmitted, setIsSubmitted] = useState(false)
   const [formData, setFormData] = useState({
@@ -50,7 +52,7 @@ const BaziForm = () => {
       }
     } catch (error) {
       console.error('Error submitting form:', error)
-      alert('There was an error submitting your form. Please try again.')
+      alert(t('baziForm.submitError'))
     } finally {
       setIsSubmitting(false)
     }
@@ -60,8 +62,8 @@ const BaziForm = () => {
     return (
       <>
         <SEO 
-          title="BaZi Reading Request Submitted | Thank You | FatePath"
-          description="Your BaZi reading request has been submitted successfully. Your detailed report will be delivered within 3 to 5 days with comprehensive analysis of your personality, career, relationships, and life path."
+          title={t('baziForm.successTitle')}
+          description={t('baziForm.successDescription')}
           keywords="bazi reading submitted, thank you, bazi report confirmation, chinese astrology request received"
           canonical="https://fatepath.me/bazi-form"
         />
@@ -75,18 +77,17 @@ const BaziForm = () => {
             >
               <CheckCircle className="h-16 w-16 text-green-400 mx-auto mb-6" />
               <h1 className="text-3xl font-cinzel font-bold mb-4 text-white">
-                Thank You!
+                {t('baziForm.thankYou')}
               </h1>
               <p className="text-mystic-300 mb-8 text-lg">
-                Your Bazi reading request has been submitted successfully. 
-                                I will analyze your birth chart and send your detailed report within 3 to 5 days.
+                {t('baziForm.successMessage')}
               </p>
               <Link
                 to="/"
                 className="inline-flex items-center space-x-2 bg-gradient-to-r from-gold-500 to-gold-600 text-black font-poppins font-semibold px-8 py-3 rounded-full hover:from-gold-400 hover:to-gold-500 transition-all duration-300"
               >
                 <ArrowLeft className="h-5 w-5" />
-                <span>Return to Home</span>
+                <span>{t('baziForm.returnToHome')}</span>
               </Link>
             </motion.div>
           </div>
@@ -98,8 +99,8 @@ const BaziForm = () => {
   return (
     <>
       <SEO 
-        title="Professional BaZi Reading Form | Detailed Chinese Astrology Analysis | FatePath"
-        description="Submit your birth details for a comprehensive BaZi reading. Get detailed analysis of your personality, career path, relationships, and life purpose through traditional Chinese numerology."
+        title={t('baziForm.formTitle')}
+        description={t('baziForm.formDescription')}
         keywords="bazi reading form, chinese astrology consultation, birth chart analysis, professional bazi reading, chinese numerology expert, life direction analysis"
         canonical="https://fatepath.me/bazi-form"
         ogImage="https://fatepath.me/og-image.svg"
@@ -119,7 +120,7 @@ const BaziForm = () => {
             <Star className="h-8 w-8 sm:h-10 sm:w-10 text-white" aria-hidden="true" />
           </div>
           <h1 className="text-2xl sm:text-3xl md:text-4xl font-cinzel font-bold mb-3 sm:mb-4 text-white tracking-wide">
-            Detailed Bazi Reading Service
+            {t('baziForm.serviceTitle')}
           </h1>
         </motion.div>
 

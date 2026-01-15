@@ -236,14 +236,12 @@ const Home = () => {
               <div className="w-16 h-16 bg-amber-100 rounded-lg flex items-center justify-center mb-6 border border-amber-200">
                 <div className="text-2xl text-amber-600">🎯</div>
               </div>
-              <h3 className="text-xl font-playfair font-semibold text-slate-900 mb-4">Career & Life Direction</h3>
+              <h3 className="text-xl font-playfair font-semibold text-slate-900 mb-4">{t('home.careerTitle')}</h3>
               <p className="text-slate-700 leading-relaxed mb-4 text-base">
-                Discover your natural talents and the career paths that align with your destiny. 
-                Understand your timing for career changes and business opportunities.
+                {t('home.careerDesc1')}
               </p>
               <p className="text-slate-700 leading-relaxed text-sm">
-                BaZi reveals when you're in a period of growth, stability, or transformation, 
-                helping you make informed decisions about your professional life.
+                {t('home.careerDesc2')}
               </p>
             </div>
 
@@ -252,14 +250,12 @@ const Home = () => {
               <div className="w-16 h-16 bg-amber-100 rounded-lg flex items-center justify-center mb-6 border border-amber-200">
                 <div className="text-2xl text-amber-600">❤️</div>
               </div>
-              <h3 className="text-xl font-playfair font-semibold text-slate-900 mb-4">Relationships & Compatibility</h3>
+              <h3 className="text-xl font-playfair font-semibold text-slate-900 mb-4">{t('home.relationshipsTitle')}</h3>
               <p className="text-slate-700 leading-relaxed mb-4 text-base">
-                Understand your relationship patterns and find compatible partners. 
-                Learn about timing for love and marriage, and how to improve existing relationships.
+                {t('home.relationshipsDesc1')}
               </p>
               <p className="text-slate-700 leading-relaxed text-sm">
-                BaZi compatibility analysis shows how your elements interact with others, 
-                revealing the foundation for lasting and harmonious relationships.
+                {t('home.relationshipsDesc2')}
               </p>
             </div>
 
@@ -268,14 +264,12 @@ const Home = () => {
               <div className="w-16 h-16 bg-amber-100 rounded-lg flex items-center justify-center mb-6 border border-amber-200">
                 <div className="text-2xl text-amber-600">🏥</div>
               </div>
-              <h3 className="text-xl font-playfair font-semibold text-slate-900 mb-4">Health & Wellness</h3>
+              <h3 className="text-xl font-playfair font-semibold text-slate-900 mb-4">{t('home.healthTitle')}</h3>
               <p className="text-slate-700 leading-relaxed mb-4 text-base">
-                Identify your health strengths and vulnerabilities based on your elemental composition. 
-                Learn about preventive measures and lifestyle adjustments for optimal well-being.
+                {t('home.healthDesc1')}
               </p>
               <p className="text-slate-700 leading-relaxed text-sm">
-                BaZi wellness emphasizes the concept of "treating before illness," preventing disease 
-                through lifestyle and dietary adjustments before illness occurs, maintaining physical and mental health balance.
+                {t('home.healthDesc2')}
               </p>
             </div>
 
@@ -284,14 +278,12 @@ const Home = () => {
               <div className="w-16 h-16 bg-amber-100 rounded-lg flex items-center justify-center mb-6 border border-amber-200">
                 <div className="text-2xl text-amber-600">📚</div>
               </div>
-              <h3 className="text-xl font-playfair font-semibold text-slate-900 mb-4">Learning and Growth</h3>
+              <h3 className="text-xl font-playfair font-semibold text-slate-900 mb-4">{t('home.learningTitle')}</h3>
               <p className="text-slate-700 leading-relaxed mb-4 text-base">
-                Discover your learning style and the subjects that resonate with your natural abilities. 
-                Understand the best timing for education and skill development.
+                {t('home.learningDesc1')}
               </p>
               <p className="text-slate-700 leading-relaxed text-sm">
-                BaZi learning guidance helps you choose the right educational paths, 
-                avoid blind actions, and achieve maximum learning effectiveness.
+                {t('home.learningDesc2')}
               </p>
             </div>
           </div>
@@ -304,10 +296,10 @@ const Home = () => {
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-16">
               <h2 className="text-4xl font-playfair font-semibold text-slate-900 mb-6 tracking-tight">
-                Community Love on Reddit
+                {t('home.redditTitle')}
               </h2>
               <p className="text-lg text-slate-700 max-w-3xl mx-auto leading-relaxed">
-                Real feedback from the Reddit community - see what people are saying about their BaZi reading experiences
+                {t('home.redditDesc')}
               </p>
             </div>
             
@@ -341,7 +333,7 @@ const Home = () => {
                       <div className="w-8 h-8 bg-orange-500 rounded-full mx-auto mb-2 flex items-center justify-center">
                         <span className="text-white text-xs font-bold">r</span>
                       </div>
-                      <p className="text-sm font-medium">Click to enlarge</p>
+                      <p className="text-sm font-medium">{t('home.clickToEnlarge')}</p>
                     </div>
                   </div>
                 </div>
@@ -375,7 +367,7 @@ const Home = () => {
                       <div className="w-8 h-8 bg-orange-500 rounded-full mx-auto mb-2 flex items-center justify-center">
                         <span className="text-white text-xs font-bold">r</span>
                       </div>
-                      <p className="text-sm font-medium">Click to enlarge</p>
+                      <p className="text-sm font-medium">{t('home.clickToEnlarge')}</p>
                     </div>
                   </div>
                 </div>
@@ -409,7 +401,7 @@ const Home = () => {
                       <div className="w-8 h-8 bg-orange-500 rounded-full mx-auto mb-2 flex items-center justify-center">
                         <span className="text-white text-xs font-bold">r</span>
                       </div>
-                      <p className="text-sm font-medium">Click to enlarge</p>
+                      <p className="text-sm font-medium">{t('home.clickToEnlarge')}</p>
                     </div>
                   </div>
                 </div>
@@ -443,7 +435,7 @@ const Home = () => {
                       <div className="w-8 h-8 bg-orange-500 rounded-full mx-auto mb-2 flex items-center justify-center">
                         <span className="text-white text-xs font-bold">r</span>
                       </div>
-                      <p className="text-sm font-medium">Click to enlarge</p>
+                      <p className="text-sm font-medium">{t('home.clickToEnlarge')}</p>
                     </div>
                   </div>
                 </div>
@@ -477,7 +469,7 @@ const Home = () => {
                       <div className="w-8 h-8 bg-orange-500 rounded-full mx-auto mb-2 flex items-center justify-center">
                         <span className="text-white text-xs font-bold">r</span>
                       </div>
-                      <p className="text-sm font-medium">Click to enlarge</p>
+                      <p className="text-sm font-medium">{t('home.clickToEnlarge')}</p>
                     </div>
                   </div>
                 </div>
@@ -511,7 +503,7 @@ const Home = () => {
                       <div className="w-8 h-8 bg-orange-500 rounded-full mx-auto mb-2 flex items-center justify-center">
                         <span className="text-white text-xs font-bold">r</span>
                       </div>
-                      <p className="text-sm font-medium">Click to enlarge</p>
+                      <p className="text-sm font-medium">{t('home.clickToEnlarge')}</p>
                     </div>
                   </div>
                 </div>
@@ -545,7 +537,7 @@ const Home = () => {
                       <div className="w-8 h-8 bg-orange-500 rounded-full mx-auto mb-2 flex items-center justify-center">
                         <span className="text-white text-xs font-bold">r</span>
                       </div>
-                      <p className="text-sm font-medium">Click to enlarge</p>
+                      <p className="text-sm font-medium">{t('home.clickToEnlarge')}</p>
                     </div>
                   </div>
                 </div>
@@ -579,7 +571,7 @@ const Home = () => {
                       <div className="w-8 h-8 bg-orange-500 rounded-full mx-auto mb-2 flex items-center justify-center">
                         <span className="text-white text-xs font-bold">r</span>
                       </div>
-                      <p className="text-sm font-medium">Click to enlarge</p>
+                      <p className="text-sm font-medium">{t('home.clickToEnlarge')}</p>
                     </div>
                   </div>
                 </div>
@@ -613,7 +605,7 @@ const Home = () => {
                       <div className="w-8 h-8 bg-orange-500 rounded-full mx-auto mb-2 flex items-center justify-center">
                         <span className="text-white text-xs font-bold">r</span>
                       </div>
-                      <p className="text-sm font-medium">Click to enlarge</p>
+                      <p className="text-sm font-medium">{t('home.clickToEnlarge')}</p>
                     </div>
                   </div>
                 </div>
@@ -647,7 +639,7 @@ const Home = () => {
                       <div className="w-8 h-8 bg-orange-500 rounded-full mx-auto mb-2 flex items-center justify-center">
                         <span className="text-white text-xs font-bold">r</span>
                       </div>
-                      <p className="text-sm font-medium">Click to enlarge</p>
+                      <p className="text-sm font-medium">{t('home.clickToEnlarge')}</p>
                     </div>
                   </div>
                 </div>
@@ -657,13 +649,13 @@ const Home = () => {
             {/* Call to Action */}
             <div className="text-center mt-12">
               <p className="text-slate-600 mb-4">
-                Join thousands of satisfied clients who have discovered their destiny through BaZi analysis
+                {t('home.joinThousands')}
               </p>
               <Link
                 to="/testimonials"
                 className="inline-flex items-center space-x-2 bg-amber-400 text-slate-900 py-3 px-6 rounded-lg font-semibold hover:bg-amber-300 transition-all duration-300"
               >
-                <span>View All Reviews</span>
+                <span>{t('home.viewAllReviews')}</span>
                 <div className="w-2 h-2 bg-slate-900 rounded-full"></div>
               </Link>
             </div>
@@ -677,10 +669,10 @@ const Home = () => {
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-16">
               <h2 className="text-4xl font-playfair font-semibold text-slate-900 mb-6 tracking-tight">
-                BaZi Analysis Examples
+                {t('home.baziExamplesTitle')}
               </h2>
               <p className="text-lg text-slate-700 max-w-3xl mx-auto leading-relaxed">
-                Through real cases, demonstrate the accuracy and practicality of BaZi destiny analysis
+                {t('home.baziExamplesDesc')}
               </p>
             </div>
             
