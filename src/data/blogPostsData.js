@@ -7489,9 +7489,18 @@ export const blogPostsData = {
       ]
     },
     "career-timing-next-big-move": {
-      title: "Career Timing: When to Make Your Next Big Move",
-      excerpt: "Master the art of perfect timing for career changes using traditional Chinese numerology. Learn to read the cosmic signals that indicate when to advance, change, or start new ventures.",
-      content: `
+      title: {
+        en: "Career Timing: When to Make Your Next Big Move",
+        ja: "キャリアのタイミング：次の大きな動きをいつ行うか",
+        ko: "경력 타이밍：다음 큰 움직임을 언제 할 것인가"
+      },
+      excerpt: {
+        en: "Master the art of perfect timing for career changes using traditional Chinese numerology. Learn to read the cosmic signals that indicate when to advance, change, or start new ventures.",
+        ja: "伝統的な中国数秘術を使用して、キャリア変更の完璧なタイミングの技術をマスターしてください。前進、変更、または新しい事業を開始する時期を示す宇宙の信号を読む方法を学びます。",
+        ko: "전통적인 중국 수비학을 사용하여 경력 변경을 위한 완벽한 타이밍의 기술을 마스터하세요。전진，변경，또는 새로운 사업을 시작할 시기를 나타내는 우주 신호를 읽는 방법을 배웁니다。"
+      },
+      content: {
+        en: `
         <p class="mb-6 text-lg text-mystic-200 leading-relaxed">
           In Chinese astrology, timing is everything. Your BaZi chart reveals not just what you're 
           meant to do, but when you should do it. Understanding these cosmic rhythms can make the 
@@ -7554,6 +7563,97 @@ export const blogPostsData = {
           This approach maximizes your success and minimizes setbacks.
         </p>
       `,
+        ja: `
+        <p class="mb-6 text-lg text-mystic-200 leading-relaxed">
+          中国占星術では、タイミングがすべてです。あなたの八字チャートは、あなたが何をすべきかだけでなく、いつそれを行うべきかも明らかにします。これらの宇宙のリズムを理解することで、キャリアにおける成功と苦闘の違いを生み出すことができます。
+        </p>
+        
+        <h2 class="text-2xl font-bold text-white mb-4 mt-8">あなたのチャートのキャリア宮</h2>
+        <p class="mb-6 text-mystic-200 leading-relaxed">
+          あなたのキャリアの可能性は、主に日主とそれをサポートまたは挑戦する要素によって決定されます。キャリア宮は、あなたの自然な才能、仕事のスタイル、そしてあなたが繁栄する環境のタイプを示します。
+        </p>
+        
+        <h2 class="text-2xl font-bold text-white mb-4 mt-8">十年運柱</h2>
+        <p class="mb-6 text-mystic-200 leading-relaxed">
+          10年ごとに、あなたはキャリアの機会に影響を与える新しい運柱に入ります。一部の柱はキャリアの進歩に優れていますが、他の柱は学習と準備により適しています。どの柱にいるかを知ることで、戦略的に動きを計画することができます。
+        </p>
+        
+        <h2 class="text-2xl font-bold text-white mb-4 mt-8">年運柱</h2>
+        <p class="mb-6 text-mystic-200 leading-relaxed">
+          毎年、あなたのキャリアに影響を与える異なるエネルギーをもたらします。一部の年は新しいプロジェクトを開始するのに最適で、他の年は利益を統合するため、一部は計算されたリスクを取るためです。これらの年間エネルギーを読むことで、キャリアの動きを完璧にタイミングを計ることができます。
+        </p>
+        
+        <h2 class="text-2xl font-bold text-white mb-4 mt-8">月運柱</h2>
+        <p class="mb-6 text-mystic-200 leading-relaxed">
+          月運柱は、さらに正確なタイミングを提供します。それらは、面接、ビジネス立ち上げ、またはキャリア転換の最良の月を示すことができます。このレベルの詳細は、キャリア計画において大きな利点を与えることができます。
+        </p>
+        
+        <h2 class="text-2xl font-bold text-white mb-4 mt-8">キャリア変更のタイミング</h2>
+        <p class="mb-6 text-mystic-200 leading-relaxed">
+          キャリアを変更する最良の時期は、あなたの運柱が新しい始まりに強いサポートを示すときです。これは、木のエネルギーが強いとき（成長と拡張を示す）またはあなたの日主が好ましい要素によってサポートされているときかもしれません。
+        </p>
+        
+        <h2 class="text-2xl font-bold text-white mb-4 mt-8">昇進の機会</h2>
+        <p class="mb-6 text-mystic-200 leading-relaxed">
+          キャリアの昇進は、しばしばあなたの日主が強く、サポートされている期間に来ます。これらは、あなたの自然な才能が認識され、報酬を与えられる時期です。あなたの好ましい要素が運柱で目立つ期間を探してください。
+        </p>
+        
+        <h2 class="text-2xl font-bold text-white mb-4 mt-8">自分のビジネスを始める</h2>
+        <p class="mb-6 text-mystic-200 leading-relaxed">
+          起業には強い火と木のエネルギーが必要です。ビジネスを始める最良の時期は、これらの要素が運柱で目立つときです。これにより、新しい事業を立ち上げ、維持するために必要なエネルギーとサポートがあることが保証されます。
+        </p>
+        
+        <h2 class="text-2xl font-bold text-white mb-4 mt-8">戦略的なキャリア計画</h2>
+        <p class="mb-6 text-mystic-200 leading-relaxed">
+          キャリアのタイミングを理解することで、戦略的にキャリアパスを計画することができます。好ましい期間を昇進に使用し、挑戦的な期間を学習と準備に使用してください。このアプローチは、成功を最大化し、挫折を最小限に抑えます。
+        </p>
+      `,
+        ko: `
+        <p class="mb-6 text-lg text-mystic-200 leading-relaxed">
+          중국 점성술에서，타이밍이 모든 것입니다。당신의 사주 차트는 당신이 무엇을 해야 하는지뿐만 아니라，언제 그것을 해야 하는지도 드러냅니다。이러한 우주적 리듬을 이해하면，경력에서 성공과 고투의 차이를 만들 수 있습니다。
+        </p>
+        
+        <h2 class="text-2xl font-bold text-white mb-4 mt-8">당신의 차트의 경력궁</h2>
+        <p class="mb-6 text-mystic-200 leading-relaxed">
+          당신의 경력 잠재력은 주로 일주와 그것을 지원하거나 도전하는 요소에 의해 결정됩니다。경력궁은 당신의 자연스러운 재능，작업 스타일，그리고 당신이 번영할 환경의 유형을 보여줍니다。
+        </p>
+        
+        <h2 class="text-2xl font-bold text-white mb-4 mt-8">십년운주</h2>
+        <p class="mb-6 text-mystic-200 leading-relaxed">
+          10년마다，당신은 경력 기회에 영향을 미치는 새로운 운주에 들어갑니다。일부 기둥은 경력 발전에 우수하지만，다른 기둥은 학습과 준비에 더 적합합니다。어떤 기둥에 있는지 아는 것은 당신이 전략적으로 움직임을 계획하는 데 도움이 됩니다。
+        </p>
+        
+        <h2 class="text-2xl font-bold text-white mb-4 mt-8">연운주</h2>
+        <p class="mb-6 text-mystic-200 leading-relaxed">
+          매년，당신의 경력에 영향을 미치는 다른 에너지를 가져옵니다。일부 연도는 새로운 프로젝트를 시작하는 데 완벽하고，다른 연도는 이득을 통합하는 데，일부는 계산된 위험을 감수하는 데 적합합니다。이러한 연간 에너지를 읽으면 경력 움직임을 완벽하게 타이밍할 수 있습니다。
+        </p>
+        
+        <h2 class="text-2xl font-bold text-white mb-4 mt-8">월운주</h2>
+        <p class="mb-6 text-mystic-200 leading-relaxed">
+          월운주는 더 정확한 타이밍을 제공합니다。그들은 면접，사업 출시，또는 경력 전환을 위한 최상의 월을 나타낼 수 있습니다。이 수준의 세부 사항은 경력 계획에서 상당한 이점을 제공할 수 있습니다。
+        </p>
+        
+        <h2 class="text-2xl font-bold text-white mb-4 mt-8">경력 변경 타이밍</h2>
+        <p class="mb-6 text-mystic-200 leading-relaxed">
+          경력을 변경하는 최상의 시기는 당신의 운주가 새로운 시작에 대한 강한 지원을 보여줄 때입니다。이것은 목 에너지가 강할 때（성장과 확장을 나타냄）또는 당신의 일주가 유리한 요소에 의해 지원받을 때일 수 있습니다。
+        </p>
+        
+        <h2 class="text-2xl font-bold text-white mb-4 mt-8">승진 기회</h2>
+        <p class="mb-6 text-mystic-200 leading-relaxed">
+          경력 발전은 종종 당신의 일주가 강하고 지원받는 기간에 옵니다。이것들은 당신의 자연스러운 재능이 인식되고 보상받는 시기입니다。당신의 유리한 요소가 운주에서 두드러지는 기간을 찾으세요。
+        </p>
+        
+        <h2 class="text-2xl font-bold text-white mb-4 mt-8">자신의 사업 시작</h2>
+        <p class="mb-6 text-mystic-200 leading-relaxed">
+          기업가 정신은 강한 화와 목 에너지가 필요합니다。사업을 시작하는 최상의 시기는 이러한 요소가 운주에서 두드러질 때입니다。이것은 새로운 사업을 시작하고 유지하는 데 필요한 에너지와 지원이 있음을 보장합니다。
+        </p>
+        
+        <h2 class="text-2xl font-bold text-white mb-4 mt-8">전략적 경력 계획</h2>
+        <p class="mb-6 text-mystic-200 leading-relaxed">
+          경력 타이밍을 이해함으로써，전략적으로 경력 경로를 계획할 수 있습니다。유리한 기간을 발전에 사용하고，도전적인 기간을 학습과 준비에 사용하세요。이 접근 방식은 성공을 극대화하고 좌절을 최소화합니다。
+        </p>
+      `
+      },
       author: "Master Chen",
       date: "2024-01-01",
       readTime: "8 min read",
