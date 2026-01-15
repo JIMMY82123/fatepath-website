@@ -2,10 +2,12 @@ import { useState } from 'react'
 import { motion } from 'framer-motion'
 import { Calculator, ArrowLeft, CheckCircle, TrendingUp, TrendingDown, Minus } from 'lucide-react'
 import { Link } from 'react-router-dom'
+import { useTranslation } from 'react-i18next'
 import { Lunar } from 'lunar-javascript'
 import SEO from '../components/SEO'
 
 const DayMasterCalculator = () => {
+  const { t } = useTranslation()
   const [formData, setFormData] = useState({
     dateOfBirth: '',
     timeOfBirth: '',
@@ -280,10 +282,10 @@ const DayMasterCalculator = () => {
               <Calculator className="h-8 w-8 sm:h-10 sm:w-10 text-white" aria-hidden="true" />
             </div>
             <h1 className="text-2xl sm:text-3xl md:text-4xl font-cinzel font-bold mb-3 sm:mb-4 text-white tracking-wide">
-              Free Bazi Day Master Strength Calculator - Day Dry Strong or Weak Analysis
+              {t('tools.dayMaster.title', { defaultValue: 'Free Bazi Day Master Strength Calculator - Day Dry Strong or Weak Analysis' })}
             </h1>
             <p className="text-lg sm:text-xl text-mystic-300 max-w-3xl mx-auto">
-              Use this free bazi day master calculator to instantly check if your Day Master is strong or weak. Get accurate bazi day master analysis with strength level, joy gods, favorable elements, and complete five elements balance assessment.
+              {t('tools.dayMaster.description', { defaultValue: 'Use this free bazi day master calculator to instantly check if your Day Master is strong or weak. Get accurate bazi day master analysis with strength level, joy gods, favorable elements, and complete five elements balance assessment.' })}
             </p>
           </motion.div>
 
@@ -310,13 +312,13 @@ const DayMasterCalculator = () => {
             className="mystic-card p-6 sm:p-8 mb-6 sm:mb-8"
           >
             <h2 className="text-xl sm:text-2xl font-cinzel font-bold mb-6 text-white">
-              How to Determine Day Master Strength in Bazi
+              {t('tools.dayMaster.howToDetermine', { defaultValue: 'How to Determine Day Master Strength in Bazi' })}
             </h2>
             <form onSubmit={handleCalculate} className="space-y-5 sm:space-y-6">
               {/* Date of Birth */}
               <div>
                 <label htmlFor="dateOfBirth" className="block text-sm font-medium text-mystic-200 mb-2">
-                  Date of Birth *
+                  {t('tools.dayMaster.dateOfBirth', { defaultValue: 'Date of Birth' })} *
                 </label>
                 <input
                   type="date"
@@ -332,7 +334,7 @@ const DayMasterCalculator = () => {
               {/* Time of Birth */}
               <div>
                 <label htmlFor="timeOfBirth" className="block text-sm font-medium text-mystic-200 mb-2">
-                  Time of Birth (Optional)
+                  {t('tools.dayMaster.timeOfBirth', { defaultValue: 'Time of Birth (Optional)' })}
                 </label>
                 <input
                   type="time"
@@ -343,14 +345,14 @@ const DayMasterCalculator = () => {
                   className="w-full px-4 py-3 text-base bg-mystic-800/50 border border-mystic-700/50 rounded-lg text-white focus:border-gold-500/50 focus:outline-none transition-colors"
                 />
                 <p className="text-xs text-mystic-400 mt-1">
-                  If you don't know the exact time, leave this blank (defaults to noon)
+                  {t('tools.dayMaster.timeHint', { defaultValue: "If you don't know the exact time, leave this blank (defaults to noon)" })}
                 </p>
               </div>
 
               {/* Birth Location */}
               <div>
                 <label htmlFor="birthLocation" className="block text-sm font-medium text-mystic-200 mb-2">
-                  Birth Location (Optional)
+                  {t('tools.dayMaster.birthLocation', { defaultValue: 'Birth Location (Optional)' })}
                 </label>
                 <input
                   type="text"
@@ -359,10 +361,10 @@ const DayMasterCalculator = () => {
                   value={formData.birthLocation}
                   onChange={handleInputChange}
                   className="w-full px-4 py-3 text-base bg-mystic-800/50 border border-mystic-700/50 rounded-lg text-white placeholder-mystic-400 focus:border-gold-500/50 focus:outline-none transition-colors"
-                  placeholder="City, Country (e.g., New York, USA)"
+                  placeholder={t('tools.dayMaster.locationPlaceholder', { defaultValue: 'City, Country (e.g., New York, USA)' })}
                 />
                 <p className="text-xs text-mystic-400 mt-1">
-                  Used for true solar time correction (optional)
+                  {t('tools.dayMaster.locationHint', { defaultValue: 'Used for true solar time correction (optional)' })}
                 </p>
               </div>
 
@@ -374,7 +376,7 @@ const DayMasterCalculator = () => {
                 whileTap={{ scale: 0.98 }}
                 className="w-full bg-gradient-to-r from-gold-500 to-yellow-500 text-black font-poppins font-semibold py-4 px-6 sm:px-8 rounded-full hover:from-gold-400 hover:to-yellow-400 transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed tracking-wide text-base"
               >
-                {isCalculating ? 'Calculating...' : 'Calculate Day Master Strength'}
+                {isCalculating ? t('tools.dayMaster.calculating', { defaultValue: 'Calculating...' }) : t('tools.dayMaster.calculate', { defaultValue: 'Calculate Day Master Strength' })}
               </motion.button>
             </form>
           </motion.div>
