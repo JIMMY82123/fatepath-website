@@ -3722,9 +3722,18 @@ export const blogPostsData = {
     ]
   },
   "complete-life-destiny-guide-bazi-analysis": {
-    title: "Complete Life Destiny Guide: Health, Love & Wealth Through BaZi Analysis",
-    excerpt: "Master the art of reading your life's blueprint through comprehensive BaZi analysis. Discover your health cycles, relationship patterns, and wealth potential with actionable strategies for each life area.",
-    content: `
+    title: {
+      en: "Complete Life Destiny Guide: Health, Love & Wealth Through BaZi Analysis",
+      ja: "完全な人生運命ガイド：八字分析による健康、愛、富",
+      ko: "완전한 인생 운명 가이드：사주 분석을 통한 건강，사랑，부"
+    },
+    excerpt: {
+      en: "Master the art of reading your life's blueprint through comprehensive BaZi analysis. Discover your health cycles, relationship patterns, and wealth potential with actionable strategies for each life area.",
+      ja: "包括的な八字分析を通じて、あなたの人生の青写真を読む技術をマスターしてください。各生活領域の実行可能な戦略とともに、健康サイクル、関係パターン、富の可能性を発見してください。",
+      ko: "포괄적인 사주 분석을 통해 인생 청사진을 읽는 기술을 마스터하세요。각 생활 영역에 대한 실행 가능한 전략과 함께 건강 사이클，관계 패턴，부의 잠재력을 발견하세요。"
+    },
+    content: {
+      en: `
       <div class="space-y-6">
         <p class="text-mystic-200 leading-relaxed">
           This comprehensive guide traces how your Day Master strength, luck pillars, and elemental balance shape the three pillars of modern life—health, relationships, and wealth. Each section includes timing checkpoints and practical adjustments for an American lifestyle.
@@ -3736,6 +3745,31 @@ export const blogPostsData = {
         </ul>
       </div>
     `,
+      ja: `
+      <div class="space-y-6">
+        <p class="text-mystic-200 leading-relaxed">
+          この包括的なガイドは、日主の強さ、運柱、要素のバランスが現代生活の3つの柱—健康、関係、富—をどのように形成するかを追跡します。各セクションには、アメリカのライフスタイルのためのタイミングチェックポイントと実用的な調整が含まれています。
+        </p>
+        <ul class="list-disc list-inside space-y-2 text-mystic-200 leading-relaxed">
+          <li><strong>健康：</strong> 季節的なエネルギーの低下を追跡し、好ましい要素とワークアウトを一致させ、回復的なルーティンを構築します。</li>
+          <li><strong>愛：</strong> 関係星を解読し、支援的なパートナー要素を特定し、好ましい運サイクルで主要なマイルストーンを計画します。</li>
+          <li><strong>富：</strong> 繁栄星を読み、10年の柱にわたってキャッシュフローを管理し、幸運な窓を持続可能な収入源に変換します。</li>
+        </ul>
+      </div>
+    `,
+      ko: `
+      <div class="space-y-6">
+        <p class="text-mystic-200 leading-relaxed">
+          이 포괄적인 가이드는 일주의 강도，운주，요소 균형이 현대 생활의 세 가지 기둥—건강，관계，부—를 어떻게 형성하는지 추적합니다。각 섹션에는 미국 라이프스타일을 위한 타이밍 체크포인트와 실용적인 조정이 포함되어 있습니다。
+        </p>
+        <ul class="list-disc list-inside space-y-2 text-mystic-200 leading-relaxed">
+          <li><strong>건강：</strong> 계절적 에너지 하락을 추적하고，유리한 요소와 운동을 일치시키며，회복 루틴을 구축합니다。</li>
+          <li><strong>사랑：</strong> 관계성을 해독하고，지원적인 파트너 요소를 식별하며，유리한 운 사이클로 주요 마일스톤을 계획합니다。</li>
+          <li><strong>부：</strong> 번영성을 읽고，10년 주에 걸쳐 현금 흐름을 관리하며，운 좋은 창을 지속 가능한 수입원으로 변환합니다。</li>
+        </ul>
+      </div>
+    `
+    },
     author: 'Master XuanYin',
     date: '2025-01-24',
     readTime: '15 min read',
@@ -3758,9 +3792,18 @@ export const blogPostsData = {
     ]
   },
   "advanced-bazi-wealth-analysis-mastery": {
-    title: "Advanced BaZi Analysis: Reading Your Wealth Level and Financial Destiny",
-    excerpt: "Master the complex art of wealth analysis in BaZi. Learn to identify Wealth Stars, assess Day Master strength, and understand how luck cycles determine your financial potential and money-making strategies.",
-    content: `
+    title: {
+      en: "Advanced BaZi Analysis: Reading Your Wealth Level and Financial Destiny",
+      ja: "高度な八字分析：富のレベルと金融運命を読む",
+      ko: "고급 사주 분석：부의 수준과 금융 운명 읽기"
+    },
+    excerpt: {
+      en: "Master the complex art of wealth analysis in BaZi. Learn to identify Wealth Stars, assess Day Master strength, and understand how luck cycles determine your financial potential and money-making strategies.",
+      ja: "八字における富分析の複雑な技術をマスターしてください。財星を識別し、日主の強さを評価し、運サイクルが金融の可能性と金儲け戦略をどのように決定するかを理解することを学びます。",
+      ko: "사주에서 부 분석의 복잡한 기술을 마스터하세요。재성을 식별하고，일주의 강도를 평가하며，운 사이클이 금융 잠재력과 돈 버는 전략을 어떻게 결정하는지 이해하는 것을 배웁니다。"
+    },
+    content: {
+      en: `
       <div class="space-y-6">
         <p class="text-mystic-200 leading-relaxed">
           Go beyond the basics of Wealth Stars. This playbook explains how to evaluate Day Master stamina, supportive resources, and the timing of paying clients or promotions. It was written for entrepreneurs and professionals navigating the US market.
@@ -3772,6 +3815,31 @@ export const blogPostsData = {
         </ol>
       </div>
     `,
+      ja: `
+      <div class="space-y-6">
+        <p class="text-mystic-200 leading-relaxed">
+          財星の基本を超えて行きます。このプレイブックは、日主の持久力、支援リソース、支払いクライアントや昇進のタイミングを評価する方法を説明します。米国市場をナビゲートする起業家と専門家のために書かれました。
+        </p>
+        <ol class="list-decimal list-inside space-y-2 text-mystic-200 leading-relaxed">
+          <li><strong>富の構造を診断する：</strong> 富が直接的、間接的、または出力星を通じた変換が必要かどうかを決定します。</li>
+          <li><strong>勢いを評価する：</strong> 10年の柱がキャッシュフローを増加または抑制する方法を追跡します—給与交渉と投資タイミングにとって重要です。</li>
+          <li><strong>戦略を設計する：</strong> オファー、価格設定、貯蓄計画を要素サイクルと一致させて、豊作または飢饉の収入パターンを滑らかにします。</li>
+        </ol>
+      </div>
+    `,
+      ko: `
+      <div class="space-y-6">
+        <p class="text-mystic-200 leading-relaxed">
+          재성의 기본을 넘어서세요。이 플레이북은 일주의 지구력，지원 리소스，지불 클라이언트나 승진의 타이밍을 평가하는 방법을 설명합니다。미국 시장을 탐색하는 기업가와 전문가를 위해 작성되었습니다。
+        </p>
+        <ol class="list-decimal list-inside space-y-2 text-mystic-200 leading-relaxed">
+          <li><strong>부 구조 진단：</strong> 부가 직접적，간접적，또는 출력성을 통한 변환이 필요한지 결정합니다。</li>
+          <li><strong>모멘텀 평가：</strong> 10년 주가 현금 흐름을 증가시키거나 억제하는 방법을 추적합니다—급여 협상과 투자 타이밍에 중요합니다。</li>
+          <li><strong>전략 설계：</strong> 제안，가격 책정，저축 계획을 요소 사이클과 일치시켜 풍작 또는 기근 수입 패턴을 부드럽게 합니다。</li>
+        </ol>
+      </div>
+    `
+    },
     author: 'Master XuanYin',
     date: '2025-01-14',
     readTime: '12 min read',
@@ -3794,9 +3862,18 @@ export const blogPostsData = {
     ]
   },
   "lighting-ding-fire-autumn-metal": {
-    title: "Lighting a Ding Fire in an Autumn Metal Month: Advanced BaZi Career Analysis",
-    excerpt: "Master the art of reading challenging BaZi combinations with this in-depth case study. Learn how a Ding Fire person born in autumn Metal season can overcome elemental conflicts, cultivate supportive Wood energy, and strategically choose STEM careers that align with their destiny.",
-    content: `
+    title: {
+      en: "Lighting a Ding Fire in an Autumn Metal Month: Advanced BaZi Career Analysis",
+      ja: "秋の金月に丁火を灯す：高度な八字キャリア分析",
+      ko: "가을 금월에 정화를 밝히기：고급 사주 경력 분석"
+    },
+    excerpt: {
+      en: "Master the art of reading challenging BaZi combinations with this in-depth case study. Learn how a Ding Fire person born in autumn Metal season can overcome elemental conflicts, cultivate supportive Wood energy, and strategically choose STEM careers that align with their destiny.",
+      ja: "この詳細なケーススタディで、挑戦的な八字の組み合わせを読む技術をマスターしてください。秋の金の季節に生まれた丁火の人が、要素の衝突を克服し、支援的な木のエネルギーを育成し、運命に合ったSTEMキャリアを戦略的に選択する方法を学びます。",
+      ko: "이 심층 사례 연구로 도전적인 사주 조합을 읽는 기술을 마스터하세요。가을 금 계절에 태어난 정화 사람이 요소 갈등을 극복하고，지원적인 목 에너지를 배양하며，운명에 맞는 STEM 경력을 전략적으로 선택하는 방법을 배웁니다。"
+    },
+    content: {
+      en: `
       <div class="space-y-6">
         <p class="text-mystic-200 leading-relaxed">
           Autumn Metal presses Ding Fire, but the chart also reveals hidden supports. This case study breaks down how to rebuild strength step by step—cultivating Wood, kindling Fire, then transforming Metal and Water into assets.
@@ -3811,6 +3888,37 @@ export const blogPostsData = {
         </p>
       </div>
     `,
+      ja: `
+      <div class="space-y-6">
+        <p class="text-mystic-200 leading-relaxed">
+          秋の金は丁火を押しますが、チャートは隠されたサポートも明らかにします。このケーススタディは、段階的に強さを再構築する方法を分解します—木を育成し、火を点火し、その後金と水を資産に変換します。
+        </p>
+        <ul class="space-y-2 text-mystic-200 leading-relaxed list-disc list-inside">
+          <li><strong>木の習慣：</strong> 一貫した学習、朝の光、構造化されたルーティン。</li>
+          <li><strong>火の表現：</strong> デモ、文書化、そして勢いを保つための可視的な協力。</li>
+          <li><strong>キャリアフィット：</strong> 応用工学、再生可能エネルギー、フォトニクス、または顧客向けSTEM役割。</li>
+        </ul>
+        <p class="text-mystic-200 leading-relaxed">
+          タイムラインの洞察：2026-2027年は収入の明確な上昇をもたらします；2028-2029年は機会を倍増しますが、規律のあるキャッシュフロー管理とより堅固な境界を要求します。
+        </p>
+      </div>
+    `,
+      ko: `
+      <div class="space-y-6">
+        <p class="text-mystic-200 leading-relaxed">
+          가을 금은 정화를 누르지만，차트는 숨겨진 지원도 드러냅니다。이 사례 연구는 단계적으로 강도를 재구축하는 방법을 분해합니다—목을 배양하고，화를 점화한 다음，금과 수를 자산으로 변환합니다。
+        </p>
+        <ul class="space-y-2 text-mystic-200 leading-relaxed list-disc list-inside">
+          <li><strong>목 습관：</strong> 일관된 학습，아침 빛，구조화된 루틴。</li>
+          <li><strong>화 표현：</strong> 데모，문서화，그리고 모멘텀을 유지하기 위한 가시적 협력。</li>
+          <li><strong>경력 적합：</strong> 응용 공학，재생 가능 에너지，포토닉스，또는 고객 대면 STEM 역할。</li>
+        </ul>
+        <p class="text-mystic-200 leading-relaxed">
+          타임라인 통찰：2026-2027년은 수입의 깨끗한 상승을 가져옵니다；2028-2029년은 기회를 배가하지만 규율 있는 현금 흐름 관리와 더 견고한 경계를 요구합니다。
+        </p>
+      </div>
+    `
+    },
     author: 'Master Chen',
     date: '2025-08-22',
     readTime: '12 min read',
@@ -3833,9 +3941,18 @@ export const blogPostsData = {
     ]
   },
   "ice-immigration-sweeps-2025-bazi-perspective": {
-      title: "The Hidden Energy Behind ICE's Immigration Sweeps in 2025 — A BaZi Perspective",
-      excerpt: "Discover how the 2025 Yi-Si year's Fire-Metal clash is manifesting in global immigration enforcement and what this cosmic energy means for your personal transformations.",
-      content: `
+    title: {
+      en: "The Hidden Energy Behind ICE's Immigration Sweeps in 2025 — A BaZi Perspective",
+      ja: "2025年のICE移民掃討の背後にある隠されたエネルギー—八字の視点",
+      ko: "2025년 ICE 이민 단속 뒤에 숨겨진 에너지—사주 관점"
+    },
+    excerpt: {
+      en: "Discover how the 2025 Yi-Si year's Fire-Metal clash is manifesting in global immigration enforcement and what this cosmic energy means for your personal transformations.",
+      ja: "2025年の乙巳年の火-金の衝突が世界的な移民執行にどのように現れているか、そしてこの宇宙エネルギーがあなたの個人的な変革にとって何を意味するかを発見してください。",
+      ko: "2025년 을사년의 화-금 충돌이 글로벌 이민 집행에 어떻게 나타나는지，그리고 이 우주 에너지가 당신의 개인적 변혁에 무엇을 의미하는지 발견하세요。"
+    },
+    content: {
+      en: `
         <div class="mb-8">
           <div class="bg-gradient-to-r from-red-500/20 to-orange-500/20 border border-red-500/30 rounded-lg p-6 mb-8">
             <h3 class="text-lg font-semibold text-red-400 mb-3">🔥 2025 Fire-Metal Clash Analysis</h3>
@@ -3953,9 +4070,246 @@ export const blogPostsData = {
           Remember, every cosmic cycle brings both challenges and opportunities. The key is to recognize the pattern and use it to your advantage for personal growth and positive change.
         </p>
       `,
-      date: "2025-01-25",
-      readTime: "5 min read",
-      author: "玄印 (Xuan Yin)",
+      ja: `
+        <div class="mb-8">
+          <div class="bg-gradient-to-r from-red-500/20 to-orange-500/20 border border-red-500/30 rounded-lg p-6 mb-8">
+            <h3 class="text-lg font-semibold text-red-400 mb-3">🔥 2025年火-金衝突分析</h3>
+            <p class="text-mystic-200 mb-2"><strong>年：</strong> 2025年乙巳（いつし）年</p>
+            <p class="text-mystic-200 mb-2"><strong>エネルギー：</strong> 火-金衝突（巳火 vs 申金）</p>
+            <p class="text-mystic-200 mb-2"><strong>テーマ：</strong> 浄化、執行、変革</p>
+            <p class="text-mystic-200"><strong>個人的影響：</strong> 人生の変化、関係の終了、キャリアのシフト</p>
+          </div>
+        </div>
+
+        <h2 class="text-2xl font-bold text-white mb-4 mt-8">はじめに</h2>
+        <p class="mb-6 text-lg text-mystic-200 leading-relaxed">
+          最近の見出しでは、ICE（米国移民税関捜査局）が移民掃討を強化しており、世界的な執行と「場のクリアリング」の波を反映しています。興味深いことに、中国の形而上学—特に八字—のレンズから見ると、これは単なる政治以上のものです；それはより大きなエネルギーパターンの一部です。
+        </p>
+        <p class="mb-6 text-lg text-mystic-200 leading-relaxed">
+          2025年は中国暦の乙巳（いつし）年です。巳火（しか）と申金（しんきん）の後半の相互作用は、私たちが火-金衝突と呼ぶものを作り出します。この衝突は、伝統的に有害または不安定な要素の浄化と除去に関連しています。
+        </p>
+
+        <h2 class="text-2xl font-bold text-white mb-4 mt-8">世界的な出来事の背後にある宇宙パターン</h2>
+        <p class="mb-6 text-lg text-mystic-200 leading-relaxed">
+          メキシコのカルテルリーダーの追放からICEの移民行動の強化まで、これらの出来事は同じ宇宙のテーマを反映しています：秩序を回復するために不安定性を除去すること。火-金衝突は次のように現れます：
+        </p>
+        
+        <div class="grid md:grid-cols-3 gap-6 mb-6">
+          <div class="bg-mystic-800/30 rounded-lg p-6 border border-mystic-700/50">
+            <h3 class="text-lg font-semibold text-red-400 mb-3">浄化と除去</h3>
+            <p class="text-mystic-200 mb-3">
+              <strong>有害な要素を排除する</strong> システムから、政府、組織、または個人の生活において。このエネルギーは、もはや役に立たないものをクリアアウトすることをサポートします。
+            </p>
+          </div>
+          
+          <div class="bg-mystic-800/30 rounded-lg p-6 border border-mystic-700/50">
+            <h3 class="text-lg font-semibold text-blue-400 mb-3">法執行</h3>
+            <p class="text-mystic-200 mb-3">
+              <strong>厳格な規制と執行</strong> がより顕著になります。金のエネルギーは構造と規律をもたらし、火のエネルギーは変化を実装するための推進力を提供します。
+            </p>
+          </div>
+          
+          <div class="bg-mystic-800/30 rounded-lg p-6 border border-mystic-700/50">
+            <h3 class="text-lg font-semibold text-cyan-400 mb-3">古い絆を切る</h3>
+            <p class="text-mystic-200 mb-3">
+              <strong>新しいサイクルの準備</strong> 有毒または制限的になった接続を切断することによって。これは新鮮な機会と関係のためのスペースを作ります。
+            </p>
+          </div>
+        </div>
+
+        <div class="bg-gradient-to-r from-red-500/20 to-orange-500/20 border border-red-500/30 rounded-lg p-6 mb-6">
+          <h3 class="text-lg font-semibold text-red-400 mb-3">グローバルな現れ</h3>
+          <p class="text-mystic-200 leading-relaxed">
+            火-金衝突エネルギーは移民政策に限定されません。私たちは複数の領域でこのパターンを見ています：企業の再構築、政治的な浄化、説明責任と変化を要求する社会運動。
+          </p>
+        </div>
+
+        <h2 class="text-2xl font-bold text-white mb-4 mt-8">個人的影響：あなたの人生の変革</h2>
+        <p class="mb-6 text-lg text-mystic-200 leading-relaxed">
+          個人的なレベルでは、そのような衝突は人生の変化にも現れる可能性があります。あなた自身の八字チャートに強い火または金の要素が含まれている場合、2025年は激しい変革をもたらす可能性があります—時には突然、時には必要です。
+        </p>
+        
+        <div class="space-y-6 mb-6">
+          <div class="bg-gradient-to-r from-red-500/20 to-pink-500/20 border border-red-500/30 rounded-lg p-6">
+            <h3 class="text-lg font-semibold text-red-400 mb-3">有毒な関係の終了</h3>
+            <p class="text-mystic-200 leading-relaxed">
+              <strong>火のエネルギーは有害なものを燃やし尽くします。</strong> あなたは自然に、あなたのエネルギーを消耗させたり、成長を妨げる人や状況から距離を置くことに気づくかもしれません。
+            </p>
+          </div>
+          
+          <div class="bg-gradient-to-r from-blue-500/20 to-indigo-500/20 border border-blue-500/30 rounded-lg p-6">
+            <h3 class="text-lg font-semibold text-blue-400 mb-3">キャリアと場所の変化</h3>
+            <p class="text-mystic-200 leading-relaxed">
+              <strong>金のエネルギーは構造と新しい方向性をもたらします。</strong> あなたは、より良い整合性のために仕事を変えたり、新しい場所に移動したり、専門的な生活を再構築することを余儀なくされるかもしれません。
+            </p>
+          </div>
+          
+          <div class="bg-gradient-to-r from-yellow-500/20 to-orange-500/20 border border-yellow-500/30 rounded-lg p-6">
+            <h3 class="text-lg font-semibold text-yellow-400 mb-3">金融再構築</h3>
+            <p class="text-mystic-200 leading-relaxed">
+              <strong>債務と古い金融パターンのクリアリング。</strong> これは、債務を返済し、投資を再構築し、あなたを妨げてきた金融的負担を排除するための優れた時期です。
+            </p>
+          </div>
+        </div>
+
+        <h2 class="text-2xl font-bold text-white mb-4 mt-8">このエネルギーで働く方法</h2>
+        <p class="mb-6 text-lg text-mystic-200 leading-relaxed">
+          これは「積極的なクリアリング」のエネルギーと自分自身を一致させる年です。あなたの家（風水を通じて）、関係、または財務において、もはやあなたに役立たないものを除去することは、より良い機会への道を開くことができます。
+        </p>
+        
+        <div class="grid md:grid-cols-2 gap-6 mb-6">
+          <div class="bg-gradient-to-r from-green-500/20 to-emerald-500/20 border border-green-500/30 rounded-lg p-6">
+            <h3 class="text-lg font-semibold text-green-400 mb-3">クリアリングを受け入れる</h3>
+            <p class="text-mystic-200 leading-relaxed">
+              <strong>変化に抵抗しないでください。</strong> 何かまたは誰かを手放したいという衝動を感じたとき、それは宇宙がより良いもののためのスペースを作っていることを信頼してください。火-金衝突はあなたが進化するのを助けるためにここにあります。
+            </p>
+          </div>
+          
+          <div class="bg-gradient-to-r from-purple-500/20 to-pink-500/20 border border-purple-500/30 rounded-lg p-6">
+            <h3 class="text-lg font-semibold text-purple-400 mb-3">新しいサイクルの準備</h3>
+            <p class="text-mystic-200 leading-relaxed">
+              <strong>このエネルギーを賢く使用してください。</strong> 古い構造が崩壊するにつれて、新しいものを構築する準備をしてください。金のエネルギーは、あなたの人生の次の段階のための堅固な基盤を作るのを助けます。
+            </p>
+          </div>
+        </div>
+
+        <div class="bg-gradient-to-r from-gold-500/20 to-yellow-500/20 border border-gold-500/30 rounded-lg p-6 mb-6">
+          <h3 class="text-lg font-semibold text-gold-400 mb-3">実用的なヒント</h3>
+          <p class="text-mystic-200 leading-relaxed">
+            <strong>これは「積極的なクリアリング」のエネルギーと自分自身を一致させる年です。</strong> あなたの家（風水を通じて）、関係、または財務において、もはやあなたに役立たないものを除去することは、より良い機会への道を開くことができます。
+          </p>
+        </div>
+
+        <h2 class="text-2xl font-bold text-white mb-4 mt-8">結論</h2>
+        <p class="mb-6 text-lg text-mystic-200 leading-relaxed">
+          2025年の火-金衝突は、世界的な出来事についてだけではありません—それは個人的な変革についてです。この宇宙エネルギーを理解し、それに逆らうのではなく、それと協力することによって、あなたは今年の課題をナビゲートし、より強く、より明確に、そしてあなたの真の道により一致して現れることができます。
+        </p>
+        <p class="mb-6 text-lg text-mystic-200 leading-relaxed">
+          覚えておいてください、すべての宇宙サイクルは課題と機会の両方をもたらします。鍵は、パターンを認識し、個人的な成長と前向きな変化のためにそれをあなたの利点に使用することです。
+        </p>
+      `,
+      ko: `
+        <div class="mb-8">
+          <div class="bg-gradient-to-r from-red-500/20 to-orange-500/20 border border-red-500/30 rounded-lg p-6 mb-8">
+            <h3 class="text-lg font-semibold text-red-400 mb-3">🔥 2025년 화-금 충돌 분석</h3>
+            <p class="text-mystic-200 mb-2"><strong>년：</strong> 2025년 을사（乙巳）년</p>
+            <p class="text-mystic-200 mb-2"><strong>에너지：</strong> 화-금 충돌（사화 vs 신금）</p>
+            <p class="text-mystic-200 mb-2"><strong>테마：</strong> 정화，집행，변혁</p>
+            <p class="text-mystic-200"><strong>개인적 영향：</strong> 인생 변화，관계 종료，경력 전환</p>
+          </div>
+        </div>
+
+        <h2 class="text-2xl font-bold text-white mb-4 mt-8">서론</h2>
+        <p class="mb-6 text-lg text-mystic-200 leading-relaxed">
+          최근 헤드라인에서，ICE（미국 이민 세관 집행）가 이민 단속을 강화하고 있으며，글로벌 집행과 "장 정리"의 물결을 반영하고 있습니다。흥미롭게도，중국 형이상학—특히 사주—의 렌즈에서 보면，이것은 단순한 정치 이상입니다；그것은 더 큰 에너지 패턴의 일부입니다。
+        </p>
+        <p class="mb-6 text-lg text-mystic-200 leading-relaxed">
+          2025년은 중국력의 을사（乙巳）년입니다。사화（巳火）와 신금（申金）의 연말 상호작용은 우리가 화-금 충돌이라고 부르는 것을 만듭니다。이 충돌은 전통적으로 유해하거나 불안정한 요소의 정화와 제거와 관련이 있습니다。
+        </p>
+
+        <h2 class="text-2xl font-bold text-white mb-4 mt-8">글로벌 사건 뒤의 우주 패턴</h2>
+        <p class="mb-6 text-lg text-mystic-200 leading-relaxed">
+          멕시코의 카르텔 지도자 추방부터 ICE의 이민 행동 강화까지，이러한 사건들은 동일한 우주적 테마를 반영합니다：질서를 복원하기 위해 불안정성을 제거하는 것。화-금 충돌은 다음과 같이 나타납니다：
+        </p>
+        
+        <div class="grid md:grid-cols-3 gap-6 mb-6">
+          <div class="bg-mystic-800/30 rounded-lg p-6 border border-mystic-700/50">
+            <h3 class="text-lg font-semibold text-red-400 mb-3">정화 및 제거</h3>
+            <p class="text-mystic-200 mb-3">
+              <strong>유해한 요소 제거</strong> 시스템에서，정부，조직，또는 개인 생활에서。이 에너지는 더 이상 도움이 되지 않는 것을 정리하는 것을 지원합니다。
+            </p>
+          </div>
+          
+          <div class="bg-mystic-800/30 rounded-lg p-6 border border-mystic-700/50">
+            <h3 class="text-lg font-semibold text-blue-400 mb-3">법 집행</h3>
+            <p class="text-mystic-200 mb-3">
+              <strong>엄격한 규제와 집행</strong> 이 더 두드러집니다。금 에너지는 구조와 규율을 가져오고，화 에너지는 변화를 구현하기 위한 추진력을 제공합니다。
+            </p>
+          </div>
+          
+          <div class="bg-mystic-800/30 rounded-lg p-6 border border-mystic-700/50">
+            <h3 class="text-lg font-semibold text-cyan-400 mb-3">오래된 유대 끊기</h3>
+            <p class="text-mystic-200 mb-3">
+              <strong>새로운 사이클 준비</strong> 독성이 되거나 제한적인 연결을 끊음으로써。이것은 새로운 기회와 관계를 위한 공간을 만듭니다。
+            </p>
+          </div>
+        </div>
+
+        <div class="bg-gradient-to-r from-red-500/20 to-orange-500/20 border border-red-500/30 rounded-lg p-6 mb-6">
+          <h3 class="text-lg font-semibold text-red-400 mb-3">글로벌 현상</h3>
+          <p class="text-mystic-200 leading-relaxed">
+            화-금 충돌 에너지는 이민 정책에 국한되지 않습니다。우리는 여러 영역에서 이 패턴을 보고 있습니다：기업 재구조화，정치적 정화，책임과 변화를 요구하는 사회 운동。
+          </p>
+        </div>
+
+        <h2 class="text-2xl font-bold text-white mb-4 mt-8">개인적 영향：당신의 인생 변혁</h2>
+        <p class="mb-6 text-lg text-mystic-200 leading-relaxed">
+          개인적 수준에서，그러한 충돌은 인생 변화에도 나타날 수 있습니다。당신 자신의 사주 차트에 강한 화 또는 금 요소가 포함되어 있다면，2025년은 강렬한 변혁을 가져올 수 있습니다—때로는 갑작스럽게，때로는 필요하게。
+        </p>
+        
+        <div class="space-y-6 mb-6">
+          <div class="bg-gradient-to-r from-red-500/20 to-pink-500/20 border border-red-500/30 rounded-lg p-6">
+            <h3 class="text-lg font-semibold text-red-400 mb-3">독성 관계 종료</h3>
+            <p class="text-mystic-200 leading-relaxed">
+              <strong>화 에너지는 유해한 것을 태워버립니다。</strong> 당신은 자연스럽게 당신의 에너지를 소모하거나 성장을 방해하는 사람이나 상황으로부터 거리를 두는 것을 발견할 수 있습니다。
+            </p>
+          </div>
+          
+          <div class="bg-gradient-to-r from-blue-500/20 to-indigo-500/20 border border-blue-500/30 rounded-lg p-6">
+            <h3 class="text-lg font-semibold text-blue-400 mb-3">경력 및 위치 변화</h3>
+            <p class="text-mystic-200 leading-relaxed">
+              <strong>금 에너지는 구조와 새로운 방향을 가져옵니다。</strong> 당신은 더 나은 정렬을 위해 직업을 변경하거나，새로운 위치로 이동하거나，전문적인 생활을 재구조화해야 할 필요를 느낄 수 있습니다。
+            </p>
+          </div>
+          
+          <div class="bg-gradient-to-r from-yellow-500/20 to-orange-500/20 border border-yellow-500/30 rounded-lg p-6">
+            <h3 class="text-lg font-semibold text-yellow-400 mb-3">금융 재구조화</h3>
+            <p class="text-mystic-200 leading-relaxed">
+              <strong>부채와 오래된 금융 패턴 정리。</strong> 이것은 부채를 상환하고，투자를 재구조화하고，당신을 방해해 온 금융적 부담을 제거하기 위한 훌륭한 시기입니다。
+            </p>
+          </div>
+        </div>
+
+        <h2 class="text-2xl font-bold text-white mb-4 mt-8">이 에너지로 작업하는 방법</h2>
+        <p class="mb-6 text-lg text-mystic-200 leading-relaxed">
+          이것은 "적극적인 정리"의 에너지와 자신을 일치시키는 해입니다。당신의 집（풍수를 통해），관계，또는 재정에서，더 이상 당신에게 도움이 되지 않는 것을 제거하는 것은 더 나은 기회로의 길을 열 수 있습니다。
+        </p>
+        
+        <div class="grid md:grid-cols-2 gap-6 mb-6">
+          <div class="bg-gradient-to-r from-green-500/20 to-emerald-500/20 border border-green-500/30 rounded-lg p-6">
+            <h3 class="text-lg font-semibold text-green-400 mb-3">정리 받아들이기</h3>
+            <p class="text-mystic-200 leading-relaxed">
+              <strong>변화에 저항하지 마세요。</strong> 무언가나 누군가를 놓아주고 싶은 충동을 느낄 때，그것이 우주가 더 나은 것을 위한 공간을 만들고 있다는 것을 신뢰하세요。화-금 충돌은 당신이 진화하도록 돕기 위해 여기 있습니다。
+            </p>
+          </div>
+          
+          <div class="bg-gradient-to-r from-purple-500/20 to-pink-500/20 border border-purple-500/30 rounded-lg p-6">
+            <h3 class="text-lg font-semibold text-purple-400 mb-3">새로운 사이클 준비</h3>
+            <p class="text-mystic-200 leading-relaxed">
+              <strong>이 에너지를 현명하게 사용하세요。</strong> 오래된 구조가 무너지면서，새로운 것을 구축할 준비를 하세요。금 에너지는 당신의 인생의 다음 단계를 위한 견고한 기초를 만드는 데 도움이 됩니다。
+            </p>
+          </div>
+        </div>
+
+        <div class="bg-gradient-to-r from-gold-500/20 to-yellow-500/20 border border-gold-500/30 rounded-lg p-6 mb-6">
+          <h3 class="text-lg font-semibold text-gold-400 mb-3">실용적인 팁</h3>
+          <p class="text-mystic-200 leading-relaxed">
+            <strong>이것은 "적극적인 정리"의 에너지와 자신을 일치시키는 해입니다。</strong> 당신의 집（풍수를 통해），관계，또는 재정에서，더 이상 당신에게 도움이 되지 않는 것을 제거하는 것은 더 나은 기회로의 길을 열 수 있습니다。
+          </p>
+        </div>
+
+        <h2 class="text-2xl font-bold text-white mb-4 mt-8">결론</h2>
+        <p class="mb-6 text-lg text-mystic-200 leading-relaxed">
+          2025년 화-금 충돌은 글로벌 사건에 관한 것만이 아닙니다—그것은 개인적 변혁에 관한 것입니다。이 우주 에너지를 이해하고 그것에 맞서는 대신 그것과 함께 작업함으로써，당신은 올해의 도전을 탐색하고，더 강하고，더 명확하며，당신의 진정한 길과 더 일치하게 나타날 수 있습니다。
+        </p>
+        <p class="mb-6 text-lg text-mystic-200 leading-relaxed">
+          기억하세요，모든 우주 사이클은 도전과 기회를 모두 가져옵니다。핵심은 패턴을 인식하고 개인적 성장과 긍정적 변화를 위해 그것을 당신의 이점에 사용하는 것입니다。
+        </p>
+      `
+    },
+    date: "2025-01-25",
+    readTime: "5 min read",
+    author: "玄印 (Xuan Yin)",
       tags: ['BaZi', '2025', 'Chinese Astrology', 'Immigration', 'Fire-Metal Clash', 'Destiny', 'Global Events', 'Yi-Si Year']
     },
     "how-to-read-wealth-level-bazi-simple-guide": {
