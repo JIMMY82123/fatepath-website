@@ -2118,9 +2118,18 @@ export const blogPostsData = {
     ]
   },
   "red-horse-2026-american-career-outlook": {
-    title: "2026 Red Horse Year: BaZi Career Playbook for Americans",
-    excerpt: "The coming Bingwu Red Horse year accelerates change across U.S. industries. Learn how different BaZi chart patterns can prepare for the volatility, seize promotions, and protect income streams before 2026 arrives.",
-    content: `
+    title: {
+      en: "2026 Red Horse Year: BaZi Career Playbook for Americans",
+      ja: "2026年赤馬年：アメリカ人のための八字キャリアプレイブック",
+      ko: "2026년 적마년: 미국인을 위한 사주 커리어 플레이북"
+    },
+    excerpt: {
+      en: "The coming Bingwu Red Horse year accelerates change across U.S. industries. Learn how different BaZi chart patterns can prepare for the volatility, seize promotions, and protect income streams before 2026 arrives.",
+      ja: "来る丙午赤馬年は、米国の産業全体で変化を加速させます。異なる八字チャートパターンがボラティリティに備え、昇進を掴み、2026年が到来する前に収入源を保護する方法を学びましょう。",
+      ko: "다가오는 병오 적마년은 미국 산업 전반에 걸쳐 변화를 가속화합니다。다양한 사주 차트 패턴이 변동성에 대비하고，승진을 잡으며，2026년이 도래하기 전에 수입원을 보호하는 방법을 배우세요。"
+    },
+    content: {
+      en: `
       <div class="space-y-6">
         <p class="text-mystic-200 leading-relaxed">
           Bingwu (丙午) brings blazing Fire riding the Horse branch—momentum, speed, and bold risk-taking. In U.S. terms, expect faster innovation cycles, aggressive hiring sprees followed by sharp pivots, and a premium on leaders who can handle heat without burning out.
@@ -2151,6 +2160,69 @@ export const blogPostsData = {
         </p>
       </div>
     `,
+      ja: `
+      <div class="space-y-6">
+        <p class="text-mystic-200 leading-relaxed">
+          丙午（へいご）は、馬の支に乗る燃えるような火をもたらします—勢い、速度、大胆なリスクテイク。米国の観点から、より速いイノベーションサイクル、積極的な採用ラッシュの後に急激な方向転換、そして燃え尽きることなく熱に対処できるリーダーへのプレミアムを期待してください。
+        </p>
+        <h3 class="text-xl font-semibold text-gold-400">なぜ米国のキャリアが熱を感じるのか</h3>
+        <ul class="list-disc list-inside space-y-2 text-mystic-200 leading-relaxed">
+          <li><strong>テック＆スタートアップ：</strong> 火は急速な立ち上げを促進しますが、水のサポートが弱いチームを消耗させます—回復時間とクロストレーニングの予算を確保してください。</li>
+          <li><strong>金融＆不動産：</strong> 馬は金と衝突します；政策の急変と金利の急上昇を期待してください。金の財運に依存するチャートは、決定のペースを調整する必要があります。</li>
+          <li><strong>独立系クリエイター：</strong> 火は可視性を報います—強い出力星を持つ人は、Q2の前にオファーを事前パッケージ化し、料金を上げるべきです。</li>
+        </ul>
+        <h3 class="text-xl font-semibold text-gold-400">要素別の八字アクションプラン</h3>
+        <div class="grid md:grid-cols-2 gap-4">
+          <div class="bg-mystic-800/40 border border-mystic-700/40 rounded-lg p-4">
+            <p class="text-mystic-200"><strong>火/木の日主：</strong> サバティカルをスケジュールし、協力を通じて水の運を補給し、2026年3月までに柔軟なタイムラインを交渉してください。</p>
+          </div>
+          <div class="bg-mystic-800/40 border border-mystic-700/40 rounded-lg p-4">
+            <p class="text-mystic-200"><strong>金/水の日主：</strong> 2025年後半を使用して契約を確定してください。馬年では、「いいえ」をより早く言い、睡眠を保護してください—火はあなたの準備金を焦がす可能性があります。</p>
+          </div>
+        </div>
+        <h3 class="text-xl font-semibold text-gold-400">2026年までの90日チェックリスト</h3>
+        <ol class="list-decimal list-inside space-y-2 text-mystic-200 leading-relaxed">
+          <li>10年の運柱を監査してください—馬が既存の支と衝突する時期を記録してください。</li>
+          <li>LinkedIn、ピッチデッキ、クライアントのリテーナーを更新してください；火は可視性を報います。</li>
+          <li>「クールダウン」の儀式を作成してください：水の運動、早めの消灯、四半期ごとの財務レビュー。</li>
+        </ol>
+        <p class="text-mystic-200 leading-relaxed">
+          あなたの八字に合わせた赤馬のロードマップが欲しいですか？キャリアタイミングの相談を予約し、昇進、転居、またはサバティカルを要素のサポートと一致させてください。
+        </p>
+      </div>
+    `,
+      ko: `
+      <div class="space-y-6">
+        <p class="text-mystic-200 leading-relaxed">
+          병오（丙午）는 말 지지에 타는 타오르는 불을 가져옵니다—모멘텀，속도，대담한 위험 감수。미국 관점에서，더 빠른 혁신 사이클，공격적인 채용 열풍 후 급격한 전환，그리고 타지 않고 열을 다룰 수 있는 리더에 대한 프리미엄을 기대하세요。
+        </p>
+        <h3 class="text-xl font-semibold text-gold-400">왜 미국 직업이 열을 느끼는가</h3>
+        <ul class="list-disc list-inside space-y-2 text-mystic-200 leading-relaxed">
+          <li><strong>기술 및 스타트업：</strong> 불은 빠른 출시를 촉진하지만 약한 수의 지원으로 팀을 소진시킵니다—회복 시간과 교차 훈련에 대한 예산을 확보하세요。</li>
+          <li><strong>금융 및 부동산：</strong> 말은 금과 충돌합니다；정책 급변과 금리 급등을 기대하세요。금 재물에 의존하는 차트는 결정의 속도를 조절해야 합니다。</li>
+          <li><strong>독립 창작자：</strong> 불은 가시성을 보상합니다—강한 출력성을 가진 사람은 Q2 전에 제안을 사전 패키징하고 요금을 인상해야 합니다。</li>
+        </ul>
+        <h3 class="text-xl font-semibold text-gold-400">요소별 사주 액션 플랜</h3>
+        <div class="grid md:grid-cols-2 gap-4">
+          <div class="bg-mystic-800/40 border border-mystic-700/40 rounded-lg p-4">
+            <p class="text-mystic-200"><strong>화/목 일주：</strong> 사바티칼을 스케줄하고，협력을 통해 수의 운을 보충하며，2026년 3월까지 유연한 타임라인을 협상하세요。</p>
+          </div>
+          <div class="bg-mystic-800/40 border border-mystic-700/40 rounded-lg p-4">
+            <p class="text-mystic-200"><strong>금/수 일주：</strong> 2025년 후반을 사용하여 계약을 확정하세요。말년에는 "아니오"를 더 빨리 말하고 수면을 보호하세요—불이 당신의 준비금을 태울 수 있습니다。</p>
+          </div>
+        </div>
+        <h3 class="text-xl font-semibold text-gold-400">2026년까지 90일 체크리스트</h3>
+        <ol class="list-decimal list-inside space-y-2 text-mystic-200 leading-relaxed">
+          <li>10년 운주를 감사하세요—말이 기존 지지와 충돌하는 시기를 기록하세요。</li>
+          <li>LinkedIn，피치 덱，클라이언트 유지자를 업데이트하세요；불은 가시성을 보상합니다。</li>
+          <li>"쿨다운" 의식을 만드세요：수의 운동，일찍 소등，분기별 재무 검토。</li>
+        </ol>
+        <p class="text-mystic-200 leading-relaxed">
+          당신의 사주에 맞춘 적마 로드맵을 원하시나요？커리어 타이밍 상담을 예약하고，승진，이전，또는 사바티칼을 요소 지원과 일치시키세요。
+        </p>
+      </div>
+    `
+    },
     author: 'Master XuanYin',
     date: '2025-11-07',
     readTime: '9 min read',
