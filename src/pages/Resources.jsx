@@ -2,11 +2,13 @@ import React, { useState, useMemo } from 'react'
 import { motion } from 'framer-motion'
 import { Link } from 'react-router-dom'
 import { Search, Filter, Download, Eye, Tag } from 'lucide-react'
+import { useTranslation } from 'react-i18next'
 import SEO from '../components/SEO'
 import LazyImage from '../components/LazyImage'
 import DayMasterAnalysis from '../components/DayMasterAnalysis'
 
 const Resources = () => {
+  const { t } = useTranslation()
   // 搜索和筛选状态
   const [searchTerm, setSearchTerm] = useState('')
   const [selectedCategory, setSelectedCategory] = useState('all')
@@ -318,18 +320,18 @@ const Resources = () => {
   }, [searchTerm, selectedCategory, selectedDifficulty, selectedTag])
 
   // 获取所有分类选项
-  const categoryOptions = [
-    { value: 'all', label: 'All Categories' },
+  const categoryOptions = useMemo(() => [
+    { value: 'all', label: t('resources.filters.allCategories') },
     ...datasetCategories.map(cat => ({ value: cat.title, label: cat.title }))
-  ]
+  ], [t])
 
   // 获取所有难度选项
-  const difficultyOptions = [
-    { value: 'all', label: 'All Levels' },
-    { value: 'Beginner', label: 'Beginner' },
-    { value: 'Intermediate', label: 'Intermediate' },
-    { value: 'Advanced', label: 'Advanced' }
-  ]
+  const difficultyOptions = useMemo(() => [
+    { value: 'all', label: t('resources.filters.allLevels') },
+    { value: 'Beginner', label: t('resources.difficulty.beginner') },
+    { value: 'Intermediate', label: t('resources.difficulty.intermediate') },
+    { value: 'Advanced', label: t('resources.difficulty.advanced') }
+  ], [t])
 
   // 下载数据集函数
   const downloadDataset = (filename) => {
@@ -360,40 +362,40 @@ const Resources = () => {
               transition={{ duration: 0.8 }}
             >
               <h1 className="text-5xl md:text-6xl font-bold text-white mb-6">
-                BaZi Data Library
+                {t('resources.heroTitle')}
               </h1>
               <p className="text-xl text-mystic-300 mb-8 max-w-3xl mx-auto">
-                Your comprehensive source for BaZi datasets. Download structured data for analysis, 
-                development, and research in Chinese numerology and destiny analysis. 
-                <span className="text-gold-400 font-semibold">25+ professional datasets</span> covering all aspects of BaZi study.
+                {t('resources.heroDescription')}
+                <span className="text-gold-400 font-semibold">{t('resources.heroHighlight')}</span>
+                {t('resources.heroDescription2')}
               </p>
               <div className="flex flex-wrap justify-center gap-4 text-sm text-mystic-400 mb-8">
-                <span>JSON Datasets</span>
+                <span>{t('resources.features.json')}</span>
                 <span>•</span>
-                <span>Field Dictionaries</span>
+                <span>{t('resources.features.dictionaries')}</span>
                 <span>•</span>
-                <span>API Ready</span>
+                <span>{t('resources.features.api')}</span>
                 <span>•</span>
-                <span>Free Downloads</span>
+                <span>{t('resources.features.free')}</span>
               </div>
               
               {/* 数据集统计 */}
               <div className="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-4xl mx-auto">
                 <div className="text-center">
                   <div className="text-3xl font-bold text-gold-400 mb-2">25+</div>
-                  <div className="text-sm text-mystic-300">Datasets</div>
+                  <div className="text-sm text-mystic-300">{t('resources.stats.datasets')}</div>
                 </div>
                 <div className="text-center">
                   <div className="text-3xl font-bold text-gold-400 mb-2">500+</div>
-                  <div className="text-sm text-mystic-300">Data Records</div>
+                  <div className="text-sm text-mystic-300">{t('resources.stats.records')}</div>
                 </div>
                 <div className="text-center">
                   <div className="text-3xl font-bold text-gold-400 mb-2">4</div>
-                  <div className="text-sm text-mystic-300">Categories</div>
+                  <div className="text-sm text-mystic-300">{t('resources.stats.categories')}</div>
                 </div>
                 <div className="text-center">
                   <div className="text-3xl font-bold text-gold-400 mb-2">100%</div>
-                  <div className="text-sm text-mystic-300">Free Access</div>
+                  <div className="text-sm text-mystic-300">{t('resources.stats.free')}</div>
                 </div>
               </div>
             </motion.div>
@@ -410,7 +412,7 @@ const Resources = () => {
                   <Search className="absolute left-4 top-1/2 transform -translate-y-1/2 text-mystic-400 h-5 w-5" />
                   <input
                     type="text"
-                    placeholder="Search datasets by name, description, or tags..."
+                    placeholder={t('resources.searchPlaceholder')}
                     value={searchTerm}
                     onChange={(e) => setSearchTerm(e.target.value)}
                     className="w-full pl-12 pr-4 py-4 bg-mystic-700 border border-mystic-600 rounded-lg text-white placeholder-mystic-400 focus:outline-none focus:border-gold-400 focus:ring-2 focus:ring-gold-400/20"
@@ -460,7 +462,7 @@ const Resources = () => {
                     onChange={(e) => setSelectedTag(e.target.value)}
                     className="w-full pl-10 pr-4 py-3 bg-mystic-700 border border-mystic-600 rounded-lg text-white focus:outline-none focus:border-gold-400"
                   >
-                    <option value="all">All Tags</option>
+                    <option value="all">{t('resources.filters.allTags')}</option>
                     {popularTags.map(tag => (
                       <option key={tag} value={tag}>
                         {tag}
@@ -473,7 +475,7 @@ const Resources = () => {
               {/* 结果统计 */}
               <div className="text-center mb-8">
                 <p className="text-mystic-300">
-                  Showing <span className="text-gold-400 font-semibold">{filteredDatasets.length}</span> of <span className="text-gold-400 font-semibold">25+</span> datasets
+                  {t('resources.showingResults', { count: filteredDatasets.length, total: '25+' })}
                 </p>
               </div>
             </div>
@@ -494,12 +496,12 @@ const Resources = () => {
               className="text-center mb-16"
             >
               <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
-                {searchTerm || selectedCategory !== 'all' || selectedDifficulty !== 'all' || selectedTag !== 'all' ? 'Filtered Datasets' : 'All Datasets'}
+                {searchTerm || selectedCategory !== 'all' || selectedDifficulty !== 'all' || selectedTag !== 'all' ? t('resources.filteredTitle') : t('resources.allDatasetsTitle')}
               </h2>
               <p className="text-lg text-mystic-300 max-w-2xl mx-auto">
                 {searchTerm || selectedCategory !== 'all' || selectedDifficulty !== 'all' || selectedTag !== 'all' 
-                  ? 'Browse through our comprehensive collection of BaZi datasets based on your search criteria.'
-                  : 'Explore our comprehensive collection of BaZi datasets, carefully curated to provide complete analysis capabilities.'
+                  ? t('resources.filteredDescription')
+                  : t('resources.allDatasetsDescription')
                 }
               </p>
             </motion.div>
@@ -519,7 +521,7 @@ const Resources = () => {
                       <span className="px-3 py-1 bg-yellow-400/20 text-yellow-400 rounded-full text-xs font-medium">
                         {dataset.format}
                       </span>
-                      <span className="text-mystic-400 text-sm">{dataset.records} records</span>
+                      <span className="text-mystic-400 text-sm">{t('resources.records', { count: dataset.records })}</span>
                     </div>
                     <h3 className="text-xl font-bold text-white mb-3 line-clamp-2">{dataset.title}</h3>
                     <p className="text-mystic-300 mb-4 line-clamp-3">{dataset.excerpt}</p>
@@ -531,19 +533,19 @@ const Resources = () => {
                       ))}
                     </div>
                     <div className="flex items-center justify-between">
-                      <span className="text-mystic-400 text-xs">Updated: {dataset.lastUpdated}</span>
+                      <span className="text-mystic-400 text-xs">{t('resources.lastUpdated')}: {dataset.lastUpdated}</span>
                       <div className="flex gap-3">
                         <Link 
                           to={`/resources/${dataset.filename.replace('.json', '')}`}
                           className="text-yellow-400 hover:text-yellow-300 font-semibold transition-colors"
                         >
-                          View Details →
+                          {t('resources.viewDetails')} →
                         </Link>
                         <button 
                           onClick={() => downloadDataset(dataset.filename)}
                           className="text-yellow-400 hover:text-yellow-300 font-semibold transition-colors"
                         >
-                          Download →
+                          {t('resources.download')} →
                         </button>
                       </div>
                     </div>
@@ -552,9 +554,9 @@ const Resources = () => {
               ) : (
                 <div className="col-span-2 text-center py-16">
                   <div className="text-6xl mb-4">🔍</div>
-                  <h3 className="text-2xl font-bold text-white mb-4">No datasets found</h3>
+                  <h3 className="text-2xl font-bold text-white mb-4">{t('resources.noResults')}</h3>
                   <p className="text-mystic-300 mb-6">
-                    Try adjusting your search criteria or filters to find what you're looking for.
+                    {t('resources.tryAdjusting')}
                   </p>
                   <button
                     onClick={() => {
@@ -565,7 +567,7 @@ const Resources = () => {
                     }}
                     className="bg-gold-400 text-black px-6 py-3 rounded-lg font-semibold hover:bg-gold-300 transition-colors"
                   >
-                    Clear All Filters
+                    {t('resources.clearFilters')}
                   </button>
                 </div>
               )}
@@ -584,10 +586,10 @@ const Resources = () => {
               className="text-center mb-16"
             >
               <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
-                BaZi Data Library
+                {t('resources.libraryTitle')}
               </h2>
               <p className="text-lg text-mystic-300 max-w-3xl mx-auto">
-                Explore our comprehensive collection of BaZi datasets, organized by category and complexity. From core data to advanced applications, find everything you need for BaZi analysis and development.
+                {t('resources.libraryDescription')}
               </p>
             </motion.div>
 
