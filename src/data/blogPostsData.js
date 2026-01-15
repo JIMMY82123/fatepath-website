@@ -1293,9 +1293,18 @@ export const blogPostsData = {
     ]
   },
   "career-indecision-bazi-cut-choices-6-to-2": {
-    title: "Career Indecision? A Chinese Birth-Chart Way to Cut Choices from 6 to 2",
-    excerpt: "Stuck with six career options? Use Chinese Bazi (Four Pillars of Destiny) astrology to narrow your choices from 6 to 2. Learn how to identify your core energy, diagnose your power sources, and make decisions aligned with your authentic self.",
-    content: `
+    title: {
+      en: "Career Indecision? A Chinese Birth-Chart Way to Cut Choices from 6 to 2",
+      ja: "キャリアの迷い？6つの選択肢を2つに絞る中国の生年月日占いの方法",
+      ko: "직업 고민? 6가지 선택지를 2가지로 좁히는 중국 사주 방법"
+    },
+    excerpt: {
+      en: "Stuck with six career options? Use Chinese Bazi (Four Pillars of Destiny) astrology to narrow your choices from 6 to 2. Learn how to identify your core energy, diagnose your power sources, and make decisions aligned with your authentic self.",
+      ja: "6つのキャリア選択肢で行き詰まっていますか？中国の八字（四柱推命）占星術を使用して、選択肢を6つから2つに絞り込みましょう。コアエネルギーを特定し、パワーソースを診断し、本物の自分と一致する決定を下す方法を学びます。",
+      ko: "여섯 가지 직업 선택지로 막혀 있나요? 중국 팔자（사주） 점성술을 사용하여 선택지를 6가지에서 2가지로 좁혀보세요. 핵심 에너지를 식별하고, 파워 소스를 진단하며, 진정한 자신과 일치하는 결정을 내리는 방법을 배웁니다."
+    },
+    content: {
+      en: `
       <div class="space-y-8">
         <div class="mb-8">
           <div class="bg-gradient-to-r from-blue-500/20 to-purple-500/20 border border-blue-500/30 rounded-lg p-6 mb-8">
@@ -1480,6 +1489,9 @@ export const blogPostsData = {
         </div>
       </div>
     `,
+      ja: ``,
+      ko: ``
+    },
     author: 'Master XuanYin',
     date: '2025-11-13',
     readTime: '8 min read',
