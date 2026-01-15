@@ -245,9 +245,9 @@ const CelebritiesBornToday = () => {
             >
               <div className="flex items-center gap-2 text-mystic-400 text-sm mb-4">
                 <Link to="/" className="hover:text-gold-400 transition-colors">Home</Link>
-                <ChevronRight className="h-4 w-4" />
+                <span>/</span>
                 <Link to="/celebrities-born-today" className="hover:text-gold-400 transition-colors">Famous People</Link>
-                <ChevronRight className="h-4 w-4" />
+                <span>/</span>
                 <span className="text-mystic-300">Famous People Born Today</span>
               </div>
               <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">
