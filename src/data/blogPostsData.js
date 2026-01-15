@@ -169,8 +169,231 @@ export const blogPostsData = {
         </div>
       </div>
     `,
-      ja: ``,
-      ko: ``
+      ja: `
+      <div class="space-y-8">
+        <div class="mb-8">
+          <div class="bg-gradient-to-r from-amber-500/20 to-yellow-500/20 border border-amber-500/30 rounded-lg p-6 mb-8">
+            <h3 class="text-lg font-semibold text-amber-400 mb-3">📜 古代の知恵：元の八字システム</h3>
+            <p class="text-mystic-200 mb-2"><strong>古典テキスト：</strong> 玉照神応真経（玉照神応真経）</p>
+            <p class="text-mystic-200 mb-2"><strong>著者：</strong> 郭璞（郭璞）、後漢時代</p>
+            <p class="text-mystic-200 mb-2"><strong>意義：</strong> 八字（四柱推命）予測の最初の基礎テキスト</p>
+            <p class="text-mystic-200"><strong>重要な洞察：</strong> 現代の子平法よりも正確</p>
+          </div>
+        </div>
+
+        <h2 class="text-2xl font-bold text-white mb-4 mt-8">古代の基盤：玉照神応真経</h2>
+        <p class="mb-6 text-lg text-mystic-200 leading-relaxed">
+          古代の知恵は言います：「第一に運命、第二に運、第三に風水」。この格言では、「運命」と「運」は人の八字（八文字）を指します。今日、最も一般的なシステムは子平八字と呼ばれていますが、後に様々な学派やあらゆる種類の「神殺」（神煞）理論がその上に追加されました。
+        </p>
+        <p class="mb-6 text-mystic-200 leading-relaxed">
+          しかし、子平よりずっと前、後漢時代に、有名な学者である郭璞が古典<strong class="text-amber-400">『玉照神応真経』</strong>（真の玉の輝きと神の応答の経典）を書きました。これは実際、八字（四柱推命）予測の最初の基礎テキストです。風水に詳しい人は誰でも、郭璞（郭公とも呼ばれる）が風水の真の創始者であることを知っています—楊公（楊公）よりも前です。
+        </p>
+        <p class="mb-6 text-mystic-200 leading-relaxed">
+          その後、徐子平は『玉照神応真経』を慎重に研究し、現在私たちが子平八字と呼んでいるものを開発しました。彼はシステムを整理し、特に日主と生成・克服の六つの関係（六親）を中心に体系化しました。これは八字予測の歴史に大きな貢献をしました。
+        </p>
+
+        <h2 class="text-2xl font-bold text-white mb-4 mt-8">現代子平の三つの重大な問題</h2>
+        
+        <div class="space-y-6 mb-6">
+          <div class="bg-gradient-to-r from-red-500/20 to-orange-500/20 border border-red-500/30 rounded-lg p-6">
+            <h3 class="text-xl font-semibold text-red-400 mb-3">1. 「六親」の罠</h3>
+            <p class="text-mystic-200 mb-3 leading-relaxed">
+              五行の生成・克服理論では、「六親」（父母、兄弟、配偶者、子供など）は単に助けたり害したりする象徴的な関係です。
+            </p>
+            <p class="text-mystic-200 mb-3 leading-relaxed">
+              例えば、「印綬」（印）星は日主を支えたり養ったりする要素を表します—それは文字通りあなたの実の母親を意味するものではありません。実生活では、実際にあなたを助け支える人が真の「印綬」ですが、あなたの生物学的母親が常にそうするとは限りません。
+            </p>
+            <p class="text-mystic-200 leading-relaxed">
+              これを使って祖父母、曾祖父母などの詳細を予測しようとすることには重大な欠陥があり、しばしば誤った結論につながります。
+            </p>
+          </div>
+
+          <div class="bg-gradient-to-r from-blue-500/20 to-indigo-500/20 border border-blue-500/30 rounded-lg p-6">
+            <h3 class="text-xl font-semibold text-blue-400 mb-3">2. 大運（大運）計算の大きな間違い</h3>
+            <p class="text-mystic-200 mb-3 leading-relaxed">
+              現代の子平では、大運サイクルの開始時間は「陽男/陰女前進/後退」ルールに基づいて計算されます—誕生日から月の初めまたは終わりまでの日数を数えます。
+            </p>
+            <p class="text-mystic-200 mb-3 leading-relaxed">
+              しかし実際には、この方法はしばしば不正確です。何年もの実生活でのテストの後、多くの人がタイミングがずれていることに気づきます。
+            </p>
+            <p class="text-mystic-200 leading-relaxed">
+              大運を計算する正しくより正確な方法は、実際には元の『玉照神応真経』に記録されています。
+            </p>
+          </div>
+
+          <div class="bg-gradient-to-r from-purple-500/20 to-pink-500/20 border border-purple-500/30 rounded-lg p-6">
+            <h3 class="text-xl font-semibold text-purple-400 mb-3">3. 神殺（神煞）の大きな問題</h3>
+            <p class="text-mystic-200 mb-3 leading-relaxed">
+              現代の八字は数百の神殺を使用することを好みます：桃花、驛馬、文昌、貴人、学堂、華蓋、将星、金輿、金神、天医、天赦、天羅地網、咸池など。
+            </p>
+            <p class="text-mystic-200 mb-3 leading-relaxed">
+              しかし自問してください：それらは本当にどれほど正確ですか？経験豊富な読者のほとんどは、最終的にそれらが信頼できないことに気づき、使用をやめます。
+            </p>
+            <p class="text-mystic-200 leading-relaxed">
+              元の『玉照神応真経』では、これらの神殺のいずれも必要ありません。天干と地支自体がすでに必要な意味をすべて持っています—追加の層は必要ありません。
+            </p>
+          </div>
+        </div>
+
+        <h2 class="text-2xl font-bold text-white mb-4 mt-8">実例研究</h2>
+
+        <div class="bg-gradient-to-r from-green-500/20 to-emerald-500/20 border border-green-500/30 rounded-lg p-6 mb-6">
+          <h3 class="text-xl font-semibold text-green-400 mb-4">事例1：ギャンブル債務と家族崩壊</h3>
+          <div class="space-y-4">
+            <div class="bg-mystic-800/50 rounded-lg p-4">
+              <p class="text-mystic-200 mb-2"><strong class="text-white">男性生まれ：</strong> 1983年11月18日、卯時（午前5-7時頃）</p>
+              <p class="text-mystic-200 mb-2"><strong class="text-white">八字：</strong> 戊戌 丙辰 壬申 己卯</p>
+            </div>
+            <p class="text-mystic-200 leading-relaxed">
+              八字を研究する友人が、この命盤を見てほしいと頼んできました。彼の友人が最近大きな人生の出来事を経験し、それが良いことか悪いことかを知りたがっていると言いました。従来の子平を使用しても、全く説明できず、自分の方法が間違っているのではないかと疑っていました。
+            </p>
+            <p class="text-mystic-200 leading-relaxed">
+              そこで私はすぐに現在の年である戊戌（2018年）に焦点を当てました。日主の庚金は日支の戌土と時干の己土に支えられているように見えますが、両方の土は卯木に傷つけられています。水の癸が強く、庚金の力を漏らしており、全体的に弱くなっています。
+            </p>
+            <p class="text-mystic-200 leading-relaxed">
+              通常、戌年は有利であるはずです（土は金を助ける）が、なぜ問題が起きているのでしょうか？よく見ると：強い戌は卯と結合したがっていますが、この結合は隠れた衝突をもたらします。『玉照真経』によると、卯と戌が衝突すると、しばしば争い、損失、法的トラブルを意味します。
+            </p>
+            <p class="text-mystic-200 leading-relaxed">
+              それから気づきました：戌は日支（配偶者宮）です。妻が彼を去ったのでしょうか？それとも子供を連れて行ったのでしょうか？突然気づきました—本当の引き金は昨年の丁酉（2017年）で、酉が卯を衝き、木土の衝突を早期に活性化させました。それが大きな損失と家族崩壊が始まった時です。
+            </p>
+            <div class="bg-red-500/20 border border-red-500/30 rounded-lg p-4 mt-4">
+              <p class="text-mystic-200"><strong class="text-red-400">真実：</strong> その男性は重度のギャンブルを始め、300万元以上を借金し、今では銀行が家と車を売るよう追いかけています。妻は子供たちを恐れて離婚を申請しました（まだ一緒に住んでいますが）。家族全体が混乱しています。</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-gradient-to-r from-blue-500/20 to-cyan-500/20 border border-blue-500/30 rounded-lg p-6 mb-6">
+          <h3 class="text-xl font-semibold text-blue-400 mb-4">事例2：離婚と経済的損失</h3>
+          <div class="space-y-4">
+            <div class="bg-mystic-800/50 rounded-lg p-4">
+              <p class="text-mystic-200 mb-2"><strong class="text-white">女性の命盤：</strong> 甲子 乙亥 辛未 庚寅</p>
+              <p class="text-mystic-200"><strong class="text-white">同日柱：</strong> 丙辰 壬申</p>
+            </div>
+            <p class="text-mystic-200 leading-relaxed">
+              友人は、この女性も最近大きな出来事があり、従来の方法では説明できないと言いました。見てすぐに分かりました：戊戌年が寅木を引き起こし、未土と衝突しています（寅戌の半合が衝突を活性化）。木が土を克服する = 損失、争い、訴訟。
+            </p>
+            <p class="text-mystic-200 leading-relaxed">
+              日支の未土は夫宮 → 夫にとって何か悪いこと。しかし月は丙辰でした—明らかな引き金はありませんでした。それから前月の乙卯を確認しました：天冲地动（天の衝突、地の動き）—乙が辛金を衝き、卯が未土と半合します。天冲地动は離婚の典型的な兆候です。
+            </p>
+            <p class="text-mystic-200 leading-relaxed">
+              結論：彼女は先月離婚しました。さらに：強い財（乙木）は、根（未土）が衝突された後、日主が弱くなると禁忌になります。結果：大きな経済的損失。
+            </p>
+            <div class="bg-red-500/20 border border-red-500/30 rounded-lg p-4 mt-4">
+              <p class="text-mystic-200"><strong class="text-red-400">確認：</strong> これは事例1の男性の妻です。300万元の債務危機の後、彼と離婚しました。</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-gradient-to-r from-purple-500/20 to-pink-500/20 border border-purple-500/30 rounded-lg p-6 mb-6">
+          <h3 class="text-xl font-semibold text-purple-400 mb-4">事例3：貧困と人生の課題</h3>
+          <div class="space-y-4">
+            <div class="bg-mystic-800/50 rounded-lg p-4">
+              <p class="text-mystic-200 mb-2"><strong class="text-white">男性生まれ：</strong> 1990年9月14日（旧暦）、午前4:30-5:00頃</p>
+              <p class="text-mystic-200"><strong class="text-white">八字：</strong> 庚午 乙酉 庚子 戊寅</p>
+            </div>
+            <p class="text-mystic-200 leading-relaxed">
+              彼は尋ねました：いつ結婚できますか？いつお金持ちになれますか？日主の庚金は弱く、酉金に支えられていますが、午火に傷つけられています。時干の戊土は寅木に衝突されています → 教育が貧しく、低レベルの仕事（工場労働者）。両親はほとんど助けません（父の財が弱い）。
+            </p>
+            <p class="text-mystic-200 leading-relaxed">
+              彼は忠実で正義感が強い（金の性質）、身長1.75m（子水旺 + 午火）。財（乙木）は弱く、三つの金に衝突されています → 生涯の貧困、良い運の期間でも多くはもたらしません。
+            </p>
+            <div class="bg-mystic-800/50 rounded-lg p-4 mt-4">
+              <p class="text-mystic-200 mb-2"><strong class="text-white">結婚：</strong> 2015年乙未年 — 乙庚が結合 → 女性の同僚と付き合い始めました。2016年丙申年 — 申が子（配偶者宮）と寅（子宮）を活性化し、丙が戊土を生じて日主を助ける → 結婚しました。</p>
+              <p class="text-mystic-200"><strong class="text-white">母親の死：</strong> 2016年戊戌月 — 戌が子と衝突し、戊土を弱め、強い財が禁忌になる → 母親が亡くなり、数ヶ月間落ち込んでいました。</p>
+            </div>
+            <p class="text-mystic-200 leading-relaxed mt-4">
+              一部の命盤は生まれつきレイアウトが悪い — 運命は変えるのが難しい。しかし良いニュースは：後の運のサイクルと風水の調整で、まだ人生を改善できます。
+            </p>
+          </div>
+        </div>
+
+        <h2 class="text-2xl font-bold text-white mb-4 mt-8">結論：古代の知恵の力</h2>
+        <p class="mb-6 text-lg text-mystic-200 leading-relaxed">
+          『玉照神応真経』からのこの古代の方法は、現代の子平の多くの罠を避け、より明確で正確な洞察を提供します。元のシステムは、数百の神殺の複雑さと不正確さなしに、天干と地支の間の本質的な関係に焦点を当てています。
+        </p>
+        <p class="mb-6 text-mystic-200 leading-relaxed">
+          本当の元の八字システムに興味があるなら、FatePathでさらに探索してください！郭璞によって築かれ、『玉照神応真経』に保存されている基盤を理解することで、中国占星術と運命分析への理解を変えることができます。
+        </p>
+        
+        <div class="bg-gradient-to-r from-amber-500/20 to-yellow-500/20 border border-amber-500/30 rounded-lg p-6 mb-6">
+          <h3 class="text-lg font-semibold text-amber-400 mb-3">重要なポイント</h3>
+          <ul class="text-mystic-200 space-y-2">
+            <li>• 『玉照神応真経』は八字予測の元の基礎テキストです</li>
+            <li>• 現代の子平には三つの重大な問題があります：六親の混乱、不正確な大運計算、信頼できない神殺</li>
+            <li>• 元の方法は、不要な複雑さなしに、本質的な干支配列関係に焦点を当てています</li>
+            <li>• 実例研究は古代の方法の正確性を示しています</li>
+            <li>• 元のシステムを理解することで、より明確で正確な洞察が得られます</li>
+          </ul>
+        </div>
+      </div>
+    `,
+      ko: `
+      <div class="space-y-8">
+        <div class="mb-8">
+          <div class="bg-gradient-to-r from-amber-500/20 to-yellow-500/20 border border-amber-500/30 rounded-lg p-6 mb-8">
+            <h3 class="text-lg font-semibold text-amber-400 mb-3">📜 고대 지혜: 원본 팔자 시스템</h3>
+            <p class="text-mystic-200 mb-2"><strong>고전 텍스트：</strong> 옥조신응진경（玉照神应真经）</p>
+            <p class="text-mystic-200 mb-2"><strong>저자：</strong> 곽박（郭璞），후한 시대</p>
+            <p class="text-mystic-200 mb-2"><strong>의미：</strong> 팔자（사주） 예측의 최초 기초 텍스트</p>
+            <p class="text-mystic-200"><strong>핵심 통찰：</strong> 현대 자평법보다 더 정확함</p>
+          </div>
+        </div>
+
+        <h2 class="text-2xl font-bold text-white mb-4 mt-8">고대 기초: 옥조신응진경</h2>
+        <p class="mb-6 text-lg text-mystic-200 leading-relaxed">
+          고대 지혜는 말합니다: "첫째는 운명, 둘째는 운, 셋째는 풍수"입니다. 이 말에서 "운명"과 "운"은 사람의 팔자（팔자）를 가리킵니다. 오늘날 가장 일반적인 시스템은 자평팔자라고 불리지만, 나중에 다양한 학파와 모든 종류의 "신살"（神煞） 이론이 그 위에 추가되었습니다.
+        </p>
+        <p class="mb-6 text-mystic-200 leading-relaxed">
+          그러나 자평보다 훨씬 이전인 후한 시대에 유명한 학자 곽박이 고전 <strong class="text-amber-400">『옥조신응진경』</strong>（옥의 빛과 신의 응답의 진정한 경전）을 저술했습니다. 이것은 실제로 팔자（사주） 예측의 최초 기초 텍스트입니다. 풍수에 익숙한 사람은 누구나 곽박（곽공이라고도 불림）이 풍수의 진정한 창시자라는 것을 알고 있습니다—양공（楊公）보다도 앞섭니다.
+        </p>
+        <p class="mb-6 text-mystic-200 leading-relaxed">
+          나중에 서자평은 『옥조신응진경』을 신중하게 연구하고 현재 우리가 자평팔자라고 부르는 것을 개발했습니다. 그는 시스템을 정리하고 특히 일주와 생성·극제의 여섯 가지 관계（육친）를 중심으로 체계화했습니다. 이것은 팔자 예측의 역사에 큰 기여를 했습니다.
+        </p>
+
+        <h2 class="text-2xl font-bold text-white mb-4 mt-8">현대 자평의 세 가지 중요한 문제</h2>
+        
+        <div class="space-y-6 mb-6">
+          <div class="bg-gradient-to-r from-red-500/20 to-orange-500/20 border border-red-500/30 rounded-lg p-6">
+            <h3 class="text-xl font-semibold text-red-400 mb-3">1. "육친"의 함정</h3>
+            <p class="text-mystic-200 mb-3 leading-relaxed">
+              오행의 생성·극제 이론에서 "육친"（부모, 형제, 배우자, 자녀 등）은 단순히 도움이 되거나 해를 끼치는 상징적인 관계입니다.
+            </p>
+            <p class="text-mystic-200 mb-3 leading-relaxed">
+              예를 들어, "인수"（印） 별은 일주를 지지하거나 양육하는 요소를 나타냅니다—그것은 문자 그대로 당신의 실제 어머니를 의미하는 것이 아닙니다. 실제 생활에서 실제로 당신을 도와주고 지지하는 사람이 진정한 "인수"이지만, 당신의 생물학적 어머니가 항상 그렇게 하는 것은 아닙니다.
+            </p>
+            <p class="text-mystic-200 leading-relaxed">
+              이것을 사용하여 조부모, 증조부모 등에 대한 세부 사항을 예측하려고 시도하는 것은 큰 결함이 있으며 종종 잘못된 결론으로 이어집니다.
+            </p>
+          </div>
+
+          <div class="bg-gradient-to-r from-blue-500/20 to-indigo-500/20 border border-blue-500/30 rounded-lg p-6">
+            <h3 class="text-xl font-semibold text-blue-400 mb-3">2. 대운（大運） 계산의 큰 실수</h3>
+            <p class="text-mystic-200 mb-3 leading-relaxed">
+              현대 자평에서 대운 사이클의 시작 시간은 "양남/음녀 전진/후진" 규칙에 따라 계산됩니다—생년월일부터 월의 시작 또는 끝까지의 일수를 계산합니다.
+            </p>
+            <p class="text-mystic-200 mb-3 leading-relaxed">
+              그러나 실제로 이 방법은 종종 부정확합니다. 수년간의 실제 생활 테스트 후, 많은 사람들이 타이밍이 어긋났다는 것을 발견합니다.
+            </p>
+            <p class="text-mystic-200 leading-relaxed">
+              대운을 계산하는 정확하고 더 정밀한 방법은 실제로 원본 『옥조신응진경』에 기록되어 있습니다.
+            </p>
+          </div>
+
+          <div class="bg-gradient-to-r from-purple-500/20 to-pink-500/20 border border-purple-500/30 rounded-lg p-6">
+            <h3 class="text-xl font-semibold text-purple-400 mb-3">3. 신살（神煞）의 큰 문제</h3>
+            <p class="text-mystic-200 mb-3 leading-relaxed">
+              현대 팔자는 수백 가지의 신살을 사용하는 것을 좋아합니다: 도화, 역마, 문창, 귀인, 학당, 화개, 장성, 금여, 금신, 천의, 천사, 천라지망, 함지 등.
+            </p>
+            <p class="text-mystic-200 mb-3 leading-relaxed">
+              그러나 스스로에게 물어보세요: 그것들이 정말로 얼마나 정확합니까? 경험이 풍부한 독자들은 대부분 결국 그것들이 신뢰할 수 없다는 것을 깨닫고 사용을 중단합니다.
+            </p>
+            <p class="text-mystic-200 leading-relaxed">
+              원본 『옥조신응진경』에서는 이러한 신살 중 어느 것도 필요하지 않습니다. 천간과 지지 자체가 이미 필요한 모든 의미를 담고 있습니다—추가 계층이 필요하지 않습니다.
+            </p>
+          </div>
+        </div>
+      </div>
+    `
     },
     author: 'Master XuanYin',
     date: '2026-01-07',
