@@ -12348,9 +12348,18 @@ export const blogPostsData = {
       ]
     },
     "2026-bing-wu-year-zodiac-rooster-fortune-prediction": {
-      title: "2026 Bing Wu Year: Zodiac Rooster Fortune Prediction",
-      excerpt: "2026 is the Bing Wu Horse Year. For those born in the Year of the Rooster, this year brings both opportunities and challenges. Your natural confidence and organizational skills help you navigate the year's dynamics successfully.",
-      content: `
+      title: {
+        en: "2026 Bing Wu Year: Zodiac Rooster Fortune Prediction",
+        ja: "2026年丙午年：酉年（鶏）の運勢予測",
+        ko: "2026년 병오년：유년（닭）운세 예측"
+      },
+      excerpt: {
+        en: "2026 is the Bing Wu Horse Year. For those born in the Year of the Rooster, this year brings both opportunities and challenges. Your natural confidence and organizational skills help you navigate the year's dynamics successfully.",
+        ja: "2026年は丙午馬年です。酉年（鶏）生まれの人にとって、今年は機会と課題の両方をもたらします。あなたの自然な自信と組織能力が、年のダイナミクスを成功裏に乗り切るのに役立ちます。",
+        ko: "2026년은 병오마년입니다. 유년（닭）생 사람들에게는, 올해 기회와 도전을 모두 가져옵니다. 당신의 자연스러운 자신감과 조직 능력이 해의 역학을 성공적으로 탐색하는 데 도움이 됩니다."
+      },
+      content: {
+        en: `
         <div class="space-y-8">
           <div class="mb-8">
             <div class="bg-gradient-to-r from-amber-500/20 to-yellow-500/20 border border-amber-500/30 rounded-lg p-6 mb-8">
@@ -12408,6 +12417,123 @@ export const blogPostsData = {
           </div>
         </div>
       `,
+        ja: `
+        <div class="space-y-8">
+          <div class="mb-8">
+            <div class="bg-gradient-to-r from-amber-500/20 to-yellow-500/20 border border-amber-500/30 rounded-lg p-6 mb-8">
+              <h3 class="text-lg font-semibold text-amber-400 mb-3">🐓 2026年丙午年鶏の概要</h3>
+              <ul class="text-mystic-200 space-y-2">
+                <li>• <strong>年の要素：</strong> 丙火（天干）+ 午火（地支）= 火が豊富な年</li>
+                <li>• <strong>太歳関係：</strong> 中立 - 混合機会</li>
+                <li>• <strong>主要な利点：</strong> 自信と組織能力</li>
+                <li>• <strong>全体的な運勢：</strong> 慎重な管理を伴う機会</li>
+                <li>• <strong>年間テーマ：</strong> 組織、自信、バランスの取れたアプローチ</li>
+              </ul>
+            </div>
+          </div>
+
+          <p class="mb-6 text-lg text-mystic-200 leading-relaxed">
+            2026年は丙午馬年で、火のエネルギーが豊富な年です。酉年（鶏）生まれの人にとって、今年は機会と課題の両方をもたらします。あなたの自然な自信、組織能力、細部への注意は貴重な資産です。しかし、火のエネルギーは、あなたの批判的または完璧主義的な傾向を増幅する可能性があるため、バランスが鍵となります。
+          </p>
+
+          <h2 class="text-2xl font-bold text-white mb-4 mt-8">キャリア運勢：組織とリーダーシップ</h2>
+          <div class="space-y-4 mb-6">
+            <div class="bg-gradient-to-r from-blue-500/10 to-cyan-500/10 border border-blue-500/20 rounded-lg p-4">
+              <h4 class="text-lg font-semibold text-blue-400 mb-2">💼 機会</h4>
+              <p class="text-mystic-200 leading-relaxed">あなたの組織能力と細部への注意が高く評価されます。管理、計画、品質管理、または精密さを必要とする分野での機会が有利です。火のエネルギーは、あなたの自信とリーダーシップの可能性をサポートします。</p>
+            </div>
+            <div class="bg-gradient-to-r from-yellow-500/10 to-amber-500/10 border border-yellow-500/20 rounded-lg p-4">
+              <h4 class="text-lg font-semibold text-yellow-400 mb-2">⚠️ 課題</h4>
+              <p class="text-mystic-200 leading-relaxed">火のエネルギーは、あなたを過度に批判的または完璧主義的にする可能性があります。自分や他の人に対して厳しすぎることを避けてください。高い基準を柔軟性と理解でバランスさせてください。職場の関係は特別な注意を必要とする可能性があります。</p>
+            </div>
+            <div class="bg-mystic-800/50 rounded-lg p-4">
+              <h4 class="text-lg font-semibold text-gold-400 mb-2">💡 キャリアアドバイス</h4>
+              <p class="text-mystic-200 leading-relaxed">あなたの組織能力と細部への注意を使用して優れています。しかし、柔軟性を実践し、過度に批判的になることを避けてください。あなたの自信は資産ですが、謙虚さとチームワークでバランスさせてください。</p>
+            </div>
+          </div>
+
+          <h2 class="text-2xl font-bold text-white mb-4 mt-8">財運トレンド：慎重な計画、着実な成長</h2>
+          <div class="bg-mystic-800/50 rounded-lg p-4 mb-6">
+            <p class="text-mystic-200 leading-relaxed">あなたの自然な財務計画能力があなたをよく助けます。迅速な利益よりも、慎重な予算編成と着実な投資に焦点を当ててください。火のエネルギーは、組織的な努力を通じた富の蓄積をサポートしますが、あまりにも保守的になることを避けてください—適度なリスクは報酬をもたらす可能性があります。</p>
+          </div>
+
+          <h2 class="text-2xl font-bold text-white mb-4 mt-8">人間関係：自信と感受性のバランス</h2>
+          <div class="space-y-4 mb-6">
+            <div class="bg-gradient-to-r from-pink-500/10 to-purple-500/10 border border-pink-500/20 rounded-lg p-4">
+              <h4 class="text-lg font-semibold text-pink-400 mb-2">💕 関係</h4>
+              <p class="text-mystic-200 leading-relaxed">あなたの自信と魅力が他の人を引き付けますが、関係で過度に批判的または完璧主義的になることに注意してください。理解と柔軟性を実践してください。独身者にとって、機会は存在しますが、理想的な期待よりも本物のつながりに焦点を当ててください。交際中の人にとって、コミュニケーションと妥協が絆を強化します。</p>
+            </div>
+          </div>
+
+          <h2 class="text-2xl font-bold text-white mb-4 mt-8">健康：活動と休息のバランス</h2>
+          <div class="bg-mystic-800/50 rounded-lg p-4 mb-6">
+            <p class="text-mystic-200 leading-relaxed">あなたの自然なエネルギーと活動レベルは資産ですが、過度の努力を避けてください。火のエネルギーは落ち着きのなさやストレスを引き起こす可能性があります。定期的な運動ルーチンを維持しますが、十分な休息を確保してください。ストレス管理に注意を払い、完璧主義関連の不安を避けてください。</p>
+          </div>
+
+          <div class="bg-gradient-to-r from-amber-500/20 to-yellow-500/20 border border-amber-500/30 rounded-lg p-6">
+            <p class="text-mystic-200 leading-relaxed"><strong class="text-amber-400">まとめ：</strong> 2026年は、組織と自信を通じて鶏に機会をもたらします。あなたの自然な完璧主義を柔軟性と理解でバランスさせてください。あなたの組織能力と細部への注意は資産ですが、忍耐を実践し、過度に批判的になることを避けてください。着実な進歩と調和の取れた関係の維持に焦点を当ててください。</p>
+          </div>
+        </div>
+      `,
+        ko: `
+        <div class="space-y-8">
+          <div class="mb-8">
+            <div class="bg-gradient-to-r from-amber-500/20 to-yellow-500/20 border border-amber-500/30 rounded-lg p-6 mb-8">
+              <h3 class="text-lg font-semibold text-amber-400 mb-3">🐓 2026년 병오년 닭 개요</h3>
+              <ul class="text-mystic-200 space-y-2">
+                <li>• <strong>년의 요소：</strong> 병화（천간）+ 오화（지지）= 화가 풍부한 해</li>
+                <li>• <strong>태세 관계：</strong> 중립 - 혼합 기회</li>
+                <li>• <strong>주요 이점：</strong> 자신감과 조직 능력</li>
+                <li>• <strong>전체 운세：</strong> 신중한 관리와 함께하는 기회</li>
+                <li>• <strong>연간 테마：</strong> 조직, 자신감, 균형 잡힌 접근</li>
+              </ul>
+            </div>
+          </div>
+
+          <p class="mb-6 text-lg text-mystic-200 leading-relaxed">
+            2026년은 병오마년으로, 화 에너지가 풍부한 해입니다. 유년（닭）생 사람들에게는, 올해 기회와 도전을 모두 가져옵니다. 당신의 자연스러운 자신감, 조직 능력, 세부 사항에 대한 주의는 귀중한 자산입니다. 그러나 화 에너지는 당신의 비판적이거나 완벽주의적 성향을 증폭시킬 수 있으므로, 균형이 열쇠입니다.
+          </p>
+
+          <h2 class="text-2xl font-bold text-white mb-4 mt-8">직업 운세：조직과 리더십</h2>
+          <div class="space-y-4 mb-6">
+            <div class="bg-gradient-to-r from-blue-500/10 to-cyan-500/10 border border-blue-500/20 rounded-lg p-4">
+              <h4 class="text-lg font-semibold text-blue-400 mb-2">💼 기회</h4>
+              <p class="text-mystic-200 leading-relaxed">당신의 조직 능력과 세부 사항에 대한 주의가 높이 평가될 것입니다. 관리, 계획, 품질 관리, 또는 정밀함이 필요한 분야에서의 기회가 유리합니다. 화 에너지는 당신의 자신감과 리더십 잠재력을 지원합니다.</p>
+            </div>
+            <div class="bg-gradient-to-r from-yellow-500/10 to-amber-500/10 border border-yellow-500/20 rounded-lg p-4">
+              <h4 class="text-lg font-semibold text-yellow-400 mb-2">⚠️ 도전</h4>
+              <p class="text-mystic-200 leading-relaxed">화 에너지는 당신을 과도하게 비판적이거나 완벽주의적으로 만들 수 있습니다. 자신이나 다른 사람에게 너무 엄격해지는 것을 피하세요. 높은 기준을 유연성과 이해로 균형시키세요. 직장 관계는 특별한 주의가 필요할 수 있습니다.</p>
+            </div>
+            <div class="bg-mystic-800/50 rounded-lg p-4">
+              <h4 class="text-lg font-semibold text-gold-400 mb-2">💡 직업 조언</h4>
+              <p class="text-mystic-200 leading-relaxed">당신의 조직 능력과 세부 사항에 대한 주의를 사용하여 뛰어나세요. 그러나 유연성을 실천하고 과도하게 비판적이 되는 것을 피하세요. 당신의 자신감은 자산이지만, 겸손과 팀워크로 균형시키세요.</p>
+            </div>
+          </div>
+
+          <h2 class="text-2xl font-bold text-white mb-4 mt-8">재운 추세：신중한 계획, 꾸준한 성장</h2>
+          <div class="bg-mystic-800/50 rounded-lg p-4 mb-6">
+            <p class="text-mystic-200 leading-relaxed">당신의 자연스러운 재정 계획 능력이 당신을 잘 도울 것입니다. 빠른 이익보다는 신중한 예산 편성과 꾸준한 투자에 집중하세요. 화 에너지는 조직적인 노력을 통한 부의 축적을 지원하지만, 너무 보수적이 되는 것을 피하세요—적당한 위험은 보상을 가져올 수 있습니다.</p>
+          </div>
+
+          <h2 class="text-2xl font-bold text-white mb-4 mt-8">관계：자신감과 감수성의 균형</h2>
+          <div class="space-y-4 mb-6">
+            <div class="bg-gradient-to-r from-pink-500/10 to-purple-500/10 border border-pink-500/20 rounded-lg p-4">
+              <h4 class="text-lg font-semibold text-pink-400 mb-2">💕 관계</h4>
+              <p class="text-mystic-200 leading-relaxed">당신의 자신감과 매력이 다른 사람들을 끌어들이지만, 관계에서 과도하게 비판적이거나 완벽주의적이 되는 것에 주의하세요. 이해와 유연성을 실천하세요. 독신자에게는, 기회가 존재하지만, 이상적인 기대보다는 진정한 연결에 집중하세요. 교제 중인 사람들에게는, 소통과 타협이 유대를 강화합니다.</p>
+            </div>
+          </div>
+
+          <h2 class="text-2xl font-bold text-white mb-4 mt-8">건강：활동과 휴식의 균형</h2>
+          <div class="bg-mystic-800/50 rounded-lg p-4 mb-6">
+            <p class="text-mystic-200 leading-relaxed">당신의 자연스러운 에너지와 활동 수준은 자산이지만, 과로를 피하세요. 화 에너지는 불안이나 스트레스를 일으킬 수 있습니다. 정기적인 운동 루틴을 유지하되 충분한 휴식을 보장하세요. 스트레스 관리에 주의를 기울이고 완벽주의 관련 불안을 피하세요.</p>
+          </div>
+
+          <div class="bg-gradient-to-r from-amber-500/20 to-yellow-500/20 border border-amber-500/30 rounded-lg p-6">
+            <p class="text-mystic-200 leading-relaxed"><strong class="text-amber-400">요약：</strong> 2026년은 조직과 자신감을 통해 닭에게 기회를 가져옵니다. 당신의 자연스러운 완벽주의를 유연성과 이해로 균형시키세요. 당신의 조직 능력과 세부 사항에 대한 주의는 자산이지만, 인내를 실천하고 과도하게 비판적이 되는 것을 피하세요. 꾸준한 진행과 조화로운 관계 유지에 집중하세요.</p>
+          </div>
+        </div>
+      `
+      },
       author: "Master Chen",
       date: "2025-12-23",
       readTime: "8 min read",
