@@ -7846,9 +7846,18 @@ export const blogPostsData = {
       ]
     },
     "dragon-year-2024-fortune-forecast": {
-      title: "The Dragon Year 2024: Fortune Forecast",
-      excerpt: "Navigate the powerful Year of the Dragon with expert insights into what this auspicious year holds for your career, love life, health, and financial prosperity.",
-      content: `
+      title: {
+        en: "The Dragon Year 2024: Fortune Forecast",
+        ja: "2024年辰年：運勢予測",
+        ko: "2024년 용의 해：운세 예측"
+      },
+      excerpt: {
+        en: "Navigate the powerful Year of the Dragon with expert insights into what this auspicious year holds for your career, love life, health, and financial prosperity.",
+        ja: "専門家の洞察により、強力な辰年があなたのキャリア、恋愛、健康、そして経済的繁栄に何をもたらすかを探ります。",
+        ko: "전문가의 통찰력으로 강력한 용의 해가 당신의 직업, 연애, 건강, 그리고 재정적 번영에 무엇을 가져다줄지 탐색하세요."
+      },
+      content: {
+        en: `
         <p class="mb-6 text-lg text-mystic-200 leading-relaxed">
           The Year of the Dragon 2024 brings powerful energy that will influence every aspect of 
           your life. As one of the most auspicious years in the Chinese zodiac, 2024 offers 
@@ -7911,6 +7920,97 @@ export const blogPostsData = {
           and growth - embrace the Dragon's energy and let it guide you to success.
         </p>
       `,
+        ja: `
+        <p class="mb-6 text-lg text-mystic-200 leading-relaxed">
+          2024年の辰年は、あなたの人生のあらゆる側面に影響を与える強力なエネルギーをもたらします。中国の十二支の中で最も縁起の良い年の一つとして、2024年は成長、成功、変革のための素晴らしい機会を提供します。
+        </p>
+        
+        <h2 class="text-2xl font-bold text-white mb-4 mt-8">龍のエネルギー</h2>
+        <p class="mb-6 text-mystic-200 leading-relaxed">
+          龍は陽のエネルギー、力、そして幸運を表します。この年は大胆なエネルギー、急速な変化、そして重要な突破口の可能性によって特徴づけられます。勇気を持ち、計算されたリスクを取る時です。
+        </p>
+        
+        <h2 class="text-2xl font-bold text-white mb-4 mt-8">キャリアとビジネスの機会</h2>
+        <p class="mb-6 text-mystic-200 leading-relaxed">
+          辰年はキャリアの向上とビジネスの成長に最適です。キャリアチェンジや新しい事業の開始を検討している場合、2024年は成功に必要なエネルギーとサポートを提供します。リーダーシップの機会が豊富になります。
+        </p>
+        
+        <h2 class="text-2xl font-bold text-white mb-4 mt-8">経済的繁栄</h2>
+        <p class="mb-6 text-mystic-200 leading-relaxed">
+          辰年は富の蓄積に有利です。これは投資、特に革新的で技術主導のセクターへの投資に最適な時期です。ただし、龍の過剰への傾向に注意してください - 節度が重要です。
+        </p>
+        
+        <h2 class="text-2xl font-bold text-white mb-4 mt-8">恋愛と人間関係</h2>
+        <p class="mb-6 text-mystic-200 leading-relaxed">
+          辰年は人間関係に情熱と興奮をもたらします。独身の人は恋を見つけることができ、既存の関係は新たな情熱を経験することができます。ただし、龍の激しいエネルギーは対立を生み出すこともあります - 忍耐とコミュニケーションが不可欠です。
+        </p>
+        
+        <h2 class="text-2xl font-bold text-white mb-4 mt-8">健康とウェルネス</h2>
+        <p class="mb-6 text-mystic-200 leading-relaxed">
+          龍のエネルギーは身体的な活力と精神的な明晰さをサポートします。これは新しい健康習慣を始めたり、健康上の課題を克服したりするのに最適な年です。龍の陽エネルギーは特に心血管の健康と精神的な集中に有益です。
+        </p>
+        
+        <h2 class="text-2xl font-bold text-white mb-4 mt-8">自己啓発</h2>
+        <p class="mb-6 text-mystic-200 leading-relaxed">
+          辰年は自己改善と学習が非常に有利です。これは新しいスキルを習得し、教育を追求し、才能を開発するのに最適な時期です。龍のエネルギーは急速な学習とスキル開発をサポートします。
+        </p>
+        
+        <h2 class="text-2xl font-bold text-white mb-4 mt-8">課題と注意事項</h2>
+        <p class="mb-6 text-mystic-200 leading-relaxed">
+          辰年は多くの機会をもたらしますが、課題も提示します。龍のエネルギーは圧倒的になり、燃え尽きや衝動的な決定につながる可能性があります。バランスとマインドフルネスは、この強力な年を成功裏に乗り切るために重要です。
+        </p>
+        
+        <h2 class="text-2xl font-bold text-white mb-4 mt-8">2024年を最大限に活用する</h2>
+        <p class="mb-6 text-mystic-200 leading-relaxed">
+          辰年の利益を最大化するには、目標に集中し、人生のすべての領域でバランスを保ち、新しい機会にオープンでいることです。これは変革と成長の年です - 龍のエネルギーを受け入れ、それがあなたを成功へと導くようにしましょう。
+        </p>
+      `,
+        ko: `
+        <p class="mb-6 text-lg text-mystic-200 leading-relaxed">
+          2024년 용의 해는 당신의 삶의 모든 측면에 영향을 미치는 강력한 에너지를 가져옵니다. 중국 12지 중 가장 길한 해 중 하나인 2024년은 성장, 성공, 변화를 위한 엄청난 기회를 제공합니다.
+        </p>
+        
+        <h2 class="text-2xl font-bold text-white mb-4 mt-8">용의 에너지</h2>
+        <p class="mb-6 text-mystic-200 leading-relaxed">
+          용은 양 에너지, 힘, 그리고 행운을 나타냅니다. 이 해는 대담한 에너지, 급격한 변화, 그리고 중요한 돌파구의 잠재력으로 특징지어질 것입니다. 용감하고 계산된 위험을 감수할 때입니다.
+        </p>
+        
+        <h2 class="text-2xl font-bold text-white mb-4 mt-8">직업과 사업 기회</h2>
+        <p class="mb-6 text-mystic-200 leading-relaxed">
+          용의 해는 직업 발전과 사업 성장에 탁월합니다. 직업 변경이나 새로운 사업을 시작하는 것을 고려하고 있다면, 2024년은 성공에 필요한 에너지와 지원을 제공합니다. 리더십 기회가 풍부할 것입니다.
+        </p>
+        
+        <h2 class="text-2xl font-bold text-white mb-4 mt-8">재정적 번영</h2>
+        <p class="mb-6 text-mystic-200 leading-relaxed">
+          용의 해 동안 부의 축적이 유리합니다. 이것은 투자, 특히 혁신적이고 기술 주도적인 부문에 투자하기에 훌륭한 시기입니다. 그러나 용의 과도함에 대한 경향을 주의하세요 - 절제가 핵심입니다.
+        </p>
+        
+        <h2 class="text-2xl font-bold text-white mb-4 mt-8">사랑과 관계</h2>
+        <p class="mb-6 text-mystic-200 leading-relaxed">
+          용의 해는 관계에 열정과 흥미진진함을 가져옵니다. 독신인 사람들은 사랑을 찾을 수 있고, 기존 관계는 새로운 열정을 경험할 수 있습니다. 그러나 용의 불타는 에너지는 갈등을 만들 수도 있습니다 - 인내와 소통이 필수적입니다.
+        </p>
+        
+        <h2 class="text-2xl font-bold text-white mb-4 mt-8">건강과 웰니스</h2>
+        <p class="mb-6 text-mystic-200 leading-relaxed">
+          용의 에너지는 신체적 활력과 정신적 명확성을 지원합니다. 이것은 새로운 건강 루틴을 시작하거나 건강 문제를 극복하기에 훌륭한 해입니다. 용의 양 에너지는 특히 심혈관 건강과 정신적 집중에 유익합니다.
+        </p>
+        
+        <h2 class="text-2xl font-bold text-white mb-4 mt-8">자기계발</h2>
+        <p class="mb-6 text-mystic-200 leading-relaxed">
+          자기 개선과 학습은 용의 해 동안 매우 유리합니다. 이것은 새로운 기술을 습득하고, 교육을 추구하고, 재능을 개발하기에 완벽한 시기입니다. 용의 에너지는 빠른 학습과 기술 개발을 지원합니다.
+        </p>
+        
+        <h2 class="text-2xl font-bold text-white mb-4 mt-8">도전과 주의사항</h2>
+        <p class="mb-6 text-mystic-200 leading-relaxed">
+          용의 해는 많은 기회를 가져오지만, 도전도 제시합니다. 용의 에너지는 압도적일 수 있어, 번아웃이나 충동적인 결정으로 이어질 수 있습니다. 균형과 마음챙김은 이 강력한 해를 성공적으로 탐색하는 데 중요합니다.
+        </p>
+        
+        <h2 class="text-2xl font-bold text-white mb-4 mt-8">2024년을 최대한 활용하기</h2>
+        <p class="mb-6 text-mystic-200 leading-relaxed">
+          용의 해의 이점을 극대화하려면, 목표에 집중하고, 삶의 모든 영역에서 균형을 유지하며, 새로운 기회에 열려있으세요. 이것은 변화와 성장의 해입니다 - 용의 에너지를 받아들이고 그것이 당신을 성공으로 인도하도록 하세요.
+        </p>
+      `
+      },
       author: "Master Chen",
       date: "2023-12-25",
       readTime: "6 min read",
