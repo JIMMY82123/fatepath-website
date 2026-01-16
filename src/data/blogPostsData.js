@@ -9159,9 +9159,18 @@ export const blogPostsData = {
       ]
     },
     "2026-bing-wu-year-zodiac-rat-fortune-prediction": {
-      title: "2026 Bing Wu Year: Zodiac Rat Fortune Prediction",
-      excerpt: "2026 is the lunar Bing Wu Year, a year of abundant fire. The Zodiac Rat forms a 'Zi-Wu Clash' with Tai Sui, making it a year of significant transformations, challenges, and opportunities. Discover detailed fortune guidance for career, wealth, relationships, and health.",
-      content: `
+      title: {
+        en: "2026 Bing Wu Year: Zodiac Rat Fortune Prediction",
+        ja: "2026年丙午年：子年（鼠）の運勢予測",
+        ko: "2026년 병오년：자년（쥐）운세 예측"
+      },
+      excerpt: {
+        en: "2026 is the lunar Bing Wu Year, a year of abundant fire. The Zodiac Rat forms a 'Zi-Wu Clash' with Tai Sui, making it a year of significant transformations, challenges, and opportunities. Discover detailed fortune guidance for career, wealth, relationships, and health.",
+        ja: "2026年は丙午年で、火が豊富な年です。子年（鼠）は太歳と「子午衝」を形成し、重要な変革、課題、機会の年となります。キャリア、財運、人間関係、健康に関する詳細な運勢ガイダンスを発見してください。",
+        ko: "2026년은 병오년으로, 화가 풍부한 해입니다. 자년（쥐）은 태세와 '자오충'을 형성하여, 중요한 변화, 도전, 기회의 해가 됩니다. 직업, 재운, 관계, 건강에 대한 상세한 운세 가이드를 발견하세요."
+      },
+      content: {
+        en: `
         <div class="space-y-8">
           <div class="mb-8">
             <div class="bg-gradient-to-r from-red-500/20 to-orange-500/20 border border-red-500/30 rounded-lg p-6 mb-8">
@@ -9410,6 +9419,505 @@ export const blogPostsData = {
           </div>
         </div>
       `,
+        ja: `
+        <div class="space-y-8">
+          <div class="mb-8">
+            <div class="bg-gradient-to-r from-red-500/20 to-orange-500/20 border border-red-500/30 rounded-lg p-6 mb-8">
+              <h3 class="text-lg font-semibold text-red-400 mb-3">🔥 2026年丙午年概要</h3>
+              <ul class="text-mystic-200 space-y-2">
+                <li>• <strong>年の要素：</strong> 丙火（天干）+ 午火（地支）= 火が豊富な年</li>
+                <li>• <strong>太歳関係：</strong> 子午衝（太歳と衝突）</li>
+                <li>• <strong>主要な星：</strong> 天解（天の解決）- 不幸を幸運に変える</li>
+                <li>• <strong>主要な課題：</strong> 歳破と大耗</li>
+                <li>• <strong>年間テーマ：</strong> 変革、変化、積極的な適応</li>
+              </ul>
+            </div>
+          </div>
+
+          <p class="mb-6 text-lg text-mystic-200 leading-relaxed">
+            2026年は丙午年で、天干が丙火、地支が午火で、「火が豊富な年」となります。子年（子）は年の太歳（午）と「子午衝」を形成し、「太歳と衝突」として知られています。これは、その年の運気の変動が最も大きい十二支の一つとなります。
+          </p>
+          <p class="mb-6 text-mystic-200 leading-relaxed">
+            「衝突」は動き、変化、衝突を意味します。これは、子年生まれの人にとって、2026年が変革、課題、機会が共存する年になることを予告しています。人生の様々な側面が転換点を経験する可能性があり、引っ越し、人事異動など、柔軟性、積極的な適応、変化を受け入れる意欲が必要です。
+          </p>
+
+          <h2 class="text-2xl font-bold text-white mb-4 mt-8">I. 全体的な核心運勢概要</h2>
+          
+          <div class="space-y-4 mb-6">
+            <div class="bg-gradient-to-r from-red-500/10 to-orange-500/10 border border-red-500/20 rounded-lg p-4">
+              <h3 class="text-lg font-semibold text-red-400 mb-2">⚔️ 太歳関係：太歳と衝突</h3>
+              <p class="text-mystic-200 leading-relaxed">
+                基礎運勢が乱され、一年を通じて不安定さの中で着実な進歩が必要です。子午衝突は、柔軟性と適応性を要求する動的なエネルギーを作り出します。
+              </p>
+            </div>
+
+            <div class="bg-gradient-to-r from-green-500/10 to-emerald-500/10 border border-green-500/20 rounded-lg p-4">
+              <h3 class="text-lg font-semibold text-green-400 mb-2">⭐ 有益な星：天解（天の解決）</h3>
+              <p class="text-mystic-200 leading-relaxed">
+                「天解」星が運命宮に入ります。これは不幸を幸運に変える救済の星で、しばしば重要な瞬間に突破口と解決を提供します。困難な時期に保護力として機能します。
+              </p>
+            </div>
+
+            <div class="bg-gradient-to-r from-yellow-500/10 to-amber-500/10 border border-yellow-500/20 rounded-lg p-4">
+              <h3 class="text-lg font-semibold text-yellow-400 mb-2">⚠️ 主要な課題</h3>
+              <p class="text-mystic-200 leading-relaxed mb-2">
+                「歳破」（年の破壊者）や「大耗」（大消費）などの悪星の影響により、特別な注意が必要です：
+              </p>
+              <ul class="list-disc list-inside text-mystic-200 space-y-1">
+                <li>金銭的損失と予期しない大きな支出</li>
+                <li>対人関係の衝突と関係の緊張</li>
+                <li>健康問題、特に心臓と心血管の懸念</li>
+                <li>協力の混乱と契約の修正</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="bg-amber-500/10 border border-amber-500/30 rounded-lg p-4 mb-6">
+            <p class="text-mystic-200 leading-relaxed">
+              <strong class="text-amber-400">年間キーワード：</strong> 積極的な適応、硬直を克服するための譲歩、慎重な財務管理、健康維持。
+            </p>
+          </div>
+
+          <h2 class="text-2xl font-bold text-white mb-4 mt-8">II. 生活領域別の詳細な運勢分析</h2>
+
+          <h3 class="text-xl font-semibold text-white mb-4 mt-6">1. キャリア運勢：変動の中で機会を求める、口論に注意</h3>
+          
+          <div class="space-y-4 mb-6">
+            <div class="bg-gradient-to-r from-blue-500/10 to-cyan-500/10 border border-blue-500/20 rounded-lg p-4">
+              <h4 class="text-lg font-semibold text-blue-400 mb-2">💼 機会</h4>
+              <p class="text-mystic-200 leading-relaxed mb-2">
+                「衝突」はまた、開口部を表します。今年は以下をもたらす可能性があります：
+              </p>
+              <ul class="list-disc list-inside text-mystic-200 space-y-1">
+                <li>転職とポジション変更</li>
+                <li>新しいプロジェクトの責任</li>
+                <li>起業のチャンスとビジネス機会</li>
+                <li>変化を求める人々の突破口</li>
+              </ul>
+              <p class="text-mystic-200 leading-relaxed mt-2">
+                「天解」星は、難しいプロジェクトで解決策を見つけるのに役立ち、上司からの認識を得ることができます。
+              </p>
+            </div>
+
+            <div class="bg-gradient-to-r from-red-500/10 to-pink-500/10 border border-red-500/20 rounded-lg p-4">
+              <h4 class="text-lg font-semibold text-red-400 mb-2">⚠️ 課題</h4>
+              <ul class="list-disc list-inside text-mystic-200 space-y-1">
+                <li>異なる立場やアイデアによる同僚、クライアント、パートナーとの衝突</li>
+                <li>裏話と対人関係の緊張</li>
+                <li>外部の力に左右される決定、修正を引き起こす</li>
+                <li>重要なプロジェクトのための複数の緊急事態の必要性</li>
+              </ul>
+            </div>
+
+            <div class="bg-mystic-800/50 rounded-lg p-4">
+              <h4 class="text-lg font-semibold text-gold-400 mb-2">💡 キャリアアドバイス</h4>
+              <ul class="list-disc list-inside text-mystic-200 space-y-1">
+                <li>受動性から積極性へシフト—海外の任務に自発的に参加するか、新しいスキルを学ぶ</li>
+                <li>注意深くコミュニケーションを取り、直接的な対立を避ける</li>
+                <li>署名前に契約を徹底的に確認する</li>
+                <li>攻撃的な人事紛争を避け、代わりに核心事業に焦点を当てる</li>
+              </ul>
+            </div>
+          </div>
+
+          <h3 class="text-xl font-semibold text-white mb-4 mt-6">2. 財運：不安定な主収入、明らかな損失</h3>
+          
+          <div class="space-y-4 mb-6">
+            <div class="bg-gradient-to-r from-green-500/10 to-emerald-500/10 border border-green-500/20 rounded-lg p-4">
+              <h4 class="text-lg font-semibold text-green-400 mb-2">💰 主財運</h4>
+              <p class="text-mystic-200 leading-relaxed">
+                キャリアの変化により収入が変動する可能性があり、特に歩合給の人々にとって、大きな上下があります。財運は専門スキルと勤勉な努力を通じて獲得する必要があります。
+              </p>
+            </div>
+
+            <div class="bg-gradient-to-r from-red-500/10 to-orange-500/10 border border-red-500/20 rounded-lg p-4">
+              <h4 class="text-lg font-semibold text-red-400 mb-2">📉 副財運</h4>
+              <p class="text-mystic-200 leading-relaxed">
+                非常に不利です。投資と投機には極度の注意を払い、噂や高リスクの事業に基づいて行動しないでください。「太歳衝突」に関連する業界（例：運輸、電気、インターネット）は非常に不安定で、一般の人には難しいでしょう。
+              </p>
+            </div>
+
+            <div class="bg-gradient-to-r from-yellow-500/10 to-amber-500/10 border border-yellow-500/20 rounded-lg p-4">
+              <h4 class="text-lg font-semibold text-yellow-400 mb-2">💸 財運損失</h4>
+              <p class="text-mystic-200 leading-relaxed">
+                「大耗」星が消費を支配し、修理、補償、医療費、家族関連の支出など、予期しない大きな支出をもたらします。事前に財務を計画し、緊急資金を確保してください。
+              </p>
+            </div>
+
+            <div class="bg-mystic-800/50 rounded-lg p-4">
+              <h4 class="text-lg font-semibold text-gold-400 mb-2">💡 財務アドバイス</h4>
+              <ul class="list-disc list-inside text-mystic-200 space-y-1">
+                <li>追求よりも財産保全を優先する</li>
+                <li>不要な投資と支出を削減する</li>
+                <li>自己改善（コース、資格、健康管理）に資金を振り向けることを検討する</li>
+                <li>ローンや保証を避ける</li>
+              </ul>
+            </div>
+          </div>
+
+          <h3 class="text-xl font-semibold text-white mb-4 mt-6">3. 関係運勢：混乱に陥りやすく、頻繁な別離</h3>
+          
+          <div class="space-y-4 mb-6">
+            <div class="bg-gradient-to-r from-pink-500/10 to-purple-500/10 border border-pink-500/20 rounded-lg p-4">
+              <h4 class="text-lg font-semibold text-pink-400 mb-2">💕 独身者</h4>
+              <p class="text-mystic-200 leading-relaxed">
+                ロマンチックな出会いがあるかもしれませんが、しばしば一時的な浮気や短命の情熱で、衝動的に始まり、些細な問題で終わります。旅行や出張中に会った興味のある対象は慎重に評価する必要があります。
+              </p>
+            </div>
+
+            <div class="bg-gradient-to-r from-red-500/10 to-pink-500/10 border border-red-500/20 rounded-lg p-4">
+              <h4 class="text-lg font-semibold text-red-400 mb-2">💑 交際中/既婚</h4>
+              <p class="text-mystic-200 leading-relaxed">
+                愛の試練の年です。カップルは些細なことで口論したり、仕事の変化により一緒に過ごす時間が減り、距離が生まれる可能性があります。「衝突」は関係を新しい段階（例：結婚）に押し上げるか、終わりに向かわせる可能性があります。コミュニケーションと同伴が不可欠です。
+              </p>
+            </div>
+
+            <div class="bg-mystic-800/50 rounded-lg p-4">
+              <h4 class="text-lg font-semibold text-gold-400 mb-2">💡 関係アドバイス</h4>
+              <ul class="list-disc list-inside text-mystic-200 space-y-1">
+                <li>細かいことを指摘するよりも寛容を受け入れる</li>
+                <li>短い旅行や意味のある場所を再訪して火花を再燃させる</li>
+                <li>関係に新鮮さを注入する</li>
+                <li>反省の後に冷静に重要な決定を下す</li>
+              </ul>
+            </div>
+          </div>
+
+          <h3 class="text-xl font-semibold text-white mb-4 mt-6">4. 健康運勢：ストレス誘発性疾患、心臓、脳、旅行の安全に焦点</h3>
+          
+          <div class="space-y-4 mb-6">
+            <div class="bg-gradient-to-r from-red-500/10 to-orange-500/10 border border-red-500/20 rounded-lg p-4">
+              <h4 class="text-lg font-semibold text-red-400 mb-2">🏥 主要な問題</h4>
+              <p class="text-mystic-200 leading-relaxed mb-2">
+                子午衝突は以下に特別な警戒を要求します：
+              </p>
+              <ul class="list-disc list-inside text-mystic-200 space-y-1">
+                <li>心臓、血圧、心血管の問題</li>
+                <li>熱性、炎症、不眠症、不安（火が豊富な年のため）</li>
+                <li>顕著な感情の揺れを伴う精神的ストレス</li>
+              </ul>
+            </div>
+
+            <div class="bg-gradient-to-r from-yellow-500/10 to-amber-500/10 border border-yellow-500/20 rounded-lg p-4">
+              <h4 class="text-lg font-semibold text-yellow-400 mb-2">⚠️ 安全リスク</h4>
+              <p class="text-mystic-200 leading-relaxed">
+                「太歳衝突」の年では、交通安全と事故防止を優先します。運転者は規則を遵守し、道路の怒りを避ける必要があります。外出や旅行中は注意を払ってください。
+              </p>
+            </div>
+
+            <div class="bg-mystic-800/50 rounded-lg p-4">
+              <h4 class="text-lg font-semibold text-gold-400 mb-2">💡 健康アドバイス</h4>
+              <ul class="list-disc list-inside text-mystic-200 space-y-1">
+                <li>定期的な健康診断をスケジュールし、特に心臓の健康のために</li>
+                <li>瞑想、静座、ヨガなどの習慣を養い、ストレスを和らげる</li>
+                <li>夜更かしや過度の飲酒を避ける</li>
+                <li>旧暦5月（午月）と11月（子月）に特に注意する</li>
+              </ul>
+            </div>
+          </div>
+
+          <h2 class="text-2xl font-bold text-white mb-4 mt-8">III. 2026年運勢向上と解決アドバイス</h2>
+          <p class="mb-6 text-mystic-200 leading-relaxed">
+            「太歳衝突」の年では、調整の焦点は「安定化」と「解決」にあります。
+          </p>
+
+          <h3 class="text-xl font-semibold text-white mb-4 mt-6">1. マインドセット第一：流れに従う</h3>
+          <div class="bg-gradient-to-r from-blue-500/10 to-cyan-500/10 border border-blue-500/20 rounded-lg p-4 mb-6">
+            <ul class="list-disc list-inside text-mystic-200 space-y-2">
+              <li>「変化」を年のテーマとして受け入れる—変革に抵抗しない；それらを自己更新の機会として見る。</li>
+              <li>危機の中で冷静を保ち、第三者の支援や調停を求める（「天解」星を象徴）；衝動的な決定を避ける。</li>
+            </ul>
+          </div>
+
+          <h3 class="text-xl font-semibold text-white mb-4 mt-6">2. 環境調整（風水レベル）</h3>
+          <div class="space-y-4 mb-6">
+            <div class="bg-gradient-to-r from-green-500/10 to-emerald-500/10 border border-green-500/20 rounded-lg p-4">
+              <h4 class="text-lg font-semibold text-green-400 mb-2">🧭 方向ガイドライン</h4>
+              <p class="text-mystic-200 leading-relaxed mb-2">
+                歳破の方向は真北（子セクター）で、太歳の方向は真南（午セクター）です。2026年では：
+              </p>
+              <ul class="list-disc list-inside text-mystic-200 space-y-1">
+                <li>家とオフィスの真北と真南のエリアを絶対に清潔で静かに保つ</li>
+                <li>これらの方向での改築、掘削、土壌の乱れを避ける</li>
+                <li>そこに赤いアイテムや電気器具を置かない</li>
+              </ul>
+            </div>
+
+            <div class="bg-gradient-to-r from-blue-500/10 to-cyan-500/10 border border-blue-500/20 rounded-lg p-4">
+              <h4 class="text-lg font-semibold text-blue-400 mb-2">💧 水要素の治療</h4>
+              <p class="text-mystic-200 leading-relaxed">
+                家やオフィスの真北セクター（歳破）に新鮮な水のカップを置き、定期的に交換します。水の柔らかさを使用して火の衝突に対抗し、エネルギー場を安定させるのに役立ちます。
+              </p>
+            </div>
+          </div>
+
+          <h3 class="text-xl font-semibold text-white mb-4 mt-6">3. 対人関係と意思決定のアドバイス</h3>
+          <div class="bg-mystic-800/50 rounded-lg p-4 mb-6">
+            <ul class="list-disc list-inside text-mystic-200 space-y-2">
+              <li><strong>より多く与え、より少なく恨む：</strong> 慈善寄付に従事するか、困っている人々を助けて、財運損失に対抗し、功績を蓄積します。</li>
+              <li><strong>主要な月を避ける：</strong> 旧暦5月（午月）と11月（子月）での重要な投資、契約、または仕事の変更を避けます。</li>
+              <li><strong>孝行を尊重して基盤を安定させる：</strong> 両親と高齢者の健康により注意を払う；家族の調和は外部の衝撃に対する基盤です。</li>
+            </ul>
+          </div>
+
+          <div class="bg-gradient-to-r from-amber-500/20 to-yellow-500/20 border border-amber-500/30 rounded-lg p-6 mt-8">
+            <h3 class="text-xl font-semibold text-amber-400 mb-3">✨ まとめ</h3>
+            <p class="text-mystic-200 leading-relaxed">
+              2026年は子年生まれの人にとって重要な変革の年です。子午衝突は課題と不安定性をもたらしますが、天解星は解決と突破口の機会を提供します。変化を受け入れ、柔軟性を維持し、向上アドバイスに従うことで、この動的な年を成功裏に乗り切り、課題を成長の機会に変えることができます。
+            </p>
+          </div>
+        </div>
+      `,
+        ko: `
+        <div class="space-y-8">
+          <div class="mb-8">
+            <div class="bg-gradient-to-r from-red-500/20 to-orange-500/20 border border-red-500/30 rounded-lg p-6 mb-8">
+              <h3 class="text-lg font-semibold text-red-400 mb-3">🔥 2026년 병오년 개요</h3>
+              <ul class="text-mystic-200 space-y-2">
+                <li>• <strong>년의 요소：</strong> 병화（천간）+ 오화（지지）= 화가 풍부한 해</li>
+                <li>• <strong>태세 관계：</strong> 자오충（태세와 충돌）</li>
+                <li>• <strong>주요 별：</strong> 천해（천의 해결）- 불운을 행운으로 바꾼다</li>
+                <li>• <strong>주요 도전：</strong> 세파와 대모</li>
+                <li>• <strong>연간 테마：</strong> 변화, 변화, 적극적인 적응</li>
+              </ul>
+            </div>
+          </div>
+
+          <p class="mb-6 text-lg text-mystic-200 leading-relaxed">
+            2026년은 병오년으로, 천간이 병화, 지지가 오화로 "화가 풍부한 해"입니다. 자년（자）은 연의 태세（오）와 "자오충"을 형성하며, "태세와 충돌"로 알려져 있습니다. 이것은 그 해 운의 변동이 가장 큰 십이지 중 하나입니다.
+          </p>
+          <p class="mb-6 text-mystic-200 leading-relaxed">
+            "충돌"은 움직임, 변화, 충돌을 의미합니다. 이것은 자년생 사람들에게 2026년이 변화, 도전, 기회가 공존하는 해가 될 것임을 예고합니다. 인생의 다양한 측면이 전환점을 경험할 수 있으며, 이사, 인사 변경 등, 유연성, 적극적인 적응, 변화를 받아들이는 의지가 필요합니다.
+          </p>
+
+          <h2 class="text-2xl font-bold text-white mb-4 mt-8">I. 전체적인 핵심 운세 개요</h2>
+          
+          <div class="space-y-4 mb-6">
+            <div class="bg-gradient-to-r from-red-500/10 to-orange-500/10 border border-red-500/20 rounded-lg p-4">
+              <h3 class="text-lg font-semibold text-red-400 mb-2">⚔️ 태세 관계：태세와 충돌</h3>
+              <p class="text-mystic-200 leading-relaxed">
+                기초 운세가 방해받아, 일년 내내 불안정함 속에서 꾸준한 진행이 필요합니다. 자오 충돌은 유연성과 적응성을 요구하는 역동적인 에너지를 만듭니다.
+              </p>
+            </div>
+
+            <div class="bg-gradient-to-r from-green-500/10 to-emerald-500/10 border border-green-500/20 rounded-lg p-4">
+              <h3 class="text-lg font-semibold text-green-400 mb-2">⭐ 유익한 별：천해（천의 해결）</h3>
+              <p class="text-mystic-200 leading-relaxed">
+                "천해" 별이 운명궁에 들어갑니다. 이것은 불운을 행운으로 바꾸는 구원의 별로, 종종 중요한 순간에 돌파구와 해결을 제공합니다. 도전적인 시기에 보호력으로 작용합니다.
+              </p>
+            </div>
+
+            <div class="bg-gradient-to-r from-yellow-500/10 to-amber-500/10 border border-yellow-500/20 rounded-lg p-4">
+              <h3 class="text-lg font-semibold text-yellow-400 mb-2">⚠️ 주요 도전</h3>
+              <p class="text-mystic-200 leading-relaxed mb-2">
+                "세파"（년의 파괴자）와 "대모"（대소비）와 같은 악성 별의 영향을 받아, 특별한 주의가 필요합니다：
+              </p>
+              <ul class="list-disc list-inside text-mystic-200 space-y-1">
+                <li>금전적 손실과 예상치 못한 큰 지출</li>
+                <li>대인 관계 충돌과 관계의 긴장</li>
+                <li>건강 문제, 특히 심장과 심혈관 우려</li>
+                <li>협력의 혼란과 계약 수정</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="bg-amber-500/10 border border-amber-500/30 rounded-lg p-4 mb-6">
+            <p class="text-mystic-200 leading-relaxed">
+              <strong class="text-amber-400">연간 키워드：</strong> 적극적인 적응, 경직을 극복하기 위한 양보, 신중한 재정 관리, 건강 유지.
+            </p>
+          </div>
+
+          <h2 class="text-2xl font-bold text-white mb-4 mt-8">II. 생활 영역별 상세 운세 분석</h2>
+
+          <h3 class="text-xl font-semibold text-white mb-4 mt-6">1. 직업 운세：변동 속에서 기회를 찾기, 말다툼에 주의</h3>
+          
+          <div class="space-y-4 mb-6">
+            <div class="bg-gradient-to-r from-blue-500/10 to-cyan-500/10 border border-blue-500/20 rounded-lg p-4">
+              <h4 class="text-lg font-semibold text-blue-400 mb-2">💼 기회</h4>
+              <p class="text-mystic-200 leading-relaxed mb-2">
+                "충돌"은 또한 개방을 나타냅니다. 올해는 다음을 가져올 수 있습니다：
+              </p>
+              <ul class="list-disc list-inside text-mystic-200 space-y-1">
+                <li>직업 전환과 직위 변경</li>
+                <li>새로운 프로젝트 책임</li>
+                <li>창업 기회와 사업 기회</li>
+                <li>변화를 추구하는 사람들의 돌파구</li>
+              </ul>
+              <p class="text-mystic-200 leading-relaxed mt-2">
+                "천해" 별은 까다로운 프로젝트에서 해결책을 찾는 데 도움이 되며, 상사로부터 인정을 받을 수 있습니다.
+              </p>
+            </div>
+
+            <div class="bg-gradient-to-r from-red-500/10 to-pink-500/10 border border-red-500/20 rounded-lg p-4">
+              <h4 class="text-lg font-semibold text-red-400 mb-2">⚠️ 도전</h4>
+              <ul class="list-disc list-inside text-mystic-200 space-y-1">
+                <li>다른 입장이나 아이디어로 인한 동료, 고객, 파트너와의 충돌</li>
+                <li>배후의 소문과 대인 관계의 긴장</li>
+                <li>외부의 힘에 좌우되는 결정, 수정을 초래</li>
+                <li>중요한 프로젝트를 위한 여러 비상 계획의 필요성</li>
+              </ul>
+            </div>
+
+            <div class="bg-mystic-800/50 rounded-lg p-4">
+              <h4 class="text-lg font-semibold text-gold-400 mb-2">💡 직업 조언</h4>
+              <ul class="list-disc list-inside text-mystic-200 space-y-1">
+                <li>수동성에서 적극성으로 전환—해외 임무에 자원하거나 새로운 기술을 배우기</li>
+                <li>신중하게 소통하고, 직접적인 대립을 피하기</li>
+                <li>서명 전에 계약을 철저히 검토하기</li>
+                <li>공격적인 인사 분쟁을 피하고, 대신 핵심 사업에 집중하기</li>
+              </ul>
+            </div>
+          </div>
+
+          <h3 class="text-xl font-semibold text-white mb-4 mt-6">2. 재운：불안정한 주수입, 명백한 손실</h3>
+          
+          <div class="space-y-4 mb-6">
+            <div class="bg-gradient-to-r from-green-500/10 to-emerald-500/10 border border-green-500/20 rounded-lg p-4">
+              <h4 class="text-lg font-semibold text-green-400 mb-2">💰 주재운</h4>
+              <p class="text-mystic-200 leading-relaxed">
+                직업 변화로 인해 수입이 변동할 수 있으며, 특히 수수료 기반 급여를 받는 사람들에게 큰 상하가 있습니다. 재운은 전문 기술과 부지런한 노력을 통해 획득해야 합니다.
+              </p>
+            </div>
+
+            <div class="bg-gradient-to-r from-red-500/10 to-orange-500/10 border border-red-500/20 rounded-lg p-4">
+              <h4 class="text-lg font-semibold text-red-400 mb-2">📉 부재운</h4>
+              <p class="text-mystic-200 leading-relaxed">
+                매우 불리합니다. 투자와 투기에 극도의 주의를 기울이고, 소문이나 고위험 사업에 기반하여 행동하지 마세요. "태세 충돌"과 관련된 산업（예：운송, 전기, 인터넷）은 매우 변동성이 크며, 일반인에게는 어려울 것입니다.
+              </p>
+            </div>
+
+            <div class="bg-gradient-to-r from-yellow-500/10 to-amber-500/10 border border-yellow-500/20 rounded-lg p-4">
+              <h4 class="text-lg font-semibold text-yellow-400 mb-2">💸 재운 손실</h4>
+              <p class="text-mystic-200 leading-relaxed">
+                "대모" 별이 소비를 지배하며, 수리, 보상, 의료비, 가족 관련 지출 등 예상치 못한 큰 지출을 가져옵니다. 사전에 재정을 계획하고 비상 자금을 따로 두세요.
+              </p>
+            </div>
+
+            <div class="bg-mystic-800/50 rounded-lg p-4">
+              <h4 class="text-lg font-semibold text-gold-400 mb-2">💡 재정 조언</h4>
+              <ul class="list-disc list-inside text-mystic-200 space-y-1">
+                <li>추구보다 재산 보존을 우선시하기</li>
+                <li>불필요한 투자와 지출을 줄이기</li>
+                <li>자기 개선（과정, 자격증, 건강 관리）에 자금을 재배치하는 것을 고려하기</li>
+                <li>대출이나 보증을 피하기</li>
+              </ul>
+            </div>
+          </div>
+
+          <h3 class="text-xl font-semibold text-white mb-4 mt-6">3. 관계 운세：혼란에 빠지기 쉬움, 빈번한 이별</h3>
+          
+          <div class="space-y-4 mb-6">
+            <div class="bg-gradient-to-r from-pink-500/10 to-purple-500/10 border border-pink-500/20 rounded-lg p-4">
+              <h4 class="text-lg font-semibold text-pink-400 mb-2">💕 독신자</h4>
+              <p class="text-mystic-200 leading-relaxed">
+                로맨틱한 만남이 있을 수 있지만, 종종 일시적인 불륜이나 짧은 열정으로, 충동적으로 시작되어 사소한 문제로 끝납니다. 여행이나 출장 중에 만난 관심 대상은 신중하게 평가해야 합니다.
+              </p>
+            </div>
+
+            <div class="bg-gradient-to-r from-red-500/10 to-pink-500/10 border border-red-500/20 rounded-lg p-4">
+              <h4 class="text-lg font-semibold text-red-400 mb-2">💑 교제 중/기혼</h4>
+              <p class="text-mystic-200 leading-relaxed">
+                사랑의 시험의 해입니다. 커플은 사소한 일로 다투거나, 직업 변화로 함께 보내는 시간이 줄어들어 거리가 생길 수 있습니다. "충돌"은 관계를 새로운 단계（예：결혼）로 밀어 올리거나 끝으로 향하게 할 수 있습니다. 소통과 동반이 필수적입니다.
+              </p>
+            </div>
+
+            <div class="bg-mystic-800/50 rounded-lg p-4">
+              <h4 class="text-lg font-semibold text-gold-400 mb-2">💡 관계 조언</h4>
+              <ul class="list-disc list-inside text-mystic-200 space-y-1">
+                <li>작은 일을 지적하기보다 관용을 받아들이기</li>
+                <li>짧은 여행이나 의미 있는 장소를 재방문하여 불꽃을 다시 켜기</li>
+                <li>관계에 신선함을 주입하기</li>
+                <li>반성 후 차분하게 중요한 결정을 내리기</li>
+              </ul>
+            </div>
+          </div>
+
+          <h3 class="text-xl font-semibold text-white mb-4 mt-6">4. 건강 운세：스트레스 유발 질병, 심장, 뇌, 여행 안전에 집중</h3>
+          
+          <div class="space-y-4 mb-6">
+            <div class="bg-gradient-to-r from-red-500/10 to-orange-500/10 border border-red-500/20 rounded-lg p-4">
+              <h4 class="text-lg font-semibold text-red-400 mb-2">🏥 주요 문제</h4>
+              <p class="text-mystic-200 leading-relaxed mb-2">
+                자오 충돌은 다음에 대한 특별한 경계를 요구합니다：
+              </p>
+              <ul class="list-disc list-inside text-mystic-200 space-y-1">
+                <li>심장, 혈압, 심혈관 문제</li>
+                <li>열성, 염증, 불면증, 불안（화가 풍부한 해로 인해）</li>
+                <li>눈에 띄는 감정의 흔들림을 동반한 정신적 스트레스</li>
+              </ul>
+            </div>
+
+            <div class="bg-gradient-to-r from-yellow-500/10 to-amber-500/10 border border-yellow-500/20 rounded-lg p-4">
+              <h4 class="text-lg font-semibold text-yellow-400 mb-2">⚠️ 안전 위험</h4>
+              <p class="text-mystic-200 leading-relaxed">
+                "태세 충돌" 해에는, 교통 안전과 사고 예방을 우선시합니다. 운전자는 규칙을 준수하고 도로 분노를 피해야 합니다. 외출이나 여행 중에는 주의를 기울이세요.
+              </p>
+            </div>
+
+            <div class="bg-mystic-800/50 rounded-lg p-4">
+              <h4 class="text-lg font-semibold text-gold-400 mb-2">💡 건강 조언</h4>
+              <ul class="list-disc list-inside text-mystic-200 space-y-1">
+                <li>정기적인 건강 검진을 스케줄하고, 특히 심장 건강을 위해</li>
+                <li>명상, 정좌, 요가 등의 습관을 기르고 스트레스를 완화하기</li>
+                <li>밤늦게까지 깨어있거나 과도한 음주를 피하기</li>
+                <li>음력 5월（오월）과 11월（자월）에 특히 주의하기</li>
+              </ul>
+            </div>
+          </div>
+
+          <h2 class="text-2xl font-bold text-white mb-4 mt-8">III. 2026년 운세 향상 및 해결 조언</h2>
+          <p class="mb-6 text-mystic-200 leading-relaxed">
+            "태세 충돌" 해에는, 조정의 초점은 "안정화"와 "해결"에 있습니다.
+          </p>
+
+          <h3 class="text-xl font-semibold text-white mb-4 mt-6">1. 마음가짐 우선：흐름에 따르기</h3>
+          <div class="bg-gradient-to-r from-blue-500/10 to-cyan-500/10 border border-blue-500/20 rounded-lg p-4 mb-6">
+            <ul class="list-disc list-inside text-mystic-200 space-y-2">
+              <li>"변화"를 해의 테마로 받아들이기—변화에 저항하지 않기；그것들을 자기 갱신의 기회로 보기.</li>
+              <li>위기에서 침착을 유지하고, 제3자의 지원이나 중재를 구하기（"천해" 별을 상징）；충동적인 결정을 피하기.</li>
+            </ul>
+          </div>
+
+          <h3 class="text-xl font-semibold text-white mb-4 mt-6">2. 환경 조정（풍수 수준）</h3>
+          <div class="space-y-4 mb-6">
+            <div class="bg-gradient-to-r from-green-500/10 to-emerald-500/10 border border-green-500/20 rounded-lg p-4">
+              <h4 class="text-lg font-semibold text-green-400 mb-2">🧭 방향 가이드라인</h4>
+              <p class="text-mystic-200 leading-relaxed mb-2">
+                세파 방향은 정북（자 섹터）이고, 태세 방향은 정남（오 섹터）입니다. 2026년에는：
+              </p>
+              <ul class="list-disc list-inside text-mystic-200 space-y-1">
+                <li>집과 사무실의 정북과 정남 영역을 절대적으로 깨끗하고 조용하게 유지하기</li>
+                <li>이러한 방향에서의 개조, 드릴링, 토양 교란을 피하기</li>
+                <li>거기에 빨간색 항목이나 전기 기기를 배치하지 않기</li>
+              </ul>
+            </div>
+
+            <div class="bg-gradient-to-r from-blue-500/10 to-cyan-500/10 border border-blue-500/20 rounded-lg p-4">
+              <h4 class="text-lg font-semibold text-blue-400 mb-2">💧 수 요소 치료</h4>
+              <p class="text-mystic-200 leading-relaxed">
+                집이나 사무실의 정북 섹터（세파）에 신선한 물 한 컵을 배치하고, 정기적으로 교체합니다. 물의 부드러움을 사용하여 화 충돌에 대항하고, 에너지장을 안정화하는 데 도움이 됩니다.
+              </p>
+            </div>
+          </div>
+
+          <h3 class="text-xl font-semibold text-white mb-4 mt-6">3. 대인 관계 및 의사 결정 조언</h3>
+          <div class="bg-mystic-800/50 rounded-lg p-4 mb-6">
+            <ul class="list-disc list-inside text-mystic-200 space-y-2">
+              <li><strong>더 많이 주고, 덜 원망하기：</strong> 자선 기부에 참여하거나 필요한 사람들을 도와 재운 손실에 대항하고 공덕을 축적하기.</li>
+              <li><strong>주요 월을 피하기：</strong> 음력 5월（오월）과 11월（자월）에서의 중요한 투자, 계약, 또는 직업 변경을 피하기.</li>
+              <li><strong>효도를 존중하여 기초를 안정시키기：</strong> 부모와 장로의 건강에 더 많은 주의를 기울이기；가족 조화는 외부 충격에 대한 기반입니다.</li>
+            </ul>
+          </div>
+
+          <div class="bg-gradient-to-r from-amber-500/20 to-yellow-500/20 border border-amber-500/30 rounded-lg p-6 mt-8">
+            <h3 class="text-xl font-semibold text-amber-400 mb-3">✨ 요약</h3>
+            <p class="text-mystic-200 leading-relaxed">
+              2026년은 자년생 사람들에게 중요한 변화의 해입니다. 자오 충돌은 도전과 불안정성을 가져오지만, 천해 별은 해결과 돌파구의 기회를 제공합니다. 변화를 받아들이고, 유연성을 유지하며, 향상 조언을 따르면, 이 역동적인 해를 성공적으로 탐색하고 도전을 성장의 기회로 바꿀 수 있습니다.
+            </p>
+          </div>
+        </div>
+      `
+      },
       author: "Master Chen",
       date: "2025-12-17",
       readTime: "12 min read",
