@@ -11559,9 +11559,18 @@ export const blogPostsData = {
       ]
     },
     "2026-bing-wu-year-zodiac-horse-fortune-prediction": {
-      title: "2026 Bing Wu Year: Zodiac Horse Fortune Prediction",
-      excerpt: "2026 is the Bing Wu Horse Year - your Ben Ming Year (Birth Year)! This is a significant year of transformation and new beginnings. While challenges exist, your natural energy and determination help you navigate this important life cycle.",
-      content: `
+      title: {
+        en: "2026 Bing Wu Year: Zodiac Horse Fortune Prediction",
+        ja: "2026年丙午年：午年（馬）の運勢予測",
+        ko: "2026년 병오년：오년（말）운세 예측"
+      },
+      excerpt: {
+        en: "2026 is the Bing Wu Horse Year - your Ben Ming Year (Birth Year)! This is a significant year of transformation and new beginnings. While challenges exist, your natural energy and determination help you navigate this important life cycle.",
+        ja: "2026年は丙午馬年—あなたの本命年（生年）です！これは変革と新しい始まりの重要な年です。課題は存在しますが、あなたの自然なエネルギーと決意が、この重要な人生サイクルを乗り切るのに役立ちます。",
+        ko: "2026년은 병오마년—당신의 본명년（생년）입니다！이것은 변화와 새로운 시작의 중요한 해입니다. 도전이 존재하지만, 당신의 자연스러운 에너지와 결심이 이 중요한 인생 사이클을 탐색하는 데 도움이 됩니다."
+      },
+      content: {
+        en: `
         <div class="space-y-8">
           <div class="mb-8">
             <div class="bg-gradient-to-r from-red-500/20 to-orange-500/20 border border-red-500/30 rounded-lg p-6 mb-8">
@@ -11678,6 +11687,241 @@ export const blogPostsData = {
           </div>
         </div>
       `,
+        ja: `
+        <div class="space-y-8">
+          <div class="mb-8">
+            <div class="bg-gradient-to-r from-red-500/20 to-orange-500/20 border border-red-500/30 rounded-lg p-6 mb-8">
+              <h3 class="text-lg font-semibold text-red-400 mb-3">🐴 2026年丙午年馬の概要</h3>
+              <ul class="text-mystic-200 space-y-2">
+                <li>• <strong>年の要素：</strong> 丙火（天干）+ 午火（地支）= 火が豊富な年</li>
+                <li>• <strong>太歳関係：</strong> 本命年（生年 / 値太歳）</li>
+                <li>• <strong>主要な意義：</strong> 主要な人生サイクル年 - 変革と新しい始まり</li>
+                <li>• <strong>全体的な運勢：</strong> 重要な変化、課題と機会の両方</li>
+                <li>• <strong>年間テーマ：</strong> 変革、更新、新しい方向</li>
+              </ul>
+            </div>
+          </div>
+
+          <p class="mb-6 text-lg text-mystic-200 leading-relaxed">
+            2026年は丙午馬年—これはあなたの本命年（生年）で、重要な12年サイクルのマイルストーンです！今年は主要な変革と新しい始まりをもたらします。本命年は課題と変化をもたらす可能性がありますが、更新と新しい人生の方向を設定する機会も提供します。あなたの自然なエネルギー、独立性、決意が、この重要な年を乗り切る上で最大の資産です。
+          </p>
+
+          <h2 class="text-2xl font-bold text-white mb-4 mt-8">キャリア運勢：主要な変化、新しい方向</h2>
+          <div class="space-y-4 mb-6">
+            <div class="bg-gradient-to-r from-blue-500/10 to-cyan-500/10 border border-blue-500/20 rounded-lg p-4">
+              <h4 class="text-lg font-semibold text-blue-400 mb-2">💼 機会</h4>
+              <p class="text-mystic-200 leading-relaxed">本命年はしばしばキャリアの変化や新しい方向をもたらします。これは仕事の変更、昇進、新しいプロジェクトの開始、またはキャリアの転換を意味する可能性があります。あなたの自然な独立性と推進力がこれらの移行をサポートします。長年抱いてきた野心を追求したり、新しい専門的な道を探索したりする年にしてください。</p>
+            </div>
+            <div class="bg-gradient-to-r from-yellow-500/10 to-amber-500/10 border border-yellow-500/20 rounded-lg p-4">
+              <h4 class="text-lg font-semibold text-yellow-400 mb-2">⚠️ 課題</h4>
+              <p class="text-mystic-200 leading-relaxed">本命年は不安定性と予期しない変化をもたらす可能性があります。職場の移行、同僚との関係の変化、または責任の変更に備えてください。衝動的なキャリア決定を避けてください—慎重に計画し、アドバイスを求めてください。</p>
+            </div>
+            <div class="bg-mystic-800/50 rounded-lg p-4">
+              <h4 class="text-lg font-semibold text-gold-400 mb-2">💡 キャリアアドバイス</h4>
+              <ul class="list-disc list-inside text-mystic-200 space-y-1">
+                <li>変化を成長と更新の機会として受け入れる</li>
+                <li>本命年には赤や金の色を着用して運気を高めることを検討する</li>
+                <li>エネルギーがピークに達する旧暦5月（午月）に主要な決定を避ける</li>
+                <li>古い構造を維持するよりも、新しい基盤を構築することに焦点を当てる</li>
+              </ul>
+            </div>
+          </div>
+
+          <h2 class="text-2xl font-bold text-white mb-4 mt-8">財運トレンド：変動が予想される、慎重に計画する</h2>
+          <div class="space-y-4 mb-6">
+            <div class="bg-gradient-to-r from-green-500/10 to-emerald-500/10 border border-green-500/20 rounded-lg p-4">
+              <h4 class="text-lg font-semibold text-green-400 mb-2">💰 財務見通し</h4>
+              <p class="text-mystic-200 leading-relaxed">本命年はしばしば財務の変動をもたらします。キャリアの移行により収入が変わる可能性があります。支出を保守的にし、慎重な考慮なしに主要な投資や大きな購入を避けてください。予期しない支出に対処するための緊急資金を構築してください。</p>
+            </div>
+            <div class="bg-gradient-to-r from-red-500/10 to-pink-500/10 border border-red-500/20 rounded-lg p-4">
+              <h4 class="text-lg font-semibold text-red-400 mb-2">⚠️ 財務警告</h4>
+              <p class="text-mystic-200 leading-relaxed">高リスク投資、ギャンブル、または投機的な事業を避けてください。本命年の不安定性は財務計画を不可欠にします。ローンや保証に注意してください。特に旧暦5月（午月）には。</p>
+            </div>
+          </div>
+
+          <h2 class="text-2xl font-bold text-white mb-4 mt-8">人間関係：重要な変化、新しいつながり</h2>
+          <div class="space-y-4 mb-6">
+            <div class="bg-gradient-to-r from-pink-500/10 to-purple-500/10 border border-pink-500/20 rounded-lg p-4">
+              <h4 class="text-lg font-semibold text-pink-400 mb-2">💕 独身者</h4>
+              <p class="text-mystic-200 leading-relaxed">本命年は重要な関係の変化をもたらす可能性があります。独身者にとって、新しいロマンチックな機会が生じる可能性がありますが、関係も終了または変革する可能性があります。年の変革的エネルギーに注意しながら、新しいつながりにオープンでいてください。</p>
+            </div>
+            <div class="bg-gradient-to-r from-red-500/10 to-pink-500/10 border border-red-500/20 rounded-lg p-4">
+              <h4 class="text-lg font-semibold text-red-400 mb-2">💑 交際中</h4>
+              <p class="text-mystic-200 leading-relaxed">既存の関係は試練や変革に直面する可能性があります。これはコミットメントの深化（結婚、婚約）または重要な変化を意味する可能性があります。コミュニケーションと理解が不可欠です。本命年はしばしば関係のマイルストーンをもたらします。</p>
+            </div>
+            <div class="bg-mystic-800/50 rounded-lg p-4">
+              <h4 class="text-lg font-semibold text-gold-400 mb-2">💡 関係アドバイス</h4>
+              <p class="text-mystic-200 leading-relaxed">忍耐と理解を実践してください。年の変革的エネルギーはすべての関係に影響します。移行中は明確なコミュニケーションと相互支援に焦点を当ててください。</p>
+            </div>
+          </div>
+
+          <h2 class="text-2xl font-bold text-white mb-4 mt-8">健康：特別な注意が必要、予防措置</h2>
+          <div class="space-y-4 mb-6">
+            <div class="bg-gradient-to-r from-red-500/10 to-orange-500/10 border border-red-500/20 rounded-lg p-4">
+              <h4 class="text-lg font-semibold text-red-400 mb-2">🏥 健康懸念</h4>
+              <p class="text-mystic-200 leading-relaxed">本命年は健康に特別な注意が必要です。豊富な火のエネルギーと年の変革的性質の組み合わせは、ストレス、疲労、または健康の変動を引き起こす可能性があります。心血管の健康、血圧、ストレス管理に特に注意を払ってください。</p>
+            </div>
+            <div class="bg-mystic-800/50 rounded-lg p-4">
+              <h4 class="text-lg font-semibold text-gold-400 mb-2">💡 健康アドバイス</h4>
+              <ul class="list-disc list-inside text-mystic-200 space-y-1">
+                <li>年初に包括的な健康診断をスケジュールする</li>
+                <li>定期的な運動を維持するが、過度の努力を避ける</li>
+                <li>ストレス管理技術を実践する（瞑想、ヨガ、呼吸法）</li>
+                <li>十分な休息を取り、バランスの取れた食事を維持する</li>
+                <li>本命年には保護アクセサリーや護符を着用することを検討する</li>
+              </ul>
+            </div>
+          </div>
+
+          <h2 class="text-2xl font-bold text-white mb-4 mt-8">2026年の重要な注意事項と向上ガイド</h2>
+          <div class="space-y-4 mb-6">
+            <div class="bg-gradient-to-r from-green-500/10 to-emerald-500/10 border border-green-500/20 rounded-lg p-4">
+              <h4 class="text-lg font-semibold text-green-400 mb-2">📅 重要な月</h4>
+              <p class="text-mystic-200 leading-relaxed mb-2"><strong>吉月：</strong> 旧暦2月（卯月）、6月（未月）、10月（亥月）は主要な決定に有利です。</p>
+              <p class="text-mystic-200 leading-relaxed"><strong>注意月：</strong> 旧暦5月（午月—あなたの生月）と11月（子月）は特別な注意が必要です。これらの期間中は主要な決定を避けてください。</p>
+            </div>
+            <div class="bg-gradient-to-r from-amber-500/10 to-yellow-500/10 border border-amber-500/20 rounded-lg p-4">
+              <h4 class="text-lg font-semibold text-amber-400 mb-2">🧭 運気向上方向</h4>
+              <p class="text-mystic-200 leading-relaxed">南（火の方向）と東（木の方向）が有利です。南方向（太歳位置）での主要な改築や乱れを避けてください。</p>
+            </div>
+            <div class="bg-mystic-800/50 rounded-lg p-4">
+              <h4 class="text-lg font-semibold text-gold-400 mb-2">✨ 向上提案</h4>
+              <ul class="list-disc list-inside text-mystic-200 space-y-1">
+                <li>本命年には赤や金の色を着用して運気を高める</li>
+                <li>本命年の保護護符やアクセサリーを取得することを検討する</li>
+                <li>慈善活動に参加してポジティブなカルマを蓄積する</li>
+                <li>ポジティブなマインドセットを維持し、変化を成長として受け入れる</li>
+                <li>旧暦5月（午月）での主要な人生の変化を避ける</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="bg-gradient-to-r from-red-500/20 to-orange-500/20 border border-red-500/30 rounded-lg p-6">
+            <h3 class="text-xl font-semibold text-red-400 mb-3">✨ まとめ</h3>
+            <p class="text-mystic-200 leading-relaxed">
+              2026年はあなたの本命年—主要な変革と新しい始まりをもたらす重要な12年サイクルのマイルストーンです。この年は課題と変化をもたらす可能性がありますが、更新と新しい人生の方向を設定する強力な機会も提供します。変化を受け入れ、慎重に計画し、健康に注意を払い、年の変革的エネルギーを使用して次の12年サイクルのためのポジティブな基盤を作成してください。あなたの自然なエネルギー、独立性、決意が最大の資産です。覚えておいてください、本命年は変革と更新についてです—知恵、準備、ポジティブなマインドセットでそれにアプローチしてください！
+            </p>
+          </div>
+        </div>
+      `,
+        ko: `
+        <div class="space-y-8">
+          <div class="mb-8">
+            <div class="bg-gradient-to-r from-red-500/20 to-orange-500/20 border border-red-500/30 rounded-lg p-6 mb-8">
+              <h3 class="text-lg font-semibold text-red-400 mb-3">🐴 2026년 병오년 말 개요</h3>
+              <ul class="text-mystic-200 space-y-2">
+                <li>• <strong>년의 요소：</strong> 병화（천간）+ 오화（지지）= 화가 풍부한 해</li>
+                <li>• <strong>태세 관계：</strong> 본명년（생년 / 값 태세）</li>
+                <li>• <strong>주요 의미：</strong> 주요 인생 사이클 해 - 변화와 새로운 시작</li>
+                <li>• <strong>전체 운세：</strong> 중요한 변화, 도전과 기회 모두</li>
+                <li>• <strong>연간 테마：</strong> 변화, 갱신, 새로운 방향</li>
+              </ul>
+            </div>
+          </div>
+
+          <p class="mb-6 text-lg text-mystic-200 leading-relaxed">
+            2026년은 병오마년—이것은 당신의 본명년（생년）으로, 중요한 12년 사이클 마일스톤입니다！올해는 주요 변화와 새로운 시작을 가져옵니다. 본명년은 도전과 변화를 가져올 수 있지만, 갱신과 새로운 인생 방향을 설정하는 기회도 제공합니다. 당신의 자연스러운 에너지, 독립성, 결심이 이 중요한 해를 탐색하는 데 가장 큰 자산입니다.
+          </p>
+
+          <h2 class="text-2xl font-bold text-white mb-4 mt-8">직업 운세：주요 변화, 새로운 방향</h2>
+          <div class="space-y-4 mb-6">
+            <div class="bg-gradient-to-r from-blue-500/10 to-cyan-500/10 border border-blue-500/20 rounded-lg p-4">
+              <h4 class="text-lg font-semibold text-blue-400 mb-2">💼 기회</h4>
+              <p class="text-mystic-200 leading-relaxed">본명년은 종종 직업 변화나 새로운 방향을 가져옵니다. 이것은 직업 변경, 승진, 새로운 프로젝트 시작, 또는 심지어 직업 전환을 의미할 수 있습니다. 당신의 자연스러운 독립성과 추진력이 이러한 전환을 지원합니다. 오랫동안 품어온 야망을 추구하거나 새로운 전문적인 길을 탐색하는 해로 여기세요.</p>
+            </div>
+            <div class="bg-gradient-to-r from-yellow-500/10 to-amber-500/10 border border-yellow-500/20 rounded-lg p-4">
+              <h4 class="text-lg font-semibold text-yellow-400 mb-2">⚠️ 도전</h4>
+              <p class="text-mystic-200 leading-relaxed">본명년은 불안정성과 예상치 못한 변화를 가져올 수 있습니다. 직장 전환, 동료와의 관계 변화, 또는 책임 변경에 대비하세요. 충동적인 직업 결정을 내리지 마세요—신중하게 계획하고 조언을 구하세요.</p>
+            </div>
+            <div class="bg-mystic-800/50 rounded-lg p-4">
+              <h4 class="text-lg font-semibold text-gold-400 mb-2">💡 직업 조언</h4>
+              <ul class="list-disc list-inside text-mystic-200 space-y-1">
+                <li>변화를 성장과 갱신의 기회로 받아들이기</li>
+                <li>본명년 동안 운을 높이기 위해 빨간색이나 금색을 착용하는 것을 고려하기</li>
+                <li>에너지가 정점에 도달하는 음력 5월（오월）에 주요 결정을 피하기</li>
+                <li>오래된 구조를 유지하는 것보다 새로운 기반을 구축하는 데 집중하기</li>
+              </ul>
+            </div>
+          </div>
+
+          <h2 class="text-2xl font-bold text-white mb-4 mt-8">재운 추세：변동 예상, 신중하게 계획하기</h2>
+          <div class="space-y-4 mb-6">
+            <div class="bg-gradient-to-r from-green-500/10 to-emerald-500/10 border border-green-500/20 rounded-lg p-4">
+              <h4 class="text-lg font-semibold text-green-400 mb-2">💰 재정 전망</h4>
+              <p class="text-mystic-200 leading-relaxed">본명년은 종종 재정적 변동을 가져옵니다. 직업 전환으로 인해 수입이 변경될 수 있습니다. 지출을 보수적으로 하고, 신중한 고려 없이 주요 투자나 큰 구매를 피하세요. 예상치 못한 지출을 처리하기 위한 비상 자금을 구축하세요.</p>
+            </div>
+            <div class="bg-gradient-to-r from-red-500/10 to-pink-500/10 border border-red-500/20 rounded-lg p-4">
+              <h4 class="text-lg font-semibold text-red-400 mb-2">⚠️ 재정 경고</h4>
+              <p class="text-mystic-200 leading-relaxed">고위험 투자, 도박, 또는 투기적 사업을 피하세요. 본명년의 불안정성은 재정 계획을 필수로 만듭니다. 대출이나 보증에 주의하세요. 특히 음력 5월（오월）에는.</p>
+            </div>
+          </div>
+
+          <h2 class="text-2xl font-bold text-white mb-4 mt-8">관계：중요한 변화, 새로운 연결</h2>
+          <div class="space-y-4 mb-6">
+            <div class="bg-gradient-to-r from-pink-500/10 to-purple-500/10 border border-pink-500/20 rounded-lg p-4">
+              <h4 class="text-lg font-semibold text-pink-400 mb-2">💕 독신자</h4>
+              <p class="text-mystic-200 leading-relaxed">본명년은 중요한 관계 변화를 가져올 수 있습니다. 독신자에게는, 새로운 로맨틱 기회가 생길 수 있지만, 관계도 종료되거나 변화할 수 있습니다. 해의 변화적 에너지에 주의하면서 새로운 연결에 열려있으세요.</p>
+            </div>
+            <div class="bg-gradient-to-r from-red-500/10 to-pink-500/10 border border-red-500/20 rounded-lg p-4">
+              <h4 class="text-lg font-semibold text-red-400 mb-2">💑 교제 중</h4>
+              <p class="text-mystic-200 leading-relaxed">기존 관계는 시험이나 변화에 직면할 수 있습니다. 이것은 약속의 심화（결혼, 약혼）또는 중요한 변화를 의미할 수 있습니다. 소통과 이해가 필수적입니다. 본명년은 종종 관계의 마일스톤을 가져옵니다.</p>
+            </div>
+            <div class="bg-mystic-800/50 rounded-lg p-4">
+              <h4 class="text-lg font-semibold text-gold-400 mb-2">💡 관계 조언</h4>
+              <p class="text-mystic-200 leading-relaxed">인내와 이해를 실천하세요. 해의 변화적 에너지는 모든 관계에 영향을 미칩니다. 전환 중 명확한 소통과 상호 지원에 집중하세요.</p>
+            </div>
+          </div>
+
+          <h2 class="text-2xl font-bold text-white mb-4 mt-8">건강：특별한 주의 필요, 예방 조치</h2>
+          <div class="space-y-4 mb-6">
+            <div class="bg-gradient-to-r from-red-500/10 to-orange-500/10 border border-red-500/20 rounded-lg p-4">
+              <h4 class="text-lg font-semibold text-red-400 mb-2">🏥 건강 우려</h4>
+              <p class="text-mystic-200 leading-relaxed">본명년은 건강에 특별한 주의가 필요합니다. 풍부한 화 에너지와 해의 변화적 성격의 결합은 스트레스, 피로, 또는 건강 변동을 일으킬 수 있습니다. 심혈관 건강, 혈압, 스트레스 관리에 특히 주의를 기울이세요.</p>
+            </div>
+            <div class="bg-mystic-800/50 rounded-lg p-4">
+              <h4 class="text-lg font-semibold text-gold-400 mb-2">💡 건강 조언</h4>
+              <ul class="list-disc list-inside text-mystic-200 space-y-1">
+                <li>연초에 포괄적인 건강 검진을 스케줄하기</li>
+                <li>정기적인 운동을 유지하되 과로를 피하기</li>
+                <li>스트레스 관리 기술 실천하기（명상, 요가, 호흡 운동）</li>
+                <li>충분한 휴식을 취하고 균형 잡힌 식단 유지하기</li>
+                <li>본명년 동안 보호 액세서리나 호부를 착용하는 것을 고려하기</li>
+              </ul>
+            </div>
+          </div>
+
+          <h2 class="text-2xl font-bold text-white mb-4 mt-8">2026년 주요 주의사항 및 향상 가이드</h2>
+          <div class="space-y-4 mb-6">
+            <div class="bg-gradient-to-r from-green-500/10 to-emerald-500/10 border border-green-500/20 rounded-lg p-4">
+              <h4 class="text-lg font-semibold text-green-400 mb-2">📅 중요한 월</h4>
+              <p class="text-mystic-200 leading-relaxed mb-2"><strong>길월：</strong> 음력 2월（묘월）, 6월（미월）, 10월（해월）은 주요 결정에 유리합니다.</p>
+              <p class="text-mystic-200 leading-relaxed"><strong>주의 월：</strong> 음력 5월（오월—당신의 생월）과 11월（자월）은 특별한 주의가 필요합니다. 이러한 기간 동안 주요 결정을 피하세요.</p>
+            </div>
+            <div class="bg-gradient-to-r from-amber-500/10 to-yellow-500/10 border border-amber-500/20 rounded-lg p-4">
+              <h4 class="text-lg font-semibold text-amber-400 mb-2">🧭 운 향상 방향</h4>
+              <p class="text-mystic-200 leading-relaxed">남쪽（화 방향）과 동쪽（목 방향）이 유리합니다. 남쪽 방향（태세 위치）에서의 주요 개조나 교란을 피하세요.</p>
+            </div>
+            <div class="bg-mystic-800/50 rounded-lg p-4">
+              <h4 class="text-lg font-semibold text-gold-400 mb-2">✨ 향상 제안</h4>
+              <ul class="list-disc list-inside text-mystic-200 space-y-1">
+                <li>본명년 동안 운을 높이기 위해 빨간색이나 금색을 착용하기</li>
+                <li>본명년 보호 호부나 액세서리를 얻는 것을 고려하기</li>
+                <li>자선 활동에 참여하여 긍정적인 업을 축적하기</li>
+                <li>긍정적인 마음가짐을 유지하고 변화를 성장으로 받아들이기</li>
+                <li>음력 5월（오월）에서의 주요 인생 변화를 피하기</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="bg-gradient-to-r from-red-500/20 to-orange-500/20 border border-red-500/30 rounded-lg p-6">
+            <h3 class="text-xl font-semibold text-red-400 mb-3">✨ 요약</h3>
+            <p class="text-mystic-200 leading-relaxed">
+              2026년은 당신의 본명년—주요 변화와 새로운 시작을 가져오는 중요한 12년 사이클 마일스톤입니다. 이 해는 도전과 변화를 가져올 수 있지만, 갱신과 새로운 인생 방향을 설정하는 강력한 기회도 제공합니다. 변화를 받아들이고, 신중하게 계획하고, 건강에 주의를 기울이고, 해의 변화적 에너지를 사용하여 다음 12년 사이클을 위한 긍정적인 기반을 만드세요. 당신의 자연스러운 에너지, 독립성, 결심이 가장 큰 자산입니다. 기억하세요, 본명년은 변화와 갱신에 관한 것입니다—지혜, 준비, 긍정적인 마음가짐으로 접근하세요！
+            </p>
+          </div>
+        </div>
+      `
+      },
       author: "Master Chen",
       date: "2025-12-23",
       readTime: "12 min read",
