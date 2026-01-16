@@ -9940,9 +9940,18 @@ export const blogPostsData = {
       ]
     },
     "2026-bing-wu-year-zodiac-tiger-fortune-prediction": {
-      title: "2026 Bing Wu Year: Zodiac Tiger Fortune Prediction",
-      excerpt: "2026 is the Bing Wu Horse Year. For those born in the Year of the Tiger, this will be a year full of opportunities but requiring careful handling. The Yin-Wu Half-Combination Fire Bureau brings Three Harmony Auspicious Star, enhancing noble person luck and overall stability.",
-      content: `
+      title: {
+        en: "2026 Bing Wu Year: Zodiac Tiger Fortune Prediction",
+        ja: "2026年丙午年：寅年（虎）の運勢予測",
+        ko: "2026년 병오년：인년（호랑이）운세 예측"
+      },
+      excerpt: {
+        en: "2026 is the Bing Wu Horse Year. For those born in the Year of the Tiger, this will be a year full of opportunities but requiring careful handling. The Yin-Wu Half-Combination Fire Bureau brings Three Harmony Auspicious Star, enhancing noble person luck and overall stability.",
+        ja: "2026年は丙午馬年です。寅年（虎）生まれの人にとって、これは機会に満ちた年ですが、慎重な取り扱いが必要です。寅午半合火局が三合吉星をもたらし、貴人運と全体的な安定性を向上させます。",
+        ko: "2026년은 병오마년입니다. 인년（호랑이）생 사람들에게는 기회가 가득한 해이지만, 신중한 처리가 필요합니다. 인오반합화국이 삼합길성을 가져와, 귀인운과 전반적인 안정성을 향상시킵니다."
+      },
+      content: {
+        en: `
         <div class="space-y-8">
           <div class="mb-8">
             <div class="bg-gradient-to-r from-green-500/20 to-emerald-500/20 border border-green-500/30 rounded-lg p-6 mb-8">
@@ -10189,6 +10198,501 @@ export const blogPostsData = {
           </div>
         </div>
       `,
+        ja: `
+        <div class="space-y-8">
+          <div class="mb-8">
+            <div class="bg-gradient-to-r from-green-500/20 to-emerald-500/20 border border-green-500/30 rounded-lg p-6 mb-8">
+              <h3 class="text-lg font-semibold text-green-400 mb-3">🐅 2026年丙午年虎の概要</h3>
+              <ul class="text-mystic-200 space-y-2">
+                <li>• <strong>年の要素：</strong> 丙火（天干）+ 午火（地支）= 火が豊富な年</li>
+                <li>• <strong>十二支関係：</strong> 寅午半合火局（三合）</li>
+                <li>• <strong>主要な星：</strong> 三合吉星 - 貴人運を向上させる</li>
+                <li>• <strong>全体的な運勢：</strong> 上昇傾向で安定しているが、火の勢いが衝動性を引き起こす可能性がある</li>
+                <li>• <strong>年間テーマ：</strong> 慎重な取り扱いを伴う機会、着実な進歩</li>
+              </ul>
+            </div>
+          </div>
+
+          <p class="mb-6 text-lg text-mystic-200 leading-relaxed">
+            今日は2026年—丙午馬年について話しましょう。寅年（虎）生まれの友人の皆さんにとって、これは機会に満ちた年ですが、慎重な取り扱いが必要です。伝統的な中国の十二支分析によると、2026年の年支午馬は寅虎と「寅午半合火局」を形成し、「三合吉星」が運命に入ることで知られています。全体的な運勢は上昇傾向で安定しており、貴人運が大幅に向上しています。
+          </p>
+          <p class="mb-6 text-mystic-200 leading-relaxed">
+            しかし、年干「丙火」が虎の固有の気「甲木」と生成し、火の勢いが強すぎて、衝動的な行動や紛争を引き起こしやすくなります。次に、キャリア、財運、人間関係、健康などの側面から詳細な分析を提供し、事前に計画を立て、幸運を迎えるお手伝いをします！
+          </p>
+
+          <h2 class="text-2xl font-bold text-white mb-4 mt-8">キャリア運勢：貴人の支援、チーム機会を掴む</h2>
+          
+          <div class="space-y-4 mb-6">
+            <div class="bg-gradient-to-r from-blue-500/10 to-cyan-500/10 border border-blue-500/20 rounded-lg p-4">
+              <h4 class="text-lg font-semibold text-blue-400 mb-2">💼 機会</h4>
+              <p class="text-mystic-200 leading-relaxed mb-2">
+                2026年、虎のキャリア運勢は「三合」貴星の祝福を受けるでしょう。職場で先輩や同僚からの支援を受けやすくなり、特に以下に適しています：
+              </p>
+              <ul class="list-disc list-inside text-mystic-200 space-y-1">
+                <li>チーム協力プロジェクト</li>
+                <li>新分野への拡大</li>
+                <li>昇進や業界横断の協力機会（特に木が強い春に）</li>
+              </ul>
+              <p class="text-mystic-200 leading-relaxed mt-2">
+                今年、あなたのリーダーシップと実行能力が輝き、才能を披露する絶好の機会となります。
+              </p>
+            </div>
+
+            <div class="bg-gradient-to-r from-red-500/10 to-orange-500/10 border border-red-500/20 rounded-lg p-4">
+              <h4 class="text-lg font-semibold text-red-400 mb-2">⚠️ 課題</h4>
+              <p class="text-mystic-200 leading-relaxed">
+                強い火による競争の激化に注意—急いで実行すると職場の衝突を引き起こす可能性があり、特に猿や蛇の十二支の同僚と交流する際は、コミュニケーションに特に注意を払ってください。
+              </p>
+            </div>
+
+            <div class="bg-mystic-800/50 rounded-lg p-4">
+              <h4 class="text-lg font-semibold text-gold-400 mb-2">💡 キャリアアドバイス</h4>
+              <ul class="list-disc list-inside text-mystic-200 space-y-1">
+                <li>旧暦5月（午月）と9月（戌月）に焦点を当てる—貴人運が最も強い時期</li>
+                <li>これらのピーク月に重要な決定を進めるのに適している</li>
+                <li>キャリア転換期にある場合は、より多くの業界集会に参加することを検討する</li>
+                <li>積極的にメンターの指導を求める</li>
+                <li>覚えておいてください、着実な進歩が持続的な利益につながります！</li>
+              </ul>
+            </div>
+          </div>
+
+          <h2 class="text-2xl font-bold text-white mb-4 mt-8">財運トレンド：安定した定期収入、合理的な副財運</h2>
+          
+          <div class="space-y-4 mb-6">
+            <div class="bg-gradient-to-r from-green-500/10 to-emerald-500/10 border border-green-500/20 rounded-lg p-4">
+              <h4 class="text-lg font-semibold text-green-400 mb-2">💰 定期収入</h4>
+              <p class="text-mystic-200 leading-relaxed">
+                財運に関して、2026年は虎にとって比較的安定しています。定期収入（給与など）は安定していますが、追加のボーナスは個人の業績に結びつくことが多いため、積極的に機会を追求してください。
+              </p>
+            </div>
+
+            <div class="bg-gradient-to-r from-amber-500/10 to-yellow-500/10 border border-amber-500/20 rounded-lg p-4">
+              <h4 class="text-lg font-semibold text-amber-400 mb-2">📈 副財運</h4>
+              <p class="text-mystic-200 leading-relaxed mb-2">
+                副財運は強い火が土（財星）を生成することから利益を得て、投資収益の良い可能性があり、特に「火」や「土」に関連する業界で：
+              </p>
+              <ul class="list-disc list-inside text-mystic-200 space-y-1">
+                <li>エネルギーセクター</li>
+                <li>文化的創造性</li>
+                <li>不動産</li>
+              </ul>
+              <p class="text-mystic-200 leading-relaxed mt-2">
+                しかし、火が最も強い夏には、逆効果を防ぐために高リスク投資を避けてください。
+              </p>
+            </div>
+
+            <div class="bg-gradient-to-r from-red-500/10 to-pink-500/10 border border-red-500/20 rounded-lg p-4">
+              <h4 class="text-lg font-semibold text-red-400 mb-2">⚠️ 財務警告</h4>
+              <p class="text-mystic-200 leading-relaxed">
+                旧暦7月（申月）は金銭的損失に陥りやすいため、貸付やローン保証を避けてください。全体的に、今年は冒険よりも蓄積に適しています—副業や財務計画を通じて財務基盤を安定させることを検討してください。
+              </p>
+            </div>
+
+            <div class="bg-mystic-800/50 rounded-lg p-4">
+              <h4 class="text-lg font-semibold text-gold-400 mb-2">💡 財運アドバイス</h4>
+              <ul class="list-disc list-inside text-mystic-200 space-y-1">
+                <li>今年は冒険よりも蓄積に適している</li>
+                <li>副業や財務計画を通じて財務基盤を安定させる</li>
+                <li>投資計画がある場合は、専門家に相談して合理的な決定を確保する</li>
+              </ul>
+            </div>
+          </div>
+
+          <h2 class="text-2xl font-bold text-white mb-4 mt-8">人間関係と対人関係：桃の花が咲く、コミュニケーションを強調</h2>
+          
+          <div class="space-y-4 mb-6">
+            <div class="bg-gradient-to-r from-pink-500/10 to-purple-500/10 border border-pink-500/20 rounded-lg p-4">
+              <h4 class="text-lg font-semibold text-pink-400 mb-2">💕 独身者</h4>
+              <p class="text-mystic-200 leading-relaxed">
+                関係運勢は2026年の虎にとって主要なハイライトです！独身者にとって、桃の花はしばしば社交の場から来ます。特に夏には、熱心で積極的なパートナーに会う可能性が高いですが、一時的な衝動を避けるために本物を慎重に識別してください。
+              </p>
+            </div>
+
+            <div class="bg-gradient-to-r from-red-500/10 to-pink-500/10 border border-red-500/20 rounded-lg p-4">
+              <h4 class="text-lg font-semibold text-red-400 mb-2">💑 交際中</h4>
+              <p class="text-mystic-200 leading-relaxed">
+                交際中の人にとって、感情は徐々に温まりますが、強い火は些細な口論を引き起こしやすいため、感情をコントロールすることが重要です。カップルやパートナーが東または南に向かって一緒に旅行することを提案し、理解とロマンチックな雰囲気を高めます。
+              </p>
+            </div>
+
+            <div class="bg-gradient-to-r from-green-500/10 to-emerald-500/10 border border-green-500/20 rounded-lg p-4">
+              <h4 class="text-lg font-semibold text-green-400 mb-2">🤝 対人関係</h4>
+              <p class="text-mystic-200 leading-relaxed">
+                対人関係では、貴人運が強いですが、「調和の中で根を忘れない」—古い友情を維持することも同様に重要です。今年は、より多くの集会やオンライン活動に参加してネットワークを拡大し、キャリアと人生により多くの驚きをもたらします。
+              </p>
+            </div>
+          </div>
+
+          <h2 class="text-2xl font-bold text-white mb-4 mt-8">健康面：強い火に注意、バランスに焦点</h2>
+          
+          <div class="space-y-4 mb-6">
+            <div class="bg-gradient-to-r from-red-500/10 to-orange-500/10 border border-red-500/20 rounded-lg p-4">
+              <h4 class="text-lg font-semibold text-red-400 mb-2">🏥 主要な健康懸念</h4>
+              <p class="text-mystic-200 leading-relaxed mb-2">
+                健康は運勢の基盤であり、2026年には過剰な火が虎の健康に影響を与える可能性があります：
+              </p>
+              <ul class="list-disc list-inside text-mystic-200 space-y-1">
+                <li>心臓と血圧の問題</li>
+                <li>夜更かしや頻繁な社交による疲労</li>
+                <li>休息と食事調整の必要性</li>
+              </ul>
+            </div>
+
+            <div class="bg-gradient-to-r from-blue-500/10 to-cyan-500/10 border border-blue-500/20 rounded-lg p-4">
+              <h4 class="text-lg font-semibold text-blue-400 mb-2">💧 解決方法</h4>
+              <p class="text-mystic-200 leading-relaxed mb-2">
+                これを解決する方法は、水と木の要素に接触することです：
+              </p>
+              <ul class="list-disc list-inside text-mystic-200 space-y-1">
+                <li>青緑色の服を着る</li>
+                <li>緑の植物の近くにいる</li>
+                <li>夏には熱中症を防ぐために水を多く飲む</li>
+                <li>ヨガや散歩などの定期的な運動が効果的にストレスを和らげる</li>
+              </ul>
+            </div>
+
+            <div class="bg-mystic-800/50 rounded-lg p-4">
+              <h4 class="text-lg font-semibold text-gold-400 mb-2">💡 健康アドバイス</h4>
+              <ul class="list-disc list-inside text-mystic-200 space-y-1">
+                <li>慢性的な問題がある場合は、年初に包括的な健康診断を検討する</li>
+                <li>健康運勢はしばしばマインドセットに関連する—楽観的で積極的に課題に直面する</li>
+                <li>休息と食事調整により注意を払う</li>
+              </ul>
+            </div>
+          </div>
+
+          <h2 class="text-2xl font-bold text-white mb-4 mt-8">異なる出生年の虎のための専用ヒント</h2>
+          
+          <div class="space-y-4 mb-6">
+            <div class="bg-gradient-to-r from-blue-500/10 to-cyan-500/10 border border-blue-500/20 rounded-lg p-4">
+              <h4 class="text-lg font-semibold text-blue-400 mb-2">🐅 1998年戊寅虎</h4>
+              <p class="text-mystic-200 leading-relaxed">
+                勉強やキャリアの転換点にあり、目標に焦点を当て、頻繁な転職を避けてください。2026年は経験を蓄積する絶好の機会です。
+              </p>
+            </div>
+
+            <div class="bg-gradient-to-r from-purple-500/10 to-pink-500/10 border border-purple-500/20 rounded-lg p-4">
+              <h4 class="text-lg font-semibold text-purple-400 mb-2">🐅 1986年丙寅虎</h4>
+              <p class="text-mystic-200 leading-relaxed">
+                圧力と機会が共存し、家族とキャリアのバランスに注意を払ってください。家族とより多くの時間を過ごして、強い火による感情の変動を和らげます。
+              </p>
+            </div>
+
+            <div class="bg-gradient-to-r from-green-500/10 to-emerald-500/10 border border-green-500/20 rounded-lg p-4">
+              <h4 class="text-lg font-semibold text-green-400 mb-2">🐅 1974年甲寅虎</h4>
+              <p class="text-mystic-200 leading-relaxed">
+                多くの財運機会がありますが、協力プロジェクトの契約詳細に注意してください。投資計画を徹底的に見直すことを提案します。
+              </p>
+            </div>
+
+            <div class="bg-gradient-to-r from-amber-500/10 to-yellow-500/10 border border-amber-500/20 rounded-lg p-4">
+              <h4 class="text-lg font-semibold text-amber-400 mb-2">🐅 1962年壬寅虎</h4>
+              <p class="text-mystic-200 leading-relaxed">
+                健康が優先事項、定期的なルーチンに注意を払ってください。太極拳や漢方の調理などの健康活動を試して、体質を強化します。
+              </p>
+            </div>
+          </div>
+
+          <h2 class="text-2xl font-bold text-white mb-4 mt-8">2026年の重要な注意事項と運気向上ガイド</h2>
+          
+          <div class="space-y-4 mb-6">
+            <div class="bg-gradient-to-r from-green-500/10 to-emerald-500/10 border border-green-500/20 rounded-lg p-4">
+              <h4 class="text-lg font-semibold text-green-400 mb-2">📅 吉月</h4>
+              <p class="text-mystic-200 leading-relaxed mb-2">
+                全体的に、2026年は虎にとって「着実な進歩」の年です。吉月には以下が含まれます：
+              </p>
+              <ul class="list-disc list-inside text-mystic-200 space-y-1">
+                <li>旧暦2月（卯月）</li>
+                <li>旧暦6月（未月）</li>
+                <li>旧暦10月（亥月）</li>
+              </ul>
+              <p class="text-mystic-200 leading-relaxed mt-2">
+                これらは求職、投資、結婚などの主要な計画を進めるのに適しています。
+              </p>
+            </div>
+
+            <div class="bg-gradient-to-r from-red-500/10 to-orange-500/10 border border-red-500/20 rounded-lg p-4">
+              <h4 class="text-lg font-semibold text-red-400 mb-2">⚠️ 注意月</h4>
+              <p class="text-mystic-200 leading-relaxed">
+                注意月は旧暦4月（巳月）と7月（申月）で、紛争、噂、突然の変化に注意してください。
+              </p>
+            </div>
+
+            <div class="bg-gradient-to-r from-amber-500/10 to-yellow-500/10 border border-amber-500/20 rounded-lg p-4">
+              <h4 class="text-lg font-semibold text-amber-400 mb-2">🧭 運気向上方向</h4>
+              <ul class="list-disc list-inside text-mystic-200 space-y-1">
+                <li><strong>東：</strong> 強い木が虎を助ける</li>
+                <li><strong>北西：</strong> 貴人の方向</li>
+              </ul>
+            </div>
+
+            <div class="bg-mystic-800/50 rounded-lg p-4">
+              <h4 class="text-lg font-semibold text-gold-400 mb-2">✨ 日常向上提案</h4>
+              <ul class="list-disc list-inside text-mystic-200 space-y-1">
+                <li>水属性のアクセサリー（黒曜石のブレスレットなど）を着用して火のエネルギーをバランスさせる</li>
+                <li>勉強部屋やオフィスに緑の植物（文昌竹など）を置いて運気と集中力を高める</li>
+                <li>水要素や緑の空間の近くにいて、強い火をバランスさせる</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="bg-gradient-to-r from-green-500/20 to-emerald-500/20 border border-green-500/30 rounded-lg p-6 mt-8">
+            <h3 class="text-xl font-semibold text-green-400 mb-3">✨ まとめ</h3>
+            <p class="text-mystic-200 leading-relaxed">
+              友人の皆さん、運勢はガイダンスを提供しますが、最終的には個人の努力に依存します。2026年は虎にとって着実な進歩の年であり、強い貴人運とキャリア、財運、人間関係での機会があります。しかし、衝動性を引き起こす可能性のある強い火のエネルギーに注意してください。上記のガイダンスに従い、バランスを維持することで、この縁起の良い年を最大限に活用できます。この詳細な分析が2026年の計画に役立つことを願っています！
+            </p>
+          </div>
+        </div>
+      `,
+        ko: `
+        <div class="space-y-8">
+          <div class="mb-8">
+            <div class="bg-gradient-to-r from-green-500/20 to-emerald-500/20 border border-green-500/30 rounded-lg p-6 mb-8">
+              <h3 class="text-lg font-semibold text-green-400 mb-3">🐅 2026년 병오년 호랑이 개요</h3>
+              <ul class="text-mystic-200 space-y-2">
+                <li>• <strong>년의 요소：</strong> 병화（천간）+ 오화（지지）= 화가 풍부한 해</li>
+                <li>• <strong>십이지 관계：</strong> 인오반합화국（삼합）</li>
+                <li>• <strong>주요 별：</strong> 삼합길성 - 귀인운을 향상시킨다</li>
+                <li>• <strong>전체 운세：</strong> 상승 추세로 안정적이지만, 화의 모멘텀이 충동성을 일으킬 수 있다</li>
+                <li>• <strong>연간 테마：</strong> 신중한 처리를 동반한 기회, 꾸준한 진행</li>
+              </ul>
+            </div>
+          </div>
+
+          <p class="mb-6 text-lg text-mystic-200 leading-relaxed">
+            오늘은 2026년—병오마년에 대해 이야기하겠습니다. 인년（호랑이）생 친구들에게는 기회가 가득한 해이지만, 신중한 처리가 필요합니다. 전통적인 중국 십이지 분석에 따르면, 2026년 연지 오마는 인호랑이와 "인오반합화국"을 형성하며, "삼합길성"이 운명에 들어가는 것으로 알려져 있습니다. 전체 운세는 상승 추세로 안정적이며, 귀인운이 크게 향상됩니다.
+          </p>
+          <p class="mb-6 text-mystic-200 leading-relaxed">
+            그러나 연간 "병화"가 호랑이의 고유 기 "갑목"과 생성하여, 화의 모멘텀이 너무 강해져 충동적인 행동이나 분쟁을 쉽게 일으킵니다. 다음으로, 직업, 재운, 관계, 건강 등의 측면에서 상세한 분석을 제공하여 사전에 계획을 세우고 행운을 맞이하는 데 도움을 드리겠습니다！
+          </p>
+
+          <h2 class="text-2xl font-bold text-white mb-4 mt-8">직업 운세：귀인의 지원, 팀 기회를 잡기</h2>
+          
+          <div class="space-y-4 mb-6">
+            <div class="bg-gradient-to-r from-blue-500/10 to-cyan-500/10 border border-blue-500/20 rounded-lg p-4">
+              <h4 class="text-lg font-semibold text-blue-400 mb-2">💼 기회</h4>
+              <p class="text-mystic-200 leading-relaxed mb-2">
+                2026년, 호랑이의 직업 운세는 "삼합" 귀성의 축복을 받을 것입니다. 직장에서 선배나 동료로부터 지원을 받기 쉬워지며, 특히 다음에 적합합니다：
+              </p>
+              <ul class="list-disc list-inside text-mystic-200 space-y-1">
+                <li>팀 협력 프로젝트</li>
+                <li>새로운 분야로 확장</li>
+                <li>승진 또는 산업 간 협력 기회（특히 목이 강한 봄에）</li>
+              </ul>
+              <p class="text-mystic-200 leading-relaxed mt-2">
+                올해, 당신의 리더십과 실행 능력이 빛나며, 재능을 보여주는 훌륭한 시기가 됩니다.
+              </p>
+            </div>
+
+            <div class="bg-gradient-to-r from-red-500/10 to-orange-500/10 border border-red-500/20 rounded-lg p-4">
+              <h4 class="text-lg font-semibold text-red-400 mb-2">⚠️ 도전</h4>
+              <p class="text-mystic-200 leading-relaxed">
+                강한 화로 인한 경쟁의 심화에 주의—성급하게 실행하면 직장 갈등을 유발할 수 있으며, 특히 원숭이 또는 뱀 십이지 동료와 상호작용할 때, 소통에 특히 주의를 기울이세요.
+              </p>
+            </div>
+
+            <div class="bg-mystic-800/50 rounded-lg p-4">
+              <h4 class="text-lg font-semibold text-gold-400 mb-2">💡 직업 조언</h4>
+              <ul class="list-disc list-inside text-mystic-200 space-y-1">
+                <li>음력 5월（오월）과 9월（술월）에 집중—귀인운이 가장 강한 시기</li>
+                <li>이러한 피크 월에 중요한 결정을 진행하는 데 적합</li>
+                <li>직업 전환기에 있다면, 더 많은 산업 모임에 참석하는 것을 고려</li>
+                <li>적극적으로 멘토의 지도를 구하기</li>
+                <li>기억하세요, 꾸준한 진행이 지속적인 이익으로 이어집니다！</li>
+              </ul>
+            </div>
+          </div>
+
+          <h2 class="text-2xl font-bold text-white mb-4 mt-8">재운 추세：안정적인 정기 수입, 합리적인 부재운</h2>
+          
+          <div class="space-y-4 mb-6">
+            <div class="bg-gradient-to-r from-green-500/10 to-emerald-500/10 border border-green-500/20 rounded-lg p-4">
+              <h4 class="text-lg font-semibold text-green-400 mb-2">💰 정기 수입</h4>
+              <p class="text-mystic-200 leading-relaxed">
+                재운 측면에서, 2026년은 호랑이에게 비교적 안정적입니다. 정기 수입（급여 등）은 안정적이지만, 추가 보너스는 종종 개인 성과에 연결되므로, 적극적으로 기회를 추구하세요.
+              </p>
+            </div>
+
+            <div class="bg-gradient-to-r from-amber-500/10 to-yellow-500/10 border border-amber-500/20 rounded-lg p-4">
+              <h4 class="text-lg font-semibold text-amber-400 mb-2">📈 부재운</h4>
+              <p class="text-mystic-200 leading-relaxed mb-2">
+                부재운은 강한 화가 토（재성）를 생성하는 것에서 이익을 얻어, 투자 수익의 좋은 잠재력이 있으며, 특히 "화" 또는 "토"와 관련된 산업에서：
+              </p>
+              <ul class="list-disc list-inside text-mystic-200 space-y-1">
+                <li>에너지 부문</li>
+                <li>문화 창의성</li>
+                <li>부동산</li>
+              </ul>
+              <p class="text-mystic-200 leading-relaxed mt-2">
+                그러나 화가 가장 강한 여름에는 역효과를 방지하기 위해 고위험 투자를 피하세요.
+              </p>
+            </div>
+
+            <div class="bg-gradient-to-r from-red-500/10 to-pink-500/10 border border-red-500/20 rounded-lg p-4">
+              <h4 class="text-lg font-semibold text-red-400 mb-2">⚠️ 재정 경고</h4>
+              <p class="text-mystic-200 leading-relaxed">
+                음력 7월（신월）은 재정적 손실에 취약하므로, 대출이나 대출 보증을 피하세요. 전반적으로, 올해는 모험보다 축적에 적합합니다—부업이나 재정 계획을 통해 재정 기반을 안정화하는 것을 고려하세요.
+              </p>
+            </div>
+
+            <div class="bg-mystic-800/50 rounded-lg p-4">
+              <h4 class="text-lg font-semibold text-gold-400 mb-2">💡 재운 조언</h4>
+              <ul class="list-disc list-inside text-mystic-200 space-y-1">
+                <li>올해는 모험보다 축적에 적합</li>
+                <li>부업이나 재정 계획을 통해 재정 기반을 안정화</li>
+                <li>투자 계획이 있다면, 전문가에게 상담하여 합리적인 결정을 보장</li>
+              </ul>
+            </div>
+          </div>
+
+          <h2 class="text-2xl font-bold text-white mb-4 mt-8">관계 및 대인 관계：복숭아꽃이 피다, 소통 강조</h2>
+          
+          <div class="space-y-4 mb-6">
+            <div class="bg-gradient-to-r from-pink-500/10 to-purple-500/10 border border-pink-500/20 rounded-lg p-4">
+              <h4 class="text-lg font-semibold text-pink-400 mb-2">💕 독신자</h4>
+              <p class="text-mystic-200 leading-relaxed">
+                관계 운세는 2026년 호랑이에게 주요 하이라이트입니다！독신자에게, 복숭아꽃은 종종 사교적 장소에서 옵니다. 특히 여름에는 열정적이고 적극적인 파트너를 만날 가능성이 높지만, 순간적인 충동을 피하기 위해 진정성을 신중하게 판별하세요.
+              </p>
+            </div>
+
+            <div class="bg-gradient-to-r from-red-500/10 to-pink-500/10 border border-red-500/20 rounded-lg p-4">
+              <h4 class="text-lg font-semibold text-red-400 mb-2">💑 교제 중</h4>
+              <p class="text-mystic-200 leading-relaxed">
+                교제 중인 사람들에게, 감정은 점차 따뜻해지지만, 강한 화는 사소한 논쟁을 쉽게 일으키므로, 감정을 제어하는 것이 핵심입니다. 커플이나 파트너가 동쪽 또는 남쪽으로 함께 여행하는 것을 제안하여 이해와 로맨틱한 분위기를 향상시킵니다.
+              </p>
+            </div>
+
+            <div class="bg-gradient-to-r from-green-500/10 to-emerald-500/10 border border-green-500/20 rounded-lg p-4">
+              <h4 class="text-lg font-semibold text-green-400 mb-2">🤝 대인 관계</h4>
+              <p class="text-mystic-200 leading-relaxed">
+                대인 관계에서, 귀인운이 강하지만, "조화 속에서 뿌리를 잊지 말기"—오래된 우정을 유지하는 것도 동등히 중요합니다. 올해는 더 많은 모임이나 온라인 활동에 참여하여 네트워크를 확장하고, 직업과 인생에 더 많은 놀라움을 가져옵니다.
+              </p>
+            </div>
+          </div>
+
+          <h2 class="text-2xl font-bold text-white mb-4 mt-8">건강 측면：강한 화에 주의, 균형에 집중</h2>
+          
+          <div class="space-y-4 mb-6">
+            <div class="bg-gradient-to-r from-red-500/10 to-orange-500/10 border border-red-500/20 rounded-lg p-4">
+              <h4 class="text-lg font-semibold text-red-400 mb-2">🏥 주요 건강 우려</h4>
+              <p class="text-mystic-200 leading-relaxed mb-2">
+                건강은 운세의 기초이며, 2026년에는 과도한 화가 호랑이의 건강에 영향을 줄 수 있습니다：
+              </p>
+              <ul class="list-disc list-inside text-mystic-200 space-y-1">
+                <li>심장과 혈압 문제</li>
+                <li>밤늦게까지 깨어있거나 빈번한 사교로 인한 피로</li>
+                <li>휴식과 식이 조정의 필요성</li>
+              </ul>
+            </div>
+
+            <div class="bg-gradient-to-r from-blue-500/10 to-cyan-500/10 border border-blue-500/20 rounded-lg p-4">
+              <h4 class="text-lg font-semibold text-blue-400 mb-2">💧 해결 방법</h4>
+              <p class="text-mystic-200 leading-relaxed mb-2">
+                이를 해결하는 방법은 수와 목 요소에 접촉하는 것입니다：
+              </p>
+              <ul class="list-disc list-inside text-mystic-200 space-y-1">
+                <li>청록색 옷을 입기</li>
+                <li>녹색 식물 근처에 있기</li>
+                <li>여름에는 열사병을 방지하기 위해 물을 많이 마시기</li>
+                <li>요가나 걷기와 같은 정기적인 운동이 효과적으로 스트레스를 완화</li>
+              </ul>
+            </div>
+
+            <div class="bg-mystic-800/50 rounded-lg p-4">
+              <h4 class="text-lg font-semibold text-gold-400 mb-2">💡 건강 조언</h4>
+              <ul class="list-disc list-inside text-mystic-200 space-y-1">
+                <li>만성적인 문제가 있다면, 연초에 포괄적인 건강 검진을 고려</li>
+                <li>건강 운세는 종종 마음가짐과 관련—낙관적이고 적극적으로 도전에 직면</li>
+                <li>휴식과 식이 조정에 더 많은 주의를 기울이기</li>
+              </ul>
+            </div>
+          </div>
+
+          <h2 class="text-2xl font-bold text-white mb-4 mt-8">다른 출생년의 호랑이를 위한 전용 팁</h2>
+          
+          <div class="space-y-4 mb-6">
+            <div class="bg-gradient-to-r from-blue-500/10 to-cyan-500/10 border border-blue-500/20 rounded-lg p-4">
+              <h4 class="text-lg font-semibold text-blue-400 mb-2">🐅 1998년 무인 호랑이</h4>
+              <p class="text-mystic-200 leading-relaxed">
+                공부나 직업의 전환점에 있으며, 목표에 집중하고 빈번한 직업 변경을 피하세요. 2026년은 경험을 축적하는 훌륭한 시기입니다.
+              </p>
+            </div>
+
+            <div class="bg-gradient-to-r from-purple-500/10 to-pink-500/10 border border-purple-500/20 rounded-lg p-4">
+              <h4 class="text-lg font-semibold text-purple-400 mb-2">🐅 1986년 병인 호랑이</h4>
+              <p class="text-mystic-200 leading-relaxed">
+                압력과 기회가 공존하며, 가족과 직업의 균형에 주의를 기울이세요. 가족과 더 많은 시간을 보내어 강한 화로 인한 감정적 변동을 완화합니다.
+              </p>
+            </div>
+
+            <div class="bg-gradient-to-r from-green-500/10 to-emerald-500/10 border border-green-500/20 rounded-lg p-4">
+              <h4 class="text-lg font-semibold text-green-400 mb-2">🐅 1974년 갑인 호랑이</h4>
+              <p class="text-mystic-200 leading-relaxed">
+                많은 재운 기회가 있지만, 협력 프로젝트의 계약 세부사항에 주의하세요. 투자 계획을 철저히 검토하는 것을 제안합니다.
+              </p>
+            </div>
+
+            <div class="bg-gradient-to-r from-amber-500/10 to-yellow-500/10 border border-amber-500/20 rounded-lg p-4">
+              <h4 class="text-lg font-semibold text-amber-400 mb-2">🐅 1962년 임인 호랑이</h4>
+              <p class="text-mystic-200 leading-relaxed">
+                건강이 우선순위, 정기적인 루틴에 주의를 기울이세요. 태극권이나 한약 조절과 같은 웰니스 활동을 시도하여 체질을 강화합니다.
+              </p>
+            </div>
+          </div>
+
+          <h2 class="text-2xl font-bold text-white mb-4 mt-8">2026년 주요 주의사항 및 운 향상 가이드</h2>
+          
+          <div class="space-y-4 mb-6">
+            <div class="bg-gradient-to-r from-green-500/10 to-emerald-500/10 border border-green-500/20 rounded-lg p-4">
+              <h4 class="text-lg font-semibold text-green-400 mb-2">📅 길월</h4>
+              <p class="text-mystic-200 leading-relaxed mb-2">
+                전반적으로, 2026년은 호랑이에게 "꾸준한 진행"의 해입니다. 길월에는 다음이 포함됩니다：
+              </p>
+              <ul class="list-disc list-inside text-mystic-200 space-y-1">
+                <li>음력 2월（묘월）</li>
+                <li>음력 6월（미월）</li>
+                <li>음력 10월（해월）</li>
+              </ul>
+              <p class="text-mystic-200 leading-relaxed mt-2">
+                이것들은 구직, 투자, 결혼 등의 주요 계획을 진행하는 데 적합합니다.
+              </p>
+            </div>
+
+            <div class="bg-gradient-to-r from-red-500/10 to-orange-500/10 border border-red-500/20 rounded-lg p-4">
+              <h4 class="text-lg font-semibold text-red-400 mb-2">⚠️ 주의 월</h4>
+              <p class="text-mystic-200 leading-relaxed">
+                주의 월은 음력 4월（사월）과 7월（신월）이며, 분쟁, 소문, 갑작스러운 변화에 주의하세요.
+              </p>
+            </div>
+
+            <div class="bg-gradient-to-r from-amber-500/10 to-yellow-500/10 border border-amber-500/20 rounded-lg p-4">
+              <h4 class="text-lg font-semibold text-amber-400 mb-2">🧭 운 향상 방향</h4>
+              <ul class="list-disc list-inside text-mystic-200 space-y-1">
+                <li><strong>동쪽：</strong> 강한 목이 호랑이를 돕는다</li>
+                <li><strong>북서쪽：</strong> 귀인의 방향</li>
+              </ul>
+            </div>
+
+            <div class="bg-mystic-800/50 rounded-lg p-4">
+              <h4 class="text-lg font-semibold text-gold-400 mb-2">✨ 일상 향상 제안</h4>
+              <ul class="list-disc list-inside text-mystic-200 space-y-1">
+                <li>수 속성 액세서리（흑요석 팔찌 등）를 착용하여 화 에너지를 균형시키기</li>
+                <li>공부방이나 사무실에 녹색 식물（文昌 대나무 등）을 배치하여 운과 집중력을 높이기</li>
+                <li>수 요소나 녹색 공간 근처에 있어 강한 화를 균형시키기</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="bg-gradient-to-r from-green-500/20 to-emerald-500/20 border border-green-500/30 rounded-lg p-6 mt-8">
+            <h3 class="text-xl font-semibold text-green-400 mb-3">✨ 요약</h3>
+            <p class="text-mystic-200 leading-relaxed">
+              친구 여러분, 운세는 가이드를 제공하지만, 궁극적으로는 개인적인 노력에 달려 있습니다. 2026년은 호랑이에게 꾸준한 진행의 해이며, 강한 귀인운과 직업, 재운, 관계에서의 기회가 있습니다. 그러나 충동성을 일으킬 수 있는 강한 화 에너지에 주의하세요. 위의 가이드를 따르고 균형을 유지하면, 이 길한 해를 최대한 활용할 수 있습니다. 이 상세한 분석이 2026년 계획에 도움이 되기를 바랍니다！
+            </p>
+          </div>
+        </div>
+      `
+      },
       author: "Master Chen",
       date: "2025-12-17",
       readTime: "10 min read",
