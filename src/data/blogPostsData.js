@@ -11167,9 +11167,18 @@ export const blogPostsData = {
       ]
     },
     "2026-bing-wu-year-zodiac-dragon-fortune-prediction": {
-      title: "2026 Bing Wu Year: Zodiac Dragon Fortune Prediction",
-      excerpt: "2026 is the Bing Wu Horse Year. For those born in the Year of the Dragon, this year brings stable progress and opportunities for growth. The Dragon's natural leadership and ambition align well with the fire energy of 2026.",
-      content: `
+      title: {
+        en: "2026 Bing Wu Year: Zodiac Dragon Fortune Prediction",
+        ja: "2026年丙午年：辰年（龍）の運勢予測",
+        ko: "2026년 병오년：진년（용）운세 예측"
+      },
+      excerpt: {
+        en: "2026 is the Bing Wu Horse Year. For those born in the Year of the Dragon, this year brings stable progress and opportunities for growth. The Dragon's natural leadership and ambition align well with the fire energy of 2026.",
+        ja: "2026年は丙午馬年です。辰年（龍）生まれの人にとって、今年は着実な進歩と成長の機会をもたらします。龍の自然なリーダーシップと野心は、2026年の火のエネルギーとよく一致します。",
+        ko: "2026년은 병오마년입니다. 진년（용）생 사람들에게는, 올해 안정적인 진행과 성장의 기회를 가져옵니다. 용의 자연스러운 리더십과 야망은 2026년의 화 에너지와 잘 일치합니다."
+      },
+      content: {
+        en: `
         <div class="space-y-8">
           <div class="mb-8">
             <div class="bg-gradient-to-r from-gold-500/20 to-yellow-500/20 border border-gold-500/30 rounded-lg p-6 mb-8">
@@ -11223,6 +11232,115 @@ export const blogPostsData = {
           </div>
         </div>
       `,
+        ja: `
+        <div class="space-y-8">
+          <div class="mb-8">
+            <div class="bg-gradient-to-r from-gold-500/20 to-yellow-500/20 border border-gold-500/30 rounded-lg p-6 mb-8">
+              <h3 class="text-lg font-semibold text-gold-400 mb-3">🐉 2026年丙午年龍の概要</h3>
+              <ul class="text-mystic-200 space-y-2">
+                <li>• <strong>年の要素：</strong> 丙火（天干）+ 午火（地支）= 火が豊富な年</li>
+                <li>• <strong>太歳関係：</strong> 中立 - 安定した関係</li>
+                <li>• <strong>主要な利点：</strong> リーダーシップの機会とキャリアの向上</li>
+                <li>• <strong>全体的な運勢：</strong> 上昇傾向で安定</li>
+                <li>• <strong>年間テーマ：</strong> リーダーシップ、野心、着実な進歩</li>
+              </ul>
+            </div>
+          </div>
+
+          <p class="mb-6 text-lg text-mystic-200 leading-relaxed">
+            2026年は丙午馬年で、火のエネルギーが豊富な年です。辰年（龍）生まれの人にとって、今年は着実な進歩と成長の機会をもたらします。龍の自然なリーダーシップの資質と野心は、2026年の動的な火のエネルギーとよく一致し、キャリアの向上と個人の成長に有利な条件を作り出します。
+          </p>
+
+          <h2 class="text-2xl font-bold text-white mb-4 mt-8">キャリア運勢：リーダーシップの機会、キャリアの向上</h2>
+          <div class="space-y-4 mb-6">
+            <div class="bg-gradient-to-r from-blue-500/10 to-cyan-500/10 border border-blue-500/20 rounded-lg p-4">
+              <h4 class="text-lg font-semibold text-blue-400 mb-2">💼 機会</h4>
+              <p class="text-mystic-200 leading-relaxed">あなたのリーダーシップ能力が今年輝きます。昇進とより大きな責任を負う機会が有利です。火のエネルギーはあなたの野心的な性質をサポートし、キャリア目標を追求するのに良い時期となります。</p>
+            </div>
+            <div class="bg-mystic-800/50 rounded-lg p-4">
+              <h4 class="text-lg font-semibold text-gold-400 mb-2">💡 キャリアアドバイス</h4>
+              <p class="text-mystic-200 leading-relaxed">率先して行動し、リーダーシップスキルを披露してください。しかし、あまりにも攻撃的または支配的になることを避けてください。最良の結果のために、野心とチームワークと協力をバランスさせてください。</p>
+            </div>
+          </div>
+
+          <h2 class="text-2xl font-bold text-white mb-4 mt-8">財運トレンド：着実な成長、投資機会</h2>
+          <div class="bg-mystic-800/50 rounded-lg p-4 mb-6">
+            <p class="text-mystic-200 leading-relaxed">財務の見通しは成長の可能性を伴って安定しています。適度な投資、特に火や土に関連する業界を検討してください。あなたの自然なビジネスセンスはあなたをよく助けますが、財務決定での過信を避けてください。</p>
+          </div>
+
+          <h2 class="text-2xl font-bold text-white mb-4 mt-8">人間関係：強いつながり、社会的成功</h2>
+          <div class="space-y-4 mb-6">
+            <div class="bg-gradient-to-r from-pink-500/10 to-purple-500/10 border border-pink-500/20 rounded-lg p-4">
+              <h4 class="text-lg font-semibold text-pink-400 mb-2">💕 関係</h4>
+              <p class="text-mystic-200 leading-relaxed">あなたのカリスマと自信が他の人を引き付けます。社会的つながりは強く、関係は繁栄します。独身者にとって、意味のあるつながりの機会が有利です。交際中の人にとって、コミュニケーションと相互尊重が絆を強化します。</p>
+            </div>
+          </div>
+
+          <h2 class="text-2xl font-bold text-white mb-4 mt-8">健康：エネルギーバランスを維持する</h2>
+          <div class="bg-mystic-800/50 rounded-lg p-4 mb-6">
+            <p class="text-mystic-200 leading-relaxed">あなたの自然な活力は強いですが、豊富な火のエネルギーは落ち着きのなさや過度の努力を引き起こす可能性があります。活動と休息のバランスを維持してください。心血管の健康に注意を払い、過度のストレスを避けてください。</p>
+          </div>
+
+          <div class="bg-gradient-to-r from-gold-500/20 to-yellow-500/20 border border-gold-500/30 rounded-lg p-6">
+            <p class="text-mystic-200 leading-relaxed"><strong class="text-gold-400">まとめ：</strong> 2026年は、着実な進歩とリーダーシップの機会を伴う龍にとって有利な年です。あなたの自然な野心とカリスマは、年のエネルギーとよく一致します。バランスの取れた成長に焦点を当て、強い関係を維持し、過度の努力を避けてください。</p>
+          </div>
+        </div>
+      `,
+        ko: `
+        <div class="space-y-8">
+          <div class="mb-8">
+            <div class="bg-gradient-to-r from-gold-500/20 to-yellow-500/20 border border-gold-500/30 rounded-lg p-6 mb-8">
+              <h3 class="text-lg font-semibold text-gold-400 mb-3">🐉 2026년 병오년 용 개요</h3>
+              <ul class="text-mystic-200 space-y-2">
+                <li>• <strong>년의 요소：</strong> 병화（천간）+ 오화（지지）= 화가 풍부한 해</li>
+                <li>• <strong>태세 관계：</strong> 중립 - 안정적인 관계</li>
+                <li>• <strong>주요 이점：</strong> 리더십 기회와 직업 발전</li>
+                <li>• <strong>전체 운세：</strong> 상승 추세로 안정적</li>
+                <li>• <strong>연간 테마：</strong> 리더십, 야망, 꾸준한 진행</li>
+              </ul>
+            </div>
+          </div>
+
+          <p class="mb-6 text-lg text-mystic-200 leading-relaxed">
+            2026년은 병오마년으로, 화 에너지가 풍부한 해입니다. 진년（용）생 사람들에게는, 올해 안정적인 진행과 성장의 기회를 가져옵니다. 용의 자연스러운 리더십 자질과 야망은 2026년의 역동적인 화 에너지와 잘 일치하여, 직업 발전과 개인 성장에 유리한 조건을 만듭니다.
+          </p>
+
+          <h2 class="text-2xl font-bold text-white mb-4 mt-8">직업 운세：리더십 기회, 직업 발전</h2>
+          <div class="space-y-4 mb-6">
+            <div class="bg-gradient-to-r from-blue-500/10 to-cyan-500/10 border border-blue-500/20 rounded-lg p-4">
+              <h4 class="text-lg font-semibold text-blue-400 mb-2">💼 기회</h4>
+              <p class="text-mystic-200 leading-relaxed">당신의 리더십 능력이 올해 빛날 것입니다. 승진과 더 큰 책임을 맡는 기회가 유리합니다. 화 에너지는 당신의 야심찬 성격을 지원하여, 직업 목표를 추구하기에 좋은 시기가 됩니다.</p>
+            </div>
+            <div class="bg-mystic-800/50 rounded-lg p-4">
+              <h4 class="text-lg font-semibold text-gold-400 mb-2">💡 직업 조언</h4>
+              <p class="text-mystic-200 leading-relaxed">주도적으로 행동하고 리더십 기술을 보여주세요. 그러나 너무 공격적이거나 지배적이 되는 것을 피하세요. 최상의 결과를 위해 야망과 팀워크 및 협력을 균형시키세요.</p>
+            </div>
+          </div>
+
+          <h2 class="text-2xl font-bold text-white mb-4 mt-8">재운 추세：꾸준한 성장, 투자 기회</h2>
+          <div class="bg-mystic-800/50 rounded-lg p-4 mb-6">
+            <p class="text-mystic-200 leading-relaxed">재정 전망은 성장 가능성을 동반하여 안정적입니다. 적당한 투자, 특히 화나 토와 관련된 산업을 고려하세요. 당신의 자연스러운 비즈니스 감각이 당신을 잘 도울 것이지만, 재정 결정에서 과신을 피하세요.</p>
+          </div>
+
+          <h2 class="text-2xl font-bold text-white mb-4 mt-8">관계：강한 연결, 사회적 성공</h2>
+          <div class="space-y-4 mb-6">
+            <div class="bg-gradient-to-r from-pink-500/10 to-purple-500/10 border border-pink-500/20 rounded-lg p-4">
+              <h4 class="text-lg font-semibold text-pink-400 mb-2">💕 관계</h4>
+              <p class="text-mystic-200 leading-relaxed">당신의 카리스마와 자신감이 다른 사람들을 끌어들입니다. 사회적 연결이 강하고, 관계가 번영합니다. 독신자에게는, 의미 있는 연결의 기회가 유리합니다. 교제 중인 사람들에게는, 소통과 상호 존중이 유대를 강화합니다.</p>
+            </div>
+          </div>
+
+          <h2 class="text-2xl font-bold text-white mb-4 mt-8">건강：에너지 균형 유지하기</h2>
+          <div class="bg-mystic-800/50 rounded-lg p-4 mb-6">
+            <p class="text-mystic-200 leading-relaxed">당신의 자연스러운 활력이 강하지만, 풍부한 화 에너지는 불안이나 과로를 일으킬 수 있습니다. 활동과 휴식 사이의 균형을 유지하세요. 심혈관 건강에 주의를 기울이고 과도한 스트레스를 피하세요.</p>
+          </div>
+
+          <div class="bg-gradient-to-r from-gold-500/20 to-yellow-500/20 border border-gold-500/30 rounded-lg p-6">
+            <p class="text-mystic-200 leading-relaxed"><strong class="text-gold-400">요약：</strong> 2026년은 안정적인 진행과 리더십 기회를 동반한 용에게 유리한 해입니다. 당신의 자연스러운 야망과 카리스마는 해의 에너지와 잘 일치합니다. 균형 잡힌 성장에 집중하고, 강한 관계를 유지하며, 과로를 피하세요.</p>
+          </div>
+        </div>
+      `
+      },
       author: "Master Chen",
       date: "2025-12-23",
       readTime: "8 min read",
