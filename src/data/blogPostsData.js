@@ -12764,9 +12764,18 @@ export const blogPostsData = {
       ]
     },
     "2026-bing-wu-year-zodiac-pig-fortune-prediction": {
-      title: "2026 Bing Wu Year: Zodiac Pig Fortune Prediction",
-      excerpt: "2026 is the Bing Wu Horse Year. For those born in the Year of the Pig, this year brings stable and harmonious fortune. Your natural generosity and easygoing nature help you navigate the year successfully with positive relationships and steady progress.",
-      content: `
+      title: {
+        en: "2026 Bing Wu Year: Zodiac Pig Fortune Prediction",
+        ja: "2026年丙午年：亥年（猪）の運勢予測",
+        ko: "2026년 병오년：해년（돼지）운세 예측"
+      },
+      excerpt: {
+        en: "2026 is the Bing Wu Horse Year. For those born in the Year of the Pig, this year brings stable and harmonious fortune. Your natural generosity and easygoing nature help you navigate the year successfully with positive relationships and steady progress.",
+        ja: "2026年は丙午馬年です。亥年（猪）生まれの人にとって、今年は安定した調和の取れた運気をもたらします。あなたの自然な寛大さと気楽な性質が、ポジティブな関係と着実な進歩で年の成功を導くのに役立ちます。",
+        ko: "2026년은 병오마년입니다. 해년（돼지）생 사람들에게는, 올해 안정적이고 조화로운 운을 가져옵니다. 당신의 자연스러운 관대함과 느긋한 성격이 긍정적인 관계와 꾸준한 진행으로 해의 성공을 탐색하는 데 도움이 됩니다."
+      },
+      content: {
+        en: `
         <div class="space-y-8">
           <div class="mb-8">
             <div class="bg-gradient-to-r from-blue-500/20 to-cyan-500/20 border border-blue-500/30 rounded-lg p-6 mb-8">
@@ -12824,6 +12833,123 @@ export const blogPostsData = {
           </div>
         </div>
       `,
+        ja: `
+        <div class="space-y-8">
+          <div class="mb-8">
+            <div class="bg-gradient-to-r from-blue-500/20 to-cyan-500/20 border border-blue-500/30 rounded-lg p-6 mb-8">
+              <h3 class="text-lg font-semibold text-blue-400 mb-3">🐷 2026年丙午年猪の概要</h3>
+              <ul class="text-mystic-200 space-y-2">
+                <li>• <strong>年の要素：</strong> 丙火（天干）+ 午火（地支）= 火が豊富な年</li>
+                <li>• <strong>太歳関係：</strong> 中立 - 安定して調和している</li>
+                <li>• <strong>主要な利点：</strong> 寛大さと調和の取れた関係</li>
+                <li>• <strong>全体的な運勢：</strong> ポジティブな傾向で安定</li>
+                <li>• <strong>年間テーマ：</strong> 調和、寛大さ、着実な進歩</li>
+              </ul>
+            </div>
+          </div>
+
+          <p class="mb-6 text-lg text-mystic-200 leading-relaxed">
+            2026年は丙午馬年で、火のエネルギーが豊富な年です。亥年（猪）生まれの人にとって、今年は安定した調和の取れた運気をもたらします。あなたの自然な寛大さ、気楽な性質、他の人とうまくやっていく能力がポジティブなエネルギーを作り出します。火のエネルギーは、あなたの楽観的な見通しをサポートし、強い関係を築くのに役立ちます。これは着実な進歩と人生の喜びを楽しむのに有利な年です。
+          </p>
+
+          <h2 class="text-2xl font-bold text-white mb-4 mt-8">キャリア運勢：着実な進歩、ポジティブな関係</h2>
+          <div class="space-y-4 mb-6">
+            <div class="bg-gradient-to-r from-blue-500/10 to-cyan-500/10 border border-blue-500/20 rounded-lg p-4">
+              <h4 class="text-lg font-semibold text-blue-400 mb-2">💼 機会</h4>
+              <p class="text-mystic-200 leading-relaxed">あなたの気楽な性質と他の人とうまく働く能力が有利なキャリア条件を作り出します。ホスピタリティ、サービス業、または良好な対人スキルを必要とする分野での機会が有利です。火のエネルギーは、あなたの自然な楽観主義をサポートし、ポジティブな専門的な関係を築くのに役立ちます。</p>
+            </div>
+            <div class="bg-mystic-800/50 rounded-lg p-4">
+              <h4 class="text-lg font-semibold text-gold-400 mb-2">💡 キャリアアドバイス</h4>
+              <p class="text-mystic-200 leading-relaxed">あなたの自然な人々のスキルとポジティブな態度を活用してください。強い専門的な関係を築き、職場で調和を維持することに焦点を当ててください。あなたの寛大さと他の人を助ける意欲が評価され、機会につながる可能性があります。</p>
+            </div>
+          </div>
+
+          <h2 class="text-2xl font-bold text-white mb-4 mt-8">財運トレンド：着実な蓄積、人生を楽しむ</h2>
+          <div class="bg-mystic-800/50 rounded-lg p-4 mb-6">
+            <p class="text-mystic-200 leading-relaxed">財務の見通しは、着実な蓄積の機会を伴って安定しています。あなたの自然な寛大さは、他の人に支出することを導く可能性がありますが、これも将来の利益をもたらす可能性のあるポジティブな関係を築きます。人生の喜びを楽しむことと賢明な財務計画をバランスさせてください。自分の財務セキュリティを犠牲にしてあまりにも寛大になることを避けてください。</p>
+          </div>
+
+          <h2 class="text-2xl font-bold text-white mb-4 mt-8">人間関係：優れた調和、強いつながり</h2>
+          <div class="space-y-4 mb-6">
+            <div class="bg-gradient-to-r from-pink-500/10 to-purple-500/10 border border-pink-500/20 rounded-lg p-4">
+              <h4 class="text-lg font-semibold text-pink-400 mb-2">💕 独身者</h4>
+              <p class="text-mystic-200 leading-relaxed">あなたの寛大で気楽な性質が他の人を引き付けます。ロマンチックな機会が有利で、今年形成された関係は幸福と調和の強い可能性を持っています。あなたの自然な魅力とポジティブな見通しが、潜在的なパートナーにとって魅力的になります。</p>
+            </div>
+            <div class="bg-gradient-to-r from-green-500/10 to-emerald-500/10 border border-green-500/20 rounded-lg p-4">
+              <h4 class="text-lg font-semibold text-green-400 mb-2">💑 交際中</h4>
+              <p class="text-mystic-200 leading-relaxed">既存の関係は調和が取れて楽しいものになります。あなたの寛大さと気楽な性質が絆を強化します。これはコミットメントの深化、婚約、または結婚に有利な年です。共有された活動と一緒に人生を楽しむことに焦点を当ててください。</p>
+            </div>
+          </div>
+
+          <h2 class="text-2xl font-bold text-white mb-4 mt-8">健康：バランスの取れたライフスタイル、人生を楽しむ</h2>
+          <div class="bg-mystic-800/50 rounded-lg p-4 mb-6">
+            <p class="text-mystic-200 leading-relaxed">あなたの健康運勢は一般的に安定しています。しかし、人生の喜びへの愛は過度の耽溺を導く可能性があります。バランスの取れた食事と定期的な運動を維持してください。過度の飲食を避けてください。あなたの自然な楽観主義は全体的なウェルビーイングをサポートしますが、すべてのことにおいて節度を実践してください。</p>
+          </div>
+
+          <div class="bg-gradient-to-r from-blue-500/20 to-cyan-500/20 border border-blue-500/30 rounded-lg p-6">
+            <p class="text-mystic-200 leading-relaxed"><strong class="text-blue-400">まとめ：</strong> 2026年は、猪にとって安定した調和の取れた年です。ポジティブな関係を築くこと、節度を持って人生の喜びを楽しむこと、着実な進歩をすることに焦点を当ててください。あなたの寛大さ、気楽な性質、楽観的な見通しが有利な条件を作り出します。これは人生のすべての領域で調和、幸福、ポジティブなつながりの年です。</p>
+          </div>
+        </div>
+      `,
+        ko: `
+        <div class="space-y-8">
+          <div class="mb-8">
+            <div class="bg-gradient-to-r from-blue-500/20 to-cyan-500/20 border border-blue-500/30 rounded-lg p-6 mb-8">
+              <h3 class="text-lg font-semibold text-blue-400 mb-3">🐷 2026년 병오년 돼지 개요</h3>
+              <ul class="text-mystic-200 space-y-2">
+                <li>• <strong>년의 요소：</strong> 병화（천간）+ 오화（지지）= 화가 풍부한 해</li>
+                <li>• <strong>태세 관계：</strong> 중립 - 안정적이고 조화로운</li>
+                <li>• <strong>주요 이점：</strong> 관대함과 조화로운 관계</li>
+                <li>• <strong>전체 운세：</strong> 긍정적인 추세로 안정적</li>
+                <li>• <strong>연간 테마：</strong> 조화, 관대함, 꾸준한 진행</li>
+              </ul>
+            </div>
+          </div>
+
+          <p class="mb-6 text-lg text-mystic-200 leading-relaxed">
+            2026년은 병오마년으로, 화 에너지가 풍부한 해입니다. 해년（돼지）생 사람들에게는, 올해 안정적이고 조화로운 운을 가져옵니다. 당신의 자연스러운 관대함, 느긋한 성격, 다른 사람들과 잘 지내는 능력이 긍정적인 에너지를 만듭니다. 화 에너지는 당신의 낙관적인 전망을 지원하고 강한 관계를 구축하는 데 도움이 됩니다. 이것은 꾸준한 진행과 인생의 즐거움을 즐기기에 유리한 해입니다.
+          </p>
+
+          <h2 class="text-2xl font-bold text-white mb-4 mt-8">직업 운세：꾸준한 진행, 긍정적인 관계</h2>
+          <div class="space-y-4 mb-6">
+            <div class="bg-gradient-to-r from-blue-500/10 to-cyan-500/10 border border-blue-500/20 rounded-lg p-4">
+              <h4 class="text-lg font-semibold text-blue-400 mb-2">💼 기회</h4>
+              <p class="text-mystic-200 leading-relaxed">당신의 느긋한 성격과 다른 사람들과 잘 작업하는 능력이 유리한 직업 조건을 만듭니다. 환대, 서비스 산업, 또는 좋은 대인 기술이 필요한 분야에서의 기회가 유리합니다. 화 에너지는 당신의 자연스러운 낙관주의를 지원하고 긍정적인 전문적인 관계를 구축하는 데 도움이 됩니다.</p>
+            </div>
+            <div class="bg-mystic-800/50 rounded-lg p-4">
+              <h4 class="text-lg font-semibold text-gold-400 mb-2">💡 직업 조언</h4>
+              <p class="text-mystic-200 leading-relaxed">당신의 자연스러운 사람 기술과 긍정적인 태도를 활용하세요. 강한 전문적인 관계를 구축하고 직장에서 조화를 유지하는 데 집중하세요. 당신의 관대함과 다른 사람을 돕고자 하는 의지가 평가받고 기회로 이어질 수 있습니다.</p>
+            </div>
+          </div>
+
+          <h2 class="text-2xl font-bold text-white mb-4 mt-8">재운 추세：꾸준한 축적, 인생 즐기기</h2>
+          <div class="bg-mystic-800/50 rounded-lg p-4 mb-6">
+            <p class="text-mystic-200 leading-relaxed">재정 전망은 꾸준한 축적의 기회를 동반하여 안정적입니다. 당신의 자연스러운 관대함은 다른 사람에게 지출하는 것을 이끌 수 있지만, 이것은 또한 미래의 이익을 가져올 수 있는 긍정적인 관계를 구축합니다. 인생의 즐거움을 즐기는 것과 합리적인 재정 계획을 균형시키세요. 자신의 재정 보안을 희생하여 너무 관대해지는 것을 피하세요.</p>
+          </div>
+
+          <h2 class="text-2xl font-bold text-white mb-4 mt-8">관계：우수한 조화, 강한 연결</h2>
+          <div class="space-y-4 mb-6">
+            <div class="bg-gradient-to-r from-pink-500/10 to-purple-500/10 border border-pink-500/20 rounded-lg p-4">
+              <h4 class="text-lg font-semibold text-pink-400 mb-2">💕 독신자</h4>
+              <p class="text-mystic-200 leading-relaxed">당신의 관대하고 느긋한 성격이 다른 사람들을 끌어들입니다. 로맨틱 기회가 유리하며, 올해 형성된 관계는 행복과 조화의 강한 잠재력을 가지고 있습니다. 당신의 자연스러운 매력과 긍정적인 전망이 잠재적 파트너에게 매력적입니다.</p>
+            </div>
+            <div class="bg-gradient-to-r from-green-500/10 to-emerald-500/10 border border-green-500/20 rounded-lg p-4">
+              <h4 class="text-lg font-semibold text-green-400 mb-2">💑 교제 중</h4>
+              <p class="text-mystic-200 leading-relaxed">기존 관계는 조화롭고 즐거울 것입니다. 당신의 관대함과 느긋한 성격이 유대를 강화합니다. 이것은 약속의 심화, 약혼, 또는 결혼에 유리한 해입니다. 공유된 활동과 함께 인생을 즐기는 것에 집중하세요.</p>
+            </div>
+          </div>
+
+          <h2 class="text-2xl font-bold text-white mb-4 mt-8">건강：균형 잡힌 라이프스타일, 인생 즐기기</h2>
+          <div class="bg-mystic-800/50 rounded-lg p-4 mb-6">
+            <p class="text-mystic-200 leading-relaxed">당신의 건강 운세는 일반적으로 안정적입니다. 그러나 인생의 즐거움에 대한 사랑은 과도한 탐닉을 이끌 수 있습니다. 균형 잡힌 식단과 정기적인 운동을 유지하세요. 과도한 식사나 음주를 피하세요. 당신의 자연스러운 낙관주의는 전반적인 웰빙을 지원하지만, 모든 것에서 절제를 실천하세요.</p>
+          </div>
+
+          <div class="bg-gradient-to-r from-blue-500/20 to-cyan-500/20 border border-blue-500/30 rounded-lg p-6">
+            <p class="text-mystic-200 leading-relaxed"><strong class="text-blue-400">요약：</strong> 2026년은 돼지에게 안정적이고 조화로운 해입니다. 긍정적인 관계 구축, 절제를 가지고 인생의 즐거움을 즐기기, 꾸준한 진행에 집중하세요. 당신의 관대함, 느긋한 성격, 낙관적인 전망이 유리한 조건을 만듭니다. 이것은 인생의 모든 영역에서 조화, 행복, 긍정적인 연결의 해입니다.</p>
+          </div>
+        </div>
+      `
+      },
       author: "Master Chen",
       date: "2025-12-23",
       readTime: "8 min read",
