@@ -10715,9 +10715,18 @@ export const blogPostsData = {
       ]
     },
     "2026-bing-wu-year-zodiac-ox-fortune-prediction": {
-      title: "2026 Bing Wu Year: Zodiac Ox Fortune Prediction",
-      excerpt: "2026 is the Bing Wu Horse Year. For those born in the Year of the Ox, this year brings the 'Harming Tai Sui' relationship, requiring extra caution in interpersonal relationships and financial management. However, with proper planning and steady progress, opportunities for growth still exist.",
-      content: `
+      title: {
+        en: "2026 Bing Wu Year: Zodiac Ox Fortune Prediction",
+        ja: "2026年丙午年：丑年（牛）の運勢予測",
+        ko: "2026년 병오년：축년（소）운세 예측"
+      },
+      excerpt: {
+        en: "2026 is the Bing Wu Horse Year. For those born in the Year of the Ox, this year brings the 'Harming Tai Sui' relationship, requiring extra caution in interpersonal relationships and financial management. However, with proper planning and steady progress, opportunities for growth still exist.",
+        ja: "2026年は丙午馬年です。丑年（牛）生まれの人にとって、今年は「害太歳」の関係をもたらし、対人関係と財務管理に特別な注意が必要です。しかし、適切な計画と着実な進歩により、成長の機会は依然として存在します。",
+        ko: "2026년은 병오마년입니다. 축년（소）생 사람들에게는, 올해 '해태세' 관계를 가져와, 대인 관계와 재정 관리에 특별한 주의가 필요합니다. 그러나 적절한 계획과 꾸준한 진행으로, 성장의 기회는 여전히 존재합니다."
+      },
+      content: {
+        en: `
         <div class="space-y-8">
           <div class="mb-8">
             <div class="bg-gradient-to-r from-yellow-500/20 to-amber-500/20 border border-yellow-500/30 rounded-lg p-6 mb-8">
@@ -10791,6 +10800,155 @@ export const blogPostsData = {
           </div>
         </div>
       `,
+        ja: `
+        <div class="space-y-8">
+          <div class="mb-8">
+            <div class="bg-gradient-to-r from-yellow-500/20 to-amber-500/20 border border-yellow-500/30 rounded-lg p-6 mb-8">
+              <h3 class="text-lg font-semibold text-yellow-400 mb-3">🐂 2026年丙午年牛の概要</h3>
+              <ul class="text-mystic-200 space-y-2">
+                <li>• <strong>年の要素：</strong> 丙火（天干）+ 午火（地支）= 火が豊富な年</li>
+                <li>• <strong>太歳関係：</strong> 丑午害（害太歳）</li>
+                <li>• <strong>主要な課題：</strong> 対人関係の衝突と財務の注意が必要</li>
+                <li>• <strong>全体的な運勢：</strong> 着実な進歩と慎重な計画が必要</li>
+                <li>• <strong>年間テーマ：</strong> リスクよりも安定性、忍耐と持続性</li>
+              </ul>
+            </div>
+          </div>
+
+          <p class="mb-6 text-lg text-mystic-200 leading-relaxed">
+            2026年は丙午馬年で、火のエネルギーが豊富な年です。丑年（牛）生まれの人にとって、丑午関係は「害太歳」の状況を作り出し、対人関係と財務問題で特別な注意が必要です。しかし、牛の固有の安定性と持続性は、これらの課題を成功裏に乗り切るのに役立ちます。
+          </p>
+
+          <h2 class="text-2xl font-bold text-white mb-4 mt-8">キャリア運勢：着実な進歩、衝突を避ける</h2>
+          <div class="space-y-4 mb-6">
+            <div class="bg-gradient-to-r from-blue-500/10 to-cyan-500/10 border border-blue-500/20 rounded-lg p-4">
+              <h4 class="text-lg font-semibold text-blue-400 mb-2">💼 機会</h4>
+              <p class="text-mystic-200 leading-relaxed">あなたの着実で信頼できる性質が今年評価されます。長期プロジェクトと堅実な基盤の構築に焦点を当ててください。土と金の要素に関連する業界があなたに適しています。</p>
+            </div>
+            <div class="bg-gradient-to-r from-red-500/10 to-orange-500/10 border border-red-500/20 rounded-lg p-4">
+              <h4 class="text-lg font-semibold text-red-400 mb-2">⚠️ 課題</h4>
+              <p class="text-mystic-200 leading-relaxed">職場の衝突を避け、パートナーシップに注意してください。害の関係は誤解を引き起こす可能性があるため、明確なコミュニケーションが不可欠です。</p>
+            </div>
+            <div class="bg-mystic-800/50 rounded-lg p-4">
+              <h4 class="text-lg font-semibold text-gold-400 mb-2">💡 キャリアアドバイス</h4>
+              <ul class="list-disc list-inside text-mystic-200 space-y-1">
+                <li>着実な仕事の倫理を維持し、決定に急いで飛び込まない</li>
+                <li>新しいものを始めるよりも、既存のプロジェクトを完成させることに焦点を当てる</li>
+                <li>一貫したパフォーマンスを通じて同僚との強い関係を築く</li>
+              </ul>
+            </div>
+          </div>
+
+          <h2 class="text-2xl font-bold text-white mb-4 mt-8">財運トレンド：保守的なアプローチ、リスクを避ける</h2>
+          <div class="space-y-4 mb-6">
+            <div class="bg-gradient-to-r from-green-500/10 to-emerald-500/10 border border-green-500/20 rounded-lg p-4">
+              <h4 class="text-lg font-semibold text-green-400 mb-2">💰 定期収入</h4>
+              <p class="text-mystic-200 leading-relaxed">あなたの定期収入は安定しています。迅速な利益を求めるよりも、貯蓄と保守的な財務計画に焦点を当ててください。</p>
+            </div>
+            <div class="bg-gradient-to-r from-red-500/10 to-pink-500/10 border border-red-500/20 rounded-lg p-4">
+              <h4 class="text-lg font-semibold text-red-400 mb-2">⚠️ 財務警告</h4>
+              <p class="text-mystic-200 leading-relaxed">高リスク投資を避け、ローンや保証に注意してください。害の関係は注意しないと予期しない財務損失をもたらす可能性があります。</p>
+            </div>
+          </div>
+
+          <h2 class="text-2xl font-bold text-white mb-4 mt-8">人間関係：忍耐と理解</h2>
+          <div class="space-y-4 mb-6">
+            <div class="bg-gradient-to-r from-pink-500/10 to-purple-500/10 border border-pink-500/20 rounded-lg p-4">
+              <h4 class="text-lg font-semibold text-pink-400 mb-2">💕 独身者</h4>
+              <p class="text-mystic-200 leading-relaxed">ロマンスはゆっくりと着実に発展する可能性があります。関係に急いで飛び込むよりも、本物のつながりを築くことに焦点を当ててください。</p>
+            </div>
+            <div class="bg-mystic-800/50 rounded-lg p-4">
+              <h4 class="text-lg font-semibold text-gold-400 mb-2">💡 関係アドバイス</h4>
+              <p class="text-mystic-200 leading-relaxed">すべての関係で忍耐と理解を実践してください。明確なコミュニケーションは、害の関係によって引き起こされる誤解を避けるのに役立ちます。</p>
+            </div>
+          </div>
+
+          <h2 class="text-2xl font-bold text-white mb-4 mt-8">健康：定期的なルーチンを維持する</h2>
+          <div class="bg-mystic-800/50 rounded-lg p-4 mb-6">
+            <p class="text-mystic-200 leading-relaxed">定期的な運動と食事のルーチンを維持してください。牛の強い体質は役立ちますが、過労とストレスを避けてください。消化器の健康に注意を払い、バランスの取れたライフスタイルを維持してください。</p>
+          </div>
+
+          <h2 class="text-2xl font-bold text-white mb-4 mt-8">2026年の重要な注意事項</h2>
+          <div class="bg-gradient-to-r from-amber-500/20 to-yellow-500/20 border border-amber-500/30 rounded-lg p-6">
+            <p class="text-mystic-200 leading-relaxed"><strong class="text-amber-400">まとめ：</strong> 2026年は牛に安定性を維持し、リスクを避けることを要求します。着実な進歩、明確なコミュニケーション、保守的な財務管理に焦点を当ててください。あなたの持続性と信頼性が今年の最大の資産です。</p>
+          </div>
+        </div>
+      `,
+        ko: `
+        <div class="space-y-8">
+          <div class="mb-8">
+            <div class="bg-gradient-to-r from-yellow-500/20 to-amber-500/20 border border-yellow-500/30 rounded-lg p-6 mb-8">
+              <h3 class="text-lg font-semibold text-yellow-400 mb-3">🐂 2026년 병오년 소 개요</h3>
+              <ul class="text-mystic-200 space-y-2">
+                <li>• <strong>년의 요소：</strong> 병화（천간）+ 오화（지지）= 화가 풍부한 해</li>
+                <li>• <strong>태세 관계：</strong> 축오해（해태세）</li>
+                <li>• <strong>주요 도전：</strong> 대인 관계 충돌과 재정 주의가 필요</li>
+                <li>• <strong>전체 운세：</strong> 꾸준한 진행과 신중한 계획이 필요</li>
+                <li>• <strong>연간 테마：</strong> 위험보다 안정성, 인내와 지속성</li>
+              </ul>
+            </div>
+          </div>
+
+          <p class="mb-6 text-lg text-mystic-200 leading-relaxed">
+            2026년은 병오마년으로, 화 에너지가 풍부한 해입니다. 축년（소）생 사람들에게는, 축오 관계가 "해태세" 상황을 만들어, 대인 관계와 재정 문제에서 특별한 주의가 필요합니다. 그러나 소의 고유한 안정성과 지속성은 이러한 도전을 성공적으로 탐색하는 데 도움이 됩니다.
+          </p>
+
+          <h2 class="text-2xl font-bold text-white mb-4 mt-8">직업 운세：꾸준한 진행, 충돌 피하기</h2>
+          <div class="space-y-4 mb-6">
+            <div class="bg-gradient-to-r from-blue-500/10 to-cyan-500/10 border border-blue-500/20 rounded-lg p-4">
+              <h4 class="text-lg font-semibold text-blue-400 mb-2">💼 기회</h4>
+              <p class="text-mystic-200 leading-relaxed">당신의 꾸준하고 신뢰할 수 있는 성격이 올해 평가받을 것입니다. 장기 프로젝트와 견고한 기반 구축에 집중하세요. 토와 금 요소와 관련된 산업이 당신에게 잘 맞습니다.</p>
+            </div>
+            <div class="bg-gradient-to-r from-red-500/10 to-orange-500/10 border border-red-500/20 rounded-lg p-4">
+              <h4 class="text-lg font-semibold text-red-400 mb-2">⚠️ 도전</h4>
+              <p class="text-mystic-200 leading-relaxed">직장 갈등을 피하고 파트너십에 주의하세요. 해 관계는 오해를 일으킬 수 있으므로, 명확한 소통이 필수적입니다.</p>
+            </div>
+            <div class="bg-mystic-800/50 rounded-lg p-4">
+              <h4 class="text-lg font-semibold text-gold-400 mb-2">💡 직업 조언</h4>
+              <ul class="list-disc list-inside text-mystic-200 space-y-1">
+                <li>꾸준한 직업 윤리를 유지하고 결정에 성급하게 뛰어들지 않기</li>
+                <li>새로운 것을 시작하는 것보다 기존 프로젝트를 완성하는 데 집중하기</li>
+                <li>일관된 성과를 통해 동료와의 강한 관계 구축하기</li>
+              </ul>
+            </div>
+          </div>
+
+          <h2 class="text-2xl font-bold text-white mb-4 mt-8">재운 추세：보수적 접근, 위험 피하기</h2>
+          <div class="space-y-4 mb-6">
+            <div class="bg-gradient-to-r from-green-500/10 to-emerald-500/10 border border-green-500/20 rounded-lg p-4">
+              <h4 class="text-lg font-semibold text-green-400 mb-2">💰 정기 수입</h4>
+              <p class="text-mystic-200 leading-relaxed">당신의 정기 수입은 안정적입니다. 빠른 이익을 추구하는 것보다 저축과 보수적인 재정 계획에 집중하세요.</p>
+            </div>
+            <div class="bg-gradient-to-r from-red-500/10 to-pink-500/10 border border-red-500/20 rounded-lg p-4">
+              <h4 class="text-lg font-semibold text-red-400 mb-2">⚠️ 재정 경고</h4>
+              <p class="text-mystic-200 leading-relaxed">고위험 투자를 피하고 대출이나 보증에 주의하세요. 해 관계는 주의하지 않으면 예상치 못한 재정적 손실을 가져올 수 있습니다.</p>
+            </div>
+          </div>
+
+          <h2 class="text-2xl font-bold text-white mb-4 mt-8">관계：인내와 이해</h2>
+          <div class="space-y-4 mb-6">
+            <div class="bg-gradient-to-r from-pink-500/10 to-purple-500/10 border border-pink-500/20 rounded-lg p-4">
+              <h4 class="text-lg font-semibold text-pink-400 mb-2">💕 독신자</h4>
+              <p class="text-mystic-200 leading-relaxed">로맨스는 천천히 그러나 꾸준히 발전할 수 있습니다. 관계에 성급하게 뛰어드는 것보다 진정한 연결을 구축하는 데 집중하세요.</p>
+            </div>
+            <div class="bg-mystic-800/50 rounded-lg p-4">
+              <h4 class="text-lg font-semibold text-gold-400 mb-2">💡 관계 조언</h4>
+              <p class="text-mystic-200 leading-relaxed">모든 관계에서 인내와 이해를 실천하세요. 명확한 소통은 해 관계로 인한 오해를 피하는 데 도움이 됩니다.</p>
+            </div>
+          </div>
+
+          <h2 class="text-2xl font-bold text-white mb-4 mt-8">건강：정기적인 루틴 유지하기</h2>
+          <div class="bg-mystic-800/50 rounded-lg p-4 mb-6">
+            <p class="text-mystic-200 leading-relaxed">정기적인 운동과 식이 루틴을 유지하세요. 소의 강한 체질이 도움이 되지만, 과로와 스트레스를 피하세요. 소화기 건강에 주의를 기울이고 균형 잡힌 라이프스타일을 유지하세요.</p>
+          </div>
+
+          <h2 class="text-2xl font-bold text-white mb-4 mt-8">2026년 주요 주의사항</h2>
+          <div class="bg-gradient-to-r from-amber-500/20 to-yellow-500/20 border border-amber-500/30 rounded-lg p-6">
+            <p class="text-mystic-200 leading-relaxed"><strong class="text-amber-400">요약：</strong> 2026년은 소에게 안정성을 유지하고 위험을 피하도록 요구합니다. 꾸준한 진행, 명확한 소통, 보수적인 재정 관리에 집중하세요. 당신의 지속성과 신뢰성이 올해의 가장 큰 자산입니다.</p>
+          </div>
+        </div>
+      `
+      },
       author: "Master Chen",
       date: "2025-12-23",
       readTime: "8 min read",
