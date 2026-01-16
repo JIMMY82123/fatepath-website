@@ -10971,9 +10971,18 @@ export const blogPostsData = {
       ]
     },
     "2026-bing-wu-year-zodiac-rabbit-fortune-prediction": {
-      title: "2026 Bing Wu Year: Zodiac Rabbit Fortune Prediction",
-      excerpt: "2026 is the Bing Wu Horse Year. For those born in the Year of the Rabbit, the Mao-Wu relationship creates a 'Breaking Tai Sui' situation, bringing changes and challenges. However, the Rabbit's adaptability and gentle nature help navigate these transitions successfully.",
-      content: `
+      title: {
+        en: "2026 Bing Wu Year: Zodiac Rabbit Fortune Prediction",
+        ja: "2026年丙午年：卯年（兔）の運勢予測",
+        ko: "2026년 병오년：묘년（토끼）운세 예측"
+      },
+      excerpt: {
+        en: "2026 is the Bing Wu Horse Year. For those born in the Year of the Rabbit, the Mao-Wu relationship creates a 'Breaking Tai Sui' situation, bringing changes and challenges. However, the Rabbit's adaptability and gentle nature help navigate these transitions successfully.",
+        ja: "2026年は丙午馬年です。卯年（兔）生まれの人にとって、卯午関係は「破太歳」の状況を作り出し、変化と課題をもたらします。しかし、兔の適応性と優しい性質は、これらの移行を成功裏に乗り切るのに役立ちます。",
+        ko: "2026년은 병오마년입니다. 묘년（토끼）생 사람들에게는, 묘오 관계가 '파태세' 상황을 만들어, 변화와 도전을 가져옵니다. 그러나 토끼의 적응력과 부드러운 성격은 이러한 전환을 성공적으로 탐색하는 데 도움이 됩니다."
+      },
+      content: {
+        en: `
         <div class="space-y-8">
           <div class="mb-8">
             <div class="bg-gradient-to-r from-pink-500/20 to-purple-500/20 border border-pink-500/30 rounded-lg p-6 mb-8">
@@ -11027,6 +11036,115 @@ export const blogPostsData = {
           </div>
         </div>
       `,
+        ja: `
+        <div class="space-y-8">
+          <div class="mb-8">
+            <div class="bg-gradient-to-r from-pink-500/20 to-purple-500/20 border border-pink-500/30 rounded-lg p-6 mb-8">
+              <h3 class="text-lg font-semibold text-pink-400 mb-3">🐰 2026年丙午年兔の概要</h3>
+              <ul class="text-mystic-200 space-y-2">
+                <li>• <strong>年の要素：</strong> 丙火（天干）+ 午火（地支）= 火が豊富な年</li>
+                <li>• <strong>太歳関係：</strong> 卯午破（破太歳）</li>
+                <li>• <strong>主要な課題：</strong> 予期しない変化と関係の調整</li>
+                <li>• <strong>全体的な運勢：</strong> 適応性が成功の鍵</li>
+                <li>• <strong>年間テーマ：</strong> 変化を受け入れる、柔軟性を維持する</li>
+              </ul>
+            </div>
+          </div>
+
+          <p class="mb-6 text-lg text-mystic-200 leading-relaxed">
+            2026年は丙午馬年で、火のエネルギーが豊富な年です。卯年（兔）生まれの人にとって、卯午関係は「破太歳」の状況を作り出し、予期しない変化をもたらし、適応性を要求します。しかし、兔の優しい性質と柔軟性は、これらの移行を乗り切る上で貴重な資産です。
+          </p>
+
+          <h2 class="text-2xl font-bold text-white mb-4 mt-8">キャリア運勢：変化に適応し、新しい機会を求める</h2>
+          <div class="space-y-4 mb-6">
+            <div class="bg-gradient-to-r from-blue-500/10 to-cyan-500/10 border border-blue-500/20 rounded-lg p-4">
+              <h4 class="text-lg font-semibold text-blue-400 mb-2">💼 機会</h4>
+              <p class="text-mystic-200 leading-relaxed">職場の変化は新しい機会をもたらす可能性があります。あなたの適応性と外交的スキルが評価されます。創造的またはコミュニケーション関連の分野を探索することを検討してください。</p>
+            </div>
+            <div class="bg-mystic-800/50 rounded-lg p-4">
+              <h4 class="text-lg font-semibold text-gold-400 mb-2">💡 キャリアアドバイス</h4>
+              <p class="text-mystic-200 leading-relaxed">柔軟性を保ち、新しい可能性にオープンでいてください。破の関係は予期しないキャリアの変化をもたらす可能性がありますが、オープンマインドでアプローチすれば、これらはポジティブな結果につながる可能性があります。</p>
+            </div>
+          </div>
+
+          <h2 class="text-2xl font-bold text-white mb-4 mt-8">財運トレンド：適度な利益、衝動的な支出を避ける</h2>
+          <div class="bg-mystic-800/50 rounded-lg p-4 mb-6">
+            <p class="text-mystic-200 leading-relaxed">財務的利益は適度になります。衝動的な購入を避け、必要な支出に焦点を当ててください。破の関係は、財務的コミットメントに注意することを示唆しています。</p>
+          </div>
+
+          <h2 class="text-2xl font-bold text-white mb-4 mt-8">人間関係：コミュニケーションが鍵</h2>
+          <div class="space-y-4 mb-6">
+            <div class="bg-gradient-to-r from-pink-500/10 to-purple-500/10 border border-pink-500/20 rounded-lg p-4">
+              <h4 class="text-lg font-semibold text-pink-400 mb-2">💕 関係</h4>
+              <p class="text-mystic-200 leading-relaxed">関係はより多くの注意とコミュニケーションを必要とする可能性があります。破の関係は誤解を引き起こす可能性があるため、感情を明確に表現し、他の人の話を聞いてください。</p>
+            </div>
+          </div>
+
+          <h2 class="text-2xl font-bold text-white mb-4 mt-8">健康：バランスを維持する</h2>
+          <div class="bg-mystic-800/50 rounded-lg p-4 mb-6">
+            <p class="text-mystic-200 leading-relaxed">感情的なウェルビーイングとストレス管理に注意を払ってください。兔の敏感な性質は年の変化の影響を受ける可能性があるため、バランスの取れたライフスタイルを維持し、必要に応じてサポートを求めてください。</p>
+          </div>
+
+          <div class="bg-gradient-to-r from-pink-500/20 to-purple-500/20 border border-pink-500/30 rounded-lg p-6">
+            <p class="text-mystic-200 leading-relaxed"><strong class="text-pink-400">まとめ：</strong> 2026年は兔に変化を受け入れ、柔軟性を維持することを要求します。あなたの適応性と優しい性質は、移行を成功裏に乗り切るのに役立ちます。コミュニケーションに焦点を当て、新しい可能性にオープンでいてください。</p>
+          </div>
+        </div>
+      `,
+        ko: `
+        <div class="space-y-8">
+          <div class="mb-8">
+            <div class="bg-gradient-to-r from-pink-500/20 to-purple-500/20 border border-pink-500/30 rounded-lg p-6 mb-8">
+              <h3 class="text-lg font-semibold text-pink-400 mb-3">🐰 2026년 병오년 토끼 개요</h3>
+              <ul class="text-mystic-200 space-y-2">
+                <li>• <strong>년의 요소：</strong> 병화（천간）+ 오화（지지）= 화가 풍부한 해</li>
+                <li>• <strong>태세 관계：</strong> 묘오파（파태세）</li>
+                <li>• <strong>주요 도전：</strong> 예상치 못한 변화와 관계 조정</li>
+                <li>• <strong>전체 운세：</strong> 적응성이 성공의 열쇠</li>
+                <li>• <strong>연간 테마：</strong> 변화를 받아들이기, 유연성 유지하기</li>
+              </ul>
+            </div>
+          </div>
+
+          <p class="mb-6 text-lg text-mystic-200 leading-relaxed">
+            2026년은 병오마년으로, 화 에너지가 풍부한 해입니다. 묘년（토끼）생 사람들에게는, 묘오 관계가 "파태세" 상황을 만들어, 예상치 못한 변화를 가져오고 적응성을 요구합니다. 그러나 토끼의 부드러운 성격과 유연성은 이러한 전환을 탐색하는 데 귀중한 자산입니다.
+          </p>
+
+          <h2 class="text-2xl font-bold text-white mb-4 mt-8">직업 운세：변화에 적응하고, 새로운 기회를 찾기</h2>
+          <div class="space-y-4 mb-6">
+            <div class="bg-gradient-to-r from-blue-500/10 to-cyan-500/10 border border-blue-500/20 rounded-lg p-4">
+              <h4 class="text-lg font-semibold text-blue-400 mb-2">💼 기회</h4>
+              <p class="text-mystic-200 leading-relaxed">직장의 변화는 새로운 기회를 가져올 수 있습니다. 당신의 적응력과 외교적 기술이 평가받을 것입니다. 창의적이거나 커뮤니케이션 관련 분야를 탐색하는 것을 고려하세요.</p>
+            </div>
+            <div class="bg-mystic-800/50 rounded-lg p-4">
+              <h4 class="text-lg font-semibold text-gold-400 mb-2">💡 직업 조언</h4>
+              <p class="text-mystic-200 leading-relaxed">유연성을 유지하고 새로운 가능성에 열려있으세요. 파 관계는 예상치 못한 직업 변화를 가져올 수 있지만, 열린 마음으로 접근하면 긍정적인 결과로 이어질 수 있습니다.</p>
+            </div>
+          </div>
+
+          <h2 class="text-2xl font-bold text-white mb-4 mt-8">재운 추세：적당한 이익, 충동적 지출 피하기</h2>
+          <div class="bg-mystic-800/50 rounded-lg p-4 mb-6">
+            <p class="text-mystic-200 leading-relaxed">재정적 이익은 적당할 것입니다. 충동적 구매를 피하고 필수 지출에 집중하세요. 파 관계는 재정적 약속에 주의할 것을 제안합니다.</p>
+          </div>
+
+          <h2 class="text-2xl font-bold text-white mb-4 mt-8">관계：소통이 열쇠</h2>
+          <div class="space-y-4 mb-6">
+            <div class="bg-gradient-to-r from-pink-500/10 to-purple-500/10 border border-pink-500/20 rounded-lg p-4">
+              <h4 class="text-lg font-semibold text-pink-400 mb-2">💕 관계</h4>
+              <p class="text-mystic-200 leading-relaxed">관계는 더 많은 주의와 소통을 필요로 할 수 있습니다. 파 관계는 오해를 일으킬 수 있으므로, 감정을 명확하게 표현하고 다른 사람의 말을 들어주세요.</p>
+            </div>
+          </div>
+
+          <h2 class="text-2xl font-bold text-white mb-4 mt-8">건강：균형 유지하기</h2>
+          <div class="bg-mystic-800/50 rounded-lg p-4 mb-6">
+            <p class="text-mystic-200 leading-relaxed">감정적 웰빙과 스트레스 관리에 주의를 기울이세요. 토끼의 민감한 성격은 해의 변화에 영향을 받을 수 있으므로, 균형 잡힌 라이프스타일을 유지하고 필요할 때 지원을 구하세요.</p>
+          </div>
+
+          <div class="bg-gradient-to-r from-pink-500/20 to-purple-500/20 border border-pink-500/30 rounded-lg p-6">
+            <p class="text-mystic-200 leading-relaxed"><strong class="text-pink-400">요약：</strong> 2026년은 토끼에게 변화를 받아들이고 유연성을 유지하도록 요구합니다. 당신의 적응력과 부드러운 성격은 전환을 성공적으로 탐색하는 데 도움이 됩니다. 소통에 집중하고 새로운 가능성에 열려있으세요.</p>
+          </div>
+        </div>
+      `
+      },
       author: "Master Chen",
       date: "2025-12-23",
       readTime: "8 min read",
