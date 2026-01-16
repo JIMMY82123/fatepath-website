@@ -8035,9 +8035,18 @@ export const blogPostsData = {
       ]
     },
     "bazi-vs-mbti-personality-destiny": {
-      title: "BaZi vs MBTI: Understanding Personality Through Different Lenses",
-      excerpt: "Compare ancient Chinese BaZi analysis with modern MBTI personality systems. Discover how both approaches reveal different aspects of your character and life purpose.",
-      content: `
+      title: {
+        en: "BaZi vs MBTI: Understanding Personality Through Different Lenses",
+        ja: "八字 vs MBTI：異なるレンズを通じて性格を理解する",
+        ko: "사주 vs MBTI：다른 렌즈를 통해 성격 이해하기"
+      },
+      excerpt: {
+        en: "Compare ancient Chinese BaZi analysis with modern MBTI personality systems. Discover how both approaches reveal different aspects of your character and life purpose.",
+        ja: "古代中国の八字分析と現代のMBTI性格システムを比較してください。両方のアプローチがあなたの性格と人生の目的の異なる側面をどのように明らかにするかを発見してください。",
+        ko: "고대 중국의 사주 분석과 현대 MBTI 성격 시스템을 비교하세요. 두 접근 방식이 당신의 성격과 인생 목적의 다른 측면을 어떻게 드러내는지 발견하세요."
+      },
+      content: {
+        en: `
         <p class="mb-6 text-lg text-mystic-200 leading-relaxed">
           Personality analysis has fascinated humans for centuries, leading to the development of 
           various systems to understand human nature. Two of the most comprehensive approaches are 
@@ -8102,6 +8111,97 @@ export const blogPostsData = {
           provide a more complete understanding of human nature and potential.
         </p>
       `,
+        ja: `
+        <p class="mb-6 text-lg text-mystic-200 leading-relaxed">
+          性格分析は何世紀にもわたって人間を魅了し、人間性を理解するための様々なシステムの開発につながりました。最も包括的なアプローチの2つは、古代中国の八字システムと現代のMBTI（マイヤーズ・ブリッグス型指標）です。両方とも貴重な洞察を提供しますが、非常に異なる視点からです。
+        </p>
+        
+        <h2 class="text-2xl font-bold text-white mb-4 mt-8">八字アプローチ</h2>
+        <p class="mb-6 text-mystic-200 leading-relaxed">
+          八字、または四柱推命は、あなたの出生時刻があなたの性格と人生の道を決定するという原則に基づいています。それはあなたの出生図における五行（木、火、土、金、水）の相互作用を分析して、あなたの本質的な性質を明らかにします。
+        </p>
+        
+        <h2 class="text-2xl font-bold text-white mb-4 mt-8">MBTIアプローチ</h2>
+        <p class="mb-6 text-mystic-200 leading-relaxed">
+          MBTIはカール・ユングの心理学的タイプ理論に基づいており、あなたが世界をどのように認識し、決定を下すことを好むかに焦点を当てています。それは4つの二分法に基づいて人々を16の性格タイプに分類します：外向性/内向性、感覚/直感、思考/感情、判断/知覚。
+        </p>
+        
+        <h2 class="text-2xl font-bold text-white mb-4 mt-8">哲学的違い</h2>
+        <p class="mb-6 text-mystic-200 leading-relaxed">
+          八字は決定論的で、あなたの性格と人生の道が出生時刻によって大きく決定されると示唆しています。MBTIはより柔軟で、あなたには自然な好みがあるものの、人生を通じて性格の異なる側面を開発できると示唆しています。
+        </p>
+        
+        <h2 class="text-2xl font-bold text-white mb-4 mt-8">時間と変化</h2>
+        <p class="mb-6 text-mystic-200 leading-relaxed">
+          八字は、運勢柱を通じてあなたの性格と機会が時間とともにどのように変化するかを示します。MBTIは、あなたのコアタイプが比較的安定していることを示唆していますが、異なる機能を開発し、よりバランスの取れた存在になることができます。
+        </p>
+        
+        <h2 class="text-2xl font-bold text-white mb-4 mt-8">実用的な応用</h2>
+        <p class="mb-6 text-mystic-200 leading-relaxed">
+          八字は人生のタイミング、キャリアの選択、長期的な計画を理解するのに優れています。MBTIは、現在の瞬間におけるコミュニケーションスタイル、仕事の好み、対人関係を理解するのに適しています。
+        </p>
+        
+        <h2 class="text-2xl font-bold text-white mb-4 mt-8">統合の利点</h2>
+        <p class="mb-6 text-mystic-200 leading-relaxed">
+          両方のシステムを一緒に使用することで、あなたの性格のより完全な絵を提供します。八字はあなたの運命とタイミングを示し、MBTIはあなたの現在の好みとそれらとどのように働くかを示します。この組み合わせは、長期的なガイダンスと即座の実用的なアドバイスの両方を提供します。
+        </p>
+        
+        <h2 class="text-2xl font-bold text-white mb-4 mt-8">アプローチの選択</h2>
+        <p class="mb-6 text-mystic-200 leading-relaxed">
+          人生の計画と運命に興味がある場合は、八字から始めてください。現在の性格を理解し、関係を改善したい場合は、MBTIから始めてください。最も包括的な理解のために、両方のシステムを探索し、それらがどのように互いに補完するかを確認してください。
+        </p>
+        
+        <h2 class="text-2xl font-bold text-white mb-4 mt-8">性格分析の未来</h2>
+        <p class="mb-6 text-mystic-200 leading-relaxed">
+          私たちが前進するにつれて、古代の知恵と現代の心理学の統合はますます価値のあるものになるでしょう。八字とMBTIの両方が独特の視点を提供し、組み合わせると、人間性と可能性のより完全な理解を提供します。
+        </p>
+      `,
+        ko: `
+        <p class="mb-6 text-lg text-mystic-200 leading-relaxed">
+          성격 분석은 수세기 동안 인간을 매혹시켜 왔으며, 인간 본성을 이해하기 위한 다양한 시스템의 개발로 이어졌습니다. 가장 포괄적인 접근 방식 중 두 가지는 고대 중국의 사주 시스템과 현대의 MBTI(마이어스-브리그스 유형 지표)입니다. 둘 다 가치 있는 통찰력을 제공하지만 매우 다른 관점에서입니다.
+        </p>
+        
+        <h2 class="text-2xl font-bold text-white mb-4 mt-8">사주 접근법</h2>
+        <p class="mb-6 text-mystic-200 leading-relaxed">
+          사주, 또는 사주명리학은 당신의 출생 시간이 당신의 성격과 인생 경로를 결정한다는 원칙에 기반합니다. 그것은 당신의 출생 차트에서 오행(목, 화, 토, 금, 수)의 상호작용을 분석하여 당신의 본질적인 성격을 드러냅니다.
+        </p>
+        
+        <h2 class="text-2xl font-bold text-white mb-4 mt-8">MBTI 접근법</h2>
+        <p class="mb-6 text-mystic-200 leading-relaxed">
+          MBTI는 칼 융의 심리적 유형 이론에 기반하며, 당신이 세계를 어떻게 인식하고 결정을 내리는 것을 선호하는지에 초점을 맞춥니다. 그것은 네 가지 이분법에 기반하여 사람들을 16가지 성격 유형으로 분류합니다: 외향성/내향성, 감각/직관, 사고/감정, 판단/인식.
+        </p>
+        
+        <h2 class="text-2xl font-bold text-white mb-4 mt-8">철학적 차이</h2>
+        <p class="mb-6 text-mystic-200 leading-relaxed">
+          사주는 결정론적이며, 당신의 성격과 인생 경로가 출생 시각에 의해 크게 결정된다고 제안합니다. MBTI는 더 유연하며, 당신에게 자연스러운 선호도가 있지만, 인생을 통해 성격의 다른 측면을 개발할 수 있다고 제안합니다.
+        </p>
+        
+        <h2 class="text-2xl font-bold text-white mb-4 mt-8">시간과 변화</h2>
+        <p class="mb-6 text-mystic-200 leading-relaxed">
+          사주는 운세 기둥을 통해 당신의 성격과 기회가 시간에 따라 어떻게 변화하는지를 보여줍니다. MBTI는 당신의 핵심 유형이 상대적으로 안정적이라고 제안하지만, 다른 기능을 개발하고 더 균형 잡힌 존재가 될 수 있습니다.
+        </p>
+        
+        <h2 class="text-2xl font-bold text-white mb-4 mt-8">실용적인 응용</h2>
+        <p class="mb-6 text-mystic-200 leading-relaxed">
+          사주는 인생 타이밍, 직업 선택, 장기 계획을 이해하는 데 탁월합니다. MBTI는 현재 순간의 커뮤니케이션 스타일, 작업 선호도, 대인 관계를 이해하는 데 더 적합합니다.
+        </p>
+        
+        <h2 class="text-2xl font-bold text-white mb-4 mt-8">통합의 이점</h2>
+        <p class="mb-6 text-mystic-200 leading-relaxed">
+          두 시스템을 함께 사용하면 당신의 성격에 대한 더 완전한 그림을 제공합니다. 사주는 당신의 운명과 타이밍을 보여주고, MBTI는 당신의 현재 선호도와 그것들과 어떻게 작업할지 보여줍니다. 이 조합은 장기적인 지침과 즉각적인 실용적인 조언을 모두 제공합니다.
+        </p>
+        
+        <h2 class="text-2xl font-bold text-white mb-4 mt-8">접근법 선택</h2>
+        <p class="mb-6 text-mystic-200 leading-relaxed">
+          인생 계획과 운명에 관심이 있다면, 사주로 시작하세요. 현재 성격을 이해하고 관계를 개선하고 싶다면, MBTI로 시작하세요. 가장 포괄적인 이해를 위해, 두 시스템을 모두 탐색하고 그것들이 어떻게 서로 보완하는지 확인하세요.
+        </p>
+        
+        <h2 class="text-2xl font-bold text-white mb-4 mt-8">성격 분석의 미래</h2>
+        <p class="mb-6 text-mystic-200 leading-relaxed">
+          우리가 앞으로 나아감에 따라, 고대 지혜와 현대 심리학의 통합은 점점 더 가치 있게 될 것입니다. 사주와 MBTI 모두 고유한 관점을 제공하며, 결합하면 인간 본성과 잠재력에 대한 더 완전한 이해를 제공합니다.
+        </p>
+      `
+      },
       author: "Master Chen",
       date: "2023-12-20",
       readTime: "7 min read",
