@@ -12556,9 +12556,18 @@ export const blogPostsData = {
       ]
     },
     "2026-bing-wu-year-zodiac-dog-fortune-prediction": {
-      title: "2026 Bing Wu Year: Zodiac Dog Fortune Prediction",
-      excerpt: "2026 is the Bing Wu Horse Year. For those born in the Year of the Dog, the Xu-Wu relationship creates a 'Three Harmony' auspicious connection, bringing favorable fortune, especially in teamwork and cooperation.",
-      content: `
+      title: {
+        en: "2026 Bing Wu Year: Zodiac Dog Fortune Prediction",
+        ja: "2026年丙午年：戌年（犬）の運勢予測",
+        ko: "2026년 병오년：술년（개）운세 예측"
+      },
+      excerpt: {
+        en: "2026 is the Bing Wu Horse Year. For those born in the Year of the Dog, the Xu-Wu relationship creates a 'Three Harmony' auspicious connection, bringing favorable fortune, especially in teamwork and cooperation.",
+        ja: "2026年は丙午馬年です。戌年（犬）生まれの人にとって、戌午関係は「三合」の縁起の良いつながりを作り出し、特にチームワークと協力において有利な運気をもたらします。",
+        ko: "2026년은 병오마년입니다. 술년（개）생 사람들에게는, 술오 관계가 '삼합' 길한 연결을 만들어, 특히 팀워크와 협력에서 유리한 운을 가져옵니다."
+      },
+      content: {
+        en: `
         <div class="space-y-8">
           <div class="mb-8">
             <div class="bg-gradient-to-r from-green-500/20 to-emerald-500/20 border border-green-500/30 rounded-lg p-6 mb-8">
@@ -12616,6 +12625,123 @@ export const blogPostsData = {
           </div>
         </div>
       `,
+        ja: `
+        <div class="space-y-8">
+          <div class="mb-8">
+            <div class="bg-gradient-to-r from-green-500/20 to-emerald-500/20 border border-green-500/30 rounded-lg p-6 mb-8">
+              <h3 class="text-lg font-semibold text-green-400 mb-3">🐕 2026年丙午年犬の概要</h3>
+              <ul class="text-mystic-200 space-y-2">
+                <li>• <strong>年の要素：</strong> 丙火（天干）+ 午火（地支）= 火が豊富な年</li>
+                <li>• <strong>太歳関係：</strong> 戌午三合（縁起の良い）</li>
+                <li>• <strong>主要な利点：</strong> 強いチームワークと協力運</li>
+                <li>• <strong>全体的な運勢：</strong> 調和の取れたエネルギーで有利</li>
+                <li>• <strong>年間テーマ：</strong> 協力、忠誠、チームの成功</li>
+              </ul>
+            </div>
+          </div>
+
+          <p class="mb-6 text-lg text-mystic-200 leading-relaxed">
+            2026年は丙午馬年で、火のエネルギーが豊富な年です。戌年（犬）生まれの人にとって、戌午関係は「三合」の縁起の良いつながりを作り出し、有利な運気と調和の取れたエネルギーをもたらします。これはチームワーク、協力、強い関係の構築に最適です。あなたの自然な忠誠心、誠実さ、責任感が今年高く評価されます。
+          </p>
+
+          <h2 class="text-2xl font-bold text-white mb-4 mt-8">キャリア運勢：チームワークの成功、貴人の支援</h2>
+          <div class="space-y-4 mb-6">
+            <div class="bg-gradient-to-r from-blue-500/10 to-cyan-500/10 border border-blue-500/20 rounded-lg p-4">
+              <h4 class="text-lg font-semibold text-blue-400 mb-2">💼 機会</h4>
+              <p class="text-mystic-200 leading-relaxed">三合関係は、チームワークと協力のための優れた機会をもたらします。あなたの忠誠心と信頼性が、あなたを価値あるチームメンバーにします。他の人と協力する機会、共同プロジェクト、またはチームベースのイニシアチブが繁栄します。貴人運が強いため、上司やメンターからの支援が有利です。</p>
+            </div>
+            <div class="bg-mystic-800/50 rounded-lg p-4">
+              <h4 class="text-lg font-semibold text-gold-400 mb-2">💡 キャリアアドバイス</h4>
+              <p class="text-mystic-200 leading-relaxed">あなたの自然なチームワーク能力と忠誠心を活用してください。協力の機会を求め、強い専門的な関係を築いてください。あなたの誠実さと責任感が認識され、報われます。チームの目標をサポートし、グループの成功に貢献することに焦点を当ててください。</p>
+            </div>
+          </div>
+
+          <h2 class="text-2xl font-bold text-white mb-4 mt-8">財運トレンド：協力による着実な成長</h2>
+          <div class="bg-mystic-800/50 rounded-lg p-4 mb-6">
+            <p class="text-mystic-200 leading-relaxed">財務の見通しは有利で、特にチームワークや協力事業を通じてです。調和の取れたエネルギーは着実な富の蓄積をサポートします。あなたの責任ある財務へのアプローチがあなたをよく助けます。共同投資やパートナーシップを検討してください。しかし、あなたの自然な注意と徹底的な評価を維持してください。</p>
+          </div>
+
+          <h2 class="text-2xl font-bold text-white mb-4 mt-8">人間関係：強い絆、忠実なつながり</h2>
+          <div class="space-y-4 mb-6">
+            <div class="bg-gradient-to-r from-pink-500/10 to-purple-500/10 border border-pink-500/20 rounded-lg p-4">
+              <h4 class="text-lg font-semibold text-pink-400 mb-2">💕 独身者</h4>
+              <p class="text-mystic-200 leading-relaxed">三合関係は有利なロマンチックな機会をもたらします。あなたの忠誠心と誠実さが互換性のあるパートナーを引き付けます。今年形成された関係は長期的な成功の強い可能性を持っています。相互尊重と共有された価値観に基づく本物のつながりを築くことに焦点を当ててください。</p>
+            </div>
+            <div class="bg-gradient-to-r from-green-500/10 to-emerald-500/10 border border-green-500/20 rounded-lg p-4">
+              <h4 class="text-lg font-semibold text-green-400 mb-2">💑 交際中</h4>
+              <p class="text-mystic-200 leading-relaxed">既存の関係は調和が取れて支援的になります。あなたの忠誠心とコミットメントが絆を強化します。これはコミットメントの深化、婚約、または結婚に最適な年です。三合エネルギーは相互理解と共有された目標をもたらします。</p>
+            </div>
+          </div>
+
+          <h2 class="text-2xl font-bold text-white mb-4 mt-8">健康：安定してバランスが取れている</h2>
+          <div class="bg-mystic-800/50 rounded-lg p-4 mb-6">
+            <p class="text-mystic-200 leading-relaxed">あなたの健康運勢は一般的に安定しています。調和の取れたエネルギーは全体的なウェルビーイングをサポートします。しかし、過労や過度の責任を負うことを避けてください。定期的な運動とバランスの取れた食事を維持してください。あなたの自然な活動レベルは資産ですが、十分な休息とストレス管理を確保してください。</p>
+          </div>
+
+          <div class="bg-gradient-to-r from-green-500/20 to-emerald-500/20 border border-green-500/30 rounded-lg p-6">
+            <p class="text-mystic-200 leading-relaxed"><strong class="text-green-400">まとめ：</strong> 2026年は、縁起の良い三合関係を伴う犬にとって優れた年です。チームワーク、協力、強い関係の構築に焦点を当ててください。あなたの忠誠心、誠実さ、責任感が高く評価されます。これは人生のすべての領域で調和、成功、ポジティブなつながりの年です。</p>
+          </div>
+        </div>
+      `,
+        ko: `
+        <div class="space-y-8">
+          <div class="mb-8">
+            <div class="bg-gradient-to-r from-green-500/20 to-emerald-500/20 border border-green-500/30 rounded-lg p-6 mb-8">
+              <h3 class="text-lg font-semibold text-green-400 mb-3">🐕 2026년 병오년 개 개요</h3>
+              <ul class="text-mystic-200 space-y-2">
+                <li>• <strong>년의 요소：</strong> 병화（천간）+ 오화（지지）= 화가 풍부한 해</li>
+                <li>• <strong>태세 관계：</strong> 술오삼합（길한）</li>
+                <li>• <strong>주요 이점：</strong> 강한 팀워크와 협력 운</li>
+                <li>• <strong>전체 운세：</strong> 조화로운 에너지로 유리</li>
+                <li>• <strong>연간 테마：</strong> 협력, 충성, 팀 성공</li>
+              </ul>
+            </div>
+          </div>
+
+          <p class="mb-6 text-lg text-mystic-200 leading-relaxed">
+            2026년은 병오마년으로, 화 에너지가 풍부한 해입니다. 술년（개）생 사람들에게는, 술오 관계가 "삼합" 길한 연결을 만들어, 유리한 운과 조화로운 에너지를 가져옵니다. 이것은 팀워크, 협력, 강한 관계 구축에 최적입니다. 당신의 자연스러운 충성심, 정직함, 책임감이 올해 높이 평가됩니다.
+          </p>
+
+          <h2 class="text-2xl font-bold text-white mb-4 mt-8">직업 운세：팀워크 성공, 귀인 지원</h2>
+          <div class="space-y-4 mb-6">
+            <div class="bg-gradient-to-r from-blue-500/10 to-cyan-500/10 border border-blue-500/20 rounded-lg p-4">
+              <h4 class="text-lg font-semibold text-blue-400 mb-2">💼 기회</h4>
+              <p class="text-mystic-200 leading-relaxed">삼합 관계는 팀워크와 협력을 위한 훌륭한 기회를 가져옵니다. 당신의 충성심과 신뢰성이 당신을 가치 있는 팀원으로 만듭니다. 다른 사람들과 협력하는 기회, 공동 프로젝트, 또는 팀 기반 이니셔티브가 번영할 것입니다. 귀인 운이 강하므로, 상사나 멘토로부터의 지원이 유리합니다.</p>
+            </div>
+            <div class="bg-mystic-800/50 rounded-lg p-4">
+              <h4 class="text-lg font-semibold text-gold-400 mb-2">💡 직업 조언</h4>
+              <p class="text-mystic-200 leading-relaxed">당신의 자연스러운 팀워크 능력과 충성심을 활용하세요. 협력 기회를 찾고 강한 전문적인 관계를 구축하세요. 당신의 정직함과 책임감이 인정받고 보상받을 것입니다. 팀 목표를 지원하고 그룹 성공에 기여하는 데 집중하세요.</p>
+            </div>
+          </div>
+
+          <h2 class="text-2xl font-bold text-white mb-4 mt-8">재운 추세：협력을 통한 꾸준한 성장</h2>
+          <div class="bg-mystic-800/50 rounded-lg p-4 mb-6">
+            <p class="text-mystic-200 leading-relaxed">재정 전망은 유리하며, 특히 팀워크나 협력 사업을 통해입니다. 조화로운 에너지는 꾸준한 부의 축적을 지원합니다. 당신의 책임 있는 재정 접근이 당신을 잘 도울 것입니다. 공동 투자나 파트너십을 고려하세요. 그러나 당신의 자연스러운 주의와 철저한 평가를 유지하세요.</p>
+          </div>
+
+          <h2 class="text-2xl font-bold text-white mb-4 mt-8">관계：강한 유대, 충실한 연결</h2>
+          <div class="space-y-4 mb-6">
+            <div class="bg-gradient-to-r from-pink-500/10 to-purple-500/10 border border-pink-500/20 rounded-lg p-4">
+              <h4 class="text-lg font-semibold text-pink-400 mb-2">💕 독신자</h4>
+              <p class="text-mystic-200 leading-relaxed">삼합 관계는 유리한 로맨틱 기회를 가져옵니다. 당신의 충성심과 진실성이 호환되는 파트너를 끌어들입니다. 올해 형성된 관계는 장기적인 성공의 강한 잠재력을 가지고 있습니다. 상호 존중과 공유된 가치관에 기반한 진정한 연결을 구축하는 데 집중하세요.</p>
+            </div>
+            <div class="bg-gradient-to-r from-green-500/10 to-emerald-500/10 border border-green-500/20 rounded-lg p-4">
+              <h4 class="text-lg font-semibold text-green-400 mb-2">💑 교제 중</h4>
+              <p class="text-mystic-200 leading-relaxed">기존 관계는 조화롭고 지원적일 것입니다. 당신의 충성심과 약속이 유대를 강화합니다. 이것은 약속의 심화, 약혼, 또는 결혼에 훌륭한 해입니다. 삼합 에너지는 상호 이해와 공유된 목표를 가져옵니다.</p>
+            </div>
+          </div>
+
+          <h2 class="text-2xl font-bold text-white mb-4 mt-8">건강：안정적이고 균형 잡힌</h2>
+          <div class="bg-mystic-800/50 rounded-lg p-4 mb-6">
+            <p class="text-mystic-200 leading-relaxed">당신의 건강 운세는 일반적으로 안정적입니다. 조화로운 에너지는 전반적인 웰빙을 지원합니다. 그러나 과로나 과도한 책임을 지는 것을 피하세요. 정기적인 운동과 균형 잡힌 식단을 유지하세요. 당신의 자연스러운 활동 수준은 자산이지만, 충분한 휴식과 스트레스 관리를 보장하세요.</p>
+          </div>
+
+          <div class="bg-gradient-to-r from-green-500/20 to-emerald-500/20 border border-green-500/30 rounded-lg p-6">
+            <p class="text-mystic-200 leading-relaxed"><strong class="text-green-400">요약：</strong> 2026년은 길한 삼합 관계를 동반한 개에게 훌륭한 해입니다. 팀워크, 협력, 강한 관계 구축에 집중하세요. 당신의 충성심, 정직함, 책임감이 높이 평가됩니다. 이것은 인생의 모든 영역에서 조화, 성공, 긍정적인 연결의 해입니다.</p>
+          </div>
+        </div>
+      `
+      },
       author: "Master Chen",
       date: "2025-12-23",
       readTime: "8 min read",
