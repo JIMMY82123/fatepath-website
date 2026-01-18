@@ -25,6 +25,10 @@
     "all": "전체",
     "any": "임의"
   },
+  "purchaseNotification": {
+    "purchased": "구매했습니다",
+    "minutesAgo": "{{minutes}}분 전"
+  },
   "bazi": {
     "title": "팔자（사주명리학）",
     "fourPillars": "사주",
@@ -234,7 +238,12 @@
         "description": "지정된 시간 내에 이메일로 개인화된 PDF 리포트를 받으세요."
       },
       "note": "💡 참고：결제 후 Ko-fi 개인 메시지를 통해 연락하여 생년월일 정보를 수집합니다. Ko-fi 메시지를 확인하고 가장 정확한 분석을 위해 정확한 정보를 제공해 주세요."
-    }
+    },
+    "reviews": {
+      "title": "고객 후기",
+      "description": "우리의 팔자 리딩을 통해 명확성과 방향을 찾은 만족한 고객들의 실제 대화"
+    },
+    "salesCount": "구매됨"
   },
   "celebrities": {
     "title": "오늘 태어난 유명인",
@@ -468,7 +477,8 @@
     },
     "tabs": {
       "personal": "개인 스토리",
-      "reddit": "Reddit 커뮤니티"
+      "reddit": "Reddit 커뮤니티",
+      "whatsapp": "WhatsApp 리뷰"
     },
     "searchPlaceholder": "고객 후기를 검색...",
     "services": {
@@ -488,6 +498,9 @@
     "tryAdjusting": "검색 조건이나 필터를 조정해 보세요.",
     "redditTitle": "Reddit에서의 커뮤니티 사랑",
     "redditDescription": "리뷰를 클릭하여 전체 크기로 보기",
+    "whatsappTitle": "WhatsApp의 고객 대화",
+    "whatsappDescription": "대화를 클릭하여 전체 크기로 보기",
+    "noWhatsAppReviews": "이미지가 추가되면 WhatsApp 리뷰가 여기에 표시됩니다",
     "clickToEnlarge": "클릭하여 확대"
   },
   "resources": {

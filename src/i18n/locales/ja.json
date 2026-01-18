@@ -25,6 +25,10 @@
     "all": "すべて",
     "any": "任意"
   },
+  "purchaseNotification": {
+    "purchased": "を購入しました",
+    "minutesAgo": "{{minutes}}分前"
+  },
   "bazi": {
     "title": "八字（四柱推命）",
     "fourPillars": "四柱",
@@ -234,7 +238,12 @@
         "description": "指定された時間内にメールで個人的なPDFレポートを受け取ります。"
       },
       "note": "💡 注意：支払い後、Ko-fiのプライベートメッセージで連絡し、生年月日の詳細を収集します。Ko-fiのメッセージを確認し、最も正確な分析のために正確な情報を提供してください。"
-    }
+    },
+    "reviews": {
+      "title": "お客様の声",
+      "description": "私たちの八字リーディングを通じて明確さと方向性を見つけた満足したクライアントからの実際の会話"
+    },
+    "salesCount": "購入済み"
   },
   "celebrities": {
     "title": "今日生まれの有名人",
@@ -468,7 +477,8 @@
     },
     "tabs": {
       "personal": "個人のストーリー",
-      "reddit": "Redditコミュニティ"
+      "reddit": "Redditコミュニティ",
+      "whatsapp": "WhatsAppレビュー"
     },
     "searchPlaceholder": "お客様の声を検索...",
     "services": {
@@ -488,6 +498,9 @@
     "tryAdjusting": "検索条件やフィルターを調整してみてください。",
     "redditTitle": "Redditでのコミュニティの愛",
     "redditDescription": "レビューをクリックしてフルサイズで表示",
+    "whatsappTitle": "WhatsAppでのクライアント会話",
+    "whatsappDescription": "会話をクリックしてフルサイズで表示",
+    "noWhatsAppReviews": "画像が追加されると、WhatsAppレビューがここに表示されます",
     "clickToEnlarge": "クリックして拡大"
   },
   "resources": {

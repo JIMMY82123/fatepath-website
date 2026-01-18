@@ -25,6 +25,10 @@
     "all": "All",
     "any": "Any"
   },
+  "purchaseNotification": {
+    "purchased": "purchased",
+    "minutesAgo": "{{minutes}} minutes ago"
+  },
   "bazi": {
     "title": "BaZi (Four Pillars of Destiny)",
     "fourPillars": "Four Pillars",
@@ -265,7 +269,12 @@
         "description": "Get your personalized PDF report delivered to your email within the specified timeframe."
       },
       "note": "💡 Note: After payment, I will contact you via Ko-fi private message to collect your birth details. Please check your Ko-fi messages and provide accurate information for the most accurate analysis."
-    }
+    },
+    "reviews": {
+      "title": "What Our Clients Say",
+      "description": "Real conversations from satisfied clients who found clarity and direction through our BaZi readings"
+    },
+    "salesCount": "purchased"
   },
   "faq": {
     "title": "Frequently Asked Questions",
@@ -459,7 +468,8 @@
     },
     "tabs": {
       "personal": "Personal Stories",
-      "reddit": "Reddit Community"
+      "reddit": "Reddit Community",
+      "whatsapp": "WhatsApp Reviews"
     },
     "searchPlaceholder": "Search testimonials...",
     "services": {
@@ -479,6 +489,9 @@
     "tryAdjusting": "Try adjusting your search criteria or filters.",
     "redditTitle": "Community Love on Reddit",
     "redditDescription": "Click on any review to see it in full size",
+    "whatsappTitle": "Client Conversations on WhatsApp",
+    "whatsappDescription": "Click on any conversation to see it in full size",
+    "noWhatsAppReviews": "WhatsApp reviews will appear here once images are added",
     "clickToEnlarge": "Click to enlarge"
   },
   "resources": {

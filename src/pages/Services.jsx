@@ -1,11 +1,91 @@
-import { motion } from 'framer-motion'
-import { Star, ArrowRight, FileText, BookOpen, Check } from 'lucide-react'
+import { useState, useEffect } from 'react'
+import { motion, AnimatePresence } from 'framer-motion'
+import { Star, ArrowRight, FileText, BookOpen, Check, ChevronLeft, ChevronRight, MessageSquare, TrendingUp } from 'lucide-react'
 import { Link } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
 import SEO from '../components/SEO'
+import PurchaseNotification from '../components/PurchaseNotification'
 
 const Services = () => {
   const { t } = useTranslation()
+  const [currentReviewIndex, setCurrentReviewIndex] = useState(0)
+  const [sales, setSales] = useState({ taster: 760, detailed: 2054 })
+  
+  // WhatsApp reviews data
+  const whatsappReviews = [
+    { id: 1, image: "/images/whatsapp-reviews/whatsapp-review-1.jpg" },
+    { id: 2, image: "/images/whatsapp-reviews/whatsapp-review-2.jpg" },
+    { id: 3, image: "/images/whatsapp-reviews/whatsapp-review-3.jpg" },
+    { id: 4, image: "/images/whatsapp-reviews/whatsapp-review-4.jpg" },
+    { id: 5, image: "/images/whatsapp-reviews/whatsapp-review-5.jpg" }
+  ]
+
+  // Auto-play carousel
+  useEffect(() => {
+    if (whatsappReviews.length <= 1) return
+    
+    const interval = setInterval(() => {
+      setCurrentReviewIndex((prev) => (prev + 1) % whatsappReviews.length)
+    }, 5000) // Change every 5 seconds
+
+    return () => clearInterval(interval)
+  }, [whatsappReviews.length])
+
+  const goToPrevious = () => {
+    setCurrentReviewIndex((prev) => (prev - 1 + whatsappReviews.length) % whatsappReviews.length)
+  }
+
+  const goToNext = () => {
+    setCurrentReviewIndex((prev) => (prev + 1) % whatsappReviews.length)
+  }
+
+  const goToSlide = (index) => {
+    setCurrentReviewIndex(index)
+  }
+
+  // 计算销量 - 每天增加8个
+  useEffect(() => {
+    const calculateSales = () => {
+      const STORAGE_KEY = 'bazi_services_initial_date'
+      const SALES_PER_DAY = 8
+      const INITIAL_SALES = {
+        taster: 760,
+        detailed: 2054
+      }
+
+      // 获取或设置初始日期
+      let initialDateStr = localStorage.getItem(STORAGE_KEY)
+      if (!initialDateStr) {
+        // 如果没有初始日期，设置为今天
+        const today = new Date().toISOString().split('T')[0]
+        localStorage.setItem(STORAGE_KEY, today)
+        initialDateStr = today
+      }
+
+      // 计算天数差
+      const initialDate = new Date(initialDateStr)
+      const today = new Date()
+      today.setHours(0, 0, 0, 0)
+      initialDate.setHours(0, 0, 0, 0)
+      
+      const daysDiff = Math.floor((today - initialDate) / (1000 * 60 * 60 * 24))
+      
+      // 计算当前销量
+      const currentSales = {
+        taster: INITIAL_SALES.taster + (daysDiff * SALES_PER_DAY),
+        detailed: INITIAL_SALES.detailed + (daysDiff * SALES_PER_DAY)
+      }
+
+      setSales(currentSales)
+    }
+
+    calculateSales()
+    // 每天更新一次（每24小时）
+    const interval = setInterval(calculateSales, 24 * 60 * 60 * 1000)
+    
+    return () => clearInterval(interval)
+  }, [])
+
   const servicePackages = [
     {
       id: 0,
@@ -118,11 +198,22 @@ const Services = () => {
                 </p>
 
                 {/* Price */}
-                <div className="mb-6">
+                <div className="mb-4">
                   <div className="flex items-baseline">
                     <span className="text-3xl sm:text-4xl font-bold text-white">{tier.price}</span>
                     {tier.period && <span className="text-mystic-400 ml-2">{tier.period}</span>}
                   </div>
+                </div>
+
+                {/* Sales Count */}
+                <div className="mb-6 flex items-center space-x-2 text-sm">
+                  <TrendingUp className="h-4 w-4 text-green-400" />
+                  <span className="text-mystic-300">
+                    <span className="text-green-400 font-semibold">
+                      {tier.id === 0 ? sales.taster.toLocaleString() : sales.detailed.toLocaleString()}
+                    </span>
+                    {' '}{t('services.salesCount')}
+                  </span>
                 </div>
 
                 {/* Description */}
@@ -165,6 +256,104 @@ const Services = () => {
             ))}
           </div>
         </div>
+
+        {/* WhatsApp Reviews Carousel */}
+        {whatsappReviews.length > 0 && (
+          <motion.div 
+            initial={{ opacity: 0, y: 50 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.5 }}
+            className="mt-12 sm:mt-16 mb-12 sm:mb-16"
+          >
+            <div className="max-w-5xl mx-auto">
+              {/* Section Header */}
+              <div className="text-center mb-6 sm:mb-8">
+                <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-gradient-to-r from-green-500 to-emerald-500 mb-4">
+                  <MessageSquare className="h-8 w-8 text-white" />
+                </div>
+                <h2 className="text-2xl sm:text-3xl font-cinzel font-bold mb-3 text-white">
+                  {t('services.reviews.title')}
+                </h2>
+                <p className="text-sm sm:text-base text-mystic-300 max-w-2xl mx-auto">
+                  {t('services.reviews.description')}
+                </p>
+              </div>
+
+              {/* Carousel Container */}
+              <div className="relative mystic-card p-4 sm:p-6 rounded-2xl border-2 border-green-500/30 bg-gradient-to-r from-green-500/5 to-emerald-500/5">
+                <div className="relative overflow-hidden rounded-lg">
+                  {/* Carousel Images */}
+                  <div className="relative aspect-[9/16] sm:aspect-[3/4] max-h-[600px] mx-auto">
+                    <AnimatePresence mode="wait">
+                      <motion.div
+                        key={currentReviewIndex}
+                        initial={{ opacity: 0, x: 100 }}
+                        animate={{ opacity: 1, x: 0 }}
+                        exit={{ opacity: 0, x: -100 }}
+                        transition={{ duration: 0.5 }}
+                        className="absolute inset-0"
+                      >
+                        <img
+                          src={whatsappReviews[currentReviewIndex].image}
+                          alt={`WhatsApp client review ${whatsappReviews[currentReviewIndex].id} - BaZi reading testimonial`}
+                          className="w-full h-full object-contain rounded-lg"
+                          loading="lazy"
+                        />
+                      </motion.div>
+                    </AnimatePresence>
+                  </div>
+
+                  {/* Navigation Arrows */}
+                  {whatsappReviews.length > 1 && (
+                    <>
+                      <button
+                        onClick={goToPrevious}
+                        className="absolute left-2 sm:left-4 top-1/2 -translate-y-1/2 bg-black/50 hover:bg-black/70 text-white p-2 rounded-full transition-all duration-300 z-10"
+                        aria-label="Previous review"
+                      >
+                        <ChevronLeft className="h-5 w-5 sm:h-6 sm:w-6" />
+                      </button>
+                      <button
+                        onClick={goToNext}
+                        className="absolute right-2 sm:right-4 top-1/2 -translate-y-1/2 bg-black/50 hover:bg-black/70 text-white p-2 rounded-full transition-all duration-300 z-10"
+                        aria-label="Next review"
+                      >
+                        <ChevronRight className="h-5 w-5 sm:h-6 sm:w-6" />
+                      </button>
+                    </>
+                  )}
+
+                  {/* Dots Indicator */}
+                  {whatsappReviews.length > 1 && (
+                    <div className="flex justify-center mt-4 space-x-2">
+                      {whatsappReviews.map((_, index) => (
+                        <button
+                          key={index}
+                          onClick={() => goToSlide(index)}
+                          className={`h-2 sm:h-3 rounded-full transition-all duration-300 ${
+                            index === currentReviewIndex
+                              ? 'w-8 sm:w-10 bg-green-500'
+                              : 'w-2 sm:w-3 bg-mystic-600 hover:bg-mystic-500'
+                          }`}
+                          aria-label={`Go to review ${index + 1}`}
+                        />
+                      ))}
+                    </div>
+                  )}
+
+                  {/* Review Counter */}
+                  {whatsappReviews.length > 1 && (
+                    <div className="text-center mt-3">
+                      <span className="text-xs sm:text-sm text-mystic-400">
+                        {currentReviewIndex + 1} / {whatsappReviews.length}
+                      </span>
+                    </div>
+                  )}
+                </div>
+              </div>
+            </div>
+          </motion.div>
+        )}
 
         {/* Service Process */}
         <motion.div 

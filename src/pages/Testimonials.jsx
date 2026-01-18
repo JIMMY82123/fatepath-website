@@ -1,6 +1,6 @@
 import { useState, useEffect, useMemo } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
-import { Star, Heart, Shield, Star as StarIcon, Filter, Search, MessageCircle, X } from 'lucide-react'
+import { Star, Heart, Shield, Star as StarIcon, Filter, Search, MessageCircle, X, MessageSquare } from 'lucide-react'
 import { useTranslation } from 'react-i18next'
 import SEO from '../components/SEO'
 import { getCachedAIAvatar, generateAvatarUrls } from '../utils/aiAvatarGenerator'
@@ -11,8 +11,9 @@ const Testimonials = () => {
   const [selectedService, setSelectedService] = useState('all')
   const [selectedRating, setSelectedRating] = useState('all')
   const [testimonialsWithAvatars, setTestimonialsWithAvatars] = useState([])
-  const [activeTab, setActiveTab] = useState('personal') // 'personal' or 'reddit'
+  const [activeTab, setActiveTab] = useState('personal') // 'personal', 'reddit', or 'whatsapp'
   const [selectedRedditReview, setSelectedRedditReview] = useState(null) // For modal
+  const [selectedWhatsAppReview, setSelectedWhatsAppReview] = useState(null) // For WhatsApp modal
 
   // Reduced personal testimonials (from 12 to 8)
   const testimonials = [
@@ -119,6 +120,15 @@ const Testimonials = () => {
     { id: 10, image: "/images/reddit-reviews/reddit-review-10.jpg" }
   ]
 
+  // WhatsApp reviews data
+  const whatsappReviews = [
+    { id: 1, image: "/images/whatsapp-reviews/whatsapp-review-1.jpg" },
+    { id: 2, image: "/images/whatsapp-reviews/whatsapp-review-2.jpg" },
+    { id: 3, image: "/images/whatsapp-reviews/whatsapp-review-3.jpg" },
+    { id: 4, image: "/images/whatsapp-reviews/whatsapp-review-4.jpg" },
+    { id: 5, image: "/images/whatsapp-reviews/whatsapp-review-5.jpg" }
+  ]
+
   // 生成AI头像
   useEffect(() => {
     const testimonialsWithAI = generateAvatarUrls(testimonials)
@@ -172,8 +182,13 @@ const Testimonials = () => {
     setSelectedRedditReview(review)
   }
 
+  const handleWhatsAppReviewClick = (review) => {
+    setSelectedWhatsAppReview(review)
+  }
+
   const closeModal = () => {
     setSelectedRedditReview(null)
+    setSelectedWhatsAppReview(null)
   }
 
   return (
@@ -255,6 +270,17 @@ const Testimonials = () => {
                 >
                   <MessageCircle className="inline-block h-4 w-4 mr-2" />
                   {t('testimonials.tabs.reddit')}
+                </button>
+                <button
+                  onClick={() => setActiveTab('whatsapp')}
+                  className={`px-6 py-3 rounded-md text-sm font-medium transition-all duration-200 ${
+                    activeTab === 'whatsapp'
+                      ? 'bg-gold-400 text-white shadow-lg'
+                      : 'text-mystic-300 hover:text-white hover:bg-mystic-700/50'
+                  }`}
+                >
+                  <MessageSquare className="inline-block h-4 w-4 mr-2" />
+                  {t('testimonials.tabs.whatsapp')}
                 </button>
               </div>
             </div>
@@ -389,7 +415,7 @@ const Testimonials = () => {
                 </motion.div>
               )}
             </>
-          ) : (
+          ) : activeTab === 'reddit' ? (
             <>
               {/* Reddit Reviews Mosaic */}
               <motion.div 
@@ -444,6 +470,68 @@ const Testimonials = () => {
                 </div>
               </motion.div>
             </>
+          ) : (
+            <>
+              {/* WhatsApp Reviews Mosaic */}
+              <motion.div 
+                initial={{ opacity: 0, y: 30 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.6 }}
+                className="mb-12"
+              >
+                <div className="text-center mb-8">
+                  <h2 className="text-2xl font-bold text-white mb-4">{t('testimonials.whatsappTitle')}</h2>
+                  <p className="text-mystic-300">{t('testimonials.whatsappDescription')}</p>
+                </div>
+                
+                {/* Mosaic Grid */}
+                {whatsappReviews.length > 0 ? (
+                  <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-3">
+                    {whatsappReviews.map((review, index) => (
+                      <motion.div
+                        key={review.id}
+                        initial={{ opacity: 0, scale: 0.8 }}
+                        animate={{ opacity: 1, scale: 1 }}
+                        transition={{ duration: 0.5, delay: 0.1 * index }}
+                        className="group cursor-pointer"
+                        onClick={() => handleWhatsAppReviewClick(review)}
+                      >
+                        <div className="relative overflow-hidden rounded-lg border-2 border-mystic-700/50 hover:border-gold-400/50 transition-all duration-300 hover:shadow-lg hover:shadow-gold-400/20">
+                          <img
+                            src={review.image}
+                            alt={`Authentic BaZi reading client review ${review.id} from WhatsApp - Chinese astrology testimonial with satisfied customer feedback`}
+                            width={400}
+                            height={400}
+                            loading="lazy"
+                            className="w-full h-auto object-cover transition-transform duration-300 group-hover:scale-105"
+                            onError={(e) => {
+                              e.target.style.display = 'none';
+                              e.target.nextSibling.style.display = 'flex';
+                            }}
+                          />
+                          <div className="w-full h-full bg-mystic-700 flex items-center justify-center hidden" aria-hidden="true">
+                            <span className="text-mystic-400 text-sm">BaZi Review Image</span>
+                          </div>
+                          
+                          {/* Hover overlay */}
+                          <div className="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                            <div className="text-center text-white">
+                              <MessageSquare className="h-8 w-8 mx-auto mb-2 text-gold-400" />
+                              <p className="text-sm font-medium">{t('testimonials.clickToEnlarge')}</p>
+                            </div>
+                          </div>
+                        </div>
+                      </motion.div>
+                    ))}
+                  </div>
+                ) : (
+                  <div className="text-center py-12">
+                    <MessageSquare className="h-16 w-16 mx-auto mb-4 text-mystic-500" />
+                    <p className="text-mystic-400">{t('testimonials.noWhatsAppReviews')}</p>
+                  </div>
+                )}
+              </motion.div>
+            </>
           )}
         </div>
       </div>
@@ -478,6 +566,52 @@ const Testimonials = () => {
               <img
                 src={selectedRedditReview.image}
                 alt={`Genuine BaZi consultation review ${selectedRedditReview.id} from Reddit - Chinese numerology expert testimonial showing professional service quality`}
+                width={1200}
+                height={1200}
+                className="w-full h-auto max-h-[90vh] object-contain"
+                onError={(e) => {
+                  e.target.style.display = 'none';
+                  e.target.nextSibling.style.display = 'flex';
+                }}
+              />
+              <div className="w-full h-full bg-mystic-700 flex items-center justify-center hidden" aria-hidden="true">
+                <span className="text-mystic-400">BaZi Review Image</span>
+              </div>
+            </motion.div>
+          </motion.div>
+        )}
+      </AnimatePresence>
+
+      {/* WhatsApp Review Modal */}
+      <AnimatePresence>
+        {selectedWhatsAppReview && (
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/80"
+            onClick={closeModal}
+          >
+            <motion.div
+              initial={{ scale: 0.8, opacity: 0 }}
+              animate={{ scale: 1, opacity: 1 }}
+              exit={{ scale: 0.8, opacity: 0 }}
+              transition={{ type: "spring", damping: 25, stiffness: 300 }}
+              className="relative max-w-4xl max-h-[90vh] overflow-hidden rounded-lg bg-mystic-900 border border-mystic-700"
+              onClick={(e) => e.stopPropagation()}
+            >
+              {/* Close button */}
+              <button
+                onClick={closeModal}
+                className="absolute top-4 right-4 z-10 p-2 rounded-full bg-black/50 text-white hover:bg-black/70 transition-colors"
+              >
+                <X className="h-6 w-6" />
+              </button>
+              
+              {/* Image */}
+              <img
+                src={selectedWhatsAppReview.image}
+                alt={`Genuine BaZi consultation review ${selectedWhatsAppReview.id} from WhatsApp - Chinese numerology expert testimonial showing professional service quality`}
                 width={1200}
                 height={1200}
                 className="w-full h-auto max-h-[90vh] object-contain"
