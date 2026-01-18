@@ -81,15 +81,15 @@ const PurchaseNotification = ({ showOnlyWhenReportVisible = false }) => {
 
     let timeouts = []
     
-    // 首次延迟：3-8秒
-    const initialDelay = Math.random() * 5000 + 3000
+    // 首次延迟：1-3秒
+    const initialDelay = Math.random() * 2000 + 1000
     
     const initialTimer = setTimeout(() => {
       setNotifications([generateNotification()])
       
-      // 后续通知：每15-45秒随机显示一次
+      // 后续通知：每8-20秒随机显示一次
       const scheduleNext = () => {
-        const delay = Math.random() * 30000 + 15000 // 15-45秒
+        const delay = Math.random() * 12000 + 8000 // 8-20秒
         const timer = setTimeout(() => {
           const newNotification = generateNotification()
           setNotifications(prev => {
