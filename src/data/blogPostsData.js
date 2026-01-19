@@ -13576,7 +13576,7 @@ export const blogPostsData = {
       </div>
     `,
     author: 'FatePath Master',
-    date: '2026-01-26',
+    date: '2026-01-20',
     readTime: '8 min read',
     category: 'BaZi Analysis',
     tags: ['Chinese Astrology', 'Western Astrology', 'BaZi', 'Natal Chart', 'Four Pillars', 'Destiny Analysis', 'Astrology Comparison', 'Life Guidance', 'Timing', 'Psychology'],
@@ -13737,7 +13737,7 @@ export const blogPostsData = {
       </div>
     `,
     author: 'Master XuanYin',
-    date: '2026-01-26',
+    date: '2026-01-20',
     readTime: '10 min read',
     category: 'compatibility',
     tags: ['Chinese Zodiac', 'Compatibility', 'Love Matches', '2026', 'Fire Horse', 'Relationships', 'Romance', 'Zodiac Signs', 'Year of Passion', 'Dating', 'Marriage', 'Astrology'],
